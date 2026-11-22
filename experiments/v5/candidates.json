@@ -1,0 +1,92 @@
+{
+  "portfolio": {
+    "sha256": "6031c2e1aec1d378d904ae468bc28c2beb22d165954178c143e9eec71e833665",
+    "weights": "experiments/v5/heads.npz",
+    "flags": []
+  },
+  "countersearch": {
+    "sha256": "022241cab89978097825a6e46a43f99ccbd16bba2a220aa053de529752a409bc",
+    "weights": "experiments/v5/heads.npz",
+    "flags": [
+      "--frontier",
+      "--own",
+      ".7",
+      "--value",
+      ".85"
+    ]
+  },
+  "rotation": {
+    "sha256": "a977d56a4653f527b285f8db0e289b556b4cdc2730a5f0db0737cbbaad54fc63",
+    "weights": "experiments/v5/heads.npz",
+    "flags": [
+      "--rotated",
+      "--own",
+      ".8",
+      "--value",
+      ".5"
+    ]
+  },
+  "cartographer": {
+    "sha256": "157e070d6be853257b2f1dd7cea0f6574baa68ffde69713b2781679d2453988e",
+    "weights": "experiments/v5/landscape.npz",
+    "flags": [
+      "--fog",
+      "--territory",
+      "--rotated",
+      "--own",
+      ".8",
+      "--value",
+      ".57"
+    ]
+  },
+  "responder": {
+    "sha256": "51286818d7bf73fd7236aa93de31a02a8f7d03a8c5d90d7cb43399695497e6c7",
+    "weights": "experiments/v5/adaptive.npz",
+    "flags": [
+      "--deep",
+      "--adaptive",
+      "--rotated",
+      "--territory",
+      "--own",
+      ".82",
+      "--value",
+      ".67"
+    ]
+  },
+  "multistyle": {
+    "sha256": "0a413a11f80f6872a5c8f0d313061d7bf11121ae16fbdad97247ff3cb15242e5",
+    "weights": "experiments/v5/adaptive.npz",
+    "flags": [
+      "--adaptive",
+      "--rotated",
+      "--territory",
+      "--paired",
+      "--deep",
+      "--refit",
+      "experiments/v5/full-refit.npz",
+      "--own",
+      ".27",
+      "--value",
+      ".48"
+    ]
+  },
+  "longlook": {
+    "sha256": "5b4ef969688655662244127835bfa510cac93b53f3fa8a23b58a99fa4423323a",
+    "weights": "experiments/v5/adaptive.npz",
+    "flags": [
+      "--adaptive",
+      "--rotated",
+      "--territory",
+      "--paired",
+      "--deep",
+      "--refit",
+      "experiments/v5/full-refit.npz",
+      "--own",
+      ".27",
+      "--value",
+      ".48",
+      "--student",
+      "experiments/v5/rollout-student.npz"
+    ]
+  }
+}

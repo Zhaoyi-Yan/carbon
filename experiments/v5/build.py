@@ -7,7 +7,7 @@ from backbone import exposed_source, replace, ROOT
 HERE=Path(__file__).resolve().parent
 
 
-def build(weights, output, own, valuation, frontier=False, rotated=False, fog=False, territory=False, deep=False, adaptive=False, paired=False):
+def build(weights, output, own, valuation, frontier=False, rotated=False, fog=False, territory=False, deep=False, adaptive=False, paired=False, refit=None, student=None):
     source=exposed_source()
     batch=(ROOT/'opponents/yan-v3.py').read_text()
     sample=batch[batch.index('_ROLLOUT_LANDING ='):batch.index('def _deviations(')]
@@ -105,6 +105,8 @@ def build(weights, output, own, valuation, frontier=False, rotated=False, fog=Fa
                     value += _V5_VALUE_MIX * (_v5_value(future, me) - value)
                 v.append(float(value))''')
     source=replace(source,'Base code: yan-v1', 'Additional yan-v5 work: twenty replay-trained action heads, rival identification,\ncontext-dependent style selection and 48-step cash evaluation.\nBase code: yan-v1')
+    from model_export import patch_networks
+    source=patch_networks(source,refit,student)
     compile(source,str(output),'exec')
     output.write_text(source)
 
@@ -120,4 +122,6 @@ if __name__=='__main__':
     p.add_argument('--deep',action='store_true')
     p.add_argument('--adaptive',action='store_true')
     p.add_argument('--paired',action='store_true')
-    a=p.parse_args();build(a.weights,a.output,a.own,a.value,a.frontier,a.rotated,a.fog,a.territory,a.deep,a.adaptive,a.paired)
+    p.add_argument('--refit',type=Path)
+    p.add_argument('--student',type=Path)
+    a=p.parse_args();build(a.weights,a.output,a.own,a.value,a.frontier,a.rotated,a.fog,a.territory,a.deep,a.adaptive,a.paired,a.refit,a.student)

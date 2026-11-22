@@ -1,6 +1,6 @@
 # yan-v5 对战实验
 
-对手为维护者已提交的 yan-v4。其原文件保存在 `opponents/yan-v4.py`，SHA-256 为 `a3d54e4672458e53f5dfd47444b59a25326f5d1592575f968a1a59f26c98b4b0`。比赛当前主力仍是 yan-v4。实验分支上的 submission.py 对应下表第一版自适应候选。
+对手为维护者已提交的 yan-v4。其原文件保存在 `opponents/yan-v4.py`，SHA-256 为 `a3d54e4672458e53f5dfd47444b59a25326f5d1592575f968a1a59f26c98b4b0`。比赛当前主力仍是 yan-v4。实验分支上的 submission.py 对应 responder，完整验收状态见逐局记录。
 
 [实验预登记](design.json)固定了 20 个策略 ID、当时排名和开发、验收种子。[官方快照一](https://github.com/JUZI1/carbon-league-replays/tree/685b50c0d4acedc12d67370b58b3e311f24faed8)、[官方快照二](https://github.com/JUZI1/carbon-league-replays/tree/1bbadc777c42f20537e93637a1109270b0b18b23)及仓库 replays/top-five 共提供 272 张不同地图的完整对局。前二十共出场 471 次。每步只用本方能看到的信息建立碳量估计。训练动作取下一帧的已执行动作；另以未来真实资金分差训练估值。训练和验证按地图和种子隔离。
 
@@ -33,3 +33,14 @@ CARBON_DEBUG=1 python scripts/selfplay.py --candidate /tmp/portfolio.py --seeds 
 在另两项开发对照中，rotation 和 cartographer 都在 128484274 换边两胜。rotation 分别领先 321.53、556.83 分。cartographer 领先 318.67、209.35 分。逐回放还发现，原选择器对排名和保持当前风格的奖励过大，四张留出地图的八个席位上始终选择第一名。第一轮开发成绩不能归功于己方换风格。[原选择记录](routing-validation.json)
 
 responder 用训练地图上的长期平均表现校正各风格的分数，另按对手风格概率加入对阵收益，并在多步推演中继续使用两边的风格。对给定局面未来 12、32、72 步收益超过预估的示范动作会得到更高训练权重。在同一批回放的每个席位上，修正后实际选用 4–9 种策略，各切换 9–26 次。[修正后的选择记录](routing-responder.json)
+
+
+[前二十的逐风格统计](top20.md)和[候选构建清单及文件哈希](candidates.json)可用于复核。responder 在开发图 128484274 两边都获胜，另一张图一胜一负，四局场均分差约 +203 分。固定四图的验收单独记录。
+
+multistyle 使用同样的教师数据重新拟合整张 96 通道网络，并将真实未来资金分差用于价值训练。运行时己方和对手可在同一批推理中使用不同的风格嵌入。longlook 在同一根策略上加入 32 通道小网络用于部分中间推演，关键候选仍由大网络比较。模型训练在本机 MPS 上完成，比赛策略使用 PyTorch CPU。两种候选都于首轮验收结果揭晓前完成构建。
+
+```sh
+python experiments/v5/rollout_data.py /tmp/v5-boards experiments/v5/validation.json /path/to/current /path/to/older replays/top-five
+python experiments/v5/refit.py /tmp/v5-boards experiments/v5/validation.json /tmp/full-refit.npz /tmp/refit-validation.json
+python experiments/v5/distill.py /tmp/v5-boards experiments/v5/validation.json /tmp/student.npz /tmp/student-validation.json
+```
