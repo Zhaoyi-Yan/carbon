@@ -53,7 +53,7 @@ class SelfPlayTests(unittest.TestCase):
             candidate.write_bytes(source)
             frozen = ("missing-fixture-ref", hashlib.sha256(source).hexdigest(), "example.py")
             output = Path(tmp) / "games.jsonl"
-            with (patch.dict(selfplay.FROZEN, {"yan-v4": frozen}),
+            with (patch.dict(selfplay.FROZEN, {"yan-v5": frozen}),
                   contextlib.redirect_stderr(io.StringIO()) as stderr,
                   self.assertRaises(SystemExit) as exc):
                 selfplay.main(["--candidate", str(candidate), "--seeds", "42", "--output", str(output)])
@@ -62,11 +62,11 @@ class SelfPlayTests(unittest.TestCase):
             self.assertFalse(output.exists())
 
     def test_packaged_opponents_match_submitted_versions(self):
-        for name in ("yan-v2", "yan-v3", "yan-v4"):
+        for name in ("yan-v2", "yan-v3", "yan-v4", "yan-v5"):
             with self.subTest(name=name), patch.object(selfplay.subprocess, "run", side_effect=FileNotFoundError):
                 recovered, _, source = selfplay.source_for(name)
                 self.assertEqual(recovered, name)
-                self.assertEqual(source, (selfplay.ROOT / "opponents" / (name + ".py")).read_bytes())
+                self.assertEqual(source, (selfplay.ROOT / selfplay.FROZEN[name][2]).read_bytes())
 
     def test_custom_baseline_delegates_to_paired_arena(self):
         with tempfile.TemporaryDirectory() as tmp:
