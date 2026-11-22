@@ -2,12 +2,11 @@
 Source: https://117.72.210.134/source/d679ed45ab595e8b7bb1ea51c3451154
 The policy, critic, belief tracker, and rollout engine are inherited from
 that public strategy, including the upstream credit to Ryanx for the engine.
-This version adds rotational policy averaging, adaptive search width and depth, and terminal banking.
+This version adds rotational policy and value averaging, wider search, and terminal banking.
 """
 
 import base64
 import io
-from math import log
 import os
 import numpy as np
 
@@ -575,9 +574,9 @@ def _probs(l):
 
 def _root_policy(encoded):
     original_w, original_b = _POLICY.forward(encoded, _SID)
-    workers = 0.64 * original_w
-    bases = 0.64 * original_b
-    for turns, weight in ((2, 0.36),):
+    workers = 0.58 * original_w
+    bases = 0.58 * original_b
+    for turns, weight in ((2, 0.28), (1, 0.07), (3, 0.07)):
         transformed = np.rot90(encoded, turns, axes=(1, 2)).copy()
         rotate_action = [0] + [1 + (index - 1 - turns) % 4 for index in range(1, 5)]
         for start in (25, 30):
@@ -998,18 +997,18 @@ def _turn(o, configuration, acts):
     return {'players': s2.players, 'step': s2.step, 'carbon': s2.carbon, '_st': s2}
 
 _S_START = 0          # first turn searched
-_S_K = 42             # joint moves compared at most
+_S_K = 36             # joint moves compared at most
 _S_GEN = ((0.0, 4), (1.25, 7), (2.0, 8), (0.75, 4), (3.5, 7))     # the candidates after the policy's own, in this order: (temperature of the
                       # workers' logits, how many); temperature 0.0: the policy's own move with one worker's move changed to its next most likely one
 _S_DUPS = 8           # so many samples in a row that were all seen before: no more at that temperature
 _S_M = 1              # rollouts per move at first
-_S_MMAX = 2           # ... for the last two moves, when there is time
-_S_STAGES = ((1, 0.5), (3, 0.33), (5, 0.18))       # (turns ahead, the share of the candidates that goes on from there): two at least, the policy's own among them
+_S_MMAX = 1           # ... for the last two moves, when there is time
+_S_STAGES = ((1, 0.5), (4, 0.25))       # (turns ahead, the share of the candidates that goes on from there): two at least, the policy's own among them
 _S_D2 = 7             # turns played ahead by the ones left
-_S_FILL = 0.84        # the plan of the whole search may take this share of the time left
+_S_FILL = 0.90        # the plan of the whole search may take this share of the time left
 _S_ROWS = 32          # rows in one network pass at most (every size up to it is warmed up at import)
 _S_EPS = 0.0
-_S_ABORT = 0.75       # seconds after the call began: no network pass that would end past this is started (0.62 until 11-12: the search now runs
+_S_ABORT = 0.69       # seconds after the call began: no network pass that would end past this is started (0.62 until 11-12: the search now runs
                       # to this limit on most turns of a slow machine, and one move of 598 took 0.80 s on a busy one)
 _S_SAFE = 1.3         # ... at this multiple of the measured costs, the larger of the smoothed and the last one
 _S_CFIX = 0.004       # seconds a network pass takes besides its rows (a guess; the rows are measured)
@@ -1296,35 +1295,22 @@ def _search(obs, configuration, est, act0, lw0, lb0, prev, t0, home=()):
     if not _SEARCH_OK or step < _S_START or step > LAST_TURN:
         return act0
     net = _net()
-    M = _S_M
-    D2 = min(_S_D2, LAST_TURN + 1 - step)
+    M = _S_M; D2 = _S_D2
+    stages = {d: k for d, k in _S_STAGES if d < D2}
     players = obs['players']
     full = [1.0] * N
     root = {'players': players, 'trees': obs.get('trees') or {}, 'step': step, 'player': me, 'carbon': [float(c) for c in est],
             'remainingOverageTime': obs.get('remainingOverageTime', 0)}
     seed0 = int(1000003 * (step + 1) + 17 * me) % (2 ** 31)
-    most = 2
-    if _S_COST[0] > 0.0:
+    most = _S_K
+    if _S_COST[0] > 0.0:            # the most candidates whose whole plan fits the time left at the measured costs
         left = _S_FILL * (_S_ABORT - (_time.perf_counter() - t0))
-        best_plan = -float('inf')
-        for depth in sorted({min(D2, candidate) for candidate in (2, 3, 5, 7)}):
-            for replies in (1, 2):
-                if replies == 2 and step < 25:
-                    continue
-                width = 2
-                for n in range(3, _S_K + 1):
-                    rows, steps, passes = _plan(n, depth)
-                    predicted = replies * (rows * _S_COST[0] + steps * _S_COST[1] + passes * _S_CFIX)
-                    if predicted > left:
-                        break
-                    width = n
-                merit = log(width) + 0.13 * depth + (0.27 if replies == 2 else 0)
-                if width >= 3 and merit > best_plan:
-                    best_plan = merit
-                    most, D2, M = width, depth, replies
-        if best_plan == -float('inf'):
-            D2 = min(D2, 2)
-    stages = {d: k for d, k in _S_STAGES if d < D2}
+        most = 2
+        for n in range(3, _S_K + 1):
+            rows, steps, passes = _plan(n, D2)
+            if M * (rows * _S_COST[0] + steps * _S_COST[1]) + passes * _S_CFIX > left:
+                break
+            most = n
     cands = [act0]; keys = {tuple(sorted(act0.items()))}
     rng = np.random.RandomState(seed0)
     fixed = {wid: act0.get(wid) for wid in home} if _S_HOMEFIX else None
@@ -1372,7 +1358,7 @@ def _search(obs, configuration, est, act0, lw0, lb0, prev, t0, home=()):
         _S_COST[i] = x if _S_COST[i] == 0.0 else 0.5 * _S_COST[i] + 0.5 * x
         _S_COST[i + 2] = x
 
-    def look(live, both):
+    def look(live, both, ensemble=False):
         """Our value of every board; with `both` each side's move logits per board (lw, lb, lw_opp, lb_opp), else (lw, lb, our input row)."""
         tp = _time.perf_counter()
         w = 2 if both else 1
@@ -1395,6 +1381,16 @@ def _search(obs, configuration, est, act0, lw0, lb0, prev, t0, home=()):
                     lw, lb, _ = _RNET(X, _SID)
                     if _S_RTEMP != 1.0:
                         lw = lw / _S_RTEMP; lb = lb / _S_RTEMP
+            if ensemble and not both:
+                extra_cost = _S_CFIX + n * max(_S_COST[0], _S_COST[2])
+                if _time.perf_counter() - t0 + 1.45 * extra_cost < _S_ABORT:
+                    rotated = np.rot90(X, 2, axes=(-2, -1)).copy()
+                    directional = [0, 3, 4, 1, 2]
+                    for start in (25, 30):
+                        rotated[:, start:start + 5] = rotated[:, [start + i for i in directional]].copy()
+                    reflected = net(rotated, _SID, S)[2]
+                    vv = 0.63 * vv + 0.37 * reflected
+                    passes += 1
             for board, value in zip(part, vv):
                 future = board[2]
                 horizon = LAST_TURN + 1 - future['step']
@@ -1475,7 +1471,7 @@ def _search(obs, configuration, est, act0, lw0, lb0, prev, t0, home=()):
         if late((2 if both else 1) * n, n if both else 0):
             break
         if n:
-            v, pol = look(live, both)
+            v, pol = look(live, both, ensemble=(t == D2))
             for b, x in zip(live, v):
                 val[b[0], b[1]] = x
         for b in run:
@@ -1510,7 +1506,7 @@ def _search(obs, configuration, est, act0, lw0, lb0, prev, t0, home=()):
             if late((2 if t < D2 else 1) * len(live), len(live) if t < D2 else 0):
                 whole = False               # a round cut short is dropped
                 break
-            v, pol = look(live, t < D2)
+            v, pol = look(live, t < D2, ensemble=(t == D2))
             if t == D2:
                 for b, x in zip(live, v):
                     got[b[0], b[1]] = x
