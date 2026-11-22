@@ -1,0 +1,788 @@
+{
+  "design": [
+    {
+      "fold": "dev",
+      "seat": 0,
+      "turn": 190,
+      "source": "01-qualifying.jsonl",
+      "seed": 929349546,
+      "layout": "b92c44f70f13fa1ac9d886afff9bbc6cd5b5736610a0a3862f50623497a9046d"
+    },
+    {
+      "fold": "dev",
+      "seat": 1,
+      "turn": 150,
+      "source": "01-qualifying.jsonl",
+      "seed": 10723257,
+      "layout": "461f2bd868e7b0758f145e53f8672bcc26c90ee1a97fda67ac6a550c95588882"
+    },
+    {
+      "fold": "dev",
+      "seat": 0,
+      "turn": 150,
+      "source": "02-qualifying.jsonl",
+      "seed": 399129693,
+      "layout": "b0a9ccc6f47a6e7443ec6ab02ac5480a943fc120758f40887065dc7475e48e68"
+    },
+    {
+      "fold": "dev",
+      "seat": 1,
+      "turn": 190,
+      "source": "02-qualifying.jsonl",
+      "seed": 598417352,
+      "layout": "e25e17fb15ec0fc4ae7e588a22c283fc84e901b0a191234a62b959aaac77742a"
+    },
+    {
+      "fold": "dev",
+      "seat": 0,
+      "turn": 190,
+      "source": "03-qualifying.jsonl",
+      "seed": 847467740,
+      "layout": "4b4e5af51765c64a32c9d20cd16f388962e920cdbc00533697c21f7d5111116a"
+    },
+    {
+      "fold": "dev",
+      "seat": 1,
+      "turn": 150,
+      "source": "03-qualifying.jsonl",
+      "seed": 199255653,
+      "layout": "2c81ecba392df2698cf6147d5bb6b6108accba207c77bdd8759b6651d1d6c25e"
+    },
+    {
+      "fold": "dev",
+      "seat": 0,
+      "turn": 150,
+      "source": "04-qualifying.jsonl",
+      "seed": 320084676,
+      "layout": "81871b8fcf9bd6e0244ad131fa0e4408fda0d3415f3ed25e10ed1d48292708b2"
+    },
+    {
+      "fold": "dev",
+      "seat": 1,
+      "turn": 190,
+      "source": "04-qualifying.jsonl",
+      "seed": 828184453,
+      "layout": "a76e25cf7948ce21f251fc600675a63752c164be385c6efa605af2d1bf4a3295"
+    },
+    {
+      "fold": "hold",
+      "seat": 0,
+      "turn": 190,
+      "source": "05-qualifying.jsonl",
+      "seed": 459926778,
+      "layout": "611ebe21c639a88085be8b15044bc693c8d1d38f43391984a5397584ba562187"
+    },
+    {
+      "fold": "hold",
+      "seat": 1,
+      "turn": 150,
+      "source": "05-qualifying.jsonl",
+      "seed": 582247071,
+      "layout": "09f1141e843504f11e3d54de084834c006dee8a2152e9a46d4d14707169348ea"
+    },
+    {
+      "fold": "hold",
+      "seat": 0,
+      "turn": 150,
+      "source": "06-qualifying.jsonl",
+      "seed": 919005373,
+      "layout": "5836523a491eca0e0a5674ae78b5282fc81dd17e008165aba8947c5dc2d06943"
+    },
+    {
+      "fold": "hold",
+      "seat": 1,
+      "turn": 190,
+      "source": "06-qualifying.jsonl",
+      "seed": 353930716,
+      "layout": "824296261d0bfb7c055d1dda3a1d9b8dbd98bbf25e3ef31b9f1ebb476ec0484e"
+    },
+    {
+      "fold": "hold",
+      "seat": 0,
+      "turn": 190,
+      "source": "07-qualifying.jsonl",
+      "seed": 437720332,
+      "layout": "4f71f23396c43700bed86f3f536ec1d9c3eda1fc980b2a3c6517560968e8d7a6"
+    },
+    {
+      "fold": "hold",
+      "seat": 1,
+      "turn": 150,
+      "source": "07-qualifying.jsonl",
+      "seed": 24923524,
+      "layout": "0dbabd0f3bd0fec0bad27661be2196be72198e0617cbcf29773d03a20ff93da0"
+    },
+    {
+      "fold": "hold",
+      "seat": 0,
+      "turn": 150,
+      "source": "08-qualifying.jsonl",
+      "seed": 102253612,
+      "layout": "7bdc1a3fd629b525af6341df73cb6b101cf45071ff9ad6817c3d1a045c5ea5a4"
+    },
+    {
+      "fold": "hold",
+      "seat": 1,
+      "turn": 190,
+      "source": "08-qualifying.jsonl",
+      "seed": 222684543,
+      "layout": "e63c069fccc64b128e1434eab317831bdbd86af228de6838a191dcd0792541e9"
+    }
+  ],
+  "rules": [
+    "incumbent",
+    "cash",
+    "projected",
+    "productive_assets",
+    "pursuit",
+    "reserve"
+  ],
+  "method": "One branch chooses a policy for 25 turns, then both branches use exactly the same public score-based automatic router until the official terminal. Frozen v6 reacts independently after the historical prefix. Both policies use fixed width 4/depth 2/one reply/three-ply tail. Each old map appears once. Selection maximizes dev terminal wins, then mean cash. No current qualification maps used.",
+  "cases": [
+    {
+      "fold": "dev",
+      "seat": 0,
+      "turn": 190,
+      "source": "01-qualifying.jsonl",
+      "seed": 929349546,
+      "layout": "b92c44f70f13fa1ac9d886afff9bbc6cd5b5736610a0a3862f50623497a9046d",
+      "features": {
+        "cash": 245.56,
+        "projected": 258.75,
+        "trees": -7,
+        "workers": 0,
+        "normal": "reserve"
+      },
+      "arms": {
+        "pursuit": {
+          "end": 299,
+          "margin": -10.07,
+          "marks": {
+            "200": 199.35,
+            "215": -624.97,
+            "240": -104.34,
+            "299": -10.07
+          }
+        },
+        "reserve": {
+          "end": 299,
+          "margin": 430.52,
+          "marks": {
+            "200": 142.55,
+            "215": 198.43,
+            "240": 357.94,
+            "299": 430.52
+          }
+        }
+      }
+    },
+    {
+      "fold": "dev",
+      "seat": 1,
+      "turn": 150,
+      "source": "01-qualifying.jsonl",
+      "seed": 10723257,
+      "layout": "461f2bd868e7b0758f145e53f8672bcc26c90ee1a97fda67ac6a550c95588882",
+      "features": {
+        "cash": -54.64,
+        "projected": -169.68,
+        "trees": 5,
+        "workers": 0,
+        "normal": "pursuit"
+      },
+      "arms": {
+        "pursuit": {
+          "end": 299,
+          "margin": 73.73,
+          "marks": {
+            "160": 235.93,
+            "175": 29.03,
+            "200": -78.17,
+            "299": 73.73
+          }
+        },
+        "reserve": {
+          "end": 299,
+          "margin": 521.47,
+          "marks": {
+            "160": 96.27,
+            "175": -32.89,
+            "200": 108.16,
+            "299": 521.47
+          }
+        }
+      }
+    },
+    {
+      "fold": "dev",
+      "seat": 0,
+      "turn": 150,
+      "source": "02-qualifying.jsonl",
+      "seed": 399129693,
+      "layout": "b0a9ccc6f47a6e7443ec6ab02ac5480a943fc120758f40887065dc7475e48e68",
+      "features": {
+        "cash": -249.18,
+        "projected": 471.2,
+        "trees": -2,
+        "workers": -1,
+        "normal": "pursuit"
+      },
+      "arms": {
+        "pursuit": {
+          "end": 299,
+          "margin": -187.3,
+          "marks": {
+            "160": 214.55,
+            "175": -61.13,
+            "200": 418.57,
+            "299": -187.3
+          }
+        },
+        "reserve": {
+          "end": 299,
+          "margin": 728.78,
+          "marks": {
+            "160": 469.15,
+            "175": 536.8,
+            "200": 231.32,
+            "299": 728.78
+          }
+        }
+      }
+    },
+    {
+      "fold": "dev",
+      "seat": 1,
+      "turn": 190,
+      "source": "02-qualifying.jsonl",
+      "seed": 598417352,
+      "layout": "e25e17fb15ec0fc4ae7e588a22c283fc84e901b0a191234a62b959aaac77742a",
+      "features": {
+        "cash": 581.82,
+        "projected": 591.81,
+        "trees": -4,
+        "workers": 0,
+        "normal": "reserve"
+      },
+      "arms": {
+        "pursuit": {
+          "end": 299,
+          "margin": 206.46,
+          "marks": {
+            "200": 510.41,
+            "215": 486.11,
+            "240": 204.71,
+            "299": 206.46
+          }
+        },
+        "reserve": {
+          "end": 299,
+          "margin": 553.22,
+          "marks": {
+            "200": 526.73,
+            "215": 466.15,
+            "240": 476.99,
+            "299": 553.22
+          }
+        }
+      }
+    },
+    {
+      "fold": "dev",
+      "seat": 0,
+      "turn": 190,
+      "source": "03-qualifying.jsonl",
+      "seed": 847467740,
+      "layout": "4b4e5af51765c64a32c9d20cd16f388962e920cdbc00533697c21f7d5111116a",
+      "features": {
+        "cash": 90.68,
+        "projected": 171.67,
+        "trees": -2,
+        "workers": 0,
+        "normal": "pursuit"
+      },
+      "arms": {
+        "pursuit": {
+          "end": 299,
+          "margin": 462.74,
+          "marks": {
+            "200": 26.88,
+            "215": 304.6,
+            "240": 396.69,
+            "299": 462.74
+          }
+        },
+        "reserve": {
+          "end": 299,
+          "margin": -58.52,
+          "marks": {
+            "200": -16.51,
+            "215": 559.0,
+            "240": -259.8,
+            "299": -58.52
+          }
+        }
+      }
+    },
+    {
+      "fold": "dev",
+      "seat": 1,
+      "turn": 150,
+      "source": "03-qualifying.jsonl",
+      "seed": 199255653,
+      "layout": "2c81ecba392df2698cf6147d5bb6b6108accba207c77bdd8759b6651d1d6c25e",
+      "features": {
+        "cash": -1249.45,
+        "projected": -1308.41,
+        "trees": -5,
+        "workers": 0,
+        "normal": "pursuit"
+      },
+      "arms": {
+        "pursuit": {
+          "end": 299,
+          "margin": -809.13,
+          "marks": {
+            "160": -1408.54,
+            "175": -1020.96,
+            "200": -954.93,
+            "299": -809.13
+          }
+        },
+        "reserve": {
+          "end": 299,
+          "margin": -1604.3,
+          "marks": {
+            "160": -1408.54,
+            "175": -1164.97,
+            "200": -1112.26,
+            "299": -1604.3
+          }
+        }
+      }
+    },
+    {
+      "fold": "dev",
+      "seat": 0,
+      "turn": 150,
+      "source": "04-qualifying.jsonl",
+      "seed": 320084676,
+      "layout": "81871b8fcf9bd6e0244ad131fa0e4408fda0d3415f3ed25e10ed1d48292708b2",
+      "features": {
+        "cash": -168.11,
+        "projected": -103.51,
+        "trees": 3,
+        "workers": 0,
+        "normal": "pursuit"
+      },
+      "arms": {
+        "pursuit": {
+          "end": 299,
+          "margin": 2.49,
+          "marks": {
+            "160": -59.95,
+            "175": -245.0,
+            "200": 201.32,
+            "299": 2.49
+          }
+        },
+        "reserve": {
+          "end": 299,
+          "margin": -225.47,
+          "marks": {
+            "160": -83.61,
+            "175": 120.77,
+            "200": 391.87,
+            "299": -225.47
+          }
+        }
+      }
+    },
+    {
+      "fold": "dev",
+      "seat": 1,
+      "turn": 190,
+      "source": "04-qualifying.jsonl",
+      "seed": 828184453,
+      "layout": "a76e25cf7948ce21f251fc600675a63752c164be385c6efa605af2d1bf4a3295",
+      "features": {
+        "cash": 639.29,
+        "projected": 752.02,
+        "trees": 2,
+        "workers": 0,
+        "normal": "reserve"
+      },
+      "arms": {
+        "pursuit": {
+          "end": 299,
+          "margin": 187.06,
+          "marks": {
+            "200": 660.97,
+            "215": 820.66,
+            "240": 962.42,
+            "299": 187.06
+          }
+        },
+        "reserve": {
+          "end": 299,
+          "margin": 893.27,
+          "marks": {
+            "200": 1007.26,
+            "215": 503.91,
+            "240": 1343.43,
+            "299": 893.27
+          }
+        }
+      }
+    },
+    {
+      "fold": "hold",
+      "seat": 0,
+      "turn": 190,
+      "source": "05-qualifying.jsonl",
+      "seed": 459926778,
+      "layout": "611ebe21c639a88085be8b15044bc693c8d1d38f43391984a5397584ba562187",
+      "features": {
+        "cash": 986.13,
+        "projected": 1241.47,
+        "trees": -2,
+        "workers": 0,
+        "normal": "reserve"
+      },
+      "arms": {
+        "pursuit": {
+          "end": 299,
+          "margin": 717.01,
+          "marks": {
+            "200": 1384.07,
+            "215": 880.66,
+            "240": 784.96,
+            "299": 717.01
+          }
+        },
+        "reserve": {
+          "end": 299,
+          "margin": 620.67,
+          "marks": {
+            "200": 1323.76,
+            "215": 501.9,
+            "240": 593.99,
+            "299": 620.67
+          }
+        }
+      }
+    },
+    {
+      "fold": "hold",
+      "seat": 1,
+      "turn": 150,
+      "source": "05-qualifying.jsonl",
+      "seed": 582247071,
+      "layout": "09f1141e843504f11e3d54de084834c006dee8a2152e9a46d4d14707169348ea",
+      "features": {
+        "cash": -1117.54,
+        "projected": -1122.74,
+        "trees": 3,
+        "workers": 0,
+        "normal": "pursuit"
+      },
+      "arms": {
+        "pursuit": {
+          "end": 299,
+          "margin": -561.5,
+          "marks": {
+            "160": -1168.79,
+            "175": -756.34,
+            "200": -931.03,
+            "299": -561.5
+          }
+        },
+        "reserve": {
+          "end": 299,
+          "margin": -276.62,
+          "marks": {
+            "160": -1168.79,
+            "175": -517.72,
+            "200": -448.74,
+            "299": -276.62
+          }
+        }
+      }
+    },
+    {
+      "fold": "hold",
+      "seat": 0,
+      "turn": 150,
+      "source": "06-qualifying.jsonl",
+      "seed": 919005373,
+      "layout": "5836523a491eca0e0a5674ae78b5282fc81dd17e008165aba8947c5dc2d06943",
+      "features": {
+        "cash": -395.91,
+        "projected": -231.65,
+        "trees": -3,
+        "workers": 0,
+        "normal": "pursuit"
+      },
+      "arms": {
+        "pursuit": {
+          "end": 299,
+          "margin": -336.03,
+          "marks": {
+            "160": -189.65,
+            "175": -131.65,
+            "200": -1258.81,
+            "299": -336.03
+          }
+        },
+        "reserve": {
+          "end": 299,
+          "margin": -439.61,
+          "marks": {
+            "160": -201.53,
+            "175": -676.13,
+            "200": -455.18,
+            "299": -439.61
+          }
+        }
+      }
+    },
+    {
+      "fold": "hold",
+      "seat": 1,
+      "turn": 190,
+      "source": "06-qualifying.jsonl",
+      "seed": 353930716,
+      "layout": "824296261d0bfb7c055d1dda3a1d9b8dbd98bbf25e3ef31b9f1ebb476ec0484e",
+      "features": {
+        "cash": 75.92,
+        "projected": 52.96,
+        "trees": 2,
+        "workers": 0,
+        "normal": "pursuit"
+      },
+      "arms": {
+        "pursuit": {
+          "end": 299,
+          "margin": 440.54,
+          "marks": {
+            "200": -81.92,
+            "215": 271.92,
+            "240": 648.49,
+            "299": 440.54
+          }
+        },
+        "reserve": {
+          "end": 299,
+          "margin": 497.19,
+          "marks": {
+            "200": -15.36,
+            "215": 237.68,
+            "240": 625.56,
+            "299": 497.19
+          }
+        }
+      }
+    },
+    {
+      "fold": "hold",
+      "seat": 0,
+      "turn": 190,
+      "source": "07-qualifying.jsonl",
+      "seed": 437720332,
+      "layout": "4f71f23396c43700bed86f3f536ec1d9c3eda1fc980b2a3c6517560968e8d7a6",
+      "features": {
+        "cash": 155.05,
+        "projected": -44.17,
+        "trees": 6,
+        "workers": 0,
+        "normal": "pursuit"
+      },
+      "arms": {
+        "pursuit": {
+          "end": 299,
+          "margin": 45.8,
+          "marks": {
+            "200": -14.89,
+            "215": -33.33,
+            "240": 357.78,
+            "299": 45.8
+          }
+        },
+        "reserve": {
+          "end": 299,
+          "margin": 165.28,
+          "marks": {
+            "200": -113.71,
+            "215": 129.04,
+            "240": -108.53,
+            "299": 165.28
+          }
+        }
+      }
+    },
+    {
+      "fold": "hold",
+      "seat": 1,
+      "turn": 150,
+      "source": "07-qualifying.jsonl",
+      "seed": 24923524,
+      "layout": "0dbabd0f3bd0fec0bad27661be2196be72198e0617cbcf29773d03a20ff93da0",
+      "features": {
+        "cash": -900.56,
+        "projected": -963.49,
+        "trees": -2,
+        "workers": 0,
+        "normal": "pursuit"
+      },
+      "arms": {
+        "pursuit": {
+          "end": 299,
+          "margin": -1097.99,
+          "marks": {
+            "160": -1030.5,
+            "175": -1028.8,
+            "200": -1145.03,
+            "299": -1097.99
+          }
+        },
+        "reserve": {
+          "end": 299,
+          "margin": -954.37,
+          "marks": {
+            "160": -815.61,
+            "175": -912.46,
+            "200": -967.51,
+            "299": -954.37
+          }
+        }
+      }
+    },
+    {
+      "fold": "hold",
+      "seat": 0,
+      "turn": 150,
+      "source": "08-qualifying.jsonl",
+      "seed": 102253612,
+      "layout": "7bdc1a3fd629b525af6341df73cb6b101cf45071ff9ad6817c3d1a045c5ea5a4",
+      "features": {
+        "cash": -46.56,
+        "projected": -591.15,
+        "trees": -2,
+        "workers": 1,
+        "normal": "pursuit"
+      },
+      "arms": {
+        "pursuit": {
+          "end": 299,
+          "margin": -700.86,
+          "marks": {
+            "160": -622.52,
+            "175": -295.07,
+            "200": -378.71,
+            "299": -700.86
+          }
+        },
+        "reserve": {
+          "end": 299,
+          "margin": -1109.52,
+          "marks": {
+            "160": -432.84,
+            "175": -536.19,
+            "200": -503.74,
+            "299": -1109.52
+          }
+        }
+      }
+    },
+    {
+      "fold": "hold",
+      "seat": 1,
+      "turn": 190,
+      "source": "08-qualifying.jsonl",
+      "seed": 222684543,
+      "layout": "e63c069fccc64b128e1434eab317831bdbd86af228de6838a191dcd0792541e9",
+      "features": {
+        "cash": 455.87,
+        "projected": 421.5,
+        "trees": 3,
+        "workers": 0,
+        "normal": "reserve"
+      },
+      "arms": {
+        "pursuit": {
+          "end": 299,
+          "margin": 773.39,
+          "marks": {
+            "200": 351.65,
+            "215": 871.97,
+            "240": 1120.23,
+            "299": 773.39
+          }
+        },
+        "reserve": {
+          "end": 299,
+          "margin": 339.97,
+          "marks": {
+            "200": 355.35,
+            "215": 1077.57,
+            "240": 1150.37,
+            "299": 339.97
+          }
+        }
+      }
+    }
+  ],
+  "dev": {
+    "incumbent": {
+      "wins": 6,
+      "mean": 177.44
+    },
+    "cash": {
+      "wins": 5,
+      "mean": 112.28
+    },
+    "projected": {
+      "wins": 6,
+      "mean": 226.79
+    },
+    "productive_assets": {
+      "wins": 4,
+      "mean": 199.19
+    },
+    "pursuit": {
+      "wins": 5,
+      "mean": -9.25
+    },
+    "reserve": {
+      "wins": 5,
+      "mean": 154.87
+    }
+  },
+  "chosen": "projected",
+  "holdout": {
+    "incumbent": {
+      "wins": 4,
+      "mean": -156.18
+    },
+    "cash": {
+      "wins": 4,
+      "mean": -134.16
+    },
+    "projected": {
+      "wins": 4,
+      "mean": -149.09
+    },
+    "productive_assets": {
+      "wins": 4,
+      "mean": -134.16
+    },
+    "pursuit": {
+      "wins": 4,
+      "mean": -89.95
+    },
+    "reserve": {
+      "wins": 4,
+      "mean": -144.63
+    }
+  }
+}
