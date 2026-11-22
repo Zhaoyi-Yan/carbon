@@ -1296,46 +1296,71 @@ def _banking_value(players, me, step):
     return (value[me] - value[1 - me]) / 3000.0
 
 
+_ROLLOUT_LANDING = tuple(tuple(move(pos, a) for a in range(5)) for pos in range(N))
+
+def _draw_rows(logits, cells, rng):
+    """One RandomState uniform per row, in original unit order."""
+    rows = logits[cells]
+    weights = np.exp((rows - rows.max(axis=1, keepdims=True)) / _TEMP)
+    probabilities = weights / weights.sum(axis=1, keepdims=True)
+    cumulative = probabilities.cumsum(axis=1, dtype=np.float64)
+    cumulative /= cumulative[:, -1:]
+    choices = (rng.random_sample(len(cells))[:, None] >= cumulative).sum(axis=1)
+    return probabilities, choices
+
+
 def _sample(players, me, lw, lb, rng, step, fixed=None):
-    """The policy's move recipe of _act for one side, without the go-home rule: lw (225, 5), lb (225, 3).
-    fixed {worker id: move name or None}: workers whose move is given (the go-home moves of the policy's own, _S_HOMEFIX); they take their cells first."""
-    workers, _, bases, cash = parse(players)
-    act = {}; took = {}
-    nw = sum(1 for w in workers.values() if w[3] == me)
-    money = cash[me]
-    for bid, pos in bases[me]:
-        p = _probs(lb[pos])
-        a = rng.choice(3, p=p)
-        if a and money >= 30 and nw < 10:
-            act[bid] = BACT[a]; money -= 30; nw += 1; took[pos] = 'X'
-    for wid, a in (fixed or {}).items():
-        w = workers.get(wid)
-        if w is None:
+    cash, bases, units, _ = players[me]
+    actions, occupied = {}, {}
+    population = len(units)
+    if bases:
+        _, hires = _draw_rows(lb, list(bases.values()), rng)
+        for (key, pos), hire in zip(bases.items(), hires):
+            if hire and cash >= 30 and population < 10:
+                actions[key] = BACT[hire]
+                cash -= 30
+                population += 1
+                occupied[pos] = 'X'
+
+    for key, action in (fixed or {}).items():
+        if key not in units:
             continue
-        dst = move(w[0], WIDX.get(a or 'NONE', 0))
-        took[dst] = w[2] if took.get(dst) in (None, w[2]) else 'X'
-        if a:
-            act[wid] = a
-    cand = []
-    for wid, w in workers.items():
-        if w[3] == me and wid not in (fixed or {}):
-            p = _probs(lw[w[0]])
-            a = rng.choice(5, p=p)
-            cand.append((p[a], wid, w, p, a))
-    cand.sort(key=lambda c: -c[0])
-    own_bases = {pos for _, pos in bases[me]}
-    end = LAST_TURN - step < _BANK
-    for _, wid, w, p, a in cand:
-        order = [a] + [int(k) for k in np.argsort(-p) if k != a]
-        for k in order:
-            dst = move(w[0], k)
-            t_ = took.get(dst)
-            if t_ is None or (k == a and end and t_ == 'C' and w[2] == 'C' and dst in own_bases):
-                took[dst] = w[2] if t_ is None or t_ == w[2] else 'X'
-                if k:
-                    act[wid] = WACT[k]
-                break
-    return act
+        pos, _, role = units[key]
+        target = _ROLLOUT_LANDING[pos][WIDX.get(action or 'NONE', 0)]
+        role = 'C' if role == 'COLLECTOR' else 'P'
+        occupied[target] = role if occupied.get(target) in (None, role) else 'X'
+        if action:
+            actions[key] = action
+
+    free = [(key, unit) for key, unit in units.items() if not fixed or key not in fixed]
+    if not free:
+        return actions
+    probabilities, sampled = _draw_rows(lw, [unit[0] for _, unit in free], rng)
+    # Python's stable sort preserves the original unit order for ties.
+    priority = sorted(range(len(free)), key=lambda i: -probabilities[i, sampled[i]])
+    home = set(bases.values())
+    last_turns = LAST_TURN - step < _BANK
+    for i in priority:
+        key, (pos, _, role) = free[i]
+        role = 'C' if role == 'COLLECTOR' else 'P'
+        choice = int(sampled[i])
+        destinations = _ROLLOUT_LANDING[pos]
+        target = destinations[choice]
+        if target in occupied:
+            may_bank = last_turns and role == occupied[target] == 'C' and target in home
+            if not may_bank:
+                # Only conflicted units need to rank their remaining four actions.
+                for alternative in np.argsort(-probabilities[i]):
+                    target = destinations[alternative]
+                    if target not in occupied:
+                        choice = int(alternative)
+                        break
+                else:
+                    continue
+        occupied[target] = role
+        if choice:
+            actions[key] = WACT[choice]
+    return actions
 
 
 def _deviations(players, me, lw, act0, fixed, cap):
