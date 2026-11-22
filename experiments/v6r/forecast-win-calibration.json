@@ -1,6 +1,7 @@
 {
   "epoch": 1,
   "shrink": 0.0,
+  "unshrunk_epoch": 1,
   "scalar_phase_calibrations": {
     "cash": {
       "penalty": 2.0
@@ -15,5 +16,7 @@
       "penalty": 2.0
     }
   },
+  "labels": "Official winner in decisive games only. Draws excluded from binary win/loss scoring.",
+  "close_definition": "Absolute current cash margin <=200 with t>=75; late starts at 199 (100 moves left).",
   "best_single_on_calibration": "cash_economic"
 }

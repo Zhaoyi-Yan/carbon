@@ -28,6 +28,11 @@
         "brier": 0.11805,
         "ece5": 0.00872
       },
+      "global_unshrunk": {
+        "log_loss": 0.34302,
+        "brier": 0.11699,
+        "ece5": 0.0114
+      },
       "constant": {
         "log_loss": 0.69315,
         "brier": 0.25,
@@ -354,6 +359,11 @@
         "brier": 0.02921,
         "ece5": 0.02436
       },
+      "global_unshrunk": {
+        "log_loss": 0.0916,
+        "brier": 0.02915,
+        "ece5": 0.02064
+      },
       "constant": {
         "log_loss": 0.69315,
         "brier": 0.25,
@@ -408,6 +418,11 @@
         "brier": 0.21457,
         "ece5": 0.02737
       },
+      "global_unshrunk": {
+        "log_loss": 0.60909,
+        "brier": 0.21151,
+        "ece5": 0.03262
+      },
       "constant": {
         "log_loss": 0.69315,
         "brier": 0.25,
@@ -461,6 +476,11 @@
         "log_loss": 0.37064,
         "brier": 0.1184,
         "ece5": 0.08304
+      },
+      "global_unshrunk": {
+        "log_loss": 0.36972,
+        "brier": 0.11806,
+        "ece5": 0.06985
       },
       "constant": {
         "log_loss": 0.69315,
@@ -608,6 +628,11 @@
         "brier": 0.21588,
         "ece5": 0.0155
       },
+      "global_unshrunk": {
+        "log_loss": 0.61096,
+        "brier": 0.21458,
+        "ece5": 0.03959
+      },
       "constant": {
         "log_loss": 0.69315,
         "brier": 0.25,
@@ -661,6 +686,11 @@
         "log_loss": 0.46094,
         "brier": 0.15347,
         "ece5": 0.0425
+      },
+      "global_unshrunk": {
+        "log_loss": 0.45389,
+        "brier": 0.15133,
+        "ece5": 0.03757
       },
       "constant": {
         "log_loss": 0.69315,
@@ -716,6 +746,11 @@
         "brier": 0.07847,
         "ece5": 0.01525
       },
+      "global_unshrunk": {
+        "log_loss": 0.23047,
+        "brier": 0.07799,
+        "ece5": 0.01339
+      },
       "constant": {
         "log_loss": 0.69315,
         "brier": 0.25,
@@ -770,6 +805,11 @@
         "brier": 0.0201,
         "ece5": 0.01739
       },
+      "global_unshrunk": {
+        "log_loss": 0.06468,
+        "brier": 0.01984,
+        "ece5": 0.0144
+      },
       "constant": {
         "log_loss": 0.69315,
         "brier": 0.25,
@@ -794,5 +834,10 @@
       ],
       "games_logloss_improved": 35
     }
+  },
+  "sample": {
+    "draw_games_excluded": 0,
+    "decisive_games": 45,
+    "selection": "Final strict-score winner in decisive games"
   }
 }

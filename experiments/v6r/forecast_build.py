@@ -1,4 +1,15 @@
-"""Embed the short-horizon forecast in a compatible root-search leaf, preserving the native critic."""
+"""Embed the 20-step forecast in a compatible single-file policy.
+
+    python experiments/v6r/forecast_build.py strategy.py candidate.py
+    python experiments/v6r/forecast_build.py strategy.py fast.py --mode public20
+
+The default replaces one quarter of the native v5 economic subscore with a projected
+cash margin and keeps the existing final neural critic, rollout policy and search rules.
+public20 replaces that economic subscore with a standalone 20-step forecast and
+skips the native territory calculation at that leaf. The 0.25 fraction is an
+experimental search setting; reported cash-flow errors measure the forecast heads,
+not this mix or final game wins. The 50-step head is available via --short-share.
+"""
 import argparse
 import base64
 import json

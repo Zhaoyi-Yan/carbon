@@ -1,0 +1,494 @@
+{
+  "maps": [
+    {
+      "panel": "v6r-qual-02-canopy.jsonl",
+      "layout": "9a8025fbf3d8c2e06e35ee91d7724847c0d1148751960ff2342dde0ff21c875d",
+      "seed": 726545191,
+      "split": "test"
+    },
+    {
+      "panel": "v6r-qual-02-canopy.jsonl",
+      "layout": "dc248affa4752ff0324295ad0d1913b7666ef09be234c682acc3931cd5c7b160",
+      "seed": 246450597,
+      "split": "train"
+    },
+    {
+      "panel": "v6r-qual-02-canopy.jsonl",
+      "layout": "70518eb94e7ad7f7ea8ce5fdfce4ed0a26d88fd8e488bc76c52b1ceb248e99ee",
+      "seed": 428888107,
+      "split": "train"
+    },
+    {
+      "panel": "v6r-qual-02-canopy.jsonl",
+      "layout": "479d9d10d2bbc872d0b82b19c1df4fece1238530c2c9ce9146d109d02dc71790",
+      "seed": 206595965,
+      "split": "train"
+    },
+    {
+      "panel": "v6r-qual-02-canopy.jsonl",
+      "layout": "b4d28da5b321ecc0c4c7e343144b2284d4c522fbc0a5daf1eac70d142c2873b5",
+      "seed": 106612562,
+      "split": "train"
+    },
+    {
+      "panel": "v6r-qual-02-canopy.jsonl",
+      "layout": "7fc3361e159b655a8f1c3263db9a688ffc2154fbd9d7997f2da8fd44ef7a89cb",
+      "seed": 814754269,
+      "split": "train"
+    },
+    {
+      "panel": "v6r-qual-02-canopy.jsonl",
+      "layout": "dc1dbc58615093410497cfb5ae7d283652000db2a0f3593c9c79a9402d94f77d",
+      "seed": 170804287,
+      "split": "train"
+    },
+    {
+      "panel": "v6r-qual-02-canopy.jsonl",
+      "layout": "44e38413d971747914293a2bc554336ecb7d7ba5140c5d5c9764c8198df7d4c8",
+      "seed": 5705547,
+      "split": "test"
+    },
+    {
+      "panel": "v6r-qual-03-zenith.jsonl",
+      "layout": "4c706482a54364a1f1df6d4a693e5a594de79877125f020d725baefa7be0028f",
+      "seed": 93045347,
+      "split": "train"
+    },
+    {
+      "panel": "v6r-qual-03-zenith.jsonl",
+      "layout": "f40abdfa160140bfb4685a6849ea5859375e99f0f679324578402f5ce0a57b70",
+      "seed": 251962351,
+      "split": "train"
+    },
+    {
+      "panel": "v6r-qual-03-zenith.jsonl",
+      "layout": "cfd6a88215883dcf47d76efea7aaaa7d2ad771911cb2fbcf620e2f68324d1f8d",
+      "seed": 441312419,
+      "split": "train"
+    },
+    {
+      "panel": "v6r-qual-03-zenith.jsonl",
+      "layout": "3dee56e98fbdaff1eaa4d9fd8d4c85e094119d59eea0a1a82efd7b8c8eaa680c",
+      "seed": 655211420,
+      "split": "test"
+    },
+    {
+      "panel": "v6r-qual-03-zenith.jsonl",
+      "layout": "c47278dfc54b441e21e306d107362ada04046bac7e943e15a01969a86329da6a",
+      "seed": 337623618,
+      "split": "train"
+    },
+    {
+      "panel": "v6r-qual-03-zenith.jsonl",
+      "layout": "48959a6924b792761af0d0c5d97a2a614b113b2397b4c9a987429c9570970a5c",
+      "seed": 100786412,
+      "split": "train"
+    },
+    {
+      "panel": "v6r-qual-03-zenith.jsonl",
+      "layout": "7e54c22a1ea1e515b6c95e5d37fa3ade5007536709233b61c6cf0937d18f54c9",
+      "seed": 394772093,
+      "split": "train"
+    },
+    {
+      "panel": "v6r-qual-03-zenith.jsonl",
+      "layout": "88e04d68670b715d71b0068d4c3735d33631fc8d2a7bda12208ed2a9bd792f9a",
+      "seed": 424836188,
+      "split": "test"
+    }
+  ],
+  "source": {
+    "v6r-qual-02-canopy.jsonl": {
+      "sha": "1de686777afa2712959cc67e2685414a3bbeac418d7675076f6c50358f20e63f",
+      "games": [
+        {
+          "seed": 726545191,
+          "candidate_seat": 0,
+          "layout": "9a8025fbf3d8c2e06e35ee91d7724847c0d1148751960ff2342dde0ff21c875d",
+          "steps": 299
+        },
+        {
+          "seed": 726545191,
+          "candidate_seat": 1,
+          "layout": "9a8025fbf3d8c2e06e35ee91d7724847c0d1148751960ff2342dde0ff21c875d",
+          "steps": 299
+        },
+        {
+          "seed": 246450597,
+          "candidate_seat": 0,
+          "layout": "dc248affa4752ff0324295ad0d1913b7666ef09be234c682acc3931cd5c7b160",
+          "steps": 299
+        },
+        {
+          "seed": 246450597,
+          "candidate_seat": 1,
+          "layout": "dc248affa4752ff0324295ad0d1913b7666ef09be234c682acc3931cd5c7b160",
+          "steps": 299
+        },
+        {
+          "seed": 428888107,
+          "candidate_seat": 0,
+          "layout": "70518eb94e7ad7f7ea8ce5fdfce4ed0a26d88fd8e488bc76c52b1ceb248e99ee",
+          "steps": 299
+        },
+        {
+          "seed": 428888107,
+          "candidate_seat": 1,
+          "layout": "70518eb94e7ad7f7ea8ce5fdfce4ed0a26d88fd8e488bc76c52b1ceb248e99ee",
+          "steps": 299
+        },
+        {
+          "seed": 206595965,
+          "candidate_seat": 0,
+          "layout": "479d9d10d2bbc872d0b82b19c1df4fece1238530c2c9ce9146d109d02dc71790",
+          "steps": 299
+        },
+        {
+          "seed": 206595965,
+          "candidate_seat": 1,
+          "layout": "479d9d10d2bbc872d0b82b19c1df4fece1238530c2c9ce9146d109d02dc71790",
+          "steps": 299
+        },
+        {
+          "seed": 106612562,
+          "candidate_seat": 0,
+          "layout": "b4d28da5b321ecc0c4c7e343144b2284d4c522fbc0a5daf1eac70d142c2873b5",
+          "steps": 299
+        },
+        {
+          "seed": 106612562,
+          "candidate_seat": 1,
+          "layout": "b4d28da5b321ecc0c4c7e343144b2284d4c522fbc0a5daf1eac70d142c2873b5",
+          "steps": 299
+        },
+        {
+          "seed": 814754269,
+          "candidate_seat": 0,
+          "layout": "7fc3361e159b655a8f1c3263db9a688ffc2154fbd9d7997f2da8fd44ef7a89cb",
+          "steps": 299
+        },
+        {
+          "seed": 814754269,
+          "candidate_seat": 1,
+          "layout": "7fc3361e159b655a8f1c3263db9a688ffc2154fbd9d7997f2da8fd44ef7a89cb",
+          "steps": 299
+        },
+        {
+          "seed": 170804287,
+          "candidate_seat": 0,
+          "layout": "dc1dbc58615093410497cfb5ae7d283652000db2a0f3593c9c79a9402d94f77d",
+          "steps": 299
+        },
+        {
+          "seed": 170804287,
+          "candidate_seat": 1,
+          "layout": "dc1dbc58615093410497cfb5ae7d283652000db2a0f3593c9c79a9402d94f77d",
+          "steps": 299
+        },
+        {
+          "seed": 5705547,
+          "candidate_seat": 0,
+          "layout": "44e38413d971747914293a2bc554336ecb7d7ba5140c5d5c9764c8198df7d4c8",
+          "steps": 299
+        },
+        {
+          "seed": 5705547,
+          "candidate_seat": 1,
+          "layout": "44e38413d971747914293a2bc554336ecb7d7ba5140c5d5c9764c8198df7d4c8",
+          "steps": 299
+        }
+      ]
+    },
+    "v6r-qual-03-zenith.jsonl": {
+      "sha": "4fa1fa7091f542b99d2415e6a028aa5aa99201be7ba9ae4a685a176a511ba76c",
+      "games": [
+        {
+          "seed": 93045347,
+          "candidate_seat": 0,
+          "layout": "4c706482a54364a1f1df6d4a693e5a594de79877125f020d725baefa7be0028f",
+          "steps": 299
+        },
+        {
+          "seed": 93045347,
+          "candidate_seat": 1,
+          "layout": "4c706482a54364a1f1df6d4a693e5a594de79877125f020d725baefa7be0028f",
+          "steps": 299
+        },
+        {
+          "seed": 251962351,
+          "candidate_seat": 0,
+          "layout": "f40abdfa160140bfb4685a6849ea5859375e99f0f679324578402f5ce0a57b70",
+          "steps": 299
+        },
+        {
+          "seed": 251962351,
+          "candidate_seat": 1,
+          "layout": "f40abdfa160140bfb4685a6849ea5859375e99f0f679324578402f5ce0a57b70",
+          "steps": 299
+        },
+        {
+          "seed": 441312419,
+          "candidate_seat": 0,
+          "layout": "cfd6a88215883dcf47d76efea7aaaa7d2ad771911cb2fbcf620e2f68324d1f8d",
+          "steps": 299
+        },
+        {
+          "seed": 441312419,
+          "candidate_seat": 1,
+          "layout": "cfd6a88215883dcf47d76efea7aaaa7d2ad771911cb2fbcf620e2f68324d1f8d",
+          "steps": 299
+        },
+        {
+          "seed": 655211420,
+          "candidate_seat": 0,
+          "layout": "3dee56e98fbdaff1eaa4d9fd8d4c85e094119d59eea0a1a82efd7b8c8eaa680c",
+          "steps": 299
+        },
+        {
+          "seed": 655211420,
+          "candidate_seat": 1,
+          "layout": "3dee56e98fbdaff1eaa4d9fd8d4c85e094119d59eea0a1a82efd7b8c8eaa680c",
+          "steps": 299
+        },
+        {
+          "seed": 337623618,
+          "candidate_seat": 0,
+          "layout": "c47278dfc54b441e21e306d107362ada04046bac7e943e15a01969a86329da6a",
+          "steps": 299
+        },
+        {
+          "seed": 337623618,
+          "candidate_seat": 1,
+          "layout": "c47278dfc54b441e21e306d107362ada04046bac7e943e15a01969a86329da6a",
+          "steps": 299
+        },
+        {
+          "seed": 100786412,
+          "candidate_seat": 0,
+          "layout": "48959a6924b792761af0d0c5d97a2a614b113b2397b4c9a987429c9570970a5c",
+          "steps": 299
+        },
+        {
+          "seed": 100786412,
+          "candidate_seat": 1,
+          "layout": "48959a6924b792761af0d0c5d97a2a614b113b2397b4c9a987429c9570970a5c",
+          "steps": 299
+        },
+        {
+          "seed": 394772093,
+          "candidate_seat": 0,
+          "layout": "7e54c22a1ea1e515b6c95e5d37fa3ade5007536709233b61c6cf0937d18f54c9",
+          "steps": 299
+        },
+        {
+          "seed": 394772093,
+          "candidate_seat": 1,
+          "layout": "7e54c22a1ea1e515b6c95e5d37fa3ade5007536709233b61c6cf0937d18f54c9",
+          "steps": 299
+        },
+        {
+          "seed": 424836188,
+          "candidate_seat": 0,
+          "layout": "88e04d68670b715d71b0068d4c3735d33631fc8d2a7bda12208ed2a9bd792f9a",
+          "steps": 299
+        },
+        {
+          "seed": 424836188,
+          "candidate_seat": 1,
+          "layout": "88e04d68670b715d71b0068d4c3735d33631fc8d2a7bda12208ed2a9bd792f9a",
+          "steps": 299
+        }
+      ]
+    }
+  },
+  "training_rows": 5795,
+  "training_paid": 3753,
+  "horizon": 16,
+  "minimum_cargo": 35.0,
+  "label": "The same collector actually banked at least half its starting cargo in the following 16 turns before death. Referee bank transfers were attributed by worker ID; all recorded balances verified.",
+  "split": "Two of eight layout hashes from each panel, sorted then every fourth; both starting seats kept together. Only the new candidate side is fitted.",
+  "validation": {
+    "held_candidate": {
+      "state_only": {
+        "n": 1988,
+        "paid": 1237,
+        "auc": 0.8487858280040518,
+        "nll": 0.47012064965673983,
+        "brier": 0.15642841690954612
+      },
+      "state_and_played_action": {
+        "n": 1988,
+        "paid": 1237,
+        "auc": 0.8724126387129206,
+        "nll": 0.43514716620701577,
+        "brier": 0.14329643677300047
+      },
+      "carrier_deaths_before_return": 26
+    },
+    "held_v5": {
+      "state_only": {
+        "n": 2005,
+        "paid": 1215,
+        "auc": 0.8440068760743866,
+        "nll": 0.49021208664349003,
+        "brier": 0.1627882994181763
+      },
+      "state_and_played_action": {
+        "n": 2005,
+        "paid": 1215,
+        "auc": 0.8638203886023857,
+        "nll": 0.46033336120577734,
+        "brier": 0.15162221771101464
+      },
+      "carrier_deaths_before_return": 53
+    },
+    "held_both": {
+      "state_only": {
+        "n": 3993,
+        "paid": 2452,
+        "auc": 0.8459695458447885,
+        "nll": 0.4802091372997236,
+        "brier": 0.1596218966064666
+      },
+      "state_and_played_action": {
+        "n": 3993,
+        "paid": 2452,
+        "auc": 0.8676920031377265,
+        "nll": 0.4477938781961259,
+        "brier": 0.14747705054227633
+      },
+      "carrier_deaths_before_return": 79
+    },
+    "726545191": {
+      "state_only": {
+        "n": 989,
+        "paid": 599,
+        "auc": 0.8474551603099182,
+        "nll": 0.4798900608395016,
+        "brier": 0.1610183258885535
+      },
+      "state_and_played_action": {
+        "n": 989,
+        "paid": 599,
+        "auc": 0.8642695090107444,
+        "nll": 0.45275135959163665,
+        "brier": 0.1511467770834321
+      },
+      "carrier_deaths_before_return": 24
+    },
+    "5705547": {
+      "state_only": {
+        "n": 1040,
+        "paid": 655,
+        "auc": 0.8495271141072668,
+        "nll": 0.4637278770771902,
+        "brier": 0.15295601588251773
+      },
+      "state_and_played_action": {
+        "n": 1040,
+        "paid": 655,
+        "auc": 0.8748765738078715,
+        "nll": 0.4296672822077275,
+        "brier": 0.1408156266259664
+      },
+      "carrier_deaths_before_return": 22
+    },
+    "655211420": {
+      "state_only": {
+        "n": 929,
+        "paid": 617,
+        "auc": 0.8186427295017247,
+        "nll": 0.4866753565439611,
+        "brier": 0.1613915062487216
+      },
+      "state_and_played_action": {
+        "n": 929,
+        "paid": 617,
+        "auc": 0.8436084444998545,
+        "nll": 0.4561607371716782,
+        "brier": 0.15050396158128376
+      },
+      "carrier_deaths_before_return": 21
+    },
+    "424836188": {
+      "state_only": {
+        "n": 1035,
+        "paid": 581,
+        "auc": 0.859718926050331,
+        "nll": 0.4912709339883204,
+        "brier": 0.16339723963571118
+      },
+      "state_and_played_action": {
+        "n": 1035,
+        "paid": 581,
+        "auc": 0.8792185734757785,
+        "nll": 0.45376093011833485,
+        "brier": 0.14794711911089597
+      },
+      "carrier_deaths_before_return": 12
+    }
+  },
+  "teacher": {
+    "all_collectors": {
+      "base": {
+        "n": 6288,
+        "nll": 0.45291126083010547,
+        "accuracy": 0.816793893129771
+      },
+      "residual": {
+        "n": 6288,
+        "nll": 0.45265066585337616,
+        "accuracy": 0.8156806615776081
+      },
+      "changed": 17
+    },
+    "charged": {
+      "base": {
+        "n": 2667,
+        "nll": 0.44115430800143657,
+        "accuracy": 0.821522309711286
+      },
+      "residual": {
+        "n": 2667,
+        "nll": 0.44053990184707803,
+        "accuracy": 0.8188976377952756
+      },
+      "changed": 17
+    }
+  },
+  "model": {
+    "weights": [
+      2.256692797783687,
+      0.5185824714877799,
+      -2.7064889198737725,
+      -1.2251931233109064,
+      -0.10607107553736249,
+      0.042391571079521545,
+      -0.5991495758735204,
+      0.2948908839583303,
+      -0.23766323461932398,
+      -0.29358886591133115,
+      -0.18021208393033208,
+      0.728593245759851,
+      0.5444226174753746,
+      0.27616123812215176,
+      0.23998269988903542,
+      0.6733249544255472,
+      -0.3734635309428104,
+      0.09485417449381522,
+      0.25231230766269375,
+      -0.2415106572522286,
+      0.013596850835371578,
+      0.10599484529607957,
+      0.0,
+      -0.4370790590835365,
+      0.17433430270132882,
+      -0.3880014360071931,
+      0.0,
+      0.16336811384732713,
+      0.37098882068563727
+    ],
+    "intercept": 1.0250021355045662
+  },
+  "interpretation": "Predictive held-out credit at recorded actions; alternative actions have no observed future and any policy benefit requires paired games."
+}

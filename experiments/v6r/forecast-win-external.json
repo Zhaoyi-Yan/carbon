@@ -1,53 +1,58 @@
 {
   "all": {
-    "boards": 5921,
-    "games": 80,
+    "boards": 5847,
+    "games": 79,
     "metrics": {
       "cash": {
-        "log_loss": 0.4411,
-        "brier": 0.13765,
-        "ece5": 0.02701
+        "log_loss": 0.43791,
+        "brier": 0.13939,
+        "ece5": 0.02735
       },
       "cash_asset": {
-        "log_loss": 0.41997,
-        "brier": 0.12978,
-        "ece5": 0.03668
+        "log_loss": 0.41652,
+        "brier": 0.13142,
+        "ece5": 0.03714
       },
       "cash_economic": {
-        "log_loss": 0.43188,
-        "brier": 0.12993,
-        "ece5": 0.0367
+        "log_loss": 0.42857,
+        "brier": 0.13158,
+        "ece5": 0.03717
       },
       "cash_territory": {
-        "log_loss": 0.48108,
-        "brier": 0.13717,
-        "ece5": 0.06231
+        "log_loss": 0.47839,
+        "brier": 0.1389,
+        "ece5": 0.0631
       },
       "global": {
-        "log_loss": 0.48108,
-        "brier": 0.13717,
-        "ece5": 0.06231
+        "log_loss": 0.47839,
+        "brier": 0.1389,
+        "ece5": 0.0631
+      },
+      "global_unshrunk": {
+        "log_loss": 0.47052,
+        "brier": 0.13637,
+        "ece5": 0.05947
       },
       "constant": {
         "log_loss": 0.69315,
-        "brier": 0.24688,
-        "ece5": 0.08757
+        "brier": 0.25,
+        "ece5": 0.08868
       }
     },
     "paired": {
       "comparator": "cash_economic",
       "delta_logloss_brier": [
-        0.04843,
-        0.0071
+        0.04904,
+        0.00719
       ],
       "ci95": [
         [
-          -0.00065,
-          -0.00098
+          -0.00088,
+          -0.00103
         ],
         [
-          0.1415,
-          0.02187
+          0.14203,
+          0.022
         ]
       ],
       "games_logloss_improved": 47,
@@ -117,12 +122,6 @@
           75,
           -0.04306,
           -0.01365
-        ],
-        [
-          "replays/b7f72aafcf98685afbd6eda28cff15c7-1.json.gz",
-          74,
-          0.0,
-          0.0
         ],
         [
           "replays/7052bf6f25705e7fb2926f4872675818-1.json.gz",
@@ -536,162 +535,177 @@
     }
   },
   "late100": {
-    "boards": 1963,
-    "games": 79,
+    "boards": 1938,
+    "games": 78,
     "metrics": {
       "cash": {
-        "log_loss": 0.22993,
-        "brier": 0.06489,
-        "ece5": 0.0155
+        "log_loss": 0.22395,
+        "brier": 0.06573,
+        "ece5": 0.0157
       },
       "cash_asset": {
-        "log_loss": 0.20019,
-        "brier": 0.06028,
-        "ece5": 0.02482
+        "log_loss": 0.19383,
+        "brier": 0.06106,
+        "ece5": 0.02514
       },
       "cash_economic": {
-        "log_loss": 0.21801,
-        "brier": 0.06245,
-        "ece5": 0.03632
+        "log_loss": 0.21188,
+        "brier": 0.06326,
+        "ece5": 0.03679
       },
       "cash_territory": {
-        "log_loss": 0.28601,
-        "brier": 0.06982,
-        "ece5": 0.04229
+        "log_loss": 0.28076,
+        "brier": 0.07072,
+        "ece5": 0.04284
       },
       "global": {
-        "log_loss": 0.28601,
-        "brier": 0.06982,
-        "ece5": 0.04229
+        "log_loss": 0.28076,
+        "brier": 0.07072,
+        "ece5": 0.04284
+      },
+      "global_unshrunk": {
+        "log_loss": 0.27992,
+        "brier": 0.0701,
+        "ece5": 0.04451
       },
       "constant": {
         "log_loss": 0.69315,
-        "brier": 0.24682,
-        "ece5": 0.09221
+        "brier": 0.25,
+        "ece5": 0.0934
       }
     },
     "paired": {
       "comparator": "cash_economic",
       "delta_logloss_brier": [
-        0.06759,
-        0.00733
+        0.06845,
+        0.00742
       ],
       "ci95": [
         [
-          -0.00697,
-          -0.00309
+          -0.00721,
+          -0.00316
         ],
         [
-          0.21144,
-          0.02646
+          0.21315,
+          0.02628
         ]
       ],
       "games_logloss_improved": 42
     }
   },
   "close200": {
-    "boards": 802,
-    "games": 56,
+    "boards": 746,
+    "games": 55,
     "metrics": {
       "cash": {
-        "log_loss": 0.66905,
-        "brier": 0.22069,
-        "ece5": 0.04354
+        "log_loss": 0.66724,
+        "brier": 0.23726,
+        "ece5": 0.0468
       },
       "cash_asset": {
-        "log_loss": 0.74791,
-        "brier": 0.23984,
-        "ece5": 0.10902
+        "log_loss": 0.75202,
+        "brier": 0.25785,
+        "ece5": 0.1172
       },
       "cash_economic": {
-        "log_loss": 0.76489,
-        "brier": 0.23944,
-        "ece5": 0.13596
+        "log_loss": 0.77028,
+        "brier": 0.25741,
+        "ece5": 0.14617
       },
       "cash_territory": {
-        "log_loss": 1.09561,
-        "brier": 0.28811,
-        "ece5": 0.17628
+        "log_loss": 1.12582,
+        "brier": 0.30974,
+        "ece5": 0.18951
       },
       "global": {
-        "log_loss": 1.09561,
-        "brier": 0.28811,
-        "ece5": 0.17628
+        "log_loss": 1.12582,
+        "brier": 0.30974,
+        "ece5": 0.18951
+      },
+      "global_unshrunk": {
+        "log_loss": 1.1082,
+        "brier": 0.3042,
+        "ece5": 0.17475
       },
       "constant": {
         "log_loss": 0.69315,
-        "brier": 0.23254,
-        "ece5": 0.11222
+        "brier": 0.25,
+        "ece5": 0.12064
       }
     },
     "paired": {
       "comparator": "cash_economic",
       "delta_logloss_brier": [
-        0.09344,
-        0.01359
+        0.09513,
+        0.01383
       ],
       "ci95": [
         [
-          0.00108,
-          -0.00147
+          0.00158,
+          -0.00159
         ],
         [
-          0.26642,
-          0.04027
+          0.26806,
+          0.04073
         ]
       ],
       "games_logloss_improved": 30
     }
   },
   "late100_close200": {
-    "boards": 288,
-    "games": 34,
+    "boards": 263,
+    "games": 33,
     "metrics": {
       "cash": {
-        "log_loss": 0.65005,
-        "brier": 0.20734,
-        "ece5": 0.04212
+        "log_loss": 0.64595,
+        "brier": 0.22705,
+        "ece5": 0.04612
       },
       "cash_asset": {
-        "log_loss": 0.72703,
-        "brier": 0.22237,
-        "ece5": 0.13834
+        "log_loss": 0.73025,
+        "brier": 0.24351,
+        "ece5": 0.15149
       },
       "cash_economic": {
-        "log_loss": 0.79077,
-        "brier": 0.22193,
-        "ece5": 0.17042
+        "log_loss": 0.80005,
+        "brier": 0.24302,
+        "ece5": 0.18662
       },
       "cash_territory": {
-        "log_loss": 1.26834,
-        "brier": 0.27981,
-        "ece5": 0.20516
+        "log_loss": 1.32302,
+        "brier": 0.30641,
+        "ece5": 0.22466
       },
       "global": {
-        "log_loss": 1.26834,
-        "brier": 0.27981,
-        "ece5": 0.20516
+        "log_loss": 1.32302,
+        "brier": 0.30641,
+        "ece5": 0.22466
+      },
+      "global_unshrunk": {
+        "log_loss": 1.32386,
+        "brier": 0.30703,
+        "ece5": 0.22901
       },
       "constant": {
         "log_loss": 0.69315,
-        "brier": 0.2283,
-        "ece5": 0.0434
+        "brier": 0.25,
+        "ece5": 0.04753
       }
     },
     "paired": {
       "comparator": "cash_economic",
       "delta_logloss_brier": [
-        0.15976,
-        0.01908
+        0.1646,
+        0.01966
       ],
       "ci95": [
         [
-          -0.01568,
-          -0.00734
+          -0.01647,
+          -0.00751
         ],
         [
-          0.49179,
-          0.06372
+          0.50747,
+          0.06649
         ]
       ],
       "games_logloss_improved": 20,
@@ -731,12 +745,6 @@
           4,
           0.01932,
           0.00804
-        ],
-        [
-          "replays/b7f72aafcf98685afbd6eda28cff15c7-1.json.gz",
-          25,
-          0.0,
-          0.0
         ],
         [
           "replays/7052bf6f25705e7fb2926f4872675818-1.json.gz",
@@ -904,219 +912,244 @@
     }
   },
   "0-74": {
-    "boards": 1506,
-    "games": 80,
+    "boards": 1488,
+    "games": 79,
     "metrics": {
       "cash": {
-        "log_loss": 0.66206,
-        "brier": 0.23023,
-        "ece5": 0.02196
+        "log_loss": 0.66168,
+        "brier": 0.23302,
+        "ece5": 0.02222
       },
       "cash_asset": {
-        "log_loss": 0.60524,
-        "brier": 0.20225,
-        "ece5": 0.07381
+        "log_loss": 0.60418,
+        "brier": 0.2047,
+        "ece5": 0.0747
       },
       "cash_economic": {
-        "log_loss": 0.61135,
-        "brier": 0.20148,
-        "ece5": 0.05615
+        "log_loss": 0.61036,
+        "brier": 0.20392,
+        "ece5": 0.05683
       },
       "cash_territory": {
-        "log_loss": 0.62371,
-        "brier": 0.20514,
-        "ece5": 0.06444
+        "log_loss": 0.62287,
+        "brier": 0.20762,
+        "ece5": 0.06522
       },
       "global": {
-        "log_loss": 0.62371,
-        "brier": 0.20514,
-        "ece5": 0.06444
+        "log_loss": 0.62287,
+        "brier": 0.20762,
+        "ece5": 0.06522
+      },
+      "global_unshrunk": {
+        "log_loss": 0.60973,
+        "brier": 0.20306,
+        "ece5": 0.07632
       },
       "constant": {
         "log_loss": 0.69315,
-        "brier": 0.24701,
-        "ece5": 0.08101
+        "brier": 0.25,
+        "ece5": 0.08199
       }
     },
     "paired": {
       "comparator": "cash_economic",
       "delta_logloss_brier": [
-        0.0123,
-        0.00364
+        0.01246,
+        0.00369
       ],
       "ci95": [
         [
-          -0.00102,
-          -0.00085
+          -0.00101,
+          -0.00087
         ],
         [
-          0.03289,
-          0.01053
+          0.03173,
+          0.01027
         ]
       ],
       "games_logloss_improved": 40
     }
   },
   "75-149": {
-    "boards": 1487,
-    "games": 80,
+    "boards": 1468,
+    "games": 79,
     "metrics": {
       "cash": {
-        "log_loss": 0.52457,
-        "brier": 0.15872,
-        "ece5": 0.07238
+        "log_loss": 0.52239,
+        "brier": 0.16078,
+        "ece5": 0.07332
       },
       "cash_asset": {
-        "log_loss": 0.54223,
-        "brier": 0.15934,
-        "ece5": 0.06459
+        "log_loss": 0.54027,
+        "brier": 0.1614,
+        "ece5": 0.06543
       },
       "cash_economic": {
-        "log_loss": 0.55405,
-        "brier": 0.15905,
-        "ece5": 0.07024
+        "log_loss": 0.55225,
+        "brier": 0.1611,
+        "ece5": 0.07115
       },
       "cash_territory": {
-        "log_loss": 0.61204,
-        "brier": 0.16769,
-        "ece5": 0.10093
+        "log_loss": 0.61099,
+        "brier": 0.16986,
+        "ece5": 0.10224
       },
       "global": {
-        "log_loss": 0.61204,
-        "brier": 0.16769,
-        "ece5": 0.10093
+        "log_loss": 0.61099,
+        "brier": 0.16986,
+        "ece5": 0.10224
+      },
+      "global_unshrunk": {
+        "log_loss": 0.59795,
+        "brier": 0.16683,
+        "ece5": 0.09566
       },
       "constant": {
         "log_loss": 0.69315,
-        "brier": 0.24681,
-        "ece5": 0.08608
+        "brier": 0.25,
+        "ece5": 0.08719
       }
     },
     "paired": {
       "comparator": "cash_economic",
       "delta_logloss_brier": [
-        0.05899,
-        0.00885
+        0.05974,
+        0.00896
       ],
       "ci95": [
         [
-          0.0021,
-          -0.00081
+          0.00144,
+          -0.00101
         ],
         [
-          0.1606,
-          0.02596
+          0.15935,
+          0.02595
         ]
       ],
       "games_logloss_improved": 44
     }
   },
   "150-224": {
-    "boards": 1477,
-    "games": 79,
+    "boards": 1458,
+    "games": 78,
     "metrics": {
       "cash": {
-        "log_loss": 0.36583,
-        "brier": 0.09928,
-        "ece5": 0.03093
+        "log_loss": 0.36156,
+        "brier": 0.10058,
+        "ece5": 0.03133
       },
       "cash_asset": {
-        "log_loss": 0.35183,
-        "brier": 0.10252,
-        "ece5": 0.03596
+        "log_loss": 0.34738,
+        "brier": 0.10386,
+        "ece5": 0.03642
       },
       "cash_economic": {
-        "log_loss": 0.35586,
-        "brier": 0.10079,
-        "ece5": 0.03895
+        "log_loss": 0.35146,
+        "brier": 0.10211,
+        "ece5": 0.03945
       },
       "cash_territory": {
-        "log_loss": 0.40801,
-        "brier": 0.10932,
-        "ece5": 0.05433
+        "log_loss": 0.40429,
+        "brier": 0.11075,
+        "ece5": 0.05503
       },
       "global": {
-        "log_loss": 0.40801,
-        "brier": 0.10932,
-        "ece5": 0.05433
+        "log_loss": 0.40429,
+        "brier": 0.11075,
+        "ece5": 0.05503
+      },
+      "global_unshrunk": {
+        "log_loss": 0.40128,
+        "brier": 0.10862,
+        "ece5": 0.05434
       },
       "constant": {
         "log_loss": 0.69315,
-        "brier": 0.24678,
-        "ece5": 0.08802
+        "brier": 0.25,
+        "ece5": 0.08916
       }
     },
     "paired": {
       "comparator": "cash_economic",
       "delta_logloss_brier": [
-        0.05132,
-        0.00839
+        0.05198,
+        0.0085
       ],
       "ci95": [
         [
-          -0.00585,
+          -0.00595,
           -0.00209
         ],
         [
-          0.15917,
-          0.02735
+          0.1599,
+          0.02728
         ]
       ],
       "games_logloss_improved": 29
     }
   },
   "225-298": {
-    "boards": 1451,
-    "games": 79,
+    "boards": 1433,
+    "games": 78,
     "metrics": {
       "cash": {
-        "log_loss": 0.20286,
-        "brier": 0.05902,
-        "ece5": 0.01328
+        "log_loss": 0.1967,
+        "brier": 0.05976,
+        "ece5": 0.01344
       },
       "cash_asset": {
-        "log_loss": 0.17177,
-        "brier": 0.05201,
-        "ece5": 0.02087
+        "log_loss": 0.16522,
+        "brier": 0.05267,
+        "ece5": 0.02113
       },
       "cash_economic": {
-        "log_loss": 0.19779,
-        "brier": 0.05549,
-        "ece5": 0.03258
+        "log_loss": 0.19157,
+        "brier": 0.05619,
+        "ece5": 0.03299
       },
       "cash_territory": {
-        "log_loss": 0.2732,
-        "brier": 0.06367,
-        "ece5": 0.04093
+        "log_loss": 0.26792,
+        "brier": 0.06447,
+        "ece5": 0.04144
       },
       "global": {
-        "log_loss": 0.2732,
-        "brier": 0.06367,
-        "ece5": 0.04093
+        "log_loss": 0.26792,
+        "brier": 0.06447,
+        "ece5": 0.04144
+      },
+      "global_unshrunk": {
+        "log_loss": 0.26586,
+        "brier": 0.06413,
+        "ece5": 0.04139
       },
       "constant": {
         "log_loss": 0.69315,
-        "brier": 0.2469,
-        "ece5": 0.09545
+        "brier": 0.25,
+        "ece5": 0.09665
       }
     },
     "paired": {
       "comparator": "cash_economic",
       "delta_logloss_brier": [
-        0.07278,
-        0.00788
+        0.07371,
+        0.00798
       ],
       "ci95": [
         [
-          -0.00632,
-          -0.00259
+          -0.00621,
+          -0.00261
         ],
         [
-          0.22538,
-          0.02705
+          0.22752,
+          0.02689
         ]
       ],
       "games_logloss_improved": 54
     }
+  },
+  "sample": {
+    "draw_games_excluded": 1,
+    "decisive_games": 79,
+    "selection": "Final strict-score winner in decisive games"
   }
 }

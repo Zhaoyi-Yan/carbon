@@ -1,0 +1,4075 @@
+{
+  "definitions": {
+    "window": "Decision steps 274..298 inclusive, 25 turns ending at state 299.",
+    "subset": "Every final loss plus every win with absolute final margin <=350. All other wins retained as a descriptive control.",
+    "geometric_reach": "Shortest toroidal path with no other workers or blockers. The 15x15 board has maximum toroidal distance 14; all loads are geometrically reachable at steps 250,275 and 285. Steps 290,294,297,298 also saved as reachability summaries.",
+    "initial_carbon": "Only carbon already carried at state 274. Tag proportions follow transfers among workers, bank payouts and tree taxes. Ground spills end attribution.",
+    "blocked": "Hindsight candidate only. For opponent return of >=30 at t, look at the preceding t-1 decision: a lighter defender could step to the opponent's recorded non-depot approach cell. Same-turn collisions on the depot can still bank for its owner.",
+    "counterfactual": "Both rules are public-information rules; other own and all opponent orders are frozen, with missing or reassigned archived IDs counted. Counterfactual outcomes are not wins against a responding opponent."
+  },
+  "groups": {
+    "close_loss": {
+      "games": 7,
+      "behind_at_274": 6,
+      "median_margin_274": -169.06,
+      "median_final_margin": -272.85,
+      "median_candidate_terminal_cargo": 19.557,
+      "losses_covered_by_candidate_terminal_cargo": 0,
+      "candidate_carried_at_274": 3378.1686,
+      "candidate_274_stock_banked": 3286.2733,
+      "candidate_274_stock_banked_fraction": 0.9728,
+      "candidate_total_terminal_cargo": 316.1478,
+      "candidate_terminal_cargo_without_geometrically_feasible_loaded_move": 316.1478,
+      "candidate_hires_last8": 0,
+      "games_behind_on_deposits25": 5,
+      "median_cash25": {
+        "deposits": -24.30831,
+        "trees": -28.29563,
+        "hires": 0.0,
+        "base_collision": 0,
+        "rounding": 0.00932
+      },
+      "median_own_enemy_deaths": [
+        [
+          6,
+          0,
+          193.0035
+        ],
+        [
+          5,
+          0,
+          248.7054
+        ]
+      ],
+      "enemy_hindsight_blockable_count": 1,
+      "enemy_receipts_ge30": 77,
+      "enemy_hindsight_blockable_cash": 100.3485,
+      "alternatives": {
+        "early_bank": {
+          "changed": 5,
+          "positive": 2,
+          "negative": 3,
+          "mean_delta": -7.85571,
+          "median_delta": 0.0,
+          "wins_before": 0,
+          "wins_after": 0
+        },
+        "preblock": {
+          "changed": 6,
+          "positive": 5,
+          "negative": 1,
+          "mean_delta": 115.94857,
+          "median_delta": 8.6,
+          "wins_before": 0,
+          "wins_after": 1
+        }
+      }
+    },
+    "larger_loss": {
+      "games": 7,
+      "behind_at_274": 6,
+      "median_margin_274": -700.86,
+      "median_final_margin": -664.48,
+      "median_candidate_terminal_cargo": 0,
+      "losses_covered_by_candidate_terminal_cargo": 0,
+      "candidate_carried_at_274": 4173.7801,
+      "candidate_274_stock_banked": 4159.409,
+      "candidate_274_stock_banked_fraction": 0.99656,
+      "candidate_total_terminal_cargo": 56.0736,
+      "candidate_terminal_cargo_without_geometrically_feasible_loaded_move": 7.158,
+      "candidate_hires_last8": 0,
+      "games_behind_on_deposits25": 2,
+      "median_cash25": {
+        "deposits": 47.44687,
+        "trees": 21.37702,
+        "hires": -30.0,
+        "base_collision": 0,
+        "rounding": -0.00252
+      },
+      "median_own_enemy_deaths": [
+        [
+          6,
+          1,
+          210.612
+        ],
+        [
+          6,
+          0,
+          148.8834
+        ]
+      ],
+      "enemy_hindsight_blockable_count": 1,
+      "enemy_receipts_ge30": 77,
+      "enemy_hindsight_blockable_cash": 32.6727,
+      "alternatives": {
+        "early_bank": {
+          "changed": 5,
+          "positive": 0,
+          "negative": 5,
+          "mean_delta": -55.22286,
+          "median_delta": -11.19,
+          "wins_before": 0,
+          "wins_after": 0
+        },
+        "preblock": {
+          "changed": 7,
+          "positive": 5,
+          "negative": 2,
+          "mean_delta": 100.51286,
+          "median_delta": 99.14,
+          "wins_before": 0,
+          "wins_after": 0
+        }
+      }
+    },
+    "close_win": {
+      "games": 4,
+      "behind_at_274": 2,
+      "median_margin_274": 140.59,
+      "median_final_margin": 178.03,
+      "median_candidate_terminal_cargo": 14.61977,
+      "losses_covered_by_candidate_terminal_cargo": 0,
+      "candidate_carried_at_274": 1919.3498,
+      "candidate_274_stock_banked": 1914.0514,
+      "candidate_274_stock_banked_fraction": 0.99724,
+      "candidate_total_terminal_cargo": 205.55493,
+      "candidate_terminal_cargo_without_geometrically_feasible_loaded_move": 38.6013,
+      "candidate_hires_last8": 1,
+      "games_behind_on_deposits25": 2,
+      "median_cash25": {
+        "deposits": 34.34937,
+        "trees": 35.49656,
+        "hires": 0.0,
+        "base_collision": 0.0,
+        "rounding": -0.00102
+      },
+      "median_own_enemy_deaths": [
+        [
+          5.0,
+          0.0,
+          99.70262
+        ],
+        [
+          6.5,
+          0.0,
+          412.67751
+        ]
+      ],
+      "enemy_hindsight_blockable_count": 1,
+      "enemy_receipts_ge30": 39,
+      "enemy_hindsight_blockable_cash": 206.25759,
+      "alternatives": {
+        "early_bank": {
+          "changed": 4,
+          "positive": 0,
+          "negative": 4,
+          "mean_delta": -124.355,
+          "median_delta": -132.735,
+          "wins_before": 4,
+          "wins_after": 3
+        },
+        "preblock": {
+          "changed": 3,
+          "positive": 1,
+          "negative": 2,
+          "mean_delta": 14.3275,
+          "median_delta": -27.925,
+          "wins_before": 4,
+          "wins_after": 3
+        }
+      }
+    },
+    "larger_win": {
+      "games": 14,
+      "behind_at_274": 1,
+      "median_margin_274": 668.62,
+      "median_final_margin": 718.395,
+      "median_candidate_terminal_cargo": 10.84905,
+      "losses_covered_by_candidate_terminal_cargo": 0,
+      "candidate_carried_at_274": 6565.4904,
+      "candidate_274_stock_banked": 6361.9792,
+      "candidate_274_stock_banked_fraction": 0.969,
+      "candidate_total_terminal_cargo": 200.39121,
+      "candidate_terminal_cargo_without_geometrically_feasible_loaded_move": 172.2569,
+      "candidate_hires_last8": 1,
+      "games_behind_on_deposits25": 6,
+      "median_cash25": {
+        "deposits": 69.1537,
+        "trees": 60.24738,
+        "hires": 15.0,
+        "base_collision": 0.0,
+        "rounding": -0.00412
+      },
+      "median_own_enemy_deaths": [
+        [
+          7.0,
+          1.0,
+          207.6005
+        ],
+        [
+          6.5,
+          0.5,
+          158.8374
+        ]
+      ],
+      "enemy_hindsight_blockable_count": 3,
+      "enemy_receipts_ge30": 151,
+      "enemy_hindsight_blockable_cash": 410.57602,
+      "alternatives": {
+        "early_bank": {
+          "changed": 12,
+          "positive": 2,
+          "negative": 10,
+          "mean_delta": -29.19143,
+          "median_delta": -30.655,
+          "wins_before": 14,
+          "wins_after": 14
+        },
+        "preblock": {
+          "changed": 14,
+          "positive": 5,
+          "negative": 9,
+          "mean_delta": -25.57929,
+          "median_delta": -8.285,
+          "wins_before": 14,
+          "wins_after": 14
+        }
+      }
+    },
+    "all": {
+      "games": 32,
+      "behind_at_274": 15,
+      "median_margin_274": 78.995,
+      "median_final_margin": 178.03,
+      "median_candidate_terminal_cargo": 8.72551,
+      "losses_covered_by_candidate_terminal_cargo": 0,
+      "candidate_carried_at_274": 16036.7889,
+      "candidate_274_stock_banked": 15721.7129,
+      "candidate_274_stock_banked_fraction": 0.98035,
+      "candidate_total_terminal_cargo": 778.16754,
+      "candidate_terminal_cargo_without_geometrically_feasible_loaded_move": 534.164,
+      "candidate_hires_last8": 2,
+      "games_behind_on_deposits25": 15,
+      "median_cash25": {
+        "deposits": 42.47114,
+        "trees": 34.42752,
+        "hires": 0.0,
+        "base_collision": 0.0,
+        "rounding": -0.00194
+      },
+      "median_own_enemy_deaths": [
+        [
+          6.5,
+          0.5,
+          195.1826
+        ],
+        [
+          6.0,
+          0.0,
+          224.40589
+        ]
+      ],
+      "enemy_hindsight_blockable_count": 6,
+      "enemy_receipts_ge30": 344,
+      "enemy_hindsight_blockable_cash": 749.85481,
+      "alternatives": {
+        "early_bank": {
+          "changed": 26,
+          "positive": 4,
+          "negative": 22,
+          "mean_delta": -42.11406,
+          "median_delta": -37.6,
+          "wins_before": 18,
+          "wins_after": 17
+        },
+        "preblock": {
+          "changed": 30,
+          "positive": 16,
+          "negative": 14,
+          "mean_delta": 37.95094,
+          "median_delta": 0.645,
+          "wins_before": 18,
+          "wins_after": 18
+        }
+      }
+    }
+  },
+  "games": [
+    {
+      "key": "canopy/726545191/0",
+      "type": "close_win",
+      "candidate": "canopy",
+      "seat": 0,
+      "seed": 726545191,
+      "margin": 31.1,
+      "checkpoint_margin": {
+        "250": -782.47,
+        "274": -144.24,
+        "275": -82.85,
+        "285": 428.6,
+        "299": 31.1
+      },
+      "late_cash_delta": {
+        "deposits": 299.45471,
+        "trees": -124.10876,
+        "hires": 0.0,
+        "base_collision": 0,
+        "rounding": -0.00595
+      },
+      "sides_candidate_first": [
+        {
+          "original_seat": 0,
+          "start_carried": 520.6437,
+          "initial_stock_banked_by_own_side": 520.6437,
+          "initial_stock_banked_fraction": 1.0,
+          "terminal_cargo": 1.2225,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 1.2225,
+          "funds25": {
+            "deposits": 1516.30845,
+            "trees": 72.78153,
+            "hires": -60.0,
+            "base_collision": 0,
+            "rounding": 1e-05
+          },
+          "gross_death_cargo": 407.36409,
+          "collector_deaths": 7,
+          "planter_deaths": 0,
+          "hires25": 2,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 11,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        },
+        {
+          "original_seat": 1,
+          "start_carried": 590.2209,
+          "initial_stock_banked_by_own_side": 444.0055,
+          "initial_stock_banked_fraction": 0.75227,
+          "terminal_cargo": 5.7945,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 5.7945,
+          "funds25": {
+            "deposits": 1216.85374,
+            "trees": 196.8903,
+            "hires": -60.0,
+            "base_collision": 0,
+            "rounding": 0.00596
+          },
+          "gross_death_cargo": 512.57391,
+          "collector_deaths": 5,
+          "planter_deaths": 0,
+          "hires25": 2,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 9,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        }
+      ],
+      "branches": {
+        "early_bank": {
+          "edits": 10,
+          "margin": -154.04,
+          "change": -185.14,
+          "funds_changes": [
+            {
+              "deposits": -194.77446,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.01446
+            },
+            {
+              "deposits": 0.0,
+              "trees": -9.5989,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": -0.0211
+            }
+          ],
+          "absent_opponent_commands": 6,
+          "reattributed_opponent_commands": 0
+        },
+        "preblock": {
+          "edits": 9,
+          "margin": -24.75,
+          "change": -55.85,
+          "funds_changes": [
+            {
+              "deposits": -190.55979,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": -0.00021
+            },
+            {
+              "deposits": -322.518,
+              "trees": 187.82909,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": -0.02109
+            }
+          ],
+          "absent_opponent_commands": 12,
+          "reattributed_opponent_commands": 0
+        }
+      }
+    },
+    {
+      "key": "canopy/726545191/1",
+      "type": "larger_win",
+      "candidate": "canopy",
+      "seat": 1,
+      "seed": 726545191,
+      "margin": 593.96,
+      "checkpoint_margin": {
+        "250": 135.81,
+        "274": 740.75,
+        "275": 750.29,
+        "285": 741.94,
+        "299": 593.96
+      },
+      "late_cash_delta": {
+        "deposits": -423.83869,
+        "trees": 247.04767,
+        "hires": 30.0,
+        "base_collision": 0,
+        "rounding": 0.00102
+      },
+      "sides_candidate_first": [
+        {
+          "original_seat": 1,
+          "start_carried": 339.495,
+          "initial_stock_banked_by_own_side": 318.3774,
+          "initial_stock_banked_fraction": 0.9378,
+          "terminal_cargo": 0,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 0,
+          "funds25": {
+            "deposits": 1234.4889,
+            "trees": 268.17318,
+            "hires": -30.0,
+            "base_collision": 0,
+            "rounding": -0.00208
+          },
+          "gross_death_cargo": 217.8393,
+          "collector_deaths": 8,
+          "planter_deaths": 0,
+          "hires25": 1,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 10,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        },
+        {
+          "original_seat": 0,
+          "start_carried": 850.8769,
+          "initial_stock_banked_by_own_side": 781.07,
+          "initial_stock_banked_fraction": 0.91796,
+          "terminal_cargo": 48.8433,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 48.8433,
+          "funds25": {
+            "deposits": 1658.32759,
+            "trees": 21.12551,
+            "hires": -60.0,
+            "base_collision": 0,
+            "rounding": -0.0031
+          },
+          "gross_death_cargo": 511.8785,
+          "collector_deaths": 8,
+          "planter_deaths": 0,
+          "hires25": 2,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 10,
+          "hindsight_one_move_interceptable_receipts": 1,
+          "hindsight_one_move_interceptable_cash": 236.0424
+        }
+      ],
+      "branches": {
+        "early_bank": {
+          "edits": 3,
+          "margin": 493.66,
+          "change": -100.3,
+          "funds_changes": [
+            {
+              "deposits": -100.9986,
+              "trees": 0.70005,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": -0.00145
+            },
+            {
+              "deposits": 0.0,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.0
+            }
+          ],
+          "absent_opponent_commands": 0,
+          "reattributed_opponent_commands": 0
+        },
+        "preblock": {
+          "edits": 5,
+          "margin": 586.74,
+          "change": -7.22,
+          "funds_changes": [
+            {
+              "deposits": 0.0,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.0
+            },
+            {
+              "deposits": 7.2204,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": -0.0004
+            }
+          ],
+          "absent_opponent_commands": 3,
+          "reattributed_opponent_commands": 0
+        }
+      }
+    },
+    {
+      "key": "canopy/246450597/0",
+      "type": "larger_loss",
+      "candidate": "canopy",
+      "seat": 0,
+      "seed": 246450597,
+      "margin": -664.48,
+      "checkpoint_margin": {
+        "250": -369.8,
+        "274": -779.08,
+        "275": -783.16,
+        "285": -943.77,
+        "299": -664.48
+      },
+      "late_cash_delta": {
+        "deposits": 93.22372,
+        "trees": 21.37702,
+        "hires": 0.0,
+        "base_collision": 0,
+        "rounding": -0.00073
+      },
+      "sides_candidate_first": [
+        {
+          "original_seat": 0,
+          "start_carried": 629.0364,
+          "initial_stock_banked_by_own_side": 629.0364,
+          "initial_stock_banked_fraction": 1.0,
+          "terminal_cargo": 48.9156,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 0,
+          "funds25": {
+            "deposits": 1435.64321,
+            "trees": 100.31748,
+            "hires": -120.0,
+            "base_collision": 0,
+            "rounding": -0.00069
+          },
+          "gross_death_cargo": 219.7542,
+          "collector_deaths": 6,
+          "planter_deaths": 2,
+          "hires25": 4,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 9,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        },
+        {
+          "original_seat": 1,
+          "start_carried": 298.7763,
+          "initial_stock_banked_by_own_side": 298.7763,
+          "initial_stock_banked_fraction": 1.0,
+          "terminal_cargo": 98.02179,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 3.0043,
+          "funds25": {
+            "deposits": 1342.4195,
+            "trees": 78.94046,
+            "hires": -120.0,
+            "base_collision": 0,
+            "rounding": 4e-05
+          },
+          "gross_death_cargo": 322.15061,
+          "collector_deaths": 6,
+          "planter_deaths": 1,
+          "hires25": 4,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 9,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        }
+      ],
+      "branches": {
+        "early_bank": {
+          "edits": 6,
+          "margin": -670.45,
+          "change": -5.97,
+          "funds_changes": [
+            {
+              "deposits": -5.95811,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": -0.01189
+            },
+            {
+              "deposits": 0.0,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.0
+            }
+          ],
+          "absent_opponent_commands": 0,
+          "reattributed_opponent_commands": 0
+        },
+        "preblock": {
+          "edits": 3,
+          "margin": -437.84,
+          "change": 226.64,
+          "funds_changes": [
+            {
+              "deposits": -71.1522,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": -0.0078
+            },
+            {
+              "deposits": -297.7797,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": -0.0203
+            }
+          ],
+          "absent_opponent_commands": 10,
+          "reattributed_opponent_commands": 0
+        }
+      }
+    },
+    {
+      "key": "canopy/246450597/1",
+      "type": "larger_win",
+      "candidate": "canopy",
+      "seat": 1,
+      "seed": 246450597,
+      "margin": 392.73,
+      "checkpoint_margin": {
+        "250": 788.24,
+        "274": 315.36,
+        "275": 345.31,
+        "285": 496.72,
+        "299": 392.73
+      },
+      "late_cash_delta": {
+        "deposits": -27.67483,
+        "trees": 105.04762,
+        "hires": 0.0,
+        "base_collision": 0,
+        "rounding": -0.00279
+      },
+      "sides_candidate_first": [
+        {
+          "original_seat": 1,
+          "start_carried": 494.6037,
+          "initial_stock_banked_by_own_side": 485.5757,
+          "initial_stock_banked_fraction": 0.98175,
+          "terminal_cargo": 16.3845,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 16.3845,
+          "funds25": {
+            "deposits": 1334.55179,
+            "trees": 156.0288,
+            "hires": -60.0,
+            "base_collision": 0,
+            "rounding": -0.0106
+          },
+          "gross_death_cargo": 487.32059,
+          "collector_deaths": 7,
+          "planter_deaths": 0,
+          "hires25": 2,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 13,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        },
+        {
+          "original_seat": 0,
+          "start_carried": 529.7648,
+          "initial_stock_banked_by_own_side": 525.0079,
+          "initial_stock_banked_fraction": 0.99102,
+          "terminal_cargo": 0,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 0,
+          "funds25": {
+            "deposits": 1362.22662,
+            "trees": 50.98118,
+            "hires": -60.0,
+            "base_collision": 0,
+            "rounding": -0.0078
+          },
+          "gross_death_cargo": 339.06151,
+          "collector_deaths": 7,
+          "planter_deaths": 0,
+          "hires25": 2,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 11,
+          "hindsight_one_move_interceptable_receipts": 2,
+          "hindsight_one_move_interceptable_cash": 174.53362
+        }
+      ],
+      "branches": {
+        "early_bank": {
+          "edits": 3,
+          "margin": 304.51,
+          "change": -88.22,
+          "funds_changes": [
+            {
+              "deposits": -88.20659,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": -0.01341
+            },
+            {
+              "deposits": 0.0,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.0
+            }
+          ],
+          "absent_opponent_commands": 0,
+          "reattributed_opponent_commands": 0
+        },
+        "preblock": {
+          "edits": 5,
+          "margin": 175.04,
+          "change": -217.69,
+          "funds_changes": [
+            {
+              "deposits": -366.8055,
+              "trees": -6.06896,
+              "hires": 30.0,
+              "base_collision": 0,
+              "rounding": -0.00554
+            },
+            {
+              "deposits": -155.19634,
+              "trees": 0.0,
+              "hires": 30.0,
+              "base_collision": 0,
+              "rounding": 0.00634
+            }
+          ],
+          "absent_opponent_commands": 29,
+          "reattributed_opponent_commands": 17
+        }
+      }
+    },
+    {
+      "key": "canopy/428888107/0",
+      "type": "close_loss",
+      "candidate": "canopy",
+      "seat": 0,
+      "seed": 428888107,
+      "margin": -295.18,
+      "checkpoint_margin": {
+        "250": -32.7,
+        "274": -1.38,
+        "275": -0.82,
+        "285": 227.29,
+        "299": -295.18
+      },
+      "late_cash_delta": {
+        "deposits": -186.94449,
+        "trees": -76.85416,
+        "hires": -30.0,
+        "base_collision": 0,
+        "rounding": -0.00135
+      },
+      "sides_candidate_first": [
+        {
+          "original_seat": 0,
+          "start_carried": 983.7121,
+          "initial_stock_banked_by_own_side": 983.7121,
+          "initial_stock_banked_fraction": 1.0,
+          "terminal_cargo": 0,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 0,
+          "funds25": {
+            "deposits": 1600.10631,
+            "trees": 96.64956,
+            "hires": -30.0,
+            "base_collision": 0,
+            "rounding": 0.00413
+          },
+          "gross_death_cargo": 210.04501,
+          "collector_deaths": 8,
+          "planter_deaths": 0,
+          "hires25": 1,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 9,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        },
+        {
+          "original_seat": 1,
+          "start_carried": 865.6353,
+          "initial_stock_banked_by_own_side": 865.6353,
+          "initial_stock_banked_fraction": 1.0,
+          "terminal_cargo": 16.239,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 16.239,
+          "funds25": {
+            "deposits": 1787.0508,
+            "trees": 173.50372,
+            "hires": 0,
+            "base_collision": 0,
+            "rounding": 0.00548
+          },
+          "gross_death_cargo": 421.7508,
+          "collector_deaths": 5,
+          "planter_deaths": 0,
+          "hires25": 0,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 10,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        }
+      ],
+      "branches": {
+        "early_bank": {
+          "edits": 7,
+          "margin": -128.75,
+          "change": 166.43,
+          "funds_changes": [
+            {
+              "deposits": 61.83849,
+              "trees": -0.0,
+              "hires": 0.0,
+              "base_collision": 0.0,
+              "rounding": 0.00151
+            },
+            {
+              "deposits": -122.5119,
+              "trees": 17.91981,
+              "hires": 0,
+              "base_collision": 0,
+              "rounding": 0.00209
+            }
+          ],
+          "absent_opponent_commands": 5,
+          "reattributed_opponent_commands": 0
+        },
+        "preblock": {
+          "edits": 4,
+          "margin": 344.78,
+          "change": 639.96,
+          "funds_changes": [
+            {
+              "deposits": 0.0,
+              "trees": -0.0,
+              "hires": 30.0,
+              "base_collision": 0,
+              "rounding": 0.0
+            },
+            {
+              "deposits": -609.9627,
+              "trees": 0.0,
+              "hires": 0,
+              "base_collision": 0,
+              "rounding": 0.0027
+            }
+          ],
+          "absent_opponent_commands": 10,
+          "reattributed_opponent_commands": 0
+        }
+      }
+    },
+    {
+      "key": "canopy/428888107/1",
+      "type": "larger_win",
+      "candidate": "canopy",
+      "seat": 1,
+      "seed": 428888107,
+      "margin": 642.96,
+      "checkpoint_margin": {
+        "250": 573.58,
+        "274": 704.7,
+        "275": 684.08,
+        "285": 343.61,
+        "299": 642.96
+      },
+      "late_cash_delta": {
+        "deposits": -196.99604,
+        "trees": 105.25493,
+        "hires": 30.0,
+        "base_collision": 0,
+        "rounding": 0.00111
+      },
+      "sides_candidate_first": [
+        {
+          "original_seat": 1,
+          "start_carried": 506.9745,
+          "initial_stock_banked_by_own_side": 504.8418,
+          "initial_stock_banked_fraction": 0.99579,
+          "terminal_cargo": 69.1014,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 69.1014,
+          "funds25": {
+            "deposits": 1139.48959,
+            "trees": 145.68261,
+            "hires": -30.0,
+            "base_collision": 0,
+            "rounding": -0.0022
+          },
+          "gross_death_cargo": 297.417,
+          "collector_deaths": 7,
+          "planter_deaths": 0,
+          "hires25": 1,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 10,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        },
+        {
+          "original_seat": 0,
+          "start_carried": 648.6591,
+          "initial_stock_banked_by_own_side": 648.6591,
+          "initial_stock_banked_fraction": 1.0,
+          "terminal_cargo": 21.73467,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 14.3973,
+          "funds25": {
+            "deposits": 1336.48563,
+            "trees": 40.42768,
+            "hires": -60.0,
+            "base_collision": 0,
+            "rounding": -0.00331
+          },
+          "gross_death_cargo": 100.1703,
+          "collector_deaths": 7,
+          "planter_deaths": 0,
+          "hires25": 2,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 14,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        }
+      ],
+      "branches": {
+        "early_bank": {
+          "edits": 2,
+          "margin": 597.46,
+          "change": -45.5,
+          "funds_changes": [
+            {
+              "deposits": -45.5037,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.0037
+            },
+            {
+              "deposits": 0.0,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.0
+            }
+          ],
+          "absent_opponent_commands": 0,
+          "reattributed_opponent_commands": 0
+        },
+        "preblock": {
+          "edits": 2,
+          "margin": 737.64,
+          "change": 94.68,
+          "funds_changes": [
+            {
+              "deposits": 43.347,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.003
+            },
+            {
+              "deposits": -81.3219,
+              "trees": 0.0,
+              "hires": 30.0,
+              "base_collision": 0,
+              "rounding": -0.0081
+            }
+          ],
+          "absent_opponent_commands": 11,
+          "reattributed_opponent_commands": 0
+        }
+      }
+    },
+    {
+      "key": "canopy/206595965/0",
+      "type": "larger_win",
+      "candidate": "canopy",
+      "seat": 0,
+      "seed": 206595965,
+      "margin": 982.93,
+      "checkpoint_margin": {
+        "250": 799.64,
+        "274": 811.29,
+        "275": 814.38,
+        "285": 952.13,
+        "299": 982.93
+      },
+      "late_cash_delta": {
+        "deposits": 189.12329,
+        "trees": -17.48919,
+        "hires": 0,
+        "base_collision": 0,
+        "rounding": 0.00589
+      },
+      "sides_candidate_first": [
+        {
+          "original_seat": 0,
+          "start_carried": 678.402,
+          "initial_stock_banked_by_own_side": 678.402,
+          "initial_stock_banked_fraction": 1.0,
+          "terminal_cargo": 0,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 0,
+          "funds25": {
+            "deposits": 1571.4072,
+            "trees": 116.82941,
+            "hires": 0,
+            "base_collision": 0,
+            "rounding": 0.01339
+          },
+          "gross_death_cargo": 44.4753,
+          "collector_deaths": 2,
+          "planter_deaths": 1,
+          "hires25": 0,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 11,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        },
+        {
+          "original_seat": 1,
+          "start_carried": 555.8367,
+          "initial_stock_banked_by_own_side": 555.8367,
+          "initial_stock_banked_fraction": 1.0,
+          "terminal_cargo": 0,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 0,
+          "funds25": {
+            "deposits": 1382.28391,
+            "trees": 134.3186,
+            "hires": 0,
+            "base_collision": 0,
+            "rounding": 0.00749
+          },
+          "gross_death_cargo": 136.8618,
+          "collector_deaths": 3,
+          "planter_deaths": 0,
+          "hires25": 0,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 11,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        }
+      ],
+      "branches": {
+        "early_bank": {
+          "edits": 6,
+          "margin": 929.36,
+          "change": -53.57,
+          "funds_changes": [
+            {
+              "deposits": -52.9251,
+              "trees": 0.0,
+              "hires": 0,
+              "base_collision": 0,
+              "rounding": 0.0051
+            },
+            {
+              "deposits": 0.0,
+              "trees": 0.6611,
+              "hires": 0,
+              "base_collision": 0,
+              "rounding": -0.0111
+            }
+          ],
+          "absent_opponent_commands": 0,
+          "reattributed_opponent_commands": 0
+        },
+        "preblock": {
+          "edits": 11,
+          "margin": 922.46,
+          "change": -60.47,
+          "funds_changes": [
+            {
+              "deposits": -43.5495,
+              "trees": 0.0,
+              "hires": 0,
+              "base_collision": 0,
+              "rounding": -0.0005
+            },
+            {
+              "deposits": 16.9278,
+              "trees": 0.0,
+              "hires": 0,
+              "base_collision": 0,
+              "rounding": -0.0078
+            }
+          ],
+          "absent_opponent_commands": 2,
+          "reattributed_opponent_commands": 0
+        }
+      }
+    },
+    {
+      "key": "canopy/206595965/1",
+      "type": "larger_loss",
+      "candidate": "canopy",
+      "seat": 1,
+      "seed": 206595965,
+      "margin": -507.88,
+      "checkpoint_margin": {
+        "250": -50.97,
+        "274": -437.6,
+        "275": -475.1,
+        "285": -359.31,
+        "299": -507.88
+      },
+      "late_cash_delta": {
+        "deposits": 37.49541,
+        "trees": -77.76141,
+        "hires": -30.0,
+        "base_collision": 0,
+        "rounding": -0.014
+      },
+      "sides_candidate_first": [
+        {
+          "original_seat": 1,
+          "start_carried": 773.7177,
+          "initial_stock_banked_by_own_side": 773.7177,
+          "initial_stock_banked_fraction": 1.0,
+          "terminal_cargo": 0,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 0,
+          "funds25": {
+            "deposits": 1494.6411,
+            "trees": 48.50686,
+            "hires": -60.0,
+            "base_collision": 0,
+            "rounding": -0.00796
+          },
+          "gross_death_cargo": 126.3216,
+          "collector_deaths": 4,
+          "planter_deaths": 1,
+          "hires25": 2,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 11,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        },
+        {
+          "original_seat": 0,
+          "start_carried": 602.8555,
+          "initial_stock_banked_by_own_side": 602.8555,
+          "initial_stock_banked_fraction": 1.0,
+          "terminal_cargo": 5.05737,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 5.0574,
+          "funds25": {
+            "deposits": 1457.14569,
+            "trees": 126.26828,
+            "hires": -30.0,
+            "base_collision": 0,
+            "rounding": 0.00604
+          },
+          "gross_death_cargo": 0,
+          "collector_deaths": 2,
+          "planter_deaths": 0,
+          "hires25": 1,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 12,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        }
+      ],
+      "branches": {
+        "early_bank": {
+          "edits": 1,
+          "margin": -547.47,
+          "change": -39.59,
+          "funds_changes": [
+            {
+              "deposits": -32.11305,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": -0.00695
+            },
+            {
+              "deposits": 0.0,
+              "trees": 7.47525,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": -0.00525
+            }
+          ],
+          "absent_opponent_commands": 0,
+          "reattributed_opponent_commands": 0
+        },
+        "preblock": {
+          "edits": 7,
+          "margin": -171.11,
+          "change": 336.77,
+          "funds_changes": [
+            {
+              "deposits": 96.1065,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.0035
+            },
+            {
+              "deposits": -240.6474,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": -0.0126
+            }
+          ],
+          "absent_opponent_commands": 12,
+          "reattributed_opponent_commands": 0
+        }
+      }
+    },
+    {
+      "key": "canopy/106612562/0",
+      "type": "close_loss",
+      "candidate": "canopy",
+      "seat": 0,
+      "seed": 106612562,
+      "margin": -164.87,
+      "checkpoint_margin": {
+        "250": -267.42,
+        "274": -563.95,
+        "275": -533.76,
+        "285": -305.28,
+        "299": -164.87
+      },
+      "late_cash_delta": {
+        "deposits": 470.58411,
+        "trees": -71.51564,
+        "hires": 0.0,
+        "base_collision": 0,
+        "rounding": 0.01153
+      },
+      "sides_candidate_first": [
+        {
+          "original_seat": 0,
+          "start_carried": 478.2738,
+          "initial_stock_banked_by_own_side": 474.1078,
+          "initial_stock_banked_fraction": 0.99129,
+          "terminal_cargo": 163.8066,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 163.8066,
+          "funds25": {
+            "deposits": 1044.59361,
+            "trees": 8.30456,
+            "hires": -60.0,
+            "base_collision": 0,
+            "rounding": 0.00183
+          },
+          "gross_death_cargo": 53.7927,
+          "collector_deaths": 4,
+          "planter_deaths": 0,
+          "hires25": 2,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 10,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        },
+        {
+          "original_seat": 1,
+          "start_carried": 300.2223,
+          "initial_stock_banked_by_own_side": 226.5075,
+          "initial_stock_banked_fraction": 0.75447,
+          "terminal_cargo": 53.7927,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 53.7927,
+          "funds25": {
+            "deposits": 574.0095,
+            "trees": 79.8202,
+            "hires": -60.0,
+            "base_collision": 0,
+            "rounding": -0.0097
+          },
+          "gross_death_cargo": 321.03,
+          "collector_deaths": 8,
+          "planter_deaths": 0,
+          "hires25": 2,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 9,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        }
+      ],
+      "branches": {
+        "early_bank": {
+          "edits": 6,
+          "margin": -160.36,
+          "change": 4.51,
+          "funds_changes": [
+            {
+              "deposits": 4.5231,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": -0.0131
+            },
+            {
+              "deposits": 0.0,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.0
+            }
+          ],
+          "absent_opponent_commands": 6,
+          "reattributed_opponent_commands": 0
+        },
+        "preblock": {
+          "edits": 10,
+          "margin": -130.62,
+          "change": 34.25,
+          "funds_changes": [
+            {
+              "deposits": 0.0,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.0
+            },
+            {
+              "deposits": -34.2513,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.0013
+            }
+          ],
+          "absent_opponent_commands": 6,
+          "reattributed_opponent_commands": 0
+        }
+      }
+    },
+    {
+      "key": "canopy/106612562/1",
+      "type": "larger_win",
+      "candidate": "canopy",
+      "seat": 1,
+      "seed": 106612562,
+      "margin": 938.03,
+      "checkpoint_margin": {
+        "250": 416.89,
+        "274": 789.9,
+        "275": 790.31,
+        "285": 697.98,
+        "299": 938.03
+      },
+      "late_cash_delta": {
+        "deposits": 160.27219,
+        "trees": -42.18014,
+        "hires": 30.0,
+        "base_collision": 0,
+        "rounding": 0.03795
+      },
+      "sides_candidate_first": [
+        {
+          "original_seat": 1,
+          "start_carried": 326.5886,
+          "initial_stock_banked_by_own_side": 324.6046,
+          "initial_stock_banked_fraction": 0.99393,
+          "terminal_cargo": 22.3098,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 22.3098,
+          "funds25": {
+            "deposits": 856.9666,
+            "trees": 34.50159,
+            "hires": -60.0,
+            "base_collision": 0,
+            "rounding": 0.01181
+          },
+          "gross_death_cargo": 197.3617,
+          "collector_deaths": 8,
+          "planter_deaths": 1,
+          "hires25": 2,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 10,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        },
+        {
+          "original_seat": 0,
+          "start_carried": 253.2045,
+          "initial_stock_banked_by_own_side": 253.2045,
+          "initial_stock_banked_fraction": 1.0,
+          "terminal_cargo": 52.5505,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 52.5505,
+          "funds25": {
+            "deposits": 696.69441,
+            "trees": 76.68173,
+            "hires": -90.0,
+            "base_collision": 0,
+            "rounding": -0.02614
+          },
+          "gross_death_cargo": 119.4663,
+          "collector_deaths": 5,
+          "planter_deaths": 1,
+          "hires25": 3,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 8,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        }
+      ],
+      "branches": {
+        "early_bank": {
+          "edits": 0,
+          "margin": 938.03,
+          "change": 0.0,
+          "funds_changes": [
+            {
+              "deposits": 0.0,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.0
+            },
+            {
+              "deposits": 0.0,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.0
+            }
+          ],
+          "absent_opponent_commands": 0,
+          "reattributed_opponent_commands": 0
+        },
+        "preblock": {
+          "edits": 2,
+          "margin": 866.96,
+          "change": -71.07,
+          "funds_changes": [
+            {
+              "deposits": -71.0697,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": -0.0003
+            },
+            {
+              "deposits": 0.0,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.0
+            }
+          ],
+          "absent_opponent_commands": 12,
+          "reattributed_opponent_commands": 0
+        }
+      }
+    },
+    {
+      "key": "canopy/814754269/0",
+      "type": "larger_loss",
+      "candidate": "canopy",
+      "seat": 0,
+      "seed": 814754269,
+      "margin": -1198.67,
+      "checkpoint_margin": {
+        "250": -925.3,
+        "274": -1157.49,
+        "275": -1149.17,
+        "285": -1199.6,
+        "299": -1198.67
+      },
+      "late_cash_delta": {
+        "deposits": -158.61369,
+        "trees": 147.43251,
+        "hires": -30.0,
+        "base_collision": 0.0,
+        "rounding": 0.00119
+      },
+      "sides_candidate_first": [
+        {
+          "original_seat": 0,
+          "start_carried": 303.5387,
+          "initial_stock_banked_by_own_side": 303.5387,
+          "initial_stock_banked_fraction": 1.0,
+          "terminal_cargo": 0,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 0,
+          "funds25": {
+            "deposits": 797.72868,
+            "trees": 173.84331,
+            "hires": -150.0,
+            "base_collision": 0.0,
+            "rounding": -0.00199
+          },
+          "gross_death_cargo": 210.612,
+          "collector_deaths": 10,
+          "planter_deaths": 0,
+          "hires25": 5,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 8,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        },
+        {
+          "original_seat": 1,
+          "start_carried": 350.5323,
+          "initial_stock_banked_by_own_side": 349.1253,
+          "initial_stock_banked_fraction": 0.99599,
+          "terminal_cargo": 29.7663,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 29.7663,
+          "funds25": {
+            "deposits": 956.34237,
+            "trees": 26.4108,
+            "hires": -120.0,
+            "base_collision": 0,
+            "rounding": -0.00317
+          },
+          "gross_death_cargo": 148.8834,
+          "collector_deaths": 10,
+          "planter_deaths": 0,
+          "hires25": 4,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 9,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        }
+      ],
+      "branches": {
+        "early_bank": {
+          "edits": 6,
+          "margin": -1209.86,
+          "change": -11.19,
+          "funds_changes": [
+            {
+              "deposits": -11.1861,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0.0,
+              "rounding": -0.0039
+            },
+            {
+              "deposits": 0.0,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.0
+            }
+          ],
+          "absent_opponent_commands": 0,
+          "reattributed_opponent_commands": 0
+        },
+        "preblock": {
+          "edits": 8,
+          "margin": -1354.11,
+          "change": -155.44,
+          "funds_changes": [
+            {
+              "deposits": -183.26118,
+              "trees": -3.05036,
+              "hires": 30.0,
+              "base_collision": 0.0,
+              "rounding": 0.00154
+            },
+            {
+              "deposits": -12.9054,
+              "trees": 12.03866,
+              "hires": 0.0,
+              "base_collision": 0.0,
+              "rounding": -0.00326
+            }
+          ],
+          "absent_opponent_commands": 19,
+          "reattributed_opponent_commands": 0
+        }
+      }
+    },
+    {
+      "key": "canopy/814754269/1",
+      "type": "larger_win",
+      "candidate": "canopy",
+      "seat": 1,
+      "seed": 814754269,
+      "margin": 628.13,
+      "checkpoint_margin": {
+        "250": 1104.56,
+        "274": 590.35,
+        "275": 451.44,
+        "285": 418.39,
+        "299": 628.13
+      },
+      "late_cash_delta": {
+        "deposits": -117.45868,
+        "trees": 155.22689,
+        "hires": 0.0,
+        "base_collision": 0,
+        "rounding": 0.01179
+      },
+      "sides_candidate_first": [
+        {
+          "original_seat": 1,
+          "start_carried": 447.2604,
+          "initial_stock_banked_by_own_side": 431.1117,
+          "initial_stock_banked_fraction": 0.96389,
+          "terminal_cargo": 20.7003,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 20.7003,
+          "funds25": {
+            "deposits": 866.9676,
+            "trees": 280.4434,
+            "hires": -120.0,
+            "base_collision": 0,
+            "rounding": 0.009
+          },
+          "gross_death_cargo": 495.5148,
+          "collector_deaths": 10,
+          "planter_deaths": 1,
+          "hires25": 4,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 6,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        },
+        {
+          "original_seat": 0,
+          "start_carried": 451.8696,
+          "initial_stock_banked_by_own_side": 451.8696,
+          "initial_stock_banked_fraction": 1.0,
+          "terminal_cargo": 205.1658,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 81.2913,
+          "funds25": {
+            "deposits": 984.42628,
+            "trees": 125.21651,
+            "hires": -120.0,
+            "base_collision": 0,
+            "rounding": -0.00279
+          },
+          "gross_death_cargo": 20.7003,
+          "collector_deaths": 6,
+          "planter_deaths": 1,
+          "hires25": 4,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 12,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        }
+      ],
+      "branches": {
+        "early_bank": {
+          "edits": 3,
+          "margin": 604.53,
+          "change": -23.6,
+          "funds_changes": [
+            {
+              "deposits": -23.5992,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": -0.0008
+            },
+            {
+              "deposits": 0.0,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.0
+            }
+          ],
+          "absent_opponent_commands": 3,
+          "reattributed_opponent_commands": 0
+        },
+        "preblock": {
+          "edits": 6,
+          "margin": 619.99,
+          "change": -8.14,
+          "funds_changes": [
+            {
+              "deposits": -51.7497,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": -0.0003
+            },
+            {
+              "deposits": -73.3104,
+              "trees": 29.69748,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.00292
+            }
+          ],
+          "absent_opponent_commands": 11,
+          "reattributed_opponent_commands": 0
+        }
+      }
+    },
+    {
+      "key": "canopy/170804287/0",
+      "type": "close_win",
+      "candidate": "canopy",
+      "seat": 0,
+      "seed": 170804287,
+      "margin": 285.86,
+      "checkpoint_margin": {
+        "250": -427.15,
+        "274": -320.99,
+        "275": -372.14,
+        "285": -251.11,
+        "299": 285.86
+      },
+      "late_cash_delta": {
+        "deposits": 407.82164,
+        "trees": 168.99205,
+        "hires": 30.0,
+        "base_collision": 0,
+        "rounding": 0.03631
+      },
+      "sides_candidate_first": [
+        {
+          "original_seat": 0,
+          "start_carried": 455.096,
+          "initial_stock_banked_by_own_side": 449.7976,
+          "initial_stock_banked_fraction": 0.98836,
+          "terminal_cargo": 8.26173,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 8.2617,
+          "funds25": {
+            "deposits": 1389.86644,
+            "trees": 202.97195,
+            "hires": -60.0,
+            "base_collision": 0,
+            "rounding": 0.01161
+          },
+          "gross_death_cargo": 64.8855,
+          "collector_deaths": 5,
+          "planter_deaths": 0,
+          "hires25": 2,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 11,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        },
+        {
+          "original_seat": 1,
+          "start_carried": 265.5286,
+          "initial_stock_banked_by_own_side": 184.1994,
+          "initial_stock_banked_fraction": 0.69371,
+          "terminal_cargo": 9.7575,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 9.7575,
+          "funds25": {
+            "deposits": 982.0448,
+            "trees": 33.9799,
+            "hires": -90.0,
+            "base_collision": 0,
+            "rounding": -0.0247
+          },
+          "gross_death_cargo": 312.78112,
+          "collector_deaths": 7,
+          "planter_deaths": 0,
+          "hires25": 3,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 9,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        }
+      ],
+      "branches": {
+        "early_bank": {
+          "edits": 4,
+          "margin": 125.2,
+          "change": -160.66,
+          "funds_changes": [
+            {
+              "deposits": -138.78567,
+              "trees": -0.96848,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": -0.00586
+            },
+            {
+              "deposits": 0.0,
+              "trees": 20.88116,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.01884
+            }
+          ],
+          "absent_opponent_commands": 0,
+          "reattributed_opponent_commands": 0
+        },
+        "preblock": {
+          "edits": 0,
+          "margin": 285.86,
+          "change": 0.0,
+          "funds_changes": [
+            {
+              "deposits": 0.0,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.0
+            },
+            {
+              "deposits": 0.0,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.0
+            }
+          ],
+          "absent_opponent_commands": 0,
+          "reattributed_opponent_commands": 0
+        }
+      }
+    },
+    {
+      "key": "canopy/170804287/1",
+      "type": "close_win",
+      "candidate": "canopy",
+      "seat": 1,
+      "seed": 170804287,
+      "margin": 213.02,
+      "checkpoint_margin": {
+        "250": -357.17,
+        "274": 425.42,
+        "275": 376.13,
+        "285": 361.9,
+        "299": 213.02
+      },
+      "late_cash_delta": {
+        "deposits": -230.75597,
+        "trees": 18.38155,
+        "hires": 0.0,
+        "base_collision": 0,
+        "rounding": -0.02558
+      },
+      "sides_candidate_first": [
+        {
+          "original_seat": 1,
+          "start_carried": 255.0188,
+          "initial_stock_banked_by_own_side": 255.0188,
+          "initial_stock_banked_fraction": 1.0,
+          "terminal_cargo": 175.0929,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 8.1393,
+          "funds25": {
+            "deposits": 977.64803,
+            "trees": 205.23232,
+            "hires": -30.0,
+            "base_collision": 0,
+            "rounding": -0.02035
+          },
+          "gross_death_cargo": 120.99513,
+          "collector_deaths": 3,
+          "planter_deaths": 0,
+          "hires25": 1,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 8,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        },
+        {
+          "original_seat": 0,
+          "start_carried": 312.4968,
+          "initial_stock_banked_by_own_side": 292.3818,
+          "initial_stock_banked_fraction": 0.93563,
+          "terminal_cargo": 47.199,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 27.0,
+          "funds25": {
+            "deposits": 1208.404,
+            "trees": 186.85077,
+            "hires": -30.0,
+            "base_collision": 0,
+            "rounding": 0.00523
+          },
+          "gross_death_cargo": 550.26975,
+          "collector_deaths": 7,
+          "planter_deaths": 0,
+          "hires25": 1,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 9,
+          "hindsight_one_move_interceptable_receipts": 1,
+          "hindsight_one_move_interceptable_cash": 206.25759
+        }
+      ],
+      "branches": {
+        "early_bank": {
+          "edits": 5,
+          "margin": 108.21,
+          "change": -104.81,
+          "funds_changes": [
+            {
+              "deposits": -77.83089,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.01089
+            },
+            {
+              "deposits": 0.0,
+              "trees": 26.99049,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": -0.00049
+            }
+          ],
+          "absent_opponent_commands": 0,
+          "reattributed_opponent_commands": 0
+        },
+        "preblock": {
+          "edits": 2,
+          "margin": 143.53,
+          "change": -69.49,
+          "funds_changes": [
+            {
+              "deposits": -65.5437,
+              "trees": -3.96109,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.01479
+            },
+            {
+              "deposits": 0.0,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.0
+            }
+          ],
+          "absent_opponent_commands": 0,
+          "reattributed_opponent_commands": 0
+        }
+      }
+    },
+    {
+      "key": "canopy/5705547/0",
+      "type": "larger_win",
+      "candidate": "canopy",
+      "seat": 0,
+      "seed": 5705547,
+      "margin": 356.65,
+      "checkpoint_margin": {
+        "250": 70.58,
+        "274": 381.22,
+        "275": 829.19,
+        "285": 564.16,
+        "299": 356.65
+      },
+      "late_cash_delta": {
+        "deposits": -41.40623,
+        "trees": -13.13609,
+        "hires": 30.0,
+        "base_collision": 0.0,
+        "rounding": -0.02768
+      },
+      "sides_candidate_first": [
+        {
+          "original_seat": 0,
+          "start_carried": 757.8519,
+          "initial_stock_banked_by_own_side": 751.1368,
+          "initial_stock_banked_fraction": 0.99114,
+          "terminal_cargo": 0,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 0,
+          "funds25": {
+            "deposits": 1389.43927,
+            "trees": 124.39416,
+            "hires": 0,
+            "base_collision": 0.0,
+            "rounding": -0.03343
+          },
+          "gross_death_cargo": 122.80326,
+          "collector_deaths": 7,
+          "planter_deaths": 1,
+          "hires25": 0,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 12,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        },
+        {
+          "original_seat": 1,
+          "start_carried": 694.9659,
+          "initial_stock_banked_by_own_side": 694.9659,
+          "initial_stock_banked_fraction": 1.0,
+          "terminal_cargo": 21.6648,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 21.6648,
+          "funds25": {
+            "deposits": 1430.8455,
+            "trees": 137.53026,
+            "hires": -30.0,
+            "base_collision": 0,
+            "rounding": -0.00576
+          },
+          "gross_death_cargo": 50.1153,
+          "collector_deaths": 4,
+          "planter_deaths": 1,
+          "hires25": 1,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 13,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        }
+      ],
+      "branches": {
+        "early_bank": {
+          "edits": 0,
+          "margin": 356.65,
+          "change": 0.0,
+          "funds_changes": [
+            {
+              "deposits": 0.0,
+              "trees": 0.0,
+              "hires": 0,
+              "base_collision": 0.0,
+              "rounding": 0.0
+            },
+            {
+              "deposits": 0.0,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.0
+            }
+          ],
+          "absent_opponent_commands": 0,
+          "reattributed_opponent_commands": 0
+        },
+        "preblock": {
+          "edits": 8,
+          "margin": 403.34,
+          "change": 46.69,
+          "funds_changes": [
+            {
+              "deposits": -71.4177,
+              "trees": 0.0,
+              "hires": 0,
+              "base_collision": 0.0,
+              "rounding": -0.0023
+            },
+            {
+              "deposits": -118.1118,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.0018
+            }
+          ],
+          "absent_opponent_commands": 18,
+          "reattributed_opponent_commands": 0
+        }
+      }
+    },
+    {
+      "key": "canopy/5705547/1",
+      "type": "larger_loss",
+      "candidate": "canopy",
+      "seat": 1,
+      "seed": 5705547,
+      "margin": -885.39,
+      "checkpoint_margin": {
+        "250": -696.59,
+        "274": -1236.12,
+        "275": -1287.34,
+        "285": -1195.76,
+        "299": -885.39
+      },
+      "late_cash_delta": {
+        "deposits": 343.89621,
+        "trees": 36.86359,
+        "hires": -30.0,
+        "base_collision": 0,
+        "rounding": -0.0298
+      },
+      "sides_candidate_first": [
+        {
+          "original_seat": 1,
+          "start_carried": 774.7959,
+          "initial_stock_banked_by_own_side": 774.7959,
+          "initial_stock_banked_fraction": 1.0,
+          "terminal_cargo": 0,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 0,
+          "funds25": {
+            "deposits": 1431.39567,
+            "trees": 134.53346,
+            "hires": -30.0,
+            "base_collision": 0,
+            "rounding": -0.00914
+          },
+          "gross_death_cargo": 367.85507,
+          "collector_deaths": 6,
+          "planter_deaths": 0,
+          "hires25": 1,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 11,
+          "hindsight_one_move_interceptable_receipts": 1,
+          "hindsight_one_move_interceptable_cash": 45.2268
+        },
+        {
+          "original_seat": 0,
+          "start_carried": 490.5898,
+          "initial_stock_banked_by_own_side": 490.5898,
+          "initial_stock_banked_fraction": 1.0,
+          "terminal_cargo": 85.6443,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 12.4572,
+          "funds25": {
+            "deposits": 1087.49946,
+            "trees": 97.66988,
+            "hires": 0,
+            "base_collision": 0,
+            "rounding": 0.02066
+          },
+          "gross_death_cargo": 87.9942,
+          "collector_deaths": 5,
+          "planter_deaths": 0,
+          "hires25": 0,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 10,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        }
+      ],
+      "branches": {
+        "early_bank": {
+          "edits": 4,
+          "margin": -1055.2,
+          "change": -169.81,
+          "funds_changes": [
+            {
+              "deposits": -169.79717,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": -0.01283
+            },
+            {
+              "deposits": 0.0,
+              "trees": 0.0,
+              "hires": 0,
+              "base_collision": 0,
+              "rounding": 0.0
+            }
+          ],
+          "absent_opponent_commands": 0,
+          "reattributed_opponent_commands": 0
+        },
+        "preblock": {
+          "edits": 9,
+          "margin": -931.34,
+          "change": -45.95,
+          "funds_changes": [
+            {
+              "deposits": -93.2454,
+              "trees": 0.0,
+              "hires": 30.0,
+              "base_collision": 0,
+              "rounding": 0.0054
+            },
+            {
+              "deposits": -17.2779,
+              "trees": 0.0,
+              "hires": 0,
+              "base_collision": 0,
+              "rounding": -0.0121
+            }
+          ],
+          "absent_opponent_commands": 5,
+          "reattributed_opponent_commands": 0
+        }
+      }
+    },
+    {
+      "key": "zenith/93045347/0",
+      "type": "larger_loss",
+      "candidate": "zenith",
+      "seat": 0,
+      "seed": 93045347,
+      "margin": -758.57,
+      "checkpoint_margin": {
+        "250": -543.17,
+        "274": -700.86,
+        "275": -705.8,
+        "285": -583.65,
+        "299": -758.57
+      },
+      "late_cash_delta": {
+        "deposits": 111.81459,
+        "trees": -109.49768,
+        "hires": -60.0,
+        "base_collision": 0,
+        "rounding": -0.02691
+      },
+      "sides_candidate_first": [
+        {
+          "original_seat": 0,
+          "start_carried": 774.202,
+          "initial_stock_banked_by_own_side": 765.994,
+          "initial_stock_banked_fraction": 0.9894,
+          "terminal_cargo": 7.158,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 7.158,
+          "funds25": {
+            "deposits": 1404.00222,
+            "trees": 39.63307,
+            "hires": -60.0,
+            "base_collision": 0,
+            "rounding": -0.02529
+          },
+          "gross_death_cargo": 255.9273,
+          "collector_deaths": 6,
+          "planter_deaths": 1,
+          "hires25": 2,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 8,
+          "hindsight_one_move_interceptable_receipts": 1,
+          "hindsight_one_move_interceptable_cash": 183.4668
+        },
+        {
+          "original_seat": 1,
+          "start_carried": 672.378,
+          "initial_stock_banked_by_own_side": 669.2987,
+          "initial_stock_banked_fraction": 0.99542,
+          "terminal_cargo": 15.7842,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 15.7842,
+          "funds25": {
+            "deposits": 1292.18763,
+            "trees": 149.13075,
+            "hires": 0,
+            "base_collision": 0,
+            "rounding": 0.00162
+          },
+          "gross_death_cargo": 133.29048,
+          "collector_deaths": 4,
+          "planter_deaths": 1,
+          "hires25": 0,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 10,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        }
+      ],
+      "branches": {
+        "early_bank": {
+          "edits": 5,
+          "margin": -918.57,
+          "change": -160.0,
+          "funds_changes": [
+            {
+              "deposits": -160.0104,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.0104
+            },
+            {
+              "deposits": 0.0,
+              "trees": 0.0,
+              "hires": 0,
+              "base_collision": 0,
+              "rounding": 0.0
+            }
+          ],
+          "absent_opponent_commands": 0,
+          "reattributed_opponent_commands": 0
+        },
+        "preblock": {
+          "edits": 10,
+          "margin": -694.7,
+          "change": 63.87,
+          "funds_changes": [
+            {
+              "deposits": -124.1856,
+              "trees": -1.93189,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.00749
+            },
+            {
+              "deposits": -189.99063,
+              "trees": 0.0,
+              "hires": 0,
+              "base_collision": 0,
+              "rounding": 0.01063
+            }
+          ],
+          "absent_opponent_commands": 18,
+          "reattributed_opponent_commands": 0
+        }
+      }
+    },
+    {
+      "key": "zenith/93045347/1",
+      "type": "larger_win",
+      "candidate": "zenith",
+      "seat": 1,
+      "seed": 93045347,
+      "margin": 697.18,
+      "checkpoint_margin": {
+        "250": 465.98,
+        "274": 632.54,
+        "275": 529.89,
+        "285": 879.83,
+        "299": 697.18
+      },
+      "late_cash_delta": {
+        "deposits": 72.87258,
+        "trees": -8.2429,
+        "hires": 0.0,
+        "base_collision": 0,
+        "rounding": 0.01032
+      },
+      "sides_candidate_first": [
+        {
+          "original_seat": 1,
+          "start_carried": 285.3867,
+          "initial_stock_banked_by_own_side": 285.3867,
+          "initial_stock_banked_fraction": 1.0,
+          "terminal_cargo": 12.5088,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 0,
+          "funds25": {
+            "deposits": 930.69324,
+            "trees": 81.71309,
+            "hires": -60.0,
+            "base_collision": 0,
+            "rounding": 0.00366
+          },
+          "gross_death_cargo": 140.1753,
+          "collector_deaths": 5,
+          "planter_deaths": 0,
+          "hires25": 2,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 10,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        },
+        {
+          "original_seat": 0,
+          "start_carried": 243.246,
+          "initial_stock_banked_by_own_side": 235.8267,
+          "initial_stock_banked_fraction": 0.9695,
+          "terminal_cargo": 86.0196,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 9.0189,
+          "funds25": {
+            "deposits": 857.82067,
+            "trees": 89.95599,
+            "hires": -60.0,
+            "base_collision": 0,
+            "rounding": -0.00666
+          },
+          "gross_death_cargo": 165.9144,
+          "collector_deaths": 6,
+          "planter_deaths": 0,
+          "hires25": 2,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 9,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        }
+      ],
+      "branches": {
+        "early_bank": {
+          "edits": 2,
+          "margin": 682.0,
+          "change": -15.18,
+          "funds_changes": [
+            {
+              "deposits": -15.18,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": -0.0
+            },
+            {
+              "deposits": 0.0,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.0
+            }
+          ],
+          "absent_opponent_commands": 0,
+          "reattributed_opponent_commands": 0
+        },
+        "preblock": {
+          "edits": 8,
+          "margin": 646.93,
+          "change": -50.25,
+          "funds_changes": [
+            {
+              "deposits": -69.11304,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.00304
+            },
+            {
+              "deposits": -30.6807,
+              "trees": 11.82519,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": -0.00449
+            }
+          ],
+          "absent_opponent_commands": 8,
+          "reattributed_opponent_commands": 0
+        }
+      }
+    },
+    {
+      "key": "zenith/251962351/0",
+      "type": "larger_win",
+      "candidate": "zenith",
+      "seat": 0,
+      "seed": 251962351,
+      "margin": 1498.57,
+      "checkpoint_margin": {
+        "250": 1122.88,
+        "274": 1369.0,
+        "275": 1344.58,
+        "285": 1380.32,
+        "299": 1498.57
+      },
+      "late_cash_delta": {
+        "deposits": 65.43482,
+        "trees": 64.14063,
+        "hires": 0.0,
+        "base_collision": 0,
+        "rounding": -0.00545
+      },
+      "sides_candidate_first": [
+        {
+          "original_seat": 0,
+          "start_carried": 504.828,
+          "initial_stock_banked_by_own_side": 504.828,
+          "initial_stock_banked_fraction": 1.0,
+          "terminal_cargo": 0.4818,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 0.4818,
+          "funds25": {
+            "deposits": 1223.83307,
+            "trees": 70.11967,
+            "hires": -120.0,
+            "base_collision": 0,
+            "rounding": 0.00726
+          },
+          "gross_death_cargo": 76.4454,
+          "collector_deaths": 8,
+          "planter_deaths": 0,
+          "hires25": 4,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 11,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        },
+        {
+          "original_seat": 1,
+          "start_carried": 506.9581,
+          "initial_stock_banked_by_own_side": 504.2846,
+          "initial_stock_banked_fraction": 0.99473,
+          "terminal_cargo": 18.5415,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 18.5415,
+          "funds25": {
+            "deposits": 1158.39825,
+            "trees": 5.97904,
+            "hires": -120.0,
+            "base_collision": 0,
+            "rounding": 0.01271
+          },
+          "gross_death_cargo": 53.44937,
+          "collector_deaths": 7,
+          "planter_deaths": 0,
+          "hires25": 4,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 10,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        }
+      ],
+      "branches": {
+        "early_bank": {
+          "edits": 5,
+          "margin": 1460.86,
+          "change": -37.71,
+          "funds_changes": [
+            {
+              "deposits": -37.7097,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": -0.0003
+            },
+            {
+              "deposits": 0.0,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.0
+            }
+          ],
+          "absent_opponent_commands": 5,
+          "reattributed_opponent_commands": 0
+        },
+        "preblock": {
+          "edits": 11,
+          "margin": 1501.84,
+          "change": 3.27,
+          "funds_changes": [
+            {
+              "deposits": -132.9807,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.0007
+            },
+            {
+              "deposits": -136.24758,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": -0.00242
+            }
+          ],
+          "absent_opponent_commands": 8,
+          "reattributed_opponent_commands": 0
+        }
+      }
+    },
+    {
+      "key": "zenith/251962351/1",
+      "type": "larger_loss",
+      "candidate": "zenith",
+      "seat": 1,
+      "seed": 251962351,
+      "margin": -357.41,
+      "checkpoint_margin": {
+        "250": -440.09,
+        "274": -430.32,
+        "275": -426.92,
+        "285": -136.59,
+        "299": -357.41
+      },
+      "late_cash_delta": {
+        "deposits": 47.44687,
+        "trees": 55.45737,
+        "hires": -30.0,
+        "base_collision": 0,
+        "rounding": 0.00576
+      },
+      "sides_candidate_first": [
+        {
+          "original_seat": 1,
+          "start_carried": 614.3841,
+          "initial_stock_banked_by_own_side": 614.3841,
+          "initial_stock_banked_fraction": 1.0,
+          "terminal_cargo": 0,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 0,
+          "funds25": {
+            "deposits": 1246.81325,
+            "trees": 99.54925,
+            "hires": -210.0,
+            "base_collision": 0,
+            "rounding": -0.01251
+          },
+          "gross_death_cargo": 103.9872,
+          "collector_deaths": 10,
+          "planter_deaths": 0,
+          "hires25": 7,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 15,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        },
+        {
+          "original_seat": 0,
+          "start_carried": 331.6425,
+          "initial_stock_banked_by_own_side": 331.6425,
+          "initial_stock_banked_fraction": 1.0,
+          "terminal_cargo": 24.15,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 24.15,
+          "funds25": {
+            "deposits": 1199.36638,
+            "trees": 44.09188,
+            "hires": -180.0,
+            "base_collision": 0,
+            "rounding": -0.01826
+          },
+          "gross_death_cargo": 152.097,
+          "collector_deaths": 8,
+          "planter_deaths": 0,
+          "hires25": 6,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 15,
+          "hindsight_one_move_interceptable_receipts": 1,
+          "hindsight_one_move_interceptable_cash": 32.6727
+        }
+      ],
+      "branches": {
+        "early_bank": {
+          "edits": 0,
+          "margin": -357.41,
+          "change": 0.0,
+          "funds_changes": [
+            {
+              "deposits": 0.0,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.0
+            },
+            {
+              "deposits": 0.0,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.0
+            }
+          ],
+          "absent_opponent_commands": 0,
+          "reattributed_opponent_commands": 0
+        },
+        "preblock": {
+          "edits": 2,
+          "margin": -178.85,
+          "change": 178.56,
+          "funds_changes": [
+            {
+              "deposits": -40.21948,
+              "trees": -0.35071,
+              "hires": 30.0,
+              "base_collision": 0.0,
+              "rounding": 0.01019
+            },
+            {
+              "deposits": -189.14019,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.02019
+            }
+          ],
+          "absent_opponent_commands": 12,
+          "reattributed_opponent_commands": 0
+        }
+      }
+    },
+    {
+      "key": "zenith/441312419/0",
+      "type": "larger_win",
+      "candidate": "zenith",
+      "seat": 0,
+      "seed": 441312419,
+      "margin": 739.61,
+      "checkpoint_margin": {
+        "250": 471.15,
+        "274": 553.28,
+        "275": 611.68,
+        "285": 699.38,
+        "299": 739.61
+      },
+      "late_cash_delta": {
+        "deposits": 76.16293,
+        "trees": 110.18643,
+        "hires": 0.0,
+        "base_collision": 0,
+        "rounding": -0.01936
+      },
+      "sides_candidate_first": [
+        {
+          "original_seat": 0,
+          "start_carried": 553.1469,
+          "initial_stock_banked_by_own_side": 553.1469,
+          "initial_stock_banked_fraction": 1.0,
+          "terminal_cargo": 9.1893,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 9.1893,
+          "funds25": {
+            "deposits": 1251.3537,
+            "trees": 170.98121,
+            "hires": -30.0,
+            "base_collision": 0,
+            "rounding": -0.00491
+          },
+          "gross_death_cargo": 32.0925,
+          "collector_deaths": 4,
+          "planter_deaths": 1,
+          "hires25": 1,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 14,
+          "hindsight_one_move_interceptable_receipts": 2,
+          "hindsight_one_move_interceptable_cash": 117.9369
+        },
+        {
+          "original_seat": 1,
+          "start_carried": 641.9257,
+          "initial_stock_banked_by_own_side": 641.9257,
+          "initial_stock_banked_fraction": 1.0,
+          "terminal_cargo": 63.1185,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 43.7589,
+          "funds25": {
+            "deposits": 1175.19077,
+            "trees": 60.79478,
+            "hires": -30.0,
+            "base_collision": 0,
+            "rounding": 0.01445
+          },
+          "gross_death_cargo": 151.7604,
+          "collector_deaths": 5,
+          "planter_deaths": 1,
+          "hires25": 1,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 8,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        }
+      ],
+      "branches": {
+        "early_bank": {
+          "edits": 3,
+          "margin": 679.83,
+          "change": -59.78,
+          "funds_changes": [
+            {
+              "deposits": -59.7708,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": -0.0092
+            },
+            {
+              "deposits": 0.0,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.0
+            }
+          ],
+          "absent_opponent_commands": 0,
+          "reattributed_opponent_commands": 0
+        },
+        "preblock": {
+          "edits": 7,
+          "margin": 616.3,
+          "change": -123.31,
+          "funds_changes": [
+            {
+              "deposits": -116.4663,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": -0.0037
+            },
+            {
+              "deposits": -34.80853,
+              "trees": 41.65453,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": -0.006
+            }
+          ],
+          "absent_opponent_commands": 21,
+          "reattributed_opponent_commands": 0
+        }
+      }
+    },
+    {
+      "key": "zenith/441312419/1",
+      "type": "larger_win",
+      "candidate": "zenith",
+      "seat": 1,
+      "seed": 441312419,
+      "margin": 409.35,
+      "checkpoint_margin": {
+        "250": -166.48,
+        "274": -11.18,
+        "275": -7.39,
+        "285": 35.83,
+        "299": 409.35
+      },
+      "late_cash_delta": {
+        "deposits": 195.73317,
+        "trees": 134.82386,
+        "hires": 90.0,
+        "base_collision": 0,
+        "rounding": -0.02703
+      },
+      "sides_candidate_first": [
+        {
+          "original_seat": 1,
+          "start_carried": 260.655,
+          "initial_stock_banked_by_own_side": 260.655,
+          "initial_stock_banked_fraction": 1.0,
+          "terminal_cargo": 0,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 0,
+          "funds25": {
+            "deposits": 1346.6949,
+            "trees": 187.41563,
+            "hires": 0,
+            "base_collision": 0,
+            "rounding": -0.02053
+          },
+          "gross_death_cargo": 13.1124,
+          "collector_deaths": 4,
+          "planter_deaths": 1,
+          "hires25": 0,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 11,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        },
+        {
+          "original_seat": 0,
+          "start_carried": 628.5093,
+          "initial_stock_banked_by_own_side": 412.7238,
+          "initial_stock_banked_fraction": 0.65667,
+          "terminal_cargo": 44.90565,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 13.9168,
+          "funds25": {
+            "deposits": 1150.96173,
+            "trees": 52.59176,
+            "hires": -90.0,
+            "base_collision": 0,
+            "rounding": 0.00651
+          },
+          "gross_death_cargo": 254.9937,
+          "collector_deaths": 5,
+          "planter_deaths": 1,
+          "hires25": 3,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 14,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        }
+      ],
+      "branches": {
+        "early_bank": {
+          "edits": 3,
+          "margin": 319.41,
+          "change": -89.94,
+          "funds_changes": [
+            {
+              "deposits": -89.9475,
+              "trees": 0.0,
+              "hires": 0,
+              "base_collision": 0,
+              "rounding": 0.0075
+            },
+            {
+              "deposits": 0.0,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.0
+            }
+          ],
+          "absent_opponent_commands": 0,
+          "reattributed_opponent_commands": 0
+        },
+        "preblock": {
+          "edits": 4,
+          "margin": 335.82,
+          "change": -73.53,
+          "funds_changes": [
+            {
+              "deposits": -80.8281,
+              "trees": 0.0,
+              "hires": 0,
+              "base_collision": 0,
+              "rounding": -0.0019
+            },
+            {
+              "deposits": -7.2993,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": -0.0007
+            }
+          ],
+          "absent_opponent_commands": 0,
+          "reattributed_opponent_commands": 0
+        }
+      }
+    },
+    {
+      "key": "zenith/655211420/0",
+      "type": "close_win",
+      "candidate": "zenith",
+      "seat": 0,
+      "seed": 655211420,
+      "margin": 143.04,
+      "checkpoint_margin": {
+        "250": 474.62,
+        "274": 535.38,
+        "275": 549.03,
+        "285": 244.35,
+        "299": 143.04
+      },
+      "late_cash_delta": {
+        "deposits": -414.9555,
+        "trees": 52.61158,
+        "hires": -30.0,
+        "base_collision": 0,
+        "rounding": 0.00392
+      },
+      "sides_candidate_first": [
+        {
+          "original_seat": 0,
+          "start_carried": 688.5913,
+          "initial_stock_banked_by_own_side": 688.5913,
+          "initial_stock_banked_fraction": 1.0,
+          "terminal_cargo": 20.9778,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 20.9778,
+          "funds25": {
+            "deposits": 1223.46075,
+            "trees": 118.39108,
+            "hires": -120.0,
+            "base_collision": 0,
+            "rounding": -0.00183
+          },
+          "gross_death_cargo": 78.4101,
+          "collector_deaths": 5,
+          "planter_deaths": 1,
+          "hires25": 4,
+          "hires_last8": 1,
+          "direct_bank_receipts_ge30": 9,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        },
+        {
+          "original_seat": 1,
+          "start_carried": 613.6896,
+          "initial_stock_banked_by_own_side": 613.6896,
+          "initial_stock_banked_fraction": 1.0,
+          "terminal_cargo": 22.96302,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 22.963,
+          "funds25": {
+            "deposits": 1638.41625,
+            "trees": 65.7795,
+            "hires": -90.0,
+            "base_collision": 0,
+            "rounding": -0.00575
+          },
+          "gross_death_cargo": 237.8805,
+          "collector_deaths": 6,
+          "planter_deaths": 0,
+          "hires25": 3,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 12,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        }
+      ],
+      "branches": {
+        "early_bank": {
+          "edits": 6,
+          "margin": 96.23,
+          "change": -46.81,
+          "funds_changes": [
+            {
+              "deposits": -46.8087,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": -0.0013
+            },
+            {
+              "deposits": 0.0,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.0
+            }
+          ],
+          "absent_opponent_commands": 0,
+          "reattributed_opponent_commands": 0
+        },
+        "preblock": {
+          "edits": 7,
+          "margin": 325.69,
+          "change": 182.65,
+          "funds_changes": [
+            {
+              "deposits": -168.1911,
+              "trees": -17.36753,
+              "hires": 30.0,
+              "base_collision": 0,
+              "rounding": 0.00863
+            },
+            {
+              "deposits": -368.2253,
+              "trees": 0.0,
+              "hires": 30.0,
+              "base_collision": 0,
+              "rounding": 0.0253
+            }
+          ],
+          "absent_opponent_commands": 12,
+          "reattributed_opponent_commands": 0
+        }
+      }
+    },
+    {
+      "key": "zenith/655211420/1",
+      "type": "close_loss",
+      "candidate": "zenith",
+      "seat": 1,
+      "seed": 655211420,
+      "margin": -273.58,
+      "checkpoint_margin": {
+        "250": 161.71,
+        "274": -169.06,
+        "275": -166.73,
+        "285": 23.67,
+        "299": -273.58
+      },
+      "late_cash_delta": {
+        "deposits": -243.48637,
+        "trees": 108.92563,
+        "hires": 30.0,
+        "base_collision": 0,
+        "rounding": 0.04074
+      },
+      "sides_candidate_first": [
+        {
+          "original_seat": 1,
+          "start_carried": 567.5613,
+          "initial_stock_banked_by_own_side": 567.5613,
+          "initial_stock_banked_fraction": 1.0,
+          "terminal_cargo": 7.722,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 7.722,
+          "funds25": {
+            "deposits": 1521.1239,
+            "trees": 156.69107,
+            "hires": -30.0,
+            "base_collision": 0,
+            "rounding": 0.03503
+          },
+          "gross_death_cargo": 152.9709,
+          "collector_deaths": 3,
+          "planter_deaths": 0,
+          "hires25": 1,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 12,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        },
+        {
+          "original_seat": 0,
+          "start_carried": 706.4832,
+          "initial_stock_banked_by_own_side": 706.4832,
+          "initial_stock_banked_fraction": 1.0,
+          "terminal_cargo": 19.8912,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 19.8912,
+          "funds25": {
+            "deposits": 1764.61027,
+            "trees": 47.76544,
+            "hires": -60.0,
+            "base_collision": 0,
+            "rounding": -0.00571
+          },
+          "gross_death_cargo": 567.7065,
+          "collector_deaths": 5,
+          "planter_deaths": 0,
+          "hires25": 2,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 12,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        }
+      ],
+      "branches": {
+        "early_bank": {
+          "edits": 6,
+          "margin": -400.28,
+          "change": -126.7,
+          "funds_changes": [
+            {
+              "deposits": -126.6954,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": -0.0046
+            },
+            {
+              "deposits": 0.0,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.0
+            }
+          ],
+          "absent_opponent_commands": 0,
+          "reattributed_opponent_commands": 0
+        },
+        "preblock": {
+          "edits": 3,
+          "margin": -264.98,
+          "change": 8.6,
+          "funds_changes": [
+            {
+              "deposits": -149.619,
+              "trees": 53.56786,
+              "hires": 30.0,
+              "base_collision": 0,
+              "rounding": -0.00886
+            },
+            {
+              "deposits": -134.67606,
+              "trees": 0.0,
+              "hires": 60.0,
+              "base_collision": 0,
+              "rounding": 0.01606
+            }
+          ],
+          "absent_opponent_commands": 30,
+          "reattributed_opponent_commands": 0
+        }
+      }
+    },
+    {
+      "key": "zenith/337623618/0",
+      "type": "close_loss",
+      "candidate": "zenith",
+      "seat": 0,
+      "seed": 337623618,
+      "margin": -311.01,
+      "checkpoint_margin": {
+        "250": -566.57,
+        "274": -508.77,
+        "275": -513.42,
+        "285": -359.99,
+        "299": -311.01
+      },
+      "late_cash_delta": {
+        "deposits": 227.63497,
+        "trees": -59.81409,
+        "hires": 30.0,
+        "base_collision": 0,
+        "rounding": -0.06088
+      },
+      "sides_candidate_first": [
+        {
+          "original_seat": 0,
+          "start_carried": 386.5386,
+          "initial_stock_banked_by_own_side": 386.5386,
+          "initial_stock_banked_fraction": 1.0,
+          "terminal_cargo": 67.9056,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 67.9056,
+          "funds25": {
+            "deposits": 1407.84847,
+            "trees": 44.32864,
+            "hires": -30.0,
+            "base_collision": 0,
+            "rounding": -0.01711
+          },
+          "gross_death_cargo": 126.77677,
+          "collector_deaths": 4,
+          "planter_deaths": 1,
+          "hires25": 1,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 14,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        },
+        {
+          "original_seat": 1,
+          "start_carried": 304.9617,
+          "initial_stock_banked_by_own_side": 244.8027,
+          "initial_stock_banked_fraction": 0.80273,
+          "terminal_cargo": 44.6739,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 44.6739,
+          "funds25": {
+            "deposits": 1180.2135,
+            "trees": 104.14272,
+            "hires": -60.0,
+            "base_collision": 0,
+            "rounding": 0.04378
+          },
+          "gross_death_cargo": 248.7054,
+          "collector_deaths": 5,
+          "planter_deaths": 1,
+          "hires25": 2,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 12,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        }
+      ],
+      "branches": {
+        "early_bank": {
+          "edits": 5,
+          "margin": -372.75,
+          "change": -61.74,
+          "funds_changes": [
+            {
+              "deposits": -61.7409,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.0009
+            },
+            {
+              "deposits": 0.0,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.0
+            }
+          ],
+          "absent_opponent_commands": 0,
+          "reattributed_opponent_commands": 0
+        },
+        "preblock": {
+          "edits": 4,
+          "margin": -140.09,
+          "change": 170.92,
+          "funds_changes": [
+            {
+              "deposits": -55.8999,
+              "trees": 1.57234,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.01756
+            },
+            {
+              "deposits": -320.3436,
+              "trees": 95.14661,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": -0.03301
+            }
+          ],
+          "absent_opponent_commands": 11,
+          "reattributed_opponent_commands": 0
+        }
+      }
+    },
+    {
+      "key": "zenith/337623618/1",
+      "type": "larger_win",
+      "candidate": "zenith",
+      "seat": 1,
+      "seed": 337623618,
+      "margin": 741.07,
+      "checkpoint_margin": {
+        "250": 1049.56,
+        "274": 989.4,
+        "275": 996.54,
+        "285": 528.99,
+        "299": 741.07
+      },
+      "late_cash_delta": {
+        "deposits": -243.37965,
+        "trees": 25.05579,
+        "hires": -30.0,
+        "base_collision": 0,
+        "rounding": -0.00614
+      },
+      "sides_candidate_first": [
+        {
+          "original_seat": 1,
+          "start_carried": 491.9551,
+          "initial_stock_banked_by_own_side": 345.57,
+          "initial_stock_banked_fraction": 0.70244,
+          "terminal_cargo": 34.08981,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 34.0898,
+          "funds25": {
+            "deposits": 1047.62265,
+            "trees": 93.5687,
+            "hires": -120.0,
+            "base_collision": 0,
+            "rounding": -0.00135
+          },
+          "gross_death_cargo": 657.68346,
+          "collector_deaths": 7,
+          "planter_deaths": 1,
+          "hires25": 4,
+          "hires_last8": 1,
+          "direct_bank_receipts_ge30": 8,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        },
+        {
+          "original_seat": 0,
+          "start_carried": 474.4644,
+          "initial_stock_banked_by_own_side": 458.8231,
+          "initial_stock_banked_fraction": 0.96703,
+          "terminal_cargo": 267.24894,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 267.249,
+          "funds25": {
+            "deposits": 1291.0023,
+            "trees": 68.51291,
+            "hires": -90.0,
+            "base_collision": 0,
+            "rounding": 0.00479
+          },
+          "gross_death_cargo": 312.4419,
+          "collector_deaths": 7,
+          "planter_deaths": 1,
+          "hires25": 3,
+          "hires_last8": 1,
+          "direct_bank_receipts_ge30": 14,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        }
+      ],
+      "branches": {
+        "early_bank": {
+          "edits": 4,
+          "margin": 787.75,
+          "change": 46.68,
+          "funds_changes": [
+            {
+              "deposits": 71.96264,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": -0.01264
+            },
+            {
+              "deposits": 0.0,
+              "trees": 25.26652,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.00348
+            }
+          ],
+          "absent_opponent_commands": 0,
+          "reattributed_opponent_commands": 0
+        },
+        "preblock": {
+          "edits": 6,
+          "margin": 851.04,
+          "change": 109.97,
+          "funds_changes": [
+            {
+              "deposits": -39.8172,
+              "trees": -3.50909,
+              "hires": 60.0,
+              "base_collision": 0,
+              "rounding": -0.00371
+            },
+            {
+              "deposits": -111.6434,
+              "trees": -11.6645,
+              "hires": 30.0,
+              "base_collision": 0,
+              "rounding": 0.00791
+            }
+          ],
+          "absent_opponent_commands": 12,
+          "reattributed_opponent_commands": 2
+        }
+      }
+    },
+    {
+      "key": "zenith/100786412/0",
+      "type": "close_loss",
+      "candidate": "zenith",
+      "seat": 0,
+      "seed": 100786412,
+      "margin": -136.72,
+      "checkpoint_margin": {
+        "250": 18.98,
+        "274": -126.53,
+        "275": -141.58,
+        "285": -208.02,
+        "299": -136.72
+      },
+      "late_cash_delta": {
+        "deposits": -11.9037,
+        "trees": -28.29563,
+        "hires": 30.0,
+        "base_collision": 0,
+        "rounding": 0.00932
+      },
+      "sides_candidate_first": [
+        {
+          "original_seat": 0,
+          "start_carried": 226.7925,
+          "initial_stock_banked_by_own_side": 226.7925,
+          "initial_stock_banked_fraction": 1.0,
+          "terminal_cargo": 42.1344,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 42.1344,
+          "funds25": {
+            "deposits": 916.10195,
+            "trees": 86.18271,
+            "hires": -120.0,
+            "base_collision": 0,
+            "rounding": 0.00534
+          },
+          "gross_death_cargo": 366.909,
+          "collector_deaths": 9,
+          "planter_deaths": 0,
+          "hires25": 4,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 11,
+          "hindsight_one_move_interceptable_receipts": 1,
+          "hindsight_one_move_interceptable_cash": 32.2845
+        },
+        {
+          "original_seat": 1,
+          "start_carried": 383.9037,
+          "initial_stock_banked_by_own_side": 355.461,
+          "initial_stock_banked_fraction": 0.92591,
+          "terminal_cargo": 61.088,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 61.088,
+          "funds25": {
+            "deposits": 928.00565,
+            "trees": 114.47834,
+            "hires": -150.0,
+            "base_collision": 0,
+            "rounding": -0.00399
+          },
+          "gross_death_cargo": 215.2842,
+          "collector_deaths": 9,
+          "planter_deaths": 1,
+          "hires25": 5,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 9,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        }
+      ],
+      "branches": {
+        "early_bank": {
+          "edits": 6,
+          "margin": -174.21,
+          "change": -37.49,
+          "funds_changes": [
+            {
+              "deposits": -37.5033,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.0133
+            },
+            {
+              "deposits": 0.0,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.0
+            }
+          ],
+          "absent_opponent_commands": 0,
+          "reattributed_opponent_commands": 0
+        },
+        "preblock": {
+          "edits": 0,
+          "margin": -136.72,
+          "change": 0.0,
+          "funds_changes": [
+            {
+              "deposits": 0.0,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.0
+            },
+            {
+              "deposits": 0.0,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.0
+            }
+          ],
+          "absent_opponent_commands": 0,
+          "reattributed_opponent_commands": 0
+        }
+      }
+    },
+    {
+      "key": "zenith/100786412/1",
+      "type": "larger_win",
+      "candidate": "zenith",
+      "seat": 1,
+      "seed": 100786412,
+      "margin": 1403.61,
+      "checkpoint_margin": {
+        "250": 799.16,
+        "274": 1200.2,
+        "275": 1085.8,
+        "285": 1473.61,
+        "299": 1403.61
+      },
+      "late_cash_delta": {
+        "deposits": 111.4269,
+        "trees": 31.99145,
+        "hires": 60.0,
+        "base_collision": 0,
+        "rounding": -0.00835
+      },
+      "sides_candidate_first": [
+        {
+          "original_seat": 1,
+          "start_carried": 435.3798,
+          "initial_stock_banked_by_own_side": 435.3798,
+          "initial_stock_banked_fraction": 1.0,
+          "terminal_cargo": 15.6255,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 0,
+          "funds25": {
+            "deposits": 1317.49769,
+            "trees": 156.00558,
+            "hires": -120.0,
+            "base_collision": 0,
+            "rounding": -0.02327
+          },
+          "gross_death_cargo": 307.974,
+          "collector_deaths": 10,
+          "planter_deaths": 0,
+          "hires25": 4,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 9,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        },
+        {
+          "original_seat": 0,
+          "start_carried": 847.6998,
+          "initial_stock_banked_by_own_side": 691.3911,
+          "initial_stock_banked_fraction": 0.81561,
+          "terminal_cargo": 117.6867,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 117.6867,
+          "funds25": {
+            "deposits": 1206.07079,
+            "trees": 124.01413,
+            "hires": -180.0,
+            "base_collision": 0,
+            "rounding": -0.01492
+          },
+          "gross_death_cargo": 233.52759,
+          "collector_deaths": 11,
+          "planter_deaths": 0,
+          "hires25": 6,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 9,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        }
+      ],
+      "branches": {
+        "early_bank": {
+          "edits": 4,
+          "margin": 1475.33,
+          "change": 71.72,
+          "funds_changes": [
+            {
+              "deposits": 71.7219,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": -0.0019
+            },
+            {
+              "deposits": 0.0,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.0
+            }
+          ],
+          "absent_opponent_commands": 0,
+          "reattributed_opponent_commands": 0
+        },
+        "preblock": {
+          "edits": 15,
+          "margin": 1411.0,
+          "change": 7.39,
+          "funds_changes": [
+            {
+              "deposits": 0.0,
+              "trees": 14.29282,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.02718
+            },
+            {
+              "deposits": 6.92206,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.00794
+            }
+          ],
+          "absent_opponent_commands": 4,
+          "reattributed_opponent_commands": 0
+        }
+      }
+    },
+    {
+      "key": "zenith/394772093/0",
+      "type": "close_loss",
+      "candidate": "zenith",
+      "seat": 0,
+      "seed": 394772093,
+      "margin": -259.77,
+      "checkpoint_margin": {
+        "250": -159.64,
+        "274": 8.84,
+        "275": 18.89,
+        "285": 62.02,
+        "299": -259.77
+      },
+      "late_cash_delta": {
+        "deposits": -420.95148,
+        "trees": 152.2999,
+        "hires": 0.0,
+        "base_collision": 0,
+        "rounding": 0.04158
+      },
+      "sides_candidate_first": [
+        {
+          "original_seat": 0,
+          "start_carried": 431.15,
+          "initial_stock_banked_by_own_side": 395.3522,
+          "initial_stock_banked_fraction": 0.91697,
+          "terminal_cargo": 19.557,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 19.557,
+          "funds25": {
+            "deposits": 947.8855,
+            "trees": 189.47253,
+            "hires": -30.0,
+            "base_collision": 0,
+            "rounding": 0.02197
+          },
+          "gross_death_cargo": 193.0035,
+          "collector_deaths": 6,
+          "planter_deaths": 1,
+          "hires25": 1,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 10,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        },
+        {
+          "original_seat": 1,
+          "start_carried": 539.8995,
+          "initial_stock_banked_by_own_side": 539.8995,
+          "initial_stock_banked_fraction": 1.0,
+          "terminal_cargo": 0,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 0,
+          "funds25": {
+            "deposits": 1368.83698,
+            "trees": 37.17262,
+            "hires": -30.0,
+            "base_collision": 0,
+            "rounding": -0.0196
+          },
+          "gross_death_cargo": 125.6502,
+          "collector_deaths": 5,
+          "planter_deaths": 1,
+          "hires25": 1,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 14,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        }
+      ],
+      "branches": {
+        "early_bank": {
+          "edits": 0,
+          "margin": -259.77,
+          "change": 0.0,
+          "funds_changes": [
+            {
+              "deposits": 0.0,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.0
+            },
+            {
+              "deposits": 0.0,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.0
+            }
+          ],
+          "absent_opponent_commands": 0,
+          "reattributed_opponent_commands": 0
+        },
+        "preblock": {
+          "edits": 6,
+          "margin": -303.15,
+          "change": -43.38,
+          "funds_changes": [
+            {
+              "deposits": -138.67191,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": -0.00809
+            },
+            {
+              "deposits": -91.1034,
+              "trees": -4.20099,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.00439
+            }
+          ],
+          "absent_opponent_commands": 9,
+          "reattributed_opponent_commands": 0
+        }
+      }
+    },
+    {
+      "key": "zenith/394772093/1",
+      "type": "larger_win",
+      "candidate": "zenith",
+      "seat": 1,
+      "seed": 394772093,
+      "margin": 853.6,
+      "checkpoint_margin": {
+        "250": 312.2,
+        "274": 262.16,
+        "275": 261.19,
+        "285": 536.64,
+        "299": 853.6
+      },
+      "late_cash_delta": {
+        "deposits": 445.101,
+        "trees": 56.35414,
+        "hires": 90.0,
+        "base_collision": 0,
+        "rounding": -0.01514
+      },
+      "sides_candidate_first": [
+        {
+          "original_seat": 1,
+          "start_carried": 482.9628,
+          "initial_stock_banked_by_own_side": 482.9628,
+          "initial_stock_banked_fraction": 1.0,
+          "terminal_cargo": 0,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 0,
+          "funds25": {
+            "deposits": 1317.6423,
+            "trees": 82.04635,
+            "hires": -90.0,
+            "base_collision": 0,
+            "rounding": 0.01135
+          },
+          "gross_death_cargo": 262.2732,
+          "collector_deaths": 10,
+          "planter_deaths": 1,
+          "hires25": 3,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 13,
+          "hindsight_one_move_interceptable_receipts": 1,
+          "hindsight_one_move_interceptable_cash": 65.0079
+        },
+        {
+          "original_seat": 0,
+          "start_carried": 406.6575,
+          "initial_stock_banked_by_own_side": 259.4535,
+          "initial_stock_banked_fraction": 0.63801,
+          "terminal_cargo": 24.5706,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 11.6436,
+          "funds25": {
+            "deposits": 872.5413,
+            "trees": 25.69221,
+            "hires": -180.0,
+            "base_collision": 0,
+            "rounding": 0.02649
+          },
+          "gross_death_cargo": 436.5645,
+          "collector_deaths": 10,
+          "planter_deaths": 1,
+          "hires25": 6,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 8,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        }
+      ],
+      "branches": {
+        "early_bank": {
+          "edits": 1,
+          "margin": 840.32,
+          "change": -13.28,
+          "funds_changes": [
+            {
+              "deposits": -13.2924,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.0124
+            },
+            {
+              "deposits": 0.0,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.0
+            }
+          ],
+          "absent_opponent_commands": 0,
+          "reattributed_opponent_commands": 0
+        },
+        "preblock": {
+          "edits": 3,
+          "margin": 845.17,
+          "change": -8.43,
+          "funds_changes": [
+            {
+              "deposits": 0.0,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.0
+            },
+            {
+              "deposits": 8.4423,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": -0.0123
+            }
+          ],
+          "absent_opponent_commands": 4,
+          "reattributed_opponent_commands": 0
+        }
+      }
+    },
+    {
+      "key": "zenith/424836188/0",
+      "type": "close_loss",
+      "candidate": "zenith",
+      "seat": 0,
+      "seed": 424836188,
+      "margin": -272.85,
+      "checkpoint_margin": {
+        "250": -21.99,
+        "274": -286.32,
+        "275": -283.87,
+        "285": -280.49,
+        "299": -272.85
+      },
+      "late_cash_delta": {
+        "deposits": -24.30831,
+        "trees": 67.79548,
+        "hires": -30.0,
+        "base_collision": 0,
+        "rounding": -0.01718
+      },
+      "sides_candidate_first": [
+        {
+          "original_seat": 0,
+          "start_carried": 304.1403,
+          "initial_stock_banked_by_own_side": 252.2088,
+          "initial_stock_banked_fraction": 0.82925,
+          "terminal_cargo": 15.0222,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 15.0222,
+          "funds25": {
+            "deposits": 792.3042,
+            "trees": 107.29633,
+            "hires": -120.0,
+            "base_collision": 0,
+            "rounding": -0.01053
+          },
+          "gross_death_cargo": 327.0261,
+          "collector_deaths": 10,
+          "planter_deaths": 1,
+          "hires25": 4,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 9,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        },
+        {
+          "original_seat": 1,
+          "start_carried": 385.0401,
+          "initial_stock_banked_by_own_side": 357.1503,
+          "initial_stock_banked_fraction": 0.92757,
+          "terminal_cargo": 190.7655,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 190.7655,
+          "funds25": {
+            "deposits": 816.61251,
+            "trees": 39.50085,
+            "hires": -90.0,
+            "base_collision": 0,
+            "rounding": 0.00664
+          },
+          "gross_death_cargo": 88.6851,
+          "collector_deaths": 7,
+          "planter_deaths": 0,
+          "hires25": 3,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 11,
+          "hindsight_one_move_interceptable_receipts": 1,
+          "hindsight_one_move_interceptable_cash": 100.3485
+        }
+      ],
+      "branches": {
+        "early_bank": {
+          "edits": 0,
+          "margin": -272.85,
+          "change": 0.0,
+          "funds_changes": [
+            {
+              "deposits": 0.0,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.0
+            },
+            {
+              "deposits": 0.0,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.0
+            }
+          ],
+          "absent_opponent_commands": 0,
+          "reattributed_opponent_commands": 0
+        },
+        "preblock": {
+          "edits": 2,
+          "margin": -271.56,
+          "change": 1.29,
+          "funds_changes": [
+            {
+              "deposits": -198.5358,
+              "trees": 0.0,
+              "hires": 30.0,
+              "base_collision": 0.0,
+              "rounding": 0.0058
+            },
+            {
+              "deposits": -169.8192,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": -0.0008
+            }
+          ],
+          "absent_opponent_commands": 19,
+          "reattributed_opponent_commands": 0
+        }
+      }
+    },
+    {
+      "key": "zenith/424836188/1",
+      "type": "larger_loss",
+      "candidate": "zenith",
+      "seat": 1,
+      "seed": 424836188,
+      "margin": -532.63,
+      "checkpoint_margin": {
+        "250": -416.72,
+        "274": 149.15,
+        "275": 140.95,
+        "285": -186.06,
+        "299": -532.63
+      },
+      "late_cash_delta": {
+        "deposits": -566.67274,
+        "trees": -115.10474,
+        "hires": 0.0,
+        "base_collision": 0,
+        "rounding": -0.00252
+      },
+      "sides_candidate_first": [
+        {
+          "original_seat": 1,
+          "start_carried": 304.1053,
+          "initial_stock_banked_by_own_side": 297.9422,
+          "initial_stock_banked_fraction": 0.97973,
+          "terminal_cargo": 0,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 0,
+          "funds25": {
+            "deposits": 832.3518,
+            "trees": 41.85235,
+            "hires": -60.0,
+            "base_collision": 0,
+            "rounding": -0.01415
+          },
+          "gross_death_cargo": 14.1576,
+          "collector_deaths": 5,
+          "planter_deaths": 1,
+          "hires25": 2,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 10,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        },
+        {
+          "original_seat": 0,
+          "start_carried": 564.5876,
+          "initial_stock_banked_by_own_side": 564.5876,
+          "initial_stock_banked_fraction": 1.0,
+          "terminal_cargo": 0,
+          "terminal_cargo_with_no_reachable_loaded_decision_on_final_trip": 0,
+          "funds25": {
+            "deposits": 1399.02454,
+            "trees": 156.95708,
+            "hires": -60.0,
+            "base_collision": 0,
+            "rounding": -0.01163
+          },
+          "gross_death_cargo": 328.344,
+          "collector_deaths": 7,
+          "planter_deaths": 1,
+          "hires25": 2,
+          "hires_last8": 0,
+          "direct_bank_receipts_ge30": 12,
+          "hindsight_one_move_interceptable_receipts": 0,
+          "hindsight_one_move_interceptable_cash": 0
+        }
+      ],
+      "branches": {
+        "early_bank": {
+          "edits": 0,
+          "margin": -532.63,
+          "change": 0.0,
+          "funds_changes": [
+            {
+              "deposits": 0.0,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.0
+            },
+            {
+              "deposits": 0.0,
+              "trees": 0.0,
+              "hires": 0.0,
+              "base_collision": 0,
+              "rounding": 0.0
+            }
+          ],
+          "absent_opponent_commands": 0,
+          "reattributed_opponent_commands": 0
+        },
+        "preblock": {
+          "edits": 9,
+          "margin": -433.49,
+          "change": 99.14,
+          "funds_changes": [
+            {
+              "deposits": -203.9268,
+              "trees": 13.59,
+              "hires": 30.0,
+              "base_collision": 0.0,
+              "rounding": 0.0068
+            },
+            {
+              "deposits": -289.4637,
+              "trees": 0.0,
+              "hires": 30.0,
+              "base_collision": 0,
+              "rounding": -0.0063
+            }
+          ],
+          "absent_opponent_commands": 18,
+          "reattributed_opponent_commands": 6
+        }
+      }
+    }
+  ]
+}

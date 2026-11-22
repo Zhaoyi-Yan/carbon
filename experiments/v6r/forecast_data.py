@@ -34,7 +34,7 @@ def components():
 def extract(raw,output,external_to=None,limit=None,source_revision=None):
     m,price=components()
     source=json.loads((raw/"index.json").read_text())
-    games=[];x=[];y=[];baseline=[];step=[];group=[];actual=[];phase=[]
+    games=[];x=[];y=[];baseline=[];step=[];group=[];actual=[]
     held=set(price["validation"]);asset_train=set(price["training"])
     prior=json.loads(external_to.read_text())["games"] if external_to else []
     seen_files={g["file"] for g in prior}
@@ -81,10 +81,10 @@ def extract(raw,output,external_to=None,limit=None,source_revision=None):
                 board["carbon"]=legal[seat]
                 landscape.append((1-2*seat)*3000*m._v5_territory_value(board,seat)-amount)
             x.append(cand);y.append(targets);step.append(t);group.append(game_idx)
-            baseline.append([linear,asset,*landscape]);actual.append(min(299-t,end-t));phase.append(299-t)
+            baseline.append([linear,asset,*landscape]);actual.append(min(299-t,end-t))
         if len(games)%30==0:print("extracted",len(games),flush=True)
     np.savez_compressed(output,X=np.array(x,"f"),Y=np.array(y,"f"),B=np.array(baseline,"f"),T=np.array(step,"i2"),
-                        G=np.array(group,"i2"),L=np.array(actual,"i2"),R=np.array(phase,"i2"),games=json.dumps(games))
+                        G=np.array(group,"i2"),L=np.array(actual,"i2"),games=json.dumps(games))
 
 
 if __name__=="__main__":

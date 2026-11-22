@@ -78,7 +78,7 @@ def fit(data):
     model=torch.nn.Sequential(torch.nn.Linear(x.shape[-1],24),torch.nn.ReLU(),torch.nn.Dropout(.2),
                               torch.nn.Linear(24,12),torch.nn.ReLU(),torch.nn.Linear(12,1))
     opt=torch.optim.AdamW(model.parameters(),lr=.0015,weight_decay=.08)
-    indices=np.flatnonzero(tr);rng=np.random.default_rng(742);best=(np.inf,)
+    indices=np.flatnonzero(tr);rng=np.random.default_rng(742);best=(np.inf,);best_full=(np.inf,)
     late=(t>=199);close=(np.abs(data["cash"])<=200)&(t>=75)
     masks=[va,va&late,va&close,va&late&close]
     for epoch in range(45):
@@ -95,12 +95,18 @@ def fit(data):
             p=win_sigmoid(anchor[va]+shrink*res)
             # Set the selection rule before looking at either holdout.
             metric=sum(k*score(p,y[va],m[va]) for k,m in zip((.55,.2,.15,.1),masks))
+            if shrink==1. and metric<best_full[0]-1e-7:
+                best_full=(metric,epoch,[p.detach().clone() for p in model.parameters()])
             if metric<best[0]-1e-7:
                 best=(metric,epoch,shrink,[p.detach().clone() for p in model.parameters()])
         if epoch>best[1]+10:break
     w1,b1,w2,b2,w3,b3=[p.numpy().T.copy() if p.ndim==2 else p.numpy().copy() for p in best[3]]
     result.update(mean=mean,inv=inv,w1=w1,b1=b1,w2=w2,b2=b2,w3=w3*best[2],b3=b3*best[2])
-    return result,dict(epoch=best[1]+1,shrink=best[2],scalar_phase_calibrations=baselines)
+    full=[p.numpy().T.copy() if p.ndim==2 else p.numpy().copy() for p in best_full[2]]
+    result.update({"full_"+k:v for k,v in zip(("w1","b1","w2","b2","w3","b3"),full)})
+    return result,dict(epoch=best[1]+1,shrink=best[2],unshrunk_epoch=best_full[1]+1,scalar_phase_calibrations=baselines,
+                       labels="Official winner in decisive games only. Draws excluded from binary win/loss scoring.",
+                       close_definition="Absolute current cash margin <=200 with t>=75; late starts at 199 (100 moves left).")
 
 
 def predictions(data,weights):
@@ -111,13 +117,17 @@ def predictions(data,weights):
     out=(h@weights["w3"]+weights["b3"]).squeeze(-1)
     anchor=data["scalars"]["cash_territory"]@weights["scalar_cash_territory"]
     result["global"]=win_sigmoid(anchor+out[:,:,0]-out[:,:,1])
+    h=np.maximum(x@weights["full_w1"]+weights["full_b1"],0)
+    h=np.maximum(h@weights["full_w2"]+weights["full_b2"],0)
+    raw=(h@weights["full_w3"]+weights["full_b3"]).squeeze(-1)
+    result["global_unshrunk"]=win_sigmoid(anchor+raw[:,:,0]-raw[:,:,1])
     result["constant"]=np.full_like(anchor,.5)
     return result
 
 
 def evaluate(data,weights,partition,best_old):
     pred=predictions(data,weights);t=data['t'];cash=data['cash'];y=data['y'];g=data['group'];split=data['split']
-    selected=split==partition;close=(np.abs(cash)<=200)&(t>=75);late=t>=199
+    selected=(split==partition)&(y!=.5);close=(np.abs(cash)<=200)&(t>=75);late=t>=199
     masks=dict(all=selected,late100=selected&late,close200=selected&close,late100_close200=selected&late&close)
     for i,(lo,hi) in enumerate(((0,74),(75,149),(150,224),(225,298))):masks[f"{lo}-{hi}"]=selected&(t>=lo)&(t<=hi)
     report={}
@@ -141,6 +151,7 @@ def evaluate(data,weights,partition,best_old):
         d=np.array(deltas);bootstrap=d[np.random.default_rng(742).integers(len(d),size=(4000,len(d)))].mean(1)
         report[label]["paired"]=dict(comparator=best_old,delta_logloss_brier=d.mean(0).round(5).tolist(),ci95=np.quantile(bootstrap,[.025,.975],axis=0).round(5).tolist(),games_logloss_improved=int((d[:,0]<0).sum()))
         if label in ("all","late100_close200"):report[label]["paired"]["games"]=rows
+    report["sample"]=dict(draw_games_excluded=len(np.unique(g[(split==partition)&(y==.5)])),decisive_games=len(np.unique(g[selected])),selection="Final strict-score winner in decisive games")
     return report
 
 

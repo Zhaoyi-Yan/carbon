@@ -5,7 +5,6 @@ import os
 from pathlib import Path
 for k in ("OPENBLAS_NUM_THREADS","OMP_NUM_THREADS","VECLIB_MAXIMUM_THREADS","MKL_NUM_THREADS"):os.environ[k]="1"
 import numpy as np
-import forecast
 
 HERE=Path(__file__).resolve().parent
 NAMES=("mean","inv","ridge","w1","b1","w2","b2","w3","b3")
