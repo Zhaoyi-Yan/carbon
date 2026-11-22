@@ -66,7 +66,7 @@ def symmetries():
     return maps
 
 
-def epoch(net,prior,data,device,rng,opt,batch):
+def epoch(net,prior,data,device,rng,opt,batch,distill=.24,forecast=.50):
     n=len(data['X']);order=rng.permutation(n) if opt else np.arange(n);maps=symmetries();tot=np.zeros(5)
     for start in range(0,n,batch):
         ind=order[start:start+batch]
@@ -89,10 +89,10 @@ def epoch(net,prior,data,device,rng,opt,batch):
             ce=-logp.gather(-1,labels[:,:,None])[:,:,0]
             kl=(prev.exp()*(prev-logp)).sum(-1)
             weight=valid*role_weight*w[:,slot].clamp(.5,1.8)
-            loss+=((ce+.24*kl)*weight).sum()/weight.sum().clamp_min(1)*(1. if slot==0 else .48)
+            loss+=((ce+distill*kl)*weight).sum()/weight.sum().clamp_min(1)*(1. if slot==0 else .48)
             mask=valid & elite[:,None]
             nll=nll+(ce*mask).sum();hits=hits+((logp.argmax(-1)==labels)*mask).sum();actions=actions+mask.sum()
-        goal=.50*prior_v+.50*y
+        goal=(1-forecast)*prior_v+forecast*y
         loss+=.65*F.smooth_l1_loss(v,goal,beta=.13)
         if opt:
             opt.zero_grad(set_to_none=True);loss.backward();nn.utils.clip_grad_norm_(net.parameters(),1.);opt.step()
@@ -104,6 +104,10 @@ def main():
     p=argparse.ArgumentParser(description=__doc__)
     for k in ('cache','source','weights','report'):p.add_argument(k,type=Path)
     p.add_argument('--epochs',type=int,default=4);p.add_argument('--batch',type=int,default=64)
+    p.add_argument('--warm',type=Path)
+    p.add_argument('--learning-rate',type=float,default=.00015)
+    p.add_argument('--distill',type=float,default=.24)
+    p.add_argument('--forecast',type=float,default=.50)
     a=p.parse_args();torch.manual_seed(83117);rng=np.random.default_rng(83117);torch.set_num_threads(1)
     tr,va=split(a.cache);train=load_rows(a.cache,tr);valid=load_rows(a.cache,va)
     device='mps' if torch.backends.mps.is_available() else 'cpu'
@@ -112,15 +116,23 @@ def main():
     net=copy.deepcopy(prior);emb=nn.Embedding(23,96).to(device)
     with torch.no_grad():
         emb.weight[:21].copy_(net.style.weight);emb.weight[21:].copy_(net.style.weight[0].expand(2,-1))
-    net.style=emb;opt=torch.optim.AdamW(net.parameters(),lr=.00015,weight_decay=.00012)
+    net.style=emb
+    if a.warm:
+        with np.load(a.warm,allow_pickle=False) as archive:raw=dict(archive)
+        whole=raw['emb'];raw['emb']=whole[:21]
+        with tempfile.TemporaryDirectory() as tmp:
+            path=Path(tmp)/'trunk.npz';np.savez(path,**raw);net=load_full(path)
+        net.style=nn.Embedding.from_pretrained(torch.tensor(whole),freeze=False)
+        net=net.to(device)
+    opt=torch.optim.AdamW(net.parameters(),lr=a.learning_rate,weight_decay=.00012)
     schedule=torch.optim.lr_scheduler.CosineAnnealingLR(opt,T_max=a.epochs,eta_min=.000035)
-    report={'source_sha256':hashlib.sha256(a.source.read_bytes()).hexdigest(),'training':tr,'validation':va,'epochs':[]}
+    report={'source_sha256':hashlib.sha256(a.source.read_bytes()).hexdigest(),'training':tr,'validation':va,'epochs':[],'warm_sha256':hashlib.sha256(a.warm.read_bytes()).hexdigest() if a.warm else None,'learning_rate':a.learning_rate,'distill':a.distill,'forecast':a.forecast}
     best=float('inf')
     for ep in range(a.epochs+1):
         if ep:
-            net.train();epoch(net,prior,train,device,rng,opt,a.batch);schedule.step()
+            net.train();epoch(net,prior,train,device,rng,opt,a.batch,a.distill,a.forecast);schedule.step()
         net.eval()
-        with torch.no_grad():m=epoch(net,prior,valid,device,rng,None,a.batch)
+        with torch.no_grad():m=epoch(net,prior,valid,device,rng,None,a.batch,a.distill,a.forecast)
         report['epochs'].append(m);print(ep,m,flush=True)
         if ep and m['nll']+.25*m['value_mae']<best:
             best=m['nll']+.25*m['value_mae'];net.export(a.weights);report['selected']=ep

@@ -27,7 +27,7 @@ def init():
 
 
 def extract(task):
-    row,path,out=task
+    row,path,out,stride=task
     if out.is_file():return
     replay=json.loads(gzip.decompress(path.read_bytes()))
     f=replay['steps'];end=len(f)-1
@@ -36,7 +36,7 @@ def extract(task):
     fp=hashlib.sha256(json.dumps([first['full_carbon'],[sorted(p[1].values()) for p in first['players']]],separators=(',',':')).encode()).hexdigest()
     x=[];sc=[];labels=[];target=[];styles=[];weights=[]
     cash=[z[0]['observation']['players'][0][0]-z[0]['observation']['players'][1][0] for z in f]
-    offset=int(fp[:5],16)%4
+    offset=int(fp[:5],16)%stride
     for side,key in enumerate(row['order']):
         teacher=row['strategies'][key]['id']
         style=ELITE.get(teacher,OLD.get(teacher,20))
@@ -44,7 +44,7 @@ def extract(task):
         for t in range(end):
             state=f[t][0]['observation'];pl=state['players'];action=f[t+1][side]['action'] or {}
             est,known=tr.step(pl,t,f[t][side]['observation']['carbon'])
-            if t%4==offset:
+            if t%stride==offset:
                 x.append(np.rint(model.encode(pl,t,side,est,known,prev)*100).clip(0,255).astype('u1'))
                 sc.append(model._scalars(pl,t,side))
                 a=np.stack(model.labels(pl,side,action))
@@ -62,7 +62,14 @@ def extract(task):
 def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('cache',type=Path);p.add_argument('snapshots',type=Path,nargs='+');p.add_argument('--jobs',type=int,default=3)
+    p.add_argument('--stride',choices=(1,2,4),type=int,default=4)
     args=p.parse_args();args.cache.mkdir(exist_ok=True,parents=True)
+    settings=args.cache/'sampling.json'
+    if settings.exists() and json.loads(settings.read_text())['stride']!=args.stride:
+        p.error('an existing cache uses a different temporal stride')
+    if not settings.exists() and args.stride!=4 and any(args.cache.glob('*.npz')):
+        p.error('select an empty cache for a new temporal stride')
+    settings.write_text(json.dumps({'stride':args.stride})+'\n')
     games={}
     for root in args.snapshots:
         index=next((root/k for k in ('index.json','snapshot-index.json') if (root/k).is_file()),None)
@@ -70,12 +77,12 @@ def main():
         for row in json.loads(index.read_text()):
             path=root/row['file'];name=path.name.split('.')[0]
             if any(s['id'] in ELITE for s in row['strategies'].values()) and path.is_file():
-                games[name]=(row,path,args.cache/(name+'.npz'))
+                games[name]=(row,path,args.cache/(name+'.npz'),args.stride)
     tasks=[g for g in games.values() if not g[2].is_file()]
     print('source maps',len(games),'to encode',len(tasks),flush=True)
     with ProcessPoolExecutor(args.jobs,initializer=init) as pool:
         for i,_ in enumerate(pool.map(extract,tasks,chunksize=2),1):
             if i%40==0:print(i,flush=True)
-    (args.cache/'index.json').write_text(json.dumps({n:[r['finished'],r['strategies']] for n,(r,_,_) in games.items()})+'\n')
+    (args.cache/'index.json').write_text(json.dumps({n:[r['finished'],r['strategies']] for n,(r,_,_,_) in games.items()})+'\n')
 
 if __name__=='__main__':main()
