@@ -32,7 +32,11 @@ def measure(arg):
                 tree_income=sum(o['trees'][uid][1] for uid in opp[3])
                 trailing+=int(opp[0]<100 and tree_income<8)
         outcome=s[-1]['players'][side][0]-s[-1]['players'][other][0]
-        rows.append(dict(pressure_turns=pressure,constrained_turns=trailing,win=outcome>0,longest_lock=longest))
+        prev=s[100]['players']
+        rows.append(dict(pressure_turns=pressure,constrained_turns=trailing,win=outcome>0,longest_lock=longest,
+                         cash_margin_before=prev[side][0]-prev[other][0],
+                         worker_margin_before=len(prev[side][2])-len(prev[other][2]),
+                         tree_margin_before=len(prev[side][3])-len(prev[other][3])))
         maxlock=max(maxlock,longest)
     return dict(match=name,seed=int(r['configuration']['randomSeed']),layout=layout,seats=rows,longest_lock=maxlock)
 
@@ -54,9 +58,13 @@ def main():
     report={'games':len(games),'hard_lock_games_at_least_10_steps':sum(g['longest_lock']>=10 for g in games),'groups':{}}
     for name,condition in [('all',lambda p:True),('pressure_only',lambda p:p['pressure_turns']>=35 and p['constrained_turns']<25),
                            ('pressure_and_constrained_income',lambda p:p['pressure_turns']>=35 and p['constrained_turns']>=25),
+                           ('income_constraint_only',lambda p:p['pressure_turns']<35 and p['constrained_turns']>=25),
+                           ('neither',lambda p:p['pressure_turns']<35 and p['constrained_turns']<25),
                            ('no_sustained_pressure',lambda p:p['pressure_turns']<35)]:
         seats=[p for g in games for p in g['seats'] if condition(p)]
-        report['groups'][name]=dict(seats=len(seats),wins=sum(p['win'] for p in seats))
+        prebehind=[p for p in seats if p['cash_margin_before']<=0]
+        report['groups'][name]=dict(seats=len(seats),wins=sum(p['win'] for p in seats),
+            not_ahead_in_cash_at_100=len(prebehind),wins_not_ahead_at_100=sum(p['win'] for p in prebehind))
     report['matches']=[{k:v for k,v in g.items() if k!='seats'} for g in games]
     a.output.write_text(json.dumps(report,indent=2)+'\n')
     print({k:v for k,v in report.items() if k!='matches'},flush=True)
