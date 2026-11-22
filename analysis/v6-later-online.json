@@ -1,0 +1,130 @@
+{
+  "revision": "51a00301d9d53559a3084c7819a37471c33dd1f8",
+  "matches": [
+    {
+      "game": {
+        "match": "ed372d3738301486347c75f32bf65ab5",
+        "game": 1,
+        "opponent": "CarbonEdge_Artemis",
+        "opponent_id": "226891089ba7f54b198c8f8dc771dfc2",
+        "seat": 1,
+        "seed": 1915997912,
+        "turns": 299,
+        "won": false,
+        "scores": [
+          6793.44,
+          7419.33
+        ],
+        "layout": "ad512d88e84367c2cfd259fa51d5157f732846b75a07bdd4ad2b9c469fb2eb83",
+        "first_planter": [
+          12,
+          2
+        ],
+        "first_tree": [
+          23,
+          9
+        ],
+        "cash_diffs": [
+          16.08,
+          213.2,
+          -283.37,
+          184.33,
+          -381.11,
+          -476.61
+        ],
+        "economy_diffs_at_75": [
+          550.7,
+          -504.54,
+          3,
+          1,
+          3
+        ]
+      },
+      "stage_margins": {
+        "50": {
+          "cash": 213.2,
+          "absorption": 211.75,
+          "base_receipts": 70.26,
+          "cargo": 18.67,
+          "trees": 7
+        },
+        "75": {
+          "cash": -283.37,
+          "absorption": 550.7,
+          "base_receipts": -504.54,
+          "cargo": 213.69,
+          "trees": 3
+        },
+        "100": {
+          "cash": 184.33,
+          "absorption": 659.06,
+          "base_receipts": -312.52,
+          "cargo": 188.13,
+          "trees": 0
+        },
+        "200": {
+          "cash": 135.27,
+          "absorption": 643.48,
+          "base_receipts": -29.8,
+          "cargo": -287.48,
+          "trees": -1
+        },
+        "299": {
+          "cash": -625.89,
+          "absorption": 805.8,
+          "base_receipts": -818.05,
+          "cargo": 4.19,
+          "trees": -4
+        }
+      }
+    }
+  ],
+  "official_summary": {
+    "source": "https://117.72.210.134/api/summary/da7bdc0e4741462cf02160b68da0a0d9/1",
+    "id": "da7bdc0e4741462cf02160b68da0a0d9",
+    "opponent": "CarbonEdge_Artemis",
+    "seat": 0,
+    "scores": {
+      "a": 7648.0,
+      "b": 5078.15
+    },
+    "margins": {
+      "50": {
+        "cash": 132.08,
+        "trees": -6,
+        "carried": -180.08,
+        "base_receipts": 219.44
+      },
+      "70": {
+        "cash": -646.51,
+        "trees": -10,
+        "carried": 285.78,
+        "base_receipts": -21.67
+      },
+      "80": {
+        "cash": -416.89,
+        "trees": -9,
+        "carried": -442.71,
+        "base_receipts": 373.31
+      },
+      "100": {
+        "cash": -803.54,
+        "trees": -1,
+        "carried": 21.38,
+        "base_receipts": 146.67
+      },
+      "200": {
+        "cash": -2182.09,
+        "trees": -4,
+        "carried": 591.65,
+        "base_receipts": -901.41
+      },
+      "299": {
+        "cash": -2569.85,
+        "trees": -1,
+        "carried": -102.42,
+        "base_receipts": -964.38
+      }
+    }
+  }
+}
