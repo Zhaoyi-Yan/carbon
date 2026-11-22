@@ -33,3 +33,5 @@ CARBON_DEBUG=1 python scripts/selfplay.py --candidate experiments/v6r/checkpoint
 新的对局可在 selfplay 命令上加 `--record-actions`。结果行的 `actions_and_post_cash` 保留原版裁判每回合收到的两组动作和结算后资金，可用地图种子在同版裁判中逐步重放。动作记录在两位策略均已结束该回合的决策后写入。
 
 [利用公开树收入推断雾区碳量](sensing.md) · [接触时应手的一步反事实](reply-stress.jsonl) · [己方旧版本在公开比赛中的行动预测](rival-validation.json)
+
+第一份候选在八图换边确认中为 9 胜 7 负，场均 +27.30。0 号位 3 胜、1 号位 6 胜。两张图双胜，一张图双败。全部正常结束，未达到赛前的 12 胜及单座位胜数要求。[16 局原始比分](../../analysis/v6r-qual-01-grove.jsonl) · [逐图、分座位与用时](../../analysis/v6r-qual-01-summary.json)

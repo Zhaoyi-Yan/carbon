@@ -65,14 +65,20 @@ def check_near(a, b, what):
 
 
 def replay(archive):
+    raw = archive.read_bytes()
+    game = json.loads(gzip.decompress(raw))
+    summary, steps = replay_actions(game["result"], game["actions_and_post_cash"], V6_SHA)
+    summary["raw_sha256"] = hashlib.sha256(raw).hexdigest()
+    return summary, steps
+
+
+def replay_actions(result, actions, candidate_sha):
     from zerosum_env.envs.carbon import carbon, helpers
-    game = json.loads(gzip.decompress(archive.read_bytes()))
-    result, actions = game["result"], game["actions_and_post_cash"]
     if result["engine_sha256"] != engine_fingerprint(carbon):
         raise ValueError("referee differs from game recorder")
     if result["status"] != "completed" or result["turns"] != len(actions):
         raise ValueError("incomplete recorded game")
-    seat = [p["sha256"] for p in result["players"]].index(V6_SHA)
+    seat = [p["sha256"] for p in result["players"]].index(candidate_sha)
     if result["players"][1-seat]["sha256"] != V5_SHA:
         raise ValueError("baseline mismatch")
     state, env = new_game(result["seed"], result["episode_steps"])
@@ -160,7 +166,7 @@ def replay(archive):
     if [p.reward for p in state] != result["scores"] or [p["cash"] for p in prev] != result["cash"]:
         raise ValueError("terminal scores differ from recorder")
     return dict(seed=result["seed"], v6_seat=seat, original=None, rerun=result, opening=initial, terminal=prev,
-                ledger=total, phases=phases, raw_sha256=hashlib.sha256(archive.read_bytes()).hexdigest()), trace_steps
+                ledger=total, phases=phases), trace_steps
 
 
 def contributions(cash, seat):

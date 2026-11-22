@@ -1,0 +1,788 @@
+{
+  "gaps": [
+    0.5,
+    1.0
+  ],
+  "calibration": {
+    "n": 216,
+    "exact_candidate": 109,
+    "exact_root": 80,
+    "class_candidate": 114,
+    "class_root": 90,
+    "games_positive": 15,
+    "games_negative": 11,
+    "games_tied": 4
+  },
+  "grid": [
+    [
+      {
+        "gap": -1.5,
+        "n": 5,
+        "exact_candidate": 3,
+        "exact_root": 0,
+        "class_candidate": 3,
+        "class_root": 1,
+        "games_positive": 3,
+        "games_negative": 0,
+        "games_tied": 27
+      },
+      {
+        "gap": -1.0,
+        "n": 12,
+        "exact_candidate": 8,
+        "exact_root": 2,
+        "class_candidate": 8,
+        "class_root": 3,
+        "games_positive": 4,
+        "games_negative": 1,
+        "games_tied": 25
+      },
+      {
+        "gap": -0.75,
+        "n": 20,
+        "exact_candidate": 12,
+        "exact_root": 5,
+        "class_candidate": 12,
+        "class_root": 6,
+        "games_positive": 8,
+        "games_negative": 4,
+        "games_tied": 18
+      },
+      {
+        "gap": -0.5,
+        "n": 35,
+        "exact_candidate": 19,
+        "exact_root": 12,
+        "class_candidate": 19,
+        "class_root": 13,
+        "games_positive": 7,
+        "games_negative": 6,
+        "games_tied": 17
+      },
+      {
+        "gap": -0.25,
+        "n": 59,
+        "exact_candidate": 33,
+        "exact_root": 19,
+        "class_candidate": 33,
+        "class_root": 22,
+        "games_positive": 12,
+        "games_negative": 7,
+        "games_tied": 11
+      },
+      {
+        "gap": 0.0,
+        "n": 85,
+        "exact_candidate": 48,
+        "exact_root": 28,
+        "class_candidate": 48,
+        "class_root": 31,
+        "games_positive": 19,
+        "games_negative": 8,
+        "games_tied": 3
+      },
+      {
+        "gap": 0.25,
+        "n": 119,
+        "exact_candidate": 62,
+        "exact_root": 46,
+        "class_candidate": 62,
+        "class_root": 51,
+        "games_positive": 14,
+        "games_negative": 10,
+        "games_tied": 6
+      },
+      {
+        "gap": 0.5,
+        "n": 148,
+        "exact_candidate": 77,
+        "exact_root": 57,
+        "class_candidate": 77,
+        "class_root": 64,
+        "games_positive": 15,
+        "games_negative": 10,
+        "games_tied": 5
+      },
+      {
+        "gap": 0.75,
+        "n": 181,
+        "exact_candidate": 84,
+        "exact_root": 81,
+        "class_candidate": 84,
+        "class_root": 88,
+        "games_positive": 14,
+        "games_negative": 13,
+        "games_tied": 3
+      },
+      {
+        "gap": 1.0,
+        "n": 224,
+        "exact_candidate": 96,
+        "exact_root": 111,
+        "class_candidate": 96,
+        "class_root": 118,
+        "games_positive": 13,
+        "games_negative": 15,
+        "games_tied": 2
+      },
+      {
+        "gap": 1.5,
+        "n": 287,
+        "exact_candidate": 110,
+        "exact_root": 156,
+        "class_candidate": 110,
+        "class_root": 165,
+        "games_positive": 11,
+        "games_negative": 17,
+        "games_tied": 2
+      },
+      {
+        "gap": 2.0,
+        "n": 353,
+        "exact_candidate": 120,
+        "exact_root": 211,
+        "class_candidate": 120,
+        "class_root": 221,
+        "games_positive": 8,
+        "games_negative": 19,
+        "games_tied": 3
+      },
+      {
+        "gap": 3.0,
+        "n": 440,
+        "exact_candidate": 126,
+        "exact_root": 287,
+        "class_candidate": 126,
+        "class_root": 301,
+        "games_positive": 5,
+        "games_negative": 23,
+        "games_tied": 2
+      }
+    ],
+    [
+      {
+        "gap": -1.5,
+        "n": 0,
+        "exact_candidate": 0,
+        "exact_root": 0,
+        "class_candidate": 0,
+        "class_root": 0,
+        "games_positive": 0,
+        "games_negative": 0,
+        "games_tied": 30
+      },
+      {
+        "gap": -1.0,
+        "n": 0,
+        "exact_candidate": 0,
+        "exact_root": 0,
+        "class_candidate": 0,
+        "class_root": 0,
+        "games_positive": 0,
+        "games_negative": 0,
+        "games_tied": 30
+      },
+      {
+        "gap": -0.75,
+        "n": 2,
+        "exact_candidate": 1,
+        "exact_root": 0,
+        "class_candidate": 2,
+        "class_root": 0,
+        "games_positive": 1,
+        "games_negative": 0,
+        "games_tied": 29
+      },
+      {
+        "gap": -0.5,
+        "n": 8,
+        "exact_candidate": 5,
+        "exact_root": 2,
+        "class_candidate": 6,
+        "class_root": 2,
+        "games_positive": 5,
+        "games_negative": 2,
+        "games_tied": 23
+      },
+      {
+        "gap": -0.25,
+        "n": 13,
+        "exact_candidate": 8,
+        "exact_root": 2,
+        "class_candidate": 10,
+        "class_root": 3,
+        "games_positive": 7,
+        "games_negative": 1,
+        "games_tied": 22
+      },
+      {
+        "gap": 0.0,
+        "n": 25,
+        "exact_candidate": 16,
+        "exact_root": 3,
+        "class_candidate": 19,
+        "class_root": 4,
+        "games_positive": 15,
+        "games_negative": 2,
+        "games_tied": 13
+      },
+      {
+        "gap": 0.25,
+        "n": 36,
+        "exact_candidate": 23,
+        "exact_root": 5,
+        "class_candidate": 27,
+        "class_root": 7,
+        "games_positive": 18,
+        "games_negative": 4,
+        "games_tied": 8
+      },
+      {
+        "gap": 0.5,
+        "n": 51,
+        "exact_candidate": 28,
+        "exact_root": 11,
+        "class_candidate": 32,
+        "class_root": 14,
+        "games_positive": 15,
+        "games_negative": 5,
+        "games_tied": 10
+      },
+      {
+        "gap": 0.75,
+        "n": 60,
+        "exact_candidate": 31,
+        "exact_root": 16,
+        "class_candidate": 36,
+        "class_root": 19,
+        "games_positive": 15,
+        "games_negative": 6,
+        "games_tied": 9
+      },
+      {
+        "gap": 1.0,
+        "n": 68,
+        "exact_candidate": 32,
+        "exact_root": 23,
+        "class_candidate": 37,
+        "class_root": 26,
+        "games_positive": 11,
+        "games_negative": 7,
+        "games_tied": 12
+      },
+      {
+        "gap": 1.5,
+        "n": 88,
+        "exact_candidate": 37,
+        "exact_root": 33,
+        "class_candidate": 43,
+        "class_root": 36,
+        "games_positive": 9,
+        "games_negative": 9,
+        "games_tied": 12
+      },
+      {
+        "gap": 2.0,
+        "n": 105,
+        "exact_candidate": 42,
+        "exact_root": 45,
+        "class_candidate": 48,
+        "class_root": 48,
+        "games_positive": 7,
+        "games_negative": 11,
+        "games_tied": 12
+      },
+      {
+        "gap": 3.0,
+        "n": 127,
+        "exact_candidate": 46,
+        "exact_root": 61,
+        "class_candidate": 52,
+        "class_root": 64,
+        "games_positive": 7,
+        "games_negative": 13,
+        "games_tied": 10
+      }
+    ]
+  ],
+  "calibration_games": [
+    "replays/3483bb69c12623a4818455f38ef0b795-1.json.gz",
+    "replays/e02d6334ea3917e30e73f4f06fb43e53-1.json.gz",
+    "replays/126ff43f0bded26906b3b72d89cb6a23-1.json.gz",
+    "replays/65d0acf26835a6a8364b84750e5fc204-1.json.gz",
+    "replays/a3ee51673d82381ce351ea40865e0719-1.json.gz",
+    "replays/81913606e681f366ca3cd769c060d782-1.json.gz",
+    "replays/990c71299e60ccd3d4a445edc0106dca-1.json.gz",
+    "replays/a961184b1a0afcccfbfb32a6aa2375eb-1.json.gz",
+    "replays/14e59cf624f667abf52b51d988d3f0c0-1.json.gz",
+    "replays/59e1e40837fd9da04960660ea3dd8848-1.json.gz",
+    "replays/9be25a99800a9631b7a66a3793d78d4f-1.json.gz",
+    "replays/1386cebca822214f2ee3432bb1096852-1.json.gz",
+    "replays/1466fa258d428eb31ecdc02daa85aa74-1.json.gz",
+    "replays/37885c2d47ff0c9c6a8fe83de864c4a7-1.json.gz",
+    "replays/5c398fdb1c47257352299dbcd1ab8db7-1.json.gz",
+    "replays/12282bc31fd3f9f4d920693cc8469b5c-1.json.gz",
+    "replays/e24e2dcef5e4e3698bad9ad765c7d306-1.json.gz",
+    "replays/631a646fd1b1194a50b31ae19e3009c4-1.json.gz",
+    "replays/79a8d3dc3a619a225fefb8c3a3d55a82-1.json.gz",
+    "replays/3fa7b99fce9590c93314aa2e9fe2355d-1.json.gz",
+    "replays/b6fcc5a178dfe284d2b6e500ddd7a1fa-1.json.gz",
+    "replays/ebe1881c614d1e8d90b51c733352d7ae-1.json.gz",
+    "replays/bdb86ec1b3d3e985a7fdad10211f4da9-1.json.gz",
+    "replays/48963741ca52d589ede6eba4e28431e1-1.json.gz",
+    "replays/cf1df811727e29670e616ac0775fb3b4-1.json.gz",
+    "replays/c910a302a1d4a40d4a4cc1a57ea64ec1-1.json.gz",
+    "replays/a00114ee36ab731636bca98b25bcbad7-1.json.gz",
+    "replays/344da495c922845c7bc93cb556167262-1.json.gz",
+    "replays/24b5891849dabdf4e00f7ea541c3066a-1.json.gz",
+    "replays/c481f000976e732e0a3d888f21e7c96b-1.json.gz"
+  ],
+  "test": {
+    "n_games": 32,
+    "roots": 3154,
+    "performance": {
+      "n": 190,
+      "exact_candidate": 89,
+      "exact_root": 78,
+      "class_candidate": 94,
+      "class_root": 85,
+      "games_positive": 16,
+      "games_negative": 11,
+      "games_tied": 5
+    },
+    "ungated": {
+      "n": 633,
+      "exact_candidate": 153,
+      "exact_root": 427,
+      "class_candidate": 163,
+      "class_root": 449,
+      "games_positive": 0,
+      "games_negative": 32,
+      "games_tied": 0
+    },
+    "by_phase": {
+      "0-74": {
+        "n": 24,
+        "exact_candidate": 7,
+        "exact_root": 9,
+        "class_candidate": 8,
+        "class_root": 12,
+        "games_positive": 5,
+        "games_negative": 7,
+        "games_tied": 20
+      },
+      "75-149": {
+        "n": 52,
+        "exact_candidate": 18,
+        "exact_root": 28,
+        "class_candidate": 20,
+        "class_root": 30,
+        "games_positive": 5,
+        "games_negative": 16,
+        "games_tied": 11
+      },
+      "150-224": {
+        "n": 60,
+        "exact_candidate": 35,
+        "exact_root": 22,
+        "class_candidate": 36,
+        "class_root": 23,
+        "games_positive": 14,
+        "games_negative": 6,
+        "games_tied": 12
+      },
+      "225-298": {
+        "n": 54,
+        "exact_candidate": 29,
+        "exact_root": 19,
+        "class_candidate": 30,
+        "class_root": 20,
+        "games_positive": 10,
+        "games_negative": 7,
+        "games_tied": 15
+      }
+    },
+    "by_intent": [
+      {
+        "n": 139,
+        "exact_candidate": 67,
+        "exact_root": 58,
+        "class_candidate": 67,
+        "class_root": 62,
+        "games_positive": 15,
+        "games_negative": 12,
+        "games_tied": 5
+      },
+      {
+        "n": 51,
+        "exact_candidate": 22,
+        "exact_root": 20,
+        "class_candidate": 27,
+        "class_root": 23,
+        "games_positive": 9,
+        "games_negative": 9,
+        "games_tied": 14
+      }
+    ],
+    "median_microseconds": 83.5,
+    "p95_microseconds": 200.9,
+    "games": [
+      {
+        "file": "replays/73331cb7076f22f1c08555123dc9a22f-1.json.gz",
+        "n": 4,
+        "exact_candidate": 3,
+        "exact_root": 1,
+        "class_candidate": 3,
+        "class_root": 1,
+        "games_positive": 1,
+        "games_negative": 0,
+        "games_tied": 0
+      },
+      {
+        "file": "replays/68665b234ef39dd3b06009ec4d455c5f-1.json.gz",
+        "n": 4,
+        "exact_candidate": 1,
+        "exact_root": 3,
+        "class_candidate": 1,
+        "class_root": 3,
+        "games_positive": 0,
+        "games_negative": 1,
+        "games_tied": 0
+      },
+      {
+        "file": "replays/f5172b0ea84e9bbcf5060a022b6d6946-1.json.gz",
+        "n": 8,
+        "exact_candidate": 4,
+        "exact_root": 3,
+        "class_candidate": 4,
+        "class_root": 4,
+        "games_positive": 1,
+        "games_negative": 0,
+        "games_tied": 0
+      },
+      {
+        "file": "replays/4bd95cebbbd8b61928025a16b495e102-1.json.gz",
+        "n": 9,
+        "exact_candidate": 5,
+        "exact_root": 2,
+        "class_candidate": 6,
+        "class_root": 2,
+        "games_positive": 1,
+        "games_negative": 0,
+        "games_tied": 0
+      },
+      {
+        "file": "replays/6c8933585adf2daa67e700477d112ae4-1.json.gz",
+        "n": 9,
+        "exact_candidate": 5,
+        "exact_root": 4,
+        "class_candidate": 5,
+        "class_root": 4,
+        "games_positive": 1,
+        "games_negative": 0,
+        "games_tied": 0
+      },
+      {
+        "file": "replays/f1567f8974cd0cd9ae13688e7f07b39d-1.json.gz",
+        "n": 4,
+        "exact_candidate": 1,
+        "exact_root": 2,
+        "class_candidate": 1,
+        "class_root": 2,
+        "games_positive": 0,
+        "games_negative": 1,
+        "games_tied": 0
+      },
+      {
+        "file": "replays/b2f9235f0aeccbd8d01cc4f8e0dd6340-1.json.gz",
+        "n": 5,
+        "exact_candidate": 4,
+        "exact_root": 0,
+        "class_candidate": 4,
+        "class_root": 0,
+        "games_positive": 1,
+        "games_negative": 0,
+        "games_tied": 0
+      },
+      {
+        "file": "replays/2fa5a4c664fc27bbcfac7eec01c8edc3-1.json.gz",
+        "n": 5,
+        "exact_candidate": 3,
+        "exact_root": 2,
+        "class_candidate": 3,
+        "class_root": 2,
+        "games_positive": 1,
+        "games_negative": 0,
+        "games_tied": 0
+      },
+      {
+        "file": "replays/e2c852a06950f5a449427d8bf5f8bb06-1.json.gz",
+        "n": 5,
+        "exact_candidate": 3,
+        "exact_root": 1,
+        "class_candidate": 3,
+        "class_root": 2,
+        "games_positive": 1,
+        "games_negative": 0,
+        "games_tied": 0
+      },
+      {
+        "file": "replays/9107c596d070f54c60fc175bf616af09-1.json.gz",
+        "n": 3,
+        "exact_candidate": 2,
+        "exact_root": 1,
+        "class_candidate": 2,
+        "class_root": 1,
+        "games_positive": 1,
+        "games_negative": 0,
+        "games_tied": 0
+      },
+      {
+        "file": "replays/efa15ce0a9b4d18398cbe73ad5ca6dc6-1.json.gz",
+        "n": 4,
+        "exact_candidate": 0,
+        "exact_root": 1,
+        "class_candidate": 1,
+        "class_root": 1,
+        "games_positive": 0,
+        "games_negative": 1,
+        "games_tied": 0
+      },
+      {
+        "file": "replays/e0877b124675ef246b48914516be95b9-1.json.gz",
+        "n": 6,
+        "exact_candidate": 4,
+        "exact_root": 1,
+        "class_candidate": 4,
+        "class_root": 1,
+        "games_positive": 1,
+        "games_negative": 0,
+        "games_tied": 0
+      },
+      {
+        "file": "replays/7ad550d6acbf90789ff0aa69ac256fb8-1.json.gz",
+        "n": 11,
+        "exact_candidate": 3,
+        "exact_root": 7,
+        "class_candidate": 3,
+        "class_root": 8,
+        "games_positive": 0,
+        "games_negative": 1,
+        "games_tied": 0
+      },
+      {
+        "file": "replays/8126adcfeb3c00bb851e14d576b45308-1.json.gz",
+        "n": 8,
+        "exact_candidate": 3,
+        "exact_root": 5,
+        "class_candidate": 3,
+        "class_root": 5,
+        "games_positive": 0,
+        "games_negative": 1,
+        "games_tied": 0
+      },
+      {
+        "file": "replays/b05d118c38d7d7054ba210f6cbbcf6e0-1.json.gz",
+        "n": 5,
+        "exact_candidate": 2,
+        "exact_root": 2,
+        "class_candidate": 2,
+        "class_root": 2,
+        "games_positive": 0,
+        "games_negative": 0,
+        "games_tied": 1
+      },
+      {
+        "file": "replays/9db21687d44accd4b188a681082af138-1.json.gz",
+        "n": 3,
+        "exact_candidate": 2,
+        "exact_root": 1,
+        "class_candidate": 2,
+        "class_root": 1,
+        "games_positive": 1,
+        "games_negative": 0,
+        "games_tied": 0
+      },
+      {
+        "file": "replays/20b85060c8e5cba8bc73c73aaaeae332-1.json.gz",
+        "n": 6,
+        "exact_candidate": 2,
+        "exact_root": 4,
+        "class_candidate": 2,
+        "class_root": 4,
+        "games_positive": 0,
+        "games_negative": 1,
+        "games_tied": 0
+      },
+      {
+        "file": "replays/21409c0e0f93beb73f2f22a2835ff50a-1.json.gz",
+        "n": 6,
+        "exact_candidate": 5,
+        "exact_root": 1,
+        "class_candidate": 5,
+        "class_root": 1,
+        "games_positive": 1,
+        "games_negative": 0,
+        "games_tied": 0
+      },
+      {
+        "file": "replays/e2c0eb629674da05c07f4f47f906d5dc-1.json.gz",
+        "n": 3,
+        "exact_candidate": 1,
+        "exact_root": 2,
+        "class_candidate": 1,
+        "class_root": 2,
+        "games_positive": 0,
+        "games_negative": 1,
+        "games_tied": 0
+      },
+      {
+        "file": "replays/13710ada6f6a92b584ad4c21e500df88-1.json.gz",
+        "n": 6,
+        "exact_candidate": 3,
+        "exact_root": 3,
+        "class_candidate": 3,
+        "class_root": 3,
+        "games_positive": 0,
+        "games_negative": 0,
+        "games_tied": 1
+      },
+      {
+        "file": "replays/96189767794a852a14afe120560364b8-1.json.gz",
+        "n": 4,
+        "exact_candidate": 3,
+        "exact_root": 1,
+        "class_candidate": 3,
+        "class_root": 1,
+        "games_positive": 1,
+        "games_negative": 0,
+        "games_tied": 0
+      },
+      {
+        "file": "replays/d0c90588cc8f97b435df51535c1ed433-1.json.gz",
+        "n": 7,
+        "exact_candidate": 4,
+        "exact_root": 2,
+        "class_candidate": 4,
+        "class_root": 3,
+        "games_positive": 1,
+        "games_negative": 0,
+        "games_tied": 0
+      },
+      {
+        "file": "replays/53a975fac52b167a27aeb1eaa4f219a5-1.json.gz",
+        "n": 8,
+        "exact_candidate": 4,
+        "exact_root": 4,
+        "class_candidate": 4,
+        "class_root": 4,
+        "games_positive": 0,
+        "games_negative": 0,
+        "games_tied": 1
+      },
+      {
+        "file": "replays/1ba0a7f5dd9aae2eaa4a0ce7a5f750af-1.json.gz",
+        "n": 4,
+        "exact_candidate": 2,
+        "exact_root": 1,
+        "class_candidate": 2,
+        "class_root": 1,
+        "games_positive": 1,
+        "games_negative": 0,
+        "games_tied": 0
+      },
+      {
+        "file": "replays/767a4bf43ca1dc86118292659de1670a-1.json.gz",
+        "n": 3,
+        "exact_candidate": 1,
+        "exact_root": 1,
+        "class_candidate": 2,
+        "class_root": 1,
+        "games_positive": 0,
+        "games_negative": 0,
+        "games_tied": 1
+      },
+      {
+        "file": "replays/71eab28308d67feaf45e6a6727635585-1.json.gz",
+        "n": 7,
+        "exact_candidate": 2,
+        "exact_root": 4,
+        "class_candidate": 2,
+        "class_root": 4,
+        "games_positive": 0,
+        "games_negative": 1,
+        "games_tied": 0
+      },
+      {
+        "file": "replays/e754a6bd0736511e4bbd5111793740d7-1.json.gz",
+        "n": 6,
+        "exact_candidate": 4,
+        "exact_root": 1,
+        "class_candidate": 4,
+        "class_root": 1,
+        "games_positive": 1,
+        "games_negative": 0,
+        "games_tied": 0
+      },
+      {
+        "file": "replays/51990021e4aab909286878be64b1a263-1.json.gz",
+        "n": 6,
+        "exact_candidate": 3,
+        "exact_root": 2,
+        "class_candidate": 4,
+        "class_root": 2,
+        "games_positive": 1,
+        "games_negative": 0,
+        "games_tied": 0
+      },
+      {
+        "file": "replays/93bada3c48bd2877214961670397a9e3-1.json.gz",
+        "n": 9,
+        "exact_candidate": 4,
+        "exact_root": 5,
+        "class_candidate": 4,
+        "class_root": 5,
+        "games_positive": 0,
+        "games_negative": 1,
+        "games_tied": 0
+      },
+      {
+        "file": "replays/ab5295f4092869c4348a45accad9de46-1.json.gz",
+        "n": 9,
+        "exact_candidate": 4,
+        "exact_root": 4,
+        "class_candidate": 5,
+        "class_root": 4,
+        "games_positive": 0,
+        "games_negative": 0,
+        "games_tied": 1
+      },
+      {
+        "file": "replays/45fd0cd4f667be5226106230057dcb47-1.json.gz",
+        "n": 5,
+        "exact_candidate": 0,
+        "exact_root": 4,
+        "class_candidate": 0,
+        "class_root": 5,
+        "games_positive": 0,
+        "games_negative": 1,
+        "games_tied": 0
+      },
+      {
+        "file": "replays/afe4ab003a0d6222783cff3fde074af2-1.json.gz",
+        "n": 8,
+        "exact_candidate": 2,
+        "exact_root": 3,
+        "class_candidate": 2,
+        "class_root": 5,
+        "games_positive": 0,
+        "games_negative": 1,
+        "games_tied": 0
+      }
+    ],
+    "paired_game_bootstrap_exact_delta_95": [
+      -0.06011,
+      0.18227
+    ]
+  }
+}

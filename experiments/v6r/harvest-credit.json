@@ -1,0 +1,536 @@
+{
+  "method": "On each recorded board, run the official next-step rule on the recorded teacher joint action, then on the frozen v6 root and its one-worker alternative. The opponent always plays their recorded next action. Differences are alternate minus frozen root. Samples are independent counterfactual branches from recorded board snapshots. Coverage assumes a free search slot. Aggregate one-step receipts do not measure final cash.",
+  "preserve_bank": false,
+  "root_sha256": "1995bbcc07592296e6fe6f816412acccb2d39ea2c79787cd937a210513f69afa",
+  "games": [
+    {
+      "file": "replays/73331cb7076f22f1c08555123dc9a22f-1.json.gz",
+      "roots": 100,
+      "proposed": 4,
+      "one_step_delta": {
+        "ground_harvest": 16.659,
+        "base_deposits": 23.3469,
+        "cash": 23.34,
+        "enemy_cash": 0.0,
+        "cargo": -6.6879,
+        "worker_change": 0
+      }
+    },
+    {
+      "file": "replays/68665b234ef39dd3b06009ec4d455c5f-1.json.gz",
+      "roots": 100,
+      "proposed": 4,
+      "one_step_delta": {
+        "ground_harvest": 65.9193,
+        "base_deposits": 0.0,
+        "cash": 0.0,
+        "enemy_cash": 0.0,
+        "cargo": 65.9193,
+        "worker_change": 0
+      }
+    },
+    {
+      "file": "replays/f5172b0ea84e9bbcf5060a022b6d6946-1.json.gz",
+      "roots": 99,
+      "proposed": 8,
+      "one_step_delta": {
+        "ground_harvest": 56.1885,
+        "base_deposits": 0.0,
+        "cash": 0.0,
+        "enemy_cash": 0.0,
+        "cargo": 56.1885,
+        "worker_change": 0
+      }
+    },
+    {
+      "file": "replays/4bd95cebbbd8b61928025a16b495e102-1.json.gz",
+      "roots": 100,
+      "proposed": 9,
+      "one_step_delta": {
+        "ground_harvest": 96.576,
+        "base_deposits": -115.5678,
+        "cash": -115.57,
+        "enemy_cash": 0.0,
+        "cargo": 212.1438,
+        "worker_change": 0
+      }
+    },
+    {
+      "file": "replays/6c8933585adf2daa67e700477d112ae4-1.json.gz",
+      "roots": 100,
+      "proposed": 9,
+      "one_step_delta": {
+        "ground_harvest": 31.0443,
+        "base_deposits": 0.0,
+        "cash": 0.0,
+        "enemy_cash": 0.0,
+        "cargo": 31.0443,
+        "worker_change": 0
+      }
+    },
+    {
+      "file": "replays/f1567f8974cd0cd9ae13688e7f07b39d-1.json.gz",
+      "roots": 99,
+      "proposed": 4,
+      "one_step_delta": {
+        "ground_harvest": 13.2795,
+        "base_deposits": 0.0,
+        "cash": -1.0,
+        "enemy_cash": 0.0,
+        "cargo": 13.2795,
+        "worker_change": 0
+      }
+    },
+    {
+      "file": "replays/b2f9235f0aeccbd8d01cc4f8e0dd6340-1.json.gz",
+      "roots": 100,
+      "proposed": 5,
+      "one_step_delta": {
+        "ground_harvest": 77.427,
+        "base_deposits": 0,
+        "cash": 0.0,
+        "enemy_cash": 0.0,
+        "cargo": 77.427,
+        "worker_change": 0
+      }
+    },
+    {
+      "file": "replays/2fa5a4c664fc27bbcfac7eec01c8edc3-1.json.gz",
+      "roots": 100,
+      "proposed": 5,
+      "one_step_delta": {
+        "ground_harvest": 55.1205,
+        "base_deposits": 0.0,
+        "cash": -0.83,
+        "enemy_cash": 0.0,
+        "cargo": 55.1205,
+        "worker_change": 0
+      }
+    },
+    {
+      "file": "replays/e2c852a06950f5a449427d8bf5f8bb06-1.json.gz",
+      "roots": 99,
+      "proposed": 5,
+      "one_step_delta": {
+        "ground_harvest": 40.9869,
+        "base_deposits": 0.0,
+        "cash": 0.0,
+        "enemy_cash": 0.0,
+        "cargo": 40.9869,
+        "worker_change": 0
+      }
+    },
+    {
+      "file": "replays/9107c596d070f54c60fc175bf616af09-1.json.gz",
+      "roots": 100,
+      "proposed": 3,
+      "one_step_delta": {
+        "ground_harvest": 16.2375,
+        "base_deposits": 0.0,
+        "cash": 0.0,
+        "enemy_cash": 0.0,
+        "cargo": 16.2375,
+        "worker_change": 0
+      }
+    },
+    {
+      "file": "replays/efa15ce0a9b4d18398cbe73ad5ca6dc6-1.json.gz",
+      "roots": 64,
+      "proposed": 4,
+      "one_step_delta": {
+        "ground_harvest": 60.7215,
+        "base_deposits": 0,
+        "cash": 0.0,
+        "enemy_cash": 0.0,
+        "cargo": 60.7215,
+        "worker_change": 0
+      }
+    },
+    {
+      "file": "replays/e0877b124675ef246b48914516be95b9-1.json.gz",
+      "roots": 99,
+      "proposed": 6,
+      "one_step_delta": {
+        "ground_harvest": 51.9936,
+        "base_deposits": 0.0,
+        "cash": 0.0,
+        "enemy_cash": 0.0,
+        "cargo": 51.9936,
+        "worker_change": 0
+      }
+    },
+    {
+      "file": "replays/7ad550d6acbf90789ff0aa69ac256fb8-1.json.gz",
+      "roots": 100,
+      "proposed": 11,
+      "one_step_delta": {
+        "ground_harvest": 120.9687,
+        "base_deposits": 0,
+        "cash": 0.29,
+        "enemy_cash": 0.0,
+        "cargo": 120.9687,
+        "worker_change": 1
+      }
+    },
+    {
+      "file": "replays/8126adcfeb3c00bb851e14d576b45308-1.json.gz",
+      "roots": 100,
+      "proposed": 8,
+      "one_step_delta": {
+        "ground_harvest": 74.2752,
+        "base_deposits": 0.0,
+        "cash": 0.0,
+        "enemy_cash": 0.0,
+        "cargo": 74.2752,
+        "worker_change": 0
+      }
+    },
+    {
+      "file": "replays/b05d118c38d7d7054ba210f6cbbcf6e0-1.json.gz",
+      "roots": 99,
+      "proposed": 5,
+      "one_step_delta": {
+        "ground_harvest": 22.9515,
+        "base_deposits": 0.0,
+        "cash": 0.0,
+        "enemy_cash": 0.0,
+        "cargo": 22.9515,
+        "worker_change": 0
+      }
+    },
+    {
+      "file": "replays/9db21687d44accd4b188a681082af138-1.json.gz",
+      "roots": 100,
+      "proposed": 3,
+      "one_step_delta": {
+        "ground_harvest": 11.8611,
+        "base_deposits": 0.0,
+        "cash": 0.0,
+        "enemy_cash": 0.0,
+        "cargo": 11.8611,
+        "worker_change": 0
+      }
+    },
+    {
+      "file": "replays/20b85060c8e5cba8bc73c73aaaeae332-1.json.gz",
+      "roots": 100,
+      "proposed": 6,
+      "one_step_delta": {
+        "ground_harvest": 74.625,
+        "base_deposits": -84.4087,
+        "cash": -84.41,
+        "enemy_cash": 0.0,
+        "cargo": 159.0337,
+        "worker_change": 0
+      }
+    },
+    {
+      "file": "replays/21409c0e0f93beb73f2f22a2835ff50a-1.json.gz",
+      "roots": 99,
+      "proposed": 6,
+      "one_step_delta": {
+        "ground_harvest": 101.2374,
+        "base_deposits": -216.3636,
+        "cash": -216.37,
+        "enemy_cash": 0.0,
+        "cargo": 317.601,
+        "worker_change": 0
+      }
+    },
+    {
+      "file": "replays/e2c0eb629674da05c07f4f47f906d5dc-1.json.gz",
+      "roots": 100,
+      "proposed": 3,
+      "one_step_delta": {
+        "ground_harvest": 38.9649,
+        "base_deposits": 0.0,
+        "cash": 0.0,
+        "enemy_cash": 0.0,
+        "cargo": 38.9649,
+        "worker_change": 0
+      }
+    },
+    {
+      "file": "replays/13710ada6f6a92b584ad4c21e500df88-1.json.gz",
+      "roots": 100,
+      "proposed": 6,
+      "one_step_delta": {
+        "ground_harvest": 70.1151,
+        "base_deposits": -162.2016,
+        "cash": -163.57,
+        "enemy_cash": 0.0,
+        "cargo": 232.3167,
+        "worker_change": 0
+      }
+    },
+    {
+      "file": "replays/96189767794a852a14afe120560364b8-1.json.gz",
+      "roots": 99,
+      "proposed": 4,
+      "one_step_delta": {
+        "ground_harvest": 48.765,
+        "base_deposits": 0.0,
+        "cash": 0.0,
+        "enemy_cash": 0.0,
+        "cargo": 48.765,
+        "worker_change": 0
+      }
+    },
+    {
+      "file": "replays/d0c90588cc8f97b435df51535c1ed433-1.json.gz",
+      "roots": 100,
+      "proposed": 7,
+      "one_step_delta": {
+        "ground_harvest": 23.3895,
+        "base_deposits": 48.8301,
+        "cash": 48.83,
+        "enemy_cash": 0.0,
+        "cargo": -25.4406,
+        "worker_change": 0
+      }
+    },
+    {
+      "file": "replays/53a975fac52b167a27aeb1eaa4f219a5-1.json.gz",
+      "roots": 100,
+      "proposed": 8,
+      "one_step_delta": {
+        "ground_harvest": 119.2383,
+        "base_deposits": -51.9597,
+        "cash": -53.14,
+        "enemy_cash": 13.63,
+        "cargo": 138.7569,
+        "worker_change": 0
+      }
+    },
+    {
+      "file": "replays/1ba0a7f5dd9aae2eaa4a0ce7a5f750af-1.json.gz",
+      "roots": 99,
+      "proposed": 4,
+      "one_step_delta": {
+        "ground_harvest": 45.9798,
+        "base_deposits": -51.0,
+        "cash": -51.0,
+        "enemy_cash": 1.66,
+        "cargo": 95.3125,
+        "worker_change": 0
+      }
+    },
+    {
+      "file": "replays/767a4bf43ca1dc86118292659de1670a-1.json.gz",
+      "roots": 100,
+      "proposed": 3,
+      "one_step_delta": {
+        "ground_harvest": 9.8577,
+        "base_deposits": 0.0,
+        "cash": 0.0,
+        "enemy_cash": 0.0,
+        "cargo": 9.8577,
+        "worker_change": 0
+      }
+    },
+    {
+      "file": "replays/71eab28308d67feaf45e6a6727635585-1.json.gz",
+      "roots": 100,
+      "proposed": 7,
+      "one_step_delta": {
+        "ground_harvest": 85.7751,
+        "base_deposits": 0.0,
+        "cash": 0.0,
+        "enemy_cash": 0.0,
+        "cargo": 85.7751,
+        "worker_change": 0
+      }
+    },
+    {
+      "file": "replays/e754a6bd0736511e4bbd5111793740d7-1.json.gz",
+      "roots": 99,
+      "proposed": 6,
+      "one_step_delta": {
+        "ground_harvest": 93.147,
+        "base_deposits": -162.0,
+        "cash": -162.0,
+        "enemy_cash": 0.0,
+        "cargo": 255.147,
+        "worker_change": 0
+      }
+    },
+    {
+      "file": "replays/51990021e4aab909286878be64b1a263-1.json.gz",
+      "roots": 100,
+      "proposed": 6,
+      "one_step_delta": {
+        "ground_harvest": 15.2148,
+        "base_deposits": 0.0,
+        "cash": 0.0,
+        "enemy_cash": 0.0,
+        "cargo": 15.2148,
+        "worker_change": 0
+      }
+    },
+    {
+      "file": "replays/93bada3c48bd2877214961670397a9e3-1.json.gz",
+      "roots": 100,
+      "proposed": 9,
+      "one_step_delta": {
+        "ground_harvest": 89.6463,
+        "base_deposits": 0.0,
+        "cash": 0.0,
+        "enemy_cash": 18.25,
+        "cargo": 71.4035,
+        "worker_change": 0
+      }
+    },
+    {
+      "file": "replays/ab5295f4092869c4348a45accad9de46-1.json.gz",
+      "roots": 99,
+      "proposed": 9,
+      "one_step_delta": {
+        "ground_harvest": 95.3505,
+        "base_deposits": 0.0,
+        "cash": 0.0,
+        "enemy_cash": 0.0,
+        "cargo": 95.3505,
+        "worker_change": 0
+      }
+    },
+    {
+      "file": "replays/45fd0cd4f667be5226106230057dcb47-1.json.gz",
+      "roots": 100,
+      "proposed": 5,
+      "one_step_delta": {
+        "ground_harvest": 16.7535,
+        "base_deposits": 0.0,
+        "cash": -14.48,
+        "enemy_cash": 0.0,
+        "cargo": 52.9513,
+        "worker_change": 1
+      }
+    },
+    {
+      "file": "replays/afe4ab003a0d6222783cff3fde074af2-1.json.gz",
+      "roots": 100,
+      "proposed": 8,
+      "one_step_delta": {
+        "ground_harvest": 103.8417,
+        "base_deposits": 0.0,
+        "cash": 0.0,
+        "enemy_cash": 0.0,
+        "cargo": 103.8417,
+        "worker_change": 0
+      }
+    }
+  ],
+  "all": {
+    "roots": 3154,
+    "proposed": 190,
+    "teacher_exact_proposal": 89,
+    "teacher_exact_root": 78,
+    "teacher_class_proposal": 94,
+    "teacher_class_root": 85,
+    "return_proposals": 51,
+    "stay_proposals": 139,
+    "median_microseconds": 87.6,
+    "p95_microseconds": 224.2
+  },
+  "by_phase_agreement": {
+    "0-74": {
+      "roots": 800,
+      "proposed": 24,
+      "teacher_exact_proposal": 7,
+      "teacher_exact_root": 9,
+      "teacher_class_proposal": 8,
+      "teacher_class_root": 12,
+      "stay_proposals": 19,
+      "return_proposals": 5,
+      "median_microseconds": 72.5,
+      "p95_microseconds": 198.8
+    },
+    "75-149": {
+      "roots": 800,
+      "proposed": 52,
+      "teacher_exact_proposal": 18,
+      "teacher_exact_root": 28,
+      "teacher_class_proposal": 20,
+      "teacher_class_root": 30,
+      "stay_proposals": 37,
+      "return_proposals": 15,
+      "median_microseconds": 89.2,
+      "p95_microseconds": 219.1
+    },
+    "150-224": {
+      "roots": 789,
+      "proposed": 60,
+      "teacher_exact_proposal": 35,
+      "teacher_exact_root": 22,
+      "teacher_class_proposal": 36,
+      "teacher_class_root": 23,
+      "return_proposals": 17,
+      "stay_proposals": 43,
+      "median_microseconds": 91.1,
+      "p95_microseconds": 226.3
+    },
+    "225-298": {
+      "roots": 765,
+      "proposed": 54,
+      "teacher_exact_proposal": 29,
+      "teacher_exact_root": 19,
+      "teacher_class_proposal": 30,
+      "teacher_class_root": 20,
+      "return_proposals": 14,
+      "stay_proposals": 40,
+      "median_microseconds": 93.3,
+      "p95_microseconds": 253.0
+    }
+  },
+  "one_step_delta": {
+    "ground_harvest": 1844.1117,
+    "base_deposits": -771.3243,
+    "cash": -789.91,
+    "enemy_cash": 33.54,
+    "cargo": 2599.2827,
+    "worker_change": 2
+  },
+  "by_phase_one_step_delta": {
+    "0-74": {
+      "ground_harvest": 256.1241,
+      "base_deposits": 0.0,
+      "cash": -14.48,
+      "enemy_cash": 1.66,
+      "cargo": 290.6546,
+      "worker_change": 2
+    },
+    "75-149": {
+      "ground_harvest": 505.8345,
+      "base_deposits": -574.3545,
+      "cash": -575.73,
+      "enemy_cash": 18.25,
+      "cargo": 1061.9462,
+      "worker_change": 0
+    },
+    "150-224": {
+      "ground_harvest": 534.897,
+      "base_deposits": -137.1373,
+      "cash": -139.04,
+      "enemy_cash": 13.63,
+      "cargo": 639.5932,
+      "worker_change": 0
+    },
+    "225-298": {
+      "ground_harvest": 547.2561,
+      "base_deposits": -59.8326,
+      "cash": -60.66,
+      "enemy_cash": 0.0,
+      "cargo": 607.0887,
+      "worker_change": 0
+    }
+  },
+  "referee_check": {
+    "teacher_steps": 190,
+    "max_abs_error": {
+      "cash": 0.0,
+      "enemy_cash": 0.0,
+      "cargo": 0.0,
+      "worker_change": 0
+    }
+  }
+}
