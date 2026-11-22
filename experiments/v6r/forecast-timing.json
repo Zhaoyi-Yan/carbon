@@ -1,0 +1,33 @@
+{
+  "legal_boards": 88,
+  "games": 8,
+  "checks": [
+    "vectorized training/live parity",
+    "same-board side signs",
+    "player permutation",
+    "simulated tree metadata and seven-step root history cutoff",
+    "zero future flow on terminal board"
+  ],
+  "milliseconds": {
+    "existing_v5": {
+      "median": 0.2447,
+      "p95": 0.3005,
+      "n": 352
+    },
+    "public20_standalone": {
+      "median": 0.0452,
+      "p95": 0.0552,
+      "n": 352
+    },
+    "forecast_with_known_v5": {
+      "median": 0.0648,
+      "p95": 0.0831,
+      "n": 352
+    },
+    "v5_plus_forecast": {
+      "median": 0.3109,
+      "p95": 0.3761,
+      "n": 352
+    }
+  }
+}

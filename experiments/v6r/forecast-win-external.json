@@ -1,0 +1,1122 @@
+{
+  "all": {
+    "boards": 5921,
+    "games": 80,
+    "metrics": {
+      "cash": {
+        "log_loss": 0.4411,
+        "brier": 0.13765,
+        "ece5": 0.02701
+      },
+      "cash_asset": {
+        "log_loss": 0.41997,
+        "brier": 0.12978,
+        "ece5": 0.03668
+      },
+      "cash_economic": {
+        "log_loss": 0.43188,
+        "brier": 0.12993,
+        "ece5": 0.0367
+      },
+      "cash_territory": {
+        "log_loss": 0.48108,
+        "brier": 0.13717,
+        "ece5": 0.06231
+      },
+      "global": {
+        "log_loss": 0.48108,
+        "brier": 0.13717,
+        "ece5": 0.06231
+      },
+      "constant": {
+        "log_loss": 0.69315,
+        "brier": 0.24688,
+        "ece5": 0.08757
+      }
+    },
+    "paired": {
+      "comparator": "cash_economic",
+      "delta_logloss_brier": [
+        0.04843,
+        0.0071
+      ],
+      "ci95": [
+        [
+          -0.00065,
+          -0.00098
+        ],
+        [
+          0.1415,
+          0.02187
+        ]
+      ],
+      "games_logloss_improved": 47,
+      "games": [
+        [
+          "replays/50e7cf277533472c51c12fad8bdfd3d3-1.json.gz",
+          75,
+          0.00186,
+          0.00115
+        ],
+        [
+          "replays/b161992434913d41370c81c9eec95bdd-1.json.gz",
+          75,
+          -0.00758,
+          -0.00234
+        ],
+        [
+          "replays/3972a18ab4db7c6a426e933e7b387743-1.json.gz",
+          75,
+          -0.00488,
+          -0.00228
+        ],
+        [
+          "replays/a420dcf89b5f174ccfcff12218048f6d-1.json.gz",
+          75,
+          -0.01247,
+          -0.00551
+        ],
+        [
+          "replays/b6c7b5483e4180390a2eef59e693e5cf-1.json.gz",
+          75,
+          -0.00435,
+          -0.00088
+        ],
+        [
+          "replays/abc7aa7916efefed5cf97bf13b6f9018-1.json.gz",
+          75,
+          0.04003,
+          0.01898
+        ],
+        [
+          "replays/b537a3f1fffcdf99325b4b35600653e5-1.json.gz",
+          75,
+          0.02146,
+          0.00897
+        ],
+        [
+          "replays/c7707cf3b47b7aaa2cda79d455fbe545-1.json.gz",
+          75,
+          -0.00332,
+          0.00184
+        ],
+        [
+          "replays/731fff2f36b4a98b255abdc79097e75c-1.json.gz",
+          75,
+          0.00692,
+          0.00251
+        ],
+        [
+          "replays/4690e60c6acb4b249eab4663246fb65e-1.json.gz",
+          75,
+          -0.0128,
+          -0.00496
+        ],
+        [
+          "replays/0803a123efa749dff6aa1dc3ba1c2b16-1.json.gz",
+          75,
+          -0.04306,
+          -0.01365
+        ],
+        [
+          "replays/b7f72aafcf98685afbd6eda28cff15c7-1.json.gz",
+          74,
+          0.0,
+          0.0
+        ],
+        [
+          "replays/7052bf6f25705e7fb2926f4872675818-1.json.gz",
+          75,
+          -0.0322,
+          -0.013
+        ],
+        [
+          "replays/42525d7c173e7fd014b917517c1438ad-1.json.gz",
+          75,
+          0.11808,
+          0.01143
+        ],
+        [
+          "replays/75a9bee2bce781dc809a67e33bfe4a29-1.json.gz",
+          75,
+          -0.00286,
+          -0.00188
+        ],
+        [
+          "replays/26f94b6886ca0111e2d4e2411fbfadd6-1.json.gz",
+          75,
+          0.00951,
+          0.00421
+        ],
+        [
+          "replays/09c741b655b94d49cf9e1b0f46c4aea9-1.json.gz",
+          75,
+          0.2123,
+          0.03495
+        ],
+        [
+          "replays/4aeee74172cf134fafb4a0121fc2f7da-1.json.gz",
+          75,
+          -0.00038,
+          -0.00058
+        ],
+        [
+          "replays/37ca1462df35735742a6c70d8343d33d-1.json.gz",
+          74,
+          0.05807,
+          0.01306
+        ],
+        [
+          "replays/bb01f9c9568cce9fbfacab2c00477aa6-1.json.gz",
+          74,
+          -0.00072,
+          0.00107
+        ],
+        [
+          "replays/1fadb5ab034cb130347c46fc31112626-1.json.gz",
+          75,
+          -0.00182,
+          -0.00026
+        ],
+        [
+          "replays/48bd2f568e5c68b2ad5086724f9a82b5-1.json.gz",
+          75,
+          0.00163,
+          0.00114
+        ],
+        [
+          "replays/4406a8a66f069bd4272988738c789e0f-1.json.gz",
+          75,
+          -0.00273,
+          -0.00073
+        ],
+        [
+          "replays/b47c446ec858a96b67d94d3b894e1613-1.json.gz",
+          75,
+          0.00107,
+          -0.00019
+        ],
+        [
+          "replays/6dccfbc56bb0a634b70fe7f64c512029-1.json.gz",
+          75,
+          -0.00576,
+          -0.00222
+        ],
+        [
+          "replays/ebbbedbd2f070f69f109d419d55ec9bf-1.json.gz",
+          75,
+          3.52971,
+          0.55521
+        ],
+        [
+          "replays/a2174dc3281a05b4e1dfaf7b12a0b632-1.json.gz",
+          75,
+          -0.00332,
+          -0.00134
+        ],
+        [
+          "replays/5ddebbd0d3e454a7abc4c86dbb4f830d-1.json.gz",
+          75,
+          -0.0056,
+          -0.00201
+        ],
+        [
+          "replays/0140ff131f54905e478a6690831aaae1-1.json.gz",
+          75,
+          -0.00546,
+          -0.00112
+        ],
+        [
+          "replays/bd7c38af97d85e0c931b0a6597c2518a-1.json.gz",
+          75,
+          -0.00314,
+          -0.00071
+        ],
+        [
+          "replays/eda0c85c4f5564d071bf80763771b055-1.json.gz",
+          75,
+          0.00028,
+          0.00079
+        ],
+        [
+          "replays/b8a327c8dc1b746721fd39f13b2f1892-1.json.gz",
+          75,
+          0.04193,
+          0.00283
+        ],
+        [
+          "replays/a8700b6f3110ef420ef83c3d86078663-1.json.gz",
+          75,
+          -0.00147,
+          -0.00078
+        ],
+        [
+          "replays/9699ff7b4516be5e7d628cf9e6e9f845-1.json.gz",
+          75,
+          -0.0059,
+          -0.00212
+        ],
+        [
+          "replays/56ec41a044018a6b553ff52cec98740c-1.json.gz",
+          75,
+          0.073,
+          0.02063
+        ],
+        [
+          "replays/d46e015c3b939345c06ea5b20f85260c-1.json.gz",
+          74,
+          -0.02472,
+          -0.01056
+        ],
+        [
+          "replays/72946114904fae27b3291654dc1c798e-1.json.gz",
+          75,
+          -0.00306,
+          -0.00143
+        ],
+        [
+          "replays/93e087c9793ad6e40ea8830bc4f77f43-1.json.gz",
+          75,
+          0.00236,
+          0.00096
+        ],
+        [
+          "replays/9ca2128907c1d834c10a2184c9911bb4-1.json.gz",
+          74,
+          -4e-05,
+          0.00049
+        ],
+        [
+          "replays/e73fbc5f879d96c7a352c34c0e905b28-1.json.gz",
+          75,
+          0.05937,
+          -0.0024
+        ],
+        [
+          "replays/a3770796e2b3f2b2322887b9a45ee88b-1.json.gz",
+          75,
+          -0.00378,
+          -0.00085
+        ],
+        [
+          "replays/2786f5588810fbf1a38afc6ee6d2352d-1.json.gz",
+          75,
+          0.00307,
+          -0.00012
+        ],
+        [
+          "replays/4d0a4bc7b55b7bd7c596cb8c48ba5373-1.json.gz",
+          75,
+          -0.00017,
+          0.00056
+        ],
+        [
+          "replays/763a0fecf9ab1dc1405df0d835140b8c-1.json.gz",
+          75,
+          0.01439,
+          0.00582
+        ],
+        [
+          "replays/7a6eac3d24f88e3d59f9e578c9b62064-1.json.gz",
+          74,
+          0.0086,
+          0.00373
+        ],
+        [
+          "replays/8cb9ef7f15a87a4b8c0760645385b24f-1.json.gz",
+          75,
+          0.00411,
+          0.0015
+        ],
+        [
+          "replays/de0e9a2d7e4967d612153488c2ea38ff-1.json.gz",
+          75,
+          0.03006,
+          0.00359
+        ],
+        [
+          "replays/9a597e649a9f0bcc829de506f46c876a-1.json.gz",
+          74,
+          -0.01988,
+          -0.00684
+        ],
+        [
+          "replays/af71e4632720d8d97eda2079f0b46ef7-1.json.gz",
+          74,
+          -0.00109,
+          0.0005
+        ],
+        [
+          "replays/be199dafe2d42ffc558e11279487343b-1.json.gz",
+          75,
+          -0.0073,
+          -0.00247
+        ],
+        [
+          "replays/8335937b0c32e64c88b4aaf58be05c5e-1.json.gz",
+          74,
+          0.02742,
+          0.00612
+        ],
+        [
+          "replays/147f3002e835d9acc7169e523692ea79-1.json.gz",
+          75,
+          -0.00251,
+          -0.00041
+        ],
+        [
+          "replays/be668915018c846403f0719e661612f0-1.json.gz",
+          75,
+          -0.01881,
+          -0.00631
+        ],
+        [
+          "replays/616dff936313da15b0c7c0c37d823757-1.json.gz",
+          75,
+          0.00168,
+          0.0005
+        ],
+        [
+          "replays/2941288072fb2d85db284daf422c8247-1.json.gz",
+          75,
+          -0.01344,
+          -0.00416
+        ],
+        [
+          "replays/61e7b16648d09f50bef087312f518928-1.json.gz",
+          63,
+          -0.00631,
+          -0.00227
+        ],
+        [
+          "replays/2bf07cda6cfd5efcb2856ee103d6c07d-1.json.gz",
+          74,
+          -0.00218,
+          -0.00064
+        ],
+        [
+          "replays/7e2213aab2fdb9570bfff9b59fc48334-1.json.gz",
+          75,
+          -0.0239,
+          -0.01002
+        ],
+        [
+          "replays/f0ded76ecc9451d8b2395d04ee8b9a0a-1.json.gz",
+          21,
+          -0.0123,
+          -0.00365
+        ],
+        [
+          "replays/312485a2801b525366259dc346a06ed2-1.json.gz",
+          75,
+          -0.0186,
+          -0.00651
+        ],
+        [
+          "replays/a8fc55cbf2832e8fd4ec77ff01e70a59-1.json.gz",
+          75,
+          0.00431,
+          0.00169
+        ],
+        [
+          "replays/72bba00dfbfaedd627ecb8b0350b1f46-1.json.gz",
+          75,
+          -0.0145,
+          -0.00553
+        ],
+        [
+          "replays/1daad8a09f3ac7d8aab02662b32c9b78-1.json.gz",
+          75,
+          -0.00136,
+          -0.0005
+        ],
+        [
+          "replays/df52c523da3f651c7894f386d09ecc4a-1.json.gz",
+          75,
+          -0.00083,
+          0.00021
+        ],
+        [
+          "replays/1710554bfcc6ea31f5b24ab3559bea23-1.json.gz",
+          74,
+          -0.00326,
+          -0.00075
+        ],
+        [
+          "replays/0cce3c932b36d69183ec934ded28f64e-1.json.gz",
+          75,
+          0.00387,
+          0.00194
+        ],
+        [
+          "replays/c4c6eb30fa5b0095efe6c75477910e06-1.json.gz",
+          75,
+          -0.00582,
+          -0.00143
+        ],
+        [
+          "replays/3ae8a32c6bf3a7429b2f859c25b9920e-1.json.gz",
+          75,
+          -0.00099,
+          -9e-05
+        ],
+        [
+          "replays/87159b3b7ae56afa496533a39347170b-1.json.gz",
+          75,
+          0.00602,
+          0.00339
+        ],
+        [
+          "replays/1dc0ebb57686abcb85ffe69e57df3c64-1.json.gz",
+          74,
+          0.04423,
+          0.0107
+        ],
+        [
+          "replays/e512d51c0626c360caf04cd50c7ff4de-1.json.gz",
+          75,
+          -0.03818,
+          -0.01339
+        ],
+        [
+          "replays/bdd43f1183043def8ed8bea387da2a26-1.json.gz",
+          75,
+          -0.00163,
+          0.00029
+        ],
+        [
+          "replays/766d28f3be60a841cd3b8583d8f7d9b4-1.json.gz",
+          74,
+          -0.06437,
+          -0.01292
+        ],
+        [
+          "replays/044aad35d05f57f105829c209fe72038-1.json.gz",
+          75,
+          0.00078,
+          0.00027
+        ],
+        [
+          "replays/e7105cd0c3a0150e4f189c76cef87842-1.json.gz",
+          75,
+          0.00877,
+          0.00281
+        ],
+        [
+          "replays/aacc4e4e6805e7325e49c665b330ed1e-1.json.gz",
+          75,
+          0.00454,
+          0.00144
+        ],
+        [
+          "replays/c09ed0efccbb9ac26abe996302129428-1.json.gz",
+          75,
+          0.02184,
+          0.00657
+        ],
+        [
+          "replays/15b564bd6c50e44e8b581a6c4ce1d911-1.json.gz",
+          75,
+          0.01977,
+          0.00954
+        ],
+        [
+          "replays/5a6d25f3475b86d8c736f0977471b12f-1.json.gz",
+          75,
+          -0.03401,
+          -0.01383
+        ],
+        [
+          "replays/bec6410dbd70c7b38a5b7d3af9200aae-1.json.gz",
+          75,
+          -0.02406,
+          -0.00954
+        ]
+      ]
+    }
+  },
+  "late100": {
+    "boards": 1963,
+    "games": 79,
+    "metrics": {
+      "cash": {
+        "log_loss": 0.22993,
+        "brier": 0.06489,
+        "ece5": 0.0155
+      },
+      "cash_asset": {
+        "log_loss": 0.20019,
+        "brier": 0.06028,
+        "ece5": 0.02482
+      },
+      "cash_economic": {
+        "log_loss": 0.21801,
+        "brier": 0.06245,
+        "ece5": 0.03632
+      },
+      "cash_territory": {
+        "log_loss": 0.28601,
+        "brier": 0.06982,
+        "ece5": 0.04229
+      },
+      "global": {
+        "log_loss": 0.28601,
+        "brier": 0.06982,
+        "ece5": 0.04229
+      },
+      "constant": {
+        "log_loss": 0.69315,
+        "brier": 0.24682,
+        "ece5": 0.09221
+      }
+    },
+    "paired": {
+      "comparator": "cash_economic",
+      "delta_logloss_brier": [
+        0.06759,
+        0.00733
+      ],
+      "ci95": [
+        [
+          -0.00697,
+          -0.00309
+        ],
+        [
+          0.21144,
+          0.02646
+        ]
+      ],
+      "games_logloss_improved": 42
+    }
+  },
+  "close200": {
+    "boards": 802,
+    "games": 56,
+    "metrics": {
+      "cash": {
+        "log_loss": 0.66905,
+        "brier": 0.22069,
+        "ece5": 0.04354
+      },
+      "cash_asset": {
+        "log_loss": 0.74791,
+        "brier": 0.23984,
+        "ece5": 0.10902
+      },
+      "cash_economic": {
+        "log_loss": 0.76489,
+        "brier": 0.23944,
+        "ece5": 0.13596
+      },
+      "cash_territory": {
+        "log_loss": 1.09561,
+        "brier": 0.28811,
+        "ece5": 0.17628
+      },
+      "global": {
+        "log_loss": 1.09561,
+        "brier": 0.28811,
+        "ece5": 0.17628
+      },
+      "constant": {
+        "log_loss": 0.69315,
+        "brier": 0.23254,
+        "ece5": 0.11222
+      }
+    },
+    "paired": {
+      "comparator": "cash_economic",
+      "delta_logloss_brier": [
+        0.09344,
+        0.01359
+      ],
+      "ci95": [
+        [
+          0.00108,
+          -0.00147
+        ],
+        [
+          0.26642,
+          0.04027
+        ]
+      ],
+      "games_logloss_improved": 30
+    }
+  },
+  "late100_close200": {
+    "boards": 288,
+    "games": 34,
+    "metrics": {
+      "cash": {
+        "log_loss": 0.65005,
+        "brier": 0.20734,
+        "ece5": 0.04212
+      },
+      "cash_asset": {
+        "log_loss": 0.72703,
+        "brier": 0.22237,
+        "ece5": 0.13834
+      },
+      "cash_economic": {
+        "log_loss": 0.79077,
+        "brier": 0.22193,
+        "ece5": 0.17042
+      },
+      "cash_territory": {
+        "log_loss": 1.26834,
+        "brier": 0.27981,
+        "ece5": 0.20516
+      },
+      "global": {
+        "log_loss": 1.26834,
+        "brier": 0.27981,
+        "ece5": 0.20516
+      },
+      "constant": {
+        "log_loss": 0.69315,
+        "brier": 0.2283,
+        "ece5": 0.0434
+      }
+    },
+    "paired": {
+      "comparator": "cash_economic",
+      "delta_logloss_brier": [
+        0.15976,
+        0.01908
+      ],
+      "ci95": [
+        [
+          -0.01568,
+          -0.00734
+        ],
+        [
+          0.49179,
+          0.06372
+        ]
+      ],
+      "games_logloss_improved": 20,
+      "games": [
+        [
+          "replays/b161992434913d41370c81c9eec95bdd-1.json.gz",
+          12,
+          -0.00961,
+          -0.00304
+        ],
+        [
+          "replays/a420dcf89b5f174ccfcff12218048f6d-1.json.gz",
+          2,
+          -0.00369,
+          -6e-05
+        ],
+        [
+          "replays/abc7aa7916efefed5cf97bf13b6f9018-1.json.gz",
+          12,
+          -0.02195,
+          0.01706
+        ],
+        [
+          "replays/b537a3f1fffcdf99325b4b35600653e5-1.json.gz",
+          1,
+          -0.0027,
+          -5e-05
+        ],
+        [
+          "replays/4690e60c6acb4b249eab4663246fb65e-1.json.gz",
+          6,
+          -0.04774,
+          -0.01514
+        ],
+        [
+          "replays/0803a123efa749dff6aa1dc3ba1c2b16-1.json.gz",
+          4,
+          0.01932,
+          0.00804
+        ],
+        [
+          "replays/b7f72aafcf98685afbd6eda28cff15c7-1.json.gz",
+          25,
+          0.0,
+          0.0
+        ],
+        [
+          "replays/7052bf6f25705e7fb2926f4872675818-1.json.gz",
+          15,
+          -0.03563,
+          -0.0125
+        ],
+        [
+          "replays/42525d7c173e7fd014b917517c1438ad-1.json.gz",
+          7,
+          0.16028,
+          0.04843
+        ],
+        [
+          "replays/75a9bee2bce781dc809a67e33bfe4a29-1.json.gz",
+          2,
+          -0.01888,
+          -0.00334
+        ],
+        [
+          "replays/09c741b655b94d49cf9e1b0f46c4aea9-1.json.gz",
+          3,
+          0.09113,
+          0.03918
+        ],
+        [
+          "replays/6dccfbc56bb0a634b70fe7f64c512029-1.json.gz",
+          8,
+          0.00145,
+          0.00167
+        ],
+        [
+          "replays/ebbbedbd2f070f69f109d419d55ec9bf-1.json.gz",
+          25,
+          5.50462,
+          0.70414
+        ],
+        [
+          "replays/b8a327c8dc1b746721fd39f13b2f1892-1.json.gz",
+          12,
+          -0.03165,
+          -0.01504
+        ],
+        [
+          "replays/56ec41a044018a6b553ff52cec98740c-1.json.gz",
+          13,
+          -0.02658,
+          -0.01035
+        ],
+        [
+          "replays/d46e015c3b939345c06ea5b20f85260c-1.json.gz",
+          1,
+          -0.07376,
+          -0.01871
+        ],
+        [
+          "replays/93e087c9793ad6e40ea8830bc4f77f43-1.json.gz",
+          2,
+          -0.00019,
+          -0.0
+        ],
+        [
+          "replays/e73fbc5f879d96c7a352c34c0e905b28-1.json.gz",
+          14,
+          0.02848,
+          -0.06499
+        ],
+        [
+          "replays/2786f5588810fbf1a38afc6ee6d2352d-1.json.gz",
+          4,
+          0.00067,
+          0.00101
+        ],
+        [
+          "replays/de0e9a2d7e4967d612153488c2ea38ff-1.json.gz",
+          6,
+          -0.12336,
+          -0.03428
+        ],
+        [
+          "replays/af71e4632720d8d97eda2079f0b46ef7-1.json.gz",
+          3,
+          -0.06506,
+          -0.02178
+        ],
+        [
+          "replays/8335937b0c32e64c88b4aaf58be05c5e-1.json.gz",
+          9,
+          -0.0739,
+          -0.02624
+        ],
+        [
+          "replays/be668915018c846403f0719e661612f0-1.json.gz",
+          1,
+          -0.01028,
+          -0.00029
+        ],
+        [
+          "replays/7e2213aab2fdb9570bfff9b59fc48334-1.json.gz",
+          14,
+          -0.00869,
+          -0.00194
+        ],
+        [
+          "replays/72bba00dfbfaedd627ecb8b0350b1f46-1.json.gz",
+          1,
+          0.03008,
+          0.01096
+        ],
+        [
+          "replays/0cce3c932b36d69183ec934ded28f64e-1.json.gz",
+          1,
+          -0.02621,
+          -0.002
+        ],
+        [
+          "replays/87159b3b7ae56afa496533a39347170b-1.json.gz",
+          1,
+          0.00331,
+          3e-05
+        ],
+        [
+          "replays/1dc0ebb57686abcb85ffe69e57df3c64-1.json.gz",
+          7,
+          0.02213,
+          0.00841
+        ],
+        [
+          "replays/e512d51c0626c360caf04cd50c7ff4de-1.json.gz",
+          15,
+          -0.00214,
+          -0.01605
+        ],
+        [
+          "replays/766d28f3be60a841cd3b8583d8f7d9b4-1.json.gz",
+          14,
+          0.0569,
+          0.01049
+        ],
+        [
+          "replays/c09ed0efccbb9ac26abe996302129428-1.json.gz",
+          10,
+          0.09041,
+          0.03403
+        ],
+        [
+          "replays/15b564bd6c50e44e8b581a6c4ce1d911-1.json.gz",
+          14,
+          0.07627,
+          0.03531
+        ],
+        [
+          "replays/5a6d25f3475b86d8c736f0977471b12f-1.json.gz",
+          16,
+          -0.06371,
+          -0.02005
+        ],
+        [
+          "replays/bec6410dbd70c7b38a5b7d3af9200aae-1.json.gz",
+          8,
+          -0.00748,
+          -0.00413
+        ]
+      ]
+    }
+  },
+  "0-74": {
+    "boards": 1506,
+    "games": 80,
+    "metrics": {
+      "cash": {
+        "log_loss": 0.66206,
+        "brier": 0.23023,
+        "ece5": 0.02196
+      },
+      "cash_asset": {
+        "log_loss": 0.60524,
+        "brier": 0.20225,
+        "ece5": 0.07381
+      },
+      "cash_economic": {
+        "log_loss": 0.61135,
+        "brier": 0.20148,
+        "ece5": 0.05615
+      },
+      "cash_territory": {
+        "log_loss": 0.62371,
+        "brier": 0.20514,
+        "ece5": 0.06444
+      },
+      "global": {
+        "log_loss": 0.62371,
+        "brier": 0.20514,
+        "ece5": 0.06444
+      },
+      "constant": {
+        "log_loss": 0.69315,
+        "brier": 0.24701,
+        "ece5": 0.08101
+      }
+    },
+    "paired": {
+      "comparator": "cash_economic",
+      "delta_logloss_brier": [
+        0.0123,
+        0.00364
+      ],
+      "ci95": [
+        [
+          -0.00102,
+          -0.00085
+        ],
+        [
+          0.03289,
+          0.01053
+        ]
+      ],
+      "games_logloss_improved": 40
+    }
+  },
+  "75-149": {
+    "boards": 1487,
+    "games": 80,
+    "metrics": {
+      "cash": {
+        "log_loss": 0.52457,
+        "brier": 0.15872,
+        "ece5": 0.07238
+      },
+      "cash_asset": {
+        "log_loss": 0.54223,
+        "brier": 0.15934,
+        "ece5": 0.06459
+      },
+      "cash_economic": {
+        "log_loss": 0.55405,
+        "brier": 0.15905,
+        "ece5": 0.07024
+      },
+      "cash_territory": {
+        "log_loss": 0.61204,
+        "brier": 0.16769,
+        "ece5": 0.10093
+      },
+      "global": {
+        "log_loss": 0.61204,
+        "brier": 0.16769,
+        "ece5": 0.10093
+      },
+      "constant": {
+        "log_loss": 0.69315,
+        "brier": 0.24681,
+        "ece5": 0.08608
+      }
+    },
+    "paired": {
+      "comparator": "cash_economic",
+      "delta_logloss_brier": [
+        0.05899,
+        0.00885
+      ],
+      "ci95": [
+        [
+          0.0021,
+          -0.00081
+        ],
+        [
+          0.1606,
+          0.02596
+        ]
+      ],
+      "games_logloss_improved": 44
+    }
+  },
+  "150-224": {
+    "boards": 1477,
+    "games": 79,
+    "metrics": {
+      "cash": {
+        "log_loss": 0.36583,
+        "brier": 0.09928,
+        "ece5": 0.03093
+      },
+      "cash_asset": {
+        "log_loss": 0.35183,
+        "brier": 0.10252,
+        "ece5": 0.03596
+      },
+      "cash_economic": {
+        "log_loss": 0.35586,
+        "brier": 0.10079,
+        "ece5": 0.03895
+      },
+      "cash_territory": {
+        "log_loss": 0.40801,
+        "brier": 0.10932,
+        "ece5": 0.05433
+      },
+      "global": {
+        "log_loss": 0.40801,
+        "brier": 0.10932,
+        "ece5": 0.05433
+      },
+      "constant": {
+        "log_loss": 0.69315,
+        "brier": 0.24678,
+        "ece5": 0.08802
+      }
+    },
+    "paired": {
+      "comparator": "cash_economic",
+      "delta_logloss_brier": [
+        0.05132,
+        0.00839
+      ],
+      "ci95": [
+        [
+          -0.00585,
+          -0.00209
+        ],
+        [
+          0.15917,
+          0.02735
+        ]
+      ],
+      "games_logloss_improved": 29
+    }
+  },
+  "225-298": {
+    "boards": 1451,
+    "games": 79,
+    "metrics": {
+      "cash": {
+        "log_loss": 0.20286,
+        "brier": 0.05902,
+        "ece5": 0.01328
+      },
+      "cash_asset": {
+        "log_loss": 0.17177,
+        "brier": 0.05201,
+        "ece5": 0.02087
+      },
+      "cash_economic": {
+        "log_loss": 0.19779,
+        "brier": 0.05549,
+        "ece5": 0.03258
+      },
+      "cash_territory": {
+        "log_loss": 0.2732,
+        "brier": 0.06367,
+        "ece5": 0.04093
+      },
+      "global": {
+        "log_loss": 0.2732,
+        "brier": 0.06367,
+        "ece5": 0.04093
+      },
+      "constant": {
+        "log_loss": 0.69315,
+        "brier": 0.2469,
+        "ece5": 0.09545
+      }
+    },
+    "paired": {
+      "comparator": "cash_economic",
+      "delta_logloss_brier": [
+        0.07278,
+        0.00788
+      ],
+      "ci95": [
+        [
+          -0.00632,
+          -0.00259
+        ],
+        [
+          0.22538,
+          0.02705
+        ]
+      ],
+      "games_logloss_improved": 54
+    }
+  }
+}

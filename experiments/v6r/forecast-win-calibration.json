@@ -1,0 +1,19 @@
+{
+  "epoch": 1,
+  "shrink": 0.0,
+  "scalar_phase_calibrations": {
+    "cash": {
+      "penalty": 2.0
+    },
+    "cash_asset": {
+      "penalty": 2.0
+    },
+    "cash_economic": {
+      "penalty": 2.0
+    },
+    "cash_territory": {
+      "penalty": 2.0
+    }
+  },
+  "best_single_on_calibration": "cash_economic"
+}

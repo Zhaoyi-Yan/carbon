@@ -1,0 +1,2896 @@
+{
+  "target": "seat 0 cash margin at min(t+h, game end) minus margin at t; headline metrics require the full h future turns. Both observers of the v5 territory baseline receive only their own tracked belief. Other models use public players and tree metadata.",
+  "splits": {
+    "train": {
+      "games": 136,
+      "boards": 10091
+    },
+    "calibration": {
+      "games": 36,
+      "boards": 2692
+    },
+    "test": {
+      "games": 45,
+      "boards": 3326
+    }
+  },
+  "ridge_penalty": 250,
+  "mlp_epoch": 19,
+  "residual_weight": 0.5,
+  "calibration": {
+    "20": {
+      "boards": 2520,
+      "games": 36,
+      "methods": {
+        "no_change": {
+          "mae": 298.425,
+          "rmse": 407.618
+        },
+        "v5_economic_raw": {
+          "mae": 246.109,
+          "rmse": 328.815
+        },
+        "v5_economic_calibrated": {
+          "mae": 204.632,
+          "rmse": 268.972
+        },
+        "asset_raw": {
+          "mae": 225.927,
+          "rmse": 298.757
+        },
+        "asset_calibrated": {
+          "mae": 224.556,
+          "rmse": 297.728
+        },
+        "v5_territory_raw": {
+          "mae": 279.005,
+          "rmse": 397.792
+        },
+        "v5_territory_calibrated": {
+          "mae": 205.881,
+          "rmse": 271.169
+        },
+        "past24_raw": {
+          "mae": 397.423,
+          "rmse": 533.377
+        },
+        "past24_calibrated": {
+          "mae": 294.114,
+          "rmse": 393.922
+        },
+        "combined_calibrated": {
+          "mae": 201.224,
+          "rmse": 265.075
+        },
+        "same_features_ridge": {
+          "mae": 190.253,
+          "rmse": 251.805
+        },
+        "forecast": {
+          "mae": 187.098,
+          "rmse": 248.769
+        }
+      }
+    },
+    "50": {
+      "boards": 2254,
+      "games": 36,
+      "methods": {
+        "no_change": {
+          "mae": 510.636,
+          "rmse": 756.729
+        },
+        "v5_economic_raw": {
+          "mae": 327.508,
+          "rmse": 425.567
+        },
+        "v5_economic_calibrated": {
+          "mae": 313.333,
+          "rmse": 403.971
+        },
+        "asset_raw": {
+          "mae": 439.949,
+          "rmse": 615.806
+        },
+        "asset_calibrated": {
+          "mae": 421.194,
+          "rmse": 556.299
+        },
+        "v5_territory_raw": {
+          "mae": 305.447,
+          "rmse": 395.643
+        },
+        "v5_territory_calibrated": {
+          "mae": 304.318,
+          "rmse": 394.427
+        },
+        "past24_raw": {
+          "mae": 529.541,
+          "rmse": 701.869
+        },
+        "past24_calibrated": {
+          "mae": 496.522,
+          "rmse": 679.059
+        },
+        "combined_calibrated": {
+          "mae": 304.628,
+          "rmse": 394.325
+        },
+        "same_features_ridge": {
+          "mae": 317.746,
+          "rmse": 412.583
+        },
+        "forecast": {
+          "mae": 313.975,
+          "rmse": 408.474
+        }
+      }
+    }
+  },
+  "test": {
+    "20": {
+      "boards": 3112,
+      "games": 45,
+      "methods": {
+        "no_change": {
+          "mae": 260.294,
+          "rmse": 358.134
+        },
+        "v5_economic_raw": {
+          "mae": 211.863,
+          "rmse": 282.078
+        },
+        "v5_economic_calibrated": {
+          "mae": 191.331,
+          "rmse": 250.996
+        },
+        "asset_raw": {
+          "mae": 208.89,
+          "rmse": 277.059
+        },
+        "asset_calibrated": {
+          "mae": 208.868,
+          "rmse": 277.015
+        },
+        "v5_territory_raw": {
+          "mae": 227.942,
+          "rmse": 319.966
+        },
+        "v5_territory_calibrated": {
+          "mae": 192.041,
+          "rmse": 252.262
+        },
+        "past24_raw": {
+          "mae": 372.599,
+          "rmse": 503.549
+        },
+        "past24_calibrated": {
+          "mae": 267.651,
+          "rmse": 360.164
+        },
+        "combined_calibrated": {
+          "mae": 188.539,
+          "rmse": 247.093
+        },
+        "same_features_ridge": {
+          "mae": 182.022,
+          "rmse": 238.033
+        },
+        "forecast": {
+          "mae": 181.202,
+          "rmse": 236.826
+        }
+      }
+    },
+    "50": {
+      "boards": 2775,
+      "games": 45,
+      "methods": {
+        "no_change": {
+          "mae": 413.113,
+          "rmse": 609.394
+        },
+        "v5_economic_raw": {
+          "mae": 298.249,
+          "rmse": 387.193
+        },
+        "v5_economic_calibrated": {
+          "mae": 293.783,
+          "rmse": 377.735
+        },
+        "asset_raw": {
+          "mae": 366.881,
+          "rmse": 512.489
+        },
+        "asset_calibrated": {
+          "mae": 373.68,
+          "rmse": 496.625
+        },
+        "v5_territory_raw": {
+          "mae": 284.329,
+          "rmse": 364.743
+        },
+        "v5_territory_calibrated": {
+          "mae": 284.191,
+          "rmse": 363.996
+        },
+        "past24_raw": {
+          "mae": 472.82,
+          "rmse": 626.163
+        },
+        "past24_calibrated": {
+          "mae": 437.057,
+          "rmse": 594.483
+        },
+        "combined_calibrated": {
+          "mae": 283.424,
+          "rmse": 363.175
+        },
+        "same_features_ridge": {
+          "mae": 299.278,
+          "rmse": 383.158
+        },
+        "forecast": {
+          "mae": 295.476,
+          "rmse": 378.09
+        }
+      }
+    }
+  },
+  "test_phases": {
+    "0-74": {
+      "20": {
+        "boards": 844,
+        "games": 45,
+        "methods": {
+          "no_change": {
+            "mae": 162.603,
+            "rmse": 249.524
+          },
+          "v5_economic_raw": {
+            "mae": 161.186,
+            "rmse": 229.58
+          },
+          "v5_economic_calibrated": {
+            "mae": 122.535,
+            "rmse": 178.264
+          },
+          "asset_raw": {
+            "mae": 123.19,
+            "rmse": 180.991
+          },
+          "asset_calibrated": {
+            "mae": 123.615,
+            "rmse": 180.574
+          },
+          "v5_territory_raw": {
+            "mae": 193.254,
+            "rmse": 282.898
+          },
+          "v5_territory_calibrated": {
+            "mae": 122.429,
+            "rmse": 178.931
+          },
+          "past24_raw": {
+            "mae": 173.204,
+            "rmse": 266.021
+          },
+          "past24_calibrated": {
+            "mae": 161.338,
+            "rmse": 243.355
+          },
+          "combined_calibrated": {
+            "mae": 119.679,
+            "rmse": 173.195
+          },
+          "same_features_ridge": {
+            "mae": 119.003,
+            "rmse": 169.716
+          },
+          "forecast": {
+            "mae": 116.187,
+            "rmse": 165.99
+          }
+        }
+      },
+      "50": {
+        "boards": 844,
+        "games": 45,
+        "methods": {
+          "no_change": {
+            "mae": 374.234,
+            "rmse": 548.942
+          },
+          "v5_economic_raw": {
+            "mae": 277.4,
+            "rmse": 373.625
+          },
+          "v5_economic_calibrated": {
+            "mae": 272.796,
+            "rmse": 361.839
+          },
+          "asset_raw": {
+            "mae": 320.871,
+            "rmse": 457.074
+          },
+          "asset_calibrated": {
+            "mae": 297.404,
+            "rmse": 403.117
+          },
+          "v5_territory_raw": {
+            "mae": 264.545,
+            "rmse": 351.28
+          },
+          "v5_territory_calibrated": {
+            "mae": 264.479,
+            "rmse": 349.877
+          },
+          "past24_raw": {
+            "mae": 371.152,
+            "rmse": 522.746
+          },
+          "past24_calibrated": {
+            "mae": 371.133,
+            "rmse": 522.255
+          },
+          "combined_calibrated": {
+            "mae": 264.096,
+            "rmse": 349.307
+          },
+          "same_features_ridge": {
+            "mae": 269.623,
+            "rmse": 357.035
+          },
+          "forecast": {
+            "mae": 261.55,
+            "rmse": 346.425
+          }
+        }
+      }
+    },
+    "75-149": {
+      "20": {
+        "boards": 838,
+        "games": 45,
+        "methods": {
+          "no_change": {
+            "mae": 300.467,
+            "rmse": 404.013
+          },
+          "v5_economic_raw": {
+            "mae": 252.048,
+            "rmse": 331.198
+          },
+          "v5_economic_calibrated": {
+            "mae": 227.095,
+            "rmse": 285.128
+          },
+          "asset_raw": {
+            "mae": 238.096,
+            "rmse": 305.786
+          },
+          "asset_calibrated": {
+            "mae": 237.631,
+            "rmse": 305.887
+          },
+          "v5_territory_raw": {
+            "mae": 275.45,
+            "rmse": 389.083
+          },
+          "v5_territory_calibrated": {
+            "mae": 229.402,
+            "rmse": 287.834
+          },
+          "past24_raw": {
+            "mae": 454.062,
+            "rmse": 576.781
+          },
+          "past24_calibrated": {
+            "mae": 321.522,
+            "rmse": 414.205
+          },
+          "combined_calibrated": {
+            "mae": 220.217,
+            "rmse": 277.722
+          },
+          "same_features_ridge": {
+            "mae": 208.457,
+            "rmse": 264.429
+          },
+          "forecast": {
+            "mae": 209.287,
+            "rmse": 264.417
+          }
+        }
+      },
+      "50": {
+        "boards": 831,
+        "games": 45,
+        "methods": {
+          "no_change": {
+            "mae": 430.381,
+            "rmse": 631.015
+          },
+          "v5_economic_raw": {
+            "mae": 300.913,
+            "rmse": 381.034
+          },
+          "v5_economic_calibrated": {
+            "mae": 299.748,
+            "rmse": 380.429
+          },
+          "asset_raw": {
+            "mae": 383.099,
+            "rmse": 523.177
+          },
+          "asset_calibrated": {
+            "mae": 416.573,
+            "rmse": 533.699
+          },
+          "v5_territory_raw": {
+            "mae": 284.051,
+            "rmse": 358.836
+          },
+          "v5_territory_calibrated": {
+            "mae": 285.795,
+            "rmse": 361.392
+          },
+          "past24_raw": {
+            "mae": 504.593,
+            "rmse": 653.017
+          },
+          "past24_calibrated": {
+            "mae": 479.162,
+            "rmse": 626.728
+          },
+          "combined_calibrated": {
+            "mae": 285.415,
+            "rmse": 360.745
+          },
+          "same_features_ridge": {
+            "mae": 294.76,
+            "rmse": 375.912
+          },
+          "forecast": {
+            "mae": 294.952,
+            "rmse": 375.425
+          }
+        }
+      }
+    },
+    "150-224": {
+      "20": {
+        "boards": 824,
+        "games": 44,
+        "methods": {
+          "no_change": {
+            "mae": 292.554,
+            "rmse": 384.01
+          },
+          "v5_economic_raw": {
+            "mae": 220.761,
+            "rmse": 287.166
+          },
+          "v5_economic_calibrated": {
+            "mae": 209.714,
+            "rmse": 267.781
+          },
+          "asset_raw": {
+            "mae": 241.541,
+            "rmse": 306.101
+          },
+          "asset_calibrated": {
+            "mae": 241.701,
+            "rmse": 306.407
+          },
+          "v5_territory_raw": {
+            "mae": 224.471,
+            "rmse": 309.578
+          },
+          "v5_territory_calibrated": {
+            "mae": 209.563,
+            "rmse": 268.099
+          },
+          "past24_raw": {
+            "mae": 420.204,
+            "rmse": 533.779
+          },
+          "past24_calibrated": {
+            "mae": 299.444,
+            "rmse": 384.952
+          },
+          "combined_calibrated": {
+            "mae": 209.908,
+            "rmse": 265.761
+          },
+          "same_features_ridge": {
+            "mae": 206.4,
+            "rmse": 261.17
+          },
+          "forecast": {
+            "mae": 206.33,
+            "rmse": 260.445
+          }
+        }
+      },
+      "50": {
+        "boards": 824,
+        "games": 44,
+        "methods": {
+          "no_change": {
+            "mae": 437.668,
+            "rmse": 660.008
+          },
+          "v5_economic_raw": {
+            "mae": 325.4,
+            "rmse": 415.386
+          },
+          "v5_economic_calibrated": {
+            "mae": 316.903,
+            "rmse": 397.788
+          },
+          "asset_raw": {
+            "mae": 402.909,
+            "rmse": 568.644
+          },
+          "asset_calibrated": {
+            "mae": 415.865,
+            "rmse": 555.603
+          },
+          "v5_territory_raw": {
+            "mae": 310.393,
+            "rmse": 388.159
+          },
+          "v5_territory_calibrated": {
+            "mae": 308.345,
+            "rmse": 384.762
+          },
+          "past24_raw": {
+            "mae": 522.981,
+            "rmse": 677.114
+          },
+          "past24_calibrated": {
+            "mae": 462.652,
+            "rmse": 638.159
+          },
+          "combined_calibrated": {
+            "mae": 307.588,
+            "rmse": 383.815
+          },
+          "same_features_ridge": {
+            "mae": 333.309,
+            "rmse": 415.236
+          },
+          "forecast": {
+            "mae": 331.303,
+            "rmse": 411.192
+          }
+        }
+      }
+    },
+    "225-298": {
+      "20": {
+        "boards": 606,
+        "games": 44,
+        "methods": {
+          "no_change": {
+            "mae": 296.934,
+            "rmse": 381.725
+          },
+          "v5_economic_raw": {
+            "mae": 214.776,
+            "rmse": 267.173
+          },
+          "v5_economic_calibrated": {
+            "mae": 212.695,
+            "rmse": 263.32
+          },
+          "asset_raw": {
+            "mae": 243.465,
+            "rmse": 303.093
+          },
+          "asset_calibrated": {
+            "mae": 243.182,
+            "rmse": 302.672
+          },
+          "v5_territory_raw": {
+            "mae": 215.277,
+            "rmse": 273.179
+          },
+          "v5_territory_calibrated": {
+            "mae": 213.504,
+            "rmse": 264.39
+          },
+          "past24_raw": {
+            "mae": 472.925,
+            "rmse": 596.745
+          },
+          "past24_calibrated": {
+            "mae": 297.995,
+            "rmse": 380.682
+          },
+          "combined_calibrated": {
+            "mae": 211.578,
+            "rmse": 262.804
+          },
+          "same_features_ridge": {
+            "mae": 200.089,
+            "rmse": 247.809
+          },
+          "forecast": {
+            "mae": 198.746,
+            "rmse": 246.439
+          }
+        }
+      },
+      "50": {
+        "boards": 276,
+        "games": 44,
+        "methods": {
+          "no_change": {
+            "mae": 406.704,
+            "rmse": 559.396
+          },
+          "v5_economic_raw": {
+            "mae": 272.921,
+            "rmse": 358.016
+          },
+          "v5_economic_calibrated": {
+            "mae": 270.974,
+            "rmse": 355.037
+          },
+          "asset_raw": {
+            "mae": 351.189,
+            "rmse": 460.828
+          },
+          "asset_calibrated": {
+            "mae": 351.846,
+            "rmse": 451.255
+          },
+          "v5_territory_raw": {
+            "mae": 267.857,
+            "rmse": 350.358
+          },
+          "v5_territory_calibrated": {
+            "mae": 267.529,
+            "rmse": 350.112
+          },
+          "past24_raw": {
+            "mae": 538.291,
+            "rmse": 673.607
+          },
+          "past24_calibrated": {
+            "mae": 435.463,
+            "rmse": 566.371
+          },
+          "combined_calibrated": {
+            "mae": 264.392,
+            "rmse": 348.389
+          },
+          "same_features_ridge": {
+            "mae": 301.965,
+            "rmse": 382.151
+          },
+          "forecast": {
+            "mae": 293.84,
+            "rmse": 375.709
+          }
+        }
+      }
+    }
+  },
+  "paired": {
+    "20": {
+      "comparator": "combined_calibrated",
+      "games_improved": 30,
+      "games": 45,
+      "macro_mae_difference": -7.33,
+      "paired_game_bootstrap_95": [
+        -12.109,
+        -2.789
+      ],
+      "rows": [
+        [
+          "replays/0b00ddd86841db196523a3799e0c7a58-1.json.gz",
+          156.3453,
+          167.9081
+        ],
+        [
+          "replays/13710ada6f6a92b584ad4c21e500df88-1.json.gz",
+          173.728,
+          176.2368
+        ],
+        [
+          "replays/13d4a896dc6c8520c357d54b011deb22-1.json.gz",
+          132.1295,
+          143.084
+        ],
+        [
+          "replays/14e59cf624f667abf52b51d988d3f0c0-1.json.gz",
+          170.8401,
+          222.5597
+        ],
+        [
+          "replays/1c6911a8ac5eba2187cc6433be213768-1.json.gz",
+          200.644,
+          208.8569
+        ],
+        [
+          "replays/1cc46f477941046042b7978a287d7dfe-1.json.gz",
+          199.5772,
+          194.2345
+        ],
+        [
+          "replays/21409c0e0f93beb73f2f22a2835ff50a-1.json.gz",
+          165.8445,
+          165.4938
+        ],
+        [
+          "replays/24b5891849dabdf4e00f7ea541c3066a-1.json.gz",
+          176.582,
+          189.1124
+        ],
+        [
+          "replays/28bf707815d5dfb2b664a3d17f17b7b7-1.json.gz",
+          184.728,
+          184.7865
+        ],
+        [
+          "replays/2fa5a4c664fc27bbcfac7eec01c8edc3-1.json.gz",
+          222.5663,
+          226.0148
+        ],
+        [
+          "replays/35d90cb39bffcfe714ee30933c829a2e-1.json.gz",
+          183.1344,
+          170.5848
+        ],
+        [
+          "replays/44664d0003e93b77c7357c31bdc558c4-1.json.gz",
+          211.1005,
+          217.4178
+        ],
+        [
+          "replays/462766dbfbef37511dba2fb05f7d05a3-1.json.gz",
+          207.4744,
+          190.7295
+        ],
+        [
+          "replays/46f307dbbfe8b205ccf57ccf998f20da-1.json.gz",
+          223.5519,
+          214.1363
+        ],
+        [
+          "replays/49908d8dfe332b0b03e391735d26957a-1.json.gz",
+          165.6265,
+          162.7158
+        ],
+        [
+          "replays/65d0acf26835a6a8364b84750e5fc204-1.json.gz",
+          212.1592,
+          245.5724
+        ],
+        [
+          "replays/68d05f61cd96e7dc49941fd48ed56287-1.json.gz",
+          132.8052,
+          150.1247
+        ],
+        [
+          "replays/753dd13cb2faca820aa98e4c20c93f5e-1.json.gz",
+          155.8053,
+          165.3289
+        ],
+        [
+          "replays/767a4bf43ca1dc86118292659de1670a-1.json.gz",
+          190.7964,
+          188.3508
+        ],
+        [
+          "replays/7c9b78d21853215cc9cc3547505efd09-1.json.gz",
+          158.5539,
+          199.1145
+        ],
+        [
+          "replays/7d7dc8227051a94e38151ab6d88cfcbd-1.json.gz",
+          189.0753,
+          203.9446
+        ],
+        [
+          "replays/80744f8837f74fbc1397e82a4d6f9a44-1.json.gz",
+          149.5502,
+          156.3162
+        ],
+        [
+          "replays/808596443db7ca5103a3c6cc75d7379d-1.json.gz",
+          260.8953,
+          247.1659
+        ],
+        [
+          "replays/8cfa0cb23550156f8a8759f379c9f037-1.json.gz",
+          181.8363,
+          185.973
+        ],
+        [
+          "replays/9107c596d070f54c60fc175bf616af09-1.json.gz",
+          164.5686,
+          171.3059
+        ],
+        [
+          "replays/96189767794a852a14afe120560364b8-1.json.gz",
+          132.7278,
+          175.1408
+        ],
+        [
+          "replays/96fdfebf4989b09144a312b7e9cfb6f8-1.json.gz",
+          219.5742,
+          219.7533
+        ],
+        [
+          "replays/a00114ee36ab731636bca98b25bcbad7-1.json.gz",
+          224.6082,
+          242.9495
+        ],
+        [
+          "replays/a49804c4b2437ff8e80edc808241deb4-1.json.gz",
+          124.3119,
+          127.0132
+        ],
+        [
+          "replays/a88b5188e0aa96eac5b6aae18645a576-1.json.gz",
+          163.1286,
+          189.1389
+        ],
+        [
+          "replays/ae1cab3aff82a060717eb0391b815b40-1.json.gz",
+          162.2562,
+          166.2453
+        ],
+        [
+          "replays/ba7e1f7fc45d646702f3a2dab1a1e8f3-1.json.gz",
+          225.7256,
+          214.9303
+        ],
+        [
+          "replays/bca62e8310d95e3b1cb51184b31e8470-1.json.gz",
+          183.8428,
+          186.8725
+        ],
+        [
+          "replays/ca78e9afcad87fd1c9b07ea5a784d400-1.json.gz",
+          149.9235,
+          163.4529
+        ],
+        [
+          "replays/ccf13750e52dcb1f3212fddd1abc3e65-1.json.gz",
+          191.4918,
+          180.9014
+        ],
+        [
+          "replays/dcad48aeba7f3ebcadcf70fe4cf1ae99-1.json.gz",
+          215.9814,
+          253.5919
+        ],
+        [
+          "replays/e02d6334ea3917e30e73f4f06fb43e53-1.json.gz",
+          181.1109,
+          173.0213
+        ],
+        [
+          "replays/e087a07e549515c08e3bf4ec6e3bef71-1.json.gz",
+          183.5158,
+          202.2897
+        ],
+        [
+          "replays/e24e2dcef5e4e3698bad9ad765c7d306-1.json.gz",
+          154.7283,
+          168.5353
+        ],
+        [
+          "replays/e5efc88cd4197920e8d17d4e294a548f-1.json.gz",
+          194.8199,
+          222.7887
+        ],
+        [
+          "replays/e64bba2caf9ec944723477193a967218-1.json.gz",
+          166.584,
+          157.9488
+        ],
+        [
+          "replays/e77e468a45e2afb739bd878e3bb75a8f-1.json.gz",
+          183.4176,
+          190.7465
+        ],
+        [
+          "replays/ebe1881c614d1e8d90b51c733352d7ae-1.json.gz",
+          169.392,
+          156.5811
+        ],
+        [
+          "replays/fd9f5406195dcc46141ffe116b12619d-1.json.gz",
+          172.9286,
+          161.7719
+        ],
+        [
+          "replays/fe3beb57e34a752098e098efc37db7c6-1.json.gz",
+          166.9146,
+          166.0027
+        ]
+      ]
+    },
+    "50": {
+      "comparator": "v5_territory_calibrated",
+      "games_improved": 16,
+      "games": 45,
+      "macro_mae_difference": 11.328,
+      "paired_game_bootstrap_95": [
+        4.258,
+        18.414
+      ],
+      "rows": [
+        [
+          "replays/0b00ddd86841db196523a3799e0c7a58-1.json.gz",
+          294.7039,
+          247.482
+        ],
+        [
+          "replays/13710ada6f6a92b584ad4c21e500df88-1.json.gz",
+          245.1517,
+          237.9287
+        ],
+        [
+          "replays/13d4a896dc6c8520c357d54b011deb22-1.json.gz",
+          194.5969,
+          195.3911
+        ],
+        [
+          "replays/14e59cf624f667abf52b51d988d3f0c0-1.json.gz",
+          362.6484,
+          368.5848
+        ],
+        [
+          "replays/1c6911a8ac5eba2187cc6433be213768-1.json.gz",
+          557.8912,
+          506.7369
+        ],
+        [
+          "replays/1cc46f477941046042b7978a287d7dfe-1.json.gz",
+          318.8031,
+          330.4127
+        ],
+        [
+          "replays/21409c0e0f93beb73f2f22a2835ff50a-1.json.gz",
+          326.6538,
+          297.3937
+        ],
+        [
+          "replays/24b5891849dabdf4e00f7ea541c3066a-1.json.gz",
+          269.1766,
+          237.6523
+        ],
+        [
+          "replays/28bf707815d5dfb2b664a3d17f17b7b7-1.json.gz",
+          194.4386,
+          212.5937
+        ],
+        [
+          "replays/2fa5a4c664fc27bbcfac7eec01c8edc3-1.json.gz",
+          302.7976,
+          312.6654
+        ],
+        [
+          "replays/35d90cb39bffcfe714ee30933c829a2e-1.json.gz",
+          277.6094,
+          295.557
+        ],
+        [
+          "replays/44664d0003e93b77c7357c31bdc558c4-1.json.gz",
+          318.9557,
+          365.6972
+        ],
+        [
+          "replays/462766dbfbef37511dba2fb05f7d05a3-1.json.gz",
+          453.6512,
+          458.5287
+        ],
+        [
+          "replays/46f307dbbfe8b205ccf57ccf998f20da-1.json.gz",
+          283.9669,
+          284.7688
+        ],
+        [
+          "replays/49908d8dfe332b0b03e391735d26957a-1.json.gz",
+          206.1645,
+          198.9664
+        ],
+        [
+          "replays/65d0acf26835a6a8364b84750e5fc204-1.json.gz",
+          291.9564,
+          285.0355
+        ],
+        [
+          "replays/68d05f61cd96e7dc49941fd48ed56287-1.json.gz",
+          262.6272,
+          241.419
+        ],
+        [
+          "replays/753dd13cb2faca820aa98e4c20c93f5e-1.json.gz",
+          305.9499,
+          270.8655
+        ],
+        [
+          "replays/767a4bf43ca1dc86118292659de1670a-1.json.gz",
+          246.6442,
+          246.2904
+        ],
+        [
+          "replays/7c9b78d21853215cc9cc3547505efd09-1.json.gz",
+          285.5513,
+          268.4717
+        ],
+        [
+          "replays/7d7dc8227051a94e38151ab6d88cfcbd-1.json.gz",
+          327.2715,
+          292.905
+        ],
+        [
+          "replays/80744f8837f74fbc1397e82a4d6f9a44-1.json.gz",
+          461.5499,
+          444.8443
+        ],
+        [
+          "replays/808596443db7ca5103a3c6cc75d7379d-1.json.gz",
+          400.2085,
+          357.7206
+        ],
+        [
+          "replays/8cfa0cb23550156f8a8759f379c9f037-1.json.gz",
+          347.2823,
+          334.6232
+        ],
+        [
+          "replays/9107c596d070f54c60fc175bf616af09-1.json.gz",
+          302.223,
+          300.1011
+        ],
+        [
+          "replays/96189767794a852a14afe120560364b8-1.json.gz",
+          269.6389,
+          275.9231
+        ],
+        [
+          "replays/96fdfebf4989b09144a312b7e9cfb6f8-1.json.gz",
+          323.9646,
+          326.1201
+        ],
+        [
+          "replays/a00114ee36ab731636bca98b25bcbad7-1.json.gz",
+          326.1924,
+          288.339
+        ],
+        [
+          "replays/a49804c4b2437ff8e80edc808241deb4-1.json.gz",
+          233.6088,
+          214.7334
+        ],
+        [
+          "replays/a88b5188e0aa96eac5b6aae18645a576-1.json.gz",
+          302.239,
+          248.7794
+        ],
+        [
+          "replays/ae1cab3aff82a060717eb0391b815b40-1.json.gz",
+          228.1974,
+          206.5307
+        ],
+        [
+          "replays/ba7e1f7fc45d646702f3a2dab1a1e8f3-1.json.gz",
+          390.6696,
+          380.7646
+        ],
+        [
+          "replays/bca62e8310d95e3b1cb51184b31e8470-1.json.gz",
+          317.526,
+          257.6102
+        ],
+        [
+          "replays/ca78e9afcad87fd1c9b07ea5a784d400-1.json.gz",
+          231.0581,
+          203.0692
+        ],
+        [
+          "replays/ccf13750e52dcb1f3212fddd1abc3e65-1.json.gz",
+          251.8188,
+          259.9931
+        ],
+        [
+          "replays/dcad48aeba7f3ebcadcf70fe4cf1ae99-1.json.gz",
+          291.7116,
+          290.7493
+        ],
+        [
+          "replays/e02d6334ea3917e30e73f4f06fb43e53-1.json.gz",
+          299.5712,
+          248.4138
+        ],
+        [
+          "replays/e087a07e549515c08e3bf4ec6e3bef71-1.json.gz",
+          252.2837,
+          259.0165
+        ],
+        [
+          "replays/e24e2dcef5e4e3698bad9ad765c7d306-1.json.gz",
+          309.6773,
+          319.7101
+        ],
+        [
+          "replays/e5efc88cd4197920e8d17d4e294a548f-1.json.gz",
+          275.2962,
+          232.1721
+        ],
+        [
+          "replays/e64bba2caf9ec944723477193a967218-1.json.gz",
+          258.1063,
+          257.1267
+        ],
+        [
+          "replays/e77e468a45e2afb739bd878e3bb75a8f-1.json.gz",
+          278.0025,
+          328.7869
+        ],
+        [
+          "replays/ebe1881c614d1e8d90b51c733352d7ae-1.json.gz",
+          180.8839,
+          169.3014
+        ],
+        [
+          "replays/fd9f5406195dcc46141ffe116b12619d-1.json.gz",
+          257.3582,
+          240.231
+        ],
+        [
+          "replays/fe3beb57e34a752098e098efc37db7c6-1.json.gz",
+          283.165,
+          289.6813
+        ]
+      ]
+    }
+  },
+  "games": [
+    {
+      "file": "replays/00839b1983513d48b6191b78599011d4-1.json.gz",
+      "layout": "20ad7527df7db3c493e0e566f9fc3a95565b025d6139afec2b312a523945a479",
+      "split": 0,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "de18654b38e751f84d0ccfdb99a3bd1366ab67b7ff24f6be268c683dc631b3b7",
+      "turns": 299
+    },
+    {
+      "file": "replays/01f4101e17eb958da9e748bffe571a58-1.json.gz",
+      "layout": "e8328e97b3690ed3fff18396f1ccc01457adf42f7098702e9293ce81d316c154",
+      "split": 0,
+      "revision": "9213b31613d196b68e3f62a4138f4cb6fab32b0c",
+      "sha256": "a1b057a87c6ee456bdb1136e5eeaa2ab264b485605bc1df52fbbc779fb9945c5",
+      "turns": 299
+    },
+    {
+      "file": "replays/056578736650bbba5699f14c81dc9525-1.json.gz",
+      "layout": "9d26cd82f0e848511c3666725f9437bbae7a1492db92dbc478b7b554d16d798f",
+      "split": 1,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "1f937f6fec081c3b16a735ad82829c894ea40c2e89b02ba64d1d085793914094",
+      "turns": 299
+    },
+    {
+      "file": "replays/06e79f7028bb5bbc20ba7a7de22bdd86-1.json.gz",
+      "layout": "07f6f1339ad63451e7cdfc71eb9fad5f860e357ac51af4e0eb8bd2165a174bb3",
+      "split": 0,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "f641ca2cbd8137c6c8c38bf15882d49ee1d4072efd3adf09569b05e2301aad38",
+      "turns": 299
+    },
+    {
+      "file": "replays/0780da1e75608edb07b31b29d4479f06-1.json.gz",
+      "layout": "3a0535305a9ae505e740c0427440b4b9999f5c2fa354b53d57c91b071659a9fb",
+      "split": 0,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "dd46ea1c260f60f672677574e4eac8e216a6b4d7937c6fbd6c69cc5f214ceb75",
+      "turns": 299
+    },
+    {
+      "file": "replays/08a44dc512189e6710970eb3d17a53b0-1.json.gz",
+      "layout": "6eb99f2aed50b7b5f9da7887881643652b35e9361da0564a420fcf15db07733c",
+      "split": 0,
+      "revision": "9213b31613d196b68e3f62a4138f4cb6fab32b0c",
+      "sha256": "c33ad8acbfc4125ae3fcba911b831ba4fcfafcb4929b17acfa8e7efe2c901337",
+      "turns": 299
+    },
+    {
+      "file": "replays/0ac99d53f0a974fc5a9f0b80eb04bb0b-1.json.gz",
+      "layout": "e6daaad43fe3ef112ea032fc236a1508c273d67c8faec32a74a93cfead08729a",
+      "split": 0,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "c4aff455b848d972ca6e3feb3a975f31328cf58ef294ae46e3a96aab93e57df2",
+      "turns": 299
+    },
+    {
+      "file": "replays/0b00ddd86841db196523a3799e0c7a58-1.json.gz",
+      "layout": "d614978c1f978060959e2fdb1025ddf36c9afe0eb066a3e181a43260f03dad76",
+      "split": 2,
+      "revision": "33f524b117a5df435a5cbb619069a38fcd3773a5",
+      "sha256": "1f856c1ae6c592a24b15d047fb8a7ae7f793f5e901d1853fb05221b5c239550b",
+      "turns": 299
+    },
+    {
+      "file": "replays/0b68af5d453b8d1955df0f60ebd934aa-1.json.gz",
+      "layout": "42b8e12be843fee824c3636a1d03407bdf50b11dca7c757f14ddef818b352ccf",
+      "split": 0,
+      "revision": "9213b31613d196b68e3f62a4138f4cb6fab32b0c",
+      "sha256": "df6694f228a6c83de455f0af0f3d4e0393a3141bf7b7a73f119c75f8ab26c5b7",
+      "turns": 299
+    },
+    {
+      "file": "replays/0bbed039fa9edb6dcc8bbd14906a3553-1.json.gz",
+      "layout": "baf5dbe3e525b3166a52582aa0785d8e39ac6341143c695b4867613021a89914",
+      "split": 0,
+      "revision": "33f524b117a5df435a5cbb619069a38fcd3773a5",
+      "sha256": "2d37c532077bd313449b1f072c70bc1761419903875e1f6a2d9d02cadceb3794",
+      "turns": 299
+    },
+    {
+      "file": "replays/0e35eb181d361e29c314340ec542c446-1.json.gz",
+      "layout": "6e54367194843d9e33a5815096e14f6e8efaace0cc69a7047b9a44b5e16734fb",
+      "split": 0,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "2a64c64ba8b137b178c02a898008e15b8887b628b23aa3b3362fa40646f6a882",
+      "turns": 299
+    },
+    {
+      "file": "replays/0eb4fcb3485b4af9708098814e570f33-1.json.gz",
+      "layout": "51c06f5803d8088f991de51eb4d002315c2bc6ae617153bb8680158cd9106845",
+      "split": 1,
+      "revision": "2ccf09e0e5658b30259f54216d081232f8fb3e55",
+      "sha256": "2d82cf68abd5cb6d672cf34f3513fa8a7f8c178157aaee70f0361a384ffe5226",
+      "turns": 299
+    },
+    {
+      "file": "replays/1012bed474be7305e70fe09fd4cde9ef-1.json.gz",
+      "layout": "7398f28816983b6843334861171398b9ac75a6571251b15144c9c8ba7b85bda6",
+      "split": 0,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "17ce4cea42398eaa3c2020b44f4416c2b31b03c13830778d781022ddd50c946f",
+      "turns": 299
+    },
+    {
+      "file": "replays/11efb4d9ca2aba0375ba71f45ae48bd2-1.json.gz",
+      "layout": "609081e0d8d69450c2aa856bdcc9e681aaef4d31ac00b4ad9c78fd189905b932",
+      "split": 1,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "ab237959a18e57a17b03c3dc805427bed4b8126ba20cbe412d0004ea0db3350a",
+      "turns": 299
+    },
+    {
+      "file": "replays/12282bc31fd3f9f4d920693cc8469b5c-1.json.gz",
+      "layout": "2529e80fce78eb9164e72fbe7f87723c27808e9e914dbe8e637ab0f66937da98",
+      "split": 0,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "b6e8d081a83fd7bf476c5151065bf38d9da0fe36743d913d51fa90eff3d9cd8a",
+      "turns": 299
+    },
+    {
+      "file": "replays/126ff43f0bded26906b3b72d89cb6a23-1.json.gz",
+      "layout": "383c88661a1b0338abc1f39d5a6d9d5ad51885d051b5cee38c49c434c0ad9b18",
+      "split": 0,
+      "revision": "9213b31613d196b68e3f62a4138f4cb6fab32b0c",
+      "sha256": "b537d5ecfe07f66d9e0d1d806741072fb441a6690ca95c50ac2fe7ee8a59a890",
+      "turns": 299
+    },
+    {
+      "file": "replays/12d8b9bfcf5d82e3122c6be37348d04a-1.json.gz",
+      "layout": "507e8448c19e2d592e00772ec96a650ecc37f034e569306290cd6b2235b865a0",
+      "split": 0,
+      "revision": "39d9f2931484a7fbf0fadb84c1da3b3cf5e99c4e",
+      "sha256": "636966173870761a60e1e39220a5ee55d6daec46b0f374e2e76a2616f475988b",
+      "turns": 299
+    },
+    {
+      "file": "replays/1306fa109d2f4ee2acfb937955fc9368-1.json.gz",
+      "layout": "d3d87e0ca59343e2d488c4baddc33fc3027afadd8747eecd86c82647f46fbae0",
+      "split": 1,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "92773e4bbd3ebf016106b451ae4dc5e5a732ecaa6d0c4bde7b6f4052167122d7",
+      "turns": 299
+    },
+    {
+      "file": "replays/13710ada6f6a92b584ad4c21e500df88-1.json.gz",
+      "layout": "28fcaa1228889187c7c7ebaee07c277040bdffce14e86745efa98ac53c401f98",
+      "split": 2,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "86af95e3063092d87f65b977905187c5c2d87e216aacedad251e645a0b5e01f1",
+      "turns": 299
+    },
+    {
+      "file": "replays/1386cebca822214f2ee3432bb1096852-1.json.gz",
+      "layout": "f4c3247a04e8b7127f03f255161eacd5f1b7e91bad6e3e69ec996db1fca89883",
+      "split": 0,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "c390db461cdeb0a504f5f41fae9b0a89a884cb00838973f7f8b54c2db0fc7726",
+      "turns": 299
+    },
+    {
+      "file": "replays/13d4a896dc6c8520c357d54b011deb22-1.json.gz",
+      "layout": "c244c4e9be2f3429fe86da11a3033d99401c465481da3a0dd949e5608329247a",
+      "split": 2,
+      "revision": "33f524b117a5df435a5cbb619069a38fcd3773a5",
+      "sha256": "e881018a527fb779f3abc6bb2800532e18da84eb31b636af4e8c0b7c7ad4337a",
+      "turns": 299
+    },
+    {
+      "file": "replays/1466fa258d428eb31ecdc02daa85aa74-1.json.gz",
+      "layout": "209b440de34dddfc9a5b2958a976fe085dd5795e04a86fc81c821f1dc6900419",
+      "split": 0,
+      "revision": "39d9f2931484a7fbf0fadb84c1da3b3cf5e99c4e",
+      "sha256": "9e1f59de41d40a4d54a324e43eac475fd5045bc0882e04df027c7ee6c50c376d",
+      "turns": 299
+    },
+    {
+      "file": "replays/14ba1556a10dc61c70fae7c191eea2f8-1.json.gz",
+      "layout": "12ac832c3061d7532a36e182d480758caddf8e3fac1bfd3e497fdd780a88c8f9",
+      "split": 0,
+      "revision": "9213b31613d196b68e3f62a4138f4cb6fab32b0c",
+      "sha256": "cdca07d2bec733dc93955558e7d6b765f13cc56dafb86a602fa6ca03c4e3d14d",
+      "turns": 299
+    },
+    {
+      "file": "replays/14e59cf624f667abf52b51d988d3f0c0-1.json.gz",
+      "layout": "9f7ecd4ce621623afcc04c314c26c54fb33c23f1871f8bdc98528351b88ca4ac",
+      "split": 2,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "b1001147d12bb0331081718d01556b5850e1c6f9b47ba2718d9f02fff592f72a",
+      "turns": 299
+    },
+    {
+      "file": "replays/15c44edcb845861b8d27dc7f00873344-1.json.gz",
+      "layout": "6f6ca61bd8611382e57bf33fbaf0cd2d346f31ff7966b4a9ca029a38bc07236c",
+      "split": 0,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "b462f3f909e054c6325572ce7282bf715f89b3be6d21ab3548bbc028d00f1d88",
+      "turns": 299
+    },
+    {
+      "file": "replays/160f655dc39acc147327201cbfc7aedd-1.json.gz",
+      "layout": "f90b8670e2a96986df56fbe9c4b9085687563906fc28a2bee643a50140870707",
+      "split": 1,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "79399edc6016c1e5d71ebd019b619d6576a965e3f32ad2359ac1ad0e256a3464",
+      "turns": 299
+    },
+    {
+      "file": "replays/164884ed284ecca477aefbbb28eea1c5-1.json.gz",
+      "layout": "957252f74e3e4c1090b1ee4efe94f6a38f734281438f379d59d1bf2e7c51a33e",
+      "split": 0,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "0ce2a2988c3ccd3a77542dc8a6382234c70402d2ecd1c6193047768a88e81979",
+      "turns": 299
+    },
+    {
+      "file": "replays/16d8168b4d41f2bda0637934a5f153cb-1.json.gz",
+      "layout": "ef9f7710d1da21571d7febee3ad9508c28ddc0f51a607b40f55ceebb5b7feaa7",
+      "split": 0,
+      "revision": "33f524b117a5df435a5cbb619069a38fcd3773a5",
+      "sha256": "e86dfa8ffb1214b43f1eeb5505128e95fe911ead4df5719fefdeffe2cb591055",
+      "turns": 299
+    },
+    {
+      "file": "replays/1ba0a7f5dd9aae2eaa4a0ce7a5f750af-1.json.gz",
+      "layout": "ef8b721798696d8b502ddc837890d6b4c9cfffbe810c946d048ada7681445beb",
+      "split": 0,
+      "revision": "9213b31613d196b68e3f62a4138f4cb6fab32b0c",
+      "sha256": "6f438c676ba93a3e8b543a4258637c2b4c437c88f1031b4028bf0d07ea8fb34d",
+      "turns": 299
+    },
+    {
+      "file": "replays/1c6911a8ac5eba2187cc6433be213768-1.json.gz",
+      "layout": "e1501e51911d8fd516be6515e86321858a80be620b458a1d856163f9c6d7e953",
+      "split": 2,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "f874fb1fc8c968805323e25e2680bae9b9d8a454997ebe314f3411fee6ce4cff",
+      "turns": 299
+    },
+    {
+      "file": "replays/1cc46f477941046042b7978a287d7dfe-1.json.gz",
+      "layout": "379171813c99632cd94db227093473ceeb72e3c1c0e3875ed1db63448556093a",
+      "split": 2,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "c92ac1eefa4a89c3af053d9e1ba679bb1dd88b6f9935e29b1272fd5447501cdb",
+      "turns": 299
+    },
+    {
+      "file": "replays/20b85060c8e5cba8bc73c73aaaeae332-1.json.gz",
+      "layout": "13fccc7915f12d80b2c7fcf99804ccce1e8cc9a90fc2f1314f35049310ea6e78",
+      "split": 0,
+      "revision": "9213b31613d196b68e3f62a4138f4cb6fab32b0c",
+      "sha256": "5b9306c6f764ba2d4fc758227a56fc9128a9988b84f5b531b6e3d308e917328e",
+      "turns": 299
+    },
+    {
+      "file": "replays/21409c0e0f93beb73f2f22a2835ff50a-1.json.gz",
+      "layout": "bc7629902f7a132983d7429149fab8f0fe93839ddddd6b742f48f516b62317a1",
+      "split": 2,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "3293e56f953b70cf573e68549053a6e47e0fb8720c72f698af255f75763167ac",
+      "turns": 299
+    },
+    {
+      "file": "replays/21d35d7cbf9aeffa465fc044cdfcf037-1.json.gz",
+      "layout": "1478329faff4d51b7c4fbe7a952b004f292b6f8ed0067ce566c522b83c1e7a46",
+      "split": 0,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "28baa0dc1d03e3e1131e14ddbdedc7cbbe7d2d346b7b17a4796a9167b15bb5e9",
+      "turns": 299
+    },
+    {
+      "file": "replays/24b5891849dabdf4e00f7ea541c3066a-1.json.gz",
+      "layout": "0e31871f54df19ac210a2188fd4f7d890b85d508a927bb7dc3594726d6ab1e43",
+      "split": 2,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "528be9147c3093747a5337116774688b128acc6fbfe3fff5764fc37e7b0435d1",
+      "turns": 299
+    },
+    {
+      "file": "replays/27671c7ee9c31a98c26835b89ed96540-1.json.gz",
+      "layout": "07d955bba04b6c3b866a0452b45e4123937dfe944cd16a032024755141f3c9d2",
+      "split": 0,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "d704f8d183bada7e36759e9dde1d05aa8db2021262f3356efd8b0dd4cd443cc3",
+      "turns": 299
+    },
+    {
+      "file": "replays/28bf707815d5dfb2b664a3d17f17b7b7-1.json.gz",
+      "layout": "a5093cdc2292440e95265d20e83da5ad2da5019a93e22ed44eb28f042b29e019",
+      "split": 2,
+      "revision": "9213b31613d196b68e3f62a4138f4cb6fab32b0c",
+      "sha256": "7791e9472191d20671c2120e69adc78112436fbeb231595a0665929ba2c9d943",
+      "turns": 299
+    },
+    {
+      "file": "replays/2e243574754d80611a7a87ac33ffbbf6-1.json.gz",
+      "layout": "f252d446ba978d53ec09c91f82b420809067bba85470541ea5e4b0d4f05f4bf1",
+      "split": 0,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "6257ad141eee6dfe04824b7ca5bc688d63b388d30c288a114b31e49c1622d579",
+      "turns": 299
+    },
+    {
+      "file": "replays/2e34cab9b82db2c98e8ca17f6f5f8134-1.json.gz",
+      "layout": "ec27f21f525faaa0072041e7abfd52e7abb0b52ceaaf29c2e945397ef40a38b3",
+      "split": 0,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "5a590769620a3fa7e206e384782590a1a89fb5066f5ae584bf6a5a490a03c9d5",
+      "turns": 299
+    },
+    {
+      "file": "replays/2fa5a4c664fc27bbcfac7eec01c8edc3-1.json.gz",
+      "layout": "ad53076f4dcb6572dbda1bafaa2b4eb0f8a039a0e8c4f1b4441c1cd6143a2da1",
+      "split": 2,
+      "revision": "2ccf09e0e5658b30259f54216d081232f8fb3e55",
+      "sha256": "cdf4f8825f926c55d538ac7ce57ec253bd269995739c03a5df96f202e4c99b83",
+      "turns": 299
+    },
+    {
+      "file": "replays/30d30d18f724bd6165e476d22a2d50b4-1.json.gz",
+      "layout": "a1e340ed4859ae301c8aee1416d4de1f12fbf95363b1df050f5ded0198d95bad",
+      "split": 0,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "e906f8f0d9ba7cacb78fb922d4b6e2cf327f472b41dc6f12586d349313aa8963",
+      "turns": 299
+    },
+    {
+      "file": "replays/32668cb4f2524c3029c3fb2ce51036ba-1.json.gz",
+      "layout": "560865c8bf96088e99db298c367553ceafaf4f0d2f8208de9844f6bef0f25b63",
+      "split": 0,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "393f0fc464517cef120202cf508fd26d687918382e6c2d5d7275a5380aa0a4e0",
+      "turns": 299
+    },
+    {
+      "file": "replays/32fb23ffb1562674c14b18d6edf223ab-1.json.gz",
+      "layout": "68358a4ee3ab053d4bf6196fbfa4fb46238ad74d86d240046dd98e735cc0537b",
+      "split": 0,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "0bb0f824e29e8d656c1bb2b219d30a03a933371df103fcba920ae01365c29bcc",
+      "turns": 299
+    },
+    {
+      "file": "replays/338efe0060442151c6b8bcde919f0de6-1.json.gz",
+      "layout": "d70c53753f0064984dcf0584a0629dc5c1b156194c381d6b0acfbe65cf0396ec",
+      "split": 0,
+      "revision": "39d9f2931484a7fbf0fadb84c1da3b3cf5e99c4e",
+      "sha256": "19d497212983ae22419164e259c40264067d78f28b5bf5fd730361036e9f637f",
+      "turns": 299
+    },
+    {
+      "file": "replays/344da495c922845c7bc93cb556167262-1.json.gz",
+      "layout": "6973acad8500ccb7f20fbf6f10f2af3fc82564ecae273a96e61405c8fd16be36",
+      "split": 0,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "8c3845b4ca85d12d1fd3b2478d0ae91279243f8e347a22280023862e574a9dcc",
+      "turns": 299
+    },
+    {
+      "file": "replays/3476f7a9ef2477d8da4752f50e64cfca-1.json.gz",
+      "layout": "58576719ab8ca8c16e3de4be8ec5cf5ab62be335ada241d35173dea8671738a6",
+      "split": 0,
+      "revision": "33f524b117a5df435a5cbb619069a38fcd3773a5",
+      "sha256": "723f8aab77844f22818b228ba17396ac559c85892cc0f04cfc59e61ee20b11df",
+      "turns": 299
+    },
+    {
+      "file": "replays/3483bb69c12623a4818455f38ef0b795-1.json.gz",
+      "layout": "3f53094f29dcadabef1e70d1d1dc095ff69cb7d507d016d9d1cd171fcc2429de",
+      "split": 1,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "73d583501c22119179b3e6ba563e1699f3878e05cfbf47d18bbf97d5e5216e6a",
+      "turns": 299
+    },
+    {
+      "file": "replays/35d90cb39bffcfe714ee30933c829a2e-1.json.gz",
+      "layout": "90cbac509e61b7e7e645aeb7fd0c49b3e20a444df4c641b2af1579a8c291a249",
+      "split": 2,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "493966a8a9d2a8ea1ffce4c244d28b61f4c3a12390eb2db5be92637767f1cd6f",
+      "turns": 299
+    },
+    {
+      "file": "replays/37885c2d47ff0c9c6a8fe83de864c4a7-1.json.gz",
+      "layout": "b36ea2c4ede05ee9fa5dc1300f0cb48f3a92eb2801d69405f27d2892fd57d83e",
+      "split": 1,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "554fc0f5df30759d491507c7d1472ecb64b7976fae05a02f19d485549ef7af54",
+      "turns": 299
+    },
+    {
+      "file": "replays/3a1e72c9328fd8aabe0de3c45b3a5234-1.json.gz",
+      "layout": "f97fd5c2e1543971b43cb845a9c301c5d4d627d775b7f49ed6fd9fd16566bf05",
+      "split": 0,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "ec86cf44545b8ffc7d5e32d470c3178b3919dccdca65a15e8201cad658213f72",
+      "turns": 299
+    },
+    {
+      "file": "replays/3d306569225c057be2b825aa2f668505-1.json.gz",
+      "layout": "0a947b699a2577102030d1d1e6b480e1d02c6d460b11f2bc90aff8b8b3da5bc7",
+      "split": 0,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "fe2eb39f4155c6712e66ba526b861526930ab17f2212fc3821494aeaa823f416",
+      "turns": 299
+    },
+    {
+      "file": "replays/3fa7b99fce9590c93314aa2e9fe2355d-1.json.gz",
+      "layout": "d7a0103be8c06166938ea5c0141c992d50de7dd3f72ee814ca666139507561d9",
+      "split": 1,
+      "revision": "9213b31613d196b68e3f62a4138f4cb6fab32b0c",
+      "sha256": "3b0553c41298c12ab1344a165faf0983419e724327dc0898acbd6525ec650796",
+      "turns": 299
+    },
+    {
+      "file": "replays/3fcb197363f9ea1ed16d87a959525db0-1.json.gz",
+      "layout": "6c12fdd4b31b418df9ff200224077af6c3528ffdc02b61d07a6b2ab543557c97",
+      "split": 0,
+      "revision": "9213b31613d196b68e3f62a4138f4cb6fab32b0c",
+      "sha256": "8349c7cc9deef2889df3711bc003efde3ed0dd589800b39b15bffd12fd2923b8",
+      "turns": 299
+    },
+    {
+      "file": "replays/4019af1207f1b381ae3a80e7d66d5310-1.json.gz",
+      "layout": "bd888ea4cdf44454bc185bdb05d27c3462fb74d69641268e5f239d861983ab5d",
+      "split": 1,
+      "revision": "9213b31613d196b68e3f62a4138f4cb6fab32b0c",
+      "sha256": "0c3f7d6396bfb09bd9e7c72aea5941752ba93b6f7a2f6fb3f6453525bcd23fd7",
+      "turns": 299
+    },
+    {
+      "file": "replays/41c7db068e9eb5cb6ded9614be8a79cf-1.json.gz",
+      "layout": "bddb8829473b462565be69b09af34db16e5acb51cd05d1261eff9627984d3558",
+      "split": 1,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "b36b9b2d47518f9e2fcbf7c489093eb26af03efaa1bb84472409baef33877a09",
+      "turns": 299
+    },
+    {
+      "file": "replays/435d7251fbb1d0e4c36a0feca44476ec-1.json.gz",
+      "layout": "d4c7693fdfafe5ba34263977b4c026f21ba022384c36a033f279fe91e4c7ce9b",
+      "split": 0,
+      "revision": "33f524b117a5df435a5cbb619069a38fcd3773a5",
+      "sha256": "efad28efc4a0ab0d4dc7afc9ccff4c370a78d703c6fb4dd23ba3ca53a2aa8164",
+      "turns": 299
+    },
+    {
+      "file": "replays/44664d0003e93b77c7357c31bdc558c4-1.json.gz",
+      "layout": "1871929d61a0b0ebc9096da8253e59ffd5217525994aca0ad80eea50a79aa513",
+      "split": 2,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "75ea6762eb28e3df6e428ae2b076d108456f34b7924f5e36773cc019621db3ed",
+      "turns": 299
+    },
+    {
+      "file": "replays/45869c71d4f1add508b049840e388e1f-1.json.gz",
+      "layout": "ea4a87ef8fcb3374f3205779209a3da5f92728f4b144c3c854b070d6b76d0cdd",
+      "split": 0,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "7f1c226bfc350793e38a31499049c4759bf0817e5fcfe7013825e659796d547f",
+      "turns": 299
+    },
+    {
+      "file": "replays/45fd0cd4f667be5226106230057dcb47-1.json.gz",
+      "layout": "2373fc4d7990bffa1b05a35e7289c54b714e4c0da9aad10e20d3ecbf7b91a756",
+      "split": 0,
+      "revision": "9213b31613d196b68e3f62a4138f4cb6fab32b0c",
+      "sha256": "55e58b18389956ad91bca3352488b0abe146d0be53cec49eca3f5150c0209280",
+      "turns": 299
+    },
+    {
+      "file": "replays/462766dbfbef37511dba2fb05f7d05a3-1.json.gz",
+      "layout": "9f36ab19350c7fa4eb650f6bd5ac5e54d40190b3947f43cd2e384dd2ca100b81",
+      "split": 2,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "aa91a0711a088a19a04572a6d648338813fd625fb5588bc07e56acf6df37c3e7",
+      "turns": 299
+    },
+    {
+      "file": "replays/46f307dbbfe8b205ccf57ccf998f20da-1.json.gz",
+      "layout": "74409b64dc0b69a971de37faaf83d657a55987d8fe0d2fadfa3b6742200633f6",
+      "split": 2,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "61cc40104d9de62037389d6da97754543ad13547e688347c80f23b98b3b9a124",
+      "turns": 299
+    },
+    {
+      "file": "replays/47888afc098db221a6bda6923c0e5783-1.json.gz",
+      "layout": "951a0a3d2ecef80db521baecd45d71bd78e73f3f6d44793d76114f854d330255",
+      "split": 0,
+      "revision": "9213b31613d196b68e3f62a4138f4cb6fab32b0c",
+      "sha256": "23db13553ddc49bc929af7aaae51aaa095ace4d4579d27aaa69bd78c422f2176",
+      "turns": 299
+    },
+    {
+      "file": "replays/48963741ca52d589ede6eba4e28431e1-1.json.gz",
+      "layout": "00eb2801fd07bebd1f0acacf5e352cbc386bc128994bd7aec68ca5e71e92801f",
+      "split": 0,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "8aa626f10a60201616a85431a832e58741da9b86fd624fd2916f4224187f53f7",
+      "turns": 299
+    },
+    {
+      "file": "replays/49908d8dfe332b0b03e391735d26957a-1.json.gz",
+      "layout": "4934026750f8e7b97d6339096831994348975bf95f6a06db65b8a37da9b97450",
+      "split": 2,
+      "revision": "33f524b117a5df435a5cbb619069a38fcd3773a5",
+      "sha256": "5cbfb5b75af31ac88aca6015b6b553e5ea4c6c6d9dd5c368ee95badbd7a718bc",
+      "turns": 299
+    },
+    {
+      "file": "replays/4afba379b1a5d9e4ee63780925a780b3-1.json.gz",
+      "layout": "fc730714ae9de605057628e1a20dda75c318db312a8a6ee98e604f32d62131e5",
+      "split": 0,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "5ff4a029419d4ebc7f772976c2611597c03531608eafd8b5687929c3a00784d6",
+      "turns": 299
+    },
+    {
+      "file": "replays/4bd95cebbbd8b61928025a16b495e102-1.json.gz",
+      "layout": "e7337e19dbb3a670b73d3ab276ddb6c435317bd3def27c5396e05431b974e1fc",
+      "split": 0,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "400890c8bed26582aa5c66685d4cb17308ef7f18a8bcc7439c59dc0c0ac52423",
+      "turns": 299
+    },
+    {
+      "file": "replays/4c343cc40456fea803992ddc8995b5da-1.json.gz",
+      "layout": "9b5ad6b01599085da4ba1dbc521b2cb044b2247be444f3b6547374ee512f57f1",
+      "split": 0,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "e24c35b989e4b2e6473ecf03fcd7a75d4116d38651d8dd594dff05d8f8a75ed9",
+      "turns": 299
+    },
+    {
+      "file": "replays/4d45ac0079fc62816fea29d09b512a30-1.json.gz",
+      "layout": "e037c9085e0b10e89ac3e3aca219761b6f07743d615fdd248cfa59c8fd6edf51",
+      "split": 0,
+      "revision": "9213b31613d196b68e3f62a4138f4cb6fab32b0c",
+      "sha256": "6085cab05ce9f4dd967fc9b51388df48cbeb5c7eccee11d6f1e87004f2ec2496",
+      "turns": 299
+    },
+    {
+      "file": "replays/4d99efc73c00979051d3f33e13c1d163-1.json.gz",
+      "layout": "1086d93297e1b9d0ab75a4052ba69e10ca66308fb3033efe3c353cf88a666a9d",
+      "split": 0,
+      "revision": "cc2243016c75e228cd1f4eb76213f4a1fe3fc0c7",
+      "sha256": "15a10c728b975f729a2199981586245957bf267517427311ebbc9ba6e53c41f4",
+      "turns": 299
+    },
+    {
+      "file": "replays/4f35bcef7e432b1ccb38ea8468088b90-1.json.gz",
+      "layout": "9afc9538a2fecaeb1ed21f382f1a58268384bdfd6866616f271c45839bd7ec8f",
+      "split": 0,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "db1e622868380b6c1099f00073cb5b43cfea633e1fe20033e4a7d333f5011405",
+      "turns": 299
+    },
+    {
+      "file": "replays/51990021e4aab909286878be64b1a263-1.json.gz",
+      "layout": "7df688113624ce18a45d6ffb7bfabe03e9e89753cfa64f18f7794216ed771a28",
+      "split": 0,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "bd0689652d91fbb99e75ce3df724abe40bbb9a7a4fbd52059fa163b5de9a04b1",
+      "turns": 299
+    },
+    {
+      "file": "replays/53a975fac52b167a27aeb1eaa4f219a5-1.json.gz",
+      "layout": "99bbe3c482b3dfec18029ba6d285c04337dac9a6e0addefa11a00e5e1ee8bbdf",
+      "split": 0,
+      "revision": "9213b31613d196b68e3f62a4138f4cb6fab32b0c",
+      "sha256": "0ff10f3064b38b28ea3fff8d4378677bb54b4b06a56d7557577d7c6124a9fd95",
+      "turns": 299
+    },
+    {
+      "file": "replays/53bcd427c29848477e5f272842d1b1de-1.json.gz",
+      "layout": "c384244d18cd9fb981daa5a47d00bebbe957cf75b8f09d186ef9c28576295f97",
+      "split": 1,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "50263569e4e3dea65bea26d5247ddb597ed256641ee4219b0235d751e8fc0940",
+      "turns": 299
+    },
+    {
+      "file": "replays/54a7a97e96d2db66f944c3351a3668c9-1.json.gz",
+      "layout": "f2da665d16ed8fcee0c617606bca8277d51e110e015b65b29cf9979c023e6308",
+      "split": 0,
+      "revision": "33f524b117a5df435a5cbb619069a38fcd3773a5",
+      "sha256": "8ba5415f84986b70561d7edfce465a21cfcda0e3517809b22e09ef152a31a6be",
+      "turns": 299
+    },
+    {
+      "file": "replays/54e00158af4f02ca131f2e4ce06549ad-1.json.gz",
+      "layout": "abe1921d2f940401b4cec3e0afd34fce172c3b5cb3217532a7a700bc36f2666c",
+      "split": 0,
+      "revision": "9213b31613d196b68e3f62a4138f4cb6fab32b0c",
+      "sha256": "e115acd46e91f102c4239ff616e1a3f689b50785de3b7ecb4d81556d80357fb9",
+      "turns": 299
+    },
+    {
+      "file": "replays/57597be93dc5479f7d23790241247065-1.json.gz",
+      "layout": "c2cbe4202c1f4c57509260609f86d13ed557e6f8693d1a6ee13eeeb33859685c",
+      "split": 0,
+      "revision": "9213b31613d196b68e3f62a4138f4cb6fab32b0c",
+      "sha256": "760d4928c25c3560f778020d590aa82e0437f2d26388fa102d7a0f8786e865f8",
+      "turns": 299
+    },
+    {
+      "file": "replays/59e1e40837fd9da04960660ea3dd8848-1.json.gz",
+      "layout": "868ba8a7d79c3044070ef2bb406f1fa0f81c888956fdbf7b1e027f6e789d442b",
+      "split": 0,
+      "revision": "cc2243016c75e228cd1f4eb76213f4a1fe3fc0c7",
+      "sha256": "5dcbbd8ec994fd20cfc6154380e237bb437989bdae31d2cc92cce6faf2adcdf1",
+      "turns": 299
+    },
+    {
+      "file": "replays/5a3bc1741e8bde8c8c5661549cd7a534-1.json.gz",
+      "layout": "bde95c9386e4a11097335137d7e537f29975d01a3d02540b8e2e3924a1bda993",
+      "split": 0,
+      "revision": "9213b31613d196b68e3f62a4138f4cb6fab32b0c",
+      "sha256": "2a62cceeb563aaadcbbfa26951dca3ec0d371eab422556efc4327276d529103f",
+      "turns": 299
+    },
+    {
+      "file": "replays/5b6933953094f1af66b9c7fe4dca75c2-1.json.gz",
+      "layout": "97dd16e17b819aba1e46a5e3d5647566c3a67edd3fa1402bd1e3cb7258191724",
+      "split": 0,
+      "revision": "9213b31613d196b68e3f62a4138f4cb6fab32b0c",
+      "sha256": "6c0aea2dd1317da81dd2077b6846f1cb4f76bfa1a9c886db99d026a5ee737bd0",
+      "turns": 299
+    },
+    {
+      "file": "replays/5c398fdb1c47257352299dbcd1ab8db7-1.json.gz",
+      "layout": "123f78a91713fb21f49bd846fc1d1a53d5afce47f2ce76e895e06e3dc7444e25",
+      "split": 0,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "a750806ac61461dacab06f5370f19ad09d7c8f1bb57200bfbe2f16f116418fa3",
+      "turns": 299
+    },
+    {
+      "file": "replays/61529d5cd08a1397f0598d37d2d519de-1.json.gz",
+      "layout": "9341c23063fa57c44668962b44bbca526678b718335723e1e78baa0fa1420967",
+      "split": 0,
+      "revision": "9213b31613d196b68e3f62a4138f4cb6fab32b0c",
+      "sha256": "7f34da580e0a070c5ae70c7d25037811bfd6290de9af20a4ab231ba18824790c",
+      "turns": 299
+    },
+    {
+      "file": "replays/6173390b43b884ef8b9c8e22ea5f3318-1.json.gz",
+      "layout": "ee8f47d5f99d6c3dc79e4d60540419eeba276b40387de93098aca9a04c821fa7",
+      "split": 0,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "f088aae7cbfd3a60f59bb39f33c683599725ee5e3841daa7848f2ba867180764",
+      "turns": 299
+    },
+    {
+      "file": "replays/6279308face2cdcb2ac4807dcaedc9c4-1.json.gz",
+      "layout": "acb52a43487a26233ef5849dcf87baf1a0fb6175257cadc193901a23f6446c25",
+      "split": 1,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "59f9b935825b66c7cd46d15da7f8d2219e6c946c9dc76698a288a45baa6befc3",
+      "turns": 299
+    },
+    {
+      "file": "replays/631a646fd1b1194a50b31ae19e3009c4-1.json.gz",
+      "layout": "da88c21685623c9ad3d4a99049aa407cf796a0d420de7f75eab077d82bd5a9fb",
+      "split": 1,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "7f055dddab00b32b4c03fcc5f40b984c2b1f804212564c14a881c3010fa5e821",
+      "turns": 299
+    },
+    {
+      "file": "replays/6436e22de728eed278f88388de346478-1.json.gz",
+      "layout": "4b94cbdd39129e214d4b7b48f293310bd573349473aee4219410bd59ec0de3d1",
+      "split": 0,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "b1c10fae9fdb101431c76073a51c09151cc713e0e3188b5ff83d7a7b5b9c51e9",
+      "turns": 299
+    },
+    {
+      "file": "replays/6523af3ebb2d8c6306f7b086a82ec116-1.json.gz",
+      "layout": "e86e0f667c79814ddcab90b6e7a25a3ba7d693d0f92ed8684fe128e2f62a6a64",
+      "split": 0,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "7322626cde892f6d67ffc9979f688c3d104c8d27ae00080419941face468c48c",
+      "turns": 299
+    },
+    {
+      "file": "replays/65ce9b6b6ff51f452c3b49d1e1ad07fc-1.json.gz",
+      "layout": "946cf74ba08a728e4cda04af6f702d8fce8ae0d7b460c2e8fd464e5e6f01d828",
+      "split": 0,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "73dc082a38bf845a903b0b69c61674aa1b9fd25bae116ff9be97b6f3ba8129f9",
+      "turns": 299
+    },
+    {
+      "file": "replays/65d0acf26835a6a8364b84750e5fc204-1.json.gz",
+      "layout": "e515e7dd08d84aed3d0a626b145860ecffcae15650afd7acb446388b07c0daef",
+      "split": 2,
+      "revision": "2ccf09e0e5658b30259f54216d081232f8fb3e55",
+      "sha256": "2e8c4d3496120049a7d53007c8c2c1f9e0d73907a072f3000530430d312212fd",
+      "turns": 299
+    },
+    {
+      "file": "replays/65fc0559972602bd0ffef7cb45dce324-1.json.gz",
+      "layout": "de960ec12cbcffa0481958c42e3b172f761ea3171fada4888d04c7ada0cd1110",
+      "split": 0,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "7cb5d1a539752b9db1e79e18e2da302ca0b1a1f76c4eda63166fea049243017f",
+      "turns": 299
+    },
+    {
+      "file": "replays/66c97e824660861fe7bcf5de3554d493-1.json.gz",
+      "layout": "630cb60c5a7059ef2375cd2de020cf57c0b6e8f7fedfb07b1fe5fb822291acce",
+      "split": 1,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "998496305a1db7e1b445182ade18dcd9703c92c1764f7a8d263a19cea0f74655",
+      "turns": 299
+    },
+    {
+      "file": "replays/67e97d86f799d7cb3865241c7aec726f-1.json.gz",
+      "layout": "5585a402a2721c5ecf2c5af93025965646a426559bb562c66b52afe8f31cdf48",
+      "split": 0,
+      "revision": "2ccf09e0e5658b30259f54216d081232f8fb3e55",
+      "sha256": "b5653a0f2a12cddbfc438e7b1f8d7480609f80f2c6a737b385ea480e69f8ff89",
+      "turns": 299
+    },
+    {
+      "file": "replays/68665b234ef39dd3b06009ec4d455c5f-1.json.gz",
+      "layout": "221562b76cc122af093a075b9e0ac3576c7b6aeffac409fca6f9e65c034c50c7",
+      "split": 1,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "5c654ef46277f96177fb17a16c437fc88c0f1823190dc4f2c34a774acea97dc8",
+      "turns": 299
+    },
+    {
+      "file": "replays/68d05f61cd96e7dc49941fd48ed56287-1.json.gz",
+      "layout": "3bafca40bc93aa9ddd69312ca675b01d3da96380900d4de8f7ca4d7de569243f",
+      "split": 2,
+      "revision": "2ccf09e0e5658b30259f54216d081232f8fb3e55",
+      "sha256": "01d3aaba882449b6edcee0308a87819cddd6f3aeea6a9f2c114cfec4c0f3dbab",
+      "turns": 299
+    },
+    {
+      "file": "replays/692f8c17045e0b19bce224339f038783-1.json.gz",
+      "layout": "cd9dff51075a7ab512da1882e81ce25aa7a9f959b1f0671a2f3d9b92c622d715",
+      "split": 1,
+      "revision": "39d9f2931484a7fbf0fadb84c1da3b3cf5e99c4e",
+      "sha256": "6769d1577405d04cb41647dd8472ab040052c9162548f02411b70f12458ac7ce",
+      "turns": 299
+    },
+    {
+      "file": "replays/6c42cfc5d4ca3b58c8695cbcc0cf9020-1.json.gz",
+      "layout": "27fabc24e62f59e0e2af734d4814d76c606ca676378bc303256aa88ca70b26e9",
+      "split": 0,
+      "revision": "9213b31613d196b68e3f62a4138f4cb6fab32b0c",
+      "sha256": "78079f47339aef609225e3846f9ee1477c33ca6e26e9f8140e5d4c509ffb4e20",
+      "turns": 299
+    },
+    {
+      "file": "replays/6c8933585adf2daa67e700477d112ae4-1.json.gz",
+      "layout": "19c8083a98d2dc7259b258815fc3f78805b8c2aa8c4674d4c135667610b9629b",
+      "split": 0,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "96d4b95b503eec3ff4d8de29d47972544d8c5d090ea06c6e5bee9fc57d9f6619",
+      "turns": 299
+    },
+    {
+      "file": "replays/71840018e0b6fa676cad91945601ad4f-1.json.gz",
+      "layout": "2656da3a0b18698be08da4ffdc8b546087a29af08344065b18636957800d7ff6",
+      "split": 0,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "87b10eb22c90a80af201fa6e6ab85c60a6b97916561879f903c8d092b45b80d9",
+      "turns": 299
+    },
+    {
+      "file": "replays/71eab28308d67feaf45e6a6727635585-1.json.gz",
+      "layout": "934f259d197eb869277e2473ad221d8a95db768b41ff46bdd775a28e857e2229",
+      "split": 0,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "59a4e870758630a412b2b62efc6cb498969e783356b2f3a15870a5a0d1042f04",
+      "turns": 299
+    },
+    {
+      "file": "replays/721b169ffa125979369237086a8b3491-1.json.gz",
+      "layout": "3a5cf6ac6644e032a339d03a78a430adb527c4a84a51210e3f1763a9fa2b4adc",
+      "split": 1,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "91964e63dc2b3fbaf73779c96e07302d54ddc4738662ece3385d2467b5bc34a4",
+      "turns": 299
+    },
+    {
+      "file": "replays/73331cb7076f22f1c08555123dc9a22f-1.json.gz",
+      "layout": "7c87d7e5126bba1f05c3050c86fadb9608e88a1634590a36b31a1e5b0446d418",
+      "split": 0,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "0d991cfe05d996320b17638c51dec36b32c3049d56bc620e935152def8147298",
+      "turns": 299
+    },
+    {
+      "file": "replays/7447bee8cc4efa1dcc248b017a32eb23-1.json.gz",
+      "layout": "7ef50879be2ed2efe0dcbf82905f81669b6e9f20b1f78f62843ce1c3989731c1",
+      "split": 0,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "25a7e8a0d0a41a71aa6cb04db9b63c4b92bc5c90f9e2a9e244bf751b6dcf0164",
+      "turns": 299
+    },
+    {
+      "file": "replays/753dd13cb2faca820aa98e4c20c93f5e-1.json.gz",
+      "layout": "3131a13d1a5bc0893e394c620eb9ab9112a67411b016814d82c8c0598adc56c7",
+      "split": 2,
+      "revision": "9213b31613d196b68e3f62a4138f4cb6fab32b0c",
+      "sha256": "59461551666d5f6becbfed599caef98f486105976cc50243db751c5c939aa895",
+      "turns": 299
+    },
+    {
+      "file": "replays/767a4bf43ca1dc86118292659de1670a-1.json.gz",
+      "layout": "888f576089254ab130290ad09c7d484724c8c0a5ff3d3f49dce405e4fa74a05b",
+      "split": 2,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "d1808966a4707c47d39c027766cd573544df56a119197408d004a4ba7debd6d2",
+      "turns": 299
+    },
+    {
+      "file": "replays/785ae91618edb772a3cca538a3bf8396-1.json.gz",
+      "layout": "fe112f946a5c6a1af3e1f3451b53d26610c2314d80d7269443c63457fb57b99c",
+      "split": 0,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "7fae5ce472b942ecdbba79e1ba31db5098734f4df81e1192f4ab5bcc4c5bd1f6",
+      "turns": 299
+    },
+    {
+      "file": "replays/787864c8e44f38ab748c1b0641bd7062-1.json.gz",
+      "layout": "7950a1cf042d10eb5571fc776e02f5bc182f449a50911d77bd75a3be420f8000",
+      "split": 1,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "fc9826678765d713ac9d60dc3bd88707c9493f3cde5430cce56e15828057e379",
+      "turns": 299
+    },
+    {
+      "file": "replays/79a8d3dc3a619a225fefb8c3a3d55a82-1.json.gz",
+      "layout": "9c15e0188751ee7d8eb90bf95371d98f1e479312759e6b0f00ef59a044dbb9c9",
+      "split": 0,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "c57b9c31abc765c1ab15f0dd12c4f6e3824a1236f4adf1d90ccbcb30b0fbea44",
+      "turns": 299
+    },
+    {
+      "file": "replays/7ad550d6acbf90789ff0aa69ac256fb8-1.json.gz",
+      "layout": "9b78a53283bb0a1ac35908be872463da53635918a3d30ac1cbf3d50dd1b13c1d",
+      "split": 0,
+      "revision": "cc2243016c75e228cd1f4eb76213f4a1fe3fc0c7",
+      "sha256": "24632938b8aaf78eaf2e2626bb7d540552682a177a2455a575d566f2e7e162f3",
+      "turns": 299
+    },
+    {
+      "file": "replays/7c9b78d21853215cc9cc3547505efd09-1.json.gz",
+      "layout": "63287b26432d449db8c03a59222de5904119b1b2fe5fda3697f7f8aac30fa969",
+      "split": 2,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "ac8aa0fad435ac4ea72b3c02aa9898b51aa8d95194ac3b14945bd42613a529ec",
+      "turns": 299
+    },
+    {
+      "file": "replays/7d7dc8227051a94e38151ab6d88cfcbd-1.json.gz",
+      "layout": "faaea7b28d83a3bc64e4104f2371458e9ad1c21de0ffc243a68ad2835adfef51",
+      "split": 2,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "5f1f3273182f8754b8f410a22d32063117bfb66c13e4aad86954107c4cc23bd2",
+      "turns": 299
+    },
+    {
+      "file": "replays/7f2ca9dc190d1ba2d222aeab82923cfa-1.json.gz",
+      "layout": "75fdcaecfcefc05cc4042038235c0c530807e40ab87a556c0f688cbea0f25081",
+      "split": 0,
+      "revision": "2ccf09e0e5658b30259f54216d081232f8fb3e55",
+      "sha256": "934de65b4efb4f99b657036464c4cc1e3a682553d5a9668fa570048bcf2de8f1",
+      "turns": 299
+    },
+    {
+      "file": "replays/80744f8837f74fbc1397e82a4d6f9a44-1.json.gz",
+      "layout": "5f8899c055fa2ba72cedb0358da25762aa837bd869b122d7053122e4d6b4719d",
+      "split": 2,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "208006ac15a20365dc6a14c7b9270c1d7635d5cc0eec48a98a5f078000d955f4",
+      "turns": 147
+    },
+    {
+      "file": "replays/808596443db7ca5103a3c6cc75d7379d-1.json.gz",
+      "layout": "01772ca8c125f7a05cb622262b0f9c9d733fa7c1988edf66d738ffe7505f31b3",
+      "split": 2,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "bae9e0b35cfc4b7a564dd93d20ba365985b95cfb6c9100b014a5590a68546298",
+      "turns": 299
+    },
+    {
+      "file": "replays/8126adcfeb3c00bb851e14d576b45308-1.json.gz",
+      "layout": "b6d0e832076962f41c7690f9fa28e4f86c3a00dc56461afca6d92c04eb823260",
+      "split": 0,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "68f30870f5b8f1f196710eabc28ae259e431da524d64a274cecb15dbb748a8f2",
+      "turns": 299
+    },
+    {
+      "file": "replays/81913606e681f366ca3cd769c060d782-1.json.gz",
+      "layout": "940be66bcde772683de173b213f369df4309c2533a08bb904acb46bf38439df5",
+      "split": 0,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "e2d9b3c77d361aa899940e437414a3ff565ccac83ea8ce874eaa873eba12c1ef",
+      "turns": 299
+    },
+    {
+      "file": "replays/834d87c9adbca68270043b445ea82e43-1.json.gz",
+      "layout": "659b6b2878430228a304dd68172525329cb5ab43d56339b971e1c926b3701367",
+      "split": 1,
+      "revision": "2ccf09e0e5658b30259f54216d081232f8fb3e55",
+      "sha256": "5270c9ad0dfa53043fd47a973583dbe09d9a1d5acc29c654457bde9c8131c513",
+      "turns": 299
+    },
+    {
+      "file": "replays/87b072899f7b23eb66854ad9ad1f8d78-1.json.gz",
+      "layout": "0b8a2882aa6ce038a4b3d9cd2a6f82dd468cd6bba15c91a46b0c839cbc62da7b",
+      "split": 0,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "93324eeff788140818a05536608c56ac2fc988c366041b4f2fd5629510680325",
+      "turns": 299
+    },
+    {
+      "file": "replays/89d2a57fe2da4340f9f2efbedff4fa55-1.json.gz",
+      "layout": "898720341848de848d22f278f94f4e7ee94d632203ed9c940ef40608c551b2b2",
+      "split": 0,
+      "revision": "9213b31613d196b68e3f62a4138f4cb6fab32b0c",
+      "sha256": "e9522807484924e7c16fd9c05b7ef40ad1b65ff86fe81a1381871386f4bd55ce",
+      "turns": 299
+    },
+    {
+      "file": "replays/89de56dba3e2ba2e648618fbaa6cf8f4-1.json.gz",
+      "layout": "497a3c99848aeac1f092a06f917986ce3f1a8437dde6b0b32d8d0d7054d78970",
+      "split": 0,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "17d0348a084d463d8e631eb8ef5e1db70d219047ee30cb072b749fcec1fa9fdc",
+      "turns": 299
+    },
+    {
+      "file": "replays/8c35cb280185f046b9d76151e8c41e61-1.json.gz",
+      "layout": "e31959a3d5212cf6b90705d3e9d4d3b9fc0204daf984552bc6d722f9fbd34368",
+      "split": 0,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "89e0ced3e2e839532cb38295a173234f83d7f122b382074415324d84d2c12cbe",
+      "turns": 299
+    },
+    {
+      "file": "replays/8c3862388f88c768c6880a8f5f5837fe-1.json.gz",
+      "layout": "3354c9fd8e37d5382c8c2be1ad7b797f737d876387422dc91504273a81b1d16f",
+      "split": 0,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "a75ca72ca8e092275e21a4266f98daec84c2b7fedd52aa179fee27fe6990a2a0",
+      "turns": 299
+    },
+    {
+      "file": "replays/8cfa0cb23550156f8a8759f379c9f037-1.json.gz",
+      "layout": "fcd5f2f58c3044d061ef767af5979bf696e12e2a2e6ec4e1c93501a5c7eeefad",
+      "split": 2,
+      "revision": "9213b31613d196b68e3f62a4138f4cb6fab32b0c",
+      "sha256": "f6ebfdd980bc8b1e7f92cbf34a86b9708cb2116b81cf1605a385d76d8c2d4a22",
+      "turns": 299
+    },
+    {
+      "file": "replays/8d11b5176c334842d52318378cf4b1a3-1.json.gz",
+      "layout": "50e2a72b8ce4694ad03e1cf3aedef5b5508e4b1fe4842ff4f15149527e01f693",
+      "split": 0,
+      "revision": "9213b31613d196b68e3f62a4138f4cb6fab32b0c",
+      "sha256": "2e9dd1bec190c0b0b475be68a11b57030dc5b6b4992eaeff14c89e7f8e95163b",
+      "turns": 299
+    },
+    {
+      "file": "replays/8ee813c9ee97a8b6202fa33766e2d59d-1.json.gz",
+      "layout": "f417a99f83f6b5cd27327e8942e6beb7630a9c794e066d3eaed3f52c99c6771f",
+      "split": 0,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "b7ff87e1386cb433aaafc9a6cf81bb7fe47306111553dd686564a77e66d6d7fa",
+      "turns": 299
+    },
+    {
+      "file": "replays/8f68ebe5109b6be9817bf1b39ebb90e9-1.json.gz",
+      "layout": "8f89c98eaef291aade2ed34cd18ecc4082060aee3a5d85f58966cb70bf1aece2",
+      "split": 1,
+      "revision": "9213b31613d196b68e3f62a4138f4cb6fab32b0c",
+      "sha256": "724512ffbbc27ad4b765f43b3a55fa5167b3d76c1645f4af38ee03de41f69f33",
+      "turns": 299
+    },
+    {
+      "file": "replays/9107c596d070f54c60fc175bf616af09-1.json.gz",
+      "layout": "01ee78a48895ab9f54512f57982825f6bfe9d9291049ed6a386aa8e136a0336b",
+      "split": 2,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "b1935e856045dfc13628850d5337fd4edab17be13726b814570f6489e6e46fcb",
+      "turns": 299
+    },
+    {
+      "file": "replays/93bada3c48bd2877214961670397a9e3-1.json.gz",
+      "layout": "fa13632edf464da754f502b64bec0617b2a526bbb215a7692f175b8b0e02137f",
+      "split": 0,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "91eb0778d04d02cde9de153aa2055ad4e190c579b515b3e5da1d7f169178d219",
+      "turns": 299
+    },
+    {
+      "file": "replays/9539203e39ad183880f759b19e1c2801-1.json.gz",
+      "layout": "4eb052332288d014c453d0186133c51ef6509d1a67d854ba363d7e0dd9b2971a",
+      "split": 0,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "4651bc28fc7e0b0bf230292f4540939e7e08285f278a417ea7f17270773e26a5",
+      "turns": 299
+    },
+    {
+      "file": "replays/9547009770cd89f36fa2fb2b9b745d1a-1.json.gz",
+      "layout": "18fabd539a13c1a97ec472709bc932ffe661afe6926ba5183961e377df3bfb42",
+      "split": 0,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "97c7d3ee8ccfb0a2acb6a8cacc2db232426922a4ab39c8a2a1655fdc7ac0be72",
+      "turns": 299
+    },
+    {
+      "file": "replays/96189767794a852a14afe120560364b8-1.json.gz",
+      "layout": "0c3ffa2518eb61590d79797f3eb7aada30cea8ba2d3cf98c3b55981f0ad1570d",
+      "split": 2,
+      "revision": "39d9f2931484a7fbf0fadb84c1da3b3cf5e99c4e",
+      "sha256": "385c166338b1df0f2cad3aead425b5a45a3101404f92eb5c603db8749d66f32c",
+      "turns": 299
+    },
+    {
+      "file": "replays/9654d76565fefa1bd959dd8e5a48cad3-1.json.gz",
+      "layout": "8768c2922d2e7cb4d8bd33361446fa0653f4561d8edd9c1e245aff9c1a57c409",
+      "split": 0,
+      "revision": "9213b31613d196b68e3f62a4138f4cb6fab32b0c",
+      "sha256": "9d6bdaa6c90b2ec52621825702d681d405f7536d158e36cef320991e062213e8",
+      "turns": 299
+    },
+    {
+      "file": "replays/96fdfebf4989b09144a312b7e9cfb6f8-1.json.gz",
+      "layout": "c2bb2dac2bf973b9efab7f25b23379a6454c60d0166b34b28e22a392f39aa3c4",
+      "split": 2,
+      "revision": "9213b31613d196b68e3f62a4138f4cb6fab32b0c",
+      "sha256": "4eb9e87a61098780966f46d4b7fe74d64fb748f1868c06840cbec924eaa44ef5",
+      "turns": 299
+    },
+    {
+      "file": "replays/990c71299e60ccd3d4a445edc0106dca-1.json.gz",
+      "layout": "aa6522b9634c44d49fb8ebe659ac595666df6e1ed586da86d904b10218692a36",
+      "split": 0,
+      "revision": "2ccf09e0e5658b30259f54216d081232f8fb3e55",
+      "sha256": "e901062a60c3b6afba5c368035dd804c59d964343881e11d3ec1790fdca42276",
+      "turns": 299
+    },
+    {
+      "file": "replays/9af4918d550debaed7d1ece6392b371e-1.json.gz",
+      "layout": "ce11f8e3695aacb49854e8956857cb6eb31eec1d70ee524a867cbc5db179318e",
+      "split": 0,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "28651dc64d296b1edb780bc7e2302bb49ccc28265d5121eed6da273d90f69443",
+      "turns": 299
+    },
+    {
+      "file": "replays/9be25a99800a9631b7a66a3793d78d4f-1.json.gz",
+      "layout": "0f529e7645c77f3e0f878c6f964a406dbd66bb310c3075f4194c6df5b3c397ea",
+      "split": 0,
+      "revision": "39d9f2931484a7fbf0fadb84c1da3b3cf5e99c4e",
+      "sha256": "eb9fc7ea9f95c9b96d77e2c72dac4fa252aef3c8b8936fe6daf7151bb1c62266",
+      "turns": 299
+    },
+    {
+      "file": "replays/9c3acd5fd87681a3de087cd6415770ca-1.json.gz",
+      "layout": "5b0970929d77dbf9d38d5492bfb1a4b605b9803344c3dc5301113fc5916094f9",
+      "split": 0,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "5864ebd0e0d1fe720c3421d272e9aaf714cd539c98f8ec6e1a1fe9cd775721b1",
+      "turns": 299
+    },
+    {
+      "file": "replays/9c60786238c1b9d88d9919f76b75d2dc-1.json.gz",
+      "layout": "0559c42245efa0d6f671a5da0d32704f8b0bcf23755adfa5d014f64a73011889",
+      "split": 0,
+      "revision": "9213b31613d196b68e3f62a4138f4cb6fab32b0c",
+      "sha256": "b345e1120fad435032b6eb6d779eb3b34ae4a079361138ac222f0bdb54f6c663",
+      "turns": 299
+    },
+    {
+      "file": "replays/9db21687d44accd4b188a681082af138-1.json.gz",
+      "layout": "4ded46ff8742eb643386b8ee38bb71951409520c113fcbe5006ba53ac8de78c0",
+      "split": 0,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "e128b7cd0436f22d1b22a26288afdc7a783d1d33e82b197060edbd2dc79933e7",
+      "turns": 299
+    },
+    {
+      "file": "replays/9e5f1d1688216bd29ecb28ebe04c7f22-1.json.gz",
+      "layout": "911aaef7e96dbe29a587f8050d1bde3cb87d31627edaaf71ae89e7b4f7a8471d",
+      "split": 0,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "9fb486090c87ad71ac4ed2edc49653f4f857d63ca9544434eb611ae34c242863",
+      "turns": 299
+    },
+    {
+      "file": "replays/9e6ab9948c9e2f7c4d196041422bf246-1.json.gz",
+      "layout": "245462cdd92f042d7b5202ae2acdd1ffaf916f473f9da3f7c0c41e79a9492a08",
+      "split": 1,
+      "revision": "39d9f2931484a7fbf0fadb84c1da3b3cf5e99c4e",
+      "sha256": "7122174b001bd4dfb32212f5bd575bc84f25c02d81b47daed54e7207c94e4d18",
+      "turns": 299
+    },
+    {
+      "file": "replays/9ea2538e70249679da8c078295694825-1.json.gz",
+      "layout": "3c495933d597ffebb6162b037414595fed7a1f38b9460b653fe0780f7cff5dca",
+      "split": 0,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "9dee96b55834fbc6322bed8d7f0d53ccc0ca063b239ee1b1f38633f6a2cde7de",
+      "turns": 299
+    },
+    {
+      "file": "replays/a00114ee36ab731636bca98b25bcbad7-1.json.gz",
+      "layout": "945e72eeec17dde3d3f321c3d6aa646c877e003536dd8219c5090a6a4893ff7d",
+      "split": 2,
+      "revision": "2ccf09e0e5658b30259f54216d081232f8fb3e55",
+      "sha256": "28cac20818ed73e681c8e9c7e32618db4b9d25258b2b2ed5e6f85b23f45d2da1",
+      "turns": 299
+    },
+    {
+      "file": "replays/a3ee51673d82381ce351ea40865e0719-1.json.gz",
+      "layout": "c928bb803def63a5f0a7819285269d7cde79b3f40c3be9276471fb5727b68928",
+      "split": 0,
+      "revision": "2ccf09e0e5658b30259f54216d081232f8fb3e55",
+      "sha256": "37b31923542adfcc21e9380fd3d34cb5675a33a9f0666e9a5f2a7a7546f42830",
+      "turns": 299
+    },
+    {
+      "file": "replays/a44ebda5b9ee6f5ae1682273ddd33460-1.json.gz",
+      "layout": "2538b2c1b81bba7a7d9defef62678100a6a98836ab4bab52e880326701c0e30c",
+      "split": 1,
+      "revision": "9213b31613d196b68e3f62a4138f4cb6fab32b0c",
+      "sha256": "3097a0e15c14afdabc32a4ff011f003715cbc23f33d6d9a028f46ba1ca301540",
+      "turns": 299
+    },
+    {
+      "file": "replays/a49804c4b2437ff8e80edc808241deb4-1.json.gz",
+      "layout": "c93987566594cc5f078b3d7bba2df3aa94a54392ee9e5bf5915bddaf6e2cd337",
+      "split": 2,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "58eb0cb6abd929b414d406a1ccb732460e3d4708caaa10c0ef7334c067fe6681",
+      "turns": 299
+    },
+    {
+      "file": "replays/a7f31f78555ceb40bbc690c00227e0d1-1.json.gz",
+      "layout": "0ebdecdaecf0871365b8e9468b96e7ed233823b1894c220020d5a26ae98a5cc2",
+      "split": 0,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "ced0d01894280b7bead8065b360c561e2c63e103b8eb19ed353c70801b749d56",
+      "turns": 299
+    },
+    {
+      "file": "replays/a8859ba26f8d792b39a78558bb9d22fa-1.json.gz",
+      "layout": "827c624a6bc4889f8e57bca5045fd5ca6fd188150ff3e60d473dc913b5aa28d6",
+      "split": 0,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "a9d1009a108786933d54b5b7ab0f4dc0e6c4cd43c1f4b827992f54ffe9cbbc7a",
+      "turns": 299
+    },
+    {
+      "file": "replays/a88b5188e0aa96eac5b6aae18645a576-1.json.gz",
+      "layout": "dcd0b6e0c10a9913c161869ca7cc873a99062ad8abaac09eadfe1435d4c84149",
+      "split": 2,
+      "revision": "33f524b117a5df435a5cbb619069a38fcd3773a5",
+      "sha256": "b1e3ebaa125b399e78684fc26592d764456bacc0833995fd49171be10053dee2",
+      "turns": 299
+    },
+    {
+      "file": "replays/a961184b1a0afcccfbfb32a6aa2375eb-1.json.gz",
+      "layout": "5a811029a3a1b6824adab3c3b39de86064644b464b2caef72048c2acbf280730",
+      "split": 0,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "c9b3d0eb8c137f3aa3424da9fed65b5e8142ed6018b626f6e48132786189b116",
+      "turns": 299
+    },
+    {
+      "file": "replays/aa4ed32ca2d4da5af16ab03f7d57ee71-1.json.gz",
+      "layout": "172d73e6ca1a39727c4618e5e985fe4dbf960864f1cc49b3a933722cec795383",
+      "split": 0,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "20fa057703e71c9cc72085e1e36c84e5afc03b22840a7294150847baed710d98",
+      "turns": 299
+    },
+    {
+      "file": "replays/ab5295f4092869c4348a45accad9de46-1.json.gz",
+      "layout": "5ea6ad4e38b87ba46f051ea63508d9c3c98e9b3f59e5e18e1a85738d2426c5c9",
+      "split": 0,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "55ec4e40ad8219a3dbb35c3eb819646a8c51a5ffe9d591fac2a705894769ad84",
+      "turns": 299
+    },
+    {
+      "file": "replays/abb09ca6b0efa1a9be80d8dd24ab4332-1.json.gz",
+      "layout": "3ef9794668650ed931333850de1010894858fa51e070059d4c8954a70a891d69",
+      "split": 0,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "98468364fd20f2f89aa57ead03fbb4feb455b0c22a10ea9b247a7aba986b42af",
+      "turns": 299
+    },
+    {
+      "file": "replays/ae1cab3aff82a060717eb0391b815b40-1.json.gz",
+      "layout": "17e84e50c6bff8ee182841b79f1925925f16f5219256332fa353bc37685ef931",
+      "split": 2,
+      "revision": "1f456cfdb568010b5ff8c276ed74b39d609f115b",
+      "sha256": "040650ce772ab8003acec97bfd86605e591da8a6f6e484cc49f984d50a1f6173",
+      "turns": 299
+    },
+    {
+      "file": "replays/afe4ab003a0d6222783cff3fde074af2-1.json.gz",
+      "layout": "b369f3882c25d5bbe9c788d9ededcddb461ef0fac9136f88370695d41eb29640",
+      "split": 0,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "3da86ea45a8d5a81ee7ac61f03a8d771c3e49fee580b619f9c6ad39302cc6775",
+      "turns": 299
+    },
+    {
+      "file": "replays/b05d118c38d7d7054ba210f6cbbcf6e0-1.json.gz",
+      "layout": "48bebeae8d6dfef24f8d35b4c829a84d27ffa4f9f30d6d77066a6efd24e5f3c0",
+      "split": 0,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "1014b73380e4525abf986e6183614ce18998b6ad90ea4a8f9a5fbd5782c810d0",
+      "turns": 299
+    },
+    {
+      "file": "replays/b2f9235f0aeccbd8d01cc4f8e0dd6340-1.json.gz",
+      "layout": "82f13f38e213a288cb717581ef7d0dea6f124d4226cb03fbe2bc853b8e5052d2",
+      "split": 1,
+      "revision": "9213b31613d196b68e3f62a4138f4cb6fab32b0c",
+      "sha256": "2518e558bed5f5de3575792a6e6b04a6ecd7ec0f531de2f0a8e1f569530d2842",
+      "turns": 299
+    },
+    {
+      "file": "replays/b6fcc5a178dfe284d2b6e500ddd7a1fa-1.json.gz",
+      "layout": "1af40a5dc25b8686ce2966155a61a9e238a27ee426d5b62768a2b22770b107b7",
+      "split": 0,
+      "revision": "9213b31613d196b68e3f62a4138f4cb6fab32b0c",
+      "sha256": "f2b7a38b53ba5c1c714f13868452db1ed0669512c5ed231027b5c09aa5e38252",
+      "turns": 299
+    },
+    {
+      "file": "replays/b742b97222a7b260f0412a1885ac6bfc-1.json.gz",
+      "layout": "2aa00141cf00f9d71df11a213a62cec6852b2bf54d2455128470ec4c9df7e6f1",
+      "split": 1,
+      "revision": "39d9f2931484a7fbf0fadb84c1da3b3cf5e99c4e",
+      "sha256": "8c49e4cc17a40f2dcb579a1bfefb20218c5db3fd305678e734f915823de3dbb0",
+      "turns": 299
+    },
+    {
+      "file": "replays/b765aac1faf8c75933b1414797e106b5-1.json.gz",
+      "layout": "397ceffb1ff4a56ce0a40dc31d15c0da0baa52a84a985dc2759653aa8fa7c0e6",
+      "split": 0,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "4a1d7a299556c649368da2621e453e55ca77a6cf7f29af04159910ec8fb26e69",
+      "turns": 299
+    },
+    {
+      "file": "replays/b78c5ed2f756e8e012bf05036e38333b-1.json.gz",
+      "layout": "db4605bcae7541ad66346b1e1567aac1be397d3632150f6a7e95a441c132fa5a",
+      "split": 1,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "95ca7eb8981520a294dd085b6de81f23dc4c580c5c579512ba4d8fe45bf98280",
+      "turns": 299
+    },
+    {
+      "file": "replays/ba7e1f7fc45d646702f3a2dab1a1e8f3-1.json.gz",
+      "layout": "990b7adde86f7bd4661986aa39e5206e82f3f912fca2467f41962dfe92ce39ee",
+      "split": 2,
+      "revision": "33f524b117a5df435a5cbb619069a38fcd3773a5",
+      "sha256": "dee3881c448eb0bd90000708253fe0a148426f102ff3dd3240ee42644611cb15",
+      "turns": 299
+    },
+    {
+      "file": "replays/bca62e8310d95e3b1cb51184b31e8470-1.json.gz",
+      "layout": "8a39834dddf31e31f984c34273bc574713fbae37e419d02fd96aa6feb9fd3685",
+      "split": 2,
+      "revision": "9213b31613d196b68e3f62a4138f4cb6fab32b0c",
+      "sha256": "0ce79cbaba7cb30967b03e29268ddec75f2fe3eccc7eaf5d3d579fbe834375b6",
+      "turns": 299
+    },
+    {
+      "file": "replays/bdb86ec1b3d3e985a7fdad10211f4da9-1.json.gz",
+      "layout": "0f5251ef458e7beeeca991e0f1cf0929e4032056971c668dd8118c7242b29276",
+      "split": 1,
+      "revision": "2ccf09e0e5658b30259f54216d081232f8fb3e55",
+      "sha256": "334aa118b95a0f4adab6d9db08e6187cac2715371e6b6aed768d83905f0da20c",
+      "turns": 299
+    },
+    {
+      "file": "replays/bdbfeea28fc6daac4526733b5bb99dfa-1.json.gz",
+      "layout": "a6fa4fdb319391d60be3255b585d712d22849406b16f0d14330488b29871d3a8",
+      "split": 0,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "517fcd189f99a2e41735aa2b22c7ce1c432bd17054598952f1e5399b1ccd2d7c",
+      "turns": 299
+    },
+    {
+      "file": "replays/c481f000976e732e0a3d888f21e7c96b-1.json.gz",
+      "layout": "4caab9c7577f7dcf66de48a879be5aa236e768f14dde55be4a81cbe0836b4f4d",
+      "split": 0,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "91b31d1b4da8c9f3c965cf5b2fdd43e38624e414a661e1581b9e410e79844686",
+      "turns": 299
+    },
+    {
+      "file": "replays/c910a302a1d4a40d4a4cc1a57ea64ec1-1.json.gz",
+      "layout": "7b9639080e6910a947d20e636ac987987b6d639180717db1611cc1bce7599554",
+      "split": 0,
+      "revision": "9213b31613d196b68e3f62a4138f4cb6fab32b0c",
+      "sha256": "16b7ed70c3c58140f725f0da347eaf0efc939c559b45c571b8f62e9ba692c67f",
+      "turns": 299
+    },
+    {
+      "file": "replays/ca78e9afcad87fd1c9b07ea5a784d400-1.json.gz",
+      "layout": "4d6694f7878fa0ca7f204f375c0c8e3b17202ffc21ca087b8589331346c16905",
+      "split": 2,
+      "revision": "9213b31613d196b68e3f62a4138f4cb6fab32b0c",
+      "sha256": "d4444fdc1780272a4211be06edd9f1d2b9316484ddf812c857cdb8338527c488",
+      "turns": 299
+    },
+    {
+      "file": "replays/ccf13750e52dcb1f3212fddd1abc3e65-1.json.gz",
+      "layout": "3719d4922fe38e3b2b1d55c5ad559d64405c9621d8f7f1552d4fadc53d4d75cb",
+      "split": 2,
+      "revision": "9213b31613d196b68e3f62a4138f4cb6fab32b0c",
+      "sha256": "a16950f27de32aa8405684eee722f4caae5cefb5a83c5854c0ca607b5150c4b3",
+      "turns": 299
+    },
+    {
+      "file": "replays/cdbf357c274e51119cef4b3047ad993d-1.json.gz",
+      "layout": "684e1fc4110406a3bcbaeaa097787d91b5cdb3d3bd8dcd633359ccb3dfbbe870",
+      "split": 0,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "c5c8b48b5bd0a17d7f7c80c433254802ce99a7b5d34342ba0b1099224560779f",
+      "turns": 299
+    },
+    {
+      "file": "replays/cf1df811727e29670e616ac0775fb3b4-1.json.gz",
+      "layout": "9fe7e06135512d4e59941eb6328e938a59783e0d4c127fd79e0eab5f6535b945",
+      "split": 0,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "1837e1dcdb4d014447cd321dbba19690b5f21763a28d38b6ef395f485bce8cc3",
+      "turns": 299
+    },
+    {
+      "file": "replays/d0a177e1b93ad2f5a6f8adbcbefd0f92-1.json.gz",
+      "layout": "5169ca3772fcfe97b9332ca2d7154db6f670d1103636e7fe244a4bc55d0830f2",
+      "split": 1,
+      "revision": "2ccf09e0e5658b30259f54216d081232f8fb3e55",
+      "sha256": "b75261e3e257fdca50254d1345eb9c9fc86914cc92e1a64d706e37d8d0e9015e",
+      "turns": 299
+    },
+    {
+      "file": "replays/d0c90588cc8f97b435df51535c1ed433-1.json.gz",
+      "layout": "1a7c83489ed4cee2b4a58f9e3ec5255636afcf0f5a6b085af5f28b47ffa12b2e",
+      "split": 0,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "019dbbfbc656507a25162f457df5bc52c996ff02e74c870fc71f6efd332be652",
+      "turns": 299
+    },
+    {
+      "file": "replays/d29fd984428b6b11235182e9cb0b6a7c-1.json.gz",
+      "layout": "17d6aa8face37c36d98c52165335c2282ece04903cfd1136e39a9bfda53dae36",
+      "split": 0,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "643bef1d9c1a0f9b9256c9858ed056f40b5c451a64727d6d3fe49af8d02269ad",
+      "turns": 299
+    },
+    {
+      "file": "replays/d3065805e3fb463ff254ba36273b687b-1.json.gz",
+      "layout": "8df22d84f1263b5b8d259caf65571b7ce7439bbd30bc544d81b5d1c1386ff3e6",
+      "split": 1,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "192a0b948b9ebbc1d75227f555e4c5576251f5ae77edfb84648a16135cf389fc",
+      "turns": 299
+    },
+    {
+      "file": "replays/d3ccf1f5447c586b49ba541f4710e603-1.json.gz",
+      "layout": "93ff55e641407a95bc6507f92943cbcd48ef5cc41201089b00bb3dd231b7b5a6",
+      "split": 1,
+      "revision": "33f524b117a5df435a5cbb619069a38fcd3773a5",
+      "sha256": "658cc785d4648a2f5e6660930c00ed264fd285460125548b089ea498d37ee96e",
+      "turns": 299
+    },
+    {
+      "file": "replays/d7d24986c9ebab487b1bc8853dcea0ec-1.json.gz",
+      "layout": "cbad6bab1f873f27f5a8def0e2a6eda875f38ce82e982665053590f629c4a738",
+      "split": 0,
+      "revision": "9213b31613d196b68e3f62a4138f4cb6fab32b0c",
+      "sha256": "ccddea961729f8bad556c43f3878cf8b4b6b79278c02024ebfa3f9ebc3ee73e2",
+      "turns": 299
+    },
+    {
+      "file": "replays/d935ab616ea3ae047a12448ce036cfaf-1.json.gz",
+      "layout": "698b5038e535091db232b7f59d3e145e6eb80c704d3179de2abfa25a5d0658f7",
+      "split": 0,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "9602c8b55bb8485c276141a2fc3d3358a190f84573dc876be608f63a1b3aba7d",
+      "turns": 299
+    },
+    {
+      "file": "replays/d96ca196a340ce2539a4a72cb4c4021e-1.json.gz",
+      "layout": "4d3a7416c2095e180dc740e76b75723c49473a309bc92aea83b508356f72c334",
+      "split": 0,
+      "revision": "33f524b117a5df435a5cbb619069a38fcd3773a5",
+      "sha256": "2ac7afa39c4d0ba4701e8573c67da96db60f635b03304a6948f58a7bc1ebc4a8",
+      "turns": 299
+    },
+    {
+      "file": "replays/da7bdc0e4741462cf02160b68da0a0d9-1.json.gz",
+      "layout": "91253070b60848d686ba068ce95c6b7c42d1284a2edcc9449235f6da923d8fbb",
+      "split": 0,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "09903b5b2314c04e97dbb25c662ad7edd6045a2e5d532ed82fc4c72c1591f876",
+      "turns": 299
+    },
+    {
+      "file": "replays/dcad48aeba7f3ebcadcf70fe4cf1ae99-1.json.gz",
+      "layout": "428a606235d1efaf80aa20c0d1d3ec3e20a63ecdc46296a48068701976fb6f5d",
+      "split": 2,
+      "revision": "9213b31613d196b68e3f62a4138f4cb6fab32b0c",
+      "sha256": "d5a1f77f022d1e24736ada404f8378b0f17291d90d4117352c9cad3c2c058a5d",
+      "turns": 299
+    },
+    {
+      "file": "replays/e02d6334ea3917e30e73f4f06fb43e53-1.json.gz",
+      "layout": "b82429c1d16dee8c57e0905ab7e463ed311cd7577c940a2caaf9153d121933b3",
+      "split": 2,
+      "revision": "685b50c0d4acedc12d67370b58b3e311f24faed8",
+      "sha256": "aa6a112b7b4e7029d7b270a117c9d5f0a655e730f04235a5b768b4f81a12eb1d",
+      "turns": 299
+    },
+    {
+      "file": "replays/e0877b124675ef246b48914516be95b9-1.json.gz",
+      "layout": "7bfefe93d01077b64522202d9d17488a01bb456d52513d145fb2f525d64c8e82",
+      "split": 0,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "c9a38cc9ae1eabe088fa58599aaf09a2376ca2f9a88ef4beb8244a7899761774",
+      "turns": 299
+    },
+    {
+      "file": "replays/e087a07e549515c08e3bf4ec6e3bef71-1.json.gz",
+      "layout": "92fd5f6f7958f3393a56a733e0d72f2cc65bf4af4c0d71ff6085596870666844",
+      "split": 2,
+      "revision": "9213b31613d196b68e3f62a4138f4cb6fab32b0c",
+      "sha256": "f22df868eefb6f2286edb14ad6fa6d8585779161c96fca280c0a9312261b428b",
+      "turns": 299
+    },
+    {
+      "file": "replays/e1ce9a74eb8f7265cfa28ad071601477-1.json.gz",
+      "layout": "fca2dd1322377d22d7faa6bc729dac96db8eace230e4fd019cd0c17d0208d945",
+      "split": 0,
+      "revision": "9213b31613d196b68e3f62a4138f4cb6fab32b0c",
+      "sha256": "9fa78a58454496462eac6f83d846de39c7f8e8367dafcac11a9b57bf1e00ab0e",
+      "turns": 299
+    },
+    {
+      "file": "replays/e24e2dcef5e4e3698bad9ad765c7d306-1.json.gz",
+      "layout": "9543d99dbc99dc1b09d0974d4ce9384f3b530057f4cc6d31d76d812128d508a8",
+      "split": 2,
+      "revision": "2ccf09e0e5658b30259f54216d081232f8fb3e55",
+      "sha256": "f7858b406e26973cb10e67116913462a5246e491a2edb4b7780ec2c23199cfba",
+      "turns": 299
+    },
+    {
+      "file": "replays/e2c0eb629674da05c07f4f47f906d5dc-1.json.gz",
+      "layout": "4cba25fd2e6208ab58f031a1230f1842b4a1746b65adf8e513ab3fead83e6ed9",
+      "split": 0,
+      "revision": "9213b31613d196b68e3f62a4138f4cb6fab32b0c",
+      "sha256": "94b9e5db8bbd2cd37356b1645c10b171c9e78cba263e745281b835fabc654961",
+      "turns": 299
+    },
+    {
+      "file": "replays/e2c852a06950f5a449427d8bf5f8bb06-1.json.gz",
+      "layout": "75517bce05318f0b901da66e542714cc8fa95b03c2be6c8295e877d7e0b6bf13",
+      "split": 0,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "931502ef20a8593593ee9b64879bc858c3c591ad38cfa6e7785cc229d4984237",
+      "turns": 299
+    },
+    {
+      "file": "replays/e518e0aeff3cfbf788bc2764e07293b0-1.json.gz",
+      "layout": "9f141a4e3c6129919d612165223d987ba39bdcf94e3714e663c9e0f0f6c50665",
+      "split": 0,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "7116cd9e33cb305e37783f891b5a813740303e16cf4b5cc4440d0c7a34b1b6b2",
+      "turns": 299
+    },
+    {
+      "file": "replays/e5386064def51a446d1cbba1d54d9a5c-1.json.gz",
+      "layout": "c8720ebf3be7067ae87c3aaeb2c1b48a3db1d31598a16252a8b7a86e09cb0d2a",
+      "split": 0,
+      "revision": "9213b31613d196b68e3f62a4138f4cb6fab32b0c",
+      "sha256": "dbf27129b71edcab9467da087f64a4375ed6e7bc1432be2a01e1817a954823d0",
+      "turns": 299
+    },
+    {
+      "file": "replays/e5efc88cd4197920e8d17d4e294a548f-1.json.gz",
+      "layout": "2e42cfbe31e1ee8726253f0fbe96866d0a2b37c2fcfd53611da1c8e54975e1ff",
+      "split": 2,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "e3c6f466563644efce14b26e6845998a55336c571a6a3374de48a7a76f3af68b",
+      "turns": 299
+    },
+    {
+      "file": "replays/e64bba2caf9ec944723477193a967218-1.json.gz",
+      "layout": "c28d4a520c1859db3b674230c5b1d61e82dde5316e35160a6a0a6c04385a75b7",
+      "split": 2,
+      "revision": "39d9f2931484a7fbf0fadb84c1da3b3cf5e99c4e",
+      "sha256": "292185ab66fe67092071020f0099f4ce5b7ed5ea122eeac359a1acf3f439f555",
+      "turns": 299
+    },
+    {
+      "file": "replays/e730b33215ff067dcdf8a07e3cc269f0-1.json.gz",
+      "layout": "bf85549c8a96d678fdea67cb023c62a4cf9c1c86a3fd43e2105da0b838cf1076",
+      "split": 1,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "aed54b58f7ee5e349ef3ee04a208f128f777d665e94e8a3fdbcc553cc380bb99",
+      "turns": 299
+    },
+    {
+      "file": "replays/e754a6bd0736511e4bbd5111793740d7-1.json.gz",
+      "layout": "a805139073b2e65fd4e3921e2dc7b522fd97425846ba96657e5ec126ebeb3c7f",
+      "split": 0,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "b62ff275502795f22b99b94ec55ee8cd64de59add86726a244924486b15132c4",
+      "turns": 299
+    },
+    {
+      "file": "replays/e77e468a45e2afb739bd878e3bb75a8f-1.json.gz",
+      "layout": "0917108378dfc97a2b0722cd14fa373df6d3b573f8f0552a8ed2c378628b84a4",
+      "split": 2,
+      "revision": "33f524b117a5df435a5cbb619069a38fcd3773a5",
+      "sha256": "ab26211b561fd328dbb9371605b120c558ecd801bf79b29c7843fb60cbe4b2cd",
+      "turns": 299
+    },
+    {
+      "file": "replays/e798d5a6b0afa0e73b1ffc1764e3f096-1.json.gz",
+      "layout": "a0ab7db8ae95dee610f28f4d77a75df7518f8f899feb9a5e21b3a63f6c56df8b",
+      "split": 1,
+      "revision": "9213b31613d196b68e3f62a4138f4cb6fab32b0c",
+      "sha256": "5012de5897b5528274902c04c816322421d07f608bc40651dae406e416eab5dc",
+      "turns": 299
+    },
+    {
+      "file": "replays/e80e8c600ccd8bbb67bc57932044729c-1.json.gz",
+      "layout": "e09e1b09b15378dd13df5f8d8a6c2c0430b355e289bea01f68c8190af96c7c63",
+      "split": 0,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "b2728ab7db7c9785704f7f958a317af07559fa28f8649dacde62767965026290",
+      "turns": 299
+    },
+    {
+      "file": "replays/eada6cccdcadae78ceffb2be499c8203-1.json.gz",
+      "layout": "480b5e128c718d8796d671b488a6b0e138e5570f0d78a252a9c859fa5a434e3b",
+      "split": 1,
+      "revision": "9213b31613d196b68e3f62a4138f4cb6fab32b0c",
+      "sha256": "bd55c20b30142e013e9b9321817bb0eba10afa6256385f075d248f5834a87671",
+      "turns": 299
+    },
+    {
+      "file": "replays/eb7849ed2790648f55a482447af325ac-1.json.gz",
+      "layout": "bbb0e597669cbed5084f4fcecf9fd5031c2e579a73b55b7fdf8a29d493c95473",
+      "split": 1,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "a7d0641b6cca559d5204eb1a68dd27273996413f56cc37ef0e4e7a859127d58c",
+      "turns": 299
+    },
+    {
+      "file": "replays/ebe1881c614d1e8d90b51c733352d7ae-1.json.gz",
+      "layout": "29def9fe810213373d74aad5e58a69f25edf2d32ac20ee62f64e30af9b1fd83c",
+      "split": 2,
+      "revision": "cc2243016c75e228cd1f4eb76213f4a1fe3fc0c7",
+      "sha256": "3e04ced5e27e7ce82ff8e0e1487c9a75498295cbe42941c16253051d6fc1f38d",
+      "turns": 299
+    },
+    {
+      "file": "replays/ed372d3738301486347c75f32bf65ab5-1.json.gz",
+      "layout": "ad512d88e84367c2cfd259fa51d5157f732846b75a07bdd4ad2b9c469fb2eb83",
+      "split": 1,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "39d64024f5e144df7705e30a8adb21f7063abfae31d19a2fa1770a5d617acd0d",
+      "turns": 299
+    },
+    {
+      "file": "replays/efa15ce0a9b4d18398cbe73ad5ca6dc6-1.json.gz",
+      "layout": "1f50da532eef1e0235009dd79374004664b13e13beb08848c69cdac0abca9936",
+      "split": 0,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "e1bf2f9ea48686ce4820ea1443c61a0bb3d557d59ce687806bc86f9fe80629aa",
+      "turns": 191
+    },
+    {
+      "file": "replays/f0477adb78855dfaa32376f9ca2ccd8e-1.json.gz",
+      "layout": "924e2c82fbd64f57ee0e2830c69b9ced97503c02b79e10dd8413eae12c9f74d8",
+      "split": 1,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "0e26c2c52224b9510a8d0fc65ca9a3f12695b85012348eb94f59308d30068bd5",
+      "turns": 299
+    },
+    {
+      "file": "replays/f0bb1d19c41b61e8dca8ab5cc70ebadb-1.json.gz",
+      "layout": "430d38cfa710d3f33d5be7906128f8569abf6195617243f848828eeb5b647fc2",
+      "split": 0,
+      "revision": "9213b31613d196b68e3f62a4138f4cb6fab32b0c",
+      "sha256": "671cd154ef2529635a32de70b25d9746bf64bca10e72820029b9aaf53c15a032",
+      "turns": 299
+    },
+    {
+      "file": "replays/f13c1c4a60a92a5371af1b974123c9d0-1.json.gz",
+      "layout": "34bf55150914761d20f5e03eef5ff9a87918aa61a500397dffc3324e7303bd3d",
+      "split": 1,
+      "revision": "39d9f2931484a7fbf0fadb84c1da3b3cf5e99c4e",
+      "sha256": "4fdcedf07f7485e99c8f0bbb1b9adfcee837489f05d6ac3328e30b5a04d08373",
+      "turns": 299
+    },
+    {
+      "file": "replays/f1567f8974cd0cd9ae13688e7f07b39d-1.json.gz",
+      "layout": "ce57b2afcc3d28218825b8a9466c6f35c3c6eeff694c6fc41595ada506fac0c6",
+      "split": 0,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "b291159192335efa7017074607b8d0406a98c05128a86254fac0239bed8a61bc",
+      "turns": 299
+    },
+    {
+      "file": "replays/f1cb105973912de458573807d523031c-1.json.gz",
+      "layout": "dd57bcc78e97467ade625eda8540aab839e8ec1f24f5b47d522d5c1c20e60de5",
+      "split": 0,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "7445fbb32057240a6d6a3680bf4307fde8b92afe8a75830110d061c6ca4cfad9",
+      "turns": 299
+    },
+    {
+      "file": "replays/f211d9e09d5a92f1a43f4611a3fa27bf-1.json.gz",
+      "layout": "c9efe46ea10ba962c3e8c0224cd346fdf315b2fb85221e7eb48924897fd47273",
+      "split": 0,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "538b180238a8b8ad5ce768b82d0caacaf333823c03eb4effe37c8976af705bdb",
+      "turns": 299
+    },
+    {
+      "file": "replays/f2808e6e8b57eb04adc928d833ffbf27-1.json.gz",
+      "layout": "3ae3e25173183e7236cbf968530cf8f8c41b8ac689503852b471f39cb7ad6b95",
+      "split": 0,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "ea0b39d73e0f4845bf8895f949bb29673b16471eff0e29b81780642e458c07bc",
+      "turns": 299
+    },
+    {
+      "file": "replays/f46a5a690a48da0d6ac5d3ab9c86b236-1.json.gz",
+      "layout": "c1b7933407a24d90e511f9dcc8abb50551d7eb5508a84d67f1d05d384cdbe912",
+      "split": 0,
+      "revision": "9213b31613d196b68e3f62a4138f4cb6fab32b0c",
+      "sha256": "9d015ecf30c5bb505e2ad48ffa4ce78606a4518114f0e2929e633677cf854a88",
+      "turns": 299
+    },
+    {
+      "file": "replays/f4e1a7cbcc5b9ff997872b79c7431a10-1.json.gz",
+      "layout": "35fd80a25883457cb8d8bf9c2750904324c15df6fb90db67d83e897ab92f792d",
+      "split": 0,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "24833127a2be6a159ab9575a55afd57468dd65221ffb766d93086a9a619ba429",
+      "turns": 299
+    },
+    {
+      "file": "replays/f5172b0ea84e9bbcf5060a022b6d6946-1.json.gz",
+      "layout": "38706cb86378a8176a2000c388c0c366e24308cab91e17441cc1133c152a2aa9",
+      "split": 0,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "b70d92369b0d76a1002d69f279682ca047408d40b248f1069580fa70db3db7ea",
+      "turns": 299
+    },
+    {
+      "file": "replays/f5e69abd6f15278bf9ae01a40601c330-1.json.gz",
+      "layout": "5b32052714ff3f3f3476cb8d2a69f0d116c77be3232eb6fc762c57a93a4f975d",
+      "split": 0,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "c7fe694fb66ead7ab42cf41a73f516c0788870fc52c0c6c20c3bfc3165f4355c",
+      "turns": 109
+    },
+    {
+      "file": "replays/f9a853d8e30ba6b524e0b1f5eb4e5417-1.json.gz",
+      "layout": "e5b57d3ff1d5b64c982495650ab0f3dd6e7d3abc39174f535707fe76c9314960",
+      "split": 0,
+      "revision": "362590dc69bf70d7ff7c72d32ea9ceb8db875c35",
+      "sha256": "f94c45c4ca1caa97df9188e7a21d51b1d26b41651e72614b138f2ac64c8eb889",
+      "turns": 299
+    },
+    {
+      "file": "replays/f9d5141a74f6331540f720bac0716614-1.json.gz",
+      "layout": "6a2f832daf76c543af1b8716b804ee9e4900c367b38bfb65e6981f1f9c7e150b",
+      "split": 0,
+      "revision": "9213b31613d196b68e3f62a4138f4cb6fab32b0c",
+      "sha256": "f9c891b7cbdef33be1c8c3b6dee8f29db18b8b2836d54c2da01e5a9fa9334ebc",
+      "turns": 299
+    },
+    {
+      "file": "replays/fa3ea68975543170687421323198708c-1.json.gz",
+      "layout": "9a0048da4e7a2498483dbeaf97b0a7ff737ca16a4dbc6566254bbb13b783b570",
+      "split": 0,
+      "revision": "9213b31613d196b68e3f62a4138f4cb6fab32b0c",
+      "sha256": "6ccf2431a4c41079cec52327f10db7dcfb911e39c84a452a02f7a5b1e15f8f3a",
+      "turns": 299
+    },
+    {
+      "file": "replays/fc81aa5599761a1088336c4be546679f-1.json.gz",
+      "layout": "6cd4c7fa4d95e4642857da3b6592c5a984d13b0e53dbe3a869b4d49b0c205857",
+      "split": 0,
+      "revision": "9213b31613d196b68e3f62a4138f4cb6fab32b0c",
+      "sha256": "cdd1202eee6a957fce988f0c86b644e912b77f47d5295c5312d2f7d275b61f7b",
+      "turns": 299
+    },
+    {
+      "file": "replays/fd9f5406195dcc46141ffe116b12619d-1.json.gz",
+      "layout": "3ef67b951407abc83248e748885f2ae104169dccd60e4d2ca564d0571e5aef91",
+      "split": 2,
+      "revision": "0436d160b36b93903c51dd5cd191cae952161064",
+      "sha256": "a19cbee4ea254d930ba58552fda605bd2cc57dbc20badff5b74b021e7ac601e6",
+      "turns": 299
+    },
+    {
+      "file": "replays/fe3beb57e34a752098e098efc37db7c6-1.json.gz",
+      "layout": "add71bde4ffbe0d9b11a28ad34cbc2f5125166a9ca2b5b003cd4e9b17df1d866",
+      "split": 2,
+      "revision": "39d9f2931484a7fbf0fadb84c1da3b3cf5e99c4e",
+      "sha256": "b1ff3c739df29fba328b80a5a57fdc3268cec58eafddd91f1ced2e9b66b6803c",
+      "turns": 299
+    }
+  ]
+}
