@@ -59,3 +59,7 @@ CARBON_DEBUG=1 .arena-venv/bin/python scripts/selfplay.py \
 在 Cloud 任务中检出同一仓库提交，使用上面的安装命令和对局命令。CPU 包和裁判就绪后，对局执行本身可以离线；运行时不需要比赛网站账号。默认环境也可以请求访问已连接的 GitHub 仓库。[Codex Cloud 指南](https://learn.chatgpt.com/docs/cloud)
 
 本次本地完整双座位对照用了提交 `7658efc4e6eeeef4066844a646b0c411e784645c`、种子 19417、本机 Apple M4、Python 3.13.11、NumPy 2.4.2 和 PyTorch 2.12.1。这次历史对手为公开的 Master3s2。v5 从 0 号位赢 121.69，从 1 号位赢 155.41；双方每场搜索 298–299 次。本机另在全新 Python 3.12 / NumPy 1.26.4 / PyTorch 2.5.1 环境中做了短局兼容性验证。[完整逐局记录](analysis/arena/local-19417.jsonl)
+
+## 本地 yan-v6 对照
+
+线上已验证的对手可用 `--baseline yan-v5`。本轮本地晋级文件可用 `--baseline yan-v6`，两者均校验完整 SHA-256。八图初筛和四图独立复核各自记录地图、座位、搜索用时与全部败局。[初筛](analysis/v6r-qual-05-summary.json) · [复核](analysis/v6r-confirm-05-summary.json)

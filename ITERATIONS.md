@@ -14,7 +14,9 @@
 
 ## yan-v5 与 yan-v6
 
-线上 yan-v5 以标签 v8-yan-v5-multistyle 冻结。查看榜单时它在重量榜第 7，共 61 场 42 胜。实验分支的 yan-v6 在六张新图换边对战同一个 yan-v5 文件，6 胜 6 负，场均资金分差 -41.54。比赛版本由维护者决定。[本轮复盘、候选代码及逐局结果](experiments/v6/README.md)
+线上 yan-v5 以标签 v8-yan-v5-multistyle 冻结。旧版 yan-v6 在六张新图换边 6 胜 6 负，场均分差 −41.54。[旧版实验](experiments/v6/README.md)
+
+[本地晋级版 yan-v6](https://github.com/Zhaoyi-Yan/carbon/blob/v9-yan-v6-estuary/submission.py) 经五轮独立换边评测产生。前四份候选分别为 9–7、10–6、8–8、11–5。第五份在八张新图对 v5 12–4，两座位各胜 5、7 局，场均 +874.90。冻结同一文件再用四张新图换边，成绩 6–2，场均 +296.76。合计 24 场，0 号位 7/12，1 号位 11/12。单文件 SHA-256 为 `e5c328aa5d18ced597791e7b839088f1a37d18e4e8dc83dd3d54b13d66e877b0`。双方按裁判实测时间搜索，同一地图复跑也可能出现不同走法。[两张旧图的收支诊断](analysis/v6r-diagnostic.md) · [完整新图记录](experiments/v6r/README.md)
 
 ## 冻结的线上版本与新候选
 

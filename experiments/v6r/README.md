@@ -68,3 +68,7 @@ CARBON_DEBUG=1 python scripts/selfplay.py --candidate experiments/v6r/checkpoint
 随后官网大模型榜更新为 Apollo 第 1（97/105）、Artemis 第 2（52/53）、yan-v5 第 8（50/73）。Artemis 第 53 战以 7595.03 对 6880.68 战胜 Master7sE。对方第 1 步双采，它第 2 步在 70 格招采集、154 格招种植，第 7 步首次种树。至此面对这种开局的 22 场均从较大格号基地出种植员。[本次官网记录](../../analysis/v6r-artemis-53.json) · [第 53 战事件](https://117.72.210.134/api/summary/fa91f9c64237d2ba17e0fccc2b41ddbf/1)
 
 第五份候选在预先冻结的八图换边赛中 **12 胜 4 负**，0 号位 5/8，1 号位 7/8，场均 +874.90，四张双胜、四张一胜一负。双方均无慢步或异常。按原版裁判逐步复核，场均净树收支差 +582.68，基地入款差 +185.36，招聘支出少 106.88；实际从地面采碳仍少 370.11。全部 8 个地图布局均独立于最初 217 场回放和此前 78 个本地布局。已按原字节另行开启四图八局复核。[逐图、席位、耗时](../../analysis/v6r-qual-05-summary.json) · [16 局原始动作](../../analysis/v6r-qual-05-estuary.jsonl) · [逐局收支](../../analysis/v6r-qual-05-economy.json) · [复核用图](confirmation-5.json)
+
+同一文件以原版裁判完成另外 4 张新图的独立复核，成绩 **6 胜 2 负**，两席为 2/4 和 4/4，场均分差 +296.76。两批共 18 胜 6 负。标签 v9-yan-v6-estuary 指向实际参赛文件。今后可用 `python scripts/selfplay.py --candidate ./new.py --baseline yan-v6 --seeds 123 --output ./new-games.jsonl` 对战它。[八局分差与双方用时](../../analysis/v6r-confirm-05-summary.json) · [完整动作](../../analysis/v6r-confirm-05-estuary.jsonl)
+
+追加的四张新图上，场均实际入款差 +218.07，净树收支差 −71.33，少花招募费 150.00，综合分差 +296.76。原八图与追加四图的树收入贡献方向不同。[追加八局的裁判收支重建](../../analysis/v6r-confirm-05-economy.json)

@@ -1,6 +1,6 @@
 # Carbon League 策略
 
-本实验分支的 [yan-v6.py](yan-v6.py) 和 [submission.py](submission.py) 是同一份单文件候选，权重已内嵌。标准 15×15 棋盘使用 NumPy 和 PyTorch CPU 推理。线上已有的 [yan-v5](yan-v5.py) 是本轮换边对战的冻结基线。[线上回放和本地结果](experiments/v6/README.md)记录了每份候选的评测。
+[yan-v6.py](yan-v6.py) 和 [submission.py](submission.py) 是同一个本地晋级文件，包含策略网络、价值网络、压缩的 v5 对手模型与快速推演模型。标准 15×15 棋盘用 NumPy 和 PyTorch CPU 推理。对冻结的线上 [yan-v5](yan-v5.py)，首批新图换边 12 胜 4 负，另批四图换边 6 胜 2 负。两批合计 12 张新图、18 胜 6 负，场均领先 682.19。本次交付记录本地成绩，赛事上传由维护者决定。[首次八图](analysis/v6r-qual-05-summary.json) · [独立四图](analysis/v6r-confirm-05-summary.json) · [策略与逐轮评测](experiments/v6r/README.md)
 
 以下是历史版本 **yan-v3**（`v6-tree-guard-batch`）。它沿用公开回放训练的行动和招募模型，在争夺树木时比较改种邻格、派空载采集员协防等走法，并在 CPU 上批量采样模拟行动。
 
