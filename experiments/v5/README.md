@@ -56,3 +56,5 @@ python experiments/v5/distill.py /tmp/v5-boards experiments/v5/validation.json /
 multistyle 在预先封存的第二批四图上为 **7 胜 1 负**，场均 +419.63。唯一一次失利为 106481006 的出生位 0，分差 −47.75。八场均打满 299 个决策步。未达到八战全胜的条件。[八场原始结果](../../analysis/arena/v5-confirmation-multistyle.jsonl)
 
 [两局线上得分压制复盘](../../analysis/denial/README.md)分析了持续限制树经济以及现金低于重启门槛的两种情形。新候选以原版 yan-v4 继续换边验证。
+
+经济候选第一份导出文件在导入时提前引用估值函数，两次初始化失败已经保留为弃权记录。修复导入顺序后，文件名为 income；原代码的比赛结果不计作策略输赢。初始 214 场训练地图每四步采样一次，没有采到“没树、没采集员、现金低于 20”这个组合。判断该极端局面时使用能否招募、种植和夺树的实际规则，另以历史快照扩大样本。[初始化记录](../../analysis/arena/v5-development-denial.jsonl)

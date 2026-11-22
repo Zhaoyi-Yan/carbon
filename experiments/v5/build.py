@@ -7,7 +7,7 @@ from backbone import exposed_source, replace, ROOT
 HERE=Path(__file__).resolve().parent
 
 
-def build(weights, output, own, valuation, frontier=False, rotated=False, fog=False, territory=False, deep=False, adaptive=False, paired=False, refit=None, student=None, encounters=False, replies=False, specialists=False, economy=False):
+def build(weights, output, own, valuation, frontier=False, rotated=False, fog=False, territory=False, deep=False, adaptive=False, paired=False, refit=None, student=None, encounters=False, replies=False, specialists=False, economy=False, corridor=False):
     source=exposed_source()
     batch=(ROOT/'opponents/yan-v3.py').read_text()
     sample=batch[batch.index('_ROLLOUT_LANDING ='):batch.index('def _deviations(')]
@@ -98,7 +98,13 @@ def build(weights, output, own, valuation, frontier=False, rotated=False, fog=Fa
         if not territory:
             raise ValueError('Income evaluation uses the spatial and cash forecasts together.')
         body+=(HERE/'cashflow.py').read_text()+'\n'
-        body=replace(body,'_v5_value = _v5_territory_value','_v5_value = _v5_cashflow_eval')
+        body=replace(body,'_v5_value = _v5_territory_value','')
+        body+='\n_v5_value = _v5_cashflow_eval\n'
+    if corridor:
+        if not economy:
+            raise ValueError('Corridor valuation uses the income forecast.')
+        body+=(HERE/'corridors.py').read_text()+'\n'
+        body+='\n_v5_value = _v5_corridor_score\n'
     blob=base64.b64encode(weights.read_bytes()).decode()
     body += f'with np.load(io.BytesIO(base64.b64decode("{blob}")), allow_pickle=False) as _v5_file:\n    _V5 = dict(_v5_file)\n'
     body += f'_V5_EYE = np.eye(20)\n_V5_OWN_STRENGTH = {own!r}\n_V5_VALUE_MIX = {valuation!r}\n\n'
@@ -159,4 +165,5 @@ if __name__=='__main__':
     p.add_argument('--replies',action='store_true')
     p.add_argument('--specialists',action='store_true')
     p.add_argument('--economy',action='store_true')
-    a=p.parse_args();build(a.weights,a.output,a.own,a.value,a.frontier,a.rotated,a.fog,a.territory,a.deep,a.adaptive,a.paired,a.refit,a.student,a.encounters,a.replies,a.specialists,a.economy)
+    p.add_argument('--corridor',action='store_true')
+    a=p.parse_args();build(a.weights,a.output,a.own,a.value,a.frontier,a.rotated,a.fog,a.territory,a.deep,a.adaptive,a.paired,a.refit,a.student,a.encounters,a.replies,a.specialists,a.economy,a.corridor)

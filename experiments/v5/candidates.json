@@ -88,5 +88,63 @@
       "--student",
       "experiments/v5/rollout-student.npz"
     ]
+  },
+  "coordinator": {
+    "sha256": "78c141a2c7a7cdfb2cdb3a595b76e2e1dc72bd82517e658083742924acc50022",
+    "weights": "experiments/v5/unit-specialists.npz",
+    "flags": [
+      "--adaptive",
+      "--deep",
+      "--rotated",
+      "--territory",
+      "--encounters",
+      "--replies",
+      "--paired",
+      "--specialists",
+      "--refit",
+      "experiments/v5/full-refit.npz",
+      "--own",
+      ".24",
+      "--value",
+      ".53"
+    ]
+  },
+  "fieldcraft": {
+    "sha256": "6338f4d56eb338f3f362debff97cf248682f838aac420757010fe432502fb592",
+    "weights": "experiments/v5/unit-specialists.npz",
+    "flags": [
+      "--adaptive",
+      "--deep",
+      "--rotated",
+      "--territory",
+      "--encounters",
+      "--replies",
+      "--paired",
+      "--specialists",
+      "--refit",
+      "experiments/v5/tactical-full.npz",
+      "--own",
+      ".20",
+      "--value",
+      ".50"
+    ]
+  },
+  "income": {
+    "sha256": "c59700612a27d94a4dec7337e58bc30c34b1972cd25a9726c4409baefa88ffb8",
+    "weights": "experiments/v5/cashflow.npz",
+    "flags": [
+      "--adaptive",
+      "--deep",
+      "--rotated",
+      "--paired",
+      "--territory",
+      "--refit",
+      "experiments/v5/full-refit.npz",
+      "--own",
+      ".27",
+      "--value",
+      ".48",
+      "--economy"
+    ]
   }
 }

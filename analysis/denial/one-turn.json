@@ -1,0 +1,686 @@
+[
+  {
+    "step": 134,
+    "next_step": 135,
+    "side": 1,
+    "model": "multistyle",
+    "actual": [
+      {
+        "cash": 1133.12,
+        "collectors": 8,
+        "carried": 565.066,
+        "trees": 11
+      },
+      {
+        "cash": 19.28,
+        "collectors": 0,
+        "carried": 0,
+        "trees": 0
+      }
+    ],
+    "counterfactual": [
+      {
+        "cash": 1133.12,
+        "collectors": 8,
+        "carried": 296.682,
+        "trees": 11
+      },
+      {
+        "cash": 19.28,
+        "collectors": 1,
+        "carried": 268.384,
+        "trees": 0
+      }
+    ],
+    "action": {
+      "player-1-worker-28": "RIGHT",
+      "player-1-worker-30": "DOWN"
+    },
+    "original": {
+      "player-1-worker-30": "LEFT",
+      "player-1-worker-28": "RIGHT"
+    },
+    "game": "9b1c90aa0357d7d62aa0095d6523219d-1"
+  },
+  {
+    "step": 140,
+    "next_step": 141,
+    "side": 1,
+    "model": "multistyle",
+    "actual": [
+      {
+        "cash": 1555.68,
+        "collectors": 7,
+        "carried": 454.985,
+        "trees": 11
+      },
+      {
+        "cash": 19.28,
+        "collectors": 0,
+        "carried": 0,
+        "trees": 0
+      }
+    ],
+    "counterfactual": [
+      {
+        "cash": 1555.68,
+        "collectors": 8,
+        "carried": 454.985,
+        "trees": 11
+      },
+      {
+        "cash": 19.28,
+        "collectors": 1,
+        "carried": 0,
+        "trees": 0
+      }
+    ],
+    "action": {
+      "player-1-worker-28": "DOWN"
+    },
+    "original": {
+      "player-1-worker-34": "LEFT",
+      "player-1-worker-28": "DOWN"
+    },
+    "game": "9b1c90aa0357d7d62aa0095d6523219d-1"
+  },
+  {
+    "step": 134,
+    "next_step": 135,
+    "side": 1,
+    "model": "denial",
+    "actual": [
+      {
+        "cash": 1133.12,
+        "collectors": 8,
+        "carried": 565.066,
+        "trees": 11
+      },
+      {
+        "cash": 19.28,
+        "collectors": 0,
+        "carried": 0,
+        "trees": 0
+      }
+    ],
+    "counterfactual": [
+      {
+        "cash": 1133.12,
+        "collectors": 8,
+        "carried": 296.682,
+        "trees": 11
+      },
+      {
+        "cash": 19.28,
+        "collectors": 1,
+        "carried": 268.384,
+        "trees": 0
+      }
+    ],
+    "action": {
+      "player-1-worker-28": "LEFT",
+      "player-1-worker-30": "DOWN"
+    },
+    "original": {
+      "player-1-worker-30": "LEFT",
+      "player-1-worker-28": "RIGHT"
+    },
+    "game": "9b1c90aa0357d7d62aa0095d6523219d-1"
+  },
+  {
+    "step": 140,
+    "next_step": 141,
+    "side": 1,
+    "model": "denial",
+    "actual": [
+      {
+        "cash": 1555.68,
+        "collectors": 7,
+        "carried": 454.985,
+        "trees": 11
+      },
+      {
+        "cash": 19.28,
+        "collectors": 0,
+        "carried": 0,
+        "trees": 0
+      }
+    ],
+    "counterfactual": [
+      {
+        "cash": 1555.68,
+        "collectors": 8,
+        "carried": 454.985,
+        "trees": 11
+      },
+      {
+        "cash": 19.28,
+        "collectors": 1,
+        "carried": 0,
+        "trees": 0
+      }
+    ],
+    "action": {
+      "player-1-worker-28": "DOWN",
+      "player-1-worker-34": "UP"
+    },
+    "original": {
+      "player-1-worker-34": "LEFT",
+      "player-1-worker-28": "DOWN"
+    },
+    "game": "9b1c90aa0357d7d62aa0095d6523219d-1"
+  },
+  {
+    "step": 285,
+    "next_step": 286,
+    "side": 0,
+    "model": "multistyle",
+    "actual": [
+      {
+        "cash": 6640.3,
+        "collectors": 8,
+        "carried": 260.075,
+        "trees": 11
+      },
+      {
+        "cash": 238.03,
+        "collectors": 0,
+        "carried": 0,
+        "trees": 1
+      }
+    ],
+    "counterfactual": [
+      {
+        "cash": 6569.33,
+        "collectors": 8,
+        "carried": 528.821,
+        "trees": 12
+      },
+      {
+        "cash": 19.28,
+        "collectors": 0,
+        "carried": 0,
+        "trees": 0
+      }
+    ],
+    "action": {
+      "player-0-worker-45": "DOWN",
+      "player-0-worker-41": "DOWN",
+      "player-0-worker-37": "UP",
+      "player-0-worker-21": "RIGHT",
+      "player-0-worker-36": "UP",
+      "player-0-worker-43": "RIGHT",
+      "player-0-worker-17": "LEFT"
+    },
+    "original": {
+      "player-0-worker-45": "DOWN",
+      "player-0-worker-17": "DOWN",
+      "player-0-worker-44": "RIGHT",
+      "player-0-worker-21": "RIGHT",
+      "player-0-worker-36": "RIGHT",
+      "player-0-worker-37": "DOWN",
+      "player-0-worker-38": "DOWN",
+      "player-0-worker-43": "UP"
+    },
+    "game": "9b1c90aa0357d7d62aa0095d6523219d-1"
+  },
+  {
+    "step": 285,
+    "next_step": 286,
+    "side": 0,
+    "model": "denial",
+    "actual": [
+      {
+        "cash": 6640.3,
+        "collectors": 8,
+        "carried": 260.075,
+        "trees": 11
+      },
+      {
+        "cash": 238.03,
+        "collectors": 0,
+        "carried": 0,
+        "trees": 1
+      }
+    ],
+    "counterfactual": [
+      {
+        "cash": 6640.3,
+        "collectors": 8,
+        "carried": 498.821,
+        "trees": 11
+      },
+      {
+        "cash": 19.28,
+        "collectors": 0,
+        "carried": 0,
+        "trees": 0
+      }
+    ],
+    "action": {
+      "player-0-worker-17": "DOWN",
+      "player-0-worker-45": "DOWN",
+      "player-0-worker-43": "RIGHT",
+      "player-0-worker-21": "RIGHT",
+      "player-0-worker-36": "UP",
+      "player-0-worker-44": "UP",
+      "player-0-worker-37": "DOWN",
+      "player-0-worker-38": "RIGHT",
+      "player-0-worker-41": "UP"
+    },
+    "original": {
+      "player-0-worker-45": "DOWN",
+      "player-0-worker-17": "DOWN",
+      "player-0-worker-44": "RIGHT",
+      "player-0-worker-21": "RIGHT",
+      "player-0-worker-36": "RIGHT",
+      "player-0-worker-37": "DOWN",
+      "player-0-worker-38": "DOWN",
+      "player-0-worker-43": "UP"
+    },
+    "game": "9b1c90aa0357d7d62aa0095d6523219d-1"
+  },
+  {
+    "step": 174,
+    "next_step": 175,
+    "side": 1,
+    "model": "multistyle",
+    "actual": [
+      {
+        "cash": 1403.68,
+        "collectors": 9,
+        "carried": 30.671,
+        "trees": 10
+      },
+      {
+        "cash": 72.65,
+        "collectors": 1,
+        "carried": 227.7,
+        "trees": 0
+      }
+    ],
+    "counterfactual": [
+      {
+        "cash": 1403.68,
+        "collectors": 9,
+        "carried": 30.671,
+        "trees": 10
+      },
+      {
+        "cash": 72.65,
+        "collectors": 1,
+        "carried": 227.7,
+        "trees": 0
+      }
+    ],
+    "action": {
+      "player-1-worker-41": "LEFT",
+      "player-1-worker-50": "DOWN",
+      "player-1-worker-44": "DOWN"
+    },
+    "original": {
+      "player-1-worker-41": "LEFT",
+      "player-1-worker-50": "UP",
+      "player-1-worker-44": "LEFT"
+    },
+    "game": "0024bb667d204c1754568de71eb16170-1"
+  },
+  {
+    "step": 199,
+    "next_step": 200,
+    "side": 1,
+    "model": "multistyle",
+    "actual": [
+      {
+        "cash": 2035.33,
+        "collectors": 8,
+        "carried": 0,
+        "trees": 9
+      },
+      {
+        "cash": 92.13,
+        "collectors": 2,
+        "carried": 0,
+        "trees": 0
+      }
+    ],
+    "counterfactual": [
+      {
+        "cash": 2035.33,
+        "collectors": 8,
+        "carried": 0,
+        "trees": 9
+      },
+      {
+        "cash": 92.13,
+        "collectors": 2,
+        "carried": 0,
+        "trees": 0
+      }
+    ],
+    "action": {
+      "player-1-worker-59": "LEFT",
+      "player-1-worker-61": "LEFT",
+      "player-1-worker-60": "RIGHT",
+      "player-1-worker-63": "LEFT",
+      "player-1-worker-50": "DOWN",
+      "player-1-worker-41": "UP"
+    },
+    "original": {
+      "player-1-worker-60": "RIGHT",
+      "player-1-worker-50": "DOWN",
+      "player-1-worker-61": "LEFT",
+      "player-1-worker-41": "UP",
+      "player-1-worker-63": "LEFT",
+      "player-1-worker-59": "DOWN"
+    },
+    "game": "0024bb667d204c1754568de71eb16170-1"
+  },
+  {
+    "step": 239,
+    "next_step": 240,
+    "side": 1,
+    "model": "multistyle",
+    "actual": [
+      {
+        "cash": 3237.0,
+        "collectors": 7,
+        "carried": 0,
+        "trees": 13
+      },
+      {
+        "cash": 12.61,
+        "collectors": 2,
+        "carried": 200.547,
+        "trees": 0
+      }
+    ],
+    "counterfactual": [
+      {
+        "cash": 3237.0,
+        "collectors": 7,
+        "carried": 0,
+        "trees": 13
+      },
+      {
+        "cash": 12.61,
+        "collectors": 2,
+        "carried": 200.547,
+        "trees": 0
+      }
+    ],
+    "action": {
+      "player-1-worker-61": "LEFT",
+      "player-1-worker-67": "DOWN",
+      "player-1-worker-59": "LEFT",
+      "player-1-worker-65": "UP"
+    },
+    "original": {
+      "player-1-worker-61": "LEFT",
+      "player-1-worker-67": "DOWN",
+      "player-1-worker-59": "RIGHT",
+      "player-1-worker-65": "DOWN"
+    },
+    "game": "0024bb667d204c1754568de71eb16170-1"
+  },
+  {
+    "step": 269,
+    "next_step": 270,
+    "side": 1,
+    "model": "multistyle",
+    "actual": [
+      {
+        "cash": 4425.8,
+        "collectors": 9,
+        "carried": 1007.289,
+        "trees": 6
+      },
+      {
+        "cash": 71.48,
+        "collectors": 7,
+        "carried": 323.197,
+        "trees": 4
+      }
+    ],
+    "counterfactual": [
+      {
+        "cash": 4433.9,
+        "collectors": 9,
+        "carried": 1007.289,
+        "trees": 6
+      },
+      {
+        "cash": 71.48,
+        "collectors": 7,
+        "carried": 336.098,
+        "trees": 4
+      }
+    ],
+    "action": {
+      "player-1-worker-74": "UP",
+      "player-1-worker-76": "UP",
+      "player-1-worker-78": "LEFT",
+      "player-1-worker-75": "LEFT",
+      "player-1-worker-69": "UP",
+      "player-1-worker-73": "UP",
+      "player-1-worker-61": "RIGHT",
+      "player-1-worker-71": "LEFT",
+      "player-1-worker-72": "RIGHT"
+    },
+    "original": {
+      "player-1-worker-74": "UP",
+      "player-1-worker-76": "UP",
+      "player-1-worker-78": "LEFT",
+      "player-1-worker-69": "UP",
+      "player-1-worker-73": "UP",
+      "player-1-worker-75": "LEFT",
+      "player-1-worker-77": "DOWN",
+      "player-1-worker-61": "RIGHT",
+      "player-1-worker-72": "RIGHT",
+      "player-1-worker-71": "RIGHT"
+    },
+    "game": "0024bb667d204c1754568de71eb16170-1"
+  },
+  {
+    "step": 174,
+    "next_step": 175,
+    "side": 1,
+    "model": "denial",
+    "actual": [
+      {
+        "cash": 1403.68,
+        "collectors": 9,
+        "carried": 30.671,
+        "trees": 10
+      },
+      {
+        "cash": 72.65,
+        "collectors": 1,
+        "carried": 227.7,
+        "trees": 0
+      }
+    ],
+    "counterfactual": [
+      {
+        "cash": 1403.68,
+        "collectors": 9,
+        "carried": 30.671,
+        "trees": 10
+      },
+      {
+        "cash": 72.65,
+        "collectors": 1,
+        "carried": 227.7,
+        "trees": 0
+      }
+    ],
+    "action": {
+      "player-1-worker-41": "LEFT",
+      "player-1-worker-50": "DOWN",
+      "player-1-worker-44": "DOWN"
+    },
+    "original": {
+      "player-1-worker-41": "LEFT",
+      "player-1-worker-50": "UP",
+      "player-1-worker-44": "LEFT"
+    },
+    "game": "0024bb667d204c1754568de71eb16170-1"
+  },
+  {
+    "step": 199,
+    "next_step": 200,
+    "side": 1,
+    "model": "denial",
+    "actual": [
+      {
+        "cash": 2035.33,
+        "collectors": 8,
+        "carried": 0,
+        "trees": 9
+      },
+      {
+        "cash": 92.13,
+        "collectors": 2,
+        "carried": 0,
+        "trees": 0
+      }
+    ],
+    "counterfactual": [
+      {
+        "cash": 2035.33,
+        "collectors": 8,
+        "carried": 0,
+        "trees": 9
+      },
+      {
+        "cash": 92.13,
+        "collectors": 2,
+        "carried": 0,
+        "trees": 0
+      }
+    ],
+    "action": {
+      "player-1-worker-59": "LEFT",
+      "player-1-worker-61": "LEFT",
+      "player-1-worker-60": "RIGHT",
+      "player-1-worker-63": "LEFT",
+      "player-1-worker-50": "DOWN",
+      "player-1-worker-41": "UP"
+    },
+    "original": {
+      "player-1-worker-60": "RIGHT",
+      "player-1-worker-50": "DOWN",
+      "player-1-worker-61": "LEFT",
+      "player-1-worker-41": "UP",
+      "player-1-worker-63": "LEFT",
+      "player-1-worker-59": "DOWN"
+    },
+    "game": "0024bb667d204c1754568de71eb16170-1"
+  },
+  {
+    "step": 239,
+    "next_step": 240,
+    "side": 1,
+    "model": "denial",
+    "actual": [
+      {
+        "cash": 3237.0,
+        "collectors": 7,
+        "carried": 0,
+        "trees": 13
+      },
+      {
+        "cash": 12.61,
+        "collectors": 2,
+        "carried": 200.547,
+        "trees": 0
+      }
+    ],
+    "counterfactual": [
+      {
+        "cash": 3237.0,
+        "collectors": 7,
+        "carried": 0,
+        "trees": 13
+      },
+      {
+        "cash": 12.61,
+        "collectors": 2,
+        "carried": 200.547,
+        "trees": 0
+      }
+    ],
+    "action": {
+      "player-1-worker-61": "LEFT",
+      "player-1-worker-67": "DOWN",
+      "player-1-worker-59": "RIGHT",
+      "player-1-worker-65": "DOWN"
+    },
+    "original": {
+      "player-1-worker-61": "LEFT",
+      "player-1-worker-67": "DOWN",
+      "player-1-worker-59": "RIGHT",
+      "player-1-worker-65": "DOWN"
+    },
+    "game": "0024bb667d204c1754568de71eb16170-1"
+  },
+  {
+    "step": 269,
+    "next_step": 270,
+    "side": 1,
+    "model": "denial",
+    "actual": [
+      {
+        "cash": 4425.8,
+        "collectors": 9,
+        "carried": 1007.289,
+        "trees": 6
+      },
+      {
+        "cash": 71.48,
+        "collectors": 7,
+        "carried": 323.197,
+        "trees": 4
+      }
+    ],
+    "counterfactual": [
+      {
+        "cash": 4425.8,
+        "collectors": 9,
+        "carried": 1007.289,
+        "trees": 6
+      },
+      {
+        "cash": 71.48,
+        "collectors": 7,
+        "carried": 323.197,
+        "trees": 4
+      }
+    ],
+    "action": {
+      "player-1-worker-74": "UP",
+      "player-1-worker-76": "UP",
+      "player-1-worker-78": "LEFT",
+      "player-1-worker-75": "LEFT",
+      "player-1-worker-69": "UP",
+      "player-1-worker-73": "UP",
+      "player-1-worker-71": "RIGHT",
+      "player-1-worker-77": "DOWN",
+      "player-1-worker-61": "LEFT",
+      "player-1-worker-72": "RIGHT"
+    },
+    "original": {
+      "player-1-worker-74": "UP",
+      "player-1-worker-76": "UP",
+      "player-1-worker-78": "LEFT",
+      "player-1-worker-69": "UP",
+      "player-1-worker-73": "UP",
+      "player-1-worker-75": "LEFT",
+      "player-1-worker-77": "DOWN",
+      "player-1-worker-61": "RIGHT",
+      "player-1-worker-72": "RIGHT",
+      "player-1-worker-71": "RIGHT"
+    },
+    "game": "0024bb667d204c1754568de71eb16170-1"
+  }
+]
