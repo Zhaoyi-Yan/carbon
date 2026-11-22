@@ -19,6 +19,7 @@
 | [路线概率温度校准](https://github.com/Zhaoyi-Yan/carbon/blob/c61c413fd39b751fff4f0207b38e520634625db9/submission.py) | 17471 | 0 胜 2 负 | −455.73 | [隔离竞技场](analysis/arena/temperature-17471.jsonl) |
 | [Apollo 回程特征](https://github.com/Zhaoyi-Yan/carbon/blob/bbf3d0badaec6ecefe9c5d1a49920ea117882833/submission.py) | 17471 | 1 胜 1 负 | −443.12 | [原 benchmark 计时](experiments/route_forecast.md) |
 | [搜索中复用己方行动头](https://github.com/Zhaoyi-Yan/carbon/blob/08a8137e578db46a2ab4d5a06a2cd735009d5a9e/submission.py) | 26117 | 1 胜 1 负 | −7.955 | [逐局记录](analysis/arena/own-rollout-26117.jsonl) · [18 场线上动作核对](experiments/own_rollout.md) |
+| [争夺中树木的收益校准](https://github.com/Zhaoyi-Yan/carbon/blob/69f549d6b0f4e3995f339e3d325f03ebc4b690dd/submission.py) | 31427 | 0 胜 2 负 | −141.56 | [换边实测和留图误差](experiments/contested_trees.md) |
 | [单采集员前压](experiments/pressure_opponent.md) | 20481 | 0 胜 2 负 | −1187.515 | [隔离竞技场](experiments/pressure_20481.jsonl) |
 
 ## 实验快照
