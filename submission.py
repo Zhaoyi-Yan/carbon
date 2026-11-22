@@ -610,12 +610,81 @@ def _probs(l, temperature=_TEMP):
     return e / e.sum()
 
 
+class _ReturnProfile:
+    """Calibrate the chance a loaded rival moves closer to a base from real, consecutive frames."""
+    def __init__(self):
+        self.samples = np.zeros(2)
+        self.residual = np.zeros(2)
+        self.forecasts = {}
+        self.step = -1
+
+    def observe(self, step, rival):
+        if step <= self.step:
+            return
+        elapsed = step - self.step
+        self.samples *= 0.96 ** elapsed
+        self.residual *= 0.96 ** elapsed
+        if elapsed == 1:
+            for wid, (group, closer, probability) in self.forecasts.items():
+                if wid in rival:
+                    returned = float(rival[wid][0] in closer)
+                    self.samples[group] += 1
+                    self.residual[group] += returned - probability
+        self.forecasts.clear()
+        self.step = step
+
+    def adjust(self, players, side, logits):
+        _, bases, workers, _ = players[side]
+        if not bases:
+            return logits
+        distance = FEAT_DIST[:, list(bases.values())].min(axis=1)
+        rivals = [w for w in players[1-side][2].values() if w[2] == 'COLLECTOR']
+        adjusted = logits.copy()
+        for wid, (pos, load, role) in workers.items():
+            if role != 'COLLECTOR' or load < 75 or distance[pos] == 0:
+                continue
+            group = int(any(w[1] < load and DIST[pos][w[0]] <= 2 for w in rivals))
+            cells = _ROLLOUT_LANDING[pos]
+            mask = distance[list(cells)] < distance[pos]
+            probabilities = _probs(logits[pos], _TEMP)
+            prior = float(probabilities[mask].sum())
+            self.forecasts[wid] = (group, tuple(c for c, yes in zip(cells, mask) if yes), prior)
+            if self.samples[group] < 3:
+                continue
+            shift = self.residual[group] / (self.samples[group] + 8)
+            original = min(.99999, max(.00001, prior))
+            target = min(.99999, max(.00001, original + shift))
+            odds_ratio = target * (1-original) / (original * (1-target))
+            adjusted[pos, mask] += _TEMP * max(-2., min(2., log(odds_ratio)))
+        return adjusted
+
+
+def _late_lead(players, me, step):
+    # +/-1 means a large bankable lead/deficit close to the last decision.
+    remaining = LAST_TURN + 1 - step
+    if remaining >= 70:
+        return 0.
+    margin = 3000. * _banking_value(players, me, step)
+    return min(1., (70-remaining)/50.) * margin / (abs(margin) + 180.)
+
+
+def _reply_value(values, candidate, count, lead):
+    first = values[candidate, 0]
+    if count == 1:
+        return first
+    outcomes = [first] + [values[candidate, j] for j in range(1, count)]
+    return sum(outcomes)/count - .225 * lead * (max(outcomes) - min(outcomes))
+
+
 def _act(obs, configuration=None, t0=None):
     st = _ST
     step = obs['step']; me = obs['player']; players = obs['players']
     if step == 0 or 'tr' not in st:
         st['tr'] = BeliefTracker(_Bel, me); st['prev'] = None
         st['rng'] = np.random.RandomState(_SEED)
+        st['return_profile'] = _ReturnProfile()
+    st['return_profile'].observe(step, players[1-me][2])
+    lead = _late_lead(players, me, step)
     rng = st['rng']
     est, known = st['tr'].step(players, step, obs['carbon'])
     x = encode(players, step, me, est, known, st['prev'])
@@ -647,7 +716,13 @@ def _act(obs, configuration=None, t0=None):
     for wid, w in mine:
         p = _probs(lw[w[0]], _ROOT_TEMP)
         a = rng.choice(5, p=p)
-        k_ = go_home(w[0], w[1], p, x, own_bases, eb, step, _HOME) if w[2] == 'C' else None
+        home_rule = _HOME
+        if lead > .18 and w[2] == 'C' and w[1] >= 75:
+            threatened = any(e[2] == 'C' and e[3] != me and e[1] < w[1] and DIST[w[0]][e[0]] <= 2
+                             for e in workers.values())
+            if threatened:
+                home_rule = (6, _HOME[1])
+        k_ = go_home(w[0], w[1], p, x, own_bases, eb, step, home_rule) if w[2] == 'C' else None
         if k_ is not None:
             cand.append((2.0, wid, w, p, k_))
             continue
@@ -667,7 +742,8 @@ def _act(obs, configuration=None, t0=None):
                 break
     if configuration is not None:
         try:
-            act = _search(obs, configuration, est, act, lw, lb, st['prev'], t0, {c[1] for c in cand if c[0] == 2.0})
+            act = _search(obs, configuration, est, act, lw, lb, st['prev'], t0,
+                          {c[1] for c in cand if c[0] == 2.0}, lead)
         except Exception:
             if os.environ.get('CARBON_DEBUG'):
                 raise
@@ -1497,7 +1573,7 @@ def _tree_guard_moves(players, me, act0, fixed, carbon, config, step):
     return candidates
 
 
-def _search(obs, configuration, est, act0, lw0, lb0, prev, t0, home=()):
+def _search(obs, configuration, est, act0, lw0, lb0, prev, t0, home=(), lead=0.):
     """Returns the move to play: act0, the policy's own, unless a searched one scores better.
     home: the workers act0 sends straight home (go_home).  With _S_HOMEFIX every candidate keeps their moves: the candidates are sampled without
     the go-home rule, and 4 turns ahead the critic still counts cargo that cannot reach a base in time, so the search used to call them back out
@@ -1572,6 +1648,7 @@ def _search(obs, configuration, est, act0, lw0, lb0, prev, t0, home=()):
     # the opponent's view at the root, for its first move
     xo = _quant(encode(players, step, op, est, full, prev))[None]
     lwo, lbo, _ = net(xo.astype(np.float32), _SID)
+    opponent_logits = _ST['return_profile'].adjust(players, op, lwo[0])
     opp = {}
 
     def begin(cs, ms):              # boards one turn ahead: (candidate, rollout, observation dict, previous players)
@@ -1579,7 +1656,7 @@ def _search(obs, configuration, est, act0, lw0, lb0, prev, t0, home=()):
         for c in cs:
             for m in ms:
                 if m not in opp:
-                    opp[m] = _sample(players, op, lwo[0], lbo[0], np.random.RandomState(seed0 + 7 + 31 * m), step)
+                    opp[m] = _sample(players, op, opponent_logits, lbo[0], np.random.RandomState(seed0 + 7 + 31 * m), step)
                 acts = [cands[c], opp[m]] if me == 0 else [opp[m], cands[c]]
                 out.append([c, m, _turn(root, configuration, acts), players])
         return out
@@ -1709,7 +1786,7 @@ def _search(obs, configuration, est, act0, lw0, lb0, prev, t0, home=()):
             cut = False
             break
         if prune:                           # the policy's own and the best of the others go on
-            mean = {c: sum(val[c, m] for m in range(M)) / M for c in alive}
+            mean = {c: _reply_value(val, c, M, lead) for c in alive}
             alive = [0] + sorted((c for c in alive if c), key=lambda c: -mean[c])[:keep - 1]
             rows = [i for i, b in enumerate(live) if b[0] in alive]
             live = [live[i] for i in rows]
@@ -1718,7 +1795,7 @@ def _search(obs, configuration, est, act0, lw0, lb0, prev, t0, home=()):
             pol = other(live, [pol[i] for i in rows])
         play(live, pol, t)
     while not cut and depth == D2 and rolls + M <= _S_MMAX and len(alive) > 1:      # more rollouts for the last two
-        mean = {c: sum(val[c, m] for m in range(rolls)) / rolls for c in alive}
+        mean = {c: _reply_value(val, c, rolls, lead) for c in alive}
         two = [0, max((c for c in alive if c), key=lambda c: mean[c])]
         nb = 2 * M
         if late((2 * (D2 - 1) + 1) * nb, (D2 - 1) * nb):
@@ -1753,7 +1830,7 @@ def _search(obs, configuration, est, act0, lw0, lb0, prev, t0, home=()):
     _S_STATS['searched'] += 1; _S_STATS['time'].append(dt)
     for k, x in (('depth', depth), ('rolls', rolls), ('cands', len(cands))):
         _S_STATS[k][x] = _S_STATS[k].get(x, 0) + 1
-    mean = {c: sum(val[c, m] for m in range(rolls)) / rolls for c in alive}
+    mean = {c: _reply_value(val, c, rolls, lead) for c in alive}
     best = max(alive, key=lambda c: mean[c])
     if best == 0 or mean[best] - mean[0] <= _S_EPS:
         best = 0
