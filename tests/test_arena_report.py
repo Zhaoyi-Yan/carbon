@@ -14,16 +14,22 @@ def match(names, cash, status='completed'):
 
 
 class ReportTests(unittest.TestCase):
-    def report(self, rows):
+    def report(self, rows, **options):
         with tempfile.TemporaryDirectory() as temp:
             shard = Path(temp)/'shard.jsonl'
             shard.write_text(''.join(json.dumps(row)+'\n' for row in rows))
-            return summarize([shard])[0]
+            return summarize([shard], **options)[0]
 
     def test_duplicate_rows_and_seat_orientation(self):
         first, second = match('ab', [8, 1]), match('ba', [4, 10])
         data = self.report([first, first, second])
         self.assertEqual((data['paired_maps'], data['wins'], data['mean_cash_margin']), (1, 2, 6.5))
+
+    def test_pool_by_artifact_despite_different_filenames(self):
+        first, second = match('ab', [8, 1]), match('ba', [4, 10])
+        second['players'][1]['name'] = 'downloaded-candidate'
+        data = self.report([first, second], by_hash=True)
+        self.assertEqual((data['left'], data['paired_maps'], data['wins']), ('aaaa', 1, 2))
 
     def test_forfeit_keeps_surviving_game_out_of_paired_scores(self):
         row = match('ba', None, 'forfeit')

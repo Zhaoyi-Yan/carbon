@@ -6,7 +6,7 @@ from pathlib import Path
 import statistics
 
 
-def summarize(paths):
+def summarize(paths, *, by_hash=False):
     names = {}
     seeds = {}
     games = {}
@@ -20,12 +20,15 @@ def summarize(paths):
                     row = json.loads(line)
                     if row['schema_version'] != 1 or len(row['players']) != 2:
                         raise ValueError('unknown arena schema')
-                    seats = tuple(p['name'] for p in row['players'])
-                    if seats[0] == seats[1]:
-                        raise ValueError('use separate names for the two seats')
                     for p in row['players']:
                         if names.setdefault(p['name'], p['sha256']) != p['sha256']:
                             raise ValueError(f"{p['name']} has multiple strategy hashes")
+                        if by_hash:
+                            # Local copy of the row: identical artifacts may have different filenames.
+                            p['name'] = p['sha256']
+                    seats = tuple(p['name'] for p in row['players'])
+                    if seats[0] == seats[1]:
+                        raise ValueError('both seats have the same strategy identity')
                     engine, steps, seed = row['engine_sha256'], row['episode_steps'], row['seed']
                     if engine:
                         settings.add((engine, steps))
@@ -90,9 +93,10 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('files', nargs='+', type=Path)
     parser.add_argument('--json', action='store_true')
+    parser.add_argument('--by-hash', action='store_true', help='pool renamed strategies with identical SHA-256')
     args = parser.parse_args()
     try:
-        results = summarize(args.files)
+        results = summarize(args.files, by_hash=args.by_hash)
     except (ValueError, OSError) as exc:
         parser.exit(2, f'{exc}\n')
     if args.json:
