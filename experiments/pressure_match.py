@@ -49,7 +49,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--seed', type=int, required=True)
     parser.add_argument('--jobs', type=int, choices=(1, 2), default=1)
-    parser.add_argument('--baseline', type=Path, default=ROOT/'submission.py')
+    parser.add_argument('--baseline', type=Path, default=ROOT/'opponents'/'yan-v2.py')
     parser.add_argument('--output', type=Path, required=True)
     args = parser.parse_args()
     strategies = parse_strategies([f'pressure={Path(__file__).with_name("pressure_opponent.py")}',

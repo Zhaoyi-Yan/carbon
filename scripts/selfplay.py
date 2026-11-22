@@ -1,6 +1,6 @@
 """Play a candidate against a frozen Carbon League strategy on both seats of every seed.
 
-The default opponent is the verified yan-v2 account strategy. Use yan-v1, yan-v2 or a
+The default opponent is the submitted yan-v3 account strategy. Use yan-v1, yan-v2, yan-v3 or a
 single-file Python strategy as the candidate or baseline. The arena writes one JSONL
 record per game, with both names, file hashes, seat order, scores and timing.
 """
@@ -15,9 +15,12 @@ import tempfile
 ROOT = Path(__file__).resolve().parents[1]
 # Account handle -> immutable repository revision, verified source digest, shallow-clone copy.
 FROZEN = {
+    "yan-v3": ("791c2f23f7dfa46228f6578a5df8e3391a334a7a",
+               "ee2b1a51039aaea356e28c6e326d3ec4eb4c06cda054808f068f132447add737",
+               "opponents/yan-v3.py"),
     "yan-v2": ("e4c8cbc5f4e9abf7fa5e410fd4fb2ec31073824d",
                "0483eca2a5e8031270dfb89b87cd5d901ee81f823383f6094f8ed839dec6a7dd",
-               "submission.py"),
+               "opponents/yan-v2.py"),
     "yan-v1": ("66cae433e3b36ccb5fcc95757963e62a7411fae9",
                "29aa472ef0484b65bb3ffdc85113aef2d1daa1e25377bfe5355a4d5e3567a11c",
                "opponents/local-before-apollo.py"),
@@ -53,7 +56,7 @@ def source_for(spec, repo=ROOT):
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--candidate", required=True, help="working strategy file or frozen account name")
-    parser.add_argument("--baseline", default="yan-v2", help="opponent file or frozen account name (default: yan-v2)")
+    parser.add_argument("--baseline", default="yan-v3", help="opponent file or frozen account name (default: yan-v3)")
     parser.add_argument("--seeds", type=int, nargs="+", required=True, help="holdout map seeds; each runs twice")
     parser.add_argument("--steps", type=int, default=300)
     parser.add_argument("--jobs", type=int, default=1)

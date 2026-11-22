@@ -69,7 +69,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', required=True, type=Path)
     args = parser.parse_args()
-    source = (ROOT / 'submission.py').read_bytes()
+    source = (ROOT / 'opponents' / 'yan-v2.py').read_bytes()
     if sha256(source).hexdigest() != BASE_SHA256:
         source = subprocess.check_output(['git', '-C', str(ROOT), 'show', 'v5-tree-value:submission.py'])
     result = candidate_source(source)

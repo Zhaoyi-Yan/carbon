@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def load_v5():
-    path = ROOT / 'submission.py'
+    path = ROOT / 'opponents' / 'yan-v2.py'
     source = path.read_bytes()
     if sha256(source).hexdigest() != BASE_SHA256:
         source = subprocess.check_output(['git', '-C', str(ROOT), 'show', 'v5-tree-value:submission.py'])

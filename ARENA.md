@@ -4,7 +4,9 @@
 
 ## 每轮先挑战自己的主力
 
-当前线上主力是 **yan-v2**，对应标签 `v5-tree-value`。上一代 **yan-v1** 对应 `v3-search`。两个映射均已用本人账户下载文件的 SHA-256 核实。新候选先挑战冻结的主力，再用历史主力及不同风格对手复查弱点。每张图双方都打两个出生位。单张图用于筛选，晋级前需要在开发时没看过的多张地图上复测。
+默认对手是本轮提交的 **yan-v3**，对应标签 `v6-tree-guard-batch`。它在四张新图换边挑战 yan-v2，取得 5 胜 3 负。可显式传入 `--baseline yan-v2` 或 `--baseline yan-v1` 做跨代回归。前两版分别对应 `v5-tree-value` 和 `v3-search`，均已用本人账户下载文件的 SHA-256 核实。[yan-v3 评测及上传记录](analysis/arena/yan-v3-qualification.md)
+
+新候选先挑战冻结的主力，再用历史主力及不同风格对手复查弱点。每张图双方都打两个出生位。单张图用于筛选，晋级前需要在开发时没看过的多张地图上复测。
 
 已有 NumPy、jsonschema 和 CPU 版 PyTorch 的 Python 环境可直接使用。需要对齐赛事库版本时，用 Python 3.12 执行安装脚本。Linux 安装 CPU 专用 PyTorch。默认虚拟环境在仓库根目录。
 
@@ -35,7 +37,7 @@ CARBON_DEBUG=1 .arena-venv/bin/python scripts/selfplay.py \
 
 1. **观察对手**。使用[前五回放逐局数据](analysis/top-five-games.jsonl)区分对手。按整张地图切分示范数据，双方与同局所有步数放在同组。遇到同类局面，分开检验空载前压、护送满载工人和经济扩张等选择。
 2. **分别提出能对打的候选**。一名开发者或 AI 改己方走法，另一名专门寻找它的弱点，第三方保管本轮留用种子和对手版本。保存当前主力、历史版本和不同风格的对手。可用[对手路线实验](experiments/route_forecast.md)生成两个概率不同的独立候选。
-3. **在同一批地图比较三方表现**。用 `--strategies v5=submission.py temperature=/tmp/temperature.py tactical=/tmp/tactical.py` 运行三方循环赛。每个新种子会产生六局。先核对 `search_enabled`、耗时、异常，再看成绩。若只知道对某一个风格的胜率，下一轮保留该候选作练习对手。
+3. **在同一批地图比较三方表现**。用 `--strategies v5=opponents/yan-v2.py temperature=/tmp/temperature.py tactical=/tmp/tactical.py` 运行三方循环赛。每个新种子会产生六局。先核对 `search_enabled`、耗时、异常，再看成绩。若只知道对某一个风格的胜率，下一轮保留该候选作练习对手。
 4. **留出新图给晋级评测**。在开发前固定种子清单。对每个强对手分别看完整换边地图的胜负、平均资金分差、是否有单边崩盘，再决定是否更新主力。本仓库示例 19417 已用于调试及实测，后续当作回归图。
 
 不同电脑或云任务可分不同种子，分别生成 JSONL。使用 `python3 arena_report.py shard-1.jsonl shard-2.jsonl --json` 合并；重复拷贝去重，同一策略名存在不同代码或同一场出现两套结果时会提示。报告只在两个出生位都正常结算后计入成对战绩与分差，剩余正常场次及弃权/环境错误单列。不同机器若为同一份已校验代码使用不同文件名，可加 `--by-hash` 按完整 SHA-256 合并。独立复跑同一种子时应各自汇总。相同棋盘并不固定神经网络搜索的时间预算或每个随机策略的结果。

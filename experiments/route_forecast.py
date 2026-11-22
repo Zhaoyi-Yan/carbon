@@ -236,7 +236,7 @@ def export_candidate(template, path, weights):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--strategy', type=Path, default=ROOT/'submission.py')
+    parser.add_argument('--strategy', type=Path, default=ROOT/'opponents'/'yan-v2.py')
     parser.add_argument('--replays', type=Path, default=ROOT/'replays'/'apollo')
     parser.add_argument('--target', default='CarbonEdge_Apollo')
     parser.add_argument('--external-replays', type=Path, help='Optional replay directory or official snapshot with index.json')

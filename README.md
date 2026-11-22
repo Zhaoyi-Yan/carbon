@@ -1,10 +1,10 @@
 # Carbon League 策略
 
-根目录的 [submission.py](submission.py) 是用于比赛的单文件 Python 策略，权重已内嵌。标准 15×15 棋盘使用 NumPy 和 PyTorch CPU 在本地推理。当前版本为 **v5-tree-value**，用公开回放训练行动和招募模型，并在搜索中估算树木未来 18 步的收益。
+根目录的 [submission.py](submission.py) 是用于比赛的单文件 Python 策略，权重已内嵌。标准 15×15 棋盘使用 NumPy 和 PyTorch CPU 在本地推理。当前版本为 **yan-v3**（`v6-tree-guard-batch`）。它沿用公开回放训练的行动和招募模型，在争夺树木时比较改种邻格、派空载采集员协防等走法，并在 CPU 上批量采样模拟行动。
 
-线上策略名 **yan-v2** 对应本仓库的 v5-tree-value，上一版 **yan-v1** 对应 v3-search。两个对应关系均已通过下载本人策略并比对完整文件 SHA-256 确认。每轮候选先在相同地图交换出生位，挑战冻结的 yan-v2。[自对战用法](ARENA.md)
+yan-v3 在四张预先留出的新图上与 yan-v2 换边对战，得到 **5 胜 3 负，场均资金领先 176.63**。已按该文件提交线上评测。今后的本地候选默认挑战冻结的 yan-v3。上一版 yan-v2 对应 `v5-tree-value`，yan-v1 对应 `v3-search`。[八局逐图结果](analysis/arena/yan-v3-qualification.md) · [自对战用法](ARENA.md)
 
-## 验证结果
+## yan-v2 的历史验证结果
 
 | 本地对手 | 地图种子 | 换边战绩 | 平均资金领先 |
 | --- | --- | --- | --- |
@@ -30,7 +30,7 @@ Apollo 的 21 场公开回放用于训练和选择权重，与 Apollo 本体的�
 python train_replays.py --output /tmp/carbon-retrained
 CARBON_DEBUG=1 python scripts/selfplay.py \
   --candidate /tmp/carbon-retrained/candidate.py --seeds 733 809 \
-  --jobs 1 --output arena-runs/retrained-vs-yan-v2.jsonl
+  --jobs 1 --output arena-runs/retrained-vs-yan-v3.jsonl
 ```
 
 每轮开发用独立 Git 提交保存策略和评测结果，记录对手、种子、出生位和已知败局。沿用主线的版本打标签，未验收的候选可保存在实验分支。GitHub 用于公开代码和复现实验，比赛平台提交由维护者另行决定。

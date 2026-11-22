@@ -124,7 +124,7 @@ def export(template, output):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--base', type=Path, default=Path(__file__).resolve().parents[1]/'submission.py')
+    parser.add_argument('--base', type=Path, default=Path(__file__).resolve().parents[1]/'opponents'/'yan-v2.py')
     parser.add_argument('--output', type=Path, required=True)
     args = parser.parse_args()
     export(args.base, args.output)
