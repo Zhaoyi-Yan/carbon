@@ -410,8 +410,9 @@ def agent(observation, configuration):
             continue
         want_planter = planters < MAX_PLANTERS and remaining > 24 and (
             (step == 0 and (OPENING == "trees" or (OPENING == "mixed" and not planters)))
-            or (not planters and (collectors >= 1 or cash >= planter_cost + plant))
-            or (collectors >= 4 and cash >= 155 and price <= 105)
+            or (not planters and (step >= 12 or OPENING != "collectors")
+                and (collectors >= 1 or cash >= planter_cost + plant))
+            or (collectors >= 4 and cash >= 105 + 25 * planters and price <= 105)
         )
         if want_planter and cash - tree_budget >= planter_cost + plant:
             actions[key] = "RECPLANTER"
