@@ -14,7 +14,7 @@ def ridge(x, y, penalty):
     return np.linalg.solve(x.T @ x + penalty*np.eye(x.shape[1]), x.T @ y)
 
 
-def fit(cache, weights, report):
+def fit(cache, weights, report, credit=None):
     torch.set_num_threads(2)
     torch.manual_seed(5701)
     groups=defaultdict(list)
@@ -46,6 +46,8 @@ def fit(cache, weights, report):
         with np.load(path) as z:
             for k in 'HAKTEC YJBP'.replace(' ',''):
                 target[k].append(z[k])
+        if credit and not hold:
+            target['advantage'].append(np.load(credit/(path.stem+'.npy')))
     for part in (train,valid):
         for k in part:
             part[k]=np.concatenate(part[k])
@@ -68,6 +70,15 @@ def fit(cache, weights, report):
             m=part['K']==role; logits[m]=H[m]@base_w[role].T+base_b[role]
         return torch.from_numpy((H-hmean)/hstd),torch.from_numpy(logits),t,k,torch.from_numpy(part['A'].astype('int64'))
     tr=tensors(train); va=tensors(valid)
+    advantage_weights=None
+    if credit:
+        # Center by teacher to avoid reinforcing farmed wins against weak opponents.
+        signal=train['advantage'].copy()
+        for teacher in range(20):
+            mask=train['T']==teacher
+            signal[mask]-=np.median(signal[mask])
+        rank=np.exp(-train['T'].astype(float)/10.)
+        advantage_weights=torch.from_numpy(((.68+.65*rank)*np.exp(np.clip(signal/.43,-1.1,1.1))).astype('float32'))
     def scores(data,ids):
         h,prior,t,k,y=data
         ti,ki=t[ids],k[ids]
@@ -86,7 +97,11 @@ def fit(cache, weights, report):
     for epoch in range(14):
         for ids in torch.randperm(len(tr[0])).split(2048):
             pred,y=scores(tr,ids)
-            loss=F.cross_entropy(pred,y)+.012*w.square().mean()+.015*shared.square().mean()
+            imitation=F.cross_entropy(pred,y,reduction='none')
+            if advantage_weights is not None:
+                weights_batch=advantage_weights[ids]
+                imitation=(weights_batch*imitation).sum()/weights_batch.sum()
+            loss=imitation.mean()+.012*w.square().mean()+.015*shared.square().mean()
             opt.zero_grad();loss.backward();opt.step()
         metric=metrics(va);history.append(metric)
         if best is None or metric['nll'] < best[0]:
@@ -127,4 +142,5 @@ def fit(cache, weights, report):
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
     for arg in ('cache','weights','report'):p.add_argument(arg,type=Path)
-    a=p.parse_args();fit(a.cache,a.weights,a.report)
+    p.add_argument('--credit',type=Path)
+    a=p.parse_args();fit(a.cache,a.weights,a.report,a.credit)
