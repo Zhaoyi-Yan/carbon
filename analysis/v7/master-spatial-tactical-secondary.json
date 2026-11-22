@@ -1,0 +1,503 @@
+{
+  "parent_sha": "d0ba5f631ceeb9ba5670a0013422caca414e407252e6907b90ebe9b33700be87",
+  "candidate_sha": "7c8a752622a80a4565c6a136fae5f8a37a517c077d04182e63531ff969f8215e",
+  "target_match": "03100a95e8647c51a4d642fe08d856dd",
+  "target": {
+    "step": 190,
+    "seat": 0,
+    "budget": "fixed",
+    "planner_unit_cost": [
+      0.001,
+      0.001,
+      0.001,
+      0.001
+    ],
+    "disabled_width": 6,
+    "seed": 205864169,
+    "layout": "6121ec0ff5ccac020570cc3ac18f9dbe4ce60ddab3f00075aa1dd3afa8f15d49",
+    "cash": 3769.49,
+    "units": [
+      10,
+      10
+    ],
+    "old_gate": false,
+    "active": {
+      "player-0-worker-29": "light_enemy_depot",
+      "player-0-worker-41": "light_enemy_depot"
+    },
+    "locked": {},
+    "frozen_expert22_cached": false,
+    "original_candidates": 6,
+    "after": 6,
+    "proposed": false,
+    "unique": false,
+    "changed": {},
+    "actual_moves_on_changed": {},
+    "selected_proposal": false,
+    "search_changed": {},
+    "proposal_ms": 16.11,
+    "baseline_ms": 179.007,
+    "with_ms": 143.682,
+    "total_delta_ms": -35.325
+  },
+  "archive": [
+    {
+      "step": 52,
+      "seat": 0,
+      "budget": "fixed",
+      "planner_unit_cost": [
+        0.001,
+        0.001,
+        0.001,
+        0.001
+      ],
+      "disabled_width": 6,
+      "seed": 397168106,
+      "layout": "cd759828f550a19d03cc9239fc553ef0fe1f1d96e3f94c37d4bedbf1d3a07fac",
+      "cash": 268.13,
+      "units": [
+        10,
+        10
+      ],
+      "old_gate": false,
+      "active": {
+        "player-0-worker-8": "loaded_home",
+        "player-0-worker-13": "light_enemy_carrier"
+      },
+      "locked": {},
+      "frozen_expert22_cached": true,
+      "original_candidates": 6,
+      "after": 6,
+      "proposed": false,
+      "unique": false,
+      "changed": {},
+      "actual_moves_on_changed": {},
+      "selected_proposal": false,
+      "search_changed": {},
+      "proposal_ms": 1.606,
+      "baseline_ms": 117.875,
+      "with_ms": 127.89,
+      "total_delta_ms": 10.015,
+      "match": "cf276b32e4fd38f43497e60f271a3854",
+      "observed": "Master7sE"
+    },
+    {
+      "step": 73,
+      "seat": 1,
+      "budget": "fixed",
+      "planner_unit_cost": [
+        0.001,
+        0.001,
+        0.001,
+        0.001
+      ],
+      "disabled_width": 6,
+      "seed": 2098247112,
+      "layout": "5027acfe875d56307ab89e4bcc17991c7336c2244333291a2b2c180ba4320a69",
+      "cash": 472.86,
+      "units": [
+        10,
+        10
+      ],
+      "old_gate": false,
+      "active": {
+        "player-1-worker-6": "light_enemy_depot",
+        "player-1-worker-10": "loaded_home"
+      },
+      "locked": {},
+      "frozen_expert22_cached": true,
+      "original_candidates": 6,
+      "after": 6,
+      "proposed": false,
+      "unique": false,
+      "changed": {},
+      "actual_moves_on_changed": {},
+      "selected_proposal": false,
+      "search_changed": {},
+      "proposal_ms": 1.418,
+      "baseline_ms": 123.626,
+      "with_ms": 103.708,
+      "total_delta_ms": -19.918,
+      "match": "54168b172c76450d6dba9682995ce0b6",
+      "observed": "Master7sE"
+    },
+    {
+      "step": 88,
+      "seat": 1,
+      "budget": "fixed",
+      "planner_unit_cost": [
+        0.001,
+        0.001,
+        0.001,
+        0.001
+      ],
+      "disabled_width": 6,
+      "seed": 2138638072,
+      "layout": "b330a7ab42bab1157aa268b56db5cdd1a6ae7bae958e1b588b62f78c065a6dab",
+      "cash": 645.98,
+      "units": [
+        10,
+        3
+      ],
+      "old_gate": false,
+      "active": {
+        "player-1-worker-0": "light_enemy_depot",
+        "player-1-worker-4": "light_enemy_depot",
+        "player-1-worker-8": "light_enemy_depot",
+        "player-1-worker-13": "light_enemy_depot",
+        "player-1-worker-17": "light_enemy_depot",
+        "player-1-worker-18": "light_enemy_depot",
+        "player-1-worker-19": "light_enemy_depot"
+      },
+      "locked": {},
+      "frozen_expert22_cached": true,
+      "original_candidates": 6,
+      "after": 7,
+      "proposed": true,
+      "unique": true,
+      "changed": {
+        "player-1-worker-13": [
+          "RIGHT",
+          "LEFT"
+        ],
+        "player-1-worker-17": [
+          "UP",
+          "DOWN"
+        ],
+        "player-1-worker-18": [
+          "DOWN",
+          "LEFT"
+        ],
+        "player-1-worker-8": [
+          "DOWN",
+          "RIGHT"
+        ]
+      },
+      "actual_moves_on_changed": {
+        "player-1-worker-13": "LEFT",
+        "player-1-worker-17": "UP",
+        "player-1-worker-18": "DOWN",
+        "player-1-worker-8": "RIGHT"
+      },
+      "selected_proposal": false,
+      "search_changed": {},
+      "proposal_ms": 1.31,
+      "baseline_ms": 129.272,
+      "with_ms": 250.016,
+      "total_delta_ms": 120.744,
+      "match": "434cf4c3f8a146d85c4bc2e02bf39f77",
+      "observed": "Master7sD"
+    },
+    {
+      "step": 109,
+      "seat": 0,
+      "budget": "fixed",
+      "planner_unit_cost": [
+        0.001,
+        0.001,
+        0.001,
+        0.001
+      ],
+      "disabled_width": 6,
+      "seed": 838137618,
+      "layout": "cb834f2f869483abf59961c9412320d145cb13a40020ae1e260cbcf01f121310",
+      "cash": 755.33,
+      "units": [
+        9,
+        9
+      ],
+      "old_gate": false,
+      "active": {
+        "player-0-worker-6": "light_enemy_depot",
+        "player-0-worker-20": "loaded_home"
+      },
+      "locked": {},
+      "frozen_expert22_cached": true,
+      "original_candidates": 6,
+      "after": 6,
+      "proposed": false,
+      "unique": false,
+      "changed": {},
+      "actual_moves_on_changed": {},
+      "selected_proposal": false,
+      "search_changed": {},
+      "proposal_ms": 2.181,
+      "baseline_ms": 167.546,
+      "with_ms": 185.706,
+      "total_delta_ms": 18.161,
+      "match": "1fac02757baa559ff63b417b27402365",
+      "observed": "Master7sD"
+    },
+    {
+      "step": 124,
+      "seat": 0,
+      "budget": "fixed",
+      "planner_unit_cost": [
+        0.001,
+        0.001,
+        0.001,
+        0.001
+      ],
+      "disabled_width": 6,
+      "seed": 332928120,
+      "layout": "12d2211f5ecc772066c29b8ef5ec7e4af7f9d05d2b73b5ac3ca785d18ccc9359",
+      "cash": 1563.2,
+      "units": [
+        10,
+        9
+      ],
+      "old_gate": false,
+      "active": {
+        "player-0-worker-28": "light_enemy_depot"
+      },
+      "locked": {},
+      "frozen_expert22_cached": true,
+      "original_candidates": 6,
+      "after": 6,
+      "proposed": false,
+      "unique": false,
+      "changed": {},
+      "actual_moves_on_changed": {},
+      "selected_proposal": false,
+      "search_changed": {},
+      "proposal_ms": 2.081,
+      "baseline_ms": 135.701,
+      "with_ms": 155.263,
+      "total_delta_ms": 19.562,
+      "match": "b655004c39ceeca631f9047dbc5a58c6",
+      "observed": "Master7sD"
+    },
+    {
+      "step": 142,
+      "seat": 0,
+      "budget": "fixed",
+      "planner_unit_cost": [
+        0.001,
+        0.001,
+        0.001,
+        0.001
+      ],
+      "disabled_width": 6,
+      "seed": 207978459,
+      "layout": "0949ff4575f4d4a290de46720f8cdf57d1dc6bb51ad8e4a8a79082b6a3c9ce71",
+      "cash": 1752.7,
+      "units": [
+        10,
+        10
+      ],
+      "old_gate": false,
+      "active": {
+        "player-0-worker-21": "light_enemy_depot"
+      },
+      "locked": {},
+      "frozen_expert22_cached": false,
+      "original_candidates": 6,
+      "after": 6,
+      "proposed": false,
+      "unique": false,
+      "changed": {},
+      "actual_moves_on_changed": {},
+      "selected_proposal": false,
+      "search_changed": {},
+      "proposal_ms": 9.629,
+      "baseline_ms": 130.981,
+      "with_ms": 121.685,
+      "total_delta_ms": -9.296,
+      "match": "8a8d74fbaf9093a08ac01d9b41c22b6b",
+      "observed": "Master7sD"
+    },
+    {
+      "step": 158,
+      "seat": 0,
+      "budget": "fixed",
+      "planner_unit_cost": [
+        0.001,
+        0.001,
+        0.001,
+        0.001
+      ],
+      "disabled_width": 6,
+      "seed": 1086020190,
+      "layout": "85321835bab0d3df01e4db30b3e6015c4edb7d6086a9674d4a4af103e639fb63",
+      "cash": 4127.27,
+      "units": [
+        10,
+        1
+      ],
+      "old_gate": false,
+      "active": {
+        "player-0-worker-16": "loaded_home",
+        "player-0-worker-24": "light_enemy_depot"
+      },
+      "locked": {},
+      "frozen_expert22_cached": true,
+      "original_candidates": 6,
+      "after": 7,
+      "proposed": true,
+      "unique": true,
+      "changed": {
+        "player-0-worker-24": [
+          "LEFT",
+          "DOWN"
+        ]
+      },
+      "actual_moves_on_changed": {
+        "player-0-worker-24": "LEFT"
+      },
+      "selected_proposal": false,
+      "search_changed": {},
+      "proposal_ms": 1.486,
+      "baseline_ms": 176.375,
+      "with_ms": 167.822,
+      "total_delta_ms": -8.554,
+      "match": "293cb5274c0f698de7ed1c67d8c61ab5",
+      "observed": "Master7sD"
+    },
+    {
+      "step": 173,
+      "seat": 1,
+      "budget": "fixed",
+      "planner_unit_cost": [
+        0.001,
+        0.001,
+        0.001,
+        0.001
+      ],
+      "disabled_width": 6,
+      "seed": 366621913,
+      "layout": "a7b1ef7858c412b8659fdbce6da10dde19cd0ee6f0a5b164575e9374bb6a7350",
+      "cash": 3637.26,
+      "units": [
+        10,
+        1
+      ],
+      "old_gate": false,
+      "active": {
+        "player-1-worker-3": "loaded_home",
+        "player-1-worker-9": "loaded_home",
+        "player-1-worker-13": "loaded_home"
+      },
+      "locked": {},
+      "frozen_expert22_cached": true,
+      "original_candidates": 6,
+      "after": 7,
+      "proposed": true,
+      "unique": true,
+      "changed": {
+        "player-1-worker-13": [
+          "STAY",
+          "LEFT"
+        ]
+      },
+      "actual_moves_on_changed": {
+        "player-1-worker-13": "STAY"
+      },
+      "selected_proposal": false,
+      "search_changed": {},
+      "proposal_ms": 2.013,
+      "baseline_ms": 103.07,
+      "with_ms": 126.387,
+      "total_delta_ms": 23.317,
+      "match": "c554160dc9b3b0261a00889fc6b5754f",
+      "observed": "Master7sD"
+    },
+    {
+      "step": 194,
+      "seat": 1,
+      "budget": "fixed",
+      "planner_unit_cost": [
+        0.001,
+        0.001,
+        0.001,
+        0.001
+      ],
+      "disabled_width": 6,
+      "seed": 1822130955,
+      "layout": "717ff4e42071fb07e8b9efc4c8b04dfd0663e4bb70a333055e919e95aa3da600",
+      "cash": 3456.6,
+      "units": [
+        10,
+        10
+      ],
+      "old_gate": false,
+      "active": {
+        "player-1-worker-42": "light_enemy_depot"
+      },
+      "locked": {},
+      "frozen_expert22_cached": false,
+      "original_candidates": 6,
+      "after": 6,
+      "proposed": false,
+      "unique": false,
+      "changed": {},
+      "actual_moves_on_changed": {},
+      "selected_proposal": false,
+      "search_changed": {},
+      "proposal_ms": 11.365,
+      "baseline_ms": 121.504,
+      "with_ms": 151.767,
+      "total_delta_ms": 30.262,
+      "match": "c035d185e221aaa0457893aa86074eab",
+      "observed": "published QQ-v6"
+    },
+    {
+      "step": 215,
+      "seat": 1,
+      "budget": "fixed",
+      "planner_unit_cost": [
+        0.001,
+        0.001,
+        0.001,
+        0.001
+      ],
+      "disabled_width": 6,
+      "seed": 537394796,
+      "layout": "37db1a81e6e6a2229a9db732f064754f2af11d66bc306c83800efde5c9acb2d5",
+      "cash": 4617.74,
+      "units": [
+        10,
+        10
+      ],
+      "old_gate": false,
+      "active": {
+        "player-1-worker-21": "loaded_home",
+        "player-1-worker-44": "light_enemy_depot"
+      },
+      "locked": {},
+      "frozen_expert22_cached": true,
+      "original_candidates": 6,
+      "after": 6,
+      "proposed": false,
+      "unique": false,
+      "changed": {},
+      "actual_moves_on_changed": {},
+      "selected_proposal": false,
+      "search_changed": {},
+      "proposal_ms": 1.387,
+      "baseline_ms": 114.888,
+      "with_ms": 137.664,
+      "total_delta_ms": 22.776,
+      "match": "0ef592a8efa3a24b7dab62a439f659c0",
+      "observed": "published QQ-v6"
+    }
+  ],
+  "timing": {
+    "proposal_ms": {
+      "p50": 1.809,
+      "p95": 10.584
+    },
+    "total_delta_ms": {
+      "p50": 18.861,
+      "p95": 80.027
+    },
+    "baseline_ms": {
+      "p50": 126.449,
+      "p95": 172.402
+    },
+    "with_ms": {
+      "p50": 144.715,
+      "p95": 221.076
+    }
+  },
+  "method": "Options differ by a single appended tactical joint; all old candidates are asserted identical and in the same order, and changes to bases or protected units are rejected. width six plus one, depth two, planner budget 3s; single CPU, enabled/disabled ordering alternates. Inputs legal player carbon, archived actual historical orders. Target warms all 190 root observations, other maps have exact fog/movement tape and six previous root router updates. Search comparison ends before downstream safeguards. Total timings include normal local CPU noise and the additional simulations; no whole-game claim."
+}

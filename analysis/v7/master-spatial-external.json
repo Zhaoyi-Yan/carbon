@@ -1,0 +1,788 @@
+{
+  "sources": [
+    {
+      "mid": "cf276b32e4fd38f43497e60f271a3854",
+      "path": "../v7-data/distill-public/cf276b32e4fd38f43497e60f271a3854-1.json.gz",
+      "name": "Master7sE",
+      "s": 0,
+      "layout": "cd759828f550a19d03cc9239fc553ef0fe1f1d96e3f94c37d4bedbf1d3a07fac",
+      "canonical": "0c8230729bf0b139f18228d1a8b793733c7b2ce42e420be968a4c96ffd9d51d5",
+      "metrics": {
+        "all": {
+          "directional_known": {
+            "n": 497,
+            "nll": 0.57636,
+            "hit": 0.7505,
+            "nonidle_precision": 0.9565,
+            "nonidle_recall": 0.9689
+          },
+          "spatial4": {
+            "n": 497,
+            "nll": 0.56399,
+            "hit": 0.75654,
+            "nonidle_precision": 0.9569,
+            "nonidle_recall": 0.9767
+          },
+          "frozen_root": {
+            "n": 497,
+            "nll": 0.57301,
+            "hit": 0.75855,
+            "nonidle_precision": 0.9683,
+            "nonidle_recall": 0.9508
+          }
+        },
+        "light_enemy_base": {
+          "directional_known": {
+            "n": 31,
+            "nll": 0.80094,
+            "hit": 0.64516,
+            "nonidle_precision": 0.9231,
+            "nonidle_recall": 0.9231
+          },
+          "spatial4": {
+            "n": 31,
+            "nll": 0.82601,
+            "hit": 0.64516,
+            "nonidle_precision": 0.9231,
+            "nonidle_recall": 0.9231
+          },
+          "frozen_root": {
+            "n": 31,
+            "nll": 0.76542,
+            "hit": 0.67742,
+            "nonidle_precision": 0.9259,
+            "nonidle_recall": 0.9615
+          }
+        },
+        "heavy_home": {
+          "directional_known": {
+            "n": 35,
+            "nll": 0.2835,
+            "hit": 0.94286,
+            "nonidle_precision": 0.963,
+            "nonidle_recall": 1.0
+          },
+          "spatial4": {
+            "n": 35,
+            "nll": 0.22866,
+            "hit": 0.94286,
+            "nonidle_precision": 0.963,
+            "nonidle_recall": 1.0
+          },
+          "frozen_root": {
+            "n": 35,
+            "nll": 0.23936,
+            "hit": 0.97143,
+            "nonidle_precision": 0.963,
+            "nonidle_recall": 1.0
+          }
+        }
+      }
+    },
+    {
+      "mid": "54168b172c76450d6dba9682995ce0b6",
+      "path": "/Users/yanzhaoyi/DevEcoStudioProjects/gm/arena-runs/v7-lab/../v6r-data/latest-followup/54168b172c76450d6dba9682995ce0b6-1.json.gz",
+      "name": "Master7sE",
+      "s": 1,
+      "layout": "5027acfe875d56307ab89e4bcc17991c7336c2244333291a2b2c180ba4320a69",
+      "canonical": "1d5f595eee1d24c6290e2c2336be1dc60c2ff7655bc6b0e446023be6a2ca35c8",
+      "metrics": {
+        "all": {
+          "directional_known": {
+            "n": 515,
+            "nll": 0.52521,
+            "hit": 0.78058,
+            "nonidle_precision": 0.9652,
+            "nonidle_recall": 0.9604
+          },
+          "spatial4": {
+            "n": 515,
+            "nll": 0.52314,
+            "hit": 0.79417,
+            "nonidle_precision": 0.9721,
+            "nonidle_recall": 0.948
+          },
+          "frozen_root": {
+            "n": 515,
+            "nll": 0.53929,
+            "hit": 0.78252,
+            "nonidle_precision": 0.9766,
+            "nonidle_recall": 0.9282
+          }
+        },
+        "light_enemy_base": {
+          "directional_known": {
+            "n": 35,
+            "nll": 0.71422,
+            "hit": 0.65714,
+            "nonidle_precision": 0.8929,
+            "nonidle_recall": 0.8621
+          },
+          "spatial4": {
+            "n": 35,
+            "nll": 0.66878,
+            "hit": 0.68571,
+            "nonidle_precision": 0.8966,
+            "nonidle_recall": 0.8966
+          },
+          "frozen_root": {
+            "n": 35,
+            "nll": 0.70653,
+            "hit": 0.68571,
+            "nonidle_precision": 0.9231,
+            "nonidle_recall": 0.8276
+          }
+        },
+        "heavy_home": {
+          "directional_known": {
+            "n": 35,
+            "nll": 0.55554,
+            "hit": 0.74286,
+            "nonidle_precision": 0.9667,
+            "nonidle_recall": 0.9667
+          },
+          "spatial4": {
+            "n": 35,
+            "nll": 0.54174,
+            "hit": 0.77143,
+            "nonidle_precision": 1.0,
+            "nonidle_recall": 0.9
+          },
+          "frozen_root": {
+            "n": 35,
+            "nll": 0.69307,
+            "hit": 0.74286,
+            "nonidle_precision": 1.0,
+            "nonidle_recall": 0.8667
+          }
+        }
+      }
+    },
+    {
+      "mid": "434cf4c3f8a146d85c4bc2e02bf39f77",
+      "path": "/Users/yanzhaoyi/DevEcoStudioProjects/gm/arena-runs/v7-lab/../v5-data/history/replays/434cf4c3f8a146d85c4bc2e02bf39f77-1.json.gz",
+      "name": "Master7sD",
+      "s": 1,
+      "layout": "b330a7ab42bab1157aa268b56db5cdd1a6ae7bae958e1b588b62f78c065a6dab",
+      "canonical": "1e061b7c4948084050682a4c9b75c1c3ad6d361db761289eae5c8a38a2e9e7cd",
+      "metrics": {
+        "all": {
+          "directional_known": {
+            "n": 488,
+            "nll": 1.06061,
+            "hit": 0.60246,
+            "nonidle_precision": 0.93,
+            "nonidle_recall": 0.9483
+          },
+          "spatial4": {
+            "n": 488,
+            "nll": 1.03483,
+            "hit": 0.62295,
+            "nonidle_precision": 0.9319,
+            "nonidle_recall": 0.9433
+          },
+          "frozen_root": {
+            "n": 488,
+            "nll": 1.16414,
+            "hit": 0.59836,
+            "nonidle_precision": 0.9364,
+            "nonidle_recall": 0.9064
+          }
+        },
+        "light_enemy_base": {
+          "directional_known": {
+            "n": 160,
+            "nll": 0.91749,
+            "hit": 0.61875,
+            "nonidle_precision": 0.9412,
+            "nonidle_recall": 0.9931
+          },
+          "spatial4": {
+            "n": 160,
+            "nll": 0.91746,
+            "hit": 0.6375,
+            "nonidle_precision": 0.9351,
+            "nonidle_recall": 0.9931
+          },
+          "frozen_root": {
+            "n": 160,
+            "nll": 0.95402,
+            "hit": 0.6125,
+            "nonidle_precision": 0.9281,
+            "nonidle_recall": 0.9793
+          }
+        },
+        "heavy_home": {
+          "directional_known": {
+            "n": 31,
+            "nll": 1.22358,
+            "hit": 0.54839,
+            "nonidle_precision": 0.8636,
+            "nonidle_recall": 0.9048
+          },
+          "spatial4": {
+            "n": 31,
+            "nll": 1.14907,
+            "hit": 0.48387,
+            "nonidle_precision": 0.85,
+            "nonidle_recall": 0.8095
+          },
+          "frozen_root": {
+            "n": 31,
+            "nll": 1.39975,
+            "hit": 0.45161,
+            "nonidle_precision": 0.8125,
+            "nonidle_recall": 0.619
+          }
+        }
+      }
+    },
+    {
+      "mid": "1fac02757baa559ff63b417b27402365",
+      "path": "/Users/yanzhaoyi/DevEcoStudioProjects/gm/arena-runs/v7-lab/../v5-data/history/replays/1fac02757baa559ff63b417b27402365-1.json.gz",
+      "name": "Master7sD",
+      "s": 0,
+      "layout": "cb834f2f869483abf59961c9412320d145cb13a40020ae1e260cbcf01f121310",
+      "canonical": "26a13880d08e6f91fe4cf0e273dfc4278b0adb0c18ab89162c07fc2986d35ba0",
+      "metrics": {
+        "all": {
+          "directional_known": {
+            "n": 515,
+            "nll": 0.59789,
+            "hit": 0.74369,
+            "nonidle_precision": 0.9584,
+            "nonidle_recall": 0.9469
+          },
+          "spatial4": {
+            "n": 515,
+            "nll": 0.60251,
+            "hit": 0.73592,
+            "nonidle_precision": 0.9722,
+            "nonidle_recall": 0.93
+          },
+          "frozen_root": {
+            "n": 515,
+            "nll": 0.63991,
+            "hit": 0.73592,
+            "nonidle_precision": 0.9868,
+            "nonidle_recall": 0.9034
+          }
+        },
+        "light_enemy_base": {
+          "directional_known": {
+            "n": 50,
+            "nll": 0.5089,
+            "hit": 0.74,
+            "nonidle_precision": 0.9512,
+            "nonidle_recall": 0.9286
+          },
+          "spatial4": {
+            "n": 50,
+            "nll": 0.50849,
+            "hit": 0.74,
+            "nonidle_precision": 0.9512,
+            "nonidle_recall": 0.9286
+          },
+          "frozen_root": {
+            "n": 50,
+            "nll": 0.51301,
+            "hit": 0.78,
+            "nonidle_precision": 1.0,
+            "nonidle_recall": 0.9048
+          }
+        },
+        "heavy_home": {
+          "directional_known": {
+            "n": 49,
+            "nll": 0.62439,
+            "hit": 0.69388,
+            "nonidle_precision": 0.9211,
+            "nonidle_recall": 0.875
+          },
+          "spatial4": {
+            "n": 49,
+            "nll": 0.61843,
+            "hit": 0.65306,
+            "nonidle_precision": 0.9412,
+            "nonidle_recall": 0.8
+          },
+          "frozen_root": {
+            "n": 49,
+            "nll": 0.78223,
+            "hit": 0.59184,
+            "nonidle_precision": 0.9355,
+            "nonidle_recall": 0.725
+          }
+        }
+      }
+    },
+    {
+      "mid": "b655004c39ceeca631f9047dbc5a58c6",
+      "path": "/Users/yanzhaoyi/DevEcoStudioProjects/gm/arena-runs/v7-lab/../v5-data/history/replays/b655004c39ceeca631f9047dbc5a58c6-1.json.gz",
+      "name": "Master7sD",
+      "s": 0,
+      "layout": "12d2211f5ecc772066c29b8ef5ec7e4af7f9d05d2b73b5ac3ca785d18ccc9359",
+      "canonical": "38c1e009d6a76e88620e541d444296cf1c21175e322f146a41188bcdec1dea0a",
+      "metrics": {
+        "all": {
+          "directional_known": {
+            "n": 500,
+            "nll": 0.60363,
+            "hit": 0.76,
+            "nonidle_precision": 0.9357,
+            "nonidle_recall": 0.9554
+          },
+          "spatial4": {
+            "n": 500,
+            "nll": 0.58713,
+            "hit": 0.766,
+            "nonidle_precision": 0.95,
+            "nonidle_recall": 0.9475
+          },
+          "frozen_root": {
+            "n": 500,
+            "nll": 0.61168,
+            "hit": 0.76,
+            "nonidle_precision": 0.9622,
+            "nonidle_recall": 0.9344
+          }
+        },
+        "light_enemy_base": {
+          "directional_known": {
+            "n": 41,
+            "nll": 0.87289,
+            "hit": 0.73171,
+            "nonidle_precision": 0.871,
+            "nonidle_recall": 0.9
+          },
+          "spatial4": {
+            "n": 41,
+            "nll": 0.84182,
+            "hit": 0.68293,
+            "nonidle_precision": 0.8182,
+            "nonidle_recall": 0.9
+          },
+          "frozen_root": {
+            "n": 41,
+            "nll": 0.91238,
+            "hit": 0.68293,
+            "nonidle_precision": 0.8438,
+            "nonidle_recall": 0.9
+          }
+        },
+        "heavy_home": {
+          "directional_known": {
+            "n": 50,
+            "nll": 0.35956,
+            "hit": 0.86,
+            "nonidle_precision": 0.9231,
+            "nonidle_recall": 1.0
+          },
+          "spatial4": {
+            "n": 50,
+            "nll": 0.30911,
+            "hit": 0.92,
+            "nonidle_precision": 0.973,
+            "nonidle_recall": 1.0
+          },
+          "frozen_root": {
+            "n": 50,
+            "nll": 0.29717,
+            "hit": 0.9,
+            "nonidle_precision": 1.0,
+            "nonidle_recall": 0.9444
+          }
+        }
+      }
+    },
+    {
+      "mid": "8a8d74fbaf9093a08ac01d9b41c22b6b",
+      "path": "/Users/yanzhaoyi/DevEcoStudioProjects/gm/arena-runs/v7-lab/../v5-data/history/replays/8a8d74fbaf9093a08ac01d9b41c22b6b-1.json.gz",
+      "name": "Master7sD",
+      "s": 0,
+      "layout": "0949ff4575f4d4a290de46720f8cdf57d1dc6bb51ad8e4a8a79082b6a3c9ce71",
+      "canonical": "5c3a1a6dfe87a8e3906026f1c39ba58c9545ae1cdd10bab02895b7d51cfdab87",
+      "metrics": {
+        "all": {
+          "directional_known": {
+            "n": 486,
+            "nll": 0.54608,
+            "hit": 0.7572,
+            "nonidle_precision": 0.9436,
+            "nonidle_recall": 0.9485
+          },
+          "spatial4": {
+            "n": 486,
+            "nll": 0.5439,
+            "hit": 0.76132,
+            "nonidle_precision": 0.9456,
+            "nonidle_recall": 0.9407
+          },
+          "frozen_root": {
+            "n": 486,
+            "nll": 0.56557,
+            "hit": 0.75926,
+            "nonidle_precision": 0.9626,
+            "nonidle_recall": 0.9278
+          }
+        },
+        "light_enemy_base": {
+          "directional_known": {
+            "n": 57,
+            "nll": 0.62766,
+            "hit": 0.66667,
+            "nonidle_precision": 0.9423,
+            "nonidle_recall": 0.9608
+          },
+          "spatial4": {
+            "n": 57,
+            "nll": 0.63014,
+            "hit": 0.70175,
+            "nonidle_precision": 0.9434,
+            "nonidle_recall": 0.9804
+          },
+          "frozen_root": {
+            "n": 57,
+            "nll": 0.62417,
+            "hit": 0.70175,
+            "nonidle_precision": 0.9615,
+            "nonidle_recall": 0.9804
+          }
+        },
+        "heavy_home": {
+          "directional_known": {
+            "n": 43,
+            "nll": 0.30262,
+            "hit": 0.90698,
+            "nonidle_precision": 0.9655,
+            "nonidle_recall": 1.0
+          },
+          "spatial4": {
+            "n": 43,
+            "nll": 0.28051,
+            "hit": 0.88372,
+            "nonidle_precision": 0.9643,
+            "nonidle_recall": 0.9643
+          },
+          "frozen_root": {
+            "n": 43,
+            "nll": 0.30267,
+            "hit": 0.86047,
+            "nonidle_precision": 0.963,
+            "nonidle_recall": 0.9286
+          }
+        }
+      }
+    },
+    {
+      "mid": "293cb5274c0f698de7ed1c67d8c61ab5",
+      "path": "/Users/yanzhaoyi/DevEcoStudioProjects/gm/arena-runs/v7-lab/replays/top-five/replays/293cb5274c0f698de7ed1c67d8c61ab5-1.json.gz",
+      "name": "Master7sD",
+      "s": 0,
+      "layout": "85321835bab0d3df01e4db30b3e6015c4edb7d6086a9674d4a4af103e639fb63",
+      "canonical": "489a6fa8a989753fe333a1c7cd8ccf6265505a4a6ade1aec3303a87907f01f0d",
+      "metrics": {
+        "all": {
+          "directional_known": {
+            "n": 488,
+            "nll": 0.98353,
+            "hit": 0.61475,
+            "nonidle_precision": 0.9499,
+            "nonidle_recall": 0.9244
+          },
+          "spatial4": {
+            "n": 488,
+            "nll": 0.98716,
+            "hit": 0.6209,
+            "nonidle_precision": 0.957,
+            "nonidle_recall": 0.922
+          },
+          "frozen_root": {
+            "n": 488,
+            "nll": 1.07622,
+            "hit": 0.6127,
+            "nonidle_precision": 0.9632,
+            "nonidle_recall": 0.8927
+          }
+        },
+        "light_enemy_base": {
+          "directional_known": {
+            "n": 169,
+            "nll": 0.95477,
+            "hit": 0.64497,
+            "nonidle_precision": 0.9748,
+            "nonidle_recall": 0.981
+          },
+          "spatial4": {
+            "n": 169,
+            "nll": 0.96233,
+            "hit": 0.63905,
+            "nonidle_precision": 0.9686,
+            "nonidle_recall": 0.9747
+          },
+          "frozen_root": {
+            "n": 169,
+            "nll": 0.97656,
+            "hit": 0.62722,
+            "nonidle_precision": 0.9686,
+            "nonidle_recall": 0.9747
+          }
+        },
+        "heavy_home": {
+          "directional_known": {
+            "n": 33,
+            "nll": 0.9404,
+            "hit": 0.63636,
+            "nonidle_precision": 0.8571,
+            "nonidle_recall": 0.7826
+          },
+          "spatial4": {
+            "n": 33,
+            "nll": 0.92618,
+            "hit": 0.69697,
+            "nonidle_precision": 0.9474,
+            "nonidle_recall": 0.7826
+          },
+          "frozen_root": {
+            "n": 33,
+            "nll": 1.28751,
+            "hit": 0.63636,
+            "nonidle_precision": 1.0,
+            "nonidle_recall": 0.6087
+          }
+        }
+      }
+    },
+    {
+      "mid": "c554160dc9b3b0261a00889fc6b5754f",
+      "path": "/Users/yanzhaoyi/DevEcoStudioProjects/gm/arena-runs/v7-lab/../v5-data/history/replays/c554160dc9b3b0261a00889fc6b5754f-1.json.gz",
+      "name": "Master7sD",
+      "s": 1,
+      "layout": "a7b1ef7858c412b8659fdbce6da10dde19cd0ee6f0a5b164575e9374bb6a7350",
+      "canonical": "344305234afcb0e526565f0ac2738b98e6fcf2cd1a3d57866b8ee9d8148643d4",
+      "metrics": {
+        "all": {
+          "directional_known": {
+            "n": 487,
+            "nll": 1.18775,
+            "hit": 0.54004,
+            "nonidle_precision": 0.92,
+            "nonidle_recall": 0.9246
+          },
+          "spatial4": {
+            "n": 487,
+            "nll": 1.1721,
+            "hit": 0.53593,
+            "nonidle_precision": 0.9276,
+            "nonidle_recall": 0.902
+          },
+          "frozen_root": {
+            "n": 487,
+            "nll": 1.31747,
+            "hit": 0.53799,
+            "nonidle_precision": 0.9377,
+            "nonidle_recall": 0.8693
+          }
+        },
+        "light_enemy_base": {
+          "directional_known": {
+            "n": 159,
+            "nll": 1.2264,
+            "hit": 0.50314,
+            "nonidle_precision": 0.9484,
+            "nonidle_recall": 0.98
+          },
+          "spatial4": {
+            "n": 159,
+            "nll": 1.22222,
+            "hit": 0.49686,
+            "nonidle_precision": 0.9481,
+            "nonidle_recall": 0.9733
+          },
+          "frozen_root": {
+            "n": 159,
+            "nll": 1.31231,
+            "hit": 0.50314,
+            "nonidle_precision": 0.9474,
+            "nonidle_recall": 0.96
+          }
+        },
+        "heavy_home": {
+          "directional_known": {
+            "n": 53,
+            "nll": 1.1247,
+            "hit": 0.54717,
+            "nonidle_precision": 0.875,
+            "nonidle_recall": 0.7368
+          },
+          "spatial4": {
+            "n": 53,
+            "nll": 1.1154,
+            "hit": 0.49057,
+            "nonidle_precision": 0.8889,
+            "nonidle_recall": 0.6316
+          },
+          "frozen_root": {
+            "n": 53,
+            "nll": 1.4502,
+            "hit": 0.5283,
+            "nonidle_precision": 0.9565,
+            "nonidle_recall": 0.5789
+          }
+        }
+      }
+    }
+  ],
+  "pooled": {
+    "Master7sE": {
+      "all": {
+        "directional_known": {
+          "n": 1012,
+          "nll": 0.55033,
+          "hit": 0.76581,
+          "nonidle_precision": 0.9609,
+          "nonidle_recall": 0.9646
+        },
+        "spatial4": {
+          "n": 1012,
+          "nll": 0.5432,
+          "hit": 0.77569,
+          "nonidle_precision": 0.9645,
+          "nonidle_recall": 0.962
+        },
+        "frozen_root": {
+          "n": 1012,
+          "nll": 0.55585,
+          "hit": 0.77075,
+          "nonidle_precision": 0.9725,
+          "nonidle_recall": 0.9392
+        }
+      },
+      "light_enemy_base": {
+        "directional_known": {
+          "n": 66,
+          "nll": 0.75495,
+          "hit": 0.65152,
+          "nonidle_precision": 0.9074,
+          "nonidle_recall": 0.8909
+        },
+        "spatial4": {
+          "n": 66,
+          "nll": 0.74263,
+          "hit": 0.66667,
+          "nonidle_precision": 0.9091,
+          "nonidle_recall": 0.9091
+        },
+        "frozen_root": {
+          "n": 66,
+          "nll": 0.73419,
+          "hit": 0.68182,
+          "nonidle_precision": 0.9245,
+          "nonidle_recall": 0.8909
+        }
+      },
+      "heavy_home": {
+        "directional_known": {
+          "n": 70,
+          "nll": 0.41952,
+          "hit": 0.84286,
+          "nonidle_precision": 0.9649,
+          "nonidle_recall": 0.9821
+        },
+        "spatial4": {
+          "n": 70,
+          "nll": 0.3852,
+          "hit": 0.85714,
+          "nonidle_precision": 0.9815,
+          "nonidle_recall": 0.9464
+        },
+        "frozen_root": {
+          "n": 70,
+          "nll": 0.46622,
+          "hit": 0.85714,
+          "nonidle_precision": 0.9811,
+          "nonidle_recall": 0.9286
+        }
+      }
+    },
+    "Master7sD": {
+      "all": {
+        "directional_known": {
+          "n": 2964,
+          "nll": 0.82696,
+          "hit": 0.67072,
+          "nonidle_precision": 0.9396,
+          "nonidle_recall": 0.9412
+        },
+        "spatial4": {
+          "n": 2964,
+          "nll": 0.8184,
+          "hit": 0.67476,
+          "nonidle_precision": 0.9473,
+          "nonidle_recall": 0.9307
+        },
+        "frozen_root": {
+          "n": 2964,
+          "nll": 0.89243,
+          "hit": 0.66835,
+          "nonidle_precision": 0.9581,
+          "nonidle_recall": 0.9053
+        }
+      },
+      "light_enemy_base": {
+        "directional_known": {
+          "n": 636,
+          "nll": 0.94365,
+          "hit": 0.61792,
+          "nonidle_precision": 0.9492,
+          "nonidle_recall": 0.974
+        },
+        "spatial4": {
+          "n": 636,
+          "nll": 0.94279,
+          "hit": 0.6195,
+          "nonidle_precision": 0.9428,
+          "nonidle_recall": 0.9722
+        },
+        "frozen_root": {
+          "n": 636,
+          "nll": 0.98267,
+          "hit": 0.61478,
+          "nonidle_precision": 0.9471,
+          "nonidle_recall": 0.9635
+        }
+      },
+      "heavy_home": {
+        "directional_known": {
+          "n": 259,
+          "nll": 0.73421,
+          "hit": 0.70656,
+          "nonidle_precision": 0.9061,
+          "nonidle_recall": 0.8817
+        },
+        "spatial4": {
+          "n": 259,
+          "nll": 0.70703,
+          "hit": 0.69498,
+          "nonidle_precision": 0.9333,
+          "nonidle_recall": 0.828
+        },
+        "frozen_root": {
+          "n": 259,
+          "nll": 0.88395,
+          "hit": 0.67181,
+          "nonidle_precision": 0.9517,
+          "nonidle_recall": 0.7419
+        }
+      }
+    }
+  },
+  "worker_only": true,
+  "parent_sha": "d0ba5f631ceeb9ba5670a0013422caca414e407252e6907b90ebe9b33700be87",
+  "selected_before_external": "Plain three-step auxiliary residual was frozen based on the 42/13 reproduction; the ten-step goal alternative was declined. No external labels used in either fit or model selection.",
+  "exclusion": "All 55 original layouts excluded, including symmetric layouts and exchanged bases; both screenshot matches and qualification layout fingerprints excluded.",
+  "cpu_inference_ms_p50_p95": [
+    10.191,
+    18.487
+  ]
+}
