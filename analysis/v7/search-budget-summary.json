@@ -1,0 +1,589 @@
+{
+ "plans": [
+  "8x2",
+  "4x4"
+ ],
+ "calibration": {
+  "8x2": {
+   "n": 30,
+   "cpu_ms": 119.123,
+   "simulated_turns": 54.0,
+   "root_actions": 8.0,
+   "achieved_depth": 2.0
+  },
+  "10x2": {
+   "n": 30,
+   "cpu_ms": 132.468,
+   "simulated_turns": 57.0,
+   "root_actions": 10.0,
+   "achieved_depth": 2.0
+  },
+  "12x2": {
+   "n": 30,
+   "cpu_ms": 149.255,
+   "simulated_turns": 60.0,
+   "root_actions": 12.0,
+   "achieved_depth": 2.0
+  },
+  "3x4": {
+   "n": 30,
+   "cpu_ms": 112.898,
+   "simulated_turns": 51.0,
+   "root_actions": 3.0,
+   "achieved_depth": 4.0
+  },
+  "4x4": {
+   "n": 30,
+   "cpu_ms": 116.828,
+   "simulated_turns": 52.0,
+   "root_actions": 4.0,
+   "achieved_depth": 4.0
+  },
+  "5x4": {
+   "n": 30,
+   "cpu_ms": 135.944,
+   "simulated_turns": 55.0,
+   "root_actions": 5.0,
+   "achieved_depth": 4.0
+  }
+ },
+ "games": [
+  {
+   "match": "f0bb1d19c41b61e8dca8ab5cc70ebadb",
+   "original": [
+    "RyanX-AIPowercore-it940-v4b",
+    "yan-v5"
+   ],
+   "fold": "dev",
+   "start": 190,
+   "seat": 1,
+   "map_seed": 1390958591,
+   "policy_seed": 8486436,
+   "starting_difference": {
+    "cash": 538.35,
+    "cargo": -316.024,
+    "trees": -1,
+    "workers": 0
+   },
+   "arms": {
+    "8x2": {
+     "won": 1,
+     "through": 299,
+     "terminal_margin": 26.61,
+     "windows": {
+      "10": {
+       "own_gross": 711.311,
+       "opp_gross": 947.146,
+       "net_gross": -235.835,
+       "cash_margin": 237.12
+      },
+      "20": {
+       "own_gross": 711.311,
+       "opp_gross": 1380.068,
+       "net_gross": -668.757,
+       "cash_margin": -232.29
+      }
+     },
+     "cpu_ms": 109.309,
+     "simulated_transitions": 45
+    },
+    "4x4": {
+     "won": -1,
+     "through": 299,
+     "terminal_margin": -122.58,
+     "windows": {
+      "10": {
+       "own_gross": 652.987,
+       "opp_gross": 905.783,
+       "net_gross": -252.797,
+       "cash_margin": 250.53
+      },
+      "20": {
+       "own_gross": 901.264,
+       "opp_gross": 1359.347,
+       "net_gross": -458.083,
+       "cash_margin": 8.43
+      }
+     },
+     "cpu_ms": 110.0,
+     "simulated_transitions": 52
+    }
+   },
+   "paired": {
+    "10": {
+     "own_gross": 58.324,
+     "opp_gross": 41.363,
+     "net_gross": 16.962,
+     "cash_margin": -13.41
+    },
+    "20": {
+     "own_gross": -189.953,
+     "opp_gross": 20.721,
+     "net_gross": -210.674,
+     "cash_margin": -240.72
+    },
+    "end_margin": 149.19
+   }
+  },
+  {
+   "match": "bca62e8310d95e3b1cb51184b31e8470",
+   "original": [
+    "yan-v5",
+    "\u5c0f\u80a5\u9c7cv5-late2s"
+   ],
+   "fold": "dev",
+   "start": 150,
+   "seat": 0,
+   "map_seed": 1317783670,
+   "policy_seed": 12358198,
+   "starting_difference": {
+    "cash": 195.6,
+    "cargo": -215.831,
+    "trees": -8,
+    "workers": 0
+   },
+   "arms": {
+    "8x2": {
+     "won": 1,
+     "through": 299,
+     "terminal_margin": 118.41,
+     "windows": {
+      "10": {
+       "own_gross": 257.19,
+       "opp_gross": 307.653,
+       "net_gross": -50.463,
+       "cash_margin": -10.46
+      },
+      "20": {
+       "own_gross": 325.669,
+       "opp_gross": 328.123,
+       "net_gross": -2.454,
+       "cash_margin": -0.23
+      }
+     },
+     "cpu_ms": 114.741,
+     "simulated_transitions": 54
+    },
+    "4x4": {
+     "won": -1,
+     "through": 299,
+     "terminal_margin": -50.34,
+     "windows": {
+      "10": {
+       "own_gross": 88.64,
+       "opp_gross": 286.858,
+       "net_gross": -198.218,
+       "cash_margin": -125.25
+      },
+      "20": {
+       "own_gross": 520.5,
+       "opp_gross": 598.688,
+       "net_gross": -78.188,
+       "cash_margin": -109.05
+      }
+     },
+     "cpu_ms": 109.358,
+     "simulated_transitions": 52
+    }
+   },
+   "paired": {
+    "10": {
+     "own_gross": 168.55,
+     "opp_gross": 20.795,
+     "net_gross": 147.755,
+     "cash_margin": 114.79
+    },
+    "20": {
+     "own_gross": -194.831,
+     "opp_gross": -270.565,
+     "net_gross": 75.734,
+     "cash_margin": 108.82
+    },
+    "end_margin": 168.75
+   }
+  },
+  {
+   "match": "c481f000976e732e0a3d888f21e7c96b",
+   "original": [
+    "\u5c0f\u80a5\u9c7cv5-late2s",
+    "yan-v5"
+   ],
+   "fold": "holdout",
+   "start": 190,
+   "seat": 1,
+   "map_seed": 1802568466,
+   "policy_seed": 6313431,
+   "starting_difference": {
+    "cash": 400.77,
+    "cargo": 415.352,
+    "trees": -5,
+    "workers": 0
+   },
+   "arms": {
+    "8x2": {
+     "won": 1,
+     "through": 299,
+     "terminal_margin": 83.33,
+     "windows": {
+      "10": {
+       "own_gross": 711.167,
+       "opp_gross": 49.418,
+       "net_gross": 661.749,
+       "cash_margin": 958.04
+      },
+      "20": {
+       "own_gross": 1071.963,
+       "opp_gross": 655.882,
+       "net_gross": 416.081,
+       "cash_margin": 544.68
+      }
+     },
+     "cpu_ms": 101.592,
+     "simulated_transitions": 50
+    },
+    "4x4": {
+     "won": 1,
+     "through": 299,
+     "terminal_margin": 555.83,
+     "windows": {
+      "10": {
+       "own_gross": 660.167,
+       "opp_gross": 268.117,
+       "net_gross": 392.05,
+       "cash_margin": 598.97
+      },
+      "20": {
+       "own_gross": 714.327,
+       "opp_gross": 544.33,
+       "net_gross": 169.998,
+       "cash_margin": 464.1
+      }
+     },
+     "cpu_ms": 105.013,
+     "simulated_transitions": 48
+    }
+   },
+   "paired": {
+    "10": {
+     "own_gross": 51.0,
+     "opp_gross": -218.699,
+     "net_gross": 269.699,
+     "cash_margin": 359.07
+    },
+    "20": {
+     "own_gross": 357.636,
+     "opp_gross": 111.552,
+     "net_gross": 246.083,
+     "cash_margin": 80.58
+    },
+    "end_margin": -472.5
+   }
+  },
+  {
+   "match": "f2808e6e8b57eb04adc928d833ffbf27",
+   "original": [
+    "yan-v5",
+    "ClaudeFable5.2-v8"
+   ],
+   "fold": "holdout",
+   "start": 150,
+   "seat": 0,
+   "map_seed": 411092855,
+   "policy_seed": 7598766,
+   "starting_difference": {
+    "cash": 713.95,
+    "cargo": -177.025,
+    "trees": -3,
+    "workers": 0
+   },
+   "arms": {
+    "8x2": {
+     "won": 1,
+     "through": 299,
+     "terminal_margin": 856.36,
+     "windows": {
+      "10": {
+       "own_gross": 64.177,
+       "opp_gross": 306.92,
+       "net_gross": -242.743,
+       "cash_margin": 504.54
+      },
+      "20": {
+       "own_gross": 474.103,
+       "opp_gross": 443.571,
+       "net_gross": 30.532,
+       "cash_margin": 814.73
+      }
+     },
+     "cpu_ms": 126.091,
+     "simulated_transitions": 54
+    },
+    "4x4": {
+     "won": 1,
+     "through": 299,
+     "terminal_margin": 1382.53,
+     "windows": {
+      "10": {
+       "own_gross": 153.206,
+       "opp_gross": 327.92,
+       "net_gross": -174.714,
+       "cash_margin": 620.57
+      },
+      "20": {
+       "own_gross": 326.459,
+       "opp_gross": 327.92,
+       "net_gross": -1.461,
+       "cash_margin": 818.77
+      }
+     },
+     "cpu_ms": 120.043,
+     "simulated_transitions": 52
+    }
+   },
+   "paired": {
+    "10": {
+     "own_gross": -89.029,
+     "opp_gross": -21.0,
+     "net_gross": -68.029,
+     "cash_margin": -116.03
+    },
+    "20": {
+     "own_gross": 147.644,
+     "opp_gross": 115.651,
+     "net_gross": 31.993,
+     "cash_margin": -4.04
+    },
+    "end_margin": -526.17
+   }
+  },
+  {
+   "match": "3fa7b99fce9590c93314aa2e9fe2355d",
+   "original": [
+    "SpongeBaby-CarbonNet-v2.0",
+    "yan-v5"
+   ],
+   "fold": "holdout",
+   "start": 150,
+   "seat": 1,
+   "map_seed": 1560673035,
+   "policy_seed": 6897038,
+   "starting_difference": {
+    "cash": -790.05,
+    "cargo": -54.446,
+    "trees": -1,
+    "workers": 0
+   },
+   "arms": {
+    "8x2": {
+     "won": -1,
+     "through": 299,
+     "terminal_margin": -742.24,
+     "windows": {
+      "10": {
+       "own_gross": 43.562,
+       "opp_gross": 493.816,
+       "net_gross": -450.254,
+       "cash_margin": -1290.53
+      },
+      "20": {
+       "own_gross": 611.779,
+       "opp_gross": 609.91,
+       "net_gross": 1.869,
+       "cash_margin": -877.47
+      }
+     },
+     "cpu_ms": 109.423,
+     "simulated_transitions": 54
+    },
+    "4x4": {
+     "won": -1,
+     "through": 299,
+     "terminal_margin": -665.12,
+     "windows": {
+      "10": {
+       "own_gross": 0,
+       "opp_gross": 502.705,
+       "net_gross": -502.705,
+       "cash_margin": -1343.29
+      },
+      "20": {
+       "own_gross": 510.126,
+       "opp_gross": 598.22,
+       "net_gross": -88.095,
+       "cash_margin": -924.34
+      }
+     },
+     "cpu_ms": 112.123,
+     "simulated_transitions": 52
+    }
+   },
+   "paired": {
+    "10": {
+     "own_gross": 43.562,
+     "opp_gross": -8.889,
+     "net_gross": 52.451,
+     "cash_margin": 52.76
+    },
+    "20": {
+     "own_gross": 101.653,
+     "opp_gross": 11.69,
+     "net_gross": 89.964,
+     "cash_margin": 46.87
+    },
+    "end_margin": -77.12
+   }
+  },
+  {
+   "match": "8f68ebe5109b6be9817bf1b39ebb90e9",
+   "original": [
+    "yan-v5",
+    "SpongeBaby-CarbonNet-v2.0"
+   ],
+   "fold": "holdout",
+   "start": 190,
+   "seat": 0,
+   "map_seed": 1313964316,
+   "policy_seed": 8788108,
+   "starting_difference": {
+    "cash": -104.01,
+    "cargo": 335.026,
+    "trees": 3,
+    "workers": 1
+   },
+   "arms": {
+    "8x2": {
+     "won": 1,
+     "through": 299,
+     "terminal_margin": 222.5,
+     "windows": {
+      "10": {
+       "own_gross": 307.246,
+       "opp_gross": 130.195,
+       "net_gross": 177.05,
+       "cash_margin": 101.01
+      },
+      "20": {
+       "own_gross": 434.051,
+       "opp_gross": 349.67,
+       "net_gross": 84.381,
+       "cash_margin": 12.86
+      }
+     },
+     "cpu_ms": 104.661,
+     "simulated_transitions": 54
+    },
+    "4x4": {
+     "won": -1,
+     "through": 299,
+     "terminal_margin": -69.21,
+     "windows": {
+      "10": {
+       "own_gross": 307.246,
+       "opp_gross": 74.594,
+       "net_gross": 232.652,
+       "cash_margin": 21.07
+      },
+      "20": {
+       "own_gross": 368.956,
+       "opp_gross": 287.676,
+       "net_gross": 81.28,
+       "cash_margin": -108.81
+      }
+     },
+     "cpu_ms": 110.363,
+     "simulated_transitions": 52
+    }
+   },
+   "paired": {
+    "10": {
+     "own_gross": 0.0,
+     "opp_gross": 55.601,
+     "net_gross": -55.602,
+     "cash_margin": 79.94
+    },
+    "20": {
+     "own_gross": 65.095,
+     "opp_gross": 61.994,
+     "net_gross": 3.101,
+     "cash_margin": 121.67
+    },
+    "end_margin": 291.71
+   }
+  }
+ ],
+ "summary": {
+  "dev": {
+   "8x2": {
+    "wins": 2,
+    "ties": 0,
+    "losses": 0,
+    "policy_decisions": 258,
+    "cpu_ms": 112.205,
+    "simulated_transitions": 50.0,
+    "root_actions": 8.0,
+    "effective_depth": 2.0,
+    "mean_cpu_ms": 114.399
+   },
+   "4x4": {
+    "wins": 0,
+    "ties": 0,
+    "losses": 2,
+    "policy_decisions": 258,
+    "cpu_ms": 109.829,
+    "simulated_transitions": 52.0,
+    "root_actions": 4.0,
+    "effective_depth": 4.0,
+    "mean_cpu_ms": 111.635
+   },
+   "wide_to_deep_ratio": {
+    "cpu_ms": 1.0216,
+    "mean_cpu_ms": 1.0248,
+    "simulated_transitions": 0.9615
+   },
+   "wide_minus_deep": {
+    "avg_end_margin": 158.97,
+    "positive_margins": 2,
+    "negative_margins": 0,
+    "10_net_gross": 82.36,
+    "20_net_gross": -67.47
+   }
+  },
+  "holdout": {
+   "8x2": {
+    "wins": 3,
+    "ties": 0,
+    "losses": 1,
+    "policy_decisions": 516,
+    "cpu_ms": 110.556,
+    "simulated_transitions": 53.0,
+    "root_actions": 8.0,
+    "effective_depth": 2.0,
+    "mean_cpu_ms": 114.303
+   },
+   "4x4": {
+    "wins": 2,
+    "ties": 0,
+    "losses": 2,
+    "policy_decisions": 516,
+    "cpu_ms": 112.537,
+    "simulated_transitions": 52.0,
+    "root_actions": 4.0,
+    "effective_depth": 4.0,
+    "mean_cpu_ms": 114.062
+   },
+   "wide_to_deep_ratio": {
+    "cpu_ms": 0.9824,
+    "mean_cpu_ms": 1.0021,
+    "simulated_transitions": 1.0192
+   },
+   "wide_minus_deep": {
+    "avg_end_margin": -196.02,
+    "positive_margins": 1,
+    "negative_margins": 3,
+    "10_net_gross": 49.63,
+    "20_net_gross": 92.79
+   }
+  }
+ },
+ "raw_sha256": "958bc946cc83210e1e5e856c5e5325f5ab06128aca2eacf26bb5be770feeb638"
+}
