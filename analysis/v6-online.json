@@ -1,0 +1,3011 @@
+{
+ "source": "https://github.com/JUZI1/carbon-league-replays/tree/9213b31613d196b68e3f62a4138f4cb6fab32b0c",
+ "strategy_id": "ec91ff24ea3af3510fe28c948b5d7da3",
+ "n": 59,
+ "unique_layouts": 59,
+ "normal_full_length": 57,
+ "metric_notes": {
+  "margin": "yan-v5 minus its opponent, within each game. Each median uses only games alive at the step.",
+  "absorption": "Sum of per-tree ordinary cash income by the current owner, including cell absorption and cargo tax. Does not count rare collision payouts.",
+  "base_receipts": "All cargo delivered to our bases (including collisions and enemy deliveries), before tree taxes, with zero move and smelt costs.",
+  "split": "own_tree_income and stolen_tree_income split absorption by whether the present owner planted the tree.",
+  "seed": "Official replay configuration randomSeed. Layout hash is SHA-256 of compact JSON [initial full_carbon, sorted base cells by seat].",
+  "elimination": "Early official rewards differ from final on-board cash. No workers, no trees and cash below one hire ends the game.",
+  "per_game_cash_diffs_steps": [
+   30,
+   50,
+   75,
+   100,
+   150,
+   250
+  ],
+  "per_game_economy_diffs_75": [
+   "absorption",
+   "base_receipts",
+   "plants",
+   "seizes",
+   "trees"
+  ]
+ },
+ "observations": [
+  "胜局及败局在第30步的现金差中位数分别为 −6.27 和 −10.36，主要分化出现在第40–75步。第75步两组的树吸收收入差中位数约为 −161 和 −738，基地到款差约为 +203 和 +29。",
+  "第75步，败局中双方累计新种数中位分别为 5 和 10，胜局为 6 和 8。败局第一个种植员和首棵树出现的中位时间分别为第7、14步，胜局为第8、15步。",
+  "按同一对手版本对照，在六个既有胜局又有败局的对手中，五个对手的败局在第75步的树收入差中位更低，小肥鱼v5-it720呈相反方向。每组只有1至3局，比赛地图不同。",
+  "两场提前淘汰的现金在第47步或第59步以后一直低于招募价，且在途载货峰值达到571和1179。最后一名工人死亡之前已多轮丧失补员能力。"
+ ],
+ "proposed_test": "保留原策略候选，在第30–75步按已观察到的敌树收入和树龄为首轮树林补种、夺树或协防提供备选；用新图双席分别记录树收入、基地到款、招募能力和胜负。先把长期现金不足且重载未回的极端局单列，而非把所有败局归为同一种错误。",
+ "outcome_groups": {
+  "wins": {
+   "n": 42,
+   "seat_0": 24,
+   "seat_1": 18,
+   "first": {
+    "first_planter": [
+     8.0,
+     1.0
+    ],
+    "first_tree": [
+     15.0,
+     8.5
+    ]
+   },
+   "by_step": {
+    "10": {
+     "n": 42,
+     "median_margin": {
+      "cash": 6.02,
+      "absorption": -3.86,
+      "base_receipts": 16.58,
+      "cargo": -2.86,
+      "workers": 0.5,
+      "trees": -1.0,
+      "plants": -1.0,
+      "seizes": 0.0,
+      "own_tree_income": -3.86,
+      "stolen_tree_income": 0.0,
+      "tree_turns": -2.5,
+      "planter_turns": -5.5
+     },
+     "behind_in_cash": 20,
+     "behind_in_tree_income": 21
+    },
+    "20": {
+     "n": 42,
+     "median_margin": {
+      "cash": 3.97,
+      "absorption": -17.98,
+      "base_receipts": 12.54,
+      "cargo": -9.99,
+      "workers": 0.0,
+      "trees": 0.0,
+      "plants": -1.0,
+      "seizes": 0.0,
+      "own_tree_income": -24.61,
+      "stolen_tree_income": 0.0,
+      "tree_turns": -4.0,
+      "planter_turns": -3.5
+     },
+     "behind_in_cash": 18,
+     "behind_in_tree_income": 31
+    },
+    "30": {
+     "n": 42,
+     "median_margin": {
+      "cash": -6.27,
+      "absorption": -16.06,
+      "base_receipts": -0.6,
+      "cargo": -1.44,
+      "workers": 0.0,
+      "trees": 0.0,
+      "plants": -1.0,
+      "seizes": 0.0,
+      "own_tree_income": -34.47,
+      "stolen_tree_income": 7.21,
+      "tree_turns": -2.0,
+      "planter_turns": -3.5
+     },
+     "behind_in_cash": 23,
+     "behind_in_tree_income": 24
+    },
+    "40": {
+     "n": 42,
+     "median_margin": {
+      "cash": 1.17,
+      "absorption": -26.62,
+      "base_receipts": -10.23,
+      "cargo": 30.22,
+      "workers": 0.0,
+      "trees": 0.0,
+      "plants": -1.0,
+      "seizes": 0.5,
+      "own_tree_income": -29.67,
+      "stolen_tree_income": 20.17,
+      "tree_turns": -5.0,
+      "planter_turns": -18.5
+     },
+     "behind_in_cash": 20,
+     "behind_in_tree_income": 23
+    },
+    "50": {
+     "n": 42,
+     "median_margin": {
+      "cash": 21.77,
+      "absorption": -86.04,
+      "base_receipts": 9.39,
+      "cargo": 46.42,
+      "workers": 0.0,
+      "trees": 0.0,
+      "plants": -2.0,
+      "seizes": 0.0,
+      "own_tree_income": -82.91,
+      "stolen_tree_income": 42.85,
+      "tree_turns": 3.5,
+      "planter_turns": -31.5
+     },
+     "behind_in_cash": 15,
+     "behind_in_tree_income": 25
+    },
+    "60": {
+     "n": 42,
+     "median_margin": {
+      "cash": 54.29,
+      "absorption": -129.25,
+      "base_receipts": 93.48,
+      "cargo": 63.86,
+      "workers": 0.0,
+      "trees": -2.0,
+      "plants": -1.5,
+      "seizes": 0.0,
+      "own_tree_income": -146.83,
+      "stolen_tree_income": 35.52,
+      "tree_turns": -11.5,
+      "planter_turns": -43.5
+     },
+     "behind_in_cash": 14,
+     "behind_in_tree_income": 27
+    },
+    "75": {
+     "n": 42,
+     "median_margin": {
+      "cash": 179.18,
+      "absorption": -160.86,
+      "base_receipts": 203.45,
+      "cargo": 79.65,
+      "workers": 0.0,
+      "trees": -2.0,
+      "plants": -2.0,
+      "seizes": 0.0,
+      "own_tree_income": -234.44,
+      "stolen_tree_income": 48.6,
+      "tree_turns": -46.5,
+      "planter_turns": -47.0
+     },
+     "behind_in_cash": 12,
+     "behind_in_tree_income": 25
+    },
+    "100": {
+     "n": 42,
+     "median_margin": {
+      "cash": 194.11,
+      "absorption": -117.6,
+      "base_receipts": 242.87,
+      "cargo": 78.31,
+      "workers": 0.0,
+      "trees": 0.0,
+      "plants": -2.0,
+      "seizes": 0.0,
+      "own_tree_income": -147.9,
+      "stolen_tree_income": 13.15,
+      "tree_turns": -60.5,
+      "planter_turns": -63.5
+     },
+     "behind_in_cash": 14,
+     "behind_in_tree_income": 26
+    },
+    "125": {
+     "n": 42,
+     "median_margin": {
+      "cash": 205.82,
+      "absorption": -145.02,
+      "base_receipts": 216.8,
+      "cargo": 136.13,
+      "workers": 0.0,
+      "trees": 0.0,
+      "plants": -2.0,
+      "seizes": -1.0,
+      "own_tree_income": -217.92,
+      "stolen_tree_income": -46.41,
+      "tree_turns": -73.5,
+      "planter_turns": -84.5
+     },
+     "behind_in_cash": 15,
+     "behind_in_tree_income": 27
+    },
+    "150": {
+     "n": 42,
+     "median_margin": {
+      "cash": 339.8,
+      "absorption": -126.97,
+      "base_receipts": 447.38,
+      "cargo": -12.19,
+      "workers": 0.0,
+      "trees": 1.0,
+      "plants": -1.0,
+      "seizes": -1.5,
+      "own_tree_income": -203.67,
+      "stolen_tree_income": -93.0,
+      "tree_turns": -88.5,
+      "planter_turns": -88.5
+     },
+     "behind_in_cash": 8,
+     "behind_in_tree_income": 28
+    },
+    "200": {
+     "n": 42,
+     "median_margin": {
+      "cash": 568.53,
+      "absorption": -75.43,
+      "base_receipts": 475.76,
+      "cargo": 66.02,
+      "workers": 0.0,
+      "trees": 0.0,
+      "plants": 0.0,
+      "seizes": -1.0,
+      "own_tree_income": -53.34,
+      "stolen_tree_income": -31.92,
+      "tree_turns": -57.0,
+      "planter_turns": -120.5
+     },
+     "behind_in_cash": 7,
+     "behind_in_tree_income": 23
+    },
+    "250": {
+     "n": 42,
+     "median_margin": {
+      "cash": 709.8,
+      "absorption": -255.45,
+      "base_receipts": 628.63,
+      "cargo": 10.84,
+      "workers": 0.0,
+      "trees": -1.0,
+      "plants": 1.0,
+      "seizes": -2.0,
+      "own_tree_income": 6.32,
+      "stolen_tree_income": -75.59,
+      "tree_turns": -123.5,
+      "planter_turns": -133.5
+     },
+     "behind_in_cash": 6,
+     "behind_in_tree_income": 25
+    },
+    "299": {
+     "n": 42,
+     "median_margin": {
+      "cash": 830.47,
+      "absorption": -182.88,
+      "base_receipts": 786.69,
+      "cargo": -0.28,
+      "workers": -1.0,
+      "trees": -1.0,
+      "plants": -1.5,
+      "seizes": -3.5,
+      "own_tree_income": -224.16,
+      "stolen_tree_income": -151.1,
+      "tree_turns": -152.0,
+      "planter_turns": -135.0
+     },
+     "behind_in_cash": 0,
+     "behind_in_tree_income": 29
+    }
+   },
+   "medians_at_75_ours_opponent": {
+    "cash": [
+     826.97,
+     615.01
+    ],
+    "absorption": [
+     615.89,
+     684.41
+    ],
+    "base_receipts": [
+     1129.24,
+     942.98
+    ],
+    "cargo": [
+     444.29,
+     376.41
+    ],
+    "workers": [
+     10.0,
+     10.0
+    ],
+    "trees": [
+     4.0,
+     6.0
+    ],
+    "plants": [
+     6.0,
+     8.0
+    ],
+    "seizes": [
+     4.0,
+     4.0
+    ],
+    "own_tree_income": [
+     466.97,
+     613.72
+    ],
+    "stolen_tree_income": [
+     136.38,
+     90.43
+    ],
+    "tree_turns": [
+     229.5,
+     264.0
+    ],
+    "planter_turns": [
+     119.5,
+     165.0
+    ]
+   }
+  },
+  "losses": {
+   "n": 17,
+   "seat_0": 6,
+   "seat_1": 11,
+   "first": {
+    "first_planter": [
+     7,
+     1
+    ],
+    "first_tree": [
+     14,
+     11
+    ]
+   },
+   "by_step": {
+    "10": {
+     "n": 17,
+     "median_margin": {
+      "cash": 1.04,
+      "absorption": 0,
+      "base_receipts": 13.33,
+      "cargo": -2.33,
+      "workers": 0,
+      "trees": 0,
+      "plants": 0,
+      "seizes": 0,
+      "own_tree_income": 0,
+      "stolen_tree_income": 0,
+      "tree_turns": 0,
+      "planter_turns": -5
+     },
+     "behind_in_cash": 8,
+     "behind_in_tree_income": 7
+    },
+    "20": {
+     "n": 17,
+     "median_margin": {
+      "cash": 7.61,
+      "absorption": -9.65,
+      "base_receipts": -2.39,
+      "cargo": 0,
+      "workers": -1,
+      "trees": 0,
+      "plants": 0,
+      "seizes": 0,
+      "own_tree_income": -15.89,
+      "stolen_tree_income": 0,
+      "tree_turns": 1,
+      "planter_turns": -2
+     },
+     "behind_in_cash": 6,
+     "behind_in_tree_income": 10
+    },
+    "30": {
+     "n": 17,
+     "median_margin": {
+      "cash": -10.36,
+      "absorption": -9.09,
+      "base_receipts": -32.5,
+      "cargo": 14.14,
+      "workers": -2,
+      "trees": 0,
+      "plants": 0,
+      "seizes": 0,
+      "own_tree_income": -24.79,
+      "stolen_tree_income": 0,
+      "tree_turns": 0,
+      "planter_turns": -5
+     },
+     "behind_in_cash": 10,
+     "behind_in_tree_income": 9
+    },
+    "40": {
+     "n": 17,
+     "median_margin": {
+      "cash": -10.62,
+      "absorption": -44.61,
+      "base_receipts": 3.99,
+      "cargo": -10.31,
+      "workers": 0,
+      "trees": -3,
+      "plants": -1,
+      "seizes": 0,
+      "own_tree_income": -31.27,
+      "stolen_tree_income": -8.61,
+      "tree_turns": -11,
+      "planter_turns": -12
+     },
+     "behind_in_cash": 10,
+     "behind_in_tree_income": 10
+    },
+    "50": {
+     "n": 17,
+     "median_margin": {
+      "cash": -46.36,
+      "absorption": -238.01,
+      "base_receipts": 51.25,
+      "cargo": 0,
+      "workers": 0,
+      "trees": -5,
+      "plants": -3,
+      "seizes": -1,
+      "own_tree_income": -127.15,
+      "stolen_tree_income": -10.32,
+      "tree_turns": -33,
+      "planter_turns": -16
+     },
+     "behind_in_cash": 11,
+     "behind_in_tree_income": 13
+    },
+    "60": {
+     "n": 17,
+     "median_margin": {
+      "cash": -158.27,
+      "absorption": -424.98,
+      "base_receipts": 102.12,
+      "cargo": 2.83,
+      "workers": 0,
+      "trees": -6,
+      "plants": -3,
+      "seizes": 0,
+      "own_tree_income": -325.47,
+      "stolen_tree_income": -27.16,
+      "tree_turns": -104,
+      "planter_turns": -28
+     },
+     "behind_in_cash": 12,
+     "behind_in_tree_income": 13
+    },
+    "75": {
+     "n": 17,
+     "median_margin": {
+      "cash": -307.87,
+      "absorption": -737.8,
+      "base_receipts": 29.21,
+      "cargo": 106.11,
+      "workers": 0,
+      "trees": -7,
+      "plants": -5,
+      "seizes": -1,
+      "own_tree_income": -587.62,
+      "stolen_tree_income": -54.62,
+      "tree_turns": -217,
+      "planter_turns": -36
+     },
+     "behind_in_cash": 11,
+     "behind_in_tree_income": 13
+    },
+    "100": {
+     "n": 17,
+     "median_margin": {
+      "cash": -606.99,
+      "absorption": -907.59,
+      "base_receipts": -38.65,
+      "cargo": 9.07,
+      "workers": 0,
+      "trees": -1,
+      "plants": -7,
+      "seizes": 0,
+      "own_tree_income": -857.38,
+      "stolen_tree_income": -75.58,
+      "tree_turns": -300,
+      "planter_turns": -40
+     },
+     "behind_in_cash": 12,
+     "behind_in_tree_income": 13
+    },
+    "125": {
+     "n": 16,
+     "median_margin": {
+      "cash": -625.92,
+      "absorption": -790.01,
+      "base_receipts": -106.85,
+      "cargo": -39.75,
+      "workers": 0.0,
+      "trees": -1.5,
+      "plants": -4.0,
+      "seizes": -0.5,
+      "own_tree_income": -743.6,
+      "stolen_tree_income": -100.7,
+      "tree_turns": -249.0,
+      "planter_turns": -56.5
+     },
+     "behind_in_cash": 12,
+     "behind_in_tree_income": 13
+    },
+    "150": {
+     "n": 16,
+     "median_margin": {
+      "cash": -875.35,
+      "absorption": -853.45,
+      "base_receipts": -122.73,
+      "cargo": 179.14,
+      "workers": 0.0,
+      "trees": -2.5,
+      "plants": -4.0,
+      "seizes": -2.0,
+      "own_tree_income": -660.33,
+      "stolen_tree_income": -142.76,
+      "tree_turns": -330.0,
+      "planter_turns": -60.5
+     },
+     "behind_in_cash": 14,
+     "behind_in_tree_income": 14
+    },
+    "200": {
+     "n": 15,
+     "median_margin": {
+      "cash": -706.87,
+      "absorption": -1195.28,
+      "base_receipts": 73.1,
+      "cargo": 17.5,
+      "workers": 0,
+      "trees": -4,
+      "plants": -6,
+      "seizes": -3,
+      "own_tree_income": -934.33,
+      "stolen_tree_income": -232.43,
+      "tree_turns": -416,
+      "planter_turns": -86
+     },
+     "behind_in_cash": 13,
+     "behind_in_tree_income": 13
+    },
+    "250": {
+     "n": 15,
+     "median_margin": {
+      "cash": -873.88,
+      "absorption": -1306.34,
+      "base_receipts": -214.31,
+      "cargo": 55.94,
+      "workers": 0,
+      "trees": 0,
+      "plants": -4,
+      "seizes": -6,
+      "own_tree_income": -930.61,
+      "stolen_tree_income": -344.34,
+      "tree_turns": -513,
+      "planter_turns": -91
+     },
+     "behind_in_cash": 13,
+     "behind_in_tree_income": 14
+    },
+    "299": {
+     "n": 15,
+     "median_margin": {
+      "cash": -1139.77,
+      "absorption": -1272.24,
+      "base_receipts": -301.98,
+      "cargo": -13.71,
+      "workers": -1,
+      "trees": -1,
+      "plants": -2,
+      "seizes": -3,
+      "own_tree_income": -933.42,
+      "stolen_tree_income": -372.82,
+      "tree_turns": -561,
+      "planter_turns": -82
+     },
+     "behind_in_cash": 15,
+     "behind_in_tree_income": 14
+    }
+   },
+   "medians_at_75_ours_opponent": {
+    "cash": [
+     430.84,
+     774.09
+    ],
+    "absorption": [
+     374.27,
+     1003.49
+    ],
+    "base_receipts": [
+     925.95,
+     839.94
+    ],
+    "cargo": [
+     473.68,
+     322.97
+    ],
+    "workers": [
+     10,
+     10
+    ],
+    "trees": [
+     3,
+     8
+    ],
+    "plants": [
+     5,
+     10
+    ],
+    "seizes": [
+     3,
+     4
+    ],
+    "own_tree_income": [
+     238.39,
+     937.63
+    ],
+    "stolen_tree_income": [
+     84.58,
+     140.58
+    ],
+    "tree_turns": [
+     136,
+     349
+    ],
+    "planter_turns": [
+     125,
+     147
+    ]
+   }
+  }
+ },
+ "same_opponent_win_loss": {
+  "04cf11d7f98adf0142da924be98f8aa6": {
+   "name": "SpongeBaby-CarbonNet-v3.0",
+   "wins": {
+    "n": 1,
+    "median_tree_income_margin_at_75": -373.48
+   },
+   "losses": {
+    "n": 3,
+    "median_tree_income_margin_at_75": -737.8
+   }
+  },
+  "182aed58db5991bcd0df65cd41a667be": {
+   "name": "SpongeBaby-CarbonNet-v2.0",
+   "wins": {
+    "n": 2,
+    "median_tree_income_margin_at_75": 168.36
+   },
+   "losses": {
+    "n": 2,
+    "median_tree_income_margin_at_75": -657.73
+   }
+  },
+  "a94f304f3e203fe0016849d44fc073b3": {
+   "name": "小肥鱼v5-it720e20",
+   "wins": {
+    "n": 3,
+    "median_tree_income_margin_at_75": -60.9
+   },
+   "losses": {
+    "n": 2,
+    "median_tree_income_margin_at_75": -118.0
+   }
+  },
+  "6274e28186ca0f0a5a1022fd098255ee": {
+   "name": "小肥鱼v5-it720",
+   "wins": {
+    "n": 2,
+    "median_tree_income_margin_at_75": -154.26
+   },
+   "losses": {
+    "n": 2,
+    "median_tree_income_margin_at_75": 198.43
+   }
+  },
+  "40a58f89955a8b792d08b4bf5aeb3e53": {
+   "name": "RyanX-AIPowercore-it940-v4b",
+   "wins": {
+    "n": 1,
+    "median_tree_income_margin_at_75": 378.03
+   },
+   "losses": {
+    "n": 2,
+    "median_tree_income_margin_at_75": -305.07
+   }
+  },
+  "067d497dfea83c9115fe743343e3afaa": {
+   "name": "小肥鱼v5-d5",
+   "wins": {
+    "n": 1,
+    "median_tree_income_margin_at_75": 70.16
+   },
+   "losses": {
+    "n": 1,
+    "median_tree_income_margin_at_75": -848.56
+   }
+  }
+ },
+ "matches": [
+  {
+   "match": "c481f000976e732e0a3d888f21e7c96b",
+   "game": 1,
+   "opponent": "小肥鱼v5-late2s",
+   "opponent_id": "a32c0c237253d9948b053755d241ad14",
+   "seat": 1,
+   "seed": 1802568466,
+   "turns": 299,
+   "won": true,
+   "scores": [
+    8489.8,
+    7718.22
+   ],
+   "layout": "4caab9c7577f7dcf66de48a879be5aa236e768f14dde55be4a81cbe0836b4f4d",
+   "first_planter": [
+    11,
+    1
+   ],
+   "first_tree": [
+    22,
+    12
+   ],
+   "cash_diffs": [
+    -66.57,
+    -14.64,
+    169.77,
+    -129.22,
+    152.98,
+    1037.63
+   ],
+   "economy_diffs_at_75": [
+    -718.5,
+    454.59,
+    -8,
+    -1,
+    -12
+   ]
+  },
+  {
+   "match": "12282bc31fd3f9f4d920693cc8469b5c",
+   "game": 1,
+   "opponent": "SpongeBaby-CarbonNet-v3.0",
+   "opponent_id": "04cf11d7f98adf0142da924be98f8aa6",
+   "seat": 1,
+   "seed": 1729618781,
+   "turns": 299,
+   "won": false,
+   "scores": [
+    7224.33,
+    8632.48
+   ],
+   "layout": "2529e80fce78eb9164e72fbe7f87723c27808e9e914dbe8e637ab0f66937da98",
+   "first_planter": [
+    7,
+    8
+   ],
+   "first_tree": [
+    34,
+    33
+   ],
+   "cash_diffs": [
+    -24.51,
+    -245.36,
+    -869.78,
+    -1302.88,
+    -1459.58,
+    -1559.58
+   ],
+   "economy_diffs_at_75": [
+    -1181.09,
+    -12.1,
+    -5,
+    -2,
+    -9
+   ]
+  },
+  {
+   "match": "f5e69abd6f15278bf9ae01a40601c330",
+   "game": 1,
+   "opponent": "claude-AlphaCarbon-Master7sE",
+   "opponent_id": "6b717fdd3d51a00f8874148b2aeb9b02",
+   "seat": 1,
+   "seed": 1672586096,
+   "turns": 109,
+   "won": false,
+   "scores": [
+    -192,
+    1554.47
+   ],
+   "layout": "5b32052714ff3f3f3476cb8d2a69f0d116c77be3232eb6fc762c57a93a4f975d",
+   "first_planter": [
+    7,
+    16
+   ],
+   "first_tree": [
+    14,
+    23
+   ],
+   "cash_diffs": [
+    26.92,
+    -46.36,
+    -639.99,
+    -1385.8,
+    null,
+    null
+   ],
+   "economy_diffs_at_75": [
+    -964.41,
+    -308.51,
+    -7,
+    -3,
+    -13
+   ],
+   "elimination": {
+    "last_step": 109,
+    "last_cash": 11.32,
+    "final_unaffordable_from": 47,
+    "final_treeless_from": 100,
+    "last_single_turn_receipts_at_least_hire": 28,
+    "peak_cargo_while_finally_unaffordable_step": 107,
+    "peak_cargo_while_finally_unaffordable": 571.23,
+    "penultimate_workers": [
+     {
+      "role": "COLLECTOR",
+      "cell": 94,
+      "cargo": 571.23
+     }
+    ]
+   }
+  },
+  {
+   "match": "efa15ce0a9b4d18398cbe73ad5ca6dc6",
+   "game": 1,
+   "opponent": "claude-AlphaCarbon-Master7sE",
+   "opponent_id": "6b717fdd3d51a00f8874148b2aeb9b02",
+   "seat": 0,
+   "seed": 1074001050,
+   "turns": 191,
+   "won": false,
+   "scores": [
+    -110,
+    4625.03
+   ],
+   "layout": "1f50da532eef1e0235009dd79374004664b13e13beb08848c69cdac0abca9936",
+   "first_planter": [
+    10,
+    14
+   ],
+   "first_tree": [
+    14,
+    21
+   ],
+   "cash_diffs": [
+    -16.47,
+    -29.28,
+    -180.69,
+    -865.69,
+    -3329.26,
+    null
+   ],
+   "economy_diffs_at_75": [
+    -754.87,
+    191.89,
+    -1,
+    -5,
+    -8
+   ],
+   "elimination": {
+    "last_step": 191,
+    "last_cash": 23.96,
+    "final_unaffordable_from": 59,
+    "final_treeless_from": 42,
+    "last_single_turn_receipts_at_least_hire": 56,
+    "peak_cargo_while_finally_unaffordable_step": 91,
+    "peak_cargo_while_finally_unaffordable": 1179.49,
+    "penultimate_workers": [
+     {
+      "role": "COLLECTOR",
+      "cell": 156,
+      "cargo": 480.45
+     }
+    ]
+   }
+  },
+  {
+   "match": "cdbf357c274e51119cef4b3047ad993d",
+   "game": 1,
+   "opponent": "Master3-Plus",
+   "opponent_id": "bc00764a55990ca3d969a002545c70ff",
+   "seat": 0,
+   "seed": 828488494,
+   "turns": 299,
+   "won": true,
+   "scores": [
+    8421.27,
+    7910.54
+   ],
+   "layout": "684e1fc4110406a3bcbaeaa097787d91b5cdb3d3bd8dcd633359ccb3dfbbe870",
+   "first_planter": [
+    9,
+    1
+   ],
+   "first_tree": [
+    13,
+    13
+   ],
+   "cash_diffs": [
+    -47.36,
+    31.57,
+    55.43,
+    189.62,
+    240.28,
+    209.85
+   ],
+   "economy_diffs_at_75": [
+    -442.35,
+    306.81,
+    -4,
+    0,
+    -2
+   ]
+  },
+  {
+   "match": "6436e22de728eed278f88388de346478",
+   "game": 1,
+   "opponent": "SpongeBaby-CarbonNet-v2.0",
+   "opponent_id": "182aed58db5991bcd0df65cd41a667be",
+   "seat": 0,
+   "seed": 134002763,
+   "turns": 299,
+   "won": false,
+   "scores": [
+    7446.31,
+    7833.48
+   ],
+   "layout": "4b94cbdd39129e214d4b7b48f293310bd573349473aee4219410bd59ec0de3d1",
+   "first_planter": [
+    16,
+    1
+   ],
+   "first_tree": [
+    28,
+    6
+   ],
+   "cash_diffs": [
+    -7.73,
+    13.73,
+    117.78,
+    -155.1,
+    -302.45,
+    -139.49
+   ],
+   "economy_diffs_at_75": [
+    -432.89,
+    346.46,
+    -5,
+    0,
+    -7
+   ]
+  },
+  {
+   "match": "f2808e6e8b57eb04adc928d833ffbf27",
+   "game": 1,
+   "opponent": "ClaudeFable5.2-v8",
+   "opponent_id": "9a48e91843cb609b25875749aff9b7e0",
+   "seat": 0,
+   "seed": 411092855,
+   "turns": 299,
+   "won": true,
+   "scores": [
+    5905.99,
+    4579.34
+   ],
+   "layout": "3ae3e25173183e7236cbf968530cf8f8c41b8ac689503852b471f39cb7ad6b95",
+   "first_planter": [
+    10,
+    21
+   ],
+   "first_tree": [
+    14,
+    30
+   ],
+   "cash_diffs": [
+    25.33,
+    86.78,
+    647.52,
+    584.31,
+    713.95,
+    1123.95
+   ],
+   "economy_diffs_at_75": [
+    553.61,
+    233.44,
+    6,
+    -1,
+    2
+   ]
+  },
+  {
+   "match": "15c44edcb845861b8d27dc7f00873344",
+   "game": 1,
+   "opponent": "ClaudeFable5.2-v7",
+   "opponent_id": "2d4e4c772f057208b7121ed76dba4f33",
+   "seat": 1,
+   "seed": 1886874332,
+   "turns": 299,
+   "won": true,
+   "scores": [
+    6832.59,
+    5519.16
+   ],
+   "layout": "6f6ca61bd8611382e57bf33fbaf0cd2d346f31ff7966b4a9ca029a38bc07236c",
+   "first_planter": [
+    7,
+    11
+   ],
+   "first_tree": [
+    16,
+    19
+   ],
+   "cash_diffs": [
+    5.8,
+    151.83,
+    626.41,
+    809.62,
+    1815.63,
+    1434.18
+   ],
+   "economy_diffs_at_75": [
+    400.73,
+    283.81,
+    5,
+    -6,
+    -6
+   ]
+  },
+  {
+   "match": "eb7849ed2790648f55a482447af325ac",
+   "game": 1,
+   "opponent": "1C-Testv2",
+   "opponent_id": "f9113ec697b0943601ec961a3ad9c33a",
+   "seat": 0,
+   "seed": 958493254,
+   "turns": 299,
+   "won": true,
+   "scores": [
+    5193.92,
+    4914.27
+   ],
+   "layout": "bbb0e597669cbed5084f4fcecf9fd5031c2e579a73b55b7fdf8a29d493c95473",
+   "first_planter": [
+    8,
+    1
+   ],
+   "first_tree": [
+    23,
+    7
+   ],
+   "cash_diffs": [
+    -7.06,
+    105.0,
+    672.54,
+    637.13,
+    -112.02,
+    372.17
+   ],
+   "economy_diffs_at_75": [
+    348.13,
+    451.15,
+    4,
+    -1,
+    1
+   ]
+  },
+  {
+   "match": "f9a853d8e30ba6b524e0b1f5eb4e5417",
+   "game": 1,
+   "opponent": "小肥鱼v5-it720e20",
+   "opponent_id": "a94f304f3e203fe0016849d44fc073b3",
+   "seat": 0,
+   "seed": 724345309,
+   "turns": 299,
+   "won": true,
+   "scores": [
+    6775.95,
+    6506.63
+   ],
+   "layout": "e5b57d3ff1d5b64c982495650ab0f3dd6e7d3abc39174f535707fe76c9314960",
+   "first_planter": [
+    9,
+    1
+   ],
+   "first_tree": [
+    15,
+    10
+   ],
+   "cash_diffs": [
+    3.96,
+    19.64,
+    287.54,
+    627.15,
+    -210.7,
+    -10.95
+   ],
+   "economy_diffs_at_75": [
+    432.36,
+    -84.88,
+    3,
+    -4,
+    -5
+   ]
+  },
+  {
+   "match": "2e34cab9b82db2c98e8ca17f6f5f8134",
+   "game": 1,
+   "opponent": "小肥鱼v5-it720",
+   "opponent_id": "6274e28186ca0f0a5a1022fd098255ee",
+   "seat": 0,
+   "seed": 1897987674,
+   "turns": 299,
+   "won": false,
+   "scores": [
+    7424.01,
+    8911.28
+   ],
+   "layout": "ec27f21f525faaa0072041e7abfd52e7abb0b52ceaaf29c2e945397ef40a38b3",
+   "first_planter": [
+    6,
+    1
+   ],
+   "first_tree": [
+    11,
+    5
+   ],
+   "cash_diffs": [
+    38.3,
+    50.73,
+    124.48,
+    348.01,
+    592.54,
+    -62.43
+   ],
+   "economy_diffs_at_75": [
+    313.27,
+    -6.06,
+    4,
+    1,
+    3
+   ]
+  },
+  {
+   "match": "2e243574754d80611a7a87ac33ffbbf6",
+   "game": 1,
+   "opponent": "哈基米基准2",
+   "opponent_id": "0dbebe7bf8af242b6aef32ae87c8c364",
+   "seat": 1,
+   "seed": 1305281395,
+   "turns": 299,
+   "won": true,
+   "scores": [
+    7416.96,
+    5824.27
+   ],
+   "layout": "f252d446ba978d53ec09c91f82b420809067bba85470541ea5e4b0d4f05f4bf1",
+   "first_planter": [
+    14,
+    1
+   ],
+   "first_tree": [
+    21,
+    6
+   ],
+   "cash_diffs": [
+    -36.43,
+    53.4,
+    631.3,
+    234.31,
+    1018.6,
+    1783.75
+   ],
+   "economy_diffs_at_75": [
+    -165.63,
+    658.85,
+    -3,
+    0,
+    -3
+   ]
+  },
+  {
+   "match": "66c97e824660861fe7bcf5de3554d493",
+   "game": 1,
+   "opponent": "小肥鱼v5-it720e20",
+   "opponent_id": "a94f304f3e203fe0016849d44fc073b3",
+   "seat": 1,
+   "seed": 16368443,
+   "turns": 299,
+   "won": false,
+   "scores": [
+    6825.78,
+    7002.03
+   ],
+   "layout": "630cb60c5a7059ef2375cd2de020cf57c0b6e8f7fedfb07b1fe5fb822291acce",
+   "first_planter": [
+    8,
+    1
+   ],
+   "first_tree": [
+    12,
+    8
+   ],
+   "cash_diffs": [
+    -35.16,
+    -122.78,
+    -592.68,
+    158.59,
+    -107.71,
+    167.17
+   ],
+   "economy_diffs_at_75": [
+    -565.22,
+    -357.87,
+    -8,
+    3,
+    1
+   ]
+  },
+  {
+   "match": "056578736650bbba5699f14c81dc9525",
+   "game": 1,
+   "opponent": "哈基米基准3",
+   "opponent_id": "5564dba0cbad8252113b94b8ba006333",
+   "seat": 1,
+   "seed": 630696240,
+   "turns": 299,
+   "won": true,
+   "scores": [
+    6753.37,
+    5391.31
+   ],
+   "layout": "9d26cd82f0e848511c3666725f9437bbae7a1492db92dbc478b7b554d16d798f",
+   "first_planter": [
+    12,
+    1
+   ],
+   "first_tree": [
+    22,
+    6
+   ],
+   "cash_diffs": [
+    8.1,
+    -78.51,
+    640.32,
+    315.54,
+    226.54,
+    1286.31
+   ],
+   "economy_diffs_at_75": [
+    327.29,
+    311.28,
+    3,
+    -3,
+    -4
+   ]
+  },
+  {
+   "match": "45fd0cd4f667be5226106230057dcb47",
+   "game": 1,
+   "opponent": "小肥鱼v5-it720",
+   "opponent_id": "6274e28186ca0f0a5a1022fd098255ee",
+   "seat": 1,
+   "seed": 1283021257,
+   "turns": 299,
+   "won": true,
+   "scores": [
+    7143.84,
+    6925.17
+   ],
+   "layout": "2373fc4d7990bffa1b05a35e7289c54b714e4c0da9aad10e20d3ecbf7b91a756",
+   "first_planter": [
+    8,
+    1
+   ],
+   "first_tree": [
+    10,
+    5
+   ],
+   "cash_diffs": [
+    -14.19,
+    -7.33,
+    -370.74,
+    -141.04,
+    366.9,
+    -95.04
+   ],
+   "economy_diffs_at_75": [
+    102.2,
+    -287.23,
+    3,
+    -2,
+    0
+   ]
+  },
+  {
+   "match": "3fa7b99fce9590c93314aa2e9fe2355d",
+   "game": 1,
+   "opponent": "SpongeBaby-CarbonNet-v2.0",
+   "opponent_id": "182aed58db5991bcd0df65cd41a667be",
+   "seat": 1,
+   "seed": 1560673035,
+   "turns": 299,
+   "won": false,
+   "scores": [
+    6622.42,
+    8443.24
+   ],
+   "layout": "d7a0103be8c06166938ea5c0141c992d50de7dd3f72ee814ca666139507561d9",
+   "first_planter": [
+    8,
+    1
+   ],
+   "first_tree": [
+    15,
+    13
+   ],
+   "cash_diffs": [
+    1.89,
+    -180.83,
+    -449.8,
+    -1102.2,
+    -790.05,
+    -1625.44
+   ],
+   "economy_diffs_at_75": [
+    -882.56,
+    106.66,
+    -6,
+    -1,
+    -5
+   ]
+  },
+  {
+   "match": "08a44dc512189e6710970eb3d17a53b0",
+   "game": 1,
+   "opponent": "小肥鱼v5-it720e20",
+   "opponent_id": "a94f304f3e203fe0016849d44fc073b3",
+   "seat": 0,
+   "seed": 285932319,
+   "turns": 299,
+   "won": true,
+   "scores": [
+    5925.94,
+    5887.2
+   ],
+   "layout": "6eb99f2aed50b7b5f9da7887881643652b35e9361da0564a420fcf15db07733c",
+   "first_planter": [
+    16,
+    1
+   ],
+   "first_tree": [
+    29,
+    7
+   ],
+   "cash_diffs": [
+    2.36,
+    -164.44,
+    -522.28,
+    -229.6,
+    -555.31,
+    -221.93
+   ],
+   "economy_diffs_at_75": [
+    -103.87,
+    -430.56,
+    -1,
+    0,
+    0
+   ]
+  },
+  {
+   "match": "f0bb1d19c41b61e8dca8ab5cc70ebadb",
+   "game": 1,
+   "opponent": "RyanX-AIPowercore-it940-v4b",
+   "opponent_id": "40a58f89955a8b792d08b4bf5aeb3e53",
+   "seat": 1,
+   "seed": 1390958591,
+   "turns": 299,
+   "won": false,
+   "scores": [
+    6214.87,
+    7046.88
+   ],
+   "layout": "430d38cfa710d3f33d5be7906128f8569abf6195617243f848828eeb5b647fc2",
+   "first_planter": [
+    5,
+    1
+   ],
+   "first_tree": [
+    9,
+    10
+   ],
+   "cash_diffs": [
+    29.89,
+    28.24,
+    528.79,
+    406.66,
+    715.35,
+    -873.88
+   ],
+   "economy_diffs_at_75": [
+    172.85,
+    336.9,
+    2,
+    -3,
+    -3
+   ]
+  },
+  {
+   "match": "eada6cccdcadae78ceffb2be499c8203",
+   "game": 1,
+   "opponent": "SpongeBaby-CarbonNet-v3.0",
+   "opponent_id": "04cf11d7f98adf0142da924be98f8aa6",
+   "seat": 0,
+   "seed": 1310278046,
+   "turns": 299,
+   "won": true,
+   "scores": [
+    7438.56,
+    7355.99
+   ],
+   "layout": "480b5e128c718d8796d671b488a6b0e138e5570f0d78a252a9c859fa5a434e3b",
+   "first_planter": [
+    7,
+    11
+   ],
+   "first_tree": [
+    12,
+    18
+   ],
+   "cash_diffs": [
+    -27.91,
+    16.11,
+    -467.3,
+    -189.59,
+    -212.57,
+    424.09
+   ],
+   "economy_diffs_at_75": [
+    -373.48,
+    -353.33,
+    -4,
+    3,
+    0
+   ]
+  },
+  {
+   "match": "e087a07e549515c08e3bf4ec6e3bef71",
+   "game": 1,
+   "opponent": "doubao-flash-v1",
+   "opponent_id": "c67556a06f33e850696aefd6f929920f",
+   "seat": 1,
+   "seed": 1477552958,
+   "turns": 299,
+   "won": true,
+   "scores": [
+    7570.43,
+    7353.78
+   ],
+   "layout": "92fd5f6f7958f3393a56a733e0d72f2cc65bf4af4c0d71ff6085596870666844",
+   "first_planter": [
+    10,
+    8
+   ],
+   "first_tree": [
+    16,
+    15
+   ],
+   "cash_diffs": [
+    -12.89,
+    38.85,
+    255.45,
+    -334.47,
+    408.08,
+    457.41
+   ],
+   "economy_diffs_at_75": [
+    -992.54,
+    761.15,
+    -8,
+    2,
+    -6
+   ]
+  },
+  {
+   "match": "5b6933953094f1af66b9c7fe4dca75c2",
+   "game": 1,
+   "opponent": "ds-pro-v1",
+   "opponent_id": "b99742a4a510a4de5dc99639b3c85604",
+   "seat": 1,
+   "seed": 976982043,
+   "turns": 299,
+   "won": true,
+   "scores": [
+    7755.17,
+    6778.69
+   ],
+   "layout": "97dd16e17b819aba1e46a5e3d5647566c3a67edd3fa1402bd1e3cb7258191724",
+   "first_planter": [
+    6,
+    7
+   ],
+   "first_tree": [
+    10,
+    20
+   ],
+   "cash_diffs": [
+    12.12,
+    178.03,
+    158.46,
+    552.7,
+    792.71,
+    1326.7
+   ],
+   "economy_diffs_at_75": [
+    59.79,
+    140.33,
+    -1,
+    5,
+    5
+   ]
+  },
+  {
+   "match": "54e00158af4f02ca131f2e4ce06549ad",
+   "game": 1,
+   "opponent": "Carago-测",
+   "opponent_id": "5ea226c4e2b2853c9b2807d23d6889f7",
+   "seat": 0,
+   "seed": 1649991342,
+   "turns": 299,
+   "won": true,
+   "scores": [
+    6202.3,
+    4890.76
+   ],
+   "layout": "abe1921d2f940401b4cec3e0afd34fce172c3b5cb3217532a7a700bc36f2666c",
+   "first_planter": [
+    16,
+    1
+   ],
+   "first_tree": [
+    27,
+    17
+   ],
+   "cash_diffs": [
+    65.12,
+    21.87,
+    -145.71,
+    82.47,
+    563.32,
+    699.33
+   ],
+   "economy_diffs_at_75": [
+    -235.72,
+    60.58,
+    -3,
+    2,
+    2
+   ]
+  },
+  {
+   "match": "61529d5cd08a1397f0598d37d2d519de",
+   "game": 1,
+   "opponent": "小肥鱼v5-d5",
+   "opponent_id": "067d497dfea83c9115fe743343e3afaa",
+   "seat": 1,
+   "seed": 690027378,
+   "turns": 299,
+   "won": true,
+   "scores": [
+    7822.85,
+    6933.48
+   ],
+   "layout": "9341c23063fa57c44668962b44bbca526678b718335723e1e78baa0fa1420967",
+   "first_planter": [
+    8,
+    1
+   ],
+   "first_tree": [
+    14,
+    6
+   ],
+   "cash_diffs": [
+    21.51,
+    81.47,
+    404.92,
+    557.8,
+    761.67,
+    599.95
+   ],
+   "economy_diffs_at_75": [
+    70.16,
+    98.84,
+    -2,
+    -2,
+    -5
+   ]
+  },
+  {
+   "match": "fa3ea68975543170687421323198708c",
+   "game": 1,
+   "opponent": "哈基米基准",
+   "opponent_id": "66ab03a1462c6fc6ce366a83dca18827",
+   "seat": 1,
+   "seed": 887540092,
+   "turns": 299,
+   "won": true,
+   "scores": [
+    8821.38,
+    6518.23
+   ],
+   "layout": "9a0048da4e7a2498483dbeaf97b0a7ff737ca16a4dbc6566254bbb13b783b570",
+   "first_planter": [
+    8,
+    1
+   ],
+   "first_tree": [
+    22,
+    5
+   ],
+   "cash_diffs": [
+    14.31,
+    53.94,
+    143.24,
+    479.85,
+    1637.4,
+    1395.48
+   ],
+   "economy_diffs_at_75": [
+    -167.34,
+    239.24,
+    -3,
+    4,
+    5
+   ]
+  },
+  {
+   "match": "a44ebda5b9ee6f5ae1682273ddd33460",
+   "game": 1,
+   "opponent": "Master3-Plus",
+   "opponent_id": "bc00764a55990ca3d969a002545c70ff",
+   "seat": 1,
+   "seed": 1793771344,
+   "turns": 299,
+   "won": true,
+   "scores": [
+    9344.41,
+    8315.38
+   ],
+   "layout": "2538b2c1b81bba7a7d9defef62678100a6a98836ab4bab52e880326701c0e30c",
+   "first_planter": [
+    9,
+    9
+   ],
+   "first_tree": [
+    16,
+    18
+   ],
+   "cash_diffs": [
+    -40.88,
+    -30.24,
+    108.23,
+    676.43,
+    623.6,
+    1296.18
+   ],
+   "economy_diffs_at_75": [
+    -210.32,
+    69.74,
+    -4,
+    1,
+    -1
+   ]
+  },
+  {
+   "match": "4d45ac0079fc62816fea29d09b512a30",
+   "game": 1,
+   "opponent": "ds-pro-v2",
+   "opponent_id": "ec94599e5182be7d35eb14bc288625cd",
+   "seat": 1,
+   "seed": 254576505,
+   "turns": 299,
+   "won": true,
+   "scores": [
+    7622.28,
+    5966.14
+   ],
+   "layout": "e037c9085e0b10e89ac3e3aca219761b6f07743d615fdd248cfa59c8fd6edf51",
+   "first_planter": [
+    6,
+    5
+   ],
+   "first_tree": [
+    12,
+    21
+   ],
+   "cash_diffs": [
+    -7.67,
+    -42.79,
+    -107.61,
+    742.06,
+    776.27,
+    1897.78
+   ],
+   "economy_diffs_at_75": [
+    220.82,
+    104.38,
+    6,
+    -3,
+    1
+   ]
+  },
+  {
+   "match": "8cfa0cb23550156f8a8759f379c9f037",
+   "game": 1,
+   "opponent": "CarbonEdge_Apollo",
+   "opponent_id": "dd1f117a64c676225f0c6333b1cdd1e7",
+   "seat": 1,
+   "seed": 1162399049,
+   "turns": 299,
+   "won": false,
+   "scores": [
+    5070.02,
+    10642.56
+   ],
+   "layout": "fcd5f2f58c3044d061ef767af5979bf696e12e2a2e6ec4e1c93501a5c7eeefad",
+   "first_planter": [
+    16,
+    1
+   ],
+   "first_tree": [
+    28,
+    5
+   ],
+   "cash_diffs": [
+    3.06,
+    4.47,
+    -1304.02,
+    -2192.88,
+    -4731.04,
+    -5503.23
+   ],
+   "economy_diffs_at_75": [
+    -1287.27,
+    -878.94,
+    -14,
+    1,
+    -12
+   ]
+  },
+  {
+   "match": "28bf707815d5dfb2b664a3d17f17b7b7",
+   "game": 1,
+   "opponent": "ClaudeFable5.2-v7",
+   "opponent_id": "2d4e4c772f057208b7121ed76dba4f33",
+   "seat": 0,
+   "seed": 145642360,
+   "turns": 299,
+   "won": true,
+   "scores": [
+    8308.98,
+    7300.0
+   ],
+   "layout": "a5093cdc2292440e95265d20e83da5ad2da5019a93e22ed44eb28f042b29e019",
+   "first_planter": [
+    7,
+    7
+   ],
+   "first_tree": [
+    13,
+    13
+   ],
+   "cash_diffs": [
+    -21.77,
+    2.39,
+    113.52,
+    211.36,
+    103.44,
+    505.46
+   ],
+   "economy_diffs_at_75": [
+    -297.16,
+    227.77,
+    -6,
+    1,
+    -7
+   ]
+  },
+  {
+   "match": "9654d76565fefa1bd959dd8e5a48cad3",
+   "game": 1,
+   "opponent": "claude-AlphaCarbon-Master3s2",
+   "opponent_id": "d679ed45ab595e8b7bb1ea51c3451154",
+   "seat": 0,
+   "seed": 989258352,
+   "turns": 299,
+   "won": true,
+   "scores": [
+    7204.55,
+    6760.05
+   ],
+   "layout": "8768c2922d2e7cb4d8bd33361446fa0653f4561d8edd9c1e245aff9c1a57c409",
+   "first_planter": [
+    7,
+    1
+   ],
+   "first_tree": [
+    11,
+    12
+   ],
+   "cash_diffs": [
+    -37.01,
+    73.39,
+    -449.27,
+    -448.84,
+    445.57,
+    865.16
+   ],
+   "economy_diffs_at_75": [
+    -788.12,
+    121.15,
+    -7,
+    1,
+    -6
+   ]
+  },
+  {
+   "match": "dcad48aeba7f3ebcadcf70fe4cf1ae99",
+   "game": 1,
+   "opponent": "小肥鱼v5-d5",
+   "opponent_id": "067d497dfea83c9115fe743343e3afaa",
+   "seat": 0,
+   "seed": 408160534,
+   "turns": 299,
+   "won": false,
+   "scores": [
+    7684.47,
+    7715.24
+   ],
+   "layout": "428a606235d1efaf80aa20c0d1d3ec3e20a63ecdc46296a48068701976fb6f5d",
+   "first_planter": [
+    5,
+    1
+   ],
+   "first_tree": [
+    18,
+    6
+   ],
+   "cash_diffs": [
+    -23.92,
+    112.35,
+    196.83,
+    217.16,
+    -165.09,
+    340.21
+   ],
+   "economy_diffs_at_75": [
+    -848.56,
+    687.56,
+    -5,
+    -3,
+    -10
+   ]
+  },
+  {
+   "match": "e2c0eb629674da05c07f4f47f906d5dc",
+   "game": 1,
+   "opponent": "CarbonEdge_Apollo",
+   "opponent_id": "dd1f117a64c676225f0c6333b1cdd1e7",
+   "seat": 1,
+   "seed": 784661155,
+   "turns": 299,
+   "won": false,
+   "scores": [
+    5288.14,
+    6427.91
+   ],
+   "layout": "4cba25fd2e6208ab58f031a1230f1842b4a1746b65adf8e513ab3fead83e6ed9",
+   "first_planter": [
+    9,
+    1
+   ],
+   "first_tree": [
+    21,
+    12
+   ],
+   "cash_diffs": [
+    -10.36,
+    -187.67,
+    -254.77,
+    -528.04,
+    -958.23,
+    -1165.6
+   ],
+   "economy_diffs_at_75": [
+    -334.78,
+    85.65,
+    -3,
+    1,
+    3
+   ]
+  },
+  {
+   "match": "ca78e9afcad87fd1c9b07ea5a784d400",
+   "game": 1,
+   "opponent": "小肥鱼v5",
+   "opponent_id": "2856c37287900ee3cba8eca53b827da9",
+   "seat": 0,
+   "seed": 2074184036,
+   "turns": 299,
+   "won": true,
+   "scores": [
+    7607.06,
+    6098.68
+   ],
+   "layout": "4d6694f7878fa0ca7f204f375c0c8e3b17202ffc21ca087b8589331346c16905",
+   "first_planter": [
+    9,
+    1
+   ],
+   "first_tree": [
+    14,
+    5
+   ],
+   "cash_diffs": [
+    48.79,
+    26.68,
+    903.5,
+    1026.32,
+    1326.0,
+    1437.03
+   ],
+   "economy_diffs_at_75": [
+    762.4,
+    197.99,
+    3,
+    0,
+    0
+   ]
+  },
+  {
+   "match": "8d11b5176c334842d52318378cf4b1a3",
+   "game": 1,
+   "opponent": "小肥鱼v5-it720e20",
+   "opponent_id": "a94f304f3e203fe0016849d44fc073b3",
+   "seat": 0,
+   "seed": 1910712294,
+   "turns": 299,
+   "won": false,
+   "scores": [
+    7554.29,
+    8060.83
+   ],
+   "layout": "50e2a72b8ce4694ad03e1cf3aedef5b5508e4b1fe4842ff4f15149527e01f693",
+   "first_planter": [
+    6,
+    1
+   ],
+   "first_tree": [
+    10,
+    5
+   ],
+   "cash_diffs": [
+    27.14,
+    -107.27,
+    69.28,
+    -1.29,
+    -837.21,
+    -532.19
+   ],
+   "economy_diffs_at_75": [
+    329.22,
+    29.21,
+    6,
+    -2,
+    1
+   ]
+  },
+  {
+   "match": "3fcb197363f9ea1ed16d87a959525db0",
+   "game": 1,
+   "opponent": "RyanX-AIPowercore-it940-v4b",
+   "opponent_id": "40a58f89955a8b792d08b4bf5aeb3e53",
+   "seat": 0,
+   "seed": 456466972,
+   "turns": 299,
+   "won": true,
+   "scores": [
+    6716.06,
+    6483.01
+   ],
+   "layout": "6c12fdd4b31b418df9ff200224077af6c3528ffdc02b61d07a6b2ab543557c97",
+   "first_planter": [
+    6,
+    1
+   ],
+   "first_tree": [
+    23,
+    6
+   ],
+   "cash_diffs": [
+    -28.02,
+    80.26,
+    796.81,
+    1047.4,
+    1372.3,
+    190.16
+   ],
+   "economy_diffs_at_75": [
+    378.03,
+    502.99,
+    2,
+    1,
+    5
+   ]
+  },
+  {
+   "match": "753dd13cb2faca820aa98e4c20c93f5e",
+   "game": 1,
+   "opponent": "SpongeBaby-CarbonNet-v3.0",
+   "opponent_id": "04cf11d7f98adf0142da924be98f8aa6",
+   "seat": 1,
+   "seed": 1372423883,
+   "turns": 299,
+   "won": false,
+   "scores": [
+    3930.67,
+    4314.2
+   ],
+   "layout": "3131a13d1a5bc0893e394c620eb9ab9112a67411b016814d82c8c0598adc56c7",
+   "first_planter": [
+    6,
+    7
+   ],
+   "first_tree": [
+    12,
+    16
+   ],
+   "cash_diffs": [
+    -63.66,
+    -36.9,
+    -505.1,
+    -606.99,
+    -934.83,
+    -656.96
+   ],
+   "economy_diffs_at_75": [
+    -732.43,
+    -197.05,
+    -8,
+    0,
+    -6
+   ]
+  },
+  {
+   "match": "0b68af5d453b8d1955df0f60ebd934aa",
+   "game": 1,
+   "opponent": "1C-Testv2",
+   "opponent_id": "f9113ec697b0943601ec961a3ad9c33a",
+   "seat": 0,
+   "seed": 1914029370,
+   "turns": 299,
+   "won": true,
+   "scores": [
+    6279.16,
+    5146.57
+   ],
+   "layout": "42b8e12be843fee824c3636a1d03407bdf50b11dca7c757f14ddef818b352ccf",
+   "first_planter": [
+    11,
+    1
+   ],
+   "first_tree": [
+    20,
+    7
+   ],
+   "cash_diffs": [
+    -5.61,
+    21.67,
+    260.35,
+    -6.8,
+    795.8,
+    1242.97
+   ],
+   "economy_diffs_at_75": [
+    -575.52,
+    480.26,
+    -6,
+    -2,
+    -9
+   ]
+  },
+  {
+   "match": "14ba1556a10dc61c70fae7c191eea2f8",
+   "game": 1,
+   "opponent": "小肥鱼v5-it720",
+   "opponent_id": "6274e28186ca0f0a5a1022fd098255ee",
+   "seat": 0,
+   "seed": 404416299,
+   "turns": 299,
+   "won": true,
+   "scores": [
+    7349.52,
+    6591.49
+   ],
+   "layout": "12ac832c3061d7532a36e182d480758caddf8e3fac1bfd3e497fdd780a88c8f9",
+   "first_planter": [
+    9,
+    1
+   ],
+   "first_tree": [
+    25,
+    6
+   ],
+   "cash_diffs": [
+    17.05,
+    -10.8,
+    -376.38,
+    -146.56,
+    -161.7,
+    598.51
+   ],
+   "economy_diffs_at_75": [
+    -410.72,
+    -158.33,
+    -6,
+    3,
+    -3
+   ]
+  },
+  {
+   "match": "8f68ebe5109b6be9817bf1b39ebb90e9",
+   "game": 1,
+   "opponent": "SpongeBaby-CarbonNet-v2.0",
+   "opponent_id": "182aed58db5991bcd0df65cd41a667be",
+   "seat": 0,
+   "seed": 1313964316,
+   "turns": 299,
+   "won": true,
+   "scores": [
+    8481.68,
+    7960.8
+   ],
+   "layout": "8f89c98eaef291aade2ed34cd18ecc4082060aee3a5d85f58966cb70bf1aece2",
+   "first_planter": [
+    9,
+    1
+   ],
+   "first_tree": [
+    25,
+    6
+   ],
+   "cash_diffs": [
+    106.41,
+    37.45,
+    273.14,
+    -92.53,
+    405.52,
+    128.89
+   ],
+   "economy_diffs_at_75": [
+    702.91,
+    -53.53,
+    5,
+    0,
+    2
+   ]
+  },
+  {
+   "match": "20b85060c8e5cba8bc73c73aaaeae332",
+   "game": 1,
+   "opponent": "ClaudeFable5.2-v8",
+   "opponent_id": "9a48e91843cb609b25875749aff9b7e0",
+   "seat": 0,
+   "seed": 2066407889,
+   "turns": 299,
+   "won": true,
+   "scores": [
+    7170.09,
+    5852.39
+   ],
+   "layout": "13fccc7915f12d80b2c7fcf99804ccce1e8cc9a90fc2f1314f35049310ea6e78",
+   "first_planter": [
+    6,
+    7
+   ],
+   "first_tree": [
+    11,
+    11
+   ],
+   "cash_diffs": [
+    -57.21,
+    239.99,
+    182.28,
+    16.63,
+    180.55,
+    1118.22
+   ],
+   "economy_diffs_at_75": [
+    -350.79,
+    319.85,
+    -4,
+    2,
+    0
+   ]
+  },
+  {
+   "match": "57597be93dc5479f7d23790241247065",
+   "game": 1,
+   "opponent": "哈基米基准2",
+   "opponent_id": "0dbebe7bf8af242b6aef32ae87c8c364",
+   "seat": 0,
+   "seed": 1736706874,
+   "turns": 299,
+   "won": true,
+   "scores": [
+    8352.44,
+    8170.91
+   ],
+   "layout": "c2cbe4202c1f4c57509260609f86d13ed557e6f8693d1a6ee13eeeb33859685c",
+   "first_planter": [
+    6,
+    1
+   ],
+   "first_tree": [
+    16,
+    5
+   ],
+   "cash_diffs": [
+    -110.79,
+    136.8,
+    176.64,
+    346.9,
+    312.7,
+    1117.98
+   ],
+   "economy_diffs_at_75": [
+    207.73,
+    -133.17,
+    0,
+    -1,
+    -3
+   ]
+  },
+  {
+   "match": "9c60786238c1b9d88d9919f76b75d2dc",
+   "game": 1,
+   "opponent": "ClaudeFable5.2-v7",
+   "opponent_id": "2d4e4c772f057208b7121ed76dba4f33",
+   "seat": 0,
+   "seed": 900035046,
+   "turns": 299,
+   "won": true,
+   "scores": [
+    8271.8,
+    6986.4
+   ],
+   "layout": "0559c42245efa0d6f671a5da0d32704f8b0bcf23755adfa5d014f64a73011889",
+   "first_planter": [
+    6,
+    11
+   ],
+   "first_tree": [
+    10,
+    19
+   ],
+   "cash_diffs": [
+    -10.32,
+    -316.87,
+    283.02,
+    486.4,
+    379.22,
+    989.99
+   ],
+   "economy_diffs_at_75": [
+    141.45,
+    208.91,
+    2,
+    -1,
+    -3
+   ]
+  },
+  {
+   "match": "1ba0a7f5dd9aae2eaa4a0ce7a5f750af",
+   "game": 1,
+   "opponent": "哈基米基准3",
+   "opponent_id": "5564dba0cbad8252113b94b8ba006333",
+   "seat": 0,
+   "seed": 1174979934,
+   "turns": 299,
+   "won": true,
+   "scores": [
+    6347.22,
+    6027.59
+   ],
+   "layout": "ef8b721798696d8b502ddc837890d6b4c9cfffbe810c946d048ada7681445beb",
+   "first_planter": [
+    11,
+    1
+   ],
+   "first_tree": [
+    17,
+    6
+   ],
+   "cash_diffs": [
+    -45.01,
+    -74.46,
+    -515.22,
+    -187.86,
+    -7.71,
+    -28.89
+   ],
+   "economy_diffs_at_75": [
+    -436.14,
+    -35.97,
+    1,
+    -3,
+    -3
+   ]
+  },
+  {
+   "match": "6c42cfc5d4ca3b58c8695cbcc0cf9020",
+   "game": 1,
+   "opponent": "Carago-测",
+   "opponent_id": "5ea226c4e2b2853c9b2807d23d6889f7",
+   "seat": 0,
+   "seed": 2126834653,
+   "turns": 299,
+   "won": true,
+   "scores": [
+    8370.61,
+    6408.41
+   ],
+   "layout": "27fabc24e62f59e0e2af734d4814d76c606ca676378bc303256aa88ca70b26e9",
+   "first_planter": [
+    6,
+    1
+   ],
+   "first_tree": [
+    10,
+    5
+   ],
+   "cash_diffs": [
+    49.93,
+    243.32,
+    430.0,
+    248.96,
+    1018.67,
+    1884.62
+   ],
+   "economy_diffs_at_75": [
+    -465.3,
+    414.35,
+    -9,
+    2,
+    -4
+   ]
+  },
+  {
+   "match": "5a3bc1741e8bde8c8c5661549cd7a534",
+   "game": 1,
+   "opponent": "SpongeBaby-CarbonNet-v2.0",
+   "opponent_id": "182aed58db5991bcd0df65cd41a667be",
+   "seat": 1,
+   "seed": 1283955035,
+   "turns": 299,
+   "won": true,
+   "scores": [
+    6326.58,
+    6211.44
+   ],
+   "layout": "bde95c9386e4a11097335137d7e537f29975d01a3d02540b8e2e3924a1bda993",
+   "first_planter": [
+    10,
+    1
+   ],
+   "first_tree": [
+    26,
+    5
+   ],
+   "cash_diffs": [
+    0.19,
+    -91.31,
+    -56.42,
+    -459.1,
+    97.97,
+    -100.67
+   ],
+   "economy_diffs_at_75": [
+    -366.18,
+    45.44,
+    -5,
+    -1,
+    -9
+   ]
+  },
+  {
+   "match": "f46a5a690a48da0d6ac5d3ab9c86b236",
+   "game": 1,
+   "opponent": "doubao-flash-v1",
+   "opponent_id": "c67556a06f33e850696aefd6f929920f",
+   "seat": 1,
+   "seed": 1862612831,
+   "turns": 299,
+   "won": true,
+   "scores": [
+    8227.42,
+    6367.79
+   ],
+   "layout": "c1b7933407a24d90e511f9dcc8abb50551d7eb5508a84d67f1d05d384cdbe912",
+   "first_planter": [
+    6,
+    9
+   ],
+   "first_tree": [
+    11,
+    14
+   ],
+   "cash_diffs": [
+    -6.92,
+    -6.35,
+    390.76,
+    702.58,
+    1202.08,
+    1849.57
+   ],
+   "economy_diffs_at_75": [
+    -297.28,
+    434.97,
+    -6,
+    4,
+    1
+   ]
+  },
+  {
+   "match": "c910a302a1d4a40d4a4cc1a57ea64ec1",
+   "game": 1,
+   "opponent": "Master3-Plus",
+   "opponent_id": "bc00764a55990ca3d969a002545c70ff",
+   "seat": 1,
+   "seed": 665831185,
+   "turns": 299,
+   "won": true,
+   "scores": [
+    7854.14,
+    6765.74
+   ],
+   "layout": "7b9639080e6910a947d20e636ac987987b6d639180717db1611cc1bce7599554",
+   "first_planter": [
+    6,
+    6
+   ],
+   "first_tree": [
+    10,
+    10
+   ],
+   "cash_diffs": [
+    -35.43,
+    24.15,
+    165.92,
+    14.63,
+    171.57,
+    821.53
+   ],
+   "economy_diffs_at_75": [
+    1.07,
+    -37.88,
+    -5,
+    5,
+    4
+   ]
+  },
+  {
+   "match": "e1ce9a74eb8f7265cfa28ad071601477",
+   "game": 1,
+   "opponent": "小肥鱼v5-late2s",
+   "opponent_id": "a32c0c237253d9948b053755d241ad14",
+   "seat": 0,
+   "seed": 937769445,
+   "turns": 299,
+   "won": true,
+   "scores": [
+    6453.72,
+    6403.84
+   ],
+   "layout": "fca2dd1322377d22d7faa6bc729dac96db8eace230e4fd019cd0c17d0208d945",
+   "first_planter": [
+    9,
+    1
+   ],
+   "first_tree": [
+    21,
+    5
+   ],
+   "cash_diffs": [
+    6.16,
+    264.1,
+    582.72,
+    198.59,
+    -79.35,
+    -37.51
+   ],
+   "economy_diffs_at_75": [
+    -97.97,
+    228.11,
+    -9,
+    5,
+    0
+   ]
+  },
+  {
+   "match": "f9d5141a74f6331540f720bac0716614",
+   "game": 1,
+   "opponent": "小肥鱼v5-it720e20",
+   "opponent_id": "a94f304f3e203fe0016849d44fc073b3",
+   "seat": 0,
+   "seed": 2067020345,
+   "turns": 299,
+   "won": true,
+   "scores": [
+    7257.99,
+    6804.78
+   ],
+   "layout": "6a2f832daf76c543af1b8716b804ee9e4900c367b38bfb65e6981f1f9c7e150b",
+   "first_planter": [
+    9,
+    1
+   ],
+   "first_tree": [
+    14,
+    12
+   ],
+   "cash_diffs": [
+    -76.97,
+    -3.01,
+    562.69,
+    167.92,
+    -393.12,
+    205.43
+   ],
+   "economy_diffs_at_75": [
+    -60.9,
+    689.9,
+    2,
+    -4,
+    -4
+   ]
+  },
+  {
+   "match": "e798d5a6b0afa0e73b1ffc1764e3f096",
+   "game": 1,
+   "opponent": "小肥鱼v5-it720",
+   "opponent_id": "6274e28186ca0f0a5a1022fd098255ee",
+   "seat": 0,
+   "seed": 322457109,
+   "turns": 299,
+   "won": false,
+   "scores": [
+    7946.7,
+    9200.08
+   ],
+   "layout": "a0ab7db8ae95dee610f28f4d77a75df7518f8f899feb9a5e21b3a63f6c56df8b",
+   "first_planter": [
+    6,
+    1
+   ],
+   "first_tree": [
+    16,
+    27
+   ],
+   "cash_diffs": [
+    -23.6,
+    218.42,
+    15.81,
+    528.9,
+    -408.16,
+    -687.44
+   ],
+   "economy_diffs_at_75": [
+    83.59,
+    -273.23,
+    -3,
+    1,
+    -3
+   ]
+  },
+  {
+   "match": "e5386064def51a446d1cbba1d54d9a5c",
+   "game": 1,
+   "opponent": "claude-AlphaCarbon-Master6",
+   "opponent_id": "ecde65e596acbeb9ba5feca22e05f100",
+   "seat": 1,
+   "seed": 1025707547,
+   "turns": 299,
+   "won": false,
+   "scores": [
+    4635.35,
+    7830.91
+   ],
+   "layout": "c8720ebf3be7067ae87c3aaeb2c1b48a3db1d31598a16252a8b7a86e09cb0d2a",
+   "first_planter": [
+    6,
+    1
+   ],
+   "first_tree": [
+    10,
+    11
+   ],
+   "cash_diffs": [
+    -58.09,
+    -99.82,
+    -307.87,
+    -932.07,
+    -2270.06,
+    -2396.12
+   ],
+   "economy_diffs_at_75": [
+    -1019.71,
+    279.66,
+    -10,
+    1,
+    -7
+   ]
+  },
+  {
+   "match": "ccf13750e52dcb1f3212fddd1abc3e65",
+   "game": 1,
+   "opponent": "1C-Testv2",
+   "opponent_id": "f9113ec697b0943601ec961a3ad9c33a",
+   "seat": 1,
+   "seed": 1037193151,
+   "turns": 299,
+   "won": true,
+   "scores": [
+    6683.77,
+    6255.38
+   ],
+   "layout": "3719d4922fe38e3b2b1d55c5ad559d64405c9621d8f7f1552d4fadc53d4d75cb",
+   "first_planter": [
+    6,
+    1
+   ],
+   "first_tree": [
+    14,
+    11
+   ],
+   "cash_diffs": [
+    13.68,
+    20.21,
+    181.72,
+    188.57,
+    115.5,
+    813.22
+   ],
+   "economy_diffs_at_75": [
+    144.64,
+    240.11,
+    4,
+    -2,
+    -2
+   ]
+  },
+  {
+   "match": "126ff43f0bded26906b3b72d89cb6a23",
+   "game": 1,
+   "opponent": "SpongeBaby-CarbonNet-v3.0",
+   "opponent_id": "04cf11d7f98adf0142da924be98f8aa6",
+   "seat": 1,
+   "seed": 683583901,
+   "turns": 299,
+   "won": false,
+   "scores": [
+    5812.17,
+    6715.12
+   ],
+   "layout": "383c88661a1b0338abc1f39d5a6d9d5ad51885d051b5cee38c49c434c0ad9b18",
+   "first_planter": [
+    8,
+    11
+   ],
+   "first_tree": [
+    14,
+    20
+   ],
+   "cash_diffs": [
+    15.04,
+    -98.12,
+    -406.03,
+    -689.06,
+    -951.85,
+    -1274.15
+   ],
+   "economy_diffs_at_75": [
+    -737.8,
+    -274.82,
+    -10,
+    -1,
+    -11
+   ]
+  },
+  {
+   "match": "bca62e8310d95e3b1cb51184b31e8470",
+   "game": 1,
+   "opponent": "小肥鱼v5-late2s",
+   "opponent_id": "a32c0c237253d9948b053755d241ad14",
+   "seat": 0,
+   "seed": 1317783670,
+   "turns": 299,
+   "won": true,
+   "scores": [
+    7014.2,
+    6706.05
+   ],
+   "layout": "8a39834dddf31e31f984c34273bc574713fbae37e419d02fd96aa6feb9fd3685",
+   "first_planter": [
+    6,
+    1
+   ],
+   "first_tree": [
+    11,
+    7
+   ],
+   "cash_diffs": [
+    37.13,
+    -187.66,
+    -375.77,
+    -451.06,
+    195.6,
+    85.85
+   ],
+   "economy_diffs_at_75": [
+    -574.16,
+    -117.56,
+    -3,
+    -4,
+    -10
+   ]
+  },
+  {
+   "match": "4019af1207f1b381ae3a80e7d66d5310",
+   "game": 1,
+   "opponent": "RyanX-AIPowercore-it940-v4b",
+   "opponent_id": "40a58f89955a8b792d08b4bf5aeb3e53",
+   "seat": 1,
+   "seed": 889257667,
+   "turns": 299,
+   "won": false,
+   "scores": [
+    5836.77,
+    8042.73
+   ],
+   "layout": "bd888ea4cdf44454bc185bdb05d27c3462fb74d69641268e5f239d861983ab5d",
+   "first_planter": [
+    10,
+    1
+   ],
+   "first_tree": [
+    29,
+    6
+   ],
+   "cash_diffs": [
+    -27.81,
+    -193.32,
+    -536.07,
+    -1035.9,
+    -913.49,
+    -2529.22
+   ],
+   "economy_diffs_at_75": [
+    -783.0,
+    153.27,
+    -2,
+    -2,
+    -7
+   ]
+  },
+  {
+   "match": "01f4101e17eb958da9e748bffe571a58",
+   "game": 1,
+   "opponent": "ClaudeFable5.2-v8",
+   "opponent_id": "9a48e91843cb609b25875749aff9b7e0",
+   "seat": 0,
+   "seed": 1442543084,
+   "turns": 299,
+   "won": true,
+   "scores": [
+    6901.95,
+    5923.83
+   ],
+   "layout": "e8328e97b3690ed3fff18396f1ccc01457adf42f7098702e9293ce81d316c154",
+   "first_planter": [
+    6,
+    6
+   ],
+   "first_tree": [
+    13,
+    12
+   ],
+   "cash_diffs": [
+    12.6,
+    -240.13,
+    -196.51,
+    45.15,
+    130.1,
+    893.91
+   ],
+   "economy_diffs_at_75": [
+    -625.74,
+    369.65,
+    -2,
+    -2,
+    -4
+   ]
+  },
+  {
+   "match": "89d2a57fe2da4340f9f2efbedff4fa55",
+   "game": 1,
+   "opponent": "小肥鱼v5",
+   "opponent_id": "2856c37287900ee3cba8eca53b827da9",
+   "seat": 1,
+   "seed": 1311452862,
+   "turns": 299,
+   "won": true,
+   "scores": [
+    6156.72,
+    5932.5
+   ],
+   "layout": "898720341848de848d22f278f94f4e7ee94d632203ed9c940ef40608c551b2b2",
+   "first_planter": [
+    6,
+    1
+   ],
+   "first_tree": [
+    31,
+    5
+   ],
+   "cash_diffs": [
+    -10.39,
+    13.38,
+    60.18,
+    -184.92,
+    209.8,
+    170.4
+   ],
+   "economy_diffs_at_75": [
+    -156.09,
+    9.38,
+    -2,
+    -3,
+    -7
+   ]
+  },
+  {
+   "match": "fc81aa5599761a1088336c4be546679f",
+   "game": 1,
+   "opponent": "哈基米基准3",
+   "opponent_id": "5564dba0cbad8252113b94b8ba006333",
+   "seat": 1,
+   "seed": 1351400190,
+   "turns": 299,
+   "won": true,
+   "scores": [
+    8973.37,
+    8420.26
+   ],
+   "layout": "6cd4c7fa4d95e4642857da3b6592c5a984d13b0e53dbe3a869b4d49b0c205857",
+   "first_planter": [
+    9,
+    1
+   ],
+   "first_tree": [
+    26,
+    5
+   ],
+   "cash_diffs": [
+    2.84,
+    52.97,
+    193.88,
+    765.03,
+    998.48,
+    536.57
+   ],
+   "economy_diffs_at_75": [
+    622.99,
+    -233.41,
+    3,
+    0,
+    3
+   ]
+  },
+  {
+   "match": "b6fcc5a178dfe284d2b6e500ddd7a1fa",
+   "game": 1,
+   "opponent": "LJM-TidalSearch-v1",
+   "opponent_id": "c6b9b0a85df74ecb9382729b50a0ca7d",
+   "seat": 1,
+   "seed": 1790013048,
+   "turns": 299,
+   "won": true,
+   "scores": [
+    8544.36,
+    7090.8
+   ],
+   "layout": "1af40a5dc25b8686ce2966155a61a9e238a27ee426d5b62768a2b22770b107b7",
+   "first_planter": [
+    11,
+    13
+   ],
+   "first_tree": [
+    15,
+    17
+   ],
+   "cash_diffs": [
+    -29.34,
+    35.69,
+    468.1,
+    271.09,
+    652.9,
+    494.08
+   ],
+   "economy_diffs_at_75": [
+    -286.06,
+    779.08,
+    0,
+    -1,
+    -1
+   ]
+  },
+  {
+   "match": "96fdfebf4989b09144a312b7e9cfb6f8",
+   "game": 1,
+   "opponent": "stephen-K4TacSearch-v6",
+   "opponent_id": "5422677057dbcca6cdf11cb60b65ba71",
+   "seat": 0,
+   "seed": 679094739,
+   "turns": 299,
+   "won": true,
+   "scores": [
+    7720.55,
+    6413.34
+   ],
+   "layout": "c2bb2dac2bf973b9efab7f25b23379a6454c60d0166b34b28e22a392f39aa3c4",
+   "first_planter": [
+    6,
+    1
+   ],
+   "first_tree": [
+    10,
+    5
+   ],
+   "cash_diffs": [
+    -4.21,
+    -35.23,
+    -533.22,
+    -132.71,
+    309.09,
+    720.26
+   ],
+   "economy_diffs_at_75": [
+    -190.61,
+    -420.05,
+    -3,
+    1,
+    0
+   ]
+  }
+ ]
+}

@@ -2,6 +2,12 @@
 
 [公开回放快照](https://github.com/JUZI1/carbon-league-replays/tree/9213b31613d196b68e3f62a4138f4cb6fab32b0c)保留了同一策略 ID 的全部 59 局。读取榜单时，yan-v5 在重量榜第 7，42 胜 17 负。前两名 Apollo 和 Master7sE 各赢了它两次。对 1C-Testv2 三局全胜。57 局打满 299 步，和 Master7sE 的两局由裁判提前结束。[策略 ID、排行榜快照和对局文件清单](online-source.json)
 
+## 开局从哪里分化
+
+第 30 步，胜局和败局的现金差中位数都在 11 分以内。到第 75 步，胜局现金差为 +179，败局为 −308。败局组此时累计树收入差为 −738，基地累计入款差仍为 +29。按每场统计，败局里己方和对手累计新种树的中位数分别为 5 棵和 10 棵，首树中位时间反而比胜局早一步。六个同时有过胜负的对手中，有五个也出现败局树收入差更大的情况。[逐场复盘及例外](../../analysis/v6-online.json)
+
+![59 场线上对局前 100 步的资金与树收入差](../../analysis/v6-opening.png)
+
 ## 提前出局的两场
 
 第 109 步和第 191 步，yan-v5 分别只剩约 11 和 24 现金，失掉最后一名工人，场上也没有己方的树。两局最后记录的动作均为向下。锁定对手当回合实际走法，用原版裁判逐一枚举己方工人的五种动作，两局分别有三种和两种走法能让工人活过该回合。[逐项裁判结果](../../analysis/v6-elimination.json)
@@ -16,9 +22,13 @@
 - reserve 在 initiative 上加入短期资金预测，给低现金且补给不足的局面扣分。推演发生提前淘汰时按官方裁判计分。资金模型使用 300 张历史训练地图和 39 场 yan-v5 线上训练对局。在线独立保留 20 场检验，未来 44 步分差变化的平均绝对误差为 243.87，保持当前分差的预测误差为 306.05。[训练、验证地图及各预测期结果](projection.json)
 - learned 用原有风格网络提取特征，在历史回放和实际击败 yan-v5 的对手动作上单独微调工人及基地行动头。[动作训练与复现](learned.md)
 
+- opponent 根据可观测的敌方落点分别校准采集员和种植员动作的概率，更新根节点和后续搜索。六场线上回放中，对方工人实际走法的平均预测对数损失从 0.615 降到 0.459。[离线逐局复核](../../analysis/v6-opponent-audit.jsonl)
+- response 基于 learned，只在第 22–94 步树数和近期收入同时落后时提出额外争树选择。若现金不足招募且树收入低，搜索会额外考虑重载采集员到不同基地的路径以及轻载采集员接应的可能性。
+
 从仓库的本地竞技场环境运行以下命令。SNAPSHOT 包含固定版本的 index.json 和 replays/。绝对路径或相对路径均可。
 
 ```sh
+python experiments/v6/review.py --data "$SNAPSHOT"
 python experiments/v6/elimination_audit.py "$SNAPSHOT" /tmp/v6-elimination.json
 python experiments/v6/guard_audit.py "$SNAPSHOT" /tmp/v6-guard.json
 python experiments/v6/build_initiative.py /tmp/initiative.py
