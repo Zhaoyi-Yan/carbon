@@ -1,0 +1,96 @@
+{
+  "checked_shanghai": "2026-11-22T23:36:45+08:00",
+  "url": "https://117.72.210.134/api/leaderboard",
+  "rankings": [
+    {
+      "author": "CarbonEdge",
+      "name": "CarbonEdge_Apollo",
+      "board": "heavy",
+      "board_rank": 1,
+      "wins": 97,
+      "games": 105,
+      "rating": 3171.7937913112028,
+      "is_public": false,
+      "id": "dd1f117a64c676225f0c6333b1cdd1e7"
+    },
+    {
+      "author": "CarbonEdge",
+      "name": "CarbonEdge_Artemis",
+      "board": "heavy",
+      "board_rank": 2,
+      "wins": 52,
+      "games": 53,
+      "rating": 3165.2690572544725,
+      "is_public": false,
+      "id": "226891089ba7f54b198c8f8dc771dfc2"
+    },
+    {
+      "author": "yanzhaoyi",
+      "name": "yan-v5",
+      "board": "heavy",
+      "board_rank": 8,
+      "wins": 50,
+      "games": 73,
+      "rating": 2855.3588281130023,
+      "is_public": false,
+      "id": "ec91ff24ea3af3510fe28c948b5d7da3"
+    }
+  ],
+  "game53": {
+    "match": "fa91f9c64237d2ba17e0fccc2b41ddbf",
+    "url": "https://117.72.210.134/api/summary/fa91f9c64237d2ba17e0fccc2b41ddbf/1",
+    "opponent": "claude-AlphaCarbon-Master7sE",
+    "order": [
+      "a",
+      "b"
+    ],
+    "scores": {
+      "a": 6880.68,
+      "b": 7595.03
+    },
+    "events_to_first_tree": [
+      [
+        1,
+        "recruit",
+        0,
+        "collector",
+        64
+      ],
+      [
+        1,
+        "recruit",
+        0,
+        "collector",
+        160
+      ],
+      [
+        2,
+        "recruit",
+        1,
+        "collector",
+        70
+      ],
+      [
+        2,
+        "recruit",
+        1,
+        "planter",
+        154
+      ],
+      [
+        7,
+        "deposit",
+        1,
+        27.2805,
+        70,
+        1
+      ],
+      [
+        7,
+        "plant",
+        1,
+        94
+      ]
+    ]
+  }
+}
