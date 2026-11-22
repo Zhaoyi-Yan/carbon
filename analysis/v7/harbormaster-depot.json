@@ -1,0 +1,57 @@
+{
+  "verified_prefix_frames": 91,
+  "own_seat": 1,
+  "release": {
+    "step": 86,
+    "drought": 45,
+    "original_hire": [
+      "RECPLANTER"
+    ],
+    "alternative": [
+      null
+    ]
+  },
+  "branches": [
+    {
+      "applied": false,
+      "courier_actions": [
+        "LEFT",
+        "UP"
+      ],
+      "cash": 7.53,
+      "cash_events": []
+    },
+    {
+      "applied": true,
+      "courier_actions": [
+        "DOWN",
+        "DOWN"
+      ],
+      "cash": 120.7,
+      "cash_events": [
+        [
+          92,
+          "bank",
+          1,
+          127.70303999999999,
+          "player-1-worker-11",
+          1,
+          "player-1-recrtCenter-1"
+        ],
+        [
+          92,
+          "seize",
+          1,
+          -20.0
+        ],
+        [
+          92,
+          "tree_yield",
+          1,
+          5.466449999999995
+        ]
+      ]
+    }
+  ],
+  "candidate_sha256": "d0ba5f631ceeb9ba5670a0013422caca414e407252e6907b90ebe9b33700be87"
+}

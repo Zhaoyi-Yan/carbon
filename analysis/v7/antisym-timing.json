@@ -1,0 +1,61 @@
+{
+  "ms_p50_p90": {
+    "2": {
+      "single": [
+        4.2098,
+        5.8271
+      ],
+      "full": [
+        7.8388,
+        11.5218
+      ],
+      "student": [
+        5.0751,
+        6.5854
+      ],
+      "reference": [
+        6.6409,
+        10.4947
+      ]
+    },
+    "4": {
+      "single": [
+        9.2246,
+        12.5016
+      ],
+      "full": [
+        22.6986,
+        31.4095
+      ],
+      "student": [
+        8.2303,
+        10.293
+      ],
+      "reference": [
+        16.374,
+        17.8162
+      ]
+    },
+    "8": {
+      "single": [
+        20.7866,
+        37.5128
+      ],
+      "full": [
+        58.0158,
+        65.8618
+      ],
+      "student": [
+        27.8054,
+        34.8169
+      ],
+      "reference": [
+        33.1133,
+        41.9542
+      ]
+    }
+  },
+  "cpu_threads": 1,
+  "source": "c035d185e221aaa0457893aa86074eab",
+  "note": "Neural passes only, on real leaf tensors at eight consecutive turns, 10 measured shuffled repetitions. Small-network adaptation and archive simulation are excluded from timings."
+}

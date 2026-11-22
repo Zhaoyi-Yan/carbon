@@ -25,6 +25,8 @@ import receipt_tail
 import rollout_cache
 import shipment_warning
 import small_batches
+import harbormaster
+import breakwater
 
 HERE=Path(__file__).resolve().parent
 ROOT=HERE.parents[1]
@@ -34,6 +36,14 @@ VERSIONS=('quay','tidepool','pilot','jetty','narrows','soundings','pilotage','fa
 
 
 def create(name):
+    if name in ('harbormaster','breakwater'):
+        if name=='harbormaster':
+            code=harbormaster.build(create('soundings'))
+        else:
+            code=breakwater.build((ROOT/'yan-v6.py').read_bytes())
+        if len(code.encode())>=10_000_000:raise ValueError('single-file tournament size')
+        compile(code,name,'exec')
+        return code
     stage=VERSIONS.index(name)
     weights='critic-shipping.npz' if stage>=VERSIONS.index('soundings') else 'shipping.npz'
     source=(ROOT/'yan-v6.py').read_bytes()
@@ -65,7 +75,7 @@ def create(name):
 
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument('version',choices=VERSIONS);p.add_argument('output',type=Path)
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('version',choices=(*VERSIONS,'harbormaster','breakwater'));p.add_argument('output',type=Path)
     a=p.parse_args()
     data=create(a.version).encode()
     with a.output.open('xb') as f:f.write(data)

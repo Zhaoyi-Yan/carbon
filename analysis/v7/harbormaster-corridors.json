@@ -1,0 +1,160 @@
+{
+  "sha256": "d0ba5f631ceeb9ba5670a0013422caca414e407252e6907b90ebe9b33700be87",
+  "method": "Replay both recorded sides up to the fork with the candidate\u2019s own trackers; after the fork run the unmodified agent while the opponent continues recorded commands for surviving IDs.",
+  "cases": [
+    {
+      "start": 48,
+      "turns": [
+        {
+          "turn": 48,
+          "our_actions": {
+            "player-1-worker-7": "UP",
+            "player-1-worker-11": "LEFT",
+            "player-1-worker-4": "DOWN",
+            "player-1-worker-9": "DOWN",
+            "player-1-worker-12": "RIGHT",
+            "player-1-worker-10": "UP"
+          },
+          "treasury": 35.07,
+          "gross": 0.0
+        },
+        {
+          "turn": 49,
+          "our_actions": {
+            "player-1-recrtCenter-1": "RECCOLLECTOR",
+            "player-1-worker-7": "UP",
+            "player-1-worker-12": "RIGHT",
+            "player-1-worker-9": "RIGHT",
+            "player-1-worker-11": "LEFT",
+            "player-1-worker-4": "DOWN"
+          },
+          "treasury": 17.43,
+          "gross": 0.0
+        },
+        {
+          "turn": 50,
+          "our_actions": {
+            "player-1-worker-4": "DOWN",
+            "player-1-worker-7": "UP",
+            "player-1-worker-11": "LEFT",
+            "player-1-worker-12": "RIGHT",
+            "player-1-worker-13": "UP",
+            "player-1-worker-9": "UP",
+            "player-1-worker-10": "RIGHT"
+          },
+          "treasury": 71.56,
+          "gross": 42.23
+        },
+        {
+          "turn": 51,
+          "our_actions": {
+            "player-1-recrtCenter-1": "RECPLANTER",
+            "player-1-worker-4": "RIGHT",
+            "player-1-worker-7": "UP",
+            "player-1-worker-12": "RIGHT",
+            "player-1-worker-10": "DOWN",
+            "player-1-worker-11": "RIGHT"
+          },
+          "treasury": 68.33,
+          "gross": 57.56
+        },
+        {
+          "turn": 52,
+          "our_actions": {
+            "player-1-recrtCenter-1": "RECCOLLECTOR",
+            "player-1-worker-4": "DOWN",
+            "player-1-worker-14": "DOWN",
+            "player-1-worker-10": "RIGHT"
+          },
+          "treasury": 93.13,
+          "gross": 118.86
+        },
+        {
+          "turn": 53,
+          "our_actions": {
+            "player-1-recrtCenter-0": "RECCOLLECTOR",
+            "player-1-recrtCenter-1": "RECCOLLECTOR",
+            "player-1-worker-14": "DOWN",
+            "player-1-worker-10": "RIGHT",
+            "player-1-worker-15": "DOWN",
+            "player-1-worker-4": "UP",
+            "player-1-worker-7": "DOWN"
+          },
+          "treasury": 46.12,
+          "gross": 118.86
+        }
+      ]
+    },
+    {
+      "start": 89,
+      "turns": [
+        {
+          "turn": 89,
+          "our_actions": {
+            "player-1-worker-4": "UP",
+            "player-1-worker-17": "DOWN",
+            "player-1-worker-11": "DOWN"
+          },
+          "treasury": 7.53,
+          "gross": 0.0
+        },
+        {
+          "turn": 90,
+          "our_actions": {
+            "player-1-worker-17": "LEFT",
+            "player-1-worker-4": "RIGHT",
+            "player-1-worker-11": "DOWN",
+            "player-1-worker-18": "RIGHT"
+          },
+          "treasury": 7.53,
+          "gross": 0.0
+        },
+        {
+          "turn": 91,
+          "our_actions": {
+            "player-1-worker-4": "UP",
+            "player-1-worker-11": "LEFT",
+            "player-1-worker-17": "LEFT",
+            "player-1-worker-18": "UP"
+          },
+          "treasury": 136.83,
+          "gross": 129.3
+        },
+        {
+          "turn": 92,
+          "our_actions": {
+            "player-1-recrtCenter-1": "RECPLANTER",
+            "player-1-worker-11": "RIGHT",
+            "player-1-worker-4": "DOWN",
+            "player-1-worker-17": "LEFT"
+          },
+          "treasury": 86.83,
+          "gross": 129.3
+        },
+        {
+          "turn": 93,
+          "our_actions": {
+            "player-1-worker-4": "LEFT",
+            "player-1-worker-18": "DOWN",
+            "player-1-worker-19": "LEFT",
+            "player-1-worker-17": "DOWN",
+            "player-1-worker-11": "DOWN"
+          },
+          "treasury": 92.63,
+          "gross": 129.3
+        },
+        {
+          "turn": 94,
+          "our_actions": {
+            "player-1-recrtCenter-1": "RECCOLLECTOR",
+            "player-1-worker-4": "DOWN",
+            "player-1-worker-18": "LEFT",
+            "player-1-worker-17": "DOWN"
+          },
+          "treasury": 49.13,
+          "gross": 129.3
+        }
+      ]
+    }
+  ]
+}

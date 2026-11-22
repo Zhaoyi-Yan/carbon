@@ -1,0 +1,5124 @@
+{
+  "development": [
+    "08ae5417084a1b26c9a64b70b3809b91efea13f8a3a8ed0a461d6ae3d0acafbb",
+    "119c0a7cf0ec60d52f5f0b1ecc5fef3d00b991c79aeae136bae44a53344372ae",
+    "11dfd6f8276769eb64deb127120e0e4edf19d7fadbcaa1b6a7f1d51bf902ec64",
+    "1b462e6ebbe66a4a131583b91e5ab987f6bac988de2113f956e0e1bf1c15d864",
+    "4924a2ac84cc7f85e65123eb0adf527feabdb74c472cf6bbc505ed77a5b9540f",
+    "5604fd02be8703048a7d883c63e5535300961bd34b8ba86339305f918d2ef878"
+  ],
+  "holdout": [
+    "0497082d6079b53bab1eefb586049e232b08fd0ae7309704e7740c64c6050f79",
+    "05e03ecdd6aff1aced2cbda9845fcf927f34a4bfb50b77872368efb06cc86112",
+    "0e48729ee04b8cb0ef10f898d2b03a7acae646d0a4b02692e72b246b1768f3c1",
+    "118c9e72342f272f3df1af02138f50f91e9087d131d6d0a96e1afdb5b241951a",
+    "2c81ecba392df2698cf6147d5bb6b6108accba207c77bdd8759b6651d1d6c25e",
+    "3806a00c508923390a8417462cf174089ac72f88a50f7bec541f1eeba66059da",
+    "461f2bd868e7b0758f145e53f8672bcc26c90ee1a97fda67ac6a550c95588882",
+    "4f07180759f5070386e2f66ff77b178582b8a1969b1e2695e1292369c29d2900",
+    "5076ad63b91a5398877546917df38ca4f82002b3a7cb42c149c823875e96bc50",
+    "81871b8fcf9bd6e0244ad131fa0e4408fda0d3415f3ed25e10ed1d48292708b2",
+    "d2ff3a561365a03279f3be7dc0f174e774962b840c40dc42254f82d3169c7456",
+    "eb42f0b75b64a78a57f1845b4ac81c103fb685e38fe70d5f24091d8432a5e10b"
+  ],
+  "games": [
+    {
+      "name": "1-10723257-0",
+      "panel": 1,
+      "seed": 10723257,
+      "side": 0,
+      "version": "quay",
+      "layout": "461f2bd868e7b0758f145e53f8672bcc26c90ee1a97fda67ac6a550c95588882",
+      "split": "test"
+    },
+    {
+      "name": "1-10723257-1",
+      "panel": 1,
+      "seed": 10723257,
+      "side": 1,
+      "version": "quay",
+      "layout": "461f2bd868e7b0758f145e53f8672bcc26c90ee1a97fda67ac6a550c95588882",
+      "split": "test"
+    },
+    {
+      "name": "1-233862518-0",
+      "panel": 1,
+      "seed": 233862518,
+      "side": 0,
+      "version": "quay",
+      "layout": "0497082d6079b53bab1eefb586049e232b08fd0ae7309704e7740c64c6050f79",
+      "split": "test"
+    },
+    {
+      "name": "1-233862518-1",
+      "panel": 1,
+      "seed": 233862518,
+      "side": 1,
+      "version": "quay",
+      "layout": "0497082d6079b53bab1eefb586049e232b08fd0ae7309704e7740c64c6050f79",
+      "split": "test"
+    },
+    {
+      "name": "1-46289341-0",
+      "panel": 1,
+      "seed": 46289341,
+      "side": 0,
+      "version": "quay",
+      "layout": "11dfd6f8276769eb64deb127120e0e4edf19d7fadbcaa1b6a7f1d51bf902ec64",
+      "split": "train"
+    },
+    {
+      "name": "1-46289341-1",
+      "panel": 1,
+      "seed": 46289341,
+      "side": 1,
+      "version": "quay",
+      "layout": "11dfd6f8276769eb64deb127120e0e4edf19d7fadbcaa1b6a7f1d51bf902ec64",
+      "split": "train"
+    },
+    {
+      "name": "2-161689037-0",
+      "panel": 2,
+      "seed": 161689037,
+      "side": 0,
+      "version": "pilot",
+      "layout": "118c9e72342f272f3df1af02138f50f91e9087d131d6d0a96e1afdb5b241951a",
+      "split": "test"
+    },
+    {
+      "name": "2-161689037-1",
+      "panel": 2,
+      "seed": 161689037,
+      "side": 1,
+      "version": "pilot",
+      "layout": "118c9e72342f272f3df1af02138f50f91e9087d131d6d0a96e1afdb5b241951a",
+      "split": "test"
+    },
+    {
+      "name": "2-229476780-0",
+      "panel": 2,
+      "seed": 229476780,
+      "side": 0,
+      "version": "pilot",
+      "layout": "1b462e6ebbe66a4a131583b91e5ab987f6bac988de2113f956e0e1bf1c15d864",
+      "split": "train"
+    },
+    {
+      "name": "2-229476780-1",
+      "panel": 2,
+      "seed": 229476780,
+      "side": 1,
+      "version": "pilot",
+      "layout": "1b462e6ebbe66a4a131583b91e5ab987f6bac988de2113f956e0e1bf1c15d864",
+      "split": "train"
+    },
+    {
+      "name": "2-847130250-0",
+      "panel": 2,
+      "seed": 847130250,
+      "side": 0,
+      "version": "pilot",
+      "layout": "eb42f0b75b64a78a57f1845b4ac81c103fb685e38fe70d5f24091d8432a5e10b",
+      "split": "test"
+    },
+    {
+      "name": "2-847130250-1",
+      "panel": 2,
+      "seed": 847130250,
+      "side": 1,
+      "version": "pilot",
+      "layout": "eb42f0b75b64a78a57f1845b4ac81c103fb685e38fe70d5f24091d8432a5e10b",
+      "split": "test"
+    },
+    {
+      "name": "3-158195793-0",
+      "panel": 3,
+      "seed": 158195793,
+      "side": 0,
+      "version": "jetty",
+      "layout": "0e48729ee04b8cb0ef10f898d2b03a7acae646d0a4b02692e72b246b1768f3c1",
+      "split": "test"
+    },
+    {
+      "name": "3-158195793-1",
+      "panel": 3,
+      "seed": 158195793,
+      "side": 1,
+      "version": "jetty",
+      "layout": "0e48729ee04b8cb0ef10f898d2b03a7acae646d0a4b02692e72b246b1768f3c1",
+      "split": "test"
+    },
+    {
+      "name": "3-199255653-0",
+      "panel": 3,
+      "seed": 199255653,
+      "side": 0,
+      "version": "jetty",
+      "layout": "2c81ecba392df2698cf6147d5bb6b6108accba207c77bdd8759b6651d1d6c25e",
+      "split": "test"
+    },
+    {
+      "name": "3-199255653-1",
+      "panel": 3,
+      "seed": 199255653,
+      "side": 1,
+      "version": "jetty",
+      "layout": "2c81ecba392df2698cf6147d5bb6b6108accba207c77bdd8759b6651d1d6c25e",
+      "split": "test"
+    },
+    {
+      "name": "3-38494414-0",
+      "panel": 3,
+      "seed": 38494414,
+      "side": 0,
+      "version": "jetty",
+      "layout": "4924a2ac84cc7f85e65123eb0adf527feabdb74c472cf6bbc505ed77a5b9540f",
+      "split": "train"
+    },
+    {
+      "name": "3-38494414-1",
+      "panel": 3,
+      "seed": 38494414,
+      "side": 1,
+      "version": "jetty",
+      "layout": "4924a2ac84cc7f85e65123eb0adf527feabdb74c472cf6bbc505ed77a5b9540f",
+      "split": "train"
+    },
+    {
+      "name": "4-320084676-0",
+      "panel": 4,
+      "seed": 320084676,
+      "side": 0,
+      "version": "narrows",
+      "layout": "81871b8fcf9bd6e0244ad131fa0e4408fda0d3415f3ed25e10ed1d48292708b2",
+      "split": "test"
+    },
+    {
+      "name": "4-320084676-1",
+      "panel": 4,
+      "seed": 320084676,
+      "side": 1,
+      "version": "narrows",
+      "layout": "81871b8fcf9bd6e0244ad131fa0e4408fda0d3415f3ed25e10ed1d48292708b2",
+      "split": "test"
+    },
+    {
+      "name": "4-322593328-0",
+      "panel": 4,
+      "seed": 322593328,
+      "side": 0,
+      "version": "narrows",
+      "layout": "5076ad63b91a5398877546917df38ca4f82002b3a7cb42c149c823875e96bc50",
+      "split": "test"
+    },
+    {
+      "name": "4-322593328-1",
+      "panel": 4,
+      "seed": 322593328,
+      "side": 1,
+      "version": "narrows",
+      "layout": "5076ad63b91a5398877546917df38ca4f82002b3a7cb42c149c823875e96bc50",
+      "split": "test"
+    },
+    {
+      "name": "4-858884902-0",
+      "panel": 4,
+      "seed": 858884902,
+      "side": 0,
+      "version": "narrows",
+      "layout": "119c0a7cf0ec60d52f5f0b1ecc5fef3d00b991c79aeae136bae44a53344372ae",
+      "split": "train"
+    },
+    {
+      "name": "4-858884902-1",
+      "panel": 4,
+      "seed": 858884902,
+      "side": 1,
+      "version": "narrows",
+      "layout": "119c0a7cf0ec60d52f5f0b1ecc5fef3d00b991c79aeae136bae44a53344372ae",
+      "split": "train"
+    },
+    {
+      "name": "5-386650469-0",
+      "panel": 5,
+      "seed": 386650469,
+      "side": 0,
+      "version": "soundings",
+      "layout": "05e03ecdd6aff1aced2cbda9845fcf927f34a4bfb50b77872368efb06cc86112",
+      "split": "test"
+    },
+    {
+      "name": "5-386650469-1",
+      "panel": 5,
+      "seed": 386650469,
+      "side": 1,
+      "version": "soundings",
+      "layout": "05e03ecdd6aff1aced2cbda9845fcf927f34a4bfb50b77872368efb06cc86112",
+      "split": "test"
+    },
+    {
+      "name": "5-590159492-0",
+      "panel": 5,
+      "seed": 590159492,
+      "side": 0,
+      "version": "soundings",
+      "layout": "d2ff3a561365a03279f3be7dc0f174e774962b840c40dc42254f82d3169c7456",
+      "split": "test"
+    },
+    {
+      "name": "5-590159492-1",
+      "panel": 5,
+      "seed": 590159492,
+      "side": 1,
+      "version": "soundings",
+      "layout": "d2ff3a561365a03279f3be7dc0f174e774962b840c40dc42254f82d3169c7456",
+      "split": "test"
+    },
+    {
+      "name": "5-859109355-0",
+      "panel": 5,
+      "seed": 859109355,
+      "side": 0,
+      "version": "soundings",
+      "layout": "08ae5417084a1b26c9a64b70b3809b91efea13f8a3a8ed0a461d6ae3d0acafbb",
+      "split": "train"
+    },
+    {
+      "name": "5-859109355-1",
+      "panel": 5,
+      "seed": 859109355,
+      "side": 1,
+      "version": "soundings",
+      "layout": "08ae5417084a1b26c9a64b70b3809b91efea13f8a3a8ed0a461d6ae3d0acafbb",
+      "split": "train"
+    },
+    {
+      "name": "6-22998499-0",
+      "panel": 6,
+      "seed": 22998499,
+      "side": 0,
+      "version": "pilotage",
+      "layout": "3806a00c508923390a8417462cf174089ac72f88a50f7bec541f1eeba66059da",
+      "split": "test"
+    },
+    {
+      "name": "6-22998499-1",
+      "panel": 6,
+      "seed": 22998499,
+      "side": 1,
+      "version": "pilotage",
+      "layout": "3806a00c508923390a8417462cf174089ac72f88a50f7bec541f1eeba66059da",
+      "split": "test"
+    },
+    {
+      "name": "6-463463249-0",
+      "panel": 6,
+      "seed": 463463249,
+      "side": 0,
+      "version": "pilotage",
+      "layout": "5604fd02be8703048a7d883c63e5535300961bd34b8ba86339305f918d2ef878",
+      "split": "train"
+    },
+    {
+      "name": "6-463463249-1",
+      "panel": 6,
+      "seed": 463463249,
+      "side": 1,
+      "version": "pilotage",
+      "layout": "5604fd02be8703048a7d883c63e5535300961bd34b8ba86339305f918d2ef878",
+      "split": "train"
+    },
+    {
+      "name": "6-620494973-0",
+      "panel": 6,
+      "seed": 620494973,
+      "side": 0,
+      "version": "pilotage",
+      "layout": "4f07180759f5070386e2f66ff77b178582b8a1969b1e2695e1292369c29d2900",
+      "split": "test"
+    },
+    {
+      "name": "6-620494973-1",
+      "panel": 6,
+      "seed": 620494973,
+      "side": 1,
+      "version": "pilotage",
+      "layout": "4f07180759f5070386e2f66ff77b178582b8a1969b1e2695e1292369c29d2900",
+      "split": "test"
+    }
+  ],
+  "horizon_weights": [
+    0.35,
+    0.65
+  ],
+  "candidate_filter": "The current policy proposal and every non-marginal survivor are fixed. Among eliminated candidates, consider only a positive residual gain above the cash threshold, then rank by original net leaf score plus beta times the residual. Replace one when revised score is strictly larger. Score and assets are denominated in cash.",
+  "selection": "Grid and fallback fixed before reading the paired receipts. Fit residual projection within each root on the old net leaf score, existing receipt-aware asset score, and immediate cash, weighted equally by layout, root, then candidate. Leave-one-development-layout-out tuning requires >=6 swaps over >=3 maps and positive conservative mean under each continuation. Twelve holdout maps remain untouched by fit/selection; their previous unrelated critic results were reviewed.",
+  "target_axis": "Each 2x2 uses [literal, waypoint] x [cash difference at 35, economic asset measure at 35]. Confidence arrays are [lower,upper] then same axes. Oracle uses the actual subsequent five/ten-step gross deposits only as a non-deployable diagnostic.",
+  "sensitivity": "After inspecting the primary null, agree_raw and agree_cash require both 5 and 10 horizons to exceed the same threshold, optionally including already banked cash. Neither changes grid selection.",
+  "selected": [
+    30.0,
+    0.5
+  ],
+  "passed_development": false,
+  "eligible_roots": {
+    "train": 58,
+    "test": 117
+  },
+  "coefficients": [
+    [
+      -0.12778175,
+      0.27195642,
+      0.07023679
+    ],
+    [
+      0.85617982,
+      -0.01007202,
+      0.10879208
+    ],
+    [
+      -1.05447642,
+      -0.68931563,
+      -0.73968126
+    ]
+  ],
+  "orthogonality": {
+    "rank": 3,
+    "singular": [
+      85.142,
+      46.325,
+      40.041
+    ],
+    "dot": 5.119007824490719e-12
+  },
+  "validation": {
+    "crossfit_training": {
+      "forecast": {
+        "roots": 58,
+        "maps": 6,
+        "changed": 3,
+        "changed_maps": 3,
+        "change_share_map": 0.0519,
+        "delta_best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.008,
+            -0.008
+          ]
+        ],
+        "delta_best95": [
+          [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              -0.024,
+              -0.024
+            ]
+          ],
+          [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ]
+        ],
+        "delta_exchange": [
+          [
+            -11.279,
+            -8.413
+          ],
+          [
+            -3.71,
+            -3.661
+          ]
+        ],
+        "delta_exchange95": [
+          [
+            [
+              -22.904,
+              -16.665
+            ],
+            [
+              -9.112,
+              -9.119
+            ]
+          ],
+          [
+            [
+              -1.744,
+              -0.951
+            ],
+            [
+              -0.008,
+              -0.008
+            ]
+          ]
+        ],
+        "available_regret_new": [
+          [
+            37.3,
+            48.908
+          ],
+          [
+            16.388,
+            19.328
+          ]
+        ],
+        "available_regret_base": [
+          [
+            37.3,
+            48.908
+          ],
+          [
+            16.38,
+            19.32
+          ]
+        ],
+        "retains_best_cash_new": [
+          0.7426,
+          0.7759
+        ],
+        "retains_best_cash_old": [
+          0.7426,
+          0.7759
+        ],
+        "predicted_flow": 104.02372512817384,
+        "realized_flow": [
+          37.015,
+          -20.695
+        ]
+      },
+      "raw": {
+        "roots": 58,
+        "maps": 6,
+        "changed": 9,
+        "changed_maps": 5,
+        "change_share_map": 0.1574,
+        "delta_best": [
+          [
+            -8.82,
+            -10.401
+          ],
+          [
+            1.115,
+            1.359
+          ]
+        ],
+        "delta_best95": [
+          [
+            [
+              -23.147,
+              -24.063
+            ],
+            [
+              -0.024,
+              -0.024
+            ]
+          ],
+          [
+            [
+              0.0,
+              -1.119
+            ],
+            [
+              3.375,
+              4.108
+            ]
+          ]
+        ],
+        "delta_exchange": [
+          [
+            -24.225,
+            -24.493
+          ],
+          [
+            -1.308,
+            -0.384
+          ]
+        ],
+        "delta_exchange95": [
+          [
+            [
+              -46.241,
+              -45.304
+            ],
+            [
+              -6.289,
+              -4.616
+            ]
+          ],
+          [
+            [
+              -1.413,
+              -3.942
+            ],
+            [
+              3.358,
+              3.907
+            ]
+          ]
+        ],
+        "available_regret_new": [
+          [
+            46.121,
+            59.309
+          ],
+          [
+            15.265,
+            17.961
+          ]
+        ],
+        "available_regret_base": [
+          [
+            37.3,
+            48.908
+          ],
+          [
+            16.38,
+            19.32
+          ]
+        ],
+        "retains_best_cash_new": [
+          0.7259,
+          0.7926
+        ],
+        "retains_best_cash_old": [
+          0.7426,
+          0.7759
+        ],
+        "predicted_flow": 73.52868495517306,
+        "realized_flow": [
+          18.278,
+          -4.9
+        ]
+      },
+      "agree_raw": {
+        "roots": 58,
+        "maps": 6,
+        "changed": 2,
+        "changed_maps": 2,
+        "change_share_map": 0.0352,
+        "delta_best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.008,
+            -0.008
+          ]
+        ],
+        "delta_best95": [
+          [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              -0.024,
+              -0.024
+            ]
+          ],
+          [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ]
+        ],
+        "delta_exchange": [
+          [
+            -9.535,
+            -5.076
+          ],
+          [
+            -1.005,
+            -0.929
+          ]
+        ],
+        "delta_exchange95": [
+          [
+            [
+              -21.16,
+              -13.327
+            ],
+            [
+              -2.999,
+              -2.77
+            ]
+          ],
+          [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ]
+        ],
+        "available_regret_new": [
+          [
+            37.3,
+            48.908
+          ],
+          [
+            16.388,
+            19.328
+          ]
+        ],
+        "available_regret_base": [
+          [
+            37.3,
+            48.908
+          ],
+          [
+            16.38,
+            19.32
+          ]
+        ],
+        "retains_best_cash_new": [
+          0.7426,
+          0.7759
+        ],
+        "retains_best_cash_old": [
+          0.7426,
+          0.7759
+        ],
+        "predicted_flow": 140.05135498046874,
+        "realized_flow": [
+          91.724,
+          5.158
+        ]
+      },
+      "agree_cash": {
+        "roots": 58,
+        "maps": 6,
+        "changed": 1,
+        "changed_maps": 1,
+        "change_share_map": 0.0167,
+        "delta_best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.008,
+            -0.008
+          ]
+        ],
+        "delta_best95": [
+          [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              -0.024,
+              -0.024
+            ]
+          ],
+          [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ]
+        ],
+        "delta_exchange": [
+          [
+            -3.722,
+            -4.126
+          ],
+          [
+            -0.008,
+            -0.008
+          ]
+        ],
+        "delta_exchange95": [
+          [
+            [
+              -11.166,
+              -12.377
+            ],
+            [
+              -0.024,
+              -0.024
+            ]
+          ],
+          [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ]
+        ],
+        "available_regret_new": [
+          [
+            37.3,
+            48.908
+          ],
+          [
+            16.388,
+            19.328
+          ]
+        ],
+        "available_regret_base": [
+          [
+            37.3,
+            48.908
+          ],
+          [
+            16.38,
+            19.32
+          ]
+        ],
+        "retains_best_cash_new": [
+          0.7426,
+          0.7759
+        ],
+        "retains_best_cash_old": [
+          0.7426,
+          0.7759
+        ],
+        "predicted_flow": 117.79029846191406,
+        "realized_flow": [
+          183.449,
+          10.317
+        ]
+      },
+      "oracle_literal": {
+        "roots": 58,
+        "maps": 6,
+        "changed": 10,
+        "changed_maps": 6,
+        "change_share_map": 0.1741,
+        "delta_best": [
+          [
+            9.36,
+            12.887
+          ],
+          [
+            -0.008,
+            -0.008
+          ]
+        ],
+        "delta_best95": [
+          [
+            [
+              0.893,
+              0.557
+            ],
+            [
+              -0.024,
+              -0.024
+            ]
+          ],
+          [
+            [
+              20.533,
+              26.657
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ]
+        ],
+        "delta_exchange": [
+          [
+            19.185,
+            23.931
+          ],
+          [
+            -1.009,
+            -0.53
+          ]
+        ],
+        "delta_exchange95": [
+          [
+            [
+              -9.809,
+              -3.901
+            ],
+            [
+              -4.098,
+              -3.303
+            ]
+          ],
+          [
+            [
+              50.143,
+              56.39
+            ],
+            [
+              1.844,
+              1.963
+            ]
+          ]
+        ],
+        "available_regret_new": [
+          [
+            27.94,
+            36.02
+          ],
+          [
+            16.388,
+            19.328
+          ]
+        ],
+        "available_regret_base": [
+          [
+            37.3,
+            48.908
+          ],
+          [
+            16.38,
+            19.32
+          ]
+        ],
+        "retains_best_cash_new": [
+          0.7778,
+          0.7759
+        ],
+        "retains_best_cash_old": [
+          0.7426,
+          0.7759
+        ],
+        "predicted_flow": 28.34422029495239,
+        "realized_flow": [
+          120.035,
+          5.252
+        ]
+      },
+      "oracle_waypoint": {
+        "roots": 58,
+        "maps": 6,
+        "changed": 1,
+        "changed_maps": 1,
+        "change_share_map": 0.0167,
+        "delta_best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "delta_best95": [
+          [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ]
+        ],
+        "delta_exchange": [
+          [
+            -0.001,
+            -3.273
+          ],
+          [
+            -0.965,
+            -0.551
+          ]
+        ],
+        "delta_exchange95": [
+          [
+            [
+              -0.002,
+              -9.819
+            ],
+            [
+              -2.894,
+              -1.652
+            ]
+          ],
+          [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ]
+        ],
+        "available_regret_new": [
+          [
+            37.3,
+            48.908
+          ],
+          [
+            16.38,
+            19.32
+          ]
+        ],
+        "available_regret_base": [
+          [
+            37.3,
+            48.908
+          ],
+          [
+            16.38,
+            19.32
+          ]
+        ],
+        "retains_best_cash_new": [
+          0.7426,
+          0.7759
+        ],
+        "retains_best_cash_old": [
+          0.7426,
+          0.7759
+        ],
+        "predicted_flow": -30.224606704711917,
+        "realized_flow": [
+          39.016,
+          0.0
+        ]
+      }
+    },
+    "test": {
+      "forecast": {
+        "roots": 117,
+        "maps": 12,
+        "changed": 4,
+        "changed_maps": 4,
+        "change_share_map": 0.0343,
+        "delta_best": [
+          [
+            0.925,
+            1.055
+          ],
+          [
+            -0.227,
+            -0.043
+          ]
+        ],
+        "delta_best95": [
+          [
+            [
+              -0.572,
+              0.0
+            ],
+            [
+              -0.655,
+              -0.128
+            ]
+          ],
+          [
+            [
+              3.347,
+              3.164
+            ],
+            [
+              0.04,
+              0.0
+            ]
+          ]
+        ],
+        "delta_exchange": [
+          [
+            -0.097,
+            1.261
+          ],
+          [
+            0.041,
+            1.102
+          ]
+        ],
+        "delta_exchange95": [
+          [
+            [
+              -6.971,
+              -3.43
+            ],
+            [
+              -1.288,
+              -0.34
+            ]
+          ],
+          [
+            [
+              5.778,
+              6.625
+            ],
+            [
+              1.66,
+              3.032
+            ]
+          ]
+        ],
+        "available_regret_new": [
+          [
+            34.511,
+            46.508
+          ],
+          [
+            25.12,
+            30.58
+          ]
+        ],
+        "available_regret_base": [
+          [
+            35.435,
+            47.563
+          ],
+          [
+            24.893,
+            30.537
+          ]
+        ],
+        "retains_best_cash_new": [
+          0.6514,
+          0.6785
+        ],
+        "retains_best_cash_old": [
+          0.6523,
+          0.6961
+        ],
+        "predicted_flow": -12.023948860168458,
+        "realized_flow": [
+          22.7,
+          22.7
+        ]
+      },
+      "raw": {
+        "roots": 117,
+        "maps": 12,
+        "changed": 7,
+        "changed_maps": 6,
+        "change_share_map": 0.0583,
+        "delta_best": [
+          [
+            -4.625,
+            -4.832
+          ],
+          [
+            -0.397,
+            -0.138
+          ]
+        ],
+        "delta_best95": [
+          [
+            [
+              -11.233,
+              -12.155
+            ],
+            [
+              -1.059,
+              -0.414
+            ]
+          ],
+          [
+            [
+              -0.265,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ]
+        ],
+        "delta_exchange": [
+          [
+            -13.945,
+            -16.697
+          ],
+          [
+            -1.003,
+            -0.795
+          ]
+        ],
+        "delta_exchange95": [
+          [
+            [
+              -23.561,
+              -29.146
+            ],
+            [
+              -2.53,
+              -3.199
+            ]
+          ],
+          [
+            [
+              -5.165,
+              -5.601
+            ],
+            [
+              0.097,
+              0.975
+            ]
+          ]
+        ],
+        "available_regret_new": [
+          [
+            40.061,
+            52.395
+          ],
+          [
+            25.29,
+            30.675
+          ]
+        ],
+        "available_regret_base": [
+          [
+            35.435,
+            47.563
+          ],
+          [
+            24.893,
+            30.537
+          ]
+        ],
+        "retains_best_cash_new": [
+          0.6273,
+          0.6877
+        ],
+        "retains_best_cash_old": [
+          0.6523,
+          0.6961
+        ],
+        "predicted_flow": 61.64817161560059,
+        "realized_flow": [
+          -43.951,
+          7.431
+        ]
+      },
+      "agree_raw": {
+        "roots": 117,
+        "maps": 12,
+        "changed": 0,
+        "changed_maps": 0,
+        "change_share_map": 0.0,
+        "delta_best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "delta_best95": [
+          [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ]
+        ],
+        "delta_exchange": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "delta_exchange95": [
+          [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ]
+        ],
+        "available_regret_new": [
+          [
+            35.435,
+            47.563
+          ],
+          [
+            24.893,
+            30.537
+          ]
+        ],
+        "available_regret_base": [
+          [
+            35.435,
+            47.563
+          ],
+          [
+            24.893,
+            30.537
+          ]
+        ],
+        "retains_best_cash_new": [
+          0.6523,
+          0.6961
+        ],
+        "retains_best_cash_old": [
+          0.6523,
+          0.6961
+        ],
+        "predicted_flow": null,
+        "realized_flow": null
+      },
+      "agree_cash": {
+        "roots": 117,
+        "maps": 12,
+        "changed": 0,
+        "changed_maps": 0,
+        "change_share_map": 0.0,
+        "delta_best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "delta_best95": [
+          [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ]
+        ],
+        "delta_exchange": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "delta_exchange95": [
+          [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ]
+        ],
+        "available_regret_new": [
+          [
+            35.435,
+            47.563
+          ],
+          [
+            24.893,
+            30.537
+          ]
+        ],
+        "available_regret_base": [
+          [
+            35.435,
+            47.563
+          ],
+          [
+            24.893,
+            30.537
+          ]
+        ],
+        "retains_best_cash_new": [
+          0.6523,
+          0.6961
+        ],
+        "retains_best_cash_old": [
+          0.6523,
+          0.6961
+        ],
+        "predicted_flow": null,
+        "realized_flow": null
+      },
+      "oracle_literal": {
+        "roots": 117,
+        "maps": 12,
+        "changed": 27,
+        "changed_maps": 11,
+        "change_share_map": 0.228,
+        "delta_best": [
+          [
+            5.531,
+            6.758
+          ],
+          [
+            6.111,
+            6.188
+          ]
+        ],
+        "delta_best95": [
+          [
+            [
+              -2.912,
+              0.076
+            ],
+            [
+              1.263,
+              0.622
+            ]
+          ],
+          [
+            [
+              14.626,
+              14.999
+            ],
+            [
+              12.08,
+              13.215
+            ]
+          ]
+        ],
+        "delta_exchange": [
+          [
+            37.147,
+            45.72
+          ],
+          [
+            7.908,
+            8.985
+          ]
+        ],
+        "delta_exchange95": [
+          [
+            [
+              9.077,
+              16.758
+            ],
+            [
+              0.328,
+              2.218
+            ]
+          ],
+          [
+            [
+              71.394,
+              79.774
+            ],
+            [
+              15.472,
+              17.407
+            ]
+          ]
+        ],
+        "available_regret_new": [
+          [
+            29.904,
+            40.805
+          ],
+          [
+            18.782,
+            24.349
+          ]
+        ],
+        "available_regret_base": [
+          [
+            35.435,
+            47.563
+          ],
+          [
+            24.893,
+            30.537
+          ]
+        ],
+        "retains_best_cash_new": [
+          0.6856,
+          0.6961
+        ],
+        "retains_best_cash_old": [
+          0.6523,
+          0.6961
+        ],
+        "predicted_flow": 3.311808388321487,
+        "realized_flow": [
+          80.959,
+          30.695
+        ]
+      },
+      "oracle_waypoint": {
+        "roots": 117,
+        "maps": 12,
+        "changed": 10,
+        "changed_maps": 8,
+        "change_share_map": 0.0843,
+        "delta_best": [
+          [
+            -2.821,
+            -0.658
+          ],
+          [
+            4.955,
+            6.046
+          ]
+        ],
+        "delta_best95": [
+          [
+            [
+              -8.483,
+              -4.553
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          [
+            [
+              1.662,
+              3.245
+            ],
+            [
+              10.91,
+              13.184
+            ]
+          ]
+        ],
+        "delta_exchange": [
+          [
+            -7.409,
+            -3.711
+          ],
+          [
+            6.692,
+            8.878
+          ]
+        ],
+        "delta_exchange95": [
+          [
+            [
+              -18.852,
+              -14.569
+            ],
+            [
+              -0.471,
+              2.131
+            ]
+          ],
+          [
+            [
+              2.923,
+              6.57
+            ],
+            [
+              14.174,
+              17.599
+            ]
+          ]
+        ],
+        "available_regret_new": [
+          [
+            38.257,
+            48.22
+          ],
+          [
+            19.937,
+            24.491
+          ]
+        ],
+        "available_regret_base": [
+          [
+            35.435,
+            47.563
+          ],
+          [
+            24.893,
+            30.537
+          ]
+        ],
+        "retains_best_cash_new": [
+          0.644,
+          0.7127
+        ],
+        "retains_best_cash_old": [
+          0.6523,
+          0.6961
+        ],
+        "predicted_flow": -4.884967041015625,
+        "realized_flow": [
+          45.78,
+          78.445
+        ]
+      }
+    }
+  },
+  "grid": [
+    {
+      "threshold": 15.0,
+      "beta": 0.25,
+      "objective": null,
+      "summary": {
+        "roots": 58,
+        "maps": 6,
+        "changed": 3,
+        "changed_maps": 2,
+        "change_share_map": 0.0519,
+        "delta_best": [
+          [
+            -2.319,
+            -1.954
+          ],
+          [
+            -0.008,
+            -0.008
+          ]
+        ],
+        "delta_best95": [
+          [
+            [
+              -5.632,
+              -5.737
+            ],
+            [
+              -0.024,
+              -0.024
+            ]
+          ],
+          [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ]
+        ],
+        "delta_exchange": [
+          [
+            -10.681,
+            -12.676
+          ],
+          [
+            -0.008,
+            -0.008
+          ]
+        ],
+        "delta_exchange95": [
+          [
+            [
+              -30.702,
+              -35.042
+            ],
+            [
+              -0.024,
+              -0.024
+            ]
+          ],
+          [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ]
+        ],
+        "available_regret_new": [
+          [
+            39.619,
+            50.861
+          ],
+          [
+            16.388,
+            19.328
+          ]
+        ],
+        "available_regret_base": [
+          [
+            37.3,
+            48.908
+          ],
+          [
+            16.38,
+            19.32
+          ]
+        ],
+        "retains_best_cash_new": [
+          0.7259,
+          0.7759
+        ],
+        "retains_best_cash_old": [
+          0.7426,
+          0.7759
+        ],
+        "predicted_flow": 49.382572682698566,
+        "realized_flow": [
+          39.497,
+          3.439
+        ]
+      }
+    },
+    {
+      "threshold": 15.0,
+      "beta": 0.5,
+      "objective": -2.318703703703713,
+      "summary": {
+        "roots": 58,
+        "maps": 6,
+        "changed": 8,
+        "changed_maps": 5,
+        "change_share_map": 0.1407,
+        "delta_best": [
+          [
+            -2.319,
+            -3.072
+          ],
+          [
+            -0.008,
+            -0.008
+          ]
+        ],
+        "delta_best95": [
+          [
+            [
+              -5.632,
+              -6.856
+            ],
+            [
+              -0.024,
+              -0.024
+            ]
+          ],
+          [
+            [
+              0.0,
+              -0.062
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ]
+        ],
+        "delta_exchange": [
+          [
+            -13.767,
+            -13.979
+          ],
+          [
+            -1.552,
+            1.328
+          ]
+        ],
+        "delta_exchange95": [
+          [
+            [
+              -37.856,
+              -38.812
+            ],
+            [
+              -9.756,
+              -9.02
+            ]
+          ],
+          [
+            [
+              9.913,
+              7.92
+            ],
+            [
+              8.503,
+              15.66
+            ]
+          ]
+        ],
+        "available_regret_new": [
+          [
+            39.619,
+            51.98
+          ],
+          [
+            16.388,
+            19.328
+          ]
+        ],
+        "available_regret_base": [
+          [
+            37.3,
+            48.908
+          ],
+          [
+            16.38,
+            19.32
+          ]
+        ],
+        "retains_best_cash_new": [
+          0.7259,
+          0.7759
+        ],
+        "retains_best_cash_old": [
+          0.7426,
+          0.7759
+        ],
+        "predicted_flow": 54.35690080523491,
+        "realized_flow": [
+          17.93,
+          -7.761
+        ]
+      }
+    },
+    {
+      "threshold": 15.0,
+      "beta": 1.0,
+      "objective": -1.6525370370370476,
+      "summary": {
+        "roots": 58,
+        "maps": 6,
+        "changed": 10,
+        "changed_maps": 5,
+        "change_share_map": 0.1741,
+        "delta_best": [
+          [
+            -1.653,
+            -2.528
+          ],
+          [
+            -0.008,
+            -0.008
+          ]
+        ],
+        "delta_best95": [
+          [
+            [
+              -5.299,
+              -6.794
+            ],
+            [
+              -0.024,
+              -0.024
+            ]
+          ],
+          [
+            [
+              1.336,
+              1.027
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ]
+        ],
+        "delta_exchange": [
+          [
+            -10.147,
+            -11.415
+          ],
+          [
+            -3.123,
+            -1.178
+          ]
+        ],
+        "delta_exchange95": [
+          [
+            [
+              -36.131,
+              -37.061
+            ],
+            [
+              -13.521,
+              -15.262
+            ]
+          ],
+          [
+            [
+              12.618,
+              9.841
+            ],
+            [
+              8.085,
+              15.192
+            ]
+          ]
+        ],
+        "available_regret_new": [
+          [
+            38.953,
+            51.436
+          ],
+          [
+            16.388,
+            19.328
+          ]
+        ],
+        "available_regret_base": [
+          [
+            37.3,
+            48.908
+          ],
+          [
+            16.38,
+            19.32
+          ]
+        ],
+        "retains_best_cash_new": [
+          0.7426,
+          0.7759
+        ],
+        "retains_best_cash_old": [
+          0.7426,
+          0.7759
+        ],
+        "predicted_flow": 53.357140212059015,
+        "realized_flow": [
+          5.319,
+          -13.184
+        ]
+      }
+    },
+    {
+      "threshold": 30.0,
+      "beta": 0.25,
+      "objective": null,
+      "summary": {
+        "roots": 58,
+        "maps": 6,
+        "changed": 1,
+        "changed_maps": 1,
+        "change_share_map": 0.0167,
+        "delta_best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.008,
+            -0.008
+          ]
+        ],
+        "delta_best95": [
+          [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              -0.024,
+              -0.024
+            ]
+          ],
+          [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ]
+        ],
+        "delta_exchange": [
+          [
+            -3.722,
+            -4.126
+          ],
+          [
+            -0.008,
+            -0.008
+          ]
+        ],
+        "delta_exchange95": [
+          [
+            [
+              -11.166,
+              -12.377
+            ],
+            [
+              -0.024,
+              -0.024
+            ]
+          ],
+          [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ]
+        ],
+        "available_regret_new": [
+          [
+            37.3,
+            48.908
+          ],
+          [
+            16.388,
+            19.328
+          ]
+        ],
+        "available_regret_base": [
+          [
+            37.3,
+            48.908
+          ],
+          [
+            16.38,
+            19.32
+          ]
+        ],
+        "retains_best_cash_new": [
+          0.7426,
+          0.7759
+        ],
+        "retains_best_cash_old": [
+          0.7426,
+          0.7759
+        ],
+        "predicted_flow": 117.79029846191406,
+        "realized_flow": [
+          183.449,
+          10.317
+        ]
+      }
+    },
+    {
+      "threshold": 30.0,
+      "beta": 0.5,
+      "objective": null,
+      "summary": {
+        "roots": 58,
+        "maps": 6,
+        "changed": 3,
+        "changed_maps": 3,
+        "change_share_map": 0.0519,
+        "delta_best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.008,
+            -0.008
+          ]
+        ],
+        "delta_best95": [
+          [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              -0.024,
+              -0.024
+            ]
+          ],
+          [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ]
+        ],
+        "delta_exchange": [
+          [
+            -11.279,
+            -8.413
+          ],
+          [
+            -3.71,
+            -3.661
+          ]
+        ],
+        "delta_exchange95": [
+          [
+            [
+              -22.904,
+              -16.665
+            ],
+            [
+              -9.112,
+              -9.119
+            ]
+          ],
+          [
+            [
+              -1.744,
+              -0.951
+            ],
+            [
+              -0.008,
+              -0.008
+            ]
+          ]
+        ],
+        "available_regret_new": [
+          [
+            37.3,
+            48.908
+          ],
+          [
+            16.388,
+            19.328
+          ]
+        ],
+        "available_regret_base": [
+          [
+            37.3,
+            48.908
+          ],
+          [
+            16.38,
+            19.32
+          ]
+        ],
+        "retains_best_cash_new": [
+          0.7426,
+          0.7759
+        ],
+        "retains_best_cash_old": [
+          0.7426,
+          0.7759
+        ],
+        "predicted_flow": 104.02372512817384,
+        "realized_flow": [
+          37.015,
+          -20.695
+        ]
+      }
+    },
+    {
+      "threshold": 30.0,
+      "beta": 1.0,
+      "objective": null,
+      "summary": {
+        "roots": 58,
+        "maps": 6,
+        "changed": 5,
+        "changed_maps": 4,
+        "change_share_map": 0.0852,
+        "delta_best": [
+          [
+            0.666,
+            0.544
+          ],
+          [
+            -0.008,
+            -0.008
+          ]
+        ],
+        "delta_best95": [
+          [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              -0.024,
+              -0.024
+            ]
+          ],
+          [
+            [
+              1.998,
+              1.633
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ]
+        ],
+        "delta_exchange": [
+          [
+            -7.659,
+            -5.85
+          ],
+          [
+            -5.281,
+            -6.167
+          ]
+        ],
+        "delta_exchange95": [
+          [
+            [
+              -21.084,
+              -14.163
+            ],
+            [
+              -12.591,
+              -15.254
+            ]
+          ],
+          [
+            [
+              3.752,
+              -0.065
+            ],
+            [
+              -0.422,
+              -0.472
+            ]
+          ]
+        ],
+        "available_regret_new": [
+          [
+            36.634,
+            48.363
+          ],
+          [
+            16.388,
+            19.328
+          ]
+        ],
+        "available_regret_base": [
+          [
+            37.3,
+            48.908
+          ],
+          [
+            16.38,
+            19.32
+          ]
+        ],
+        "retains_best_cash_new": [
+          0.7593,
+          0.7759
+        ],
+        "retains_best_cash_old": [
+          0.7426,
+          0.7759
+        ],
+        "predicted_flow": 82.15747421264649,
+        "realized_flow": [
+          4.159,
+          -26.368
+        ]
+      }
+    },
+    {
+      "threshold": 50.0,
+      "beta": 0.25,
+      "objective": null,
+      "summary": {
+        "roots": 58,
+        "maps": 6,
+        "changed": 1,
+        "changed_maps": 1,
+        "change_share_map": 0.0167,
+        "delta_best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.008,
+            -0.008
+          ]
+        ],
+        "delta_best95": [
+          [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              -0.024,
+              -0.024
+            ]
+          ],
+          [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ]
+        ],
+        "delta_exchange": [
+          [
+            -3.722,
+            -4.126
+          ],
+          [
+            -0.008,
+            -0.008
+          ]
+        ],
+        "delta_exchange95": [
+          [
+            [
+              -11.166,
+              -12.377
+            ],
+            [
+              -0.024,
+              -0.024
+            ]
+          ],
+          [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ]
+        ],
+        "available_regret_new": [
+          [
+            37.3,
+            48.908
+          ],
+          [
+            16.388,
+            19.328
+          ]
+        ],
+        "available_regret_base": [
+          [
+            37.3,
+            48.908
+          ],
+          [
+            16.38,
+            19.32
+          ]
+        ],
+        "retains_best_cash_new": [
+          0.7426,
+          0.7759
+        ],
+        "retains_best_cash_old": [
+          0.7426,
+          0.7759
+        ],
+        "predicted_flow": 117.79029846191406,
+        "realized_flow": [
+          183.449,
+          10.317
+        ]
+      }
+    },
+    {
+      "threshold": 50.0,
+      "beta": 0.5,
+      "objective": null,
+      "summary": {
+        "roots": 58,
+        "maps": 6,
+        "changed": 1,
+        "changed_maps": 1,
+        "change_share_map": 0.0167,
+        "delta_best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.008,
+            -0.008
+          ]
+        ],
+        "delta_best95": [
+          [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              -0.024,
+              -0.024
+            ]
+          ],
+          [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ]
+        ],
+        "delta_exchange": [
+          [
+            -3.722,
+            -4.126
+          ],
+          [
+            -0.008,
+            -0.008
+          ]
+        ],
+        "delta_exchange95": [
+          [
+            [
+              -11.166,
+              -12.377
+            ],
+            [
+              -0.024,
+              -0.024
+            ]
+          ],
+          [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ]
+        ],
+        "available_regret_new": [
+          [
+            37.3,
+            48.908
+          ],
+          [
+            16.388,
+            19.328
+          ]
+        ],
+        "available_regret_base": [
+          [
+            37.3,
+            48.908
+          ],
+          [
+            16.38,
+            19.32
+          ]
+        ],
+        "retains_best_cash_new": [
+          0.7426,
+          0.7759
+        ],
+        "retains_best_cash_old": [
+          0.7426,
+          0.7759
+        ],
+        "predicted_flow": 117.79029846191406,
+        "realized_flow": [
+          183.449,
+          10.317
+        ]
+      }
+    },
+    {
+      "threshold": 50.0,
+      "beta": 1.0,
+      "objective": null,
+      "summary": {
+        "roots": 58,
+        "maps": 6,
+        "changed": 1,
+        "changed_maps": 1,
+        "change_share_map": 0.0167,
+        "delta_best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.008,
+            -0.008
+          ]
+        ],
+        "delta_best95": [
+          [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              -0.024,
+              -0.024
+            ]
+          ],
+          [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ]
+        ],
+        "delta_exchange": [
+          [
+            -3.722,
+            -4.126
+          ],
+          [
+            -0.008,
+            -0.008
+          ]
+        ],
+        "delta_exchange95": [
+          [
+            [
+              -11.166,
+              -12.377
+            ],
+            [
+              -0.024,
+              -0.024
+            ]
+          ],
+          [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ]
+        ],
+        "available_regret_new": [
+          [
+            37.3,
+            48.908
+          ],
+          [
+            16.388,
+            19.328
+          ]
+        ],
+        "available_regret_base": [
+          [
+            37.3,
+            48.908
+          ],
+          [
+            16.38,
+            19.32
+          ]
+        ],
+        "retains_best_cash_new": [
+          0.7426,
+          0.7759
+        ],
+        "retains_best_cash_old": [
+          0.7426,
+          0.7759
+        ],
+        "predicted_flow": 117.79029846191406,
+        "realized_flow": [
+          183.449,
+          10.317
+        ]
+      }
+    }
+  ],
+  "pair_direction": {
+    "literal/residual/any": {
+      "conditional_root_sign": 0.4638,
+      "roots": 117
+    },
+    "waypoint/residual/any": {
+      "conditional_root_sign": 0.4687,
+      "roots": 117
+    },
+    "literal/residual/strong": {
+      "conditional_root_sign": 0.7335,
+      "roots": 32
+    },
+    "waypoint/residual/strong": {
+      "conditional_root_sign": 0.7914,
+      "roots": 32
+    },
+    "literal/raw/any": {
+      "conditional_root_sign": 0.5438,
+      "roots": 87
+    },
+    "literal/raw/strong": {
+      "conditional_root_sign": 0.6133,
+      "roots": 44
+    },
+    "waypoint/raw/any": {
+      "conditional_root_sign": 0.6231,
+      "roots": 75
+    },
+    "waypoint/raw/strong": {
+      "conditional_root_sign": 0.6094,
+      "roots": 40
+    }
+  },
+  "changes": {
+    "crossfit_training-forecast": [
+      {
+        "source": "3-38494414-0",
+        "map": "4924a2ac84cc7f85e65123eb0adf527feabdb74c472cf6bbc505ed77a5b9540f",
+        "side": 0,
+        "t": 139,
+        "out": 3,
+        "added": 4,
+        "forecast_delta": 162.31241149902343,
+        "actual": [
+          0.0,
+          0.0
+        ],
+        "pair": [
+          [
+            -313.88,
+            -51.329
+          ],
+          [
+            -53.84,
+            -49.716
+          ]
+        ],
+        "best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      {
+        "source": "4-858884902-1",
+        "map": "119c0a7cf0ec60d52f5f0b1ecc5fef3d00b991c79aeae136bae44a53344372ae",
+        "side": 1,
+        "t": 143,
+        "out": 3,
+        "added": 1,
+        "forecast_delta": 117.79029846191406,
+        "actual": [
+          183.449,
+          10.317
+        ],
+        "pair": [
+          [
+            -223.32,
+            -247.538
+          ],
+          [
+            -0.47,
+            -0.47
+          ]
+        ],
+        "best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.47,
+            -0.47
+          ]
+        ]
+      },
+      {
+        "source": "5-859109355-1",
+        "map": "08ae5417084a1b26c9a64b70b3809b91efea13f8a3a8ed0a461d6ae3d0acafbb",
+        "side": 1,
+        "t": 143,
+        "out": 2,
+        "added": 5,
+        "forecast_delta": 31.968465423583986,
+        "actual": [
+          -72.403,
+          -72.403
+        ],
+        "pair": [
+          [
+            -104.65,
+            -200.238
+          ],
+          [
+            -162.3,
+            -163.962
+          ]
+        ],
+        "best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      }
+    ],
+    "crossfit_training-raw": [
+      {
+        "source": "1-46289341-0",
+        "map": "11dfd6f8276769eb64deb127120e0e4edf19d7fadbcaa1b6a7f1d51bf902ec64",
+        "side": 0,
+        "t": 253,
+        "out": 4,
+        "added": 2,
+        "forecast_delta": 79.7276123046875,
+        "actual": [
+          -126.256,
+          -47.733
+        ],
+        "pair": [
+          [
+            -612.28,
+            -574.238
+          ],
+          [
+            67.59,
+            82.244
+          ]
+        ],
+        "best": [
+          [
+            -429.81,
+            -443.429
+          ],
+          [
+            67.59,
+            82.244
+          ]
+        ]
+      },
+      {
+        "source": "2-229476780-0",
+        "map": "1b462e6ebbe66a4a131583b91e5ab987f6bac988de2113f956e0e1bf1c15d864",
+        "side": 0,
+        "t": 86,
+        "out": 4,
+        "added": 1,
+        "forecast_delta": 102.84785156250001,
+        "actual": [
+          -40.857,
+          -20.361
+        ],
+        "pair": [
+          [
+            108.03,
+            17.708
+          ],
+          [
+            -24.83,
+            -27.834
+          ]
+        ],
+        "best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      {
+        "source": "2-229476780-1",
+        "map": "1b462e6ebbe66a4a131583b91e5ab987f6bac988de2113f956e0e1bf1c15d864",
+        "side": 1,
+        "t": 197,
+        "out": 4,
+        "added": 3,
+        "forecast_delta": 37.54659080505371,
+        "actual": [
+          0.0,
+          0.0
+        ],
+        "pair": [
+          [
+            -89.54,
+            -115.532
+          ],
+          [
+            -90.81,
+            -48.394
+          ]
+        ],
+        "best": [
+          [
+            0.0,
+            -67.139
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      {
+        "source": "3-38494414-0",
+        "map": "4924a2ac84cc7f85e65123eb0adf527feabdb74c472cf6bbc505ed77a5b9540f",
+        "side": 0,
+        "t": 139,
+        "out": 3,
+        "added": 4,
+        "forecast_delta": 162.31241149902343,
+        "actual": [
+          0.0,
+          0.0
+        ],
+        "pair": [
+          [
+            -313.88,
+            -51.329
+          ],
+          [
+            -53.84,
+            -49.716
+          ]
+        ],
+        "best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      {
+        "source": "3-38494414-1",
+        "map": "4924a2ac84cc7f85e65123eb0adf527feabdb74c472cf6bbc505ed77a5b9540f",
+        "side": 1,
+        "t": 254,
+        "out": 3,
+        "added": 2,
+        "forecast_delta": 30.466459274291992,
+        "actual": [
+          80.161,
+          13.673
+        ],
+        "pair": [
+          [
+            10.59,
+            41.763
+          ],
+          [
+            -3.2,
+            -6.096
+          ]
+        ],
+        "best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      {
+        "source": "4-858884902-0",
+        "map": "119c0a7cf0ec60d52f5f0b1ecc5fef3d00b991c79aeae136bae44a53344372ae",
+        "side": 0,
+        "t": 258,
+        "out": 5,
+        "added": 4,
+        "forecast_delta": 30.357419586181642,
+        "actual": [
+          -64.959,
+          0.0
+        ],
+        "pair": [
+          [
+            -377.29,
+            -423.439
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "best": [
+          [
+            -99.4,
+            -113.495
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      {
+        "source": "4-858884902-1",
+        "map": "119c0a7cf0ec60d52f5f0b1ecc5fef3d00b991c79aeae136bae44a53344372ae",
+        "side": 1,
+        "t": 143,
+        "out": 3,
+        "added": 1,
+        "forecast_delta": 117.79029846191406,
+        "actual": [
+          183.449,
+          10.317
+        ],
+        "pair": [
+          [
+            -223.32,
+            -247.538
+          ],
+          [
+            -0.47,
+            -0.47
+          ]
+        ],
+        "best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.47,
+            -0.47
+          ]
+        ]
+      },
+      {
+        "source": "6-463463249-1",
+        "map": "5604fd02be8703048a7d883c63e5535300961bd34b8ba86339305f918d2ef878",
+        "side": 1,
+        "t": 85,
+        "out": 4,
+        "added": 1,
+        "forecast_delta": 69.81177558898926,
+        "actual": [
+          132.968,
+          0.0
+        ],
+        "pair": [
+          [
+            208.84,
+            129.827
+          ],
+          [
+            30.28,
+            30.28
+          ]
+        ],
+        "best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      {
+        "source": "6-463463249-1",
+        "map": "5604fd02be8703048a7d883c63e5535300961bd34b8ba86339305f918d2ef878",
+        "side": 1,
+        "t": 196,
+        "out": 5,
+        "added": 2,
+        "forecast_delta": 30.897745513916014,
+        "actual": [
+          0.0,
+          0.0
+        ],
+        "pair": [
+          [
+            -138.72,
+            -234.173
+          ],
+          [
+            -0.22,
+            -0.22
+          ]
+        ],
+        "best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.22,
+            -0.22
+          ]
+        ]
+      }
+    ],
+    "crossfit_training-agree_raw": [
+      {
+        "source": "3-38494414-0",
+        "map": "4924a2ac84cc7f85e65123eb0adf527feabdb74c472cf6bbc505ed77a5b9540f",
+        "side": 0,
+        "t": 139,
+        "out": 3,
+        "added": 4,
+        "forecast_delta": 162.31241149902343,
+        "actual": [
+          0.0,
+          0.0
+        ],
+        "pair": [
+          [
+            -313.88,
+            -51.329
+          ],
+          [
+            -53.84,
+            -49.716
+          ]
+        ],
+        "best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      {
+        "source": "4-858884902-1",
+        "map": "119c0a7cf0ec60d52f5f0b1ecc5fef3d00b991c79aeae136bae44a53344372ae",
+        "side": 1,
+        "t": 143,
+        "out": 3,
+        "added": 1,
+        "forecast_delta": 117.79029846191406,
+        "actual": [
+          183.449,
+          10.317
+        ],
+        "pair": [
+          [
+            -223.32,
+            -247.538
+          ],
+          [
+            -0.47,
+            -0.47
+          ]
+        ],
+        "best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.47,
+            -0.47
+          ]
+        ]
+      }
+    ],
+    "crossfit_training-agree_cash": [
+      {
+        "source": "4-858884902-1",
+        "map": "119c0a7cf0ec60d52f5f0b1ecc5fef3d00b991c79aeae136bae44a53344372ae",
+        "side": 1,
+        "t": 143,
+        "out": 3,
+        "added": 1,
+        "forecast_delta": 117.79029846191406,
+        "actual": [
+          183.449,
+          10.317
+        ],
+        "pair": [
+          [
+            -223.32,
+            -247.538
+          ],
+          [
+            -0.47,
+            -0.47
+          ]
+        ],
+        "best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.47,
+            -0.47
+          ]
+        ]
+      }
+    ],
+    "crossfit_training-oracle_literal": [
+      {
+        "source": "1-46289341-0",
+        "map": "11dfd6f8276769eb64deb127120e0e4edf19d7fadbcaa1b6a7f1d51bf902ec64",
+        "side": 0,
+        "t": 253,
+        "out": 4,
+        "added": 3,
+        "forecast_delta": -10.62677001953125,
+        "actual": [
+          211.47,
+          0.0
+        ],
+        "pair": [
+          [
+            361.98,
+            413.089
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "best": [
+          [
+            361.98,
+            413.089
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      {
+        "source": "1-46289341-1",
+        "map": "11dfd6f8276769eb64deb127120e0e4edf19d7fadbcaa1b6a7f1d51bf902ec64",
+        "side": 1,
+        "t": 193,
+        "out": 5,
+        "added": 3,
+        "forecast_delta": -39.93301544189453,
+        "actual": [
+          177.656,
+          3.581
+        ],
+        "pair": [
+          [
+            484.37,
+            484.582
+          ],
+          [
+            2.61,
+            5.11
+          ]
+        ],
+        "best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      {
+        "source": "2-229476780-1",
+        "map": "1b462e6ebbe66a4a131583b91e5ab987f6bac988de2113f956e0e1bf1c15d864",
+        "side": 1,
+        "t": 86,
+        "out": 2,
+        "added": 1,
+        "forecast_delta": 18.24372673034668,
+        "actual": [
+          117.522,
+          24.952
+        ],
+        "pair": [
+          [
+            199.66,
+            350.344
+          ],
+          [
+            24.95,
+            24.95
+          ]
+        ],
+        "best": [
+          [
+            146.06,
+            326.717
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      {
+        "source": "3-38494414-0",
+        "map": "4924a2ac84cc7f85e65123eb0adf527feabdb74c472cf6bbc505ed77a5b9540f",
+        "side": 0,
+        "t": 139,
+        "out": 3,
+        "added": 4,
+        "forecast_delta": 162.31241149902343,
+        "actual": [
+          0.0,
+          0.0
+        ],
+        "pair": [
+          [
+            -313.88,
+            -51.329
+          ],
+          [
+            -53.84,
+            -49.716
+          ]
+        ],
+        "best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      {
+        "source": "3-38494414-1",
+        "map": "4924a2ac84cc7f85e65123eb0adf527feabdb74c472cf6bbc505ed77a5b9540f",
+        "side": 1,
+        "t": 254,
+        "out": 3,
+        "added": 2,
+        "forecast_delta": 30.466459274291992,
+        "actual": [
+          80.161,
+          13.673
+        ],
+        "pair": [
+          [
+            10.59,
+            41.763
+          ],
+          [
+            -3.2,
+            -6.096
+          ]
+        ],
+        "best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      {
+        "source": "4-858884902-1",
+        "map": "119c0a7cf0ec60d52f5f0b1ecc5fef3d00b991c79aeae136bae44a53344372ae",
+        "side": 1,
+        "t": 143,
+        "out": 3,
+        "added": 1,
+        "forecast_delta": 117.79029846191406,
+        "actual": [
+          183.449,
+          10.317
+        ],
+        "pair": [
+          [
+            -223.32,
+            -247.538
+          ],
+          [
+            -0.47,
+            -0.47
+          ]
+        ],
+        "best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -0.47,
+            -0.47
+          ]
+        ]
+      },
+      {
+        "source": "4-858884902-1",
+        "map": "119c0a7cf0ec60d52f5f0b1ecc5fef3d00b991c79aeae136bae44a53344372ae",
+        "side": 1,
+        "t": 258,
+        "out": 2,
+        "added": 5,
+        "forecast_delta": -43.51225662231445,
+        "actual": [
+          154.151,
+          0.0
+        ],
+        "pair": [
+          [
+            203.65,
+            183.655
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      {
+        "source": "5-859109355-0",
+        "map": "08ae5417084a1b26c9a64b70b3809b91efea13f8a3a8ed0a461d6ae3d0acafbb",
+        "side": 0,
+        "t": 258,
+        "out": 4,
+        "added": 2,
+        "forecast_delta": -30.224606704711917,
+        "actual": [
+          39.016,
+          0.0
+        ],
+        "pair": [
+          [
+            -0.03,
+            -196.38
+          ],
+          [
+            -57.88,
+            -33.048
+          ]
+        ],
+        "best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      {
+        "source": "6-463463249-1",
+        "map": "5604fd02be8703048a7d883c63e5535300961bd34b8ba86339305f918d2ef878",
+        "side": 1,
+        "t": 85,
+        "out": 4,
+        "added": 1,
+        "forecast_delta": 69.81177558898926,
+        "actual": [
+          132.968,
+          0.0
+        ],
+        "pair": [
+          [
+            208.84,
+            129.827
+          ],
+          [
+            30.28,
+            30.28
+          ]
+        ],
+        "best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      {
+        "source": "6-463463249-1",
+        "map": "5604fd02be8703048a7d883c63e5535300961bd34b8ba86339305f918d2ef878",
+        "side": 1,
+        "t": 256,
+        "out": 3,
+        "added": 4,
+        "forecast_delta": 9.114180183410646,
+        "actual": [
+          103.958,
+          0.0
+        ],
+        "pair": [
+          [
+            206.77,
+            283.055
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "best": [
+          [
+            48.22,
+            30.096
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      }
+    ],
+    "crossfit_training-oracle_waypoint": [
+      {
+        "source": "5-859109355-0",
+        "map": "08ae5417084a1b26c9a64b70b3809b91efea13f8a3a8ed0a461d6ae3d0acafbb",
+        "side": 0,
+        "t": 258,
+        "out": 4,
+        "added": 2,
+        "forecast_delta": -30.224606704711917,
+        "actual": [
+          39.016,
+          0.0
+        ],
+        "pair": [
+          [
+            -0.03,
+            -196.38
+          ],
+          [
+            -57.88,
+            -33.048
+          ]
+        ],
+        "best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      }
+    ],
+    "test-forecast": [
+      {
+        "source": "1-10723257-0",
+        "map": "461f2bd868e7b0758f145e53f8672bcc26c90ee1a97fda67ac6a550c95588882",
+        "side": 0,
+        "t": 140,
+        "out": 5,
+        "added": 1,
+        "forecast_delta": -69.4011833190918,
+        "actual": [
+          0.0,
+          0.0
+        ],
+        "pair": [
+          [
+            54.12,
+            95.384
+          ],
+          [
+            -18.07,
+            -18.07
+          ]
+        ],
+        "best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -5.13,
+            -5.13
+          ]
+        ]
+      },
+      {
+        "source": "1-233862518-1",
+        "map": "0497082d6079b53bab1eefb586049e232b08fd0ae7309704e7740c64c6050f79",
+        "side": 1,
+        "t": 140,
+        "out": 5,
+        "added": 2,
+        "forecast_delta": 16.693105697631836,
+        "actual": [
+          90.801,
+          90.801
+        ],
+        "pair": [
+          [
+            229.52,
+            233.208
+          ],
+          [
+            70.85,
+            81.066
+          ]
+        ],
+        "best": [
+          [
+            133.09,
+            126.563
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      {
+        "source": "3-158195793-0",
+        "map": "0e48729ee04b8cb0ef10f898d2b03a7acae646d0a4b02692e72b246b1768f3c1",
+        "side": 0,
+        "t": 252,
+        "out": 4,
+        "added": 3,
+        "forecast_delta": 0.6895145416259769,
+        "actual": [
+          0.0,
+          0.0
+        ],
+        "pair": [
+          [
+            -267.9,
+            -166.545
+          ],
+          [
+            -45.18,
+            66.432
+          ]
+        ],
+        "best": [
+          [
+            -22.04,
+            0.0
+          ],
+          [
+            -22.04,
+            0.0
+          ]
+        ]
+      },
+      {
+        "source": "4-320084676-0",
+        "map": "81871b8fcf9bd6e0244ad131fa0e4408fda0d3415f3ed25e10ed1d48292708b2",
+        "side": 0,
+        "t": 253,
+        "out": 2,
+        "added": 1,
+        "forecast_delta": 3.9227676391601562,
+        "actual": [
+          0.0,
+          0.0
+        ],
+        "pair": [
+          [
+            2.41,
+            7.779
+          ],
+          [
+            2.39,
+            -4.608
+          ]
+        ],
+        "best": [
+          [
+            2.39,
+            0.0
+          ],
+          [
+            2.39,
+            0.0
+          ]
+        ]
+      }
+    ],
+    "test-raw": [
+      {
+        "source": "1-10723257-1",
+        "map": "461f2bd868e7b0758f145e53f8672bcc26c90ee1a97fda67ac6a550c95588882",
+        "side": 1,
+        "t": 195,
+        "out": 1,
+        "added": 3,
+        "forecast_delta": 34.0286849975586,
+        "actual": [
+          -73.378,
+          0.0
+        ],
+        "pair": [
+          [
+            -318.89,
+            -284.883
+          ],
+          [
+            -78.83,
+            -115.864
+          ]
+        ],
+        "best": [
+          [
+            -31.77,
+            -16.565
+          ],
+          [
+            -31.77,
+            -16.565
+          ]
+        ]
+      },
+      {
+        "source": "2-847130250-1",
+        "map": "eb42f0b75b64a78a57f1845b4ac81c103fb685e38fe70d5f24091d8432a5e10b",
+        "side": 1,
+        "t": 142,
+        "out": 5,
+        "added": 1,
+        "forecast_delta": 85.60651206970215,
+        "actual": [
+          -174.215,
+          -6.455
+        ],
+        "pair": [
+          [
+            -230.51,
+            -276.492
+          ],
+          [
+            -9.93,
+            -9.93
+          ]
+        ],
+        "best": [
+          [
+            -152.26,
+            -166.06
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      {
+        "source": "4-320084676-1",
+        "map": "81871b8fcf9bd6e0244ad131fa0e4408fda0d3415f3ed25e10ed1d48292708b2",
+        "side": 1,
+        "t": 138,
+        "out": 3,
+        "added": 1,
+        "forecast_delta": 50.52832107543946,
+        "actual": [
+          -119.732,
+          -7.717
+        ],
+        "pair": [
+          [
+            -259.03,
+            -372.784
+          ],
+          [
+            -9.1,
+            -11.22
+          ]
+        ],
+        "best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      {
+        "source": "4-320084676-1",
+        "map": "81871b8fcf9bd6e0244ad131fa0e4408fda0d3415f3ed25e10ed1d48292708b2",
+        "side": 1,
+        "t": 193,
+        "out": 3,
+        "added": 1,
+        "forecast_delta": 68.13727569580078,
+        "actual": [
+          -13.481,
+          -6.95
+        ],
+        "pair": [
+          [
+            -41.91,
+            -191.623
+          ],
+          [
+            -10.0,
+            -10.0
+          ]
+        ],
+        "best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      {
+        "source": "4-322593328-0",
+        "map": "5076ad63b91a5398877546917df38ca4f82002b3a7cb42c149c823875e96bc50",
+        "side": 0,
+        "t": 141,
+        "out": 2,
+        "added": 5,
+        "forecast_delta": 59.25336532592773,
+        "actual": [
+          -53.611,
+          -53.611
+        ],
+        "pair": [
+          [
+            -179.74,
+            -103.185
+          ],
+          [
+            -15.88,
+            48.241
+          ]
+        ],
+        "best": [
+          [
+            -15.88,
+            0.0
+          ],
+          [
+            -15.88,
+            0.0
+          ]
+        ]
+      },
+      {
+        "source": "5-386650469-0",
+        "map": "05e03ecdd6aff1aced2cbda9845fcf927f34a4bfb50b77872368efb06cc86112",
+        "side": 0,
+        "t": 251,
+        "out": 2,
+        "added": 3,
+        "forecast_delta": 76.67104873657226,
+        "actual": [
+          75.124,
+          75.124
+        ],
+        "pair": [
+          [
+            -511.58,
+            -568.989
+          ],
+          [
+            -18.23,
+            -18.23
+          ]
+        ],
+        "best": [
+          [
+            -355.1,
+            -397.199
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      {
+        "source": "6-620494973-0",
+        "map": "4f07180759f5070386e2f66ff77b178582b8a1969b1e2695e1292369c29d2900",
+        "side": 0,
+        "t": 87,
+        "out": 5,
+        "added": 2,
+        "forecast_delta": 57.31199340820313,
+        "actual": [
+          51.633,
+          51.623
+        ],
+        "pair": [
+          [
+            -131.77,
+            -205.63
+          ],
+          [
+            21.62,
+            21.62
+          ]
+        ],
+        "best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      }
+    ],
+    "test-agree_raw": [],
+    "test-agree_cash": [],
+    "test-oracle_literal": [
+      {
+        "source": "1-10723257-0",
+        "map": "461f2bd868e7b0758f145e53f8672bcc26c90ee1a97fda67ac6a550c95588882",
+        "side": 0,
+        "t": 140,
+        "out": 5,
+        "added": 1,
+        "forecast_delta": -69.4011833190918,
+        "actual": [
+          0.0,
+          0.0
+        ],
+        "pair": [
+          [
+            54.12,
+            95.384
+          ],
+          [
+            -18.07,
+            -18.07
+          ]
+        ],
+        "best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -5.13,
+            -5.13
+          ]
+        ]
+      },
+      {
+        "source": "1-10723257-0",
+        "map": "461f2bd868e7b0758f145e53f8672bcc26c90ee1a97fda67ac6a550c95588882",
+        "side": 0,
+        "t": 195,
+        "out": 3,
+        "added": 4,
+        "forecast_delta": 6.9915428161621085,
+        "actual": [
+          107.819,
+          168.341
+        ],
+        "pair": [
+          [
+            175.19,
+            177.281
+          ],
+          [
+            290.52,
+            262.169
+          ]
+        ],
+        "best": [
+          [
+            104.4,
+            156.364
+          ],
+          [
+            275.93,
+            250.579
+          ]
+        ]
+      },
+      {
+        "source": "1-10723257-0",
+        "map": "461f2bd868e7b0758f145e53f8672bcc26c90ee1a97fda67ac6a550c95588882",
+        "side": 0,
+        "t": 255,
+        "out": 2,
+        "added": 1,
+        "forecast_delta": -43.72834434509278,
+        "actual": [
+          144.695,
+          0.0
+        ],
+        "pair": [
+          [
+            90.74,
+            -2.236
+          ],
+          [
+            -17.43,
+            -33.282
+          ]
+        ],
+        "best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      {
+        "source": "1-10723257-1",
+        "map": "461f2bd868e7b0758f145e53f8672bcc26c90ee1a97fda67ac6a550c95588882",
+        "side": 1,
+        "t": 140,
+        "out": 3,
+        "added": 5,
+        "forecast_delta": -13.306661987304688,
+        "actual": [
+          39.813,
+          7.565
+        ],
+        "pair": [
+          [
+            48.32,
+            46.681
+          ],
+          [
+            15.13,
+            15.13
+          ]
+        ],
+        "best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      {
+        "source": "1-233862518-0",
+        "map": "0497082d6079b53bab1eefb586049e232b08fd0ae7309704e7740c64c6050f79",
+        "side": 0,
+        "t": 84,
+        "out": 3,
+        "added": 2,
+        "forecast_delta": 19.415401458740234,
+        "actual": [
+          120.43,
+          -1.39
+        ],
+        "pair": [
+          [
+            249.67,
+            430.584
+          ],
+          [
+            -2.14,
+            -3.099
+          ]
+        ],
+        "best": [
+          [
+            6.4,
+            96.153
+          ],
+          [
+            -2.14,
+            -3.099
+          ]
+        ]
+      },
+      {
+        "source": "1-233862518-0",
+        "map": "0497082d6079b53bab1eefb586049e232b08fd0ae7309704e7740c64c6050f79",
+        "side": 0,
+        "t": 140,
+        "out": 5,
+        "added": 3,
+        "forecast_delta": 13.8369065284729,
+        "actual": [
+          59.064,
+          8.051
+        ],
+        "pair": [
+          [
+            80.08,
+            26.042
+          ],
+          [
+            4.33,
+            4.33
+          ]
+        ],
+        "best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      {
+        "source": "1-233862518-1",
+        "map": "0497082d6079b53bab1eefb586049e232b08fd0ae7309704e7740c64c6050f79",
+        "side": 1,
+        "t": 140,
+        "out": 5,
+        "added": 1,
+        "forecast_delta": 9.20267333984375,
+        "actual": [
+          85.421,
+          89.142
+        ],
+        "pair": [
+          [
+            -88.06,
+            -64.051
+          ],
+          [
+            89.86,
+            100.174
+          ]
+        ],
+        "best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      {
+        "source": "2-161689037-0",
+        "map": "118c9e72342f272f3df1af02138f50f91e9087d131d6d0a96e1afdb5b241951a",
+        "side": 0,
+        "t": 136,
+        "out": 3,
+        "added": 4,
+        "forecast_delta": 16.229957580566406,
+        "actual": [
+          98.646,
+          98.646
+        ],
+        "pair": [
+          [
+            -69.26,
+            -35.18
+          ],
+          [
+            117.01,
+            121.612
+          ]
+        ],
+        "best": [
+          [
+            -9.36,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      {
+        "source": "2-847130250-0",
+        "map": "eb42f0b75b64a78a57f1845b4ac81c103fb685e38fe70d5f24091d8432a5e10b",
+        "side": 0,
+        "t": 142,
+        "out": 3,
+        "added": 4,
+        "forecast_delta": 15.525582313537598,
+        "actual": [
+          125.705,
+          29.971
+        ],
+        "pair": [
+          [
+            834.75,
+            1082.914
+          ],
+          [
+            143.5,
+            27.311
+          ]
+        ],
+        "best": [
+          [
+            118.77,
+            12.951
+          ],
+          [
+            118.77,
+            12.951
+          ]
+        ]
+      },
+      {
+        "source": "2-847130250-0",
+        "map": "eb42f0b75b64a78a57f1845b4ac81c103fb685e38fe70d5f24091d8432a5e10b",
+        "side": 0,
+        "t": 257,
+        "out": 5,
+        "added": 4,
+        "forecast_delta": 3.052780914306641,
+        "actual": [
+          77.401,
+          0.0
+        ],
+        "pair": [
+          [
+            -37.89,
+            -163.093
+          ],
+          [
+            12.33,
+            12.33
+          ]
+        ],
+        "best": [
+          [
+            0.0,
+            -103.066
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      {
+        "source": "2-847130250-1",
+        "map": "eb42f0b75b64a78a57f1845b4ac81c103fb685e38fe70d5f24091d8432a5e10b",
+        "side": 1,
+        "t": 197,
+        "out": 5,
+        "added": 2,
+        "forecast_delta": -20.57057113647461,
+        "actual": [
+          209.496,
+          0.0
+        ],
+        "pair": [
+          [
+            144.36,
+            258.485
+          ],
+          [
+            40.38,
+            94.919
+          ]
+        ],
+        "best": [
+          [
+            44.69,
+            99.229
+          ],
+          [
+            40.38,
+            94.919
+          ]
+        ]
+      },
+      {
+        "source": "3-158195793-1",
+        "map": "0e48729ee04b8cb0ef10f898d2b03a7acae646d0a4b02692e72b246b1768f3c1",
+        "side": 1,
+        "t": 29,
+        "out": 2,
+        "added": 1,
+        "forecast_delta": 21.52093048095703,
+        "actual": [
+          33.653,
+          33.653
+        ],
+        "pair": [
+          [
+            -41.52,
+            118.285
+          ],
+          [
+            -157.28,
+            -15.089
+          ]
+        ],
+        "best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      {
+        "source": "4-320084676-0",
+        "map": "81871b8fcf9bd6e0244ad131fa0e4408fda0d3415f3ed25e10ed1d48292708b2",
+        "side": 0,
+        "t": 138,
+        "out": 4,
+        "added": 5,
+        "forecast_delta": -12.72054443359375,
+        "actual": [
+          60.33,
+          90.518
+        ],
+        "pair": [
+          [
+            110.79,
+            144.204
+          ],
+          [
+            80.96,
+            36.135
+          ]
+        ],
+        "best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      {
+        "source": "4-322593328-0",
+        "map": "5076ad63b91a5398877546917df38ca4f82002b3a7cb42c149c823875e96bc50",
+        "side": 0,
+        "t": 85,
+        "out": 5,
+        "added": 2,
+        "forecast_delta": 15.375046920776368,
+        "actual": [
+          132.148,
+          0.0
+        ],
+        "pair": [
+          [
+            344.48,
+            363.796
+          ],
+          [
+            -61.92,
+            -62.037
+          ]
+        ],
+        "best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      {
+        "source": "4-322593328-0",
+        "map": "5076ad63b91a5398877546917df38ca4f82002b3a7cb42c149c823875e96bc50",
+        "side": 0,
+        "t": 256,
+        "out": 2,
+        "added": 1,
+        "forecast_delta": 34.5170108795166,
+        "actual": [
+          109.745,
+          0.0
+        ],
+        "pair": [
+          [
+            758.9,
+            786.078
+          ],
+          [
+            31.74,
+            41.944
+          ]
+        ],
+        "best": [
+          [
+            344.82,
+            342.093
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      {
+        "source": "4-322593328-1",
+        "map": "5076ad63b91a5398877546917df38ca4f82002b3a7cb42c149c823875e96bc50",
+        "side": 1,
+        "t": 33,
+        "out": 4,
+        "added": 5,
+        "forecast_delta": -5.9742591857910154,
+        "actual": [
+          49.394,
+          16.244
+        ],
+        "pair": [
+          [
+            -12.5,
+            -34.431
+          ],
+          [
+            -13.61,
+            -20.783
+          ]
+        ],
+        "best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      {
+        "source": "4-322593328-1",
+        "map": "5076ad63b91a5398877546917df38ca4f82002b3a7cb42c149c823875e96bc50",
+        "side": 1,
+        "t": 85,
+        "out": 4,
+        "added": 5,
+        "forecast_delta": -25.826150512695314,
+        "actual": [
+          0.0,
+          0.0
+        ],
+        "pair": [
+          [
+            -48.11,
+            -21.307
+          ],
+          [
+            -23.61,
+            -19.9
+          ]
+        ],
+        "best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      {
+        "source": "5-386650469-0",
+        "map": "05e03ecdd6aff1aced2cbda9845fcf927f34a4bfb50b77872368efb06cc86112",
+        "side": 0,
+        "t": 28,
+        "out": 1,
+        "added": 2,
+        "forecast_delta": 1.8790435791015627,
+        "actual": [
+          45.397,
+          0.0
+        ],
+        "pair": [
+          [
+            118.54,
+            113.646
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      {
+        "source": "5-386650469-0",
+        "map": "05e03ecdd6aff1aced2cbda9845fcf927f34a4bfb50b77872368efb06cc86112",
+        "side": 0,
+        "t": 80,
+        "out": 5,
+        "added": 2,
+        "forecast_delta": -25.05419006347656,
+        "actual": [
+          115.872,
+          147.31
+        ],
+        "pair": [
+          [
+            99.94,
+            241.662
+          ],
+          [
+            372.35,
+            498.479
+          ]
+        ],
+        "best": [
+          [
+            99.94,
+            241.662
+          ],
+          [
+            239.53,
+            365.659
+          ]
+        ]
+      },
+      {
+        "source": "5-386650469-0",
+        "map": "05e03ecdd6aff1aced2cbda9845fcf927f34a4bfb50b77872368efb06cc86112",
+        "side": 0,
+        "t": 251,
+        "out": 2,
+        "added": 3,
+        "forecast_delta": 76.67104873657226,
+        "actual": [
+          75.124,
+          75.124
+        ],
+        "pair": [
+          [
+            -511.58,
+            -568.989
+          ],
+          [
+            -18.23,
+            -18.23
+          ]
+        ],
+        "best": [
+          [
+            -355.1,
+            -397.199
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      {
+        "source": "5-386650469-1",
+        "map": "05e03ecdd6aff1aced2cbda9845fcf927f34a4bfb50b77872368efb06cc86112",
+        "side": 1,
+        "t": 28,
+        "out": 5,
+        "added": 1,
+        "forecast_delta": 0.500399684906006,
+        "actual": [
+          46.473,
+          0.0
+        ],
+        "pair": [
+          [
+            23.05,
+            79.38
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "best": [
+          [
+            0.0,
+            45.769
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      {
+        "source": "5-386650469-1",
+        "map": "05e03ecdd6aff1aced2cbda9845fcf927f34a4bfb50b77872368efb06cc86112",
+        "side": 1,
+        "t": 251,
+        "out": 5,
+        "added": 3,
+        "forecast_delta": 4.8352806091308596,
+        "actual": [
+          77.576,
+          6.168
+        ],
+        "pair": [
+          [
+            21.54,
+            67.545
+          ],
+          [
+            -6.81,
+            -6.81
+          ]
+        ],
+        "best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      {
+        "source": "5-590159492-1",
+        "map": "d2ff3a561365a03279f3be7dc0f174e774962b840c40dc42254f82d3169c7456",
+        "side": 1,
+        "t": 141,
+        "out": 5,
+        "added": 4,
+        "forecast_delta": -15.12783432006836,
+        "actual": [
+          83.834,
+          -0.9
+        ],
+        "pair": [
+          [
+            294.46,
+            418.681
+          ],
+          [
+            -0.56,
+            -0.56
+          ]
+        ],
+        "best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      {
+        "source": "6-22998499-0",
+        "map": "3806a00c508923390a8417462cf174089ac72f88a50f7bec541f1eeba66059da",
+        "side": 0,
+        "t": 32,
+        "out": 5,
+        "added": 1,
+        "forecast_delta": -25.817866516113284,
+        "actual": [
+          73.987,
+          2.972
+        ],
+        "pair": [
+          [
+            440.47,
+            422.276
+          ],
+          [
+            78.89,
+            40.572
+          ]
+        ],
+        "best": [
+          [
+            66.13,
+            27.044
+          ],
+          [
+            66.13,
+            27.044
+          ]
+        ]
+      },
+      {
+        "source": "6-22998499-0",
+        "map": "3806a00c508923390a8417462cf174089ac72f88a50f7bec541f1eeba66059da",
+        "side": 0,
+        "t": 255,
+        "out": 2,
+        "added": 4,
+        "forecast_delta": 32.25181503295899,
+        "actual": [
+          87.0,
+          5.492
+        ],
+        "pair": [
+          [
+            1256.68,
+            1313.296
+          ],
+          [
+            -12.71,
+            1.536
+          ]
+        ],
+        "best": [
+          [
+            243.05,
+            290.004
+          ],
+          [
+            -0.21,
+            0.0
+          ]
+        ]
+      },
+      {
+        "source": "6-620494973-0",
+        "map": "4f07180759f5070386e2f66ff77b178582b8a1969b1e2695e1292369c29d2900",
+        "side": 0,
+        "t": 87,
+        "out": 5,
+        "added": 2,
+        "forecast_delta": 57.31199340820313,
+        "actual": [
+          51.633,
+          51.623
+        ],
+        "pair": [
+          [
+            -131.77,
+            -205.63
+          ],
+          [
+            21.62,
+            21.62
+          ]
+        ],
+        "best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      {
+        "source": "6-620494973-1",
+        "map": "4f07180759f5070386e2f66ff77b178582b8a1969b1e2695e1292369c29d2900",
+        "side": 1,
+        "t": 258,
+        "out": 2,
+        "added": 4,
+        "forecast_delta": 17.82901802062988,
+        "actual": [
+          75.225,
+          0.223
+        ],
+        "pair": [
+          [
+            183.28,
+            277.245
+          ],
+          [
+            0.35,
+            -0.346
+          ]
+        ],
+        "best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.346
+          ]
+        ]
+      }
+    ],
+    "test-oracle_waypoint": [
+      {
+        "source": "1-10723257-0",
+        "map": "461f2bd868e7b0758f145e53f8672bcc26c90ee1a97fda67ac6a550c95588882",
+        "side": 0,
+        "t": 140,
+        "out": 5,
+        "added": 1,
+        "forecast_delta": -69.4011833190918,
+        "actual": [
+          0.0,
+          0.0
+        ],
+        "pair": [
+          [
+            54.12,
+            95.384
+          ],
+          [
+            -18.07,
+            -18.07
+          ]
+        ],
+        "best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            -5.13,
+            -5.13
+          ]
+        ]
+      },
+      {
+        "source": "1-10723257-0",
+        "map": "461f2bd868e7b0758f145e53f8672bcc26c90ee1a97fda67ac6a550c95588882",
+        "side": 0,
+        "t": 195,
+        "out": 3,
+        "added": 4,
+        "forecast_delta": 6.9915428161621085,
+        "actual": [
+          107.819,
+          168.341
+        ],
+        "pair": [
+          [
+            175.19,
+            177.281
+          ],
+          [
+            290.52,
+            262.169
+          ]
+        ],
+        "best": [
+          [
+            104.4,
+            156.364
+          ],
+          [
+            275.93,
+            250.579
+          ]
+        ]
+      },
+      {
+        "source": "1-233862518-1",
+        "map": "0497082d6079b53bab1eefb586049e232b08fd0ae7309704e7740c64c6050f79",
+        "side": 1,
+        "t": 140,
+        "out": 5,
+        "added": 4,
+        "forecast_delta": -23.35720443725586,
+        "actual": [
+          -35.221,
+          86.215
+        ],
+        "pair": [
+          [
+            -169.34,
+            -204.421
+          ],
+          [
+            92.5,
+            105.497
+          ]
+        ],
+        "best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      {
+        "source": "2-161689037-0",
+        "map": "118c9e72342f272f3df1af02138f50f91e9087d131d6d0a96e1afdb5b241951a",
+        "side": 0,
+        "t": 136,
+        "out": 3,
+        "added": 4,
+        "forecast_delta": 16.229957580566406,
+        "actual": [
+          98.646,
+          98.646
+        ],
+        "pair": [
+          [
+            -69.26,
+            -35.18
+          ],
+          [
+            117.01,
+            121.612
+          ]
+        ],
+        "best": [
+          [
+            -9.36,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      {
+        "source": "2-847130250-0",
+        "map": "eb42f0b75b64a78a57f1845b4ac81c103fb685e38fe70d5f24091d8432a5e10b",
+        "side": 0,
+        "t": 86,
+        "out": 4,
+        "added": 3,
+        "forecast_delta": -13.903877258300781,
+        "actual": [
+          1.574,
+          84.647
+        ],
+        "pair": [
+          [
+            -484.69,
+            -405.326
+          ],
+          [
+            84.31,
+            114.424
+          ]
+        ],
+        "best": [
+          [
+            -178.45,
+            -79.734
+          ],
+          [
+            84.31,
+            114.424
+          ]
+        ]
+      },
+      {
+        "source": "3-158195793-1",
+        "map": "0e48729ee04b8cb0ef10f898d2b03a7acae646d0a4b02692e72b246b1768f3c1",
+        "side": 1,
+        "t": 29,
+        "out": 2,
+        "added": 1,
+        "forecast_delta": 21.52093048095703,
+        "actual": [
+          33.653,
+          33.653
+        ],
+        "pair": [
+          [
+            -41.52,
+            118.285
+          ],
+          [
+            -157.28,
+            -15.089
+          ]
+        ],
+        "best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      {
+        "source": "4-320084676-0",
+        "map": "81871b8fcf9bd6e0244ad131fa0e4408fda0d3415f3ed25e10ed1d48292708b2",
+        "side": 0,
+        "t": 138,
+        "out": 4,
+        "added": 5,
+        "forecast_delta": -12.72054443359375,
+        "actual": [
+          60.33,
+          90.518
+        ],
+        "pair": [
+          [
+            110.79,
+            144.204
+          ],
+          [
+            80.96,
+            36.135
+          ]
+        ],
+        "best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      {
+        "source": "4-322593328-1",
+        "map": "5076ad63b91a5398877546917df38ca4f82002b3a7cb42c149c823875e96bc50",
+        "side": 1,
+        "t": 85,
+        "out": 4,
+        "added": 5,
+        "forecast_delta": -25.826150512695314,
+        "actual": [
+          0.0,
+          0.0
+        ],
+        "pair": [
+          [
+            -48.11,
+            -21.307
+          ],
+          [
+            -23.61,
+            -19.9
+          ]
+        ],
+        "best": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      {
+        "source": "5-386650469-0",
+        "map": "05e03ecdd6aff1aced2cbda9845fcf927f34a4bfb50b77872368efb06cc86112",
+        "side": 0,
+        "t": 80,
+        "out": 5,
+        "added": 2,
+        "forecast_delta": -25.05419006347656,
+        "actual": [
+          115.872,
+          147.31
+        ],
+        "pair": [
+          [
+            99.94,
+            241.662
+          ],
+          [
+            372.35,
+            498.479
+          ]
+        ],
+        "best": [
+          [
+            99.94,
+            241.662
+          ],
+          [
+            239.53,
+            365.659
+          ]
+        ]
+      },
+      {
+        "source": "5-386650469-0",
+        "map": "05e03ecdd6aff1aced2cbda9845fcf927f34a4bfb50b77872368efb06cc86112",
+        "side": 0,
+        "t": 251,
+        "out": 2,
+        "added": 3,
+        "forecast_delta": 76.67104873657226,
+        "actual": [
+          75.124,
+          75.124
+        ],
+        "pair": [
+          [
+            -511.58,
+            -568.989
+          ],
+          [
+            -18.23,
+            -18.23
+          ]
+        ],
+        "best": [
+          [
+            -355.1,
+            -397.199
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "archived_sources": [
+    "v6r-qual-05-estuary.jsonl",
+    "v6r-confirm-05-estuary.jsonl",
+    "v6r-regression-05-estuary.jsonl"
+  ],
+  "rule": "Both historical seats eligible, score at observation 150 only; layout ordering SHA256(v7-phase-150-behind/+layout), then seat, filename, historical policy label. Alternate 0,1,0,1. All eight main-panel layouts excluded; one per extra layout. Original final scores/winners not used for selection.",
+  "cases": [
+    {
+      "seed": 77752323,
+      "side": 0,
+      "source": "v6r-qual-05-estuary.jsonl",
+      "historical_names": [
+        "yan-v5",
+        "estuary"
+      ],
+      "layout": "77984fb0adeb821ad87d428fe0cce4585a05f299b654507442c0759b638ebde6",
+      "margin": -442.67
+    },
+    {
+      "seed": 568554483,
+      "side": 1,
+      "source": "v6r-regression-05-estuary.jsonl",
+      "historical_names": [
+        "estuary",
+        "yan-v5"
+      ],
+      "layout": "35fafca153da5437b8d5ae6125094286d21102c0989fea967443412319454f14",
+      "margin": -423.63
+    },
+    {
+      "seed": 171684640,
+      "side": 0,
+      "source": "v6r-regression-05-estuary.jsonl",
+      "historical_names": [
+        "estuary",
+        "yan-v5"
+      ],
+      "layout": "4008e1d90eefb4e04df8738d8ec1a4f2a9e532e4215adb33f97b454a826edd4b",
+      "margin": -374.68
+    },
+    {
+      "seed": 455366690,
+      "side": 1,
+      "source": "v6r-qual-05-estuary.jsonl",
+      "historical_names": [
+        "estuary",
+        "yan-v5"
+      ],
+      "layout": "e0606391f23290dc3df25a1c2959d859e722484a449bd491078edf2fa4331c6c",
+      "margin": -1209.35
+    }
+  ],
+  "budget": "Same all-turn four candidates, depth two, one reply, three-step tail; same three policies, each against live v6."
+}
