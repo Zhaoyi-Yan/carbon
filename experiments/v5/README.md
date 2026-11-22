@@ -48,3 +48,7 @@ python experiments/v5/distill.py /tmp/v5-boards experiments/v5/validation.json /
 首轮封存图上，responder 对原版 yan-v4 为 **6 胜 2 负**，场均 +54.16。189968491 和 605624711 两边都赢，722720158 和 771088240 各一胜一负。最重的一场失利是 771088240 的出生位 1，落后 1301.86 分。该文件尚未通过八战全胜的验收。[八场原始记录](../../analysis/arena/v5-qualification-responder.jsonl)
 
 整网训练后的 multistyle 与 v4 另打了六场双方均关闭搜索的对照，3 胜 3 负，平均 +171.07。两边的正常比赛版本在正式对战中都启用搜索。[无搜索对照原始记录](../../analysis/arena/v5-policy-only-multistyle.jsonl)
+
+在同一张开发图 845511055 上，multistyle 两边分别胜 572.18、334.26 分，longlook 两边都负。八个训练回放局面的计时显示，longlook 平均展开 8.38 步，multistyle 为 2.75 步。小网络的额外深度未转化成该图的胜局，按预登记规则由 multistyle 进入第二批独立地图。[搜索剖析](search-profile.json) · [multistyle 原始记录](../../analysis/arena/v5-development-multistyle.jsonl) · [longlook 原始记录](../../analysis/arena/v5-development-longlook.jsonl)
+
+另取[较晚发布的公开快照](https://github.com/JUZI1/carbon-league-replays/tree/05f255b32442e61c8967a761dc557aad613f4c28)中 6 场新增对局，在全部 5,355 个单位决策上比较同一视野下的策略。v4 的准确率是 75.18%，整网重训后使用通用风格的准确率是 75.95%，使用已知教师风格时为 75.93%，后者预测实际行动的平均负对数似然由 0.630 降到 0.592。[独立快照复核](temporal-validation.json)
