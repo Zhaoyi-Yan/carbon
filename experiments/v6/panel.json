@@ -11,5 +11,10 @@
     392240122
   ],
   "selection": "Compare on the same development seeds, both seats. Prefer normal wins, then margin. Freeze the selected file before playing the three confirmation maps. Account ranking is evaluated separately.",
-  "confirmation_export": "After development selection, add the deterministic last-worker guard before freezing the single confirmation hash. It only intervenes if the action risks immediate elimination and at least one move guarantees the worker survives the next turn. Grade the combined file on the three previously reserved maps."
+  "confirmation_export": "After development selection, add the deterministic last-worker guard before freezing the single confirmation hash. It only intervenes if the action risks immediate elimination and at least one move guarantees the worker survives the next turn. Grade the combined file on the three previously reserved maps.",
+  "extra_if_inconclusive": [
+    134234471,
+    171684640
+  ],
+  "extra_rule": "If the first confirmation is exactly 3-3 or gives positive wins with a negative mean margin, play these two more mirrored maps without changing the file and report all ten games."
 }
