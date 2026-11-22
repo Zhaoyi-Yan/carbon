@@ -20,7 +20,8 @@ Master7sE 对局中，第 47 步到第 252 步的两次己方工人交货之间�
 | [Pilot](checkpoints/pilot.py) | 10–6 | 7/8，3/8 | +137.42 | 加入两步兑付、招工储备和最后一个采集员保护。此批 16 局均未失去全部自主收入来源，两个座位的战绩未达到晋级线。[逐图结果](../../analysis/v7/02-qualifying-summary.json) · [现金冻结复核](../../analysis/v7/02-liquidity.json) |
 | [Jetty](checkpoints/jetty.py) | 10–6 | 5/8，5/8 | −27.31 | 两边首步都出一采一种。两席胜场相同，三图双胜、一图双负。前 75 步单局平均少采 180.96。此批没有彻底断流。[逐图结果](../../analysis/v7/03-qualifying-summary.json) · [逐笔收支](../../analysis/v7/03-qualifying-economy.json) |
 | [Narrows](checkpoints/narrows.py) | 6–10 | 3/8，3/8 | −44.31 | 场均净树收入多 124.86，实际入库少 127.90，额外招聘多花 41.25。16 局均完赛，双方分别有 14、9 步超过单步 1 秒，最长为 1.475、1.335 秒。[全部胜负与用时](../../analysis/v7/04-qualifying-summary.json) · [入库与树收](../../analysis/v7/04-qualifying-economy.json) |
-| [Soundings](checkpoints/soundings.py) | 评测中 | | | 单独训练经济估值头和负责推演的小网络，工资与回库保护沿用前版。[冻结文件与地图](../../analysis/v7/05-qualifying.json) |
+| [Soundings](checkpoints/soundings.py) | 11–5 | 6/8，5/8 | +336.83 | 四图双胜，一图双负，距离晋级差一个胜场。双方均无慢步。单局平均基地入款多 400.17、净树收支少 153.74、招聘少花 90。[全体胜负](../../analysis/v7/05-qualifying-summary.json) · [逐图收支](../../analysis/v7/05-qualifying-economy.json) |
+| [Pilotage](checkpoints/pilotage.py) | 评测中 | | | 允许友军协调回库和根据 Master 系列提出招聘备选。[冻结文件与地图](../../analysis/v7/06-qualifying.json) |
 
 在仓库根目录，以下命令可以重建已冻结的文件，并复现存档分叉的现金流。
 
@@ -61,3 +62,9 @@ Pilotage 加入了三、四步内的解围，并允许友军让出回库通道�
 基于 42 张训练图和 13 张整图留出，学习 Master7sE、7sD、7sB2 的基地招聘。低现金开局时，基地动作命中由 59.8% 提高至 72.3%。搜索只增加一个可以选择的招聘方案，保留工人的原走法。在额外识别出的 23 名实际采集员中，50 步有 12 名各自收回了 30 招聘费。这项开支经常需要超过 20 步兑现。[按地图验证](../../analysis/v7/master-validation.json) · [招聘回款明细](../../analysis/v7/master-base-probe.json)
 
 强制让采集员在安全富矿上多停一轮，在首批开发图打出 6–2，独立四图换边却只得到 3–5。独立复验前 75 步多采 338.75，实际入库少 79.87，期末在途多 404.34。正式候选没有启用强制留采。单独测试保护被占树的做法，在 22 场公开对局里提出 19 次防守，其中 4 次对应实际夺树，截图局的 5 次丢树都没有合适的即时保护动作。[采矿复验](../../analysis/v7/yield-mine.md) · [自养采集员实验](../../analysis/v7/income-loop.md) · [守树核对](../../analysis/v7/orchard-guard.json)
+
+## 窄负与末段招聘
+
+Soundings 唯一双负地图的分差是 −5.26 和 −40.20。前一局第 292 步在 9 名现有工人下再招了一名采集员。只去掉这一笔，按原双方后续动作打到终局，结果反转为 +24.74。换边的第 288 步招工在同样的对照中实赚了 29.05，取消会扩大败差。[逐步资金与货物](../../analysis/v7/soundings-close-losses.json)
+
+根据剩余步数、矿区往返时间以及附近敌方货量筛查时，前五批的 131 个末段招工里有 17 个命中。去掉这些招聘后 16 次资金差提高、1 次下降，平均提高 18.40。在 21 场额外公开比赛的 32 次末段招工中命中 5 次，4 次改善、1 次变差，平均提高 13.80。所有分叉复用原对方动作，并且只删除每个席位的最后一笔单独采集员招聘。[本地对照](../../analysis/v7/last-hire-counterfactual.json) · [公开比赛对照](../../analysis/v7/last-hire-public.json)
