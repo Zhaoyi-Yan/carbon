@@ -1,0 +1,38 @@
+{
+  "reason": "The first recorded game of batch 8 was a baseline act timeout. A separate diagnostic used multiple CPU cores during that game; it has been restarted single-threaded. Keep every original game, count no forfeit as a victory. Before any valid batch-8 result, reserve a full replacement batch of eight new maps / both seats using unchanged Tidewatch with four simultaneous games. Existing gate and independent confirmation remain in force.",
+  "completed_at_registration": 0,
+  "invalid_games_at_registration": [
+    [
+      591124566,
+      "forfeit",
+      [
+        {
+          "kind": "timeout",
+          "phase": "act",
+          "turn": 53,
+          "detail": "Wall-clock deadline exceeded"
+        },
+        null
+      ]
+    ]
+  ],
+  "candidate_sha256": "101586bc07558cbcd6753c48e7973e85602776d1e5b4976300084782cef834d4",
+  "new_batch": 9,
+  "qualifying": [
+    49649537,
+    229378487,
+    722683124,
+    80250062,
+    143066958,
+    464591238,
+    462216352,
+    290762669
+  ],
+  "confirmation": [
+    1644925,
+    36608132,
+    173704615,
+    693835988
+  ],
+  "jobs": 4
+}

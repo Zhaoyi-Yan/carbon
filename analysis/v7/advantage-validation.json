@@ -1,0 +1,1391 @@
+{
+  "policy": "fairlead.py",
+  "training_maps": [
+    "08ae5417084a1b26c9a64b70b3809b91efea13f8a3a8ed0a461d6ae3d0acafbb",
+    "09f1141e843504f11e3d54de084834c006dee8a2152e9a46d4d14707169348ea",
+    "119c0a7cf0ec60d52f5f0b1ecc5fef3d00b991c79aeae136bae44a53344372ae",
+    "11dfd6f8276769eb64deb127120e0e4edf19d7fadbcaa1b6a7f1d51bf902ec64",
+    "1b462e6ebbe66a4a131583b91e5ab987f6bac988de2113f956e0e1bf1c15d864",
+    "25a8c2a65d09d159656a7f4cdc24d1f7a89448660199813875df6600f3fe59e6",
+    "2f28546806332b1eb663ccafdab930303102106cbf6d6edac350ce6f34b17e67",
+    "3251ea5920b24b3af1460583597414e1bb8600bfeef954368cadf4025f1b80e5",
+    "37432764cdecdc0444d59d693055fc3166ffa55c7a2883b9e8d273588cec21b8",
+    "4186b03237cdf5920e700431a54f09b3341f7cd5428aff995280c831b5d75030",
+    "4924a2ac84cc7f85e65123eb0adf527feabdb74c472cf6bbc505ed77a5b9540f",
+    "498b358f0f03cff1aaa8adaaa6f7bbf385fa26cba4748c7b72951d509098cd47",
+    "4b4e5af51765c64a32c9d20cd16f388962e920cdbc00533697c21f7d5111116a",
+    "5604fd02be8703048a7d883c63e5535300961bd34b8ba86339305f918d2ef878",
+    "5836523a491eca0e0a5674ae78b5282fc81dd17e008165aba8947c5dc2d06943",
+    "611ebe21c639a88085be8b15044bc693c8d1d38f43391984a5397584ba562187",
+    "6308d06647023829ec66b0a58e0538ec0a018b68a135926bbec965e3745b77c3",
+    "6529e96789191b5034ac3c09d9e9150a3f6c8173732a10091c19849706647551",
+    "6d90567c8b82bc6af0b66550d5c69a3652a875221e56f69ed612f26c3b6b970b",
+    "7fb430c2d243e789b51cf4e689f1d05dcb8d61560043e0afa1840b7c3aef24fd",
+    "824296261d0bfb7c055d1dda3a1d9b8dbd98bbf25e3ef31b9f1ebb476ec0484e",
+    "879d5723592d38bc208543e0c6df4d841447b36cf735b8d2686f243476beddfe",
+    "8d62ec2440772dc906a71b031e64d9b3ee721f21b1a19c699c701fde2cea14a7",
+    "9038199c8119f8c16d3da891b201c8737ebc139a15be4bfdc6c76aa1fd427a4d",
+    "a76e25cf7948ce21f251fc600675a63752c164be385c6efa605af2d1bf4a3295",
+    "b0a9ccc6f47a6e7443ec6ab02ac5480a943fc120758f40887065dc7475e48e68",
+    "b5f533361355126e57670f8e57ba39c6161db2767b31dd11069b82346680def8",
+    "b77fc60e437e174e5d3933328db3ccaf2326f746d994f0ce48b9f416e617ba29",
+    "b92c44f70f13fa1ac9d886afff9bbc6cd5b5736610a0a3862f50623497a9046d",
+    "c68675be8716adfb5e8a2f7e5b455232cb99df324f0a29b50ee5658dfecc8cf4",
+    "cc050a0e97079cf051fa11384ad29cb1f941c48f0d8771f4051a26a54f9a5622",
+    "e25e17fb15ec0fc4ae7e588a22c283fc84e901b0a191234a62b959aaac77742a",
+    "e27f3f29bf09daf6e1a05df13d52cf9b2d932fa763780224850c5294861f62d6",
+    "e2f728900a04e5c8fba72049a0c263e4e5c6f39ab29282afc17032c8564d42f9",
+    "ec9cfd6e355df7aef3ad8f2a6cab74f162d4e5d0b106f963938f2cda7be06ad5",
+    "fe3b8d1616dba578ea99ebeec345024934d6eded519bb07d5ce76adee944db59"
+  ],
+  "testing_maps": [
+    "0497082d6079b53bab1eefb586049e232b08fd0ae7309704e7740c64c6050f79",
+    "05e03ecdd6aff1aced2cbda9845fcf927f34a4bfb50b77872368efb06cc86112",
+    "0e48729ee04b8cb0ef10f898d2b03a7acae646d0a4b02692e72b246b1768f3c1",
+    "118c9e72342f272f3df1af02138f50f91e9087d131d6d0a96e1afdb5b241951a",
+    "2c81ecba392df2698cf6147d5bb6b6108accba207c77bdd8759b6651d1d6c25e",
+    "3806a00c508923390a8417462cf174089ac72f88a50f7bec541f1eeba66059da",
+    "461f2bd868e7b0758f145e53f8672bcc26c90ee1a97fda67ac6a550c95588882",
+    "4f07180759f5070386e2f66ff77b178582b8a1969b1e2695e1292369c29d2900",
+    "5076ad63b91a5398877546917df38ca4f82002b3a7cb42c149c823875e96bc50",
+    "81871b8fcf9bd6e0244ad131fa0e4408fda0d3415f3ed25e10ed1d48292708b2",
+    "d2ff3a561365a03279f3be7dc0f174e774962b840c40dc42254f82d3169c7456",
+    "eb42f0b75b64a78a57f1845b4ac81c103fb685e38fe70d5f24091d8432a5e10b"
+  ],
+  "test_games_by_panel": {
+    "1": 4,
+    "2": 4,
+    "3": 4,
+    "4": 4,
+    "5": 4,
+    "6": 4
+  },
+  "games": 96,
+  "recorded_referee_transitions": 28704,
+  "training_states": 563,
+  "test_states": 186,
+  "training_branch_count": 1231,
+  "test_branch_count": 402,
+  "paired_label": "Same current state, observed rival first command, changed finalist joint. Frozen six-candidate, two-ply search; at most two finalists plus original incumbent. Subsequent historical commands replayed literally and with displaced survivors routed toward their recorded next squares. New births matched by side, depot, role and birth turn.",
+  "objective": "30% score at step 5 plus 70% at step 10, averaged across two continuations. Score is cash margin plus .55 of distance-discounted held cargo, 26 per live worker, .55 of up to twelve turns of tree receipts, and 1200 for an early terminal advantage. Cash/deposits also reported separately.",
+  "selection": "36 training layouts; two whole layouts held from each of six panels. Strength chosen by three training-only folds. Deploy only if weighted solvency label and cash margin at ten steps both improve in both held-out tape conventions.",
+  "features": [
+    "own_deposit",
+    "opponent_deposit",
+    "safe_harvest",
+    "lost_cargo_risk",
+    "lost_worker_risk",
+    "enemy_cargo_prize",
+    "enemy_planter_prize",
+    "equal_cargo_trade",
+    "homeward_loaded",
+    "early_homeward",
+    "homeward_contested",
+    "loaded_near_depot",
+    "block_enemy_depot",
+    "planter_claim",
+    "plant_opportunity",
+    "protect_tree",
+    "collector_hire",
+    "planter_hire",
+    "low_cash_hires",
+    "first_planter_hire",
+    "congestion",
+    "joint_cargo_collision",
+    "crowded_depot",
+    "early_mining",
+    "late_homeward",
+    "threatened_planter",
+    "cash_poor_deposit",
+    "enemy_tree_tax"
+  ],
+  "fields": [
+    "cash",
+    "receipt",
+    "cargo",
+    "near_cargo",
+    "fleet",
+    "trees",
+    "lost",
+    "score",
+    "terminal"
+  ],
+  "horizons": [
+    5,
+    10
+  ],
+  "chosen_weight": 0.25,
+  "score_scale": 600.0,
+  "training_cv": {
+    "0.0": {
+      "score": 0.0,
+      "literal": 0.0,
+      "waypoint": 0.0,
+      "h10cash": [
+        0.0,
+        0.0
+      ],
+      "changed": 0
+    },
+    "0.25": {
+      "score": 0.5930145892663832,
+      "literal": 1.3355095682870364,
+      "waypoint": 0.5924944062499997,
+      "h10cash": [
+        1.5062,
+        0.6
+      ],
+      "changed": 53
+    },
+    "0.5": {
+      "score": -0.04841430957123015,
+      "literal": 1.1776741192129632,
+      "waypoint": 0.007513534722221719,
+      "h10cash": [
+        1.6829,
+        0.4663
+      ],
+      "changed": 79
+    },
+    "0.75": {
+      "score": -0.43474927279253195,
+      "literal": 0.08792497106481216,
+      "waypoint": 0.7088827581018519,
+      "h10cash": [
+        1.6824,
+        0.9405
+      ],
+      "changed": 98
+    },
+    "1.0": {
+      "score": -0.9899162301299123,
+      "literal": -0.4081337743055585,
+      "waypoint": 0.22229872222222205,
+      "h10cash": [
+        1.7545,
+        0.7739
+      ],
+      "changed": 118
+    }
+  },
+  "eligible_for_game_test": false,
+  "heldout": {
+    "states": 186,
+    "changes": 12,
+    "maps": 12,
+    "modes": {
+      "literal": {
+        "mean_across_maps": [
+          [
+            0.6862,
+            0.1248,
+            -2.3152,
+            -0.8656,
+            -0.0208,
+            0.0236,
+            1.1728,
+            -0.3186,
+            0.0
+          ],
+          [
+            0.7418,
+            0.2392,
+            -2.7467,
+            -1.7058,
+            -0.0052,
+            -0.55,
+            0.9852,
+            -0.6343,
+            0.0
+          ]
+        ],
+        "mean_on_changed": [
+          [
+            10.2633,
+            1.7466,
+            -36.7176,
+            -13.6718,
+            -0.3333,
+            0.8479,
+            18.7651,
+            -5.4565,
+            0.0
+          ],
+          [
+            11.2292,
+            3.3485,
+            -43.3981,
+            -26.9449,
+            -0.0833,
+            -8.416,
+            15.7636,
+            -10.386,
+            0.0
+          ]
+        ],
+        "primary_equal_map_mean": -0.5396,
+        "primary_positive_maps": 6,
+        "primary_negative_maps": 4,
+        "primary_ci95": [
+          -2.2804,
+          0.7542
+        ],
+        "cash10_map_ci95": [
+          0.179,
+          1.4068
+        ]
+      },
+      "waypoint": {
+        "mean_across_maps": [
+          [
+            0.5458,
+            0.1248,
+            -1.9851,
+            -0.966,
+            -0.0208,
+            -0.4548,
+            1.0771,
+            -0.7773,
+            0.0
+          ],
+          [
+            0.6156,
+            0.2392,
+            -2.366,
+            -1.6343,
+            -0.0156,
+            -0.5593,
+            0.8895,
+            -0.9971,
+            0.0
+          ]
+        ],
+        "mean_on_changed": [
+          [
+            8.05,
+            1.7466,
+            -31.4656,
+            -15.3112,
+            -0.3333,
+            -6.7132,
+            17.2331,
+            -12.7301,
+            0.0
+          ],
+          [
+            9.2783,
+            3.3485,
+            -37.5203,
+            -25.9969,
+            -0.25,
+            -8.4873,
+            14.2315,
+            -16.188,
+            0.0
+          ]
+        ],
+        "primary_equal_map_mean": -0.9312,
+        "primary_positive_maps": 4,
+        "primary_negative_maps": 6,
+        "primary_ci95": [
+          -2.9618,
+          0.5311
+        ],
+        "cash10_map_ci95": [
+          0.1246,
+          1.1956
+        ]
+      }
+    }
+  },
+  "by_panel": {
+    "1": {
+      "states": 31,
+      "changes": 2,
+      "maps": 2,
+      "modes": {
+        "literal": {
+          "mean_across_maps": [
+            [
+              0.0,
+              0.0,
+              -12.9197,
+              -5.8383,
+              -0.0312,
+              0.0,
+              6.4624,
+              -4.0236,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              -14.6004,
+              -9.4256,
+              0.0,
+              0.0,
+              6.4624,
+              -5.1841,
+              0.0
+            ]
+          ],
+          "mean_on_changed": [
+            [
+              0.0,
+              0.0,
+              -206.1844,
+              -93.0012,
+              -0.5,
+              0.0,
+              103.3983,
+              -64.1506,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              -231.9708,
+              -149.3511,
+              0.0,
+              0.0,
+              103.3983,
+              -82.1431,
+              0.0
+            ]
+          ],
+          "primary_equal_map_mean": -4.8359,
+          "primary_positive_maps": 0,
+          "primary_negative_maps": 2,
+          "primary_ci95": [
+            -8.4131,
+            -1.2588
+          ],
+          "cash10_map_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "waypoint": {
+          "mean_across_maps": [
+            [
+              0.0,
+              0.0,
+              -12.312,
+              -6.0561,
+              -0.0312,
+              0.0,
+              6.4624,
+              -4.1433,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              -13.5274,
+              -9.5406,
+              -0.0312,
+              0.0,
+              6.4624,
+              -6.0598,
+              0.0
+            ]
+          ],
+          "mean_on_changed": [
+            [
+              0.0,
+              0.0,
+              -196.8712,
+              -96.8337,
+              -0.5,
+              0.0,
+              103.3983,
+              -66.2585,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              -216.3168,
+              -152.552,
+              -0.5,
+              0.0,
+              103.3983,
+              -96.9036,
+              0.0
+            ]
+          ],
+          "primary_equal_map_mean": -5.4849,
+          "primary_positive_maps": 0,
+          "primary_negative_maps": 2,
+          "primary_ci95": [
+            -10.8733,
+            -0.0964
+          ],
+          "cash10_map_ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "2": {
+      "states": 29,
+      "changes": 1,
+      "maps": 2,
+      "modes": {
+        "literal": {
+          "mean_across_maps": [
+            [
+              0.7518,
+              0.7485,
+              -0.8277,
+              -0.4011,
+              0.0,
+              0.0391,
+              0.0,
+              0.5526,
+              0.0
+            ],
+            [
+              1.3407,
+              1.4351,
+              -0.945,
+              -0.4063,
+              0.0,
+              0.044,
+              0.0,
+              1.1414,
+              0.0
+            ]
+          ],
+          "mean_on_changed": [
+            [
+              21.05,
+              20.9586,
+              -23.1765,
+              -11.232,
+              0.0,
+              1.0943,
+              0.0,
+              15.4742,
+              0.0
+            ],
+            [
+              37.54,
+              40.182,
+              -26.4594,
+              -11.3775,
+              0.0,
+              1.2329,
+              0.0,
+              31.9605,
+              0.0
+            ]
+          ],
+          "primary_equal_map_mean": 0.9648,
+          "primary_positive_maps": 1,
+          "primary_negative_maps": 0,
+          "primary_ci95": [
+            0.0,
+            1.9296
+          ],
+          "cash10_map_ci95": [
+            0.0,
+            2.6814
+          ]
+        },
+        "waypoint": {
+          "mean_across_maps": [
+            [
+              0.7518,
+              0.7485,
+              -0.8277,
+              -0.4011,
+              0.0,
+              0.0391,
+              0.0,
+              0.5526,
+              0.0
+            ],
+            [
+              1.3407,
+              1.4351,
+              -0.945,
+              -0.4063,
+              0.0,
+              0.044,
+              0.0,
+              1.1414,
+              0.0
+            ]
+          ],
+          "mean_on_changed": [
+            [
+              21.05,
+              20.9586,
+              -23.1765,
+              -11.232,
+              0.0,
+              1.0943,
+              0.0,
+              15.4742,
+              0.0
+            ],
+            [
+              37.54,
+              40.182,
+              -26.4594,
+              -11.3775,
+              0.0,
+              1.2329,
+              0.0,
+              31.9605,
+              0.0
+            ]
+          ],
+          "primary_equal_map_mean": 0.9648,
+          "primary_positive_maps": 1,
+          "primary_negative_maps": 0,
+          "primary_ci95": [
+            0.0,
+            1.9296
+          ],
+          "cash10_map_ci95": [
+            0.0,
+            2.6814
+          ]
+        }
+      }
+    },
+    "3": {
+      "states": 32,
+      "changes": 3,
+      "maps": 2,
+      "modes": {
+        "literal": {
+          "mean_across_maps": [
+            [
+              0.0,
+              0.0,
+              2.1725,
+              1.2845,
+              -0.0625,
+              0.0,
+              -1.249,
+              -0.9185,
+              0.0
+            ],
+            [
+              1.0738,
+              0.0,
+              0.214,
+              0.0826,
+              -0.0625,
+              0.0,
+              -1.249,
+              -0.5058,
+              0.0
+            ]
+          ],
+          "mean_on_changed": [
+            [
+              0.0,
+              0.0,
+              23.1729,
+              13.7018,
+              -0.6667,
+              0.0,
+              -13.3224,
+              -9.7974,
+              0.0
+            ],
+            [
+              11.4533,
+              0.0,
+              2.2831,
+              0.8813,
+              -0.6667,
+              0.0,
+              -13.3224,
+              -5.3953,
+              0.0
+            ]
+          ],
+          "primary_equal_map_mean": -0.6296,
+          "primary_positive_maps": 1,
+          "primary_negative_maps": 1,
+          "primary_ci95": [
+            -1.4689,
+            0.2097
+          ],
+          "cash10_map_ci95": [
+            0.0,
+            2.1475
+          ]
+        },
+        "waypoint": {
+          "mean_across_maps": [
+            [
+              0.0,
+              0.0,
+              -0.1912,
+              -0.2996,
+              -0.0938,
+              0.0,
+              0.0,
+              -2.6023,
+              0.0
+            ],
+            [
+              1.0738,
+              0.0,
+              -2.2694,
+              -1.5311,
+              -0.0938,
+              0.0,
+              0.0,
+              -2.2058,
+              0.0
+            ]
+          ],
+          "mean_on_changed": [
+            [
+              0.0,
+              0.0,
+              -2.0395,
+              -3.1956,
+              -1.0,
+              0.0,
+              0.0,
+              -27.7576,
+              0.0
+            ],
+            [
+              11.4533,
+              0.0,
+              -24.2064,
+              -16.3312,
+              -1.0,
+              0.0,
+              0.0,
+              -23.5288,
+              0.0
+            ]
+          ],
+          "primary_equal_map_mean": -2.3248,
+          "primary_positive_maps": 0,
+          "primary_negative_maps": 2,
+          "primary_ci95": [
+            -3.1806,
+            -1.4689
+          ],
+          "cash10_map_ci95": [
+            0.0,
+            2.1475
+          ]
+        }
+      }
+    },
+    "4": {
+      "states": 32,
+      "changes": 2,
+      "maps": 2,
+      "modes": {
+        "literal": {
+          "mean_across_maps": [
+            [
+              0.0,
+              0.0,
+              1.7125,
+              1.3816,
+              0.0,
+              0.0,
+              0.0,
+              0.7599,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              5.2,
+              3.0578,
+              0.0312,
+              0.0,
+              -1.1256,
+              2.4943,
+              0.0
+            ]
+          ],
+          "mean_on_changed": [
+            [
+              0.0,
+              0.0,
+              27.3993,
+              22.1058,
+              0.0,
+              0.0,
+              0.0,
+              12.1581,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              83.2005,
+              48.9255,
+              0.5,
+              0.0,
+              -18.0093,
+              39.909,
+              0.0
+            ]
+          ],
+          "primary_equal_map_mean": 1.974,
+          "primary_positive_maps": 2,
+          "primary_negative_maps": 0,
+          "primary_ci95": [
+            1.9725,
+            1.9755
+          ],
+          "cash10_map_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "waypoint": {
+          "mean_across_maps": [
+            [
+              0.0,
+              0.0,
+              0.8205,
+              0.5087,
+              0.0,
+              0.0,
+              0.0,
+              0.2798,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.9461,
+              1.163,
+              0.0312,
+              0.0,
+              -1.1256,
+              1.4522,
+              0.0
+            ]
+          ],
+          "mean_on_changed": [
+            [
+              0.0,
+              0.0,
+              13.1287,
+              8.1398,
+              0.0,
+              0.0,
+              0.0,
+              4.4768,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              31.138,
+              18.6083,
+              0.5,
+              0.0,
+              -18.0093,
+              23.2346,
+              0.0
+            ]
+          ],
+          "primary_equal_map_mean": 1.1005,
+          "primary_positive_maps": 2,
+          "primary_negative_maps": 0,
+          "primary_ci95": [
+            0.2284,
+            1.9725
+          ],
+          "cash10_map_ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "5": {
+      "states": 30,
+      "changes": 3,
+      "maps": 2,
+      "modes": {
+        "literal": {
+          "mean_across_maps": [
+            [
+              3.3656,
+              0.0,
+              -3.6057,
+              -2.5407,
+              -0.0312,
+              0.1027,
+              1.8235,
+              1.2122,
+              0.0
+            ],
+            [
+              2.0363,
+              0.0,
+              -4.7685,
+              -3.8155,
+              0.0,
+              -3.3441,
+              1.8235,
+              -1.9015,
+              0.0
+            ]
+          ],
+          "mean_on_changed": [
+            [
+              34.0367,
+              0.0,
+              -38.6142,
+              -27.1963,
+              -0.3333,
+              3.0267,
+              19.4507,
+              12.0768,
+              0.0
+            ],
+            [
+              20.95,
+              0.0,
+              -51.0175,
+              -40.8234,
+              0.0,
+              -34.0751,
+              19.4507,
+              -20.2442,
+              0.0
+            ]
+          ],
+          "primary_equal_map_mean": -0.9674,
+          "primary_positive_maps": 1,
+          "primary_negative_maps": 1,
+          "primary_ci95": [
+            -2.2785,
+            0.3438
+          ],
+          "cash10_map_ci95": [
+            1.1564,
+            2.9163
+          ]
+        },
+        "waypoint": {
+          "mean_across_maps": [
+            [
+              2.5231,
+              0.0,
+              1.0229,
+              0.6342,
+              0.0,
+              -2.7679,
+              0.0,
+              1.3496,
+              0.0
+            ],
+            [
+              1.2792,
+              0.0,
+              1.0229,
+              0.7314,
+              0.0,
+              -3.3999,
+              0.0,
+              -0.1884,
+              0.0
+            ]
+          ],
+          "mean_on_changed": [
+            [
+              25.1833,
+              0.0,
+              10.9111,
+              6.7649,
+              0.0,
+              -27.2178,
+              0.0,
+              13.9342,
+              0.0
+            ],
+            [
+              13.1467,
+              0.0,
+              10.9111,
+              7.8014,
+              0.0,
+              -34.3603,
+              0.0,
+              -1.4607,
+              0.0
+            ]
+          ],
+          "primary_equal_map_mean": 0.273,
+          "primary_positive_maps": 1,
+          "primary_negative_maps": 1,
+          "primary_ci95": [
+            -0.3688,
+            0.9148
+          ],
+          "cash10_map_ci95": [
+            0.7479,
+            1.8106
+          ]
+        }
+      }
+    },
+    "6": {
+      "states": 32,
+      "changes": 1,
+      "maps": 2,
+      "modes": {
+        "literal": {
+          "mean_across_maps": [
+            [
+              0.0,
+              0.0,
+              -0.4231,
+              0.9202,
+              0.0,
+              0.0,
+              0.0,
+              0.5061,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              -1.5804,
+              0.2724,
+              0.0,
+              0.0,
+              0.0,
+              0.1498,
+              0.0
+            ]
+          ],
+          "mean_on_changed": [
+            [
+              0.0,
+              0.0,
+              -13.5405,
+              29.4454,
+              0.0,
+              0.0,
+              0.0,
+              16.195,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              -50.5737,
+              8.7167,
+              0.0,
+              0.0,
+              0.0,
+              4.7941,
+              0.0
+            ]
+          ],
+          "primary_equal_map_mean": 0.2567,
+          "primary_positive_maps": 1,
+          "primary_negative_maps": 0,
+          "primary_ci95": [
+            0.0,
+            0.5134
+          ],
+          "cash10_map_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "waypoint": {
+          "mean_across_maps": [
+            [
+              0.0,
+              0.0,
+              -0.4231,
+              -0.182,
+              0.0,
+              0.0,
+              0.0,
+              -0.1001,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              -0.4231,
+              -0.2221,
+              0.0,
+              0.0,
+              0.0,
+              -0.1222,
+              0.0
+            ]
+          ],
+          "mean_on_changed": [
+            [
+              0.0,
+              0.0,
+              -13.5405,
+              -5.8224,
+              0.0,
+              0.0,
+              0.0,
+              -3.2023,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              -13.5405,
+              -7.1087,
+              0.0,
+              0.0,
+              0.0,
+              -3.9098,
+              0.0
+            ]
+          ],
+          "primary_equal_map_mean": -0.1155,
+          "primary_positive_maps": 0,
+          "primary_negative_maps": 1,
+          "primary_ci95": [
+            -0.2311,
+            0.0
+          ],
+          "cash10_map_ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    }
+  },
+  "winner_weighted_imitation": {
+    "weight": 0.5,
+    "cv": {
+      "0.0": {
+        "score": 0.0,
+        "literal": 0.0,
+        "waypoint": 0.0,
+        "h10cash": [
+          0.0,
+          0.0
+        ],
+        "changed": 0
+      },
+      "0.25": {
+        "score": 0.382922195162454,
+        "literal": 1.1491908541666664,
+        "waypoint": 0.3679659155092583,
+        "h10cash": [
+          1.2296,
+          0.4789
+        ],
+        "changed": 45
+      },
+      "0.5": {
+        "score": 0.6363411144396905,
+        "literal": 1.039035249999999,
+        "waypoint": 0.8712992569444442,
+        "h10cash": [
+          0.1555,
+          0.7645
+        ],
+        "changed": 74
+      },
+      "0.75": {
+        "score": -0.316835595748895,
+        "literal": 0.7949050266203694,
+        "waypoint": 0.12001806134259158,
+        "h10cash": [
+          -0.4826,
+          -0.0864
+        ],
+        "changed": 92
+      },
+      "1.0": {
+        "score": -0.6961966235949619,
+        "literal": 0.4648915138888887,
+        "waypoint": -0.07003975115740821,
+        "h10cash": [
+          -1.2109,
+          -0.7179
+        ],
+        "changed": 106
+      }
+    },
+    "heldout": {
+      "states": 186,
+      "changes": 22,
+      "maps": 12,
+      "modes": {
+        "literal": {
+          "mean_across_maps": [
+            [
+              1.3279,
+              1.2204,
+              -0.8662,
+              -0.4361,
+              0.0167,
+              0.6284,
+              0.236,
+              1.8683,
+              0.0
+            ],
+            [
+              2.2586,
+              2.5107,
+              0.0277,
+              -0.0923,
+              0.0383,
+              0.5429,
+              -0.6252,
+              3.5021,
+              0.0
+            ]
+          ],
+          "mean_on_changed": [
+            [
+              11.7718,
+              10.5143,
+              -7.5017,
+              -3.8565,
+              0.1364,
+              5.3603,
+              2.0341,
+              16.1444,
+              0.0
+            ],
+            [
+              19.3391,
+              20.9323,
+              0.1114,
+              -0.8617,
+              0.3182,
+              4.6966,
+              -5.202,
+              29.721,
+              0.0
+            ]
+          ],
+          "primary_equal_map_mean": 3.012,
+          "primary_positive_maps": 8,
+          "primary_negative_maps": 4,
+          "primary_ci95": [
+            -1.547,
+            8.1424
+          ],
+          "cash10_map_ci95": [
+            -4.0751,
+            8.3047
+          ]
+        },
+        "waypoint": {
+          "mean_across_maps": [
+            [
+              -0.2993,
+              -0.3109,
+              -1.2981,
+              -0.421,
+              0.0063,
+              -0.2141,
+              1.2031,
+              -0.4849,
+              0.0
+            ],
+            [
+              0.2371,
+              0.6303,
+              -1.6725,
+              -1.0903,
+              0.0123,
+              -0.3721,
+              0.9471,
+              -0.2487,
+              0.0
+            ]
+          ],
+          "mean_on_changed": [
+            [
+              -2.5586,
+              -2.8494,
+              -11.2402,
+              -3.6645,
+              0.0455,
+              -1.9043,
+              10.4741,
+              -4.4397,
+              0.0
+            ],
+            [
+              1.5845,
+              4.5214,
+              -14.703,
+              -9.5868,
+              0.0909,
+              -3.2135,
+              8.5193,
+              -3.092,
+              0.0
+            ]
+          ],
+          "primary_equal_map_mean": -0.3195,
+          "primary_positive_maps": 5,
+          "primary_negative_maps": 5,
+          "primary_ci95": [
+            -2.7378,
+            1.7951
+          ],
+          "cash10_map_ci95": [
+            -1.1593,
+            1.7215
+          ]
+        }
+      }
+    }
+  },
+  "predeclared_half_strength": {
+    "states": 186,
+    "changes": 17,
+    "maps": 12,
+    "modes": {
+      "literal": {
+        "mean_across_maps": [
+          [
+            0.6837,
+            0.1248,
+            -2.3954,
+            -1.0045,
+            -0.026,
+            -0.0073,
+            1.2349,
+            -0.5499,
+            0.0
+          ],
+          [
+            0.7711,
+            0.5256,
+            -1.536,
+            -1.0844,
+            0.0052,
+            -0.8983,
+            0.6325,
+            -0.1839,
+            0.0
+          ]
+        ],
+        "mean_on_changed": [
+          [
+            7.2194,
+            1.2329,
+            -27.4348,
+            -11.5059,
+            -0.2941,
+            0.2931,
+            14.1995,
+            -6.5947,
+            0.0
+          ],
+          [
+            7.7694,
+            5.194,
+            -17.9477,
+            -12.4128,
+            0.0588,
+            -9.0707,
+            7.3954,
+            -2.5171,
+            0.0
+          ]
+        ],
+        "primary_equal_map_mean": -0.2937,
+        "primary_positive_maps": 6,
+        "primary_negative_maps": 4,
+        "primary_ci95": [
+          -2.1161,
+          1.1459
+        ],
+        "cash10_map_ci95": [
+          -0.1377,
+          1.8566
+        ]
+      },
+      "waypoint": {
+        "mean_across_maps": [
+          [
+            0.3672,
+            0.1248,
+            -2.6954,
+            -1.4526,
+            -0.026,
+            -0.4548,
+            1.5302,
+            -1.3589,
+            0.0
+          ],
+          [
+            0.4067,
+            0.5256,
+            -2.1856,
+            -1.4896,
+            -0.0052,
+            -0.3386,
+            0.9278,
+            -0.7342,
+            0.0
+          ]
+        ],
+        "mean_on_changed": [
+          [
+            3.9176,
+            1.2329,
+            -29.9331,
+            -16.146,
+            -0.2941,
+            -4.7388,
+            16.9828,
+            -15.2161,
+            0.0
+          ],
+          [
+            4.0382,
+            5.194,
+            -24.1476,
+            -16.5594,
+            -0.0588,
+            -3.4986,
+            10.1787,
+            -8.5231,
+            0.0
+          ]
+        ],
+        "primary_equal_map_mean": -0.9216,
+        "primary_positive_maps": 4,
+        "primary_negative_maps": 6,
+        "primary_ci95": [
+          -2.9157,
+          0.4667
+        ],
+        "cash10_map_ci95": [
+          -0.2111,
+          1.074
+        ]
+      }
+    }
+  },
+  "training_groups": 36
+}

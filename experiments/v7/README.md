@@ -22,7 +22,8 @@ Master7sE 对局中，第 47 步到第 252 步的两次己方工人交货之间�
 | [Narrows](checkpoints/narrows.py) | 6–10 | 3/8，3/8 | −44.31 | 场均净树收入多 124.86，实际入库少 127.90，额外招聘多花 41.25。16 局均完赛，双方分别有 14、9 步超过单步 1 秒，最长为 1.475、1.335 秒。[全部胜负与用时](../../analysis/v7/04-qualifying-summary.json) · [入库与树收](../../analysis/v7/04-qualifying-economy.json) |
 | [Soundings](checkpoints/soundings.py) | 11–5 | 6/8，5/8 | +336.83 | 四图双胜，一图双负，距离晋级差一个胜场。双方均无慢步。单局平均基地入款多 400.17、净树收支少 153.74、招聘少花 90。[全体胜负](../../analysis/v7/05-qualifying-summary.json) · [逐图收支](../../analysis/v7/05-qualifying-economy.json) |
 | [Pilotage](checkpoints/pilotage.py) | 9–7 | 4/8，5/8 | +51.60 | 前 75 步平均多入库 65.73，全场平均少入库 121.81，净树收入多 186.52。三图双胜、两图双负。双方均无慢步。[全部结果](../../analysis/v7/06-qualifying-summary.json) · [资金变化](../../analysis/v7/06-qualifying-economy.json) |
-| [Fairlead](checkpoints/fairlead.py) | 评测中 | | | 搜索后的碰撞决策也估计能实际回库的货量，并有条件地取消难以回本的招工。[文件和地图](../../analysis/v7/07-qualifying.json) |
+| [Fairlead](checkpoints/fairlead.py) | 6–10 | 2/8，4/8 | −169.60 | 四图双负、两图双胜。平均净树收入多 258.80，入库少 419.04。双方各有 10、9 个慢步，16 局均正常结束。[逐图分差与用时](../../analysis/v7/07-qualifying-summary.json) · [双方资金来源](../../analysis/v7/07-qualifying-economy.json) |
+| [Tidewatch](checkpoints/tidewatch.py) | 评测中 | | | 第八批首局冻结对手发生超时。记录该批全体赛果；在首个完整结果产生前指定同一文件、四路并发、另外八图的整批复验。[第八批地图](../../analysis/v7/08-qualifying.json) · [第九批预登记](../../analysis/v7/tidewatch-repeat-design.json) |
 
 在仓库根目录，以下命令可以重建已冻结的文件，并复现存档分叉的现金流。
 
@@ -85,3 +86,7 @@ Fairlead 对一次相撞后幸存工人的货物估计 5、10 步内能送回多
 同一局面的不同走法可以共用截击路线上每一步的概率和随机数序列。15 张地图、三个模式各 345 次提议，以及 1,380 个采样出的整队动作均与原结果一致。截击提议耗时的 95 分位从 1.28 降到 0.75 毫秒。另测按身份独立抽样、低温和确定性推演，在独立对照局面中均未降低十步现金差的预测误差，保留原推演分布。[提议一致性](../../analysis/v7/rollout-cache.json) · [不同抽样方式的配对结果](../../analysis/v7/tail-consensus.json)
 
 第九到十六轮的资格与确认地图用同一冻结 v6 SHA 和固定字符串逐个取 SHA-256 生成，添加时第七轮仍在进行。每组均沿用已经公布的胜场、座位和分差要求。[封存地图](panels.json) · [复现方式](reserve_maps.py)
+
+提前 3–5 步预判高产树易手可在独立地图检出更多风险，但派低载采集员守树，在十张独立地图的 18 步窗口中树收增加 19.66，基地入款减少 70.01。改已经付费的招聘出生点在另一组 85 张未见地图里仅产生三次不同动作，目标树的存续时间均未增加。[防夺树分叉](../../analysis/v7/preempt-tree.md)
+
+回放六批完整资格赛的 96 局、28,704 次裁判动作，拟合在同一局面选择两个搜索候选的偏好。12 张封存图的 186 次选择中只有 12 次改动，按两种十步后续分别少 0.54 和 0.93 的综合估值。该修正保留作实验。[按整图留出的对照](../../analysis/v7/advantage-validation.json) · [改变后重新应手](../../analysis/v7/advantage-feedback.json)

@@ -1,0 +1,16 @@
+{
+  "candidate": "tidewatch",
+  "sha256": "101586bc07558cbcd6753c48e7973e85602776d1e5b4976300084782cef834d4",
+  "opponent_sha256": "e5c328aa5d18ced597791e7b839088f1a37d18e4e8dc83dd3d54b13d66e877b0",
+  "seeds": [
+    591124566,
+    661169510,
+    102253612,
+    397570277,
+    67309273,
+    693513926,
+    222684543,
+    336900244
+  ],
+  "criterion": "Freeze file hash before each batch. Eight new maps, 12/16 wins, at least 5 wins per seat and positive mean. If passed, four separately reserved maps, same unchanged hash, at least 5/8 and 2 each seat, positive mean. All games must finish normally. Retain failed batches."
+}
