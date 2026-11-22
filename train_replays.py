@@ -234,7 +234,8 @@ def export_strategy(source_path, output):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--strategy', type=Path, default=ROOT/'submission.py')
+    parser.add_argument('--strategy', type=Path, default=ROOT/'opponents'/'yan-v3.py',
+                        help='historical strategy with the Apollo action and tree heads')
     parser.add_argument('--replays', type=Path, default=ROOT/'replays'/'apollo')
     parser.add_argument('--output', required=True, type=Path)
     args = parser.parse_args()
