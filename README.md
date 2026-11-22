@@ -18,7 +18,7 @@ Apollo 的 21 场公开回放用于训练和选择权重，与 Apollo 本体的�
 
 ## 离线竞技场与前五研究
 
-[竞技场使用说明](ARENA.md)包括本机和 Codex Cloud 的安装、换边循环赛与多机结果汇总。[前五策略回放研究](analysis/top-five.md)保留了 77 张地图的原始回放和观测指标。[对手路线实验](experiments/route_forecast.md)比较了对手预测的准确度和真实对抗结果。
+[竞技场使用说明](ARENA.md)包括本机和 Codex Cloud 的安装、换边循环赛与多机结果汇总。[前五策略回放研究](analysis/top-five.md)保留了 77 张地图的原始回放和观测指标。[己方 21 场线上回放](analysis/yan-v2-economy.md)定位了争夺新树的中盘亏损。[对手路线实验](experiments/route_forecast.md)比较了对手预测的准确度和真实对抗结果。
 
 ## 版本与复现
 
