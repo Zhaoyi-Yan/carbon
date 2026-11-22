@@ -1,0 +1,113 @@
+{
+  "checked": 59,
+  "cases": [
+    {
+      "match": "f5e69abd6f15278bf9ae01a40601c330",
+      "seat": 1,
+      "end": 109,
+      "units": [
+        "player-1-worker-7"
+      ],
+      "cash_before": 11.32,
+      "recorded": {
+        "player-1-worker-7": "DOWN"
+      },
+      "alternatives": [
+        {
+          "moves": [
+            null
+          ],
+          "workers": 0,
+          "cash": 11.32,
+          "survives": false
+        },
+        {
+          "moves": [
+            "UP"
+          ],
+          "workers": 1,
+          "cash": 11.32,
+          "survives": true
+        },
+        {
+          "moves": [
+            "RIGHT"
+          ],
+          "workers": 1,
+          "cash": 11.32,
+          "survives": true
+        },
+        {
+          "moves": [
+            "DOWN"
+          ],
+          "workers": 0,
+          "cash": 11.32,
+          "survives": false
+        },
+        {
+          "moves": [
+            "LEFT"
+          ],
+          "workers": 1,
+          "cash": 11.32,
+          "survives": true
+        }
+      ]
+    },
+    {
+      "match": "efa15ce0a9b4d18398cbe73ad5ca6dc6",
+      "seat": 0,
+      "end": 191,
+      "units": [
+        "player-0-worker-5"
+      ],
+      "cash_before": 23.96,
+      "recorded": {
+        "player-0-worker-5": "DOWN"
+      },
+      "alternatives": [
+        {
+          "moves": [
+            null
+          ],
+          "workers": 0,
+          "cash": 23.96,
+          "survives": false
+        },
+        {
+          "moves": [
+            "UP"
+          ],
+          "workers": 1,
+          "cash": 23.96,
+          "survives": true
+        },
+        {
+          "moves": [
+            "RIGHT"
+          ],
+          "workers": 0,
+          "cash": 23.96,
+          "survives": false
+        },
+        {
+          "moves": [
+            "DOWN"
+          ],
+          "workers": 0,
+          "cash": 23.96,
+          "survives": false
+        },
+        {
+          "moves": [
+            "LEFT"
+          ],
+          "workers": 1,
+          "cash": 23.96,
+          "survives": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "turns": 17343,
+  "eligible": 53,
+  "changed": [
+    {
+      "game": "f5e69abd6f15278bf9ae01a40601c330",
+      "step": 108,
+      "recorded": {
+        "player-1-worker-7": "DOWN"
+      },
+      "safe": {
+        "player-1-worker-7": "UP"
+      },
+      "recorded_workers_after": 0,
+      "safe_workers_after": 1
+    },
+    {
+      "game": "efa15ce0a9b4d18398cbe73ad5ca6dc6",
+      "step": 181,
+      "recorded": {
+        "player-0-worker-5": "RIGHT"
+      },
+      "safe": {
+        "player-0-worker-5": "LEFT"
+      },
+      "recorded_workers_after": 1,
+      "safe_workers_after": 1
+    },
+    {
+      "game": "efa15ce0a9b4d18398cbe73ad5ca6dc6",
+      "step": 190,
+      "recorded": {
+        "player-0-worker-5": "DOWN"
+      },
+      "safe": {
+        "player-0-worker-5": "UP"
+      },
+      "recorded_workers_after": 0,
+      "safe_workers_after": 1
+    }
+  ]
+}
