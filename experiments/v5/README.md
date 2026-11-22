@@ -1,6 +1,6 @@
 # yan-v5 对战实验
 
-对手为维护者已提交的 yan-v4。其原文件保存在 `opponents/yan-v4.py`，SHA-256 为 `a3d54e4672458e53f5dfd47444b59a25326f5d1592575f968a1a59f26c98b4b0`。比赛当前主力仍是 yan-v4。实验分支上的 submission.py 对应 responder，完整验收状态见逐局记录。
+对手为维护者已提交的 yan-v4。其原文件保存在 `opponents/yan-v4.py`，SHA-256 为 `a3d54e4672458e53f5dfd47444b59a25326f5d1592575f968a1a59f26c98b4b0`。比赛当前主力仍是 yan-v4。本次交付的 [yan-v5.py](../../yan-v5.py) 和本分支的 submission.py 均为 multistyle。在预留的四张地图换边对战 yan-v4，7 胜 1 负，场均资金分差 +419.63，唯一败局分差 −47.75。[八局完整记录](../../analysis/arena/v5-confirmation-multistyle.jsonl)。
 
 [实验预登记](design.json)固定了 20 个策略 ID、当时排名和开发、验收种子。[官方快照一](https://github.com/JUZI1/carbon-league-replays/tree/685b50c0d4acedc12d67370b58b3e311f24faed8)、[官方快照二](https://github.com/JUZI1/carbon-league-replays/tree/1bbadc777c42f20537e93637a1109270b0b18b23)及仓库 replays/top-five 共提供 272 张不同地图的完整对局。前二十共出场 471 次。每步只用本方能看到的信息建立碳量估计。训练动作取下一帧的已执行动作；另以未来真实资金分差训练估值。训练和验证按地图和种子隔离。
 
