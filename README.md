@@ -2,12 +2,14 @@
 
 根目录的 [submission.py](submission.py) 是用于比赛的单文件 Python 策略，权重已内嵌。标准 15×15 棋盘使用 NumPy 和 PyTorch CPU 在本地推理。当前版本为 **v5-tree-value**，用公开回放训练行动和招募模型，并在搜索中估算树木未来 18 步的收益。
 
+线上策略名 **yan-v2** 对应本仓库的 v5-tree-value，上一版 **yan-v1** 对应 v3-search。两个对应关系均已通过下载本人策略并比对完整文件 SHA-256 确认。每轮候选先在相同地图交换出生位，挑战冻结的 yan-v2。[自对战用法](ARENA.md)
+
 ## 验证结果
 
 | 本地对手 | 地图种子 | 换边战绩 | 平均资金领先 |
 | --- | --- | --- | --- |
+| 上代 yan-v1（v3-search） | 811、853 | 4 胜 0 负 | 866.72 |
 | claude-AlphaCarbon-Master3s2 | 733、809 | 4 胜 0 负 | 895.94 |
-| 本项目 v3-search | 811、853 | 4 胜 0 负 | 866.72 |
 | 官方示例、juzi、DeepSeek v3 | 887 | 各 2 胜 0 负 | 见逐局记录 |
 
 以上 14 场均打满 299 步。Apollo 的 21 场公开回放用于训练和选择权重，与 Apollo 本体的直接对战成绩仍待验证。[逐局比分及实验条件](strategy-notes.txt)
@@ -24,9 +26,9 @@
 
 ```sh
 python train_replays.py --output /tmp/carbon-retrained
-CARBON_DEBUG=1 python benchmark.py \
-  --opponents opponents/claude-AlphaCarbon-Master3s2.py \
-  --seeds 733 809 --jobs 2 --min-opponent-searches 200
+CARBON_DEBUG=1 python scripts/selfplay.py \
+  --candidate /tmp/carbon-retrained/candidate.py --seeds 733 809 \
+  --jobs 1 --output arena-runs/retrained-vs-yan-v2.jsonl
 ```
 
 每轮开发用独立 Git 提交保存策略和评测结果，记录对手、种子、出生位和已知败局。沿用主线的版本打标签，未验收的候选可保存在实验分支。GitHub 用于公开代码和复现实验，比赛平台提交由维护者另行决定。

@@ -10,6 +10,16 @@
 | [v4-replay-policy](https://github.com/Zhaoyi-Yan/carbon/blob/v4-replay-policy/submission.py) | 用 Apollo 回放学习工人行动、招募和开局 | 对 v3 为 4 胜 0 负，平均领先 1223.57 |
 | [v5-tree-value](https://github.com/Zhaoyi-Yan/carbon/blob/v5-tree-value/submission.py) | 搜索中加入未来 18 步树木收益预测 | 对 Master3s2、v3 各 4 胜，其他三个对手合计 6 胜，共 14 胜 0 负 |
 
+## 冻结的线上版本与新候选
+
+从本人账户下载的 yan-v2 与标签 v5-tree-value 完全相同（SHA-256 `0483eca2a5e8031270dfb89b87cd5d901ee81f823383f6094f8ed839dec6a7dd`），yan-v1 与 v3-search 完全相同（`29aa472ef0484b65bb3ffdc85113aef2d1daa1e25377bfe5355a4d5e3567a11c`）。下表均以冻结的 yan-v2 为对手，两个出生位各一局，分差从候选一侧计算。
+
+| 候选 | 种子 | 换边战绩 | 平均现金分差 | 记录 |
+| --- | ---: | ---: | ---: | --- |
+| [路线概率温度校准](https://github.com/Zhaoyi-Yan/carbon/blob/c61c413fd39b751fff4f0207b38e520634625db9/submission.py) | 17471 | 0 胜 2 负 | −455.73 | [隔离竞技场](analysis/arena/temperature-17471.jsonl) |
+| [Apollo 回程特征](https://github.com/Zhaoyi-Yan/carbon/blob/bbf3d0badaec6ecefe9c5d1a49920ea117882833/submission.py) | 17471 | 1 胜 1 负 | −443.12 | [原 benchmark 计时](experiments/route_forecast.md) |
+| [单采集员前压](experiments/pressure_opponent.md) | 20481 | 0 胜 2 负 | −1187.515 | [隔离竞技场](experiments/pressure_20481.jsonl) |
+
 ## 实验快照
 
 在 GitHub 点击文件名可查看和下载当次的完整单文件。探索分支包含早期草稿、搜索变体、风格和采样温度试验。joint 是未做整局评测的实验。逐局评测及已知败局见[策略记录](strategy-notes.txt)。

@@ -2,16 +2,25 @@
 
 竞技场直接使用仓库内的原版 Carbon 裁判。每个策略在独立进程内持有自己的局内状态，两个座位收到各自可见的碳量。给出三个以上的策略时，每一对都会在相同地图上交换座位。
 
-## 开始一场比赛
+## 每轮先挑战自己的主力
+
+当前线上主力是 **yan-v2**，对应标签 `v5-tree-value`。上一代 **yan-v1** 对应 `v3-search`。两个映射均已用本人账户下载文件的 SHA-256 核实。新候选先挑战冻结的主力，再用历史主力及不同风格对手复查弱点。每张图双方都打两个出生位。单张图用于筛选，晋级前需要在开发时没看过的多张地图上复测。
 
 已有 NumPy、jsonschema 和 CPU 版 PyTorch 的 Python 环境可直接使用。需要对齐赛事库版本时，用 Python 3.12 执行安装脚本。Linux 安装 CPU 专用 PyTorch。默认虚拟环境在仓库根目录。
 
 ```sh
 bash scripts/setup-arena.sh
-CARBON_DEBUG=1 .arena-venv/bin/python arena.py \
-  --strategies v5=submission.py Master3s2=opponents/claude-AlphaCarbon-Master3s2.py \
-  --seeds 19417 --steps 300 --jobs 1 --output arena-runs/seed-19417.jsonl
+CARBON_DEBUG=1 .arena-venv/bin/python scripts/selfplay.py \
+  --candidate yan-v2 --baseline yan-v1 \
+  --seeds 19417 --jobs 1 --output arena-runs/seed-19417.jsonl
 python3 arena_report.py arena-runs/seed-19417.jsonl
+```
+
+上面命令可还原两代线上策略的测试。平时只需传入新候选文件，基线由入口自动从已核实的 Git 版本读取并校验哈希。以下命令中的种子换成本轮提前留出的地图。
+
+```sh
+CARBON_DEBUG=1 .arena-venv/bin/python scripts/selfplay.py \
+  --candidate ./candidate.py --seeds 19417 --jobs 1 --output arena-runs/challenger.jsonl
 ```
 
 输出文件须使用新名字，以便保留旧战绩。每局结算后立即写一行。记录包含策略哈希、裁判哈希、地图指纹、出生位、双方现金、搜索次数和失败原因。输出顺序可以随并行任务的完成顺序变化。普通平局与正常胜负均返回退出码 0；存在弃权或环境错误会返回 2。
@@ -31,4 +40,4 @@ python3 arena_report.py arena-runs/seed-19417.jsonl
 
 在 Cloud 任务中检出同一仓库提交，使用上面的安装命令和对局命令。CPU 包和裁判就绪后，对局执行本身可以离线；运行时不需要比赛网站账号。默认环境也可以请求访问已连接的 GitHub 仓库。[Codex Cloud 指南](https://learn.chatgpt.com/docs/cloud)
 
-本次本地完整双座位对照用了提交 `7658efc4e6eeeef4066844a646b0c411e784645c`、种子 19417、本机 Apple M4、Python 3.13.11、NumPy 2.4.2 和 PyTorch 2.12.1。v5 从 0 号位赢 121.69，从 1 号位赢 155.41；双方每场搜索 298–299 次。本机另在全新 Python 3.12 / NumPy 1.26.4 / PyTorch 2.5.1 环境中做了短局兼容性验证。[完整逐局记录](analysis/arena/local-19417.jsonl)
+本次本地完整双座位对照用了提交 `7658efc4e6eeeef4066844a646b0c411e784645c`、种子 19417、本机 Apple M4、Python 3.13.11、NumPy 2.4.2 和 PyTorch 2.12.1。这次历史对手为公开的 Master3s2。v5 从 0 号位赢 121.69，从 1 号位赢 155.41；双方每场搜索 298–299 次。本机另在全新 Python 3.12 / NumPy 1.26.4 / PyTorch 2.5.1 环境中做了短局兼容性验证。[完整逐局记录](analysis/arena/local-19417.jsonl)
