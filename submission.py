@@ -1054,6 +1054,35 @@ def _terminal(m):
     return float(np.clip(m / 3000.0, -2.5, 2.5) + 0.5 * np.sign(m))
 
 
+_ROLLOUT_DEST = np.array([[move(pos, a) for a in range(5)] for pos in range(N)])
+
+
+def _rollout_replay_head(inputs, hidden, worker, base, stride):
+    """Apply the v5 head only to our rows and our occupied cells. Hidden is (batch, C, N)."""
+    row_ids, cell_ids, examples = [], [], []
+    for row in range(0, len(inputs), stride):
+        x = inputs[row].reshape(NPL, N)
+        cells = np.flatnonzero(x[2] + x[4] + x[12])
+        if not len(cells):
+            continue
+        dest = _ROLLOUT_DEST[cells]
+        neighbors = _ROLLOUT_DEST[dest, 1:]
+        supply = x[0, neighbors].mean(axis=2)
+        pressure = (x[8] + x[10])[neighbors].mean(axis=2)
+        local = x[[10, 9, 11, 39, 40, 43, 47, 0]][:, dest].transpose(1, 0, 2).reshape(len(cells), -1)
+        examples.append(np.concatenate((hidden[row][:, cells].T, x[:, cells].T, supply, pressure, local), axis=1))
+        row_ids.extend([row] * len(cells))
+        cell_ids.extend(cells)
+    if not examples:
+        return
+    weights = _REPLAY_HEAD
+    features = np.clip((np.concatenate(examples) - weights['mean']) * weights['scale'], -6, 6)
+    activation = np.maximum(features @ weights['layer'] + weights['bias'], 0)
+    ix = np.asarray(row_ids), np.asarray(cell_ids)
+    worker[ix] = (.62 * worker[ix] + (activation @ weights['worker'] + weights['worker_bias'])) / .46
+    base[ix] = (.62 * base[ix] + (activation @ weights['base'] + weights['base_bias'])) / .46
+
+
 class _TorchNet:
     """The folded policy of _Policy plus the critic, for many positions at once."""
 
@@ -1076,7 +1105,7 @@ class _TorchNet:
     def _conv(x, w, b):
         return _F.conv2d(_F.pad(x, (1, 1, 1, 1), mode='circular'), w, b)
 
-    def __call__(self, X, sid, sc=None):
+    def __call__(self, X, sid, sc=None, actor_stride=0):
         """X float32 (n, NPL, 15, 15) -> lw (n, 225, 5), lb (n, 225, 3) numpy, and the critic (n,) when sc (n, 5) is given."""
         with _torch.inference_mode():
             x = _torch.from_numpy(X[:, :self.cin])
@@ -1088,6 +1117,8 @@ class _TorchNet:
             hf = h.flatten(2)
             lw = (_torch.einsum('kc,ncp->npk', self.hw[0], hf) + self.hw[1]).numpy()
             lb = (_torch.einsum('kc,ncp->npk', self.hb[0], hf) + self.hb[1]).numpy()
+            if actor_stride:
+                _rollout_replay_head(X, hf.numpy(), lw, lb, actor_stride)
             v = None
             if sc is not None:
                 s = _torch.from_numpy(sc)
@@ -1131,7 +1162,7 @@ class _WinoNet:
         M = _torch.bmm(V, U)
         return (self.KA @ M.reshape(36, -1)).reshape(256, n, U.shape[2]) + b
 
-    def __call__(self, X, sid, sc=None):
+    def __call__(self, X, sid, sc=None, actor_stride=0):
         with _torch.inference_mode():
             x = _torch.from_numpy(X[:, :self.cin])
             n = x.shape[0]
@@ -1144,6 +1175,8 @@ class _WinoNet:
             hf = h[self.board]
             lw = (hf @ self.hw[0] + self.hw[1]).permute(1, 0, 2).contiguous().numpy()
             lb = (hf @ self.hb[0] + self.hb[1]).permute(1, 0, 2).contiguous().numpy()
+            if actor_stride:
+                _rollout_replay_head(X, hf.permute(1, 2, 0).numpy(), lw, lb, actor_stride)
             v = None
             if sc is not None:
                 s = _torch.from_numpy(sc)
@@ -1469,7 +1502,7 @@ def _search(obs, configuration, est, act0, lw0, lb0, prev, t0, home=()):
         _S_COST[i] = x if _S_COST[i] == 0.0 else 0.5 * _S_COST[i] + 0.5 * x
         _S_COST[i + 2] = x
 
-    def look(live, both):
+    def look(live, both, continues):
         """Our value of every board; with `both` each side's move logits per board (lw, lb, lw_opp, lb_opp), else (lw, lb, our input row)."""
         tp = _time.perf_counter()
         w = 2 if both else 1
@@ -1483,7 +1516,7 @@ def _search(obs, configuration, est, act0, lw0, lb0, prev, t0, home=()):
                 if both:
                     X[2 * i + 1] = view(b, op)
             if _RNET is _NET:
-                lw, lb, vv = net(X, _SID, S)
+                lw, lb, vv = net(X, _SID, S, actor_stride=w if continues else 0)
                 vv = vv[::w]
             else:                   # the moves from the small network, the values from the big one
                 vv = net(np.ascontiguousarray(X[::w]), _SID, np.ascontiguousarray(S[::w]))[2]
@@ -1574,7 +1607,7 @@ def _search(obs, configuration, est, act0, lw0, lb0, prev, t0, home=()):
         if late((2 if both else 1) * n, n if both else 0):
             break
         if n:
-            v, pol = look(live, both)
+            v, pol = look(live, both, t < D2)
             for b, x in zip(live, v):
                 val[b[0], b[1]] = x
         for b in run:
@@ -1609,7 +1642,7 @@ def _search(obs, configuration, est, act0, lw0, lb0, prev, t0, home=()):
             if late((2 if t < D2 else 1) * len(live), len(live) if t < D2 else 0):
                 whole = False               # a round cut short is dropped
                 break
-            v, pol = look(live, t < D2)
+            v, pol = look(live, t < D2, t < D2)
             if t == D2:
                 for b, x in zip(live, v):
                     got[b[0], b[1]] = x
