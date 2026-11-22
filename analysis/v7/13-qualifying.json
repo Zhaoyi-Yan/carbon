@@ -1,0 +1,16 @@
+{
+  "candidate": "selfplay-prior",
+  "sha256": "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6",
+  "opponent_sha256": "e5c328aa5d18ced597791e7b839088f1a37d18e4e8dc83dd3d54b13d66e877b0",
+  "seeds": [
+    626507336,
+    63608458,
+    919112046,
+    622922574,
+    2977426,
+    187721058,
+    214492188,
+    663402471
+  ],
+  "criterion": "Freeze file hash before each batch. Eight new maps, 12/16 wins, at least 5 wins per seat and positive mean. If passed, four separately reserved maps, same unchanged hash, at least 5/8 and 2 each seat, positive mean. All games must finish normally. Retain failed batches."
+}

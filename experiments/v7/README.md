@@ -27,7 +27,8 @@ Master7sE 对局中，第 47 步到第 252 步的两次己方工人交货之间�
 | [Tidewatch，低并发复验](checkpoints/tidewatch.py) | 5–11 | 3/8，2/8 | −300.39 | 八图均正常完成，三图双负。平均净树收益多 5.22，基地入款少 328.11。[逐图结果](../../analysis/v7/09-qualifying-summary.json) · [裁判资金来源](../../analysis/v7/09-qualifying-economy.json) |
 | [Harbormaster](checkpoints/harbormaster.py) | 8–8 | 5/8，3/8 | −119.15 | 两图双胜，两图双负。平均净树收益少 57.35、入库少 48.66。[逐图分差](../../analysis/v7/10-qualifying-summary.json) · [收支](../../analysis/v7/10-qualifying-economy.json) |
 | [Crosscurrent](checkpoints/crosscurrent.py) | 7–9 | 4/8，3/8 | −54.72 | 三图双胜、四图双负。每局正常结束。[逐图分差](../../analysis/v7/11-qualifying-summary.json) |
-| [Lifeline](checkpoints/lifeline.py) | 评测中 | | | 从 Soundings 出发，仅在紧急回库或后期大额入库时改变决策。第十二批八张新图换边。[冻结地图](../../analysis/v7/12-qualifying.json) |
+| [Lifeline](checkpoints/lifeline.py) | 6–10 | 2/8，4/8 | −189.31 | 一图双胜、三图双负，16 局正常结束。[逐图分差](../../analysis/v7/12-qualifying-summary.json) · [两席资金记录](../../analysis/v7/12-liquidity.json) |
+| [Selfplay Prior](checkpoints/selfplay-prior.py) | 评测中 | | | 在 Lifeline 的备选行动中加入自己历史搜索的走法。第十三批八张新图换边。[冻结地图](../../analysis/v7/13-qualifying.json) |
 
 在仓库根目录，以下命令可以重建已冻结的文件，并复现存档分叉的现金流。
 
