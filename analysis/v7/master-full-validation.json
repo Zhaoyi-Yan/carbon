@@ -1,0 +1,1678 @@
+{
+  "cohorts": {
+    "all": {
+      "lifeline": {
+        "worker": {
+          "n": 6128,
+          "nll": 0.570529,
+          "hit": 0.773662
+        },
+        "collector": {
+          "n": 4839,
+          "nll": 0.556597,
+          "hit": 0.780327
+        },
+        "planter": {
+          "n": 1289,
+          "nll": 0.622833,
+          "hit": 0.748642
+        },
+        "light_enemy_depot": {
+          "n": 920,
+          "nll": 0.85102,
+          "hit": 0.68587
+        },
+        "loaded_home": {
+          "n": 484,
+          "nll": 0.445155,
+          "hit": 0.832645
+        },
+        "affordable_base": {
+          "n": 440,
+          "nll": 0.831447,
+          "hit": 0.668182
+        },
+        "actual_hire": {
+          "n": 232,
+          "nll": 1.155129,
+          "hit": 0.530172
+        },
+        "value_drift_mae": 0.0
+      },
+      "full": {
+        "worker": {
+          "n": 6128,
+          "nll": 0.529422,
+          "hit": 0.784432
+        },
+        "collector": {
+          "n": 4839,
+          "nll": 0.511783,
+          "hit": 0.793346
+        },
+        "planter": {
+          "n": 1289,
+          "nll": 0.595641,
+          "hit": 0.75097
+        },
+        "light_enemy_depot": {
+          "n": 920,
+          "nll": 0.758356,
+          "hit": 0.705435
+        },
+        "loaded_home": {
+          "n": 484,
+          "nll": 0.395625,
+          "hit": 0.845041
+        },
+        "affordable_base": {
+          "n": 440,
+          "nll": 0.615829,
+          "hit": 0.736364
+        },
+        "actual_hire": {
+          "n": 232,
+          "nll": 0.777814,
+          "hit": 0.659483
+        },
+        "value_drift_mae": 0.00883177574723959
+      },
+      "decision_change": {
+        "worker": 0.054177545691906005,
+        "base": 0.16363636363636364
+      }
+    },
+    "D": {
+      "lifeline": {
+        "worker": {
+          "n": 2282,
+          "nll": 0.627766,
+          "hit": 0.746713
+        },
+        "collector": {
+          "n": 1833,
+          "nll": 0.614428,
+          "hit": 0.751773
+        },
+        "planter": {
+          "n": 449,
+          "nll": 0.682217,
+          "hit": 0.726058
+        },
+        "light_enemy_depot": {
+          "n": 453,
+          "nll": 0.79112,
+          "hit": 0.693157
+        },
+        "loaded_home": {
+          "n": 151,
+          "nll": 0.49055,
+          "hit": 0.794702
+        },
+        "affordable_base": {
+          "n": 172,
+          "nll": 0.910396,
+          "hit": 0.627907
+        },
+        "actual_hire": {
+          "n": 92,
+          "nll": 1.320987,
+          "hit": 0.456522
+        },
+        "value_drift_mae": 0.0
+      },
+      "full": {
+        "worker": {
+          "n": 2282,
+          "nll": 0.581408,
+          "hit": 0.761613
+        },
+        "collector": {
+          "n": 1833,
+          "nll": 0.56558,
+          "hit": 0.768685
+        },
+        "planter": {
+          "n": 449,
+          "nll": 0.646023,
+          "hit": 0.732739
+        },
+        "light_enemy_depot": {
+          "n": 453,
+          "nll": 0.726382,
+          "hit": 0.704194
+        },
+        "loaded_home": {
+          "n": 151,
+          "nll": 0.424667,
+          "hit": 0.81457
+        },
+        "affordable_base": {
+          "n": 172,
+          "nll": 0.644023,
+          "hit": 0.726744
+        },
+        "actual_hire": {
+          "n": 92,
+          "nll": 0.889307,
+          "hit": 0.619565
+        },
+        "value_drift_mae": 0.008651670999825
+      },
+      "decision_change": {
+        "worker": 0.060473269062226116,
+        "base": 0.19767441860465115
+      }
+    },
+    "B2": {
+      "lifeline": {
+        "worker": {
+          "n": 2446,
+          "nll": 0.439354,
+          "hit": 0.82175
+        },
+        "collector": {
+          "n": 1887,
+          "nll": 0.418514,
+          "hit": 0.827239
+        },
+        "planter": {
+          "n": 559,
+          "nll": 0.509706,
+          "hit": 0.80322
+        },
+        "light_enemy_depot": {
+          "n": 199,
+          "nll": 0.612383,
+          "hit": 0.748744
+        },
+        "loaded_home": {
+          "n": 220,
+          "nll": 0.366084,
+          "hit": 0.868182
+        },
+        "affordable_base": {
+          "n": 160,
+          "nll": 0.707718,
+          "hit": 0.725
+        },
+        "actual_hire": {
+          "n": 80,
+          "nll": 0.931255,
+          "hit": 0.6375
+        },
+        "value_drift_mae": 0.0
+      },
+      "full": {
+        "worker": {
+          "n": 2446,
+          "nll": 0.41774,
+          "hit": 0.831971
+        },
+        "collector": {
+          "n": 1887,
+          "nll": 0.39583,
+          "hit": 0.840488
+        },
+        "planter": {
+          "n": 559,
+          "nll": 0.4917,
+          "hit": 0.80322
+        },
+        "light_enemy_depot": {
+          "n": 199,
+          "nll": 0.576409,
+          "hit": 0.763819
+        },
+        "loaded_home": {
+          "n": 220,
+          "nll": 0.324273,
+          "hit": 0.886364
+        },
+        "affordable_base": {
+          "n": 160,
+          "nll": 0.577522,
+          "hit": 0.75625
+        },
+        "actual_hire": {
+          "n": 80,
+          "nll": 0.656318,
+          "hit": 0.7
+        },
+        "value_drift_mae": 0.007777401711791754
+      },
+      "decision_change": {
+        "worker": 0.04946852003270646,
+        "base": 0.14375
+      }
+    },
+    "E": {
+      "lifeline": {
+        "worker": {
+          "n": 1400,
+          "nll": 0.706415,
+          "hit": 0.733571
+        },
+        "collector": {
+          "n": 1119,
+          "nll": 0.694719,
+          "hit": 0.747989
+        },
+        "planter": {
+          "n": 281,
+          "nll": 0.752991,
+          "hit": 0.676157
+        },
+        "light_enemy_depot": {
+          "n": 268,
+          "nll": 1.129464,
+          "hit": 0.626866
+        },
+        "loaded_home": {
+          "n": 113,
+          "nll": 0.538437,
+          "hit": 0.814159
+        },
+        "affordable_base": {
+          "n": 108,
+          "nll": 0.889017,
+          "hit": 0.648148
+        },
+        "actual_hire": {
+          "n": 60,
+          "nll": 1.19931,
+          "hit": 0.5
+        },
+        "value_drift_mae": 0.0
+      },
+      "full": {
+        "worker": {
+          "n": 1400,
+          "nll": 0.639812,
+          "hit": 0.738571
+        },
+        "collector": {
+          "n": 1119,
+          "nll": 0.619195,
+          "hit": 0.754245
+        },
+        "planter": {
+          "n": 281,
+          "nll": 0.721912,
+          "hit": 0.676157
+        },
+        "light_enemy_depot": {
+          "n": 268,
+          "nll": 0.947504,
+          "hit": 0.664179
+        },
+        "loaded_home": {
+          "n": 113,
+          "nll": 0.495731,
+          "hit": 0.80531
+        },
+        "affordable_base": {
+          "n": 108,
+          "nll": 0.627678,
+          "hit": 0.722222
+        },
+        "actual_hire": {
+          "n": 60,
+          "nll": 0.768853,
+          "hit": 0.666667
+        },
+        "value_drift_mae": 0.01101150643080473
+      },
+      "decision_change": {
+        "worker": 0.052142857142857144,
+        "base": 0.1388888888888889
+      }
+    }
+  },
+  "held": [
+    {
+      "match": "1012bed474be7305e70fe09fd4cde9ef",
+      "group": "7398f28816983b6843334861171398b9ac75a6571251b15144c9c8ba7b85bda6",
+      "teacher": "Master7sE",
+      "seat": 0,
+      "seed": 900916768,
+      "scores": {
+        "lifeline": {
+          "worker": {
+            "n": 509,
+            "nll": 0.586165,
+            "hit": 0.774067
+          },
+          "collector": {
+            "n": 399,
+            "nll": 0.556771,
+            "hit": 0.794486
+          },
+          "planter": {
+            "n": 110,
+            "nll": 0.692784,
+            "hit": 0.7
+          },
+          "light_enemy_depot": {
+            "n": 37,
+            "nll": 0.938223,
+            "hit": 0.72973
+          },
+          "loaded_home": {
+            "n": 58,
+            "nll": 0.436418,
+            "hit": 0.844828
+          },
+          "affordable_base": {
+            "n": 38,
+            "nll": 0.625597,
+            "hit": 0.736842
+          },
+          "actual_hire": {
+            "n": 22,
+            "nll": 0.845996,
+            "hit": 0.636364
+          },
+          "value_drift_mae": 0.0
+        },
+        "full": {
+          "worker": {
+            "n": 509,
+            "nll": 0.561655,
+            "hit": 0.772102
+          },
+          "collector": {
+            "n": 399,
+            "nll": 0.52728,
+            "hit": 0.794486
+          },
+          "planter": {
+            "n": 110,
+            "nll": 0.686344,
+            "hit": 0.690909
+          },
+          "light_enemy_depot": {
+            "n": 37,
+            "nll": 0.907982,
+            "hit": 0.72973
+          },
+          "loaded_home": {
+            "n": 58,
+            "nll": 0.431238,
+            "hit": 0.844828
+          },
+          "affordable_base": {
+            "n": 38,
+            "nll": 0.422,
+            "hit": 0.842105
+          },
+          "actual_hire": {
+            "n": 22,
+            "nll": 0.506757,
+            "hit": 0.818182
+          },
+          "value_drift_mae": 0.011377878487110138
+        },
+        "decision_change": {
+          "worker": 0.03143418467583497,
+          "base": 0.10526315789473684
+        }
+      }
+    },
+    {
+      "match": "785ae91618edb772a3cca538a3bf8396",
+      "group": "fe112f946a5c6a1af3e1f3451b53d26610c2314d80d7269443c63457fb57b99c",
+      "teacher": "Master7sE",
+      "seat": 0,
+      "seed": 1211562470,
+      "scores": {
+        "lifeline": {
+          "worker": {
+            "n": 497,
+            "nll": 0.585241,
+            "hit": 0.762575
+          },
+          "collector": {
+            "n": 393,
+            "nll": 0.535902,
+            "hit": 0.793893
+          },
+          "planter": {
+            "n": 104,
+            "nll": 0.771685,
+            "hit": 0.644231
+          },
+          "light_enemy_depot": {
+            "n": 42,
+            "nll": 0.63749,
+            "hit": 0.809524
+          },
+          "loaded_home": {
+            "n": 45,
+            "nll": 0.347453,
+            "hit": 0.866667
+          },
+          "affordable_base": {
+            "n": 36,
+            "nll": 0.877774,
+            "hit": 0.583333
+          },
+          "actual_hire": {
+            "n": 23,
+            "nll": 1.132394,
+            "hit": 0.434783
+          },
+          "value_drift_mae": 0.0
+        },
+        "full": {
+          "worker": {
+            "n": 497,
+            "nll": 0.542231,
+            "hit": 0.760563
+          },
+          "collector": {
+            "n": 393,
+            "nll": 0.495158,
+            "hit": 0.788804
+          },
+          "planter": {
+            "n": 104,
+            "nll": 0.72011,
+            "hit": 0.653846
+          },
+          "light_enemy_depot": {
+            "n": 42,
+            "nll": 0.599758,
+            "hit": 0.785714
+          },
+          "loaded_home": {
+            "n": 45,
+            "nll": 0.332282,
+            "hit": 0.844444
+          },
+          "affordable_base": {
+            "n": 36,
+            "nll": 0.666111,
+            "hit": 0.638889
+          },
+          "actual_hire": {
+            "n": 23,
+            "nll": 0.813769,
+            "hit": 0.565217
+          },
+          "value_drift_mae": 0.011140141636133194
+        },
+        "decision_change": {
+          "worker": 0.04627766599597585,
+          "base": 0.1111111111111111
+        }
+      }
+    },
+    {
+      "match": "efa15ce0a9b4d18398cbe73ad5ca6dc6",
+      "group": "1f50da532eef1e0235009dd79374004664b13e13beb08848c69cdac0abca9936",
+      "teacher": "Master7sE",
+      "seat": 1,
+      "seed": 1074001050,
+      "scores": {
+        "lifeline": {
+          "worker": {
+            "n": 394,
+            "nll": 1.014614,
+            "hit": 0.64467
+          },
+          "collector": {
+            "n": 327,
+            "nll": 1.053911,
+            "hit": 0.636086
+          },
+          "planter": {
+            "n": 67,
+            "nll": 0.822821,
+            "hit": 0.686567
+          },
+          "light_enemy_depot": {
+            "n": 189,
+            "nll": 1.27623,
+            "hit": 0.566138
+          },
+          "loaded_home": {
+            "n": 10,
+            "nll": 1.989571,
+            "hit": 0.4
+          },
+          "affordable_base": {
+            "n": 34,
+            "nll": 1.195332,
+            "hit": 0.617647
+          },
+          "actual_hire": {
+            "n": 15,
+            "nll": 1.820108,
+            "hit": 0.4
+          },
+          "value_drift_mae": 0.0
+        },
+        "full": {
+          "worker": {
+            "n": 394,
+            "nll": 0.863871,
+            "hit": 0.667513
+          },
+          "collector": {
+            "n": 327,
+            "nll": 0.88042,
+            "hit": 0.663609
+          },
+          "planter": {
+            "n": 67,
+            "nll": 0.783104,
+            "hit": 0.686567
+          },
+          "light_enemy_depot": {
+            "n": 189,
+            "nll": 1.032518,
+            "hit": 0.624339
+          },
+          "loaded_home": {
+            "n": 10,
+            "nll": 1.605316,
+            "hit": 0.4
+          },
+          "affordable_base": {
+            "n": 34,
+            "nll": 0.81686,
+            "hit": 0.676471
+          },
+          "actual_hire": {
+            "n": 15,
+            "nll": 1.084389,
+            "hit": 0.6
+          },
+          "value_drift_mae": 0.010395271703600883
+        },
+        "decision_change": {
+          "worker": 0.08629441624365482,
+          "base": 0.20588235294117646
+        }
+      }
+    },
+    {
+      "match": "9e5f1d1688216bd29ecb28ebe04c7f22",
+      "group": "911aaef7e96dbe29a587f8050d1bde3cb87d31627edaaf71ae89e7b4f7a8471d",
+      "teacher": "Master7sB2",
+      "seat": 1,
+      "seed": 166457320,
+      "scores": {
+        "lifeline": {
+          "worker": {
+            "n": 512,
+            "nll": 0.518705,
+            "hit": 0.787109
+          },
+          "collector": {
+            "n": 395,
+            "nll": 0.525294,
+            "hit": 0.772152
+          },
+          "planter": {
+            "n": 117,
+            "nll": 0.49646,
+            "hit": 0.837607
+          },
+          "light_enemy_depot": {
+            "n": 47,
+            "nll": 0.802449,
+            "hit": 0.702128
+          },
+          "loaded_home": {
+            "n": 32,
+            "nll": 0.490514,
+            "hit": 0.84375
+          },
+          "affordable_base": {
+            "n": 36,
+            "nll": 0.520096,
+            "hit": 0.805556
+          },
+          "actual_hire": {
+            "n": 17,
+            "nll": 0.645558,
+            "hit": 0.705882
+          },
+          "value_drift_mae": 0.0
+        },
+        "full": {
+          "worker": {
+            "n": 512,
+            "nll": 0.494812,
+            "hit": 0.798828
+          },
+          "collector": {
+            "n": 395,
+            "nll": 0.504102,
+            "hit": 0.787342
+          },
+          "planter": {
+            "n": 117,
+            "nll": 0.463452,
+            "hit": 0.837607
+          },
+          "light_enemy_depot": {
+            "n": 47,
+            "nll": 0.794187,
+            "hit": 0.702128
+          },
+          "loaded_home": {
+            "n": 32,
+            "nll": 0.458222,
+            "hit": 0.84375
+          },
+          "affordable_base": {
+            "n": 36,
+            "nll": 0.400996,
+            "hit": 0.833333
+          },
+          "actual_hire": {
+            "n": 17,
+            "nll": 0.464771,
+            "hit": 0.764706
+          },
+          "value_drift_mae": 0.00734403682872653
+        },
+        "decision_change": {
+          "worker": 0.05859375,
+          "base": 0.1111111111111111
+        }
+      }
+    },
+    {
+      "match": "0eb4fcb3485b4af9708098814e570f33",
+      "group": "51c06f5803d8088f991de51eb4d002315c2bc6ae617153bb8680158cd9106845",
+      "teacher": "Master7sD",
+      "seat": 1,
+      "seed": 1612871497,
+      "scores": {
+        "lifeline": {
+          "worker": {
+            "n": 511,
+            "nll": 0.659181,
+            "hit": 0.755382
+          },
+          "collector": {
+            "n": 443,
+            "nll": 0.625822,
+            "hit": 0.76298
+          },
+          "planter": {
+            "n": 68,
+            "nll": 0.876505,
+            "hit": 0.705882
+          },
+          "light_enemy_depot": {
+            "n": 177,
+            "nll": 0.741195,
+            "hit": 0.745763
+          },
+          "loaded_home": {
+            "n": 15,
+            "nll": 0.877714,
+            "hit": 0.666667
+          },
+          "affordable_base": {
+            "n": 28,
+            "nll": 1.277085,
+            "hit": 0.678571
+          },
+          "actual_hire": {
+            "n": 16,
+            "nll": 1.709412,
+            "hit": 0.5625
+          },
+          "value_drift_mae": 0.0
+        },
+        "full": {
+          "worker": {
+            "n": 511,
+            "nll": 0.620364,
+            "hit": 0.765166
+          },
+          "collector": {
+            "n": 443,
+            "nll": 0.591171,
+            "hit": 0.774266
+          },
+          "planter": {
+            "n": 68,
+            "nll": 0.810544,
+            "hit": 0.705882
+          },
+          "light_enemy_depot": {
+            "n": 177,
+            "nll": 0.71047,
+            "hit": 0.751412
+          },
+          "loaded_home": {
+            "n": 15,
+            "nll": 0.760177,
+            "hit": 0.6
+          },
+          "affordable_base": {
+            "n": 28,
+            "nll": 1.061551,
+            "hit": 0.714286
+          },
+          "actual_hire": {
+            "n": 16,
+            "nll": 1.414797,
+            "hit": 0.625
+          },
+          "value_drift_mae": 0.006988316308706999
+        },
+        "decision_change": {
+          "worker": 0.08806262230919765,
+          "base": 0.17857142857142858
+        }
+      }
+    },
+    {
+      "match": "ba7e1f7fc45d646702f3a2dab1a1e8f3",
+      "group": "990b7adde86f7bd4661986aa39e5206e82f3f912fca2467f41962dfe92ce39ee",
+      "teacher": "Master7sD",
+      "seat": 1,
+      "seed": 1610990862,
+      "scores": {
+        "lifeline": {
+          "worker": {
+            "n": 502,
+            "nll": 0.618539,
+            "hit": 0.758964
+          },
+          "collector": {
+            "n": 396,
+            "nll": 0.638168,
+            "hit": 0.747475
+          },
+          "planter": {
+            "n": 106,
+            "nll": 0.545207,
+            "hit": 0.801887
+          },
+          "light_enemy_depot": {
+            "n": 110,
+            "nll": 0.862813,
+            "hit": 0.663636
+          },
+          "loaded_home": {
+            "n": 38,
+            "nll": 0.190929,
+            "hit": 0.894737
+          },
+          "affordable_base": {
+            "n": 44,
+            "nll": 0.63013,
+            "hit": 0.681818
+          },
+          "actual_hire": {
+            "n": 27,
+            "nll": 0.826634,
+            "hit": 0.555556
+          },
+          "value_drift_mae": 0.0
+        },
+        "full": {
+          "worker": {
+            "n": 502,
+            "nll": 0.570665,
+            "hit": 0.776892
+          },
+          "collector": {
+            "n": 396,
+            "nll": 0.57919,
+            "hit": 0.772727
+          },
+          "planter": {
+            "n": 106,
+            "nll": 0.538815,
+            "hit": 0.792453
+          },
+          "light_enemy_depot": {
+            "n": 110,
+            "nll": 0.766955,
+            "hit": 0.681818
+          },
+          "loaded_home": {
+            "n": 38,
+            "nll": 0.165673,
+            "hit": 0.947368
+          },
+          "affordable_base": {
+            "n": 44,
+            "nll": 0.463573,
+            "hit": 0.772727
+          },
+          "actual_hire": {
+            "n": 27,
+            "nll": 0.597184,
+            "hit": 0.703704
+          },
+          "value_drift_mae": 0.007285866420716047
+        },
+        "decision_change": {
+          "worker": 0.055776892430278883,
+          "base": 0.20454545454545456
+        }
+      }
+    },
+    {
+      "match": "9e6ab9948c9e2f7c4d196041422bf246",
+      "group": "245462cdd92f042d7b5202ae2acdd1ffaf916f473f9da3f7c0c41e79a9492a08",
+      "teacher": "Master7sD",
+      "seat": 0,
+      "seed": 1688590380,
+      "scores": {
+        "lifeline": {
+          "worker": {
+            "n": 479,
+            "nll": 0.52391,
+            "hit": 0.789144
+          },
+          "collector": {
+            "n": 394,
+            "nll": 0.517497,
+            "hit": 0.796954
+          },
+          "planter": {
+            "n": 85,
+            "nll": 0.553636,
+            "hit": 0.752941
+          },
+          "light_enemy_depot": {
+            "n": 14,
+            "nll": 0.370003,
+            "hit": 0.857143
+          },
+          "loaded_home": {
+            "n": 54,
+            "nll": 0.419084,
+            "hit": 0.833333
+          },
+          "affordable_base": {
+            "n": 36,
+            "nll": 0.867564,
+            "hit": 0.694444
+          },
+          "actual_hire": {
+            "n": 19,
+            "nll": 1.330678,
+            "hit": 0.526316
+          },
+          "value_drift_mae": 0.0
+        },
+        "full": {
+          "worker": {
+            "n": 479,
+            "nll": 0.498299,
+            "hit": 0.803758
+          },
+          "collector": {
+            "n": 394,
+            "nll": 0.494008,
+            "hit": 0.807107
+          },
+          "planter": {
+            "n": 85,
+            "nll": 0.51819,
+            "hit": 0.788235
+          },
+          "light_enemy_depot": {
+            "n": 14,
+            "nll": 0.378247,
+            "hit": 0.857143
+          },
+          "loaded_home": {
+            "n": 54,
+            "nll": 0.392911,
+            "hit": 0.851852
+          },
+          "affordable_base": {
+            "n": 36,
+            "nll": 0.566622,
+            "hit": 0.75
+          },
+          "actual_hire": {
+            "n": 19,
+            "nll": 0.856091,
+            "hit": 0.684211
+          },
+          "value_drift_mae": 0.009455487132072449
+        },
+        "decision_change": {
+          "worker": 0.05010438413361169,
+          "base": 0.16666666666666666
+        }
+      }
+    },
+    {
+      "match": "9e852f79c739dbb079f9995704c1fca9",
+      "group": "c0cb61dcc60c3d6bf916e20570aff8edad8959163f6565bf78f9dfee8ed30e44",
+      "teacher": "Master7sB2",
+      "seat": 0,
+      "seed": 1521029745,
+      "scores": {
+        "lifeline": {
+          "worker": {
+            "n": 474,
+            "nll": 0.409814,
+            "hit": 0.833333
+          },
+          "collector": {
+            "n": 360,
+            "nll": 0.376518,
+            "hit": 0.841667
+          },
+          "planter": {
+            "n": 114,
+            "nll": 0.51496,
+            "hit": 0.807018
+          },
+          "light_enemy_depot": {
+            "n": 50,
+            "nll": 0.55655,
+            "hit": 0.72
+          },
+          "loaded_home": {
+            "n": 41,
+            "nll": 0.478689,
+            "hit": 0.878049
+          },
+          "affordable_base": {
+            "n": 40,
+            "nll": 0.966993,
+            "hit": 0.65
+          },
+          "actual_hire": {
+            "n": 19,
+            "nll": 1.265181,
+            "hit": 0.526316
+          },
+          "value_drift_mae": 0.0
+        },
+        "full": {
+          "worker": {
+            "n": 474,
+            "nll": 0.394812,
+            "hit": 0.839662
+          },
+          "collector": {
+            "n": 360,
+            "nll": 0.356458,
+            "hit": 0.858333
+          },
+          "planter": {
+            "n": 114,
+            "nll": 0.515932,
+            "hit": 0.780702
+          },
+          "light_enemy_depot": {
+            "n": 50,
+            "nll": 0.510443,
+            "hit": 0.76
+          },
+          "loaded_home": {
+            "n": 41,
+            "nll": 0.438971,
+            "hit": 0.853659
+          },
+          "affordable_base": {
+            "n": 40,
+            "nll": 0.817118,
+            "hit": 0.7
+          },
+          "actual_hire": {
+            "n": 19,
+            "nll": 0.961849,
+            "hit": 0.631579
+          },
+          "value_drift_mae": 0.006960730068385601
+        },
+        "decision_change": {
+          "worker": 0.06962025316455696,
+          "base": 0.1
+        }
+      }
+    },
+    {
+      "match": "94abf21111438cf1b579ba633cc0f96d",
+      "group": "b354ccc12cc06f73798a61ed9d0f55712c5da0478924fddd81f0d8cef1fe1573",
+      "teacher": "Master7sB2",
+      "seat": 0,
+      "seed": 947571874,
+      "scores": {
+        "lifeline": {
+          "worker": {
+            "n": 518,
+            "nll": 0.394158,
+            "hit": 0.839768
+          },
+          "collector": {
+            "n": 414,
+            "nll": 0.368577,
+            "hit": 0.847826
+          },
+          "planter": {
+            "n": 104,
+            "nll": 0.495991,
+            "hit": 0.807692
+          },
+          "light_enemy_depot": {
+            "n": 29,
+            "nll": 0.636563,
+            "hit": 0.724138
+          },
+          "loaded_home": {
+            "n": 55,
+            "nll": 0.199515,
+            "hit": 0.909091
+          },
+          "affordable_base": {
+            "n": 26,
+            "nll": 0.550471,
+            "hit": 0.769231
+          },
+          "actual_hire": {
+            "n": 13,
+            "nll": 0.894214,
+            "hit": 0.615385
+          },
+          "value_drift_mae": 0.0
+        },
+        "full": {
+          "worker": {
+            "n": 518,
+            "nll": 0.375893,
+            "hit": 0.84556
+          },
+          "collector": {
+            "n": 414,
+            "nll": 0.348477,
+            "hit": 0.855072
+          },
+          "planter": {
+            "n": 104,
+            "nll": 0.485028,
+            "hit": 0.807692
+          },
+          "light_enemy_depot": {
+            "n": 29,
+            "nll": 0.58112,
+            "hit": 0.724138
+          },
+          "loaded_home": {
+            "n": 55,
+            "nll": 0.178005,
+            "hit": 0.927273
+          },
+          "affordable_base": {
+            "n": 26,
+            "nll": 0.408354,
+            "hit": 0.807692
+          },
+          "actual_hire": {
+            "n": 13,
+            "nll": 0.592331,
+            "hit": 0.692308
+          },
+          "value_drift_mae": 0.007273026276379824
+        },
+        "decision_change": {
+          "worker": 0.04247104247104247,
+          "base": 0.19230769230769232
+        }
+      }
+    },
+    {
+      "match": "dc765ca36a2c8e61e6fa851e652ef944",
+      "group": "02c70b1800e1f105e456e6b234fdf9b60e58ba417ab8428524e82aaac9594c8e",
+      "teacher": "Master7sB2",
+      "seat": 1,
+      "seed": 2041015425,
+      "scores": {
+        "lifeline": {
+          "worker": {
+            "n": 486,
+            "nll": 0.39625,
+            "hit": 0.837449
+          },
+          "collector": {
+            "n": 361,
+            "nll": 0.382824,
+            "hit": 0.844875
+          },
+          "planter": {
+            "n": 125,
+            "nll": 0.435021,
+            "hit": 0.816
+          },
+          "light_enemy_depot": {
+            "n": 36,
+            "nll": 0.420319,
+            "hit": 0.833333
+          },
+          "loaded_home": {
+            "n": 40,
+            "nll": 0.407602,
+            "hit": 0.85
+          },
+          "affordable_base": {
+            "n": 36,
+            "nll": 0.755517,
+            "hit": 0.638889
+          },
+          "actual_hire": {
+            "n": 17,
+            "nll": 1.0479,
+            "hit": 0.588235
+          },
+          "value_drift_mae": 0.0
+        },
+        "full": {
+          "worker": {
+            "n": 486,
+            "nll": 0.365879,
+            "hit": 0.845679
+          },
+          "collector": {
+            "n": 361,
+            "nll": 0.350786,
+            "hit": 0.850416
+          },
+          "planter": {
+            "n": 125,
+            "nll": 0.409465,
+            "hit": 0.832
+          },
+          "light_enemy_depot": {
+            "n": 36,
+            "nll": 0.370509,
+            "hit": 0.833333
+          },
+          "loaded_home": {
+            "n": 40,
+            "nll": 0.354739,
+            "hit": 0.85
+          },
+          "affordable_base": {
+            "n": 36,
+            "nll": 0.579771,
+            "hit": 0.694444
+          },
+          "actual_hire": {
+            "n": 17,
+            "nll": 0.614111,
+            "hit": 0.647059
+          },
+          "value_drift_mae": 0.008886848576366901
+        },
+        "decision_change": {
+          "worker": 0.030864197530864196,
+          "base": 0.1388888888888889
+        }
+      }
+    },
+    {
+      "match": "1d470eb9d9f4a504c73059f429ae210a",
+      "group": "8ada14e0111d4979db882601edb3fe1b1b6770aa9dead4c396648010113e3314",
+      "teacher": "Master7sB2",
+      "seat": 0,
+      "seed": 1401619249,
+      "scores": {
+        "lifeline": {
+          "worker": {
+            "n": 456,
+            "nll": 0.478247,
+            "hit": 0.811404
+          },
+          "collector": {
+            "n": 357,
+            "nll": 0.436715,
+            "hit": 0.831933
+          },
+          "planter": {
+            "n": 99,
+            "nll": 0.628017,
+            "hit": 0.737374
+          },
+          "light_enemy_depot": {
+            "n": 37,
+            "nll": 0.614321,
+            "hit": 0.783784
+          },
+          "loaded_home": {
+            "n": 52,
+            "nll": 0.34497,
+            "hit": 0.846154
+          },
+          "affordable_base": {
+            "n": 22,
+            "nll": 0.650945,
+            "hit": 0.818182
+          },
+          "actual_hire": {
+            "n": 14,
+            "nll": 0.717744,
+            "hit": 0.785714
+          },
+          "value_drift_mae": 0.0
+        },
+        "full": {
+          "worker": {
+            "n": 456,
+            "nll": 0.457843,
+            "hit": 0.83114
+          },
+          "collector": {
+            "n": 357,
+            "nll": 0.416197,
+            "hit": 0.854342
+          },
+          "planter": {
+            "n": 99,
+            "nll": 0.608021,
+            "hit": 0.747475
+          },
+          "light_enemy_depot": {
+            "n": 37,
+            "nll": 0.585557,
+            "hit": 0.810811
+          },
+          "loaded_home": {
+            "n": 52,
+            "nll": 0.282678,
+            "hit": 0.923077
+          },
+          "affordable_base": {
+            "n": 22,
+            "nll": 0.627,
+            "hit": 0.772727
+          },
+          "actual_hire": {
+            "n": 14,
+            "nll": 0.584929,
+            "hit": 0.785714
+          },
+          "value_drift_mae": 0.00842236913740635
+        },
+        "decision_change": {
+          "worker": 0.046052631578947366,
+          "base": 0.22727272727272727
+        }
+      }
+    },
+    {
+      "match": "7335246a15fdca46a14d6b42613bc50f",
+      "group": "5b1e7dc4eea38dcb80b5d335b3efc64306007bbb9091b0334341f59bc74f3e14",
+      "teacher": "Master7sD",
+      "seat": 0,
+      "seed": 1958331026,
+      "scores": {
+        "lifeline": {
+          "worker": {
+            "n": 272,
+            "nll": 0.954368,
+            "hit": 0.613971
+          },
+          "collector": {
+            "n": 222,
+            "nll": 0.940201,
+            "hit": 0.626126
+          },
+          "planter": {
+            "n": 50,
+            "nll": 1.017269,
+            "hit": 0.56
+          },
+          "light_enemy_depot": {
+            "n": 104,
+            "nll": 0.86216,
+            "hit": 0.625
+          },
+          "loaded_home": {
+            "n": 8,
+            "nll": 1.749974,
+            "hit": 0.5
+          },
+          "affordable_base": {
+            "n": 40,
+            "nll": 1.041917,
+            "hit": 0.525
+          },
+          "actual_hire": {
+            "n": 16,
+            "nll": 1.959021,
+            "hit": 0.125
+          },
+          "value_drift_mae": 0.0
+        },
+        "full": {
+          "worker": {
+            "n": 272,
+            "nll": 0.829964,
+            "hit": 0.632353
+          },
+          "collector": {
+            "n": 222,
+            "nll": 0.804995,
+            "hit": 0.648649
+          },
+          "planter": {
+            "n": 50,
+            "nll": 0.94083,
+            "hit": 0.56
+          },
+          "light_enemy_depot": {
+            "n": 104,
+            "nll": 0.77273,
+            "hit": 0.634615
+          },
+          "loaded_home": {
+            "n": 8,
+            "nll": 1.201433,
+            "hit": 0.625
+          },
+          "affordable_base": {
+            "n": 40,
+            "nll": 0.62365,
+            "hit": 0.7
+          },
+          "actual_hire": {
+            "n": 16,
+            "nll": 1.022022,
+            "hit": 0.4375
+          },
+          "value_drift_mae": 0.011371327564120293
+        },
+        "decision_change": {
+          "worker": 0.08088235294117647,
+          "base": 0.2
+        }
+      }
+    },
+    {
+      "match": "91e7b29acd9f232ac5d0fb90ae8e894b",
+      "group": "fed607e4a97e5cae03c9d4e0777a663d17ad11799ff3e95ecf38a782bc6bbcbc",
+      "teacher": "Master7sD",
+      "seat": 1,
+      "seed": 1225896274,
+      "scores": {
+        "lifeline": {
+          "worker": {
+            "n": 518,
+            "nll": 0.530258,
+            "hit": 0.756757
+          },
+          "collector": {
+            "n": 378,
+            "nll": 0.485913,
+            "hit": 0.769841
+          },
+          "planter": {
+            "n": 140,
+            "nll": 0.649991,
+            "hit": 0.721429
+          },
+          "light_enemy_depot": {
+            "n": 48,
+            "nll": 0.779828,
+            "hit": 0.666667
+          },
+          "loaded_home": {
+            "n": 36,
+            "nll": 0.472827,
+            "hit": 0.75
+          },
+          "affordable_base": {
+            "n": 24,
+            "nll": 0.841462,
+            "hit": 0.541667
+          },
+          "actual_hire": {
+            "n": 14,
+            "nll": 1.088134,
+            "hit": 0.428571
+          },
+          "value_drift_mae": 0.0
+        },
+        "full": {
+          "worker": {
+            "n": 518,
+            "nll": 0.499725,
+            "hit": 0.772201
+          },
+          "collector": {
+            "n": 378,
+            "nll": 0.455323,
+            "hit": 0.78836
+          },
+          "planter": {
+            "n": 140,
+            "nll": 0.619609,
+            "hit": 0.728571
+          },
+          "light_enemy_depot": {
+            "n": 48,
+            "nll": 0.693194,
+            "hit": 0.6875
+          },
+          "loaded_home": {
+            "n": 36,
+            "nll": 0.433274,
+            "hit": 0.75
+          },
+          "affordable_base": {
+            "n": 24,
+            "nll": 0.637783,
+            "hit": 0.666667
+          },
+          "actual_hire": {
+            "n": 14,
+            "nll": 0.745535,
+            "hit": 0.571429
+          },
+          "value_drift_mae": 0.00909363478422165
+        },
+        "decision_change": {
+          "worker": 0.03667953667953668,
+          "base": 0.25
+        }
+      }
+    }
+  ],
+  "states": 760,
+  "source_sha": "9c5bdda7b8d1a9cc33af4cd0fe03edcb4a34a2d42e027d9b06fed519ff6b949d",
+  "student_sha": "9ccd8f31d553c5a71eec070e09ead36a4f2434694c2b679c167cc8b50eaaf950",
+  "device": "mps",
+  "development_rows": 4192,
+  "train_groups": [
+    "01ee78a48895ab9f54512f57982825f6bfe9d9291049ed6a386aa8e136a0336b",
+    "0f529e7645c77f3e0f878c6f964a406dbd66bb310c3075f4194c6df5b3c397ea",
+    "1086d93297e1b9d0ab75a4052ba69e10ca66308fb3033efe3c353cf88a666a9d",
+    "1c0c8b6c8830b689a493e17538699b083aa2683fdf0bb0250fe541def5191698",
+    "26b49664d9027dba7e55a29f6680270c2dcd6da019fac440744667db47e1fdbc",
+    "3bafca40bc93aa9ddd69312ca675b01d3da96380900d4de8f7ca4d7de569243f",
+    "3c689afab9b90e8046193c237dccf5b43e48b8e8f23d91ee0d516f9cd8baf393",
+    "48bebeae8d6dfef24f8d35b4c829a84d27ffa4f9f30d6d77066a6efd24e5f3c0",
+    "58576719ab8ca8c16e3de4be8ec5cf5ab62be335ada241d35173dea8671738a6",
+    "586a58729ed0284378a6a0725477a599473c9a048c22fdb727dbb0d4a27ea8ac",
+    "5b32052714ff3f3f3476cb8d2a69f0d116c77be3232eb6fc762c57a93a4f975d",
+    "5c20c4de58e98fd74d3b5586bd5f6992336eefa3f353630fadce91aa5d58eb6a",
+    "5c5610a7c1e145625342a755e8736cbc0090bc49c693098b00c81dddd502f1f7",
+    "67dc9462aaf69f2f0ef10782fd3386f92fccf15e1f9df1373d240c48341f027a",
+    "69b8a0815575c84e9b8cc76839ce1b14de6ffc1cc3e6625b195250df1fd31447",
+    "6ff54e59e057f316b66560e7af6c64cd8d4dd49063890b81c73230f833888349",
+    "7ae0d94fc02fbfc4f2a38d49c1d904c5dce9c63b2d4b0235cb31101680c43c5b",
+    "838a336357da90284fb2741203efd76beeb810db64d16c7186401188fb86cc82",
+    "87f2f2e38eac35834dd8a6ae24fdab9e63f545a5b152f1323844d072e8123fea",
+    "888f576089254ab130290ad09c7d484724c8c0a5ff3d3f49dce405e4fa74a05b",
+    "8b72717bccbb31dd1ea675e54774197971810bd532cdbeb83fb522f985507fd0",
+    "951a0a3d2ecef80db521baecd45d71bd78e73f3f6d44793d76114f854d330255",
+    "97f249b35ba64d331516b33989ba52d06c6176b3d5e54232d1523a269b71dea0",
+    "99bbe3c482b3dfec18029ba6d285c04337dac9a6e0addefa11a00e5e1ee8bbdf",
+    "9b78a53283bb0a1ac35908be872463da53635918a3d30ac1cbf3d50dd1b13c1d",
+    "9f141a4e3c6129919d612165223d987ba39bdcf94e3714e663c9e0f0f6c50665",
+    "a0f313f427844729735f6fea1b16c2e06f4ded4bab075c27b8c256ed6d1425e6",
+    "a8372d333a0416cd09281bacda06b2094b7af038b9f103fdbc74801f539bcc3a",
+    "acb52a43487a26233ef5849dcf87baf1a0fb6175257cadc193901a23f6446c25",
+    "ad53076f4dcb6572dbda1bafaa2b4eb0f8a039a0e8c4f1b4441c1cd6143a2da1",
+    "add71bde4ffbe0d9b11a28ad34cbc2f5125166a9ca2b5b003cd4e9b17df1d866",
+    "b369f3882c25d5bbe9c788d9ededcddb461ef0fac9136f88370695d41eb29640",
+    "b7eca7edb8fd67954a0c8ffd9f7fa34d31190fb25e76eca01c7d00e1fa367c0a",
+    "bf853d1f2ad2998ae92970a6684b90491e8436a0b0bb792de44482effc934726",
+    "c28d4a520c1859db3b674230c5b1d61e82dde5316e35160a6a0a6c04385a75b7",
+    "cbad6bab1f873f27f5a8def0e2a6eda875f38ce82e982665053590f629c4a738",
+    "da88c21685623c9ad3d4a99049aa407cf796a0d420de7f75eab077d82bd5a9fb",
+    "e515e7dd08d84aed3d0a626b145860ecffcae15650afd7acb446388b07c0daef",
+    "e5648bcedf64653d85be5b329b50536b84910fdbf1f1a55ee1a78bbb69e40a6e",
+    "ea4a87ef8fcb3374f3205779209a3da5f92728f4b144c3c854b070d6b76d0cdd",
+    "f5666f50bae83ec13966737ea957ef9b1e6452fca019dc167556b1a19f753a25",
+    "fffd1f11a8a51ff0f4d9e2a49cc5aeb0b69fe571c2e28785c530092b36ae20dc"
+  ],
+  "inner_groups": [
+    "1086d93297e1b9d0ab75a4052ba69e10ca66308fb3033efe3c353cf88a666a9d",
+    "99bbe3c482b3dfec18029ba6d285c04337dac9a6e0addefa11a00e5e1ee8bbdf",
+    "add71bde4ffbe0d9b11a28ad34cbc2f5125166a9ca2b5b003cd4e9b17df1d866",
+    "cbad6bab1f873f27f5a8def0e2a6eda875f38ce82e982665053590f629c4a738",
+    "e5648bcedf64653d85be5b329b50536b84910fdbf1f1a55ee1a78bbb69e40a6e",
+    "f5666f50bae83ec13966737ea957ef9b1e6452fca019dc167556b1a19f753a25"
+  ],
+  "strength_selection": [
+    {
+      "share": 0.4,
+      "score": 0.5315898627434253,
+      "metrics": {
+        "worker": {
+          "n": 5385,
+          "nll": 0.528203,
+          "hit": 0.788672
+        },
+        "collector": {
+          "n": 4174,
+          "nll": 0.50156,
+          "hit": 0.798035
+        },
+        "planter": {
+          "n": 1211,
+          "nll": 0.620032,
+          "hit": 0.7564
+        },
+        "light_enemy_depot": {
+          "n": 436,
+          "nll": 0.667412,
+          "hit": 0.715596
+        },
+        "loaded_home": {
+          "n": 502,
+          "nll": 0.356566,
+          "hit": 0.848606
+        },
+        "affordable_base": {
+          "n": 334,
+          "nll": 0.525401,
+          "hit": 0.763473
+        },
+        "actual_hire": {
+          "n": 158,
+          "nll": 0.728494,
+          "hit": 0.696203
+        },
+        "value_drift_mae": 0.006633542478084564
+      }
+    },
+    {
+      "share": 0.7,
+      "score": 0.5224221412397672,
+      "metrics": {
+        "worker": {
+          "n": 5385,
+          "nll": 0.519147,
+          "hit": 0.789601
+        },
+        "collector": {
+          "n": 4174,
+          "nll": 0.494009,
+          "hit": 0.797317
+        },
+        "planter": {
+          "n": 1211,
+          "nll": 0.605792,
+          "hit": 0.763006
+        },
+        "light_enemy_depot": {
+          "n": 436,
+          "nll": 0.660314,
+          "hit": 0.71789
+        },
+        "loaded_home": {
+          "n": 502,
+          "nll": 0.34689,
+          "hit": 0.856574
+        },
+        "affordable_base": {
+          "n": 334,
+          "nll": 0.499097,
+          "hit": 0.769461
+        },
+        "actual_hire": {
+          "n": 158,
+          "nll": 0.677045,
+          "hit": 0.702532
+        },
+        "value_drift_mae": 0.011214204132556915
+      }
+    },
+    {
+      "share": 1.0,
+      "score": 0.5175999282176376,
+      "metrics": {
+        "worker": {
+          "n": 5385,
+          "nll": 0.513646,
+          "hit": 0.791086
+        },
+        "collector": {
+          "n": 4174,
+          "nll": 0.489957,
+          "hit": 0.799233
+        },
+        "planter": {
+          "n": 1211,
+          "nll": 0.595298,
+          "hit": 0.763006
+        },
+        "light_enemy_depot": {
+          "n": 436,
+          "nll": 0.655343,
+          "hit": 0.724771
+        },
+        "loaded_home": {
+          "n": 502,
+          "nll": 0.34148,
+          "hit": 0.864542
+        },
+        "affordable_base": {
+          "n": 334,
+          "nll": 0.486043,
+          "hit": 0.778443
+        },
+        "actual_hire": {
+          "n": 158,
+          "nll": 0.645769,
+          "hit": 0.71519
+        },
+        "value_drift_mae": 0.01567542739212513
+      }
+    }
+  ],
+  "share": 1.0,
+  "train_steps": "Two passes, up to 100 legal boards per map. Independent 36/6 calibration on whole maps, then 42-map refit."
+}
