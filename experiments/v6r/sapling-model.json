@@ -1,0 +1,1314 @@
+{
+ "method": "Signed actual future receipts of the same tree, 0.968 discount per step; player perspective flips at seizure. Same labels and clipping as assets-model. Feature input uses a hash-selected legal observer for both players. All validation matches excluded from both regressions.",
+ "age1_ablation": {
+  "soil_and_baseline_mae": 25.2646,
+  "correlation": {
+   "original": 0.312,
+   "soil_and_baseline": 0.5749,
+   "full": 0.581
+  }
+ },
+ "features": [
+  "bias",
+  "original_asset",
+  "still_life",
+  "uncontested_ground",
+  "shared_ground",
+  "blocked_ground",
+  "best_soil",
+  "empty_ground_cells",
+  "contested_ground",
+  "guarded_ground",
+  "own_nearby_trees",
+  "enemy_nearby_trees",
+  "tax_now",
+  "tax_approaching",
+  "tax_near_depot",
+  "enemy_planter_threat",
+  "rate_now",
+  "rate_times_threat",
+  "age_fraction",
+  "soil_times_age"
+ ],
+ "coefficients": [
+  [
+   -5.64633302043491,
+   4.831175527342604,
+   -16.311083849578257,
+   46.7603295915147,
+   57.06889490843252,
+   33.86465572019823,
+   -26.65181767284115,
+   -8.470203599075347,
+   -10.693936939763976,
+   6.080463187016748,
+   -6.21557366439126,
+   -0.05110642247863498,
+   14.555095216552322,
+   -5.784383078767663,
+   -38.290168012623205,
+   -1.7890462519940054,
+   0.0,
+   0.0,
+   -33.87799812017774,
+   262.5827110702835
+  ],
+  [
+   -9.452866650959832,
+   -5.9516106079838496,
+   -20.96233944899257,
+   12.567286989357948,
+   -6.574634123202463,
+   72.71597899411,
+   -30.15134725095496,
+   -13.409894512166735,
+   -30.097094479579333,
+   10.46747571181417,
+   -2.4681832803245456,
+   0.09009541872332837,
+   -147.47380535486448,
+   -3.238863201859679,
+   -117.99409338510668,
+   -2.0202201221096305,
+   32.966663900620105,
+   46.22724768619238,
+   46.531111191696965,
+   46.414029215788084
+  ],
+  [
+   0.9004522277711808,
+   10.06313152041078,
+   -12.210668696952366,
+   19.575985058482654,
+   -3.0112674677407565,
+   76.13807508822518,
+   -21.25245923501156,
+   -8.516828745458819,
+   -46.36414363058346,
+   8.53686074566495,
+   1.6948993391141691,
+   -2.3746209498769133,
+   -164.1007123279862,
+   -1.02985721112968,
+   -105.96446979050002,
+   -0.10875760998163049,
+   27.709799539117835,
+   57.574258609811714,
+   2.1381607444230535,
+   9.122316170266355
+  ]
+ ],
+ "maps": {
+  "training": [
+   {
+    "match": "93bada3c48bd2877214961670397a9e3",
+    "observer": 0,
+    "rows": 432
+   },
+   {
+    "match": "6523af3ebb2d8c6306f7b086a82ec116",
+    "observer": 0,
+    "rows": 406
+   },
+   {
+    "match": "9e5f1d1688216bd29ecb28ebe04c7f22",
+    "observer": 1,
+    "rows": 400
+   },
+   {
+    "match": "f13c1c4a60a92a5371af1b974123c9d0",
+    "observer": 1,
+    "rows": 419
+   },
+   {
+    "match": "6c42cfc5d4ca3b58c8695cbcc0cf9020",
+    "observer": 1,
+    "rows": 443
+   },
+   {
+    "match": "5c398fdb1c47257352299dbcd1ab8db7",
+    "observer": 1,
+    "rows": 453
+   },
+   {
+    "match": "a8859ba26f8d792b39a78558bb9d22fa",
+    "observer": 1,
+    "rows": 416
+   },
+   {
+    "match": "f0477adb78855dfaa32376f9ca2ccd8e",
+    "observer": 1,
+    "rows": 482
+   },
+   {
+    "match": "aa4ed32ca2d4da5af16ab03f7d57ee71",
+    "observer": 1,
+    "rows": 435
+   },
+   {
+    "match": "721b169ffa125979369237086a8b3491",
+    "observer": 0,
+    "rows": 434
+   },
+   {
+    "match": "4afba379b1a5d9e4ee63780925a780b3",
+    "observer": 0,
+    "rows": 427
+   },
+   {
+    "match": "cdbf357c274e51119cef4b3047ad993d",
+    "observer": 1,
+    "rows": 420
+   },
+   {
+    "match": "6c8933585adf2daa67e700477d112ae4",
+    "observer": 0,
+    "rows": 442
+   },
+   {
+    "match": "e2c852a06950f5a449427d8bf5f8bb06",
+    "observer": 1,
+    "rows": 454
+   },
+   {
+    "match": "66c97e824660861fe7bcf5de3554d493",
+    "observer": 1,
+    "rows": 417
+   },
+   {
+    "match": "ed372d3738301486347c75f32bf65ab5",
+    "observer": 0,
+    "rows": 452
+   },
+   {
+    "match": "71840018e0b6fa676cad91945601ad4f",
+    "observer": 0,
+    "rows": 441
+   },
+   {
+    "match": "8f68ebe5109b6be9817bf1b39ebb90e9",
+    "observer": 1,
+    "rows": 436
+   },
+   {
+    "match": "7447bee8cc4efa1dcc248b017a32eb23",
+    "observer": 1,
+    "rows": 435
+   },
+   {
+    "match": "14ba1556a10dc61c70fae7c191eea2f8",
+    "observer": 0,
+    "rows": 399
+   },
+   {
+    "match": "e2c0eb629674da05c07f4f47f906d5dc",
+    "observer": 0,
+    "rows": 419
+   },
+   {
+    "match": "1ba0a7f5dd9aae2eaa4a0ce7a5f750af",
+    "observer": 0,
+    "rows": 399
+   },
+   {
+    "match": "9af4918d550debaed7d1ece6392b371e",
+    "observer": 1,
+    "rows": 423
+   },
+   {
+    "match": "efa15ce0a9b4d18398cbe73ad5ca6dc6",
+    "observer": 1,
+    "rows": 252
+   },
+   {
+    "match": "a961184b1a0afcccfbfb32a6aa2375eb",
+    "observer": 1,
+    "rows": 433
+   },
+   {
+    "match": "435d7251fbb1d0e4c36a0feca44476ec",
+    "observer": 1,
+    "rows": 403
+   },
+   {
+    "match": "9654d76565fefa1bd959dd8e5a48cad3",
+    "observer": 1,
+    "rows": 393
+   },
+   {
+    "match": "1306fa109d2f4ee2acfb937955fc9368",
+    "observer": 1,
+    "rows": 441
+   },
+   {
+    "match": "08a44dc512189e6710970eb3d17a53b0",
+    "observer": 0,
+    "rows": 307
+   },
+   {
+    "match": "21d35d7cbf9aeffa465fc044cdfcf037",
+    "observer": 0,
+    "rows": 458
+   },
+   {
+    "match": "87b072899f7b23eb66854ad9ad1f8d78",
+    "observer": 1,
+    "rows": 446
+   },
+   {
+    "match": "e5386064def51a446d1cbba1d54d9a5c",
+    "observer": 1,
+    "rows": 403
+   },
+   {
+    "match": "afe4ab003a0d6222783cff3fde074af2",
+    "observer": 1,
+    "rows": 467
+   },
+   {
+    "match": "fa3ea68975543170687421323198708c",
+    "observer": 1,
+    "rows": 426
+   },
+   {
+    "match": "30d30d18f724bd6165e476d22a2d50b4",
+    "observer": 0,
+    "rows": 449
+   },
+   {
+    "match": "bdbfeea28fc6daac4526733b5bb99dfa",
+    "observer": 1,
+    "rows": 442
+   },
+   {
+    "match": "9c60786238c1b9d88d9919f76b75d2dc",
+    "observer": 1,
+    "rows": 414
+   },
+   {
+    "match": "d29fd984428b6b11235182e9cb0b6a7c",
+    "observer": 0,
+    "rows": 425
+   },
+   {
+    "match": "d3065805e3fb463ff254ba36273b687b",
+    "observer": 0,
+    "rows": 408
+   },
+   {
+    "match": "b05d118c38d7d7054ba210f6cbbcf6e0",
+    "observer": 0,
+    "rows": 354
+   },
+   {
+    "match": "51990021e4aab909286878be64b1a263",
+    "observer": 1,
+    "rows": 463
+   },
+   {
+    "match": "4019af1207f1b381ae3a80e7d66d5310",
+    "observer": 1,
+    "rows": 414
+   },
+   {
+    "match": "338efe0060442151c6b8bcde919f0de6",
+    "observer": 1,
+    "rows": 429
+   },
+   {
+    "match": "67e97d86f799d7cb3865241c7aec726f",
+    "observer": 1,
+    "rows": 449
+   },
+   {
+    "match": "cf1df811727e29670e616ac0775fb3b4",
+    "observer": 1,
+    "rows": 433
+   },
+   {
+    "match": "32668cb4f2524c3029c3fb2ce51036ba",
+    "observer": 1,
+    "rows": 378
+   },
+   {
+    "match": "d0a177e1b93ad2f5a6f8adbcbefd0f92",
+    "observer": 0,
+    "rows": 479
+   },
+   {
+    "match": "9ea2538e70249679da8c078295694825",
+    "observer": 1,
+    "rows": 461
+   },
+   {
+    "match": "27671c7ee9c31a98c26835b89ed96540",
+    "observer": 0,
+    "rows": 441
+   },
+   {
+    "match": "61529d5cd08a1397f0598d37d2d519de",
+    "observer": 0,
+    "rows": 410
+   },
+   {
+    "match": "d96ca196a340ce2539a4a72cb4c4021e",
+    "observer": 0,
+    "rows": 436
+   },
+   {
+    "match": "160f655dc39acc147327201cbfc7aedd",
+    "observer": 1,
+    "rows": 406
+   },
+   {
+    "match": "b765aac1faf8c75933b1414797e106b5",
+    "observer": 0,
+    "rows": 450
+   },
+   {
+    "match": "fc81aa5599761a1088336c4be546679f",
+    "observer": 0,
+    "rows": 430
+   },
+   {
+    "match": "d935ab616ea3ae047a12448ce036cfaf",
+    "observer": 0,
+    "rows": 419
+   },
+   {
+    "match": "7f2ca9dc190d1ba2d222aeab82923cfa",
+    "observer": 1,
+    "rows": 470
+   },
+   {
+    "match": "f5e69abd6f15278bf9ae01a40601c330",
+    "observer": 1,
+    "rows": 160
+   },
+   {
+    "match": "4f35bcef7e432b1ccb38ea8468088b90",
+    "observer": 1,
+    "rows": 441
+   },
+   {
+    "match": "a7f31f78555ceb40bbc690c00227e0d1",
+    "observer": 1,
+    "rows": 474
+   },
+   {
+    "match": "c910a302a1d4a40d4a4cc1a57ea64ec1",
+    "observer": 1,
+    "rows": 448
+   },
+   {
+    "match": "9be25a99800a9631b7a66a3793d78d4f",
+    "observer": 0,
+    "rows": 419
+   },
+   {
+    "match": "57597be93dc5479f7d23790241247065",
+    "observer": 0,
+    "rows": 457
+   },
+   {
+    "match": "abb09ca6b0efa1a9be80d8dd24ab4332",
+    "observer": 0,
+    "rows": 407
+   },
+   {
+    "match": "45869c71d4f1add508b049840e388e1f",
+    "observer": 0,
+    "rows": 416
+   },
+   {
+    "match": "9c3acd5fd87681a3de087cd6415770ca",
+    "observer": 0,
+    "rows": 428
+   },
+   {
+    "match": "e1ce9a74eb8f7265cfa28ad071601477",
+    "observer": 0,
+    "rows": 425
+   },
+   {
+    "match": "eb7849ed2790648f55a482447af325ac",
+    "observer": 1,
+    "rows": 465
+   },
+   {
+    "match": "6279308face2cdcb2ac4807dcaedc9c4",
+    "observer": 1,
+    "rows": 441
+   },
+   {
+    "match": "da7bdc0e4741462cf02160b68da0a0d9",
+    "observer": 1,
+    "rows": 403
+   },
+   {
+    "match": "3fcb197363f9ea1ed16d87a959525db0",
+    "observer": 1,
+    "rows": 432
+   },
+   {
+    "match": "1386cebca822214f2ee3432bb1096852",
+    "observer": 1,
+    "rows": 425
+   },
+   {
+    "match": "59e1e40837fd9da04960660ea3dd8848",
+    "observer": 1,
+    "rows": 419
+   },
+   {
+    "match": "b2f9235f0aeccbd8d01cc4f8e0dd6340",
+    "observer": 0,
+    "rows": 446
+   },
+   {
+    "match": "056578736650bbba5699f14c81dc9525",
+    "observer": 1,
+    "rows": 375
+   },
+   {
+    "match": "12282bc31fd3f9f4d920693cc8469b5c",
+    "observer": 0,
+    "rows": 451
+   },
+   {
+    "match": "bdb86ec1b3d3e985a7fdad10211f4da9",
+    "observer": 0,
+    "rows": 476
+   },
+   {
+    "match": "15c44edcb845861b8d27dc7f00873344",
+    "observer": 1,
+    "rows": 423
+   },
+   {
+    "match": "d0c90588cc8f97b435df51535c1ed433",
+    "observer": 0,
+    "rows": 464
+   },
+   {
+    "match": "71eab28308d67feaf45e6a6727635585",
+    "observer": 1,
+    "rows": 412
+   },
+   {
+    "match": "81913606e681f366ca3cd769c060d782",
+    "observer": 0,
+    "rows": 435
+   },
+   {
+    "match": "a3ee51673d82381ce351ea40865e0719",
+    "observer": 0,
+    "rows": 465
+   },
+   {
+    "match": "f9a853d8e30ba6b524e0b1f5eb4e5417",
+    "observer": 0,
+    "rows": 444
+   },
+   {
+    "match": "54e00158af4f02ca131f2e4ce06549ad",
+    "observer": 0,
+    "rows": 350
+   },
+   {
+    "match": "eada6cccdcadae78ceffb2be499c8203",
+    "observer": 1,
+    "rows": 400
+   },
+   {
+    "match": "00839b1983513d48b6191b78599011d4",
+    "observer": 1,
+    "rows": 434
+   },
+   {
+    "match": "32fb23ffb1562674c14b18d6edf223ab",
+    "observer": 0,
+    "rows": 430
+   },
+   {
+    "match": "9e6ab9948c9e2f7c4d196041422bf246",
+    "observer": 1,
+    "rows": 449
+   },
+   {
+    "match": "e80e8c600ccd8bbb67bc57932044729c",
+    "observer": 0,
+    "rows": 406
+   },
+   {
+    "match": "9539203e39ad183880f759b19e1c2801",
+    "observer": 0,
+    "rows": 429
+   },
+   {
+    "match": "53bcd427c29848477e5f272842d1b1de",
+    "observer": 0,
+    "rows": 408
+   },
+   {
+    "match": "4bd95cebbbd8b61928025a16b495e102",
+    "observer": 1,
+    "rows": 443
+   },
+   {
+    "match": "0e35eb181d361e29c314340ec542c446",
+    "observer": 1,
+    "rows": 418
+   },
+   {
+    "match": "54a7a97e96d2db66f944c3351a3668c9",
+    "observer": 0,
+    "rows": 428
+   },
+   {
+    "match": "79a8d3dc3a619a225fefb8c3a3d55a82",
+    "observer": 0,
+    "rows": 432
+   },
+   {
+    "match": "89d2a57fe2da4340f9f2efbedff4fa55",
+    "observer": 1,
+    "rows": 397
+   },
+   {
+    "match": "d3ccf1f5447c586b49ba541f4710e603",
+    "observer": 1,
+    "rows": 439
+   },
+   {
+    "match": "6173390b43b884ef8b9c8e22ea5f3318",
+    "observer": 1,
+    "rows": 393
+   },
+   {
+    "match": "2e243574754d80611a7a87ac33ffbbf6",
+    "observer": 1,
+    "rows": 402
+   },
+   {
+    "match": "53a975fac52b167a27aeb1eaa4f219a5",
+    "observer": 1,
+    "rows": 454
+   },
+   {
+    "match": "73331cb7076f22f1c08555123dc9a22f",
+    "observer": 1,
+    "rows": 383
+   },
+   {
+    "match": "6436e22de728eed278f88388de346478",
+    "observer": 0,
+    "rows": 421
+   },
+   {
+    "match": "f1567f8974cd0cd9ae13688e7f07b39d",
+    "observer": 1,
+    "rows": 477
+   },
+   {
+    "match": "8d11b5176c334842d52318378cf4b1a3",
+    "observer": 1,
+    "rows": 391
+   },
+   {
+    "match": "3476f7a9ef2477d8da4752f50e64cfca",
+    "observer": 1,
+    "rows": 466
+   },
+   {
+    "match": "9547009770cd89f36fa2fb2b9b745d1a",
+    "observer": 1,
+    "rows": 430
+   },
+   {
+    "match": "0b68af5d453b8d1955df0f60ebd934aa",
+    "observer": 1,
+    "rows": 418
+   },
+   {
+    "match": "0ac99d53f0a974fc5a9f0b80eb04bb0b",
+    "observer": 1,
+    "rows": 422
+   },
+   {
+    "match": "e754a6bd0736511e4bbd5111793740d7",
+    "observer": 1,
+    "rows": 445
+   },
+   {
+    "match": "41c7db068e9eb5cb6ded9614be8a79cf",
+    "observer": 1,
+    "rows": 405
+   },
+   {
+    "match": "d7d24986c9ebab487b1bc8853dcea0ec",
+    "observer": 1,
+    "rows": 445
+   },
+   {
+    "match": "834d87c9adbca68270043b445ea82e43",
+    "observer": 1,
+    "rows": 433
+   },
+   {
+    "match": "164884ed284ecca477aefbbb28eea1c5",
+    "observer": 0,
+    "rows": 415
+   },
+   {
+    "match": "16d8168b4d41f2bda0637934a5f153cb",
+    "observer": 1,
+    "rows": 407
+   },
+   {
+    "match": "8ee813c9ee97a8b6202fa33766e2d59d",
+    "observer": 0,
+    "rows": 384
+   },
+   {
+    "match": "ab5295f4092869c4348a45accad9de46",
+    "observer": 1,
+    "rows": 456
+   },
+   {
+    "match": "8c35cb280185f046b9d76151e8c41e61",
+    "observer": 1,
+    "rows": 406
+   },
+   {
+    "match": "126ff43f0bded26906b3b72d89cb6a23",
+    "observer": 0,
+    "rows": 414
+   },
+   {
+    "match": "45fd0cd4f667be5226106230057dcb47",
+    "observer": 0,
+    "rows": 434
+   },
+   {
+    "match": "e518e0aeff3cfbf788bc2764e07293b0",
+    "observer": 1,
+    "rows": 387
+   },
+   {
+    "match": "990c71299e60ccd3d4a445edc0106dca",
+    "observer": 1,
+    "rows": 433
+   },
+   {
+    "match": "11efb4d9ca2aba0375ba71f45ae48bd2",
+    "observer": 1,
+    "rows": 459
+   },
+   {
+    "match": "631a646fd1b1194a50b31ae19e3009c4",
+    "observer": 0,
+    "rows": 455
+   },
+   {
+    "match": "f4e1a7cbcc5b9ff997872b79c7431a10",
+    "observer": 0,
+    "rows": 437
+   },
+   {
+    "match": "692f8c17045e0b19bce224339f038783",
+    "observer": 1,
+    "rows": 412
+   },
+   {
+    "match": "0780da1e75608edb07b31b29d4479f06",
+    "observer": 1,
+    "rows": 473
+   },
+   {
+    "match": "1466fa258d428eb31ecdc02daa85aa74",
+    "observer": 0,
+    "rows": 450
+   },
+   {
+    "match": "01f4101e17eb958da9e748bffe571a58",
+    "observer": 0,
+    "rows": 447
+   },
+   {
+    "match": "787864c8e44f38ab748c1b0641bd7062",
+    "observer": 0,
+    "rows": 457
+   },
+   {
+    "match": "3a1e72c9328fd8aabe0de3c45b3a5234",
+    "observer": 0,
+    "rows": 344
+   },
+   {
+    "match": "0bbed039fa9edb6dcc8bbd14906a3553",
+    "observer": 0,
+    "rows": 429
+   },
+   {
+    "match": "48963741ca52d589ede6eba4e28431e1",
+    "observer": 1,
+    "rows": 459
+   },
+   {
+    "match": "68665b234ef39dd3b06009ec4d455c5f",
+    "observer": 1,
+    "rows": 489
+   },
+   {
+    "match": "4d99efc73c00979051d3f33e13c1d163",
+    "observer": 0,
+    "rows": 409
+   },
+   {
+    "match": "b6fcc5a178dfe284d2b6e500ddd7a1fa",
+    "observer": 0,
+    "rows": 411
+   },
+   {
+    "match": "8126adcfeb3c00bb851e14d576b45308",
+    "observer": 0,
+    "rows": 435
+   },
+   {
+    "match": "7ad550d6acbf90789ff0aa69ac256fb8",
+    "observer": 0,
+    "rows": 460
+   },
+   {
+    "match": "5a3bc1741e8bde8c8c5661549cd7a534",
+    "observer": 0,
+    "rows": 449
+   },
+   {
+    "match": "f1cb105973912de458573807d523031c",
+    "observer": 0,
+    "rows": 387
+   },
+   {
+    "match": "3fa7b99fce9590c93314aa2e9fe2355d",
+    "observer": 0,
+    "rows": 418
+   },
+   {
+    "match": "65fc0559972602bd0ffef7cb45dce324",
+    "observer": 1,
+    "rows": 452
+   },
+   {
+    "match": "344da495c922845c7bc93cb556167262",
+    "observer": 0,
+    "rows": 413
+   },
+   {
+    "match": "f9d5141a74f6331540f720bac0716614",
+    "observer": 0,
+    "rows": 404
+   },
+   {
+    "match": "0eb4fcb3485b4af9708098814e570f33",
+    "observer": 1,
+    "rows": 416
+   },
+   {
+    "match": "65ce9b6b6ff51f452c3b49d1e1ad07fc",
+    "observer": 0,
+    "rows": 449
+   },
+   {
+    "match": "89de56dba3e2ba2e648618fbaa6cf8f4",
+    "observer": 0,
+    "rows": 428
+   },
+   {
+    "match": "a44ebda5b9ee6f5ae1682273ddd33460",
+    "observer": 0,
+    "rows": 458
+   },
+   {
+    "match": "e798d5a6b0afa0e73b1ffc1764e3f096",
+    "observer": 0,
+    "rows": 368
+   },
+   {
+    "match": "f211d9e09d5a92f1a43f4611a3fa27bf",
+    "observer": 1,
+    "rows": 478
+   },
+   {
+    "match": "e0877b124675ef246b48914516be95b9",
+    "observer": 1,
+    "rows": 423
+   },
+   {
+    "match": "12d8b9bfcf5d82e3122c6be37348d04a",
+    "observer": 0,
+    "rows": 437
+   },
+   {
+    "match": "2e34cab9b82db2c98e8ca17f6f5f8134",
+    "observer": 0,
+    "rows": 431
+   },
+   {
+    "match": "4d45ac0079fc62816fea29d09b512a30",
+    "observer": 1,
+    "rows": 406
+   },
+   {
+    "match": "785ae91618edb772a3cca538a3bf8396",
+    "observer": 0,
+    "rows": 439
+   },
+   {
+    "match": "f2808e6e8b57eb04adc928d833ffbf27",
+    "observer": 1,
+    "rows": 398
+   },
+   {
+    "match": "1012bed474be7305e70fe09fd4cde9ef",
+    "observer": 0,
+    "rows": 442
+   },
+   {
+    "match": "9db21687d44accd4b188a681082af138",
+    "observer": 0,
+    "rows": 463
+   },
+   {
+    "match": "3483bb69c12623a4818455f38ef0b795",
+    "observer": 1,
+    "rows": 459
+   },
+   {
+    "match": "47888afc098db221a6bda6923c0e5783",
+    "observer": 0,
+    "rows": 450
+   },
+   {
+    "match": "4c343cc40456fea803992ddc8995b5da",
+    "observer": 1,
+    "rows": 376
+   },
+   {
+    "match": "3d306569225c057be2b825aa2f668505",
+    "observer": 1,
+    "rows": 423
+   },
+   {
+    "match": "e730b33215ff067dcdf8a07e3cc269f0",
+    "observer": 1,
+    "rows": 457
+   },
+   {
+    "match": "f5172b0ea84e9bbcf5060a022b6d6946",
+    "observer": 1,
+    "rows": 435
+   },
+   {
+    "match": "06e79f7028bb5bbc20ba7a7de22bdd86",
+    "observer": 1,
+    "rows": 424
+   },
+   {
+    "match": "c481f000976e732e0a3d888f21e7c96b",
+    "observer": 0,
+    "rows": 430
+   },
+   {
+    "match": "5b6933953094f1af66b9c7fe4dca75c2",
+    "observer": 1,
+    "rows": 401
+   },
+   {
+    "match": "b78c5ed2f756e8e012bf05036e38333b",
+    "observer": 0,
+    "rows": 388
+   },
+   {
+    "match": "f0bb1d19c41b61e8dca8ab5cc70ebadb",
+    "observer": 1,
+    "rows": 430
+   },
+   {
+    "match": "37885c2d47ff0c9c6a8fe83de864c4a7",
+    "observer": 0,
+    "rows": 493
+   },
+   {
+    "match": "b742b97222a7b260f0412a1885ac6bfc",
+    "observer": 0,
+    "rows": 466
+   },
+   {
+    "match": "20b85060c8e5cba8bc73c73aaaeae332",
+    "observer": 0,
+    "rows": 423
+   },
+   {
+    "match": "f46a5a690a48da0d6ac5d3ab9c86b236",
+    "observer": 0,
+    "rows": 450
+   },
+   {
+    "match": "8c3862388f88c768c6880a8f5f5837fe",
+    "observer": 0,
+    "rows": 430
+   }
+  ],
+  "validation": [
+   {
+    "match": "96189767794a852a14afe120560364b8",
+    "observer": 0,
+    "rows": 420
+   },
+   {
+    "match": "a00114ee36ab731636bca98b25bcbad7",
+    "observer": 0,
+    "rows": 457
+   },
+   {
+    "match": "ebe1881c614d1e8d90b51c733352d7ae",
+    "observer": 1,
+    "rows": 423
+   },
+   {
+    "match": "14e59cf624f667abf52b51d988d3f0c0",
+    "observer": 0,
+    "rows": 438
+   },
+   {
+    "match": "fd9f5406195dcc46141ffe116b12619d",
+    "observer": 1,
+    "rows": 417
+   },
+   {
+    "match": "e087a07e549515c08e3bf4ec6e3bef71",
+    "observer": 1,
+    "rows": 451
+   },
+   {
+    "match": "68d05f61cd96e7dc49941fd48ed56287",
+    "observer": 1,
+    "rows": 446
+   },
+   {
+    "match": "21409c0e0f93beb73f2f22a2835ff50a",
+    "observer": 0,
+    "rows": 418
+   },
+   {
+    "match": "e5efc88cd4197920e8d17d4e294a548f",
+    "observer": 1,
+    "rows": 411
+   },
+   {
+    "match": "e77e468a45e2afb739bd878e3bb75a8f",
+    "observer": 1,
+    "rows": 390
+   },
+   {
+    "match": "1cc46f477941046042b7978a287d7dfe",
+    "observer": 1,
+    "rows": 452
+   },
+   {
+    "match": "753dd13cb2faca820aa98e4c20c93f5e",
+    "observer": 1,
+    "rows": 407
+   },
+   {
+    "match": "49908d8dfe332b0b03e391735d26957a",
+    "observer": 1,
+    "rows": 423
+   },
+   {
+    "match": "e24e2dcef5e4e3698bad9ad765c7d306",
+    "observer": 1,
+    "rows": 449
+   },
+   {
+    "match": "fe3beb57e34a752098e098efc37db7c6",
+    "observer": 0,
+    "rows": 450
+   },
+   {
+    "match": "44664d0003e93b77c7357c31bdc558c4",
+    "observer": 1,
+    "rows": 379
+   },
+   {
+    "match": "ba7e1f7fc45d646702f3a2dab1a1e8f3",
+    "observer": 0,
+    "rows": 441
+   },
+   {
+    "match": "ca78e9afcad87fd1c9b07ea5a784d400",
+    "observer": 0,
+    "rows": 432
+   },
+   {
+    "match": "2fa5a4c664fc27bbcfac7eec01c8edc3",
+    "observer": 1,
+    "rows": 451
+   },
+   {
+    "match": "46f307dbbfe8b205ccf57ccf998f20da",
+    "observer": 1,
+    "rows": 419
+   },
+   {
+    "match": "808596443db7ca5103a3c6cc75d7379d",
+    "observer": 0,
+    "rows": 423
+   },
+   {
+    "match": "0b00ddd86841db196523a3799e0c7a58",
+    "observer": 1,
+    "rows": 369
+   },
+   {
+    "match": "13710ada6f6a92b584ad4c21e500df88",
+    "observer": 1,
+    "rows": 423
+   },
+   {
+    "match": "35d90cb39bffcfe714ee30933c829a2e",
+    "observer": 1,
+    "rows": 427
+   },
+   {
+    "match": "8cfa0cb23550156f8a8759f379c9f037",
+    "observer": 1,
+    "rows": 478
+   },
+   {
+    "match": "1c6911a8ac5eba2187cc6433be213768",
+    "observer": 1,
+    "rows": 444
+   },
+   {
+    "match": "bca62e8310d95e3b1cb51184b31e8470",
+    "observer": 1,
+    "rows": 435
+   },
+   {
+    "match": "9107c596d070f54c60fc175bf616af09",
+    "observer": 0,
+    "rows": 409
+   },
+   {
+    "match": "7c9b78d21853215cc9cc3547505efd09",
+    "observer": 1,
+    "rows": 405
+   },
+   {
+    "match": "e64bba2caf9ec944723477193a967218",
+    "observer": 1,
+    "rows": 418
+   },
+   {
+    "match": "462766dbfbef37511dba2fb05f7d05a3",
+    "observer": 0,
+    "rows": 427
+   },
+   {
+    "match": "13d4a896dc6c8520c357d54b011deb22",
+    "observer": 1,
+    "rows": 426
+   },
+   {
+    "match": "e02d6334ea3917e30e73f4f06fb43e53",
+    "observer": 1,
+    "rows": 385
+   },
+   {
+    "match": "24b5891849dabdf4e00f7ea541c3066a",
+    "observer": 1,
+    "rows": 428
+   },
+   {
+    "match": "ae1cab3aff82a060717eb0391b815b40",
+    "observer": 1,
+    "rows": 441
+   },
+   {
+    "match": "a88b5188e0aa96eac5b6aae18645a576",
+    "observer": 0,
+    "rows": 431
+   },
+   {
+    "match": "a49804c4b2437ff8e80edc808241deb4",
+    "observer": 0,
+    "rows": 350
+   },
+   {
+    "match": "28bf707815d5dfb2b664a3d17f17b7b7",
+    "observer": 0,
+    "rows": 400
+   },
+   {
+    "match": "dcad48aeba7f3ebcadcf70fe4cf1ae99",
+    "observer": 1,
+    "rows": 436
+   },
+   {
+    "match": "80744f8837f74fbc1397e82a4d6f9a44",
+    "observer": 0,
+    "rows": 245
+   },
+   {
+    "match": "767a4bf43ca1dc86118292659de1670a",
+    "observer": 0,
+    "rows": 414
+   },
+   {
+    "match": "ccf13750e52dcb1f3212fddd1abc3e65",
+    "observer": 0,
+    "rows": 466
+   },
+   {
+    "match": "96fdfebf4989b09144a312b7e9cfb6f8",
+    "observer": 0,
+    "rows": 393
+   },
+   {
+    "match": "7d7dc8227051a94e38151ab6d88cfcbd",
+    "observer": 1,
+    "rows": 451
+   },
+   {
+    "match": "65d0acf26835a6a8364b84750e5fc204",
+    "observer": 0,
+    "rows": 447
+   }
+  ]
+ },
+ "groups": {
+  "age1": {
+   "n": 2560,
+   "mean_actual": 42.888,
+   "base_mae": 33.4593,
+   "sapling_mae": 25.1649,
+   "base_rmse": 40.9739,
+   "sapling_rmse": 33.0268,
+   "base_mean": 28.836,
+   "sapling_mean": 46.178
+  },
+  "age2_3": {
+   "n": 5117,
+   "mean_actual": 36.665,
+   "base_mae": 28.3113,
+   "sapling_mae": 24.9051,
+   "base_rmse": 36.5027,
+   "sapling_rmse": 32.7728,
+   "base_mean": 45.115,
+   "sapling_mean": 40.265
+  },
+  "age4_6": {
+   "n": 7657,
+   "mean_actual": 29.982,
+   "base_mae": 25.6033,
+   "sapling_mae": 23.4035,
+   "base_rmse": 32.2352,
+   "sapling_rmse": 30.7293,
+   "base_mean": 30.579,
+   "sapling_mean": 31.886
+  },
+  "age7_plus": {
+   "n": 3611,
+   "mean_actual": 15.046,
+   "base_mae": 9.0278,
+   "sapling_mae": 9.0278,
+   "base_rmse": 14.6514,
+   "sapling_rmse": 14.6514,
+   "base_mean": 14.865,
+   "sapling_mean": 14.865
+  },
+  "age1_3": {
+   "n": 7677,
+   "mean_actual": 38.741,
+   "base_mae": 30.0279,
+   "sapling_mae": 24.9917,
+   "base_rmse": 38.0521,
+   "sapling_rmse": 32.8577,
+   "base_mean": 39.687,
+   "sapling_mean": 42.237
+  }
+ },
+ "untouched_after_12_map_pilot": {
+  "age1": {
+   "n": 1867,
+   "mean_actual": 44.223,
+   "base_mae": 33.9662,
+   "sapling_mae": 24.9623,
+   "base_rmse": 41.5092,
+   "sapling_rmse": 32.6113,
+   "base_mean": 29.01,
+   "sapling_mean": 46.749
+  },
+  "age2_3": {
+   "n": 3731,
+   "mean_actual": 38.02,
+   "base_mae": 28.3641,
+   "sapling_mae": 25.0143,
+   "base_rmse": 36.2936,
+   "sapling_rmse": 32.5859,
+   "base_mean": 45.447,
+   "sapling_mean": 40.71
+  },
+  "age4_6": {
+   "n": 5583,
+   "mean_actual": 31.313,
+   "base_mae": 25.6886,
+   "sapling_mae": 23.5051,
+   "base_rmse": 32.2452,
+   "sapling_rmse": 30.7428,
+   "base_mean": 31.084,
+   "sapling_mean": 32.608
+  },
+  "age7_plus": {
+   "n": 2634,
+   "mean_actual": 15.294,
+   "base_mae": 9.1907,
+   "sapling_mae": 9.1907,
+   "base_rmse": 14.9535,
+   "sapling_rmse": 14.9535,
+   "base_mean": 15.168,
+   "sapling_mean": 15.168
+  }
+ },
+ "young_1_3_improved_maps": 45,
+ "validation_maps": 45,
+ "age1_ground_quartile_cutoffs": [
+  0.5018766393095442,
+  0.8708922164211945
+ ],
+ "age1_ground_quartiles": {
+  "low": {
+   "n": 684,
+   "mean_actual": 25.721,
+   "base_mae": 20.0276,
+   "sapling_mae": 17.9893,
+   "base_rmse": 24.8156,
+   "sapling_rmse": 23.1181,
+   "base_mean": 27.476,
+   "sapling_mean": 21.421
+  },
+  "high": {
+   "n": 550,
+   "mean_actual": 76.869,
+   "base_mae": 58.0357,
+   "sapling_mae": 30.6495,
+   "base_rmse": 63.9106,
+   "sapling_rmse": 41.4089,
+   "base_mean": 31.413,
+   "sapling_mean": 80.285
+  }
+ }
+}

@@ -1,0 +1,543 @@
+{
+  "backbone_sha256": "76430a6474acdead575e1fc1bdf94a9f5124934fd615f72bba85043aeda66e85",
+  "parent_sha256": "e925768e7349425c22c90bac2841792e491f56e9d34b052f6564502572c36c8c",
+  "split": [
+    "0e35eb181d361e29c314340ec542c446-1",
+    "e518e0aeff3cfbf788bc2764e07293b0-1",
+    "6173390b43b884ef8b9c8e22ea5f3318-1",
+    "6523af3ebb2d8c6306f7b086a82ec116-1",
+    "45869c71d4f1add508b049840e388e1f-1",
+    "1cc46f477941046042b7978a287d7dfe-1",
+    "9107c596d070f54c60fc175bf616af09-1",
+    "631a646fd1b1194a50b31ae19e3009c4-1",
+    "6279308face2cdcb2ac4807dcaedc9c4-1",
+    "53a975fac52b167a27aeb1eaa4f219a5-1",
+    "8cfa0cb23550156f8a8759f379c9f037-1",
+    "e2c0eb629674da05c07f4f47f906d5dc-1"
+  ],
+  "fit_styles": [
+    21,
+    22
+  ],
+  "training_maps": 141,
+  "roles": {
+    "collector": {
+      "training_actions": 74722,
+      "epoch": 4,
+      "inner": [
+        {
+          "count": 11201,
+          "nll": 0.433517,
+          "accuracy": 0.824659
+        },
+        {
+          "count": 11201,
+          "nll": 0.433348,
+          "accuracy": 0.825373
+        },
+        {
+          "count": 11201,
+          "nll": 0.433248,
+          "accuracy": 0.826533
+        },
+        {
+          "count": 11201,
+          "nll": 0.4318,
+          "accuracy": 0.825016
+        },
+        {
+          "count": 11201,
+          "nll": 0.433299,
+          "accuracy": 0.825283
+        },
+        {
+          "count": 11201,
+          "nll": 0.433195,
+          "accuracy": 0.825641
+        },
+        {
+          "count": 11201,
+          "nll": 0.435417,
+          "accuracy": 0.824123
+        },
+        {
+          "count": 11201,
+          "nll": 0.436859,
+          "accuracy": 0.823587
+        },
+        {
+          "count": 11201,
+          "nll": 0.438525,
+          "accuracy": 0.822694
+        },
+        {
+          "count": 11201,
+          "nll": 0.440675,
+          "accuracy": 0.82198
+        },
+        {
+          "count": 11201,
+          "nll": 0.441697,
+          "accuracy": 0.819123
+        },
+        {
+          "count": 11201,
+          "nll": 0.445138,
+          "accuracy": 0.818677
+        }
+      ],
+      "training_calibration_scale": 1.0253426214366195,
+      "native": {
+        "frozen": {
+          "count": 6288,
+          "nll": 0.480053,
+          "accuracy": 0.809637
+        },
+        "temperature": {
+          "count": 6288,
+          "nll": 0.48073,
+          "accuracy": 0.809637
+        },
+        "head": {
+          "count": 6288,
+          "nll": 0.476272,
+          "accuracy": 0.809478
+        }
+      },
+      "root_rotation_mean": {
+        "frozen": {
+          "count": 6288,
+          "nll": 0.452911,
+          "accuracy": 0.816794
+        },
+        "temperature": {
+          "count": 6288,
+          "nll": 0.452917,
+          "accuracy": 0.816794
+        },
+        "head": {
+          "count": 6288,
+          "nll": 0.449306,
+          "accuracy": 0.816953
+        }
+      },
+      "validation_games": [
+        {
+          "game": "0e35eb181d361e29c314340ec542c446-1",
+          "frozen": {
+            "count": 528,
+            "nll": 0.417379,
+            "accuracy": 0.82197
+          },
+          "head": {
+            "count": 528,
+            "nll": 0.413304,
+            "accuracy": 0.825758
+          }
+        },
+        {
+          "game": "e518e0aeff3cfbf788bc2764e07293b0-1",
+          "frozen": {
+            "count": 534,
+            "nll": 0.605765,
+            "accuracy": 0.749064
+          },
+          "head": {
+            "count": 534,
+            "nll": 0.611531,
+            "accuracy": 0.734082
+          }
+        },
+        {
+          "game": "6173390b43b884ef8b9c8e22ea5f3318-1",
+          "frozen": {
+            "count": 480,
+            "nll": 0.48628,
+            "accuracy": 0.80625
+          },
+          "head": {
+            "count": 480,
+            "nll": 0.490513,
+            "accuracy": 0.8125
+          }
+        },
+        {
+          "game": "6523af3ebb2d8c6306f7b086a82ec116-1",
+          "frozen": {
+            "count": 464,
+            "nll": 0.540971,
+            "accuracy": 0.773707
+          },
+          "head": {
+            "count": 464,
+            "nll": 0.546385,
+            "accuracy": 0.765086
+          }
+        },
+        {
+          "game": "45869c71d4f1add508b049840e388e1f-1",
+          "frozen": {
+            "count": 511,
+            "nll": 0.480742,
+            "accuracy": 0.816047
+          },
+          "head": {
+            "count": 511,
+            "nll": 0.469106,
+            "accuracy": 0.816047
+          }
+        },
+        {
+          "game": "1cc46f477941046042b7978a287d7dfe-1",
+          "frozen": {
+            "count": 501,
+            "nll": 0.475879,
+            "accuracy": 0.818363
+          },
+          "head": {
+            "count": 501,
+            "nll": 0.475777,
+            "accuracy": 0.816367
+          }
+        },
+        {
+          "game": "9107c596d070f54c60fc175bf616af09-1",
+          "frozen": {
+            "count": 560,
+            "nll": 0.436836,
+            "accuracy": 0.833929
+          },
+          "head": {
+            "count": 560,
+            "nll": 0.423469,
+            "accuracy": 0.842857
+          }
+        },
+        {
+          "game": "631a646fd1b1194a50b31ae19e3009c4-1",
+          "frozen": {
+            "count": 541,
+            "nll": 0.387459,
+            "accuracy": 0.839187
+          },
+          "head": {
+            "count": 541,
+            "nll": 0.38563,
+            "accuracy": 0.833641
+          }
+        },
+        {
+          "game": "6279308face2cdcb2ac4807dcaedc9c4-1",
+          "frozen": {
+            "count": 523,
+            "nll": 0.392823,
+            "accuracy": 0.856597
+          },
+          "head": {
+            "count": 523,
+            "nll": 0.388761,
+            "accuracy": 0.854685
+          }
+        },
+        {
+          "game": "53a975fac52b167a27aeb1eaa4f219a5-1",
+          "frozen": {
+            "count": 537,
+            "nll": 0.393572,
+            "accuracy": 0.836127
+          },
+          "head": {
+            "count": 537,
+            "nll": 0.380952,
+            "accuracy": 0.849162
+          }
+        },
+        {
+          "game": "8cfa0cb23550156f8a8759f379c9f037-1",
+          "frozen": {
+            "count": 556,
+            "nll": 0.435956,
+            "accuracy": 0.807554
+          },
+          "head": {
+            "count": 556,
+            "nll": 0.428514,
+            "accuracy": 0.809353
+          }
+        },
+        {
+          "game": "e2c0eb629674da05c07f4f47f906d5dc-1",
+          "frozen": {
+            "count": 553,
+            "nll": 0.401669,
+            "accuracy": 0.835443
+          },
+          "head": {
+            "count": 553,
+            "nll": 0.40053,
+            "accuracy": 0.835443
+          }
+        }
+      ]
+    },
+    "planter": {
+      "training_actions": 20308,
+      "epoch": 6,
+      "inner": [
+        {
+          "count": 3054,
+          "nll": 0.540089,
+          "accuracy": 0.7852
+        },
+        {
+          "count": 3054,
+          "nll": 0.535712,
+          "accuracy": 0.780943
+        },
+        {
+          "count": 3054,
+          "nll": 0.534339,
+          "accuracy": 0.78258
+        },
+        {
+          "count": 3054,
+          "nll": 0.533246,
+          "accuracy": 0.785855
+        },
+        {
+          "count": 3054,
+          "nll": 0.532401,
+          "accuracy": 0.786837
+        },
+        {
+          "count": 3054,
+          "nll": 0.532166,
+          "accuracy": 0.789129
+        },
+        {
+          "count": 3054,
+          "nll": 0.532228,
+          "accuracy": 0.789129
+        },
+        {
+          "count": 3054,
+          "nll": 0.533468,
+          "accuracy": 0.787164
+        },
+        {
+          "count": 3054,
+          "nll": 0.533952,
+          "accuracy": 0.788802
+        },
+        {
+          "count": 3054,
+          "nll": 0.534345,
+          "accuracy": 0.784217
+        },
+        {
+          "count": 3054,
+          "nll": 0.535646,
+          "accuracy": 0.785855
+        },
+        {
+          "count": 3054,
+          "nll": 0.537433,
+          "accuracy": 0.786182
+        }
+      ],
+      "training_calibration_scale": 1.055807545333753,
+      "native": {
+        "frozen": {
+          "count": 1614,
+          "nll": 0.616889,
+          "accuracy": 0.754647
+        },
+        "temperature": {
+          "count": 1614,
+          "nll": 0.618984,
+          "accuracy": 0.754647
+        },
+        "head": {
+          "count": 1614,
+          "nll": 0.611375,
+          "accuracy": 0.753408
+        }
+      },
+      "root_rotation_mean": {
+        "frozen": {
+          "count": 1614,
+          "nll": 0.559795,
+          "accuracy": 0.77943
+        },
+        "temperature": {
+          "count": 1614,
+          "nll": 0.558842,
+          "accuracy": 0.77943
+        },
+        "head": {
+          "count": 1614,
+          "nll": 0.552714,
+          "accuracy": 0.776952
+        }
+      },
+      "validation_games": [
+        {
+          "game": "0e35eb181d361e29c314340ec542c446-1",
+          "frozen": {
+            "count": 128,
+            "nll": 0.437367,
+            "accuracy": 0.84375
+          },
+          "head": {
+            "count": 128,
+            "nll": 0.430392,
+            "accuracy": 0.851562
+          }
+        },
+        {
+          "game": "e518e0aeff3cfbf788bc2764e07293b0-1",
+          "frozen": {
+            "count": 92,
+            "nll": 0.568514,
+            "accuracy": 0.75
+          },
+          "head": {
+            "count": 92,
+            "nll": 0.556207,
+            "accuracy": 0.76087
+          }
+        },
+        {
+          "game": "6173390b43b884ef8b9c8e22ea5f3318-1",
+          "frozen": {
+            "count": 112,
+            "nll": 0.802046,
+            "accuracy": 0.696429
+          },
+          "head": {
+            "count": 112,
+            "nll": 0.83056,
+            "accuracy": 0.678571
+          }
+        },
+        {
+          "game": "6523af3ebb2d8c6306f7b086a82ec116-1",
+          "frozen": {
+            "count": 124,
+            "nll": 0.686976,
+            "accuracy": 0.717742
+          },
+          "head": {
+            "count": 124,
+            "nll": 0.687227,
+            "accuracy": 0.725806
+          }
+        },
+        {
+          "game": "45869c71d4f1add508b049840e388e1f-1",
+          "frozen": {
+            "count": 137,
+            "nll": 0.513616,
+            "accuracy": 0.781022
+          },
+          "head": {
+            "count": 137,
+            "nll": 0.503206,
+            "accuracy": 0.773723
+          }
+        },
+        {
+          "game": "1cc46f477941046042b7978a287d7dfe-1",
+          "frozen": {
+            "count": 170,
+            "nll": 0.675404,
+            "accuracy": 0.735294
+          },
+          "head": {
+            "count": 170,
+            "nll": 0.670126,
+            "accuracy": 0.723529
+          }
+        },
+        {
+          "game": "9107c596d070f54c60fc175bf616af09-1",
+          "frozen": {
+            "count": 128,
+            "nll": 0.472668,
+            "accuracy": 0.890625
+          },
+          "head": {
+            "count": 128,
+            "nll": 0.468574,
+            "accuracy": 0.867188
+          }
+        },
+        {
+          "game": "631a646fd1b1194a50b31ae19e3009c4-1",
+          "frozen": {
+            "count": 133,
+            "nll": 0.570044,
+            "accuracy": 0.774436
+          },
+          "head": {
+            "count": 133,
+            "nll": 0.581721,
+            "accuracy": 0.75188
+          }
+        },
+        {
+          "game": "6279308face2cdcb2ac4807dcaedc9c4-1",
+          "frozen": {
+            "count": 174,
+            "nll": 0.546507,
+            "accuracy": 0.781609
+          },
+          "head": {
+            "count": 174,
+            "nll": 0.520849,
+            "accuracy": 0.787356
+          }
+        },
+        {
+          "game": "53a975fac52b167a27aeb1eaa4f219a5-1",
+          "frozen": {
+            "count": 153,
+            "nll": 0.469279,
+            "accuracy": 0.803922
+          },
+          "head": {
+            "count": 153,
+            "nll": 0.445205,
+            "accuracy": 0.803922
+          }
+        },
+        {
+          "game": "8cfa0cb23550156f8a8759f379c9f037-1",
+          "frozen": {
+            "count": 129,
+            "nll": 0.5127,
+            "accuracy": 0.806202
+          },
+          "head": {
+            "count": 129,
+            "nll": 0.491755,
+            "accuracy": 0.806202
+          }
+        },
+        {
+          "game": "e2c0eb629674da05c07f4f47f906d5dc-1",
+          "frozen": {
+            "count": 134,
+            "nll": 0.490126,
+            "accuracy": 0.761194
+          },
+          "head": {
+            "count": 134,
+            "nll": 0.486519,
+            "accuracy": 0.783582
+          }
+        }
+      ]
+    }
+  }
+}

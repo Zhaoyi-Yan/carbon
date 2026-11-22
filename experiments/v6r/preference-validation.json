@@ -1,0 +1,633 @@
+{
+ "method": {
+  "question": "Can one-turn action-conditioned planter position features add predictive information to a frozen v5 policy head?",
+  "data": "90 full games by pinned Artemis/Apollo, deterministic game-level split. For each position one planter and five actions, all other recorded actions fixed. The map for model features comes only from the corresponding seat belief.",
+  "factual_audit": "One factual transition per map reproduced from full referee input. Cash, sorted worker role/position/cargo and tree position/age must match the recorded next frame. Full map is never used in learned features.",
+  "unit": "top1 ties receive split credit; pair_agreement counts a tie as half. Fixed positional weights are in preference.py. Per-game holdout applies to the new preference model. The existing v5 policy already learned from historical teacher replays.",
+  "deployment": "Standalone diagnostic proposes one alternative direction only for a moving planter, using one simulated opponent reply estimated by v5. It preserves original stationary planting, locked worker moves, friendly landings and current recruitment reservations.",
+  "decision": "Archive as an experiment. It beats the hand-written feature weights but the added learned residual does not improve overall held-out direction accuracy on top of the existing policy. No complete arena evaluation was run."
+ },
+ "features": [
+  "alive",
+  "one_more_tree",
+  "cash_delta",
+  "safe_nearest",
+  "enemy_collector_adjacent",
+  "foe_planter_adjacent",
+  "alone_from_own_planters",
+  "on_enemy_tree",
+  "enemy_tree_value_here",
+  "on_friendly_tree",
+  "plantable_yield_here",
+  "best_adjacent_yield",
+  "reach_enemy_tree",
+  "reach_young_rich_tree",
+  "territory",
+  "own_base",
+  "edge_of_own_forest"
+ ],
+ "weights": [
+  -0.11361873385150667,
+  0.29598715818621435,
+  1.0543149976777173,
+  0.02797269434924412,
+  0.07132959944775469,
+  0.09943316198714618,
+  0.07803409662263386,
+  1.0283811240627228,
+  1.043068420743777,
+  0.639384126723695,
+  1.5150872251371816,
+  -0.1817516288709199,
+  0.9898732944937315,
+  1.902491381300556,
+  0.6632950379929201,
+  -1.4906410854628407,
+  0.40420378930281364
+ ],
+ "maps": {
+  "holdout": [
+   {
+    "match": "16d8168b4d41f2bda0637934a5f153cb",
+    "seat": 0,
+    "positions": 8
+   },
+   {
+    "match": "a49804c4b2437ff8e80edc808241deb4",
+    "seat": 0,
+    "positions": 8
+   },
+   {
+    "match": "7f2ca9dc190d1ba2d222aeab82923cfa",
+    "seat": 0,
+    "positions": 8
+   },
+   {
+    "match": "54a7a97e96d2db66f944c3351a3668c9",
+    "seat": 1,
+    "positions": 8
+   },
+   {
+    "match": "462766dbfbef37511dba2fb05f7d05a3",
+    "seat": 0,
+    "positions": 8
+   },
+   {
+    "match": "da7bdc0e4741462cf02160b68da0a0d9",
+    "seat": 1,
+    "positions": 8
+   },
+   {
+    "match": "e77e468a45e2afb739bd878e3bb75a8f",
+    "seat": 0,
+    "positions": 8
+   },
+   {
+    "match": "f0477adb78855dfaa32376f9ca2ccd8e",
+    "seat": 0,
+    "positions": 7
+   },
+   {
+    "match": "7d7dc8227051a94e38151ab6d88cfcbd",
+    "seat": 0,
+    "positions": 8
+   },
+   {
+    "match": "6523af3ebb2d8c6306f7b086a82ec116",
+    "seat": 1,
+    "positions": 7
+   },
+   {
+    "match": "aa4ed32ca2d4da5af16ab03f7d57ee71",
+    "seat": 0,
+    "positions": 8
+   },
+   {
+    "match": "21d35d7cbf9aeffa465fc044cdfcf037",
+    "seat": 1,
+    "positions": 8
+   },
+   {
+    "match": "9be25a99800a9631b7a66a3793d78d4f",
+    "seat": 1,
+    "positions": 8
+   },
+   {
+    "match": "0bbed039fa9edb6dcc8bbd14906a3553",
+    "seat": 0,
+    "positions": 8
+   },
+   {
+    "match": "68665b234ef39dd3b06009ec4d455c5f",
+    "seat": 1,
+    "positions": 8
+   },
+   {
+    "match": "81913606e681f366ca3cd769c060d782",
+    "seat": 1,
+    "positions": 8
+   },
+   {
+    "match": "e02d6334ea3917e30e73f4f06fb43e53",
+    "seat": 0,
+    "positions": 8
+   },
+   {
+    "match": "d3ccf1f5447c586b49ba541f4710e603",
+    "seat": 1,
+    "positions": 8
+   },
+   {
+    "match": "53a975fac52b167a27aeb1eaa4f219a5",
+    "seat": 1,
+    "positions": 7
+   },
+   {
+    "match": "767a4bf43ca1dc86118292659de1670a",
+    "seat": 0,
+    "positions": 8
+   },
+   {
+    "match": "692f8c17045e0b19bce224339f038783",
+    "seat": 1,
+    "positions": 8
+   },
+   {
+    "match": "49908d8dfe332b0b03e391735d26957a",
+    "seat": 0,
+    "positions": 8
+   },
+   {
+    "match": "9539203e39ad183880f759b19e1c2801",
+    "seat": 1,
+    "positions": 8
+   },
+   {
+    "match": "48963741ca52d589ede6eba4e28431e1",
+    "seat": 1,
+    "positions": 8
+   },
+   {
+    "match": "67e97d86f799d7cb3865241c7aec726f",
+    "seat": 0,
+    "positions": 8
+   },
+   {
+    "match": "d0a177e1b93ad2f5a6f8adbcbefd0f92",
+    "seat": 1,
+    "positions": 8
+   },
+   {
+    "match": "834d87c9adbca68270043b445ea82e43",
+    "seat": 1,
+    "positions": 8
+   },
+   {
+    "match": "3a1e72c9328fd8aabe0de3c45b3a5234",
+    "seat": 0,
+    "positions": 8
+   },
+   {
+    "match": "7c9b78d21853215cc9cc3547505efd09",
+    "seat": 1,
+    "positions": 8
+   },
+   {
+    "match": "6279308face2cdcb2ac4807dcaedc9c4",
+    "seat": 0,
+    "positions": 8
+   }
+  ],
+  "train": [
+   {
+    "match": "a3ee51673d82381ce351ea40865e0719",
+    "seat": 1,
+    "positions": 8
+   },
+   {
+    "match": "d3065805e3fb463ff254ba36273b687b",
+    "seat": 1,
+    "positions": 8
+   },
+   {
+    "match": "8c3862388f88c768c6880a8f5f5837fe",
+    "seat": 0,
+    "positions": 8
+   },
+   {
+    "match": "e2c852a06950f5a449427d8bf5f8bb06",
+    "seat": 1,
+    "positions": 8
+   },
+   {
+    "match": "0eb4fcb3485b4af9708098814e570f33",
+    "seat": 0,
+    "positions": 6
+   },
+   {
+    "match": "13710ada6f6a92b584ad4c21e500df88",
+    "seat": 1,
+    "positions": 8
+   },
+   {
+    "match": "51990021e4aab909286878be64b1a263",
+    "seat": 1,
+    "positions": 8
+   },
+   {
+    "match": "4d99efc73c00979051d3f33e13c1d163",
+    "seat": 1,
+    "positions": 8
+   },
+   {
+    "match": "b78c5ed2f756e8e012bf05036e38333b",
+    "seat": 1,
+    "positions": 8
+   },
+   {
+    "match": "37885c2d47ff0c9c6a8fe83de864c4a7",
+    "seat": 1,
+    "positions": 8
+   },
+   {
+    "match": "d29fd984428b6b11235182e9cb0b6a7c",
+    "seat": 0,
+    "positions": 7
+   },
+   {
+    "match": "45869c71d4f1add508b049840e388e1f",
+    "seat": 1,
+    "positions": 8
+   },
+   {
+    "match": "35d90cb39bffcfe714ee30933c829a2e",
+    "seat": 1,
+    "positions": 8
+   },
+   {
+    "match": "1012bed474be7305e70fe09fd4cde9ef",
+    "seat": 1,
+    "positions": 8
+   },
+   {
+    "match": "9af4918d550debaed7d1ece6392b371e",
+    "seat": 1,
+    "positions": 8
+   },
+   {
+    "match": "3483bb69c12623a4818455f38ef0b795",
+    "seat": 1,
+    "positions": 8
+   },
+   {
+    "match": "f5172b0ea84e9bbcf5060a022b6d6946",
+    "seat": 1,
+    "positions": 8
+   },
+   {
+    "match": "27671c7ee9c31a98c26835b89ed96540",
+    "seat": 0,
+    "positions": 8
+   },
+   {
+    "match": "435d7251fbb1d0e4c36a0feca44476ec",
+    "seat": 0,
+    "positions": 8
+   },
+   {
+    "match": "b2f9235f0aeccbd8d01cc4f8e0dd6340",
+    "seat": 0,
+    "positions": 8
+   },
+   {
+    "match": "6173390b43b884ef8b9c8e22ea5f3318",
+    "seat": 0,
+    "positions": 6
+   },
+   {
+    "match": "164884ed284ecca477aefbbb28eea1c5",
+    "seat": 1,
+    "positions": 8
+   },
+   {
+    "match": "e24e2dcef5e4e3698bad9ad765c7d306",
+    "seat": 0,
+    "positions": 8
+   },
+   {
+    "match": "e518e0aeff3cfbf788bc2764e07293b0",
+    "seat": 1,
+    "positions": 8
+   },
+   {
+    "match": "5c398fdb1c47257352299dbcd1ab8db7",
+    "seat": 1,
+    "positions": 8
+   },
+   {
+    "match": "00839b1983513d48b6191b78599011d4",
+    "seat": 1,
+    "positions": 8
+   },
+   {
+    "match": "cf1df811727e29670e616ac0775fb3b4",
+    "seat": 1,
+    "positions": 8
+   },
+   {
+    "match": "4f35bcef7e432b1ccb38ea8468088b90",
+    "seat": 0,
+    "positions": 8
+   },
+   {
+    "match": "06e79f7028bb5bbc20ba7a7de22bdd86",
+    "seat": 1,
+    "positions": 8
+   },
+   {
+    "match": "0ac99d53f0a974fc5a9f0b80eb04bb0b",
+    "seat": 0,
+    "positions": 8
+   },
+   {
+    "match": "44664d0003e93b77c7357c31bdc558c4",
+    "seat": 1,
+    "positions": 8
+   },
+   {
+    "match": "1c6911a8ac5eba2187cc6433be213768",
+    "seat": 1,
+    "positions": 8
+   },
+   {
+    "match": "fe3beb57e34a752098e098efc37db7c6",
+    "seat": 0,
+    "positions": 8
+   },
+   {
+    "match": "9e6ab9948c9e2f7c4d196041422bf246",
+    "seat": 1,
+    "positions": 8
+   },
+   {
+    "match": "a88b5188e0aa96eac5b6aae18645a576",
+    "seat": 0,
+    "positions": 8
+   },
+   {
+    "match": "6c8933585adf2daa67e700477d112ae4",
+    "seat": 0,
+    "positions": 8
+   },
+   {
+    "match": "24b5891849dabdf4e00f7ea541c3066a",
+    "seat": 0,
+    "positions": 8
+   },
+   {
+    "match": "9547009770cd89f36fa2fb2b9b745d1a",
+    "seat": 0,
+    "positions": 8
+   },
+   {
+    "match": "59e1e40837fd9da04960660ea3dd8848",
+    "seat": 1,
+    "positions": 7
+   },
+   {
+    "match": "96189767794a852a14afe120560364b8",
+    "seat": 1,
+    "positions": 8
+   },
+   {
+    "match": "f4e1a7cbcc5b9ff997872b79c7431a10",
+    "seat": 1,
+    "positions": 7
+   },
+   {
+    "match": "53bcd427c29848477e5f272842d1b1de",
+    "seat": 0,
+    "positions": 8
+   },
+   {
+    "match": "4afba379b1a5d9e4ee63780925a780b3",
+    "seat": 1,
+    "positions": 8
+   },
+   {
+    "match": "1cc46f477941046042b7978a287d7dfe",
+    "seat": 0,
+    "positions": 8
+   },
+   {
+    "match": "32fb23ffb1562674c14b18d6edf223ab",
+    "seat": 0,
+    "positions": 8
+   },
+   {
+    "match": "46f307dbbfe8b205ccf57ccf998f20da",
+    "seat": 1,
+    "positions": 8
+   },
+   {
+    "match": "11efb4d9ca2aba0375ba71f45ae48bd2",
+    "seat": 1,
+    "positions": 7
+   },
+   {
+    "match": "d935ab616ea3ae047a12448ce036cfaf",
+    "seat": 0,
+    "positions": 8
+   },
+   {
+    "match": "79a8d3dc3a619a225fefb8c3a3d55a82",
+    "seat": 1,
+    "positions": 8
+   },
+   {
+    "match": "e2c0eb629674da05c07f4f47f906d5dc",
+    "seat": 0,
+    "positions": 7
+   },
+   {
+    "match": "787864c8e44f38ab748c1b0641bd7062",
+    "seat": 0,
+    "positions": 8
+   },
+   {
+    "match": "14e59cf624f667abf52b51d988d3f0c0",
+    "seat": 0,
+    "positions": 8
+   },
+   {
+    "match": "7ad550d6acbf90789ff0aa69ac256fb8",
+    "seat": 0,
+    "positions": 8
+   },
+   {
+    "match": "a00114ee36ab731636bca98b25bcbad7",
+    "seat": 1,
+    "positions": 8
+   },
+   {
+    "match": "13d4a896dc6c8520c357d54b011deb22",
+    "seat": 1,
+    "positions": 8
+   },
+   {
+    "match": "b742b97222a7b260f0412a1885ac6bfc",
+    "seat": 1,
+    "positions": 8
+   },
+   {
+    "match": "785ae91618edb772a3cca538a3bf8396",
+    "seat": 1,
+    "positions": 8
+   },
+   {
+    "match": "160f655dc39acc147327201cbfc7aedd",
+    "seat": 0,
+    "positions": 7
+   },
+   {
+    "match": "21409c0e0f93beb73f2f22a2835ff50a",
+    "seat": 1,
+    "positions": 8
+   },
+   {
+    "match": "1386cebca822214f2ee3432bb1096852",
+    "seat": 0,
+    "positions": 8
+   }
+  ]
+ },
+ "replay_transition_checks_passed": 90,
+ "failed_factual_checks_skipped": 0,
+ "training": {
+  "n": 470,
+  "top1": 0.3766,
+  "pair_agreement": 0.6864
+ },
+ "validation": {
+  "soft_fixed": {
+   "n": 237,
+   "top1": 0.2722,
+   "pair_agreement": 0.6123
+  },
+  "learned": {
+   "n": 237,
+   "top1": 0.3502,
+   "pair_agreement": 0.6682
+  },
+  "always_stay": 0.13924050632911392,
+  "stay": {
+   "fixed": {
+    "n": 33,
+    "top1": 0.4545,
+    "pair_agreement": 0.6477
+   },
+   "learned": {
+    "n": 33,
+    "top1": 0.1818,
+    "pair_agreement": 0.5265
+   }
+  },
+  "move": {
+   "fixed": {
+    "n": 204,
+    "top1": 0.2426,
+    "pair_agreement": 0.6066
+   },
+   "learned": {
+    "n": 204,
+    "top1": 0.3775,
+    "pair_agreement": 0.6912
+   }
+  },
+  "movement_direction_only": {
+   "fixed": {
+    "n": 204,
+    "top1": 0.3701,
+    "pair_agreement": 0.6144
+   },
+   "learned": {
+    "n": 204,
+    "top1": 0.4387,
+    "pair_agreement": 0.6781
+   },
+   "frozen_v5_policy_head": {
+    "n": 204,
+    "top1": 0.7794,
+    "pair_agreement": 0.9003
+   }
+  },
+  "residual": {
+   "all": {
+    "policy": {
+     "n": 204,
+     "top1": 0.7794,
+     "pair_agreement": 0.9003
+    },
+    "policy_plus_preference": {
+     "n": 204,
+     "top1": 0.7745,
+     "pair_agreement": 0.9003
+    },
+    "policy_nll": 0.5529,
+    "combined_nll": 0.5516,
+    "changed": 8
+   },
+   "by_teacher": {
+    "CarbonEdge_Apollo": {
+     "policy": {
+      "n": 138,
+      "top1": 0.7754,
+      "pair_agreement": 0.9034
+     },
+     "policy_plus_preference": {
+      "n": 138,
+      "top1": 0.7826,
+      "pair_agreement": 0.901
+     },
+     "policy_nll": 0.5497,
+     "combined_nll": 0.5402,
+     "changed": 5
+    },
+    "CarbonEdge_Artemis": {
+     "policy": {
+      "n": 66,
+      "top1": 0.7879,
+      "pair_agreement": 0.8939
+     },
+     "policy_plus_preference": {
+      "n": 66,
+      "top1": 0.7576,
+      "pair_agreement": 0.899
+     },
+     "policy_nll": 0.5595,
+     "combined_nll": 0.5754,
+     "changed": 3
+    }
+   }
+  }
+ },
+ "residual_weights": [
+  0.2385828025466851,
+  0.24212701221396954,
+  0.8167099992779352,
+  0.032377210805251945,
+  0.08089457980813752,
+  -0.07227215867004869,
+  0.2684438125936677,
+  -0.25625334276707223,
+  -0.30059423745530595,
+  0.4076214545934533,
+  0.08368008304871934,
+  -0.02166791320839864,
+  0.14623123806928012,
+  0.31761939068147743,
+  0.22058923602636407,
+  0.06413807541046551,
+  0.8339846538743034
+ ]
+}
