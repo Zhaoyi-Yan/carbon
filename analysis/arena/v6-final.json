@@ -1,0 +1,60 @@
+{
+  "candidate": "1995bbcc07592296e6fe6f816412acccb2d39ea2c79787cd937a210513f69afa",
+  "baseline": "0a413a11f80f6872a5c8f0d313061d7bf11121ae16fbdad97247ff3cb15242e5",
+  "initial": {
+    "wins": 5,
+    "losses": 3,
+    "draws": 0,
+    "mean": -103.21,
+    "median": 72.98
+  },
+  "supplement": {
+    "wins": 1,
+    "losses": 3,
+    "draws": 0,
+    "mean": 81.81,
+    "median": -326.24
+  },
+  "total": {
+    "wins": 6,
+    "losses": 6,
+    "draws": 0,
+    "mean": -41.54,
+    "median": -67.46
+  },
+  "seats": [
+    {
+      "seed": 498585364,
+      "seat_0": 253.41,
+      "seat_1": 134.22
+    },
+    {
+      "seed": 725648836,
+      "seat_0": 313.62,
+      "seat_1": -146.66
+    },
+    {
+      "seed": 648819440,
+      "seat_0": 414.67,
+      "seat_1": 11.74
+    },
+    {
+      "seed": 568554483,
+      "seat_0": -1258.63,
+      "seat_1": -548.07
+    },
+    {
+      "seed": 134234471,
+      "seat_0": -347.31,
+      "seat_1": 1393.18
+    },
+    {
+      "seed": 171684640,
+      "seat_0": -305.16,
+      "seat_1": -413.48
+    }
+  ],
+  "max_decision_seconds": 0.8394,
+  "mean_decision_seconds": 0.4018,
+  "slow_steps_candidate": 0
+}

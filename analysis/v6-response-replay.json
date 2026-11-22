@@ -1,0 +1,86 @@
+[
+  {
+    "step": 108,
+    "next_step": 109,
+    "side": 1,
+    "model": "v6-case-f5e69abd",
+    "actual": [
+      {
+        "cash": 1591.69,
+        "collectors": 7,
+        "carried": 606.039,
+        "trees": 12
+      },
+      {
+        "cash": 11.32,
+        "collectors": 0,
+        "carried": 0,
+        "trees": 0
+      }
+    ],
+    "counterfactual": [
+      {
+        "cash": 1591.69,
+        "collectors": 7,
+        "carried": 34.811,
+        "trees": 12
+      },
+      {
+        "cash": 11.32,
+        "collectors": 1,
+        "carried": 571.227,
+        "trees": 0
+      }
+    ],
+    "action": {
+      "player-1-worker-7": "RIGHT"
+    },
+    "original": {
+      "player-1-worker-7": "DOWN"
+    },
+    "match": "f5e69abd6f15278bf9ae01a40601c330",
+    "candidate_sha256": "1995bbcc07592296e6fe6f816412acccb2d39ea2c79787cd937a210513f69afa"
+  },
+  {
+    "step": 190,
+    "next_step": 191,
+    "side": 0,
+    "model": "v6-case-efa15ce0",
+    "actual": [
+      {
+        "cash": 23.96,
+        "collectors": 0,
+        "carried": 0,
+        "trees": 0
+      },
+      {
+        "cash": 4663.62,
+        "collectors": 9,
+        "carried": 591.463,
+        "trees": 11
+      }
+    ],
+    "counterfactual": [
+      {
+        "cash": 23.96,
+        "collectors": 1,
+        "carried": 480.445,
+        "trees": 0
+      },
+      {
+        "cash": 4663.62,
+        "collectors": 9,
+        "carried": 111.017,
+        "trees": 11
+      }
+    ],
+    "action": {
+      "player-0-worker-5": "LEFT"
+    },
+    "original": {
+      "player-0-worker-5": "DOWN"
+    },
+    "match": "efa15ce0a9b4d18398cbe73ad5ca6dc6",
+    "candidate_sha256": "1995bbcc07592296e6fe6f816412acccb2d39ea2c79787cd937a210513f69afa"
+  }
+]

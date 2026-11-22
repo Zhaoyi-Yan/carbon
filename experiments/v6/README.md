@@ -59,3 +59,18 @@ python experiments/v6/learn_export.py yan-v5.py experiments/v6/learned-heads.npz
 python experiments/v6/build_response.py /tmp/response.py
 python experiments/v6/build_guard.py /tmp/response.py /tmp/yan-v6.py
 ```
+
+两张补测图换边取得 1 胜 3 负，场均 +81.81。冻结同一份文件，两批合计六张新图、十二场，6 胜 6 负，场均资金分差 -41.54。所有对局均正常打满 299 步，候选单步最慢 0.839 秒，超过 1 秒的决策为 0 次。[十二局按出生位汇总](../../analysis/arena/v6-final.json) · [补测原始记录](../../analysis/arena/v6-response-followup.jsonl)
+
+| 地图 | v6 在 0 号位 | v6 在 1 号位 |
+| --- | ---: | ---: |
+| 498585364 | +253.41 | +134.22 |
+| 725648836 | +313.62 | -146.66 |
+| 648819440 | +414.67 | +11.74 |
+| 568554483 | -1258.63 | -548.07 |
+| 134234471 | -347.31 | +1393.18 |
+| 171684640 | -305.16 | -413.48 |
+
+把最终文件接回 Master7sE 两场淘汰局的公开历史，并固定对方的实际应对，最后一步分别选了向右和向左。原版裁判确认两名工人分别带着 571.23 和 480.45 碳活过该步。[最终交付文件的逐步复核](../../analysis/v6-response-replay.json)
+
+本轮保留 yan-v6 为实验候选，线上主力继续采用 yan-v5。

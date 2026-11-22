@@ -12,6 +12,10 @@
 | [v6-tree-guard-batch](https://github.com/Zhaoyi-Yan/carbon/blob/v6-tree-guard-batch/submission.py) | 线上 yan-v3，护树时改换种植点或由空载采集员协防，CPU 批量采样 | 对冻结的 yan-v2 四图换边 5 胜 3 负，平均领先 176.63。[八局与提交记录](analysis/arena/yan-v3-qualification.md) |
 | [v7-claude-style](https://github.com/Zhaoyi-Yan/carbon/blob/v7-claude-style/submission.py) | 维护者提交的 yan-v4，Claude 本地最终版 | 对 yan-v3 三图换边 5 胜 1 负，平均领先 1042.18。[对局记录](ARENA.md) |
 
+## yan-v5 与 yan-v6
+
+线上 yan-v5 以标签 v8-yan-v5-multistyle 冻结。查看榜单时它在重量榜第 7，共 61 场 42 胜。实验分支的 yan-v6 在六张新图换边对战同一个 yan-v5 文件，6 胜 6 负，场均资金分差 -41.54。比赛版本由维护者决定。[本轮复盘、候选代码及逐局结果](experiments/v6/README.md)
+
 ## 冻结的线上版本与新候选
 
 从本人账户下载的 yan-v2 与标签 v5-tree-value 完全相同（SHA-256 `0483eca2a5e8031270dfb89b87cd5d901ee81f823383f6094f8ed839dec6a7dd`），yan-v1 与 v3-search 完全相同（`29aa472ef0484b65bb3ffdc85113aef2d1daa1e25377bfe5355a4d5e3567a11c`）。下表均以冻结的 yan-v2 为对手，每张地图从两个出生位各打一局，分差从候选一侧计算。
