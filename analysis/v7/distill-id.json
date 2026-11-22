@@ -1,0 +1,157 @@
+{
+  "negative_games": 14,
+  "negative_workers": 9717,
+  "negative_training_layouts": [
+    "460033c9386970fd98159f38649d9c4545eb37d6b12fda6ffc4c80a8bafdd7be",
+    "f0b076d56e66bf1cc6449ea9cc58fc231179b522db87ed12ca45b5d306549100",
+    "8ad00f882ccf6fcdcc5e7cb4766f997852b366fb3b14d634d5e99b569a521b50",
+    "7f9b62acea4484b528760b08baf42c28997b54b5297cf4c34c11c54d53c52901",
+    "97d12c89604562c08ba70707cbe377eb4b36300e851e9b6324cf0e5420342178",
+    "b4c85c1e5e52edb289afa554447ea8ab7d716b8d12d26b55f191709340190ccb",
+    "70572ca331c203e25a0b934d8bd7f58fc9aeddcb9411b52e2bb4199edb4ad65f",
+    "717ff4e42071fb07e8b9efc4c8b04dfd0663e4bb70a333055e919e95aa3da600",
+    "1406873e243e0c9d5e26e7109329279567b1de8df1fc055101f5ec38cf73d707",
+    "1d4e9a1b738ad7b9eb687ee510dd4c942e0a54ec7a772b6708de3f09729eede7",
+    "7af4760f5bd14195567915e576b3d9e017e167e8f41fee885aa28dae2da22f89",
+    "d58ec7c686f4e470502bb954dfa132378196855571bd0be029ffde33013405db",
+    "e157e4cefab1ba95b4646278f274ec5f4bd3637988156d756919acd0f7ca59fe",
+    "d563c7db08f6244275e947a41c10d784b41cf711c16c9cf659f483206182d7d6"
+  ],
+  "positive_training_layouts": [
+    "06951ae8d7815a977d7a5213af88d67396624bb508a7ce4e591847542986f2be",
+    "1406873e243e0c9d5e26e7109329279567b1de8df1fc055101f5ec38cf73d707",
+    "1d4e9a1b738ad7b9eb687ee510dd4c942e0a54ec7a772b6708de3f09729eede7",
+    "383a18460d43aece7bb47a3792e433e8d91feadb887cede5521abce68453a9a7",
+    "3d24f29c1c0de2ec2a20de898c2ad891df19a802016a06805f262ca2bb65c607",
+    "460033c9386970fd98159f38649d9c4545eb37d6b12fda6ffc4c80a8bafdd7be",
+    "70572ca331c203e25a0b934d8bd7f58fc9aeddcb9411b52e2bb4199edb4ad65f",
+    "717ff4e42071fb07e8b9efc4c8b04dfd0663e4bb70a333055e919e95aa3da600",
+    "7af4760f5bd14195567915e576b3d9e017e167e8f41fee885aa28dae2da22f89",
+    "7f9b62acea4484b528760b08baf42c28997b54b5297cf4c34c11c54d53c52901",
+    "8245ae0e2571c40716cb946469cec23188716493a6312278e02cfe23feffca67",
+    "84b40f09b521db016d3ac8105e54c6bcdd9b857c7a8e84afd339bda09b0086ff",
+    "8ad00f882ccf6fcdcc5e7cb4766f997852b366fb3b14d634d5e99b569a521b50",
+    "97d12c89604562c08ba70707cbe377eb4b36300e851e9b6324cf0e5420342178",
+    "9dd985ad4c02310b6675c17f73a5c0120c54bdc8605a3c00b986cf890469ccdc",
+    "b4c85c1e5e52edb289afa554447ea8ab7d716b8d12d26b55f191709340190ccb",
+    "d563c7db08f6244275e947a41c10d784b41cf711c16c9cf659f483206182d7d6",
+    "d58ec7c686f4e470502bb954dfa132378196855571bd0be029ffde33013405db",
+    "e157e4cefab1ba95b4646278f274ec5f4bd3637988156d756919acd0f7ca59fe",
+    "e95e5a5590f91f80c0c062bb9eb04ca81ac76d053780f1a8840e8204efcab716",
+    "ef6577e980c2a873813b623ef12bf6402623de10f562e570f673ff674e59dbd5",
+    "f0b076d56e66bf1cc6449ea9cc58fc231179b522db87ed12ca45b5d306549100",
+    "f3db3afa2294d9cdc62e1a268bfffcecf2d5e3802be1ebb3fe085c667f6c0419",
+    "fefb7f72ba923e9026beba7a0a3b97652fefd20c48ae6c2f667aeb2406f06930"
+  ],
+  "cohorts": {
+    "v6": {
+      "maps": 11,
+      "units": 10395,
+      "base_nll": 0.4078,
+      "gated_nll": 0.39188,
+      "base_hit1": 0.87148,
+      "gated_hit1": 0.87215,
+      "base_mass": 0.84538,
+      "gated_mass": 0.84219,
+      "gated_weight": 0.3562,
+      "gated_active": 0.7448,
+      "macro_gain": -0.01608,
+      "improves": 11,
+      "paired95": [
+        -0.0197,
+        -0.01348
+      ]
+    },
+    "local-v6": {
+      "maps": 4,
+      "units": 5566,
+      "base_nll": 0.40697,
+      "gated_nll": 0.39139,
+      "base_hit1": 0.86723,
+      "gated_hit1": 0.86813,
+      "base_mass": 0.84216,
+      "gated_mass": 0.83923,
+      "gated_weight": 0.3551,
+      "gated_active": 0.7512,
+      "macro_gain": -0.0156,
+      "improves": 4,
+      "paired95": [
+        -0.01823,
+        -0.01298
+      ]
+    },
+    "other": {
+      "maps": 11,
+      "units": 10381,
+      "base_nll": 0.78277,
+      "gated_nll": 0.78208,
+      "base_hit1": 0.79424,
+      "gated_hit1": 0.79414,
+      "base_mass": 0.78143,
+      "gated_mass": 0.78141,
+      "gated_weight": 0.0033,
+      "gated_active": 0.0231,
+      "macro_gain": -0.00082,
+      "improves": 9,
+      "paired95": [
+        -0.00151,
+        -0.0003
+      ]
+    },
+    "local-other": {
+      "maps": 4,
+      "units": 5557,
+      "base_nll": 0.7763,
+      "gated_nll": 0.77597,
+      "base_hit1": 0.79863,
+      "gated_hit1": 0.79863,
+      "base_mass": 0.78743,
+      "gated_mass": 0.7874,
+      "gated_weight": 0.0023,
+      "gated_active": 0.0214,
+      "macro_gain": -0.00033,
+      "improves": 4,
+      "paired95": [
+        -0.00055,
+        -0.00012
+      ]
+    },
+    "public-v6": {
+      "maps": 7,
+      "units": 4829,
+      "base_nll": 0.40876,
+      "gated_nll": 0.39244,
+      "base_hit1": 0.87637,
+      "gated_hit1": 0.87679,
+      "base_mass": 0.84908,
+      "gated_mass": 0.84559,
+      "gated_weight": 0.3575,
+      "gated_active": 0.7374,
+      "macro_gain": -0.01636,
+      "improves": 7,
+      "paired95": [
+        -0.02173,
+        -0.01283
+      ]
+    },
+    "public-other": {
+      "maps": 7,
+      "units": 4824,
+      "base_nll": 0.79023,
+      "gated_nll": 0.78912,
+      "base_hit1": 0.78918,
+      "gated_hit1": 0.78897,
+      "base_mass": 0.77453,
+      "gated_mass": 0.77451,
+      "gated_weight": 0.0044,
+      "gated_active": 0.0251,
+      "macro_gain": -0.00111,
+      "improves": 5,
+      "paired95": [
+        -0.00207,
+        -0.00034
+      ]
+    }
+  },
+  "caveat": "Exploratory gate revision after reviewing the first gate on these same held-out maps. All fit parameters exclusively from training layouts. Need fresh downstream games."
+}

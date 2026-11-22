@@ -1,0 +1,2318 @@
+{
+ "candidate_sha256": "ef884c8130e12c174a2d76a6d53e377c848eab89779f06c7ad781010c858a6fc",
+ "seed": 22063,
+ "source_cases": {
+  "loss": [
+   [
+    0,
+    48
+   ],
+   [
+    0,
+    90
+   ],
+   [
+    0,
+    164
+   ],
+   [
+    0,
+    225
+   ]
+  ],
+  "win": [
+   [
+    1,
+    38
+   ],
+   [
+    1,
+    164
+   ]
+  ]
+ },
+ "horizon": 26,
+ "foes": [
+  "artemis",
+  "apollo-varied"
+ ],
+ "methodology": "Both actors react every turn. Real actions are used solely for the strict pre-fork history. Both arms use the frozen v6 root, without lookahead search or reply reranking, for the attacker. The victim is a learned reactive approximation; neither actor is represented as real Master7sE. Common seeds by turn and seat.",
+ "cases": [
+  {
+   "match": "4063a34afedb6d4767a9118e1dee9e5d",
+   "official_result_seed": 157458776,
+   "referee_seed": 1331727176,
+   "attacker_seat": 0,
+   "start": 48,
+   "proxy": "artemis",
+   "control": {
+    "turns": 26,
+    "opponent_below_hire": 13,
+    "starting_cash": [
+     132.49,
+     22.23
+    ],
+    "ending_cash": [
+     144.2,
+     24.79
+    ],
+    "ending_cargo": [
+     119.55,
+     155.48
+    ],
+    "events": [
+     {
+      "deaths": 13,
+      "tree_yield": 381.88,
+      "harvest": 330.429,
+      "bank": 205.557
+     },
+     {
+      "deaths": 12,
+      "harvest": 381.01,
+      "tree_yield": 158.907,
+      "bank": 323.627
+     }
+    ],
+    "margin": 119.41,
+    "own_bank": 205.56,
+    "opponent_bank": 323.63,
+    "opportunities": [],
+    "extra_ms_total": 1.858
+   },
+   "guard": {
+    "turns": 26,
+    "opponent_below_hire": 13,
+    "starting_cash": [
+     132.49,
+     22.23
+    ],
+    "ending_cash": [
+     144.2,
+     24.79
+    ],
+    "ending_cargo": [
+     119.55,
+     155.48
+    ],
+    "events": [
+     {
+      "deaths": 13,
+      "tree_yield": 381.88,
+      "harvest": 330.429,
+      "bank": 205.557
+     },
+     {
+      "deaths": 12,
+      "harvest": 381.01,
+      "tree_yield": 158.907,
+      "bank": 323.627
+     }
+    ],
+    "margin": 119.41,
+    "own_bank": 205.56,
+    "opponent_bank": 323.63,
+    "opportunities": [],
+    "extra_ms_total": 2.946
+   },
+   "delta": {
+    "margin": 0.0,
+    "own_bank": 0.0,
+    "opponent_bank": 0.0,
+    "opponent_below_hire": 0
+   }
+  },
+  {
+   "match": "4063a34afedb6d4767a9118e1dee9e5d",
+   "official_result_seed": 157458776,
+   "referee_seed": 1331727176,
+   "attacker_seat": 0,
+   "start": 48,
+   "proxy": "apollo-varied",
+   "control": {
+    "turns": 26,
+    "opponent_below_hire": 12,
+    "starting_cash": [
+     132.49,
+     22.23
+    ],
+    "ending_cash": [
+     231.35,
+     21.33
+    ],
+    "ending_cargo": [
+     114.78,
+     326.54
+    ],
+    "events": [
+     {
+      "tree_yield": 371.929,
+      "harvest": 445.003,
+      "deaths": 11,
+      "bank": 322.729
+     },
+     {
+      "tree_yield": 265.223,
+      "harvest": 431.07,
+      "deaths": 10,
+      "bank": 195.767,
+      "loot": 3.219
+     }
+    ],
+    "margin": 210.02,
+    "own_bank": 322.73,
+    "opponent_bank": 195.77,
+    "opportunities": [],
+    "extra_ms_total": 0.14
+   },
+   "guard": {
+    "turns": 26,
+    "opponent_below_hire": 12,
+    "starting_cash": [
+     132.49,
+     22.23
+    ],
+    "ending_cash": [
+     231.35,
+     21.33
+    ],
+    "ending_cargo": [
+     114.78,
+     326.54
+    ],
+    "events": [
+     {
+      "tree_yield": 371.929,
+      "harvest": 445.003,
+      "deaths": 11,
+      "bank": 322.729
+     },
+     {
+      "tree_yield": 265.223,
+      "harvest": 431.07,
+      "deaths": 10,
+      "bank": 195.767,
+      "loot": 3.219
+     }
+    ],
+    "margin": 210.02,
+    "own_bank": 322.73,
+    "opponent_bank": 195.77,
+    "opportunities": [],
+    "extra_ms_total": 0.144
+   },
+   "delta": {
+    "margin": 0.0,
+    "own_bank": 0.0,
+    "opponent_bank": 0.0,
+    "opponent_below_hire": 0
+   }
+  },
+  {
+   "match": "4063a34afedb6d4767a9118e1dee9e5d",
+   "official_result_seed": 157458776,
+   "referee_seed": 1331727176,
+   "attacker_seat": 0,
+   "start": 90,
+   "proxy": "artemis",
+   "control": {
+    "turns": 26,
+    "opponent_below_hire": 7,
+    "starting_cash": [
+     253.68,
+     7.53
+    ],
+    "ending_cash": [
+     931.75,
+     57.27
+    ],
+    "ending_cargo": [
+     51.0,
+     10.89
+    ],
+    "events": [
+     {
+      "tree_yield": 1053.834,
+      "harvest": 203.4,
+      "deaths": 7,
+      "bank": 167.805
+     },
+     {
+      "bank": 229.747,
+      "deaths": 6,
+      "harvest": 8.352,
+      "loot": 4.588
+     }
+    ],
+    "margin": 874.48,
+    "own_bank": 167.81,
+    "opponent_bank": 229.75,
+    "opportunities": [
+     [
+      91,
+      "player-0-worker-26",
+      "UP",
+      null,
+      237.4,
+      7.5
+     ],
+     [
+      94,
+      "player-0-worker-25",
+      "RIGHT",
+      "UP",
+      286.7,
+      7.5
+     ],
+     [
+      96,
+      "player-0-worker-25",
+      "UP",
+      "LEFT",
+      361.7,
+      7.5
+     ]
+    ],
+    "extra_ms_total": 10.879
+   },
+   "guard": {
+    "turns": 26,
+    "opponent_below_hire": 26,
+    "starting_cash": [
+     253.68,
+     7.53
+    ],
+    "ending_cash": [
+     1101.91,
+     7.53
+    ],
+    "ending_cargo": [
+     251.98,
+     427.62
+    ],
+    "events": [
+     {
+      "tree_yield": 907.324,
+      "harvest": 465.49,
+      "bank": 233.505
+     },
+     {
+      "harvest": 142.014
+     }
+    ],
+    "margin": 1094.38,
+    "own_bank": 233.51,
+    "opponent_bank": 0,
+    "opportunities": [
+     [
+      91,
+      "player-0-worker-26",
+      "UP",
+      null,
+      237.4,
+      7.5
+     ],
+     [
+      92,
+      "player-0-worker-26",
+      "UP",
+      "DOWN",
+      270.8,
+      7.5
+     ],
+     [
+      93,
+      "player-0-worker-26",
+      "UP",
+      "RIGHT",
+      302.9,
+      7.5
+     ],
+     [
+      94,
+      "player-0-worker-26",
+      "UP",
+      "LEFT",
+      286.7,
+      7.5
+     ],
+     [
+      96,
+      "player-0-worker-26",
+      "UP",
+      "DOWN",
+      361.7,
+      7.5
+     ],
+     [
+      98,
+      "player-0-worker-26",
+      "UP",
+      "DOWN",
+      393.3,
+      7.5
+     ],
+     [
+      100,
+      "player-0-worker-26",
+      "UP",
+      "DOWN",
+      466.9,
+      7.5
+     ],
+     [
+      101,
+      "player-0-worker-22",
+      "RIGHT",
+      "DOWN",
+      501.2,
+      7.5
+     ],
+     [
+      102,
+      "player-0-worker-26",
+      "UP",
+      "DOWN",
+      534.1,
+      7.5
+     ],
+     [
+      103,
+      "player-0-worker-26",
+      "UP",
+      null,
+      565.5,
+      7.5
+     ],
+     [
+      104,
+      "player-0-worker-26",
+      "UP",
+      null,
+      665.4,
+      7.5
+     ],
+     [
+      105,
+      "player-0-worker-26",
+      "UP",
+      null,
+      702.5,
+      7.5
+     ],
+     [
+      106,
+      "player-0-worker-26",
+      "UP",
+      null,
+      738.0,
+      7.5
+     ],
+     [
+      107,
+      "player-0-worker-22",
+      "RIGHT",
+      null,
+      718.6,
+      7.5
+     ],
+     [
+      108,
+      "player-0-worker-22",
+      "DOWN",
+      "UP",
+      758.4,
+      7.5
+     ],
+     [
+      109,
+      "player-0-worker-22",
+      "UP",
+      "DOWN",
+      796.2,
+      7.5
+     ],
+     [
+      110,
+      "player-0-worker-20",
+      "DOWN",
+      null,
+      832.4,
+      7.5
+     ],
+     [
+      111,
+      "player-0-worker-22",
+      "LEFT",
+      null,
+      805.5,
+      7.5
+     ],
+     [
+      112,
+      "player-0-worker-20",
+      "RIGHT",
+      null,
+      844.8,
+      7.5
+     ],
+     [
+      113,
+      "player-0-worker-23",
+      "LEFT",
+      "UP",
+      998.5,
+      7.5
+     ],
+     [
+      114,
+      "player-0-worker-22",
+      "LEFT",
+      "UP",
+      1034.8,
+      7.5
+     ],
+     [
+      115,
+      "player-0-worker-23",
+      "UP",
+      null,
+      1069.4,
+      7.5
+     ]
+    ],
+    "extra_ms_total": 30.111
+   },
+   "delta": {
+    "margin": 219.9,
+    "own_bank": 65.7,
+    "opponent_bank": -229.75,
+    "opponent_below_hire": 19
+   }
+  },
+  {
+   "match": "4063a34afedb6d4767a9118e1dee9e5d",
+   "official_result_seed": 157458776,
+   "referee_seed": 1331727176,
+   "attacker_seat": 0,
+   "start": 90,
+   "proxy": "apollo-varied",
+   "control": {
+    "turns": 26,
+    "opponent_below_hire": 26,
+    "starting_cash": [
+     253.68,
+     7.53
+    ],
+    "ending_cash": [
+     1000.72,
+     7.53
+    ],
+    "ending_cargo": [
+     741.84,
+     218.41
+    ],
+    "events": [
+     {
+      "tree_yield": 928.668,
+      "harvest": 832.845,
+      "bank": 111.0
+     },
+     {}
+    ],
+    "margin": 993.19,
+    "own_bank": 111.0,
+    "opponent_bank": 0,
+    "opportunities": [
+     [
+      91,
+      "player-0-worker-26",
+      "UP",
+      null,
+      237.4,
+      7.5
+     ],
+     [
+      92,
+      "player-0-worker-22",
+      "RIGHT",
+      "UP",
+      270.8,
+      7.5
+     ],
+     [
+      95,
+      "player-0-worker-26",
+      "UP",
+      "DOWN",
+      326.9,
+      7.5
+     ],
+     [
+      96,
+      "player-0-worker-14",
+      "RIGHT",
+      "LEFT",
+      365.5,
+      7.5
+     ],
+     [
+      98,
+      "player-0-worker-20",
+      "DOWN",
+      "LEFT",
+      403.4,
+      7.5
+     ],
+     [
+      100,
+      "player-0-worker-22",
+      "UP",
+      null,
+      485.1,
+      7.5
+     ],
+     [
+      104,
+      "player-0-worker-26",
+      "UP",
+      "RIGHT",
+      580.2,
+      7.5
+     ],
+     [
+      109,
+      "player-0-worker-22",
+      "RIGHT",
+      "UP",
+      824.7,
+      7.5
+     ],
+     [
+      110,
+      "player-0-worker-20",
+      "LEFT",
+      null,
+      855.0,
+      7.5
+     ],
+     [
+      113,
+      "player-0-worker-26",
+      null,
+      "UP",
+      938.4,
+      7.5
+     ],
+     [
+      114,
+      "player-0-worker-20",
+      "DOWN",
+      "UP",
+      984.3,
+      7.5
+     ]
+    ],
+    "extra_ms_total": 24.826
+   },
+   "guard": {
+    "turns": 26,
+    "opponent_below_hire": 19,
+    "starting_cash": [
+     253.68,
+     7.53
+    ],
+    "ending_cash": [
+     1032.74,
+     48.31
+    ],
+    "ending_cargo": [
+     447.81,
+     267.22
+    ],
+    "events": [
+     {
+      "tree_yield": 953.555,
+      "harvest": 646.918,
+      "bank": 219.098,
+      "deaths": 1
+     },
+     {
+      "harvest": 107.589,
+      "bank": 100.784,
+      "deaths": 1
+     }
+    ],
+    "margin": 984.43,
+    "own_bank": 219.1,
+    "opponent_bank": 100.78,
+    "opportunities": [
+     [
+      91,
+      "player-0-worker-26",
+      "UP",
+      null,
+      237.4,
+      7.5
+     ],
+     [
+      92,
+      "player-0-worker-22",
+      "RIGHT",
+      "UP",
+      270.8,
+      7.5
+     ],
+     [
+      93,
+      "player-0-worker-26",
+      "LEFT",
+      "DOWN",
+      302.9,
+      7.5
+     ],
+     [
+      94,
+      "player-0-worker-25",
+      "RIGHT",
+      null,
+      286.7,
+      7.5
+     ],
+     [
+      95,
+      "player-0-worker-22",
+      "UP",
+      null,
+      326.9,
+      7.5
+     ],
+     [
+      96,
+      "player-0-worker-14",
+      "RIGHT",
+      "LEFT",
+      365.5,
+      7.5
+     ],
+     [
+      97,
+      "player-0-worker-25",
+      "UP",
+      "DOWN",
+      359.5,
+      7.5
+     ],
+     [
+      99,
+      "player-0-worker-25",
+      "DOWN",
+      "LEFT",
+      445.2,
+      7.5
+     ],
+     [
+      100,
+      "player-0-worker-25",
+      "LEFT",
+      null,
+      485.1,
+      7.5
+     ],
+     [
+      101,
+      "player-0-worker-25",
+      "UP",
+      null,
+      521.6,
+      7.5
+     ],
+     [
+      103,
+      "player-0-worker-21",
+      "LEFT",
+      null,
+      612.7,
+      7.5
+     ]
+    ],
+    "extra_ms_total": 20.884
+   },
+   "delta": {
+    "margin": -8.76,
+    "own_bank": 108.1,
+    "opponent_bank": 100.78,
+    "opponent_below_hire": -7
+   }
+  },
+  {
+   "match": "4063a34afedb6d4767a9118e1dee9e5d",
+   "official_result_seed": 157458776,
+   "referee_seed": 1331727176,
+   "attacker_seat": 0,
+   "start": 164,
+   "proxy": "artemis",
+   "control": {
+    "turns": 26,
+    "opponent_below_hire": 16,
+    "starting_cash": [
+     2079.3,
+     7.53
+    ],
+    "ending_cash": [
+     3411.46,
+     30.17
+    ],
+    "ending_cargo": [
+     204.48,
+     341.71
+    ],
+    "events": [
+     {
+      "harvest": 977.47,
+      "tree_yield": 668.432,
+      "bank": 826.78,
+      "deaths": 2
+     },
+     {
+      "harvest": 255.637,
+      "bank": 297.923,
+      "deaths": 3,
+      "tree_yield": 14.719
+     }
+    ],
+    "margin": 3381.29,
+    "own_bank": 826.78,
+    "opponent_bank": 297.92,
+    "opportunities": [
+     [
+      164,
+      "player-0-worker-23",
+      "LEFT",
+      "RIGHT",
+      2079.3,
+      7.5
+     ],
+     [
+      165,
+      "player-0-worker-20",
+      "DOWN",
+      "LEFT",
+      2109.6,
+      7.5
+     ],
+     [
+      166,
+      "player-0-worker-14",
+      "DOWN",
+      null,
+      2138.8,
+      7.5
+     ],
+     [
+      167,
+      "player-0-worker-23",
+      "UP",
+      "RIGHT",
+      2166.9,
+      7.5
+     ],
+     [
+      168,
+      "player-0-worker-26",
+      "RIGHT",
+      null,
+      2193.9,
+      7.5
+     ],
+     [
+      172,
+      "player-0-worker-26",
+      "RIGHT",
+      "UP",
+      2244.2,
+      7.5
+     ],
+     [
+      187,
+      "player-0-worker-20",
+      "LEFT",
+      "RIGHT",
+      2975.6,
+      35.5
+     ]
+    ],
+    "extra_ms_total": 12.251
+   },
+   "guard": {
+    "turns": 26,
+    "opponent_below_hire": 26,
+    "starting_cash": [
+     2079.3,
+     7.53
+    ],
+    "ending_cash": [
+     2737.88,
+     7.53
+    ],
+    "ending_cargo": [
+     923.85,
+     270.63
+    ],
+    "events": [
+     {
+      "harvest": 899.059,
+      "tree_yield": 759.14,
+      "deaths": 2,
+      "bank": 326.924,
+      "loot": 297.923
+     },
+     {
+      "harvest": 111.0,
+      "deaths": 2
+     }
+    ],
+    "margin": 2730.35,
+    "own_bank": 326.92,
+    "opponent_bank": 0,
+    "opportunities": [
+     [
+      164,
+      "player-0-worker-23",
+      "LEFT",
+      "RIGHT",
+      2079.3,
+      7.5
+     ],
+     [
+      165,
+      "player-0-worker-20",
+      "DOWN",
+      "LEFT",
+      2109.6,
+      7.5
+     ],
+     [
+      166,
+      "player-0-worker-23",
+      "RIGHT",
+      null,
+      2138.8,
+      7.5
+     ],
+     [
+      167,
+      "player-0-worker-14",
+      "RIGHT",
+      "UP",
+      2166.9,
+      7.5
+     ],
+     [
+      169,
+      "player-0-worker-14",
+      "LEFT",
+      "RIGHT",
+      2167.2,
+      7.5
+     ],
+     [
+      170,
+      "player-0-worker-23",
+      "UP",
+      null,
+      2192.9,
+      7.5
+     ],
+     [
+      171,
+      "player-0-worker-23",
+      "UP",
+      null,
+      2156.3,
+      7.5
+     ],
+     [
+      172,
+      "player-0-worker-23",
+      "DOWN",
+      null,
+      2181.7,
+      7.5
+     ],
+     [
+      173,
+      "player-0-worker-23",
+      "LEFT",
+      null,
+      2206.2,
+      7.5
+     ],
+     [
+      174,
+      "player-0-worker-26",
+      "DOWN",
+      null,
+      2229.7,
+      7.5
+     ],
+     [
+      176,
+      "player-0-worker-26",
+      "UP",
+      "LEFT",
+      2351.9,
+      7.5
+     ],
+     [
+      177,
+      "player-0-worker-23",
+      "UP",
+      "RIGHT",
+      2574.0,
+      7.5
+     ],
+     [
+      179,
+      "player-0-worker-26",
+      "LEFT",
+      null,
+      2594.1,
+      7.5
+     ],
+     [
+      180,
+      "player-0-worker-26",
+      null,
+      "DOWN",
+      2563.0,
+      7.5
+     ],
+     [
+      181,
+      "player-0-worker-20",
+      "RIGHT",
+      "LEFT",
+      2592.9,
+      7.5
+     ],
+     [
+      185,
+      "player-0-worker-28",
+      "DOWN",
+      "UP",
+      2680.2,
+      7.5
+     ],
+     [
+      186,
+      "player-0-worker-28",
+      "DOWN",
+      "RIGHT",
+      2714.8,
+      7.5
+     ],
+     [
+      187,
+      "player-0-worker-14",
+      "UP",
+      "DOWN",
+      2686.8,
+      7.5
+     ],
+     [
+      188,
+      "player-0-worker-14",
+      "UP",
+      "RIGHT",
+      2725.4,
+      7.5
+     ]
+    ],
+    "extra_ms_total": 21.249
+   },
+   "delta": {
+    "margin": -650.94,
+    "own_bank": -499.86,
+    "opponent_bank": -297.92,
+    "opponent_below_hire": 10
+   }
+  },
+  {
+   "match": "4063a34afedb6d4767a9118e1dee9e5d",
+   "official_result_seed": 157458776,
+   "referee_seed": 1331727176,
+   "attacker_seat": 0,
+   "start": 164,
+   "proxy": "apollo-varied",
+   "control": {
+    "turns": 26,
+    "opponent_below_hire": 26,
+    "starting_cash": [
+     2079.3,
+     7.53
+    ],
+    "ending_cash": [
+     3091.41,
+     7.53
+    ],
+    "ending_cargo": [
+     364.39,
+     477.69
+    ],
+    "events": [
+     {
+      "harvest": 852.083,
+      "tree_yield": 666.452,
+      "bank": 541.482
+     },
+     {
+      "harvest": 49.931
+     }
+    ],
+    "margin": 3083.88,
+    "own_bank": 541.48,
+    "opponent_bank": 0,
+    "opportunities": [
+     [
+      164,
+      "player-0-worker-23",
+      "LEFT",
+      "RIGHT",
+      2079.3,
+      7.5
+     ],
+     [
+      165,
+      "player-0-worker-20",
+      "DOWN",
+      "LEFT",
+      2109.6,
+      7.5
+     ],
+     [
+      166,
+      "player-0-worker-14",
+      "DOWN",
+      "UP",
+      2138.8,
+      7.5
+     ],
+     [
+      167,
+      "player-0-worker-23",
+      "UP",
+      "RIGHT",
+      2166.9,
+      7.5
+     ],
+     [
+      168,
+      "player-0-worker-26",
+      "RIGHT",
+      null,
+      2140.5,
+      7.5
+     ],
+     [
+      173,
+      "player-0-worker-23",
+      "DOWN",
+      null,
+      2387.8,
+      7.5
+     ],
+     [
+      174,
+      "player-0-worker-26",
+      "DOWN",
+      "UP",
+      2445.3,
+      7.5
+     ],
+     [
+      175,
+      "player-0-worker-23",
+      "DOWN",
+      null,
+      2472.0,
+      7.5
+     ],
+     [
+      179,
+      "player-0-worker-23",
+      "UP",
+      "LEFT",
+      2569.1,
+      7.5
+     ],
+     [
+      180,
+      "player-0-worker-23",
+      "RIGHT",
+      "DOWN",
+      2590.0,
+      7.5
+     ],
+     [
+      184,
+      "player-0-worker-26",
+      "DOWN",
+      null,
+      2620.4,
+      7.5
+     ],
+     [
+      186,
+      "player-0-worker-26",
+      "LEFT",
+      null,
+      2895.7,
+      7.5
+     ],
+     [
+      187,
+      "player-0-worker-25",
+      "RIGHT",
+      null,
+      2916.3,
+      7.5
+     ],
+     [
+      189,
+      "player-0-worker-16",
+      "RIGHT",
+      "UP",
+      3066.4,
+      7.5
+     ]
+    ],
+    "extra_ms_total": 26.299
+   },
+   "guard": {
+    "turns": 26,
+    "opponent_below_hire": 26,
+    "starting_cash": [
+     2079.3,
+     7.53
+    ],
+    "ending_cash": [
+     3177.41,
+     7.53
+    ],
+    "ending_cargo": [
+     173.5,
+     574.77
+    ],
+    "events": [
+     {
+      "harvest": 867.018,
+      "tree_yield": 690.059,
+      "deaths": 2,
+      "bank": 747.311
+     },
+     {
+      "harvest": 117.216,
+      "deaths": 1
+     }
+    ],
+    "margin": 3169.88,
+    "own_bank": 747.31,
+    "opponent_bank": 0,
+    "opportunities": [
+     [
+      164,
+      "player-0-worker-23",
+      "LEFT",
+      "RIGHT",
+      2079.3,
+      7.5
+     ],
+     [
+      165,
+      "player-0-worker-20",
+      "DOWN",
+      "LEFT",
+      2109.6,
+      7.5
+     ],
+     [
+      167,
+      "player-0-worker-23",
+      "UP",
+      "LEFT",
+      2166.9,
+      7.5
+     ],
+     [
+      168,
+      "player-0-worker-20",
+      "RIGHT",
+      "UP",
+      2193.9,
+      7.5
+     ],
+     [
+      169,
+      "player-0-worker-23",
+      "UP",
+      "LEFT",
+      2220.0,
+      7.5
+     ],
+     [
+      170,
+      "player-0-worker-20",
+      "LEFT",
+      null,
+      2191.6,
+      7.5
+     ],
+     [
+      172,
+      "player-0-worker-20",
+      "LEFT",
+      "UP",
+      2244.2,
+      7.5
+     ],
+     [
+      173,
+      "player-0-worker-23",
+      "UP",
+      null,
+      2268.1,
+      7.5
+     ],
+     [
+      174,
+      "player-0-worker-23",
+      "UP",
+      "RIGHT",
+      2290.9,
+      7.5
+     ],
+     [
+      175,
+      "player-0-worker-26",
+      "LEFT",
+      "DOWN",
+      2265.8,
+      7.5
+     ],
+     [
+      176,
+      "player-0-worker-23",
+      "UP",
+      "RIGHT",
+      2288.1,
+      7.5
+     ],
+     [
+      177,
+      "player-0-worker-20",
+      "LEFT",
+      "UP",
+      2309.6,
+      7.5
+     ],
+     [
+      178,
+      "player-0-worker-26",
+      "LEFT",
+      "RIGHT",
+      2330.3,
+      7.5
+     ],
+     [
+      179,
+      "player-0-worker-23",
+      "UP",
+      "DOWN",
+      2350.2,
+      7.5
+     ],
+     [
+      181,
+      "player-0-worker-23",
+      "DOWN",
+      null,
+      2583.5,
+      7.5
+     ],
+     [
+      182,
+      "player-0-worker-14",
+      "UP",
+      "LEFT",
+      2605.3,
+      7.5
+     ],
+     [
+      183,
+      "player-0-worker-14",
+      "RIGHT",
+      "DOWN",
+      2626.2,
+      7.5
+     ],
+     [
+      185,
+      "player-0-worker-26",
+      "DOWN",
+      null,
+      2630.0,
+      7.5
+     ],
+     [
+      186,
+      "player-0-worker-22",
+      "DOWN",
+      null,
+      2803.0,
+      7.5
+     ],
+     [
+      187,
+      "player-0-worker-22",
+      "DOWN",
+      null,
+      2777.9,
+      7.5
+     ]
+    ],
+    "extra_ms_total": 26.876
+   },
+   "delta": {
+    "margin": 86.0,
+    "own_bank": 205.83,
+    "opponent_bank": 0,
+    "opponent_below_hire": 0
+   }
+  },
+  {
+   "match": "4063a34afedb6d4767a9118e1dee9e5d",
+   "official_result_seed": 157458776,
+   "referee_seed": 1331727176,
+   "attacker_seat": 0,
+   "start": 225,
+   "proxy": "artemis",
+   "control": {
+    "turns": 26,
+    "opponent_below_hire": 26,
+    "starting_cash": [
+     3563.8,
+     10.01
+    ],
+    "ending_cash": [
+     5161.04,
+     10.61
+    ],
+    "ending_cargo": [
+     606.48,
+     788.5
+    ],
+    "events": [
+     {
+      "harvest": 1600.699,
+      "tree_yield": 645.44,
+      "bank": 1090.016
+     },
+     {
+      "bank": 0.605,
+      "harvest": 33.983
+     }
+    ],
+    "margin": 5150.43,
+    "own_bank": 1090.02,
+    "opponent_bank": 0.6,
+    "opportunities": [
+     [
+      225,
+      "player-0-worker-26",
+      "LEFT",
+      "UP",
+      3563.8,
+      10.0
+     ],
+     [
+      227,
+      "player-0-worker-26",
+      "LEFT",
+      "UP",
+      3616.8,
+      10.0
+     ],
+     [
+      230,
+      "player-0-worker-28",
+      "RIGHT",
+      "LEFT",
+      3785.0,
+      10.6
+     ],
+     [
+      231,
+      "player-0-worker-28",
+      "UP",
+      "LEFT",
+      3805.6,
+      10.6
+     ],
+     [
+      233,
+      "player-0-worker-28",
+      "UP",
+      "DOWN",
+      3799.8,
+      10.6
+     ],
+     [
+      235,
+      "player-0-worker-26",
+      "LEFT",
+      null,
+      3849.9,
+      10.6
+     ],
+     [
+      236,
+      "player-0-worker-26",
+      "LEFT",
+      "RIGHT",
+      4052.6,
+      10.6
+     ],
+     [
+      239,
+      "player-0-worker-26",
+      "UP",
+      "DOWN",
+      4207.4,
+      10.6
+     ],
+     [
+      241,
+      "player-0-worker-26",
+      null,
+      "LEFT",
+      4251.7,
+      10.6
+     ],
+     [
+      247,
+      "player-0-worker-28",
+      "RIGHT",
+      "DOWN",
+      5040.6,
+      10.6
+     ]
+    ],
+    "extra_ms_total": 10.199
+   },
+   "guard": {
+    "turns": 26,
+    "opponent_below_hire": 26,
+    "starting_cash": [
+     3563.8,
+     10.01
+    ],
+    "ending_cash": [
+     5210.47,
+     10.01
+    ],
+    "ending_cargo": [
+     532.3,
+     889.13
+    ],
+    "events": [
+     {
+      "harvest": 1534.686,
+      "tree_yield": 686.096,
+      "bank": 1098.782
+     },
+     {
+      "harvest": 176.065
+     }
+    ],
+    "margin": 5200.46,
+    "own_bank": 1098.78,
+    "opponent_bank": 0,
+    "opportunities": [
+     [
+      225,
+      "player-0-worker-26",
+      "LEFT",
+      "UP",
+      3563.8,
+      10.0
+     ],
+     [
+      226,
+      "player-0-worker-26",
+      "DOWN",
+      "UP",
+      3590.7,
+      10.0
+     ],
+     [
+      227,
+      "player-0-worker-26",
+      "LEFT",
+      "DOWN",
+      3616.8,
+      10.0
+     ],
+     [
+      228,
+      "player-0-worker-26",
+      "UP",
+      null,
+      3641.9,
+      10.0
+     ],
+     [
+      229,
+      "player-0-worker-26",
+      "RIGHT",
+      null,
+      3716.5,
+      10.0
+     ],
+     [
+      230,
+      "player-0-worker-26",
+      "RIGHT",
+      null,
+      3785.0,
+      10.0
+     ],
+     [
+      231,
+      "player-0-worker-28",
+      "UP",
+      null,
+      3805.6,
+      10.0
+     ],
+     [
+      232,
+      "player-0-worker-28",
+      "UP",
+      null,
+      3771.9,
+      10.0
+     ],
+     [
+      233,
+      "player-0-worker-26",
+      "RIGHT",
+      "LEFT",
+      3841.2,
+      10.0
+     ],
+     [
+      234,
+      "player-0-worker-26",
+      "LEFT",
+      "UP",
+      3866.8,
+      10.0
+     ],
+     [
+      235,
+      "player-0-worker-26",
+      "RIGHT",
+      null,
+      3891.4,
+      10.0
+     ],
+     [
+      239,
+      "player-0-worker-14",
+      "UP",
+      "LEFT",
+      4117.5,
+      10.0
+     ],
+     [
+      240,
+      "player-0-worker-26",
+      "RIGHT",
+      "DOWN",
+      4139.7,
+      10.0
+     ],
+     [
+      241,
+      "player-0-worker-28",
+      "LEFT",
+      "DOWN",
+      4161.8,
+      10.0
+     ],
+     [
+      242,
+      "player-0-worker-14",
+      "RIGHT",
+      "DOWN",
+      4183.0,
+      10.0
+     ],
+     [
+      243,
+      "player-0-worker-28",
+      "UP",
+      "DOWN",
+      4203.4,
+      10.0
+     ],
+     [
+      244,
+      "player-0-worker-26",
+      "RIGHT",
+      "DOWN",
+      4555.5,
+      10.0
+     ],
+     [
+      245,
+      "player-0-worker-28",
+      "RIGHT",
+      null,
+      4822.5,
+      10.0
+     ],
+     [
+      246,
+      "player-0-worker-14",
+      "UP",
+      "DOWN",
+      4914.9,
+      10.0
+     ],
+     [
+      247,
+      "player-0-worker-14",
+      "UP",
+      "LEFT",
+      4930.6,
+      10.0
+     ],
+     [
+      250,
+      "player-0-worker-14",
+      "UP",
+      null,
+      5236.4,
+      10.0
+     ]
+    ],
+    "extra_ms_total": 19.621
+   },
+   "delta": {
+    "margin": 50.03,
+    "own_bank": 8.76,
+    "opponent_bank": -0.6,
+    "opponent_below_hire": 0
+   }
+  },
+  {
+   "match": "4063a34afedb6d4767a9118e1dee9e5d",
+   "official_result_seed": 157458776,
+   "referee_seed": 1331727176,
+   "attacker_seat": 0,
+   "start": 225,
+   "proxy": "apollo-varied",
+   "control": {
+    "turns": 26,
+    "opponent_below_hire": 14,
+    "starting_cash": [
+     3563.8,
+     10.01
+    ],
+    "ending_cash": [
+     4640.78,
+     411.28
+    ],
+    "ending_cargo": [
+     1117.12,
+     238.12
+    ],
+    "events": [
+     {
+      "harvest": 1659.149,
+      "tree_yield": 770.787,
+      "deaths": 3,
+      "bank": 637.828,
+      "loot": 344.274
+     },
+     {
+      "bank": 753.663,
+      "harvest": 290.667,
+      "deaths": 2,
+      "tree_yield": 41.033
+     }
+    ],
+    "margin": 4229.5,
+    "own_bank": 637.83,
+    "opponent_bank": 753.66,
+    "opportunities": [
+     [
+      225,
+      "player-0-worker-26",
+      "LEFT",
+      "UP",
+      3563.8,
+      10.0
+     ],
+     [
+      227,
+      "player-0-worker-26",
+      "LEFT",
+      "UP",
+      3616.8,
+      10.0
+     ],
+     [
+      229,
+      "player-0-worker-26",
+      "DOWN",
+      "LEFT",
+      3716.5,
+      10.6
+     ],
+     [
+      230,
+      "player-0-worker-26",
+      "LEFT",
+      "RIGHT",
+      3785.0,
+      10.6
+     ],
+     [
+      231,
+      "player-0-worker-28",
+      "UP",
+      "RIGHT",
+      3805.6,
+      10.6
+     ],
+     [
+      234,
+      "player-0-worker-28",
+      "LEFT",
+      "DOWN",
+      3866.8,
+      10.6
+     ],
+     [
+      235,
+      "player-0-worker-28",
+      "UP",
+      "RIGHT",
+      3891.4,
+      10.6
+     ]
+    ],
+    "extra_ms_total": 11.25
+   },
+   "guard": {
+    "turns": 26,
+    "opponent_below_hire": 26,
+    "starting_cash": [
+     3563.8,
+     10.01
+    ],
+    "ending_cash": [
+     5074.05,
+     10.01
+    ],
+    "ending_cargo": [
+     1265.4,
+     344.27
+    ],
+    "events": [
+     {
+      "harvest": 1744.766,
+      "tree_yield": 550.767,
+      "bank": 1097.692,
+      "loot": 521.927
+     },
+     {
+      "harvest": 15.46,
+      "deaths": 1
+     }
+    ],
+    "margin": 5064.04,
+    "own_bank": 1097.69,
+    "opponent_bank": 0,
+    "opportunities": [
+     [
+      225,
+      "player-0-worker-26",
+      "LEFT",
+      "UP",
+      3563.8,
+      10.0
+     ],
+     [
+      226,
+      "player-0-worker-26",
+      "DOWN",
+      "UP",
+      3590.7,
+      10.0
+     ],
+     [
+      227,
+      "player-0-worker-26",
+      "LEFT",
+      "DOWN",
+      3616.8,
+      10.0
+     ],
+     [
+      228,
+      "player-0-worker-30",
+      null,
+      "RIGHT",
+      3641.9,
+      10.0
+     ],
+     [
+      229,
+      "player-0-worker-30",
+      "LEFT",
+      "RIGHT",
+      3665.8,
+      10.0
+     ],
+     [
+      230,
+      "player-0-worker-26",
+      "DOWN",
+      null,
+      3688.8,
+      10.0
+     ],
+     [
+      231,
+      "player-0-worker-30",
+      "RIGHT",
+      null,
+      3709.4,
+      10.0
+     ],
+     [
+      232,
+      "player-0-worker-26",
+      "RIGHT",
+      null,
+      3675.7,
+      10.0
+     ],
+     [
+      234,
+      "player-0-worker-26",
+      "DOWN",
+      null,
+      3729.1,
+      10.0
+     ],
+     [
+      235,
+      "player-0-worker-26",
+      "UP",
+      null,
+      3753.7,
+      10.0
+     ],
+     [
+      236,
+      "player-0-worker-26",
+      "RIGHT",
+      null,
+      3956.4,
+      10.0
+     ],
+     [
+      237,
+      "player-0-worker-30",
+      "RIGHT",
+      "LEFT",
+      4064.1,
+      10.0
+     ],
+     [
+      238,
+      "player-0-worker-30",
+      "LEFT",
+      null,
+      4088.1,
+      10.0
+     ],
+     [
+      241,
+      "player-0-worker-30",
+      "LEFT",
+      null,
+      4155.5,
+      10.0
+     ],
+     [
+      243,
+      "player-0-worker-30",
+      "LEFT",
+      null,
+      4197.2,
+      10.0
+     ]
+    ],
+    "extra_ms_total": 12.321
+   },
+   "delta": {
+    "margin": 834.54,
+    "own_bank": 459.86,
+    "opponent_bank": -753.66,
+    "opponent_below_hire": 12
+   }
+  },
+  {
+   "match": "cf276b32e4fd38f43497e60f271a3854",
+   "official_result_seed": 1941966395,
+   "referee_seed": 397168106,
+   "attacker_seat": 1,
+   "start": 38,
+   "proxy": "artemis",
+   "control": {
+    "turns": 26,
+    "opponent_below_hire": 1,
+    "starting_cash": [
+     15.84,
+     163.0
+    ],
+    "ending_cash": [
+     404.44,
+     1033.71
+    ],
+    "ending_cargo": [
+     207.45,
+     390.88
+    ],
+    "events": [
+     {
+      "harvest": 524.354,
+      "tree_yield": 238.239,
+      "deaths": 7,
+      "bank": 606.019
+     },
+     {
+      "harvest": 893.477,
+      "tree_yield": 502.517,
+      "deaths": 7,
+      "bank": 648.664
+     }
+    ],
+    "margin": 629.27,
+    "own_bank": 648.66,
+    "opponent_bank": 606.02,
+    "opportunities": [],
+    "extra_ms_total": 0.726
+   },
+   "guard": {
+    "turns": 26,
+    "opponent_below_hire": 1,
+    "starting_cash": [
+     15.84,
+     163.0
+    ],
+    "ending_cash": [
+     404.44,
+     1033.71
+    ],
+    "ending_cargo": [
+     207.45,
+     390.88
+    ],
+    "events": [
+     {
+      "harvest": 524.354,
+      "tree_yield": 238.239,
+      "deaths": 7,
+      "bank": 606.019
+     },
+     {
+      "harvest": 893.477,
+      "tree_yield": 502.517,
+      "deaths": 7,
+      "bank": 648.664
+     }
+    ],
+    "margin": 629.27,
+    "own_bank": 648.66,
+    "opponent_bank": 606.02,
+    "opportunities": [],
+    "extra_ms_total": 0.67
+   },
+   "delta": {
+    "margin": 0.0,
+    "own_bank": 0.0,
+    "opponent_bank": 0.0,
+    "opponent_below_hire": 0
+   }
+  },
+  {
+   "match": "cf276b32e4fd38f43497e60f271a3854",
+   "official_result_seed": 1941966395,
+   "referee_seed": 397168106,
+   "attacker_seat": 1,
+   "start": 38,
+   "proxy": "apollo-varied",
+   "control": {
+    "turns": 26,
+    "opponent_below_hire": 1,
+    "starting_cash": [
+     15.84,
+     163.0
+    ],
+    "ending_cash": [
+     290.69,
+     899.65
+    ],
+    "ending_cargo": [
+     420.18,
+     213.45
+    ],
+    "events": [
+     {
+      "harvest": 610.76,
+      "tree_yield": 176.123,
+      "deaths": 7,
+      "bank": 479.685
+     },
+     {
+      "harvest": 648.444,
+      "tree_yield": 544.706,
+      "deaths": 7,
+      "bank": 604.68
+     }
+    ],
+    "margin": 608.96,
+    "own_bank": 604.68,
+    "opponent_bank": 479.69,
+    "opportunities": [],
+    "extra_ms_total": 0.895
+   },
+   "guard": {
+    "turns": 26,
+    "opponent_below_hire": 1,
+    "starting_cash": [
+     15.84,
+     163.0
+    ],
+    "ending_cash": [
+     290.69,
+     899.65
+    ],
+    "ending_cargo": [
+     420.18,
+     213.45
+    ],
+    "events": [
+     {
+      "harvest": 610.76,
+      "tree_yield": 176.123,
+      "deaths": 7,
+      "bank": 479.685
+     },
+     {
+      "harvest": 648.444,
+      "tree_yield": 544.706,
+      "deaths": 7,
+      "bank": 604.68
+     }
+    ],
+    "margin": 608.96,
+    "own_bank": 604.68,
+    "opponent_bank": 479.69,
+    "opportunities": [],
+    "extra_ms_total": 0.756
+   },
+   "delta": {
+    "margin": 0.0,
+    "own_bank": 0.0,
+    "opponent_bank": 0.0,
+    "opponent_below_hire": 0
+   }
+  },
+  {
+   "match": "cf276b32e4fd38f43497e60f271a3854",
+   "official_result_seed": 1941966395,
+   "referee_seed": 397168106,
+   "attacker_seat": 1,
+   "start": 164,
+   "proxy": "artemis",
+   "control": {
+    "turns": 26,
+    "opponent_below_hire": 0,
+    "starting_cash": [
+     1992.93,
+     2372.1
+    ],
+    "ending_cash": [
+     2613.6,
+     3030.24
+    ],
+    "ending_cargo": [
+     878.43,
+     159.88
+    ],
+    "events": [
+     {
+      "harvest": 823.384,
+      "tree_yield": 196.397,
+      "bank": 644.273,
+      "deaths": 6
+     },
+     {
+      "harvest": 669.369,
+      "tree_yield": 188.423,
+      "bank": 895.193,
+      "deaths": 6
+     }
+    ],
+    "margin": 416.64,
+    "own_bank": 895.19,
+    "opponent_bank": 644.27,
+    "opportunities": [],
+    "extra_ms_total": 0.054
+   },
+   "guard": {
+    "turns": 26,
+    "opponent_below_hire": 0,
+    "starting_cash": [
+     1992.93,
+     2372.1
+    ],
+    "ending_cash": [
+     2613.6,
+     3030.24
+    ],
+    "ending_cargo": [
+     878.43,
+     159.88
+    ],
+    "events": [
+     {
+      "harvest": 823.384,
+      "tree_yield": 196.397,
+      "bank": 644.273,
+      "deaths": 6
+     },
+     {
+      "harvest": 669.369,
+      "tree_yield": 188.423,
+      "bank": 895.193,
+      "deaths": 6
+     }
+    ],
+    "margin": 416.64,
+    "own_bank": 895.19,
+    "opponent_bank": 644.27,
+    "opportunities": [],
+    "extra_ms_total": 0.046
+   },
+   "delta": {
+    "margin": 0.0,
+    "own_bank": 0.0,
+    "opponent_bank": 0.0,
+    "opponent_below_hire": 0
+   }
+  },
+  {
+   "match": "cf276b32e4fd38f43497e60f271a3854",
+   "official_result_seed": 1941966395,
+   "referee_seed": 397168106,
+   "attacker_seat": 1,
+   "start": 164,
+   "proxy": "apollo-varied",
+   "control": {
+    "turns": 26,
+    "opponent_below_hire": 0,
+    "starting_cash": [
+     1992.93,
+     2372.1
+    ],
+    "ending_cash": [
+     2673.06,
+     2988.88
+    ],
+    "ending_cargo": [
+     737.58,
+     536.44
+    ],
+    "events": [
+     {
+      "harvest": 774.375,
+      "tree_yield": 226.922,
+      "bank": 737.391,
+      "deaths": 2
+     },
+     {
+      "harvest": 734.319,
+      "tree_yield": 273.457,
+      "bank": 605.871,
+      "deaths": 2
+     }
+    ],
+    "margin": 315.82,
+    "own_bank": 605.87,
+    "opponent_bank": 737.39,
+    "opportunities": [],
+    "extra_ms_total": 0.061
+   },
+   "guard": {
+    "turns": 26,
+    "opponent_below_hire": 0,
+    "starting_cash": [
+     1992.93,
+     2372.1
+    ],
+    "ending_cash": [
+     2673.06,
+     2988.88
+    ],
+    "ending_cargo": [
+     737.58,
+     536.44
+    ],
+    "events": [
+     {
+      "harvest": 774.375,
+      "tree_yield": 226.922,
+      "bank": 737.391,
+      "deaths": 2
+     },
+     {
+      "harvest": 734.319,
+      "tree_yield": 273.457,
+      "bank": 605.871,
+      "deaths": 2
+     }
+    ],
+    "margin": 315.82,
+    "own_bank": 605.87,
+    "opponent_bank": 737.39,
+    "opportunities": [],
+    "extra_ms_total": 0.046
+   },
+   "delta": {
+    "margin": 0.0,
+    "own_bank": 0.0,
+    "opponent_bank": 0.0,
+    "opponent_below_hire": 0
+   }
+  }
+ ]
+}

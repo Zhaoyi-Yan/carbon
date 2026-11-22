@@ -1,0 +1,1974 @@
+{
+  "model": "Predict the actual worker command chosen by a frozen v6 policy including search. Opposing bases retain frozen priors.",
+  "windows": [
+    [
+      2,
+      20
+    ],
+    [
+      61,
+      83
+    ],
+    [
+      151,
+      173
+    ],
+    [
+      240,
+      262
+    ]
+  ],
+  "fog": "Observer fog and own replay actions on every turn; frozen neural router evaluated in contiguous windows. Rival action inferred only next turn from surviving movements for gate.",
+  "sampling": "Operational baseline and deployed residual use frozen rollout temperature .4; a temperature-only model and a three-specialist-logit model also fitted to identical training data.",
+  "train_games": 34,
+  "train_layouts": [
+    "06951ae8d7815a977d7a5213af88d67396624bb508a7ce4e591847542986f2be",
+    "1406873e243e0c9d5e26e7109329279567b1de8df1fc055101f5ec38cf73d707",
+    "1d4e9a1b738ad7b9eb687ee510dd4c942e0a54ec7a772b6708de3f09729eede7",
+    "383a18460d43aece7bb47a3792e433e8d91feadb887cede5521abce68453a9a7",
+    "3d24f29c1c0de2ec2a20de898c2ad891df19a802016a06805f262ca2bb65c607",
+    "460033c9386970fd98159f38649d9c4545eb37d6b12fda6ffc4c80a8bafdd7be",
+    "70572ca331c203e25a0b934d8bd7f58fc9aeddcb9411b52e2bb4199edb4ad65f",
+    "717ff4e42071fb07e8b9efc4c8b04dfd0663e4bb70a333055e919e95aa3da600",
+    "7af4760f5bd14195567915e576b3d9e017e167e8f41fee885aa28dae2da22f89",
+    "7f9b62acea4484b528760b08baf42c28997b54b5297cf4c34c11c54d53c52901",
+    "8245ae0e2571c40716cb946469cec23188716493a6312278e02cfe23feffca67",
+    "84b40f09b521db016d3ac8105e54c6bcdd9b857c7a8e84afd339bda09b0086ff",
+    "8ad00f882ccf6fcdcc5e7cb4766f997852b366fb3b14d634d5e99b569a521b50",
+    "97d12c89604562c08ba70707cbe377eb4b36300e851e9b6324cf0e5420342178",
+    "9dd985ad4c02310b6675c17f73a5c0120c54bdc8605a3c00b986cf890469ccdc",
+    "b4c85c1e5e52edb289afa554447ea8ab7d716b8d12d26b55f191709340190ccb",
+    "d563c7db08f6244275e947a41c10d784b41cf711c16c9cf659f483206182d7d6",
+    "d58ec7c686f4e470502bb954dfa132378196855571bd0be029ffde33013405db",
+    "e157e4cefab1ba95b4646278f274ec5f4bd3637988156d756919acd0f7ca59fe",
+    "e95e5a5590f91f80c0c062bb9eb04ca81ac76d053780f1a8840e8204efcab716",
+    "ef6577e980c2a873813b623ef12bf6402623de10f562e570f673ff674e59dbd5",
+    "f0b076d56e66bf1cc6449ea9cc58fc231179b522db87ed12ca45b5d306549100",
+    "f3db3afa2294d9cdc62e1a268bfffcecf2d5e3802be1ebb3fe085c667f6c0419",
+    "fefb7f72ba923e9026beba7a0a3b97652fefd20c48ae6c2f667aeb2406f06930"
+  ],
+  "validation_layouts": [
+    "0b0698f412ec95e63a851ccc7bbe59cd6d5f35ae4ff388ac3a934de608fed2a6",
+    "0e052f1acd8d2e4e0beb55aeb41bd4283ecb2658000ae93355da44b378abb3b1",
+    "16c848a403fbce498bbaaa273205ac71e1070ed7dccfffa088b4cf49eaa7e0bd",
+    "37db1a81e6e6a2229a9db732f064754f2af11d66bc306c83800efde5c9acb2d5",
+    "3fd0833d42f2c63ebacdef9d082491aabe576e906d4e1ba827b78a7703deea16",
+    "45b68279a9c1829ca4664a210de8aa69feac93c93d804f5fd585010ac0a4302b",
+    "647e8790c92ab5bf6d5806c433bd87e9659015c16ae733a3ae2bd00c64dfbf20",
+    "bbc72d43e607546736bc6bf264b518c3b166513203be249c9f9671fe75afac91",
+    "cd759828f550a19d03cc9239fc553ef0fe1f1d96e3f94c37d4bedbf1d3a07fac",
+    "ce1fe786bf1c563297d8b39c67b62518368a60d296949cd6a6bd0de6655838f6",
+    "f68675a02c2572234d744fa4094f399103979dc2db849f619ee9e7894fd27dae"
+  ],
+  "excluded_layouts": [
+    "02092e9f582b39c6b85b0f00dbea17f8efea13c3f7f642416d28d49588b39535",
+    "05520262afd0b67a766b9942e1ae2b5c1811689fd1dc1d6f294fc61bb7edd951",
+    "058085ec6186d9a163675447674415d42275bed11111d23ef6bf1b18cedc8fa1",
+    "05c638551a0937181a75db98aec80149f331b2b87f5e7dd9d04c4bf5b099f668",
+    "06e6132a5a44cc00658880bd1654dae4e3835ac88c02287cda44425877d7c89c",
+    "07dc564e2ea7ffb900d9b6840c50b80d65ab26166aef7376f18c9f9f80e9233c",
+    "0b60e455e67ee9b8bf30c79e2597b3838d777a7887200d2d9fc65663c116273a",
+    "0f6893f47e3f776862722338dd3c82f91dc7d4f0d57ecfa312d7611f32224f88",
+    "102763199e58f26d03b078ee463c2b8ec665bd6806c3a3728746aa1f98f50160",
+    "1672e91f15f20c66b042e5facb6a6247cb9ded78339f0bbf37dfd82b6cb55149",
+    "1c7f044e9a7a2f559ae2c1bf0e5621a44bc07b9f5c3a567e75db8de187f9a52b",
+    "231ab9e4e1336c129138a7c1f547e4a57ff838f18585a8a35c51de0d4a9951c0",
+    "26312db73a94c54c9d256cd0a6799f0c39783b2603bc4abb7c3c17a7408b3fdc",
+    "2677186a1536eabeedbf2e3ec0a6d2aefc7636dff8ddd82eb68a7236a500c85a",
+    "270affd7b02a92dafb5368266526f5bf4c5b474330cccb7d8e93f455bde55ee2",
+    "29c6fe36680f42f7f5c16f3e39199f95b9d7662602cc6f93abda2639d169691f",
+    "2ba913510c8a1024c970effc2b66c0445930be81c730b75ebd0ed5d49ab6877a",
+    "302f35bca82f3db388c668dbf0286a93a00fec05f071e501ddad44113a699a53",
+    "31bbbb165e064992407ebad8cebfb3d02ca462bf3afafbd2e18ec252d959cfee",
+    "39c0dc95a810eb27b4cd75f5434dd2749c7e5f23cfa50d45aeaeca86ada603f3",
+    "3a5946385cdd42b29e1dcd5ec92053a76f1556a3391ded50939e5eccddb09aed",
+    "3aa446afb5282b94d8cc7eef3775de42cdff71b5adbb0b2491c0dffcaa827d3d",
+    "40951660cc21d46bd28fa824b52917e027507d008929143d9fcc4af18059eb1d",
+    "4236d10324d4925c578226a0f15fde735fe6a61c1c2f9f16e9efedf98a0399d9",
+    "4399886200bc73ea73b5a5319326e1fedb100ce132a5f71b9a935c865c36dc23",
+    "45e0ac334cdcdc2c1901abf252556434f11623ea5fb9c5e4f3bc7a847dcb67d0",
+    "48c3cd14c8630553fa67055c81dc05050de81ffdf4d2c07e6cb94e043336e303",
+    "48f8774a2281b3f165da4210b361d38adea67fa46b01804f50bf7c002ed409e5",
+    "4aa3b1769c8937c4db3d90f1419981257bf86710bd4a2c6b623761838b346972",
+    "4bad6723086102a7dea11eac529cdd2f8cea70d6f1fed6b7a56aab8442b2ec8f",
+    "4cb2418096e9c328c8d4ea1b8340336a36a9ac966db5ce6e8b00d76890b13591",
+    "4faa820143eda7c246afc8639286b4ded846ee46fd7933817bfc1630db3209e2",
+    "50535c10d74f31d50475a9b771068d69ea02e643bb210a4aec6c4dcb91256a2d",
+    "54fedefd295d68aa2bbc1cb1616e4046ae92a9c7d080228725ad04bdc10833e6",
+    "554c583afbc7280a537c8fb09f4d6ec9fafe28032775cd971e6ac6a0e45fb1b7",
+    "575737bbdf045641c26e1aa99da83249e2a18bd982f0b924dbcbf4e5a6a82ccc",
+    "5a09091ebced37e1900de49b683cb7ca6ba13e45669b27c5f1e81b79254fca1b",
+    "5b856c5e86bd1f40a7601ebbe5564f8a7ba18b350628ec8ec3a3b544fe412063",
+    "5dd7b5d87d32ad9451013420610d63051dcdc1f9ae0ff6c8ed798c68e5ce4ab3",
+    "5e55c90e48f50e7052216fa9674b25b377312987e700db91c2fdbda05b79226f",
+    "5e95a8182ea4f23a95b1ee1b945bf4960e5e5c1b78948e693cffc3e1c4671c7e",
+    "5fe9dc72f4356d5c1542c622c7654ac9dc67a1fc2ef7eeeb38097d6d9eec6898",
+    "6121ec0ff5ccac020570cc3ac18f9dbe4ce60ddab3f00075aa1dd3afa8f15d49",
+    "629b080182a330a1ef62937d05881edefb9f43c38c98d9e7a648244632b82958",
+    "63b5a6f2c0632bce0b2e934b751ed48b8cc5ef40a26b3e347bf64dbec690a69f",
+    "6c5f5620566f8475606b4fd862fc547fde134136f90a000eb89ef66bef4a7c9f",
+    "725f2b605d7d7fc55fca2662cf97e8f85a7e603858a56a1fc24892569dff4477",
+    "769ebe59f77e99b0dcfd2152a74779ea3b51754dd2db828a44f387a9c36109d4",
+    "7c3c18c5821c960ce7c33c05a2178ebc080be8ee938f5a97520ca19ea8e085eb",
+    "7fb55f5365b24c8447b48f21b81af5ee98b0c4076c118409dc9bf7da2bd7030b",
+    "7febf8013277c1a225b03eccb9bca4843a5574cff3385610ebc58d967e7043e2",
+    "813fd10a3b8d2845d6d0d1790d3c82cc1cc8c1c9c46a836a558e592dd403da08",
+    "815d65b24ecf61560fe98de6549c946bd2897fcb89209a89dcc5b22a1104dd99",
+    "84bba72e19c949c6d32ce7399a86d2c18815f7b4e9b747a35e91020bf88ab84f",
+    "868699f56fc35f9a5248e08eee866b93c1a5375a00cd82645d7a1596acb7d279",
+    "8850b049f19a013b38b478dc4023bb25ee9ef267754de1c0d1f74213d245f727",
+    "8a4863c7e4063f41f378bb7d87051d1958d666db1eba9ee42c0dc6289a03758d",
+    "8bf7ba7d15fd5b0fb548bd1cda5fcaffb39d859604ec407e983fa1219df55600",
+    "8e0efcb478dbf2150a8f8d0517122cca2a331ee9e6b9c5d85f4b60aa630451bf",
+    "90cbdeb2f96e44517c08527e16da02a7b26ca711088b11ade2c04e5cc118054d",
+    "972bc5985d04e7d2dbaefe70a04e3f45213452f208db7ebe2735ca44fd48f12e",
+    "98d0e41b20c340aeb658f89569f69627979893871b13af6d3c94f499d529684e",
+    "9968c6173b3672f7b3def8b628a9ab5ac03169391aadfcfd93aef395f40d83cc",
+    "9abc9e8a1e5cb0efd3f1daca16f0e5930cf49487d2f3ea799d2c2cb4a35ff55a",
+    "9cd6e9082657665912e52f37f1619bd1c60c9a73c599b5bfcd2f7d27415d304c",
+    "9dceac18f15f53a192488efc09f80c946b21430ba5420dfc0c70f95d3312ef39",
+    "aa2b8307de594c665c022fe4ddd85076e131efc229e9572de57bee6c4831f0ef",
+    "ad4fc94551c561f60f82679c38e39a636f5bcf5f1b4acd712be5ee0b65dba6f3",
+    "af2ebdfe81990aa42646dd91c0f05e9ed2f52aa34d32b04f8c99166bee12a7a9",
+    "b1dc63fbddbaa58ae955ad1c3edf22b2f98cc8186f71e1bdce048b4f6761c927",
+    "b24be0e89efd16844dace1c1677c5cfe2f76614315481cc8e19a232bedf8aa52",
+    "b709e6d5cb5cc42b2f2774dd72dbd5ac70bd2ec1481586d7bd0d61272a71adb4",
+    "b8c193033efdb8a2a9d70bb87151826c742ece365a89fe55d1d27b7a62a8b5a3",
+    "bc40a6ef6121af29906e07aeac46f73b26c2c3b7ef77b0730178b5dffcddedb0",
+    "bcd95535c5a8ccf0f8e3eac1b8035134ced9fe9c2c13c6f6ac89fff94441bc04",
+    "be59e4ce4acc8fcf3ca647e1db071da60340e25abd6d4b6d9752bf7f665fd539",
+    "beeb941c083b2e5330a9d9194064d875547bb9c456188ddee27c719dc2da6f7a",
+    "c413ad2e061ce2e287b472e923af04a6a6963bf8702693227d4cd0c25b097f6b",
+    "ca40146dbc8395b2e5820b0c2b50b56ee84e2b6660200977c93c05f4070360d8",
+    "cbb5fa925576e4ce202b0e9a4da0a15e146b5a949f8b3ffc27d8855000edc2e0",
+    "cedc5c5ebcece76155d12d25d23dc103c211d71d2e158923bbb649049d577c42",
+    "cff4fc34a7456592afae50a5162449ae796c410d064fa0e0ceea6e5234779516",
+    "d16a56e4eb547f9c52d5a4c518bb1f333baa795db5792b7921a6a64c25ceba35",
+    "d38fa9fabc46312ae286bb0c700ce48ebaac9e8117ef78b38f620ddba3c4e47d",
+    "d4d7482c464eabdf763d6c8b9b53752f50e056b11a3f93108e90331be6e735e0",
+    "d7d85eab23144b026f9dd97e8788ad044b6de752e345eea453627a2d4d9ee24a",
+    "da47879fb70beb1b43d3317eeb86bdc9865b4f34766b3ce21e011b39705cb181",
+    "dee052372439d89a0a58d2210299a788a66e8e186ab7b4b633ddd72dc564eae9",
+    "e306b5c3a3366542513ad1bf6b2ff671a250fef45303afb8b6e0df386250f806",
+    "e3c23cb2fb19a048c11c03a722273d42e83a7d0bc021a77e99abcb41b9fbf69a",
+    "eb95b3ad9ce73c568b6f4dca116fc535653d71c4a840d83547d91c77910d8cf9",
+    "ec1411bb94a0f9726cbc504630535015f6375d40dd496bfcd89cfdcde31dea62",
+    "ed2b62696314764f6a70f5574ab0c654551e5bb666b4f1c823608dee971769ce",
+    "ee0bfb6e69c324f8745cd433450c4491a647c85deed3443303c72f8464ac9cb1",
+    "f0d367d3f3dcbd8c055248660a27930ca7bef3e7b46bbbeb15a82340d1cc4df3",
+    "f11c0aa20aebfdfe52a7cf36a6b3d45673cab4dee8a4e4fa1fdefc474d794a90",
+    "f3b16bcb686df4a99e00299c679d421c49f6c563b46d0c2f35336e2d50201435",
+    "f99fc367b138f5064ff598830111a47edc7615c5d975ade3556765e866f61ed5",
+    "f9fa0fcacccf8f2f447d3a2cae1332c056ade0b1762040227bbca02d3450085f",
+    "fb4505942278ca9338a6ad863c419f247245f01fb4f7feabe827ab2bc20c08c0",
+    "fcc872710b95f6db9d1b256ae2bd1e6e3be279afbadfbaba4f41424acba3267f",
+    "fd49767820c4424c208514d247cee7ef8f4a05b4156793a69f20d29bf642b7d4"
+  ],
+  "sources": [
+    {
+      "source": "local",
+      "group": "460033c9386970fd98159f38649d9c4545eb37d6b12fda6ffc4c80a8bafdd7be",
+      "seat": 0,
+      "seed": 922510366,
+      "id": "922510366-0",
+      "negative": false,
+      "fold": "train"
+    },
+    {
+      "source": "local",
+      "group": "f0b076d56e66bf1cc6449ea9cc58fc231179b522db87ed12ca45b5d306549100",
+      "seat": 1,
+      "seed": 195817997,
+      "id": "195817997-1",
+      "negative": false,
+      "fold": "train"
+    },
+    {
+      "source": "local",
+      "group": "0e052f1acd8d2e4e0beb55aeb41bd4283ecb2658000ae93355da44b378abb3b1",
+      "seat": 1,
+      "seed": 22588782,
+      "id": "22588782-1",
+      "negative": false,
+      "fold": "test"
+    },
+    {
+      "source": "local",
+      "group": "0e052f1acd8d2e4e0beb55aeb41bd4283ecb2658000ae93355da44b378abb3b1",
+      "seat": 1,
+      "seed": 22588782,
+      "id": "22588782-1",
+      "negative": true,
+      "fold": "test"
+    },
+    {
+      "source": "local",
+      "group": "460033c9386970fd98159f38649d9c4545eb37d6b12fda6ffc4c80a8bafdd7be",
+      "seat": 1,
+      "seed": 922510366,
+      "id": "922510366-1",
+      "negative": false,
+      "fold": "train"
+    },
+    {
+      "source": "local",
+      "group": "0e052f1acd8d2e4e0beb55aeb41bd4283ecb2658000ae93355da44b378abb3b1",
+      "seat": 0,
+      "seed": 22588782,
+      "id": "22588782-0",
+      "negative": false,
+      "fold": "test"
+    },
+    {
+      "source": "local",
+      "group": "0e052f1acd8d2e4e0beb55aeb41bd4283ecb2658000ae93355da44b378abb3b1",
+      "seat": 0,
+      "seed": 22588782,
+      "id": "22588782-0",
+      "negative": true,
+      "fold": "test"
+    },
+    {
+      "source": "local",
+      "group": "8ad00f882ccf6fcdcc5e7cb4766f997852b366fb3b14d634d5e99b569a521b50",
+      "seat": 0,
+      "seed": 146773749,
+      "id": "146773749-0",
+      "negative": false,
+      "fold": "train"
+    },
+    {
+      "source": "local",
+      "group": "8ad00f882ccf6fcdcc5e7cb4766f997852b366fb3b14d634d5e99b569a521b50",
+      "seat": 1,
+      "seed": 146773749,
+      "id": "146773749-1",
+      "negative": false,
+      "fold": "train"
+    },
+    {
+      "source": "local",
+      "group": "f0b076d56e66bf1cc6449ea9cc58fc231179b522db87ed12ca45b5d306549100",
+      "seat": 0,
+      "seed": 195817997,
+      "id": "195817997-0",
+      "negative": false,
+      "fold": "train"
+    },
+    {
+      "source": "local",
+      "group": "7f9b62acea4484b528760b08baf42c28997b54b5297cf4c34c11c54d53c52901",
+      "seat": 1,
+      "seed": 931323443,
+      "id": "931323443-1",
+      "negative": false,
+      "fold": "train"
+    },
+    {
+      "source": "local",
+      "group": "97d12c89604562c08ba70707cbe377eb4b36300e851e9b6324cf0e5420342178",
+      "seat": 0,
+      "seed": 455366690,
+      "id": "455366690-0",
+      "negative": false,
+      "fold": "train"
+    },
+    {
+      "source": "local",
+      "group": "b4c85c1e5e52edb289afa554447ea8ab7d716b8d12d26b55f191709340190ccb",
+      "seat": 0,
+      "seed": 49125507,
+      "id": "49125507-0",
+      "negative": false,
+      "fold": "train"
+    },
+    {
+      "source": "local",
+      "group": "b4c85c1e5e52edb289afa554447ea8ab7d716b8d12d26b55f191709340190ccb",
+      "seat": 1,
+      "seed": 49125507,
+      "id": "49125507-1",
+      "negative": false,
+      "fold": "train"
+    },
+    {
+      "source": "local",
+      "group": "70572ca331c203e25a0b934d8bd7f58fc9aeddcb9411b52e2bb4199edb4ad65f",
+      "seat": 1,
+      "seed": 735954472,
+      "id": "735954472-1",
+      "negative": false,
+      "fold": "train"
+    },
+    {
+      "source": "local",
+      "group": "7f9b62acea4484b528760b08baf42c28997b54b5297cf4c34c11c54d53c52901",
+      "seat": 0,
+      "seed": 931323443,
+      "id": "931323443-0",
+      "negative": false,
+      "fold": "train"
+    },
+    {
+      "source": "local",
+      "group": "97d12c89604562c08ba70707cbe377eb4b36300e851e9b6324cf0e5420342178",
+      "seat": 1,
+      "seed": 455366690,
+      "id": "455366690-1",
+      "negative": false,
+      "fold": "train"
+    },
+    {
+      "source": "local",
+      "group": "70572ca331c203e25a0b934d8bd7f58fc9aeddcb9411b52e2bb4199edb4ad65f",
+      "seat": 0,
+      "seed": 735954472,
+      "id": "735954472-0",
+      "negative": false,
+      "fold": "train"
+    },
+    {
+      "source": "local",
+      "group": "f3db3afa2294d9cdc62e1a268bfffcecf2d5e3802be1ebb3fe085c667f6c0419",
+      "seat": 0,
+      "seed": 992798929,
+      "id": "992798929-0",
+      "negative": false,
+      "fold": "train"
+    },
+    {
+      "source": "local",
+      "group": "bbc72d43e607546736bc6bf264b518c3b166513203be249c9f9671fe75afac91",
+      "seat": 0,
+      "seed": 733867961,
+      "id": "733867961-0",
+      "negative": false,
+      "fold": "test"
+    },
+    {
+      "source": "local",
+      "group": "bbc72d43e607546736bc6bf264b518c3b166513203be249c9f9671fe75afac91",
+      "seat": 0,
+      "seed": 733867961,
+      "id": "733867961-0",
+      "negative": true,
+      "fold": "test"
+    },
+    {
+      "source": "local",
+      "group": "bbc72d43e607546736bc6bf264b518c3b166513203be249c9f9671fe75afac91",
+      "seat": 1,
+      "seed": 733867961,
+      "id": "733867961-1",
+      "negative": false,
+      "fold": "test"
+    },
+    {
+      "source": "local",
+      "group": "bbc72d43e607546736bc6bf264b518c3b166513203be249c9f9671fe75afac91",
+      "seat": 1,
+      "seed": 733867961,
+      "id": "733867961-1",
+      "negative": true,
+      "fold": "test"
+    },
+    {
+      "source": "local",
+      "group": "f3db3afa2294d9cdc62e1a268bfffcecf2d5e3802be1ebb3fe085c667f6c0419",
+      "seat": 1,
+      "seed": 992798929,
+      "id": "992798929-1",
+      "negative": false,
+      "fold": "train"
+    },
+    {
+      "source": "local",
+      "group": "84b40f09b521db016d3ac8105e54c6bcdd9b857c7a8e84afd339bda09b0086ff",
+      "seat": 1,
+      "seed": 146939584,
+      "id": "146939584-1",
+      "negative": false,
+      "fold": "train"
+    },
+    {
+      "source": "local",
+      "group": "84b40f09b521db016d3ac8105e54c6bcdd9b857c7a8e84afd339bda09b0086ff",
+      "seat": 0,
+      "seed": 146939584,
+      "id": "146939584-0",
+      "negative": false,
+      "fold": "train"
+    },
+    {
+      "source": "local",
+      "group": "3fd0833d42f2c63ebacdef9d082491aabe576e906d4e1ba827b78a7703deea16",
+      "seat": 0,
+      "seed": 77752323,
+      "id": "77752323-0",
+      "negative": false,
+      "fold": "test"
+    },
+    {
+      "source": "local",
+      "group": "3fd0833d42f2c63ebacdef9d082491aabe576e906d4e1ba827b78a7703deea16",
+      "seat": 0,
+      "seed": 77752323,
+      "id": "77752323-0",
+      "negative": true,
+      "fold": "test"
+    },
+    {
+      "source": "local",
+      "group": "3fd0833d42f2c63ebacdef9d082491aabe576e906d4e1ba827b78a7703deea16",
+      "seat": 1,
+      "seed": 77752323,
+      "id": "77752323-1",
+      "negative": false,
+      "fold": "test"
+    },
+    {
+      "source": "local",
+      "group": "3fd0833d42f2c63ebacdef9d082491aabe576e906d4e1ba827b78a7703deea16",
+      "seat": 1,
+      "seed": 77752323,
+      "id": "77752323-1",
+      "negative": true,
+      "fold": "test"
+    },
+    {
+      "source": "local",
+      "group": "3d24f29c1c0de2ec2a20de898c2ad891df19a802016a06805f262ca2bb65c607",
+      "seat": 0,
+      "seed": 568554483,
+      "id": "568554483-0",
+      "negative": false,
+      "fold": "train"
+    },
+    {
+      "source": "local",
+      "group": "16c848a403fbce498bbaaa273205ac71e1070ed7dccfffa088b4cf49eaa7e0bd",
+      "seat": 1,
+      "seed": 171684640,
+      "id": "171684640-1",
+      "negative": false,
+      "fold": "test"
+    },
+    {
+      "source": "local",
+      "group": "16c848a403fbce498bbaaa273205ac71e1070ed7dccfffa088b4cf49eaa7e0bd",
+      "seat": 1,
+      "seed": 171684640,
+      "id": "171684640-1",
+      "negative": true,
+      "fold": "test"
+    },
+    {
+      "source": "local",
+      "group": "3d24f29c1c0de2ec2a20de898c2ad891df19a802016a06805f262ca2bb65c607",
+      "seat": 1,
+      "seed": 568554483,
+      "id": "568554483-1",
+      "negative": false,
+      "fold": "train"
+    },
+    {
+      "source": "local",
+      "group": "16c848a403fbce498bbaaa273205ac71e1070ed7dccfffa088b4cf49eaa7e0bd",
+      "seat": 0,
+      "seed": 171684640,
+      "id": "171684640-0",
+      "negative": false,
+      "fold": "test"
+    },
+    {
+      "source": "local",
+      "group": "16c848a403fbce498bbaaa273205ac71e1070ed7dccfffa088b4cf49eaa7e0bd",
+      "seat": 0,
+      "seed": 171684640,
+      "id": "171684640-0",
+      "negative": true,
+      "fold": "test"
+    },
+    {
+      "source": "public",
+      "group": "717ff4e42071fb07e8b9efc4c8b04dfd0663e4bb70a333055e919e95aa3da600",
+      "seat": 1,
+      "seed": 1822130955,
+      "id": "c035d185e221aaa0457893aa86074eab",
+      "negative": false,
+      "fold": "train"
+    },
+    {
+      "source": "public",
+      "group": "37db1a81e6e6a2229a9db732f064754f2af11d66bc306c83800efde5c9acb2d5",
+      "seat": 1,
+      "seed": 537394796,
+      "id": "0ef592a8efa3a24b7dab62a439f659c0",
+      "negative": false,
+      "fold": "test"
+    },
+    {
+      "source": "public",
+      "group": "37db1a81e6e6a2229a9db732f064754f2af11d66bc306c83800efde5c9acb2d5",
+      "seat": 1,
+      "seed": 537394796,
+      "id": "0ef592a8efa3a24b7dab62a439f659c0",
+      "negative": true,
+      "fold": "test"
+    },
+    {
+      "source": "public",
+      "group": "cd759828f550a19d03cc9239fc553ef0fe1f1d96e3f94c37d4bedbf1d3a07fac",
+      "seat": 1,
+      "seed": 397168106,
+      "id": "cf276b32e4fd38f43497e60f271a3854",
+      "negative": false,
+      "fold": "test"
+    },
+    {
+      "source": "public",
+      "group": "cd759828f550a19d03cc9239fc553ef0fe1f1d96e3f94c37d4bedbf1d3a07fac",
+      "seat": 1,
+      "seed": 397168106,
+      "id": "cf276b32e4fd38f43497e60f271a3854",
+      "negative": true,
+      "fold": "test"
+    },
+    {
+      "source": "public",
+      "group": "1406873e243e0c9d5e26e7109329279567b1de8df1fc055101f5ec38cf73d707",
+      "seat": 0,
+      "seed": 658413593,
+      "id": "2213ea1d22cd295a201fd5d6ba6f910c",
+      "negative": false,
+      "fold": "train"
+    },
+    {
+      "source": "public",
+      "group": "1d4e9a1b738ad7b9eb687ee510dd4c942e0a54ec7a772b6708de3f09729eede7",
+      "seat": 1,
+      "seed": 820453682,
+      "id": "2a21be64b50ece1934998ace7898c131",
+      "negative": false,
+      "fold": "train"
+    },
+    {
+      "source": "public",
+      "group": "7af4760f5bd14195567915e576b3d9e017e167e8f41fee885aa28dae2da22f89",
+      "seat": 0,
+      "seed": 1467523485,
+      "id": "0e5cf9aa86775fe0f27fdc7c81e78013",
+      "negative": false,
+      "fold": "train"
+    },
+    {
+      "source": "public",
+      "group": "ce1fe786bf1c563297d8b39c67b62518368a60d296949cd6a6bd0de6655838f6",
+      "seat": 0,
+      "seed": 1099264254,
+      "id": "71d0b417445abab36f5e8a057de798ff",
+      "negative": false,
+      "fold": "test"
+    },
+    {
+      "source": "public",
+      "group": "ce1fe786bf1c563297d8b39c67b62518368a60d296949cd6a6bd0de6655838f6",
+      "seat": 0,
+      "seed": 1099264254,
+      "id": "71d0b417445abab36f5e8a057de798ff",
+      "negative": true,
+      "fold": "test"
+    },
+    {
+      "source": "public",
+      "group": "d58ec7c686f4e470502bb954dfa132378196855571bd0be029ffde33013405db",
+      "seat": 1,
+      "seed": 340693797,
+      "id": "132f16f82eebbbdfea98579e2c5f57bf",
+      "negative": false,
+      "fold": "train"
+    },
+    {
+      "source": "public",
+      "group": "e157e4cefab1ba95b4646278f274ec5f4bd3637988156d756919acd0f7ca59fe",
+      "seat": 1,
+      "seed": 1917543628,
+      "id": "2c1b7f5e5d8fabbfb1628dff55974c8a",
+      "negative": false,
+      "fold": "train"
+    },
+    {
+      "source": "public",
+      "group": "d563c7db08f6244275e947a41c10d784b41cf711c16c9cf659f483206182d7d6",
+      "seat": 0,
+      "seed": 1320676588,
+      "id": "1fca56fb013d31fa84dcbc6b94cd6aa9",
+      "negative": false,
+      "fold": "train"
+    },
+    {
+      "source": "public",
+      "group": "f68675a02c2572234d744fa4094f399103979dc2db849f619ee9e7894fd27dae",
+      "seat": 1,
+      "seed": 877972915,
+      "id": "d4bce948578e84ca38f2796eebde6e55",
+      "negative": false,
+      "fold": "test"
+    },
+    {
+      "source": "public",
+      "group": "f68675a02c2572234d744fa4094f399103979dc2db849f619ee9e7894fd27dae",
+      "seat": 1,
+      "seed": 877972915,
+      "id": "d4bce948578e84ca38f2796eebde6e55",
+      "negative": true,
+      "fold": "test"
+    },
+    {
+      "source": "public",
+      "group": "0b0698f412ec95e63a851ccc7bbe59cd6d5f35ae4ff388ac3a934de608fed2a6",
+      "seat": 1,
+      "seed": 1231503537,
+      "id": "252cd2acd336a5f5d44770ee57f14e71",
+      "negative": false,
+      "fold": "test"
+    },
+    {
+      "source": "public",
+      "group": "0b0698f412ec95e63a851ccc7bbe59cd6d5f35ae4ff388ac3a934de608fed2a6",
+      "seat": 1,
+      "seed": 1231503537,
+      "id": "252cd2acd336a5f5d44770ee57f14e71",
+      "negative": true,
+      "fold": "test"
+    },
+    {
+      "source": "public",
+      "group": "fefb7f72ba923e9026beba7a0a3b97652fefd20c48ae6c2f667aeb2406f06930",
+      "seat": 1,
+      "seed": 910845372,
+      "id": "37f8e0e972d08f92125baa381f75b0b3",
+      "negative": false,
+      "fold": "train"
+    },
+    {
+      "source": "public",
+      "group": "9dd985ad4c02310b6675c17f73a5c0120c54bdc8605a3c00b986cf890469ccdc",
+      "seat": 0,
+      "seed": 1439579166,
+      "id": "1946700de5ac084dffa70a3a389b6545",
+      "negative": false,
+      "fold": "train"
+    },
+    {
+      "source": "public",
+      "group": "e95e5a5590f91f80c0c062bb9eb04ca81ac76d053780f1a8840e8204efcab716",
+      "seat": 0,
+      "seed": 677113077,
+      "id": "a3babd018df5735673fd3a950948bd5a",
+      "negative": false,
+      "fold": "train"
+    },
+    {
+      "source": "public",
+      "group": "45b68279a9c1829ca4664a210de8aa69feac93c93d804f5fd585010ac0a4302b",
+      "seat": 1,
+      "seed": 705761762,
+      "id": "b18842b9d68f1a6bc8319009dea663cd",
+      "negative": false,
+      "fold": "test"
+    },
+    {
+      "source": "public",
+      "group": "45b68279a9c1829ca4664a210de8aa69feac93c93d804f5fd585010ac0a4302b",
+      "seat": 1,
+      "seed": 705761762,
+      "id": "b18842b9d68f1a6bc8319009dea663cd",
+      "negative": true,
+      "fold": "test"
+    },
+    {
+      "source": "public",
+      "group": "06951ae8d7815a977d7a5213af88d67396624bb508a7ce4e591847542986f2be",
+      "seat": 1,
+      "seed": 25853127,
+      "id": "743d579c99f14de582ea51970345d906",
+      "negative": false,
+      "fold": "train"
+    },
+    {
+      "source": "public",
+      "group": "ef6577e980c2a873813b623ef12bf6402623de10f562e570f673ff674e59dbd5",
+      "seat": 1,
+      "seed": 1216493420,
+      "id": "67d532ddcba8f4436a05da48d27b7062",
+      "negative": false,
+      "fold": "train"
+    },
+    {
+      "source": "public",
+      "group": "647e8790c92ab5bf6d5806c433bd87e9659015c16ae733a3ae2bd00c64dfbf20",
+      "seat": 0,
+      "seed": 1548675519,
+      "id": "0b6a9f20f5913c4d83d4851a52d44cd0",
+      "negative": false,
+      "fold": "test"
+    },
+    {
+      "source": "public",
+      "group": "647e8790c92ab5bf6d5806c433bd87e9659015c16ae733a3ae2bd00c64dfbf20",
+      "seat": 0,
+      "seed": 1548675519,
+      "id": "0b6a9f20f5913c4d83d4851a52d44cd0",
+      "negative": true,
+      "fold": "test"
+    },
+    {
+      "source": "public",
+      "group": "8245ae0e2571c40716cb946469cec23188716493a6312278e02cfe23feffca67",
+      "seat": 0,
+      "seed": 1505301513,
+      "id": "73ab5fa937613aa81bc049998404fd51",
+      "negative": false,
+      "fold": "train"
+    },
+    {
+      "source": "public",
+      "group": "383a18460d43aece7bb47a3792e433e8d91feadb887cede5521abce68453a9a7",
+      "seat": 1,
+      "seed": 1468201616,
+      "id": "31696e9e415f6af4d3a73f606fdb5685",
+      "negative": false,
+      "fold": "train"
+    }
+  ],
+  "training_workers": 23436,
+  "scale": [
+    1.47517226039299,
+    1.459393074719115
+  ],
+  "gate": {
+    "v6": {
+      "share_active": 0.3353,
+      "mean_weight": 0.0093
+    },
+    "local-v6": {
+      "share_active": 0.3335,
+      "mean_weight": 0.0077
+    },
+    "other": {
+      "share_active": 0.077,
+      "mean_weight": 0.0025
+    },
+    "local-other": {
+      "share_active": 0.0698,
+      "mean_weight": 0.002
+    },
+    "public-v6": {
+      "share_active": 0.3373,
+      "mean_weight": 0.0111
+    },
+    "public-other": {
+      "share_active": 0.0852,
+      "mean_weight": 0.0031
+    }
+  },
+  "statistics": {
+    "v6": {
+      "all": {
+        "operational": {
+          "units": 10395,
+          "maps": 11,
+          "nll": 0.4078,
+          "top1": 0.87148,
+          "probability_on_recorded_action": 0.84538,
+          "nll_macro_map": 0.40854
+        },
+        "calibrated": {
+          "units": 10395,
+          "maps": 11,
+          "nll": 0.35336,
+          "top1": 0.87148,
+          "probability_on_recorded_action": 0.80938,
+          "nll_macro_map": 0.3536
+        },
+        "specialists_only": {
+          "units": 10395,
+          "maps": 11,
+          "nll": 0.35167,
+          "top1": 0.87282,
+          "probability_on_recorded_action": 0.81254,
+          "nll_macro_map": 0.35161
+        },
+        "distilled": {
+          "units": 10395,
+          "maps": 11,
+          "nll": 0.3494,
+          "top1": 0.8735,
+          "probability_on_recorded_action": 0.81345,
+          "nll_macro_map": 0.34967
+        },
+        "online": {
+          "units": 10395,
+          "maps": 11,
+          "nll": 0.40702,
+          "top1": 0.87138,
+          "probability_on_recorded_action": 0.84524,
+          "nll_macro_map": 0.40762
+        }
+      },
+      "contact": {
+        "operational": {
+          "units": 2910,
+          "maps": 11,
+          "nll": 0.3496,
+          "top1": 0.89347,
+          "probability_on_recorded_action": 0.86664,
+          "nll_macro_map": 0.35429
+        },
+        "calibrated": {
+          "units": 2910,
+          "maps": 11,
+          "nll": 0.3102,
+          "top1": 0.89347,
+          "probability_on_recorded_action": 0.8313,
+          "nll_macro_map": 0.31005
+        },
+        "specialists_only": {
+          "units": 2910,
+          "maps": 11,
+          "nll": 0.30812,
+          "top1": 0.89485,
+          "probability_on_recorded_action": 0.83416,
+          "nll_macro_map": 0.30837
+        },
+        "distilled": {
+          "units": 2910,
+          "maps": 11,
+          "nll": 0.3096,
+          "top1": 0.89381,
+          "probability_on_recorded_action": 0.83777,
+          "nll_macro_map": 0.3108
+        },
+        "online": {
+          "units": 2910,
+          "maps": 11,
+          "nll": 0.3492,
+          "top1": 0.89347,
+          "probability_on_recorded_action": 0.86651,
+          "nll_macro_map": 0.35382
+        }
+      },
+      "collector": {
+        "operational": {
+          "units": 7933,
+          "maps": 11,
+          "nll": 0.36583,
+          "top1": 0.8892,
+          "probability_on_recorded_action": 0.86375,
+          "nll_macro_map": 0.3743
+        },
+        "calibrated": {
+          "units": 7933,
+          "maps": 11,
+          "nll": 0.31771,
+          "top1": 0.8892,
+          "probability_on_recorded_action": 0.82971,
+          "nll_macro_map": 0.32253
+        },
+        "specialists_only": {
+          "units": 7933,
+          "maps": 11,
+          "nll": 0.31642,
+          "top1": 0.88945,
+          "probability_on_recorded_action": 0.83242,
+          "nll_macro_map": 0.32106
+        },
+        "distilled": {
+          "units": 7933,
+          "maps": 11,
+          "nll": 0.31459,
+          "top1": 0.88932,
+          "probability_on_recorded_action": 0.83324,
+          "nll_macro_map": 0.31956
+        },
+        "online": {
+          "units": 7933,
+          "maps": 11,
+          "nll": 0.36507,
+          "top1": 0.88907,
+          "probability_on_recorded_action": 0.86362,
+          "nll_macro_map": 0.37335
+        }
+      },
+      "planter": {
+        "operational": {
+          "units": 2462,
+          "maps": 11,
+          "nll": 0.54304,
+          "top1": 0.81438,
+          "probability_on_recorded_action": 0.78618,
+          "nll_macro_map": 0.52459
+        },
+        "calibrated": {
+          "units": 2462,
+          "maps": 11,
+          "nll": 0.46823,
+          "top1": 0.81438,
+          "probability_on_recorded_action": 0.74388,
+          "nll_macro_map": 0.45687
+        },
+        "specialists_only": {
+          "units": 2462,
+          "maps": 11,
+          "nll": 0.46526,
+          "top1": 0.81925,
+          "probability_on_recorded_action": 0.74851,
+          "nll_macro_map": 0.45349
+        },
+        "distilled": {
+          "units": 2462,
+          "maps": 11,
+          "nll": 0.46156,
+          "top1": 0.8225,
+          "probability_on_recorded_action": 0.74968,
+          "nll_macro_map": 0.45009
+        },
+        "online": {
+          "units": 2462,
+          "maps": 11,
+          "nll": 0.54217,
+          "top1": 0.81438,
+          "probability_on_recorded_action": 0.78601,
+          "nll_macro_map": 0.52372
+        }
+      }
+    },
+    "local-v6": {
+      "all": {
+        "operational": {
+          "units": 5566,
+          "maps": 4,
+          "nll": 0.40697,
+          "top1": 0.86723,
+          "probability_on_recorded_action": 0.84216,
+          "nll_macro_map": 0.40723
+        },
+        "calibrated": {
+          "units": 5566,
+          "maps": 4,
+          "nll": 0.35348,
+          "top1": 0.86723,
+          "probability_on_recorded_action": 0.80709,
+          "nll_macro_map": 0.35365
+        },
+        "specialists_only": {
+          "units": 5566,
+          "maps": 4,
+          "nll": 0.35259,
+          "top1": 0.86939,
+          "probability_on_recorded_action": 0.80998,
+          "nll_macro_map": 0.35276
+        },
+        "distilled": {
+          "units": 5566,
+          "maps": 4,
+          "nll": 0.34943,
+          "top1": 0.87082,
+          "probability_on_recorded_action": 0.81134,
+          "nll_macro_map": 0.34961
+        },
+        "online": {
+          "units": 5566,
+          "maps": 4,
+          "nll": 0.40654,
+          "top1": 0.86705,
+          "probability_on_recorded_action": 0.84205,
+          "nll_macro_map": 0.40681
+        }
+      },
+      "contact": {
+        "operational": {
+          "units": 1596,
+          "maps": 4,
+          "nll": 0.33638,
+          "top1": 0.88221,
+          "probability_on_recorded_action": 0.85756,
+          "nll_macro_map": 0.33664
+        },
+        "calibrated": {
+          "units": 1596,
+          "maps": 4,
+          "nll": 0.30803,
+          "top1": 0.88221,
+          "probability_on_recorded_action": 0.82211,
+          "nll_macro_map": 0.30794
+        },
+        "specialists_only": {
+          "units": 1596,
+          "maps": 4,
+          "nll": 0.30533,
+          "top1": 0.88784,
+          "probability_on_recorded_action": 0.82541,
+          "nll_macro_map": 0.30532
+        },
+        "distilled": {
+          "units": 1596,
+          "maps": 4,
+          "nll": 0.30436,
+          "top1": 0.88659,
+          "probability_on_recorded_action": 0.82925,
+          "nll_macro_map": 0.30474
+        },
+        "online": {
+          "units": 1596,
+          "maps": 4,
+          "nll": 0.33608,
+          "top1": 0.88221,
+          "probability_on_recorded_action": 0.85743,
+          "nll_macro_map": 0.33633
+        }
+      },
+      "collector": {
+        "operational": {
+          "units": 4249,
+          "maps": 4,
+          "nll": 0.34739,
+          "top1": 0.88892,
+          "probability_on_recorded_action": 0.86363,
+          "nll_macro_map": 0.34821
+        },
+        "calibrated": {
+          "units": 4249,
+          "maps": 4,
+          "nll": 0.3074,
+          "top1": 0.88892,
+          "probability_on_recorded_action": 0.82986,
+          "nll_macro_map": 0.30788
+        },
+        "specialists_only": {
+          "units": 4249,
+          "maps": 4,
+          "nll": 0.30664,
+          "top1": 0.88986,
+          "probability_on_recorded_action": 0.8324,
+          "nll_macro_map": 0.30716
+        },
+        "distilled": {
+          "units": 4249,
+          "maps": 4,
+          "nll": 0.30389,
+          "top1": 0.89103,
+          "probability_on_recorded_action": 0.83368,
+          "nll_macro_map": 0.30444
+        },
+        "online": {
+          "units": 4249,
+          "maps": 4,
+          "nll": 0.34711,
+          "top1": 0.88868,
+          "probability_on_recorded_action": 0.8635,
+          "nll_macro_map": 0.34792
+        }
+      },
+      "planter": {
+        "operational": {
+          "units": 1317,
+          "maps": 4,
+          "nll": 0.59919,
+          "top1": 0.79727,
+          "probability_on_recorded_action": 0.77291,
+          "nll_macro_map": 0.60131
+        },
+        "calibrated": {
+          "units": 1317,
+          "maps": 4,
+          "nll": 0.50216,
+          "top1": 0.79727,
+          "probability_on_recorded_action": 0.73362,
+          "nll_macro_map": 0.50372
+        },
+        "specialists_only": {
+          "units": 1317,
+          "maps": 4,
+          "nll": 0.50084,
+          "top1": 0.80334,
+          "probability_on_recorded_action": 0.73766,
+          "nll_macro_map": 0.50269
+        },
+        "distilled": {
+          "units": 1317,
+          "maps": 4,
+          "nll": 0.49636,
+          "top1": 0.80562,
+          "probability_on_recorded_action": 0.73925,
+          "nll_macro_map": 0.49815
+        },
+        "online": {
+          "units": 1317,
+          "maps": 4,
+          "nll": 0.5983,
+          "top1": 0.79727,
+          "probability_on_recorded_action": 0.77284,
+          "nll_macro_map": 0.60043
+        }
+      }
+    },
+    "other": {
+      "all": {
+        "operational": {
+          "units": 10381,
+          "maps": 11,
+          "nll": 0.78277,
+          "top1": 0.79424,
+          "probability_on_recorded_action": 0.78143,
+          "nll_macro_map": 0.78507
+        },
+        "calibrated": {
+          "units": 10381,
+          "maps": 11,
+          "nll": 0.56827,
+          "top1": 0.79424,
+          "probability_on_recorded_action": 0.75883,
+          "nll_macro_map": 0.57151
+        },
+        "specialists_only": {
+          "units": 10381,
+          "maps": 11,
+          "nll": 0.57733,
+          "top1": 0.79366,
+          "probability_on_recorded_action": 0.75973,
+          "nll_macro_map": 0.5796
+        },
+        "distilled": {
+          "units": 10381,
+          "maps": 11,
+          "nll": 0.57853,
+          "top1": 0.79511,
+          "probability_on_recorded_action": 0.76018,
+          "nll_macro_map": 0.58096
+        },
+        "online": {
+          "units": 10381,
+          "maps": 11,
+          "nll": 0.78182,
+          "top1": 0.79424,
+          "probability_on_recorded_action": 0.78141,
+          "nll_macro_map": 0.78402
+        }
+      },
+      "contact": {
+        "operational": {
+          "units": 2857,
+          "maps": 11,
+          "nll": 0.66699,
+          "top1": 0.81344,
+          "probability_on_recorded_action": 0.80212,
+          "nll_macro_map": 0.65992
+        },
+        "calibrated": {
+          "units": 2857,
+          "maps": 11,
+          "nll": 0.49183,
+          "top1": 0.81344,
+          "probability_on_recorded_action": 0.77972,
+          "nll_macro_map": 0.48835
+        },
+        "specialists_only": {
+          "units": 2857,
+          "maps": 11,
+          "nll": 0.49897,
+          "top1": 0.81344,
+          "probability_on_recorded_action": 0.78094,
+          "nll_macro_map": 0.49449
+        },
+        "distilled": {
+          "units": 2857,
+          "maps": 11,
+          "nll": 0.51164,
+          "top1": 0.81624,
+          "probability_on_recorded_action": 0.78382,
+          "nll_macro_map": 0.50583
+        },
+        "online": {
+          "units": 2857,
+          "maps": 11,
+          "nll": 0.66648,
+          "top1": 0.81344,
+          "probability_on_recorded_action": 0.8021,
+          "nll_macro_map": 0.65939
+        }
+      },
+      "collector": {
+        "operational": {
+          "units": 8456,
+          "maps": 11,
+          "nll": 0.74582,
+          "top1": 0.80736,
+          "probability_on_recorded_action": 0.79465,
+          "nll_macro_map": 0.74806
+        },
+        "calibrated": {
+          "units": 8456,
+          "maps": 11,
+          "nll": 0.53944,
+          "top1": 0.80736,
+          "probability_on_recorded_action": 0.77309,
+          "nll_macro_map": 0.54207
+        },
+        "specialists_only": {
+          "units": 8456,
+          "maps": 11,
+          "nll": 0.54875,
+          "top1": 0.807,
+          "probability_on_recorded_action": 0.77412,
+          "nll_macro_map": 0.55027
+        },
+        "distilled": {
+          "units": 8456,
+          "maps": 11,
+          "nll": 0.55073,
+          "top1": 0.80842,
+          "probability_on_recorded_action": 0.77428,
+          "nll_macro_map": 0.55259
+        },
+        "online": {
+          "units": 8456,
+          "maps": 11,
+          "nll": 0.74496,
+          "top1": 0.80736,
+          "probability_on_recorded_action": 0.79463,
+          "nll_macro_map": 0.74712
+        }
+      },
+      "planter": {
+        "operational": {
+          "units": 1925,
+          "maps": 11,
+          "nll": 0.9451,
+          "top1": 0.73662,
+          "probability_on_recorded_action": 0.72337,
+          "nll_macro_map": 0.94994
+        },
+        "calibrated": {
+          "units": 1925,
+          "maps": 11,
+          "nll": 0.69491,
+          "top1": 0.73662,
+          "probability_on_recorded_action": 0.69616,
+          "nll_macro_map": 0.69937
+        },
+        "specialists_only": {
+          "units": 1925,
+          "maps": 11,
+          "nll": 0.70287,
+          "top1": 0.73506,
+          "probability_on_recorded_action": 0.69653,
+          "nll_macro_map": 0.70738
+        },
+        "distilled": {
+          "units": 1925,
+          "maps": 11,
+          "nll": 0.70062,
+          "top1": 0.73662,
+          "probability_on_recorded_action": 0.69827,
+          "nll_macro_map": 0.70463
+        },
+        "online": {
+          "units": 1925,
+          "maps": 11,
+          "nll": 0.94374,
+          "top1": 0.73662,
+          "probability_on_recorded_action": 0.72336,
+          "nll_macro_map": 0.94841
+        }
+      }
+    },
+    "local-other": {
+      "all": {
+        "operational": {
+          "units": 5557,
+          "maps": 4,
+          "nll": 0.7763,
+          "top1": 0.79863,
+          "probability_on_recorded_action": 0.78743,
+          "nll_macro_map": 0.77694
+        },
+        "calibrated": {
+          "units": 5557,
+          "maps": 4,
+          "nll": 0.55949,
+          "top1": 0.79863,
+          "probability_on_recorded_action": 0.76574,
+          "nll_macro_map": 0.55997
+        },
+        "specialists_only": {
+          "units": 5557,
+          "maps": 4,
+          "nll": 0.57121,
+          "top1": 0.79719,
+          "probability_on_recorded_action": 0.76606,
+          "nll_macro_map": 0.57167
+        },
+        "distilled": {
+          "units": 5557,
+          "maps": 4,
+          "nll": 0.57195,
+          "top1": 0.79809,
+          "probability_on_recorded_action": 0.76676,
+          "nll_macro_map": 0.57238
+        },
+        "online": {
+          "units": 5557,
+          "maps": 4,
+          "nll": 0.77562,
+          "top1": 0.79863,
+          "probability_on_recorded_action": 0.78741,
+          "nll_macro_map": 0.77627
+        }
+      },
+      "contact": {
+        "operational": {
+          "units": 1588,
+          "maps": 4,
+          "nll": 0.65591,
+          "top1": 0.82053,
+          "probability_on_recorded_action": 0.80935,
+          "nll_macro_map": 0.65699
+        },
+        "calibrated": {
+          "units": 1588,
+          "maps": 4,
+          "nll": 0.48258,
+          "top1": 0.82053,
+          "probability_on_recorded_action": 0.78618,
+          "nll_macro_map": 0.48325
+        },
+        "specialists_only": {
+          "units": 1588,
+          "maps": 4,
+          "nll": 0.49147,
+          "top1": 0.81738,
+          "probability_on_recorded_action": 0.78675,
+          "nll_macro_map": 0.49197
+        },
+        "distilled": {
+          "units": 1588,
+          "maps": 4,
+          "nll": 0.50594,
+          "top1": 0.82053,
+          "probability_on_recorded_action": 0.78898,
+          "nll_macro_map": 0.50644
+        },
+        "online": {
+          "units": 1588,
+          "maps": 4,
+          "nll": 0.65546,
+          "top1": 0.82053,
+          "probability_on_recorded_action": 0.80933,
+          "nll_macro_map": 0.65652
+        }
+      },
+      "collector": {
+        "operational": {
+          "units": 4645,
+          "maps": 4,
+          "nll": 0.73881,
+          "top1": 0.80969,
+          "probability_on_recorded_action": 0.79872,
+          "nll_macro_map": 0.74022
+        },
+        "calibrated": {
+          "units": 4645,
+          "maps": 4,
+          "nll": 0.53191,
+          "top1": 0.80969,
+          "probability_on_recorded_action": 0.77779,
+          "nll_macro_map": 0.53276
+        },
+        "specialists_only": {
+          "units": 4645,
+          "maps": 4,
+          "nll": 0.54399,
+          "top1": 0.8084,
+          "probability_on_recorded_action": 0.77827,
+          "nll_macro_map": 0.54485
+        },
+        "distilled": {
+          "units": 4645,
+          "maps": 4,
+          "nll": 0.54494,
+          "top1": 0.81012,
+          "probability_on_recorded_action": 0.77881,
+          "nll_macro_map": 0.5457
+        },
+        "online": {
+          "units": 4645,
+          "maps": 4,
+          "nll": 0.73818,
+          "top1": 0.80969,
+          "probability_on_recorded_action": 0.7987,
+          "nll_macro_map": 0.73958
+        }
+      },
+      "planter": {
+        "operational": {
+          "units": 912,
+          "maps": 4,
+          "nll": 0.96721,
+          "top1": 0.74232,
+          "probability_on_recorded_action": 0.72992,
+          "nll_macro_map": 0.97134
+        },
+        "calibrated": {
+          "units": 912,
+          "maps": 4,
+          "nll": 0.69993,
+          "top1": 0.74232,
+          "probability_on_recorded_action": 0.70436,
+          "nll_macro_map": 0.70228
+        },
+        "specialists_only": {
+          "units": 912,
+          "maps": 4,
+          "nll": 0.70986,
+          "top1": 0.74013,
+          "probability_on_recorded_action": 0.70388,
+          "nll_macro_map": 0.71335
+        },
+        "distilled": {
+          "units": 912,
+          "maps": 4,
+          "nll": 0.70952,
+          "top1": 0.73684,
+          "probability_on_recorded_action": 0.70542,
+          "nll_macro_map": 0.7127
+        },
+        "online": {
+          "units": 912,
+          "maps": 4,
+          "nll": 0.9663,
+          "top1": 0.74232,
+          "probability_on_recorded_action": 0.72991,
+          "nll_macro_map": 0.9703
+        }
+      }
+    },
+    "public-v6": {
+      "all": {
+        "operational": {
+          "units": 4829,
+          "maps": 7,
+          "nll": 0.40876,
+          "top1": 0.87637,
+          "probability_on_recorded_action": 0.84908,
+          "nll_macro_map": 0.40929
+        },
+        "calibrated": {
+          "units": 4829,
+          "maps": 7,
+          "nll": 0.35323,
+          "top1": 0.87637,
+          "probability_on_recorded_action": 0.81202,
+          "nll_macro_map": 0.35358
+        },
+        "specialists_only": {
+          "units": 4829,
+          "maps": 7,
+          "nll": 0.35061,
+          "top1": 0.87679,
+          "probability_on_recorded_action": 0.81549,
+          "nll_macro_map": 0.35095
+        },
+        "distilled": {
+          "units": 4829,
+          "maps": 7,
+          "nll": 0.34936,
+          "top1": 0.87658,
+          "probability_on_recorded_action": 0.81588,
+          "nll_macro_map": 0.3497
+        },
+        "online": {
+          "units": 4829,
+          "maps": 7,
+          "nll": 0.40756,
+          "top1": 0.87637,
+          "probability_on_recorded_action": 0.84891,
+          "nll_macro_map": 0.40809
+        }
+      },
+      "contact": {
+        "operational": {
+          "units": 1314,
+          "maps": 7,
+          "nll": 0.36564,
+          "top1": 0.90715,
+          "probability_on_recorded_action": 0.87768,
+          "nll_macro_map": 0.36438
+        },
+        "calibrated": {
+          "units": 1314,
+          "maps": 7,
+          "nll": 0.31283,
+          "top1": 0.90715,
+          "probability_on_recorded_action": 0.84245,
+          "nll_macro_map": 0.31126
+        },
+        "specialists_only": {
+          "units": 1314,
+          "maps": 7,
+          "nll": 0.31151,
+          "top1": 0.90335,
+          "probability_on_recorded_action": 0.84478,
+          "nll_macro_map": 0.31012
+        },
+        "distilled": {
+          "units": 1314,
+          "maps": 7,
+          "nll": 0.31596,
+          "top1": 0.90259,
+          "probability_on_recorded_action": 0.84812,
+          "nll_macro_map": 0.31426
+        },
+        "online": {
+          "units": 1314,
+          "maps": 7,
+          "nll": 0.36513,
+          "top1": 0.90715,
+          "probability_on_recorded_action": 0.87753,
+          "nll_macro_map": 0.36381
+        }
+      },
+      "collector": {
+        "operational": {
+          "units": 3684,
+          "maps": 7,
+          "nll": 0.3871,
+          "top1": 0.88952,
+          "probability_on_recorded_action": 0.86389,
+          "nll_macro_map": 0.3892
+        },
+        "calibrated": {
+          "units": 3684,
+          "maps": 7,
+          "nll": 0.32961,
+          "top1": 0.88952,
+          "probability_on_recorded_action": 0.82953,
+          "nll_macro_map": 0.3309
+        },
+        "specialists_only": {
+          "units": 3684,
+          "maps": 7,
+          "nll": 0.32769,
+          "top1": 0.88898,
+          "probability_on_recorded_action": 0.83244,
+          "nll_macro_map": 0.32901
+        },
+        "distilled": {
+          "units": 3684,
+          "maps": 7,
+          "nll": 0.32693,
+          "top1": 0.88735,
+          "probability_on_recorded_action": 0.83273,
+          "nll_macro_map": 0.3282
+        },
+        "online": {
+          "units": 3684,
+          "maps": 7,
+          "nll": 0.38579,
+          "top1": 0.88952,
+          "probability_on_recorded_action": 0.86375,
+          "nll_macro_map": 0.38788
+        }
+      },
+      "planter": {
+        "operational": {
+          "units": 1145,
+          "maps": 7,
+          "nll": 0.47845,
+          "top1": 0.83406,
+          "probability_on_recorded_action": 0.80144,
+          "nll_macro_map": 0.48074
+        },
+        "calibrated": {
+          "units": 1145,
+          "maps": 7,
+          "nll": 0.42922,
+          "top1": 0.83406,
+          "probability_on_recorded_action": 0.75568,
+          "nll_macro_map": 0.4301
+        },
+        "specialists_only": {
+          "units": 1145,
+          "maps": 7,
+          "nll": 0.42434,
+          "top1": 0.83755,
+          "probability_on_recorded_action": 0.76098,
+          "nll_macro_map": 0.42538
+        },
+        "distilled": {
+          "units": 1145,
+          "maps": 7,
+          "nll": 0.42153,
+          "top1": 0.84192,
+          "probability_on_recorded_action": 0.76169,
+          "nll_macro_map": 0.42262
+        },
+        "online": {
+          "units": 1145,
+          "maps": 7,
+          "nll": 0.47761,
+          "top1": 0.83406,
+          "probability_on_recorded_action": 0.80117,
+          "nll_macro_map": 0.47989
+        }
+      }
+    },
+    "public-other": {
+      "all": {
+        "operational": {
+          "units": 4824,
+          "maps": 7,
+          "nll": 0.79023,
+          "top1": 0.78918,
+          "probability_on_recorded_action": 0.77452,
+          "nll_macro_map": 0.78971
+        },
+        "calibrated": {
+          "units": 4824,
+          "maps": 7,
+          "nll": 0.57838,
+          "top1": 0.78918,
+          "probability_on_recorded_action": 0.75087,
+          "nll_macro_map": 0.57811
+        },
+        "specialists_only": {
+          "units": 4824,
+          "maps": 7,
+          "nll": 0.58437,
+          "top1": 0.78959,
+          "probability_on_recorded_action": 0.75244,
+          "nll_macro_map": 0.58413
+        },
+        "distilled": {
+          "units": 4824,
+          "maps": 7,
+          "nll": 0.58611,
+          "top1": 0.79167,
+          "probability_on_recorded_action": 0.75261,
+          "nll_macro_map": 0.58587
+        },
+        "online": {
+          "units": 4824,
+          "maps": 7,
+          "nll": 0.78896,
+          "top1": 0.78918,
+          "probability_on_recorded_action": 0.7745,
+          "nll_macro_map": 0.78845
+        }
+      },
+      "contact": {
+        "operational": {
+          "units": 1269,
+          "maps": 7,
+          "nll": 0.68086,
+          "top1": 0.80457,
+          "probability_on_recorded_action": 0.79307,
+          "nll_macro_map": 0.6616
+        },
+        "calibrated": {
+          "units": 1269,
+          "maps": 7,
+          "nll": 0.50341,
+          "top1": 0.80457,
+          "probability_on_recorded_action": 0.77165,
+          "nll_macro_map": 0.49126
+        },
+        "specialists_only": {
+          "units": 1269,
+          "maps": 7,
+          "nll": 0.50836,
+          "top1": 0.80851,
+          "probability_on_recorded_action": 0.77367,
+          "nll_macro_map": 0.49593
+        },
+        "distilled": {
+          "units": 1269,
+          "maps": 7,
+          "nll": 0.51877,
+          "top1": 0.81087,
+          "probability_on_recorded_action": 0.77737,
+          "nll_macro_map": 0.50548
+        },
+        "online": {
+          "units": 1269,
+          "maps": 7,
+          "nll": 0.68026,
+          "top1": 0.80457,
+          "probability_on_recorded_action": 0.79304,
+          "nll_macro_map": 0.66104
+        }
+      },
+      "collector": {
+        "operational": {
+          "units": 3811,
+          "maps": 7,
+          "nll": 0.75436,
+          "top1": 0.80451,
+          "probability_on_recorded_action": 0.78969,
+          "nll_macro_map": 0.75254
+        },
+        "calibrated": {
+          "units": 3811,
+          "maps": 7,
+          "nll": 0.54861,
+          "top1": 0.80451,
+          "probability_on_recorded_action": 0.76737,
+          "nll_macro_map": 0.54739
+        },
+        "specialists_only": {
+          "units": 3811,
+          "maps": 7,
+          "nll": 0.55455,
+          "top1": 0.8053,
+          "probability_on_recorded_action": 0.76906,
+          "nll_macro_map": 0.55336
+        },
+        "distilled": {
+          "units": 3811,
+          "maps": 7,
+          "nll": 0.5578,
+          "top1": 0.80635,
+          "probability_on_recorded_action": 0.76876,
+          "nll_macro_map": 0.55652
+        },
+        "online": {
+          "units": 3811,
+          "maps": 7,
+          "nll": 0.75322,
+          "top1": 0.80451,
+          "probability_on_recorded_action": 0.78967,
+          "nll_macro_map": 0.75142
+        }
+      },
+      "planter": {
+        "operational": {
+          "units": 1013,
+          "maps": 7,
+          "nll": 0.92518,
+          "top1": 0.73149,
+          "probability_on_recorded_action": 0.71748,
+          "nll_macro_map": 0.93771
+        },
+        "calibrated": {
+          "units": 1013,
+          "maps": 7,
+          "nll": 0.69038,
+          "top1": 0.73149,
+          "probability_on_recorded_action": 0.68877,
+          "nll_macro_map": 0.69771
+        },
+        "specialists_only": {
+          "units": 1013,
+          "maps": 7,
+          "nll": 0.69657,
+          "top1": 0.7305,
+          "probability_on_recorded_action": 0.68992,
+          "nll_macro_map": 0.70398
+        },
+        "distilled": {
+          "units": 1013,
+          "maps": 7,
+          "nll": 0.69261,
+          "top1": 0.73643,
+          "probability_on_recorded_action": 0.69183,
+          "nll_macro_map": 0.70002
+        },
+        "online": {
+          "units": 1013,
+          "maps": 7,
+          "nll": 0.92343,
+          "top1": 0.73149,
+          "probability_on_recorded_action": 0.71746,
+          "nll_macro_map": 0.93591
+        }
+      }
+    }
+  },
+  "paired_nll": {
+    "v6": {
+      "online_vs_operational": {
+        "maps": 11,
+        "improved": 11,
+        "delta": -0.00092,
+        "map_bootstrap95": [
+          -0.00161,
+          -0.00041
+        ]
+      },
+      "distilled_vs_calibrated": {
+        "maps": 11,
+        "improved": 11,
+        "delta": -0.00394,
+        "map_bootstrap95": [
+          -0.00537,
+          -0.00262
+        ]
+      },
+      "distilled_vs_specialists_only": {
+        "maps": 11,
+        "improved": 9,
+        "delta": -0.00194,
+        "map_bootstrap95": [
+          -0.00332,
+          -0.00052
+        ]
+      }
+    },
+    "local-v6": {
+      "online_vs_operational": {
+        "maps": 4,
+        "improved": 4,
+        "delta": -0.00043,
+        "map_bootstrap95": [
+          -0.00055,
+          -0.00027
+        ]
+      },
+      "distilled_vs_calibrated": {
+        "maps": 4,
+        "improved": 4,
+        "delta": -0.00404,
+        "map_bootstrap95": [
+          -0.00517,
+          -0.00249
+        ]
+      },
+      "distilled_vs_specialists_only": {
+        "maps": 4,
+        "improved": 4,
+        "delta": -0.00315,
+        "map_bootstrap95": [
+          -0.00433,
+          -0.00124
+        ]
+      }
+    },
+    "other": {
+      "online_vs_operational": {
+        "maps": 11,
+        "improved": 11,
+        "delta": -0.00105,
+        "map_bootstrap95": [
+          -0.00188,
+          -0.00044
+        ]
+      },
+      "distilled_vs_calibrated": {
+        "maps": 11,
+        "improved": 0,
+        "delta": 0.00945,
+        "map_bootstrap95": [
+          0.00654,
+          0.01254
+        ]
+      },
+      "distilled_vs_specialists_only": {
+        "maps": 11,
+        "improved": 4,
+        "delta": 0.00136,
+        "map_bootstrap95": [
+          -0.00065,
+          0.00326
+        ]
+      }
+    },
+    "local-other": {
+      "online_vs_operational": {
+        "maps": 4,
+        "improved": 4,
+        "delta": -0.00067,
+        "map_bootstrap95": [
+          -0.00096,
+          -0.00045
+        ]
+      },
+      "distilled_vs_calibrated": {
+        "maps": 4,
+        "improved": 0,
+        "delta": 0.0124,
+        "map_bootstrap95": [
+          0.00785,
+          0.01758
+        ]
+      },
+      "distilled_vs_specialists_only": {
+        "maps": 4,
+        "improved": 2,
+        "delta": 0.0007,
+        "map_bootstrap95": [
+          -0.00247,
+          0.00415
+        ]
+      }
+    },
+    "public-v6": {
+      "online_vs_operational": {
+        "maps": 7,
+        "improved": 7,
+        "delta": -0.0012,
+        "map_bootstrap95": [
+          -0.0022,
+          -0.00043
+        ]
+      },
+      "distilled_vs_calibrated": {
+        "maps": 7,
+        "improved": 7,
+        "delta": -0.00388,
+        "map_bootstrap95": [
+          -0.00604,
+          -0.00197
+        ]
+      },
+      "distilled_vs_specialists_only": {
+        "maps": 7,
+        "improved": 5,
+        "delta": -0.00125,
+        "map_bootstrap95": [
+          -0.00305,
+          0.00054
+        ]
+      }
+    },
+    "public-other": {
+      "online_vs_operational": {
+        "maps": 7,
+        "improved": 7,
+        "delta": -0.00126,
+        "map_bootstrap95": [
+          -0.00246,
+          -0.00036
+        ]
+      },
+      "distilled_vs_calibrated": {
+        "maps": 7,
+        "improved": 0,
+        "delta": 0.00776,
+        "map_bootstrap95": [
+          0.00467,
+          0.01089
+        ]
+      },
+      "distilled_vs_specialists_only": {
+        "maps": 7,
+        "improved": 2,
+        "delta": 0.00174,
+        "map_bootstrap95": [
+          -0.00066,
+          0.00383
+        ]
+      }
+    }
+  }
+}

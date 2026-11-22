@@ -27,8 +27,12 @@ def _v7_shipping_id(style,gap):
 
 
 def apply(code,weights):
-    sys.path.insert(0,str(ROOT/'experiments/v5'))
-    from model_export import split
+    location=str(ROOT/'experiments/v5')
+    sys.path.insert(0,location)
+    try:
+        from model_export import split
+    finally:
+        sys.path.remove(location)
     for key,blob in zip(('_WEIGHTS','_VALUE'),split(weights)):
         code,n=re.subn('^'+key+r' = "[^"]*"$',lambda _:key+' = "'+blob+'"',code,flags=re.M)
         assert n==1
