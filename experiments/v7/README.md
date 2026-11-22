@@ -19,7 +19,8 @@ Master7sE 对局中，第 47 步到第 252 步的两次己方工人交货之间�
 | [Quay](checkpoints/quay.py) | 9–7 | 2/8，7/8 | −1093.18 | 保留实验。一次开局只剩无力种树的种植员，现金停在 4.55。[逐图结果](../../analysis/v7/01-qualifying-summary.json) |
 | [Pilot](checkpoints/pilot.py) | 10–6 | 7/8，3/8 | +137.42 | 加入两步兑付、招工储备和最后一个采集员保护。此批 16 局均未失去全部自主收入来源，两个座位的战绩未达到晋级线。[逐图结果](../../analysis/v7/02-qualifying-summary.json) · [现金冻结复核](../../analysis/v7/02-liquidity.json) |
 | [Jetty](checkpoints/jetty.py) | 10–6 | 5/8，5/8 | −27.31 | 两边首步都出一采一种。两席胜场相同，三图双胜、一图双负。前 75 步单局平均少采 180.96。此批没有彻底断流。[逐图结果](../../analysis/v7/03-qualifying-summary.json) · [逐笔收支](../../analysis/v7/03-qualifying-economy.json) |
-| [Narrows](checkpoints/narrows.py) | 评测中 | | | 使用两方的 20/35 步净现金预测，并根据对手最近的实际动作调整其应手概率。[冻结文件与地图](../../analysis/v7/04-qualifying.json) |
+| [Narrows](checkpoints/narrows.py) | 6–10 | 3/8，3/8 | −44.31 | 场均净树收入多 124.86，实际入库少 127.90，额外招聘多花 41.25。16 局均完赛，双方分别有 14、9 步超过单步 1 秒，最长为 1.475、1.335 秒。[全部胜负与用时](../../analysis/v7/04-qualifying-summary.json) · [入库与树收](../../analysis/v7/04-qualifying-economy.json) |
+| [Soundings](checkpoints/soundings.py) | 评测中 | | | 单独训练经济估值头和负责推演的小网络，工资与回库保护沿用前版。[冻结文件与地图](../../analysis/v7/05-qualifying.json) |
 
 在仓库根目录，以下命令可以重建已冻结的文件，并复现存档分叉的现金流。
 
@@ -44,3 +45,10 @@ python experiments/v7/branch_audit.py
 也对主动封堵敌方基地的方案做了闭环检验。两张额外地图上，八个分叉的平均敌方入库反而增加了 18.69。在截图局的一个第 164 步分叉里，我方少收 499.86，对手少收 297.92，自身付出的代价更大。正式候选保留按双方预期入库选择对策的方式。[封堵试验](../../analysis/v7/blockade.md)
 
 三批共 48 局的裁判入库事件里，存活的工人确实有时站在敌方基地把钱交给对方。直接带入的钱每笔均低于 30。截图局也未发现重载工人主动把大笔碳送进对方基地。[48 局事件](../../analysis/v7/depot-gifts.json)
+
+
+## 推演对手与经济估值
+
+在相同的 12 张留图、16,718 个有标签动作中，将 v6 与按运货局势拟合的动作网络权重按 35% 和 65% 平均，动作损失从 0.48446 改善到 0.48106。固定所有动作参数，重新拟合估值头的最后两层，未来现金的平均绝对误差由 0.08740 降至 0.07130，单位是 3,000 碳。两项选择都使用这 12 图作开发验证。[权重插值](../../analysis/v7/interpolation.json) · [独立估值头训练](../../analysis/v7/value-refit.json)
+
+小型推演网络使用 141 张地图训练，留图上的动作命中由 67.77% 升至 68.93%。在另外 7 局真实 QQ-v6 对局的 56 个起点，冻结对方为通用风格、己方为 Artemis 风格，让双方重新行动。15 步资金差平均绝对误差从 208.02 降至 180.43；5 步和 10 步分别由 66.60 升至 72.05、116.44 升至 127.05。前五步用旧模型、以后用新模型的组合也已测试，第 15 步误差为 213.67。[小网络训练](../../analysis/v7/rollout-validation.json) · [真实对局现金预测](../../analysis/v7/rollout-cash.json) · [分阶段组合](../../analysis/v7/rollout-switch.json)
