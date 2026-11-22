@@ -1,0 +1,236 @@
+{
+  "holdout_game_cases": 13,
+  "roots": 458,
+  "max_frozen_transition_cash_error": 0,
+  "sampling": "Three shared seeded actual _sample draws per strategy and frame. Same recorded rival joint response, full stock reserved for the referee, frozen original root worker/base heads as comparator. Compared the proposed extra candidate directly, without search selection or later adaptation.",
+  "results": {
+    "all": {
+      "roots": 458,
+      "maps": 13,
+      "difference": {
+        "gross_received": 0.0923,
+        "cash_change": -1.0687,
+        "remaining_worker_cargo": -2.2954,
+        "worker_count_change": 0.0095,
+        "tree_count_change": -0.0022,
+        "lost_cargo_outside_own_depot": -0.0442
+      },
+      "macro_map95": {
+        "gross_received": [
+          -0.3854,
+          0.4484
+        ],
+        "cash_change": [
+          -2.3241,
+          -0.2014
+        ],
+        "remaining_worker_cargo": [
+          -2.7886,
+          -1.5045
+        ],
+        "worker_count_change": [
+          -0.0082,
+          0.0275
+        ],
+        "tree_count_change": [
+          -0.0133,
+          0.0087
+        ],
+        "lost_cargo_outside_own_depot": [
+          -0.0866,
+          0.0
+        ]
+      }
+    },
+    "early": {
+      "roots": 355,
+      "maps": 13,
+      "difference": {
+        "gross_received": -0.0312,
+        "cash_change": -1.2003,
+        "remaining_worker_cargo": -1.735,
+        "worker_count_change": 0.0122,
+        "tree_count_change": -0.0047,
+        "lost_cargo_outside_own_depot": -0.0571
+      },
+      "macro_map95": {
+        "gross_received": [
+          -0.4086,
+          0.2671
+        ],
+        "cash_change": [
+          -2.5418,
+          -0.2147
+        ],
+        "remaining_worker_cargo": [
+          -2.2943,
+          -1.1904
+        ],
+        "worker_count_change": [
+          -0.0032,
+          0.0309
+        ],
+        "tree_count_change": [
+          -0.0156,
+          0.008
+        ],
+        "lost_cargo_outside_own_depot": [
+          -0.1461,
+          0.0
+        ]
+      }
+    },
+    "Master7sE": {
+      "roots": 118,
+      "maps": 3,
+      "difference": {
+        "gross_received": -0.3498,
+        "cash_change": -1.3111,
+        "remaining_worker_cargo": -1.9229,
+        "worker_count_change": -0.0,
+        "tree_count_change": 0.0,
+        "lost_cargo_outside_own_depot": 0.0
+      },
+      "macro_map95": {
+        "gross_received": [
+          -1.2141,
+          0.0
+        ],
+        "cash_change": [
+          -2.5578,
+          -0.5377
+        ],
+        "remaining_worker_cargo": [
+          -2.9456,
+          -1.1036
+        ],
+        "worker_count_change": [
+          -0.049,
+          0.0202
+        ],
+        "tree_count_change": [
+          -0.0101,
+          0.0098
+        ],
+        "lost_cargo_outside_own_depot": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "late_blocked": {
+      "roots": 103,
+      "maps": 8,
+      "difference": {
+        "gross_received": 0.5179,
+        "cash_change": -0.6153,
+        "remaining_worker_cargo": -4.227,
+        "worker_count_change": 0.0,
+        "tree_count_change": 0.0065,
+        "lost_cargo_outside_own_depot": 0.0
+      },
+      "macro_map95": {
+        "gross_received": [
+          -2.7778,
+          2.3077
+        ],
+        "cash_change": [
+          -4.8401,
+          1.7342
+        ],
+        "remaining_worker_cargo": [
+          -7.9949,
+          0.0194
+        ],
+        "worker_count_change": [
+          -0.057,
+          0.0414
+        ],
+        "tree_count_change": [
+          0.0,
+          0.0153
+        ],
+        "lost_cargo_outside_own_depot": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "Master7sB2": {
+      "roots": 166,
+      "maps": 5,
+      "difference": {
+        "gross_received": 0.1781,
+        "cash_change": -0.5567,
+        "remaining_worker_cargo": -1.673,
+        "worker_count_change": 0.004,
+        "tree_count_change": -0.0141,
+        "lost_cargo_outside_own_depot": 0.0
+      },
+      "macro_map95": {
+        "gross_received": [
+          0.0263,
+          0.5797
+        ],
+        "cash_change": [
+          -0.9529,
+          -0.0886
+        ],
+        "remaining_worker_cargo": [
+          -1.9594,
+          -1.4507
+        ],
+        "worker_count_change": [
+          -0.0165,
+          0.0273
+        ],
+        "tree_count_change": [
+          -0.0303,
+          -0.0026
+        ],
+        "lost_cargo_outside_own_depot": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "Master7sD": {
+      "roots": 174,
+      "maps": 5,
+      "difference": {
+        "gross_received": 0.3102,
+        "cash_change": -1.3929,
+        "remaining_worker_cargo": -3.1418,
+        "worker_count_change": 0.0211,
+        "tree_count_change": 0.0077,
+        "lost_cargo_outside_own_depot": -0.1164
+      },
+      "macro_map95": {
+        "gross_received": [
+          -0.7748,
+          0.9947
+        ],
+        "cash_change": [
+          -4.3136,
+          0.536
+        ],
+        "remaining_worker_cargo": [
+          -4.1003,
+          -1.4229
+        ],
+        "worker_count_change": [
+          -0.0068,
+          0.0561
+        ],
+        "tree_count_change": [
+          -0.0037,
+          0.0294
+        ],
+        "lost_cargo_outside_own_depot": [
+          -0.2251,
+          0.0
+        ]
+      }
+    }
+  }
+}

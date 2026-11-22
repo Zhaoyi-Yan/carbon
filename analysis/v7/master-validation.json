@@ -1,0 +1,1672 @@
+{
+  "training_games": 42,
+  "validation_games": 13,
+  "training_maps": [
+    "01ee78a48895ab9f54512f57982825f6bfe9d9291049ed6a386aa8e136a0336b",
+    "0f529e7645c77f3e0f878c6f964a406dbd66bb310c3075f4194c6df5b3c397ea",
+    "1086d93297e1b9d0ab75a4052ba69e10ca66308fb3033efe3c353cf88a666a9d",
+    "1c0c8b6c8830b689a493e17538699b083aa2683fdf0bb0250fe541def5191698",
+    "26b49664d9027dba7e55a29f6680270c2dcd6da019fac440744667db47e1fdbc",
+    "3bafca40bc93aa9ddd69312ca675b01d3da96380900d4de8f7ca4d7de569243f",
+    "3c689afab9b90e8046193c237dccf5b43e48b8e8f23d91ee0d516f9cd8baf393",
+    "48bebeae8d6dfef24f8d35b4c829a84d27ffa4f9f30d6d77066a6efd24e5f3c0",
+    "58576719ab8ca8c16e3de4be8ec5cf5ab62be335ada241d35173dea8671738a6",
+    "586a58729ed0284378a6a0725477a599473c9a048c22fdb727dbb0d4a27ea8ac",
+    "5b32052714ff3f3f3476cb8d2a69f0d116c77be3232eb6fc762c57a93a4f975d",
+    "5c20c4de58e98fd74d3b5586bd5f6992336eefa3f353630fadce91aa5d58eb6a",
+    "5c5610a7c1e145625342a755e8736cbc0090bc49c693098b00c81dddd502f1f7",
+    "67dc9462aaf69f2f0ef10782fd3386f92fccf15e1f9df1373d240c48341f027a",
+    "69b8a0815575c84e9b8cc76839ce1b14de6ffc1cc3e6625b195250df1fd31447",
+    "6ff54e59e057f316b66560e7af6c64cd8d4dd49063890b81c73230f833888349",
+    "7ae0d94fc02fbfc4f2a38d49c1d904c5dce9c63b2d4b0235cb31101680c43c5b",
+    "838a336357da90284fb2741203efd76beeb810db64d16c7186401188fb86cc82",
+    "87f2f2e38eac35834dd8a6ae24fdab9e63f545a5b152f1323844d072e8123fea",
+    "888f576089254ab130290ad09c7d484724c8c0a5ff3d3f49dce405e4fa74a05b",
+    "8b72717bccbb31dd1ea675e54774197971810bd532cdbeb83fb522f985507fd0",
+    "951a0a3d2ecef80db521baecd45d71bd78e73f3f6d44793d76114f854d330255",
+    "97f249b35ba64d331516b33989ba52d06c6176b3d5e54232d1523a269b71dea0",
+    "99bbe3c482b3dfec18029ba6d285c04337dac9a6e0addefa11a00e5e1ee8bbdf",
+    "9b78a53283bb0a1ac35908be872463da53635918a3d30ac1cbf3d50dd1b13c1d",
+    "9f141a4e3c6129919d612165223d987ba39bdcf94e3714e663c9e0f0f6c50665",
+    "a0f313f427844729735f6fea1b16c2e06f4ded4bab075c27b8c256ed6d1425e6",
+    "a8372d333a0416cd09281bacda06b2094b7af038b9f103fdbc74801f539bcc3a",
+    "acb52a43487a26233ef5849dcf87baf1a0fb6175257cadc193901a23f6446c25",
+    "ad53076f4dcb6572dbda1bafaa2b4eb0f8a039a0e8c4f1b4441c1cd6143a2da1",
+    "add71bde4ffbe0d9b11a28ad34cbc2f5125166a9ca2b5b003cd4e9b17df1d866",
+    "b369f3882c25d5bbe9c788d9ededcddb461ef0fac9136f88370695d41eb29640",
+    "b7eca7edb8fd67954a0c8ffd9f7fa34d31190fb25e76eca01c7d00e1fa367c0a",
+    "bf853d1f2ad2998ae92970a6684b90491e8436a0b0bb792de44482effc934726",
+    "c28d4a520c1859db3b674230c5b1d61e82dde5316e35160a6a0a6c04385a75b7",
+    "cbad6bab1f873f27f5a8def0e2a6eda875f38ce82e982665053590f629c4a738",
+    "da88c21685623c9ad3d4a99049aa407cf796a0d420de7f75eab077d82bd5a9fb",
+    "e515e7dd08d84aed3d0a626b145860ecffcae15650afd7acb446388b07c0daef",
+    "e5648bcedf64653d85be5b329b50536b84910fdbf1f1a55ee1a78bbb69e40a6e",
+    "ea4a87ef8fcb3374f3205779209a3da5f92728f4b144c3c854b070d6b76d0cdd",
+    "f5666f50bae83ec13966737ea957ef9b1e6452fca019dc167556b1a19f753a25",
+    "fffd1f11a8a51ff0f4d9e2a49cc5aeb0b69fe571c2e28785c530092b36ae20dc"
+  ],
+  "validation_maps": [
+    "02c70b1800e1f105e456e6b234fdf9b60e58ba417ab8428524e82aaac9594c8e",
+    "1f50da532eef1e0235009dd79374004664b13e13beb08848c69cdac0abca9936",
+    "245462cdd92f042d7b5202ae2acdd1ffaf916f473f9da3f7c0c41e79a9492a08",
+    "51c06f5803d8088f991de51eb4d002315c2bc6ae617153bb8680158cd9106845",
+    "5b1e7dc4eea38dcb80b5d335b3efc64306007bbb9091b0334341f59bc74f3e14",
+    "7398f28816983b6843334861171398b9ac75a6571251b15144c9c8ba7b85bda6",
+    "8ada14e0111d4979db882601edb3fe1b1b6770aa9dead4c396648010113e3314",
+    "911aaef7e96dbe29a587f8050d1bde3cb87d31627edaaf71ae89e7b4f7a8471d",
+    "990b7adde86f7bd4661986aa39e5206e82f3f912fca2467f41962dfe92ce39ee",
+    "b354ccc12cc06f73798a61ed9d0f55712c5da0478924fddd81f0d8cef1fe1573",
+    "c0cb61dcc60c3d6bf916e20570aff8edad8959163f6565bf78f9dfee8ed30e44",
+    "fe112f946a5c6a1af3e1f3451b53d26610c2314d80d7269443c63457fb57b99c",
+    "fed607e4a97e5cae03c9d4e0777a663d17ad11799ff3e95ecf38a782bc6bbcbc"
+  ],
+  "cohorts": {
+    "Master7sD": {
+      "train": 17,
+      "test": 5
+    },
+    "Master7sB2": {
+      "train": 16,
+      "test": 5
+    },
+    "Master7sE": {
+      "train": 9,
+      "test": 3
+    }
+  },
+  "match_ids": [
+    {
+      "match": "e518e0aeff3cfbf788bc2764e07293b0",
+      "game": 1,
+      "seed": 331963963,
+      "group": "9f141a4e3c6129919d612165223d987ba39bdcf94e3714e663c9e0f0f6c50665",
+      "teacher": "Master7sE",
+      "side": 0,
+      "fold": "train"
+    },
+    {
+      "match": "45869c71d4f1add508b049840e388e1f",
+      "game": 1,
+      "seed": 1223065123,
+      "group": "ea4a87ef8fcb3374f3205779209a3da5f92728f4b144c3c854b070d6b76d0cdd",
+      "teacher": "Master7sE",
+      "side": 0,
+      "fold": "train"
+    },
+    {
+      "match": "1012bed474be7305e70fe09fd4cde9ef",
+      "game": 1,
+      "seed": 900916768,
+      "group": "7398f28816983b6843334861171398b9ac75a6571251b15144c9c8ba7b85bda6",
+      "teacher": "Master7sE",
+      "side": 0,
+      "fold": "test"
+    },
+    {
+      "match": "785ae91618edb772a3cca538a3bf8396",
+      "game": 1,
+      "seed": 1211562470,
+      "group": "fe112f946a5c6a1af3e1f3451b53d26610c2314d80d7269443c63457fb57b99c",
+      "teacher": "Master7sE",
+      "side": 0,
+      "fold": "test"
+    },
+    {
+      "match": "f5e69abd6f15278bf9ae01a40601c330",
+      "game": 1,
+      "seed": 1672586096,
+      "group": "5b32052714ff3f3f3476cb8d2a69f0d116c77be3232eb6fc762c57a93a4f975d",
+      "teacher": "Master7sE",
+      "side": 0,
+      "fold": "train"
+    },
+    {
+      "match": "efa15ce0a9b4d18398cbe73ad5ca6dc6",
+      "game": 1,
+      "seed": 1074001050,
+      "group": "1f50da532eef1e0235009dd79374004664b13e13beb08848c69cdac0abca9936",
+      "teacher": "Master7sE",
+      "side": 1,
+      "fold": "test"
+    },
+    {
+      "match": "9107c596d070f54c60fc175bf616af09",
+      "game": 1,
+      "seed": 490502654,
+      "group": "01ee78a48895ab9f54512f57982825f6bfe9d9291049ed6a386aa8e136a0336b",
+      "teacher": "Master7sE",
+      "side": 0,
+      "fold": "train"
+    },
+    {
+      "match": "631a646fd1b1194a50b31ae19e3009c4",
+      "game": 1,
+      "seed": 570148676,
+      "group": "da88c21685623c9ad3d4a99049aa407cf796a0d420de7f75eab077d82bd5a9fb",
+      "teacher": "Master7sE",
+      "side": 0,
+      "fold": "train"
+    },
+    {
+      "match": "6279308face2cdcb2ac4807dcaedc9c4",
+      "game": 1,
+      "seed": 129005236,
+      "group": "acb52a43487a26233ef5849dcf87baf1a0fb6175257cadc193901a23f6446c25",
+      "teacher": "Master7sE",
+      "side": 1,
+      "fold": "train"
+    },
+    {
+      "match": "53a975fac52b167a27aeb1eaa4f219a5",
+      "game": 1,
+      "seed": 158222097,
+      "group": "99bbe3c482b3dfec18029ba6d285c04337dac9a6e0addefa11a00e5e1ee8bbdf",
+      "teacher": "Master7sE",
+      "side": 0,
+      "fold": "train"
+    },
+    {
+      "match": "d7d24986c9ebab487b1bc8853dcea0ec",
+      "game": 1,
+      "seed": 1882784124,
+      "group": "cbad6bab1f873f27f5a8def0e2a6eda875f38ce82e982665053590f629c4a738",
+      "teacher": "Master7sE",
+      "side": 0,
+      "fold": "train"
+    },
+    {
+      "match": "47888afc098db221a6bda6923c0e5783",
+      "game": 1,
+      "seed": 1631213075,
+      "group": "951a0a3d2ecef80db521baecd45d71bd78e73f3f6d44793d76114f854d330255",
+      "teacher": "Master7sE",
+      "side": 1,
+      "fold": "train"
+    },
+    {
+      "match": "b05d118c38d7d7054ba210f6cbbcf6e0",
+      "game": 1,
+      "seed": 1287885227,
+      "group": "48bebeae8d6dfef24f8d35b4c829a84d27ffa4f9f30d6d77066a6efd24e5f3c0",
+      "teacher": "Master7sB2",
+      "side": 0,
+      "fold": "train"
+    },
+    {
+      "match": "9e5f1d1688216bd29ecb28ebe04c7f22",
+      "game": 1,
+      "seed": 166457320,
+      "group": "911aaef7e96dbe29a587f8050d1bde3cb87d31627edaaf71ae89e7b4f7a8471d",
+      "teacher": "Master7sB2",
+      "side": 1,
+      "fold": "test"
+    },
+    {
+      "match": "afe4ab003a0d6222783cff3fde074af2",
+      "game": 1,
+      "seed": 827127196,
+      "group": "b369f3882c25d5bbe9c788d9ededcddb461ef0fac9136f88370695d41eb29640",
+      "teacher": "Master7sB2",
+      "side": 1,
+      "fold": "train"
+    },
+    {
+      "match": "767a4bf43ca1dc86118292659de1670a",
+      "game": 1,
+      "seed": 1848992262,
+      "group": "888f576089254ab130290ad09c7d484724c8c0a5ff3d3f49dce405e4fa74a05b",
+      "teacher": "Master7sB2",
+      "side": 1,
+      "fold": "train"
+    },
+    {
+      "match": "0eb4fcb3485b4af9708098814e570f33",
+      "game": 1,
+      "seed": 1612871497,
+      "group": "51c06f5803d8088f991de51eb4d002315c2bc6ae617153bb8680158cd9106845",
+      "teacher": "Master7sD",
+      "side": 1,
+      "fold": "test"
+    },
+    {
+      "match": "68d05f61cd96e7dc49941fd48ed56287",
+      "game": 1,
+      "seed": 1208445597,
+      "group": "3bafca40bc93aa9ddd69312ca675b01d3da96380900d4de8f7ca4d7de569243f",
+      "teacher": "Master7sD",
+      "side": 1,
+      "fold": "train"
+    },
+    {
+      "match": "65d0acf26835a6a8364b84750e5fc204",
+      "game": 1,
+      "seed": 727737435,
+      "group": "e515e7dd08d84aed3d0a626b145860ecffcae15650afd7acb446388b07c0daef",
+      "teacher": "Master7sB2",
+      "side": 1,
+      "fold": "train"
+    },
+    {
+      "match": "2fa5a4c664fc27bbcfac7eec01c8edc3",
+      "game": 1,
+      "seed": 1508792120,
+      "group": "ad53076f4dcb6572dbda1bafaa2b4eb0f8a039a0e8c4f1b4441c1cd6143a2da1",
+      "teacher": "Master7sB2",
+      "side": 1,
+      "fold": "train"
+    },
+    {
+      "match": "ba7e1f7fc45d646702f3a2dab1a1e8f3",
+      "game": 1,
+      "seed": 1610990862,
+      "group": "990b7adde86f7bd4661986aa39e5206e82f3f912fca2467f41962dfe92ce39ee",
+      "teacher": "Master7sD",
+      "side": 1,
+      "fold": "test"
+    },
+    {
+      "match": "3476f7a9ef2477d8da4752f50e64cfca",
+      "game": 1,
+      "seed": 1408661420,
+      "group": "58576719ab8ca8c16e3de4be8ec5cf5ab62be335ada241d35173dea8671738a6",
+      "teacher": "Master7sD",
+      "side": 0,
+      "fold": "train"
+    },
+    {
+      "match": "fe3beb57e34a752098e098efc37db7c6",
+      "game": 1,
+      "seed": 1162541208,
+      "group": "add71bde4ffbe0d9b11a28ad34cbc2f5125166a9ca2b5b003cd4e9b17df1d866",
+      "teacher": "Master7sD",
+      "side": 1,
+      "fold": "train"
+    },
+    {
+      "match": "e64bba2caf9ec944723477193a967218",
+      "game": 1,
+      "seed": 653096899,
+      "group": "c28d4a520c1859db3b674230c5b1d61e82dde5316e35160a6a0a6c04385a75b7",
+      "teacher": "Master7sD",
+      "side": 0,
+      "fold": "train"
+    },
+    {
+      "match": "9be25a99800a9631b7a66a3793d78d4f",
+      "game": 1,
+      "seed": 2137869436,
+      "group": "0f529e7645c77f3e0f878c6f964a406dbd66bb310c3075f4194c6df5b3c397ea",
+      "teacher": "Master7sD",
+      "side": 0,
+      "fold": "train"
+    },
+    {
+      "match": "9e6ab9948c9e2f7c4d196041422bf246",
+      "game": 1,
+      "seed": 1688590380,
+      "group": "245462cdd92f042d7b5202ae2acdd1ffaf916f473f9da3f7c0c41e79a9492a08",
+      "teacher": "Master7sD",
+      "side": 0,
+      "fold": "test"
+    },
+    {
+      "match": "4d99efc73c00979051d3f33e13c1d163",
+      "game": 1,
+      "seed": 1317475659,
+      "group": "1086d93297e1b9d0ab75a4052ba69e10ca66308fb3033efe3c353cf88a666a9d",
+      "teacher": "Master7sB2",
+      "side": 0,
+      "fold": "train"
+    },
+    {
+      "match": "7ad550d6acbf90789ff0aa69ac256fb8",
+      "game": 1,
+      "seed": 838812613,
+      "group": "9b78a53283bb0a1ac35908be872463da53635918a3d30ac1cbf3d50dd1b13c1d",
+      "teacher": "Master7sB2",
+      "side": 1,
+      "fold": "train"
+    },
+    {
+      "match": "9e852f79c739dbb079f9995704c1fca9",
+      "game": 1,
+      "seed": 1521029745,
+      "group": "c0cb61dcc60c3d6bf916e20570aff8edad8959163f6565bf78f9dfee8ed30e44",
+      "teacher": "Master7sB2",
+      "side": 0,
+      "fold": "test"
+    },
+    {
+      "match": "fff1837bb9b4965626d37ef178a187e3",
+      "game": 1,
+      "seed": 1193712458,
+      "group": "3c689afab9b90e8046193c237dccf5b43e48b8e8f23d91ee0d516f9cd8baf393",
+      "teacher": "Master7sB2",
+      "side": 0,
+      "fold": "train"
+    },
+    {
+      "match": "67026be02dc9e80c66096a55f58c4e75",
+      "game": 1,
+      "seed": 127148316,
+      "group": "bf853d1f2ad2998ae92970a6684b90491e8436a0b0bb792de44482effc934726",
+      "teacher": "Master7sB2",
+      "side": 1,
+      "fold": "train"
+    },
+    {
+      "match": "c4ebf349000d1aab992057825960afc4",
+      "game": 1,
+      "seed": 308888438,
+      "group": "5c5610a7c1e145625342a755e8736cbc0090bc49c693098b00c81dddd502f1f7",
+      "teacher": "Master7sD",
+      "side": 1,
+      "fold": "train"
+    },
+    {
+      "match": "a420dcf89b5f174ccfcff12218048f6d",
+      "game": 1,
+      "seed": 953918091,
+      "group": "69b8a0815575c84e9b8cc76839ce1b14de6ffc1cc3e6625b195250df1fd31447",
+      "teacher": "Master7sB2",
+      "side": 0,
+      "fold": "train"
+    },
+    {
+      "match": "1430f7e5bb9a71a59bf3b00c84aa1746",
+      "game": 1,
+      "seed": 390373699,
+      "group": "5c20c4de58e98fd74d3b5586bd5f6992336eefa3f353630fadce91aa5d58eb6a",
+      "teacher": "Master7sD",
+      "side": 0,
+      "fold": "train"
+    },
+    {
+      "match": "94abf21111438cf1b579ba633cc0f96d",
+      "game": 1,
+      "seed": 947571874,
+      "group": "b354ccc12cc06f73798a61ed9d0f55712c5da0478924fddd81f0d8cef1fe1573",
+      "teacher": "Master7sB2",
+      "side": 0,
+      "fold": "test"
+    },
+    {
+      "match": "bd7c38af97d85e0c931b0a6597c2518a",
+      "game": 1,
+      "seed": 802235579,
+      "group": "fffd1f11a8a51ff0f4d9e2a49cc5aeb0b69fe571c2e28785c530092b36ae20dc",
+      "teacher": "Master7sB2",
+      "side": 1,
+      "fold": "train"
+    },
+    {
+      "match": "5b01f1d2429fe367731442c1763561ce",
+      "game": 1,
+      "seed": 1213054820,
+      "group": "6ff54e59e057f316b66560e7af6c64cd8d4dd49063890b81c73230f833888349",
+      "teacher": "Master7sB2",
+      "side": 0,
+      "fold": "train"
+    },
+    {
+      "match": "dc765ca36a2c8e61e6fa851e652ef944",
+      "game": 1,
+      "seed": 2041015425,
+      "group": "02c70b1800e1f105e456e6b234fdf9b60e58ba417ab8428524e82aaac9594c8e",
+      "teacher": "Master7sB2",
+      "side": 1,
+      "fold": "test"
+    },
+    {
+      "match": "b1d2d362ee6be9f01477592334e07bb7",
+      "game": 1,
+      "seed": 835368897,
+      "group": "8b72717bccbb31dd1ea675e54774197971810bd532cdbeb83fb522f985507fd0",
+      "teacher": "Master7sD",
+      "side": 0,
+      "fold": "train"
+    },
+    {
+      "match": "1d470eb9d9f4a504c73059f429ae210a",
+      "game": 1,
+      "seed": 1401619249,
+      "group": "8ada14e0111d4979db882601edb3fe1b1b6770aa9dead4c396648010113e3314",
+      "teacher": "Master7sB2",
+      "side": 0,
+      "fold": "test"
+    },
+    {
+      "match": "53bde7f13376ea8af50f0548880cd18c",
+      "game": 1,
+      "seed": 377247570,
+      "group": "67dc9462aaf69f2f0ef10782fd3386f92fccf15e1f9df1373d240c48341f027a",
+      "teacher": "Master7sD",
+      "side": 0,
+      "fold": "train"
+    },
+    {
+      "match": "7335246a15fdca46a14d6b42613bc50f",
+      "game": 1,
+      "seed": 1958331026,
+      "group": "5b1e7dc4eea38dcb80b5d335b3efc64306007bbb9091b0334341f59bc74f3e14",
+      "teacher": "Master7sD",
+      "side": 0,
+      "fold": "test"
+    },
+    {
+      "match": "65fbd2e7adfee709e40a23d1290d6494",
+      "game": 1,
+      "seed": 1232091424,
+      "group": "b7eca7edb8fd67954a0c8ffd9f7fa34d31190fb25e76eca01c7d00e1fa367c0a",
+      "teacher": "Master7sD",
+      "side": 1,
+      "fold": "train"
+    },
+    {
+      "match": "1f9ac3db7020dd54813c566e18cc1f2b",
+      "game": 1,
+      "seed": 1760000134,
+      "group": "97f249b35ba64d331516b33989ba52d06c6176b3d5e54232d1523a269b71dea0",
+      "teacher": "Master7sB2",
+      "side": 1,
+      "fold": "train"
+    },
+    {
+      "match": "6c6c16cceae95f66761c65b37ff3bdf4",
+      "game": 1,
+      "seed": 1385726466,
+      "group": "f5666f50bae83ec13966737ea957ef9b1e6452fca019dc167556b1a19f753a25",
+      "teacher": "Master7sD",
+      "side": 0,
+      "fold": "train"
+    },
+    {
+      "match": "cd9c7bb19e091b36ea2c3f3939471be2",
+      "game": 1,
+      "seed": 897444456,
+      "group": "1c0c8b6c8830b689a493e17538699b083aa2683fdf0bb0250fe541def5191698",
+      "teacher": "Master7sD",
+      "side": 1,
+      "fold": "train"
+    },
+    {
+      "match": "79574338632ea14aada175d1a8b40f9a",
+      "game": 1,
+      "seed": 1290101755,
+      "group": "a0f313f427844729735f6fea1b16c2e06f4ded4bab075c27b8c256ed6d1425e6",
+      "teacher": "Master7sB2",
+      "side": 1,
+      "fold": "train"
+    },
+    {
+      "match": "4ae73e12bd05711cd4c4ab9a393e3383",
+      "game": 1,
+      "seed": 1715131766,
+      "group": "586a58729ed0284378a6a0725477a599473c9a048c22fdb727dbb0d4a27ea8ac",
+      "teacher": "Master7sD",
+      "side": 1,
+      "fold": "train"
+    },
+    {
+      "match": "91e7b29acd9f232ac5d0fb90ae8e894b",
+      "game": 1,
+      "seed": 1225896274,
+      "group": "fed607e4a97e5cae03c9d4e0777a663d17ad11799ff3e95ecf38a782bc6bbcbc",
+      "teacher": "Master7sD",
+      "side": 1,
+      "fold": "test"
+    },
+    {
+      "match": "bb84e62eee6363d7b8387b5993b20987",
+      "game": 1,
+      "seed": 1888997213,
+      "group": "87f2f2e38eac35834dd8a6ae24fdab9e63f545a5b152f1323844d072e8123fea",
+      "teacher": "Master7sD",
+      "side": 1,
+      "fold": "train"
+    },
+    {
+      "match": "c1a648dbef73a4514054db136d00b649",
+      "game": 1,
+      "seed": 361425836,
+      "group": "26b49664d9027dba7e55a29f6680270c2dcd6da019fac440744667db47e1fdbc",
+      "teacher": "Master7sD",
+      "side": 1,
+      "fold": "train"
+    },
+    {
+      "match": "3eb5dd5c4163df2b21d212f24a621bfe",
+      "game": 1,
+      "seed": 480256857,
+      "group": "e5648bcedf64653d85be5b329b50536b84910fdbf1f1a55ee1a78bbb69e40a6e",
+      "teacher": "Master7sB2",
+      "side": 1,
+      "fold": "train"
+    },
+    {
+      "match": "0741ae41e8b86f7eea359253549068c3",
+      "game": 1,
+      "seed": 1601255425,
+      "group": "838a336357da90284fb2741203efd76beeb810db64d16c7186401188fb86cc82",
+      "teacher": "Master7sD",
+      "side": 0,
+      "fold": "train"
+    },
+    {
+      "match": "8b7a16e37b9fecd356bb0e59f7c0ea45",
+      "game": 1,
+      "seed": 926576862,
+      "group": "7ae0d94fc02fbfc4f2a38d49c1d904c5dce9c63b2d4b0235cb31101680c43c5b",
+      "teacher": "Master7sD",
+      "side": 0,
+      "fold": "train"
+    },
+    {
+      "match": "f1accc76ab0218a9015dcc1fe098be6a",
+      "game": 1,
+      "seed": 342134792,
+      "group": "a8372d333a0416cd09281bacda06b2094b7af038b9f103fdbc74801f539bcc3a",
+      "teacher": "Master7sB2",
+      "side": 0,
+      "fold": "train"
+    }
+  ],
+  "economy": {
+    "Master7sD": {
+      "games": 22,
+      "opening": {
+        "RECCOLLECTOR/RECPLANTER": 21,
+        "RECCOLLECTOR/RECCOLLECTOR": 1
+      },
+      "median_first_deposit": 6.5,
+      "median_first_tree": 14.5,
+      "checkpoints": {
+        "10": [
+          22.97,
+          17.18,
+          1.73,
+          0.36
+        ],
+        "20": [
+          92.56,
+          25.37,
+          3.27,
+          1.23
+        ],
+        "35": [
+          258.12,
+          37.8,
+          5.82,
+          2.73
+        ],
+        "50": [
+          411.56,
+          99.27,
+          7.32,
+          4.41
+        ],
+        "80": [
+          877.68,
+          574.23,
+          7.86,
+          6.82
+        ]
+      }
+    },
+    "Master7sB2": {
+      "games": 21,
+      "opening": {
+        "RECCOLLECTOR/RECPLANTER": 13,
+        "RECPLANTER": 8
+      },
+      "median_first_deposit": 8.0,
+      "median_first_tree": 7.0,
+      "checkpoints": {
+        "10": [
+          21.94,
+          16.57,
+          1.57,
+          0.71
+        ],
+        "20": [
+          92.36,
+          26.3,
+          3.48,
+          1.43
+        ],
+        "35": [
+          279.5,
+          57.28,
+          6.48,
+          3.43
+        ],
+        "50": [
+          435.77,
+          193.11,
+          7.52,
+          5.57
+        ],
+        "80": [
+          1033.19,
+          855.01,
+          8.19,
+          5.86
+        ]
+      }
+    },
+    "Master7sE": {
+      "games": 12,
+      "opening": {
+        "RECCOLLECTOR/RECCOLLECTOR": 12
+      },
+      "median_first_deposit": 8.0,
+      "median_first_tree": 23.5,
+      "checkpoints": {
+        "10": [
+          29.15,
+          26.65,
+          2.58,
+          0.0
+        ],
+        "20": [
+          125.24,
+          25.22,
+          3.92,
+          0.42
+        ],
+        "35": [
+          314.88,
+          50.71,
+          5.92,
+          2.33
+        ],
+        "50": [
+          459.97,
+          84.08,
+          7.33,
+          3.83
+        ],
+        "80": [
+          987.82,
+          587.42,
+          7.83,
+          5.67
+        ]
+      }
+    }
+  },
+  "economic_units": "Cumulative gross transfers, current cash, collector count, tree count. Descriptive across all maps.",
+  "measurement": "Teacher-facing fog updated on every turn. Existing root router evaluated on sampled frames. Base commands only if affordable with free worker capacity. An incumbent style may have seen some historical maps in older pretraining; new heads have never trained on any validation layout.",
+  "comparisons": "Frozen root and matched dedicated deep style (D=1, B2=2, E proxy=1) independently temperature calibrated on training. Strong mix is independently fitted to root, two existing offsets, both dedicated deep styles. Learned model only needs normal root activations.",
+  "model_bytes": 3707,
+  "statistics": {
+    "collector": {
+      "all": {
+        "all": {
+          "maps": 13,
+          "units": 4839,
+          "model_nll": 0.52616,
+          "model_hit1": 0.78529,
+          "strong_mix_nll": 0.53456,
+          "strong_mix_hit1": 0.78384,
+          "frozen_root_nll": 0.541,
+          "root_hit1": 0.78343,
+          "prior_style_nll": 0.54138,
+          "prior_style_hit1": 0.78033,
+          "macro_delta": -0.01014,
+          "maps_beat_strong": 10,
+          "ci95": [
+            -0.0195,
+            -0.0025
+          ]
+        },
+        "Master7sE": {
+          "maps": 3,
+          "units": 1119,
+          "model_nll": 0.63896,
+          "model_hit1": 0.7471,
+          "strong_mix_nll": 0.64694,
+          "strong_mix_hit1": 0.7462,
+          "frozen_root_nll": 0.64724,
+          "root_hit1": 0.7471,
+          "prior_style_nll": 0.65493,
+          "prior_style_hit1": 0.74084,
+          "macro_delta": -0.00912,
+          "maps_beat_strong": 2,
+          "ci95": [
+            -0.0264,
+            0.0117
+          ]
+        },
+        "Master7sB2": {
+          "maps": 5,
+          "units": 1887,
+          "model_nll": 0.40965,
+          "model_hit1": 0.83201,
+          "strong_mix_nll": 0.41222,
+          "strong_mix_hit1": 0.83201,
+          "frozen_root_nll": 0.42177,
+          "root_hit1": 0.82989,
+          "prior_style_nll": 0.41429,
+          "prior_style_hit1": 0.83678,
+          "macro_delta": -0.0026,
+          "maps_beat_strong": 3,
+          "ci95": [
+            -0.0057,
+            0.0007
+          ]
+        },
+        "Master7sD": {
+          "maps": 5,
+          "units": 1833,
+          "model_nll": 0.57725,
+          "model_hit1": 0.7605,
+          "strong_mix_nll": 0.59188,
+          "strong_mix_hit1": 0.75723,
+          "frozen_root_nll": 0.59888,
+          "root_hit1": 0.75777,
+          "prior_style_nll": 0.60289,
+          "prior_style_hit1": 0.74632,
+          "macro_delta": -0.01829,
+          "maps_beat_strong": 5,
+          "ci95": [
+            -0.0382,
+            -0.0045
+          ]
+        }
+      },
+      "cash_open": {
+        "all": {
+          "maps": 13,
+          "units": 1715,
+          "model_nll": 0.56225,
+          "model_hit1": 0.77259,
+          "strong_mix_nll": 0.57553,
+          "strong_mix_hit1": 0.76385,
+          "frozen_root_nll": 0.58355,
+          "root_hit1": 0.76851,
+          "prior_style_nll": 0.58106,
+          "prior_style_hit1": 0.76501,
+          "macro_delta": -0.01218,
+          "maps_beat_strong": 8,
+          "ci95": [
+            -0.0254,
+            -0.0013
+          ]
+        },
+        "Master7sE": {
+          "maps": 3,
+          "units": 403,
+          "model_nll": 0.67126,
+          "model_hit1": 0.73201,
+          "strong_mix_nll": 0.67737,
+          "strong_mix_hit1": 0.7196,
+          "frozen_root_nll": 0.67888,
+          "root_hit1": 0.72705,
+          "prior_style_nll": 0.67968,
+          "prior_style_hit1": 0.7196,
+          "macro_delta": -0.00584,
+          "maps_beat_strong": 2,
+          "ci95": [
+            -0.0109,
+            0.0016
+          ]
+        },
+        "Master7sB2": {
+          "maps": 5,
+          "units": 581,
+          "model_nll": 0.42939,
+          "model_hit1": 0.82788,
+          "strong_mix_nll": 0.4281,
+          "strong_mix_hit1": 0.82272,
+          "frozen_root_nll": 0.44135,
+          "root_hit1": 0.8296,
+          "prior_style_nll": 0.42866,
+          "prior_style_hit1": 0.83993,
+          "macro_delta": 0.00103,
+          "maps_beat_strong": 2,
+          "ci95": [
+            -0.007,
+            0.0079
+          ]
+        },
+        "Master7sD": {
+          "maps": 5,
+          "units": 731,
+          "model_nll": 0.60775,
+          "model_hit1": 0.75103,
+          "strong_mix_nll": 0.63657,
+          "strong_mix_hit1": 0.74145,
+          "frozen_root_nll": 0.64401,
+          "root_hit1": 0.74282,
+          "prior_style_nll": 0.64781,
+          "prior_style_hit1": 0.73051,
+          "macro_delta": -0.02919,
+          "maps_beat_strong": 4,
+          "ci95": [
+            -0.0531,
+            -0.0058
+          ]
+        }
+      },
+      "newborn": {
+        "all": {
+          "maps": 13,
+          "units": 128,
+          "model_nll": 0.56798,
+          "model_hit1": 0.75,
+          "strong_mix_nll": 0.57796,
+          "strong_mix_hit1": 0.75,
+          "frozen_root_nll": 0.60162,
+          "root_hit1": 0.74219,
+          "prior_style_nll": 0.60523,
+          "prior_style_hit1": 0.74219,
+          "macro_delta": -0.00746,
+          "maps_beat_strong": 9,
+          "ci95": [
+            -0.0233,
+            0.0097
+          ]
+        },
+        "Master7sE": {
+          "maps": 3,
+          "units": 41,
+          "model_nll": 0.7545,
+          "model_hit1": 0.58537,
+          "strong_mix_nll": 0.76793,
+          "strong_mix_hit1": 0.60976,
+          "frozen_root_nll": 0.8058,
+          "root_hit1": 0.58537,
+          "prior_style_nll": 0.8052,
+          "prior_style_hit1": 0.58537,
+          "macro_delta": -0.0139,
+          "maps_beat_strong": 2,
+          "ci95": [
+            -0.0437,
+            0.035
+          ]
+        },
+        "Master7sB2": {
+          "maps": 5,
+          "units": 37,
+          "model_nll": 0.43129,
+          "model_hit1": 0.83784,
+          "strong_mix_nll": 0.4329,
+          "strong_mix_hit1": 0.83784,
+          "frozen_root_nll": 0.43908,
+          "root_hit1": 0.83784,
+          "prior_style_nll": 0.43145,
+          "prior_style_hit1": 0.83784,
+          "macro_delta": 0.00113,
+          "maps_beat_strong": 3,
+          "ci95": [
+            -0.0297,
+            0.032
+          ]
+        },
+        "Master7sD": {
+          "maps": 5,
+          "units": 50,
+          "model_nll": 0.51619,
+          "model_hit1": 0.82,
+          "strong_mix_nll": 0.52951,
+          "strong_mix_hit1": 0.8,
+          "frozen_root_nll": 0.55448,
+          "root_hit1": 0.8,
+          "prior_style_nll": 0.56985,
+          "prior_style_hit1": 0.8,
+          "macro_delta": -0.01217,
+          "maps_beat_strong": 4,
+          "ci95": [
+            -0.0256,
+            0.0018
+          ]
+        }
+      },
+      "later": {
+        "all": {
+          "maps": 13,
+          "units": 2563,
+          "model_nll": 0.50325,
+          "model_hit1": 0.79009,
+          "strong_mix_nll": 0.508,
+          "strong_mix_hit1": 0.79633,
+          "frozen_root_nll": 0.51349,
+          "root_hit1": 0.79282,
+          "prior_style_nll": 0.51611,
+          "prior_style_hit1": 0.79009,
+          "macro_delta": -0.00781,
+          "maps_beat_strong": 9,
+          "ci95": [
+            -0.0181,
+            0.0012
+          ]
+        },
+        "Master7sE": {
+          "maps": 3,
+          "units": 568,
+          "model_nll": 0.65682,
+          "model_hit1": 0.73415,
+          "strong_mix_nll": 0.66659,
+          "strong_mix_hit1": 0.73944,
+          "frozen_root_nll": 0.66534,
+          "root_hit1": 0.73415,
+          "prior_style_nll": 0.68103,
+          "prior_style_hit1": 0.73063,
+          "macro_delta": -0.01565,
+          "maps_beat_strong": 2,
+          "ci95": [
+            -0.0528,
+            0.0209
+          ]
+        },
+        "Master7sB2": {
+          "maps": 5,
+          "units": 1069,
+          "model_nll": 0.38829,
+          "model_hit1": 0.8391,
+          "strong_mix_nll": 0.39425,
+          "strong_mix_hit1": 0.84471,
+          "frozen_root_nll": 0.40258,
+          "root_hit1": 0.83817,
+          "prior_style_nll": 0.39711,
+          "prior_style_hit1": 0.84284,
+          "macro_delta": -0.00586,
+          "maps_beat_strong": 4,
+          "ci95": [
+            -0.0091,
+            -0.0022
+          ]
+        },
+        "Master7sD": {
+          "maps": 5,
+          "units": 926,
+          "model_nll": 0.54177,
+          "model_hit1": 0.76782,
+          "strong_mix_nll": 0.54204,
+          "strong_mix_hit1": 0.77538,
+          "frozen_root_nll": 0.54837,
+          "root_hit1": 0.77646,
+          "prior_style_nll": 0.55233,
+          "prior_style_hit1": 0.76566,
+          "macro_delta": -0.00507,
+          "maps_beat_strong": 3,
+          "ci95": [
+            -0.0187,
+            0.0062
+          ]
+        }
+      },
+      "blocked": {
+        "all": {
+          "maps": 11,
+          "units": 342,
+          "model_nll": 0.4805,
+          "model_hit1": 0.7924,
+          "strong_mix_nll": 0.45536,
+          "strong_mix_hit1": 0.79532,
+          "frozen_root_nll": 0.44849,
+          "root_hit1": 0.79825,
+          "prior_style_nll": 0.45983,
+          "prior_style_hit1": 0.77778,
+          "macro_delta": 0.02758,
+          "maps_beat_strong": 2,
+          "ci95": [
+            0.0032,
+            0.0554
+          ]
+        },
+        "Master7sE": {
+          "maps": 2,
+          "units": 76,
+          "model_nll": 0.57444,
+          "model_hit1": 0.75,
+          "strong_mix_nll": 0.54399,
+          "strong_mix_hit1": 0.76316,
+          "frozen_root_nll": 0.55094,
+          "root_hit1": 0.76316,
+          "prior_style_nll": 0.55084,
+          "prior_style_hit1": 0.78947,
+          "macro_delta": 0.04851,
+          "maps_beat_strong": 1,
+          "ci95": [
+            -0.0278,
+            0.1248
+          ]
+        },
+        "Master7sB2": {
+          "maps": 5,
+          "units": 141,
+          "model_nll": 0.41796,
+          "model_hit1": 0.8227,
+          "strong_mix_nll": 0.3995,
+          "strong_mix_hit1": 0.8227,
+          "frozen_root_nll": 0.39616,
+          "root_hit1": 0.82979,
+          "prior_style_nll": 0.4023,
+          "prior_style_hit1": 0.80142,
+          "macro_delta": 0.01529,
+          "maps_beat_strong": 1,
+          "ci95": [
+            -0.0098,
+            0.0389
+          ]
+        },
+        "Master7sD": {
+          "maps": 4,
+          "units": 125,
+          "model_nll": 0.49392,
+          "model_hit1": 0.784,
+          "strong_mix_nll": 0.46447,
+          "strong_mix_hit1": 0.784,
+          "frozen_root_nll": 0.44524,
+          "root_hit1": 0.784,
+          "prior_style_nll": 0.46939,
+          "prior_style_hit1": 0.744,
+          "macro_delta": 0.03247,
+          "maps_beat_strong": 0,
+          "ci95": [
+            0.0078,
+            0.067
+          ]
+        }
+      }
+    },
+    "planter": {
+      "all": {
+        "all": {
+          "maps": 13,
+          "units": 1289,
+          "model_nll": 0.60344,
+          "model_hit1": 0.75873,
+          "strong_mix_nll": 0.61723,
+          "strong_mix_hit1": 0.75562,
+          "frozen_root_nll": 0.61501,
+          "root_hit1": 0.75485,
+          "prior_style_nll": 0.62399,
+          "prior_style_hit1": 0.75097,
+          "macro_delta": -0.0137,
+          "maps_beat_strong": 8,
+          "ci95": [
+            -0.0239,
+            -0.0036
+          ]
+        },
+        "Master7sE": {
+          "maps": 3,
+          "units": 281,
+          "model_nll": 0.70489,
+          "model_hit1": 0.67616,
+          "strong_mix_nll": 0.71378,
+          "strong_mix_hit1": 0.68327,
+          "frozen_root_nll": 0.7163,
+          "root_hit1": 0.67616,
+          "prior_style_nll": 0.72302,
+          "prior_style_hit1": 0.70463,
+          "macro_delta": -0.00749,
+          "maps_beat_strong": 1,
+          "ci95": [
+            -0.0327,
+            0.0052
+          ]
+        },
+        "Master7sB2": {
+          "maps": 5,
+          "units": 559,
+          "model_nll": 0.51047,
+          "model_hit1": 0.82111,
+          "strong_mix_nll": 0.51967,
+          "strong_mix_hit1": 0.8068,
+          "frozen_root_nll": 0.51242,
+          "root_hit1": 0.81216,
+          "prior_style_nll": 0.52291,
+          "prior_style_hit1": 0.80322,
+          "macro_delta": -0.00917,
+          "maps_beat_strong": 3,
+          "ci95": [
+            -0.0236,
+            0.0062
+          ]
+        },
+        "Master7sD": {
+          "maps": 5,
+          "units": 449,
+          "model_nll": 0.65569,
+          "model_hit1": 0.73274,
+          "strong_mix_nll": 0.67825,
+          "strong_mix_hit1": 0.73719,
+          "frozen_root_nll": 0.67934,
+          "root_hit1": 0.73274,
+          "prior_style_nll": 0.68787,
+          "prior_style_hit1": 0.71492,
+          "macro_delta": -0.02194,
+          "maps_beat_strong": 4,
+          "ci95": [
+            -0.0365,
+            -0.0073
+          ]
+        }
+      },
+      "cash_open": {
+        "all": {
+          "maps": 13,
+          "units": 600,
+          "model_nll": 0.63117,
+          "model_hit1": 0.755,
+          "strong_mix_nll": 0.65626,
+          "strong_mix_hit1": 0.745,
+          "frozen_root_nll": 0.65762,
+          "root_hit1": 0.74333,
+          "prior_style_nll": 0.66345,
+          "prior_style_hit1": 0.735,
+          "macro_delta": -0.0262,
+          "maps_beat_strong": 11,
+          "ci95": [
+            -0.0402,
+            -0.0116
+          ]
+        },
+        "Master7sE": {
+          "maps": 3,
+          "units": 132,
+          "model_nll": 0.63516,
+          "model_hit1": 0.7197,
+          "strong_mix_nll": 0.65193,
+          "strong_mix_hit1": 0.72727,
+          "frozen_root_nll": 0.65924,
+          "root_hit1": 0.72727,
+          "prior_style_nll": 0.65371,
+          "prior_style_hit1": 0.73485,
+          "macro_delta": -0.02061,
+          "maps_beat_strong": 3,
+          "ci95": [
+            -0.051,
+            -0.0046
+          ]
+        },
+        "Master7sB2": {
+          "maps": 5,
+          "units": 237,
+          "model_nll": 0.53962,
+          "model_hit1": 0.82278,
+          "strong_mix_nll": 0.56052,
+          "strong_mix_hit1": 0.78481,
+          "frozen_root_nll": 0.56287,
+          "root_hit1": 0.78903,
+          "prior_style_nll": 0.5658,
+          "prior_style_hit1": 0.78059,
+          "macro_delta": -0.02201,
+          "maps_beat_strong": 3,
+          "ci95": [
+            -0.0472,
+            0.0059
+          ]
+        },
+        "Master7sD": {
+          "maps": 5,
+          "units": 231,
+          "model_nll": 0.72282,
+          "model_hit1": 0.70563,
+          "strong_mix_nll": 0.75695,
+          "strong_mix_hit1": 0.71429,
+          "frozen_root_nll": 0.75391,
+          "root_hit1": 0.70563,
+          "prior_style_nll": 0.76921,
+          "prior_style_hit1": 0.68831,
+          "macro_delta": -0.03373,
+          "maps_beat_strong": 5,
+          "ci95": [
+            -0.051,
+            -0.0164
+          ]
+        }
+      },
+      "newborn": {
+        "all": {
+          "maps": 11,
+          "units": 52,
+          "model_nll": 0.7819,
+          "model_hit1": 0.65385,
+          "strong_mix_nll": 0.82927,
+          "strong_mix_hit1": 0.67308,
+          "frozen_root_nll": 0.80881,
+          "root_hit1": 0.67308,
+          "prior_style_nll": 0.88336,
+          "prior_style_hit1": 0.59615,
+          "macro_delta": -0.03923,
+          "maps_beat_strong": 7,
+          "ci95": [
+            -0.09,
+            0.0099
+          ]
+        },
+        "Master7sE": {
+          "maps": 1,
+          "units": 2,
+          "model_nll": 1.22176,
+          "model_hit1": 0.5,
+          "strong_mix_nll": 1.20454,
+          "strong_mix_hit1": 0.5,
+          "frozen_root_nll": 1.28042,
+          "root_hit1": 0.5,
+          "prior_style_nll": 1.25847,
+          "prior_style_hit1": 0.5,
+          "macro_delta": 0.01722,
+          "maps_beat_strong": 0,
+          "ci95": [
+            0.0172,
+            0.0172
+          ]
+        },
+        "Master7sB2": {
+          "maps": 5,
+          "units": 25,
+          "model_nll": 0.53762,
+          "model_hit1": 0.8,
+          "strong_mix_nll": 0.58287,
+          "strong_mix_hit1": 0.76,
+          "frozen_root_nll": 0.56033,
+          "root_hit1": 0.76,
+          "prior_style_nll": 0.63911,
+          "prior_style_hit1": 0.68,
+          "macro_delta": -0.03791,
+          "maps_beat_strong": 4,
+          "ci95": [
+            -0.1035,
+            0.0205
+          ]
+        },
+        "Master7sD": {
+          "maps": 5,
+          "units": 25,
+          "model_nll": 0.99098,
+          "model_hit1": 0.52,
+          "strong_mix_nll": 1.04564,
+          "strong_mix_hit1": 0.6,
+          "frozen_root_nll": 1.01957,
+          "root_hit1": 0.6,
+          "prior_style_nll": 1.09761,
+          "prior_style_hit1": 0.52,
+          "macro_delta": -0.05184,
+          "maps_beat_strong": 3,
+          "ci95": [
+            -0.1371,
+            0.0334
+          ]
+        }
+      },
+      "later": {
+        "all": {
+          "maps": 13,
+          "units": 532,
+          "model_nll": 0.5929,
+          "model_hit1": 0.75376,
+          "strong_mix_nll": 0.59972,
+          "strong_mix_hit1": 0.75564,
+          "frozen_root_nll": 0.59726,
+          "root_hit1": 0.7594,
+          "prior_style_nll": 0.60275,
+          "prior_style_hit1": 0.75564,
+          "macro_delta": -0.00126,
+          "maps_beat_strong": 7,
+          "ci95": [
+            -0.0159,
+            0.0122
+          ]
+        },
+        "Master7sE": {
+          "maps": 3,
+          "units": 104,
+          "model_nll": 0.79083,
+          "model_hit1": 0.63462,
+          "strong_mix_nll": 0.77602,
+          "strong_mix_hit1": 0.65385,
+          "frozen_root_nll": 0.77474,
+          "root_hit1": 0.64423,
+          "prior_style_nll": 0.79226,
+          "prior_style_hit1": 0.69231,
+          "macro_delta": 0.0208,
+          "maps_beat_strong": 1,
+          "ci95": [
+            -0.001,
+            0.0389
+          ]
+        },
+        "Master7sB2": {
+          "maps": 5,
+          "units": 247,
+          "model_nll": 0.50323,
+          "model_hit1": 0.80972,
+          "strong_mix_nll": 0.5104,
+          "strong_mix_hit1": 0.80567,
+          "frozen_root_nll": 0.50078,
+          "root_hit1": 0.81781,
+          "prior_style_nll": 0.50822,
+          "prior_style_hit1": 0.80162,
+          "macro_delta": -0.00832,
+          "maps_beat_strong": 4,
+          "ci95": [
+            -0.0161,
+            -0.0009
+          ]
+        },
+        "Master7sD": {
+          "maps": 5,
+          "units": 181,
+          "model_nll": 0.60153,
+          "model_hit1": 0.74586,
+          "strong_mix_nll": 0.62033,
+          "strong_mix_hit1": 0.74586,
+          "frozen_root_nll": 0.62696,
+          "root_hit1": 0.74586,
+          "prior_style_nll": 0.62284,
+          "prior_style_hit1": 0.72928,
+          "macro_delta": -0.00743,
+          "maps_beat_strong": 2,
+          "ci95": [
+            -0.0416,
+            0.0182
+          ]
+        }
+      }
+    },
+    "base": {
+      "all": {
+        "all": {
+          "maps": 13,
+          "units": 440,
+          "model_nll": 0.55755,
+          "model_hit1": 0.73636,
+          "strong_mix_nll": 0.64878,
+          "strong_mix_hit1": 0.71364,
+          "frozen_root_nll": 0.68487,
+          "root_hit1": 0.66364,
+          "prior_style_nll": 0.67908,
+          "prior_style_hit1": 0.67273,
+          "macro_delta": -0.09144,
+          "maps_beat_strong": 13,
+          "ci95": [
+            -0.1208,
+            -0.0645
+          ]
+        },
+        "Master7sE": {
+          "maps": 3,
+          "units": 108,
+          "model_nll": 0.53844,
+          "model_hit1": 0.72222,
+          "strong_mix_nll": 0.69363,
+          "strong_mix_hit1": 0.63889,
+          "frozen_root_nll": 0.7324,
+          "root_hit1": 0.61111,
+          "prior_style_nll": 0.73583,
+          "prior_style_hit1": 0.62037,
+          "macro_delta": -0.1568,
+          "maps_beat_strong": 3,
+          "ci95": [
+            -0.2131,
+            -0.1256
+          ]
+        },
+        "Master7sB2": {
+          "maps": 5,
+          "units": 160,
+          "model_nll": 0.52494,
+          "model_hit1": 0.76875,
+          "strong_mix_nll": 0.5788,
+          "strong_mix_hit1": 0.75,
+          "frozen_root_nll": 0.59775,
+          "root_hit1": 0.725,
+          "prior_style_nll": 0.59638,
+          "prior_style_hit1": 0.7375,
+          "macro_delta": -0.05309,
+          "maps_beat_strong": 5,
+          "ci95": [
+            -0.0834,
+            -0.0236
+          ]
+        },
+        "Master7sD": {
+          "maps": 5,
+          "units": 172,
+          "model_nll": 0.59988,
+          "model_hit1": 0.71512,
+          "strong_mix_nll": 0.68571,
+          "strong_mix_hit1": 0.72674,
+          "frozen_root_nll": 0.73608,
+          "root_hit1": 0.63953,
+          "prior_style_nll": 0.72038,
+          "prior_style_hit1": 0.64535,
+          "macro_delta": -0.09058,
+          "maps_beat_strong": 5,
+          "ci95": [
+            -0.1203,
+            -0.0669
+          ]
+        }
+      },
+      "cash_open": {
+        "all": {
+          "maps": 13,
+          "units": 256,
+          "model_nll": 0.57413,
+          "model_hit1": 0.72266,
+          "strong_mix_nll": 0.6924,
+          "strong_mix_hit1": 0.67969,
+          "frozen_root_nll": 0.76528,
+          "root_hit1": 0.59766,
+          "prior_style_nll": 0.75254,
+          "prior_style_hit1": 0.61328,
+          "macro_delta": -0.11309,
+          "maps_beat_strong": 12,
+          "ci95": [
+            -0.1548,
+            -0.0706
+          ]
+        },
+        "Master7sE": {
+          "maps": 3,
+          "units": 64,
+          "model_nll": 0.56173,
+          "model_hit1": 0.73438,
+          "strong_mix_nll": 0.76065,
+          "strong_mix_hit1": 0.625,
+          "frozen_root_nll": 0.84952,
+          "root_hit1": 0.54688,
+          "prior_style_nll": 0.8494,
+          "prior_style_hit1": 0.5625,
+          "macro_delta": -0.19741,
+          "maps_beat_strong": 3,
+          "ci95": [
+            -0.266,
+            -0.1093
+          ]
+        },
+        "Master7sB2": {
+          "maps": 5,
+          "units": 84,
+          "model_nll": 0.62478,
+          "model_hit1": 0.69048,
+          "strong_mix_nll": 0.70175,
+          "strong_mix_hit1": 0.64286,
+          "frozen_root_nll": 0.72763,
+          "root_hit1": 0.61905,
+          "prior_style_nll": 0.7334,
+          "prior_style_hit1": 0.64286,
+          "macro_delta": -0.06625,
+          "maps_beat_strong": 4,
+          "ci95": [
+            -0.129,
+            -0.0011
+          ]
+        },
+        "Master7sD": {
+          "maps": 5,
+          "units": 108,
+          "model_nll": 0.54209,
+          "model_hit1": 0.74074,
+          "strong_mix_nll": 0.64467,
+          "strong_mix_hit1": 0.74074,
+          "frozen_root_nll": 0.74465,
+          "root_hit1": 0.61111,
+          "prior_style_nll": 0.71004,
+          "prior_style_hit1": 0.62037,
+          "macro_delta": -0.10933,
+          "maps_beat_strong": 5,
+          "ci95": [
+            -0.1443,
+            -0.0904
+          ]
+        }
+      },
+      "newborn": {
+        "all": {
+          "maps": 13,
+          "units": 46,
+          "model_nll": 0.5775,
+          "model_hit1": 0.69565,
+          "strong_mix_nll": 0.80382,
+          "strong_mix_hit1": 0.69565,
+          "frozen_root_nll": 0.89699,
+          "root_hit1": 0.34783,
+          "prior_style_nll": 0.89733,
+          "prior_style_hit1": 0.34783,
+          "macro_delta": -0.24859,
+          "maps_beat_strong": 12,
+          "ci95": [
+            -0.3454,
+            -0.1525
+          ]
+        },
+        "Master7sE": {
+          "maps": 3,
+          "units": 12,
+          "model_nll": 0.48498,
+          "model_hit1": 0.83333,
+          "strong_mix_nll": 0.92656,
+          "strong_mix_hit1": 0.75,
+          "frozen_root_nll": 1.22296,
+          "root_hit1": 0.25,
+          "prior_style_nll": 1.23624,
+          "prior_style_hit1": 0.25,
+          "macro_delta": -0.44158,
+          "maps_beat_strong": 3,
+          "ci95": [
+            -0.527,
+            -0.3801
+          ]
+        },
+        "Master7sB2": {
+          "maps": 5,
+          "units": 16,
+          "model_nll": 0.63496,
+          "model_hit1": 0.625,
+          "strong_mix_nll": 0.82977,
+          "strong_mix_hit1": 0.5625,
+          "frozen_root_nll": 0.82656,
+          "root_hit1": 0.375,
+          "prior_style_nll": 0.82976,
+          "prior_style_hit1": 0.375,
+          "macro_delta": -0.22517,
+          "maps_beat_strong": 5,
+          "ci95": [
+            -0.3115,
+            -0.1389
+          ]
+        },
+        "Master7sD": {
+          "maps": 5,
+          "units": 18,
+          "model_nll": 0.5881,
+          "model_hit1": 0.66667,
+          "strong_mix_nll": 0.69894,
+          "strong_mix_hit1": 0.77778,
+          "frozen_root_nll": 0.74229,
+          "root_hit1": 0.38889,
+          "prior_style_nll": 0.73146,
+          "prior_style_hit1": 0.38889,
+          "macro_delta": -0.15622,
+          "maps_beat_strong": 4,
+          "ci95": [
+            -0.349,
+            -0.0058
+          ]
+        }
+      },
+      "later": {
+        "all": {
+          "maps": 13,
+          "units": 146,
+          "model_nll": 0.5043,
+          "model_hit1": 0.79452,
+          "strong_mix_nll": 0.56033,
+          "strong_mix_hit1": 0.78767,
+          "frozen_root_nll": 0.54625,
+          "root_hit1": 0.79452,
+          "prior_style_nll": 0.54459,
+          "prior_style_hit1": 0.78082,
+          "macro_delta": -0.06347,
+          "maps_beat_strong": 10,
+          "ci95": [
+            -0.109,
+            -0.0162
+          ]
+        },
+        "Master7sE": {
+          "maps": 3,
+          "units": 32,
+          "model_nll": 0.3484,
+          "model_hit1": 0.84375,
+          "strong_mix_nll": 0.45463,
+          "strong_mix_hit1": 0.78125,
+          "frozen_root_nll": 0.42357,
+          "root_hit1": 0.84375,
+          "prior_style_nll": 0.43217,
+          "prior_style_hit1": 0.8125,
+          "macro_delta": -0.12758,
+          "maps_beat_strong": 3,
+          "ci95": [
+            -0.185,
+            -0.0716
+          ]
+        },
+        "Master7sB2": {
+          "maps": 5,
+          "units": 62,
+          "model_nll": 0.40923,
+          "model_hit1": 0.87097,
+          "strong_mix_nll": 0.42146,
+          "strong_mix_hit1": 0.87097,
+          "frozen_root_nll": 0.44006,
+          "root_hit1": 0.85484,
+          "prior_style_nll": 0.42425,
+          "prior_style_hit1": 0.83871,
+          "macro_delta": -0.02408,
+          "maps_beat_strong": 4,
+          "ci95": [
+            -0.0888,
+            0.0429
+          ]
+        },
+        "Master7sD": {
+          "maps": 5,
+          "units": 52,
+          "model_nll": 0.71361,
+          "model_hit1": 0.67308,
+          "strong_mix_nll": 0.79094,
+          "strong_mix_hit1": 0.69231,
+          "frozen_root_nll": 0.74834,
+          "root_hit1": 0.69231,
+          "prior_style_nll": 0.75726,
+          "prior_style_hit1": 0.69231,
+          "macro_delta": -0.0644,
+          "maps_beat_strong": 3,
+          "ci95": [
+            -0.1463,
+            0.0167
+          ]
+        }
+      }
+    }
+  }
+}

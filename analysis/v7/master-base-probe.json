@@ -1,0 +1,860 @@
+{
+  "holdout_game_cases": 13,
+  "roots": 115,
+  "max_frozen_transition_cash_error": 0,
+  "sampling": "Three shared seeded actual _sample draws per strategy and frame. Same recorded rival joint response, full stock reserved for the referee, frozen original root worker/base heads as comparator. Compared the proposed extra candidate directly, without search selection or later adaptation.",
+  "results": {
+    "all": {
+      "roots": 115,
+      "maps": 13,
+      "difference": {
+        "gross_received": 0.0,
+        "cash_change": -1.754,
+        "remaining_worker_cargo": 0.0,
+        "worker_count_change": 0.0551,
+        "tree_count_change": 0.0,
+        "lost_cargo_outside_own_depot": 0.0
+      },
+      "macro_map95": {
+        "gross_received": [
+          0.0,
+          0.0
+        ],
+        "cash_change": [
+          -3.4324,
+          -0.7637
+        ],
+        "remaining_worker_cargo": [
+          0.0,
+          0.0
+        ],
+        "worker_count_change": [
+          0.0263,
+          0.1174
+        ],
+        "tree_count_change": [
+          -0.0205,
+          0.0071
+        ],
+        "lost_cargo_outside_own_depot": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "early": {
+      "roots": 115,
+      "maps": 13,
+      "difference": {
+        "gross_received": 0.0,
+        "cash_change": -1.754,
+        "remaining_worker_cargo": 0.0,
+        "worker_count_change": 0.0551,
+        "tree_count_change": 0.0,
+        "lost_cargo_outside_own_depot": 0.0
+      },
+      "macro_map95": {
+        "gross_received": [
+          0.0,
+          0.0
+        ],
+        "cash_change": [
+          -3.4324,
+          -0.7637
+        ],
+        "remaining_worker_cargo": [
+          0.0,
+          0.0
+        ],
+        "worker_count_change": [
+          0.0263,
+          0.1174
+        ],
+        "tree_count_change": [
+          -0.0205,
+          0.0071
+        ],
+        "lost_cargo_outside_own_depot": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "Master7sE": {
+      "roots": 29,
+      "maps": 3,
+      "difference": {
+        "gross_received": 0.0,
+        "cash_change": -1.7241,
+        "remaining_worker_cargo": 0.0,
+        "worker_count_change": 0.0575,
+        "tree_count_change": 0.0,
+        "lost_cargo_outside_own_depot": 0.0
+      },
+      "macro_map95": {
+        "gross_received": [
+          0.0,
+          0.0
+        ],
+        "cash_change": [
+          -5.7143,
+          -0.0
+        ],
+        "remaining_worker_cargo": [
+          0.0,
+          0.0
+        ],
+        "worker_count_change": [
+          0.0,
+          0.1905
+        ],
+        "tree_count_change": [
+          0.0,
+          0.0
+        ],
+        "lost_cargo_outside_own_depot": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "Master7sB2": {
+      "roots": 37,
+      "maps": 5,
+      "difference": {
+        "gross_received": 0.0,
+        "cash_change": -1.5142,
+        "remaining_worker_cargo": 0.0,
+        "worker_count_change": 0.0541,
+        "tree_count_change": -0.009,
+        "lost_cargo_outside_own_depot": 0.0
+      },
+      "macro_map95": {
+        "gross_received": [
+          0.0,
+          0.0
+        ],
+        "cash_change": [
+          -2.7391,
+          -0.0484
+        ],
+        "remaining_worker_cargo": [
+          0.0,
+          0.0
+        ],
+        "worker_count_change": [
+          0.0022,
+          0.1144
+        ],
+        "tree_count_change": [
+          -0.0567,
+          0.0133
+        ],
+        "lost_cargo_outside_own_depot": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "Master7sD": {
+      "roots": 49,
+      "maps": 5,
+      "difference": {
+        "gross_received": 0.0,
+        "cash_change": -1.9528,
+        "remaining_worker_cargo": 0.0,
+        "worker_count_change": 0.0544,
+        "tree_count_change": 0.0068,
+        "lost_cargo_outside_own_depot": 0.0
+      },
+      "macro_map95": {
+        "gross_received": [
+          0.0,
+          0.0
+        ],
+        "cash_change": [
+          -5.3636,
+          -0.3022
+        ],
+        "remaining_worker_cargo": [
+          0.0,
+          0.0
+        ],
+        "worker_count_change": [
+          0.0039,
+          0.1788
+        ],
+        "tree_count_change": [
+          0.0,
+          0.0118
+        ],
+        "lost_cargo_outside_own_depot": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  "scope": "Base-only candidate: preserved all frozen baseline worker commands, changed by projected affordable two-depot joint choice.",
+  "joint_commands": {
+    "samples": 345,
+    "changed": 65,
+    "all": [
+      0.4145,
+      0.5507,
+      0.6507,
+      0.7159
+    ],
+    "when_changed": [
+      0.0308,
+      0.7538,
+      0.4615,
+      0.8077
+    ],
+    "fields": [
+      "baseline_exact_joint",
+      "alternative_exact_joint",
+      "baseline_per_depot_hit",
+      "alternative_per_depot_hit"
+    ]
+  },
+  "factual_hires": {
+    "windows": [
+      10,
+      20,
+      35,
+      50
+    ],
+    "groups": {
+      "alternative": {
+        "unique_factual_collector_hires": 23,
+        "maps": 12,
+        "mean_gross": [
+          12.5,
+          19.98,
+          41.02,
+          64.03
+        ],
+        "median_gross": [
+          0.0,
+          0.0,
+          12.66,
+          35.17
+        ],
+        "fraction_recovered_hiring_cost": [
+          0.217,
+          0.304,
+          0.435,
+          0.522
+        ],
+        "survival": [
+          0.826,
+          0.652,
+          0.391,
+          0.348
+        ]
+      }
+    },
+    "events": [
+      {
+        "match": "1012bed474be7305e70fe09fd4cde9ef",
+        "map": "7398f28816983b6843334861171398b9ac75a6571251b15144c9c8ba7b85bda6",
+        "turn": 14,
+        "depot": 64,
+        "uid": "player-0-worker-4",
+        "group": "alternative",
+        "cumulative_own_bank_survival": [
+          [
+            41.1171,
+            true
+          ],
+          [
+            41.1171,
+            false
+          ],
+          [
+            41.1171,
+            false
+          ],
+          [
+            41.1171,
+            false
+          ]
+        ]
+      },
+      {
+        "match": "1012bed474be7305e70fe09fd4cde9ef",
+        "map": "7398f28816983b6843334861171398b9ac75a6571251b15144c9c8ba7b85bda6",
+        "turn": 52,
+        "depot": 160,
+        "uid": "player-0-worker-17",
+        "group": "alternative",
+        "cumulative_own_bank_survival": [
+          [
+            0,
+            true
+          ],
+          [
+            0,
+            true
+          ],
+          [
+            134.4536,
+            true
+          ],
+          [
+            193.8938,
+            true
+          ]
+        ]
+      },
+      {
+        "match": "785ae91618edb772a3cca538a3bf8396",
+        "map": "fe112f946a5c6a1af3e1f3451b53d26610c2314d80d7269443c63457fb57b99c",
+        "turn": 14,
+        "depot": 64,
+        "uid": "player-0-worker-3",
+        "group": "alternative",
+        "cumulative_own_bank_survival": [
+          [
+            0,
+            false
+          ],
+          [
+            0,
+            false
+          ],
+          [
+            0,
+            false
+          ],
+          [
+            0,
+            false
+          ]
+        ]
+      },
+      {
+        "match": "efa15ce0a9b4d18398cbe73ad5ca6dc6",
+        "map": "1f50da532eef1e0235009dd79374004664b13e13beb08848c69cdac0abca9936",
+        "turn": 8,
+        "depot": 70,
+        "uid": "player-1-worker-2",
+        "group": "alternative",
+        "cumulative_own_bank_survival": [
+          [
+            42.0756,
+            true
+          ],
+          [
+            76.1226,
+            true
+          ],
+          [
+            76.1226,
+            false
+          ],
+          [
+            76.1226,
+            false
+          ]
+        ]
+      },
+      {
+        "match": "9e5f1d1688216bd29ecb28ebe04c7f22",
+        "map": "911aaef7e96dbe29a587f8050d1bde3cb87d31627edaaf71ae89e7b4f7a8471d",
+        "turn": 26,
+        "depot": 70,
+        "uid": "player-1-worker-9",
+        "group": "alternative",
+        "cumulative_own_bank_survival": [
+          [
+            0,
+            true
+          ],
+          [
+            0,
+            true
+          ],
+          [
+            0,
+            false
+          ],
+          [
+            0,
+            false
+          ]
+        ]
+      },
+      {
+        "match": "9e5f1d1688216bd29ecb28ebe04c7f22",
+        "map": "911aaef7e96dbe29a587f8050d1bde3cb87d31627edaaf71ae89e7b4f7a8471d",
+        "turn": 32,
+        "depot": 154,
+        "uid": "player-1-worker-11",
+        "group": "alternative",
+        "cumulative_own_bank_survival": [
+          [
+            0,
+            false
+          ],
+          [
+            0,
+            false
+          ],
+          [
+            0,
+            false
+          ],
+          [
+            0,
+            false
+          ]
+        ]
+      },
+      {
+        "match": "ba7e1f7fc45d646702f3a2dab1a1e8f3",
+        "map": "990b7adde86f7bd4661986aa39e5206e82f3f912fca2467f41962dfe92ce39ee",
+        "turn": 24,
+        "depot": 70,
+        "uid": "player-1-worker-8",
+        "group": "alternative",
+        "cumulative_own_bank_survival": [
+          [
+            17.8331,
+            true
+          ],
+          [
+            17.8331,
+            false
+          ],
+          [
+            17.8331,
+            false
+          ],
+          [
+            17.8331,
+            false
+          ]
+        ]
+      },
+      {
+        "match": "ba7e1f7fc45d646702f3a2dab1a1e8f3",
+        "map": "990b7adde86f7bd4661986aa39e5206e82f3f912fca2467f41962dfe92ce39ee",
+        "turn": 30,
+        "depot": 70,
+        "uid": "player-1-worker-11",
+        "group": "alternative",
+        "cumulative_own_bank_survival": [
+          [
+            12.6621,
+            true
+          ],
+          [
+            12.6621,
+            true
+          ],
+          [
+            12.6621,
+            true
+          ],
+          [
+            12.6621,
+            true
+          ]
+        ]
+      },
+      {
+        "match": "ba7e1f7fc45d646702f3a2dab1a1e8f3",
+        "map": "990b7adde86f7bd4661986aa39e5206e82f3f912fca2467f41962dfe92ce39ee",
+        "turn": 40,
+        "depot": 154,
+        "uid": "player-1-worker-16",
+        "group": "alternative",
+        "cumulative_own_bank_survival": [
+          [
+            0,
+            true
+          ],
+          [
+            0,
+            true
+          ],
+          [
+            0,
+            false
+          ],
+          [
+            0,
+            false
+          ]
+        ]
+      },
+      {
+        "match": "9e6ab9948c9e2f7c4d196041422bf246",
+        "map": "245462cdd92f042d7b5202ae2acdd1ffaf916f473f9da3f7c0c41e79a9492a08",
+        "turn": 38,
+        "depot": 64,
+        "uid": "player-0-worker-13",
+        "group": "alternative",
+        "cumulative_own_bank_survival": [
+          [
+            0,
+            true
+          ],
+          [
+            0,
+            true
+          ],
+          [
+            0,
+            true
+          ],
+          [
+            0,
+            true
+          ]
+        ]
+      },
+      {
+        "match": "9e6ab9948c9e2f7c4d196041422bf246",
+        "map": "245462cdd92f042d7b5202ae2acdd1ffaf916f473f9da3f7c0c41e79a9492a08",
+        "turn": 38,
+        "depot": 160,
+        "uid": "player-0-worker-14",
+        "group": "alternative",
+        "cumulative_own_bank_survival": [
+          [
+            0,
+            true
+          ],
+          [
+            0,
+            true
+          ],
+          [
+            0,
+            true
+          ],
+          [
+            283.2066,
+            true
+          ]
+        ]
+      },
+      {
+        "match": "9e852f79c739dbb079f9995704c1fca9",
+        "map": "c0cb61dcc60c3d6bf916e20570aff8edad8959163f6565bf78f9dfee8ed30e44",
+        "turn": 30,
+        "depot": 160,
+        "uid": "player-0-worker-7",
+        "group": "alternative",
+        "cumulative_own_bank_survival": [
+          [
+            35.1696,
+            true
+          ],
+          [
+            35.1696,
+            false
+          ],
+          [
+            35.1696,
+            false
+          ],
+          [
+            35.1696,
+            false
+          ]
+        ]
+      },
+      {
+        "match": "9e852f79c739dbb079f9995704c1fca9",
+        "map": "c0cb61dcc60c3d6bf916e20570aff8edad8959163f6565bf78f9dfee8ed30e44",
+        "turn": 30,
+        "depot": 64,
+        "uid": "player-0-worker-6",
+        "group": "alternative",
+        "cumulative_own_bank_survival": [
+          [
+            0,
+            true
+          ],
+          [
+            0,
+            true
+          ],
+          [
+            0,
+            true
+          ],
+          [
+            0,
+            true
+          ]
+        ]
+      },
+      {
+        "match": "94abf21111438cf1b579ba633cc0f96d",
+        "map": "b354ccc12cc06f73798a61ed9d0f55712c5da0478924fddd81f0d8cef1fe1573",
+        "turn": 22,
+        "depot": 160,
+        "uid": "player-0-worker-6",
+        "group": "alternative",
+        "cumulative_own_bank_survival": [
+          [
+            41.6451,
+            true
+          ],
+          [
+            97.4928,
+            true
+          ],
+          [
+            97.4928,
+            true
+          ],
+          [
+            97.4928,
+            true
+          ]
+        ]
+      },
+      {
+        "match": "dc765ca36a2c8e61e6fa851e652ef944",
+        "map": "02c70b1800e1f105e456e6b234fdf9b60e58ba417ab8428524e82aaac9594c8e",
+        "turn": 20,
+        "depot": 70,
+        "uid": "player-1-worker-4",
+        "group": "alternative",
+        "cumulative_own_bank_survival": [
+          [
+            0,
+            false
+          ],
+          [
+            0,
+            false
+          ],
+          [
+            0,
+            false
+          ],
+          [
+            0,
+            false
+          ]
+        ]
+      },
+      {
+        "match": "dc765ca36a2c8e61e6fa851e652ef944",
+        "map": "02c70b1800e1f105e456e6b234fdf9b60e58ba417ab8428524e82aaac9594c8e",
+        "turn": 26,
+        "depot": 154,
+        "uid": "player-1-worker-8",
+        "group": "alternative",
+        "cumulative_own_bank_survival": [
+          [
+            10.1448,
+            true
+          ],
+          [
+            40.1448,
+            true
+          ],
+          [
+            190.1364,
+            true
+          ],
+          [
+            190.1364,
+            false
+          ]
+        ]
+      },
+      {
+        "match": "dc765ca36a2c8e61e6fa851e652ef944",
+        "map": "02c70b1800e1f105e456e6b234fdf9b60e58ba417ab8428524e82aaac9594c8e",
+        "turn": 28,
+        "depot": 154,
+        "uid": "player-1-worker-9",
+        "group": "alternative",
+        "cumulative_own_bank_survival": [
+          [
+            0,
+            true
+          ],
+          [
+            0,
+            true
+          ],
+          [
+            0,
+            false
+          ],
+          [
+            0,
+            false
+          ]
+        ]
+      },
+      {
+        "match": "dc765ca36a2c8e61e6fa851e652ef944",
+        "map": "02c70b1800e1f105e456e6b234fdf9b60e58ba417ab8428524e82aaac9594c8e",
+        "turn": 52,
+        "depot": 70,
+        "uid": "player-1-worker-18",
+        "group": "alternative",
+        "cumulative_own_bank_survival": [
+          [
+            0,
+            true
+          ],
+          [
+            0,
+            true
+          ],
+          [
+            129.7656,
+            false
+          ],
+          [
+            129.7656,
+            false
+          ]
+        ]
+      },
+      {
+        "match": "1d470eb9d9f4a504c73059f429ae210a",
+        "map": "8ada14e0111d4979db882601edb3fe1b1b6770aa9dead4c396648010113e3314",
+        "turn": 30,
+        "depot": 160,
+        "uid": "player-0-worker-6",
+        "group": "alternative",
+        "cumulative_own_bank_survival": [
+          [
+            65.7,
+            true
+          ],
+          [
+            65.7,
+            false
+          ],
+          [
+            65.7,
+            false
+          ],
+          [
+            65.7,
+            false
+          ]
+        ]
+      },
+      {
+        "match": "7335246a15fdca46a14d6b42613bc50f",
+        "map": "5b1e7dc4eea38dcb80b5d335b3efc64306007bbb9091b0334341f59bc74f3e14",
+        "turn": 18,
+        "depot": 160,
+        "uid": "player-0-worker-4",
+        "group": "alternative",
+        "cumulative_own_bank_survival": [
+          [
+            0,
+            true
+          ],
+          [
+            0,
+            true
+          ],
+          [
+            40.0287,
+            false
+          ],
+          [
+            40.0287,
+            false
+          ]
+        ]
+      },
+      {
+        "match": "7335246a15fdca46a14d6b42613bc50f",
+        "map": "5b1e7dc4eea38dcb80b5d335b3efc64306007bbb9091b0334341f59bc74f3e14",
+        "turn": 24,
+        "depot": 64,
+        "uid": "player-0-worker-6",
+        "group": "alternative",
+        "cumulative_own_bank_survival": [
+          [
+            0,
+            false
+          ],
+          [
+            0,
+            false
+          ],
+          [
+            0,
+            false
+          ],
+          [
+            0,
+            false
+          ]
+        ]
+      },
+      {
+        "match": "91e7b29acd9f232ac5d0fb90ae8e894b",
+        "map": "fed607e4a97e5cae03c9d4e0777a663d17ad11799ff3e95ecf38a782bc6bbcbc",
+        "turn": 14,
+        "depot": 70,
+        "uid": "player-1-worker-4",
+        "group": "alternative",
+        "cumulative_own_bank_survival": [
+          [
+            21.0738,
+            true
+          ],
+          [
+            73.1931,
+            true
+          ],
+          [
+            102.9525,
+            true
+          ],
+          [
+            102.9525,
+            true
+          ]
+        ]
+      },
+      {
+        "match": "91e7b29acd9f232ac5d0fb90ae8e894b",
+        "map": "fed607e4a97e5cae03c9d4e0777a663d17ad11799ff3e95ecf38a782bc6bbcbc",
+        "turn": 26,
+        "depot": 70,
+        "uid": "player-1-worker-8",
+        "group": "alternative",
+        "cumulative_own_bank_survival": [
+          [
+            0,
+            true
+          ],
+          [
+            0,
+            true
+          ],
+          [
+            0,
+            true
+          ],
+          [
+            186.5469,
+            true
+          ]
+        ]
+      }
+    ],
+    "interpretation": "Unique archived actual collector hires correctly anticipated by exactly one alternative in a differing draw; full subsequent actions are the recorded policies. Observational individual receipts, not a counterfactual team profit."
+  }
+}

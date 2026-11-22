@@ -1,0 +1,9203 @@
+[
+  {
+    "t": 48,
+    "variant": "recorded_ours",
+    "enemy_worker_decisions_changed": 43,
+    "marks": [
+      {
+        "t": 52,
+        "cash": 40.77,
+        "gross": 0
+      },
+      {
+        "t": 54,
+        "cash": 14.78,
+        "gross": 0
+      },
+      {
+        "t": 60,
+        "cash": 18.32,
+        "gross": 0
+      }
+    ],
+    "trace": [
+      {
+        "t": 48,
+        "workers": {
+          "player-1-worker-4": [
+            9,
+            61.3,
+            "DOWN"
+          ],
+          "player-1-worker-9": [
+            113,
+            0,
+            "DOWN"
+          ],
+          "player-1-worker-10": [
+            69,
+            0,
+            "LEFT"
+          ],
+          "player-1-worker-11": [
+            157,
+            42.23,
+            "DOWN"
+          ],
+          "player-1-worker-12": [
+            200,
+            0,
+            "RIGHT"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-recrtCenter-0": "RECCOLLECTOR",
+          "player-0-worker-3": "DOWN",
+          "player-0-worker-6": "LEFT",
+          "player-0-worker-13": "RIGHT",
+          "player-0-worker-12": "DOWN",
+          "player-0-worker-5": "DOWN",
+          "player-0-worker-10": "UP",
+          "player-0-worker-14": "RIGHT",
+          "player-0-worker-11": "DOWN",
+          "player-0-worker-15": "LEFT"
+        },
+        "enemy_positions": [
+          [
+            215,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            109,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            159,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            187,
+            0,
+            "PLANTER"
+          ],
+          [
+            112,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            111,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            66,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            63,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            64,
+            0,
+            "PLANTER"
+          ]
+        ],
+        "cash": 22.23,
+        "drought": 7,
+        "pending": null
+      },
+      {
+        "t": 49,
+        "workers": {
+          "player-1-worker-4": [
+            24,
+            61.3,
+            "STAY"
+          ],
+          "player-1-worker-9": [
+            128,
+            0,
+            "RIGHT"
+          ],
+          "player-1-worker-10": [
+            68,
+            0,
+            "DOWN"
+          ],
+          "player-1-worker-11": [
+            172,
+            42.23,
+            "DOWN"
+          ],
+          "player-1-worker-12": [
+            201,
+            0,
+            "RIGHT"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-recrtCenter-0": "RECPLANTER",
+          "player-0-worker-5": "DOWN",
+          "player-0-worker-6": "LEFT",
+          "player-0-worker-15": "LEFT",
+          "player-0-worker-3": "RIGHT",
+          "player-0-worker-13": "RIGHT",
+          "player-0-worker-12": "DOWN",
+          "player-0-worker-11": "DOWN"
+        },
+        "enemy_positions": [
+          [
+            5,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            124,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            158,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            127,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            126,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            67,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            63,
+            0,
+            "PLANTER"
+          ]
+        ],
+        "cash": 35.07,
+        "drought": 8,
+        "pending": null
+      },
+      {
+        "t": 50,
+        "workers": {
+          "player-1-worker-4": [
+            24,
+            81.73,
+            "STAY"
+          ],
+          "player-1-worker-9": [
+            129,
+            0,
+            "UP"
+          ],
+          "player-1-worker-10": [
+            83,
+            0,
+            "LEFT"
+          ],
+          "player-1-worker-11": [
+            187,
+            42.23,
+            "STAY"
+          ],
+          "player-1-worker-12": [
+            202,
+            0,
+            "LEFT"
+          ],
+          "player-1-worker-13": [
+            154,
+            0,
+            "UP"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-3": "RIGHT",
+          "player-0-worker-12": "DOWN",
+          "player-0-worker-13": "RIGHT",
+          "player-0-worker-15": "LEFT",
+          "player-0-worker-17": "DOWN",
+          "player-0-worker-6": "DOWN",
+          "player-0-worker-5": "RIGHT",
+          "player-0-worker-11": "DOWN"
+        },
+        "enemy_positions": [
+          [
+            6,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            139,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            157,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            142,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            141,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            68,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            62,
+            0,
+            "PLANTER"
+          ],
+          [
+            64,
+            0,
+            "PLANTER"
+          ]
+        ],
+        "cash": 17.43,
+        "drought": 9,
+        "pending": null
+      },
+      {
+        "t": 51,
+        "workers": {
+          "player-1-worker-4": [
+            24,
+            96.03,
+            "RIGHT"
+          ],
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            82,
+            0,
+            "LEFT"
+          ],
+          "player-1-worker-11": [
+            187,
+            72.23,
+            "UP"
+          ],
+          "player-1-worker-12": [
+            201,
+            0,
+            "RIGHT"
+          ],
+          "player-1-worker-13": [
+            139,
+            0,
+            "STAY"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-recrtCenter-0": "RECCOLLECTOR",
+          "player-0-recrtCenter-1": "RECPLANTER",
+          "player-0-worker-12": "RIGHT",
+          "player-0-worker-6": "DOWN",
+          "player-0-worker-13": "UP",
+          "player-0-worker-3": "RIGHT",
+          "player-0-worker-17": "DOWN",
+          "player-0-worker-15": "LEFT",
+          "player-0-worker-5": "DOWN",
+          "player-0-worker-11": "DOWN"
+        },
+        "enemy_positions": [
+          [
+            7,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            140,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            157,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            156,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            69,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            61,
+            0,
+            "PLANTER"
+          ],
+          [
+            79,
+            0,
+            "PLANTER"
+          ]
+        ],
+        "cash": 29.32,
+        "drought": 10,
+        "pending": null
+      },
+      {
+        "t": 52,
+        "workers": {
+          "player-1-worker-4": [
+            25,
+            96.03,
+            "DOWN"
+          ],
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            81,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-12": [
+            202,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-13": [
+            139,
+            0,
+            "STAY"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-13": "RIGHT",
+          "player-0-worker-3": "RIGHT",
+          "player-0-worker-15": "UP",
+          "player-0-worker-19": "RIGHT",
+          "player-0-worker-17": "RIGHT",
+          "player-0-worker-12": "RIGHT",
+          "player-0-worker-18": "UP",
+          "player-0-worker-5": "RIGHT",
+          "player-0-worker-6": "RIGHT",
+          "player-0-worker-11": "RIGHT"
+        },
+        "enemy_positions": [
+          [
+            8,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            155,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            187,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            72.2331,
+            "COLLECTOR"
+          ],
+          [
+            157,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            54,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            60,
+            0,
+            "PLANTER"
+          ],
+          [
+            94,
+            0,
+            "PLANTER"
+          ],
+          [
+            64,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            160,
+            0,
+            "PLANTER"
+          ]
+        ],
+        "cash": 40.77,
+        "drought": 11,
+        "pending": null
+      },
+      {
+        "t": 53,
+        "workers": {
+          "player-1-worker-4": [
+            40,
+            96.03,
+            "UP"
+          ],
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            81,
+            0,
+            "DOWN"
+          ],
+          "player-1-worker-12": [
+            202,
+            22.32,
+            "STAY"
+          ],
+          "player-1-worker-13": [
+            139,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-14": [
+            70,
+            0,
+            "UP"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-recrtCenter-1": "RECCOLLECTOR",
+          "player-0-worker-17": "DOWN",
+          "player-0-worker-19": "RIGHT",
+          "player-0-worker-18": "RIGHT",
+          "player-0-worker-15": "LEFT",
+          "player-0-worker-3": "RIGHT",
+          "player-0-worker-5": "RIGHT",
+          "player-0-worker-6": "RIGHT",
+          "player-0-worker-11": "RIGHT",
+          "player-0-worker-12": "RIGHT",
+          "player-0-worker-13": "UP"
+        },
+        "enemy_positions": [
+          [
+            9,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            156,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            188,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            173,
+            72.2331,
+            "COLLECTOR"
+          ],
+          [
+            158,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            55,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            45,
+            0,
+            "PLANTER"
+          ],
+          [
+            95,
+            0,
+            "PLANTER"
+          ],
+          [
+            49,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            161,
+            0,
+            "PLANTER"
+          ]
+        ],
+        "cash": 21.79,
+        "drought": 12,
+        "pending": null
+      },
+      {
+        "t": 54,
+        "workers": {
+          "player-1-worker-4": [
+            25,
+            96.03,
+            "DOWN"
+          ],
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            96,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-12": [
+            202,
+            37.95,
+            "STAY"
+          ],
+          "player-1-worker-13": [
+            139,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-14": [
+            55,
+            0,
+            "STAY"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-recrtCenter-0": "RECCOLLECTOR",
+          "player-0-worker-15": "UP",
+          "player-0-worker-17": "RIGHT",
+          "player-0-worker-18": "RIGHT",
+          "player-0-worker-19": "RIGHT",
+          "player-0-worker-3": "DOWN",
+          "player-0-worker-5": "DOWN",
+          "player-0-worker-6": "LEFT",
+          "player-0-worker-11": "LEFT",
+          "player-0-worker-12": "LEFT"
+        },
+        "enemy_positions": [
+          [
+            10,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            157,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            189,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            174,
+            72.2331,
+            "COLLECTOR"
+          ],
+          [
+            159,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            40,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            59,
+            0,
+            "PLANTER"
+          ],
+          [
+            110,
+            0,
+            "PLANTER"
+          ],
+          [
+            50,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            162,
+            0,
+            "PLANTER"
+          ]
+        ],
+        "cash": 14.78,
+        "drought": 13,
+        "pending": null
+      },
+      {
+        "t": 55,
+        "workers": {
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            96,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-12": [
+            202,
+            48.89,
+            "STAY"
+          ],
+          "player-1-worker-13": [
+            139,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-14": [
+            55,
+            0,
+            "STAY"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-18": "UP",
+          "player-0-worker-19": "DOWN",
+          "player-0-worker-6": "DOWN",
+          "player-0-worker-3": "UP",
+          "player-0-worker-5": "DOWN",
+          "player-0-worker-11": "LEFT",
+          "player-0-worker-12": "LEFT",
+          "player-0-worker-13": "UP"
+        },
+        "enemy_positions": [
+          [
+            25,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            188,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            173,
+            72.2331,
+            "COLLECTOR"
+          ],
+          [
+            158,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            40,
+            109.9665,
+            "COLLECTOR"
+          ],
+          [
+            44,
+            0,
+            "PLANTER"
+          ],
+          [
+            111,
+            0,
+            "PLANTER"
+          ],
+          [
+            51,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            163,
+            0,
+            "PLANTER"
+          ]
+        ],
+        "cash": 27.28,
+        "drought": 14,
+        "pending": null
+      },
+      {
+        "t": 56,
+        "workers": {
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            96,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-12": [
+            202,
+            56.54,
+            "STAY"
+          ],
+          "player-1-worker-13": [
+            139,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-14": [
+            55,
+            0,
+            "STAY"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-18": "UP",
+          "player-0-worker-15": "UP",
+          "player-0-worker-6": "LEFT",
+          "player-0-worker-19": "DOWN",
+          "player-0-worker-17": "UP",
+          "player-0-worker-3": "LEFT",
+          "player-0-worker-13": "UP"
+        },
+        "enemy_positions": [
+          [
+            10,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            187,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            203,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            72.2331,
+            "COLLECTOR"
+          ],
+          [
+            157,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            25,
+            109.9665,
+            "COLLECTOR"
+          ],
+          [
+            44,
+            0,
+            "PLANTER"
+          ],
+          [
+            111,
+            0,
+            "PLANTER"
+          ],
+          [
+            36,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            178,
+            0,
+            "PLANTER"
+          ]
+        ],
+        "cash": 32.65,
+        "drought": 15,
+        "pending": null
+      },
+      {
+        "t": 57,
+        "workers": {
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            96,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-13": [
+            139,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-14": [
+            55,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-15": [
+            154,
+            0,
+            "RIGHT"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-19": "RIGHT",
+          "player-0-worker-15": "RIGHT"
+        },
+        "enemy_positions": [
+          [
+            9,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            187,
+            24.345000000000002,
+            "COLLECTOR"
+          ],
+          [
+            202,
+            56.5428,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            72.2331,
+            "COLLECTOR"
+          ],
+          [
+            157,
+            8.3793,
+            "COLLECTOR"
+          ],
+          [
+            10,
+            109.9665,
+            "COLLECTOR"
+          ],
+          [
+            29,
+            0,
+            "PLANTER"
+          ],
+          [
+            21,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            193,
+            0,
+            "PLANTER"
+          ]
+        ],
+        "cash": 7.82,
+        "drought": 16,
+        "pending": null
+      },
+      {
+        "t": 58,
+        "workers": {
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            96,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-13": [
+            139,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-14": [
+            55,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-15": [
+            155,
+            0,
+            "STAY"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-15": "RIGHT",
+          "player-0-worker-18": "RIGHT"
+        },
+        "enemy_positions": [
+          [
+            9,
+            13.191899999999999,
+            "COLLECTOR"
+          ],
+          [
+            187,
+            41.3865,
+            "COLLECTOR"
+          ],
+          [
+            202,
+            61.9023,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            72.2331,
+            "COLLECTOR"
+          ],
+          [
+            157,
+            14.244900000000001,
+            "COLLECTOR"
+          ],
+          [
+            10,
+            116.6895,
+            "COLLECTOR"
+          ],
+          [
+            15,
+            0,
+            "PLANTER"
+          ],
+          [
+            21,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            194,
+            0,
+            "PLANTER"
+          ]
+        ],
+        "cash": 12.79,
+        "drought": 17,
+        "pending": null
+      },
+      {
+        "t": 59,
+        "workers": {
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            96,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-13": [
+            139,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-14": [
+            55,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-15": [
+            155,
+            0,
+            "STAY"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-18": "DOWN",
+          "player-0-worker-15": "RIGHT",
+          "player-0-worker-19": "RIGHT"
+        },
+        "enemy_positions": [
+          [
+            9,
+            22.426199999999998,
+            "COLLECTOR"
+          ],
+          [
+            187,
+            53.3157,
+            "COLLECTOR"
+          ],
+          [
+            202,
+            65.65379999999999,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            72.2331,
+            "COLLECTOR"
+          ],
+          [
+            157,
+            18.3507,
+            "COLLECTOR"
+          ],
+          [
+            10,
+            121.3956,
+            "COLLECTOR"
+          ],
+          [
+            16,
+            0,
+            "PLANTER"
+          ],
+          [
+            22,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            194,
+            0,
+            "PLANTER"
+          ]
+        ],
+        "cash": 15.61,
+        "drought": 18,
+        "pending": null
+      }
+    ]
+  },
+  {
+    "t": 48,
+    "variant": "two_turn",
+    "enemy_worker_decisions_changed": 43,
+    "marks": [
+      {
+        "t": 52,
+        "cash": 40.77,
+        "gross": 0
+      },
+      {
+        "t": 54,
+        "cash": 14.78,
+        "gross": 0
+      },
+      {
+        "t": 60,
+        "cash": 18.32,
+        "gross": 0
+      }
+    ],
+    "trace": [
+      {
+        "t": 48,
+        "workers": {
+          "player-1-worker-4": [
+            9,
+            61.3,
+            "DOWN"
+          ],
+          "player-1-worker-9": [
+            113,
+            0,
+            "DOWN"
+          ],
+          "player-1-worker-10": [
+            69,
+            0,
+            "LEFT"
+          ],
+          "player-1-worker-11": [
+            157,
+            42.23,
+            "DOWN"
+          ],
+          "player-1-worker-12": [
+            200,
+            0,
+            "RIGHT"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-recrtCenter-0": "RECCOLLECTOR",
+          "player-0-worker-3": "DOWN",
+          "player-0-worker-6": "LEFT",
+          "player-0-worker-13": "RIGHT",
+          "player-0-worker-12": "DOWN",
+          "player-0-worker-5": "DOWN",
+          "player-0-worker-10": "UP",
+          "player-0-worker-14": "RIGHT",
+          "player-0-worker-11": "DOWN",
+          "player-0-worker-15": "LEFT"
+        },
+        "enemy_positions": [
+          [
+            215,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            109,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            159,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            187,
+            0,
+            "PLANTER"
+          ],
+          [
+            112,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            111,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            66,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            63,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            64,
+            0,
+            "PLANTER"
+          ]
+        ],
+        "cash": 22.23,
+        "drought": 7,
+        "pending": null
+      },
+      {
+        "t": 49,
+        "workers": {
+          "player-1-worker-4": [
+            24,
+            61.3,
+            "STAY"
+          ],
+          "player-1-worker-9": [
+            128,
+            0,
+            "RIGHT"
+          ],
+          "player-1-worker-10": [
+            68,
+            0,
+            "DOWN"
+          ],
+          "player-1-worker-11": [
+            172,
+            42.23,
+            "DOWN"
+          ],
+          "player-1-worker-12": [
+            201,
+            0,
+            "RIGHT"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-recrtCenter-0": "RECPLANTER",
+          "player-0-worker-5": "DOWN",
+          "player-0-worker-6": "LEFT",
+          "player-0-worker-15": "LEFT",
+          "player-0-worker-3": "RIGHT",
+          "player-0-worker-13": "RIGHT",
+          "player-0-worker-12": "DOWN",
+          "player-0-worker-11": "DOWN"
+        },
+        "enemy_positions": [
+          [
+            5,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            124,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            158,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            127,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            126,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            67,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            63,
+            0,
+            "PLANTER"
+          ]
+        ],
+        "cash": 35.07,
+        "drought": 8,
+        "pending": null
+      },
+      {
+        "t": 50,
+        "workers": {
+          "player-1-worker-4": [
+            24,
+            81.73,
+            "STAY"
+          ],
+          "player-1-worker-9": [
+            129,
+            0,
+            "UP"
+          ],
+          "player-1-worker-10": [
+            83,
+            0,
+            "LEFT"
+          ],
+          "player-1-worker-11": [
+            187,
+            42.23,
+            "STAY"
+          ],
+          "player-1-worker-12": [
+            202,
+            0,
+            "LEFT"
+          ],
+          "player-1-worker-13": [
+            154,
+            0,
+            "UP"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-3": "RIGHT",
+          "player-0-worker-12": "DOWN",
+          "player-0-worker-13": "RIGHT",
+          "player-0-worker-15": "LEFT",
+          "player-0-worker-17": "DOWN",
+          "player-0-worker-6": "DOWN",
+          "player-0-worker-5": "RIGHT",
+          "player-0-worker-11": "DOWN"
+        },
+        "enemy_positions": [
+          [
+            6,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            139,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            157,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            142,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            141,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            68,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            62,
+            0,
+            "PLANTER"
+          ],
+          [
+            64,
+            0,
+            "PLANTER"
+          ]
+        ],
+        "cash": 17.43,
+        "drought": 9,
+        "pending": null
+      },
+      {
+        "t": 51,
+        "workers": {
+          "player-1-worker-4": [
+            24,
+            96.03,
+            "RIGHT"
+          ],
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            82,
+            0,
+            "LEFT"
+          ],
+          "player-1-worker-11": [
+            187,
+            72.23,
+            "UP"
+          ],
+          "player-1-worker-12": [
+            201,
+            0,
+            "RIGHT"
+          ],
+          "player-1-worker-13": [
+            139,
+            0,
+            "STAY"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-recrtCenter-0": "RECCOLLECTOR",
+          "player-0-recrtCenter-1": "RECPLANTER",
+          "player-0-worker-12": "RIGHT",
+          "player-0-worker-6": "DOWN",
+          "player-0-worker-13": "UP",
+          "player-0-worker-3": "RIGHT",
+          "player-0-worker-17": "DOWN",
+          "player-0-worker-15": "LEFT",
+          "player-0-worker-5": "DOWN",
+          "player-0-worker-11": "DOWN"
+        },
+        "enemy_positions": [
+          [
+            7,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            140,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            157,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            156,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            69,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            61,
+            0,
+            "PLANTER"
+          ],
+          [
+            79,
+            0,
+            "PLANTER"
+          ]
+        ],
+        "cash": 29.32,
+        "drought": 10,
+        "pending": null
+      },
+      {
+        "t": 52,
+        "workers": {
+          "player-1-worker-4": [
+            25,
+            96.03,
+            "DOWN"
+          ],
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            81,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-12": [
+            202,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-13": [
+            139,
+            0,
+            "STAY"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-13": "RIGHT",
+          "player-0-worker-3": "RIGHT",
+          "player-0-worker-15": "UP",
+          "player-0-worker-19": "RIGHT",
+          "player-0-worker-17": "RIGHT",
+          "player-0-worker-12": "RIGHT",
+          "player-0-worker-18": "UP",
+          "player-0-worker-5": "RIGHT",
+          "player-0-worker-6": "RIGHT",
+          "player-0-worker-11": "RIGHT"
+        },
+        "enemy_positions": [
+          [
+            8,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            155,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            187,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            72.2331,
+            "COLLECTOR"
+          ],
+          [
+            157,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            54,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            60,
+            0,
+            "PLANTER"
+          ],
+          [
+            94,
+            0,
+            "PLANTER"
+          ],
+          [
+            64,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            160,
+            0,
+            "PLANTER"
+          ]
+        ],
+        "cash": 40.77,
+        "drought": 11,
+        "pending": null
+      },
+      {
+        "t": 53,
+        "workers": {
+          "player-1-worker-4": [
+            40,
+            96.03,
+            "UP"
+          ],
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            81,
+            0,
+            "DOWN"
+          ],
+          "player-1-worker-12": [
+            202,
+            22.32,
+            "STAY"
+          ],
+          "player-1-worker-13": [
+            139,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-14": [
+            70,
+            0,
+            "UP"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-recrtCenter-1": "RECCOLLECTOR",
+          "player-0-worker-17": "DOWN",
+          "player-0-worker-19": "RIGHT",
+          "player-0-worker-18": "RIGHT",
+          "player-0-worker-15": "LEFT",
+          "player-0-worker-3": "RIGHT",
+          "player-0-worker-5": "RIGHT",
+          "player-0-worker-6": "RIGHT",
+          "player-0-worker-11": "RIGHT",
+          "player-0-worker-12": "RIGHT",
+          "player-0-worker-13": "UP"
+        },
+        "enemy_positions": [
+          [
+            9,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            156,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            188,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            173,
+            72.2331,
+            "COLLECTOR"
+          ],
+          [
+            158,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            55,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            45,
+            0,
+            "PLANTER"
+          ],
+          [
+            95,
+            0,
+            "PLANTER"
+          ],
+          [
+            49,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            161,
+            0,
+            "PLANTER"
+          ]
+        ],
+        "cash": 21.79,
+        "drought": 12,
+        "pending": null
+      },
+      {
+        "t": 54,
+        "workers": {
+          "player-1-worker-4": [
+            25,
+            96.03,
+            "DOWN"
+          ],
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            96,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-12": [
+            202,
+            37.95,
+            "STAY"
+          ],
+          "player-1-worker-13": [
+            139,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-14": [
+            55,
+            0,
+            "STAY"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-recrtCenter-0": "RECCOLLECTOR",
+          "player-0-worker-15": "UP",
+          "player-0-worker-17": "RIGHT",
+          "player-0-worker-18": "RIGHT",
+          "player-0-worker-19": "RIGHT",
+          "player-0-worker-3": "DOWN",
+          "player-0-worker-5": "DOWN",
+          "player-0-worker-6": "LEFT",
+          "player-0-worker-11": "LEFT",
+          "player-0-worker-12": "LEFT"
+        },
+        "enemy_positions": [
+          [
+            10,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            157,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            189,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            174,
+            72.2331,
+            "COLLECTOR"
+          ],
+          [
+            159,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            40,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            59,
+            0,
+            "PLANTER"
+          ],
+          [
+            110,
+            0,
+            "PLANTER"
+          ],
+          [
+            50,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            162,
+            0,
+            "PLANTER"
+          ]
+        ],
+        "cash": 14.78,
+        "drought": 13,
+        "pending": null
+      },
+      {
+        "t": 55,
+        "workers": {
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            96,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-12": [
+            202,
+            48.89,
+            "STAY"
+          ],
+          "player-1-worker-13": [
+            139,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-14": [
+            55,
+            0,
+            "STAY"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-18": "UP",
+          "player-0-worker-19": "DOWN",
+          "player-0-worker-6": "DOWN",
+          "player-0-worker-3": "UP",
+          "player-0-worker-5": "DOWN",
+          "player-0-worker-11": "LEFT",
+          "player-0-worker-12": "LEFT",
+          "player-0-worker-13": "UP"
+        },
+        "enemy_positions": [
+          [
+            25,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            188,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            173,
+            72.2331,
+            "COLLECTOR"
+          ],
+          [
+            158,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            40,
+            109.9665,
+            "COLLECTOR"
+          ],
+          [
+            44,
+            0,
+            "PLANTER"
+          ],
+          [
+            111,
+            0,
+            "PLANTER"
+          ],
+          [
+            51,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            163,
+            0,
+            "PLANTER"
+          ]
+        ],
+        "cash": 27.28,
+        "drought": 14,
+        "pending": null
+      },
+      {
+        "t": 56,
+        "workers": {
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            96,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-12": [
+            202,
+            56.54,
+            "STAY"
+          ],
+          "player-1-worker-13": [
+            139,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-14": [
+            55,
+            0,
+            "STAY"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-18": "UP",
+          "player-0-worker-15": "UP",
+          "player-0-worker-6": "LEFT",
+          "player-0-worker-19": "DOWN",
+          "player-0-worker-17": "UP",
+          "player-0-worker-3": "LEFT",
+          "player-0-worker-13": "UP"
+        },
+        "enemy_positions": [
+          [
+            10,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            187,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            203,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            72.2331,
+            "COLLECTOR"
+          ],
+          [
+            157,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            25,
+            109.9665,
+            "COLLECTOR"
+          ],
+          [
+            44,
+            0,
+            "PLANTER"
+          ],
+          [
+            111,
+            0,
+            "PLANTER"
+          ],
+          [
+            36,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            178,
+            0,
+            "PLANTER"
+          ]
+        ],
+        "cash": 32.65,
+        "drought": 15,
+        "pending": null
+      },
+      {
+        "t": 57,
+        "workers": {
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            96,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-13": [
+            139,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-14": [
+            55,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-15": [
+            154,
+            0,
+            "RIGHT"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-19": "RIGHT",
+          "player-0-worker-15": "RIGHT"
+        },
+        "enemy_positions": [
+          [
+            9,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            187,
+            24.345000000000002,
+            "COLLECTOR"
+          ],
+          [
+            202,
+            56.5428,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            72.2331,
+            "COLLECTOR"
+          ],
+          [
+            157,
+            8.3793,
+            "COLLECTOR"
+          ],
+          [
+            10,
+            109.9665,
+            "COLLECTOR"
+          ],
+          [
+            29,
+            0,
+            "PLANTER"
+          ],
+          [
+            21,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            193,
+            0,
+            "PLANTER"
+          ]
+        ],
+        "cash": 7.82,
+        "drought": 16,
+        "pending": null
+      },
+      {
+        "t": 58,
+        "workers": {
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            96,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-13": [
+            139,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-14": [
+            55,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-15": [
+            155,
+            0,
+            "STAY"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-15": "RIGHT",
+          "player-0-worker-18": "RIGHT"
+        },
+        "enemy_positions": [
+          [
+            9,
+            13.191899999999999,
+            "COLLECTOR"
+          ],
+          [
+            187,
+            41.3865,
+            "COLLECTOR"
+          ],
+          [
+            202,
+            61.9023,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            72.2331,
+            "COLLECTOR"
+          ],
+          [
+            157,
+            14.244900000000001,
+            "COLLECTOR"
+          ],
+          [
+            10,
+            116.6895,
+            "COLLECTOR"
+          ],
+          [
+            15,
+            0,
+            "PLANTER"
+          ],
+          [
+            21,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            194,
+            0,
+            "PLANTER"
+          ]
+        ],
+        "cash": 12.79,
+        "drought": 17,
+        "pending": null
+      },
+      {
+        "t": 59,
+        "workers": {
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            96,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-13": [
+            139,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-14": [
+            55,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-15": [
+            155,
+            0,
+            "STAY"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-18": "DOWN",
+          "player-0-worker-15": "RIGHT",
+          "player-0-worker-19": "RIGHT"
+        },
+        "enemy_positions": [
+          [
+            9,
+            22.426199999999998,
+            "COLLECTOR"
+          ],
+          [
+            187,
+            53.3157,
+            "COLLECTOR"
+          ],
+          [
+            202,
+            65.65379999999999,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            72.2331,
+            "COLLECTOR"
+          ],
+          [
+            157,
+            18.3507,
+            "COLLECTOR"
+          ],
+          [
+            10,
+            121.3956,
+            "COLLECTOR"
+          ],
+          [
+            16,
+            0,
+            "PLANTER"
+          ],
+          [
+            22,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            194,
+            0,
+            "PLANTER"
+          ]
+        ],
+        "cash": 15.61,
+        "drought": 18,
+        "pending": null
+      }
+    ]
+  },
+  {
+    "t": 48,
+    "variant": "four_turn",
+    "enemy_worker_decisions_changed": 41,
+    "marks": [
+      {
+        "t": 52,
+        "cash": 83.01,
+        "gross": 42.23
+      },
+      {
+        "t": 54,
+        "cash": 150.8,
+        "gross": 103.53
+      },
+      {
+        "t": 60,
+        "cash": 167.64,
+        "gross": 103.53
+      }
+    ],
+    "trace": [
+      {
+        "t": 48,
+        "workers": {
+          "player-1-worker-4": [
+            9,
+            61.3,
+            "DOWN"
+          ],
+          "player-1-worker-9": [
+            113,
+            0,
+            "DOWN"
+          ],
+          "player-1-worker-10": [
+            69,
+            0,
+            "LEFT"
+          ],
+          "player-1-worker-11": [
+            157,
+            42.23,
+            "LEFT"
+          ],
+          "player-1-worker-12": [
+            200,
+            0,
+            "RIGHT"
+          ]
+        },
+        "path": [
+          "player-1-worker-11",
+          154,
+          3,
+          42.23309999999999
+        ],
+        "opponent": {
+          "player-0-recrtCenter-0": "RECCOLLECTOR",
+          "player-0-worker-3": "DOWN",
+          "player-0-worker-6": "LEFT",
+          "player-0-worker-13": "RIGHT",
+          "player-0-worker-12": "DOWN",
+          "player-0-worker-5": "DOWN",
+          "player-0-worker-10": "UP",
+          "player-0-worker-14": "RIGHT",
+          "player-0-worker-11": "DOWN",
+          "player-0-worker-15": "LEFT"
+        },
+        "enemy_positions": [
+          [
+            215,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            109,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            159,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            187,
+            0,
+            "PLANTER"
+          ],
+          [
+            112,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            111,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            66,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            63,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            64,
+            0,
+            "PLANTER"
+          ]
+        ],
+        "cash": 22.23,
+        "drought": 7,
+        "pending": null
+      },
+      {
+        "t": 49,
+        "workers": {
+          "player-1-worker-4": [
+            24,
+            61.3,
+            "DOWN"
+          ],
+          "player-1-worker-9": [
+            128,
+            0,
+            "RIGHT"
+          ],
+          "player-1-worker-10": [
+            68,
+            0,
+            "DOWN"
+          ],
+          "player-1-worker-11": [
+            156,
+            42.23,
+            "LEFT"
+          ],
+          "player-1-worker-12": [
+            201,
+            0,
+            "RIGHT"
+          ]
+        },
+        "path": [
+          "player-1-worker-4",
+          70,
+          4,
+          61.3011
+        ],
+        "opponent": {
+          "player-0-recrtCenter-0": "RECPLANTER",
+          "player-0-worker-5": "DOWN",
+          "player-0-worker-6": "LEFT",
+          "player-0-worker-15": "LEFT",
+          "player-0-worker-3": "RIGHT",
+          "player-0-worker-13": "RIGHT",
+          "player-0-worker-12": "DOWN",
+          "player-0-worker-11": "LEFT"
+        },
+        "enemy_positions": [
+          [
+            5,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            124,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            158,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            0,
+            "PLANTER"
+          ],
+          [
+            127,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            126,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            67,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            63,
+            0,
+            "PLANTER"
+          ]
+        ],
+        "cash": 35.07,
+        "drought": 8,
+        "pending": [
+          50,
+          "player-1-worker-11",
+          154
+        ]
+      },
+      {
+        "t": 50,
+        "workers": {
+          "player-1-worker-4": [
+            39,
+            61.3,
+            "DOWN"
+          ],
+          "player-1-worker-9": [
+            129,
+            0,
+            "UP"
+          ],
+          "player-1-worker-10": [
+            83,
+            0,
+            "LEFT"
+          ],
+          "player-1-worker-11": [
+            155,
+            42.23,
+            "LEFT"
+          ],
+          "player-1-worker-12": [
+            202,
+            0,
+            "LEFT"
+          ],
+          "player-1-worker-13": [
+            154,
+            0,
+            "UP"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-3": "RIGHT",
+          "player-0-worker-12": "LEFT",
+          "player-0-worker-13": "RIGHT",
+          "player-0-worker-15": "LEFT",
+          "player-0-worker-17": "DOWN",
+          "player-0-worker-6": "LEFT",
+          "player-0-worker-5": "DOWN",
+          "player-0-worker-11": "LEFT"
+        },
+        "enemy_positions": [
+          [
+            6,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            139,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            157,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            0,
+            "PLANTER"
+          ],
+          [
+            126,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            141,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            68,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            62,
+            0,
+            "PLANTER"
+          ],
+          [
+            64,
+            0,
+            "PLANTER"
+          ]
+        ],
+        "cash": 17.43,
+        "drought": 9,
+        "pending": null
+      },
+      {
+        "t": 51,
+        "workers": {
+          "player-1-worker-4": [
+            54,
+            61.3,
+            "RIGHT"
+          ],
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            82,
+            0,
+            "LEFT"
+          ],
+          "player-1-worker-12": [
+            201,
+            0,
+            "RIGHT"
+          ],
+          "player-1-worker-13": [
+            139,
+            0,
+            "STAY"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-recrtCenter-0": "RECCOLLECTOR",
+          "player-0-recrtCenter-1": "RECPLANTER",
+          "player-0-worker-12": "UP",
+          "player-0-worker-6": "UP",
+          "player-0-worker-13": "UP",
+          "player-0-worker-3": "RIGHT",
+          "player-0-worker-17": "DOWN",
+          "player-0-worker-15": "LEFT",
+          "player-0-worker-5": "UP",
+          "player-0-worker-11": "UP"
+        },
+        "enemy_positions": [
+          [
+            7,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            154,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            156,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            0,
+            "PLANTER"
+          ],
+          [
+            125,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            140,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            69,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            61,
+            0,
+            "PLANTER"
+          ],
+          [
+            79,
+            0,
+            "PLANTER"
+          ]
+        ],
+        "cash": 71.56,
+        "drought": 0,
+        "pending": null
+      },
+      {
+        "t": 52,
+        "workers": {
+          "player-1-worker-4": [
+            55,
+            61.3,
+            "DOWN"
+          ],
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            81,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-12": [
+            202,
+            0,
+            "STAY"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-13": "RIGHT",
+          "player-0-worker-3": "RIGHT",
+          "player-0-worker-15": "UP",
+          "player-0-worker-17": "RIGHT",
+          "player-0-worker-12": "UP",
+          "player-0-worker-18": "UP",
+          "player-0-worker-6": "UP",
+          "player-0-worker-11": "UP"
+        },
+        "enemy_positions": [
+          [
+            8,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            141,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            0,
+            "PLANTER"
+          ],
+          [
+            110,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            125,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            54,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            60,
+            0,
+            "PLANTER"
+          ],
+          [
+            94,
+            0,
+            "PLANTER"
+          ],
+          [
+            64,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 83.01,
+        "drought": 1,
+        "pending": null
+      },
+      {
+        "t": 53,
+        "workers": {
+          "player-1-worker-4": [
+            70,
+            0,
+            "UP"
+          ],
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            81,
+            0,
+            "DOWN"
+          ],
+          "player-1-worker-12": [
+            202,
+            22.32,
+            "STAY"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-recrtCenter-1": "RECCOLLECTOR",
+          "player-0-worker-18": "DOWN",
+          "player-0-worker-15": "LEFT"
+        },
+        "enemy_positions": [
+          [
+            9,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            126,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            0,
+            "PLANTER"
+          ],
+          [
+            95,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            110,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            55,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            45,
+            0,
+            "PLANTER"
+          ],
+          [
+            49,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 137.81,
+        "drought": 0,
+        "pending": null
+      },
+      {
+        "t": 54,
+        "workers": {
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            96,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-12": [
+            202,
+            37.95,
+            "STAY"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-recrtCenter-0": "RECCOLLECTOR",
+          "player-0-worker-15": "UP",
+          "player-0-worker-18": "UP",
+          "player-0-worker-19": "LEFT",
+          "player-0-worker-3": "LEFT",
+          "player-0-worker-6": "DOWN",
+          "player-0-worker-11": "DOWN",
+          "player-0-worker-12": "DOWN"
+        },
+        "enemy_positions": [
+          [
+            9,
+            11.721,
+            "COLLECTOR"
+          ],
+          [
+            126,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            0,
+            "PLANTER"
+          ],
+          [
+            95,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            110,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            59,
+            0,
+            "PLANTER"
+          ],
+          [
+            64,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            160,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 150.8,
+        "drought": 1,
+        "pending": null
+      },
+      {
+        "t": 55,
+        "workers": {
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            96,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-12": [
+            202,
+            48.89,
+            "STAY"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-20": "UP",
+          "player-0-worker-18": "UP",
+          "player-0-worker-19": "LEFT",
+          "player-0-worker-6": "DOWN",
+          "player-0-worker-3": "LEFT",
+          "player-0-worker-11": "DOWN",
+          "player-0-worker-12": "DOWN"
+        },
+        "enemy_positions": [
+          [
+            8,
+            11.721,
+            "COLLECTOR"
+          ],
+          [
+            141,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            0,
+            "PLANTER"
+          ],
+          [
+            110,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            125,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            44,
+            0,
+            "PLANTER"
+          ],
+          [
+            49,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            159,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            64,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 163.3,
+        "drought": 2,
+        "pending": null
+      },
+      {
+        "t": 56,
+        "workers": {
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            96,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-12": [
+            202,
+            56.54,
+            "STAY"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-18": "UP",
+          "player-0-worker-15": "UP",
+          "player-0-worker-6": "DOWN",
+          "player-0-worker-20": "UP",
+          "player-0-worker-19": "LEFT",
+          "player-0-worker-3": "UP",
+          "player-0-worker-11": "DOWN",
+          "player-0-worker-12": "DOWN"
+        },
+        "enemy_positions": [
+          [
+            7,
+            11.721,
+            "COLLECTOR"
+          ],
+          [
+            156,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            0,
+            "PLANTER"
+          ],
+          [
+            125,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            140,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            44,
+            0,
+            "PLANTER"
+          ],
+          [
+            34,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            158,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            49,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 170.7,
+        "drought": 3,
+        "pending": null
+      },
+      {
+        "t": 57,
+        "workers": {
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            96,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-12": [
+            202,
+            61.9,
+            "STAY"
+          ],
+          "player-1-worker-14": [
+            154,
+            0,
+            "STAY"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-19": "DOWN",
+          "player-0-worker-20": "UP",
+          "player-0-worker-15": "RIGHT",
+          "player-0-worker-3": "UP",
+          "player-0-worker-6": "DOWN",
+          "player-0-worker-11": "DOWN",
+          "player-0-worker-12": "RIGHT",
+          "player-0-worker-18": "UP"
+        },
+        "enemy_positions": [
+          [
+            217,
+            11.721,
+            "COLLECTOR"
+          ],
+          [
+            171,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            0,
+            "PLANTER"
+          ],
+          [
+            140,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            155,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            29,
+            0,
+            "PLANTER"
+          ],
+          [
+            19,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            157,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            34,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 147.83,
+        "drought": 4,
+        "pending": null
+      },
+      {
+        "t": 58,
+        "workers": {
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            96,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-14": [
+            154,
+            0,
+            "STAY"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-20": "UP",
+          "player-0-worker-15": "RIGHT",
+          "player-0-worker-18": "RIGHT"
+        },
+        "enemy_positions": [
+          [
+            202,
+            73.6233,
+            "COLLECTOR"
+          ],
+          [
+            186,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            155,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            156,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            15,
+            0,
+            "PLANTER"
+          ],
+          [
+            4,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            19,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 154.69,
+        "drought": 5,
+        "pending": null
+      },
+      {
+        "t": 59,
+        "workers": {
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            96,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-14": [
+            154,
+            0,
+            "STAY"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-20": "UP",
+          "player-0-worker-18": "DOWN",
+          "player-0-worker-15": "RIGHT",
+          "player-0-worker-19": "RIGHT"
+        },
+        "enemy_positions": [
+          [
+            202,
+            77.3748,
+            "COLLECTOR"
+          ],
+          [
+            186,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            155,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            156,
+            14.992799999999999,
+            "COLLECTOR"
+          ],
+          [
+            16,
+            0,
+            "PLANTER"
+          ],
+          [
+            5,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            4,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 161.29,
+        "drought": 6,
+        "pending": null
+      }
+    ]
+  },
+  {
+    "t": 49,
+    "variant": "recorded_ours",
+    "enemy_worker_decisions_changed": 42,
+    "marks": [
+      {
+        "t": 53,
+        "cash": 21.79,
+        "gross": 0
+      },
+      {
+        "t": 55,
+        "cash": 27.28,
+        "gross": 0
+      },
+      {
+        "t": 61,
+        "cash": 9.3,
+        "gross": 0
+      }
+    ],
+    "trace": [
+      {
+        "t": 49,
+        "workers": {
+          "player-1-worker-4": [
+            24,
+            61.3,
+            "STAY"
+          ],
+          "player-1-worker-9": [
+            128,
+            0,
+            "RIGHT"
+          ],
+          "player-1-worker-10": [
+            68,
+            0,
+            "DOWN"
+          ],
+          "player-1-worker-11": [
+            172,
+            42.23,
+            "DOWN"
+          ],
+          "player-1-worker-12": [
+            201,
+            0,
+            "RIGHT"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-recrtCenter-0": "RECPLANTER",
+          "player-0-worker-5": "DOWN",
+          "player-0-worker-6": "LEFT",
+          "player-0-worker-14": "RIGHT",
+          "player-0-worker-16": "RIGHT",
+          "player-0-worker-15": "LEFT",
+          "player-0-worker-3": "UP",
+          "player-0-worker-13": "RIGHT",
+          "player-0-worker-12": "DOWN",
+          "player-0-worker-11": "RIGHT"
+        },
+        "enemy_positions": [
+          [
+            200,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            124,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            158,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            113,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            112,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            67,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            62,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            63,
+            0,
+            "PLANTER"
+          ],
+          [
+            64,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 35.07,
+        "drought": 8,
+        "pending": null
+      },
+      {
+        "t": 50,
+        "workers": {
+          "player-1-worker-4": [
+            24,
+            81.73,
+            "STAY"
+          ],
+          "player-1-worker-9": [
+            129,
+            0,
+            "UP"
+          ],
+          "player-1-worker-10": [
+            83,
+            0,
+            "LEFT"
+          ],
+          "player-1-worker-11": [
+            187,
+            42.23,
+            "STAY"
+          ],
+          "player-1-worker-12": [
+            202,
+            0,
+            "LEFT"
+          ],
+          "player-1-worker-13": [
+            154,
+            0,
+            "UP"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-3": "RIGHT",
+          "player-0-worker-16": "RIGHT",
+          "player-0-worker-12": "DOWN",
+          "player-0-worker-13": "RIGHT",
+          "player-0-worker-15": "LEFT",
+          "player-0-worker-14": "RIGHT",
+          "player-0-worker-17": "DOWN",
+          "player-0-worker-6": "DOWN",
+          "player-0-worker-5": "RIGHT",
+          "player-0-worker-11": "UP"
+        },
+        "enemy_positions": [
+          [
+            185,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            139,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            157,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            114,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            127,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            68,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            63,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            62,
+            0,
+            "PLANTER"
+          ],
+          [
+            65,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            64,
+            0,
+            "PLANTER"
+          ]
+        ],
+        "cash": 17.43,
+        "drought": 9,
+        "pending": null
+      },
+      {
+        "t": 51,
+        "workers": {
+          "player-1-worker-4": [
+            24,
+            96.03,
+            "RIGHT"
+          ],
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            82,
+            0,
+            "LEFT"
+          ],
+          "player-1-worker-11": [
+            187,
+            72.23,
+            "UP"
+          ],
+          "player-1-worker-12": [
+            201,
+            0,
+            "RIGHT"
+          ],
+          "player-1-worker-13": [
+            139,
+            0,
+            "STAY"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-recrtCenter-0": "RECCOLLECTOR",
+          "player-0-recrtCenter-1": "RECPLANTER",
+          "player-0-worker-12": "DOWN",
+          "player-0-worker-16": "RIGHT",
+          "player-0-worker-13": "UP",
+          "player-0-worker-14": "RIGHT",
+          "player-0-worker-3": "RIGHT",
+          "player-0-worker-17": "DOWN",
+          "player-0-worker-15": "LEFT",
+          "player-0-worker-5": "DOWN",
+          "player-0-worker-11": "UP"
+        },
+        "enemy_positions": [
+          [
+            186,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            140,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            99,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            142,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            69,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            64,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            61,
+            0,
+            "PLANTER"
+          ],
+          [
+            66,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            79,
+            0,
+            "PLANTER"
+          ]
+        ],
+        "cash": 29.32,
+        "drought": 10,
+        "pending": null
+      },
+      {
+        "t": 52,
+        "workers": {
+          "player-1-worker-4": [
+            25,
+            96.03,
+            "DOWN"
+          ],
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            81,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-12": [
+            202,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-13": [
+            139,
+            0,
+            "STAY"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-13": "RIGHT",
+          "player-0-worker-3": "RIGHT",
+          "player-0-worker-14": "UP",
+          "player-0-worker-15": "UP",
+          "player-0-worker-16": "RIGHT",
+          "player-0-worker-17": "RIGHT",
+          "player-0-worker-12": "RIGHT",
+          "player-0-worker-5": "RIGHT",
+          "player-0-worker-6": "RIGHT",
+          "player-0-worker-11": "UP"
+        },
+        "enemy_positions": [
+          [
+            187,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            155,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            72.2331,
+            "COLLECTOR"
+          ],
+          [
+            84,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            157,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            54,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            65,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            60,
+            0,
+            "PLANTER"
+          ],
+          [
+            67,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            94,
+            0,
+            "PLANTER"
+          ]
+        ],
+        "cash": 40.77,
+        "drought": 11,
+        "pending": null
+      },
+      {
+        "t": 53,
+        "workers": {
+          "player-1-worker-4": [
+            40,
+            96.03,
+            "UP"
+          ],
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            81,
+            0,
+            "DOWN"
+          ],
+          "player-1-worker-12": [
+            202,
+            22.32,
+            "STAY"
+          ],
+          "player-1-worker-13": [
+            139,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-14": [
+            70,
+            0,
+            "UP"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-recrtCenter-1": "RECCOLLECTOR",
+          "player-0-worker-16": "RIGHT",
+          "player-0-worker-17": "DOWN",
+          "player-0-worker-14": "RIGHT",
+          "player-0-worker-15": "LEFT",
+          "player-0-worker-3": "RIGHT",
+          "player-0-worker-5": "RIGHT",
+          "player-0-worker-6": "RIGHT",
+          "player-0-worker-11": "UP",
+          "player-0-worker-12": "RIGHT",
+          "player-0-worker-13": "UP"
+        },
+        "enemy_positions": [
+          [
+            188,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            156,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            173,
+            72.2331,
+            "COLLECTOR"
+          ],
+          [
+            69,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            158,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            55,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            50,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            45,
+            0,
+            "PLANTER"
+          ],
+          [
+            68,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            95,
+            0,
+            "PLANTER"
+          ]
+        ],
+        "cash": 21.79,
+        "drought": 12,
+        "pending": null
+      },
+      {
+        "t": 54,
+        "workers": {
+          "player-1-worker-4": [
+            25,
+            96.03,
+            "DOWN"
+          ],
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            96,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-12": [
+            202,
+            37.95,
+            "STAY"
+          ],
+          "player-1-worker-13": [
+            139,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-14": [
+            55,
+            0,
+            "STAY"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-recrtCenter-0": "RECCOLLECTOR",
+          "player-0-worker-15": "UP",
+          "player-0-worker-17": "RIGHT",
+          "player-0-worker-16": "UP",
+          "player-0-worker-14": "RIGHT",
+          "player-0-worker-3": "LEFT",
+          "player-0-worker-5": "DOWN",
+          "player-0-worker-6": "LEFT",
+          "player-0-worker-11": "RIGHT",
+          "player-0-worker-12": "LEFT",
+          "player-0-worker-13": "UP"
+        },
+        "enemy_positions": [
+          [
+            189,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            157,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            174,
+            72.2331,
+            "COLLECTOR"
+          ],
+          [
+            54,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            159,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            40,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            51,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            59,
+            0,
+            "PLANTER"
+          ],
+          [
+            69,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            110,
+            0,
+            "PLANTER"
+          ]
+        ],
+        "cash": 14.78,
+        "drought": 13,
+        "pending": null
+      },
+      {
+        "t": 55,
+        "workers": {
+          "player-1-worker-4": [
+            40,
+            96.03,
+            "STAY"
+          ],
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            96,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-12": [
+            202,
+            48.89,
+            "STAY"
+          ],
+          "player-1-worker-13": [
+            139,
+            0,
+            "STAY"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-16": "RIGHT",
+          "player-0-worker-14": "RIGHT",
+          "player-0-worker-6": "LEFT",
+          "player-0-worker-3": "DOWN",
+          "player-0-worker-5": "DOWN",
+          "player-0-worker-12": "LEFT",
+          "player-0-worker-13": "DOWN"
+        },
+        "enemy_positions": [
+          [
+            188,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            173,
+            72.2331,
+            "COLLECTOR"
+          ],
+          [
+            158,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            25,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            52,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            44,
+            0,
+            "PLANTER"
+          ],
+          [
+            54,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            111,
+            0,
+            "PLANTER"
+          ]
+        ],
+        "cash": 27.28,
+        "drought": 14,
+        "pending": null
+      },
+      {
+        "t": 56,
+        "workers": {
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            96,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-12": [
+            202,
+            56.54,
+            "STAY"
+          ],
+          "player-1-worker-13": [
+            139,
+            0,
+            "STAY"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-14": "LEFT",
+          "player-0-worker-15": "UP",
+          "player-0-worker-17": "UP",
+          "player-0-worker-3": "LEFT",
+          "player-0-worker-13": "UP",
+          "player-0-worker-16": "UP"
+        },
+        "enemy_positions": [
+          [
+            203,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            187,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            72.2331,
+            "COLLECTOR"
+          ],
+          [
+            157,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            40,
+            96.0291,
+            "COLLECTOR"
+          ],
+          [
+            53,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            44,
+            0,
+            "PLANTER"
+          ],
+          [
+            55,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            111,
+            0,
+            "PLANTER"
+          ]
+        ],
+        "cash": 32.65,
+        "drought": 15,
+        "pending": null
+      },
+      {
+        "t": 57,
+        "workers": {
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            96,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-13": [
+            139,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-15": [
+            154,
+            0,
+            "RIGHT"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-14": "LEFT",
+          "player-0-worker-16": "LEFT",
+          "player-0-worker-15": "RIGHT"
+        },
+        "enemy_positions": [
+          [
+            202,
+            56.5428,
+            "COLLECTOR"
+          ],
+          [
+            187,
+            24.345000000000002,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            72.2331,
+            "COLLECTOR"
+          ],
+          [
+            157,
+            8.3793,
+            "COLLECTOR"
+          ],
+          [
+            25,
+            96.0291,
+            "COLLECTOR"
+          ],
+          [
+            52,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            29,
+            0,
+            "PLANTER"
+          ],
+          [
+            40,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 7.82,
+        "drought": 16,
+        "pending": null
+      },
+      {
+        "t": 58,
+        "workers": {
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            96,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-13": [
+            139,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-15": [
+            155,
+            0,
+            "STAY"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-14": "LEFT",
+          "player-0-worker-15": "RIGHT"
+        },
+        "enemy_positions": [
+          [
+            202,
+            61.9023,
+            "COLLECTOR"
+          ],
+          [
+            187,
+            41.3865,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            72.2331,
+            "COLLECTOR"
+          ],
+          [
+            157,
+            14.244900000000001,
+            "COLLECTOR"
+          ],
+          [
+            25,
+            96.0291,
+            "COLLECTOR"
+          ],
+          [
+            51,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            15,
+            0,
+            "PLANTER"
+          ],
+          [
+            39,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 12.79,
+        "drought": 17,
+        "pending": null
+      },
+      {
+        "t": 59,
+        "workers": {
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            96,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-13": [
+            139,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-15": [
+            155,
+            0,
+            "STAY"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-16": "RIGHT",
+          "player-0-worker-14": "RIGHT",
+          "player-0-worker-15": "RIGHT"
+        },
+        "enemy_positions": [
+          [
+            202,
+            65.65379999999999,
+            "COLLECTOR"
+          ],
+          [
+            187,
+            53.3157,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            72.2331,
+            "COLLECTOR"
+          ],
+          [
+            157,
+            18.3507,
+            "COLLECTOR"
+          ],
+          [
+            25,
+            96.0291,
+            "COLLECTOR"
+          ],
+          [
+            50,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            16,
+            0,
+            "PLANTER"
+          ],
+          [
+            39,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 17.58,
+        "drought": 18,
+        "pending": null
+      },
+      {
+        "t": 60,
+        "workers": {
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            96,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-13": [
+            139,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-15": [
+            155,
+            0,
+            "STAY"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-recrtCenter-0": "RECCOLLECTOR",
+          "player-0-worker-14": "LEFT",
+          "player-0-worker-15": "UP",
+          "player-0-worker-16": "RIGHT"
+        },
+        "enemy_positions": [
+          [
+            202,
+            68.27999999999999,
+            "COLLECTOR"
+          ],
+          [
+            187,
+            61.6662,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            72.2331,
+            "COLLECTOR"
+          ],
+          [
+            157,
+            21.2247,
+            "COLLECTOR"
+          ],
+          [
+            25,
+            96.0291,
+            "COLLECTOR"
+          ],
+          [
+            51,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            17,
+            0,
+            "PLANTER"
+          ],
+          [
+            40,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 22.19,
+        "drought": 19,
+        "pending": null
+      }
+    ]
+  },
+  {
+    "t": 49,
+    "variant": "two_turn",
+    "enemy_worker_decisions_changed": 42,
+    "marks": [
+      {
+        "t": 53,
+        "cash": 21.79,
+        "gross": 0
+      },
+      {
+        "t": 55,
+        "cash": 27.28,
+        "gross": 0
+      },
+      {
+        "t": 61,
+        "cash": 9.3,
+        "gross": 0
+      }
+    ],
+    "trace": [
+      {
+        "t": 49,
+        "workers": {
+          "player-1-worker-4": [
+            24,
+            61.3,
+            "STAY"
+          ],
+          "player-1-worker-9": [
+            128,
+            0,
+            "RIGHT"
+          ],
+          "player-1-worker-10": [
+            68,
+            0,
+            "DOWN"
+          ],
+          "player-1-worker-11": [
+            172,
+            42.23,
+            "DOWN"
+          ],
+          "player-1-worker-12": [
+            201,
+            0,
+            "RIGHT"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-recrtCenter-0": "RECPLANTER",
+          "player-0-worker-5": "DOWN",
+          "player-0-worker-6": "LEFT",
+          "player-0-worker-14": "RIGHT",
+          "player-0-worker-16": "RIGHT",
+          "player-0-worker-15": "LEFT",
+          "player-0-worker-3": "UP",
+          "player-0-worker-13": "RIGHT",
+          "player-0-worker-12": "DOWN",
+          "player-0-worker-11": "RIGHT"
+        },
+        "enemy_positions": [
+          [
+            200,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            124,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            158,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            113,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            112,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            67,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            62,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            63,
+            0,
+            "PLANTER"
+          ],
+          [
+            64,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 35.07,
+        "drought": 8,
+        "pending": null
+      },
+      {
+        "t": 50,
+        "workers": {
+          "player-1-worker-4": [
+            24,
+            81.73,
+            "STAY"
+          ],
+          "player-1-worker-9": [
+            129,
+            0,
+            "UP"
+          ],
+          "player-1-worker-10": [
+            83,
+            0,
+            "LEFT"
+          ],
+          "player-1-worker-11": [
+            187,
+            42.23,
+            "STAY"
+          ],
+          "player-1-worker-12": [
+            202,
+            0,
+            "LEFT"
+          ],
+          "player-1-worker-13": [
+            154,
+            0,
+            "UP"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-3": "RIGHT",
+          "player-0-worker-16": "RIGHT",
+          "player-0-worker-12": "DOWN",
+          "player-0-worker-13": "RIGHT",
+          "player-0-worker-15": "LEFT",
+          "player-0-worker-14": "RIGHT",
+          "player-0-worker-17": "DOWN",
+          "player-0-worker-6": "DOWN",
+          "player-0-worker-5": "RIGHT",
+          "player-0-worker-11": "UP"
+        },
+        "enemy_positions": [
+          [
+            185,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            139,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            157,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            114,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            127,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            68,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            63,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            62,
+            0,
+            "PLANTER"
+          ],
+          [
+            65,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            64,
+            0,
+            "PLANTER"
+          ]
+        ],
+        "cash": 17.43,
+        "drought": 9,
+        "pending": null
+      },
+      {
+        "t": 51,
+        "workers": {
+          "player-1-worker-4": [
+            24,
+            96.03,
+            "RIGHT"
+          ],
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            82,
+            0,
+            "LEFT"
+          ],
+          "player-1-worker-11": [
+            187,
+            72.23,
+            "UP"
+          ],
+          "player-1-worker-12": [
+            201,
+            0,
+            "RIGHT"
+          ],
+          "player-1-worker-13": [
+            139,
+            0,
+            "STAY"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-recrtCenter-0": "RECCOLLECTOR",
+          "player-0-recrtCenter-1": "RECPLANTER",
+          "player-0-worker-12": "DOWN",
+          "player-0-worker-16": "RIGHT",
+          "player-0-worker-13": "UP",
+          "player-0-worker-14": "RIGHT",
+          "player-0-worker-3": "RIGHT",
+          "player-0-worker-17": "DOWN",
+          "player-0-worker-15": "LEFT",
+          "player-0-worker-5": "DOWN",
+          "player-0-worker-11": "UP"
+        },
+        "enemy_positions": [
+          [
+            186,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            140,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            99,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            142,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            69,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            64,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            61,
+            0,
+            "PLANTER"
+          ],
+          [
+            66,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            79,
+            0,
+            "PLANTER"
+          ]
+        ],
+        "cash": 29.32,
+        "drought": 10,
+        "pending": null
+      },
+      {
+        "t": 52,
+        "workers": {
+          "player-1-worker-4": [
+            25,
+            96.03,
+            "DOWN"
+          ],
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            81,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-12": [
+            202,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-13": [
+            139,
+            0,
+            "STAY"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-13": "RIGHT",
+          "player-0-worker-3": "RIGHT",
+          "player-0-worker-14": "UP",
+          "player-0-worker-15": "UP",
+          "player-0-worker-16": "RIGHT",
+          "player-0-worker-17": "RIGHT",
+          "player-0-worker-12": "RIGHT",
+          "player-0-worker-5": "RIGHT",
+          "player-0-worker-6": "RIGHT",
+          "player-0-worker-11": "UP"
+        },
+        "enemy_positions": [
+          [
+            187,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            155,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            72.2331,
+            "COLLECTOR"
+          ],
+          [
+            84,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            157,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            54,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            65,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            60,
+            0,
+            "PLANTER"
+          ],
+          [
+            67,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            94,
+            0,
+            "PLANTER"
+          ]
+        ],
+        "cash": 40.77,
+        "drought": 11,
+        "pending": null
+      },
+      {
+        "t": 53,
+        "workers": {
+          "player-1-worker-4": [
+            40,
+            96.03,
+            "UP"
+          ],
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            81,
+            0,
+            "DOWN"
+          ],
+          "player-1-worker-12": [
+            202,
+            22.32,
+            "STAY"
+          ],
+          "player-1-worker-13": [
+            139,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-14": [
+            70,
+            0,
+            "UP"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-recrtCenter-1": "RECCOLLECTOR",
+          "player-0-worker-16": "RIGHT",
+          "player-0-worker-17": "DOWN",
+          "player-0-worker-14": "RIGHT",
+          "player-0-worker-15": "LEFT",
+          "player-0-worker-3": "RIGHT",
+          "player-0-worker-5": "RIGHT",
+          "player-0-worker-6": "RIGHT",
+          "player-0-worker-11": "UP",
+          "player-0-worker-12": "RIGHT",
+          "player-0-worker-13": "UP"
+        },
+        "enemy_positions": [
+          [
+            188,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            156,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            173,
+            72.2331,
+            "COLLECTOR"
+          ],
+          [
+            69,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            158,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            55,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            50,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            45,
+            0,
+            "PLANTER"
+          ],
+          [
+            68,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            95,
+            0,
+            "PLANTER"
+          ]
+        ],
+        "cash": 21.79,
+        "drought": 12,
+        "pending": null
+      },
+      {
+        "t": 54,
+        "workers": {
+          "player-1-worker-4": [
+            25,
+            96.03,
+            "DOWN"
+          ],
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            96,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-12": [
+            202,
+            37.95,
+            "STAY"
+          ],
+          "player-1-worker-13": [
+            139,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-14": [
+            55,
+            0,
+            "STAY"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-recrtCenter-0": "RECCOLLECTOR",
+          "player-0-worker-15": "UP",
+          "player-0-worker-17": "RIGHT",
+          "player-0-worker-16": "UP",
+          "player-0-worker-14": "RIGHT",
+          "player-0-worker-3": "LEFT",
+          "player-0-worker-5": "DOWN",
+          "player-0-worker-6": "LEFT",
+          "player-0-worker-11": "RIGHT",
+          "player-0-worker-12": "LEFT",
+          "player-0-worker-13": "UP"
+        },
+        "enemy_positions": [
+          [
+            189,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            157,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            174,
+            72.2331,
+            "COLLECTOR"
+          ],
+          [
+            54,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            159,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            40,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            51,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            59,
+            0,
+            "PLANTER"
+          ],
+          [
+            69,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            110,
+            0,
+            "PLANTER"
+          ]
+        ],
+        "cash": 14.78,
+        "drought": 13,
+        "pending": null
+      },
+      {
+        "t": 55,
+        "workers": {
+          "player-1-worker-4": [
+            40,
+            96.03,
+            "STAY"
+          ],
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            96,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-12": [
+            202,
+            48.89,
+            "STAY"
+          ],
+          "player-1-worker-13": [
+            139,
+            0,
+            "STAY"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-16": "RIGHT",
+          "player-0-worker-14": "RIGHT",
+          "player-0-worker-6": "LEFT",
+          "player-0-worker-3": "DOWN",
+          "player-0-worker-5": "DOWN",
+          "player-0-worker-12": "LEFT",
+          "player-0-worker-13": "DOWN"
+        },
+        "enemy_positions": [
+          [
+            188,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            173,
+            72.2331,
+            "COLLECTOR"
+          ],
+          [
+            158,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            25,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            52,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            44,
+            0,
+            "PLANTER"
+          ],
+          [
+            54,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            111,
+            0,
+            "PLANTER"
+          ]
+        ],
+        "cash": 27.28,
+        "drought": 14,
+        "pending": null
+      },
+      {
+        "t": 56,
+        "workers": {
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            96,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-12": [
+            202,
+            56.54,
+            "STAY"
+          ],
+          "player-1-worker-13": [
+            139,
+            0,
+            "STAY"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-14": "LEFT",
+          "player-0-worker-15": "UP",
+          "player-0-worker-17": "UP",
+          "player-0-worker-3": "LEFT",
+          "player-0-worker-13": "UP",
+          "player-0-worker-16": "UP"
+        },
+        "enemy_positions": [
+          [
+            203,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            187,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            72.2331,
+            "COLLECTOR"
+          ],
+          [
+            157,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            40,
+            96.0291,
+            "COLLECTOR"
+          ],
+          [
+            53,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            44,
+            0,
+            "PLANTER"
+          ],
+          [
+            55,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            111,
+            0,
+            "PLANTER"
+          ]
+        ],
+        "cash": 32.65,
+        "drought": 15,
+        "pending": null
+      },
+      {
+        "t": 57,
+        "workers": {
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            96,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-13": [
+            139,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-15": [
+            154,
+            0,
+            "RIGHT"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-14": "LEFT",
+          "player-0-worker-16": "LEFT",
+          "player-0-worker-15": "RIGHT"
+        },
+        "enemy_positions": [
+          [
+            202,
+            56.5428,
+            "COLLECTOR"
+          ],
+          [
+            187,
+            24.345000000000002,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            72.2331,
+            "COLLECTOR"
+          ],
+          [
+            157,
+            8.3793,
+            "COLLECTOR"
+          ],
+          [
+            25,
+            96.0291,
+            "COLLECTOR"
+          ],
+          [
+            52,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            29,
+            0,
+            "PLANTER"
+          ],
+          [
+            40,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 7.82,
+        "drought": 16,
+        "pending": null
+      },
+      {
+        "t": 58,
+        "workers": {
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            96,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-13": [
+            139,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-15": [
+            155,
+            0,
+            "STAY"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-14": "LEFT",
+          "player-0-worker-15": "RIGHT"
+        },
+        "enemy_positions": [
+          [
+            202,
+            61.9023,
+            "COLLECTOR"
+          ],
+          [
+            187,
+            41.3865,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            72.2331,
+            "COLLECTOR"
+          ],
+          [
+            157,
+            14.244900000000001,
+            "COLLECTOR"
+          ],
+          [
+            25,
+            96.0291,
+            "COLLECTOR"
+          ],
+          [
+            51,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            15,
+            0,
+            "PLANTER"
+          ],
+          [
+            39,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 12.79,
+        "drought": 17,
+        "pending": null
+      },
+      {
+        "t": 59,
+        "workers": {
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            96,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-13": [
+            139,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-15": [
+            155,
+            0,
+            "STAY"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-16": "RIGHT",
+          "player-0-worker-14": "RIGHT",
+          "player-0-worker-15": "RIGHT"
+        },
+        "enemy_positions": [
+          [
+            202,
+            65.65379999999999,
+            "COLLECTOR"
+          ],
+          [
+            187,
+            53.3157,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            72.2331,
+            "COLLECTOR"
+          ],
+          [
+            157,
+            18.3507,
+            "COLLECTOR"
+          ],
+          [
+            25,
+            96.0291,
+            "COLLECTOR"
+          ],
+          [
+            50,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            16,
+            0,
+            "PLANTER"
+          ],
+          [
+            39,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 17.58,
+        "drought": 18,
+        "pending": null
+      },
+      {
+        "t": 60,
+        "workers": {
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            96,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-13": [
+            139,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-15": [
+            155,
+            0,
+            "STAY"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-recrtCenter-0": "RECCOLLECTOR",
+          "player-0-worker-14": "LEFT",
+          "player-0-worker-15": "UP",
+          "player-0-worker-16": "RIGHT"
+        },
+        "enemy_positions": [
+          [
+            202,
+            68.27999999999999,
+            "COLLECTOR"
+          ],
+          [
+            187,
+            61.6662,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            72.2331,
+            "COLLECTOR"
+          ],
+          [
+            157,
+            21.2247,
+            "COLLECTOR"
+          ],
+          [
+            25,
+            96.0291,
+            "COLLECTOR"
+          ],
+          [
+            51,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            17,
+            0,
+            "PLANTER"
+          ],
+          [
+            40,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 22.19,
+        "drought": 19,
+        "pending": null
+      }
+    ]
+  },
+  {
+    "t": 49,
+    "variant": "four_turn",
+    "enemy_worker_decisions_changed": 29,
+    "marks": [
+      {
+        "t": 53,
+        "cash": 95.57,
+        "gross": 61.3
+      },
+      {
+        "t": 55,
+        "cash": 121.06,
+        "gross": 61.3
+      },
+      {
+        "t": 61,
+        "cash": 103.08,
+        "gross": 61.3
+      }
+    ],
+    "trace": [
+      {
+        "t": 49,
+        "workers": {
+          "player-1-worker-4": [
+            24,
+            61.3,
+            "DOWN"
+          ],
+          "player-1-worker-9": [
+            128,
+            0,
+            "RIGHT"
+          ],
+          "player-1-worker-10": [
+            68,
+            0,
+            "DOWN"
+          ],
+          "player-1-worker-11": [
+            172,
+            42.23,
+            "DOWN"
+          ],
+          "player-1-worker-12": [
+            201,
+            0,
+            "RIGHT"
+          ]
+        },
+        "path": [
+          "player-1-worker-4",
+          70,
+          4,
+          61.3011
+        ],
+        "opponent": {
+          "player-0-recrtCenter-0": "RECPLANTER",
+          "player-0-worker-5": "DOWN",
+          "player-0-worker-6": "LEFT",
+          "player-0-worker-14": "RIGHT",
+          "player-0-worker-16": "RIGHT",
+          "player-0-worker-15": "LEFT",
+          "player-0-worker-3": "UP",
+          "player-0-worker-13": "RIGHT",
+          "player-0-worker-12": "DOWN",
+          "player-0-worker-11": "RIGHT"
+        },
+        "enemy_positions": [
+          [
+            200,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            124,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            158,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            113,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            112,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            67,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            62,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            63,
+            0,
+            "PLANTER"
+          ],
+          [
+            64,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 35.07,
+        "drought": 8,
+        "pending": null
+      },
+      {
+        "t": 50,
+        "workers": {
+          "player-1-worker-4": [
+            39,
+            61.3,
+            "DOWN"
+          ],
+          "player-1-worker-9": [
+            129,
+            0,
+            "UP"
+          ],
+          "player-1-worker-10": [
+            83,
+            0,
+            "LEFT"
+          ],
+          "player-1-worker-11": [
+            187,
+            42.23,
+            "STAY"
+          ],
+          "player-1-worker-12": [
+            202,
+            0,
+            "LEFT"
+          ],
+          "player-1-worker-13": [
+            154,
+            0,
+            "UP"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-3": "RIGHT",
+          "player-0-worker-16": "RIGHT",
+          "player-0-worker-12": "DOWN",
+          "player-0-worker-13": "RIGHT",
+          "player-0-worker-15": "LEFT",
+          "player-0-worker-14": "RIGHT",
+          "player-0-worker-17": "DOWN",
+          "player-0-worker-6": "DOWN",
+          "player-0-worker-5": "RIGHT",
+          "player-0-worker-11": "UP"
+        },
+        "enemy_positions": [
+          [
+            185,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            139,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            157,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            114,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            127,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            68,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            63,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            62,
+            0,
+            "PLANTER"
+          ],
+          [
+            65,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            64,
+            0,
+            "PLANTER"
+          ]
+        ],
+        "cash": 17.43,
+        "drought": 9,
+        "pending": null
+      },
+      {
+        "t": 51,
+        "workers": {
+          "player-1-worker-4": [
+            54,
+            61.3,
+            "RIGHT"
+          ],
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            82,
+            0,
+            "LEFT"
+          ],
+          "player-1-worker-11": [
+            187,
+            72.23,
+            "UP"
+          ],
+          "player-1-worker-12": [
+            201,
+            0,
+            "RIGHT"
+          ],
+          "player-1-worker-13": [
+            139,
+            0,
+            "STAY"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-recrtCenter-0": "RECCOLLECTOR",
+          "player-0-recrtCenter-1": "RECPLANTER",
+          "player-0-worker-12": "DOWN",
+          "player-0-worker-16": "RIGHT",
+          "player-0-worker-13": "UP",
+          "player-0-worker-14": "RIGHT",
+          "player-0-worker-3": "RIGHT",
+          "player-0-worker-17": "DOWN",
+          "player-0-worker-15": "LEFT",
+          "player-0-worker-5": "DOWN",
+          "player-0-worker-11": "UP"
+        },
+        "enemy_positions": [
+          [
+            186,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            140,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            99,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            142,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            69,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            64,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            61,
+            0,
+            "PLANTER"
+          ],
+          [
+            66,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            79,
+            0,
+            "PLANTER"
+          ]
+        ],
+        "cash": 29.32,
+        "drought": 10,
+        "pending": [
+          52,
+          "player-1-worker-4",
+          70
+        ]
+      },
+      {
+        "t": 52,
+        "workers": {
+          "player-1-worker-4": [
+            55,
+            61.3,
+            "DOWN"
+          ],
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            81,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-12": [
+            202,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-13": [
+            139,
+            0,
+            "STAY"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-13": "RIGHT",
+          "player-0-worker-3": "RIGHT",
+          "player-0-worker-14": "UP",
+          "player-0-worker-15": "UP",
+          "player-0-worker-16": "RIGHT",
+          "player-0-worker-17": "RIGHT",
+          "player-0-worker-12": "UP",
+          "player-0-worker-5": "UP",
+          "player-0-worker-6": "RIGHT",
+          "player-0-worker-11": "UP"
+        },
+        "enemy_positions": [
+          [
+            187,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            155,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            72.2331,
+            "COLLECTOR"
+          ],
+          [
+            84,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            157,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            54,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            65,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            60,
+            0,
+            "PLANTER"
+          ],
+          [
+            67,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            94,
+            0,
+            "PLANTER"
+          ]
+        ],
+        "cash": 40.77,
+        "drought": 11,
+        "pending": null
+      },
+      {
+        "t": 53,
+        "workers": {
+          "player-1-worker-4": [
+            70,
+            0,
+            "UP"
+          ],
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            81,
+            0,
+            "DOWN"
+          ],
+          "player-1-worker-12": [
+            202,
+            22.32,
+            "STAY"
+          ],
+          "player-1-worker-13": [
+            139,
+            0,
+            "STAY"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-recrtCenter-1": "RECCOLLECTOR",
+          "player-0-worker-16": "RIGHT",
+          "player-0-worker-17": "DOWN",
+          "player-0-worker-14": "UP",
+          "player-0-worker-15": "LEFT"
+        },
+        "enemy_positions": [
+          [
+            188,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            140,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            173,
+            72.2331,
+            "COLLECTOR"
+          ],
+          [
+            69,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            142,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            55,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            50,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            45,
+            0,
+            "PLANTER"
+          ],
+          [
+            68,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            95,
+            0,
+            "PLANTER"
+          ]
+        ],
+        "cash": 95.57,
+        "drought": 0,
+        "pending": null
+      },
+      {
+        "t": 54,
+        "workers": {
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            96,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-12": [
+            202,
+            37.95,
+            "STAY"
+          ],
+          "player-1-worker-13": [
+            139,
+            0,
+            "STAY"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-recrtCenter-0": "RECCOLLECTOR",
+          "player-0-worker-15": "UP",
+          "player-0-worker-17": "RIGHT",
+          "player-0-worker-14": "UP",
+          "player-0-worker-3": "LEFT",
+          "player-0-worker-5": "DOWN",
+          "player-0-worker-6": "LEFT",
+          "player-0-worker-12": "DOWN"
+        },
+        "enemy_positions": [
+          [
+            188,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            140,
+            7.6677,
+            "COLLECTOR"
+          ],
+          [
+            173,
+            72.2331,
+            "COLLECTOR"
+          ],
+          [
+            142,
+            7.1868,
+            "COLLECTOR"
+          ],
+          [
+            35,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            59,
+            0,
+            "PLANTER"
+          ],
+          [
+            110,
+            0,
+            "PLANTER"
+          ]
+        ],
+        "cash": 108.56,
+        "drought": 1,
+        "pending": null
+      },
+      {
+        "t": 55,
+        "workers": {
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            96,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-12": [
+            202,
+            48.89,
+            "STAY"
+          ],
+          "player-1-worker-13": [
+            139,
+            0,
+            "STAY"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-18": "UP",
+          "player-0-worker-14": "UP",
+          "player-0-worker-6": "DOWN",
+          "player-0-worker-3": "DOWN",
+          "player-0-worker-5": "RIGHT",
+          "player-0-worker-12": "DOWN"
+        },
+        "enemy_positions": [
+          [
+            187,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            155,
+            7.6677,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            72.2331,
+            "COLLECTOR"
+          ],
+          [
+            157,
+            7.1868,
+            "COLLECTOR"
+          ],
+          [
+            20,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            44,
+            0,
+            "PLANTER"
+          ],
+          [
+            111,
+            0,
+            "PLANTER"
+          ],
+          [
+            64,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 121.06,
+        "drought": 2,
+        "pending": null
+      },
+      {
+        "t": 56,
+        "workers": {
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            96,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-13": [
+            139,
+            0,
+            "STAY"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-14": "LEFT",
+          "player-0-worker-18": "DOWN",
+          "player-0-worker-15": "UP",
+          "player-0-worker-6": "DOWN",
+          "player-0-worker-17": "UP"
+        },
+        "enemy_positions": [
+          [
+            202,
+            48.8862,
+            "COLLECTOR"
+          ],
+          [
+            156,
+            7.6677,
+            "COLLECTOR"
+          ],
+          [
+            187,
+            72.2331,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            7.1868,
+            "COLLECTOR"
+          ],
+          [
+            5,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            44,
+            0,
+            "PLANTER"
+          ],
+          [
+            111,
+            0,
+            "PLANTER"
+          ],
+          [
+            49,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 126.43,
+        "drought": 3,
+        "pending": null
+      },
+      {
+        "t": 57,
+        "workers": {
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            96,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-13": [
+            139,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-14": [
+            154,
+            0,
+            "STAY"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-14": "LEFT",
+          "player-0-worker-15": "RIGHT"
+        },
+        "enemy_positions": [
+          [
+            202,
+            128.7759,
+            "COLLECTOR"
+          ],
+          [
+            156,
+            21.799799999999998,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            7.1868,
+            "COLLECTOR"
+          ],
+          [
+            4,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            29,
+            0,
+            "PLANTER"
+          ],
+          [
+            64,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 101.6,
+        "drought": 4,
+        "pending": null
+      },
+      {
+        "t": 58,
+        "workers": {
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            96,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-13": [
+            139,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-14": [
+            154,
+            0,
+            "STAY"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-14": "LEFT",
+          "player-0-worker-15": "RIGHT",
+          "player-0-worker-18": "RIGHT"
+        },
+        "enemy_positions": [
+          [
+            202,
+            134.1354,
+            "COLLECTOR"
+          ],
+          [
+            156,
+            31.692299999999996,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            7.1868,
+            "COLLECTOR"
+          ],
+          [
+            3,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            15,
+            0,
+            "PLANTER"
+          ],
+          [
+            64,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 106.57,
+        "drought": 5,
+        "pending": null
+      },
+      {
+        "t": 59,
+        "workers": {
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            96,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-13": [
+            139,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-14": [
+            154,
+            0,
+            "STAY"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-14": "RIGHT",
+          "player-0-worker-18": "DOWN",
+          "player-0-worker-15": "RIGHT"
+        },
+        "enemy_positions": [
+          [
+            202,
+            137.8869,
+            "COLLECTOR"
+          ],
+          [
+            156,
+            38.6172,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            7.1868,
+            "COLLECTOR"
+          ],
+          [
+            2,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            16,
+            0,
+            "PLANTER"
+          ],
+          [
+            65,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 111.36,
+        "drought": 6,
+        "pending": null
+      },
+      {
+        "t": 60,
+        "workers": {
+          "player-1-worker-9": [
+            114,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-10": [
+            96,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-13": [
+            139,
+            0,
+            "STAY"
+          ],
+          "player-1-worker-14": [
+            154,
+            0,
+            "STAY"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-recrtCenter-0": "RECCOLLECTOR",
+          "player-0-worker-14": "LEFT",
+          "player-0-worker-18": "DOWN",
+          "player-0-worker-15": "UP"
+        },
+        "enemy_positions": [
+          [
+            202,
+            140.5131,
+            "COLLECTOR"
+          ],
+          [
+            156,
+            43.4646,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            7.1868,
+            "COLLECTOR"
+          ],
+          [
+            3,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            17,
+            0,
+            "PLANTER"
+          ],
+          [
+            80,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 115.97,
+        "drought": 7,
+        "pending": null
+      }
+    ]
+  },
+  {
+    "t": 89,
+    "variant": "recorded_ours",
+    "enemy_worker_decisions_changed": 20,
+    "marks": [
+      {
+        "t": 93,
+        "cash": 7.53,
+        "gross": 0
+      },
+      {
+        "t": 95,
+        "cash": 7.53,
+        "gross": 0
+      },
+      {
+        "t": 101,
+        "cash": 7.53,
+        "gross": 0
+      }
+    ],
+    "trace": [
+      {
+        "t": 89,
+        "workers": {
+          "player-1-worker-4": [
+            22,
+            125.98,
+            "UP"
+          ],
+          "player-1-worker-11": [
+            125,
+            159.63,
+            "LEFT"
+          ],
+          "player-1-worker-17": [
+            34,
+            0,
+            "DOWN"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-24": "RIGHT",
+          "player-0-worker-26": "DOWN",
+          "player-0-worker-23": "LEFT",
+          "player-0-worker-14": "LEFT",
+          "player-0-worker-20": "UP",
+          "player-0-worker-22": "UP",
+          "player-0-worker-21": "LEFT",
+          "player-0-worker-25": "RIGHT",
+          "player-0-worker-16": "UP",
+          "player-0-worker-19": "LEFT"
+        },
+        "enemy_positions": [
+          [
+            85,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            38,
+            19.9932,
+            "COLLECTOR"
+          ],
+          [
+            10,
+            0,
+            "PLANTER"
+          ],
+          [
+            54,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            56,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            197,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            23,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            35,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            138,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            110,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 7.53,
+        "drought": 48,
+        "pending": null
+      },
+      {
+        "t": 90,
+        "workers": {
+          "player-1-worker-4": [
+            7,
+            125.98,
+            "UP"
+          ],
+          "player-1-worker-11": [
+            124,
+            159.63,
+            "LEFT"
+          ],
+          "player-1-worker-17": [
+            49,
+            0,
+            "LEFT"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-24": "RIGHT",
+          "player-0-worker-23": "UP",
+          "player-0-worker-26": "LEFT",
+          "player-0-worker-14": "UP",
+          "player-0-worker-20": "LEFT",
+          "player-0-worker-21": "UP",
+          "player-0-worker-22": "RIGHT",
+          "player-0-worker-19": "DOWN",
+          "player-0-worker-16": "UP"
+        },
+        "enemy_positions": [
+          [
+            84,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            23,
+            19.9932,
+            "COLLECTOR"
+          ],
+          [
+            9,
+            0,
+            "PLANTER"
+          ],
+          [
+            39,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            55,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            182,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            22,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            36,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            139,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            125,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 7.53,
+        "drought": 49,
+        "pending": null
+      },
+      {
+        "t": 91,
+        "workers": {
+          "player-1-worker-4": [
+            217,
+            125.98,
+            "LEFT"
+          ],
+          "player-1-worker-11": [
+            123,
+            159.63,
+            "UP"
+          ],
+          "player-1-worker-17": [
+            48,
+            0,
+            "LEFT"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-24": "UP",
+          "player-0-worker-23": "UP",
+          "player-0-worker-25": "UP",
+          "player-0-worker-19": "DOWN",
+          "player-0-worker-14": "UP",
+          "player-0-worker-22": "RIGHT",
+          "player-0-worker-20": "UP",
+          "player-0-worker-26": "LEFT",
+          "player-0-worker-21": "LEFT",
+          "player-0-worker-16": "UP"
+        },
+        "enemy_positions": [
+          [
+            69,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            8,
+            19.9932,
+            "COLLECTOR"
+          ],
+          [
+            24,
+            0,
+            "PLANTER"
+          ],
+          [
+            38,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            40,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            183,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            7,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            37,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            139,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            124,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 7.53,
+        "drought": 50,
+        "pending": null
+      },
+      {
+        "t": 92,
+        "workers": {
+          "player-1-worker-4": [
+            216,
+            125.98,
+            "UP"
+          ],
+          "player-1-worker-11": [
+            108,
+            159.63,
+            "RIGHT"
+          ],
+          "player-1-worker-17": [
+            47,
+            0,
+            "LEFT"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-24": "LEFT",
+          "player-0-worker-23": "LEFT",
+          "player-0-worker-25": "UP",
+          "player-0-worker-22": "RIGHT",
+          "player-0-worker-20": "UP",
+          "player-0-worker-26": "UP",
+          "player-0-worker-14": "LEFT",
+          "player-0-worker-16": "LEFT",
+          "player-0-worker-21": "UP"
+        },
+        "enemy_positions": [
+          [
+            54,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            218,
+            19.9932,
+            "COLLECTOR"
+          ],
+          [
+            23,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            39,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            184,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            217,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            22,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            124,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            123,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 7.53,
+        "drought": 51,
+        "pending": null
+      },
+      {
+        "t": 93,
+        "workers": {
+          "player-1-worker-4": [
+            201,
+            125.98,
+            "UP"
+          ],
+          "player-1-worker-17": [
+            46,
+            0,
+            "UP"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-24": "UP",
+          "player-0-worker-23": "UP",
+          "player-0-worker-14": "UP",
+          "player-0-worker-21": "UP",
+          "player-0-worker-26": "RIGHT",
+          "player-0-worker-22": "RIGHT",
+          "player-0-worker-25": "DOWN",
+          "player-0-worker-20": "UP",
+          "player-0-worker-16": "UP"
+        },
+        "enemy_positions": [
+          [
+            53,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            217,
+            19.9932,
+            "COLLECTOR"
+          ],
+          [
+            8,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            24,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            185,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            216,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            21,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            109,
+            159.62879999999998,
+            "COLLECTOR"
+          ],
+          [
+            108,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 7.53,
+        "drought": 52,
+        "pending": null
+      },
+      {
+        "t": 94,
+        "workers": {
+          "player-1-worker-17": [
+            31,
+            0,
+            "UP"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-24": "UP",
+          "player-0-worker-23": "UP",
+          "player-0-worker-26": "UP",
+          "player-0-worker-25": "DOWN",
+          "player-0-worker-22": "UP",
+          "player-0-worker-20": "DOWN",
+          "player-0-worker-21": "DOWN",
+          "player-0-worker-14": "LEFT",
+          "player-0-worker-16": "UP"
+        },
+        "enemy_positions": [
+          [
+            38,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            202,
+            19.9932,
+            "COLLECTOR"
+          ],
+          [
+            218,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            9,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            186,
+            125.97959999999999,
+            "COLLECTOR"
+          ],
+          [
+            201,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            6,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            124,
+            159.62879999999998,
+            "COLLECTOR"
+          ],
+          [
+            109,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 7.53,
+        "drought": 53,
+        "pending": null
+      },
+      {
+        "t": 95,
+        "workers": {
+          "player-1-worker-17": [
+            16,
+            0,
+            "UP"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-24": "UP",
+          "player-0-worker-26": "RIGHT",
+          "player-0-worker-23": "RIGHT",
+          "player-0-worker-14": "RIGHT",
+          "player-0-worker-22": "RIGHT",
+          "player-0-worker-20": "LEFT",
+          "player-0-worker-25": "UP",
+          "player-0-worker-16": "UP",
+          "player-0-worker-21": "RIGHT"
+        },
+        "enemy_positions": [
+          [
+            37,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            187,
+            19.9932,
+            "COLLECTOR"
+          ],
+          [
+            8,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            24,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            171,
+            125.97959999999999,
+            "COLLECTOR"
+          ],
+          [
+            186,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            216,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            139,
+            159.62879999999998,
+            "COLLECTOR"
+          ],
+          [
+            94,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 7.53,
+        "drought": 54,
+        "pending": null
+      },
+      {
+        "t": 96,
+        "workers": {
+          "player-1-worker-17": [
+            1,
+            0,
+            "RIGHT"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-24": "UP",
+          "player-0-worker-26": "DOWN",
+          "player-0-worker-25": "DOWN",
+          "player-0-worker-21": "LEFT",
+          "player-0-worker-23": "UP",
+          "player-0-worker-14": "LEFT",
+          "player-0-worker-16": "UP",
+          "player-0-worker-20": "UP"
+        },
+        "enemy_positions": [
+          [
+            38,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            145.9728,
+            "COLLECTOR"
+          ],
+          [
+            7,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            25,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            187,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            201,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            124,
+            159.62879999999998,
+            "COLLECTOR"
+          ],
+          [
+            95,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 7.53,
+        "drought": 55,
+        "pending": null
+      },
+      {
+        "t": 97,
+        "workers": {
+          "player-1-worker-17": [
+            2,
+            0,
+            "DOWN"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-24": "RIGHT",
+          "player-0-worker-26": "RIGHT",
+          "player-0-worker-16": "UP",
+          "player-0-worker-20": "RIGHT",
+          "player-0-worker-21": "UP",
+          "player-0-worker-23": "LEFT",
+          "player-0-worker-25": "LEFT",
+          "player-0-worker-14": "DOWN"
+        },
+        "enemy_positions": [
+          [
+            37,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            157,
+            145.9728,
+            "COLLECTOR"
+          ],
+          [
+            217,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            24,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            186,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            139,
+            159.62879999999998,
+            "COLLECTOR"
+          ],
+          [
+            110,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 7.53,
+        "drought": 56,
+        "pending": null
+      },
+      {
+        "t": 98,
+        "workers": {
+          "player-1-worker-17": [
+            17,
+            0,
+            "LEFT"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-24": "DOWN",
+          "player-0-worker-16": "RIGHT",
+          "player-0-worker-26": "UP",
+          "player-0-worker-14": "UP",
+          "player-0-worker-21": "DOWN",
+          "player-0-worker-23": "LEFT",
+          "player-0-worker-25": "DOWN",
+          "player-0-worker-20": "DOWN"
+        },
+        "enemy_positions": [
+          [
+            52,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            142,
+            145.9728,
+            "COLLECTOR"
+          ],
+          [
+            218,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            9,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            171,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            187,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            138,
+            159.62879999999998,
+            "COLLECTOR"
+          ],
+          [
+            111,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 7.53,
+        "drought": 57,
+        "pending": null
+      },
+      {
+        "t": 99,
+        "workers": {
+          "player-1-worker-17": [
+            16,
+            0,
+            "DOWN"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-16": "UP",
+          "player-0-worker-24": "LEFT",
+          "player-0-worker-26": "LEFT",
+          "player-0-worker-14": "RIGHT",
+          "player-0-worker-21": "RIGHT",
+          "player-0-worker-25": "UP",
+          "player-0-worker-20": "RIGHT",
+          "player-0-worker-23": "LEFT"
+        },
+        "enemy_positions": [
+          [
+            37,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            143,
+            145.9728,
+            "COLLECTOR"
+          ],
+          [
+            8,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            24,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            170,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            202,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            153,
+            159.62879999999998,
+            "COLLECTOR"
+          ],
+          [
+            96,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 7.53,
+        "drought": 58,
+        "pending": null
+      },
+      {
+        "t": 100,
+        "workers": {
+          "player-1-worker-17": [
+            31,
+            0,
+            "DOWN"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-24": "DOWN",
+          "player-0-worker-16": "LEFT",
+          "player-0-worker-26": "LEFT",
+          "player-0-worker-25": "RIGHT",
+          "player-0-worker-21": "LEFT",
+          "player-0-worker-20": "LEFT",
+          "player-0-worker-14": "LEFT"
+        },
+        "enemy_positions": [
+          [
+            38,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            128,
+            145.9728,
+            "COLLECTOR"
+          ],
+          [
+            9,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            25,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            169,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            201,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            138,
+            159.62879999999998,
+            "COLLECTOR"
+          ],
+          [
+            95,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 7.53,
+        "drought": 59,
+        "pending": null
+      }
+    ]
+  },
+  {
+    "t": 89,
+    "variant": "two_turn",
+    "enemy_worker_decisions_changed": 20,
+    "marks": [
+      {
+        "t": 93,
+        "cash": 7.53,
+        "gross": 0
+      },
+      {
+        "t": 95,
+        "cash": 7.53,
+        "gross": 0
+      },
+      {
+        "t": 101,
+        "cash": 7.53,
+        "gross": 0
+      }
+    ],
+    "trace": [
+      {
+        "t": 89,
+        "workers": {
+          "player-1-worker-4": [
+            22,
+            125.98,
+            "UP"
+          ],
+          "player-1-worker-11": [
+            125,
+            159.63,
+            "LEFT"
+          ],
+          "player-1-worker-17": [
+            34,
+            0,
+            "DOWN"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-24": "RIGHT",
+          "player-0-worker-26": "DOWN",
+          "player-0-worker-23": "LEFT",
+          "player-0-worker-14": "LEFT",
+          "player-0-worker-20": "UP",
+          "player-0-worker-22": "UP",
+          "player-0-worker-21": "LEFT",
+          "player-0-worker-25": "RIGHT",
+          "player-0-worker-16": "UP",
+          "player-0-worker-19": "LEFT"
+        },
+        "enemy_positions": [
+          [
+            85,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            38,
+            19.9932,
+            "COLLECTOR"
+          ],
+          [
+            10,
+            0,
+            "PLANTER"
+          ],
+          [
+            54,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            56,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            197,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            23,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            35,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            138,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            110,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 7.53,
+        "drought": 48,
+        "pending": null
+      },
+      {
+        "t": 90,
+        "workers": {
+          "player-1-worker-4": [
+            7,
+            125.98,
+            "UP"
+          ],
+          "player-1-worker-11": [
+            124,
+            159.63,
+            "LEFT"
+          ],
+          "player-1-worker-17": [
+            49,
+            0,
+            "LEFT"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-24": "RIGHT",
+          "player-0-worker-23": "UP",
+          "player-0-worker-26": "LEFT",
+          "player-0-worker-14": "UP",
+          "player-0-worker-20": "LEFT",
+          "player-0-worker-21": "UP",
+          "player-0-worker-22": "RIGHT",
+          "player-0-worker-19": "DOWN",
+          "player-0-worker-16": "UP"
+        },
+        "enemy_positions": [
+          [
+            84,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            23,
+            19.9932,
+            "COLLECTOR"
+          ],
+          [
+            9,
+            0,
+            "PLANTER"
+          ],
+          [
+            39,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            55,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            182,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            22,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            36,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            139,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            125,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 7.53,
+        "drought": 49,
+        "pending": null
+      },
+      {
+        "t": 91,
+        "workers": {
+          "player-1-worker-4": [
+            217,
+            125.98,
+            "LEFT"
+          ],
+          "player-1-worker-11": [
+            123,
+            159.63,
+            "UP"
+          ],
+          "player-1-worker-17": [
+            48,
+            0,
+            "LEFT"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-24": "UP",
+          "player-0-worker-23": "UP",
+          "player-0-worker-25": "UP",
+          "player-0-worker-19": "DOWN",
+          "player-0-worker-14": "UP",
+          "player-0-worker-22": "RIGHT",
+          "player-0-worker-20": "UP",
+          "player-0-worker-26": "LEFT",
+          "player-0-worker-21": "LEFT",
+          "player-0-worker-16": "UP"
+        },
+        "enemy_positions": [
+          [
+            69,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            8,
+            19.9932,
+            "COLLECTOR"
+          ],
+          [
+            24,
+            0,
+            "PLANTER"
+          ],
+          [
+            38,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            40,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            183,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            7,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            37,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            139,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            124,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 7.53,
+        "drought": 50,
+        "pending": null
+      },
+      {
+        "t": 92,
+        "workers": {
+          "player-1-worker-4": [
+            216,
+            125.98,
+            "UP"
+          ],
+          "player-1-worker-11": [
+            108,
+            159.63,
+            "RIGHT"
+          ],
+          "player-1-worker-17": [
+            47,
+            0,
+            "LEFT"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-24": "LEFT",
+          "player-0-worker-23": "LEFT",
+          "player-0-worker-25": "UP",
+          "player-0-worker-22": "RIGHT",
+          "player-0-worker-20": "UP",
+          "player-0-worker-26": "UP",
+          "player-0-worker-14": "LEFT",
+          "player-0-worker-16": "LEFT",
+          "player-0-worker-21": "UP"
+        },
+        "enemy_positions": [
+          [
+            54,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            218,
+            19.9932,
+            "COLLECTOR"
+          ],
+          [
+            23,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            39,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            184,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            217,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            22,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            124,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            123,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 7.53,
+        "drought": 51,
+        "pending": null
+      },
+      {
+        "t": 93,
+        "workers": {
+          "player-1-worker-4": [
+            201,
+            125.98,
+            "UP"
+          ],
+          "player-1-worker-17": [
+            46,
+            0,
+            "UP"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-24": "UP",
+          "player-0-worker-23": "UP",
+          "player-0-worker-14": "UP",
+          "player-0-worker-21": "UP",
+          "player-0-worker-26": "RIGHT",
+          "player-0-worker-22": "RIGHT",
+          "player-0-worker-25": "DOWN",
+          "player-0-worker-20": "UP",
+          "player-0-worker-16": "UP"
+        },
+        "enemy_positions": [
+          [
+            53,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            217,
+            19.9932,
+            "COLLECTOR"
+          ],
+          [
+            8,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            24,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            185,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            216,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            21,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            109,
+            159.62879999999998,
+            "COLLECTOR"
+          ],
+          [
+            108,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 7.53,
+        "drought": 52,
+        "pending": null
+      },
+      {
+        "t": 94,
+        "workers": {
+          "player-1-worker-17": [
+            31,
+            0,
+            "UP"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-24": "UP",
+          "player-0-worker-23": "UP",
+          "player-0-worker-26": "UP",
+          "player-0-worker-25": "DOWN",
+          "player-0-worker-22": "UP",
+          "player-0-worker-20": "DOWN",
+          "player-0-worker-21": "DOWN",
+          "player-0-worker-14": "LEFT",
+          "player-0-worker-16": "UP"
+        },
+        "enemy_positions": [
+          [
+            38,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            202,
+            19.9932,
+            "COLLECTOR"
+          ],
+          [
+            218,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            9,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            186,
+            125.97959999999999,
+            "COLLECTOR"
+          ],
+          [
+            201,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            6,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            124,
+            159.62879999999998,
+            "COLLECTOR"
+          ],
+          [
+            109,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 7.53,
+        "drought": 53,
+        "pending": null
+      },
+      {
+        "t": 95,
+        "workers": {
+          "player-1-worker-17": [
+            16,
+            0,
+            "UP"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-24": "UP",
+          "player-0-worker-26": "RIGHT",
+          "player-0-worker-23": "RIGHT",
+          "player-0-worker-14": "RIGHT",
+          "player-0-worker-22": "RIGHT",
+          "player-0-worker-20": "LEFT",
+          "player-0-worker-25": "UP",
+          "player-0-worker-16": "UP",
+          "player-0-worker-21": "RIGHT"
+        },
+        "enemy_positions": [
+          [
+            37,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            187,
+            19.9932,
+            "COLLECTOR"
+          ],
+          [
+            8,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            24,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            171,
+            125.97959999999999,
+            "COLLECTOR"
+          ],
+          [
+            186,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            216,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            139,
+            159.62879999999998,
+            "COLLECTOR"
+          ],
+          [
+            94,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 7.53,
+        "drought": 54,
+        "pending": null
+      },
+      {
+        "t": 96,
+        "workers": {
+          "player-1-worker-17": [
+            1,
+            0,
+            "RIGHT"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-24": "UP",
+          "player-0-worker-26": "DOWN",
+          "player-0-worker-25": "DOWN",
+          "player-0-worker-21": "LEFT",
+          "player-0-worker-23": "UP",
+          "player-0-worker-14": "LEFT",
+          "player-0-worker-16": "UP",
+          "player-0-worker-20": "UP"
+        },
+        "enemy_positions": [
+          [
+            38,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            145.9728,
+            "COLLECTOR"
+          ],
+          [
+            7,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            25,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            187,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            201,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            124,
+            159.62879999999998,
+            "COLLECTOR"
+          ],
+          [
+            95,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 7.53,
+        "drought": 55,
+        "pending": null
+      },
+      {
+        "t": 97,
+        "workers": {
+          "player-1-worker-17": [
+            2,
+            0,
+            "DOWN"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-24": "RIGHT",
+          "player-0-worker-26": "RIGHT",
+          "player-0-worker-16": "UP",
+          "player-0-worker-20": "RIGHT",
+          "player-0-worker-21": "UP",
+          "player-0-worker-23": "LEFT",
+          "player-0-worker-25": "LEFT",
+          "player-0-worker-14": "DOWN"
+        },
+        "enemy_positions": [
+          [
+            37,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            157,
+            145.9728,
+            "COLLECTOR"
+          ],
+          [
+            217,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            24,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            186,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            139,
+            159.62879999999998,
+            "COLLECTOR"
+          ],
+          [
+            110,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 7.53,
+        "drought": 56,
+        "pending": null
+      },
+      {
+        "t": 98,
+        "workers": {
+          "player-1-worker-17": [
+            17,
+            0,
+            "LEFT"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-24": "DOWN",
+          "player-0-worker-16": "RIGHT",
+          "player-0-worker-26": "UP",
+          "player-0-worker-14": "UP",
+          "player-0-worker-21": "DOWN",
+          "player-0-worker-23": "LEFT",
+          "player-0-worker-25": "DOWN",
+          "player-0-worker-20": "DOWN"
+        },
+        "enemy_positions": [
+          [
+            52,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            142,
+            145.9728,
+            "COLLECTOR"
+          ],
+          [
+            218,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            9,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            171,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            187,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            138,
+            159.62879999999998,
+            "COLLECTOR"
+          ],
+          [
+            111,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 7.53,
+        "drought": 57,
+        "pending": null
+      },
+      {
+        "t": 99,
+        "workers": {
+          "player-1-worker-17": [
+            16,
+            0,
+            "DOWN"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-16": "UP",
+          "player-0-worker-24": "LEFT",
+          "player-0-worker-26": "LEFT",
+          "player-0-worker-14": "RIGHT",
+          "player-0-worker-21": "RIGHT",
+          "player-0-worker-25": "UP",
+          "player-0-worker-20": "RIGHT",
+          "player-0-worker-23": "LEFT"
+        },
+        "enemy_positions": [
+          [
+            37,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            143,
+            145.9728,
+            "COLLECTOR"
+          ],
+          [
+            8,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            24,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            170,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            202,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            153,
+            159.62879999999998,
+            "COLLECTOR"
+          ],
+          [
+            96,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 7.53,
+        "drought": 58,
+        "pending": null
+      },
+      {
+        "t": 100,
+        "workers": {
+          "player-1-worker-17": [
+            31,
+            0,
+            "DOWN"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-24": "DOWN",
+          "player-0-worker-16": "LEFT",
+          "player-0-worker-26": "LEFT",
+          "player-0-worker-25": "RIGHT",
+          "player-0-worker-21": "LEFT",
+          "player-0-worker-20": "LEFT",
+          "player-0-worker-14": "LEFT"
+        },
+        "enemy_positions": [
+          [
+            38,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            128,
+            145.9728,
+            "COLLECTOR"
+          ],
+          [
+            9,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            25,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            169,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            201,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            138,
+            159.62879999999998,
+            "COLLECTOR"
+          ],
+          [
+            95,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 7.53,
+        "drought": 59,
+        "pending": null
+      }
+    ]
+  },
+  {
+    "t": 89,
+    "variant": "four_turn",
+    "enemy_worker_decisions_changed": 24,
+    "marks": [
+      {
+        "t": 93,
+        "cash": 119.78,
+        "gross": 129.3
+      },
+      {
+        "t": 95,
+        "cash": 137.95,
+        "gross": 129.3
+      },
+      {
+        "t": 101,
+        "cash": 188.46,
+        "gross": 129.3
+      }
+    ],
+    "trace": [
+      {
+        "t": 89,
+        "workers": {
+          "player-1-worker-4": [
+            22,
+            125.98,
+            "UP"
+          ],
+          "player-1-worker-11": [
+            125,
+            159.63,
+            "DOWN"
+          ],
+          "player-1-worker-17": [
+            34,
+            0,
+            "DOWN"
+          ]
+        },
+        "path": [
+          "player-1-worker-11",
+          154,
+          3,
+          129.299328
+        ],
+        "opponent": {
+          "player-0-worker-24": "RIGHT",
+          "player-0-worker-26": "DOWN",
+          "player-0-worker-23": "LEFT",
+          "player-0-worker-14": "LEFT",
+          "player-0-worker-20": "UP",
+          "player-0-worker-22": "UP",
+          "player-0-worker-21": "LEFT",
+          "player-0-worker-25": "RIGHT",
+          "player-0-worker-16": "UP",
+          "player-0-worker-19": "LEFT"
+        },
+        "enemy_positions": [
+          [
+            85,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            38,
+            19.9932,
+            "COLLECTOR"
+          ],
+          [
+            10,
+            0,
+            "PLANTER"
+          ],
+          [
+            54,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            56,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            197,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            23,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            35,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            138,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            110,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 7.53,
+        "drought": 48,
+        "pending": null
+      },
+      {
+        "t": 90,
+        "workers": {
+          "player-1-worker-4": [
+            7,
+            125.98,
+            "UP"
+          ],
+          "player-1-worker-11": [
+            140,
+            143.67,
+            "DOWN"
+          ],
+          "player-1-worker-17": [
+            49,
+            0,
+            "LEFT"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-24": "RIGHT",
+          "player-0-worker-23": "UP",
+          "player-0-worker-26": "DOWN",
+          "player-0-worker-14": "UP",
+          "player-0-worker-20": "LEFT",
+          "player-0-worker-21": "UP",
+          "player-0-worker-22": "RIGHT",
+          "player-0-worker-19": "DOWN",
+          "player-0-worker-16": "UP"
+        },
+        "enemy_positions": [
+          [
+            84,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            23,
+            19.9932,
+            "COLLECTOR"
+          ],
+          [
+            9,
+            0,
+            "PLANTER"
+          ],
+          [
+            39,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            55,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            182,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            22,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            36,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            139,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            125,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 7.53,
+        "drought": 49,
+        "pending": null
+      },
+      {
+        "t": 91,
+        "workers": {
+          "player-1-worker-4": [
+            217,
+            125.98,
+            "LEFT"
+          ],
+          "player-1-worker-11": [
+            155,
+            129.3,
+            "LEFT"
+          ],
+          "player-1-worker-17": [
+            48,
+            0,
+            "LEFT"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-24": "UP",
+          "player-0-worker-23": "UP",
+          "player-0-worker-25": "RIGHT",
+          "player-0-worker-19": "DOWN",
+          "player-0-worker-14": "UP",
+          "player-0-worker-22": "RIGHT",
+          "player-0-worker-20": "UP",
+          "player-0-worker-26": "DOWN",
+          "player-0-worker-21": "LEFT",
+          "player-0-worker-16": "UP"
+        },
+        "enemy_positions": [
+          [
+            69,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            8,
+            19.9932,
+            "COLLECTOR"
+          ],
+          [
+            24,
+            0,
+            "PLANTER"
+          ],
+          [
+            38,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            40,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            183,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            7,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            37,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            139,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            140,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 7.53,
+        "drought": 50,
+        "pending": null
+      },
+      {
+        "t": 92,
+        "workers": {
+          "player-1-worker-4": [
+            216,
+            125.98,
+            "UP"
+          ],
+          "player-1-worker-11": [
+            154,
+            0,
+            "RIGHT"
+          ],
+          "player-1-worker-17": [
+            47,
+            0,
+            "LEFT"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-24": "LEFT",
+          "player-0-worker-23": "LEFT",
+          "player-0-worker-25": "DOWN",
+          "player-0-worker-22": "RIGHT",
+          "player-0-worker-20": "UP",
+          "player-0-worker-26": "RIGHT",
+          "player-0-worker-14": "LEFT",
+          "player-0-worker-16": "LEFT",
+          "player-0-worker-21": "UP"
+        },
+        "enemy_positions": [
+          [
+            54,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            218,
+            19.9932,
+            "COLLECTOR"
+          ],
+          [
+            23,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            39,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            184,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            217,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            22,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            140,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            155,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 116.83,
+        "drought": 0,
+        "pending": null
+      },
+      {
+        "t": 93,
+        "workers": {
+          "player-1-worker-4": [
+            201,
+            125.98,
+            "UP"
+          ],
+          "player-1-worker-17": [
+            46,
+            0,
+            "UP"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-24": "UP",
+          "player-0-worker-23": "UP",
+          "player-0-worker-14": "UP",
+          "player-0-worker-21": "UP",
+          "player-0-worker-26": "DOWN",
+          "player-0-worker-22": "RIGHT",
+          "player-0-worker-20": "UP",
+          "player-0-worker-16": "UP"
+        },
+        "enemy_positions": [
+          [
+            53,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            217,
+            19.9932,
+            "COLLECTOR"
+          ],
+          [
+            8,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            24,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            185,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            216,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            21,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            156,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 119.78,
+        "drought": 1,
+        "pending": null
+      },
+      {
+        "t": 94,
+        "workers": {
+          "player-1-worker-17": [
+            31,
+            0,
+            "UP"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-24": "UP",
+          "player-0-worker-23": "UP",
+          "player-0-worker-26": "UP",
+          "player-0-worker-22": "UP",
+          "player-0-worker-20": "DOWN",
+          "player-0-worker-21": "DOWN",
+          "player-0-worker-14": "LEFT",
+          "player-0-worker-16": "UP"
+        },
+        "enemy_positions": [
+          [
+            38,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            202,
+            19.9932,
+            "COLLECTOR"
+          ],
+          [
+            218,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            9,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            186,
+            125.97959999999999,
+            "COLLECTOR"
+          ],
+          [
+            201,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            6,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            171,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 122.62,
+        "drought": 2,
+        "pending": null
+      },
+      {
+        "t": 95,
+        "workers": {
+          "player-1-worker-17": [
+            16,
+            0,
+            "UP"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-24": "UP",
+          "player-0-worker-26": "RIGHT",
+          "player-0-worker-23": "RIGHT",
+          "player-0-worker-14": "RIGHT",
+          "player-0-worker-22": "RIGHT",
+          "player-0-worker-20": "LEFT",
+          "player-0-worker-16": "UP",
+          "player-0-worker-21": "RIGHT"
+        },
+        "enemy_positions": [
+          [
+            37,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            187,
+            19.9932,
+            "COLLECTOR"
+          ],
+          [
+            8,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            24,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            171,
+            113.38163999999999,
+            "COLLECTOR"
+          ],
+          [
+            186,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            216,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            156,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 137.95,
+        "drought": 3,
+        "pending": null
+      },
+      {
+        "t": 96,
+        "workers": {
+          "player-1-worker-17": [
+            1,
+            0,
+            "RIGHT"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-24": "UP",
+          "player-0-worker-26": "DOWN",
+          "player-0-worker-21": "LEFT",
+          "player-0-worker-23": "UP",
+          "player-0-worker-14": "LEFT",
+          "player-0-worker-16": "UP",
+          "player-0-worker-20": "UP"
+        },
+        "enemy_positions": [
+          [
+            38,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            172,
+            120.037356,
+            "COLLECTOR"
+          ],
+          [
+            7,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            25,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            187,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            201,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            157,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 153.92,
+        "drought": 4,
+        "pending": null
+      },
+      {
+        "t": 97,
+        "workers": {
+          "player-1-worker-17": [
+            2,
+            0,
+            "DOWN"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-24": "RIGHT",
+          "player-0-worker-16": "UP",
+          "player-0-worker-20": "RIGHT",
+          "player-0-worker-21": "UP",
+          "player-0-worker-14": "DOWN"
+        },
+        "enemy_positions": [
+          [
+            37,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            157,
+            108.0336204,
+            "COLLECTOR"
+          ],
+          [
+            217,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            24,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            186,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 168.45,
+        "drought": 5,
+        "pending": null
+      },
+      {
+        "t": 98,
+        "workers": {
+          "player-1-worker-17": [
+            17,
+            0,
+            "LEFT"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-24": "DOWN",
+          "player-0-worker-16": "RIGHT",
+          "player-0-worker-14": "UP",
+          "player-0-worker-21": "DOWN",
+          "player-0-worker-20": "DOWN"
+        },
+        "enemy_positions": [
+          [
+            52,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            142,
+            97.23025836000001,
+            "COLLECTOR"
+          ],
+          [
+            218,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            9,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            187,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 181.69,
+        "drought": 6,
+        "pending": null
+      },
+      {
+        "t": 99,
+        "workers": {
+          "player-1-worker-17": [
+            16,
+            0,
+            "DOWN"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-16": "UP",
+          "player-0-worker-24": "LEFT",
+          "player-0-worker-14": "RIGHT",
+          "player-0-worker-21": "RIGHT",
+          "player-0-worker-20": "RIGHT"
+        },
+        "enemy_positions": [
+          [
+            37,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            143,
+            97.23025836000001,
+            "COLLECTOR"
+          ],
+          [
+            8,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            24,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            202,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 184.03,
+        "drought": 7,
+        "pending": null
+      },
+      {
+        "t": 100,
+        "workers": {
+          "player-1-worker-17": [
+            31,
+            0,
+            "DOWN"
+          ]
+        },
+        "path": null,
+        "opponent": {
+          "player-0-worker-24": "DOWN",
+          "player-0-worker-16": "LEFT",
+          "player-0-worker-21": "LEFT",
+          "player-0-worker-20": "LEFT",
+          "player-0-worker-14": "LEFT"
+        },
+        "enemy_positions": [
+          [
+            38,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            128,
+            97.23025836000001,
+            "COLLECTOR"
+          ],
+          [
+            9,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            25,
+            0,
+            "COLLECTOR"
+          ],
+          [
+            201,
+            0,
+            "COLLECTOR"
+          ]
+        ],
+        "cash": 186.29,
+        "drought": 8,
+        "pending": null
+      }
+    ]
+  }
+]

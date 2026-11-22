@@ -1,0 +1,515 @@
+[
+  {
+    "start": 48,
+    "variant": "recorded",
+    "changes": [],
+    "marks": [
+      {
+        "horizon": 4,
+        "cash": 40.77,
+        "deposits": 0
+      },
+      {
+        "horizon": 6,
+        "cash": 14.78,
+        "deposits": 0
+      },
+      {
+        "horizon": 12,
+        "cash": 27.76,
+        "deposits": 0
+      }
+    ]
+  },
+  {
+    "start": 48,
+    "variant": "two_turn",
+    "changes": [],
+    "marks": [
+      {
+        "horizon": 4,
+        "cash": 40.77,
+        "deposits": 0
+      },
+      {
+        "horizon": 6,
+        "cash": 14.78,
+        "deposits": 0
+      },
+      {
+        "horizon": 12,
+        "cash": 27.76,
+        "deposits": 0
+      }
+    ]
+  },
+  {
+    "start": 48,
+    "variant": "four_turn",
+    "changes": [
+      [
+        48,
+        {
+          "player-1-worker-11": [
+            "DOWN",
+            "LEFT"
+          ]
+        }
+      ],
+      [
+        49,
+        {
+          "player-1-worker-4": [
+            null,
+            "DOWN"
+          ],
+          "player-1-worker-11": [
+            "DOWN",
+            "LEFT"
+          ]
+        }
+      ],
+      [
+        50,
+        {
+          "player-1-worker-4": [
+            null,
+            "DOWN"
+          ],
+          "player-1-worker-11": [
+            null,
+            "LEFT"
+          ]
+        }
+      ],
+      [
+        52,
+        {
+          "player-1-recrtCenter-0": [
+            "RECCOLLECTOR",
+            null
+          ]
+        }
+      ]
+    ],
+    "marks": [
+      {
+        "horizon": 4,
+        "cash": 83.01,
+        "deposits": 42.23
+      },
+      {
+        "horizon": 6,
+        "cash": 150.8,
+        "deposits": 103.53
+      },
+      {
+        "horizon": 12,
+        "cash": 167.64,
+        "deposits": 103.53
+      }
+    ]
+  },
+  {
+    "start": 49,
+    "variant": "recorded",
+    "changes": [],
+    "marks": [
+      {
+        "horizon": 4,
+        "cash": 21.79,
+        "deposits": 0
+      },
+      {
+        "horizon": 6,
+        "cash": 27.28,
+        "deposits": 0
+      },
+      {
+        "horizon": 12,
+        "cash": 14.72,
+        "deposits": 0
+      }
+    ]
+  },
+  {
+    "start": 49,
+    "variant": "two_turn",
+    "changes": [],
+    "marks": [
+      {
+        "horizon": 4,
+        "cash": 21.79,
+        "deposits": 0
+      },
+      {
+        "horizon": 6,
+        "cash": 27.28,
+        "deposits": 0
+      },
+      {
+        "horizon": 12,
+        "cash": 14.72,
+        "deposits": 0
+      }
+    ]
+  },
+  {
+    "start": 49,
+    "variant": "four_turn",
+    "changes": [
+      [
+        49,
+        {
+          "player-1-worker-4": [
+            null,
+            "DOWN"
+          ]
+        }
+      ],
+      [
+        50,
+        {
+          "player-1-worker-4": [
+            null,
+            "DOWN"
+          ]
+        }
+      ],
+      [
+        52,
+        {
+          "player-1-recrtCenter-0": [
+            "RECCOLLECTOR",
+            null
+          ]
+        }
+      ]
+    ],
+    "marks": [
+      {
+        "horizon": 4,
+        "cash": 95.57,
+        "deposits": 61.3
+      },
+      {
+        "horizon": 6,
+        "cash": 121.06,
+        "deposits": 61.3
+      },
+      {
+        "horizon": 12,
+        "cash": 108.5,
+        "deposits": 61.3
+      }
+    ]
+  },
+  {
+    "start": 89,
+    "variant": "recorded",
+    "changes": [],
+    "marks": [
+      {
+        "horizon": 4,
+        "cash": 7.53,
+        "deposits": 0
+      },
+      {
+        "horizon": 6,
+        "cash": 7.53,
+        "deposits": 0
+      },
+      {
+        "horizon": 12,
+        "cash": 7.53,
+        "deposits": 0
+      }
+    ]
+  },
+  {
+    "start": 89,
+    "variant": "two_turn",
+    "changes": [
+      [
+        90,
+        {
+          "player-1-worker-11": [
+            "LEFT",
+            "DOWN"
+          ]
+        }
+      ],
+      [
+        91,
+        {
+          "player-1-worker-11": [
+            "UP",
+            "DOWN"
+          ]
+        }
+      ]
+    ],
+    "marks": [
+      {
+        "horizon": 4,
+        "cash": 125.96,
+        "deposits": 127.7
+      },
+      {
+        "horizon": 6,
+        "cash": 135.89,
+        "deposits": 127.7
+      },
+      {
+        "horizon": 12,
+        "cash": 161.54,
+        "deposits": 127.7
+      }
+    ]
+  },
+  {
+    "start": 89,
+    "variant": "four_turn",
+    "changes": [
+      [
+        89,
+        {
+          "player-1-worker-11": [
+            "LEFT",
+            "DOWN"
+          ]
+        }
+      ],
+      [
+        90,
+        {
+          "player-1-worker-18": [
+            null,
+            "RIGHT"
+          ],
+          "player-1-worker-11": [
+            "LEFT",
+            "DOWN"
+          ]
+        }
+      ],
+      [
+        91,
+        {
+          "player-1-worker-11": [
+            "UP",
+            "LEFT"
+          ]
+        }
+      ]
+    ],
+    "marks": [
+      {
+        "horizon": 4,
+        "cash": 119.78,
+        "deposits": 129.3
+      },
+      {
+        "horizon": 6,
+        "cash": 125.35,
+        "deposits": 129.3
+      },
+      {
+        "horizon": 12,
+        "cash": 139.71,
+        "deposits": 129.3
+      }
+    ]
+  },
+  {
+    "start": 249,
+    "variant": "recorded",
+    "changes": [],
+    "marks": [
+      {
+        "horizon": 4,
+        "cash": 332.13,
+        "deposits": 352.12
+      },
+      {
+        "horizon": 6,
+        "cash": 302.13,
+        "deposits": 352.12
+      },
+      {
+        "horizon": 12,
+        "cash": 42.45,
+        "deposits": 352.12
+      }
+    ]
+  },
+  {
+    "start": 249,
+    "variant": "two_turn",
+    "changes": [],
+    "marks": [
+      {
+        "horizon": 4,
+        "cash": 332.13,
+        "deposits": 352.12
+      },
+      {
+        "horizon": 6,
+        "cash": 302.13,
+        "deposits": 352.12
+      },
+      {
+        "horizon": 12,
+        "cash": 42.45,
+        "deposits": 352.12
+      }
+    ]
+  },
+  {
+    "start": 249,
+    "variant": "four_turn",
+    "changes": [],
+    "marks": [
+      {
+        "horizon": 4,
+        "cash": 332.13,
+        "deposits": 352.12
+      },
+      {
+        "horizon": 6,
+        "cash": 302.13,
+        "deposits": 352.12
+      },
+      {
+        "horizon": 12,
+        "cash": 42.45,
+        "deposits": 352.12
+      }
+    ]
+  },
+  {
+    "start": 268,
+    "variant": "recorded",
+    "changes": [],
+    "marks": [
+      {
+        "horizon": 4,
+        "cash": 31.71,
+        "deposits": 52.71
+      },
+      {
+        "horizon": 6,
+        "cash": 9.58,
+        "deposits": 52.71
+      },
+      {
+        "horizon": 12,
+        "cash": 29.83,
+        "deposits": 52.71
+      }
+    ]
+  },
+  {
+    "start": 268,
+    "variant": "two_turn",
+    "changes": [
+      [
+        268,
+        {
+          "player-1-worker-26": [
+            null,
+            "DOWN"
+          ]
+        }
+      ],
+      [
+        269,
+        {
+          "player-1-worker-26": [
+            "UP",
+            "RIGHT"
+          ]
+        }
+      ]
+    ],
+    "marks": [
+      {
+        "horizon": 4,
+        "cash": 127.41,
+        "deposits": 148.41
+      },
+      {
+        "horizon": 6,
+        "cash": 105.28,
+        "deposits": 148.41
+      },
+      {
+        "horizon": 12,
+        "cash": 109.78,
+        "deposits": 148.41
+      }
+    ]
+  },
+  {
+    "start": 268,
+    "variant": "four_turn",
+    "changes": [
+      [
+        268,
+        {
+          "player-1-worker-29": [
+            null,
+            "RIGHT"
+          ],
+          "player-1-worker-26": [
+            null,
+            "DOWN"
+          ]
+        }
+      ],
+      [
+        269,
+        {
+          "player-1-worker-26": [
+            "UP",
+            "RIGHT"
+          ],
+          "player-1-worker-29": [
+            "LEFT",
+            "RIGHT"
+          ]
+        }
+      ],
+      [
+        270,
+        {
+          "player-1-worker-29": [
+            null,
+            "UP"
+          ],
+          "player-1-worker-27": [
+            "LEFT",
+            null
+          ]
+        }
+      ]
+    ],
+    "marks": [
+      {
+        "horizon": 4,
+        "cash": 104.7,
+        "deposits": 125.7
+      },
+      {
+        "horizon": 6,
+        "cash": 82.57,
+        "deposits": 125.7
+      },
+      {
+        "horizon": 12,
+        "cash": 87.07,
+        "deposits": 125.7
+      }
+    ]
+  }
+]
