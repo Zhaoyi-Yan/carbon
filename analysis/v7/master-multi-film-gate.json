@@ -1,0 +1,111 @@
+{
+  "lifeline": {
+    "all": {
+      "worker": {
+        "n": 3879,
+        "nll": 0.48318395018577576,
+        "hit": 0.8053622067543181
+      },
+      "base": {
+        "n": 262,
+        "nll": 0.5784790515899658,
+        "hit": 0.7251908396946565
+      }
+    },
+    "activated": {
+      "worker": {
+        "n": 219,
+        "nll": 0.5367560982704163,
+        "hit": 0.7853881278538812
+      },
+      "base": {
+        "n": 6,
+        "nll": 0.9192665219306946,
+        "hit": 0.6666666666666666
+      }
+    }
+  },
+  "gated": {
+    "all": {
+      "worker": {
+        "n": 3879,
+        "nll": 0.48591428995132446,
+        "hit": 0.8040732147460685
+      },
+      "base": {
+        "n": 262,
+        "nll": 0.5754662752151489,
+        "hit": 0.7213740458015268
+      }
+    },
+    "activated": {
+      "worker": {
+        "n": 219,
+        "nll": 0.5851179361343384,
+        "hit": 0.7625570776255708
+      },
+      "base": {
+        "n": 6,
+        "nll": 0.7877083420753479,
+        "hit": 0.5
+      }
+    }
+  },
+  "maps": [
+    {
+      "name": "0e35eb181d361e29c314340ec542c446-1",
+      "layout": "6e54367194843d9e33a5815096e14f6e8efaace0cc69a7047b9a44b5e16734fb",
+      "timesteps": 74,
+      "active": 4,
+      "teacher_rows": {
+        "22": 74
+      }
+    },
+    {
+      "name": "6173390b43b884ef8b9c8e22ea5f3318-1",
+      "layout": "ee8f47d5f99d6c3dc79e4d60540419eeba276b40387de93098aca9a04c821fa7",
+      "timesteps": 75,
+      "active": 11,
+      "teacher_rows": {
+        "22": 75
+      }
+    },
+    {
+      "name": "6523af3ebb2d8c6306f7b086a82ec116-1",
+      "layout": "e86e0f667c79814ddcab90b6e7a25a3ba7d693d0f92ed8684fe128e2f62a6a64",
+      "timesteps": 75,
+      "active": 1,
+      "teacher_rows": {
+        "22": 75
+      }
+    },
+    {
+      "name": "1cc46f477941046042b7978a287d7dfe-1",
+      "layout": "379171813c99632cd94db227093473ceeb72e3c1c0e3875ed1db63448556093a",
+      "timesteps": 74,
+      "active": 4,
+      "teacher_rows": {
+        "22": 74
+      }
+    },
+    {
+      "name": "8cfa0cb23550156f8a8759f379c9f037-1",
+      "layout": "fcd5f2f58c3044d061ef767af5979bf696e12e2a2e6ec4e1c93501a5c7eeefad",
+      "timesteps": 74,
+      "active": 3,
+      "teacher_rows": {
+        "21": 74
+      }
+    },
+    {
+      "name": "e2c0eb629674da05c07f4f47f906d5dc-1",
+      "layout": "4cba25fd2e6208ab58f031a1230f1842b4a1746b65adf8e513ab3fead83e6ed9",
+      "timesteps": 75,
+      "active": 0,
+      "teacher_rows": {
+        "21": 75
+      }
+    }
+  ],
+  "meaning": "Six original Artemis/Apollo holdout layouts outside all Master maps. Uses the previously archived elite teacher row 21 or 22, natural routing for transport amounts and the actual blockade gate applied from turn zero to both seats. Report separately for all boards and the gate-active subset."
+}

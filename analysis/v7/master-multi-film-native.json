@@ -1,0 +1,46 @@
+{
+  "torch": {
+    "original_max_abs": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "master_max_abs": [
+      2.574920654296875e-05,
+      2.0503997802734375e-05,
+      4.76837158203125e-07
+    ],
+    "worker_base_equal": [
+      633,
+      38
+    ],
+    "worker_base_total": [
+      633,
+      38
+    ]
+  },
+  "winograd": {
+    "original_max_abs": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "master_max_abs": [
+      7.2479248046875e-05,
+      7.319450378417969e-05,
+      7.748603820800781e-07
+    ],
+    "worker_base_equal": [
+      633,
+      38
+    ],
+    "worker_base_total": [
+      633,
+      38
+    ]
+  },
+  "candidate": "18a347615623b0501f75e9a565054b3b3aaa0c8fbbca1c30f7d952b1c7435f86",
+  "source_states": 160,
+  "layout_count": 13,
+  "original_parameter_arrays_bit_exact": true
+}
