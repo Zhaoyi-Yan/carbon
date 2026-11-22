@@ -1,0 +1,2423 @@
+{
+  "definition": "For each seat take its longest consecutive stretch over frames 30..250 with cash < 30, carried cargo >= 90 and treasury deficit >= 60. A tie goes to the first stretch. Features are measured at the first frame of the selected stretch. Only games with both seats officially DONE and distinct original layouts.",
+  "cohort": "Existing public replay training archive; opponent and map mix reflect archival sampling.",
+  "layouts": 862,
+  "unusable_metadata_or_status": 0,
+  "seats": 1724,
+  "at_least_50": 19,
+  "at_least_100": 8,
+  "sustained": {
+    "seats": 44,
+    "won": 0.1364,
+    "without_trees": 0.6818,
+    "outnumbered_by_two": 0.8182,
+    "median_trees": 0.0,
+    "median_opposing_trees": 9.0,
+    "both_depots_threatened_loaded_worker_fraction": 0.2072
+  },
+  "transient": {
+    "seats": 698,
+    "won": 0.404,
+    "without_trees": 0.0745,
+    "outnumbered_by_two": 0.1662,
+    "median_trees": 3.0,
+    "median_opposing_trees": 4.0,
+    "both_depots_threatened_loaded_worker_fraction": 0.0115
+  },
+  "by_opponent": {
+    "CarbonEdge_Artemis": {
+      "seats": 48,
+      "sustained": 3,
+      "long": 1
+    },
+    "yan-v4": {
+      "seats": 4,
+      "sustained": 0,
+      "long": 0
+    },
+    "ClaudeFable5.2-v8": {
+      "seats": 18,
+      "sustained": 0,
+      "long": 0
+    },
+    "yan-v5": {
+      "seats": 68,
+      "sustained": 0,
+      "long": 0
+    },
+    "哈基米基准3": {
+      "seats": 45,
+      "sustained": 0,
+      "long": 0
+    },
+    "Carago-测": {
+      "seats": 29,
+      "sustained": 0,
+      "long": 0
+    },
+    "小肥鱼v5": {
+      "seats": 12,
+      "sustained": 0,
+      "long": 0
+    },
+    "小肥鱼v5-it720e20": {
+      "seats": 61,
+      "sustained": 0,
+      "long": 0
+    },
+    "哈基米基准2": {
+      "seats": 45,
+      "sustained": 0,
+      "long": 0
+    },
+    "SpongeBaby-CarbonNet-v2.0": {
+      "seats": 49,
+      "sustained": 1,
+      "long": 1
+    },
+    "CarbonEdge_Apollo": {
+      "seats": 105,
+      "sustained": 11,
+      "long": 3
+    },
+    "1C-Testv2": {
+      "seats": 31,
+      "sustained": 0,
+      "long": 0
+    },
+    "小肥鱼v5-it720": {
+      "seats": 41,
+      "sustained": 0,
+      "long": 0
+    },
+    "1C-Testv3": {
+      "seats": 4,
+      "sustained": 0,
+      "long": 0
+    },
+    "claude-AlphaCarbon-Master7sD": {
+      "seats": 26,
+      "sustained": 9,
+      "long": 6
+    },
+    "claude-AlphaCarbon-Master7sE": {
+      "seats": 12,
+      "sustained": 2,
+      "long": 2
+    },
+    "RyanX-AIPowercore-it910": {
+      "seats": 2,
+      "sustained": 0,
+      "long": 0
+    },
+    "SpongeBaby-CarbonNet-v3.0": {
+      "seats": 52,
+      "sustained": 2,
+      "long": 1
+    },
+    "RyanX-AIPowercore-it950-ladder": {
+      "seats": 2,
+      "sustained": 0,
+      "long": 0
+    },
+    "RyanX-AIPowercore-it930b": {
+      "seats": 8,
+      "sustained": 0,
+      "long": 0
+    },
+    "RyanX-AIPowercore-it940-v4b": {
+      "seats": 45,
+      "sustained": 0,
+      "long": 0
+    },
+    "ClaudeFable5.2-v7": {
+      "seats": 23,
+      "sustained": 0,
+      "long": 0
+    },
+    "claude-AlphaCarbon-Master6": {
+      "seats": 20,
+      "sustained": 3,
+      "long": 0
+    },
+    "小肥鱼v5-d5": {
+      "seats": 13,
+      "sustained": 0,
+      "long": 0
+    },
+    "claude-AlphaCarbon-Master7sB2": {
+      "seats": 24,
+      "sustained": 2,
+      "long": 1
+    },
+    "1C-Zero-v3": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "RyanX-AIPowercore-Lite-V8": {
+      "seats": 2,
+      "sustained": 0,
+      "long": 0
+    },
+    "安生N22": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "Fable5.2-Max-V6": {
+      "seats": 2,
+      "sustained": 0,
+      "long": 0
+    },
+    "天枢弈潮": {
+      "seats": 3,
+      "sustained": 0,
+      "long": 0
+    },
+    "Krypton-Cloud500": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "hy-v1": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "ds-pro-v2": {
+      "seats": 10,
+      "sustained": 0,
+      "long": 0
+    },
+    "小肥鱼v5-late2s": {
+      "seats": 16,
+      "sustained": 0,
+      "long": 0
+    },
+    "RyanX-AIPowercore-it920-evo31": {
+      "seats": 5,
+      "sustained": 0,
+      "long": 0
+    },
+    "ds-pro-v1": {
+      "seats": 7,
+      "sustained": 0,
+      "long": 0
+    },
+    "doubao-flash-v1": {
+      "seats": 12,
+      "sustained": 0,
+      "long": 0
+    },
+    "CarbonEdge_Prometheus": {
+      "seats": 4,
+      "sustained": 0,
+      "long": 0
+    },
+    "claude-AlphaCarbon-Master5s": {
+      "seats": 19,
+      "sustained": 0,
+      "long": 0
+    },
+    "哈基米 v3": {
+      "seats": 5,
+      "sustained": 0,
+      "long": 0
+    },
+    "无始6.0": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "doubao-flash-v3": {
+      "seats": 6,
+      "sustained": 0,
+      "long": 0
+    },
+    "安生N31": {
+      "seats": 2,
+      "sustained": 0,
+      "long": 0
+    },
+    "安生N30": {
+      "seats": 2,
+      "sustained": 0,
+      "long": 0
+    },
+    "z7-SiegeGuard-it720-v1": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "AgyCarbon-Light-GMFastSim": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "Master3-Plus": {
+      "seats": 21,
+      "sustained": 0,
+      "long": 0
+    },
+    "claude-AlphaCarbon-Master3s2": {
+      "seats": 8,
+      "sustained": 0,
+      "long": 0
+    },
+    "stephen-K4TacSearch-v6": {
+      "seats": 6,
+      "sustained": 0,
+      "long": 0
+    },
+    "LJM-TidalSearch-v1": {
+      "seats": 11,
+      "sustained": 0,
+      "long": 0
+    },
+    "哈基米基准": {
+      "seats": 6,
+      "sustained": 0,
+      "long": 0
+    },
+    "RyanX-AIPowercore-it720-preview": {
+      "seats": 2,
+      "sustained": 0,
+      "long": 0
+    },
+    "安生N27": {
+      "seats": 4,
+      "sustained": 0,
+      "long": 0
+    },
+    "Krypton-M144Search-v1": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "安生N16": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "Fable5.2-Max-V4": {
+      "seats": 2,
+      "sustained": 0,
+      "long": 0
+    },
+    "Krypton-DeepSeek-M7-MAX": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "gpt 6.1 高v19": {
+      "seats": 3,
+      "sustained": 0,
+      "long": 0
+    },
+    "peach standard 1": {
+      "seats": 18,
+      "sustained": 0,
+      "long": 0
+    },
+    "Yu_D1an_v2": {
+      "seats": 14,
+      "sustained": 0,
+      "long": 0
+    },
+    "qwen4-yang-v1": {
+      "seats": 4,
+      "sustained": 0,
+      "long": 0
+    },
+    "GPT_6.1_Sol_LIZI_0.1V": {
+      "seats": 2,
+      "sustained": 0,
+      "long": 0
+    },
+    "Yu_D1an_v3": {
+      "seats": 17,
+      "sustained": 0,
+      "long": 0
+    },
+    "peach stupid 1": {
+      "seats": 17,
+      "sustained": 3,
+      "long": 3
+    },
+    "qwen4-ernie5.5-mixmax-v2": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "Peach-Standard-1": {
+      "seats": 32,
+      "sustained": 0,
+      "long": 0
+    },
+    "Breezecho-Immortal-v0.1.26111115.ri": {
+      "seats": 3,
+      "sustained": 0,
+      "long": 0
+    },
+    "AgyCarbon-v10": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "EggCarbon-Lv9.1-rule-1122": {
+      "seats": 23,
+      "sustained": 0,
+      "long": 0
+    },
+    "qwen4-yin-v3": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "Breezecho-Immortal-v0.2.26112208.e": {
+      "seats": 37,
+      "sustained": 0,
+      "long": 0
+    },
+    "问天1号": {
+      "seats": 2,
+      "sustained": 0,
+      "long": 0
+    },
+    "F1-Fusion-v1": {
+      "seats": 15,
+      "sustained": 0,
+      "long": 0
+    },
+    "deepseek-carbon-v64a": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "Peach-Standard-1.1": {
+      "seats": 24,
+      "sustained": 0,
+      "long": 0
+    },
+    "DSH-bc-net-v1": {
+      "seats": 2,
+      "sustained": 0,
+      "long": 0
+    },
+    "kimi_gogogo_v10": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "Peach-Standard-2": {
+      "seats": 24,
+      "sustained": 0,
+      "long": 0
+    },
+    "iya-1.1": {
+      "seats": 2,
+      "sustained": 0,
+      "long": 0
+    },
+    "yan-v3": {
+      "seats": 31,
+      "sustained": 0,
+      "long": 0
+    },
+    "Peach-Utility-1": {
+      "seats": 24,
+      "sustained": 2,
+      "long": 1
+    },
+    "ScherzOv1.4": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "种树的熊猫-v1": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "KIMI-K31_Coupling-CarbonV1": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "GeminiMaster-v34": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "wxh-ds41f-v25": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "yan-v1": {
+      "seats": 39,
+      "sustained": 0,
+      "long": 0
+    },
+    "stephen-K4TacSearch-v2": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "wxh-ds41f-v26": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "Particle-Rule-v1": {
+      "seats": 2,
+      "sustained": 0,
+      "long": 0
+    },
+    "Qoder-wy-1": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "yan-v2": {
+      "seats": 41,
+      "sustained": 0,
+      "long": 0
+    },
+    "opus-v18-baseline": {
+      "seats": 2,
+      "sustained": 1,
+      "long": 0
+    },
+    "dsv4.1-v1": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "EggCarbon-Lv4.0-rl-1122": {
+      "seats": 17,
+      "sustained": 1,
+      "long": 0
+    },
+    "XQ-Carbon-v60-DP-1111": {
+      "seats": 5,
+      "sustained": 0,
+      "long": 0
+    },
+    "claude-opus55-cloud-Echo11": {
+      "seats": 3,
+      "sustained": 0,
+      "long": 0
+    },
+    "First111": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "TJB-o53-pthrot-v190": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "AgyCarbon-P2C-Godslayer-CV": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "Joker v18 base": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "Peach-Choice-1": {
+      "seats": 18,
+      "sustained": 0,
+      "long": 0
+    },
+    "Kimi-Clark-v53-plantrich-v5": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "Beyonder-Claude_v1.1": {
+      "seats": 3,
+      "sustained": 0,
+      "long": 0
+    },
+    "Krypton-M3s2-EarlyHome": {
+      "seats": 4,
+      "sustained": 0,
+      "long": 0
+    },
+    "ace-t87-fix4": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "Beyonder-Claude_v1.2": {
+      "seats": 2,
+      "sustained": 0,
+      "long": 0
+    },
+    "EggCarbon-Lv4.1-rl-1122": {
+      "seats": 15,
+      "sustained": 0,
+      "long": 0
+    },
+    "TJB-o18-probe-v15": {
+      "seats": 2,
+      "sustained": 0,
+      "long": 0
+    },
+    "Krypton-DeepSeek-LightDistill": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "AgyCarbon-Argon-Godslayer-VII": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "Kimi-Clark-v53-nocamp-v4": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "ARCH61_EventTracker": {
+      "seats": 2,
+      "sustained": 0,
+      "long": 0
+    },
+    "KeepLiu-v2": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "TJB-o53-pgate-v232": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "claude-opus-5.5-v1": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "gpt改进人工策略版": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "wxh-ds41f-v22": {
+      "seats": 2,
+      "sustained": 0,
+      "long": 0
+    },
+    "xcc.": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "deepseek-candidate-v4": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "ds_cov18_m_v1e": {
+      "seats": 2,
+      "sustained": 0,
+      "long": 0
+    },
+    "deepseek-carbon-p24": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "Fable5.2-Max-V7": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "claude-opus55-cloud-Echo10": {
+      "seats": 2,
+      "sustained": 0,
+      "long": 0
+    },
+    "Fable5.2-Max-V8": {
+      "seats": 2,
+      "sustained": 0,
+      "long": 0
+    },
+    "QoDuck-v3": {
+      "seats": 3,
+      "sustained": 0,
+      "long": 0
+    },
+    "iya-1.3": {
+      "seats": 8,
+      "sustained": 0,
+      "long": 0
+    },
+    "KIMI-V34-RadarGate": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "哈基米v7": {
+      "seats": 2,
+      "sustained": 0,
+      "long": 0
+    },
+    "gpt": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "AgyCarbon-v2": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "v6-tree-10312251": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "Breezecho-Immortal-v0.1.26110916.r": {
+      "seats": 2,
+      "sustained": 0,
+      "long": 0
+    },
+    "claude-opus-v45": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "KIMI-V40a-RouteDoctrine": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "gpt6chat-baseline1.2": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "TJB-o18-siege-v21": {
+      "seats": 2,
+      "sustained": 0,
+      "long": 0
+    },
+    "进击的熊猫-v3": {
+      "seats": 3,
+      "sustained": 0,
+      "long": 0
+    },
+    "GloriousEvolution-v4-latesiege": {
+      "seats": 2,
+      "sustained": 0,
+      "long": 0
+    },
+    "Mangrove-v3": {
+      "seats": 2,
+      "sustained": 0,
+      "long": 0
+    },
+    "wxh-ds41f-v2": {
+      "seats": 3,
+      "sustained": 0,
+      "long": 0
+    },
+    "gpt-6.1sol-v7": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "Qinglan-v1": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "TJB-o18-bank-v4": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "xcc.3": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "z7-qwen-v1": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "Beichen_v1": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "Xing-V2b": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "iya-1.2": {
+      "seats": 2,
+      "sustained": 1,
+      "long": 0
+    },
+    "qwen4-yin-v2": {
+      "seats": 4,
+      "sustained": 0,
+      "long": 0
+    },
+    "测试": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "QianLu4.0": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "QianLu7.0": {
+      "seats": 2,
+      "sustained": 0,
+      "long": 0
+    },
+    "KIMI-V25q-ReturnRouteTrees": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "碳巡者-v2.1-20261107": {
+      "seats": 2,
+      "sustained": 0,
+      "long": 0
+    },
+    "Krypton-CloudSearch-v1": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "CarbonLab-Fam2H-v1": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "LambentLight": {
+      "seats": 2,
+      "sustained": 0,
+      "long": 0
+    },
+    "XQ-Carbon-v2-stable": {
+      "seats": 3,
+      "sustained": 0,
+      "long": 0
+    },
+    "安生N34": {
+      "seats": 4,
+      "sustained": 0,
+      "long": 0
+    },
+    "Joker v53 base": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "Opus18-siege-GLM": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "CarbonEdge-hyq": {
+      "seats": 2,
+      "sustained": 0,
+      "long": 0
+    },
+    "TJB-o53-porder-v301": {
+      "seats": 2,
+      "sustained": 0,
+      "long": 0
+    },
+    "Kailang-Nearsight-v4": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "gemini v10x max pro": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "SWU-probe-move3": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "AgyCarbon-Argon-Godslayer-XXVIII": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "Codex-Carbon-Flow-1101-v2": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "DSH-C07-juziRef-1114": {
+      "seats": 2,
+      "sustained": 0,
+      "long": 0
+    },
+    "AgyCarbon-P2C-Godslayer-CVI": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "哈基米 v3pro": {
+      "seats": 3,
+      "sustained": 0,
+      "long": 0
+    },
+    "TJB-o53-hybrid-v86": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "agnes-hy4flush-agnes-dsh-v1": {
+      "seats": 2,
+      "sustained": 0,
+      "long": 0
+    },
+    "弱智豆包": {
+      "seats": 2,
+      "sustained": 0,
+      "long": 0
+    },
+    "Breezecho-Immortal-v0.1.26110813": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "claude-opus-v72": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "stephen-K4TacSearch-v4": {
+      "seats": 2,
+      "sustained": 0,
+      "long": 0
+    },
+    "Yu_D1an_v4": {
+      "seats": 15,
+      "sustained": 1,
+      "long": 0
+    },
+    "SWU-probe-move": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "安生N33": {
+      "seats": 2,
+      "sustained": 0,
+      "long": 0
+    },
+    "kimi_gogogo_v2": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "GrokBot_v31": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "Guihang_v2": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "AgyCarbon-Argon-Godslayer-LII": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "TJB-o18-bold-v38": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "DSH-portfolio_V10": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "GG8": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "zyh-v01-farm-rotate-1024": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "GPT_6.1_Sol_LIZI_0.3V": {
+      "seats": 2,
+      "sustained": 0,
+      "long": 0
+    },
+    "DSH-portfolio_v19-gfix": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "KeepLiu-v1": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "stephen-K4TacSearch-v3": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "wxh-ds41f-v11": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "CarbonEdge-v2": {
+      "seats": 1,
+      "sustained": 1,
+      "long": 0
+    },
+    "白饭V15": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "gpt6chat-baseline1.1": {
+      "seats": 2,
+      "sustained": 0,
+      "long": 0
+    },
+    "TJB-o53-svgate-v242": {
+      "seats": 3,
+      "sustained": 0,
+      "long": 0
+    },
+    "minimax-flash-roe08-r2": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "AgyCarbon-Apex-Argon": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "opus18-tuned-v1": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "GeminiMaster-v17": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "AgyCarbon-Argon-Godslayer-III": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "agnes-hy4flush-agnes-dsh-v2": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "kimi_gogogo_v11": {
+      "seats": 1,
+      "sustained": 1,
+      "long": 0
+    },
+    "SWU-dsh-v61": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "tm-carbon-rl-a3": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "TJB-o18-cap-v8": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "Krypton-FT96-ep1": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "Codex-Navigator-1101-v1": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "kimi_gogogo_v5": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "-n": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "GeminiMaster-v31": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "安生N29": {
+      "seats": 3,
+      "sustained": 0,
+      "long": 0
+    },
+    "TJB-o53-icept-v137": {
+      "seats": 2,
+      "sustained": 0,
+      "long": 0
+    },
+    "安生N25": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "豆包神力v2": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "claude-AlphaCarbon-Master3s": {
+      "seats": 3,
+      "sustained": 0,
+      "long": 0
+    },
+    "ScherzOv1.0": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "DSH-C07-v3-1114": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "Kailang-Nearsight-v2": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "wxh-ds41f-v23": {
+      "seats": 3,
+      "sustained": 0,
+      "long": 0
+    },
+    "lzs-try-2": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "豆包v4.0": {
+      "seats": 2,
+      "sustained": 0,
+      "long": 0
+    },
+    "Beyonder-Claude_v3.0": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "CarbonPolicy_0910": {
+      "seats": 2,
+      "sustained": 0,
+      "long": 0
+    },
+    "codex-jack-v4": {
+      "seats": 2,
+      "sustained": 0,
+      "long": 0
+    },
+    "Challenger-v2.2": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "Kailang-Nearsight-v1": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "gpt-6.1sol-v9": {
+      "seats": 2,
+      "sustained": 0,
+      "long": 0
+    },
+    "Imperial-Carbon-nn8": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "Krypton-DeepSeek-NNX1": {
+      "seats": 2,
+      "sustained": 0,
+      "long": 0
+    },
+    "Xing-V3a": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "AgyCarbon-Apex-Zenith-v2": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "mikki-glm-v40": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "AgyCarbon-Argon-Godslayer-XL": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "TJB-o53-p3catch-v307": {
+      "seats": 2,
+      "sustained": 0,
+      "long": 0
+    },
+    "4.2xcds": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "Breezecho-Immortal-v0.2.26111621.e": {
+      "seats": 2,
+      "sustained": 0,
+      "long": 0
+    },
+    "GrokBot_v39": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "Krypton-M2BC3s2-v2": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "无敌v2": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "TJB-o53-lite-v45": {
+      "seats": 3,
+      "sustained": 0,
+      "long": 0
+    },
+    "qwen4-ernie5.5-mixmax": {
+      "seats": 2,
+      "sustained": 0,
+      "long": 0
+    },
+    "deepseek-beam5-v2": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "Yu_D1an": {
+      "seats": 3,
+      "sustained": 0,
+      "long": 0
+    },
+    "KIMI-V26c-ForkFrameFixes": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "XQ-Carbon-v52-cellreserve": {
+      "seats": 3,
+      "sustained": 0,
+      "long": 0
+    },
+    "v32-n2narrow-1421": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "qwen4-yin": {
+      "seats": 2,
+      "sustained": 0,
+      "long": 0
+    },
+    "lzs-try-5": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "TJB-o53-late-v56": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "claude-opus-v69": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "carbon-v14-v53recipe-1102": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "Mangrove-v2": {
+      "seats": 2,
+      "sustained": 0,
+      "long": 0
+    },
+    "TJB-o53-plant-v52": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "无始7.0": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "Breezecho-Immortal-v0.2.26111123.e": {
+      "seats": 2,
+      "sustained": 0,
+      "long": 0
+    },
+    "Kimi-Clark-GPT-TorchProbe-v65": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "Northstar-v002-20261031": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "无敌v3": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "claude-gml5-v1": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "KIMI-V25g-CellShadow": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "WxPay-008": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "豆姐展示神力": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "v16a": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "XQYGPTXD3": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "CarbonHawk-v1.0": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "Doubao-Lei-v5": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "XQYGPTZD2": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "SWU-probe-p3": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "gpt 6.1 高 投降了": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "跑不起来什么鬼": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "Kailang-Nearsight-v7": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "AgyCarbon-Argon-Godslayer-XXXVI": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "lichen-1.0": {
+      "seats": 3,
+      "sustained": 0,
+      "long": 0
+    },
+    "DS-SoftW-TieRho-1": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "dsh-qv-baseline-1104a": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "v146-gate": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "哈基米v7 low": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "XQ-Carbon-v60-DP": {
+      "seats": 3,
+      "sustained": 0,
+      "long": 0
+    },
+    "Been bag v2": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "smleoV2": {
+      "seats": 3,
+      "sustained": 0,
+      "long": 0
+    },
+    "XQ-Carbon-v55-traffic": {
+      "seats": 3,
+      "sustained": 0,
+      "long": 0
+    },
+    "Joker z7-gloria-params-v1": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "DSH-portfolio_v11": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "Makabaka-v2.0": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "菜鸡": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "carbon-v2-tree-1101": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "哈基米-NeuralApex": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "deepseek-flash-test-v5": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "Shugang_candidate_v3": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "wxh-carbon-hybrid-v2.4": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "XQYONGDBXD": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "wxh-ds41f-v27": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "deepseek-candidate-v3": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "TJB-o53-seize4p-v165": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "der包 v1": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "1C-Zero-v7": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "1C-Zero-v1": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "deepseek-candidate-v2": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "deepseek-bot-safety-v1": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "Codex-Carbon-1101-a196-v11": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "Trybe-Carbon-v1": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "问天2号claude": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "Breezecho-Immortal-v0.2.26111119.e": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "Breezecho-Immortal-v0.1.26111022.ri": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "agnes-hy4flush-agnes-dsh-v3": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "carbon-v9-task-planter-1101": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "v253_territory": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "贪吃竹子的熊猫-v2": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "xcc.5": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "结合我的指导的弱智豆包": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "gpt-6.1sol-v8": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "TJB-o53-noshadow-v122": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "GPT_6.1_Sol_LIZI_0.2V": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "进击的熊猫-v4": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "collector-baseline-v3": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "gpt 6.1 高vv": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    },
+    "XQYGPTXD": {
+      "seats": 1,
+      "sustained": 0,
+      "long": 0
+    }
+  },
+  "spells": [
+    {
+      "match": "06e79f7028bb5bbc20ba7a7de22bdd86",
+      "layout": "07f6f1339ad63451e7cdfc71eb9fad5f860e357ac51af4e0eb8bd2165a174bb3",
+      "seat": 0,
+      "strategy": "Carago-测",
+      "opponent": "CarbonEdge_Artemis",
+      "won": false,
+      "start": 136,
+      "length": 16,
+      "cash": 19.74,
+      "enemy_cash": 2343.25,
+      "trees": 0,
+      "enemy_trees": 11,
+      "workers": 4,
+      "enemy_workers": 10,
+      "both_gates": 0,
+      "loaded_worker_turns": 16
+    },
+    {
+      "match": "0eb4fcb3485b4af9708098814e570f33",
+      "layout": "51c06f5803d8088f991de51eb4d002315c2bc6ae617153bb8680158cd9106845",
+      "seat": 0,
+      "strategy": "CarbonEdge_Apollo",
+      "opponent": "claude-AlphaCarbon-Master7sD",
+      "won": false,
+      "start": 37,
+      "length": 77,
+      "cash": 5.62,
+      "enemy_cash": 82.09,
+      "trees": 1,
+      "enemy_trees": 5,
+      "workers": 7,
+      "enemy_workers": 10,
+      "both_gates": 208,
+      "loaded_worker_turns": 383
+    },
+    {
+      "match": "11efb4d9ca2aba0375ba71f45ae48bd2",
+      "layout": "609081e0d8d69450c2aa856bdcc9e681aaef4d31ac00b4ad9c78fd189905b932",
+      "seat": 0,
+      "strategy": "RyanX-AIPowercore-it910",
+      "opponent": "CarbonEdge_Apollo",
+      "won": false,
+      "start": 74,
+      "length": 53,
+      "cash": 8.42,
+      "enemy_cash": 495.23,
+      "trees": 1,
+      "enemy_trees": 12,
+      "workers": 6,
+      "enemy_workers": 10,
+      "both_gates": 0,
+      "loaded_worker_turns": 107
+    },
+    {
+      "match": "1c6911a8ac5eba2187cc6433be213768",
+      "layout": "e1501e51911d8fd516be6515e86321858a80be620b458a1d856163f9c6d7e953",
+      "seat": 0,
+      "strategy": "ClaudeFable5.2-v8",
+      "opponent": "CarbonEdge_Apollo",
+      "won": false,
+      "start": 177,
+      "length": 64,
+      "cash": 15.55,
+      "enemy_cash": 5657.88,
+      "trees": 0,
+      "enemy_trees": 13,
+      "workers": 5,
+      "enemy_workers": 10,
+      "both_gates": 0,
+      "loaded_worker_turns": 169
+    },
+    {
+      "match": "344da495c922845c7bc93cb556167262",
+      "layout": "6973acad8500ccb7f20fbf6f10f2af3fc82564ecae273a96e61405c8fd16be36",
+      "seat": 0,
+      "strategy": "RyanX-AIPowercore-it930b",
+      "opponent": "CarbonEdge_Apollo",
+      "won": false,
+      "start": 97,
+      "length": 16,
+      "cash": 7.53,
+      "enemy_cash": 1539.39,
+      "trees": 0,
+      "enemy_trees": 9,
+      "workers": 9,
+      "enemy_workers": 10,
+      "both_gates": 0,
+      "loaded_worker_turns": 51
+    },
+    {
+      "match": "37885c2d47ff0c9c6a8fe83de864c4a7",
+      "layout": "b36ea2c4ede05ee9fa5dc1300f0cb48f3a92eb2801d69405f27d2892fd57d83e",
+      "seat": 0,
+      "strategy": "RyanX-AIPowercore-Lite-V8",
+      "opponent": "CarbonEdge_Apollo",
+      "won": false,
+      "start": 130,
+      "length": 14,
+      "cash": 9.97,
+      "enemy_cash": 1150.46,
+      "trees": 4,
+      "enemy_trees": 8,
+      "workers": 8,
+      "enemy_workers": 10,
+      "both_gates": 0,
+      "loaded_worker_turns": 45
+    },
+    {
+      "match": "4c343cc40456fea803992ddc8995b5da",
+      "layout": "9b5ad6b01599085da4ba1dbc521b2cb044b2247be444f3b6547374ee512f57f1",
+      "seat": 1,
+      "strategy": "hy-v1",
+      "opponent": "CarbonEdge_Apollo",
+      "won": false,
+      "start": 46,
+      "length": 12,
+      "cash": 3.71,
+      "enemy_cash": 239.77,
+      "trees": 2,
+      "enemy_trees": 7,
+      "workers": 10,
+      "enemy_workers": 10,
+      "both_gates": 0,
+      "loaded_worker_turns": 60
+    },
+    {
+      "match": "787864c8e44f38ab748c1b0641bd7062",
+      "layout": "7950a1cf042d10eb5571fc776e02f5bc182f449a50911d77bd75a3be420f8000",
+      "seat": 1,
+      "strategy": "安生N30",
+      "opponent": "CarbonEdge_Apollo",
+      "won": false,
+      "start": 137,
+      "length": 26,
+      "cash": 29.08,
+      "enemy_cash": 2141.59,
+      "trees": 0,
+      "enemy_trees": 12,
+      "workers": 4,
+      "enemy_workers": 9,
+      "both_gates": 5,
+      "loaded_worker_turns": 32
+    },
+    {
+      "match": "80744f8837f74fbc1397e82a4d6f9a44",
+      "layout": "5f8899c055fa2ba72cedb0358da25762aa837bd869b122d7053122e4d6b4719d",
+      "seat": 0,
+      "strategy": "ClaudeFable5.2-v7",
+      "opponent": "CarbonEdge_Apollo",
+      "won": false,
+      "start": 109,
+      "length": 38,
+      "cash": 15.44,
+      "enemy_cash": 1468.73,
+      "trees": 0,
+      "enemy_trees": 12,
+      "workers": 6,
+      "enemy_workers": 10,
+      "both_gates": 20,
+      "loaded_worker_turns": 69
+    },
+    {
+      "match": "81913606e681f366ca3cd769c060d782",
+      "layout": "940be66bcde772683de173b213f369df4309c2533a08bb904acb46bf38439df5",
+      "seat": 0,
+      "strategy": "AgyCarbon-Light-GMFastSim",
+      "opponent": "CarbonEdge_Apollo",
+      "won": false,
+      "start": 165,
+      "length": 30,
+      "cash": 4.2,
+      "enemy_cash": 7361.34,
+      "trees": 0,
+      "enemy_trees": 11,
+      "workers": 3,
+      "enemy_workers": 10,
+      "both_gates": 0,
+      "loaded_worker_turns": 60
+    },
+    {
+      "match": "8c3862388f88c768c6880a8f5f5837fe",
+      "layout": "3354c9fd8e37d5382c8c2be1ad7b797f737d876387422dc91504273a81b1d16f",
+      "seat": 1,
+      "strategy": "小肥鱼v5-late2s",
+      "opponent": "CarbonEdge_Artemis",
+      "won": false,
+      "start": 136,
+      "length": 35,
+      "cash": 3.53,
+      "enemy_cash": 3106.98,
+      "trees": 0,
+      "enemy_trees": 10,
+      "workers": 4,
+      "enemy_workers": 10,
+      "both_gates": 0,
+      "loaded_worker_turns": 57
+    },
+    {
+      "match": "8cfa0cb23550156f8a8759f379c9f037",
+      "layout": "fcd5f2f58c3044d061ef767af5979bf696e12e2a2e6ec4e1c93501a5c7eeefad",
+      "seat": 1,
+      "strategy": "yan-v5",
+      "opponent": "CarbonEdge_Apollo",
+      "won": false,
+      "start": 77,
+      "length": 37,
+      "cash": 5.99,
+      "enemy_cash": 1495.38,
+      "trees": 0,
+      "enemy_trees": 12,
+      "workers": 5,
+      "enemy_workers": 10,
+      "both_gates": 5,
+      "loaded_worker_turns": 141
+    },
+    {
+      "match": "d0a177e1b93ad2f5a6f8adbcbefd0f92",
+      "layout": "5169ca3772fcfe97b9332ca2d7154db6f670d1103636e7fe244a4bc55d0830f2",
+      "seat": 0,
+      "strategy": "RyanX-AIPowercore-it930b",
+      "opponent": "CarbonEdge_Apollo",
+      "won": false,
+      "start": 110,
+      "length": 18,
+      "cash": 15.73,
+      "enemy_cash": 1894.68,
+      "trees": 0,
+      "enemy_trees": 9,
+      "workers": 8,
+      "enemy_workers": 10,
+      "both_gates": 0,
+      "loaded_worker_turns": 86
+    },
+    {
+      "match": "efa15ce0a9b4d18398cbe73ad5ca6dc6",
+      "layout": "1f50da532eef1e0235009dd79374004664b13e13beb08848c69cdac0abca9936",
+      "seat": 0,
+      "strategy": "yan-v5",
+      "opponent": "claude-AlphaCarbon-Master7sE",
+      "won": false,
+      "start": 63,
+      "length": 128,
+      "cash": 10.87,
+      "enemy_cash": 87.3,
+      "trees": 0,
+      "enemy_trees": 9,
+      "workers": 6,
+      "enemy_workers": 10,
+      "both_gates": 228,
+      "loaded_worker_turns": 305
+    },
+    {
+      "match": "f0477adb78855dfaa32376f9ca2ccd8e",
+      "layout": "924e2c82fbd64f57ee0e2830c69b9ced97503c02b79e10dd8413eae12c9f74d8",
+      "seat": 1,
+      "strategy": "Krypton-DeepSeek-M7-MAX",
+      "opponent": "CarbonEdge_Artemis",
+      "won": false,
+      "start": 58,
+      "length": 53,
+      "cash": 14.98,
+      "enemy_cash": 599.02,
+      "trees": 0,
+      "enemy_trees": 12,
+      "workers": 1,
+      "enemy_workers": 10,
+      "both_gates": 0,
+      "loaded_worker_turns": 53
+    },
+    {
+      "match": "f1cb105973912de458573807d523031c",
+      "layout": "dd57bcc78e97467ade625eda8540aab839e8ec1f24f5b47d522d5c1c20e60de5",
+      "seat": 1,
+      "strategy": "小肥鱼v5-late2s",
+      "opponent": "CarbonEdge_Apollo",
+      "won": false,
+      "start": 163,
+      "length": 50,
+      "cash": 6.69,
+      "enemy_cash": 5530.95,
+      "trees": 0,
+      "enemy_trees": 12,
+      "workers": 4,
+      "enemy_workers": 10,
+      "both_gates": 0,
+      "loaded_worker_turns": 50
+    },
+    {
+      "match": "f5e69abd6f15278bf9ae01a40601c330",
+      "layout": "5b32052714ff3f3f3476cb8d2a69f0d116c77be3232eb6fc762c57a93a4f975d",
+      "seat": 1,
+      "strategy": "yan-v5",
+      "opponent": "claude-AlphaCarbon-Master7sE",
+      "won": false,
+      "start": 52,
+      "length": 57,
+      "cash": 9.83,
+      "enemy_cash": 113.94,
+      "trees": 1,
+      "enemy_trees": 7,
+      "workers": 3,
+      "enemy_workers": 10,
+      "both_gates": 29,
+      "loaded_worker_turns": 57
+    },
+    {
+      "match": "0741ae41e8b86f7eea359253549068c3",
+      "layout": "838a336357da90284fb2741203efd76beeb810db64d16c7186401188fb86cc82",
+      "seat": 1,
+      "strategy": "RyanX-AIPowercore-it940-v4b",
+      "opponent": "claude-AlphaCarbon-Master7sD",
+      "won": false,
+      "start": 121,
+      "length": 75,
+      "cash": 7.89,
+      "enemy_cash": 2292.08,
+      "trees": 1,
+      "enemy_trees": 11,
+      "workers": 4,
+      "enemy_workers": 10,
+      "both_gates": 1,
+      "loaded_worker_turns": 116
+    },
+    {
+      "match": "293cb5274c0f698de7ed1c67d8c61ab5",
+      "layout": "85321835bab0d3df01e4db30b3e6015c4edb7d6086a9674d4a4af103e639fb63",
+      "seat": 1,
+      "strategy": "RyanX-AIPowercore-it940-v4b",
+      "opponent": "claude-AlphaCarbon-Master7sD",
+      "won": false,
+      "start": 82,
+      "length": 78,
+      "cash": 19.48,
+      "enemy_cash": 492.89,
+      "trees": 0,
+      "enemy_trees": 11,
+      "workers": 2,
+      "enemy_workers": 10,
+      "both_gates": 44,
+      "loaded_worker_turns": 101
+    },
+    {
+      "match": "3d88a1ade557e19c4a99c9c7107f8122",
+      "layout": "73ae3d98bd056245658e7b26beaad183ce0f5043d2b5836d4e43dc3e9e52a84a",
+      "seat": 1,
+      "strategy": "RyanX-AIPowercore-it940-v4b",
+      "opponent": "claude-AlphaCarbon-Master7sB2",
+      "won": false,
+      "start": 206,
+      "length": 35,
+      "cash": 11.56,
+      "enemy_cash": 7086.37,
+      "trees": 0,
+      "enemy_trees": 13,
+      "workers": 6,
+      "enemy_workers": 10,
+      "both_gates": 14,
+      "loaded_worker_turns": 103
+    },
+    {
+      "match": "4ae73e12bd05711cd4c4ab9a393e3383",
+      "layout": "586a58729ed0284378a6a0725477a599473c9a048c22fdb727dbb0d4a27ea8ac",
+      "seat": 0,
+      "strategy": "SpongeBaby-CarbonNet-v3.0",
+      "opponent": "claude-AlphaCarbon-Master7sD",
+      "won": false,
+      "start": 60,
+      "length": 11,
+      "cash": 7.57,
+      "enemy_cash": 75.2,
+      "trees": 0,
+      "enemy_trees": 5,
+      "workers": 2,
+      "enemy_workers": 8,
+      "both_gates": 5,
+      "loaded_worker_turns": 11
+    },
+    {
+      "match": "4c3065aa4cd5ac21185558b17adb38ee",
+      "layout": "938b8facc615b9df9599ab1072bc330c92759f5182e7ba674a8fe237f36126b2",
+      "seat": 0,
+      "strategy": "ClaudeFable5.2-v7",
+      "opponent": "SpongeBaby-CarbonNet-v2.0",
+      "won": false,
+      "start": 106,
+      "length": 119,
+      "cash": 5.72,
+      "enemy_cash": 614.19,
+      "trees": 1,
+      "enemy_trees": 11,
+      "workers": 5,
+      "enemy_workers": 10,
+      "both_gates": 102,
+      "loaded_worker_turns": 208
+    },
+    {
+      "match": "53bde7f13376ea8af50f0548880cd18c",
+      "layout": "67dc9462aaf69f2f0ef10782fd3386f92fccf15e1f9df1373d240c48341f027a",
+      "seat": 1,
+      "strategy": "RyanX-AIPowercore-it940-v4b",
+      "opponent": "claude-AlphaCarbon-Master7sD",
+      "won": false,
+      "start": 91,
+      "length": 137,
+      "cash": 4.82,
+      "enemy_cash": 475.99,
+      "trees": 1,
+      "enemy_trees": 8,
+      "workers": 6,
+      "enemy_workers": 10,
+      "both_gates": 25,
+      "loaded_worker_turns": 168
+    },
+    {
+      "match": "7335246a15fdca46a14d6b42613bc50f",
+      "layout": "5b1e7dc4eea38dcb80b5d335b3efc64306007bbb9091b0334341f59bc74f3e14",
+      "seat": 1,
+      "strategy": "RyanX-AIPowercore-it940-v4b",
+      "opponent": "claude-AlphaCarbon-Master7sD",
+      "won": false,
+      "start": 88,
+      "length": 31,
+      "cash": 0.4,
+      "enemy_cash": 253.53,
+      "trees": 0,
+      "enemy_trees": 13,
+      "workers": 4,
+      "enemy_workers": 9,
+      "both_gates": 27,
+      "loaded_worker_turns": 65
+    },
+    {
+      "match": "79574338632ea14aada175d1a8b40f9a",
+      "layout": "a0f313f427844729735f6fea1b16c2e06f4ded4bab075c27b8c256ed6d1425e6",
+      "seat": 0,
+      "strategy": "RyanX-AIPowercore-it940-v4b",
+      "opponent": "claude-AlphaCarbon-Master7sB2",
+      "won": false,
+      "start": 154,
+      "length": 97,
+      "cash": 27.13,
+      "enemy_cash": 4169.98,
+      "trees": 0,
+      "enemy_trees": 13,
+      "workers": 1,
+      "enemy_workers": 10,
+      "both_gates": 2,
+      "loaded_worker_turns": 97
+    },
+    {
+      "match": "bb84e62eee6363d7b8387b5993b20987",
+      "layout": "87f2f2e38eac35834dd8a6ae24fdab9e63f545a5b152f1323844d072e8123fea",
+      "seat": 0,
+      "strategy": "1C-Testv2",
+      "opponent": "claude-AlphaCarbon-Master7sD",
+      "won": false,
+      "start": 49,
+      "length": 82,
+      "cash": 7.03,
+      "enemy_cash": 176.75,
+      "trees": 0,
+      "enemy_trees": 9,
+      "workers": 6,
+      "enemy_workers": 10,
+      "both_gates": 45,
+      "loaded_worker_turns": 152
+    },
+    {
+      "match": "03d48e4621d470513a5c0bd255f3ca13",
+      "layout": "b4917fc065d9132fd176bfc87995d3fce5e01c9a6662743535b1a89aa8228e20",
+      "seat": 0,
+      "strategy": "qwen4-ernie5.5-mixmax-v2",
+      "opponent": "peach stupid 1",
+      "won": true,
+      "start": 64,
+      "length": 187,
+      "cash": 20,
+      "enemy_cash": 80,
+      "trees": 0,
+      "enemy_trees": 0,
+      "workers": 2,
+      "enemy_workers": 0,
+      "both_gates": 0,
+      "loaded_worker_turns": 374
+    },
+    {
+      "match": "42525d7c173e7fd014b917517c1438ad",
+      "layout": "a130b0ef6681839b6c54f0ad08fb406af69f40f559c7b51112c4af4dfa868f30",
+      "seat": 1,
+      "strategy": "Xing-V2b",
+      "opponent": "EggCarbon-Lv4.0-rl-1122",
+      "won": true,
+      "start": 32,
+      "length": 10,
+      "cash": 2.71,
+      "enemy_cash": 67.68,
+      "trees": 0,
+      "enemy_trees": 2,
+      "workers": 4,
+      "enemy_workers": 8,
+      "both_gates": 0,
+      "loaded_worker_turns": 40
+    },
+    {
+      "match": "5f65929c0af0ed937abbef8eae81a6a8",
+      "layout": "ccb34c8f1bf63f1aa1267f68ac9b5089e981091ed5dab9bd0973561ea1c9a7a9",
+      "seat": 1,
+      "strategy": "小肥鱼v5-it720e20",
+      "opponent": "claude-AlphaCarbon-Master6",
+      "won": false,
+      "start": 129,
+      "length": 20,
+      "cash": 2.68,
+      "enemy_cash": 1313.1,
+      "trees": 1,
+      "enemy_trees": 9,
+      "workers": 4,
+      "enemy_workers": 10,
+      "both_gates": 1,
+      "loaded_worker_turns": 20
+    },
+    {
+      "match": "63a88e3d7128e08cbf4e4ea9b7036181",
+      "layout": "3584e30f4985ff464c5577b96de08c82aa787485b1af5bb0b676f527d56ee6df",
+      "seat": 0,
+      "strategy": "小肥鱼v5-it720e20",
+      "opponent": "SpongeBaby-CarbonNet-v3.0",
+      "won": false,
+      "start": 83,
+      "length": 16,
+      "cash": 13.5,
+      "enemy_cash": 307.0,
+      "trees": 0,
+      "enemy_trees": 12,
+      "workers": 5,
+      "enemy_workers": 9,
+      "both_gates": 10,
+      "loaded_worker_turns": 23
+    },
+    {
+      "match": "852f02e5dab966c0b1fa1f63ea212305",
+      "layout": "a73c62b1b123d7af3fb689a13ba1d9067d2c7cacf594afa550d3f12fdb10b290",
+      "seat": 0,
+      "strategy": "Peach-Standard-2",
+      "opponent": "CarbonEdge-v2",
+      "won": false,
+      "start": 44,
+      "length": 34,
+      "cash": 20.63,
+      "enemy_cash": 102.66,
+      "trees": 1,
+      "enemy_trees": 10,
+      "workers": 3,
+      "enemy_workers": 10,
+      "both_gates": 0,
+      "loaded_worker_turns": 54
+    },
+    {
+      "match": "9ca2128907c1d834c10a2184c9911bb4",
+      "layout": "1b9335440e4153fe9c23dedbc1c6bf823de40a3d99be65f3cf2a7544c94864fb",
+      "seat": 0,
+      "strategy": "Peach-Standard-1.1",
+      "opponent": "kimi_gogogo_v11",
+      "won": false,
+      "start": 54,
+      "length": 10,
+      "cash": 16.27,
+      "enemy_cash": 381.45,
+      "trees": 2,
+      "enemy_trees": 7,
+      "workers": 8,
+      "enemy_workers": 10,
+      "both_gates": 0,
+      "loaded_worker_turns": 38
+    },
+    {
+      "match": "c4ebf349000d1aab992057825960afc4",
+      "layout": "5c5610a7c1e145625342a755e8736cbc0090bc49c693098b00c81dddd502f1f7",
+      "seat": 0,
+      "strategy": "小肥鱼v5-it720e20",
+      "opponent": "claude-AlphaCarbon-Master7sD",
+      "won": false,
+      "start": 63,
+      "length": 188,
+      "cash": 7.26,
+      "enemy_cash": 149.52,
+      "trees": 1,
+      "enemy_trees": 6,
+      "workers": 4,
+      "enemy_workers": 10,
+      "both_gates": 288,
+      "loaded_worker_turns": 535
+    },
+    {
+      "match": "c7707cf3b47b7aaa2cda79d455fbe545",
+      "layout": "bf2e9610f7627d6c9334cc8b163e2e49fe70121ceb25e34bc92dc3dfe8424ffa",
+      "seat": 0,
+      "strategy": "Peach-Standard-1.1",
+      "opponent": "opus-v18-baseline",
+      "won": true,
+      "start": 37,
+      "length": 15,
+      "cash": 21.29,
+      "enemy_cash": 87.98,
+      "trees": 0,
+      "enemy_trees": 4,
+      "workers": 3,
+      "enemy_workers": 8,
+      "both_gates": 0,
+      "loaded_worker_turns": 42
+    },
+    {
+      "match": "c96c84e50a0493ec60242bc6a4b12202",
+      "layout": "f356858d4e8a28d59d4cc7f42e9aa9dc062268ae205489948b91b94c8e11c0e4",
+      "seat": 1,
+      "strategy": "4.2xcds",
+      "opponent": "Peach-Utility-1",
+      "won": true,
+      "start": 37,
+      "length": 22,
+      "cash": 9.98,
+      "enemy_cash": 80,
+      "trees": 0,
+      "enemy_trees": 0,
+      "workers": 10,
+      "enemy_workers": 0,
+      "both_gates": 0,
+      "loaded_worker_turns": 129
+    },
+    {
+      "match": "cf38b0ab43f799322d548bf30f63526b",
+      "layout": "51eddc69ee6620db7f02fa97b596921ddd98050568cbff728dd71d6e5b4705e7",
+      "seat": 1,
+      "strategy": "qwen4-ernie5.5-mixmax",
+      "opponent": "Peach-Utility-1",
+      "won": true,
+      "start": 50,
+      "length": 201,
+      "cash": 20,
+      "enemy_cash": 80,
+      "trees": 0,
+      "enemy_trees": 0,
+      "workers": 2,
+      "enemy_workers": 0,
+      "both_gates": 0,
+      "loaded_worker_turns": 402
+    },
+    {
+      "match": "e270e4ac7fcc4b5a9dee318fce615b4f",
+      "layout": "d02612893a3d8abdea020b4dcf3a05cec53b6849d1eb8b962da31124b55fdaf0",
+      "seat": 0,
+      "strategy": "Mangrove-v2",
+      "opponent": "Yu_D1an_v4",
+      "won": false,
+      "start": 75,
+      "length": 10,
+      "cash": 10.71,
+      "enemy_cash": 1688.35,
+      "trees": 2,
+      "enemy_trees": 11,
+      "workers": 10,
+      "enemy_workers": 10,
+      "both_gates": 0,
+      "loaded_worker_turns": 35
+    },
+    {
+      "match": "1029904d9a1b63f3350a0a7d2dff2e6b",
+      "layout": "d8f8a1b8f6dad30c1f3f1b656bfee13779e56205fedfca6da9e613d809f9d994",
+      "seat": 1,
+      "strategy": "qwen4-ernie5.5-mixmax",
+      "opponent": "peach stupid 1",
+      "won": true,
+      "start": 30,
+      "length": 221,
+      "cash": 20,
+      "enemy_cash": 80,
+      "trees": 0,
+      "enemy_trees": 0,
+      "workers": 2,
+      "enemy_workers": 0,
+      "both_gates": 0,
+      "loaded_worker_turns": 442
+    },
+    {
+      "match": "3376ca38df3f1ef2ad69d115b2f3d168",
+      "layout": "c3a7089b5af4f2e43f65c7f70b43f86854fa2a8b1296926fa30d2d82c0793e15",
+      "seat": 0,
+      "strategy": "小肥鱼v5-late2s",
+      "opponent": "SpongeBaby-CarbonNet-v3.0",
+      "won": false,
+      "start": 97,
+      "length": 85,
+      "cash": 5.05,
+      "enemy_cash": 488.18,
+      "trees": 1,
+      "enemy_trees": 10,
+      "workers": 4,
+      "enemy_workers": 9,
+      "both_gates": 49,
+      "loaded_worker_turns": 142
+    },
+    {
+      "match": "a58f68fa683d5d0303eba7de7cb3f702",
+      "layout": "342fb47582e45e27191d08c8161a4f2c5070f6377b09db846ed34f2ea9eb0b78",
+      "seat": 0,
+      "strategy": "F1-Fusion-v1",
+      "opponent": "iya-1.2",
+      "won": false,
+      "start": 45,
+      "length": 11,
+      "cash": 6.65,
+      "enemy_cash": 82.39,
+      "trees": 0,
+      "enemy_trees": 4,
+      "workers": 7,
+      "enemy_workers": 10,
+      "both_gates": 0,
+      "loaded_worker_turns": 76
+    },
+    {
+      "match": "a6df9a31b9909dbf5f798dc8e437d5bc",
+      "layout": "b4298560e0d36c53af37a85c9365b5e190bad4d908ac56295561d4a6c7664661",
+      "seat": 1,
+      "strategy": "CarbonEdge-hyq",
+      "opponent": "peach stupid 1",
+      "won": false,
+      "start": 75,
+      "length": 176,
+      "cash": 20,
+      "enemy_cash": 103.6,
+      "trees": 0,
+      "enemy_trees": 0,
+      "workers": 2,
+      "enemy_workers": 0,
+      "both_gates": 0,
+      "loaded_worker_turns": 176
+    },
+    {
+      "match": "c64496ba391ebe2eaacb21df04407bf0",
+      "layout": "4e207ed01435fbdd6b7a806f80e182c516d5528f2724cd7b0ebda3596d48645b",
+      "seat": 1,
+      "strategy": "哈基米基准3",
+      "opponent": "claude-AlphaCarbon-Master6",
+      "won": false,
+      "start": 125,
+      "length": 26,
+      "cash": 6.34,
+      "enemy_cash": 2653.61,
+      "trees": 0,
+      "enemy_trees": 8,
+      "workers": 4,
+      "enemy_workers": 10,
+      "both_gates": 4,
+      "loaded_worker_turns": 26
+    },
+    {
+      "match": "ff6a2ecbe62438ea0935910cc01095b4",
+      "layout": "55dc1f6dba0967bb43571efdfc0f0f53a7ce9f32cacb5bd542de726844e30d3a",
+      "seat": 0,
+      "strategy": "小肥鱼v5-it720",
+      "opponent": "claude-AlphaCarbon-Master6",
+      "won": false,
+      "start": 218,
+      "length": 33,
+      "cash": 18.4,
+      "enemy_cash": 7045.83,
+      "trees": 0,
+      "enemy_trees": 9,
+      "workers": 2,
+      "enemy_workers": 10,
+      "both_gates": 0,
+      "loaded_worker_turns": 66
+    },
+    {
+      "match": "9b1c90aa0357d7d62aa0095d6523219d",
+      "layout": "7d48cd69594eb56ce5bdb62b0f0eb56e13935d69fa30cfb50be06c8e8aba865b",
+      "seat": 1,
+      "strategy": "小肥鱼v5-it720e20",
+      "opponent": "claude-AlphaCarbon-Master7sD",
+      "won": false,
+      "start": 112,
+      "length": 23,
+      "cash": 19.28,
+      "enemy_cash": 474.02,
+      "trees": 0,
+      "enemy_trees": 12,
+      "workers": 3,
+      "enemy_workers": 10,
+      "both_gates": 8,
+      "loaded_worker_turns": 23
+    }
+  ]
+}
