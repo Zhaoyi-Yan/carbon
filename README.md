@@ -12,15 +12,19 @@
 
 以上 14 场均打满 299 步。Apollo 的 21 场公开回放用于训练和选择权重，与 Apollo 本体的直接对战成绩仍待验证。[逐局比分及实验条件](strategy-notes.txt)
 
+## 离线竞技场与前五研究
+
+[竞技场使用说明](ARENA.md)包括本机和 Codex Cloud 的安装、换边循环赛与多机结果汇总。[前五策略回放研究](analysis/top-five.md)保留了 77 张地图的原始回放和观测指标。[对手路线实验](experiments/route_forecast.md)比较了对手预测的准确度和真实对抗结果。
+
 ## 版本与复现
 
 - [迭代索引](ITERATIONS.md)列出了主要版本、实验候选和对应代码；[主分支提交记录](https://github.com/Zhaoyi-Yan/carbon/commits/main/)可逐版比较。
 - [训练脚本](train_replays.py)读取[随仓库保存的 21 场回放](replays/apollo/manifest.json)，16 场训练、5 场验证。安装 NumPy 和 PyTorch 后，在仓库根目录执行以下命令即可生成包含权重的 candidate.py。
-- [本地评测脚本](benchmark.py)使用原版 zerosum_env。准备好原版环境后，可交换出生位测试当前文件与保存的公开对手。
+- [本地评测脚本](benchmark.py)使用原版 zerosum_env。原版裁判已随仓库保存，可交换出生位测试当前文件与保存的公开对手。
 
 ```sh
 python train_replays.py --output /tmp/carbon-retrained
-PYTHONPATH=/path/to/carbon_challenge CARBON_DEBUG=1 python benchmark.py \
+CARBON_DEBUG=1 python benchmark.py \
   --opponents opponents/claude-AlphaCarbon-Master3s2.py \
   --seeds 733 809 --jobs 2 --min-opponent-searches 200
 ```

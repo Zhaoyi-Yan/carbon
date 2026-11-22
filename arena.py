@@ -182,7 +182,7 @@ def finish_forfeit(result):
 
 def run_game(task):
     seats, seed, steps = task
-    result = dict(schema_version=1, seed=seed, episode_steps=steps, turns=0, map_sha256=None,
+    result = dict(schema_version=1, seed=seed, episode_steps=steps, turns=0, map_sha256=None, layout_sha256=None,
                   engine_sha256=None, status="engine_error", winner=None, scores=None, cash=None,
                   players=[dict(name=p.name, sha256=p.sha256, failure=None) for p in seats])
     try:
@@ -195,6 +195,9 @@ def run_game(task):
         board = state[0].observation
         opening = [board.full_carbon, [list(p[1].values()) for p in board.players]]
         result["map_sha256"] = hashlib.sha256(json.dumps(opening, separators=(",", ":")).encode()).hexdigest()
+        # Comparable with analysis/top_five.py even if a replay serializes base IDs in another order.
+        layout = [env.configuration.size, board.full_carbon, [sorted(p[1].values()) for p in board.players]]
+        result["layout_sha256"] = hashlib.sha256(json.dumps(layout, separators=(",", ":")).encode()).hexdigest()
         ctx = mp.get_context("spawn")
         with ExitStack() as cleanup:
             players = []
