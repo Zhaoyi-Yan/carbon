@@ -1,13 +1,13 @@
-"""Carbon League local strategy adapted from claude-AlphaCarbon-Master3s2 by Claude.
-
-Public source: https://117.72.210.134/source/d679ed45ab595e8b7bb1ea51c3451154
-The neural weights, features and carbon belief tracker come from that source.
-This adaptation adds seeded inference, joint destination repair and terminal
-banking. It retains the previous local heuristic for other board sizes.
+"""Carbon League strategy adapted from Claude's claude-AlphaCarbon-Master3s2.
+Source: https://117.72.210.134/source/d679ed45ab595e8b7bb1ea51c3451154
+The policy, critic, belief tracker, and rollout engine are inherited from
+that public strategy, including the upstream credit to Ryanx for the engine.
+This version changes opponent sampling, search allocation, and terminal banking.
 """
 
 import base64
 import io
+import os
 import numpy as np
 
 SIZE = 15
@@ -549,10 +549,12 @@ _VALUE = "UEsDBC0AAAAIAAAAIQDrHQBQ//////////8NABQAdjEud2VpZ2h0Lm5weQEAEACAGAAAAA
 
 
 _POLICY = _Policy(_WEIGHTS)
+_TEMP = 0.85
 _SID = _POLICY.sid('TJB-o18-rush-v41')
 _RETIRE = 0       # with 10 units a planter and a collector may end on one cell, if that is the move sampled; 2: also two planters; 3: any own collision with 10 units
 _BANK = 12           # in the last so many turns collectors may end together on an own base, if that is the move sampled
-_HOME = (1, 50.0)       # (spare turns, least cargo) for a collector to go straight home at the end of the game, see go_home
+_HOME = (3, 28.0)       # (spare turns, least cargo) for a collector to go straight home at the end of the game, see go_home
+_SEED = 37        # tests set this; None = fresh randomness every game
 _ST = {}
 
 
@@ -562,20 +564,20 @@ class _Bel:
 
 
 def _probs(l):
-    if MODEL_TEMPERATURE <= 0:
+    if _TEMP <= 0:
         p = np.zeros_like(l); p[np.argmax(l)] = 1.0
         return p
-    z = (l - l.max()) / MODEL_TEMPERATURE
+    z = (l - l.max()) / _TEMP
     e = np.exp(z)
     return e / e.sum()
 
 
-def _act(obs, configuration):
+def _act(obs, configuration=None, t0=None):
     st = _ST
     step = obs['step']; me = obs['player']; players = obs['players']
     if step == 0 or 'tr' not in st:
         st['tr'] = BeliefTracker(_Bel, me); st['prev'] = None
-        st['rng'] = np.random.RandomState(MODEL_SEED)
+        st['rng'] = np.random.RandomState(_SEED)
     rng = st['rng']
     est, known = st['tr'].step(players, step, obs['carbon'])
     x = encode(players, step, me, est, known, st['prev'])
@@ -617,557 +619,898 @@ def _act(obs, configuration):
                 if k:
                     act[wid] = WACT[k]
                 break
-    act = coordinated_actions(act, players, me, step, x, lw, configuration)
+    if configuration is not None:
+        try:
+            act = _search(obs, configuration, est, act, lw, lb, st['prev'], t0, {c[1] for c in cand if c[0] == 2.0})
+        except Exception:
+            if os.environ.get('CARBON_DEBUG'):
+                raise
     st['tr'].set_actions(players, act)
     st['prev'] = players
     return act
 
 
-from functools import lru_cache
-from math import inf
-
-MOVES = ("UP", "RIGHT", "DOWN", "LEFT")
-OPENING = "mixed"
-MAX_PLANTERS = 2
-RETURN_RATE = 1.3
-STATE = {}
-
-
-@lru_cache(maxsize=4)
-def geometry(size):
-    def index(row, col):
-        return (row % size) * size + col % size
-
-    points = [divmod(i, size) for i in range(size * size)]
-    neighbors = []
-    vicinity = []
-    mirrors = []
-    distances = []
-    for row, col in points:
-        neighbors.append(tuple(index(row + dr, col + dc)
-                               for dr, dc in ((-1, 0), (0, 1), (1, 0), (0, -1))))
-        vicinity.append(tuple(index(row + dr, col + dc)
-                              for dr in (-1, 0, 1) for dc in (-1, 0, 1)))
-        mirrors.append(tuple({index(r, c) for r in (row, size - row - 1)
-                              for c in (col, size - col - 1)}))
-        distances.append(tuple(
-            min(abs(row - r), size - abs(row - r)) + min(abs(col - c), size - abs(col - c))
-            for r, c in points
-        ))
-    return neighbors, vicinity, mirrors, distances
-
-
-def update_map(obs, config, workers, enemies, bases, trees, state, neighbors, mirrors):
-    step = obs["step"]
-    count = len(neighbors)
-    maximum = config.get("maxCellCarbon", 100)
-    growth = config.get("regenRate", 0.03)
-    absorb = config.get("cellAbsorptionRate", 0.0375)
-    harvest = config.get("initialCollectRate", 0.3)
-    initial = config.get("startingCarbon", 2500) / count
-    carbon = state.get("carbon", [initial] * count)
-    disturbed = state.get("disturbed", set())
-    observed = state.get("observed", [-1] * count)
-    positions = {key: pos for key, (pos, _, _) in (workers | enemies).items()}
-    previous = state.get("positions", {})
-    coverage = [0] * count
-    for pos in trees:
-        for adj in neighbors[pos]:
-            coverage[adj] += 1
-
-    if step:
-        stationary = {pos for key, pos in positions.items() if previous.get(key) == pos}
-        collecting = {pos for key, (pos, _, role) in (workers | enemies).items()
-                      if role == "COLLECTOR" and previous.get(key) == pos}
-        for pos in range(count):
-            if pos in trees or pos in bases:
-                carbon[pos] = 0.0
-                disturbed.add(pos)
-            elif pos in state.get("trees", ()):
-                carbon[pos] = config.get("co2FrmWithered", 30)
-                disturbed.add(pos)
-                observed[pos] = step
-            elif pos in collecting:
-                carbon[pos] *= 1 - harvest
-                disturbed.add(pos)
-            elif coverage[pos]:
-                carbon[pos] *= max(0.0, 1 - absorb * coverage[pos])
-                disturbed.add(pos)
-            elif pos in stationary:
-                disturbed.add(pos)
-            else:
-                # Estimate pristine unknown cells by averaging empty and occupied cells.
-                # The positive half saturates before the unconditional mean reaches 100.
-                unknown_cap = maximum * config.get("carbonCoverage", 45) / 100
-                cap = maximum if observed[pos] >= 0 else unknown_cap
-                carbon[pos] = min(cap, carbon[pos] * (1 + growth))
-    else:
-        for pos in bases:
-            carbon[pos] = 0.0
-            disturbed.add(pos)
-
-    visible = set()
-    for pos, _, role in workers.values():
-        if role == "COLLECTOR":
-            visible.add(pos)
-        else:
-            visible.update(neighbors[pos])
-    for pos in visible:
-        value = obs["carbon"][pos]
-        carbon[pos] = value
-        observed[pos] = step
-        if pos not in disturbed:
-            for mirror in mirrors[pos]:
-                if mirror not in disturbed and mirror not in visible:
-                    carbon[mirror] = value
-                    observed[mirror] = step
-
-    state.update(carbon=carbon, disturbed=disturbed, observed=observed,
-                 positions=positions, trees=set(trees))
-    return carbon, coverage
-
-
-def assign_moves(rows):
-    """Find the maximum-weight set of distinct destinations (rectangular Hungarian)."""
-    if not rows:
-        return []
-    cells = sorted({pos for row in rows for pos in row})
-    costs = [[-row[pos][0] if pos in row else 1_000_000.0 for pos in cells] for row in rows]
-    n, m = len(rows), len(cells)
-    u, v = [0.0] * (n + 1), [0.0] * (m + 1)
-    matching, links = [0] * (m + 1), [0] * (m + 1)
-    for entrant in range(1, n + 1):
-        matching[0] = entrant
-        col = 0
-        slack, used = [inf] * (m + 1), [False] * (m + 1)
-        while True:
-            used[col] = True
-            row = matching[col]
-            delta, next_col = inf, 0
-            for candidate in range(1, m + 1):
-                if used[candidate]:
-                    continue
-                reduced = costs[row - 1][candidate - 1] - u[row] - v[candidate]
-                if reduced < slack[candidate]:
-                    slack[candidate], links[candidate] = reduced, col
-                if slack[candidate] < delta:
-                    delta, next_col = slack[candidate], candidate
-            for candidate in range(m + 1):
-                if used[candidate]:
-                    u[matching[candidate]] += delta
-                    v[candidate] -= delta
-                else:
-                    slack[candidate] -= delta
-            col = next_col
-            if matching[col] == 0:
-                break
-        while col:
-            previous = links[col]
-            matching[col] = matching[previous]
-            col = previous
-
-    result = [None] * n
-    for col, row in enumerate(matching[1:]):
-        if row:
-            result[row - 1] = cells[col]
-    return result
-
-
-def enemy_moves(enemies, enemy_bases, own_bases, trees, carbon, neighbors, distances):
-    """Estimate one-turn collision risks, including loaded collectors heading home."""
-    threat = [[] for _ in neighbors]
-    for pos, load, role in enemies.values():
-        options = (pos, *neighbors[pos])
-        home = min(distances[base][pos] for base in enemy_bases)
-        weights = []
-        for dest in options:
-            distance = min(distances[base][dest] for base in enemy_bases)
-            if role == "COLLECTOR":
-                weight = 1.0
-                if load >= 25 and distance < home:
-                    weight += min(6.0, load / 11)
-                if dest == pos and pos not in trees and pos not in enemy_bases:
-                    weight += carbon[pos] / 22
-                if dest in own_bases or (dest in enemy_bases and load == 0):
-                    weight *= 0.18
-            else:
-                weight = 1.0
-                if dest == pos and pos not in enemy_bases:
-                    weight += 1.5 if pos not in trees else 0.4
-                if dest in trees and dest != pos:
-                    weight += 0.25
-            weights.append(weight)
-        total = sum(weights)
-        for dest, weight in zip(options, weights):
-            threat[dest].append((weight / total, load, role))
-    return threat
-
-
-def navigate(start, options, target, score, rows, distances, penalty=1.0):
-    distance = distances[start][target]
-    for dest in options:
-        if dest == start and target != start:
-            continue
-        extra = (dest != start) + distances[dest][target] - distance
-        if extra > 0 and target == start:
-            continue
-        value = score - penalty * extra
-        if value > rows[dest][0]:
-            rows[dest] = (value, target)
-
-
-def collector_moves(start, load, options, distances, home, remaining, carbon, enemy_home,
-                    trees, bases, drain, coverage, config, old_target, claimed, threat, neighbors):
-    rows = {dest: (-30.0, dest) for dest in options}
-    rate = config.get("initialCollectRate", 0.3)
-    tax = config.get("smeltCost", 0)
-    short_horizon = remaining <= home[start] + 9
-    for target in bases:
-        walk = distances[start][target]
-        if walk > remaining:
-            continue
-        value = (max(0, load - tax) / max(1, walk)) if short_horizon else (
-            RETURN_RATE + 0.14 * load / max(1, walk) - (1.6 if load < 14 else 0.0)
-        )
-        if not load:
-            value = -2.0
-        navigate(start, options, target, value, rows, distances, 2.5)
-
-    # Plan a return via one or two deposits. A neighbor on the way home can
-    # add a harvest without requiring any additional movement.
-    for target, stock in enumerate(carbon):
-        walk = distances[start][target]
-        if (stock < 3 or walk > 8 or enemy_home[target] + 2 < home[target]
-                or target in trees or home[target] == 0 or enemy_home[target] == 0
-                or walk + home[target] + 1 > remaining):
-            continue
-        stock *= max(0.45, 1 - 0.045 * coverage[target] * walk)
-        stock *= 0.80 if target in claimed else 1.0
-        territory = max(0, home[target] - enemy_home[target])
-        survival = max(0.35, 1 - 0.10 * drain[target] - 0.07 * territory)
-        best = -inf
-        for turns in (1, 2, 3, 4):
-            time = walk + turns + home[target]
-            if time > remaining:
-                break
-            gain = stock * (1 - (1 - rate) ** turns)
-            if short_horizon:
-                value = max(0, (load + gain) * survival - tax) / time
-            else:
-                value = gain * survival / (time + min(2, home[target]) * 0.65)
-                value += 0.14 * load / max(1, home[target])
-                value -= 0.035 * load * (walk + turns) / max(1, home[start])
-            best = max(best, value)
-        if not short_horizon and stock >= 12 and walk <= 5:
-            for second in neighbors[target]:
-                if (second in trees or second in claimed or not home[second]
-                        or not enemy_home[second] or carbon[second] < 15
-                        or enemy_home[second] + 2 < home[second]):
-                    continue
-                # A discounted follow-up accounts for other workers harvesting first.
-                second_stock = carbon[second] * max(0.45, 0.83 - 0.12 * drain[second])
-                for first_turns, second_turns in ((1, 2), (2, 2), (2, 3)):
-                    time = walk + first_turns + 1 + second_turns + home[second]
-                    if time > remaining:
-                        continue
-                    gain = stock * (1 - (1 - rate) ** first_turns)
-                    gain += second_stock * (1 - (1 - rate) ** second_turns)
-                    value = gain * survival / (time + min(2, home[second]) * 0.65)
-                    value += 0.14 * load / max(1, home[second])
-                    value -= 0.035 * load * (walk + first_turns + second_turns) / max(1, home[start])
-                    best = max(best, value - 0.35)
-        best += 0.24 * (target == old_target) - 0.55 * (target in claimed)
-        navigate(start, options, target, best, rows, distances, 1.65)
-
-    for dest, (score, target) in rows.items():
-        risk = 0.0
-        for probability, enemy_load, role in threat[dest]:
-            if role == "PLANTER":
-                risk -= probability * (4.0 if remaining >= 12 else 0.0)
-            elif enemy_load + 0.01 < load:
-                risk += probability * (23.0 + 0.28 * load)
-            elif enemy_load <= load + 0.01:
-                risk += probability * (12.0 + 0.18 * load)
-            else:
-                risk -= probability * (4.5 + 0.17 * enemy_load)
-        if dest in bases and load:
-            risk -= min(6.0, load * (0.23 if short_horizon else 0.075))
-        else:
-            risk += drain[dest] * load * 0.031
-        if enemy_home[dest] == 0:
-            risk += 200
-        rows[dest] = (score - risk, target)
-
-    if not load and remaining <= 4:
-        return {dest: (score + (0.8 if dest == start else 0.0), target)
-                for dest, (score, target) in rows.items()}
-    return rows
-
-
-def planter_moves(start, options, distances, home, enemy_home, remaining, trees,
-                  tree_value, price, seize, cash, threat, claimed, old_target):
-    rows = {dest: (-10.0, dest) for dest in options}
-    for target, yield_value in enumerate(tree_value):
-        distance = distances[start][target]
-        if distance > 8 or distance + 2 >= remaining or target in claimed:
-            continue
-        if target in trees and trees[target][0]:
-            continue
-        cost = seize if target in trees else price
-        if cash < cost:
-            if distance == 0 or cash < seize * 0.60:
-                continue
-            yield_value *= 0.66
-        if enemy_home[target] == 0 or home[target] == 0:
-            continue
-        profit = yield_value - cost
-        if profit < 4 and target == start:
-            continue
-        value = profit / (7.0 + 2.8 * distance)
-        value += 0.32 * (target == old_target)
-        navigate(start, options, target, value, rows, distances, 2.8)
-    for dest, (score, target) in rows.items():
-        risk = sum(probability * (58 if role == "COLLECTOR" else 33)
-                   for probability, _, role in threat[dest])
-        if dest == start and target != start:
-            risk += 6
-        if dest == start and target == start:
-            cost = seize if dest in trees and not trees[dest][0] else price
-            if cash >= cost and (dest not in trees or not trees[dest][0]) and home[dest] and enemy_home[dest]:
-                if tree_value[dest] < cost * 1.04 and len(options) > 1:
-                    risk += 12
-        rows[dest] = (score - risk, target)
-    return rows
-
-
-def heuristic_agent(observation, configuration):
-    step, player = observation["step"], observation["player"]
-    size = configuration.get("size", 15)
-    remaining = configuration.get("episodeSteps", 300) - 1 - step
-    neighbors, vicinity, mirrors, distances = geometry(size)
-    if not step or STATE.get("step", -1) >= step or STATE.get("size") != size:
-        STATE.clear()
-    STATE.update(step=step, size=size)
-    cash, bases, workers, own_trees = observation["players"][player]
-    _, enemy_bases, enemies, enemy_trees = observation["players"][1 - player]
-    own_base_cells, enemy_base_cells = set(bases.values()), set(enemy_bases.values())
-    if not own_base_cells or not enemy_base_cells:
-        return {}
-    all_bases = own_base_cells | enemy_base_cells
-    trees = {pos: (own, age) for own, group in ((True, own_trees), (False, enemy_trees))
-             for pos, age in group.values()}
-    home = [min(distances[pos][base] for base in own_base_cells) for pos in range(size * size)]
-    enemy_home = [min(distances[pos][base] for base in enemy_base_cells) for pos in range(size * size)]
-    carbon, coverage = update_map(observation, configuration, workers, enemies, all_bases,
-                                  trees, STATE, neighbors, mirrors)
-    threat = enemy_moves(enemies, enemy_base_cells, own_base_cells, trees, carbon, neighbors, distances)
-
-    drain = [0] * (size * size)
-    for pos, (owned, _) in trees.items():
-        if not owned:
-            for adj in vicinity[pos]:
-                drain[adj] += 1
-    lifespan = configuration.get("treeLifespan", 50)
-    absorption = configuration.get("cellAbsorptionRate", 0.0375)
-    plant = configuration.get("plantCost", 20)
-    protected = configuration.get("playerTreeProtectiveNumber", 0)
-    price = plant if len(own_trees) <= protected else (
-        plant + configuration.get("plantCostInflationRatio", 5)
-        * configuration.get("plantCostInflationBase", 1.235) ** sum(age < lifespan for _, age in trees.values())
-    )
-    seize = configuration.get("seizeCost", 20)
-    enemy_planters = [pos for pos, _, role in enemies.values() if role == "PLANTER"]
-    tree_value = []
-    for pos, adjacent in enumerate(neighbors):
-        owned, age = trees.get(pos, (False, 0))
-        horizon = max(0, min(lifespan - age, remaining - 2))
-        income = 0.0
-        for cell in adjacent:
-            if cell in all_bases or cell in trees:
-                continue
-            competition = max(1, coverage[cell] + (pos not in trees))
-            depletion = min(0.95, absorption * competition)
-            # Near our bases, available deposits are worth more to collectors.
-            # Across the center line, planting also denies deposits to the opponent.
-            territory_weight = 1.0
-            if pos not in trees:
-                territory_weight += 0.055 * max(-5, min(5, home[cell] - enemy_home[cell]))
-                if home[cell] <= 2:
-                    territory_weight *= 0.76
-            income += carbon[cell] * territory_weight * (1 - (1 - depletion) ** horizon) / competition
-        if pos in trees:
-            income *= 1.85 if not owned else 0.0
-        # Opposing collectors pay additional carbon in busy routes near their bases.
-        if not owned:
-            traffic = sum(1 for cell, _, role in enemies.values()
-                          if role == "COLLECTOR" and distances[pos][cell] <= 2)
-            income += min(1.0, horizon / 16) * (4.5 * traffic + max(0, 4 - enemy_home[pos]) * 1.8)
-        if pos not in trees and enemy_planters:
-            nearest_planter = min(distances[pos][cell] for cell in enemy_planters)
-            # A nearby enemy planter can turn this investment into its own income.
-            income *= 0.69 + 0.062 * min(5, nearest_planter)
-        tree_value.append(income)
-
-    jobs = sorted(workers, key=lambda key: (workers[key][2] == "PLANTER", -workers[key][1], key))
-    rows, claimed = [], set()
-    old_targets = STATE.get("targets", {})
-    for key in jobs:
-        start, load, role = workers[key]
-        options = (start, *neighbors[start])
-        if role == "COLLECTOR":
-            scores = collector_moves(start, load, options, distances, home, remaining, carbon,
-                                     enemy_home, trees, own_base_cells, drain, coverage,
-                                     configuration, old_targets.get(key), claimed, threat, neighbors)
-        else:
-            scores = planter_moves(start, options, distances, home, enemy_home, remaining,
-                                   trees, tree_value, price, seize, cash, threat,
-                                   claimed, old_targets.get(key))
-        rows.append(scores)
-        best = max(scores.values())[1]
-        if best not in all_bases:
-            claimed.add(best)
-
-    moves = assign_moves(rows)
-    actions, targets = {}, {}
-    future = set(moves)
-    tree_budget = 0.0
-    for key, dest, row in zip(jobs, moves, rows):
-        start, _, role = workers[key]
-        targets[key] = row[dest][1]
-        if dest != start:
-            actions[key] = MOVES[neighbors[start].index(dest)]
-        elif role == "PLANTER" and dest not in all_bases:
-            if dest not in trees:
-                tree_budget += price
-            elif not trees[dest][0]:
-                tree_budget += seize
-    STATE["targets"] = targets
-
-    collectors = sum(role == "COLLECTOR" for _, _, role in workers.values())
-    planters = len(workers) - collectors
-    enemy_collectors = sum(role == "COLLECTOR" for _, _, role in enemies.values())
-    collector_cost = configuration.get("recCollectorCost", 30) + (
-        collectors + enemy_collectors) * configuration.get("recCollectorIncreaseCost", 0)
-    planter_cost = configuration.get("recPlanterCost", 30) + (
-        planters + len(enemies) - enemy_collectors) * configuration.get("recPlanterIncreaseCost", 0)
-    worker_limit = configuration.get("workerLimit", 10)
-    if remaining < 12:
-        return actions
-
-    def base_quality(item):
-        _, base = item
-        return -sum(carbon[pos] for pos in neighbors[base])
-
-    for key, base in sorted(bases.items(), key=base_quality):
-        if collectors + planters >= worker_limit or base in future:
-            continue
-        if any(role == "COLLECTOR" and load < 0.01 for _, load, role in threat[base]):
-            continue
-        want_planter = planters < MAX_PLANTERS and remaining > 24 and (
-            (step == 0 and (OPENING == "trees" or (OPENING == "mixed" and not planters)))
-            or (not planters and (step >= 12 or OPENING != "collectors")
-                and (collectors >= 1 or cash >= planter_cost + plant))
-            or (collectors >= 4 and cash >= 105 + 25 * planters and price <= 105)
-        )
-        if want_planter and cash - tree_budget >= planter_cost + plant:
-            actions[key] = "RECPLANTER"
-            cash -= planter_cost
-            planters += 1
-        elif (cash - max(tree_budget, plant if planters and not own_trees else 0) >= collector_cost
-              and (collectors == 0 or remaining > 19)):
-            if step < 8 and collectors >= 2 and cash < 70:
-                continue
-            actions[key] = "RECCOLLECTOR"
-            cash -= collector_cost
-            collectors += 1
-    return actions
-
-
-# Adaptation: coordinate proposed moves only when destinations conflict, or
-# when a collector is close to its last available turn to return carbon.
-MODEL_SEED = 19
-MODEL_TEMPERATURE = 1.0
-FINAL_SPAWN_CUTOFF = 5
-BANK_WINDOW = 10
-
-
-def coordinated_actions(action, players, me, step, encoded, worker_logits, configuration):
-    cash, bases, workers, _ = players[me]
-    _, hostile_bases, _, _ = players[1 - me]
-    base_positions = set(bases.values())
-    hostile_positions = set(hostile_bases.values())
-    remaining = configuration.get("episodeSteps", 300) - 1 - step
-    actions = {key: command for key, command in action.items() if key in workers}
-
-    worker_limit = configuration.get("workerLimit", 10)
-    reserved = {}
-    if remaining > FINAL_SPAWN_CUTOFF:
-        for key, pos in bases.items():
-            command = action.get(key)
-            if command is None or len(workers) + len(reserved) >= worker_limit:
-                continue
-            cost_field = "recCollectorCost" if command == "RECCOLLECTOR" else "recPlanterCost"
-            cost = configuration.get(cost_field, 30)
-            if cash >= cost:
-                cash -= cost
-                reserved[pos] = key, command
-
-    destinations = {key: move(pos, WIDX[actions.get(key, "NONE")])
-                    for key, (pos, _, _) in workers.items()}
-    no_conflict = len(set(destinations.values()) | set(reserved)) == len(workers) + len(reserved)
-    if remaining > BANK_WINDOW and no_conflict:
-        actions.update(reserved.values())
-        return actions
-
-    nearest = FEAT_DIST[:, list(base_positions)].min(axis=1)
-    workers_in_order = list(workers)
-    rows = []
-    for key, (pos, cargo, role) in workers.items():
-        preferred = destinations[key]
-        logits = worker_logits[pos]
-        row, col = divmod(pos, SIZE)
-        arrival = int(nearest[pos])
-        scores = {}
-        for index in range(len(WACT)):
-            dest = move(pos, index)
-            preference = float(np.clip(logits[index] - max(logits), -5.0, 0.0))
-            value = preference + (2.0 if dest == preferred else 0.0)
-            if role == "COLLECTOR":
-                danger = encoded[25 + index, row, col] > 0
-                if dest in hostile_positions:
-                    value -= 12.0
-                if cargo >= 15 and danger and dest not in base_positions:
-                    value -= 1.0
-                has_deadline = 0 < arrival <= remaining <= arrival + 2
-                if cargo >= 16 and has_deadline and nearest[dest] < arrival:
-                    value += 2.0 + min(3.0, cargo / 21) - (2.0 if danger else 0.0)
-                if dest in base_positions and 0 < cargo and remaining <= BANK_WINDOW:
-                    value += min(6.0, cargo / 12)
-            scores[dest] = value, index
-        rows.append(scores)
-
-    # A proposed recruit can retain its base or go idle in a private dummy slot.
-    # The matching may cancel a recruit to give a returning worker safe access.
-    for row, pos in enumerate(reserved):
-        rows.append({pos: (1.8, 1), N + row: (0.0, 0)})
-
-    result = {}
-    destinations = assign_moves(rows)
-    for key, dest, scores in zip(workers_in_order, destinations, rows):
-        index = scores[dest][1]
-        if index:
-            result[key] = WACT[index]
-    for pos, dest in zip(reserved, destinations[len(workers_in_order):]):
-        if dest == pos:
-            key, command = reserved[pos]
-            result[key] = command
-    return result
-
-
 def agent(observation, configuration):
-    """Select and coordinate actions from the public per-turn observation."""
-    if configuration.get("size", 15) != SIZE:
-        return heuristic_agent(observation, configuration)
     global LAST_TURN
     LAST_TURN = configuration.get("episodeSteps", 300) - 2
-    return _act(observation, configuration)
+    t0 = _time.perf_counter()
+    try:
+        return _act(observation, configuration, t0)
+    except Exception:
+        if os.environ.get('CARBON_DEBUG'):
+            raise
+        return {}
+
+from collections import defaultdict
+
+MOVES = ('UP', 'RIGHT', 'DOWN', 'LEFT')
+DELTA = {'UP': (-1, 0), 'RIGHT': (0, 1), 'DOWN': (1, 0), 'LEFT': (0, -1)}
+N4 = ((-1, 0), (0, 1), (1, 0), (0, -1))                                     # ConnectedField4：上右下左
+N8 = ((-1, -1), (-1, 0), (-1, 1), (0, 1), (1, 1), (1, 0), (1, -1), (0, -1))  # ConnectedField8：左上起順時針
+
+DEFAULT_CONFIG = {
+    'episodeSteps': 300, 'actTimeout': 1, 'startingCarbon': 2500, 'size': 15, 'carbonCoverage': 45,
+    'numberOfBases': 2, 'startPosOffset': 1, 'startingCellCarbon': 50, 'maxCellCarbon': 100,
+    'recCollectorCost': 30, 'recCollectorIncreaseCost': 0, 'recPlanterCost': 30, 'recPlanterIncreaseCost': 0,
+    'moveCost': 0, 'smeltCost': 0, 'workerLimit': 10, 'planterLimit': 1, 'collectorLimit': 2, 'plantCost': 20,
+    'plantCostInflationRatio': 5, 'plantCostInflationBase': 1.235, 'playerTreeProtectiveNumber': 0,
+    'co2FrmWithered': 30, 'seizeCost': 20, 'initialCollectRate': 0.3, 'collectDecreaseRate': 0.0,
+    'regenRate': 0.03, 'treeLifespan': 50, 'cellAbsorptionRate': 0.0375, 'collectorAbsorptionRate': 0.1,
+}
+START_CASH = 80
+LAST_STATS = {}   # 上一次 next_state 的樹收入拆帳：cell_absorb（吸格子）、worker_tax（抽敵方捕碳員身上的碳），各依樹主分兩人
+
+
+def shift(pos, dr, dc, size):
+    r, c = divmod(pos, size)
+    return ((r + dr) % size) * size + (c + dc) % size
+
+
+_SHIFT_T = {}
+
+
+def _shift_table(size):
+    """預先算好每個格子往各方向位移後的位置：_shift_table(size)[(dr, dc)][pos]。"""
+    t = _SHIFT_T.get(size)
+    if t is None:
+        t = _SHIFT_T[size] = {d: [shift(p, d[0], d[1], size) for p in range(size * size)]
+                              for d in set(N4) | set(N8)}
+    return t
+
+
+class State:
+    """一個完整（上帝視角）的盤面。"""
+    __slots__ = ('step', 'carbon', 'players', 'trees_meta', 'counters')
+
+    def __init__(self, step, carbon, players, trees_meta=None, counters=None):
+        self.step = step
+        self.carbon = carbon
+        self.players = players
+        self.trees_meta = trees_meta if trees_meta is not None else {}
+        self.counters = counters if counters is not None else {}
+
+    def copy(self):
+        return State(self.step, list(self.carbon),
+                     [[p[0], dict(p[1]), {k: list(v) for k, v in p[2].items()}, {k: list(v) for k, v in p[3].items()}]
+                      for p in self.players],
+                     {k: list(v) for k, v in self.trees_meta.items()}, dict(self.counters))
+
+
+def _new_id(counters, player, kind):
+    key = f'player-{player}-{kind}-'
+    n = counters.get(key, 0)
+    counters[key] = n + 1
+    return f'{key}{n}'
+
+
+def next_state(st, actions, cfg):
+    """套用雙方動作，回傳新盤面（不改動 st）。actions[p] 是 {單位 ID: 動作字串} 或 None。"""
+    size = cfg['size']
+    SH = _shift_table(size)
+    s = st.copy()
+    carbon, players, meta, counters = s.carbon, s.players, s.trees_meta, s.counters
+    actions = [a or {} for a in actions]
+    owner = {}       # worker_id -> player
+    for p in range(2):
+        for b in players[p][1].values():
+            carbon[b] = 0                      # Board.__init__ 的 _add_recrtCenter 每步把基地格碳歸零
+        for wid in players[p][2]:
+            owner[wid] = p
+    nxt = {wid: (actions[owner[wid]].get(wid) if actions[owner[wid]].get(wid) in MOVES else None) for wid in owner}
+    board_order = [wid for p in range(2) for wid in players[p][2]]
+
+    # ---- 招募價格、種樹價格（next() 開頭）----
+    n_col = sum(1 for p in range(2) for w in players[p][2].values() if w[2] == 'COLLECTOR')
+    n_pla = sum(1 for p in range(2) for w in players[p][2].values() if w[2] == 'PLANTER')
+    rcc = cfg['recCollectorCost'] + n_col * cfg['recCollectorIncreaseCost']
+    rpc = cfg['recPlanterCost'] + n_pla * cfg['recPlanterIncreaseCost']
+    lifespan = cfg['treeLifespan']
+    alive = sum(1 for p in range(2) for t in players[p][3].values() if t[1] < lifespan)
+    market = cfg['plantCost'] + cfg['plantCostInflationRatio'] * (cfg['plantCostInflationBase'] ** alive)
+    pcost = [cfg['plantCost'] if len(players[p][3]) <= cfg['playerTreeProtectiveNumber'] else market for p in range(2)]
+
+    # ---- 招募、移動、樹齡（每位玩家依序）----
+    tree_order = [tid for p in range(2) for tid in players[p][3]]
+    withered = set()
+    recruits = []
+    for p in range(2):
+        pl = players[p]
+        for bid, bpos in pl[1].items():
+            a = actions[p].get(bid)
+            for kind, cost, typ in (('RECCOLLECTOR', rcc, 'COLLECTOR'), ('RECPLANTER', rpc, 'PLANTER')):
+                if a == kind and pl[0] >= cost and len(pl[2]) < cfg['workerLimit']:
+                    pl[0] = max(pl[0] - cost, 0)
+                    wid = _new_id(counters, p, 'worker')
+                    pl[2][wid] = [bpos, 0, typ]
+                    owner[wid], nxt[wid] = p, None
+                    recruits.append(wid)
+        for wid, w in pl[2].items():
+            if nxt[wid] in MOVES:
+                dr, dc = DELTA[nxt[wid]]
+                w[0] = SH[(dr, dc)][w[0]]
+                w[1] = w[1] * (1 - cfg['moveCost'])
+        for tid in list(pl[3]):
+            t = pl[3][tid]
+            if t[1] >= lifespan:
+                withered.add(t[0])
+                carbon[t[0]] = cfg['co2FrmWithered']
+                del pl[3][tid]
+                meta.pop(tid, None)
+                tree_order.remove(tid)
+            else:
+                t[1] += 1
+    board_order += recruits
+
+    def wk(wid):
+        return players[owner[wid]][2][wid]
+
+    tree_at = {t[0]: (p, tid) for p in range(2) for tid, t in players[p][3].items()}
+    base_at = {b: p for p in range(2) for b in players[p][1].values()}
+
+    def delete(wid):
+        del players[owner[wid]][2][wid]
+        for v in meta.values():
+            if v[0] == wid:
+                v[0] = None
+
+    # ---- 碰撞：同格多人時，帶碳最少且唯一的捕碳員勝出，其餘刪除 ----
+    groups = {}
+    for wid in board_order:
+        groups.setdefault(wk(wid)[0], []).append(wid)
+    collisions, cell_worker = set(), {}
+    for pos, ws in groups.items():
+        winner, deleted = (ws[0], []) if len(ws) == 1 else (None, ws)
+        if len(ws) > 1:
+            cols = [w for w in ws if wk(w)[2] == 'COLLECTOR']
+            if cols:
+                low = min(wk(w)[1] for w in cols)
+                smallest = [w for w in cols if wk(w)[1] == low]
+                if len(smallest) == 1:
+                    winner = smallest[0]
+                    deleted = [w for w in ws if w != winner]
+        if deleted:
+            collisions.add(pos)
+        if winner is not None:
+            cell_worker[pos] = winner
+        win_col = winner is not None and wk(winner)[2] == 'COLLECTOR'
+        for w in deleted:
+            c = wk(w)[1]
+            if win_col:
+                wk(winner)[1] += c
+            elif pos in tree_at:
+                players[tree_at[pos][0]][0] += c
+            elif pos in base_at:
+                players[base_at[pos]][0] += c
+            else:
+                carbon[pos] = min(carbon[pos] + c, cfg['maxCellCarbon'])
+            delete(w)
+    board_order = [w for w in board_order if w in owner and w in players[owner[w]][2]]
+
+    # ---- 回基地：己方交碳；對方空手捕碳員直接消失；對方帶碳的會把碳送給基地主人 ----
+    for p in range(2):
+        for bpos in players[p][1].values():
+            w = cell_worker.get(bpos)
+            if w is None or w not in players[owner[w]][2] or wk(w)[2] != 'COLLECTOR':
+                continue
+            if owner[w] != p and wk(w)[1] <= cfg['smeltCost']:
+                delete(w)
+                del cell_worker[bpos]
+            elif wk(w)[1] >= cfg['smeltCost']:
+                players[p][0] += wk(w)[1] - cfg['smeltCost']
+                wk(w)[1] = 0
+    board_order = [w for w in board_order if w in players[owner[w]][2]]
+
+    # ---- 停留：種樹員種樹／搶樹，捕碳員捕碳 ----
+    rate = [max(cfg['initialCollectRate'] - sum(1 for w in players[p][2].values() if w[2] == 'COLLECTOR')
+                * cfg['collectDecreaseRate'], 0) for p in range(2)]
+    new_born = set()
+    for wid in board_order:
+        if nxt[wid] in MOVES:
+            continue
+        p, w = owner[wid], wk(wid)
+        pos = w[0]
+        if pos not in tree_at and pos not in base_at:
+            delta = carbon[pos] * rate[p]
+            if w[2] == 'PLANTER' and players[p][0] >= pcost[p]:
+                players[p][0] = players[p][0] - pcost[p]
+                tid = _new_id(counters, p, 'tree')
+                players[p][3][tid] = [pos, 1]
+                tree_at[pos] = (p, tid)
+                tree_order.append(tid)
+                meta[tid] = [wid, 0]
+                carbon[pos] = 0
+                new_born.add(tid)
+            elif w[2] == 'COLLECTOR' and delta > 0:
+                carbon[pos] = max(carbon[pos] - delta, 0)
+                w[1] += delta
+        elif pos in tree_at and pos not in base_at:
+            tp, tid = tree_at[pos]
+            if tp != p and w[2] == 'PLANTER' and players[p][0] >= cfg['seizeCost']:
+                players[p][0] -= cfg['seizeCost']
+                age = players[tp][3].pop(tid)[1]
+                tree_order.remove(tid)
+                meta.pop(tid, None)
+                players[p][3][tid] = [pos, age]
+                tree_at[pos] = (p, tid)
+                tree_order.append(tid)
+                meta[tid] = [wid, 0]
+                cell_worker.pop(pos, None)      # 原版 _delete_tree 的副作用：清掉該格 worker_id
+
+    tree_owner = {tid: p for p in range(2) for tid in players[p][3]}
+    tree_pos = {tid: players[tree_owner[tid]][3][tid][0] for tid in tree_order}
+
+    # ---- 樹吸收：先標四連通可吸收格，再算吸收量 ----
+    quad = {}
+    for tid in tree_order:
+        for dr, dc in N4:
+            q = SH[(dr, dc)][tree_pos[tid]]
+            quad.setdefault(q, set())
+            w = cell_worker.get(q)
+            if q not in tree_at and (w is None or wk(w)[2] == 'PLANTER' or nxt[w] is not None):
+                quad[q].add(tid)
+    board_red, worker_red = defaultdict(float), defaultdict(float)
+    car = cfg['cellAbsorptionRate']
+    colr = cfg['collectorAbsorptionRate']
+    LAST_STATS['cell_absorb'] = [0.0, 0.0]
+    LAST_STATS['worker_tax'] = [0.0, 0.0]
+    for tid in tree_order:
+        if tid in new_born:
+            continue
+        tp, tpos = tree_owner[tid], tree_pos[tid]
+        got = 0
+        w = cell_worker.get(tpos)
+        if w is not None and wk(w)[2] == 'COLLECTOR' and owner[w] != tp:
+            a = wk(w)[1] * colr
+            got += a
+            worker_red[w] += a
+            LAST_STATS['worker_tax'][tp] += a
+        for dr, dc in N8:
+            q = SH[(dr, dc)][tpos]
+            w = cell_worker.get(q)
+            if w is not None and wk(w)[2] == 'COLLECTOR' and owner[w] != tp:
+                a = wk(w)[1] * colr
+                got += a
+                worker_red[w] += a
+                LAST_STATS['worker_tax'][tp] += a
+            if carbon[q] > 0 and q in quad and tid in quad[q]:
+                a = carbon[q] * car
+                got += a
+                board_red[q] += a
+                LAST_STATS['cell_absorb'][tp] += a
+        players[tp][0] += got
+        meta[tid] = [meta[tid][0], got]
+    for q, flag in quad.items():
+        if carbon[q] > 0 and flag:
+            carbon[q] = max(carbon[q] - board_red[q], 0)
+    for w, a in worker_red.items():
+        if a > 0:
+            wk(w)[1] = max(wk(w)[1] - a, 0)
+
+    # ---- 再生：沒人停留、沒碰撞、沒樹、非樹的四鄰、非剛枯萎 ----
+    regen, cap = 1 + cfg['regenRate'], cfg['maxCellCarbon']
+    blocked = set(collisions)
+    blocked.update(tree_at)
+    blocked.update(withered)
+    blocked.update(quad)
+    for pos, w in cell_worker.items():
+        if nxt[w] not in MOVES:
+            blocked.add(pos)
+
+    for p in range(2):
+        players[p][0] = round(players[p][0], 2)
+    s.carbon = [round(c, 3) if i in blocked else round(min(c * regen, cap), 3) for i, c in enumerate(carbon)]
+    # 樹的 ID 順序：原版 Player._observation 依 tree_ids（新增附加在後）
+    s.step += 1
+    return s
+
+
+import time as _time
+
+_S_ENGINE = True      # the rollouts in the embedded engine when the file has one
+_RX = _S_ENGINE and 'next_state' in globals()
+try:
+    from zerosum_env.envs.carbon.helpers import Board as _Board
+
+    class _NBoard(_Board):
+        """Board.next() first copies the board (observation -> new Board) so the board it is called on stays as it was.  The search builds
+        each board only to call next() on it once, so the copy can be the board itself: the same next board, stepping 1.57x faster
+        (11-11: identical observations on 22,796 rollout boards of two games, with the worker id counter reset between the two ways)."""
+
+        def __deepcopy__(self, _):
+            return self
+except Exception:
+    _NBoard = None
+try:
+    import torch as _torch
+    import torch.nn.functional as _F
+    _torch.set_num_threads(2)
+    _SEARCH_OK = _RX or _NBoard is not None
+except Exception:          # the plain policy still plays
+    _SEARCH_OK = False
+_RX_CFG = [None, None]
+
+
+def _turn(o, configuration, acts):
+    """The board one turn on, as a dict with players, step and carbon (the full map), from a dict like it or the root observation."""
+    if not _RX:
+        return _NBoard(o, configuration, acts).next().observation
+    if _RX_CFG[0] is not configuration:
+        cfg = dict(DEFAULT_CONFIG)
+        for k in DEFAULT_CONFIG:
+            try:
+                if k in configuration:
+                    cfg[k] = configuration[k]
+            except TypeError:
+                if hasattr(configuration, k):
+                    cfg[k] = getattr(configuration, k)
+        _RX_CFG[0] = configuration; _RX_CFG[1] = cfg
+    st = o.get('_st')
+    if st is None:                  # the root: copy it, and number new units after the ones on the board
+        players = [[pl[0], dict(pl[1]), {k: list(v) for k, v in pl[2].items()}, {k: list(v) for k, v in pl[3].items()}] for pl in o['players']]
+        counters = {}
+        for pl in players:
+            for d in (pl[1], pl[2], pl[3]):
+                for k in d:
+                    key, _, n = k.rpartition('-')
+                    if n.isdigit():
+                        counters[key + '-'] = max(counters.get(key + '-', 0), int(n) + 1)
+        st = State(o['step'], [float(c) for c in o['carbon']], players, {k: list(v) for k, v in (o.get('trees') or {}).items()}, counters)
+    s2 = next_state(st, acts, _RX_CFG[1])
+    return {'players': s2.players, 'step': s2.step, 'carbon': s2.carbon, '_st': s2}
+
+_S_START = 0          # first turn searched
+_S_K = 32             # joint moves compared at most
+_S_GEN = ((2.5, 8), (1.0, 3), (3.5, 8), (0.0, 6), (5.0, 8))     # the candidates after the policy's own, in this order: (temperature of the
+                      # workers' logits, how many); temperature 0.0: the policy's own move with one worker's move changed to its next most likely one
+_S_DUPS = 8           # so many samples in a row that were all seen before: no more at that temperature
+_S_M = 2              # rollouts per move at first
+_S_MMAX = 2           # ... for the last two moves, when there is time
+_S_STAGES = ((1, 0.53), (3, 0.33))       # (turns ahead, the share of the candidates that goes on from there): two at least, the policy's own among them
+_S_D2 = 5             # turns played ahead by the ones left
+_S_FILL = 0.90        # the plan of the whole search may take this share of the time left
+_S_ROWS = 32          # rows in one network pass at most (every size up to it is warmed up at import)
+_S_EPS = 0.0
+_S_ABORT = 0.55       # seconds after the call began: no network pass that would end past this is started (0.62 until 11-12: the search now runs
+                      # to this limit on most turns of a slow machine, and one move of 598 took 0.80 s on a busy one)
+_S_SAFE = 1.3         # ... at this multiple of the measured costs, the larger of the smoothed and the last one
+_S_CFIX = 0.004       # seconds a network pass takes besides its rows (a guess; the rows are measured)
+_S_COST = [0.0, 0.0, 0.0, 0.0]    # measured: seconds per network row (its encoding included), per board for both sides' moves and the engine's step;
+                      # [0], [1] smoothed, [2], [3] the last ones
+_S_STATS = {'searched': 0, 'changed': 0, 'aborted': 0, 'single': 0, 'time': [], 'depth': {}, 'rolls': {}, 'cands': {}}
+# aborted: the last stage of _S_STAGES not reached in time; single: the policy sampled no other move; depth, rolls, cands: how many turns ended at each
+_S_REC = None         # a list: every search appends (step, player, candidates, the depth of each one's value, the values, the one played), for rl/search_label.py
+_S_HOMEFIX = True     # the candidates keep the go-home moves of the policy's own (see _search)
+
+
+def _terminal(m):
+    return float(np.clip(m / 3000.0, -2.5, 2.5) + 0.5 * np.sign(m))
+
+
+class _TorchNet:
+    """The folded policy of _Policy plus the critic, for many positions at once."""
+
+    def __init__(self, pol, val):
+        T = lambda a: _torch.from_numpy(np.ascontiguousarray(a, dtype=np.float32))
+        p = pol.p
+        self.cin = p['stem.w'].shape[1]
+        self.stem = (T(p['stem.w']), T(p['stem.b']))
+        self.emb = T(p['emb'])
+        self.blocks = [tuple(T(p['b%d.%s' % (i, k)]) for k in ('c1.w', 'c1.b', 'g.w', 'g.b', 'c2.w', 'c2.b')) for i in range(pol.nb)]
+        C = p['stem.w'].shape[0]
+        self.hw = (T(p['hw.w'].reshape(5, C)), T(p['hw.b']))
+        self.hb = (T(p['hb.w'].reshape(3, C)), T(p['hb.b']))
+        if val is not None:            # a rollout network (_ROLL) has no critic
+            self.v1 = (T(val['v1.weight'].reshape(val['v1.weight'].shape[0], C)), T(val['v1.bias']))
+            self.v2 = (T(val['v2.weight']), T(val['v2.bias']))
+            self.v3 = (T(val['v3.weight']), T(val['v3.bias']))
+
+    @staticmethod
+    def _conv(x, w, b):
+        return _F.conv2d(_F.pad(x, (1, 1, 1, 1), mode='circular'), w, b)
+
+    def __call__(self, X, sid, sc=None):
+        """X float32 (n, NPL, 15, 15) -> lw (n, 225, 5), lb (n, 225, 3) numpy, and the critic (n,) when sc (n, 5) is given."""
+        with _torch.inference_mode():
+            x = _torch.from_numpy(X[:, :self.cin])
+            h = _torch.relu(self._conv(x, *self.stem) + self.emb[sid][None, :, None, None])
+            for c1w, c1b, gw, gb, c2w, c2b in self.blocks:
+                t = _torch.relu(self._conv(h, c1w, c1b))
+                t = t + (t.mean((2, 3)) @ gw.T + gb)[:, :, None, None]
+                h = _torch.relu(h + self._conv(t, c2w, c2b))
+            hf = h.flatten(2)
+            lw = (_torch.einsum('kc,ncp->npk', self.hw[0], hf) + self.hw[1]).numpy()
+            lb = (_torch.einsum('kc,ncp->npk', self.hb[0], hf) + self.hb[1]).numpy()
+            v = None
+            if sc is not None:
+                s = _torch.from_numpy(sc)
+                z = _torch.relu(_torch.einsum('kc,ncp->nkp', self.v1[0], hf) + self.v1[1][None, :, None])
+                z = _torch.cat([z.mean(2), z.amax(2), s], 1)
+                v = (s[:, 0] + (_torch.relu(z @ self.v2[0].T + self.v2[1]) @ self.v3[0].T + self.v3[1])[:, 0]).numpy()
+        return lw, lb, v
+
+
+def _wp(r, c):
+    return ((r % 4) * 4 + c % 4) * 16 + (r // 4) * 4 + c // 4
+
+
+class _WinoNet:
+    """_TorchNet with every 3x3 circular conv done as Winograd F(4x4, 3x3) (11-11: the same outputs up to float rounding, the network
+    1.7x faster).  Activations stay in a tile layout (256 positions, n, C) so no conv needs a permute: position (i*4 + j)*16 + ty*4 + tx
+    is cell (ty*4 + i, tx*4 + j); the 31 positions with row or column 15 are padding and never read."""
+
+    def __init__(self, net):
+        T = lambda a: _torch.tensor(a, dtype=_torch.float64)
+        BT = T([[4, 0, -5, 0, 1, 0], [0, -4, -4, 1, 1, 0], [0, 4, -4, -1, 1, 0], [0, -2, -1, 2, 1, 0], [0, 2, -1, -2, 1, 0], [0, 4, 0, -5, 0, 1]])
+        G = T([[1 / 4, 0, 0], [-1 / 6, -1 / 6, -1 / 6], [-1 / 6, 1 / 6, -1 / 6], [1 / 24, 1 / 12, 1 / 6], [1 / 24, -1 / 12, 1 / 6], [0, 0, 1]])
+        AT = T([[1, 1, 1, 1, 1, 0], [0, 1, -1, 2, -2, 0], [0, 1, 1, 4, 4, 0], [0, 1, -1, 8, -8, 1]])
+        self.KB = _torch.kron(BT, BT).float().contiguous()
+        self.KA = _torch.kron(AT, AT).float().contiguous()
+        U = lambda w: _torch.einsum('ak,oikl,bl->abio', G, w.double(), G).reshape(36, w.shape[1], w.shape[0]).float().contiguous()
+        self.cin = net.cin
+        self.stem = (U(net.stem[0]), net.stem[1])
+        self.emb = net.emb
+        self.blocks = [(U(c1w), c1b, gw.T.contiguous(), gb, U(c2w), c2b) for c1w, c1b, gw, gb, c2w, c2b in net.blocks]
+        self.hw = (net.hw[0].T.contiguous(), net.hw[1]); self.hb = (net.hb[0].T.contiguous(), net.hb[1])
+        if hasattr(net, 'v1'):
+            self.v1 = (net.v1[0].T.contiguous(), net.v1[1]); self.v2 = net.v2; self.v3 = net.v3
+        L = lambda a: _torch.tensor(a, dtype=_torch.long).reshape(-1)
+        self.win = L([[_wp((ty * 4 + k - 1) % 15, (tx * 4 + l - 1) % 15) for ty in range(4) for tx in range(4)] for k in range(6) for l in range(6)])
+        self.winb = L([[((ty * 4 + k - 1) % 15) * 15 + (tx * 4 + l - 1) % 15 for ty in range(4) for tx in range(4)] for k in range(6) for l in range(6)])
+        self.board = L([_wp(r, c) for r in range(15) for c in range(15)])
+
+    def _conv(self, d, U, b, n):
+        V = (self.KB @ d.reshape(36, -1)).reshape(36, 16 * n, d.shape[2])
+        M = _torch.bmm(V, U)
+        return (self.KA @ M.reshape(36, -1)).reshape(256, n, U.shape[2]) + b
+
+    def __call__(self, X, sid, sc=None):
+        with _torch.inference_mode():
+            x = _torch.from_numpy(X[:, :self.cin])
+            n = x.shape[0]
+            xb = x.permute(2, 3, 0, 1).reshape(225, n, self.cin)
+            h = _torch.relu(self._conv(xb[self.winb], self.stem[0], self.stem[1], n) + self.emb[sid])
+            for U1, b1, gwT, gb, U2, b2 in self.blocks:
+                t = _torch.relu(self._conv(h[self.win], U1, b1, n))
+                t = t + (t[self.board].mean(0) @ gwT + gb)
+                h = _torch.relu(h + self._conv(t[self.win], U2, b2, n))
+            hf = h[self.board]
+            lw = (hf @ self.hw[0] + self.hw[1]).permute(1, 0, 2).contiguous().numpy()
+            lb = (hf @ self.hb[0] + self.hb[1]).permute(1, 0, 2).contiguous().numpy()
+            v = None
+            if sc is not None:
+                s = _torch.from_numpy(sc)
+                z = _torch.relu(hf @ self.v1[0] + self.v1[1])
+                z = _torch.cat([z.mean(0), z.amax(0), s], 1)
+                v = (s[:, 0] + (_torch.relu(z @ self.v2[0].T + self.v2[1]) @ self.v3[0].T + self.v3[1])[:, 0]).numpy()
+        return lw, lb, v
+
+
+_S_WINO = True        # run the network as _WinoNet when it matches _TorchNet on a test batch
+_S_ROLL = True        # the rollouts' moves from the small network in _ROLL, when the file has one (rl/distill_roll.py)
+_S_RTEMP = 1.0        # its logits divided by this (11-11: the distilled 64x4 is flatter than the big one, entropy 0.17 against 0.08 per unit)
+_NET = None
+_RNET = None
+
+
+def _build(pol, val):
+    net = _TorchNet(pol, val)
+    if _S_WINO:
+        try:
+            w = _WinoNet(net)
+            X = (np.random.RandomState(5).rand(3, NPL, 15, 15) < 0.2).astype(np.float32)
+            S = np.random.RandomState(6).randn(3, 5).astype(np.float32) if val is not None else None
+            a, b = net(X, _SID, S), w(X, _SID, S)
+            if all(np.abs(p - q).max() < 1e-2 * (1 + np.abs(p).max()) for p, q in zip(a, b) if p is not None):
+                net = w
+        except Exception:
+            pass
+    return net
+
+
+def _net():
+    """The search's big network (policy and critic); also builds _RNET, the network for the rollouts' moves (_NET itself without _ROLL)."""
+    global _NET, _RNET
+    if _NET is None and _SEARCH_OK:
+        z = np.load(io.BytesIO(base64.b64decode(_VALUE)), allow_pickle=False)
+        _NET = _build(_POLICY, {k: z[k].astype(np.float32) for k in z.files})
+        _RNET = _NET
+        if _S_ROLL and globals().get('_ROLL'):
+            try:
+                _RNET = _build(_Policy(_ROLL), None)
+            except Exception:
+                _RNET = _NET
+        _S_STATS['net'] = type(_NET).__name__; _S_STATS['rnet'] = 'small ' + type(_RNET).__name__ if _RNET is not _NET else 'the same'
+        for n in range(1, _S_ROWS + 1):          # every batch a turn can need: the first pass of a new shape is slow
+            _NET(np.zeros((n, NPL, 15, 15), np.float32), _SID, np.zeros((n, 5), np.float32))
+            if _RNET is not _NET:
+                _RNET(np.zeros((n, NPL, 15, 15), np.float32), _SID)
+        if _S_COST[0] == 0.0:           # first costs from this machine, so that the first turns are planned too: a full pass timed here
+            t = _time.perf_counter()    # (1.5x: the rows' encoding is not in it), and a guess for a board's step
+            _RNET(np.zeros((_S_ROWS, NPL, 15, 15), np.float32), _SID, np.zeros((_S_ROWS, 5), np.float32) if _RNET is _NET else None)
+            _S_COST[0] = _S_COST[2] = 1.5 * (_time.perf_counter() - t) / _S_ROWS
+            _S_COST[1] = _S_COST[3] = 0.002
+    return _NET
+
+
+def _quant(x):
+    return np.clip(np.rint(x * 100.0), 0, 255) * 0.01
+
+
+def _scalars(players, step, me):
+    workers, trees, _, cash = parse(players)
+    cargo = [0.0, 0.0]; nw = [0, 0]; nt = [0, 0]
+    for w in workers.values():
+        cargo[w[3]] += w[1]; nw[w[3]] += 1
+    for t in trees.values():
+        nt[t[2]] += 1
+    o = 1 - me
+    return np.array([(cash[me] - cash[o]) / 3000.0, (cargo[me] - cargo[o]) / 3000.0, step / 300.0, (nt[me] - nt[o]) / 10.0, (nw[me] - nw[o]) / 10.0], np.float32)
+
+
+def _banking_value(players, me, step):
+    remaining = max(0, LAST_TURN + 1 - step)
+    workers, _, bases, cash = parse(players)
+    value = [float(c) for c in cash]
+    for pos, cargo, role, owner in workers.values():
+        if role != 'C' or cargo <= 0:
+            continue
+        arrival = min((FEAT_DIST[pos, p] for _, p in bases[owner]), default=N)
+        if arrival <= remaining:
+            value[owner] += cargo * (0.94 - 0.044 * min(9, arrival))
+    return (value[me] - value[1 - me]) / 3000.0
+
+
+def _sample(players, me, lw, lb, rng, step, fixed=None):
+    """The policy's move recipe of _act for one side, without the go-home rule: lw (225, 5), lb (225, 3).
+    fixed {worker id: move name or None}: workers whose move is given (the go-home moves of the policy's own, _S_HOMEFIX); they take their cells first."""
+    workers, _, bases, cash = parse(players)
+    act = {}; took = {}
+    nw = sum(1 for w in workers.values() if w[3] == me)
+    money = cash[me]
+    for bid, pos in bases[me]:
+        p = _probs(lb[pos])
+        a = rng.choice(3, p=p)
+        if a and money >= 30 and nw < 10:
+            act[bid] = BACT[a]; money -= 30; nw += 1; took[pos] = 'X'
+    for wid, a in (fixed or {}).items():
+        w = workers.get(wid)
+        if w is None:
+            continue
+        dst = move(w[0], WIDX.get(a or 'NONE', 0))
+        took[dst] = w[2] if took.get(dst) in (None, w[2]) else 'X'
+        if a:
+            act[wid] = a
+    cand = []
+    for wid, w in workers.items():
+        if w[3] == me and wid not in (fixed or {}):
+            p = _probs(lw[w[0]])
+            a = rng.choice(5, p=p)
+            cand.append((p[a], wid, w, p, a))
+    cand.sort(key=lambda c: -c[0])
+    own_bases = {pos for _, pos in bases[me]}
+    end = LAST_TURN - step < _BANK
+    for _, wid, w, p, a in cand:
+        order = [a] + [int(k) for k in np.argsort(-p) if k != a]
+        for k in order:
+            dst = move(w[0], k)
+            t_ = took.get(dst)
+            if t_ is None or (k == a and end and t_ == 'C' and w[2] == 'C' and dst in own_bases):
+                took[dst] = w[2] if t_ is None or t_ == w[2] else 'X'
+                if k:
+                    act[wid] = WACT[k]
+                break
+    return act
+
+
+def _deviations(players, me, lw, act0, fixed, cap):
+    """act0 with one worker's move changed to its next most likely one, for the `cap` workers whose next move is likeliest
+    (not a worker whose move is fixed, not onto a cell another own worker moves to under act0)."""
+    workers = parse(players)[0]
+    mine = {wid: w for wid, w in workers.items() if w[3] == me}
+    k0 = {wid: WIDX.get(act0.get(wid) or 'NONE', 0) for wid in mine}
+    dest = {wid: move(w[0], k0[wid]) for wid, w in mine.items()}
+    alts = []
+    for wid, w in mine.items():
+        if fixed and wid in fixed:
+            continue
+        p = _probs(lw[w[0]])
+        alt = max((k for k in range(5) if k != k0[wid]), key=lambda k: p[k])
+        dst = move(w[0], alt)
+        if any(d == dst for o, d in dest.items() if o != wid):
+            continue
+        alts.append((float(p[alt]), wid, alt))
+    out = []
+    for _, wid, alt in sorted(alts, reverse=True)[:cap]:
+        a = dict(act0)
+        if alt:
+            a[wid] = WACT[alt]
+        else:
+            a.pop(wid, None)
+        out.append(a)
+    return out
+
+
+def _plan(n, D2):
+    """Rows, board steps and passes of the whole search of n candidates (one rollout each): the stages of _S_STAGES, then D2 turns ahead."""
+    rows = steps = passes = 0; alive = n; d0 = 0
+    for depth, keep in [st for st in _S_STAGES if st[0] < D2] + [(D2, None)]:
+        k = depth - d0 - 1                              # depths d0+1 .. depth-1: both views, then a step
+        rows += k * 2 * alive; steps += k * alive; passes += k * -(-2 * alive // _S_ROWS)
+        if keep is None:
+            rows += alive; passes += -(-alive // _S_ROWS)
+            break
+        nk = max(2, int(np.ceil(n * keep)))
+        if alive > nk:                                  # our view for all, then the opponent's view and a step for the ones kept
+            rows += alive + nk; steps += nk; passes += -(-alive // _S_ROWS) + -(-nk // _S_ROWS); alive = nk
+        else:
+            rows += 2 * alive; steps += alive; passes += -(-2 * alive // _S_ROWS)
+        d0 = depth
+    return rows, steps, passes
+
+
+def _search(obs, configuration, est, act0, lw0, lb0, prev, t0, home=()):
+    """Returns the move to play: act0, the policy's own, unless a searched one scores better.
+    home: the workers act0 sends straight home (go_home).  With _S_HOMEFIX every candidate keeps their moves: the candidates are sampled without
+    the go-home rule, and 4 turns ahead the critic still counts cargo that cannot reach a base in time, so the search used to call them back out
+    (11-10: Master2s collectors 7-8 from home with 5 turns left and 3,468 cargo undelivered against 1C-Zero v10)."""
+    step = obs['step']; me = obs['player']; op = 1 - me
+    if not _SEARCH_OK or step < _S_START or step > LAST_TURN:
+        return act0
+    net = _net()
+    M = _S_M; D2 = _S_D2
+    stages = {d: k for d, k in _S_STAGES if d < D2}
+    players = obs['players']
+    full = [1.0] * N
+    root = {'players': players, 'trees': obs.get('trees') or {}, 'step': step, 'player': me, 'carbon': [float(c) for c in est],
+            'remainingOverageTime': obs.get('remainingOverageTime', 0)}
+    seed0 = int(1000003 * (step + 1) + 17 * me) % (2 ** 31)
+    most = _S_K
+    if _S_COST[0] > 0.0:            # the most candidates whose whole plan fits the time left at the measured costs
+        left = _S_FILL * (_S_ABORT - (_time.perf_counter() - t0))
+        most = 2
+        for n in range(3, _S_K + 1):
+            rows, steps, passes = _plan(n, D2)
+            if M * (rows * _S_COST[0] + steps * _S_COST[1]) + passes * _S_CFIX > left:
+                break
+            most = n
+    cands = [act0]; keys = {tuple(sorted(act0.items()))}
+    rng = np.random.RandomState(seed0)
+    fixed = {wid: act0.get(wid) for wid in home} if _S_HOMEFIX else None
+    for T, cap in _S_GEN:
+        new = 0; dups = 0
+        if T > 0.0:
+            lwt = lw0 if T == 1.0 else lw0 / T
+            for _ in range(4 * cap):
+                if new >= cap or len(cands) >= most or dups >= _S_DUPS:
+                    break
+                a = _sample(players, me, lwt, lb0, rng, step, fixed)
+                k = tuple(sorted(a.items()))
+                if k not in keys:
+                    keys.add(k); cands.append(a); new += 1; dups = 0
+                else:
+                    dups += 1
+        elif len(cands) < most:
+            for a in _deviations(players, me, lw0, act0, fixed, cap):
+                k = tuple(sorted(a.items()))
+                if k not in keys and len(cands) < most:
+                    keys.add(k); cands.append(a)
+    if len(cands) < 2:
+        _S_STATS['single'] += 1
+        return act0
+    # the opponent's view at the root, for its first move
+    xo = _quant(encode(players, step, op, est, full, prev))[None]
+    lwo, lbo, _ = net(xo.astype(np.float32), _SID)
+    opp = {}
+
+    def begin(cs, ms):              # boards one turn ahead: (candidate, rollout, observation dict, previous players)
+        out = []
+        for c in cs:
+            for m in ms:
+                if m not in opp:
+                    reply_scale = 1.06 if m % 2 else 0.88
+                    opp[m] = _sample(players, op, lwo[0] / reply_scale, lbo[0], np.random.RandomState(seed0 + 7 + 31 * m), step)
+                acts = [cands[c], opp[m]] if me == 0 else [opp[m], cands[c]]
+                out.append([c, m, _turn(root, configuration, acts), players])
+        return out
+
+    def view(b, who):
+        o = b[2]
+        return _quant(encode(o['players'], o['step'], who, o['carbon'], full, b[3]))
+
+    def cost(i, x):
+        _S_COST[i] = x if _S_COST[i] == 0.0 else 0.5 * _S_COST[i] + 0.5 * x
+        _S_COST[i + 2] = x
+
+    def look(live, both):
+        """Our value of every board; with `both` each side's move logits per board (lw, lb, lw_opp, lb_opp), else (lw, lb, our input row)."""
+        tp = _time.perf_counter()
+        w = 2 if both else 1
+        v = []; pol = []; passes = 0
+        for s0 in range(0, len(live), _S_ROWS // w):
+            part = live[s0:s0 + _S_ROWS // w]; n = len(part)
+            X = np.zeros((w * n, NPL, 15, 15), np.float32); S = np.zeros((w * n, 5), np.float32)
+            for i, b in enumerate(part):
+                X[w * i] = view(b, me)
+                S[w * i] = _scalars(b[2]['players'], b[2]['step'], me)
+                if both:
+                    X[2 * i + 1] = view(b, op)
+            if _RNET is _NET:
+                lw, lb, vv = net(X, _SID, S)
+                vv = vv[::w]
+            else:                   # the moves from the small network, the values from the big one
+                vv = net(np.ascontiguousarray(X[::w]), _SID, np.ascontiguousarray(S[::w]))[2]
+                lw = lb = None
+                if both:
+                    lw, lb, _ = _RNET(X, _SID)
+                    if _S_RTEMP != 1.0:
+                        lw = lw / _S_RTEMP; lb = lb / _S_RTEMP
+            for board, value in zip(part, vv):
+                future = board[2]
+                horizon = LAST_TURN + 1 - future['step']
+                if horizon < 22:
+                    mix = 0.72 * (22 - horizon) / 22
+                    banked = _banking_value(future['players'], me, future['step'])
+                    value = (1 - mix) * value + mix * banked
+                v.append(float(value))
+            passes += 1
+            if both:
+                pol.extend((lw[2 * i], lb[2 * i], lw[2 * i + 1], lb[2 * i + 1]) for i in range(n))
+            else:
+                pol.extend((None if lw is None else lw[i], None if lb is None else lb[i], X[i]) for i in range(n))
+        cost(0, max(0.0, _time.perf_counter() - tp - passes * _S_CFIX) / (w * len(live)))
+        return v, pol
+
+    def other(live, mine):
+        """The move logits of both sides for boards whose pass was ours only (mine: their entries from look)."""
+        tp = _time.perf_counter()
+        pol = []; passes = 0; rows = 0
+        if _RNET is _NET:
+            for s0 in range(0, len(live), _S_ROWS):
+                part = live[s0:s0 + _S_ROWS]
+                Xo = np.zeros((len(part), NPL, 15, 15), np.float32)
+                for r, b in enumerate(part):
+                    Xo[r] = view(b, op)
+                lw2, lb2, _ = net(Xo, _SID)
+                pol.extend((mine[s0 + r][0], mine[s0 + r][1], lw2[r], lb2[r]) for r in range(len(part)))
+                passes += 1; rows += len(part)
+        else:
+            for s0 in range(0, len(live), _S_ROWS // 2):
+                part = live[s0:s0 + _S_ROWS // 2]
+                X2 = np.zeros((2 * len(part), NPL, 15, 15), np.float32)
+                for r, b in enumerate(part):
+                    X2[2 * r] = mine[s0 + r][2]
+                    X2[2 * r + 1] = view(b, op)
+                lw2, lb2, _ = _RNET(X2, _SID)
+                if _S_RTEMP != 1.0:
+                    lw2 = lw2 / _S_RTEMP; lb2 = lb2 / _S_RTEMP
+                pol.extend((lw2[2 * r], lb2[2 * r], lw2[2 * r + 1], lb2[2 * r + 1]) for r in range(len(part)))
+                passes += 1; rows += 2 * len(part)
+        cost(0, max(0.0, _time.perf_counter() - tp - passes * _S_CFIX) / rows)
+        return pol
+
+    def play(live, pol, t):         # every board one turn on, both sides sampled
+        tp = _time.perf_counter()
+        for (lwm, lbm, lwp, lbp), b in zip(pol, live):
+            o = b[2]; m = b[1]
+            r1 = np.random.RandomState(seed0 + 7919 * t + 31 * m + 1); r2 = np.random.RandomState(seed0 + 7919 * t + 31 * m + 2)
+            am = _sample(o['players'], me, lwm, lbm, r1, o['step'])
+            ao = _sample(o['players'], op, lwp, lbp, r2, o['step'])
+            b[3] = o['players']; b[2] = _turn(o, configuration, [am, ao] if me == 0 else [ao, am])
+        cost(1, (_time.perf_counter() - tp) / len(live))
+
+    def late(rows, steps):
+        need = -(-rows // _S_ROWS) * _S_CFIX + rows * max(_S_COST[0], _S_COST[2]) + steps * max(_S_COST[1], _S_COST[3])
+        return _time.perf_counter() - t0 + _S_SAFE * need > _S_ABORT
+
+    def over(b):
+        return b[2]['step'] > LAST_TURN
+
+    def result(b):
+        c = [float(pl[0]) for pl in b[2]['players']]
+        return _terminal(c[me] - c[op])
+
+    alive = list(range(len(cands)))         # the candidates still compared
+    val = {}                                # (candidate, rollout) -> our value at the deepest depth scored
+    dep = {}                                # candidate -> that depth
+    boards = begin(alive, range(M))
+    depth = 0; cut = True; rolls = M
+    for t in range(1, D2 + 1):              # the boards are t turns ahead
+        run = [b for b in boards if b[0] in alive]
+        live = [b for b in run if not over(b)]
+        n = len(live)
+        keep = max(2, int(np.ceil(len(cands) * stages[t]))) if t in stages else 0
+        prune = keep and len(alive) > keep
+        both = t < D2 and not prune
+        if late((2 if both else 1) * n, n if both else 0):
+            break
+        if n:
+            v, pol = look(live, both)
+            for b, x in zip(live, v):
+                val[b[0], b[1]] = x
+        for b in run:
+            if over(b):
+                val[b[0], b[1]] = result(b)
+            dep[b[0]] = t
+        depth = t
+        if t == D2 or not n:                # as deep as asked, or the game is over on every board
+            cut = False
+            break
+        if prune:                           # the policy's own and the best of the others go on
+            mean = {c: sum(val[c, m] for m in range(M)) / M for c in alive}
+            alive = [0] + sorted((c for c in alive if c), key=lambda c: -mean[c])[:keep - 1]
+            rows = [i for i, b in enumerate(live) if b[0] in alive]
+            live = [live[i] for i in rows]
+            if late((1 if _RNET is _NET else 2) * len(live), len(live)):
+                break
+            pol = other(live, [pol[i] for i in rows])
+        play(live, pol, t)
+    while not cut and depth == D2 and rolls + M <= _S_MMAX and len(alive) > 1:      # more rollouts for the last two
+        mean = {c: sum(val[c, m] for m in range(rolls)) / rolls for c in alive}
+        two = [0, max((c for c in alive if c), key=lambda c: mean[c])]
+        nb = 2 * M
+        if late((2 * (D2 - 1) + 1) * nb, (D2 - 1) * nb):
+            break
+        alive = two
+        new = begin(two, range(rolls, rolls + M)); got = {}; whole = True
+        for t in range(1, D2 + 1):
+            live = [b for b in new if not over(b)]
+            if not live:
+                break
+            if late((2 if t < D2 else 1) * len(live), len(live) if t < D2 else 0):
+                whole = False               # a round cut short is dropped
+                break
+            v, pol = look(live, t < D2)
+            if t == D2:
+                for b, x in zip(live, v):
+                    got[b[0], b[1]] = x
+            else:
+                play(live, pol, t)
+        if not whole:
+            break
+        for b in new:
+            val[b[0], b[1]] = result(b) if over(b) else got[b[0], b[1]]
+        rolls += M
+    dt = _time.perf_counter() - t0
+    _S_STATS['last'] = (len(cands), depth, rolls, dt, tuple(_S_COST))
+    if depth == 0:
+        _S_STATS['aborted'] += 1
+        return act0
+    if cut and depth < max(stages or [D2]):
+        _S_STATS['aborted'] += 1
+    _S_STATS['searched'] += 1; _S_STATS['time'].append(dt)
+    for k, x in (('depth', depth), ('rolls', rolls), ('cands', len(cands))):
+        _S_STATS[k][x] = _S_STATS[k].get(x, 0) + 1
+    mean = {c: 0.84 * sum(val[c, m] for m in range(rolls)) / rolls
+            + 0.16 * min(val[c, m] for m in range(rolls)) for c in alive}
+    best = max(alive, key=lambda c: mean[c])
+    if best == 0 or mean[best] - mean[0] <= _S_EPS:
+        best = 0
+    if _S_REC is not None:
+        _S_REC.append((step, me, cands, [dep.get(c, 0) for c in range(len(cands))], [val.get((c, 0), 0.0) for c in range(len(cands))], best))
+    if best == 0:
+        return act0
+    _S_STATS['changed'] += 1
+    return cands[best]
+
+
+_net()
