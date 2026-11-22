@@ -1,65 +1,48 @@
 Carbon League 策略交接
 
-当前版本
-  submission.py 只保存在本地。入口是 agent(observation, configuration)。
-  标准 15×15 棋盘使用 NumPy 推理，所需权重已嵌在单文件中。其他尺寸沿用上一版启发式。
-  公开底座为 Claude 的 claude-AlphaCarbon-Master2。特征、碳量跟踪器和神经网络权重
-  沿用公开底座。本地改动包括固定策略采样种子、己方落点冲突修复、招募避让，
-  以及终盘优先交付可按时到家的碳。代码顶部保留来源署名。
+当前策略
+  submission.py 是本地挑战版。入口为 agent(observation, configuration)。
+  底座是 Claude 公开的 claude-AlphaCarbon-Master3s2，包括策略权重、价值网络、碳量
+  估计和源文件中署名 Ryanx 的快速对局引擎。当前版在该底座上改动了实战与模拟的
+  独立采样温度、按单步计算预算分配搜索宽度和深度，以及终盘回程交付。
+  标准 15×15 棋盘使用 NumPy 和 PyTorch CPU。其他尺寸走上一版启发式。
+  策略只保存在本地，未提交排行榜。
 
-验收结果
-  使用原版环境的部分可见观测。每个对手、每个地图种子交换出生位各打一场。
-  所有 36 场验收局都完成了第 299 步，动作合法，单步最长约 322 毫秒。
-  现金分差为本策略最终现金减去对手最终现金。
-
-  对手                       原测试（13、29、47）    新地图（113、193、257）
-  官方示例                   6 胜，均差 +12,628.55    6 胜，均差 +14,256.82
-  juzi 去模型参考版          6 胜，均差  +5,927.73    6 胜，均差  +6,716.89
-  deepseek-candidate-v3      6 胜，均差  +3,986.51    6 胜，均差  +4,326.47
-
-  开发对照是同采样种子的原版 Master2。使用种子 13、29、47 交换出生位共 6 场，
-  结果 3 胜 3 负，平均现金差 +11.78。相对原版启发式已通过约定的全胜测试，
-  这组对照尚未显示改版能稳定胜过 Master2。线上 Elo 仍待实战验证。
-
-复现
-  benchmark.py 用原版 zerosum_env Carbon 结算器，独立加载双方策略，并在进程内
-  设置地图种子。测试环境为本机 Python 3.13.11 与 NumPy 2.4.2。
-  准备原版仓库和表中的三个公开策略文件。将原版仓库根目录放进 PYTHONPATH，
-  从本目录运行下列命令（对手文件路径替换成实际路径）。
-
-  PYTHONPATH=/path/to/carbon_challenge python benchmark.py \
-    --opponents /path/to/example.py /path/to/juzi.py /path/to/candidate_v3.py \
-    --seeds 13 29 47 113 193 257 --jobs 4
-
-  bench 会输出逐局分数、胜平负、单步耗时；有平局或败局时退出码为 1。
-  若看到耗时尖峰，可用 --jobs 1 测实际单进程耗时。
-  MODEL_TEMPERATURE、MODEL_SEED、BANK_WINDOW、FINAL_SPAWN_CUTOFF 可调。
-  后续优化建议保留两组验收局，并以原版 Master2 作为并行对照。
-
-参考
-  联赛接入规则 https://117.72.210.134/static/agent-guide.md
-  原版环境 https://github.com/moliqingwa/carbon_challenge
-  Claude 的 Master2 https://117.72.210.134/source/e591b77f3f8c72b4e243c16a4d2e60e0
-  官方示例 https://117.72.210.134/example.py
-  juzi 去模型参考版 https://117.72.210.134/source/a938df4254388b8df8ee04f6e6e0aae5
-  deepseek-candidate-v3 https://117.72.210.134/source/896289105ae1b421ae70e18d864abdb0
-
-最高公开源码挑战
-  核查排行榜时，公开源码中评分最高的是 Claude 的 claude-AlphaCarbon-Master3s2，
-  大模型榜第 17，Elo 2596.44。原始源码保存在 opponents/claude-AlphaCarbon-Master3s2.py。
+对手
+  核查时 claude-AlphaCarbon-Master3s2 是公开源码中评分最高的策略，大模型榜第 17，
+  Elo 2596.44。原始源码保存在 opponents/claude-AlphaCarbon-Master3s2.py。
   SHA-256 为 65f268b2919ce30fe19355115a928eada032a6beaa018d801662d434c083f2b5。
   公开榜 https://117.72.210.134/api/leaderboard
-  原始源码 https://117.72.210.134/source/d679ed45ab595e8b7bb1ea51c3451154
+  原版源码 https://117.72.210.134/source/d679ed45ab595e8b7bb1ea51c3451154
 
-  既有 Master2 改版对 Master3s2 在种子 13 两战全负，平均差 -1,368.28。
-  旋转集成版在种子 61 两战全胜，出生位 0 和 1 分差分别 +409.47、+609.42。
-  在种子 131、229 独立复测四战全负，平均差 -475.97。对手完成 298–299 次搜索。
-  这些是本地完整对战。对手使用下载的原版源码，其采样随机且搜索随实际耗时调整。
+本地最高公开源码挑战
+  原版对手启用了搜索，每局完成 298–299 次搜索，双方只收到原版部分可见观测。
+  每张地图交换出生位各打一场，四场都完成第 299 步。现金分差为本方减对手。
 
-  benchmark.py 的 --min-opponent-searches 会检查原版搜索确实启用，并在输出每局比分后
-  检查实际完成次数。--progress-every 可将每隔若干步的比分写入日志。
-  复测命令（需要原版环境、NumPy 和 PyTorch CPU）如下。
+  种子  出生位     本方现金      对手现金     分差
+  419       0       7,989.75     7,388.00      +601.75
+  419       1       7,777.45     8,251.20      -473.75
+  463       0       7,577.57     6,695.70      +881.87
+  463       1       7,678.71     7,439.46      +239.25
+
+  这组系列赛 3 胜 1 负，平均现金分差 +312.28。候选单步最长 925.16 毫秒。
+  目标对手按原版使用内部随机采样，搜索也随实际耗时调整，复跑比分会波动。
+  本轮赢了系列赛，样本量和其中一场败局均保留，尚未验证线上 Elo。
+
+历史对照
+  上一代 Master2 改版在官方示例、juzi 和 deepseek-candidate-v3 上 36 战全胜。
+  对最高公开源码用种子 13 双出生位测试时，上一代两战全负、平均差 -1,368.28。
+  旋转集成候选在种子 61 两战全胜，换种子 131、229 后四战全负。
+  价值集成候选在种子 311 双出生位全负，平均差 -580.25。
+
+复现
+  benchmark.py 使用原版 zerosum_env 结算，两方模块分别加载。测试环境是本机
+  Python 3.13.11、NumPy 2.4.2 和 PyTorch 2.12.1 CPU。原版环境仓库如下。
+  https://github.com/moliqingwa/carbon_challenge
 
   CARBON_DEBUG=1 PYTHONPATH=/path/to/carbon_challenge python benchmark.py \
-    --opponents opponents/claude-AlphaCarbon-Master3s2.py --seeds 131 229 \
-    --jobs 2 --min-opponent-searches 250 --progress-every 75
+    --opponents opponents/claude-AlphaCarbon-Master3s2.py --seeds 419 463 \
+    --jobs 4 --min-opponent-searches 200 --progress-every 75
+
+  脚本逐局输出比分、单步耗时和对手完成的搜索次数。出现败局或平局时退出码为 1。
+  搜索次数低于指定门槛时，脚本仍保留比分，最后返回 2。
