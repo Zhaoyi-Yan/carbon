@@ -1,0 +1,2552 @@
+{
+ "leaderboard": [
+  {
+   "id": "dd1f117a64c676225f0c6333b1cdd1e7",
+   "name": "CarbonEdge_Apollo",
+   "author": "CarbonEdge",
+   "is_public": false,
+   "board_rank": 1,
+   "rating": 3173.7321822461186,
+   "wins": 97,
+   "games": 105
+  },
+  {
+   "id": "226891089ba7f54b198c8f8dc771dfc2",
+   "name": "CarbonEdge_Artemis",
+   "author": "CarbonEdge",
+   "is_public": false,
+   "board_rank": 2,
+   "rating": 3139.055001287343,
+   "wins": 47,
+   "games": 48
+  },
+  {
+   "id": "ec91ff24ea3af3510fe28c948b5d7da3",
+   "name": "yan-v5",
+   "author": "yanzhaoyi",
+   "is_public": false,
+   "board_rank": 8,
+   "rating": 2854.371568765325,
+   "wins": 47,
+   "games": 68
+  }
+ ],
+ "latest": "1f456cfdb568010b5ff8c276ed74b39d609f115b",
+ "distinct_layouts": 217,
+ "distinct_games": 217,
+ "all_games": {
+  "Artemis": {
+   "games": 48,
+   "wins": 47,
+   "seat0": 21,
+   "medians": {
+    "first_planter": 2.0,
+    "first_tree": 8.0,
+    "new_trees75": 8.0,
+    "seizes75": 4.0,
+    "tree_income75": 779.44,
+    "base_receipts75": 911.75,
+    "trees75": 6.5,
+    "collector_turns75": 378.5,
+    "planter_turns75": 146.0,
+    "empty_pressure75": 5.0,
+    "cash_margin75": 232.55,
+    "score_margin": 1516.51
+   },
+   "opening": {
+    "WAIT": 48
+   }
+  },
+  "Apollo": {
+   "games": 105,
+   "wins": 97,
+   "seat0": 50,
+   "medians": {
+    "first_planter": 1,
+    "first_tree": 8,
+    "new_trees75": 9,
+    "seizes75": 4,
+    "tree_income75": 853.07,
+    "base_receipts75": 921.17,
+    "trees75": 7,
+    "collector_turns75": 394,
+    "planter_turns75": 151,
+    "empty_pressure75": 8,
+    "cash_margin75": 257.14,
+    "score_margin": 1504.42
+   },
+   "opening": {
+    "RECCOLLECTOR+RECPLANTER": 105
+   }
+  },
+  "yan-v5": {
+   "games": 68,
+   "wins": 47,
+   "seat0": 33,
+   "medians": {
+    "first_planter": 8.0,
+    "first_tree": 15.5,
+    "new_trees75": 6.0,
+    "seizes75": 3.0,
+    "tree_income75": 541.88,
+    "base_receipts75": 1071.41,
+    "trees75": 4.0,
+    "collector_turns75": 429.0,
+    "planter_turns75": 120.0,
+    "empty_pressure75": 7.0,
+    "cash_margin75": 115.65,
+    "score_margin": 293.9
+   },
+   "opening": {
+    "RECCOLLECTOR+RECCOLLECTOR": 68
+   }
+  }
+ },
+ "initial_layout_mirrored_on_both_axes": true,
+ "geometry_profiles": {
+  "Artemis": {
+   "0": {
+    "n": 21,
+    "own_planter_base": {
+     "64": 15,
+     "160": 6
+    },
+    "conditional": [
+     {
+      "opponent_first_roles": "WAIT",
+      "opponent_initial_planter_cell": null,
+      "own_planter_cell": 64,
+      "games": 1
+     },
+     {
+      "opponent_first_roles": "COLLECTOR+PLANTER",
+      "opponent_initial_planter_cell": 70,
+      "own_planter_cell": 64,
+      "games": 14
+     },
+     {
+      "opponent_first_roles": "COLLECTOR+COLLECTOR",
+      "opponent_initial_planter_cell": null,
+      "own_planter_cell": 160,
+      "games": 5
+     },
+     {
+      "opponent_first_roles": "COLLECTOR+PLANTER",
+      "opponent_initial_planter_cell": 154,
+      "own_planter_cell": 160,
+      "games": 1
+     }
+    ],
+    "first_tree_distance_from_planter_base_median": 5,
+    "first_tree_closer_to_foe": 8
+   },
+   "1": {
+    "n": 27,
+    "own_planter_base": {
+     "70": 10,
+     "154": 17
+    },
+    "conditional": [
+     {
+      "opponent_first_roles": "COLLECTOR+PLANTER",
+      "opponent_initial_planter_cell": 160,
+      "own_planter_cell": 70,
+      "games": 8
+     },
+     {
+      "opponent_first_roles": "COLLECTOR+COLLECTOR",
+      "opponent_initial_planter_cell": null,
+      "own_planter_cell": 154,
+      "games": 14
+     },
+     {
+      "opponent_first_roles": "WAIT",
+      "opponent_initial_planter_cell": null,
+      "own_planter_cell": 70,
+      "games": 1
+     },
+     {
+      "opponent_first_roles": "COLLECTOR+PLANTER",
+      "opponent_initial_planter_cell": 64,
+      "own_planter_cell": 70,
+      "games": 1
+     },
+     {
+      "opponent_first_roles": "COLLECTOR+PLANTER",
+      "opponent_initial_planter_cell": 160,
+      "own_planter_cell": 154,
+      "games": 3
+     }
+    ],
+    "first_tree_distance_from_planter_base_median": 4,
+    "first_tree_closer_to_foe": 6
+   }
+  },
+  "Apollo": {
+   "0": {
+    "n": 50,
+    "own_planter_base": {
+     "64": 50
+    },
+    "conditional": [
+     {
+      "opponent_first_roles": "COLLECTOR+COLLECTOR",
+      "opponent_initial_planter_cell": null,
+      "own_planter_cell": 64,
+      "games": 15
+     },
+     {
+      "opponent_first_roles": "COLLECTOR+PLANTER",
+      "opponent_initial_planter_cell": 70,
+      "own_planter_cell": 64,
+      "games": 24
+     },
+     {
+      "opponent_first_roles": "COLLECTOR+PLANTER",
+      "opponent_initial_planter_cell": 154,
+      "own_planter_cell": 64,
+      "games": 7
+     },
+     {
+      "opponent_first_roles": "PLANTER",
+      "opponent_initial_planter_cell": 154,
+      "own_planter_cell": 64,
+      "games": 4
+     }
+    ],
+    "first_tree_distance_from_planter_base_median": 5.0,
+    "first_tree_closer_to_foe": 12
+   },
+   "1": {
+    "n": 55,
+    "own_planter_base": {
+     "70": 55
+    },
+    "conditional": [
+     {
+      "opponent_first_roles": "COLLECTOR+COLLECTOR",
+      "opponent_initial_planter_cell": null,
+      "own_planter_cell": 70,
+      "games": 20
+     },
+     {
+      "opponent_first_roles": "COLLECTOR+PLANTER",
+      "opponent_initial_planter_cell": 160,
+      "own_planter_cell": 70,
+      "games": 33
+     },
+     {
+      "opponent_first_roles": "COLLECTOR+PLANTER",
+      "opponent_initial_planter_cell": 64,
+      "own_planter_cell": 70,
+      "games": 2
+     }
+    ],
+    "first_tree_distance_from_planter_base_median": 4,
+    "first_tree_closer_to_foe": 7
+   }
+  }
+ },
+ "startup_profiles": {
+  "Artemis": {
+   "roster_median_steps_0_12": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0
+    ],
+    [
+     1.0,
+     1.0
+    ],
+    [
+     1.0,
+     1.0
+    ],
+    [
+     1.0,
+     1.0
+    ],
+    [
+     1.0,
+     1.0
+    ],
+    [
+     1.0,
+     1.0
+    ],
+    [
+     1.0,
+     1.0
+    ],
+    [
+     1.0,
+     1.0
+    ],
+    [
+     1.0,
+     1.0
+    ],
+    [
+     2.0,
+     1.0
+    ],
+    [
+     2.0,
+     1.0
+    ],
+    [
+     2.0,
+     1.0
+    ]
+   ],
+   "first_successful_hire": [
+    {
+     "step": 2,
+     "roles": "COLLECTOR+PLANTER",
+     "games": 34
+    },
+    {
+     "step": 3,
+     "roles": "COLLECTOR+PLANTER",
+     "games": 10
+    },
+    {
+     "step": 4,
+     "roles": "COLLECTOR+PLANTER",
+     "games": 2
+    },
+    {
+     "step": 46,
+     "roles": "COLLECTOR+PLANTER",
+     "games": 1
+    },
+    {
+     "step": 48,
+     "roles": "COLLECTOR+PLANTER",
+     "games": 1
+    }
+   ],
+   "most_common_hire_sequences_through_12": [
+    {
+     "actions": [
+      [
+       2,
+       "COLLECTOR+PLANTER"
+      ]
+     ],
+     "games": 10
+    },
+    {
+     "actions": [
+      [
+       2,
+       "COLLECTOR+PLANTER"
+      ],
+      [
+       9,
+       "COLLECTOR"
+      ]
+     ],
+     "games": 8
+    },
+    {
+     "actions": [
+      [
+       2,
+       "COLLECTOR+PLANTER"
+      ],
+      [
+       10,
+       "COLLECTOR"
+      ]
+     ],
+     "games": 5
+    },
+    {
+     "actions": [
+      [
+       2,
+       "COLLECTOR+PLANTER"
+      ],
+      [
+       11,
+       "COLLECTOR"
+      ]
+     ],
+     "games": 4
+    },
+    {
+     "actions": [
+      [
+       3,
+       "COLLECTOR+PLANTER"
+      ],
+      [
+       10,
+       "COLLECTOR"
+      ]
+     ],
+     "games": 3
+    }
+   ],
+   "first_positive_base_receipt": {
+    "games": 48,
+    "turn_median": 9.0,
+    "amount_median": 29.0,
+    "all_from_own_incoming_cargo": 48
+   },
+   "step1_timing": [
+    {
+     "status": "ACTIVE",
+     "overage_start": 5,
+     "overage_end": 5,
+     "games": 48
+    }
+   ]
+  },
+  "Apollo": {
+   "roster_median_steps_0_12": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     2,
+     1
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "first_successful_hire": [
+    {
+     "step": 1,
+     "roles": "COLLECTOR+PLANTER",
+     "games": 105
+    }
+   ],
+   "most_common_hire_sequences_through_12": [
+    {
+     "actions": [
+      [
+       1,
+       "COLLECTOR+PLANTER"
+      ],
+      [
+       7,
+       "COLLECTOR"
+      ]
+     ],
+     "games": 25
+    },
+    {
+     "actions": [
+      [
+       1,
+       "COLLECTOR+PLANTER"
+      ],
+      [
+       8,
+       "COLLECTOR"
+      ]
+     ],
+     "games": 21
+    },
+    {
+     "actions": [
+      [
+       1,
+       "COLLECTOR+PLANTER"
+      ],
+      [
+       10,
+       "COLLECTOR"
+      ]
+     ],
+     "games": 11
+    },
+    {
+     "actions": [
+      [
+       1,
+       "COLLECTOR+PLANTER"
+      ]
+     ],
+     "games": 11
+    },
+    {
+     "actions": [
+      [
+       1,
+       "COLLECTOR+PLANTER"
+      ],
+      [
+       12,
+       "COLLECTOR"
+      ]
+     ],
+     "games": 7
+    }
+   ],
+   "first_positive_base_receipt": {
+    "games": 105,
+    "turn_median": 7,
+    "amount_median": 23.7,
+    "all_from_own_incoming_cargo": 105
+   },
+   "step1_timing": [
+    {
+     "status": "ACTIVE",
+     "overage_start": 5,
+     "overage_end": 5,
+     "games": 105
+    }
+   ]
+  },
+  "yan-v5": {
+   "roster_median_steps_0_12": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     2.0,
+     0.0
+    ],
+    [
+     2.0,
+     0.0
+    ],
+    [
+     2.0,
+     0.0
+    ],
+    [
+     2.0,
+     0.0
+    ],
+    [
+     2.0,
+     0.0
+    ],
+    [
+     2.0,
+     0.0
+    ],
+    [
+     2.0,
+     0.0
+    ],
+    [
+     2.0,
+     1.0
+    ],
+    [
+     2.0,
+     1.0
+    ],
+    [
+     2.0,
+     1.0
+    ],
+    [
+     2.0,
+     1.0
+    ],
+    [
+     2.0,
+     1.0
+    ]
+   ],
+   "first_successful_hire": [
+    {
+     "step": 1,
+     "roles": "COLLECTOR+COLLECTOR",
+     "games": 68
+    }
+   ],
+   "most_common_hire_sequences_through_12": [
+    {
+     "actions": [
+      [
+       1,
+       "COLLECTOR+COLLECTOR"
+      ],
+      [
+       6,
+       "PLANTER"
+      ]
+     ],
+     "games": 7
+    },
+    {
+     "actions": [
+      [
+       1,
+       "COLLECTOR+COLLECTOR"
+      ],
+      [
+       10,
+       "PLANTER"
+      ]
+     ],
+     "games": 5
+    },
+    {
+     "actions": [
+      [
+       1,
+       "COLLECTOR+COLLECTOR"
+      ]
+     ],
+     "games": 4
+    },
+    {
+     "actions": [
+      [
+       1,
+       "COLLECTOR+COLLECTOR"
+      ],
+      [
+       8,
+       "PLANTER"
+      ]
+     ],
+     "games": 4
+    },
+    {
+     "actions": [
+      [
+       1,
+       "COLLECTOR+COLLECTOR"
+      ],
+      [
+       9,
+       "PLANTER"
+      ]
+     ],
+     "games": 4
+    }
+   ],
+   "first_positive_base_receipt": {
+    "games": 68,
+    "turn_median": 6.0,
+    "amount_median": 17.31,
+    "all_from_own_incoming_cargo": 68
+   },
+   "step1_timing": [
+    {
+     "status": "ACTIVE",
+     "overage_start": 5,
+     "overage_end": 5,
+     "games": 68
+    }
+   ]
+  }
+ },
+ "matched_opponents": {
+  "strata": 13,
+  "strategy_counts": {
+   "Artemis": 27,
+   "Apollo": 45,
+   "yan-v5": 40
+  },
+  "equal_weight_mean_of_stratum_medians": {
+   "Artemis": {
+    "first_planter": 2.23,
+    "first_tree": 9.38,
+    "new_trees75": 7.85,
+    "seizes75": 3.81,
+    "tree_income75": 796.17,
+    "base_receipts75": 907.14,
+    "trees75": 6.08,
+    "collector_turns75": 375.92,
+    "planter_turns75": 150.96,
+    "empty_pressure75": 10.23,
+    "cash_margin75": 29.51,
+    "score_margin": 1729.95
+   },
+   "Apollo": {
+    "first_planter": 1.0,
+    "first_tree": 8.31,
+    "new_trees75": 8.38,
+    "seizes75": 4.42,
+    "tree_income75": 880.33,
+    "base_receipts75": 903.33,
+    "trees75": 7.69,
+    "collector_turns75": 380.69,
+    "planter_turns75": 158.19,
+    "empty_pressure75": 15.08,
+    "cash_margin75": 311.62,
+    "score_margin": 2774.53
+   },
+   "yan-v5": {
+    "first_planter": 7.65,
+    "first_tree": 16.73,
+    "new_trees75": 6.88,
+    "seizes75": 2.81,
+    "tree_income75": 574.38,
+    "base_receipts75": 1035.5,
+    "trees75": 3.81,
+    "collector_turns75": 405.42,
+    "planter_turns75": 123.73,
+    "empty_pressure75": 7.12,
+    "cash_margin75": 71.74,
+    "score_margin": 120.04
+   }
+  },
+  "groups": [
+   {
+    "opponent": "SpongeBaby-CarbonNet-v3.0",
+    "opponent_id": "04cf11d7f98adf0142da924be98f8aa6",
+    "seat": null,
+    "strategies": {
+     "Artemis": {
+      "games": 2,
+      "wins": 2,
+      "seat0": 0,
+      "medians": {
+       "first_planter": 2.0,
+       "first_tree": 6.0,
+       "new_trees75": 8.5,
+       "seizes75": 4.0,
+       "tree_income75": 808.61,
+       "base_receipts75": 833.04,
+       "trees75": 6.0,
+       "collector_turns75": 362.5,
+       "planter_turns75": 175.0,
+       "empty_pressure75": 11.5,
+       "cash_margin75": 61.59,
+       "score_margin": 3321.59
+      },
+      "opening": {
+       "WAIT": 2
+      }
+     },
+     "Apollo": {
+      "games": 6,
+      "wins": 6,
+      "seat0": 3,
+      "medians": {
+       "first_planter": 1.0,
+       "first_tree": 9.0,
+       "new_trees75": 6.5,
+       "seizes75": 4.0,
+       "tree_income75": 665.02,
+       "base_receipts75": 1048.62,
+       "trees75": 6.0,
+       "collector_turns75": 379.5,
+       "planter_turns75": 151.5,
+       "empty_pressure75": 4.5,
+       "cash_margin75": 150.86,
+       "score_margin": 1124.72
+      },
+      "opening": {
+       "RECCOLLECTOR+RECPLANTER": 6
+      }
+     },
+     "yan-v5": {
+      "games": 4,
+      "wins": 1,
+      "seat0": 1,
+      "medians": {
+       "first_planter": 7.0,
+       "first_tree": 13.0,
+       "new_trees75": 4.0,
+       "seizes75": 3.0,
+       "tree_income75": 271.99,
+       "base_receipts75": 760.88,
+       "trees75": 2.5,
+       "collector_turns75": 373.5,
+       "planter_turns75": 118.5,
+       "empty_pressure75": 3.0,
+       "cash_margin75": -486.2,
+       "score_margin": -643.24
+      },
+      "opening": {
+       "RECCOLLECTOR+RECCOLLECTOR": 4
+      }
+     }
+    }
+   },
+   {
+    "opponent": "SpongeBaby-CarbonNet-v2.0",
+    "opponent_id": "182aed58db5991bcd0df65cd41a667be",
+    "seat": null,
+    "strategies": {
+     "Artemis": {
+      "games": 2,
+      "wins": 2,
+      "seat0": 2,
+      "medians": {
+       "first_planter": 2.0,
+       "first_tree": 9.0,
+       "new_trees75": 8.0,
+       "seizes75": 4.0,
+       "tree_income75": 685.27,
+       "base_receipts75": 753.88,
+       "trees75": 6.5,
+       "collector_turns75": 344.0,
+       "planter_turns75": 152.5,
+       "empty_pressure75": 2.5,
+       "cash_margin75": -246.86,
+       "score_margin": 1334.53
+      },
+      "opening": {
+       "WAIT": 2
+      }
+     },
+     "Apollo": {
+      "games": 6,
+      "wins": 6,
+      "seat0": 2,
+      "medians": {
+       "first_planter": 1.0,
+       "first_tree": 9.0,
+       "new_trees75": 6.5,
+       "seizes75": 4.5,
+       "tree_income75": 645.48,
+       "base_receipts75": 821.3,
+       "trees75": 6.0,
+       "collector_turns75": 363.5,
+       "planter_turns75": 165.5,
+       "empty_pressure75": 3.5,
+       "cash_margin75": 57.87,
+       "score_margin": 1236.96
+      },
+      "opening": {
+       "RECCOLLECTOR+RECPLANTER": 6
+      }
+     },
+     "yan-v5": {
+      "games": 4,
+      "wins": 2,
+      "seat0": 2,
+      "medians": {
+       "first_planter": 9.5,
+       "first_tree": 25.5,
+       "new_trees75": 5.0,
+       "seizes75": 5.0,
+       "tree_income75": 461.63,
+       "base_receipts75": 969.28,
+       "trees75": 3.0,
+       "collector_turns75": 356.5,
+       "planter_turns75": 160.0,
+       "empty_pressure75": 3.5,
+       "cash_margin75": 30.68,
+       "score_margin": -136.02
+      },
+      "opening": {
+       "RECCOLLECTOR+RECCOLLECTOR": 4
+      }
+     }
+    }
+   },
+   {
+    "opponent": "小肥鱼v5",
+    "opponent_id": "2856c37287900ee3cba8eca53b827da9",
+    "seat": null,
+    "strategies": {
+     "Artemis": {
+      "games": 2,
+      "wins": 2,
+      "seat0": 2,
+      "medians": {
+       "first_planter": 2.0,
+       "first_tree": 16.5,
+       "new_trees75": 7.0,
+       "seizes75": 1.5,
+       "tree_income75": 609.35,
+       "base_receipts75": 1249.96,
+       "trees75": 0.5,
+       "collector_turns75": 415.0,
+       "planter_turns75": 103.0,
+       "empty_pressure75": 2.0,
+       "cash_margin75": -64.57,
+       "score_margin": 1044.97
+      },
+      "opening": {
+       "WAIT": 2
+      }
+     },
+     "Apollo": {
+      "games": 2,
+      "wins": 2,
+      "seat0": 0,
+      "medians": {
+       "first_planter": 1.0,
+       "first_tree": 14.0,
+       "new_trees75": 7.5,
+       "seizes75": 3.5,
+       "tree_income75": 629.03,
+       "base_receipts75": 996.61,
+       "trees75": 5.0,
+       "collector_turns75": 404.0,
+       "planter_turns75": 165.5,
+       "empty_pressure75": 2.0,
+       "cash_margin75": 159.3,
+       "score_margin": 1715.83
+      },
+      "opening": {
+       "RECCOLLECTOR+RECPLANTER": 2
+      }
+     },
+     "yan-v5": {
+      "games": 2,
+      "wins": 2,
+      "seat0": 1,
+      "medians": {
+       "first_planter": 7.5,
+       "first_tree": 22.5,
+       "new_trees75": 7.0,
+       "seizes75": 1.5,
+       "tree_income75": 841.91,
+       "base_receipts75": 1011.24,
+       "trees75": 4.0,
+       "collector_turns75": 392.5,
+       "planter_turns75": 140.5,
+       "empty_pressure75": 12.5,
+       "cash_margin75": 481.84,
+       "score_margin": 866.3
+      },
+      "opening": {
+       "RECCOLLECTOR+RECCOLLECTOR": 2
+      }
+     }
+    }
+   },
+   {
+    "opponent": "ClaudeFable5.2-v7",
+    "opponent_id": "2d4e4c772f057208b7121ed76dba4f33",
+    "seat": null,
+    "strategies": {
+     "Artemis": {
+      "games": 2,
+      "wins": 2,
+      "seat0": 0,
+      "medians": {
+       "first_planter": 2.0,
+       "first_tree": 6.0,
+       "new_trees75": 9.5,
+       "seizes75": 4.5,
+       "tree_income75": 748.93,
+       "base_receipts75": 998.9,
+       "trees75": 7.0,
+       "collector_turns75": 416.5,
+       "planter_turns75": 154.0,
+       "empty_pressure75": 10.5,
+       "cash_margin75": 235.7,
+       "score_margin": 1637.57
+      },
+      "opening": {
+       "WAIT": 2
+      }
+     },
+     "Apollo": {
+      "games": 2,
+      "wins": 2,
+      "seat0": 0,
+      "medians": {
+       "first_planter": 1.0,
+       "first_tree": 6.5,
+       "new_trees75": 10.0,
+       "seizes75": 5.5,
+       "tree_income75": 1136.41,
+       "base_receipts75": 1010.33,
+       "trees75": 9.5,
+       "collector_turns75": 371.5,
+       "planter_turns75": 163.0,
+       "empty_pressure75": 17.0,
+       "cash_margin75": 620.45,
+       "score_margin": 2485.62
+      },
+      "opening": {
+       "RECCOLLECTOR+RECPLANTER": 2
+      }
+     },
+     "yan-v5": {
+      "games": 3,
+      "wins": 3,
+      "seat0": 2,
+      "medians": {
+       "first_planter": 7,
+       "first_tree": 13,
+       "new_trees75": 9,
+       "seizes75": 4,
+       "tree_income75": 692.16,
+       "base_receipts75": 1131.35,
+       "trees75": 2,
+       "collector_turns75": 451,
+       "planter_turns75": 112,
+       "empty_pressure75": 11,
+       "cash_margin75": 283.02,
+       "score_margin": 1285.4
+      },
+      "opening": {
+       "RECCOLLECTOR+RECCOLLECTOR": 3
+      }
+     }
+    }
+   },
+   {
+    "opponent": "RyanX-AIPowercore-it940-v4b",
+    "opponent_id": "40a58f89955a8b792d08b4bf5aeb3e53",
+    "seat": null,
+    "strategies": {
+     "Artemis": {
+      "games": 3,
+      "wins": 3,
+      "seat0": 3,
+      "medians": {
+       "first_planter": 2,
+       "first_tree": 8,
+       "new_trees75": 6,
+       "seizes75": 3,
+       "tree_income75": 772.36,
+       "base_receipts75": 1063.99,
+       "trees75": 5,
+       "collector_turns75": 395,
+       "planter_turns75": 156,
+       "empty_pressure75": 3,
+       "cash_margin75": 117.49,
+       "score_margin": 498.49
+      },
+      "opening": {
+       "WAIT": 3
+      }
+     },
+     "Apollo": {
+      "games": 7,
+      "wins": 6,
+      "seat0": 2,
+      "medians": {
+       "first_planter": 1,
+       "first_tree": 12,
+       "new_trees75": 9,
+       "seizes75": 4,
+       "tree_income75": 771.24,
+       "base_receipts75": 1038.66,
+       "trees75": 8,
+       "collector_turns75": 398,
+       "planter_turns75": 155,
+       "empty_pressure75": 4,
+       "cash_margin75": 156.18,
+       "score_margin": 1325.89
+      },
+      "opening": {
+       "RECCOLLECTOR+RECPLANTER": 7
+      }
+     },
+     "yan-v5": {
+      "games": 3,
+      "wins": 1,
+      "seat0": 1,
+      "medians": {
+       "first_planter": 6,
+       "first_tree": 23,
+       "new_trees75": 8,
+       "seizes75": 2,
+       "tree_income75": 697.0,
+       "base_receipts75": 1309.43,
+       "trees75": 4,
+       "collector_turns75": 433,
+       "planter_turns75": 132,
+       "empty_pressure75": 16,
+       "cash_margin75": 528.79,
+       "score_margin": -832.01
+      },
+      "opening": {
+       "RECCOLLECTOR+RECCOLLECTOR": 3
+      }
+     }
+    }
+   },
+   {
+    "opponent": "小肥鱼v5-it720",
+    "opponent_id": "6274e28186ca0f0a5a1022fd098255ee",
+    "seat": null,
+    "strategies": {
+     "Artemis": {
+      "games": 2,
+      "wins": 2,
+      "seat0": 1,
+      "medians": {
+       "first_planter": 2.5,
+       "first_tree": 8.5,
+       "new_trees75": 8.5,
+       "seizes75": 2.0,
+       "tree_income75": 839.58,
+       "base_receipts75": 1130.7,
+       "trees75": 7.5,
+       "collector_turns75": 378.5,
+       "planter_turns75": 119.0,
+       "empty_pressure75": 3.5,
+       "cash_margin75": 318.23,
+       "score_margin": 1390.1
+      },
+      "opening": {
+       "WAIT": 2
+      }
+     },
+     "Apollo": {
+      "games": 3,
+      "wins": 3,
+      "seat0": 3,
+      "medians": {
+       "first_planter": 1,
+       "first_tree": 7,
+       "new_trees75": 6,
+       "seizes75": 4,
+       "tree_income75": 731.06,
+       "base_receipts75": 705.11,
+       "trees75": 9,
+       "collector_turns75": 350,
+       "planter_turns75": 127,
+       "empty_pressure75": 3,
+       "cash_margin75": -256.34,
+       "score_margin": 1283.38
+      },
+      "opening": {
+       "RECCOLLECTOR+RECPLANTER": 3
+      }
+     },
+     "yan-v5": {
+      "games": 4,
+      "wins": 2,
+      "seat0": 3,
+      "medians": {
+       "first_planter": 7.0,
+       "first_tree": 13.5,
+       "new_trees75": 7.0,
+       "seizes75": 4.5,
+       "tree_income75": 725.27,
+       "base_receipts75": 1031.85,
+       "trees75": 5.0,
+       "collector_turns75": 422.5,
+       "planter_turns75": 119.5,
+       "empty_pressure75": 5.5,
+       "cash_margin75": -177.47,
+       "score_margin": -517.36
+      },
+      "opening": {
+       "RECCOLLECTOR+RECCOLLECTOR": 4
+      }
+     }
+    }
+   },
+   {
+    "opponent": "claude-AlphaCarbon-Master7sE",
+    "opponent_id": "6b717fdd3d51a00f8874148b2aeb9b02",
+    "seat": null,
+    "strategies": {
+     "Artemis": {
+      "games": 4,
+      "wins": 3,
+      "seat0": 0,
+      "medians": {
+       "first_planter": 2.0,
+       "first_tree": 8.0,
+       "new_trees75": 9.0,
+       "seizes75": 2.0,
+       "tree_income75": 984.22,
+       "base_receipts75": 776.6,
+       "trees75": 6.5,
+       "collector_turns75": 356.5,
+       "planter_turns75": 136.0,
+       "empty_pressure75": 4.5,
+       "cash_margin75": 166.89,
+       "score_margin": 105.19
+      },
+      "opening": {
+       "WAIT": 4
+      }
+     },
+     "Apollo": {
+      "games": 6,
+      "wins": 4,
+      "seat0": 2,
+      "medians": {
+       "first_planter": 1.0,
+       "first_tree": 7.5,
+       "new_trees75": 10.0,
+       "seizes75": 1.5,
+       "tree_income75": 1033.48,
+       "base_receipts75": 809.88,
+       "trees75": 6.0,
+       "collector_turns75": 395.5,
+       "planter_turns75": 148.5,
+       "empty_pressure75": 6.5,
+       "cash_margin75": 367.3,
+       "score_margin": 364.98
+      },
+      "opening": {
+       "RECCOLLECTOR+RECPLANTER": 6
+      }
+     },
+     "yan-v5": {
+      "games": 2,
+      "wins": 0,
+      "seat0": 1,
+      "medians": {
+       "first_planter": 8.5,
+       "first_tree": 14.0,
+       "new_trees75": 4.5,
+       "seizes75": 0.5,
+       "tree_income75": 146.9,
+       "base_receipts75": 397.93,
+       "trees75": 0.0,
+       "collector_turns75": 223.5,
+       "planter_turns75": 93.0,
+       "empty_pressure75": 0.0,
+       "cash_margin75": -410.34,
+       "score_margin": -3240.75
+      },
+      "opening": {
+       "RECCOLLECTOR+RECCOLLECTOR": 2
+      }
+     }
+    }
+   },
+   {
+    "opponent": "ClaudeFable5.2-v8",
+    "opponent_id": "9a48e91843cb609b25875749aff9b7e0",
+    "seat": null,
+    "strategies": {
+     "Artemis": {
+      "games": 2,
+      "wins": 2,
+      "seat0": 1,
+      "medians": {
+       "first_planter": 2.0,
+       "first_tree": 9.5,
+       "new_trees75": 4.5,
+       "seizes75": 5.5,
+       "tree_income75": 612.77,
+       "base_receipts75": 840.67,
+       "trees75": 6.5,
+       "collector_turns75": 338.5,
+       "planter_turns75": 130.0,
+       "empty_pressure75": 5.0,
+       "cash_margin75": -230.52,
+       "score_margin": 387.69
+      },
+      "opening": {
+       "WAIT": 2
+      }
+     },
+     "Apollo": {
+      "games": 2,
+      "wins": 2,
+      "seat0": 1,
+      "medians": {
+       "first_planter": 1.0,
+       "first_tree": 9.5,
+       "new_trees75": 11.5,
+       "seizes75": 4.0,
+       "tree_income75": 1100.81,
+       "base_receipts75": 954.15,
+       "trees75": 8.0,
+       "collector_turns75": 390.0,
+       "planter_turns75": 157.0,
+       "empty_pressure75": 20.0,
+       "cash_margin75": 453.27,
+       "score_margin": 6754.74
+      },
+      "opening": {
+       "RECCOLLECTOR+RECPLANTER": 2
+      }
+     },
+     "yan-v5": {
+      "games": 3,
+      "wins": 3,
+      "seat0": 3,
+      "medians": {
+       "first_planter": 6,
+       "first_tree": 13,
+       "new_trees75": 7,
+       "seizes75": 3,
+       "tree_income75": 631.88,
+       "base_receipts75": 1151.95,
+       "trees75": 6,
+       "collector_turns75": 468,
+       "planter_turns75": 113,
+       "empty_pressure75": 8,
+       "cash_margin75": 182.28,
+       "score_margin": 1317.7
+      },
+      "opening": {
+       "RECCOLLECTOR+RECCOLLECTOR": 3
+      }
+     }
+    }
+   },
+   {
+    "opponent": "小肥鱼v5-late2s",
+    "opponent_id": "a32c0c237253d9948b053755d241ad14",
+    "seat": null,
+    "strategies": {
+     "Artemis": {
+      "games": 2,
+      "wins": 2,
+      "seat0": 1,
+      "medians": {
+       "first_planter": 2.5,
+       "first_tree": 8.0,
+       "new_trees75": 9.5,
+       "seizes75": 1.5,
+       "tree_income75": 940.98,
+       "base_receipts75": 822.72,
+       "trees75": 5.5,
+       "collector_turns75": 410.5,
+       "planter_turns75": 143.0,
+       "empty_pressure75": 34.5,
+       "cash_margin75": 200.56,
+       "score_margin": 3611.15
+      },
+      "opening": {
+       "WAIT": 2
+      }
+     },
+     "Apollo": {
+      "games": 2,
+      "wins": 2,
+      "seat0": 2,
+      "medians": {
+       "first_planter": 1.0,
+       "first_tree": 10.0,
+       "new_trees75": 7.5,
+       "seizes75": 6.0,
+       "tree_income75": 699.6,
+       "base_receipts75": 1020.3,
+       "trees75": 8.0,
+       "collector_turns75": 371.5,
+       "planter_turns75": 165.5,
+       "empty_pressure75": 13.5,
+       "cash_margin75": 353.33,
+       "score_margin": 5950.15
+      },
+      "opening": {
+       "RECCOLLECTOR+RECPLANTER": 2
+      }
+     },
+     "yan-v5": {
+      "games": 3,
+      "wins": 3,
+      "seat0": 2,
+      "medians": {
+       "first_planter": 9,
+       "first_tree": 21,
+       "new_trees75": 4,
+       "seizes75": 2,
+       "tree_income75": 438.43,
+       "base_receipts75": 1212.5,
+       "trees75": 1,
+       "collector_turns75": 455,
+       "planter_turns75": 113,
+       "empty_pressure75": 2,
+       "cash_margin75": 169.77,
+       "score_margin": 308.15
+      },
+      "opening": {
+       "RECCOLLECTOR+RECCOLLECTOR": 3
+      }
+     }
+    }
+   },
+   {
+    "opponent": "小肥鱼v5-it720e20",
+    "opponent_id": "a94f304f3e203fe0016849d44fc073b3",
+    "seat": null,
+    "strategies": {
+     "Artemis": {
+      "games": 2,
+      "wins": 2,
+      "seat0": 0,
+      "medians": {
+       "first_planter": 2.5,
+       "first_tree": 16.0,
+       "new_trees75": 8.5,
+       "seizes75": 4.0,
+       "tree_income75": 854.32,
+       "base_receipts75": 733.95,
+       "trees75": 5.0,
+       "collector_turns75": 375.5,
+       "planter_turns75": 138.0,
+       "empty_pressure75": 16.0,
+       "cash_margin75": -146.68,
+       "score_margin": 1996.18
+      },
+      "opening": {
+       "WAIT": 2
+      }
+     },
+     "Apollo": {
+      "games": 2,
+      "wins": 2,
+      "seat0": 2,
+      "medians": {
+       "first_planter": 1.0,
+       "first_tree": 4.0,
+       "new_trees75": 9.5,
+       "seizes75": 6.0,
+       "tree_income75": 1203.31,
+       "base_receipts75": 874.81,
+       "trees75": 9.5,
+       "collector_turns75": 395.0,
+       "planter_turns75": 158.0,
+       "empty_pressure75": 11.0,
+       "cash_margin75": 482.82,
+       "score_margin": 2014.51
+      },
+      "opening": {
+       "RECCOLLECTOR+RECPLANTER": 2
+      }
+     },
+     "yan-v5": {
+      "games": 5,
+      "wins": 3,
+      "seat0": 4,
+      "medians": {
+       "first_planter": 9,
+       "first_tree": 14,
+       "new_trees75": 8,
+       "seizes75": 2,
+       "tree_income75": 523.15,
+       "base_receipts75": 926.53,
+       "trees75": 5,
+       "collector_turns75": 431,
+       "planter_turns75": 120,
+       "empty_pressure75": 6,
+       "cash_margin75": 69.28,
+       "score_margin": 38.74
+      },
+      "opening": {
+       "RECCOLLECTOR+RECCOLLECTOR": 5
+      }
+     }
+    }
+   },
+   {
+    "opponent": "Master3-Plus",
+    "opponent_id": "bc00764a55990ca3d969a002545c70ff",
+    "seat": null,
+    "strategies": {
+     "Artemis": {
+      "games": 1,
+      "wins": 1,
+      "seat0": 0,
+      "medians": {
+       "first_planter": 2,
+       "first_tree": 12,
+       "new_trees75": 10,
+       "seizes75": 6,
+       "tree_income75": 919.55,
+       "base_receipts75": 987.46,
+       "trees75": 9,
+       "collector_turns75": 388,
+       "planter_turns75": 182,
+       "empty_pressure75": 27,
+       "cash_margin75": 233.64,
+       "score_margin": 3276.86
+      },
+      "opening": {
+       "WAIT": 1
+      }
+     },
+     "Apollo": {
+      "games": 2,
+      "wins": 2,
+      "seat0": 1,
+      "medians": {
+       "first_planter": 1.0,
+       "first_tree": 6.0,
+       "new_trees75": 10.0,
+       "seizes75": 3.5,
+       "tree_income75": 971.35,
+       "base_receipts75": 960.65,
+       "trees75": 9.5,
+       "collector_turns75": 388.0,
+       "planter_turns75": 149.0,
+       "empty_pressure75": 54.5,
+       "cash_margin75": 551.71,
+       "score_margin": 6457.87
+      },
+      "opening": {
+       "RECCOLLECTOR+RECPLANTER": 2
+      }
+     },
+     "yan-v5": {
+      "games": 3,
+      "wins": 3,
+      "seat0": 1,
+      "medians": {
+       "first_planter": 9,
+       "first_tree": 13,
+       "new_trees75": 6,
+       "seizes75": 6,
+       "tree_income75": 680.13,
+       "base_receipts75": 1531.82,
+       "trees75": 5,
+       "collector_turns75": 427,
+       "planter_turns75": 131,
+       "empty_pressure75": 7,
+       "cash_margin75": 108.23,
+       "score_margin": 1029.03
+      },
+      "opening": {
+       "RECCOLLECTOR+RECCOLLECTOR": 3
+      }
+     }
+    }
+   },
+   {
+    "opponent": "ds-pro-v2",
+    "opponent_id": "ec94599e5182be7d35eb14bc288625cd",
+    "seat": null,
+    "strategies": {
+     "Artemis": {
+      "games": 1,
+      "wins": 1,
+      "seat0": 0,
+      "medians": {
+       "first_planter": 2,
+       "first_tree": 7,
+       "new_trees75": 7,
+       "seizes75": 5,
+       "tree_income75": 826.48,
+       "base_receipts75": 536.8,
+       "trees75": 6,
+       "collector_turns75": 329,
+       "planter_turns75": 207,
+       "empty_pressure75": 10,
+       "cash_margin75": 166.52,
+       "score_margin": 1779.35
+      },
+      "opening": {
+       "WAIT": 1
+      }
+     },
+     "Apollo": {
+      "games": 1,
+      "wins": 1,
+      "seat0": 0,
+      "medians": {
+       "first_planter": 1,
+       "first_tree": 5,
+       "new_trees75": 7,
+       "seizes75": 7,
+       "tree_income75": 918.64,
+       "base_receipts75": 717.94,
+       "trees75": 8,
+       "collector_turns75": 366,
+       "planter_turns75": 185,
+       "empty_pressure75": 33,
+       "cash_margin75": 540.6,
+       "score_margin": 3058.2
+      },
+      "opening": {
+       "RECCOLLECTOR+RECPLANTER": 1
+      }
+     },
+     "yan-v5": {
+      "games": 1,
+      "wins": 1,
+      "seat0": 0,
+      "medians": {
+       "first_planter": 6,
+       "first_tree": 12,
+       "new_trees75": 11,
+       "seizes75": 2,
+       "tree_income75": 721.99,
+       "base_receipts75": 950.26,
+       "trees75": 7,
+       "collector_turns75": 432,
+       "planter_turns75": 125,
+       "empty_pressure75": 13,
+       "cash_margin75": -107.61,
+       "score_margin": 1656.14
+      },
+      "opening": {
+       "RECCOLLECTOR+RECCOLLECTOR": 1
+      }
+     }
+    }
+   },
+   {
+    "opponent": "1C-Testv2",
+    "opponent_id": "f9113ec697b0943601ec961a3ad9c33a",
+    "seat": null,
+    "strategies": {
+     "Artemis": {
+      "games": 2,
+      "wins": 2,
+      "seat0": 1,
+      "medians": {
+       "first_planter": 3.5,
+       "first_tree": 7.5,
+       "new_trees75": 6.0,
+       "seizes75": 6.5,
+       "tree_income75": 747.77,
+       "base_receipts75": 1064.17,
+       "trees75": 8.0,
+       "collector_turns75": 377.5,
+       "planter_turns75": 167.0,
+       "empty_pressure75": 3.0,
+       "cash_margin75": -428.37,
+       "score_margin": 2105.72
+      },
+      "opening": {
+       "WAIT": 2
+      }
+     },
+     "Apollo": {
+      "games": 4,
+      "wins": 4,
+      "seat0": 0,
+      "medians": {
+       "first_planter": 1.0,
+       "first_tree": 8.5,
+       "new_trees75": 8.0,
+       "seizes75": 4.0,
+       "tree_income75": 938.85,
+       "base_receipts75": 784.98,
+       "trees75": 7.5,
+       "collector_turns75": 376.5,
+       "planter_turns75": 166.0,
+       "empty_pressure75": 23.5,
+       "cash_margin75": 413.74,
+       "score_margin": 2296.0
+      },
+      "opening": {
+       "RECCOLLECTOR+RECPLANTER": 4
+      }
+     },
+     "yan-v5": {
+      "games": 3,
+      "wins": 3,
+      "seat0": 2,
+      "medians": {
+       "first_planter": 8,
+       "first_tree": 20,
+       "new_trees75": 9,
+       "seizes75": 1,
+       "tree_income75": 634.51,
+       "base_receipts75": 1076.46,
+       "trees75": 5,
+       "collector_turns75": 405,
+       "planter_turns75": 131,
+       "empty_pressure75": 5,
+       "cash_margin75": 260.35,
+       "score_margin": 428.39
+      },
+      "opening": {
+       "RECCOLLECTOR+RECCOLLECTOR": 3
+      }
+     }
+    }
+   }
+  ]
+ },
+ "matched_opponent_and_seat": {
+  "strata": 11,
+  "strategy_counts": {
+   "Artemis": 19,
+   "Apollo": 25,
+   "yan-v5": 20
+  },
+  "equal_weight_mean_of_stratum_medians": {
+   "Artemis": {
+    "first_planter": 2.18,
+    "first_tree": 8.09,
+    "new_trees75": 8.27,
+    "seizes75": 3.95,
+    "tree_income75": 824.31,
+    "base_receipts75": 905.28,
+    "trees75": 6.91,
+    "collector_turns75": 372.05,
+    "planter_turns75": 158.23,
+    "empty_pressure75": 14.0,
+    "cash_margin75": 119.5,
+    "score_margin": 1956.33
+   },
+   "Apollo": {
+    "first_planter": 1.0,
+    "first_tree": 7.82,
+    "new_trees75": 8.0,
+    "seizes75": 4.41,
+    "tree_income75": 881.47,
+    "base_receipts75": 907.71,
+    "trees75": 7.23,
+    "collector_turns75": 377.18,
+    "planter_turns75": 156.14,
+    "empty_pressure75": 16.5,
+    "cash_margin75": 323.49,
+    "score_margin": 2769.68
+   },
+   "yan-v5": {
+    "first_planter": 7.14,
+    "first_tree": 16.14,
+    "new_trees75": 7.0,
+    "seizes75": 3.27,
+    "tree_income75": 623.48,
+    "base_receipts75": 998.85,
+    "trees75": 4.41,
+    "collector_turns75": 395.41,
+    "planter_turns75": 120.0,
+    "empty_pressure75": 8.45,
+    "cash_margin75": 89.67,
+    "score_margin": 213.68
+   }
+  },
+  "groups": [
+   {
+    "opponent": "SpongeBaby-CarbonNet-v3.0",
+    "opponent_id": "04cf11d7f98adf0142da924be98f8aa6",
+    "seat": 1,
+    "strategies": {
+     "Artemis": {
+      "games": 2,
+      "wins": 2,
+      "seat0": 0,
+      "medians": {
+       "first_planter": 2.0,
+       "first_tree": 6.0,
+       "new_trees75": 8.5,
+       "seizes75": 4.0,
+       "tree_income75": 808.61,
+       "base_receipts75": 833.04,
+       "trees75": 6.0,
+       "collector_turns75": 362.5,
+       "planter_turns75": 175.0,
+       "empty_pressure75": 11.5,
+       "cash_margin75": 61.59,
+       "score_margin": 3321.59
+      },
+      "opening": {
+       "WAIT": 2
+      }
+     },
+     "Apollo": {
+      "games": 3,
+      "wins": 3,
+      "seat0": 0,
+      "medians": {
+       "first_planter": 1,
+       "first_tree": 10,
+       "new_trees75": 5,
+       "seizes75": 5,
+       "tree_income75": 619.27,
+       "base_receipts75": 1146.88,
+       "trees75": 5,
+       "collector_turns75": 394,
+       "planter_turns75": 148,
+       "empty_pressure75": 6,
+       "cash_margin75": 165.21,
+       "score_margin": 1157.51
+      },
+      "opening": {
+       "RECCOLLECTOR+RECPLANTER": 3
+      }
+     },
+     "yan-v5": {
+      "games": 3,
+      "wins": 0,
+      "seat0": 0,
+      "medians": {
+       "first_planter": 7,
+       "first_tree": 14,
+       "new_trees75": 4,
+       "seizes75": 3,
+       "tree_income75": 272.91,
+       "base_receipts75": 693.93,
+       "trees75": 2,
+       "collector_turns75": 369,
+       "planter_turns75": 129,
+       "empty_pressure75": 1,
+       "cash_margin75": -505.1,
+       "score_margin": -902.95
+      },
+      "opening": {
+       "RECCOLLECTOR+RECCOLLECTOR": 3
+      }
+     }
+    }
+   },
+   {
+    "opponent": "SpongeBaby-CarbonNet-v2.0",
+    "opponent_id": "182aed58db5991bcd0df65cd41a667be",
+    "seat": 0,
+    "strategies": {
+     "Artemis": {
+      "games": 2,
+      "wins": 2,
+      "seat0": 2,
+      "medians": {
+       "first_planter": 2.0,
+       "first_tree": 9.0,
+       "new_trees75": 8.0,
+       "seizes75": 4.0,
+       "tree_income75": 685.27,
+       "base_receipts75": 753.88,
+       "trees75": 6.5,
+       "collector_turns75": 344.0,
+       "planter_turns75": 152.5,
+       "empty_pressure75": 2.5,
+       "cash_margin75": -246.86,
+       "score_margin": 1334.53
+      },
+      "opening": {
+       "WAIT": 2
+      }
+     },
+     "Apollo": {
+      "games": 2,
+      "wins": 2,
+      "seat0": 2,
+      "medians": {
+       "first_planter": 1.0,
+       "first_tree": 11.5,
+       "new_trees75": 7.0,
+       "seizes75": 2.0,
+       "tree_income75": 706.55,
+       "base_receipts75": 990.33,
+       "trees75": 3.5,
+       "collector_turns75": 353.0,
+       "planter_turns75": 166.5,
+       "empty_pressure75": 3.0,
+       "cash_margin75": 57.87,
+       "score_margin": 1071.55
+      },
+      "opening": {
+       "RECCOLLECTOR+RECPLANTER": 2
+      }
+     },
+     "yan-v5": {
+      "games": 2,
+      "wins": 1,
+      "seat0": 2,
+      "medians": {
+       "first_planter": 12.5,
+       "first_tree": 26.5,
+       "new_trees75": 7.5,
+       "seizes75": 5.5,
+       "tree_income75": 765.33,
+       "base_receipts75": 1030.57,
+       "trees75": 5.0,
+       "collector_turns75": 337.5,
+       "planter_turns75": 157.0,
+       "empty_pressure75": 6.0,
+       "cash_margin75": 195.46,
+       "score_margin": 66.85
+      },
+      "opening": {
+       "RECCOLLECTOR+RECCOLLECTOR": 2
+      }
+     }
+    }
+   },
+   {
+    "opponent": "ClaudeFable5.2-v7",
+    "opponent_id": "2d4e4c772f057208b7121ed76dba4f33",
+    "seat": 1,
+    "strategies": {
+     "Artemis": {
+      "games": 2,
+      "wins": 2,
+      "seat0": 0,
+      "medians": {
+       "first_planter": 2.0,
+       "first_tree": 6.0,
+       "new_trees75": 9.5,
+       "seizes75": 4.5,
+       "tree_income75": 748.93,
+       "base_receipts75": 998.9,
+       "trees75": 7.0,
+       "collector_turns75": 416.5,
+       "planter_turns75": 154.0,
+       "empty_pressure75": 10.5,
+       "cash_margin75": 235.7,
+       "score_margin": 1637.57
+      },
+      "opening": {
+       "WAIT": 2
+      }
+     },
+     "Apollo": {
+      "games": 2,
+      "wins": 2,
+      "seat0": 0,
+      "medians": {
+       "first_planter": 1.0,
+       "first_tree": 6.5,
+       "new_trees75": 10.0,
+       "seizes75": 5.5,
+       "tree_income75": 1136.41,
+       "base_receipts75": 1010.33,
+       "trees75": 9.5,
+       "collector_turns75": 371.5,
+       "planter_turns75": 163.0,
+       "empty_pressure75": 17.0,
+       "cash_margin75": 620.45,
+       "score_margin": 2485.62
+      },
+      "opening": {
+       "RECCOLLECTOR+RECPLANTER": 2
+      }
+     },
+     "yan-v5": {
+      "games": 1,
+      "wins": 1,
+      "seat0": 0,
+      "medians": {
+       "first_planter": 7,
+       "first_tree": 16,
+       "new_trees75": 10,
+       "seizes75": 1,
+       "tree_income75": 886.16,
+       "base_receipts75": 1131.35,
+       "trees75": 2,
+       "collector_turns75": 461,
+       "planter_turns75": 84,
+       "empty_pressure75": 1,
+       "cash_margin75": 626.41,
+       "score_margin": 1313.43
+      },
+      "opening": {
+       "RECCOLLECTOR+RECCOLLECTOR": 1
+      }
+     }
+    }
+   },
+   {
+    "opponent": "RyanX-AIPowercore-it940-v4b",
+    "opponent_id": "40a58f89955a8b792d08b4bf5aeb3e53",
+    "seat": 0,
+    "strategies": {
+     "Artemis": {
+      "games": 3,
+      "wins": 3,
+      "seat0": 3,
+      "medians": {
+       "first_planter": 2,
+       "first_tree": 8,
+       "new_trees75": 6,
+       "seizes75": 3,
+       "tree_income75": 772.36,
+       "base_receipts75": 1063.99,
+       "trees75": 5,
+       "collector_turns75": 395,
+       "planter_turns75": 156,
+       "empty_pressure75": 3,
+       "cash_margin75": 117.49,
+       "score_margin": 498.49
+      },
+      "opening": {
+       "WAIT": 3
+      }
+     },
+     "Apollo": {
+      "games": 2,
+      "wins": 1,
+      "seat0": 2,
+      "medians": {
+       "first_planter": 1.0,
+       "first_tree": 9.0,
+       "new_trees75": 8.0,
+       "seizes75": 2.0,
+       "tree_income75": 717.34,
+       "base_receipts75": 964.07,
+       "trees75": 7.0,
+       "collector_turns75": 402.5,
+       "planter_turns75": 148.0,
+       "empty_pressure75": 4.0,
+       "cash_margin75": 277.36,
+       "score_margin": 717.38
+      },
+      "opening": {
+       "RECCOLLECTOR+RECPLANTER": 2
+      }
+     },
+     "yan-v5": {
+      "games": 1,
+      "wins": 1,
+      "seat0": 1,
+      "medians": {
+       "first_planter": 6,
+       "first_tree": 23,
+       "new_trees75": 8,
+       "seizes75": 3,
+       "tree_income75": 697.0,
+       "base_receipts75": 1334.9,
+       "trees75": 8,
+       "collector_turns75": 433,
+       "planter_turns75": 120,
+       "empty_pressure75": 39,
+       "cash_margin75": 796.81,
+       "score_margin": 233.05
+      },
+      "opening": {
+       "RECCOLLECTOR+RECCOLLECTOR": 1
+      }
+     }
+    }
+   },
+   {
+    "opponent": "小肥鱼v5-it720",
+    "opponent_id": "6274e28186ca0f0a5a1022fd098255ee",
+    "seat": 0,
+    "strategies": {
+     "Artemis": {
+      "games": 1,
+      "wins": 1,
+      "seat0": 1,
+      "medians": {
+       "first_planter": 2,
+       "first_tree": 10,
+       "new_trees75": 8,
+       "seizes75": 4,
+       "tree_income75": 747.78,
+       "base_receipts75": 1294.29,
+       "trees75": 7,
+       "collector_turns75": 393,
+       "planter_turns75": 124,
+       "empty_pressure75": 4,
+       "cash_margin75": 315.85,
+       "score_margin": 1257.26
+      },
+      "opening": {
+       "WAIT": 1
+      }
+     },
+     "Apollo": {
+      "games": 3,
+      "wins": 3,
+      "seat0": 3,
+      "medians": {
+       "first_planter": 1,
+       "first_tree": 7,
+       "new_trees75": 6,
+       "seizes75": 4,
+       "tree_income75": 731.06,
+       "base_receipts75": 705.11,
+       "trees75": 9,
+       "collector_turns75": 350,
+       "planter_turns75": 127,
+       "empty_pressure75": 3,
+       "cash_margin75": -256.34,
+       "score_margin": 1283.38
+      },
+      "opening": {
+       "RECCOLLECTOR+RECPLANTER": 3
+      }
+     },
+     "yan-v5": {
+      "games": 3,
+      "wins": 1,
+      "seat0": 3,
+      "medians": {
+       "first_planter": 6,
+       "first_tree": 16,
+       "new_trees75": 5,
+       "seizes75": 5,
+       "tree_income75": 694.38,
+       "base_receipts75": 990.66,
+       "trees75": 4,
+       "collector_turns75": 414,
+       "planter_turns75": 128,
+       "empty_pressure75": 10,
+       "cash_margin75": 15.81,
+       "score_margin": -1253.38
+      },
+      "opening": {
+       "RECCOLLECTOR+RECCOLLECTOR": 3
+      }
+     }
+    }
+   },
+   {
+    "opponent": "claude-AlphaCarbon-Master7sE",
+    "opponent_id": "6b717fdd3d51a00f8874148b2aeb9b02",
+    "seat": 1,
+    "strategies": {
+     "Artemis": {
+      "games": 4,
+      "wins": 3,
+      "seat0": 0,
+      "medians": {
+       "first_planter": 2.0,
+       "first_tree": 8.0,
+       "new_trees75": 9.0,
+       "seizes75": 2.0,
+       "tree_income75": 984.22,
+       "base_receipts75": 776.6,
+       "trees75": 6.5,
+       "collector_turns75": 356.5,
+       "planter_turns75": 136.0,
+       "empty_pressure75": 4.5,
+       "cash_margin75": 166.89,
+       "score_margin": 105.19
+      },
+      "opening": {
+       "WAIT": 4
+      }
+     },
+     "Apollo": {
+      "games": 4,
+      "wins": 2,
+      "seat0": 0,
+      "medians": {
+       "first_planter": 1.0,
+       "first_tree": 6.5,
+       "new_trees75": 10.5,
+       "seizes75": 3.0,
+       "tree_income75": 1240.11,
+       "base_receipts75": 759.77,
+       "trees75": 6.0,
+       "collector_turns75": 402.0,
+       "planter_turns75": 134.5,
+       "empty_pressure75": 6.5,
+       "cash_margin75": 321.89,
+       "score_margin": 12.52
+      },
+      "opening": {
+       "RECCOLLECTOR+RECPLANTER": 4
+      }
+     },
+     "yan-v5": {
+      "games": 1,
+      "wins": 0,
+      "seat0": 0,
+      "medians": {
+       "first_planter": 7,
+       "first_tree": 14,
+       "new_trees75": 4,
+       "seizes75": 1,
+       "tree_income75": 191.36,
+       "base_receipts75": 276.39,
+       "trees75": 0,
+       "collector_turns75": 154,
+       "planter_turns75": 90,
+       "empty_pressure75": 0,
+       "cash_margin75": -639.99,
+       "score_margin": -1746.47
+      },
+      "opening": {
+       "RECCOLLECTOR+RECCOLLECTOR": 1
+      }
+     }
+    }
+   },
+   {
+    "opponent": "ClaudeFable5.2-v8",
+    "opponent_id": "9a48e91843cb609b25875749aff9b7e0",
+    "seat": 0,
+    "strategies": {
+     "Artemis": {
+      "games": 1,
+      "wins": 1,
+      "seat0": 1,
+      "medians": {
+       "first_planter": 2,
+       "first_tree": 7,
+       "new_trees75": 7,
+       "seizes75": 4,
+       "tree_income75": 757.08,
+       "base_receipts75": 722.94,
+       "trees75": 6,
+       "collector_turns75": 324,
+       "planter_turns75": 130,
+       "empty_pressure75": 10,
+       "cash_margin75": -31.18,
+       "score_margin": 399.34
+      },
+      "opening": {
+       "WAIT": 1
+      }
+     },
+     "Apollo": {
+      "games": 1,
+      "wins": 1,
+      "seat0": 1,
+      "medians": {
+       "first_planter": 1,
+       "first_tree": 6,
+       "new_trees75": 9,
+       "seizes75": 6,
+       "tree_income75": 1015.15,
+       "base_receipts75": 1071.93,
+       "trees75": 6,
+       "collector_turns75": 405,
+       "planter_turns75": 165,
+       "empty_pressure75": 8,
+       "cash_margin75": 521.48,
+       "score_margin": 2029.95
+      },
+      "opening": {
+       "RECCOLLECTOR+RECPLANTER": 1
+      }
+     },
+     "yan-v5": {
+      "games": 3,
+      "wins": 3,
+      "seat0": 3,
+      "medians": {
+       "first_planter": 6,
+       "first_tree": 13,
+       "new_trees75": 7,
+       "seizes75": 3,
+       "tree_income75": 631.88,
+       "base_receipts75": 1151.95,
+       "trees75": 6,
+       "collector_turns75": 468,
+       "planter_turns75": 113,
+       "empty_pressure75": 8,
+       "cash_margin75": 182.28,
+       "score_margin": 1317.7
+      },
+      "opening": {
+       "RECCOLLECTOR+RECCOLLECTOR": 3
+      }
+     }
+    }
+   },
+   {
+    "opponent": "小肥鱼v5-late2s",
+    "opponent_id": "a32c0c237253d9948b053755d241ad14",
+    "seat": 0,
+    "strategies": {
+     "Artemis": {
+      "games": 1,
+      "wins": 1,
+      "seat0": 1,
+      "medians": {
+       "first_planter": 2,
+       "first_tree": 8,
+       "new_trees75": 12,
+       "seizes75": 1,
+       "tree_income75": 1135.67,
+       "base_receipts75": 703.55,
+       "trees75": 9,
+       "collector_turns75": 394,
+       "planter_turns75": 161,
+       "empty_pressure75": 66,
+       "cash_margin75": 470.29,
+       "score_margin": 5754.12
+      },
+      "opening": {
+       "WAIT": 1
+      }
+     },
+     "Apollo": {
+      "games": 2,
+      "wins": 2,
+      "seat0": 2,
+      "medians": {
+       "first_planter": 1.0,
+       "first_tree": 10.0,
+       "new_trees75": 7.5,
+       "seizes75": 6.0,
+       "tree_income75": 699.6,
+       "base_receipts75": 1020.3,
+       "trees75": 8.0,
+       "collector_turns75": 371.5,
+       "planter_turns75": 165.5,
+       "empty_pressure75": 13.5,
+       "cash_margin75": 353.33,
+       "score_margin": 5950.15
+      },
+      "opening": {
+       "RECCOLLECTOR+RECPLANTER": 2
+      }
+     },
+     "yan-v5": {
+      "games": 2,
+      "wins": 2,
+      "seat0": 2,
+      "medians": {
+       "first_planter": 7.5,
+       "first_tree": 16.0,
+       "new_trees75": 4.5,
+       "seizes75": 5.0,
+       "tree_income75": 574.46,
+       "base_receipts75": 1133.39,
+       "trees75": 3.0,
+       "collector_turns75": 445.5,
+       "planter_turns75": 119.0,
+       "empty_pressure75": 3.0,
+       "cash_margin75": 103.48,
+       "score_margin": 179.01
+      },
+      "opening": {
+       "RECCOLLECTOR+RECCOLLECTOR": 2
+      }
+     }
+    }
+   },
+   {
+    "opponent": "Master3-Plus",
+    "opponent_id": "bc00764a55990ca3d969a002545c70ff",
+    "seat": 1,
+    "strategies": {
+     "Artemis": {
+      "games": 1,
+      "wins": 1,
+      "seat0": 0,
+      "medians": {
+       "first_planter": 2,
+       "first_tree": 12,
+       "new_trees75": 10,
+       "seizes75": 6,
+       "tree_income75": 919.55,
+       "base_receipts75": 987.46,
+       "trees75": 9,
+       "collector_turns75": 388,
+       "planter_turns75": 182,
+       "empty_pressure75": 27,
+       "cash_margin75": 233.64,
+       "score_margin": 3276.86
+      },
+      "opening": {
+       "WAIT": 1
+      }
+     },
+     "Apollo": {
+      "games": 1,
+      "wins": 1,
+      "seat0": 0,
+      "medians": {
+       "first_planter": 1,
+       "first_tree": 6,
+       "new_trees75": 10,
+       "seizes75": 4,
+       "tree_income75": 973.23,
+       "base_receipts75": 813.19,
+       "trees75": 10,
+       "collector_turns75": 357,
+       "planter_turns75": 149,
+       "empty_pressure75": 64,
+       "cash_margin75": 542.81,
+       "score_margin": 10404.2
+      },
+      "opening": {
+       "RECCOLLECTOR+RECPLANTER": 1
+      }
+     },
+     "yan-v5": {
+      "games": 2,
+      "wins": 2,
+      "seat0": 0,
+      "medians": {
+       "first_planter": 7.5,
+       "first_tree": 13.0,
+       "new_trees75": 6.0,
+       "seizes75": 6.5,
+       "tree_income75": 788.26,
+       "base_receipts75": 1269.05,
+       "trees75": 6.5,
+       "collector_turns75": 426.5,
+       "planter_turns75": 124.0,
+       "empty_pressure75": 8.0,
+       "cash_margin75": 137.07,
+       "score_margin": 1058.72
+      },
+      "opening": {
+       "RECCOLLECTOR+RECCOLLECTOR": 2
+      }
+     }
+    }
+   },
+   {
+    "opponent": "ds-pro-v2",
+    "opponent_id": "ec94599e5182be7d35eb14bc288625cd",
+    "seat": 1,
+    "strategies": {
+     "Artemis": {
+      "games": 1,
+      "wins": 1,
+      "seat0": 0,
+      "medians": {
+       "first_planter": 2,
+       "first_tree": 7,
+       "new_trees75": 7,
+       "seizes75": 5,
+       "tree_income75": 826.48,
+       "base_receipts75": 536.8,
+       "trees75": 6,
+       "collector_turns75": 329,
+       "planter_turns75": 207,
+       "empty_pressure75": 10,
+       "cash_margin75": 166.52,
+       "score_margin": 1779.35
+      },
+      "opening": {
+       "WAIT": 1
+      }
+     },
+     "Apollo": {
+      "games": 1,
+      "wins": 1,
+      "seat0": 0,
+      "medians": {
+       "first_planter": 1,
+       "first_tree": 5,
+       "new_trees75": 7,
+       "seizes75": 7,
+       "tree_income75": 918.64,
+       "base_receipts75": 717.94,
+       "trees75": 8,
+       "collector_turns75": 366,
+       "planter_turns75": 185,
+       "empty_pressure75": 33,
+       "cash_margin75": 540.6,
+       "score_margin": 3058.2
+      },
+      "opening": {
+       "RECCOLLECTOR+RECPLANTER": 1
+      }
+     },
+     "yan-v5": {
+      "games": 1,
+      "wins": 1,
+      "seat0": 0,
+      "medians": {
+       "first_planter": 6,
+       "first_tree": 12,
+       "new_trees75": 11,
+       "seizes75": 2,
+       "tree_income75": 721.99,
+       "base_receipts75": 950.26,
+       "trees75": 7,
+       "collector_turns75": 432,
+       "planter_turns75": 125,
+       "empty_pressure75": 13,
+       "cash_margin75": -107.61,
+       "score_margin": 1656.14
+      },
+      "opening": {
+       "RECCOLLECTOR+RECCOLLECTOR": 1
+      }
+     }
+    }
+   },
+   {
+    "opponent": "1C-Testv2",
+    "opponent_id": "f9113ec697b0943601ec961a3ad9c33a",
+    "seat": 1,
+    "strategies": {
+     "Artemis": {
+      "games": 1,
+      "wins": 1,
+      "seat0": 0,
+      "medians": {
+       "first_planter": 4,
+       "first_tree": 8,
+       "new_trees75": 6,
+       "seizes75": 6,
+       "tree_income75": 681.42,
+       "base_receipts75": 1286.67,
+       "trees75": 8,
+       "collector_turns75": 390,
+       "planter_turns75": 163,
+       "empty_pressure75": 5,
+       "cash_margin75": -175.39,
+       "score_margin": 2155.35
+      },
+      "opening": {
+       "WAIT": 1
+      }
+     },
+     "Apollo": {
+      "games": 4,
+      "wins": 4,
+      "seat0": 0,
+      "medians": {
+       "first_planter": 1.0,
+       "first_tree": 8.5,
+       "new_trees75": 8.0,
+       "seizes75": 4.0,
+       "tree_income75": 938.85,
+       "base_receipts75": 784.98,
+       "trees75": 7.5,
+       "collector_turns75": 376.5,
+       "planter_turns75": 166.0,
+       "empty_pressure75": 23.5,
+       "cash_margin75": 413.74,
+       "score_margin": 2296.0
+      },
+      "opening": {
+       "RECCOLLECTOR+RECPLANTER": 4
+      }
+     },
+     "yan-v5": {
+      "games": 1,
+      "wins": 1,
+      "seat0": 0,
+      "medians": {
+       "first_planter": 6,
+       "first_tree": 14,
+       "new_trees75": 10,
+       "seizes75": 1,
+       "tree_income75": 634.51,
+       "base_receipts75": 1024.91,
+       "trees75": 5,
+       "collector_turns75": 409,
+       "planter_turns75": 131,
+       "empty_pressure75": 4,
+       "cash_margin75": 181.72,
+       "score_margin": 428.39
+      },
+      "opening": {
+       "RECCOLLECTOR+RECCOLLECTOR": 1
+      }
+     }
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,2841 @@
+[
+  {
+    "seed": 171684640,
+    "v6_seat": 0,
+    "original": {
+      "source": "analysis/arena/v6-response-followup.jsonl",
+      "record": {
+        "schema_version": 1,
+        "seed": 171684640,
+        "episode_steps": 300,
+        "turns": 299,
+        "map_sha256": "16c848a403fbce498bbaaa273205ac71e1070ed7dccfffa088b4cf49eaa7e0bd",
+        "layout_sha256": "4008e1d90eefb4e04df8738d8ec1a4f2a9e532e4215adb33f97b454a826edd4b",
+        "engine_sha256": "0fef48294793290f1abf2a4d8f7c464e988c12b7c40f242a2079dc1dc38a3c9c",
+        "status": "completed",
+        "winner": 1,
+        "scores": [
+          7361.87,
+          7667.03
+        ],
+        "cash": [
+          7361.87,
+          7667.03
+        ],
+        "players": [
+          {
+            "name": "yan-v6",
+            "sha256": "1995bbcc07592296e6fe6f816412acccb2d39ea2c79787cd937a210513f69afa",
+            "init_seconds": 3.827787874964997,
+            "total_act_seconds": 131.38969890307635,
+            "max_act_seconds": 0.7625649999827147,
+            "slow_steps": 0,
+            "calls": 299,
+            "search_enabled": true,
+            "searches": 299,
+            "failure": null
+          },
+          {
+            "name": "yan-v5",
+            "sha256": "0a413a11f80f6872a5c8f0d313061d7bf11121ae16fbdad97247ff3cb15242e5",
+            "init_seconds": 3.461352209094912,
+            "total_act_seconds": 128.06853662920184,
+            "max_act_seconds": 0.7771058750804514,
+            "slow_steps": 0,
+            "calls": 299,
+            "search_enabled": true,
+            "searches": 298,
+            "failure": null
+          }
+        ]
+      }
+    },
+    "rerun": {
+      "schema_version": 1,
+      "seed": 171684640,
+      "episode_steps": 300,
+      "turns": 299,
+      "map_sha256": "16c848a403fbce498bbaaa273205ac71e1070ed7dccfffa088b4cf49eaa7e0bd",
+      "layout_sha256": "4008e1d90eefb4e04df8738d8ec1a4f2a9e532e4215adb33f97b454a826edd4b",
+      "engine_sha256": "0fef48294793290f1abf2a4d8f7c464e988c12b7c40f242a2079dc1dc38a3c9c",
+      "status": "completed",
+      "winner": 1,
+      "scores": [
+        7563.25,
+        8072.57
+      ],
+      "cash": [
+        7563.25,
+        8072.57
+      ],
+      "players": [
+        {
+          "name": "yan-v6",
+          "sha256": "1995bbcc07592296e6fe6f816412acccb2d39ea2c79787cd937a210513f69afa",
+          "init_seconds": 2.8396983328275383,
+          "total_act_seconds": 146.1433754961472,
+          "max_act_seconds": 0.793514666846022,
+          "slow_steps": 0,
+          "calls": 299,
+          "search_enabled": true,
+          "searches": 290,
+          "failure": null
+        },
+        {
+          "name": "yan-v5",
+          "sha256": "0a413a11f80f6872a5c8f0d313061d7bf11121ae16fbdad97247ff3cb15242e5",
+          "init_seconds": 2.9277593749575317,
+          "total_act_seconds": 144.71628557820804,
+          "max_act_seconds": 0.8107487079687417,
+          "slow_steps": 0,
+          "calls": 299,
+          "search_enabled": true,
+          "searches": 291,
+          "failure": null
+        }
+      ]
+    },
+    "opening": [
+      {
+        "cash": 80,
+        "cargo": 0,
+        "trees": 0,
+        "collectors": 0,
+        "planters": 0
+      },
+      {
+        "cash": 80,
+        "cargo": 0,
+        "trees": 0,
+        "collectors": 0,
+        "planters": 0
+      }
+    ],
+    "terminal": [
+      {
+        "cash": 7563.25,
+        "cargo": 208.9047,
+        "trees": 0,
+        "collectors": 7,
+        "planters": 1
+      },
+      {
+        "cash": 8072.57,
+        "cargo": 0,
+        "trees": 6,
+        "collectors": 5,
+        "planters": 1
+      }
+    ],
+    "ledger": {
+      "cash": [
+        {
+          "hire_collector": -1440.0,
+          "bank": 8688.0441,
+          "rounding": 0.04851,
+          "hire_planter": -810.0,
+          "plant": -1096.59186,
+          "tree_yield": 2561.74926,
+          "tree_collision": 0.0,
+          "seize": -420.0
+        },
+        {
+          "hire_collector": -1440.0,
+          "bank": 8748.1277,
+          "rounding": 0.00119,
+          "hire_planter": -690.0,
+          "plant": -1436.79063,
+          "tree_yield": 3091.23173,
+          "tree_collision": 0.0,
+          "seize": -280.0
+        }
+      ],
+      "cargo": [
+        {
+          "unload": -8688.0441,
+          "move": 0.0,
+          "harvest": 8870.094,
+          "collision": -232.93308,
+          "enemy_tree": -90.0948,
+          "loot": 256.3002,
+          "loot_from_own": 93.58248
+        },
+        {
+          "unload": -8748.1277,
+          "move": 0.0,
+          "harvest": 8932.1709,
+          "collision": -525.5958,
+          "loot": 139.3506,
+          "enemy_tree": -67.0936,
+          "loot_from_own": 269.2956
+        }
+      ],
+      "counts": [
+        {
+          "hire_collector": 48,
+          "trees_turns": 1311,
+          "collectors_turns": 2228,
+          "planters_turns": 434,
+          "bank": 88,
+          "hire_planter": 27,
+          "collision_collector": 41,
+          "plant": 24,
+          "eligible_tree_turns": 1287,
+          "collision_planter": 26,
+          "seize": 21
+        },
+        {
+          "hire_collector": 48,
+          "trees_turns": 1136,
+          "collectors_turns": 2304,
+          "planters_turns": 359,
+          "bank": 84,
+          "collision_collector": 43,
+          "hire_planter": 23,
+          "plant": 28,
+          "eligible_tree_turns": 1108,
+          "collision_planter": 22,
+          "seize": 14
+        }
+      ],
+      "tree_sources": [
+        {
+          "opposing_cargo": 67.0936,
+          "ground": 2494.65566
+        },
+        {
+          "opposing_cargo": 90.0948,
+          "ground": 3001.13692
+        }
+      ]
+    },
+    "phases": [
+      {
+        "last_turn": 75,
+        "start": [
+          {
+            "cash": 80,
+            "cargo": 0,
+            "trees": 0,
+            "collectors": 0,
+            "planters": 0
+          },
+          {
+            "cash": 80,
+            "cargo": 0,
+            "trees": 0,
+            "collectors": 0,
+            "planters": 0
+          }
+        ],
+        "end": [
+          {
+            "cash": 388.28,
+            "cargo": 634.121,
+            "trees": 5,
+            "collectors": 8,
+            "planters": 1
+          },
+          {
+            "cash": 908.75,
+            "cargo": 518.2677,
+            "trees": 5,
+            "collectors": 8,
+            "planters": 1
+          }
+        ],
+        "ledger": {
+          "cash": [
+            {
+              "hire_collector": -540.0,
+              "bank": 902.8401,
+              "rounding": 0.00212,
+              "hire_planter": -330.0,
+              "plant": -118.69018,
+              "tree_yield": 514.12796,
+              "tree_collision": 0.0,
+              "seize": -120.0
+            },
+            {
+              "hire_collector": -540.0,
+              "bank": 866.124,
+              "rounding": -0.00729,
+              "hire_planter": -270.0,
+              "plant": -394.35721,
+              "tree_yield": 1226.9905,
+              "tree_collision": 0.0,
+              "seize": -60.0
+            }
+          ],
+          "cargo": [
+            {
+              "unload": -902.8401,
+              "move": 0.0,
+              "harvest": 1565.9316,
+              "collision": 0,
+              "enemy_tree": -28.9705
+            },
+            {
+              "unload": -866.124,
+              "move": 0.0,
+              "harvest": 1384.3917,
+              "collision": 0,
+              "loot": 0.0
+            }
+          ],
+          "counts": [
+            {
+              "hire_collector": 18,
+              "trees_turns": 172,
+              "collectors_turns": 372,
+              "planters_turns": 110,
+              "bank": 16,
+              "hire_planter": 11,
+              "collision_collector": 10,
+              "plant": 4,
+              "eligible_tree_turns": 168,
+              "collision_planter": 10,
+              "seize": 6
+            },
+            {
+              "hire_collector": 18,
+              "trees_turns": 281,
+              "collectors_turns": 389,
+              "planters_turns": 94,
+              "bank": 15,
+              "collision_collector": 10,
+              "hire_planter": 9,
+              "plant": 9,
+              "eligible_tree_turns": 272,
+              "collision_planter": 8,
+              "seize": 3
+            }
+          ],
+          "tree_sources": [
+            {
+              "opposing_cargo": 0.0,
+              "ground": 514.12796
+            },
+            {
+              "opposing_cargo": 28.9705,
+              "ground": 1198.02
+            }
+          ]
+        },
+        "v6_minus_v5": {
+          "net_tree": -497.19551,
+          "net_deposits": 36.7161,
+          "base_collisions": 0,
+          "recruitment": -60.0,
+          "rounding": 0.00941
+        }
+      },
+      {
+        "last_turn": 150,
+        "start": [
+          {
+            "cash": 388.28,
+            "cargo": 634.121,
+            "trees": 5,
+            "collectors": 8,
+            "planters": 1
+          },
+          {
+            "cash": 908.75,
+            "cargo": 518.2677,
+            "trees": 5,
+            "collectors": 8,
+            "planters": 1
+          }
+        ],
+        "end": [
+          {
+            "cash": 3141.87,
+            "cargo": 510.7374,
+            "trees": 5,
+            "collectors": 7,
+            "planters": 2
+          },
+          {
+            "cash": 3595.93,
+            "cargo": 278.1252,
+            "trees": 3,
+            "collectors": 8,
+            "planters": 2
+          }
+        ],
+        "ledger": {
+          "cash": [
+            {
+              "hire_planter": -210.0,
+              "tree_yield": 772.1778,
+              "rounding": 0.00074,
+              "bank": 2956.56181,
+              "plant": -505.15035,
+              "seize": -80.0,
+              "hire_collector": -180.0,
+              "tree_collision": 0.0
+            },
+            {
+              "hire_planter": -180.0,
+              "tree_yield": 691.59709,
+              "rounding": -0.00126,
+              "plant": -297.32583,
+              "tree_collision": 0.0,
+              "hire_collector": -240.0,
+              "bank": 2792.91,
+              "seize": -80.0
+            }
+          ],
+          "cargo": [
+            {
+              "move": 0.0,
+              "harvest": 2758.1343,
+              "enemy_tree": -12.47599,
+              "unload": -2956.56181,
+              "collision": 0,
+              "loot": 87.5199
+            },
+            {
+              "move": 0.0,
+              "harvest": 2640.2874,
+              "collision": -87.5199,
+              "unload": -2792.91,
+              "loot": 0.0
+            }
+          ],
+          "counts": [
+            {
+              "hire_planter": 7,
+              "eligible_tree_turns": 369,
+              "trees_turns": 379,
+              "collectors_turns": 617,
+              "planters_turns": 117,
+              "bank": 23,
+              "plant": 10,
+              "collision_planter": 6,
+              "seize": 4,
+              "collision_collector": 7,
+              "hire_collector": 6
+            },
+            {
+              "hire_planter": 6,
+              "eligible_tree_turns": 306,
+              "trees_turns": 311,
+              "collectors_turns": 645,
+              "planters_turns": 92,
+              "plant": 5,
+              "collision_planter": 5,
+              "hire_collector": 8,
+              "bank": 18,
+              "collision_collector": 8,
+              "seize": 4
+            }
+          ],
+          "tree_sources": [
+            {
+              "opposing_cargo": 0.0,
+              "ground": 772.1778
+            },
+            {
+              "opposing_cargo": 12.47599,
+              "ground": 679.1211
+            }
+          ]
+        },
+        "v6_minus_v5": {
+          "net_tree": -127.24381,
+          "net_deposits": 163.65181,
+          "base_collisions": 0,
+          "recruitment": 30.0,
+          "rounding": 0.002
+        }
+      },
+      {
+        "last_turn": 225,
+        "start": [
+          {
+            "cash": 3141.87,
+            "cargo": 510.7374,
+            "trees": 5,
+            "collectors": 7,
+            "planters": 2
+          },
+          {
+            "cash": 3595.93,
+            "cargo": 278.1252,
+            "trees": 3,
+            "collectors": 8,
+            "planters": 2
+          }
+        ],
+        "end": [
+          {
+            "cash": 5021.65,
+            "cargo": 362.88412,
+            "trees": 5,
+            "collectors": 9,
+            "planters": 1
+          },
+          {
+            "cash": 5750.33,
+            "cargo": 348.4992,
+            "trees": 4,
+            "collectors": 9,
+            "planters": 1
+          }
+        ],
+        "ledger": {
+          "cash": [
+            {
+              "hire_collector": -270.0,
+              "bank": 2027.09142,
+              "tree_yield": 888.36109,
+              "rounding": 0.02019,
+              "plant": -425.69271,
+              "hire_planter": -180.0,
+              "seize": -160.0,
+              "tree_collision": 0.0
+            },
+            {
+              "tree_yield": 593.11012,
+              "rounding": 0.01642,
+              "plant": -454.10145,
+              "bank": 2495.37491,
+              "hire_planter": -150.0,
+              "hire_collector": -210.0,
+              "seize": -120.0
+            }
+          ],
+          "cargo": [
+            {
+              "move": 0.0,
+              "unload": -2027.09142,
+              "harvest": 2036.1258,
+              "collision": -139.3506,
+              "enemy_tree": -17.53706
+            },
+            {
+              "move": 0.0,
+              "harvest": 2486.1426,
+              "collision": 0,
+              "unload": -2495.37491,
+              "loot": 139.3506,
+              "enemy_tree": -59.74429
+            }
+          ],
+          "counts": [
+            {
+              "hire_collector": 9,
+              "bank": 14,
+              "eligible_tree_turns": 460,
+              "trees_turns": 469,
+              "collectors_turns": 602,
+              "planters_turns": 131,
+              "collision_planter": 7,
+              "plant": 9,
+              "hire_planter": 6,
+              "seize": 8,
+              "collision_collector": 7
+            },
+            {
+              "eligible_tree_turns": 262,
+              "trees_turns": 269,
+              "collectors_turns": 632,
+              "planters_turns": 105,
+              "plant": 7,
+              "collision_planter": 6,
+              "bank": 23,
+              "hire_planter": 5,
+              "collision_collector": 6,
+              "hire_collector": 7,
+              "seize": 6
+            }
+          ],
+          "tree_sources": [
+            {
+              "opposing_cargo": 59.74429,
+              "ground": 828.6168
+            },
+            {
+              "opposing_cargo": 17.53706,
+              "ground": 575.57306
+            }
+          ]
+        },
+        "v6_minus_v5": {
+          "net_tree": 283.65971,
+          "net_deposits": -468.28349,
+          "base_collisions": 0,
+          "recruitment": -90.0,
+          "rounding": 0.00378
+        }
+      },
+      {
+        "last_turn": 299,
+        "start": [
+          {
+            "cash": 5021.65,
+            "cargo": 362.88412,
+            "trees": 5,
+            "collectors": 9,
+            "planters": 1
+          },
+          {
+            "cash": 5750.33,
+            "cargo": 348.4992,
+            "trees": 4,
+            "collectors": 9,
+            "planters": 1
+          }
+        ],
+        "end": [
+          {
+            "cash": 7563.25,
+            "cargo": 208.9047,
+            "trees": 0,
+            "collectors": 7,
+            "planters": 1
+          },
+          {
+            "cash": 8072.57,
+            "cargo": 0,
+            "trees": 6,
+            "collectors": 5,
+            "planters": 1
+          }
+        ],
+        "ledger": {
+          "cash": [
+            {
+              "bank": 2801.55076,
+              "tree_yield": 387.0824,
+              "rounding": 0.02545,
+              "hire_planter": -90.0,
+              "hire_collector": -450.0,
+              "seize": -60.0,
+              "tree_collision": 0.0,
+              "plant": -47.05862
+            },
+            {
+              "tree_yield": 579.53402,
+              "rounding": -0.00667,
+              "bank": 2593.7188,
+              "plant": -291.00615,
+              "hire_collector": -450.0,
+              "tree_collision": 0.0,
+              "hire_planter": -90.0,
+              "seize": -20.0
+            }
+          ],
+          "cargo": [
+            {
+              "move": 0.0,
+              "unload": -2801.55076,
+              "harvest": 2509.9023,
+              "enemy_tree": -31.11125,
+              "collision": -93.58248,
+              "loot": 168.7803,
+              "loot_from_own": 93.58248
+            },
+            {
+              "move": 0.0,
+              "harvest": 2421.3492,
+              "unload": -2593.7188,
+              "collision": -438.0759,
+              "enemy_tree": -7.3493,
+              "loot_from_own": 269.2956
+            }
+          ],
+          "counts": [
+            {
+              "bank": 35,
+              "eligible_tree_turns": 290,
+              "trees_turns": 291,
+              "collectors_turns": 637,
+              "planters_turns": 76,
+              "collision_collector": 17,
+              "hire_planter": 3,
+              "collision_planter": 3,
+              "hire_collector": 15,
+              "seize": 3,
+              "plant": 1
+            },
+            {
+              "eligible_tree_turns": 268,
+              "trees_turns": 275,
+              "collectors_turns": 638,
+              "planters_turns": 68,
+              "bank": 28,
+              "plant": 7,
+              "collision_collector": 19,
+              "hire_collector": 15,
+              "collision_planter": 3,
+              "hire_planter": 3,
+              "seize": 1
+            }
+          ],
+          "tree_sources": [
+            {
+              "opposing_cargo": 7.3493,
+              "ground": 379.7331
+            },
+            {
+              "opposing_cargo": 31.11125,
+              "ground": 548.42276
+            }
+          ]
+        },
+        "v6_minus_v5": {
+          "net_tree": 11.49591,
+          "net_deposits": 207.83197,
+          "base_collisions": 0,
+          "recruitment": 0.0,
+          "rounding": 0.03212
+        }
+      }
+    ],
+    "raw_sha256": "d3ed2405f7cb505335190814372cdeb093170d9230ee9bf4cd2655507e64a05f",
+    "v6_minus_v5": {
+      "net_tree": -329.2837,
+      "net_deposits": -60.08361,
+      "base_collisions": 0,
+      "recruitment": -120.0,
+      "rounding": 0.04731
+    }
+  },
+  {
+    "seed": 171684640,
+    "v6_seat": 1,
+    "original": {
+      "source": "analysis/arena/v6-response-followup.jsonl",
+      "record": {
+        "schema_version": 1,
+        "seed": 171684640,
+        "episode_steps": 300,
+        "turns": 299,
+        "map_sha256": "16c848a403fbce498bbaaa273205ac71e1070ed7dccfffa088b4cf49eaa7e0bd",
+        "layout_sha256": "4008e1d90eefb4e04df8738d8ec1a4f2a9e532e4215adb33f97b454a826edd4b",
+        "engine_sha256": "0fef48294793290f1abf2a4d8f7c464e988c12b7c40f242a2079dc1dc38a3c9c",
+        "status": "completed",
+        "winner": 0,
+        "scores": [
+          6477.89,
+          6064.41
+        ],
+        "cash": [
+          6477.89,
+          6064.41
+        ],
+        "players": [
+          {
+            "name": "yan-v5",
+            "sha256": "0a413a11f80f6872a5c8f0d313061d7bf11121ae16fbdad97247ff3cb15242e5",
+            "init_seconds": 3.7883152498397976,
+            "total_act_seconds": 133.68795678461902,
+            "max_act_seconds": 0.7679579590912908,
+            "slow_steps": 0,
+            "calls": 299,
+            "search_enabled": true,
+            "searches": 299,
+            "failure": null
+          },
+          {
+            "name": "yan-v6",
+            "sha256": "1995bbcc07592296e6fe6f816412acccb2d39ea2c79787cd937a210513f69afa",
+            "init_seconds": 3.4736324169207364,
+            "total_act_seconds": 133.01652220636606,
+            "max_act_seconds": 0.7681110838893801,
+            "slow_steps": 0,
+            "calls": 299,
+            "search_enabled": true,
+            "searches": 299,
+            "failure": null
+          }
+        ]
+      }
+    },
+    "rerun": {
+      "schema_version": 1,
+      "seed": 171684640,
+      "episode_steps": 300,
+      "turns": 299,
+      "map_sha256": "16c848a403fbce498bbaaa273205ac71e1070ed7dccfffa088b4cf49eaa7e0bd",
+      "layout_sha256": "4008e1d90eefb4e04df8738d8ec1a4f2a9e532e4215adb33f97b454a826edd4b",
+      "engine_sha256": "0fef48294793290f1abf2a4d8f7c464e988c12b7c40f242a2079dc1dc38a3c9c",
+      "status": "completed",
+      "winner": 0,
+      "scores": [
+        7252.31,
+        6719.62
+      ],
+      "cash": [
+        7252.31,
+        6719.62
+      ],
+      "players": [
+        {
+          "name": "yan-v5",
+          "sha256": "0a413a11f80f6872a5c8f0d313061d7bf11121ae16fbdad97247ff3cb15242e5",
+          "init_seconds": 2.8160049580037594,
+          "total_act_seconds": 145.6029942133464,
+          "max_act_seconds": 0.9463048330508173,
+          "slow_steps": 0,
+          "calls": 299,
+          "search_enabled": true,
+          "searches": 287,
+          "failure": null
+        },
+        {
+          "name": "yan-v6",
+          "sha256": "1995bbcc07592296e6fe6f816412acccb2d39ea2c79787cd937a210513f69afa",
+          "init_seconds": 2.9417810840532184,
+          "total_act_seconds": 145.54860844975337,
+          "max_act_seconds": 0.814595083007589,
+          "slow_steps": 0,
+          "calls": 299,
+          "search_enabled": true,
+          "searches": 292,
+          "failure": null
+        }
+      ]
+    },
+    "opening": [
+      {
+        "cash": 80,
+        "cargo": 0,
+        "trees": 0,
+        "collectors": 0,
+        "planters": 0
+      },
+      {
+        "cash": 80,
+        "cargo": 0,
+        "trees": 0,
+        "collectors": 0,
+        "planters": 0
+      }
+    ],
+    "terminal": [
+      {
+        "cash": 7252.31,
+        "cargo": 102.3252,
+        "trees": 3,
+        "collectors": 6,
+        "planters": 0
+      },
+      {
+        "cash": 6719.62,
+        "cargo": 15.2613,
+        "trees": 2,
+        "collectors": 7,
+        "planters": 0
+      }
+    ],
+    "ledger": {
+      "cash": [
+        {
+          "hire_collector": -1710.0,
+          "bank": 8650.16428,
+          "rounding": 0.04304,
+          "hire_planter": -750.0,
+          "bank_from_enemy": 70.0992,
+          "plant": -1436.19761,
+          "tree_yield": 2748.20108,
+          "seize": -400.0,
+          "tree_collision": 0.0
+        },
+        {
+          "hire_collector": -1620.0,
+          "bank": 7979.2526,
+          "rounding": -0.02746,
+          "hire_planter": -750.0,
+          "plant": -1358.3651,
+          "tree_yield": 2948.75996,
+          "tree_collision": 0.0,
+          "seize": -560.0
+        }
+      ],
+      "cargo": [
+        {
+          "unload": -8650.16428,
+          "move": 0.0,
+          "harvest": 8851.7637,
+          "collision": -225.74874,
+          "enemy_tree": -107.25908,
+          "loot": 74.3376,
+          "loot_from_own": 159.396
+        },
+        {
+          "unload": -8049.3518,
+          "move": 0.0,
+          "harvest": 8213.3985,
+          "loot": 66.35274,
+          "collision": -74.3376,
+          "enemy_tree": -140.80054
+        }
+      ],
+      "counts": [
+        {
+          "hire_collector": 57,
+          "trees_turns": 1159,
+          "collectors_turns": 2250,
+          "planters_turns": 433,
+          "bank": 84,
+          "hire_planter": 25,
+          "collision_collector": 51,
+          "bank_from_enemy": 2,
+          "plant": 29,
+          "eligible_tree_turns": 1130,
+          "collision_planter": 25,
+          "seize": 20
+        },
+        {
+          "hire_collector": 54,
+          "trees_turns": 1466,
+          "collectors_turns": 2170,
+          "planters_turns": 506,
+          "bank": 91,
+          "hire_planter": 25,
+          "plant": 25,
+          "collision_planter": 25,
+          "eligible_tree_turns": 1441,
+          "collision_collector": 47,
+          "seize": 28
+        }
+      ],
+      "tree_sources": [
+        {
+          "opposing_cargo": 140.80054,
+          "ground": 2607.40054
+        },
+        {
+          "opposing_cargo": 107.25908,
+          "ground": 2841.50089
+        }
+      ]
+    },
+    "phases": [
+      {
+        "last_turn": 75,
+        "start": [
+          {
+            "cash": 80,
+            "cargo": 0,
+            "trees": 0,
+            "collectors": 0,
+            "planters": 0
+          },
+          {
+            "cash": 80,
+            "cargo": 0,
+            "trees": 0,
+            "collectors": 0,
+            "planters": 0
+          }
+        ],
+        "end": [
+          {
+            "cash": 996.45,
+            "cargo": 627.46661,
+            "trees": 3,
+            "collectors": 8,
+            "planters": 2
+          },
+          {
+            "cash": 805.41,
+            "cargo": 359.5092,
+            "trees": 8,
+            "collectors": 7,
+            "planters": 3
+          }
+        ],
+        "ledger": {
+          "cash": [
+            {
+              "hire_collector": -420.0,
+              "bank": 1141.90672,
+              "rounding": -0.01739,
+              "hire_planter": -210.0,
+              "bank_from_enemy": 23.4333,
+              "plant": -282.31545,
+              "tree_yield": 743.44282,
+              "seize": -80.0,
+              "tree_collision": 0.0
+            },
+            {
+              "hire_collector": -360.0,
+              "bank": 1049.2692,
+              "rounding": -0.00523,
+              "hire_planter": -270.0,
+              "plant": -375.50525,
+              "tree_yield": 801.65128,
+              "tree_collision": 0.0,
+              "seize": -120.0
+            }
+          ],
+          "cargo": [
+            {
+              "unload": -1141.90672,
+              "move": 0.0,
+              "harvest": 1831.095,
+              "collision": -23.4333,
+              "enemy_tree": -38.28838,
+              "loot": 0.0
+            },
+            {
+              "unload": -1072.7025,
+              "move": 0.0,
+              "harvest": 1408.7784,
+              "loot": 23.4333,
+              "collision": 0
+            }
+          ],
+          "counts": [
+            {
+              "hire_collector": 14,
+              "trees_turns": 225,
+              "collectors_turns": 420,
+              "planters_turns": 106,
+              "bank": 17,
+              "hire_planter": 7,
+              "collision_collector": 6,
+              "bank_from_enemy": 1,
+              "plant": 7,
+              "eligible_tree_turns": 218,
+              "collision_planter": 5,
+              "seize": 4
+            },
+            {
+              "hire_collector": 12,
+              "trees_turns": 241,
+              "collectors_turns": 366,
+              "planters_turns": 153,
+              "bank": 18,
+              "hire_planter": 9,
+              "plant": 8,
+              "collision_planter": 6,
+              "eligible_tree_turns": 233,
+              "collision_collector": 5,
+              "seize": 6
+            }
+          ],
+          "tree_sources": [
+            {
+              "opposing_cargo": 0.0,
+              "ground": 743.44283
+            },
+            {
+              "opposing_cargo": 38.28838,
+              "ground": 763.3629
+            }
+          ]
+        },
+        "v6_minus_v5": {
+          "net_tree": -74.98135,
+          "net_deposits": -116.07082,
+          "base_collisions": 0,
+          "recruitment": 0.0,
+          "rounding": 0.01217
+        }
+      },
+      {
+        "last_turn": 150,
+        "start": [
+          {
+            "cash": 996.45,
+            "cargo": 627.46661,
+            "trees": 3,
+            "collectors": 8,
+            "planters": 2
+          },
+          {
+            "cash": 805.41,
+            "cargo": 359.5092,
+            "trees": 8,
+            "collectors": 7,
+            "planters": 3
+          }
+        ],
+        "end": [
+          {
+            "cash": 2963.63,
+            "cargo": 209.54468,
+            "trees": 0,
+            "collectors": 8,
+            "planters": 2
+          },
+          {
+            "cash": 2372.72,
+            "cargo": 260.109,
+            "trees": 10,
+            "collectors": 8,
+            "planters": 2
+          }
+        ],
+        "ledger": {
+          "cash": [
+            {
+              "tree_yield": 569.52703,
+              "rounding": 0.01138,
+              "seize": -120.0,
+              "bank": 2587.69429,
+              "plant": -396.71861,
+              "hire_collector": -540.0,
+              "hire_planter": -180.0,
+              "tree_collision": 0.0,
+              "bank_from_enemy": 46.6659
+            },
+            {
+              "seize": -200.0,
+              "tree_yield": 1191.83806,
+              "rounding": 0.00378,
+              "plant": -545.0381,
+              "bank": 1810.50626,
+              "hire_planter": -180.0,
+              "hire_collector": -510.0
+            }
+          ],
+          "cargo": [
+            {
+              "move": 0.0,
+              "harvest": 2250.684,
+              "unload": -2587.69429,
+              "collision": -42.91944,
+              "loot": 0.0,
+              "enemy_tree": -37.9922
+            },
+            {
+              "move": 0.0,
+              "harvest": 1758.0594,
+              "enemy_tree": -43.20688,
+              "unload": -1857.17216,
+              "collision": 0,
+              "loot": 42.91944
+            }
+          ],
+          "counts": [
+            {
+              "eligible_tree_turns": 211,
+              "trees_turns": 217,
+              "collectors_turns": 622,
+              "planters_turns": 101,
+              "seize": 6,
+              "bank": 22,
+              "plant": 6,
+              "collision_planter": 6,
+              "hire_collector": 18,
+              "hire_planter": 6,
+              "collision_collector": 18,
+              "bank_from_enemy": 1
+            },
+            {
+              "seize": 10,
+              "eligible_tree_turns": 584,
+              "trees_turns": 593,
+              "collectors_turns": 556,
+              "planters_turns": 170,
+              "plant": 9,
+              "bank": 16,
+              "collision_planter": 7,
+              "hire_planter": 6,
+              "hire_collector": 17,
+              "collision_collector": 16
+            }
+          ],
+          "tree_sources": [
+            {
+              "opposing_cargo": 43.20688,
+              "ground": 526.32015
+            },
+            {
+              "opposing_cargo": 37.9922,
+              "ground": 1153.84586
+            }
+          ]
+        },
+        "v6_minus_v5": {
+          "net_tree": 393.99154,
+          "net_deposits": -823.85393,
+          "base_collisions": 0,
+          "recruitment": 30.0,
+          "rounding": -0.0076
+        }
+      },
+      {
+        "last_turn": 225,
+        "start": [
+          {
+            "cash": 2963.63,
+            "cargo": 209.54468,
+            "trees": 0,
+            "collectors": 8,
+            "planters": 2
+          },
+          {
+            "cash": 2372.72,
+            "cargo": 260.109,
+            "trees": 10,
+            "collectors": 8,
+            "planters": 2
+          }
+        ],
+        "end": [
+          {
+            "cash": 4125.75,
+            "cargo": 569.6412,
+            "trees": 7,
+            "collectors": 8,
+            "planters": 1
+          },
+          {
+            "cash": 3887.59,
+            "cargo": 496.65349,
+            "trees": 2,
+            "collectors": 9,
+            "planters": 0
+          }
+        ],
+        "ledger": {
+          "cash": [
+            {
+              "plant": -429.50234,
+              "rounding": 0.00398,
+              "bank": 1750.57831,
+              "tree_yield": 711.04005,
+              "hire_planter": -270.0,
+              "hire_collector": -420.0,
+              "seize": -180.0,
+              "tree_collision": 0.0
+            },
+            {
+              "bank": 1994.4033,
+              "tree_yield": 650.06174,
+              "rounding": 0.00995,
+              "hire_collector": -450.0,
+              "hire_planter": -240.0,
+              "plant": -299.60499,
+              "tree_collision": 0.0,
+              "seize": -140.0
+            }
+          ],
+          "cargo": [
+            {
+              "move": 0.0,
+              "harvest": 2130.3387,
+              "enemy_tree": -19.66387,
+              "unload": -1750.57831,
+              "collision": 0
+            },
+            {
+              "move": 0.0,
+              "unload": -1994.4033,
+              "harvest": 2238.039,
+              "collision": 0,
+              "enemy_tree": -7.09121
+            }
+          ],
+          "counts": [
+            {
+              "plant": 9,
+              "trees_turns": 330,
+              "collectors_turns": 563,
+              "planters_turns": 162,
+              "bank": 16,
+              "eligible_tree_turns": 321,
+              "collision_planter": 10,
+              "hire_planter": 9,
+              "collision_collector": 14,
+              "hire_collector": 14,
+              "seize": 9
+            },
+            {
+              "bank": 21,
+              "eligible_tree_turns": 395,
+              "trees_turns": 400,
+              "collectors_turns": 576,
+              "planters_turns": 142,
+              "collision_planter": 10,
+              "collision_collector": 14,
+              "hire_collector": 15,
+              "hire_planter": 8,
+              "plant": 5,
+              "seize": 7
+            }
+          ],
+          "tree_sources": [
+            {
+              "opposing_cargo": 7.09121,
+              "ground": 703.94884
+            },
+            {
+              "opposing_cargo": 19.66387,
+              "ground": 630.39788
+            }
+          ]
+        },
+        "v6_minus_v5": {
+          "net_tree": 108.91904,
+          "net_deposits": 243.82499,
+          "base_collisions": 0,
+          "recruitment": 0.0,
+          "rounding": 0.00597
+        }
+      },
+      {
+        "last_turn": 299,
+        "start": [
+          {
+            "cash": 4125.75,
+            "cargo": 569.6412,
+            "trees": 7,
+            "collectors": 8,
+            "planters": 1
+          },
+          {
+            "cash": 3887.59,
+            "cargo": 496.65349,
+            "trees": 2,
+            "collectors": 9,
+            "planters": 0
+          }
+        ],
+        "end": [
+          {
+            "cash": 7252.31,
+            "cargo": 102.3252,
+            "trees": 3,
+            "collectors": 6,
+            "planters": 0
+          },
+          {
+            "cash": 6719.62,
+            "cargo": 15.2613,
+            "trees": 2,
+            "collectors": 7,
+            "planters": 0
+          }
+        ],
+        "ledger": {
+          "cash": [
+            {
+              "hire_collector": -330.0,
+              "bank": 3169.98497,
+              "tree_yield": 724.19117,
+              "rounding": 0.04507,
+              "plant": -327.66121,
+              "hire_planter": -90.0,
+              "seize": -20.0
+            },
+            {
+              "hire_collector": -300.0,
+              "bank": 3125.07384,
+              "tree_yield": 305.20888,
+              "rounding": -0.03596,
+              "hire_planter": -60.0,
+              "seize": -100.0,
+              "plant": -138.21676
+            }
+          ],
+          "cargo": [
+            {
+              "move": 0.0,
+              "unload": -3169.98497,
+              "harvest": 2639.646,
+              "collision": -159.396,
+              "enemy_tree": -11.31463,
+              "loot": 74.3376,
+              "loot_from_own": 159.396
+            },
+            {
+              "move": 0.0,
+              "unload": -3125.07384,
+              "harvest": 2808.5217,
+              "loot": 0.0,
+              "enemy_tree": -90.50245,
+              "collision": -74.3376
+            }
+          ],
+          "counts": [
+            {
+              "hire_collector": 11,
+              "eligible_tree_turns": 380,
+              "trees_turns": 387,
+              "collectors_turns": 645,
+              "planters_turns": 64,
+              "plant": 7,
+              "collision_planter": 4,
+              "hire_planter": 3,
+              "bank": 29,
+              "collision_collector": 13,
+              "seize": 1
+            },
+            {
+              "hire_collector": 10,
+              "eligible_tree_turns": 229,
+              "trees_turns": 232,
+              "collectors_turns": 672,
+              "planters_turns": 41,
+              "bank": 36,
+              "collision_collector": 12,
+              "hire_planter": 2,
+              "seize": 5,
+              "plant": 3,
+              "collision_planter": 2
+            }
+          ],
+          "tree_sources": [
+            {
+              "opposing_cargo": 90.50245,
+              "ground": 633.68872
+            },
+            {
+              "opposing_cargo": 11.31463,
+              "ground": 293.89425
+            }
+          ]
+        },
+        "v6_minus_v5": {
+          "net_tree": -309.53784,
+          "net_deposits": -44.91113,
+          "base_collisions": 0,
+          "recruitment": 60.0,
+          "rounding": -0.08104
+        }
+      }
+    ],
+    "raw_sha256": "3f3f6d18a2291012875a68417cda7be2f97e9de16095ee4fcbee32c1e454cfba",
+    "v6_minus_v5": {
+      "net_tree": 118.3914,
+      "net_deposits": -741.01089,
+      "base_collisions": 0,
+      "recruitment": 90.0,
+      "rounding": -0.07051
+    }
+  },
+  {
+    "seed": 568554483,
+    "v6_seat": 0,
+    "original": {
+      "source": "analysis/arena/v6-confirmation-response.jsonl",
+      "record": {
+        "schema_version": 1,
+        "seed": 568554483,
+        "episode_steps": 300,
+        "turns": 299,
+        "map_sha256": "3d24f29c1c0de2ec2a20de898c2ad891df19a802016a06805f262ca2bb65c607",
+        "layout_sha256": "35fafca153da5437b8d5ae6125094286d21102c0989fea967443412319454f14",
+        "engine_sha256": "0fef48294793290f1abf2a4d8f7c464e988c12b7c40f242a2079dc1dc38a3c9c",
+        "status": "completed",
+        "winner": 1,
+        "scores": [
+          3773.51,
+          5032.14
+        ],
+        "cash": [
+          3773.51,
+          5032.14
+        ],
+        "players": [
+          {
+            "name": "response-guard",
+            "sha256": "1995bbcc07592296e6fe6f816412acccb2d39ea2c79787cd937a210513f69afa",
+            "init_seconds": 4.6385395841207355,
+            "total_act_seconds": 113.83769404445775,
+            "max_act_seconds": 0.7419302919879556,
+            "slow_steps": 0,
+            "calls": 299,
+            "search_enabled": true,
+            "searches": 299,
+            "failure": null
+          },
+          {
+            "name": "yan-v5",
+            "sha256": "0a413a11f80f6872a5c8f0d313061d7bf11121ae16fbdad97247ff3cb15242e5",
+            "init_seconds": 5.083922749850899,
+            "total_act_seconds": 115.5602690402884,
+            "max_act_seconds": 0.668749624863267,
+            "slow_steps": 0,
+            "calls": 299,
+            "search_enabled": true,
+            "searches": 299,
+            "failure": null
+          }
+        ]
+      }
+    },
+    "rerun": {
+      "schema_version": 1,
+      "seed": 568554483,
+      "episode_steps": 300,
+      "turns": 299,
+      "map_sha256": "3d24f29c1c0de2ec2a20de898c2ad891df19a802016a06805f262ca2bb65c607",
+      "layout_sha256": "35fafca153da5437b8d5ae6125094286d21102c0989fea967443412319454f14",
+      "engine_sha256": "0fef48294793290f1abf2a4d8f7c464e988c12b7c40f242a2079dc1dc38a3c9c",
+      "status": "completed",
+      "winner": 0,
+      "scores": [
+        5019.96,
+        3683.72
+      ],
+      "cash": [
+        5019.96,
+        3683.72
+      ],
+      "players": [
+        {
+          "name": "yan-v6",
+          "sha256": "1995bbcc07592296e6fe6f816412acccb2d39ea2c79787cd937a210513f69afa",
+          "init_seconds": 2.7990683750249445,
+          "total_act_seconds": 94.79032242763788,
+          "max_act_seconds": 0.8598189170006663,
+          "slow_steps": 0,
+          "calls": 299,
+          "search_enabled": true,
+          "searches": 172,
+          "failure": null
+        },
+        {
+          "name": "yan-v5",
+          "sha256": "0a413a11f80f6872a5c8f0d313061d7bf11121ae16fbdad97247ff3cb15242e5",
+          "init_seconds": 3.03984083305113,
+          "total_act_seconds": 74.81489511625841,
+          "max_act_seconds": 0.8818074169103056,
+          "slow_steps": 0,
+          "calls": 299,
+          "search_enabled": true,
+          "searches": 114,
+          "failure": null
+        }
+      ]
+    },
+    "opening": [
+      {
+        "cash": 80,
+        "cargo": 0,
+        "trees": 0,
+        "collectors": 0,
+        "planters": 0
+      },
+      {
+        "cash": 80,
+        "cargo": 0,
+        "trees": 0,
+        "collectors": 0,
+        "planters": 0
+      }
+    ],
+    "terminal": [
+      {
+        "cash": 5019.96,
+        "cargo": 138.4569,
+        "trees": 0,
+        "collectors": 6,
+        "planters": 0
+      },
+      {
+        "cash": 3683.72,
+        "cargo": 0,
+        "trees": 3,
+        "collectors": 1,
+        "planters": 1
+      }
+    ],
+    "ledger": {
+      "cash": [
+        {
+          "hire_collector": -2670.0,
+          "bank": 7140.17757,
+          "rounding": -0.04996,
+          "hire_planter": -870.0,
+          "plant": -1782.86633,
+          "tree_yield": 3365.61761,
+          "tree_collision": 0.0,
+          "seize": -280.0,
+          "bank_from_enemy": 37.08111
+        },
+        {
+          "hire_collector": -2550.0,
+          "bank": 6040.35554,
+          "rounding": 0.0335,
+          "hire_planter": -1050.0,
+          "plant": -845.03859,
+          "tree_yield": 2568.36955,
+          "tree_collision": 0.0,
+          "seize": -560.0
+        }
+      ],
+      "cargo": [
+        {
+          "unload": -7140.17757,
+          "move": 0.0,
+          "harvest": 7336.3719,
+          "collision": -44.98733,
+          "loot": 106.8738,
+          "enemy_tree": -119.6239,
+          "enemy_base": 0
+        },
+        {
+          "unload": -6077.43665,
+          "move": 0.0,
+          "harvest": 6296.5842,
+          "collision": -266.58838,
+          "enemy_tree": -157.26108,
+          "loot": 44.98733,
+          "loot_from_own": 159.71458
+        }
+      ],
+      "counts": [
+        {
+          "hire_collector": 89,
+          "trees_turns": 1315,
+          "collectors_turns": 2164,
+          "planters_turns": 454,
+          "bank": 69,
+          "hire_planter": 29,
+          "plant": 34,
+          "eligible_tree_turns": 1281,
+          "collision_planter": 29,
+          "collision_collector": 82,
+          "seize": 14,
+          "enemy_base_collector": 1,
+          "bank_from_enemy": 1
+        },
+        {
+          "hire_collector": 85,
+          "trees_turns": 1225,
+          "collectors_turns": 2028,
+          "planters_turns": 596,
+          "bank": 66,
+          "hire_planter": 35,
+          "plant": 17,
+          "eligible_tree_turns": 1208,
+          "collision_planter": 34,
+          "collision_collector": 84,
+          "seize": 28
+        }
+      ],
+      "tree_sources": [
+        {
+          "opposing_cargo": 157.26108,
+          "ground": 3208.35652
+        },
+        {
+          "opposing_cargo": 119.6239,
+          "ground": 2448.74565
+        }
+      ]
+    },
+    "phases": [
+      {
+        "last_turn": 75,
+        "start": [
+          {
+            "cash": 80,
+            "cargo": 0,
+            "trees": 0,
+            "collectors": 0,
+            "planters": 0
+          },
+          {
+            "cash": 80,
+            "cargo": 0,
+            "trees": 0,
+            "collectors": 0,
+            "planters": 0
+          }
+        ],
+        "end": [
+          {
+            "cash": 517.95,
+            "cargo": 534.1029,
+            "trees": 7,
+            "collectors": 8,
+            "planters": 1
+          },
+          {
+            "cash": 412.66,
+            "cargo": 243.7626,
+            "trees": 4,
+            "collectors": 6,
+            "planters": 3
+          }
+        ],
+        "ledger": {
+          "cash": [
+            {
+              "hire_collector": -660.0,
+              "bank": 1010.9058,
+              "rounding": 0.00727,
+              "hire_planter": -240.0,
+              "plant": -485.77287,
+              "tree_yield": 872.8098,
+              "tree_collision": 0.0,
+              "seize": -60.0
+            },
+            {
+              "hire_collector": -600.0,
+              "bank": 876.6552,
+              "rounding": -0.00369,
+              "hire_planter": -330.0,
+              "plant": -159.96066,
+              "tree_yield": 645.96915,
+              "tree_collision": 0.0,
+              "seize": -100.0
+            }
+          ],
+          "cargo": [
+            {
+              "unload": -1010.9058,
+              "move": 0.0,
+              "harvest": 1545.0087,
+              "collision": 0,
+              "loot": 0
+            },
+            {
+              "unload": -876.6552,
+              "move": 0.0,
+              "harvest": 1136.0178,
+              "collision": 0,
+              "enemy_tree": -15.6,
+              "loot": 0
+            }
+          ],
+          "counts": [
+            {
+              "hire_collector": 22,
+              "trees_turns": 237,
+              "collectors_turns": 409,
+              "planters_turns": 116,
+              "bank": 12,
+              "hire_planter": 8,
+              "plant": 10,
+              "eligible_tree_turns": 227,
+              "collision_planter": 7,
+              "collision_collector": 14,
+              "seize": 3
+            },
+            {
+              "hire_collector": 20,
+              "trees_turns": 248,
+              "collectors_turns": 367,
+              "planters_turns": 166,
+              "bank": 17,
+              "hire_planter": 11,
+              "plant": 4,
+              "eligible_tree_turns": 244,
+              "collision_planter": 8,
+              "collision_collector": 14,
+              "seize": 5
+            }
+          ],
+          "tree_sources": [
+            {
+              "opposing_cargo": 15.6,
+              "ground": 857.2098
+            },
+            {
+              "opposing_cargo": 0.0,
+              "ground": 645.96915
+            }
+          ]
+        },
+        "v6_minus_v5": {
+          "net_tree": -58.97156,
+          "net_deposits": 134.2506,
+          "base_collisions": 0,
+          "recruitment": 30.0,
+          "rounding": 0.01096
+        }
+      },
+      {
+        "last_turn": 150,
+        "start": [
+          {
+            "cash": 517.95,
+            "cargo": 534.1029,
+            "trees": 7,
+            "collectors": 8,
+            "planters": 1
+          },
+          {
+            "cash": 412.66,
+            "cargo": 243.7626,
+            "trees": 4,
+            "collectors": 6,
+            "planters": 3
+          }
+        ],
+        "end": [
+          {
+            "cash": 1849.3,
+            "cargo": 435.25651,
+            "trees": 8,
+            "collectors": 8,
+            "planters": 2
+          },
+          {
+            "cash": 1310.61,
+            "cargo": 165.37554,
+            "trees": 3,
+            "collectors": 9,
+            "planters": 1
+          }
+        ],
+        "ledger": {
+          "cash": [
+            {
+              "hire_collector": -690.0,
+              "bank": 1952.23312,
+              "plant": -519.74377,
+              "tree_yield": 998.8913,
+              "rounding": -0.03065,
+              "tree_collision": 0.0,
+              "hire_planter": -270.0,
+              "seize": -140.0
+            },
+            {
+              "hire_planter": -270.0,
+              "tree_yield": 658.5252,
+              "rounding": 0.00823,
+              "seize": -140.0,
+              "hire_collector": -750.0,
+              "bank": 1831.58985,
+              "plant": -432.17328,
+              "tree_collision": 0.0
+            }
+          ],
+          "cargo": [
+            {
+              "move": 0.0,
+              "unload": -1952.23312,
+              "harvest": 1919.2098,
+              "collision": -7.90622,
+              "enemy_tree": -57.91684,
+              "loot": 0.0
+            },
+            {
+              "move": 0.0,
+              "harvest": 1795.695,
+              "collision": 0,
+              "unload": -1831.58985,
+              "enemy_tree": -50.39844,
+              "loot": 7.90622
+            }
+          ],
+          "counts": [
+            {
+              "hire_collector": 23,
+              "bank": 17,
+              "plant": 9,
+              "eligible_tree_turns": 405,
+              "trees_turns": 414,
+              "collectors_turns": 587,
+              "planters_turns": 128,
+              "collision_collector": 23,
+              "collision_planter": 8,
+              "hire_planter": 9,
+              "seize": 7
+            },
+            {
+              "hire_planter": 9,
+              "eligible_tree_turns": 318,
+              "trees_turns": 326,
+              "collectors_turns": 543,
+              "planters_turns": 170,
+              "collision_collector": 22,
+              "seize": 7,
+              "hire_collector": 25,
+              "plant": 8,
+              "bank": 15,
+              "collision_planter": 11
+            }
+          ],
+          "tree_sources": [
+            {
+              "opposing_cargo": 50.39844,
+              "ground": 948.49286
+            },
+            {
+              "opposing_cargo": 57.91684,
+              "ground": 600.60836
+            }
+          ]
+        },
+        "v6_minus_v5": {
+          "net_tree": 252.7956,
+          "net_deposits": 120.64328,
+          "base_collisions": 0,
+          "recruitment": 60.0,
+          "rounding": -0.03888
+        }
+      },
+      {
+        "last_turn": 225,
+        "start": [
+          {
+            "cash": 1849.3,
+            "cargo": 435.25651,
+            "trees": 8,
+            "collectors": 8,
+            "planters": 2
+          },
+          {
+            "cash": 1310.61,
+            "cargo": 165.37554,
+            "trees": 3,
+            "collectors": 9,
+            "planters": 1
+          }
+        ],
+        "end": [
+          {
+            "cash": 3700.18,
+            "cargo": 64.8966,
+            "trees": 3,
+            "collectors": 6,
+            "planters": 2
+          },
+          {
+            "cash": 2494.42,
+            "cargo": 362.1999,
+            "trees": 7,
+            "collectors": 8,
+            "planters": 1
+          }
+        ],
+        "ledger": {
+          "cash": [
+            {
+              "bank": 2233.19923,
+              "tree_yield": 1009.8915,
+              "rounding": -0.02495,
+              "hire_collector": -570.0,
+              "tree_collision": 0.0,
+              "plant": -562.18579,
+              "hire_planter": -240.0,
+              "seize": -20.0
+            },
+            {
+              "tree_yield": 675.01728,
+              "rounding": 0.06005,
+              "hire_collector": -600.0,
+              "bank": 1619.89082,
+              "hire_planter": -240.0,
+              "seize": -180.0,
+              "plant": -91.15814,
+              "tree_collision": 0.0
+            }
+          ],
+          "cargo": [
+            {
+              "move": 0.0,
+              "unload": -2233.19923,
+              "harvest": 1908.5703,
+              "enemy_tree": -45.73098,
+              "collision": 0,
+              "loot": 0.0
+            },
+            {
+              "move": 0.0,
+              "harvest": 1891.9176,
+              "enemy_tree": -75.20242,
+              "collision": 0,
+              "unload": -1619.89082,
+              "loot": 0
+            }
+          ],
+          "counts": [
+            {
+              "bank": 16,
+              "eligible_tree_turns": 405,
+              "trees_turns": 416,
+              "collectors_turns": 553,
+              "planters_turns": 153,
+              "collision_collector": 21,
+              "hire_collector": 19,
+              "collision_planter": 8,
+              "plant": 11,
+              "hire_planter": 8,
+              "seize": 1
+            },
+            {
+              "eligible_tree_turns": 304,
+              "trees_turns": 306,
+              "collectors_turns": 564,
+              "planters_turns": 149,
+              "collision_collector": 21,
+              "hire_collector": 20,
+              "bank": 14,
+              "collision_planter": 8,
+              "hire_planter": 8,
+              "seize": 9,
+              "plant": 2
+            }
+          ],
+          "tree_sources": [
+            {
+              "opposing_cargo": 75.20242,
+              "ground": 934.68908
+            },
+            {
+              "opposing_cargo": 45.73098,
+              "ground": 629.2863
+            }
+          ]
+        },
+        "v6_minus_v5": {
+          "net_tree": 23.84657,
+          "net_deposits": 613.30842,
+          "base_collisions": 0,
+          "recruitment": 30.0,
+          "rounding": -0.08499
+        }
+      },
+      {
+        "last_turn": 299,
+        "start": [
+          {
+            "cash": 3700.18,
+            "cargo": 64.8966,
+            "trees": 3,
+            "collectors": 6,
+            "planters": 2
+          },
+          {
+            "cash": 2494.42,
+            "cargo": 362.1999,
+            "trees": 7,
+            "collectors": 8,
+            "planters": 1
+          }
+        ],
+        "end": [
+          {
+            "cash": 5019.96,
+            "cargo": 138.4569,
+            "trees": 0,
+            "collectors": 6,
+            "planters": 0
+          },
+          {
+            "cash": 3683.72,
+            "cargo": 0,
+            "trees": 3,
+            "collectors": 1,
+            "planters": 1
+          }
+        ],
+        "ledger": {
+          "cash": [
+            {
+              "hire_collector": -750.0,
+              "bank": 1943.83941,
+              "tree_yield": 484.02501,
+              "rounding": -0.00163,
+              "seize": -60.0,
+              "plant": -215.1639,
+              "tree_collision": 0.0,
+              "hire_planter": -120.0,
+              "bank_from_enemy": 37.08111
+            },
+            {
+              "hire_planter": -210.0,
+              "bank": 1712.21968,
+              "tree_yield": 588.85792,
+              "rounding": -0.03109,
+              "hire_collector": -600.0,
+              "seize": -140.0,
+              "plant": -161.7465,
+              "tree_collision": 0.0
+            }
+          ],
+          "cargo": [
+            {
+              "move": 0.0,
+              "loot": 106.8738,
+              "unload": -1943.83941,
+              "harvest": 1963.5831,
+              "collision": -37.08111,
+              "enemy_base": 0,
+              "enemy_tree": -15.97608
+            },
+            {
+              "move": 0.0,
+              "collision": -266.58838,
+              "unload": -1749.30079,
+              "harvest": 1472.9538,
+              "enemy_tree": -16.06022,
+              "loot": 37.08111,
+              "loot_from_own": 159.71458
+            }
+          ],
+          "counts": [
+            {
+              "hire_collector": 25,
+              "eligible_tree_turns": 244,
+              "trees_turns": 248,
+              "collectors_turns": 615,
+              "planters_turns": 57,
+              "seize": 3,
+              "bank": 24,
+              "collision_collector": 24,
+              "plant": 4,
+              "enemy_base_collector": 1,
+              "collision_planter": 6,
+              "hire_planter": 4,
+              "bank_from_enemy": 1
+            },
+            {
+              "hire_planter": 7,
+              "collision_planter": 7,
+              "bank": 20,
+              "eligible_tree_turns": 342,
+              "trees_turns": 345,
+              "collectors_turns": 554,
+              "planters_turns": 111,
+              "collision_collector": 27,
+              "hire_collector": 20,
+              "seize": 7,
+              "plant": 3
+            }
+          ],
+          "tree_sources": [
+            {
+              "opposing_cargo": 16.06022,
+              "ground": 467.96479
+            },
+            {
+              "opposing_cargo": 15.97608,
+              "ground": 572.88184
+            }
+          ]
+        },
+        "v6_minus_v5": {
+          "net_tree": -78.2503,
+          "net_deposits": 268.70084,
+          "base_collisions": 0,
+          "recruitment": -60.0,
+          "rounding": 0.02946
+        }
+      }
+    ],
+    "raw_sha256": "1f0d86e31101c2397842f3cd390a14c5a095f719f6fdf1d10315aa35744a6c2b",
+    "v6_minus_v5": {
+      "net_tree": 139.42032,
+      "net_deposits": 1136.90314,
+      "base_collisions": 0,
+      "recruitment": 60.0,
+      "rounding": -0.08346
+    }
+  },
+  {
+    "seed": 568554483,
+    "v6_seat": 1,
+    "original": {
+      "source": "analysis/arena/v6-confirmation-response.jsonl",
+      "record": {
+        "schema_version": 1,
+        "seed": 568554483,
+        "episode_steps": 300,
+        "turns": 299,
+        "map_sha256": "3d24f29c1c0de2ec2a20de898c2ad891df19a802016a06805f262ca2bb65c607",
+        "layout_sha256": "35fafca153da5437b8d5ae6125094286d21102c0989fea967443412319454f14",
+        "engine_sha256": "0fef48294793290f1abf2a4d8f7c464e988c12b7c40f242a2079dc1dc38a3c9c",
+        "status": "completed",
+        "winner": 0,
+        "scores": [
+          5918.86,
+          5370.79
+        ],
+        "cash": [
+          5918.86,
+          5370.79
+        ],
+        "players": [
+          {
+            "name": "yan-v5",
+            "sha256": "0a413a11f80f6872a5c8f0d313061d7bf11121ae16fbdad97247ff3cb15242e5",
+            "init_seconds": 4.7000550001394,
+            "total_act_seconds": 113.38139142398722,
+            "max_act_seconds": 0.7335822500754148,
+            "slow_steps": 0,
+            "calls": 299,
+            "search_enabled": true,
+            "searches": 297,
+            "failure": null
+          },
+          {
+            "name": "response-guard",
+            "sha256": "1995bbcc07592296e6fe6f816412acccb2d39ea2c79787cd937a210513f69afa",
+            "init_seconds": 5.006113084033132,
+            "total_act_seconds": 114.53912804252468,
+            "max_act_seconds": 0.8394356667995453,
+            "slow_steps": 0,
+            "calls": 299,
+            "search_enabled": true,
+            "searches": 299,
+            "failure": null
+          }
+        ]
+      }
+    },
+    "rerun": {
+      "schema_version": 1,
+      "seed": 568554483,
+      "episode_steps": 300,
+      "turns": 299,
+      "map_sha256": "3d24f29c1c0de2ec2a20de898c2ad891df19a802016a06805f262ca2bb65c607",
+      "layout_sha256": "35fafca153da5437b8d5ae6125094286d21102c0989fea967443412319454f14",
+      "engine_sha256": "0fef48294793290f1abf2a4d8f7c464e988c12b7c40f242a2079dc1dc38a3c9c",
+      "status": "completed",
+      "winner": 0,
+      "scores": [
+        4912.64,
+        4859.72
+      ],
+      "cash": [
+        4912.64,
+        4859.72
+      ],
+      "players": [
+        {
+          "name": "yan-v5",
+          "sha256": "0a413a11f80f6872a5c8f0d313061d7bf11121ae16fbdad97247ff3cb15242e5",
+          "init_seconds": 2.787398374872282,
+          "total_act_seconds": 146.40689155156724,
+          "max_act_seconds": 0.8074331250973046,
+          "slow_steps": 0,
+          "calls": 299,
+          "search_enabled": true,
+          "searches": 285,
+          "failure": null
+        },
+        {
+          "name": "yan-v6",
+          "sha256": "1995bbcc07592296e6fe6f816412acccb2d39ea2c79787cd937a210513f69afa",
+          "init_seconds": 2.951006750110537,
+          "total_act_seconds": 105.73972817370668,
+          "max_act_seconds": 0.8851244170218706,
+          "slow_steps": 0,
+          "calls": 299,
+          "search_enabled": true,
+          "searches": 196,
+          "failure": null
+        }
+      ]
+    },
+    "opening": [
+      {
+        "cash": 80,
+        "cargo": 0,
+        "trees": 0,
+        "collectors": 0,
+        "planters": 0
+      },
+      {
+        "cash": 80,
+        "cargo": 0,
+        "trees": 0,
+        "collectors": 0,
+        "planters": 0
+      }
+    ],
+    "terminal": [
+      {
+        "cash": 4912.64,
+        "cargo": 21.4293,
+        "trees": 0,
+        "collectors": 5,
+        "planters": 0
+      },
+      {
+        "cash": 4859.72,
+        "cargo": 227.88345,
+        "trees": 1,
+        "collectors": 8,
+        "planters": 0
+      }
+    ],
+    "ledger": {
+      "cash": [
+        {
+          "hire_collector": -1710.0,
+          "bank": 6747.11507,
+          "rounding": -0.03596,
+          "hire_planter": -690.0,
+          "plant": -1126.15988,
+          "tree_yield": 2031.72077,
+          "seize": -420.0,
+          "tree_collision": 0.0
+        },
+        {
+          "hire_collector": -1620.0,
+          "bank": 6683.08984,
+          "rounding": 0.08676,
+          "hire_planter": -900.0,
+          "plant": -1075.53607,
+          "tree_yield": 2152.07947,
+          "tree_collision": 0.0,
+          "seize": -460.0
+        }
+      ],
+      "cargo": [
+        {
+          "unload": -6747.11507,
+          "move": 0.0,
+          "harvest": 7214.4531,
+          "loot": 9.09249,
+          "enemy_tree": -148.06537,
+          "collision": -331.90366,
+          "loot_from_own": 24.9678
+        },
+        {
+          "unload": -6683.08984,
+          "move": 0.0,
+          "harvest": 6746.2083,
+          "collision": -39.09249,
+          "enemy_tree": -73.07837,
+          "loot": 276.93586
+        }
+      ],
+      "counts": [
+        {
+          "hire_collector": 57,
+          "trees_turns": 1187,
+          "collectors_turns": 2253,
+          "planters_turns": 445,
+          "bank": 78,
+          "hire_planter": 23,
+          "plant": 24,
+          "eligible_tree_turns": 1163,
+          "seize": 21,
+          "collision_planter": 23,
+          "collision_collector": 52
+        },
+        {
+          "hire_collector": 54,
+          "trees_turns": 1158,
+          "collectors_turns": 2178,
+          "planters_turns": 512,
+          "bank": 67,
+          "hire_planter": 30,
+          "plant": 23,
+          "eligible_tree_turns": 1135,
+          "collision_planter": 30,
+          "collision_collector": 46,
+          "seize": 23
+        }
+      ],
+      "tree_sources": [
+        {
+          "opposing_cargo": 73.07837,
+          "ground": 1958.6424
+        },
+        {
+          "opposing_cargo": 148.06537,
+          "ground": 2004.0141
+        }
+      ]
+    },
+    "phases": [
+      {
+        "last_turn": 75,
+        "start": [
+          {
+            "cash": 80,
+            "cargo": 0,
+            "trees": 0,
+            "collectors": 0,
+            "planters": 0
+          },
+          {
+            "cash": 80,
+            "cargo": 0,
+            "trees": 0,
+            "collectors": 0,
+            "planters": 0
+          }
+        ],
+        "end": [
+          {
+            "cash": 582.6,
+            "cargo": 311.36079,
+            "trees": 3,
+            "collectors": 7,
+            "planters": 2
+          },
+          {
+            "cash": 481.02,
+            "cargo": 628.79652,
+            "trees": 8,
+            "collectors": 10,
+            "planters": 0
+          }
+        ],
+        "ledger": {
+          "cash": [
+            {
+              "hire_collector": -540.0,
+              "bank": 1084.65362,
+              "rounding": -0.01037,
+              "hire_planter": -210.0,
+              "plant": -176.48815,
+              "tree_yield": 484.4449,
+              "seize": -140.0,
+              "tree_collision": 0.0
+            },
+            {
+              "hire_collector": -630.0,
+              "bank": 968.3655,
+              "rounding": 0.02268,
+              "hire_planter": -210.0,
+              "plant": -442.2482,
+              "tree_yield": 834.88002,
+              "tree_collision": 0.0,
+              "seize": -120.0
+            }
+          ],
+          "cargo": [
+            {
+              "unload": -1084.65362,
+              "move": 0.0,
+              "harvest": 1464.3882,
+              "loot": 7.49684,
+              "enemy_tree": -37.54081,
+              "collision": -38.32982
+            },
+            {
+              "unload": -968.3655,
+              "move": 0.0,
+              "harvest": 1640.1063,
+              "collision": -37.49684,
+              "enemy_tree": -13.77726,
+              "loot": 8.32982
+            }
+          ],
+          "counts": [
+            {
+              "hire_collector": 18,
+              "trees_turns": 212,
+              "collectors_turns": 415,
+              "planters_turns": 134,
+              "bank": 15,
+              "hire_planter": 7,
+              "plant": 4,
+              "eligible_tree_turns": 208,
+              "seize": 7,
+              "collision_planter": 5,
+              "collision_collector": 11
+            },
+            {
+              "hire_collector": 21,
+              "trees_turns": 294,
+              "collectors_turns": 407,
+              "planters_turns": 129,
+              "bank": 11,
+              "hire_planter": 7,
+              "plant": 10,
+              "eligible_tree_turns": 284,
+              "collision_planter": 7,
+              "collision_collector": 11,
+              "seize": 6
+            }
+          ],
+          "tree_sources": [
+            {
+              "opposing_cargo": 13.77726,
+              "ground": 470.66764
+            },
+            {
+              "opposing_cargo": 37.54081,
+              "ground": 797.33921
+            }
+          ]
+        },
+        "v6_minus_v5": {
+          "net_tree": 104.67507,
+          "net_deposits": -116.28812,
+          "base_collisions": 0,
+          "recruitment": -90.0,
+          "rounding": 0.03305
+        }
+      },
+      {
+        "last_turn": 150,
+        "start": [
+          {
+            "cash": 582.6,
+            "cargo": 311.36079,
+            "trees": 3,
+            "collectors": 7,
+            "planters": 2
+          },
+          {
+            "cash": 481.02,
+            "cargo": 628.79652,
+            "trees": 8,
+            "collectors": 10,
+            "planters": 0
+          }
+        ],
+        "end": [
+          {
+            "cash": 1416.06,
+            "cargo": 390.6138,
+            "trees": 6,
+            "collectors": 8,
+            "planters": 2
+          },
+          {
+            "cash": 1818.54,
+            "cargo": 456.1266,
+            "trees": 4,
+            "collectors": 7,
+            "planters": 3
+          }
+        ],
+        "ledger": {
+          "cash": [
+            {
+              "hire_collector": -540.0,
+              "bank": 1582.56237,
+              "tree_yield": 565.44552,
+              "rounding": -0.01332,
+              "hire_planter": -240.0,
+              "seize": -200.0,
+              "tree_collision": 0.0,
+              "plant": -334.53457
+            },
+            {
+              "bank": 2054.65229,
+              "tree_yield": 484.15287,
+              "rounding": 0.01728,
+              "tree_collision": 0.0,
+              "hire_planter": -360.0,
+              "hire_collector": -360.0,
+              "plant": -321.30244,
+              "seize": -160.0
+            }
+          ],
+          "cargo": [
+            {
+              "move": 0.0,
+              "unload": -1582.56237,
+              "harvest": 1727.3742,
+              "collision": -49.75154,
+              "enemy_tree": -15.80727,
+              "loot": 0.0
+            },
+            {
+              "move": 0.0,
+              "unload": -2054.65229,
+              "harvest": 1833.5472,
+              "collision": 0,
+              "loot": 49.75154,
+              "enemy_tree": -1.31637
+            }
+          ],
+          "counts": [
+            {
+              "hire_collector": 18,
+              "eligible_tree_turns": 363,
+              "trees_turns": 370,
+              "collectors_turns": 554,
+              "planters_turns": 165,
+              "bank": 19,
+              "collision_collector": 17,
+              "hire_planter": 8,
+              "collision_planter": 8,
+              "seize": 10,
+              "plant": 7
+            },
+            {
+              "bank": 20,
+              "eligible_tree_turns": 283,
+              "trees_turns": 290,
+              "collectors_turns": 575,
+              "planters_turns": 150,
+              "collision_collector": 15,
+              "hire_planter": 12,
+              "hire_collector": 12,
+              "collision_planter": 9,
+              "plant": 7,
+              "seize": 8
+            }
+          ],
+          "tree_sources": [
+            {
+              "opposing_cargo": 1.31637,
+              "ground": 564.12915
+            },
+            {
+              "opposing_cargo": 15.80727,
+              "ground": 468.3456
+            }
+          ]
+        },
+        "v6_minus_v5": {
+          "net_tree": -28.06052,
+          "net_deposits": 472.08992,
+          "base_collisions": 0,
+          "recruitment": 60.0,
+          "rounding": 0.0306
+        }
+      },
+      {
+        "last_turn": 225,
+        "start": [
+          {
+            "cash": 1416.06,
+            "cargo": 390.6138,
+            "trees": 6,
+            "collectors": 8,
+            "planters": 2
+          },
+          {
+            "cash": 1818.54,
+            "cargo": 456.1266,
+            "trees": 4,
+            "collectors": 7,
+            "planters": 3
+          }
+        ],
+        "end": [
+          {
+            "cash": 3102.91,
+            "cargo": 460.86575,
+            "trees": 4,
+            "collectors": 8,
+            "planters": 1
+          },
+          {
+            "cash": 3383.94,
+            "cargo": 383.79608,
+            "trees": 6,
+            "collectors": 8,
+            "planters": 1
+          }
+        ],
+        "ledger": {
+          "cash": [
+            {
+              "bank": 1891.4424,
+              "tree_yield": 608.34976,
+              "rounding": -0.02752,
+              "tree_collision": 0.0,
+              "hire_collector": -240.0,
+              "plant": -352.91464,
+              "hire_planter": -180.0,
+              "seize": -40.0
+            },
+            {
+              "bank": 1779.36198,
+              "tree_yield": 616.72318,
+              "rounding": 0.02978,
+              "seize": -100.0,
+              "tree_collision": 0.0,
+              "hire_collector": -270.0,
+              "hire_planter": -210.0,
+              "plant": -250.71494
+            }
+          ],
+          "cargo": [
+            {
+              "move": 0.0,
+              "unload": -1891.4424,
+              "harvest": 2028.6849,
+              "enemy_tree": -66.61626,
+              "collision": -1.96995,
+              "loot": 1.59566
+            },
+            {
+              "move": 0.0,
+              "unload": -1779.36198,
+              "harvest": 1726.5363,
+              "collision": -1.59566,
+              "enemy_tree": -19.87913,
+              "loot": 1.96995
+            }
+          ],
+          "counts": [
+            {
+              "bank": 19,
+              "eligible_tree_turns": 296,
+              "trees_turns": 304,
+              "collectors_turns": 650,
+              "planters_turns": 83,
+              "collision_collector": 8,
+              "collision_planter": 7,
+              "hire_collector": 8,
+              "plant": 8,
+              "hire_planter": 6,
+              "seize": 2
+            },
+            {
+              "bank": 14,
+              "eligible_tree_turns": 329,
+              "trees_turns": 334,
+              "collectors_turns": 560,
+              "planters_turns": 169,
+              "seize": 5,
+              "collision_collector": 8,
+              "collision_planter": 9,
+              "hire_collector": 9,
+              "hire_planter": 7,
+              "plant": 5
+            }
+          ],
+          "tree_sources": [
+            {
+              "opposing_cargo": 19.87913,
+              "ground": 588.47063
+            },
+            {
+              "opposing_cargo": 66.61626,
+              "ground": 550.10692
+            }
+          ]
+        },
+        "v6_minus_v5": {
+          "net_tree": 50.57312,
+          "net_deposits": -112.08042,
+          "base_collisions": 0,
+          "recruitment": -60.0,
+          "rounding": 0.0573
+        }
+      },
+      {
+        "last_turn": 299,
+        "start": [
+          {
+            "cash": 3102.91,
+            "cargo": 460.86575,
+            "trees": 4,
+            "collectors": 8,
+            "planters": 1
+          },
+          {
+            "cash": 3383.94,
+            "cargo": 383.79608,
+            "trees": 6,
+            "collectors": 8,
+            "planters": 1
+          }
+        ],
+        "end": [
+          {
+            "cash": 4912.64,
+            "cargo": 21.4293,
+            "trees": 0,
+            "collectors": 5,
+            "planters": 0
+          },
+          {
+            "cash": 4859.72,
+            "cargo": 227.88345,
+            "trees": 1,
+            "collectors": 8,
+            "planters": 0
+          }
+        ],
+        "ledger": {
+          "cash": [
+            {
+              "hire_planter": -60.0,
+              "tree_yield": 373.48059,
+              "rounding": 0.01526,
+              "bank": 2188.45667,
+              "hire_collector": -390.0,
+              "seize": -40.0,
+              "plant": -262.22252,
+              "tree_collision": 0.0
+            },
+            {
+              "hire_collector": -360.0,
+              "bank": 1880.71007,
+              "tree_yield": 216.32339,
+              "rounding": 0.01702,
+              "tree_collision": 0.0,
+              "seize": -80.0,
+              "plant": -61.27049,
+              "hire_planter": -120.0
+            }
+          ],
+          "cargo": [
+            {
+              "move": 0.0,
+              "harvest": 1994.0058,
+              "enemy_tree": -28.10103,
+              "unload": -2188.45667,
+              "collision": -241.85235,
+              "loot": 0.0,
+              "loot_from_own": 24.9678
+            },
+            {
+              "move": 0.0,
+              "unload": -1880.71007,
+              "harvest": 1546.0185,
+              "collision": 0,
+              "enemy_tree": -38.1056,
+              "loot": 216.88455
+            }
+          ],
+          "counts": [
+            {
+              "hire_planter": 2,
+              "eligible_tree_turns": 296,
+              "trees_turns": 301,
+              "collectors_turns": 634,
+              "planters_turns": 63,
+              "bank": 25,
+              "collision_collector": 16,
+              "hire_collector": 13,
+              "seize": 2,
+              "plant": 5,
+              "collision_planter": 3
+            },
+            {
+              "hire_collector": 12,
+              "eligible_tree_turns": 239,
+              "trees_turns": 240,
+              "collectors_turns": 636,
+              "planters_turns": 64,
+              "collision_collector": 12,
+              "seize": 4,
+              "bank": 22,
+              "plant": 1,
+              "hire_planter": 4,
+              "collision_planter": 5
+            }
+          ],
+          "tree_sources": [
+            {
+              "opposing_cargo": 38.1056,
+              "ground": 335.37499
+            },
+            {
+              "opposing_cargo": 28.10103,
+              "ground": 188.22236
+            }
+          ]
+        },
+        "v6_minus_v5": {
+          "net_tree": 3.79484,
+          "net_deposits": -307.7466,
+          "base_collisions": 0,
+          "recruitment": -30.0,
+          "rounding": 0.00176
+        }
+      }
+    ],
+    "raw_sha256": "e8f52a6cf2d02c5e030334db6e7026f47842509f790d9ed1b0b2fa82ab92d18c",
+    "v6_minus_v5": {
+      "net_tree": 130.98251,
+      "net_deposits": -64.02522,
+      "base_collisions": 0,
+      "recruitment": -120.0,
+      "rounding": 0.12271
+    }
+  }
+]
