@@ -1384,6 +1384,94 @@ def _plan(n, D2):
     return rows, steps, passes
 
 
+def _tree_guard_moves(players, me, act0, fixed, carbon, config, step):
+    """Propose, but do not force, one planter relocation and one empty-collector escort."""
+    if config.get('episodeSteps', 300) - 1 - step < 18:
+        return []
+    own, enemy = players[me], players[1-me]
+    rival_planters = [w[0] for w in enemy[2].values() if w[2] == 'PLANTER']
+    if not rival_planters:
+        return []
+    collectors = [(key, w[0]) for key, w in own[2].items()
+                  if w[2] == 'COLLECTOR' and w[1] < 1 and key not in fixed]
+    planters = {wid:w[0] for wid,w in own[2].items() if w[2] == 'PLANTER' and wid not in fixed}
+    bases = set(own[1].values()) | set(enemy[1].values())
+    trees = {tree[0] for p in players for tree in p[3].values()}
+    reserved_bases = {pos for key, pos in own[1].items() if key in act0}
+    planned = {key:move(w[0], WIDX.get(act0.get(key), 0)) for key,w in own[2].items()}
+    rival_dist = lambda pos: min(DIST[pos][q] for q in rival_planters)
+
+    def supply(pos):
+        return sum(carbon[q] for q in NB[pos] if q not in trees)
+
+    def clear(pos, key):
+        return pos not in reserved_bases and all(d != pos for w,d in planned.items() if w != key)
+
+    # Replicate recruitment costs before deciding if a new planting is affordable.
+    balance = own[0]
+    for role, action, base_cost, increase in (
+        ('COLLECTOR', 'RECCOLLECTOR', 'recCollectorCost', 'recCollectorIncreaseCost'),
+        ('PLANTER', 'RECPLANTER', 'recPlanterCost', 'recPlanterIncreaseCost')):
+        population = sum(w[2] == role for p in players for w in p[2].values())
+        balance -= sum(act0.get(b) == action for b in own[1]) * (config.get(base_cost, 30) + population*config.get(increase, 0))
+    cost = config.get('plantCost', 20)
+    if len(own[3]) > config.get('playerTreeProtectiveNumber', 0):
+        alive = sum(age < config.get('treeLifespan', 50) for p in players for _, age in p[3].values())
+        cost += config.get('plantCostInflationRatio', 5) * config.get('plantCostInflationBase', 1.235)**alive
+
+    pending = []
+    if balance >= cost:
+        for key, pos in planters.items():
+            if pos not in bases and pos not in trees and rival_dist(pos) <= 2 and clear(pos,key):
+                pending.append((key,pos))
+    # Re-evaluate recently planted trees even after the original planter has left.
+    young = [pos for pos,age in own[3].values() if age <= 6 and rival_dist(pos) <= 2]
+    if not pending and not young:
+        return []
+
+    candidates = []
+    if pending:
+        key, pos = max(pending, key=lambda pair:(act0.get(pair[0]) is None, supply(pair[1])))
+        safer = [(k, dst) for k, dst in enumerate(NB[pos], 1)
+                 if dst not in bases and dst not in trees and clear(dst,key) and rival_dist(dst) > rival_dist(pos)
+                 and all(DIST[dst][w[0]] > 1 for w in enemy[2].values() if w[2] == 'COLLECTOR')]
+        if safer:
+            k, _ = max(safer, key=lambda item:supply(item[1]) + 12 * rival_dist(item[1]))
+            candidates.append(('relocate', dict(act0, **{key:WACT[k]})))
+
+    sites = [(key,pos) for key,pos in pending] + [(None,pos) for pos in young]
+    # A collector on a tree or between it and an enemy planter can intercept a seize.
+    best = None
+    for planter, target in sites:
+        for wid, start in collectors:
+            if DIST[start][target] > 3:
+                continue
+            for k, dst in enumerate([start]+NB[start]):
+                if dst in bases or not clear(dst,wid) or (planter is not None and dst == target):
+                    continue
+                if DIST[dst][target] > 1 or (k == 0 and act0.get(wid) is None and (planter is None or planter not in act0)):
+                    continue
+                if any(DIST[dst][w[0]] <= 1 for w in enemy[2].values() if w[2] == 'COLLECTOR' and w[1] <= own[2][wid][1]):
+                    continue
+                # The v5 planter's previous destination stops being occupied if it now stays.
+                defended = dict(act0)
+                if planter is not None:
+                    defended.pop(planter, None)
+                if k:
+                    defended[wid] = WACT[k]
+                else:
+                    defended.pop(wid, None)
+                if defended == act0:
+                    continue
+                quality = (supply(target) - 15*DIST[dst][target] - 20*rival_dist(dst)
+                           + 18*(dst in rival_planters) - 8*DIST[start][target])
+                if best is None or quality > best[0]:
+                    best = quality, defended
+    if best is not None:
+        candidates.insert(0, ('escort', best[1]))
+    return candidates
+
+
 def _search(obs, configuration, est, act0, lw0, lb0, prev, t0, home=()):
     """Returns the move to play: act0, the policy's own, unless a searched one scores better.
     home: the workers act0 sends straight home (go_home).  With _S_HOMEFIX every candidate keeps their moves: the candidates are sampled without
@@ -1425,6 +1513,16 @@ def _search(obs, configuration, est, act0, lw0, lb0, prev, t0, home=()):
     cands = [act0]; keys = {tuple(sorted(act0.items()))}
     rng = np.random.RandomState(seed0)
     fixed = {wid: act0.get(wid) for wid in home} if _S_HOMEFIX else None
+    # Preserve the original policy and regular proposals within the measured width.
+    if most >= 3:
+        limit = min(2, (most-1)//2)
+        for _, option in _tree_guard_moves(players, me, act0, fixed or {}, est, configuration, step):
+            marker = tuple(sorted(option.items()))
+            if marker not in keys:
+                keys.add(marker)
+                cands.append(option)
+                if len(cands) - 1 >= limit:
+                    break
     for T, cap in _S_GEN:
         new = 0; dups = 0
         if T > 0.0:
