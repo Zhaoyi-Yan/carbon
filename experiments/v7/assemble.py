@@ -7,6 +7,7 @@ import breakout
 import challenger
 import depot_entry
 import flow_switch
+import early_income
 import knockout
 import last_collector
 import opponent_view
@@ -22,14 +23,15 @@ def create(name):
     if name=='quay':return code
     for plugin in (breakout,reserve,depot_entry,opponent_view,flow_switch,knockout):
         code=plugin.build(code)
-    if name=='pilot':code=last_collector.build(code)
+    if name in ('pilot','jetty'):code=last_collector.build(code)
+    if name=='jetty':code=early_income.build(code)
     if len(code.encode())>=10_000_000:raise ValueError('single-file tournament size')
     compile(code,name,'exec')
     return code
 
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument('version',choices=('quay','tidepool','pilot'));p.add_argument('output',type=Path)
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('version',choices=('quay','tidepool','pilot','jetty'));p.add_argument('output',type=Path)
     a=p.parse_args()
     data=create(a.version).encode()
     with a.output.open('xb') as f:f.write(data)

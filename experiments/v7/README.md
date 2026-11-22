@@ -17,7 +17,8 @@ Master7sE 对局中，第 47 步到第 252 步的两次己方工人交货之间�
 | 候选 | 资格赛 | 分座位胜场 | 场均分差 | 决定 |
 | --- | ---: | --- | ---: | --- |
 | [Quay](checkpoints/quay.py) | 9–7 | 2/8，7/8 | −1093.18 | 保留实验。一次开局只剩无力种树的种植员，现金停在 4.55。[逐图结果](../../analysis/v7/01-qualifying-summary.json) |
-| [Pilot](checkpoints/pilot.py) | 评测中 | | | 加入两步兑付、重建下一次招工的现金储备、最后一个采集员的行动保护与对手视野估计。[文件与留图种子](../../analysis/v7/02-qualifying.json) |
+| [Pilot](checkpoints/pilot.py) | 10–6 | 7/8，3/8 | +137.42 | 加入两步兑付、招工储备和最后一个采集员保护。此批 16 局均未失去全部自主收入来源，两个座位的战绩未达到晋级线。[逐图结果](../../analysis/v7/02-qualifying-summary.json) · [现金冻结复核](../../analysis/v7/02-liquidity.json) |
+| [Jetty](checkpoints/jetty.py) | 评测中 | | | 沿用 Pilot，两个座位首步直接出一采一种。[冻结文件与地图](../../analysis/v7/03-qualifying.json) |
 
 在仓库根目录，以下命令可以重建已冻结的文件，并复现存档分叉的现金流。
 
