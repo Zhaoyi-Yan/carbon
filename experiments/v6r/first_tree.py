@@ -67,7 +67,7 @@ def build(code):
     code=code.replace(start,inspect.getsource(_r6_first_tree)+'\n\n'+start)
     insertion="""    if most>=3:
         tree_action=_r6_first_tree(obs,configuration,est,act0,lw0)
-        if tree_action:
+        if tree_action is not None:
             tree_key=tuple(sorted(tree_action.items()))
             if tree_key not in keys:
                 keys.add(tree_key);cands.append(tree_action)

@@ -1,0 +1,949 @@
+{
+  "rule": "If search changes any eligible worker action with root proposal P>=.90 and landing unreachable by a winning/equal enemy collector, use the complete original root joint proposal. Enemy base cells are exposed. Assessed on the same diagnostic set, without re-search.",
+  "summary": {
+    "all": {
+      "n": 154,
+      "root": 114,
+      "search": 97,
+      "played": 97,
+      "guarded": 114,
+      "guarded_joint_match": 24,
+      "guarded_joints": 15,
+      "sum_material_search_minus_root": [
+        74.31,
+        61.916,
+        -1.0,
+        -1.0
+      ]
+    },
+    "pre": {
+      "n": 67,
+      "root": 46,
+      "search": 39,
+      "played": 38,
+      "guarded": 46,
+      "guarded_joint_match": 15,
+      "guarded_joints": 6,
+      "sum_material_search_minus_root": [
+        49.22,
+        26.12,
+        -1.0,
+        0.0
+      ]
+    },
+    "post": {
+      "n": 87,
+      "root": 68,
+      "search": 58,
+      "played": 59,
+      "guarded": 68,
+      "guarded_joint_match": 9,
+      "guarded_joints": 9,
+      "sum_material_search_minus_root": [
+        25.09,
+        35.796,
+        0.0,
+        -1.0
+      ]
+    }
+  },
+  "samples": [
+    {
+      "game": "0e35eb181d361e29c314340ec542c446-1",
+      "step": 14,
+      "phase": "pre",
+      "protected": [],
+      "n": 3,
+      "root": 1,
+      "search": 1,
+      "played": 1,
+      "guarded": 1,
+      "guarded_joint_match": false,
+      "delta_search_minus_root_cash_carried_workers_trees": [
+        0.0,
+        4.611,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "game": "0e35eb181d361e29c314340ec542c446-1",
+      "step": 25,
+      "phase": "pre",
+      "protected": [
+        "player-1-worker-4"
+      ],
+      "n": 5,
+      "root": 5,
+      "search": 4,
+      "played": 4,
+      "guarded": 5,
+      "guarded_joint_match": true,
+      "delta_search_minus_root_cash_carried_workers_trees": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "game": "0e35eb181d361e29c314340ec542c446-1",
+      "step": 29,
+      "phase": "post",
+      "protected": [
+        "player-1-worker-3"
+      ],
+      "n": 6,
+      "root": 6,
+      "search": 5,
+      "played": 5,
+      "guarded": 6,
+      "guarded_joint_match": true,
+      "delta_search_minus_root_cash_carried_workers_trees": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "game": "0e35eb181d361e29c314340ec542c446-1",
+      "step": 34,
+      "phase": "post",
+      "protected": [
+        "player-1-worker-8"
+      ],
+      "n": 9,
+      "root": 7,
+      "search": 5,
+      "played": 5,
+      "guarded": 7,
+      "guarded_joint_match": false,
+      "delta_search_minus_root_cash_carried_workers_trees": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "game": "e518e0aeff3cfbf788bc2764e07293b0-1",
+      "step": 4,
+      "phase": "pre",
+      "protected": [
+        "player-1-worker-1"
+      ],
+      "n": 2,
+      "root": 2,
+      "search": 1,
+      "played": 1,
+      "guarded": 2,
+      "guarded_joint_match": true,
+      "delta_search_minus_root_cash_carried_workers_trees": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "game": "e518e0aeff3cfbf788bc2764e07293b0-1",
+      "step": 6,
+      "phase": "pre",
+      "protected": [],
+      "n": 2,
+      "root": 1,
+      "search": 1,
+      "played": 1,
+      "guarded": 1,
+      "guarded_joint_match": false,
+      "delta_search_minus_root_cash_carried_workers_trees": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "game": "e518e0aeff3cfbf788bc2764e07293b0-1",
+      "step": 10,
+      "phase": "post",
+      "protected": [],
+      "n": 3,
+      "root": 3,
+      "search": 3,
+      "played": 3,
+      "guarded": 3,
+      "guarded_joint_match": true,
+      "delta_search_minus_root_cash_carried_workers_trees": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "game": "e518e0aeff3cfbf788bc2764e07293b0-1",
+      "step": 16,
+      "phase": "post",
+      "protected": [],
+      "n": 5,
+      "root": 3,
+      "search": 3,
+      "played": 3,
+      "guarded": 3,
+      "guarded_joint_match": false,
+      "delta_search_minus_root_cash_carried_workers_trees": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "game": "6173390b43b884ef8b9c8e22ea5f3318-1",
+      "step": 5,
+      "phase": "pre",
+      "protected": [],
+      "n": 2,
+      "root": 0,
+      "search": 0,
+      "played": 0,
+      "guarded": 0,
+      "guarded_joint_match": false,
+      "delta_search_minus_root_cash_carried_workers_trees": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "game": "6173390b43b884ef8b9c8e22ea5f3318-1",
+      "step": 13,
+      "phase": "pre",
+      "protected": [],
+      "n": 2,
+      "root": 0,
+      "search": 0,
+      "played": 0,
+      "guarded": 0,
+      "guarded_joint_match": false,
+      "delta_search_minus_root_cash_carried_workers_trees": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "game": "6173390b43b884ef8b9c8e22ea5f3318-1",
+      "step": 23,
+      "phase": "pre",
+      "protected": [],
+      "n": 2,
+      "root": 0,
+      "search": 0,
+      "played": 0,
+      "guarded": 0,
+      "guarded_joint_match": false,
+      "delta_search_minus_root_cash_carried_workers_trees": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "game": "6173390b43b884ef8b9c8e22ea5f3318-1",
+      "step": 33,
+      "phase": "pre",
+      "protected": [],
+      "n": 2,
+      "root": 0,
+      "search": 0,
+      "played": 0,
+      "guarded": 0,
+      "guarded_joint_match": false,
+      "delta_search_minus_root_cash_carried_workers_trees": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "game": "6523af3ebb2d8c6306f7b086a82ec116-1",
+      "step": 5,
+      "phase": "pre",
+      "protected": [],
+      "n": 2,
+      "root": 0,
+      "search": 1,
+      "played": 1,
+      "guarded": 1,
+      "guarded_joint_match": false,
+      "delta_search_minus_root_cash_carried_workers_trees": [
+        30,
+        30,
+        -1,
+        0
+      ]
+    },
+    {
+      "game": "6523af3ebb2d8c6306f7b086a82ec116-1",
+      "step": 13,
+      "phase": "pre",
+      "protected": [],
+      "n": 2,
+      "root": 0,
+      "search": 0,
+      "played": 0,
+      "guarded": 0,
+      "guarded_joint_match": false,
+      "delta_search_minus_root_cash_carried_workers_trees": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "game": "6523af3ebb2d8c6306f7b086a82ec116-1",
+      "step": 23,
+      "phase": "pre",
+      "protected": [],
+      "n": 2,
+      "root": 0,
+      "search": 0,
+      "played": 0,
+      "guarded": 0,
+      "guarded_joint_match": false,
+      "delta_search_minus_root_cash_carried_workers_trees": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "game": "6523af3ebb2d8c6306f7b086a82ec116-1",
+      "step": 33,
+      "phase": "pre",
+      "protected": [],
+      "n": 2,
+      "root": 0,
+      "search": 0,
+      "played": 0,
+      "guarded": 0,
+      "guarded_joint_match": false,
+      "delta_search_minus_root_cash_carried_workers_trees": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "game": "45869c71d4f1add508b049840e388e1f-1",
+      "step": 4,
+      "phase": "pre",
+      "protected": [],
+      "n": 2,
+      "root": 2,
+      "search": 2,
+      "played": 2,
+      "guarded": 2,
+      "guarded_joint_match": true,
+      "delta_search_minus_root_cash_carried_workers_trees": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "game": "45869c71d4f1add508b049840e388e1f-1",
+      "step": 7,
+      "phase": "pre",
+      "protected": [],
+      "n": 2,
+      "root": 2,
+      "search": 2,
+      "played": 2,
+      "guarded": 2,
+      "guarded_joint_match": true,
+      "delta_search_minus_root_cash_carried_workers_trees": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "game": "45869c71d4f1add508b049840e388e1f-1",
+      "step": 11,
+      "phase": "post",
+      "protected": [
+        "player-1-worker-1",
+        "player-1-worker-2"
+      ],
+      "n": 3,
+      "root": 3,
+      "search": 1,
+      "played": 1,
+      "guarded": 3,
+      "guarded_joint_match": true,
+      "delta_search_minus_root_cash_carried_workers_trees": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "game": "45869c71d4f1add508b049840e388e1f-1",
+      "step": 17,
+      "phase": "post",
+      "protected": [
+        "player-1-worker-1"
+      ],
+      "n": 2,
+      "root": 1,
+      "search": 0,
+      "played": 0,
+      "guarded": 1,
+      "guarded_joint_match": false,
+      "delta_search_minus_root_cash_carried_workers_trees": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "game": "1cc46f477941046042b7978a287d7dfe-1",
+      "step": 4,
+      "phase": "pre",
+      "protected": [],
+      "n": 2,
+      "root": 1,
+      "search": 1,
+      "played": 1,
+      "guarded": 1,
+      "guarded_joint_match": false,
+      "delta_search_minus_root_cash_carried_workers_trees": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "game": "1cc46f477941046042b7978a287d7dfe-1",
+      "step": 7,
+      "phase": "pre",
+      "protected": [
+        "player-0-worker-1"
+      ],
+      "n": 4,
+      "root": 4,
+      "search": 3,
+      "played": 3,
+      "guarded": 4,
+      "guarded_joint_match": true,
+      "delta_search_minus_root_cash_carried_workers_trees": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "game": "1cc46f477941046042b7978a287d7dfe-1",
+      "step": 11,
+      "phase": "post",
+      "protected": [
+        "player-0-worker-0"
+      ],
+      "n": 2,
+      "root": 2,
+      "search": 1,
+      "played": 1,
+      "guarded": 2,
+      "guarded_joint_match": true,
+      "delta_search_minus_root_cash_carried_workers_trees": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "game": "1cc46f477941046042b7978a287d7dfe-1",
+      "step": 17,
+      "phase": "post",
+      "protected": [],
+      "n": 4,
+      "root": 3,
+      "search": 4,
+      "played": 4,
+      "guarded": 4,
+      "guarded_joint_match": true,
+      "delta_search_minus_root_cash_carried_workers_trees": [
+        0.0,
+        6.066,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "game": "9107c596d070f54c60fc175bf616af09-1",
+      "step": 3,
+      "phase": "pre",
+      "protected": [],
+      "n": 2,
+      "root": 2,
+      "search": 2,
+      "played": 2,
+      "guarded": 2,
+      "guarded_joint_match": true,
+      "delta_search_minus_root_cash_carried_workers_trees": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "game": "9107c596d070f54c60fc175bf616af09-1",
+      "step": 5,
+      "phase": "pre",
+      "protected": [],
+      "n": 2,
+      "root": 2,
+      "search": 2,
+      "played": 2,
+      "guarded": 2,
+      "guarded_joint_match": true,
+      "delta_search_minus_root_cash_carried_workers_trees": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "game": "9107c596d070f54c60fc175bf616af09-1",
+      "step": 9,
+      "phase": "post",
+      "protected": [
+        "player-1-worker-0",
+        "player-1-worker-1"
+      ],
+      "n": 3,
+      "root": 2,
+      "search": 0,
+      "played": 0,
+      "guarded": 2,
+      "guarded_joint_match": false,
+      "delta_search_minus_root_cash_carried_workers_trees": [
+        0.0,
+        -3.9774,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "game": "9107c596d070f54c60fc175bf616af09-1",
+      "step": 15,
+      "phase": "post",
+      "protected": [],
+      "n": 4,
+      "root": 2,
+      "search": 1,
+      "played": 1,
+      "guarded": 1,
+      "guarded_joint_match": false,
+      "delta_search_minus_root_cash_carried_workers_trees": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "game": "631a646fd1b1194a50b31ae19e3009c4-1",
+      "step": 3,
+      "phase": "pre",
+      "protected": [],
+      "n": 2,
+      "root": 2,
+      "search": 2,
+      "played": 2,
+      "guarded": 2,
+      "guarded_joint_match": true,
+      "delta_search_minus_root_cash_carried_workers_trees": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "game": "631a646fd1b1194a50b31ae19e3009c4-1",
+      "step": 6,
+      "phase": "pre",
+      "protected": [],
+      "n": 2,
+      "root": 2,
+      "search": 2,
+      "played": 1,
+      "guarded": 2,
+      "guarded_joint_match": true,
+      "delta_search_minus_root_cash_carried_workers_trees": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "game": "631a646fd1b1194a50b31ae19e3009c4-1",
+      "step": 10,
+      "phase": "post",
+      "protected": [
+        "player-1-worker-0"
+      ],
+      "n": 3,
+      "root": 2,
+      "search": 3,
+      "played": 3,
+      "guarded": 2,
+      "guarded_joint_match": false,
+      "delta_search_minus_root_cash_carried_workers_trees": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "game": "631a646fd1b1194a50b31ae19e3009c4-1",
+      "step": 16,
+      "phase": "post",
+      "protected": [],
+      "n": 5,
+      "root": 3,
+      "search": 4,
+      "played": 4,
+      "guarded": 4,
+      "guarded_joint_match": false,
+      "delta_search_minus_root_cash_carried_workers_trees": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "game": "6279308face2cdcb2ac4807dcaedc9c4-1",
+      "step": 7,
+      "phase": "pre",
+      "protected": [
+        "player-0-worker-0"
+      ],
+      "n": 3,
+      "root": 3,
+      "search": 2,
+      "played": 2,
+      "guarded": 3,
+      "guarded_joint_match": true,
+      "delta_search_minus_root_cash_carried_workers_trees": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "game": "6279308face2cdcb2ac4807dcaedc9c4-1",
+      "step": 13,
+      "phase": "pre",
+      "protected": [],
+      "n": 5,
+      "root": 5,
+      "search": 4,
+      "played": 4,
+      "guarded": 4,
+      "guarded_joint_match": false,
+      "delta_search_minus_root_cash_carried_workers_trees": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "game": "6279308face2cdcb2ac4807dcaedc9c4-1",
+      "step": 17,
+      "phase": "post",
+      "protected": [
+        "player-0-worker-2",
+        "player-0-worker-4"
+      ],
+      "n": 7,
+      "root": 4,
+      "search": 3,
+      "played": 3,
+      "guarded": 4,
+      "guarded_joint_match": false,
+      "delta_search_minus_root_cash_carried_workers_trees": [
+        26.17,
+        26.17,
+        0.0,
+        -1.0
+      ]
+    },
+    {
+      "game": "6279308face2cdcb2ac4807dcaedc9c4-1",
+      "step": 23,
+      "phase": "post",
+      "protected": [],
+      "n": 9,
+      "root": 7,
+      "search": 7,
+      "played": 7,
+      "guarded": 7,
+      "guarded_joint_match": false,
+      "delta_search_minus_root_cash_carried_workers_trees": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "game": "53a975fac52b167a27aeb1eaa4f219a5-1",
+      "step": 2,
+      "phase": "pre",
+      "protected": [],
+      "n": 2,
+      "root": 2,
+      "search": 2,
+      "played": 2,
+      "guarded": 2,
+      "guarded_joint_match": true,
+      "delta_search_minus_root_cash_carried_workers_trees": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "game": "53a975fac52b167a27aeb1eaa4f219a5-1",
+      "step": 4,
+      "phase": "pre",
+      "protected": [
+        "player-1-worker-1"
+      ],
+      "n": 2,
+      "root": 2,
+      "search": 1,
+      "played": 1,
+      "guarded": 2,
+      "guarded_joint_match": true,
+      "delta_search_minus_root_cash_carried_workers_trees": [
+        18.4,
+        -5.2988,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "game": "53a975fac52b167a27aeb1eaa4f219a5-1",
+      "step": 8,
+      "phase": "post",
+      "protected": [],
+      "n": 2,
+      "root": 1,
+      "search": 0,
+      "played": 0,
+      "guarded": 0,
+      "guarded_joint_match": false,
+      "delta_search_minus_root_cash_carried_workers_trees": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "game": "53a975fac52b167a27aeb1eaa4f219a5-1",
+      "step": 14,
+      "phase": "post",
+      "protected": [],
+      "n": 4,
+      "root": 3,
+      "search": 3,
+      "played": 4,
+      "guarded": 3,
+      "guarded_joint_match": false,
+      "delta_search_minus_root_cash_carried_workers_trees": [
+        -1.08,
+        7.5375,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "game": "8cfa0cb23550156f8a8759f379c9f037-1",
+      "step": 2,
+      "phase": "pre",
+      "protected": [],
+      "n": 2,
+      "root": 2,
+      "search": 2,
+      "played": 2,
+      "guarded": 2,
+      "guarded_joint_match": true,
+      "delta_search_minus_root_cash_carried_workers_trees": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "game": "8cfa0cb23550156f8a8759f379c9f037-1",
+      "step": 4,
+      "phase": "pre",
+      "protected": [],
+      "n": 2,
+      "root": 2,
+      "search": 2,
+      "played": 2,
+      "guarded": 2,
+      "guarded_joint_match": true,
+      "delta_search_minus_root_cash_carried_workers_trees": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "game": "8cfa0cb23550156f8a8759f379c9f037-1",
+      "step": 8,
+      "phase": "post",
+      "protected": [],
+      "n": 2,
+      "root": 2,
+      "search": 2,
+      "played": 2,
+      "guarded": 2,
+      "guarded_joint_match": true,
+      "delta_search_minus_root_cash_carried_workers_trees": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "game": "8cfa0cb23550156f8a8759f379c9f037-1",
+      "step": 14,
+      "phase": "post",
+      "protected": [],
+      "n": 3,
+      "root": 3,
+      "search": 3,
+      "played": 3,
+      "guarded": 3,
+      "guarded_joint_match": true,
+      "delta_search_minus_root_cash_carried_workers_trees": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "game": "e2c0eb629674da05c07f4f47f906d5dc-1",
+      "step": 6,
+      "phase": "pre",
+      "protected": [],
+      "n": 2,
+      "root": 1,
+      "search": 1,
+      "played": 1,
+      "guarded": 1,
+      "guarded_joint_match": false,
+      "delta_search_minus_root_cash_carried_workers_trees": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "game": "e2c0eb629674da05c07f4f47f906d5dc-1",
+      "step": 11,
+      "phase": "pre",
+      "protected": [
+        "player-0-worker-2"
+      ],
+      "n": 3,
+      "root": 3,
+      "search": 1,
+      "played": 1,
+      "guarded": 3,
+      "guarded_joint_match": true,
+      "delta_search_minus_root_cash_carried_workers_trees": [
+        0.82,
+        -3.1925,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "game": "e2c0eb629674da05c07f4f47f906d5dc-1",
+      "step": 15,
+      "phase": "post",
+      "protected": [],
+      "n": 5,
+      "root": 5,
+      "search": 5,
+      "played": 5,
+      "guarded": 5,
+      "guarded_joint_match": true,
+      "delta_search_minus_root_cash_carried_workers_trees": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "game": "e2c0eb629674da05c07f4f47f906d5dc-1",
+      "step": 21,
+      "phase": "post",
+      "protected": [
+        "player-0-worker-5"
+      ],
+      "n": 6,
+      "root": 6,
+      "search": 5,
+      "played": 5,
+      "guarded": 6,
+      "guarded_joint_match": true,
+      "delta_search_minus_root_cash_carried_workers_trees": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ]
+}

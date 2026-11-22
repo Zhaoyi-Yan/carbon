@@ -1,6 +1,5 @@
 """Prove a new tournament's starting layouts are disjoint from public data and prior local games."""
 import argparse
-import hashlib
 import json
 from pathlib import Path
 

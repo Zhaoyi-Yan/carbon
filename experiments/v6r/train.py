@@ -106,10 +106,15 @@ def main():
     p.add_argument('--epochs',type=int,default=4);p.add_argument('--batch',type=int,default=64)
     p.add_argument('--warm',type=Path)
     p.add_argument('--learning-rate',type=float,default=.00015)
+    p.add_argument('--opponent-share',type=float,default=1.,help='fraction of nonelite training rows to keep')
     p.add_argument('--distill',type=float,default=.24)
     p.add_argument('--forecast',type=float,default=.50)
     a=p.parse_args();torch.manual_seed(83117);rng=np.random.default_rng(83117);torch.set_num_threads(1)
     tr,va=split(a.cache);train=load_rows(a.cache,tr);valid=load_rows(a.cache,va)
+    if not 0<=a.opponent_share<=1:p.error('opponent-share must be in [0,1]')
+    if a.opponent_share<1.:
+        keep=(train['T'].numpy()>=21)|(rng.random(len(train['T']))<a.opponent_share)
+        train={k:v[keep] for k,v in train.items()}
     device='mps' if torch.backends.mps.is_available() else 'cpu'
     prior=load_parent(a.source).to(device).eval()
     import copy
@@ -126,7 +131,7 @@ def main():
         net=net.to(device)
     opt=torch.optim.AdamW(net.parameters(),lr=a.learning_rate,weight_decay=.00012)
     schedule=torch.optim.lr_scheduler.CosineAnnealingLR(opt,T_max=a.epochs,eta_min=.000035)
-    report={'source_sha256':hashlib.sha256(a.source.read_bytes()).hexdigest(),'training':tr,'validation':va,'epochs':[],'warm_sha256':hashlib.sha256(a.warm.read_bytes()).hexdigest() if a.warm else None,'learning_rate':a.learning_rate,'distill':a.distill,'forecast':a.forecast}
+    report={'source_sha256':hashlib.sha256(a.source.read_bytes()).hexdigest(),'training':tr,'validation':va,'epochs':[],'opponent_share':a.opponent_share,'training_rows':len(train['T']),'warm_sha256':hashlib.sha256(a.warm.read_bytes()).hexdigest() if a.warm else None,'learning_rate':a.learning_rate,'distill':a.distill,'forecast':a.forecast}
     best=float('inf')
     for ep in range(a.epochs+1):
         if ep:

@@ -29,7 +29,7 @@ def run(files,sha):
             if result['status']!='completed':continue
             summary,_=replay_actions(result,turns,sha);seat=summary['v6_seat']
             final=breakdown(summary,seat)
-            check_near(final['score_change'],result['scores'][seat]-result['scores'][1-seat],'terminal decomposition')
+            check_near(final['score_change'],result['cash'][seat]-result['cash'][1-seat],'terminal cash decomposition')
             out.append(dict(seed=result['seed'],seat=seat,terminal_cash=result['cash'],result=final,
                             phases=[breakdown(p,seat) for p in summary['phases']]))
     if len({(g['seed'],g['seat']) for g in out})!=len(out):raise ValueError('duplicate result')

@@ -1,0 +1,373 @@
+{
+ "official_leaderboard": "https://117.72.210.134/api/leaderboard",
+ "http_date_utc": "2026-11-22T15:04:53+00:00",
+ "http_date_shanghai": "2026-11-22T23:04:53+08:00",
+ "leaderboard": {
+  "Artemis": {
+   "id": "226891089ba7f54b198c8f8dc771dfc2",
+   "name": "CarbonEdge_Artemis",
+   "board": "heavy",
+   "board_rank": 2,
+   "wins": 51,
+   "games": 52,
+   "rating": 3158.5254242280917
+  },
+  "Apollo": {
+   "id": "dd1f117a64c676225f0c6333b1cdd1e7",
+   "name": "CarbonEdge_Apollo",
+   "board": "heavy",
+   "board_rank": 1,
+   "wins": 97,
+   "games": 105,
+   "rating": 3172.5276765635285
+  },
+  "yan-v5": {
+   "id": "ec91ff24ea3af3510fe28c948b5d7da3",
+   "name": "yan-v5",
+   "board": "heavy",
+   "board_rank": 8,
+   "wins": 49,
+   "games": 71,
+   "rating": 2856.592097021973
+  }
+ },
+ "latest_full_snapshot": "9b1016950e1a02256efed17444b9ada9d46e514f",
+ "original_unique_matches": 217,
+ "original_manifest_sha256": "6b3fca72f26e570995527ccf125de081a3086d67adbfebe663e806931fec57be",
+ "selection": "All official completed Artemis and yan-v5 matches absent from the frozen 217-game manifest. Scores are subject then opponent; first hires are numbered by post-action frame or official event. Missing raw step-1 action denotes summary-only evidence.",
+ "new_teacher_head_to_head": 0,
+ "followup": [
+  {
+   "strategy": "yan-v5",
+   "opponent": "天枢弈潮",
+   "opponent_id": "d7985c0e2a4309051d45898edca8cfee",
+   "match": "518f5300a6e9a322759bef085c5cb14c",
+   "game": 1,
+   "seat": 1,
+   "created_shanghai": "2026-11-22T22:21:52+08:00",
+   "finished_shanghai": "2026-11-22T22:26:36+08:00",
+   "scores": [
+    8255.19,
+    9354.46
+   ],
+   "margin": -1099.27,
+   "first_successful_hire": 1,
+   "opening_wait_steps": 0,
+   "first_roles_cells": [
+    {
+     "role": "collector",
+     "cell": 70
+    },
+    {
+     "role": "collector",
+     "cell": 154
+    }
+   ],
+   "opponent_first_successful_hire": 1,
+   "opponent_first_roles_cells": [
+    {
+     "role": "collector",
+     "cell": 64
+    },
+    {
+     "role": "planter",
+     "cell": 160
+    }
+   ],
+   "step1_action": {
+    "player-1-recrtCenter-0": "RECCOLLECTOR",
+    "player-1-recrtCenter-1": "RECCOLLECTOR"
+   },
+   "step1_remaining_overtime": 5,
+   "step1_status": "ACTIVE",
+   "source_type": "full replay",
+   "source": "https://github.com/JUZI1/carbon-league-replays/blob/9b1016950e1a02256efed17444b9ada9d46e514f/replays/518f5300a6e9a322759bef085c5cb14c-1.json.gz",
+   "official_summary": "https://117.72.210.134/api/summary/518f5300a6e9a322759bef085c5cb14c/1"
+  },
+  {
+   "strategy": "Artemis",
+   "opponent": "RyanX-AIPowercore-it940-v4b",
+   "opponent_id": "40a58f89955a8b792d08b4bf5aeb3e53",
+   "match": "941595b84d3746c544f0f759e2999f4b",
+   "game": 1,
+   "seat": 1,
+   "created_shanghai": "2026-11-22T22:21:18+08:00",
+   "finished_shanghai": "2026-11-22T22:27:17+08:00",
+   "scores": [
+    7284.06,
+    5815.42
+   ],
+   "margin": 1468.64,
+   "first_successful_hire": 3,
+   "opening_wait_steps": 2,
+   "first_roles_cells": [
+    {
+     "role": "planter",
+     "cell": 70
+    },
+    {
+     "role": "collector",
+     "cell": 154
+    }
+   ],
+   "opponent_first_successful_hire": 1,
+   "opponent_first_roles_cells": [
+    {
+     "role": "collector",
+     "cell": 64
+    },
+    {
+     "role": "planter",
+     "cell": 160
+    }
+   ],
+   "step1_action": {},
+   "step1_remaining_overtime": 5,
+   "step1_status": "ACTIVE",
+   "source_type": "full replay",
+   "source": "https://github.com/JUZI1/carbon-league-replays/blob/9b1016950e1a02256efed17444b9ada9d46e514f/replays/941595b84d3746c544f0f759e2999f4b-1.json.gz",
+   "official_summary": "https://117.72.210.134/api/summary/941595b84d3746c544f0f759e2999f4b/1"
+  },
+  {
+   "strategy": "yan-v5",
+   "opponent": "z7-SiegeGuard-it720-v1",
+   "opponent_id": "1b9b3aae2b23a5a40644d8d55c74c573",
+   "match": "423728722e9636a60120d5593295b0e3",
+   "game": 1,
+   "seat": 1,
+   "created_shanghai": "2026-11-22T22:29:15+08:00",
+   "finished_shanghai": "2026-11-22T22:33:52+08:00",
+   "scores": [
+    8630.98,
+    7828.12
+   ],
+   "margin": 802.86,
+   "first_successful_hire": 1,
+   "opening_wait_steps": 0,
+   "first_roles_cells": [
+    {
+     "role": "collector",
+     "cell": 70
+    },
+    {
+     "role": "collector",
+     "cell": 154
+    }
+   ],
+   "opponent_first_successful_hire": 1,
+   "opponent_first_roles_cells": [
+    {
+     "role": "collector",
+     "cell": 64
+    },
+    {
+     "role": "planter",
+     "cell": 160
+    }
+   ],
+   "step1_action": {
+    "player-1-recrtCenter-0": "RECCOLLECTOR",
+    "player-1-recrtCenter-1": "RECCOLLECTOR"
+   },
+   "step1_remaining_overtime": 5,
+   "step1_status": "ACTIVE",
+   "source_type": "full replay",
+   "source": "https://github.com/JUZI1/carbon-league-replays/blob/9b1016950e1a02256efed17444b9ada9d46e514f/replays/423728722e9636a60120d5593295b0e3-1.json.gz",
+   "official_summary": "https://117.72.210.134/api/summary/423728722e9636a60120d5593295b0e3/1"
+  },
+  {
+   "strategy": "yan-v5",
+   "opponent": "天枢弈潮",
+   "opponent_id": "d7985c0e2a4309051d45898edca8cfee",
+   "match": "9347f119617e76fdd10bee0e47539151",
+   "game": 1,
+   "seat": 0,
+   "created_shanghai": "2026-11-22T22:34:23+08:00",
+   "finished_shanghai": "2026-11-22T22:38:40+08:00",
+   "scores": [
+    7689.38,
+    6339.66
+   ],
+   "margin": 1349.72,
+   "first_successful_hire": 1,
+   "opening_wait_steps": 0,
+   "first_roles_cells": [
+    {
+     "role": "collector",
+     "cell": 64
+    },
+    {
+     "role": "collector",
+     "cell": 160
+    }
+   ],
+   "opponent_first_successful_hire": 1,
+   "opponent_first_roles_cells": [
+    {
+     "role": "planter",
+     "cell": 70
+    },
+    {
+     "role": "collector",
+     "cell": 154
+    }
+   ],
+   "step1_action": {
+    "player-0-recrtCenter-0": "RECCOLLECTOR",
+    "player-0-recrtCenter-1": "RECCOLLECTOR"
+   },
+   "step1_remaining_overtime": 5,
+   "step1_status": "ACTIVE",
+   "source_type": "full replay",
+   "source": "https://github.com/JUZI1/carbon-league-replays/blob/9b1016950e1a02256efed17444b9ada9d46e514f/replays/9347f119617e76fdd10bee0e47539151-1.json.gz",
+   "official_summary": "https://117.72.210.134/api/summary/9347f119617e76fdd10bee0e47539151/1"
+  },
+  {
+   "strategy": "Artemis",
+   "opponent": "claude-AlphaCarbon-Master7sE",
+   "opponent_id": "6b717fdd3d51a00f8874148b2aeb9b02",
+   "match": "54168b172c76450d6dba9682995ce0b6",
+   "game": 1,
+   "seat": 0,
+   "created_shanghai": "2026-11-22T22:33:36+08:00",
+   "finished_shanghai": "2026-11-22T22:39:47+08:00",
+   "scores": [
+    9835.37,
+    8928.81
+   ],
+   "margin": 906.56,
+   "first_successful_hire": 2,
+   "opening_wait_steps": 1,
+   "first_roles_cells": [
+    {
+     "role": "collector",
+     "cell": 64
+    },
+    {
+     "role": "planter",
+     "cell": 160
+    }
+   ],
+   "opponent_first_successful_hire": 1,
+   "opponent_first_roles_cells": [
+    {
+     "role": "collector",
+     "cell": 70
+    },
+    {
+     "role": "collector",
+     "cell": 154
+    }
+   ],
+   "step1_action": {},
+   "step1_remaining_overtime": 5,
+   "step1_status": "ACTIVE",
+   "source_type": "full replay",
+   "source": "https://github.com/JUZI1/carbon-league-replays/blob/9b1016950e1a02256efed17444b9ada9d46e514f/replays/54168b172c76450d6dba9682995ce0b6-1.json.gz",
+   "official_summary": "https://117.72.210.134/api/summary/54168b172c76450d6dba9682995ce0b6/1"
+  },
+  {
+   "strategy": "Artemis",
+   "opponent": "z7-SiegeGuard-it720-v1",
+   "opponent_id": "1b9b3aae2b23a5a40644d8d55c74c573",
+   "match": "e658f0313b0ad091c0a8d6fe122573d9",
+   "game": 1,
+   "seat": 0,
+   "created_shanghai": "2026-11-22T22:40:03+08:00",
+   "finished_shanghai": "2026-11-22T22:46:03+08:00",
+   "scores": [
+    8535.51,
+    6104.12
+   ],
+   "margin": 2431.39,
+   "first_successful_hire": 2,
+   "opening_wait_steps": 1,
+   "first_roles_cells": [
+    {
+     "role": "planter",
+     "cell": 64
+    },
+    {
+     "role": "collector",
+     "cell": 160
+    }
+   ],
+   "opponent_first_successful_hire": 1,
+   "opponent_first_roles_cells": [
+    {
+     "role": "planter",
+     "cell": 70
+    },
+    {
+     "role": "collector",
+     "cell": 154
+    }
+   ],
+   "step1_action": {},
+   "step1_remaining_overtime": 5,
+   "step1_status": "ACTIVE",
+   "source_type": "full replay",
+   "source": "https://github.com/JUZI1/carbon-league-replays/blob/9b1016950e1a02256efed17444b9ada9d46e514f/replays/e658f0313b0ad091c0a8d6fe122573d9-1.json.gz",
+   "official_summary": "https://117.72.210.134/api/summary/e658f0313b0ad091c0a8d6fe122573d9/1"
+  },
+  {
+   "strategy": "Artemis",
+   "opponent": "SpongeBaby-CarbonNet-v3.0",
+   "opponent_id": "04cf11d7f98adf0142da924be98f8aa6",
+   "match": "45f2b502419c22ae3f36b422b3d57bef",
+   "game": 1,
+   "seat": 0,
+   "created_shanghai": "2026-11-22T22:54:45+08:00",
+   "finished_shanghai": "2026-11-22T23:00:36+08:00",
+   "scores": [
+    7660.43,
+    6403.13
+   ],
+   "margin": 1257.3,
+   "first_successful_hire": 2,
+   "opening_wait_steps": 1,
+   "first_roles_cells": [
+    {
+     "role": "collector",
+     "cell": 64
+    },
+    {
+     "role": "planter",
+     "cell": 160
+    }
+   ],
+   "opponent_first_successful_hire": 1,
+   "opponent_first_roles_cells": [
+    {
+     "role": "collector",
+     "cell": 70
+    },
+    {
+     "role": "collector",
+     "cell": 154
+    }
+   ],
+   "step1_action": null,
+   "step1_remaining_overtime": null,
+   "step1_status": null,
+   "source_type": "public opening events",
+   "source": "https://117.72.210.134/api/summary/45f2b502419c22ae3f36b422b3d57bef/1",
+   "official_summary": "https://117.72.210.134/api/summary/45f2b502419c22ae3f36b422b3d57bef/1"
+  }
+ ],
+ "archived_leaderboard_crosscheck": {
+  "revision": "9b1016950e1a02256efed17444b9ada9d46e514f",
+  "url": "https://github.com/JUZI1/carbon-league-replays/blob/9b1016950e1a02256efed17444b9ada9d46e514f/leaderboard.json",
+  "mirror_board_field": "light for all three strategies",
+  "official_board_field": "heavy for all three strategies",
+  "mirror_artemis_wins_games": [
+   50,
+   51
+  ],
+  "official_artemis_wins_games": [
+   51,
+   52
+  ],
+  "authority_for_board_and_rank": "https://117.72.210.134/api/leaderboard"
+ }
+}

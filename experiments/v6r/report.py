@@ -28,7 +28,9 @@ def summarize(frozen,results):
             invalid.append([*key,r['status']]);continue
         d=r['scores'][seat]-r['scores'][1-seat]
         expected=seat if d>0 else 1-seat if d<0 else None
-        if expected!=r['winner'] or d!=r['cash'][seat]-r['cash'][1-seat]:raise ValueError('Inconsistent referee result')
+        if expected!=r['winner']:raise ValueError('Winner differs from referee scores')
+        if any(score>=0 and score!=cash for score,cash in zip(r['scores'],r['cash'])):
+            raise ValueError('Non-elimination reward differs from final cash')
         differences[seat].append(d)
     games=[]
     for seed in seeds:
