@@ -1,0 +1,16 @@
+{
+  "candidate": "fairlead",
+  "sha256": "edad6caa7e7f9e4a2ac98bc5462fabd0584c0d8d78cc60f25326fa98d8f849e8",
+  "opponent_sha256": "e5c328aa5d18ced597791e7b839088f1a37d18e4e8dc83dd3d54b13d66e877b0",
+  "seeds": [
+    284282242,
+    437720332,
+    24923524,
+    200977614,
+    501225104,
+    413906774,
+    95278679,
+    236726972
+  ],
+  "criterion": "Freeze file hash before each batch. Eight new maps, 12/16 wins, at least 5 wins per seat and positive mean. If passed, four separately reserved maps, same unchanged hash, at least 5/8 and 2 each seat, positive mean. All games must finish normally. Retain failed batches."
+}

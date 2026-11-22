@@ -1,0 +1,2521 @@
+{
+  "parent_sha": "45a16afd04a4d1a981701b0287859df2e3dbd9b2c349044de94fbbf93abdec06",
+  "design": "Seven development and fourteen confirmation layouts; all independent of the frozen receipts training corpus, both screenshot maps and v7 panels. From 30 onward select at most 35 contact observations per map by deterministic hash/time strata, any collector on either side carrying at least 45 within two of another. No outcome used to pick frames.",
+  "search": "Reference Pilotage root search width 4, depth 2, one rival reply, 3 tail plies; every counted state completed a search. Use acting seat fog and teacher-forced own commands on each preceding frame; expensive root style estimator evaluated at selected states and their preceding states. Final tactical evaluator has identical opponent/candidate list and no wall-clock truncation between versions.",
+  "methods": {
+    "searched": "Joint action coming out of search before collision reassessment.",
+    "legacy": "Stock distance-only cargo valuation and original lower-quartile collision selection.",
+    "corrected": "Revalue all tactical options using estimated conditional arrival of current cargo by 5/10 plies, plus discounted residual. Excludes future mined stock and preserves cash, fleet, trees and elimination terms.",
+    "veto": "Allow the stock chooser to override the search only if that same alternative beats the searched joint by six units under the revised score."
+  },
+  "measures": [
+    "cash_margin",
+    "own_deposits",
+    "enemy_deposits",
+    "own_cargo_lost",
+    "enemy_cargo_lost",
+    "held_cargo_margin",
+    "unmatched_worker_turns"
+  ],
+  "accounting": "Original observed rival command on the first transition, replayed commands fixed for the next nine plies. Initial ID counters and full stocks reconstructed from the original start. Later workers mapped by persistent identity, same-turn same-base same-role births. Own-team cargo transfers excluded from loss; deposits to an enemy depot, enemy looting or destruction count as lost. The alternate future is a controlled counterfactual, not observed live adaptation.",
+  "frozen_rebuild_max_cash_error": 0.0,
+  "parity_checks": 2,
+  "maps": [
+    {
+      "match": "0b6a9f20f5913c4d83d4851a52d44cd0",
+      "side": 0,
+      "map": "647e8790c92ab5bf6d5806c433bd87e9659015c16ae733a3ae2bd00c64dfbf20",
+      "config_seed": 1548675519,
+      "fold": "confirm",
+      "requested_turns": 35,
+      "cash_rebuild_max_error": 0.0
+    },
+    {
+      "match": "0e5cf9aa86775fe0f27fdc7c81e78013",
+      "side": 0,
+      "map": "7af4760f5bd14195567915e576b3d9e017e167e8f41fee885aa28dae2da22f89",
+      "config_seed": 1467523485,
+      "fold": "confirm",
+      "requested_turns": 35,
+      "cash_rebuild_max_error": 0.0
+    },
+    {
+      "match": "0ef592a8efa3a24b7dab62a439f659c0",
+      "side": 1,
+      "map": "37db1a81e6e6a2229a9db732f064754f2af11d66bc306c83800efde5c9acb2d5",
+      "config_seed": 537394796,
+      "fold": "dev",
+      "requested_turns": 35,
+      "cash_rebuild_max_error": 0.0
+    },
+    {
+      "match": "132f16f82eebbbdfea98579e2c5f57bf",
+      "side": 1,
+      "map": "d58ec7c686f4e470502bb954dfa132378196855571bd0be029ffde33013405db",
+      "config_seed": 340693797,
+      "fold": "confirm",
+      "requested_turns": 35,
+      "cash_rebuild_max_error": 0.0
+    },
+    {
+      "match": "1946700de5ac084dffa70a3a389b6545",
+      "side": 0,
+      "map": "9dd985ad4c02310b6675c17f73a5c0120c54bdc8605a3c00b986cf890469ccdc",
+      "config_seed": 1439579166,
+      "fold": "confirm",
+      "requested_turns": 35,
+      "cash_rebuild_max_error": 0.0
+    },
+    {
+      "match": "1fca56fb013d31fa84dcbc6b94cd6aa9",
+      "side": 0,
+      "map": "d563c7db08f6244275e947a41c10d784b41cf711c16c9cf659f483206182d7d6",
+      "config_seed": 1320676588,
+      "fold": "confirm",
+      "requested_turns": 35,
+      "cash_rebuild_max_error": 0.0
+    },
+    {
+      "match": "2213ea1d22cd295a201fd5d6ba6f910c",
+      "side": 0,
+      "map": "1406873e243e0c9d5e26e7109329279567b1de8df1fc055101f5ec38cf73d707",
+      "config_seed": 658413593,
+      "fold": "confirm",
+      "requested_turns": 35,
+      "cash_rebuild_max_error": 0.0
+    },
+    {
+      "match": "252cd2acd336a5f5d44770ee57f14e71",
+      "side": 1,
+      "map": "0b0698f412ec95e63a851ccc7bbe59cd6d5f35ae4ff388ac3a934de608fed2a6",
+      "config_seed": 1231503537,
+      "fold": "confirm",
+      "requested_turns": 35,
+      "cash_rebuild_max_error": 0.0
+    },
+    {
+      "match": "2a21be64b50ece1934998ace7898c131",
+      "side": 1,
+      "map": "1d4e9a1b738ad7b9eb687ee510dd4c942e0a54ec7a772b6708de3f09729eede7",
+      "config_seed": 820453682,
+      "fold": "dev",
+      "requested_turns": 35,
+      "cash_rebuild_max_error": 0.0
+    },
+    {
+      "match": "2c1b7f5e5d8fabbfb1628dff55974c8a",
+      "side": 1,
+      "map": "e157e4cefab1ba95b4646278f274ec5f4bd3637988156d756919acd0f7ca59fe",
+      "config_seed": 1917543628,
+      "fold": "dev",
+      "requested_turns": 35,
+      "cash_rebuild_max_error": 0.0
+    },
+    {
+      "match": "31696e9e415f6af4d3a73f606fdb5685",
+      "side": 1,
+      "map": "383a18460d43aece7bb47a3792e433e8d91feadb887cede5521abce68453a9a7",
+      "config_seed": 1468201616,
+      "fold": "confirm",
+      "requested_turns": 35,
+      "cash_rebuild_max_error": 0.0
+    },
+    {
+      "match": "37f8e0e972d08f92125baa381f75b0b3",
+      "side": 1,
+      "map": "fefb7f72ba923e9026beba7a0a3b97652fefd20c48ae6c2f667aeb2406f06930",
+      "config_seed": 910845372,
+      "fold": "confirm",
+      "requested_turns": 35,
+      "cash_rebuild_max_error": 0.0
+    },
+    {
+      "match": "67d532ddcba8f4436a05da48d27b7062",
+      "side": 1,
+      "map": "ef6577e980c2a873813b623ef12bf6402623de10f562e570f673ff674e59dbd5",
+      "config_seed": 1216493420,
+      "fold": "confirm",
+      "requested_turns": 35,
+      "cash_rebuild_max_error": 0.0
+    },
+    {
+      "match": "71d0b417445abab36f5e8a057de798ff",
+      "side": 0,
+      "map": "ce1fe786bf1c563297d8b39c67b62518368a60d296949cd6a6bd0de6655838f6",
+      "config_seed": 1099264254,
+      "fold": "dev",
+      "requested_turns": 35,
+      "cash_rebuild_max_error": 0.0
+    },
+    {
+      "match": "73ab5fa937613aa81bc049998404fd51",
+      "side": 0,
+      "map": "8245ae0e2571c40716cb946469cec23188716493a6312278e02cfe23feffca67",
+      "config_seed": 1505301513,
+      "fold": "dev",
+      "requested_turns": 35,
+      "cash_rebuild_max_error": 0.0
+    },
+    {
+      "match": "743d579c99f14de582ea51970345d906",
+      "side": 1,
+      "map": "06951ae8d7815a977d7a5213af88d67396624bb508a7ce4e591847542986f2be",
+      "config_seed": 25853127,
+      "fold": "dev",
+      "requested_turns": 35,
+      "cash_rebuild_max_error": 0.0
+    },
+    {
+      "match": "a3babd018df5735673fd3a950948bd5a",
+      "side": 0,
+      "map": "e95e5a5590f91f80c0c062bb9eb04ca81ac76d053780f1a8840e8204efcab716",
+      "config_seed": 677113077,
+      "fold": "confirm",
+      "requested_turns": 35,
+      "cash_rebuild_max_error": 0.0
+    },
+    {
+      "match": "b18842b9d68f1a6bc8319009dea663cd",
+      "side": 1,
+      "map": "45b68279a9c1829ca4664a210de8aa69feac93c93d804f5fd585010ac0a4302b",
+      "config_seed": 705761762,
+      "fold": "confirm",
+      "requested_turns": 35,
+      "cash_rebuild_max_error": 0.0
+    },
+    {
+      "match": "c035d185e221aaa0457893aa86074eab",
+      "side": 1,
+      "map": "717ff4e42071fb07e8b9efc4c8b04dfd0663e4bb70a333055e919e95aa3da600",
+      "config_seed": 1822130955,
+      "fold": "dev",
+      "requested_turns": 35,
+      "cash_rebuild_max_error": 0.0
+    },
+    {
+      "match": "cf276b32e4fd38f43497e60f271a3854",
+      "side": 1,
+      "map": "cd759828f550a19d03cc9239fc553ef0fe1f1d96e3f94c37d4bedbf1d3a07fac",
+      "config_seed": 397168106,
+      "fold": "confirm",
+      "requested_turns": 35,
+      "cash_rebuild_max_error": 0.0
+    },
+    {
+      "match": "d4bce948578e84ca38f2796eebde6e55",
+      "side": 1,
+      "map": "f68675a02c2572234d744fa4094f399103979dc2db849f619ee9e7894fd27dae",
+      "config_seed": 877972915,
+      "fold": "confirm",
+      "requested_turns": 35,
+      "cash_rebuild_max_error": 0.0
+    }
+  ],
+  "roots": 734,
+  "change_log": "postcargo-actions.json.gz",
+  "unique_changed_states": 152,
+  "estimate_ms_per_leaf_p50_p95": [
+    0.0907,
+    0.1772
+  ],
+  "results": {
+    "dev": {
+      "legacy_vs_searched": {
+        "roots": 244,
+        "changes": 21,
+        "maps_with_changes": 7,
+        "maps": 7,
+        "horizons": {
+          "1": {
+            "mean_changed": {
+              "cash_margin": -1.5433,
+              "own_deposits": -2.4286,
+              "enemy_deposits": 0.0,
+              "own_cargo_lost": 4.6017,
+              "enemy_cargo_lost": 0.4028,
+              "held_cargo_margin": 8.1908,
+              "unmatched_worker_turns": 0.0
+            },
+            "mean_across_all_roots": {
+              "cash_margin": -0.1328,
+              "own_deposits": -0.209,
+              "enemy_deposits": 0.0,
+              "own_cargo_lost": 0.396,
+              "enemy_cargo_lost": 0.0347,
+              "held_cargo_margin": 0.7049,
+              "unmatched_worker_turns": 0.0
+            },
+            "map_mean": {
+              "cash_margin": -0.1294,
+              "own_deposits": -0.2082,
+              "enemy_deposits": 0.0,
+              "own_cargo_lost": 0.3944,
+              "enemy_cargo_lost": 0.0345,
+              "held_cargo_margin": 0.7184,
+              "unmatched_worker_turns": 0.0
+            },
+            "map_paired_ci95": {
+              "cash_margin": [
+                -0.8331,
+                0.3762
+              ],
+              "own_deposits": [
+                -0.6245,
+                0.0
+              ],
+              "enemy_deposits": [
+                0.0,
+                0.0
+              ],
+              "own_cargo_lost": [
+                0.0,
+                1.1833
+              ],
+              "enemy_cargo_lost": [
+                0.0,
+                0.1036
+              ],
+              "held_cargo_margin": [
+                -1.2382,
+                2.2941
+              ],
+              "unmatched_worker_turns": [
+                0.0,
+                0.0
+              ]
+            },
+            "maps_positive_cash": 3,
+            "maps_negative_cash": 2
+          },
+          "5": {
+            "mean_changed": {
+              "cash_margin": 1.9167,
+              "own_deposits": 3.296,
+              "enemy_deposits": 0.0,
+              "own_cargo_lost": 4.6017,
+              "enemy_cargo_lost": -2.222,
+              "held_cargo_margin": 11.483,
+              "unmatched_worker_turns": -1.5238
+            },
+            "mean_across_all_roots": {
+              "cash_margin": 0.165,
+              "own_deposits": 0.2837,
+              "enemy_deposits": 0.0,
+              "own_cargo_lost": 0.396,
+              "enemy_cargo_lost": -0.1912,
+              "held_cargo_margin": 0.9883,
+              "unmatched_worker_turns": -0.1311
+            },
+            "map_mean": {
+              "cash_margin": 0.1666,
+              "own_deposits": 0.2825,
+              "enemy_deposits": 0.0,
+              "own_cargo_lost": 0.3944,
+              "enemy_cargo_lost": -0.2122,
+              "held_cargo_margin": 0.9666,
+              "unmatched_worker_turns": -0.1322
+            },
+            "map_paired_ci95": {
+              "cash_margin": [
+                -0.9646,
+                1.0639
+              ],
+              "own_deposits": [
+                0.0118,
+                0.6996
+              ],
+              "enemy_deposits": [
+                0.0,
+                0.0
+              ],
+              "own_cargo_lost": [
+                0.0,
+                1.1833
+              ],
+              "enemy_cargo_lost": [
+                -2.2464,
+                1.5408
+              ],
+              "held_cargo_margin": [
+                -1.8451,
+                4.1423
+              ],
+              "unmatched_worker_turns": [
+                -0.2455,
+                -0.0327
+              ]
+            },
+            "maps_positive_cash": 4,
+            "maps_negative_cash": 2
+          },
+          "10": {
+            "mean_changed": {
+              "cash_margin": -24.7095,
+              "own_deposits": -11.9812,
+              "enemy_deposits": 10.8829,
+              "own_cargo_lost": 4.6017,
+              "enemy_cargo_lost": -15.7335,
+              "held_cargo_margin": 16.1694,
+              "unmatched_worker_turns": -3.4762
+            },
+            "mean_across_all_roots": {
+              "cash_margin": -2.1266,
+              "own_deposits": -1.0312,
+              "enemy_deposits": 0.9366,
+              "own_cargo_lost": 0.396,
+              "enemy_cargo_lost": -1.3541,
+              "held_cargo_margin": 1.3916,
+              "unmatched_worker_turns": -0.2992
+            },
+            "map_mean": {
+              "cash_margin": -2.1677,
+              "own_deposits": -1.0402,
+              "enemy_deposits": 0.9603,
+              "own_cargo_lost": 0.3944,
+              "enemy_cargo_lost": -1.4035,
+              "held_cargo_margin": 1.3416,
+              "unmatched_worker_turns": -0.3013
+            },
+            "map_paired_ci95": {
+              "cash_margin": [
+                -6.4455,
+                1.5531
+              ],
+              "own_deposits": [
+                -3.7076,
+                0.9995
+              ],
+              "enemy_deposits": [
+                0.0,
+                2.8808
+              ],
+              "own_cargo_lost": [
+                0.0,
+                1.1833
+              ],
+              "enemy_cargo_lost": [
+                -5.7291,
+                1.5618
+              ],
+              "held_cargo_margin": [
+                -4.259,
+                7.7313
+              ],
+              "unmatched_worker_turns": [
+                -0.5366,
+                -0.0939
+              ]
+            },
+            "maps_positive_cash": 4,
+            "maps_negative_cash": 2
+          }
+        }
+      },
+      "corrected_vs_legacy": {
+        "roots": 244,
+        "changes": 37,
+        "maps_with_changes": 7,
+        "maps": 7,
+        "horizons": {
+          "1": {
+            "mean_changed": {
+              "cash_margin": -2.7954,
+              "own_deposits": -2.7947,
+              "enemy_deposits": 0.0,
+              "own_cargo_lost": 6.2523,
+              "enemy_cargo_lost": 0.0,
+              "held_cargo_margin": -11.7105,
+              "unmatched_worker_turns": 0.0
+            },
+            "mean_across_all_roots": {
+              "cash_margin": -0.4239,
+              "own_deposits": -0.4238,
+              "enemy_deposits": 0.0,
+              "own_cargo_lost": 0.9481,
+              "enemy_cargo_lost": 0.0,
+              "held_cargo_margin": -1.7758,
+              "unmatched_worker_turns": 0.0
+            },
+            "map_mean": {
+              "cash_margin": -0.4222,
+              "own_deposits": -0.4221,
+              "enemy_deposits": 0.0,
+              "own_cargo_lost": 0.9442,
+              "enemy_cargo_lost": 0.0,
+              "held_cargo_margin": -1.773,
+              "unmatched_worker_turns": 0.0
+            },
+            "map_paired_ci95": {
+              "cash_margin": [
+                -1.2683,
+                0.004
+              ],
+              "own_deposits": [
+                -1.2662,
+                0.0
+              ],
+              "enemy_deposits": [
+                0.0,
+                0.0
+              ],
+              "own_cargo_lost": [
+                0.0,
+                2.8327
+              ],
+              "enemy_cargo_lost": [
+                0.0,
+                0.0
+              ],
+              "held_cargo_margin": [
+                -5.9461,
+                0.9177
+              ],
+              "unmatched_worker_turns": [
+                0.0,
+                0.0
+              ]
+            },
+            "maps_positive_cash": 1,
+            "maps_negative_cash": 2
+          },
+          "5": {
+            "mean_changed": {
+              "cash_margin": 5.2889,
+              "own_deposits": 5.0704,
+              "enemy_deposits": 0.0,
+              "own_cargo_lost": 7.8418,
+              "enemy_cargo_lost": 11.9633,
+              "held_cargo_margin": -9.6153,
+              "unmatched_worker_turns": 0.1351
+            },
+            "mean_across_all_roots": {
+              "cash_margin": 0.802,
+              "own_deposits": 0.7689,
+              "enemy_deposits": 0.0,
+              "own_cargo_lost": 1.1891,
+              "enemy_cargo_lost": 1.8141,
+              "held_cargo_margin": -1.4581,
+              "unmatched_worker_turns": 0.0205
+            },
+            "map_mean": {
+              "cash_margin": 0.8046,
+              "own_deposits": 0.7657,
+              "enemy_deposits": 0.0,
+              "own_cargo_lost": 1.1843,
+              "enemy_cargo_lost": 1.8067,
+              "held_cargo_margin": -1.4687,
+              "unmatched_worker_turns": 0.0214
+            },
+            "map_paired_ci95": {
+              "cash_margin": [
+                -0.3102,
+                2.0417
+              ],
+              "own_deposits": [
+                0.0,
+                1.9335
+              ],
+              "enemy_deposits": [
+                0.0,
+                0.0
+              ],
+              "own_cargo_lost": [
+                0.0,
+                3.0727
+              ],
+              "enemy_cargo_lost": [
+                0.0,
+                4.0139
+              ],
+              "held_cargo_margin": [
+                -5.483,
+                4.5834
+              ],
+              "unmatched_worker_turns": [
+                -0.0857,
+                0.1253
+              ]
+            },
+            "maps_positive_cash": 5,
+            "maps_negative_cash": 2
+          },
+          "10": {
+            "mean_changed": {
+              "cash_margin": 23.7197,
+              "own_deposits": 9.7199,
+              "enemy_deposits": -11.2399,
+              "own_cargo_lost": 2.2324,
+              "enemy_cargo_lost": 25.5648,
+              "held_cargo_margin": 5.7209,
+              "unmatched_worker_turns": 0.7297
+            },
+            "mean_across_all_roots": {
+              "cash_margin": 3.5968,
+              "own_deposits": 1.4739,
+              "enemy_deposits": -1.7044,
+              "own_cargo_lost": 0.3385,
+              "enemy_cargo_lost": 3.8766,
+              "held_cargo_margin": 0.8675,
+              "unmatched_worker_turns": 0.1107
+            },
+            "map_mean": {
+              "cash_margin": 3.6738,
+              "own_deposits": 1.5131,
+              "enemy_deposits": -1.7249,
+              "own_cargo_lost": 0.3216,
+              "enemy_cargo_lost": 3.8882,
+              "held_cargo_margin": 0.8685,
+              "unmatched_worker_turns": 0.1124
+            },
+            "map_paired_ci95": {
+              "cash_margin": [
+                -2.3898,
+                11.11
+              ],
+              "own_deposits": [
+                -1.9305,
+                5.333
+              ],
+              "enemy_deposits": [
+                -3.6454,
+                -0.2425
+              ],
+              "own_cargo_lost": [
+                -1.912,
+                2.599
+              ],
+              "enemy_cargo_lost": [
+                1.1529,
+                7.12
+              ],
+              "held_cargo_margin": [
+                -6.272,
+                8.9354
+              ],
+              "unmatched_worker_turns": [
+                -0.1592,
+                0.3537
+              ]
+            },
+            "maps_positive_cash": 6,
+            "maps_negative_cash": 1
+          }
+        }
+      },
+      "veto_vs_legacy": {
+        "roots": 244,
+        "changes": 9,
+        "maps_with_changes": 4,
+        "maps": 7,
+        "horizons": {
+          "1": {
+            "mean_changed": {
+              "cash_margin": 2.3611,
+              "own_deposits": 0.0,
+              "enemy_deposits": 0.0,
+              "own_cargo_lost": 0.0,
+              "enemy_cargo_lost": 0.0,
+              "held_cargo_margin": -14.4104,
+              "unmatched_worker_turns": 0.0
+            },
+            "mean_across_all_roots": {
+              "cash_margin": 0.0871,
+              "own_deposits": 0.0,
+              "enemy_deposits": 0.0,
+              "own_cargo_lost": 0.0,
+              "enemy_cargo_lost": 0.0,
+              "held_cargo_margin": -0.5315,
+              "unmatched_worker_turns": 0.0
+            },
+            "map_mean": {
+              "cash_margin": 0.0867,
+              "own_deposits": 0.0,
+              "enemy_deposits": 0.0,
+              "own_cargo_lost": 0.0,
+              "enemy_cargo_lost": 0.0,
+              "held_cargo_margin": -0.5388,
+              "unmatched_worker_turns": 0.0
+            },
+            "map_paired_ci95": {
+              "cash_margin": [
+                -0.0066,
+                0.2666
+              ],
+              "own_deposits": [
+                0.0,
+                0.0
+              ],
+              "enemy_deposits": [
+                0.0,
+                0.0
+              ],
+              "own_cargo_lost": [
+                0.0,
+                0.0
+              ],
+              "enemy_cargo_lost": [
+                0.0,
+                0.0
+              ],
+              "held_cargo_margin": [
+                -1.2572,
+                0.0335
+              ],
+              "unmatched_worker_turns": [
+                0.0,
+                0.0
+              ]
+            },
+            "maps_positive_cash": 1,
+            "maps_negative_cash": 1
+          },
+          "5": {
+            "mean_changed": {
+              "cash_margin": 2.7822,
+              "own_deposits": 0.0,
+              "enemy_deposits": 0.0,
+              "own_cargo_lost": 0.0,
+              "enemy_cargo_lost": 0.0,
+              "held_cargo_margin": -38.7439,
+              "unmatched_worker_turns": 1.4444
+            },
+            "mean_across_all_roots": {
+              "cash_margin": 0.1026,
+              "own_deposits": 0.0,
+              "enemy_deposits": 0.0,
+              "own_cargo_lost": 0.0,
+              "enemy_cargo_lost": 0.0,
+              "held_cargo_margin": -1.4291,
+              "unmatched_worker_turns": 0.0533
+            },
+            "map_mean": {
+              "cash_margin": 0.1026,
+              "own_deposits": 0.0,
+              "enemy_deposits": 0.0,
+              "own_cargo_lost": 0.0,
+              "enemy_cargo_lost": 0.0,
+              "held_cargo_margin": -1.4447,
+              "unmatched_worker_turns": 0.0546
+            },
+            "map_paired_ci95": {
+              "cash_margin": [
+                0.0,
+                0.2803
+              ],
+              "own_deposits": [
+                0.0,
+                0.0
+              ],
+              "enemy_deposits": [
+                0.0,
+                0.0
+              ],
+              "own_cargo_lost": [
+                0.0,
+                0.0
+              ],
+              "enemy_cargo_lost": [
+                0.0,
+                0.0
+              ],
+              "held_cargo_margin": [
+                -2.9444,
+                -0.2925
+              ],
+              "unmatched_worker_turns": [
+                0.0,
+                0.1639
+              ]
+            },
+            "maps_positive_cash": 2,
+            "maps_negative_cash": 0
+          },
+          "10": {
+            "mean_changed": {
+              "cash_margin": 29.9478,
+              "own_deposits": -8.1639,
+              "enemy_deposits": -25.3933,
+              "own_cargo_lost": 0.0,
+              "enemy_cargo_lost": 37.8008,
+              "held_cargo_margin": 18.9289,
+              "unmatched_worker_turns": 3.5556
+            },
+            "mean_across_all_roots": {
+              "cash_margin": 1.1046,
+              "own_deposits": -0.3011,
+              "enemy_deposits": -0.9366,
+              "own_cargo_lost": 0.0,
+              "enemy_cargo_lost": 1.3943,
+              "held_cargo_margin": 0.6982,
+              "unmatched_worker_turns": 0.1311
+            },
+            "map_mean": {
+              "cash_margin": 1.1393,
+              "own_deposits": -0.2999,
+              "enemy_deposits": -0.9603,
+              "own_cargo_lost": 0.0,
+              "enemy_cargo_lost": 1.416,
+              "held_cargo_margin": 0.7065,
+              "unmatched_worker_turns": 0.134
+            },
+            "map_paired_ci95": {
+              "cash_margin": [
+                -0.6936,
+                4.1114
+              ],
+              "own_deposits": [
+                -0.8997,
+                0.0
+              ],
+              "enemy_deposits": [
+                -2.8808,
+                0.0
+              ],
+              "own_cargo_lost": [
+                0.0,
+                0.0
+              ],
+              "enemy_cargo_lost": [
+                0.1926,
+                3.3365
+              ],
+              "held_cargo_margin": [
+                -0.7957,
+                2.3242
+              ],
+              "unmatched_worker_turns": [
+                0.0,
+                0.3693
+              ]
+            },
+            "maps_positive_cash": 1,
+            "maps_negative_cash": 1
+          }
+        }
+      },
+      "searched_vs_legacy": {
+        "roots": 244,
+        "changes": 21,
+        "maps_with_changes": 7,
+        "maps": 7,
+        "horizons": {
+          "1": {
+            "mean_changed": {
+              "cash_margin": 1.5433,
+              "own_deposits": 2.4286,
+              "enemy_deposits": 0.0,
+              "own_cargo_lost": -4.6017,
+              "enemy_cargo_lost": -0.4028,
+              "held_cargo_margin": -8.1908,
+              "unmatched_worker_turns": 0.0
+            },
+            "mean_across_all_roots": {
+              "cash_margin": 0.1328,
+              "own_deposits": 0.209,
+              "enemy_deposits": 0.0,
+              "own_cargo_lost": -0.396,
+              "enemy_cargo_lost": -0.0347,
+              "held_cargo_margin": -0.7049,
+              "unmatched_worker_turns": 0.0
+            },
+            "map_mean": {
+              "cash_margin": 0.1294,
+              "own_deposits": 0.2082,
+              "enemy_deposits": 0.0,
+              "own_cargo_lost": -0.3944,
+              "enemy_cargo_lost": -0.0345,
+              "held_cargo_margin": -0.7184,
+              "unmatched_worker_turns": 0.0
+            },
+            "map_paired_ci95": {
+              "cash_margin": [
+                -0.3762,
+                0.8331
+              ],
+              "own_deposits": [
+                0.0,
+                0.6245
+              ],
+              "enemy_deposits": [
+                0.0,
+                0.0
+              ],
+              "own_cargo_lost": [
+                -1.1833,
+                0.0
+              ],
+              "enemy_cargo_lost": [
+                -0.1036,
+                0.0
+              ],
+              "held_cargo_margin": [
+                -2.2941,
+                1.2382
+              ],
+              "unmatched_worker_turns": [
+                0.0,
+                0.0
+              ]
+            },
+            "maps_positive_cash": 2,
+            "maps_negative_cash": 3
+          },
+          "5": {
+            "mean_changed": {
+              "cash_margin": -1.9167,
+              "own_deposits": -3.296,
+              "enemy_deposits": 0.0,
+              "own_cargo_lost": -4.6017,
+              "enemy_cargo_lost": 2.222,
+              "held_cargo_margin": -11.483,
+              "unmatched_worker_turns": 1.5238
+            },
+            "mean_across_all_roots": {
+              "cash_margin": -0.165,
+              "own_deposits": -0.2837,
+              "enemy_deposits": 0.0,
+              "own_cargo_lost": -0.396,
+              "enemy_cargo_lost": 0.1912,
+              "held_cargo_margin": -0.9883,
+              "unmatched_worker_turns": 0.1311
+            },
+            "map_mean": {
+              "cash_margin": -0.1666,
+              "own_deposits": -0.2825,
+              "enemy_deposits": 0.0,
+              "own_cargo_lost": -0.3944,
+              "enemy_cargo_lost": 0.2122,
+              "held_cargo_margin": -0.9666,
+              "unmatched_worker_turns": 0.1322
+            },
+            "map_paired_ci95": {
+              "cash_margin": [
+                -1.0639,
+                0.9646
+              ],
+              "own_deposits": [
+                -0.6996,
+                -0.0118
+              ],
+              "enemy_deposits": [
+                0.0,
+                0.0
+              ],
+              "own_cargo_lost": [
+                -1.1833,
+                0.0
+              ],
+              "enemy_cargo_lost": [
+                -1.5408,
+                2.2464
+              ],
+              "held_cargo_margin": [
+                -4.1423,
+                1.8451
+              ],
+              "unmatched_worker_turns": [
+                0.0327,
+                0.2455
+              ]
+            },
+            "maps_positive_cash": 2,
+            "maps_negative_cash": 4
+          },
+          "10": {
+            "mean_changed": {
+              "cash_margin": 24.7095,
+              "own_deposits": 11.9812,
+              "enemy_deposits": -10.8829,
+              "own_cargo_lost": -4.6017,
+              "enemy_cargo_lost": 15.7335,
+              "held_cargo_margin": -16.1694,
+              "unmatched_worker_turns": 3.4762
+            },
+            "mean_across_all_roots": {
+              "cash_margin": 2.1266,
+              "own_deposits": 1.0312,
+              "enemy_deposits": -0.9366,
+              "own_cargo_lost": -0.396,
+              "enemy_cargo_lost": 1.3541,
+              "held_cargo_margin": -1.3916,
+              "unmatched_worker_turns": 0.2992
+            },
+            "map_mean": {
+              "cash_margin": 2.1677,
+              "own_deposits": 1.0402,
+              "enemy_deposits": -0.9603,
+              "own_cargo_lost": -0.3944,
+              "enemy_cargo_lost": 1.4035,
+              "held_cargo_margin": -1.3416,
+              "unmatched_worker_turns": 0.3013
+            },
+            "map_paired_ci95": {
+              "cash_margin": [
+                -1.5531,
+                6.4455
+              ],
+              "own_deposits": [
+                -0.9995,
+                3.7076
+              ],
+              "enemy_deposits": [
+                -2.8808,
+                0.0
+              ],
+              "own_cargo_lost": [
+                -1.1833,
+                0.0
+              ],
+              "enemy_cargo_lost": [
+                -1.5618,
+                5.7291
+              ],
+              "held_cargo_margin": [
+                -7.7313,
+                4.259
+              ],
+              "unmatched_worker_turns": [
+                0.0939,
+                0.5366
+              ]
+            },
+            "maps_positive_cash": 2,
+            "maps_negative_cash": 4
+          }
+        }
+      }
+    },
+    "confirm": {
+      "legacy_vs_searched": {
+        "roots": 490,
+        "changes": 47,
+        "maps_with_changes": 14,
+        "maps": 14,
+        "horizons": {
+          "1": {
+            "mean_changed": {
+              "cash_margin": 1.8745,
+              "own_deposits": 1.3131,
+              "enemy_deposits": 0.0,
+              "own_cargo_lost": 0.0,
+              "enemy_cargo_lost": 0.0,
+              "held_cargo_margin": 7.8181,
+              "unmatched_worker_turns": 0.0
+            },
+            "mean_across_all_roots": {
+              "cash_margin": 0.1798,
+              "own_deposits": 0.1259,
+              "enemy_deposits": 0.0,
+              "own_cargo_lost": 0.0,
+              "enemy_cargo_lost": 0.0,
+              "held_cargo_margin": 0.7499,
+              "unmatched_worker_turns": 0.0
+            },
+            "map_mean": {
+              "cash_margin": 0.1798,
+              "own_deposits": 0.1259,
+              "enemy_deposits": 0.0,
+              "own_cargo_lost": 0.0,
+              "enemy_cargo_lost": 0.0,
+              "held_cargo_margin": 0.7499,
+              "unmatched_worker_turns": 0.0
+            },
+            "map_paired_ci95": {
+              "cash_margin": [
+                -0.0174,
+                0.4875
+              ],
+              "own_deposits": [
+                0.0,
+                0.3778
+              ],
+              "enemy_deposits": [
+                0.0,
+                0.0
+              ],
+              "own_cargo_lost": [
+                0.0,
+                0.0
+              ],
+              "enemy_cargo_lost": [
+                0.0,
+                0.0
+              ],
+              "held_cargo_margin": [
+                0.1561,
+                1.3547
+              ],
+              "unmatched_worker_turns": [
+                0.0,
+                0.0
+              ]
+            },
+            "maps_positive_cash": 4,
+            "maps_negative_cash": 1
+          },
+          "5": {
+            "mean_changed": {
+              "cash_margin": 12.7594,
+              "own_deposits": 8.7868,
+              "enemy_deposits": 0.5897,
+              "own_cargo_lost": -2.6837,
+              "enemy_cargo_lost": -14.365,
+              "held_cargo_margin": -17.175,
+              "unmatched_worker_turns": -0.3191
+            },
+            "mean_across_all_roots": {
+              "cash_margin": 1.2239,
+              "own_deposits": 0.8428,
+              "enemy_deposits": 0.0566,
+              "own_cargo_lost": -0.2574,
+              "enemy_cargo_lost": -1.3779,
+              "held_cargo_margin": -1.6474,
+              "unmatched_worker_turns": -0.0306
+            },
+            "map_mean": {
+              "cash_margin": 1.2239,
+              "own_deposits": 0.8428,
+              "enemy_deposits": 0.0566,
+              "own_cargo_lost": -0.2574,
+              "enemy_cargo_lost": -1.3779,
+              "held_cargo_margin": -1.6474,
+              "unmatched_worker_turns": -0.0306
+            },
+            "map_paired_ci95": {
+              "cash_margin": [
+                0.275,
+                2.3292
+              ],
+              "own_deposits": [
+                0.0995,
+                1.7483
+              ],
+              "enemy_deposits": [
+                -0.1322,
+                0.3019
+              ],
+              "own_cargo_lost": [
+                -0.7209,
+                0.122
+              ],
+              "enemy_cargo_lost": [
+                -2.5042,
+                -0.4519
+              ],
+              "held_cargo_margin": [
+                -4.8497,
+                0.7611
+              ],
+              "unmatched_worker_turns": [
+                -0.0673,
+                -0.002
+              ]
+            },
+            "maps_positive_cash": 10,
+            "maps_negative_cash": 3
+          },
+          "10": {
+            "mean_changed": {
+              "cash_margin": 3.6936,
+              "own_deposits": 14.5069,
+              "enemy_deposits": 14.0359,
+              "own_cargo_lost": -1.6448,
+              "enemy_cargo_lost": -23.8135,
+              "held_cargo_margin": -26.9244,
+              "unmatched_worker_turns": -0.5957
+            },
+            "mean_across_all_roots": {
+              "cash_margin": 0.3543,
+              "own_deposits": 1.3915,
+              "enemy_deposits": 1.3463,
+              "own_cargo_lost": -0.1578,
+              "enemy_cargo_lost": -2.2842,
+              "held_cargo_margin": -2.5825,
+              "unmatched_worker_turns": -0.0571
+            },
+            "map_mean": {
+              "cash_margin": 0.3543,
+              "own_deposits": 1.3915,
+              "enemy_deposits": 1.3463,
+              "own_cargo_lost": -0.1578,
+              "enemy_cargo_lost": -2.2842,
+              "held_cargo_margin": -2.5825,
+              "unmatched_worker_turns": -0.0571
+            },
+            "map_paired_ci95": {
+              "cash_margin": [
+                -0.9359,
+                1.6752
+              ],
+              "own_deposits": [
+                0.4204,
+                2.491
+              ],
+              "enemy_deposits": [
+                0.3759,
+                2.5467
+              ],
+              "own_cargo_lost": [
+                -0.5873,
+                0.2452
+              ],
+              "enemy_cargo_lost": [
+                -3.7489,
+                -0.8599
+              ],
+              "held_cargo_margin": [
+                -5.3133,
+                0.0808
+              ],
+              "unmatched_worker_turns": [
+                -0.1449,
+                0.0163
+              ]
+            },
+            "maps_positive_cash": 9,
+            "maps_negative_cash": 5
+          }
+        }
+      },
+      "corrected_vs_legacy": {
+        "roots": 490,
+        "changes": 64,
+        "maps_with_changes": 14,
+        "maps": 14,
+        "horizons": {
+          "1": {
+            "mean_changed": {
+              "cash_margin": -5.0987,
+              "own_deposits": -5.1076,
+              "enemy_deposits": 0.0,
+              "own_cargo_lost": 0.0,
+              "enemy_cargo_lost": 0.0,
+              "held_cargo_margin": 5.7166,
+              "unmatched_worker_turns": 0.0
+            },
+            "mean_across_all_roots": {
+              "cash_margin": -0.666,
+              "own_deposits": -0.6671,
+              "enemy_deposits": 0.0,
+              "own_cargo_lost": 0.0,
+              "enemy_cargo_lost": 0.0,
+              "held_cargo_margin": 0.7467,
+              "unmatched_worker_turns": 0.0
+            },
+            "map_mean": {
+              "cash_margin": -0.666,
+              "own_deposits": -0.6671,
+              "enemy_deposits": 0.0,
+              "own_cargo_lost": 0.0,
+              "enemy_cargo_lost": 0.0,
+              "held_cargo_margin": 0.7467,
+              "unmatched_worker_turns": 0.0
+            },
+            "map_paired_ci95": {
+              "cash_margin": [
+                -1.8262,
+                0.0022
+              ],
+              "own_deposits": [
+                -1.8282,
+                0.0
+              ],
+              "enemy_deposits": [
+                0.0,
+                0.0
+              ],
+              "own_cargo_lost": [
+                0.0,
+                0.0
+              ],
+              "enemy_cargo_lost": [
+                0.0,
+                0.0
+              ],
+              "held_cargo_margin": [
+                -0.237,
+                2.14
+              ],
+              "unmatched_worker_turns": [
+                0.0,
+                0.0
+              ]
+            },
+            "maps_positive_cash": 2,
+            "maps_negative_cash": 2
+          },
+          "5": {
+            "mean_changed": {
+              "cash_margin": 17.9572,
+              "own_deposits": 11.2094,
+              "enemy_deposits": -5.4363,
+              "own_cargo_lost": 3.2233,
+              "enemy_cargo_lost": 14.129,
+              "held_cargo_margin": -0.1592,
+              "unmatched_worker_turns": -0.1406
+            },
+            "mean_across_all_roots": {
+              "cash_margin": 2.3454,
+              "own_deposits": 1.4641,
+              "enemy_deposits": -0.71,
+              "own_cargo_lost": 0.421,
+              "enemy_cargo_lost": 1.8454,
+              "held_cargo_margin": -0.0208,
+              "unmatched_worker_turns": -0.0184
+            },
+            "map_mean": {
+              "cash_margin": 2.3454,
+              "own_deposits": 1.4641,
+              "enemy_deposits": -0.71,
+              "own_cargo_lost": 0.421,
+              "enemy_cargo_lost": 1.8454,
+              "held_cargo_margin": -0.0208,
+              "unmatched_worker_turns": -0.0184
+            },
+            "map_paired_ci95": {
+              "cash_margin": [
+                -0.1347,
+                4.9996
+              ],
+              "own_deposits": [
+                -0.528,
+                3.6399
+              ],
+              "enemy_deposits": [
+                -2.1301,
+                0.0
+              ],
+              "own_cargo_lost": [
+                -0.6016,
+                1.6254
+              ],
+              "enemy_cargo_lost": [
+                -0.5194,
+                4.2824
+              ],
+              "held_cargo_margin": [
+                -5.1265,
+                5.2044
+              ],
+              "unmatched_worker_turns": [
+                -0.049,
+                0.0
+              ]
+            },
+            "maps_positive_cash": 7,
+            "maps_negative_cash": 4
+          },
+          "10": {
+            "mean_changed": {
+              "cash_margin": 16.4753,
+              "own_deposits": 8.485,
+              "enemy_deposits": -7.4874,
+              "own_cargo_lost": 1.8694,
+              "enemy_cargo_lost": 23.1633,
+              "held_cargo_margin": 17.0505,
+              "unmatched_worker_turns": -0.25
+            },
+            "mean_across_all_roots": {
+              "cash_margin": 2.1519,
+              "own_deposits": 1.1082,
+              "enemy_deposits": -0.9779,
+              "own_cargo_lost": 0.2442,
+              "enemy_cargo_lost": 3.0254,
+              "held_cargo_margin": 2.227,
+              "unmatched_worker_turns": -0.0327
+            },
+            "map_mean": {
+              "cash_margin": 2.1519,
+              "own_deposits": 1.1082,
+              "enemy_deposits": -0.9779,
+              "own_cargo_lost": 0.2442,
+              "enemy_cargo_lost": 3.0254,
+              "held_cargo_margin": 2.227,
+              "unmatched_worker_turns": -0.0327
+            },
+            "map_paired_ci95": {
+              "cash_margin": [
+                -2.043,
+                5.9366
+              ],
+              "own_deposits": [
+                -2.5178,
+                4.6783
+              ],
+              "enemy_deposits": [
+                -2.5494,
+                0.0477
+              ],
+              "own_cargo_lost": [
+                -1.3333,
+                1.7777
+              ],
+              "enemy_cargo_lost": [
+                0.5538,
+                5.9244
+              ],
+              "held_cargo_margin": [
+                -2.9521,
+                7.5382
+              ],
+              "unmatched_worker_turns": [
+                -0.0898,
+                0.0122
+              ]
+            },
+            "maps_positive_cash": 8,
+            "maps_negative_cash": 4
+          }
+        }
+      },
+      "veto_vs_legacy": {
+        "roots": 490,
+        "changes": 25,
+        "maps_with_changes": 11,
+        "maps": 14,
+        "horizons": {
+          "1": {
+            "mean_changed": {
+              "cash_margin": -2.6484,
+              "own_deposits": -2.4686,
+              "enemy_deposits": 0.0,
+              "own_cargo_lost": 0.0,
+              "enemy_cargo_lost": 0.0,
+              "held_cargo_margin": -8.8633,
+              "unmatched_worker_turns": 0.0
+            },
+            "mean_across_all_roots": {
+              "cash_margin": -0.1351,
+              "own_deposits": -0.1259,
+              "enemy_deposits": 0.0,
+              "own_cargo_lost": 0.0,
+              "enemy_cargo_lost": 0.0,
+              "held_cargo_margin": -0.4522,
+              "unmatched_worker_turns": 0.0
+            },
+            "map_mean": {
+              "cash_margin": -0.1351,
+              "own_deposits": -0.1259,
+              "enemy_deposits": 0.0,
+              "own_cargo_lost": 0.0,
+              "enemy_cargo_lost": 0.0,
+              "held_cargo_margin": -0.4522,
+              "unmatched_worker_turns": 0.0
+            },
+            "map_paired_ci95": {
+              "cash_margin": [
+                -0.3916,
+                0.0
+              ],
+              "own_deposits": [
+                -0.3778,
+                0.0
+              ],
+              "enemy_deposits": [
+                0.0,
+                0.0
+              ],
+              "own_cargo_lost": [
+                0.0,
+                0.0
+              ],
+              "enemy_cargo_lost": [
+                0.0,
+                0.0
+              ],
+              "held_cargo_margin": [
+                -0.9124,
+                0.0034
+              ],
+              "unmatched_worker_turns": [
+                0.0,
+                0.0
+              ]
+            },
+            "maps_positive_cash": 0,
+            "maps_negative_cash": 3
+          },
+          "5": {
+            "mean_changed": {
+              "cash_margin": -10.4244,
+              "own_deposits": -7.6744,
+              "enemy_deposits": 0.8635,
+              "own_cargo_lost": 3.7882,
+              "enemy_cargo_lost": 15.7766,
+              "held_cargo_margin": 15.5304,
+              "unmatched_worker_turns": 0.04
+            },
+            "mean_across_all_roots": {
+              "cash_margin": -0.5319,
+              "own_deposits": -0.3916,
+              "enemy_deposits": 0.0441,
+              "own_cargo_lost": 0.1933,
+              "enemy_cargo_lost": 0.8049,
+              "held_cargo_margin": 0.7924,
+              "unmatched_worker_turns": 0.002
+            },
+            "map_mean": {
+              "cash_margin": -0.5319,
+              "own_deposits": -0.3916,
+              "enemy_deposits": 0.0441,
+              "own_cargo_lost": 0.1933,
+              "enemy_cargo_lost": 0.8049,
+              "held_cargo_margin": 0.7924,
+              "unmatched_worker_turns": 0.002
+            },
+            "map_paired_ci95": {
+              "cash_margin": [
+                -1.1066,
+                -0.0639
+              ],
+              "own_deposits": [
+                -1.0299,
+                0.0
+              ],
+              "enemy_deposits": [
+                0.0,
+                0.1322
+              ],
+              "own_cargo_lost": [
+                0.0,
+                0.5358
+              ],
+              "enemy_cargo_lost": [
+                0.1506,
+                1.6177
+              ],
+              "held_cargo_margin": [
+                -0.4589,
+                2.3535
+              ],
+              "unmatched_worker_turns": [
+                -0.0245,
+                0.0245
+              ]
+            },
+            "maps_positive_cash": 1,
+            "maps_negative_cash": 7
+          },
+          "10": {
+            "mean_changed": {
+              "cash_margin": -10.9728,
+              "own_deposits": -19.4176,
+              "enemy_deposits": -7.8176,
+              "own_cargo_lost": 1.8352,
+              "enemy_cargo_lost": 12.4489,
+              "held_cargo_margin": 17.7086,
+              "unmatched_worker_turns": 0.08
+            },
+            "mean_across_all_roots": {
+              "cash_margin": -0.5598,
+              "own_deposits": -0.9907,
+              "enemy_deposits": -0.3989,
+              "own_cargo_lost": 0.0936,
+              "enemy_cargo_lost": 0.6351,
+              "held_cargo_margin": 0.9035,
+              "unmatched_worker_turns": 0.0041
+            },
+            "map_mean": {
+              "cash_margin": -0.5598,
+              "own_deposits": -0.9907,
+              "enemy_deposits": -0.3989,
+              "own_cargo_lost": 0.0936,
+              "enemy_cargo_lost": 0.6351,
+              "held_cargo_margin": 0.9035,
+              "unmatched_worker_turns": 0.0041
+            },
+            "map_paired_ci95": {
+              "cash_margin": [
+                -1.7014,
+                0.541
+              ],
+              "own_deposits": [
+                -1.9425,
+                -0.1833
+              ],
+              "enemy_deposits": [
+                -0.9699,
+                0.0281
+              ],
+              "own_cargo_lost": [
+                -0.1662,
+                0.376
+              ],
+              "enemy_cargo_lost": [
+                -0.1698,
+                1.5342
+              ],
+              "held_cargo_margin": [
+                -0.7354,
+                2.9155
+              ],
+              "unmatched_worker_turns": [
+                -0.049,
+                0.0531
+              ]
+            },
+            "maps_positive_cash": 4,
+            "maps_negative_cash": 6
+          }
+        }
+      },
+      "searched_vs_legacy": {
+        "roots": 490,
+        "changes": 47,
+        "maps_with_changes": 14,
+        "maps": 14,
+        "horizons": {
+          "1": {
+            "mean_changed": {
+              "cash_margin": -1.8745,
+              "own_deposits": -1.3131,
+              "enemy_deposits": 0.0,
+              "own_cargo_lost": 0.0,
+              "enemy_cargo_lost": 0.0,
+              "held_cargo_margin": -7.8181,
+              "unmatched_worker_turns": 0.0
+            },
+            "mean_across_all_roots": {
+              "cash_margin": -0.1798,
+              "own_deposits": -0.1259,
+              "enemy_deposits": 0.0,
+              "own_cargo_lost": 0.0,
+              "enemy_cargo_lost": 0.0,
+              "held_cargo_margin": -0.7499,
+              "unmatched_worker_turns": 0.0
+            },
+            "map_mean": {
+              "cash_margin": -0.1798,
+              "own_deposits": -0.1259,
+              "enemy_deposits": 0.0,
+              "own_cargo_lost": 0.0,
+              "enemy_cargo_lost": 0.0,
+              "held_cargo_margin": -0.7499,
+              "unmatched_worker_turns": 0.0
+            },
+            "map_paired_ci95": {
+              "cash_margin": [
+                -0.4875,
+                0.0174
+              ],
+              "own_deposits": [
+                -0.3778,
+                0.0
+              ],
+              "enemy_deposits": [
+                0.0,
+                0.0
+              ],
+              "own_cargo_lost": [
+                0.0,
+                0.0
+              ],
+              "enemy_cargo_lost": [
+                0.0,
+                0.0
+              ],
+              "held_cargo_margin": [
+                -1.3547,
+                -0.1561
+              ],
+              "unmatched_worker_turns": [
+                0.0,
+                0.0
+              ]
+            },
+            "maps_positive_cash": 1,
+            "maps_negative_cash": 4
+          },
+          "5": {
+            "mean_changed": {
+              "cash_margin": -12.7594,
+              "own_deposits": -8.7868,
+              "enemy_deposits": -0.5897,
+              "own_cargo_lost": 2.6837,
+              "enemy_cargo_lost": 14.365,
+              "held_cargo_margin": 17.175,
+              "unmatched_worker_turns": 0.3191
+            },
+            "mean_across_all_roots": {
+              "cash_margin": -1.2239,
+              "own_deposits": -0.8428,
+              "enemy_deposits": -0.0566,
+              "own_cargo_lost": 0.2574,
+              "enemy_cargo_lost": 1.3779,
+              "held_cargo_margin": 1.6474,
+              "unmatched_worker_turns": 0.0306
+            },
+            "map_mean": {
+              "cash_margin": -1.2239,
+              "own_deposits": -0.8428,
+              "enemy_deposits": -0.0566,
+              "own_cargo_lost": 0.2574,
+              "enemy_cargo_lost": 1.3779,
+              "held_cargo_margin": 1.6474,
+              "unmatched_worker_turns": 0.0306
+            },
+            "map_paired_ci95": {
+              "cash_margin": [
+                -2.3292,
+                -0.275
+              ],
+              "own_deposits": [
+                -1.7483,
+                -0.0995
+              ],
+              "enemy_deposits": [
+                -0.3019,
+                0.1322
+              ],
+              "own_cargo_lost": [
+                -0.122,
+                0.7209
+              ],
+              "enemy_cargo_lost": [
+                0.4519,
+                2.5042
+              ],
+              "held_cargo_margin": [
+                -0.7611,
+                4.8497
+              ],
+              "unmatched_worker_turns": [
+                0.002,
+                0.0673
+              ]
+            },
+            "maps_positive_cash": 3,
+            "maps_negative_cash": 10
+          },
+          "10": {
+            "mean_changed": {
+              "cash_margin": -3.6936,
+              "own_deposits": -14.5069,
+              "enemy_deposits": -14.0359,
+              "own_cargo_lost": 1.6448,
+              "enemy_cargo_lost": 23.8135,
+              "held_cargo_margin": 26.9244,
+              "unmatched_worker_turns": 0.5957
+            },
+            "mean_across_all_roots": {
+              "cash_margin": -0.3543,
+              "own_deposits": -1.3915,
+              "enemy_deposits": -1.3463,
+              "own_cargo_lost": 0.1578,
+              "enemy_cargo_lost": 2.2842,
+              "held_cargo_margin": 2.5825,
+              "unmatched_worker_turns": 0.0571
+            },
+            "map_mean": {
+              "cash_margin": -0.3543,
+              "own_deposits": -1.3915,
+              "enemy_deposits": -1.3463,
+              "own_cargo_lost": 0.1578,
+              "enemy_cargo_lost": 2.2842,
+              "held_cargo_margin": 2.5825,
+              "unmatched_worker_turns": 0.0571
+            },
+            "map_paired_ci95": {
+              "cash_margin": [
+                -1.6752,
+                0.9359
+              ],
+              "own_deposits": [
+                -2.491,
+                -0.4204
+              ],
+              "enemy_deposits": [
+                -2.5467,
+                -0.3759
+              ],
+              "own_cargo_lost": [
+                -0.2452,
+                0.5873
+              ],
+              "enemy_cargo_lost": [
+                0.8599,
+                3.7489
+              ],
+              "held_cargo_margin": [
+                -0.0808,
+                5.3133
+              ],
+              "unmatched_worker_turns": [
+                -0.0163,
+                0.1449
+              ]
+            },
+            "maps_positive_cash": 5,
+            "maps_negative_cash": 9
+          }
+        }
+      }
+    },
+    "all": {
+      "legacy_vs_searched": {
+        "roots": 734,
+        "changes": 68,
+        "maps_with_changes": 21,
+        "maps": 21,
+        "horizons": {
+          "1": {
+            "mean_changed": {
+              "cash_margin": 0.819,
+              "own_deposits": 0.1576,
+              "enemy_deposits": 0.0,
+              "own_cargo_lost": 1.4211,
+              "enemy_cargo_lost": 0.1244,
+              "held_cargo_margin": 7.9332,
+              "unmatched_worker_turns": 0.0
+            },
+            "mean_across_all_roots": {
+              "cash_margin": 0.0759,
+              "own_deposits": 0.0146,
+              "enemy_deposits": 0.0,
+              "own_cargo_lost": 0.1317,
+              "enemy_cargo_lost": 0.0115,
+              "held_cargo_margin": 0.735,
+              "unmatched_worker_turns": 0.0
+            },
+            "map_mean": {
+              "cash_margin": 0.0767,
+              "own_deposits": 0.0146,
+              "enemy_deposits": 0.0,
+              "own_cargo_lost": 0.1315,
+              "enemy_cargo_lost": 0.0115,
+              "held_cargo_margin": 0.7394,
+              "unmatched_worker_turns": 0.0
+            },
+            "map_paired_ci95": {
+              "cash_margin": [
+                -0.2189,
+                0.3547
+              ],
+              "own_deposits": [
+                -0.2082,
+                0.2519
+              ],
+              "enemy_deposits": [
+                0.0,
+                0.0
+              ],
+              "own_cargo_lost": [
+                0.0,
+                0.3944
+              ],
+              "enemy_cargo_lost": [
+                0.0,
+                0.0345
+              ],
+              "held_cargo_margin": [
+                0.005,
+                1.3953
+              ],
+              "unmatched_worker_turns": [
+                0.0,
+                0.0
+              ]
+            },
+            "maps_positive_cash": 7,
+            "maps_negative_cash": 3
+          },
+          "5": {
+            "mean_changed": {
+              "cash_margin": 9.4109,
+              "own_deposits": 7.0911,
+              "enemy_deposits": 0.4076,
+              "own_cargo_lost": -0.4338,
+              "enemy_cargo_lost": -10.615,
+              "held_cargo_margin": -8.3247,
+              "unmatched_worker_turns": -0.6912
+            },
+            "mean_across_all_roots": {
+              "cash_margin": 0.8719,
+              "own_deposits": 0.6569,
+              "enemy_deposits": 0.0378,
+              "own_cargo_lost": -0.0402,
+              "enemy_cargo_lost": -0.9834,
+              "held_cargo_margin": -0.7712,
+              "unmatched_worker_turns": -0.064
+            },
+            "map_mean": {
+              "cash_margin": 0.8714,
+              "own_deposits": 0.656,
+              "enemy_deposits": 0.0377,
+              "own_cargo_lost": -0.0401,
+              "enemy_cargo_lost": -0.9893,
+              "held_cargo_margin": -0.7761,
+              "unmatched_worker_turns": -0.0645
+            },
+            "map_paired_ci95": {
+              "cash_margin": [
+                0.1105,
+                1.6973
+              ],
+              "own_deposits": [
+                0.1524,
+                1.2798
+              ],
+              "enemy_deposits": [
+                -0.0881,
+                0.2012
+              ],
+              "own_cargo_lost": [
+                -0.4246,
+                0.3737
+              ],
+              "enemy_cargo_lost": [
+                -2.0042,
+                -0.0874
+              ],
+              "held_cargo_margin": [
+                -3.212,
+                1.2639
+              ],
+              "unmatched_worker_turns": [
+                -0.1162,
+                -0.0204
+              ]
+            },
+            "maps_positive_cash": 14,
+            "maps_negative_cash": 5
+          },
+          "10": {
+            "mean_changed": {
+              "cash_margin": -5.0779,
+              "own_deposits": 6.3267,
+              "enemy_deposits": 13.0622,
+              "own_cargo_lost": 0.2842,
+              "enemy_cargo_lost": -21.3182,
+              "held_cargo_margin": -13.616,
+              "unmatched_worker_turns": -1.4853
+            },
+            "mean_across_all_roots": {
+              "cash_margin": -0.4704,
+              "own_deposits": 0.5861,
+              "enemy_deposits": 1.2101,
+              "own_cargo_lost": 0.0263,
+              "enemy_cargo_lost": -1.975,
+              "held_cargo_margin": -1.2614,
+              "unmatched_worker_turns": -0.1376
+            },
+            "map_mean": {
+              "cash_margin": -0.4864,
+              "own_deposits": 0.5809,
+              "enemy_deposits": 1.2176,
+              "own_cargo_lost": 0.0263,
+              "enemy_cargo_lost": -1.9906,
+              "held_cargo_margin": -1.2745,
+              "unmatched_worker_turns": -0.1385
+            },
+            "map_paired_ci95": {
+              "cash_margin": [
+                -2.3013,
+                1.0505
+              ],
+              "own_deposits": [
+                -0.628,
+                1.6823
+              ],
+              "enemy_deposits": [
+                0.3667,
+                2.2336
+              ],
+              "own_cargo_lost": [
+                -0.3418,
+                0.4238
+              ],
+              "enemy_cargo_lost": [
+                -3.7042,
+                -0.4923
+              ],
+              "held_cargo_margin": [
+                -4.0125,
+                1.636
+              ],
+              "unmatched_worker_turns": [
+                -0.2528,
+                -0.0395
+              ]
+            },
+            "maps_positive_cash": 13,
+            "maps_negative_cash": 7
+          }
+        }
+      },
+      "corrected_vs_legacy": {
+        "roots": 734,
+        "changes": 101,
+        "maps_with_changes": 21,
+        "maps": 21,
+        "horizons": {
+          "1": {
+            "mean_changed": {
+              "cash_margin": -4.255,
+              "own_deposits": -4.2603,
+              "enemy_deposits": 0.0,
+              "own_cargo_lost": 2.2905,
+              "enemy_cargo_lost": 0.0,
+              "held_cargo_margin": -0.6676,
+              "unmatched_worker_turns": 0.0
+            },
+            "mean_across_all_roots": {
+              "cash_margin": -0.5855,
+              "own_deposits": -0.5862,
+              "enemy_deposits": 0.0,
+              "own_cargo_lost": 0.3152,
+              "enemy_cargo_lost": 0.0,
+              "held_cargo_margin": -0.0919,
+              "unmatched_worker_turns": 0.0
+            },
+            "map_mean": {
+              "cash_margin": -0.5847,
+              "own_deposits": -0.5854,
+              "enemy_deposits": 0.0,
+              "own_cargo_lost": 0.3147,
+              "enemy_cargo_lost": 0.0,
+              "held_cargo_margin": -0.0932,
+              "unmatched_worker_turns": 0.0
+            },
+            "map_paired_ci95": {
+              "cash_margin": [
+                -1.3856,
+                0.0006
+              ],
+              "own_deposits": [
+                -1.3848,
+                0.0
+              ],
+              "enemy_deposits": [
+                0.0,
+                0.0
+              ],
+              "own_cargo_lost": [
+                0.0,
+                0.9442
+              ],
+              "enemy_cargo_lost": [
+                0.0,
+                0.0
+              ],
+              "held_cargo_margin": [
+                -1.7888,
+                1.3181
+              ],
+              "unmatched_worker_turns": [
+                0.0,
+                0.0
+              ]
+            },
+            "maps_positive_cash": 3,
+            "maps_negative_cash": 4
+          },
+          "5": {
+            "mean_changed": {
+              "cash_margin": 13.3163,
+              "own_deposits": 8.9604,
+              "enemy_deposits": -3.4448,
+              "own_cargo_lost": 4.9152,
+              "enemy_cargo_lost": 13.3356,
+              "held_cargo_margin": -3.6233,
+              "unmatched_worker_turns": -0.0396
+            },
+            "mean_across_all_roots": {
+              "cash_margin": 1.8324,
+              "own_deposits": 1.233,
+              "enemy_deposits": -0.474,
+              "own_cargo_lost": 0.6763,
+              "enemy_cargo_lost": 1.835,
+              "held_cargo_margin": -0.4986,
+              "unmatched_worker_turns": -0.0054
+            },
+            "map_mean": {
+              "cash_margin": 1.8318,
+              "own_deposits": 1.2313,
+              "enemy_deposits": -0.4734,
+              "own_cargo_lost": 0.6754,
+              "enemy_cargo_lost": 1.8325,
+              "held_cargo_margin": -0.5034,
+              "unmatched_worker_turns": -0.0051
+            },
+            "map_paired_ci95": {
+              "cash_margin": [
+                0.1368,
+                3.7169
+              ],
+              "own_deposits": [
+                -0.1646,
+                2.7339
+              ],
+              "enemy_deposits": [
+                -1.4201,
+                0.0
+              ],
+              "own_cargo_lost": [
+                -0.2136,
+                1.7071
+              ],
+              "enemy_cargo_lost": [
+                0.1345,
+                3.6097
+              ],
+              "held_cargo_margin": [
+                -4.2799,
+                3.3968
+              ],
+              "unmatched_worker_turns": [
+                -0.0449,
+                0.0347
+              ]
+            },
+            "maps_positive_cash": 12,
+            "maps_negative_cash": 6
+          },
+          "10": {
+            "mean_changed": {
+              "cash_margin": 19.1292,
+              "own_deposits": 8.9374,
+              "enemy_deposits": -8.862,
+              "own_cargo_lost": 2.0024,
+              "enemy_cargo_lost": 24.043,
+              "held_cargo_margin": 12.9,
+              "unmatched_worker_turns": 0.1089
+            },
+            "mean_across_all_roots": {
+              "cash_margin": 2.6322,
+              "own_deposits": 1.2298,
+              "enemy_deposits": -1.2194,
+              "own_cargo_lost": 0.2755,
+              "enemy_cargo_lost": 3.3084,
+              "held_cargo_margin": 1.7751,
+              "unmatched_worker_turns": 0.015
+            },
+            "map_mean": {
+              "cash_margin": 2.6592,
+              "own_deposits": 1.2432,
+              "enemy_deposits": -1.2269,
+              "own_cargo_lost": 0.27,
+              "enemy_cargo_lost": 3.313,
+              "held_cargo_margin": 1.7742,
+              "unmatched_worker_turns": 0.0157
+            },
+            "map_paired_ci95": {
+              "cash_margin": [
+                -0.7301,
+                6.0614
+              ],
+              "own_deposits": [
+                -1.4774,
+                3.8336
+              ],
+              "enemy_deposits": [
+                -2.4395,
+                -0.2594
+              ],
+              "own_cargo_lost": [
+                -1.0467,
+                1.5543
+              ],
+              "enemy_cargo_lost": [
+                1.3433,
+                5.4679
+              ],
+              "held_cargo_margin": [
+                -2.4279,
+                6.1809
+              ],
+              "unmatched_worker_turns": [
+                -0.0816,
+                0.1116
+              ]
+            },
+            "maps_positive_cash": 14,
+            "maps_negative_cash": 5
+          }
+        }
+      },
+      "veto_vs_legacy": {
+        "roots": 734,
+        "changes": 34,
+        "maps_with_changes": 15,
+        "maps": 21,
+        "horizons": {
+          "1": {
+            "mean_changed": {
+              "cash_margin": -1.3224,
+              "own_deposits": -1.8151,
+              "enemy_deposits": 0.0,
+              "own_cargo_lost": 0.0,
+              "enemy_cargo_lost": 0.0,
+              "held_cargo_margin": -10.3316,
+              "unmatched_worker_turns": 0.0
+            },
+            "mean_across_all_roots": {
+              "cash_margin": -0.0613,
+              "own_deposits": -0.0841,
+              "enemy_deposits": 0.0,
+              "own_cargo_lost": 0.0,
+              "enemy_cargo_lost": 0.0,
+              "held_cargo_margin": -0.4786,
+              "unmatched_worker_turns": 0.0
+            },
+            "map_mean": {
+              "cash_margin": -0.0612,
+              "own_deposits": -0.084,
+              "enemy_deposits": 0.0,
+              "own_cargo_lost": 0.0,
+              "enemy_cargo_lost": 0.0,
+              "held_cargo_margin": -0.4811,
+              "unmatched_worker_turns": 0.0
+            },
+            "map_paired_ci95": {
+              "cash_margin": [
+                -0.2587,
+                0.0797
+              ],
+              "own_deposits": [
+                -0.2519,
+                0.0
+              ],
+              "enemy_deposits": [
+                0.0,
+                0.0
+              ],
+              "own_cargo_lost": [
+                0.0,
+                0.0
+              ],
+              "enemy_cargo_lost": [
+                0.0,
+                0.0
+              ],
+              "held_cargo_margin": [
+                -0.8517,
+                -0.1211
+              ],
+              "unmatched_worker_turns": [
+                0.0,
+                0.0
+              ]
+            },
+            "maps_positive_cash": 1,
+            "maps_negative_cash": 4
+          },
+          "5": {
+            "mean_changed": {
+              "cash_margin": -6.9285,
+              "own_deposits": -5.6429,
+              "enemy_deposits": 0.6349,
+              "own_cargo_lost": 2.7855,
+              "enemy_cargo_lost": 11.6004,
+              "held_cargo_margin": 1.1637,
+              "unmatched_worker_turns": 0.4118
+            },
+            "mean_across_all_roots": {
+              "cash_margin": -0.3209,
+              "own_deposits": -0.2614,
+              "enemy_deposits": 0.0294,
+              "own_cargo_lost": 0.129,
+              "enemy_cargo_lost": 0.5374,
+              "held_cargo_margin": 0.0539,
+              "unmatched_worker_turns": 0.0191
+            },
+            "map_mean": {
+              "cash_margin": -0.3204,
+              "own_deposits": -0.261,
+              "enemy_deposits": 0.0294,
+              "own_cargo_lost": 0.1289,
+              "enemy_cargo_lost": 0.5366,
+              "held_cargo_margin": 0.0467,
+              "unmatched_worker_turns": 0.0196
+            },
+            "map_paired_ci95": {
+              "cash_margin": [
+                -0.7399,
+                0.0164
+              ],
+              "own_deposits": [
+                -0.6937,
+                0.0
+              ],
+              "enemy_deposits": [
+                0.0,
+                0.0881
+              ],
+              "own_cargo_lost": [
+                0.0,
+                0.3572
+              ],
+              "enemy_cargo_lost": [
+                0.0749,
+                1.1035
+              ],
+              "held_cargo_margin": [
+                -1.0403,
+                1.2708
+              ],
+              "unmatched_worker_turns": [
+                -0.0136,
+                0.0628
+              ]
+            },
+            "maps_positive_cash": 3,
+            "maps_negative_cash": 7
+          },
+          "10": {
+            "mean_changed": {
+              "cash_margin": -0.1409,
+              "own_deposits": -16.4387,
+              "enemy_deposits": -12.47,
+              "own_cargo_lost": 1.3494,
+              "enemy_cargo_lost": 19.1597,
+              "held_cargo_margin": 18.0316,
+              "unmatched_worker_turns": 1.0
+            },
+            "mean_across_all_roots": {
+              "cash_margin": -0.0065,
+              "own_deposits": -0.7615,
+              "enemy_deposits": -0.5776,
+              "own_cargo_lost": 0.0625,
+              "enemy_cargo_lost": 0.8875,
+              "held_cargo_margin": 0.8353,
+              "unmatched_worker_turns": 0.0463
+            },
+            "map_mean": {
+              "cash_margin": 0.0065,
+              "own_deposits": -0.7604,
+              "enemy_deposits": -0.586,
+              "own_cargo_lost": 0.0624,
+              "enemy_cargo_lost": 0.8954,
+              "held_cargo_margin": 0.8378,
+              "unmatched_worker_turns": 0.0474
+            },
+            "map_paired_ci95": {
+              "cash_margin": [
+                -1.0876,
+                1.276
+              ],
+              "own_deposits": [
+                -1.4479,
+                -0.2222
+              ],
+              "enemy_deposits": [
+                -1.3818,
+                -0.04
+              ],
+              "own_cargo_lost": [
+                -0.1055,
+                0.2484
+              ],
+              "enemy_cargo_lost": [
+                0.1546,
+                1.7662
+              ],
+              "held_cargo_margin": [
+                -0.3929,
+                2.2719
+              ],
+              "unmatched_worker_turns": [
+                -0.019,
+                0.1408
+              ]
+            },
+            "maps_positive_cash": 5,
+            "maps_negative_cash": 7
+          }
+        }
+      },
+      "searched_vs_legacy": {
+        "roots": 734,
+        "changes": 68,
+        "maps_with_changes": 21,
+        "maps": 21,
+        "horizons": {
+          "1": {
+            "mean_changed": {
+              "cash_margin": -0.819,
+              "own_deposits": -0.1576,
+              "enemy_deposits": 0.0,
+              "own_cargo_lost": -1.4211,
+              "enemy_cargo_lost": -0.1244,
+              "held_cargo_margin": -7.9332,
+              "unmatched_worker_turns": 0.0
+            },
+            "mean_across_all_roots": {
+              "cash_margin": -0.0759,
+              "own_deposits": -0.0146,
+              "enemy_deposits": 0.0,
+              "own_cargo_lost": -0.1317,
+              "enemy_cargo_lost": -0.0115,
+              "held_cargo_margin": -0.735,
+              "unmatched_worker_turns": 0.0
+            },
+            "map_mean": {
+              "cash_margin": -0.0767,
+              "own_deposits": -0.0146,
+              "enemy_deposits": 0.0,
+              "own_cargo_lost": -0.1315,
+              "enemy_cargo_lost": -0.0115,
+              "held_cargo_margin": -0.7394,
+              "unmatched_worker_turns": 0.0
+            },
+            "map_paired_ci95": {
+              "cash_margin": [
+                -0.3547,
+                0.2189
+              ],
+              "own_deposits": [
+                -0.2519,
+                0.2082
+              ],
+              "enemy_deposits": [
+                0.0,
+                0.0
+              ],
+              "own_cargo_lost": [
+                -0.3944,
+                0.0
+              ],
+              "enemy_cargo_lost": [
+                -0.0345,
+                0.0
+              ],
+              "held_cargo_margin": [
+                -1.3953,
+                -0.005
+              ],
+              "unmatched_worker_turns": [
+                0.0,
+                0.0
+              ]
+            },
+            "maps_positive_cash": 3,
+            "maps_negative_cash": 7
+          },
+          "5": {
+            "mean_changed": {
+              "cash_margin": -9.4109,
+              "own_deposits": -7.0911,
+              "enemy_deposits": -0.4076,
+              "own_cargo_lost": 0.4338,
+              "enemy_cargo_lost": 10.615,
+              "held_cargo_margin": 8.3247,
+              "unmatched_worker_turns": 0.6912
+            },
+            "mean_across_all_roots": {
+              "cash_margin": -0.8719,
+              "own_deposits": -0.6569,
+              "enemy_deposits": -0.0378,
+              "own_cargo_lost": 0.0402,
+              "enemy_cargo_lost": 0.9834,
+              "held_cargo_margin": 0.7712,
+              "unmatched_worker_turns": 0.064
+            },
+            "map_mean": {
+              "cash_margin": -0.8714,
+              "own_deposits": -0.656,
+              "enemy_deposits": -0.0377,
+              "own_cargo_lost": 0.0401,
+              "enemy_cargo_lost": 0.9893,
+              "held_cargo_margin": 0.7761,
+              "unmatched_worker_turns": 0.0645
+            },
+            "map_paired_ci95": {
+              "cash_margin": [
+                -1.6973,
+                -0.1105
+              ],
+              "own_deposits": [
+                -1.2798,
+                -0.1524
+              ],
+              "enemy_deposits": [
+                -0.2012,
+                0.0881
+              ],
+              "own_cargo_lost": [
+                -0.3737,
+                0.4246
+              ],
+              "enemy_cargo_lost": [
+                0.0874,
+                2.0042
+              ],
+              "held_cargo_margin": [
+                -1.2639,
+                3.212
+              ],
+              "unmatched_worker_turns": [
+                0.0204,
+                0.1162
+              ]
+            },
+            "maps_positive_cash": 5,
+            "maps_negative_cash": 14
+          },
+          "10": {
+            "mean_changed": {
+              "cash_margin": 5.0779,
+              "own_deposits": -6.3267,
+              "enemy_deposits": -13.0622,
+              "own_cargo_lost": -0.2842,
+              "enemy_cargo_lost": 21.3182,
+              "held_cargo_margin": 13.616,
+              "unmatched_worker_turns": 1.4853
+            },
+            "mean_across_all_roots": {
+              "cash_margin": 0.4704,
+              "own_deposits": -0.5861,
+              "enemy_deposits": -1.2101,
+              "own_cargo_lost": -0.0263,
+              "enemy_cargo_lost": 1.975,
+              "held_cargo_margin": 1.2614,
+              "unmatched_worker_turns": 0.1376
+            },
+            "map_mean": {
+              "cash_margin": 0.4864,
+              "own_deposits": -0.5809,
+              "enemy_deposits": -1.2176,
+              "own_cargo_lost": -0.0263,
+              "enemy_cargo_lost": 1.9906,
+              "held_cargo_margin": 1.2745,
+              "unmatched_worker_turns": 0.1385
+            },
+            "map_paired_ci95": {
+              "cash_margin": [
+                -1.0505,
+                2.3013
+              ],
+              "own_deposits": [
+                -1.6823,
+                0.628
+              ],
+              "enemy_deposits": [
+                -2.2336,
+                -0.3667
+              ],
+              "own_cargo_lost": [
+                -0.4238,
+                0.3418
+              ],
+              "enemy_cargo_lost": [
+                0.4923,
+                3.7042
+              ],
+              "held_cargo_margin": [
+                -1.636,
+                4.0125
+              ],
+              "unmatched_worker_turns": [
+                0.0395,
+                0.2528
+              ]
+            },
+            "maps_positive_cash": 7,
+            "maps_negative_cash": 13
+          }
+        }
+      }
+    }
+  }
+}

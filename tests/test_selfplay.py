@@ -53,7 +53,7 @@ class SelfPlayTests(unittest.TestCase):
             candidate.write_bytes(source)
             frozen = ("missing-fixture-ref", hashlib.sha256(source).hexdigest(), "example.py")
             output = Path(tmp) / "games.jsonl"
-            with (patch.dict(selfplay.FROZEN, {"yan-v5": frozen}),
+            with (patch.dict(selfplay.FROZEN, {"yan-v6": frozen}),
                   contextlib.redirect_stderr(io.StringIO()) as stderr,
                   self.assertRaises(SystemExit) as exc):
                 selfplay.main(["--candidate", str(candidate), "--seeds", "42", "--output", str(output)])

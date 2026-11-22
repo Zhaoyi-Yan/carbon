@@ -17,31 +17,46 @@ import reserve
 import rollout
 import depot_corridor
 import master
+import late_hire
+import postcargo
+import rollout_fog
 
 HERE=Path(__file__).resolve().parent
 ROOT=HERE.parents[1]
 
 
+VERSIONS=('quay','tidepool','pilot','jetty','narrows','soundings','pilotage','fairlead')
+
+
 def create(name):
+    stage=VERSIONS.index(name)
+    weights='critic-shipping.npz' if stage>=VERSIONS.index('soundings') else 'shipping.npz'
     source=(ROOT/'yan-v6.py').read_bytes()
-    code=challenger.build(source,preferred='intercept',bias=1.16,asset=.56,weights=HERE/('critic-shipping.npz' if name in ('soundings','pilotage') else 'shipping.npz'))
-    if name=='quay':return code
-    for plugin in (breakout,reserve,depot_entry,opponent_view,flow_switch,knockout):
-        code=plugin.build(code)
-    if name in ('pilot','jetty','narrows','soundings','pilotage'):code=last_collector.build(code)
-    if name in ('jetty','narrows','soundings','pilotage'):code=early_income.build(code)
-    if name in ('narrows','soundings','pilotage'):
+    code=challenger.build(source,preferred='intercept',bias=1.16,asset=.56,weights=HERE/weights)
+    if stage>=VERSIONS.index('tidepool'):
+        for plugin in (breakout,reserve,depot_entry,opponent_view,flow_switch,knockout):
+            code=plugin.build(code)
+    if stage>=VERSIONS.index('pilot'):
+        code=last_collector.build(code)
+    if stage>=VERSIONS.index('jetty'):
+        code=early_income.build(code)
+    if stage>=VERSIONS.index('narrows'):
         code=netcash.build(distill_fast.build(code))
         code=code.replace('experiments/v6r.','experiments/v7.',1)
-    if name in ('soundings','pilotage'):code=rollout.build(code)
-    if name=='pilotage':code=depot_corridor.build(master.build(code))
+    if stage>=VERSIONS.index('soundings'):
+        code=rollout.build(code)
+    if stage>=VERSIONS.index('pilotage'):
+        code=depot_corridor.build(master.build(code))
+    if stage>=VERSIONS.index('fairlead'):
+        code=rollout_fog.build(code,mirror=True)
+        code=late_hire.build(postcargo.build(code))
     if len(code.encode())>=10_000_000:raise ValueError('single-file tournament size')
     compile(code,name,'exec')
     return code
 
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument('version',choices=('quay','tidepool','pilot','jetty','narrows','soundings','pilotage'));p.add_argument('output',type=Path)
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('version',choices=VERSIONS);p.add_argument('output',type=Path)
     a=p.parse_args()
     data=create(a.version).encode()
     with a.output.open('xb') as f:f.write(data)

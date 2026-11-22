@@ -21,7 +21,8 @@ Master7sE 对局中，第 47 步到第 252 步的两次己方工人交货之间�
 | [Jetty](checkpoints/jetty.py) | 10–6 | 5/8，5/8 | −27.31 | 两边首步都出一采一种。两席胜场相同，三图双胜、一图双负。前 75 步单局平均少采 180.96。此批没有彻底断流。[逐图结果](../../analysis/v7/03-qualifying-summary.json) · [逐笔收支](../../analysis/v7/03-qualifying-economy.json) |
 | [Narrows](checkpoints/narrows.py) | 6–10 | 3/8，3/8 | −44.31 | 场均净树收入多 124.86，实际入库少 127.90，额外招聘多花 41.25。16 局均完赛，双方分别有 14、9 步超过单步 1 秒，最长为 1.475、1.335 秒。[全部胜负与用时](../../analysis/v7/04-qualifying-summary.json) · [入库与树收](../../analysis/v7/04-qualifying-economy.json) |
 | [Soundings](checkpoints/soundings.py) | 11–5 | 6/8，5/8 | +336.83 | 四图双胜，一图双负，距离晋级差一个胜场。双方均无慢步。单局平均基地入款多 400.17、净树收支少 153.74、招聘少花 90。[全体胜负](../../analysis/v7/05-qualifying-summary.json) · [逐图收支](../../analysis/v7/05-qualifying-economy.json) |
-| [Pilotage](checkpoints/pilotage.py) | 评测中 | | | 允许友军协调回库和根据 Master 系列提出招聘备选。[冻结文件与地图](../../analysis/v7/06-qualifying.json) |
+| [Pilotage](checkpoints/pilotage.py) | 9–7 | 4/8，5/8 | +51.60 | 前 75 步平均多入库 65.73，全场平均少入库 121.81，净树收入多 186.52。三图双胜、两图双负。双方均无慢步。[全部结果](../../analysis/v7/06-qualifying-summary.json) · [资金变化](../../analysis/v7/06-qualifying-economy.json) |
+| [Fairlead](checkpoints/fairlead.py) | 评测中 | | | 搜索后的碰撞决策也估计能实际回库的货量，并有条件地取消难以回本的招工。[文件和地图](../../analysis/v7/07-qualifying.json) |
 
 在仓库根目录，以下命令可以重建已冻结的文件，并复现存档分叉的现金流。
 
@@ -68,3 +69,11 @@ Pilotage 加入了三、四步内的解围，并允许友军让出回库通道�
 Soundings 唯一双负地图的分差是 −5.26 和 −40.20。前一局第 292 步在 9 名现有工人下再招了一名采集员。只去掉这一笔，按原双方后续动作打到终局，结果反转为 +24.74。换边的第 288 步招工在同样的对照中实赚了 29.05，取消会扩大败差。[逐步资金与货物](../../analysis/v7/soundings-close-losses.json)
 
 根据剩余步数、矿区往返时间以及附近敌方货量筛查时，前五批的 131 个末段招工里有 17 个命中。去掉这些招聘后 16 次资金差提高、1 次下降，平均提高 18.40。在 21 场额外公开比赛的 32 次末段招工中命中 5 次，4 次改善、1 次变差，平均提高 13.80。所有分叉复用原对方动作，并且只删除每个席位的最后一笔单独采集员招聘。[本地对照](../../analysis/v7/last-hire-counterfactual.json) · [公开比赛对照](../../analysis/v7/last-hire-public.json)
+
+## 碰撞后的载货与视野
+
+Fairlead 对一次相撞后幸存工人的货物估计 5、10 步内能送回多少钱，用同一估值比较最后的回避、停留和拦截选择。在 14 张独立地图的 64 个动作有别的局面，固定对手原动作和后续指令，十步资金差平均提高 16.48，我方实际入库多 8.49、敌方少 7.49。按地图估计的资金改善区间跨过零。额外耗时中位数 4.27 毫秒，95 分位 11.99 毫秒。[逐图动作与结果](../../analysis/v7/postcargo-validation.json) · [复核与耗时](../../analysis/v7/postcargo-audit.json)
+
+模拟双方移动时延续各自已经看过的资源格，补上探索与地图对称可知的格子。十张独立图上 6,250 个工人动作，资源可见性平面的错格率从 12.32% 降至 0.14%，平均动作预测损失从 0.72854 降至 0.72708。[模拟视野核对](../../analysis/v7/rollout-fog-validation.json)
+
+另试过用两种对手应手对最后几步重算到终局。在两批留存对局中，变更的局面平均资金分别少 52.64 和 13.83，第一批还翻掉了一场原本的胜局。单独取消晚种也对不同批次有相反效果。两项试验均未用于 Fairlead。[终局重算](../../analysis/v7/settle-search-check.json) · [末段种树支出](../../analysis/v7/late-forest.json)

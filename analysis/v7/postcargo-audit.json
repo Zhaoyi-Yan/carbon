@@ -1,0 +1,23 @@
+{
+  "candidate_sha256": "b43f538dc3209cd4a2220cb1c605ddc31c398b98107f1d4a258584a281a11091",
+  "parent_sha256": "45a16afd04a4d1a981701b0287859df2e3dbd9b2c349044de94fbbf93abdec06",
+  "corrected_and_original_chooser_equivalence_states": 32,
+  "verified_changed_states": 152,
+  "verified_distinct_ten_turn_command_paths": 309,
+  "premature_terminal_paths": [],
+  "paired_timing_ms_p50_p95": {
+    "legacy": [
+      6.749,
+      10.951
+    ],
+    "corrected": [
+      11.437,
+      20.545
+    ],
+    "incremental": [
+      4.268,
+      11.99
+    ]
+  },
+  "note": "Every re-evaluated edited path matched its saved metrics, with unchanged real rival command on the first ply. Integration clocks are measured on full enumerations; the ordinary agent retains its real-time cutoff."
+}
