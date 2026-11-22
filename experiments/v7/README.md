@@ -28,7 +28,7 @@ Master7sE 对局中，第 47 步到第 252 步的两次己方工人交货之间�
 | [Harbormaster](checkpoints/harbormaster.py) | 8–8 | 5/8，3/8 | −119.15 | 两图双胜，两图双负。平均净树收益少 57.35、入库少 48.66。[逐图分差](../../analysis/v7/10-qualifying-summary.json) · [收支](../../analysis/v7/10-qualifying-economy.json) |
 | [Crosscurrent](checkpoints/crosscurrent.py) | 7–9 | 4/8，3/8 | −54.72 | 三图双胜、四图双负。每局正常结束。[逐图分差](../../analysis/v7/11-qualifying-summary.json) |
 | [Lifeline](checkpoints/lifeline.py) | 6–10 | 2/8，4/8 | −189.31 | 一图双胜、三图双负，16 局正常结束。[逐图分差](../../analysis/v7/12-qualifying-summary.json) · [两席资金记录](../../analysis/v7/12-liquidity.json) |
-| [Selfplay Prior](checkpoints/selfplay-prior.py) | 评测中 | | | 在 Lifeline 的备选行动中加入自己历史搜索的走法。第十三批八张新图换边。[冻结地图](../../analysis/v7/13-qualifying.json) |
+| [Selfplay Prior](checkpoints/selfplay-prior.py) | 14–2 | 6/8，8/8 | +302.83 | 六图双胜，两场败局都在 0 席。另用四张新图独立复核同一文件。[初筛分差](../../analysis/v7/13-qualifying-summary.json) · [复核地图](../../analysis/v7/13-confirmation.json) |
 
 在仓库根目录，以下命令可以重建已冻结的文件，并复现存档分叉的现金流。
 
@@ -125,3 +125,5 @@ Lifeline 保留第五轮 Soundings 的整套搜索和权重。只有己方陷入
 以八个批次中 v6 完成搜索后实际执行的工人动作为示范，前六批用于拟合，另外两批只用于测量。将学到的全队行动加入 Lifeline 的根搜索，在四图八局开发对打中场均分差增加 110.41，胜场相同。三个截图局的主动分支里仍然落败，但三个终局败差都缩小。第十三批预留给这一文件。[逐图训练、对打与复现](../../analysis/v7/own-search.md) · [冻结代码](checkpoints/selfplay-prior.py)
 
 单独模仿 Master 全套走法，在 13 张公开留图上能提高工人和招工动作的命中率，在旧风格留图上的招工则由 72.52% 降至 64.89%。四张开发图对冻结 v6 换边只有 3 胜 5 负。改为只在持续受压时启用 Master 独立风格后，普通模式下原网络的工人、招工、估值输出逐项相同。条件调制版只在八局中的 140 步启用，5 胜 3 负、场均 +184.68；Lifeline 同组也赢 5 局、场均 −14.69。第十四批预留给条件调制版。[对照和地图划分](../../analysis/v7/master-multi.md) · [冻结策略](checkpoints/master-multi-film.py)
+
+把自对弈学来的走法仅用于普通局面，受压时改用条件调制的 Master 政策，四图换边为 4 胜 4 负，场均 +73.96。两处来源分别独用都在这组得到 5 胜 3 负。受压模式启用了 88/2392 步。[组合对照](../../analysis/v7/split-training-development.json)
