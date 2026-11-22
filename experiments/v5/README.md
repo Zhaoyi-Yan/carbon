@@ -44,3 +44,7 @@ python experiments/v5/rollout_data.py /tmp/v5-boards experiments/v5/validation.j
 python experiments/v5/refit.py /tmp/v5-boards experiments/v5/validation.json /tmp/full-refit.npz /tmp/refit-validation.json
 python experiments/v5/distill.py /tmp/v5-boards experiments/v5/validation.json /tmp/student.npz /tmp/student-validation.json
 ```
+
+首轮封存图上，responder 对原版 yan-v4 为 **6 胜 2 负**，场均 +54.16。189968491 和 605624711 两边都赢，722720158 和 771088240 各一胜一负。最重的一场失利是 771088240 的出生位 1，落后 1301.86 分。该文件尚未通过八战全胜的验收。[八场原始记录](../../analysis/arena/v5-qualification-responder.jsonl)
+
+整网训练后的 multistyle 与 v4 另打了六场双方均关闭搜索的对照，3 胜 3 负，平均 +171.07。两边的正常比赛版本在正式对战中都启用搜索。[无搜索对照原始记录](../../analysis/arena/v5-policy-only-multistyle.jsonl)
