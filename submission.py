@@ -1,6 +1,10 @@
-"""Carbon League strategy: a policy network from behaviour cloning and self-play reinforcement learning, with a short search at every turn.
-The network proposes moves; each is played a few turns ahead in the game's own helpers Board, and the critic scores where it leads.
+"""Carbon League strategy adapted from Claude's claude-AlphaCarbon-Master3s2.
+Source: https://117.72.210.134/source/d679ed45ab595e8b7bb1ea51c3451154
+The policy, critic, belief tracker, and rollout engine are inherited from
+that public strategy, including the upstream credit to Ryanx for the engine.
+This version adds rotational policy averaging, candidate generation, and terminal banking.
 """
+
 import base64
 import io
 import os
@@ -545,11 +549,11 @@ _VALUE = "UEsDBC0AAAAIAAAAIQDrHQBQ//////////8NABQAdjEud2VpZ2h0Lm5weQEAEACAGAAAAA
 
 
 _POLICY = _Policy(_WEIGHTS)
-_TEMP = 1.05
+_TEMP = 0.35
 _SID = _POLICY.sid('TJB-o18-rush-v41')
 _RETIRE = 0       # with 10 units a planter and a collector may end on one cell, if that is the move sampled; 2: also two planters; 3: any own collision with 10 units
 _BANK = 12           # in the last so many turns collectors may end together on an own base, if that is the move sampled
-_HOME = (1, 50.0)       # (spare turns, least cargo) for a collector to go straight home at the end of the game, see go_home
+_HOME = (3, 28.0)       # (spare turns, least cargo) for a collector to go straight home at the end of the game, see go_home
 _SEED = 37        # tests set this; None = fresh randomness every game
 _ST = {}
 
@@ -568,6 +572,24 @@ def _probs(l):
     return e / e.sum()
 
 
+def _root_policy(encoded):
+    original_w, original_b = _POLICY.forward(encoded, _SID)
+    workers = 0.58 * original_w
+    bases = 0.58 * original_b
+    for turns, weight in ((2, 0.28), (1, 0.07), (3, 0.07)):
+        transformed = np.rot90(encoded, turns, axes=(1, 2)).copy()
+        rotate_action = [0] + [1 + (index - 1 - turns) % 4 for index in range(1, 5)]
+        for start in (25, 30):
+            planes = [start + index for index in rotate_action]
+            transformed[planes] = transformed[start:start + 5].copy()
+        worker, base = _POLICY.forward(transformed, _SID)
+        worker = np.rot90(worker.reshape(SIZE, SIZE, 5), -turns, axes=(0, 1))
+        base = np.rot90(base.reshape(SIZE, SIZE, 3), -turns, axes=(0, 1))
+        workers += weight * worker.reshape(N, 5)[:, rotate_action]
+        bases += weight * base.reshape(N, 3)
+    return workers, bases
+
+
 def _act(obs, configuration=None, t0=None):
     st = _ST
     step = obs['step']; me = obs['player']; players = obs['players']
@@ -578,7 +600,7 @@ def _act(obs, configuration=None, t0=None):
     est, known = st['tr'].step(players, step, obs['carbon'])
     x = encode(players, step, me, est, known, st['prev'])
     x = np.clip(np.rint(x * 100.0), 0, 255) * 0.01
-    lw, lb = _POLICY.forward(x, _SID)
+    lw, lb = _root_policy(x)
     workers, _, bases, cash = parse(players)
     act = {}
     took = {}          # who ends on a cell: C, P, or X when nobody else may join
@@ -615,12 +637,6 @@ def _act(obs, configuration=None, t0=None):
                 if k:
                     act[wid] = WACT[k]
                 break
-    if configuration is not None:
-        try:
-            act = _search(obs, configuration, est, act, lw, lb, st['prev'], t0, {c[1] for c in cand if c[0] == 2.0})
-        except Exception:
-            if os.environ.get('CARBON_DEBUG'):
-                raise
     st['tr'].set_actions(players, act)
     st['prev'] = players
     return act
