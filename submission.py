@@ -2,7 +2,7 @@
 Source: https://117.72.210.134/source/d679ed45ab595e8b7bb1ea51c3451154
 The policy, critic, belief tracker, and rollout engine are inherited from
 that public strategy, including the upstream credit to Ryanx for the engine.
-This version adds rotational policy averaging, candidate generation, and terminal banking.
+This version evaluates opponent best replies, paired search, and terminal banking.
 """
 
 import base64
@@ -549,7 +549,7 @@ _VALUE = "UEsDBC0AAAAIAAAAIQDrHQBQ//////////8NABQAdjEud2VpZ2h0Lm5weQEAEACAGAAAAA
 
 
 _POLICY = _Policy(_WEIGHTS)
-_TEMP = 0.72
+_TEMP = 0.85
 _SID = _POLICY.sid('TJB-o18-rush-v41')
 _RETIRE = 0       # with 10 units a planter and a collector may end on one cell, if that is the move sampled; 2: also two planters; 3: any own collision with 10 units
 _BANK = 12           # in the last so many turns collectors may end together on an own base, if that is the move sampled
@@ -572,24 +572,6 @@ def _probs(l):
     return e / e.sum()
 
 
-def _root_policy(encoded):
-    original_w, original_b = _POLICY.forward(encoded, _SID)
-    workers = 0.58 * original_w
-    bases = 0.58 * original_b
-    for turns, weight in ((2, 0.28), (1, 0.07), (3, 0.07)):
-        transformed = np.rot90(encoded, turns, axes=(1, 2)).copy()
-        rotate_action = [0] + [1 + (index - 1 - turns) % 4 for index in range(1, 5)]
-        for start in (25, 30):
-            planes = [start + index for index in rotate_action]
-            transformed[planes] = transformed[start:start + 5].copy()
-        worker, base = _POLICY.forward(transformed, _SID)
-        worker = np.rot90(worker.reshape(SIZE, SIZE, 5), -turns, axes=(0, 1))
-        base = np.rot90(base.reshape(SIZE, SIZE, 3), -turns, axes=(0, 1))
-        workers += weight * worker.reshape(N, 5)[:, rotate_action]
-        bases += weight * base.reshape(N, 3)
-    return workers, bases
-
-
 def _act(obs, configuration=None, t0=None):
     st = _ST
     step = obs['step']; me = obs['player']; players = obs['players']
@@ -600,7 +582,7 @@ def _act(obs, configuration=None, t0=None):
     est, known = st['tr'].step(players, step, obs['carbon'])
     x = encode(players, step, me, est, known, st['prev'])
     x = np.clip(np.rint(x * 100.0), 0, 255) * 0.01
-    lw, lb = _root_policy(x)
+    lw, lb = _POLICY.forward(x, _SID)
     workers, _, bases, cash = parse(players)
     act = {}
     took = {}          # who ends on a cell: C, P, or X when nobody else may join
@@ -998,13 +980,13 @@ def _turn(o, configuration, acts):
 
 _S_START = 0          # first turn searched
 _S_K = 32             # joint moves compared at most
-_S_GEN = ((0.0, 4), (1.25, 7), (2.0, 8), (0.75, 4), (3.5, 7))     # the candidates after the policy's own, in this order: (temperature of the
+_S_GEN = ((2.5, 8), (1.0, 3), (3.5, 8), (0.0, 6), (5.0, 8))     # the candidates after the policy's own, in this order: (temperature of the
                       # workers' logits, how many); temperature 0.0: the policy's own move with one worker's move changed to its next most likely one
 _S_DUPS = 8           # so many samples in a row that were all seen before: no more at that temperature
-_S_M = 1              # rollouts per move at first
-_S_MMAX = 1           # ... for the last two moves, when there is time
-_S_STAGES = ((1, 0.5), (4, 0.25))       # (turns ahead, the share of the candidates that goes on from there): two at least, the policy's own among them
-_S_D2 = 7             # turns played ahead by the ones left
+_S_M = 2              # rollouts per move at first
+_S_MMAX = 2           # ... for the last two moves, when there is time
+_S_STAGES = ((1, 0.53), (3, 0.33))       # (turns ahead, the share of the candidates that goes on from there): two at least, the policy's own among them
+_S_D2 = 5             # turns played ahead by the ones left
 _S_FILL = 0.90        # the plan of the whole search may take this share of the time left
 _S_ROWS = 32          # rows in one network pass at most (every size up to it is warmed up at import)
 _S_EPS = 0.0
@@ -1339,13 +1321,36 @@ def _search(obs, configuration, est, act0, lw0, lb0, prev, t0, home=()):
     xo = _quant(encode(players, step, op, est, full, prev))[None]
     lwo, lbo, _ = net(xo.astype(np.float32), _SID)
     opp = {}
+    if step >= 14 and _time.perf_counter() - t0 < 0.12:
+        # The opponent searches too. Score plausible replies against our
+        # baseline action so one simulated response reflects that incentive.
+        replies = []
+        seen = set()
+        for sample_index, temperature in enumerate((0.40, 0.80, 1.0, 1.35, 1.8, 2.3)):
+            replica = np.random.RandomState(seed0 + 23 + sample_index * 131)
+            reply = _sample(players, op, lwo[0] / temperature, lbo[0], replica, step)
+            key = tuple(sorted(reply.items()))
+            if key not in seen:
+                seen.add(key)
+                replies.append(reply)
+        if len(replies) >= 2:
+            outcomes = []
+            for reply in replies:
+                actions = [act0, reply] if me == 0 else [reply, act0]
+                outcomes.append(_turn(root, configuration, actions))
+            encoded = np.stack([_quant(encode(o['players'], o['step'], op, o['carbon'], full, players))
+                                for o in outcomes]).astype(np.float32)
+            scalars = np.stack([_scalars(o['players'], o['step'], op) for o in outcomes])
+            values = net(encoded, _SID, scalars)[2]
+            opp[0] = replies[int(np.argmax(values))]
 
     def begin(cs, ms):              # boards one turn ahead: (candidate, rollout, observation dict, previous players)
         out = []
         for c in cs:
             for m in ms:
                 if m not in opp:
-                    opp[m] = _sample(players, op, lwo[0], lbo[0], np.random.RandomState(seed0 + 7 + 31 * m), step)
+                    reply_scale = 1.06 if m % 2 else 0.88
+                    opp[m] = _sample(players, op, lwo[0] / reply_scale, lbo[0], np.random.RandomState(seed0 + 7 + 31 * m), step)
                 acts = [cands[c], opp[m]] if me == 0 else [opp[m], cands[c]]
                 out.append([c, m, _turn(root, configuration, acts), players])
         return out
@@ -1517,7 +1522,8 @@ def _search(obs, configuration, est, act0, lw0, lb0, prev, t0, home=()):
     _S_STATS['searched'] += 1; _S_STATS['time'].append(dt)
     for k, x in (('depth', depth), ('rolls', rolls), ('cands', len(cands))):
         _S_STATS[k][x] = _S_STATS[k].get(x, 0) + 1
-    mean = {c: sum(val[c, m] for m in range(rolls)) / rolls for c in alive}
+    mean = {c: 0.84 * sum(val[c, m] for m in range(rolls)) / rolls
+            + 0.16 * min(val[c, m] for m in range(rolls)) for c in alive}
     best = max(alive, key=lambda c: mean[c])
     if best == 0 or mean[best] - mean[0] <= _S_EPS:
         best = 0
