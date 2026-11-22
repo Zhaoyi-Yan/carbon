@@ -7,7 +7,7 @@ from backbone import exposed_source, replace, ROOT
 HERE=Path(__file__).resolve().parent
 
 
-def build(weights, output, own, valuation, frontier=False, rotated=False, fog=False, territory=False, deep=False, adaptive=False, paired=False, refit=None, student=None):
+def build(weights, output, own, valuation, frontier=False, rotated=False, fog=False, territory=False, deep=False, adaptive=False, paired=False, refit=None, student=None, encounters=False, replies=False, specialists=False, economy=False):
     source=exposed_source()
     batch=(ROOT/'opponents/yan-v3.py').read_text()
     sample=batch[batch.index('_ROLLOUT_LANDING ='):batch.index('def _deviations(')]
@@ -75,6 +75,30 @@ def build(weights, output, own, valuation, frontier=False, rotated=False, fog=Fa
                        '''        if 'v5_views' not in o:
             o['v5_views'] = _v5_pair(o['players'],o['step'],o['carbon'],b[3])
         return o['v5_views'][who]''')
+    if encounters:
+        body+=(HERE/'encounters.py').read_text()+'\n'
+        body=replace(body, '    return mine', "    return _v5_encounters(players,me,step,mine,state['opponent'])")
+    if replies:
+        if not territory:
+            raise ValueError('Reply screening needs the economic and spatial evaluators.')
+        body+=(HERE/'replies.py').read_text()+'\n'
+        source=replace(source,'    opp = {}',
+                       "    adjustments = _v5_reply_adjustments(root,configuration,cands,seed0,t0)\n    opp = {}")
+        source=replace(source,'sum(val[c, m] for m in range(M)) / M for c in alive',
+                       'sum(val[c, m] for m in range(M)) / M + adjustments[c] for c in alive')
+        source=replace(source,'sum(val[c, m] for m in range(rolls)) / rolls for c in alive',
+                       'sum(val[c, m] for m in range(rolls)) / rolls + adjustments[c] for c in alive',2)
+    if specialists:
+        if refit is None:
+            raise ValueError('Unit specialists require a trained style-conditioned trunk.')
+        body+=(HERE/'specialists.py').read_text()+'\n'
+        body=replace(body,'    second = next(int(k) for k in order if k != style)',
+                     '    mine = _v5_specialist_mix(obs,est,x,style,own,mine)\n    second = next(int(k) for k in order if k != style)')
+    if economy:
+        if not territory:
+            raise ValueError('Income evaluation uses the spatial and cash forecasts together.')
+        body+=(HERE/'cashflow.py').read_text()+'\n'
+        body=replace(body,'_v5_value = _v5_territory_value','_v5_value = _v5_cashflow_eval')
     blob=base64.b64encode(weights.read_bytes()).decode()
     body += f'with np.load(io.BytesIO(base64.b64decode("{blob}")), allow_pickle=False) as _v5_file:\n    _V5 = dict(_v5_file)\n'
     body += f'_V5_EYE = np.eye(20)\n_V5_OWN_STRENGTH = {own!r}\n_V5_VALUE_MIX = {valuation!r}\n\n'
@@ -89,6 +113,13 @@ def build(weights, output, own, valuation, frontier=False, rotated=False, fog=Fa
             if marker not in keys:
                 keys.add(marker)
                 cands.append(proposal)
+'''+anchor)
+    if economy:
+        source=replace(source,anchor,'''    if most>=3 and len(cands)<most:
+        plan = _v5_income_move(root,configuration,act0,fixed or {},lw0,seed0)
+        if plan is not None and tuple(sorted(plan.items())) not in keys:
+            keys.add(tuple(sorted(plan.items())))
+            cands.append(plan)
 '''+anchor)
     if frontier:
         source=replace(source,anchor,"""    if most >= 3 and len(cands)<most:
@@ -124,4 +155,8 @@ if __name__=='__main__':
     p.add_argument('--paired',action='store_true')
     p.add_argument('--refit',type=Path)
     p.add_argument('--student',type=Path)
-    a=p.parse_args();build(a.weights,a.output,a.own,a.value,a.frontier,a.rotated,a.fog,a.territory,a.deep,a.adaptive,a.paired,a.refit,a.student)
+    p.add_argument('--encounters',action='store_true')
+    p.add_argument('--replies',action='store_true')
+    p.add_argument('--specialists',action='store_true')
+    p.add_argument('--economy',action='store_true')
+    a=p.parse_args();build(a.weights,a.output,a.own,a.value,a.frontier,a.rotated,a.fog,a.territory,a.deep,a.adaptive,a.paired,a.refit,a.student,a.encounters,a.replies,a.specialists,a.economy)

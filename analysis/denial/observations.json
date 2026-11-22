@@ -1,0 +1,994 @@
+{
+  "yan-v4": {
+    "order": [
+      "b",
+      "a"
+    ],
+    "strategies": {
+      "a": {
+        "id": "7f1556ff17b8790df89417bd1691c59e",
+        "name": "yan-v4"
+      },
+      "b": {
+        "id": "f9113ec697b0943601ec961a3ad9c33a",
+        "name": "1C-Testv2"
+      }
+    },
+    "phases": [
+      {
+        "start_exclusive": 0,
+        "end_inclusive": 50,
+        "players": [
+          {
+            "events": {
+              "recruit": 19,
+              "plant": 6,
+              "deposit": 9,
+              "death": 9,
+              "seize": 3
+            },
+            "deposits": 405.51,
+            "tree_income": 484.79,
+            "turns_light_collector_near_enemy_base": 19
+          },
+          {
+            "events": {
+              "recruit": 19,
+              "deposit": 10,
+              "plant": 5,
+              "death": 9,
+              "seize": 2
+            },
+            "deposits": 316.43,
+            "tree_income": 407.88,
+            "turns_light_collector_near_enemy_base": 0
+          }
+        ]
+      },
+      {
+        "start_exclusive": 50,
+        "end_inclusive": 100,
+        "players": [
+          {
+            "events": {
+              "death": 26,
+              "recruit": 25,
+              "seize": 1,
+              "plant": 8,
+              "deposit": 5
+            },
+            "deposits": 398.23,
+            "tree_income": 882.2,
+            "turns_light_collector_near_enemy_base": 47
+          },
+          {
+            "events": {
+              "death": 27,
+              "recruit": 22,
+              "deposit": 11,
+              "seize": 3,
+              "plant": 2
+            },
+            "deposits": 605.55,
+            "tree_income": 314.62,
+            "turns_light_collector_near_enemy_base": 0
+          }
+        ]
+      },
+      {
+        "start_exclusive": 100,
+        "end_inclusive": 250,
+        "players": [
+          {
+            "events": {
+              "recruit": 37,
+              "plant": 30,
+              "death": 36,
+              "deposit": 12,
+              "seize": 4
+            },
+            "deposits": 1566.72,
+            "tree_income": 4978.24,
+            "turns_light_collector_near_enemy_base": 141
+          },
+          {
+            "events": {
+              "recruit": 30,
+              "death": 30,
+              "deposit": 10,
+              "seize": 7,
+              "plant": 4
+            },
+            "deposits": 620.06,
+            "tree_income": 503.76,
+            "turns_light_collector_near_enemy_base": 2
+          }
+        ]
+      },
+      {
+        "start_exclusive": 150,
+        "end_inclusive": 250,
+        "players": [
+          {
+            "events": {
+              "death": 20,
+              "seize": 4,
+              "recruit": 20,
+              "deposit": 10,
+              "plant": 19
+            },
+            "deposits": 1133.63,
+            "tree_income": 3559.45,
+            "turns_light_collector_near_enemy_base": 94
+          },
+          {
+            "events": {
+              "death": 16,
+              "recruit": 16,
+              "deposit": 5,
+              "seize": 1,
+              "plant": 4
+            },
+            "deposits": 397.82,
+            "tree_income": 262.58,
+            "turns_light_collector_near_enemy_base": 1
+          }
+        ]
+      },
+      {
+        "start_exclusive": 250,
+        "end_inclusive": 270,
+        "players": [
+          {
+            "events": {
+              "death": 3,
+              "seize": 3,
+              "recruit": 3,
+              "deposit": 4,
+              "plant": 1
+            },
+            "deposits": 507.89,
+            "tree_income": 581.65,
+            "turns_light_collector_near_enemy_base": 3
+          },
+          {
+            "events": {
+              "death": 3,
+              "seize": 5,
+              "recruit": 8,
+              "deposit": 4,
+              "plant": 1
+            },
+            "deposits": 252.99,
+            "tree_income": 156.6,
+            "turns_light_collector_near_enemy_base": 0
+          }
+        ]
+      },
+      {
+        "start_exclusive": 270,
+        "end_inclusive": 299,
+        "players": [
+          {
+            "events": {
+              "death": 5,
+              "plant": 1,
+              "deposit": 13,
+              "recruit": 2,
+              "seize": 1
+            },
+            "deposits": 2825.18,
+            "tree_income": 403.44,
+            "turns_light_collector_near_enemy_base": 4
+          },
+          {
+            "events": {
+              "death": 6,
+              "recruit": 2,
+              "seize": 2,
+              "deposit": 12
+            },
+            "deposits": 1735.66,
+            "tree_income": 226.09,
+            "turns_light_collector_near_enemy_base": 0
+          }
+        ]
+      }
+    ],
+    "snapshots": [
+      {
+        "step": 50,
+        "players": [
+          {
+            "cash": 115.97,
+            "workers": 10,
+            "collectors": 8,
+            "carried": 51.0,
+            "trees": 7
+          },
+          {
+            "cash": 23.54,
+            "workers": 10,
+            "collectors": 8,
+            "carried": 57.93,
+            "trees": 4
+          }
+        ]
+      },
+      {
+        "step": 100,
+        "players": [
+          {
+            "cash": 186.74,
+            "workers": 9,
+            "collectors": 8,
+            "carried": 154.39,
+            "trees": 7
+          },
+          {
+            "cash": 129.57,
+            "workers": 5,
+            "collectors": 3,
+            "carried": 54.08,
+            "trees": 3
+          }
+        ]
+      },
+      {
+        "step": 138,
+        "players": [
+          {
+            "cash": 599.17,
+            "workers": 10,
+            "collectors": 7,
+            "carried": 0,
+            "trees": 9
+          },
+          {
+            "cash": 34.8,
+            "workers": 6,
+            "collectors": 3,
+            "carried": 254.21,
+            "trees": 2
+          }
+        ]
+      },
+      {
+        "step": 150,
+        "players": [
+          {
+            "cash": 772.5,
+            "workers": 10,
+            "collectors": 7,
+            "carried": 60.0,
+            "trees": 8
+          },
+          {
+            "cash": 52.97,
+            "workers": 5,
+            "collectors": 1,
+            "carried": 227.7,
+            "trees": 3
+          }
+        ]
+      },
+      {
+        "step": 175,
+        "players": [
+          {
+            "cash": 1403.68,
+            "workers": 10,
+            "collectors": 9,
+            "carried": 30.67,
+            "trees": 10
+          },
+          {
+            "cash": 72.65,
+            "workers": 3,
+            "collectors": 1,
+            "carried": 227.7,
+            "trees": 0
+          }
+        ]
+      },
+      {
+        "step": 200,
+        "players": [
+          {
+            "cash": 2035.33,
+            "workers": 10,
+            "collectors": 8,
+            "carried": 0,
+            "trees": 9
+          },
+          {
+            "cash": 92.13,
+            "workers": 6,
+            "collectors": 2,
+            "carried": 0,
+            "trees": 0
+          }
+        ]
+      },
+      {
+        "step": 240,
+        "players": [
+          {
+            "cash": 3237.0,
+            "workers": 10,
+            "collectors": 7,
+            "carried": 0,
+            "trees": 13
+          },
+          {
+            "cash": 12.61,
+            "workers": 4,
+            "collectors": 2,
+            "carried": 200.55,
+            "trees": 0
+          }
+        ]
+      },
+      {
+        "step": 250,
+        "players": [
+          {
+            "cash": 3533.31,
+            "workers": 10,
+            "collectors": 7,
+            "carried": 156.77,
+            "trees": 13
+          },
+          {
+            "cash": 48.95,
+            "workers": 5,
+            "collectors": 2,
+            "carried": 149.55,
+            "trees": 1
+          }
+        ]
+      },
+      {
+        "step": 260,
+        "players": [
+          {
+            "cash": 3968.33,
+            "workers": 9,
+            "collectors": 7,
+            "carried": 517.84,
+            "trees": 8
+          },
+          {
+            "cash": 62.12,
+            "workers": 8,
+            "collectors": 4,
+            "carried": 0,
+            "trees": 2
+          }
+        ]
+      },
+      {
+        "step": 270,
+        "players": [
+          {
+            "cash": 4425.8,
+            "workers": 10,
+            "collectors": 9,
+            "carried": 1007.29,
+            "trees": 6
+          },
+          {
+            "cash": 71.48,
+            "workers": 10,
+            "collectors": 7,
+            "carried": 323.2,
+            "trees": 4
+          }
+        ]
+      },
+      {
+        "step": 276,
+        "players": [
+          {
+            "cash": 4773.36,
+            "workers": 9,
+            "collectors": 9,
+            "carried": 907.57,
+            "trees": 6
+          },
+          {
+            "cash": 163.14,
+            "workers": 9,
+            "collectors": 7,
+            "carried": 577.62,
+            "trees": 4
+          }
+        ]
+      },
+      {
+        "step": 280,
+        "players": [
+          {
+            "cash": 5047.12,
+            "workers": 10,
+            "collectors": 10,
+            "carried": 913.9,
+            "trees": 6
+          },
+          {
+            "cash": 248.01,
+            "workers": 10,
+            "collectors": 8,
+            "carried": 742.62,
+            "trees": 4
+          }
+        ]
+      },
+      {
+        "step": 285,
+        "players": [
+          {
+            "cash": 5612.65,
+            "workers": 10,
+            "collectors": 10,
+            "carried": 879.02,
+            "trees": 4
+          },
+          {
+            "cash": 654.07,
+            "workers": 10,
+            "collectors": 8,
+            "carried": 697.28,
+            "trees": 4
+          }
+        ]
+      },
+      {
+        "step": 286,
+        "players": [
+          {
+            "cash": 5990.08,
+            "workers": 10,
+            "collectors": 10,
+            "carried": 584.68,
+            "trees": 4
+          },
+          {
+            "cash": 663.08,
+            "workers": 10,
+            "collectors": 8,
+            "carried": 776.13,
+            "trees": 4
+          }
+        ]
+      },
+      {
+        "step": 290,
+        "players": [
+          {
+            "cash": 6084.38,
+            "workers": 10,
+            "collectors": 10,
+            "carried": 970.39,
+            "trees": 4
+          },
+          {
+            "cash": 775.09,
+            "workers": 10,
+            "collectors": 8,
+            "carried": 948.24,
+            "trees": 2
+          }
+        ]
+      },
+      {
+        "step": 299,
+        "players": [
+          {
+            "cash": 7513.16,
+            "workers": 7,
+            "collectors": 7,
+            "carried": 19.35,
+            "trees": 2
+          },
+          {
+            "cash": 1933.22,
+            "workers": 6,
+            "collectors": 4,
+            "carried": 39.37,
+            "trees": 1
+          }
+        ]
+      }
+    ],
+    "scores": {
+      "a": 1933.22,
+      "b": 7513.16
+    }
+  },
+  "Master7sD": {
+    "order": [
+      "a",
+      "b"
+    ],
+    "strategies": {
+      "a": {
+        "id": "89e3cd6b39bfbed12b30d45b89683945",
+        "name": "claude-AlphaCarbon-Master7sD"
+      },
+      "b": {
+        "id": "a94f304f3e203fe0016849d44fc073b3",
+        "name": "小肥鱼v5-it720e20"
+      }
+    },
+    "phases": [
+      {
+        "start_exclusive": 0,
+        "end_inclusive": 50,
+        "players": [
+          {
+            "events": {
+              "recruit": 18,
+              "deposit": 10,
+              "plant": 2,
+              "seize": 5,
+              "death": 9
+            },
+            "deposits": 478.23,
+            "tree_income": 173.91,
+            "turns_light_collector_near_enemy_base": 0
+          },
+          {
+            "events": {
+              "recruit": 17,
+              "plant": 7,
+              "deposit": 9,
+              "death": 10,
+              "seize": 2
+            },
+            "deposits": 371.49,
+            "tree_income": 337.43,
+            "turns_light_collector_near_enemy_base": 0
+          }
+        ]
+      },
+      {
+        "start_exclusive": 50,
+        "end_inclusive": 100,
+        "players": [
+          {
+            "events": {
+              "recruit": 23,
+              "death": 22,
+              "deposit": 5,
+              "seize": 3,
+              "plant": 7
+            },
+            "deposits": 229.27,
+            "tree_income": 1050.68,
+            "turns_light_collector_near_enemy_base": 49
+          },
+          {
+            "events": {
+              "death": 21,
+              "recruit": 17,
+              "deposit": 2,
+              "plant": 2
+            },
+            "deposits": 451.34,
+            "tree_income": 111.5,
+            "turns_light_collector_near_enemy_base": 0
+          }
+        ]
+      },
+      {
+        "start_exclusive": 100,
+        "end_inclusive": 250,
+        "players": [
+          {
+            "events": {
+              "deposit": 25,
+              "seize": 1,
+              "plant": 35,
+              "death": 5,
+              "recruit": 5
+            },
+            "deposits": 3429.58,
+            "tree_income": 4052.65,
+            "turns_light_collector_near_enemy_base": 74
+          },
+          {
+            "events": {
+              "death": 3,
+              "recruit": 1
+            },
+            "deposits": 30.0,
+            "tree_income": 0,
+            "turns_light_collector_near_enemy_base": 0
+          }
+        ]
+      },
+      {
+        "start_exclusive": 150,
+        "end_inclusive": 250,
+        "players": [
+          {
+            "events": {
+              "plant": 25,
+              "deposit": 18
+            },
+            "deposits": 2522.52,
+            "tree_income": 2460.89,
+            "turns_light_collector_near_enemy_base": 25
+          },
+          {
+            "events": {},
+            "deposits": 0,
+            "tree_income": 0,
+            "turns_light_collector_near_enemy_base": 0
+          }
+        ]
+      },
+      {
+        "start_exclusive": 250,
+        "end_inclusive": 270,
+        "players": [
+          {
+            "events": {
+              "plant": 6,
+              "deposit": 2
+            },
+            "deposits": 547.7,
+            "tree_income": 708.64,
+            "turns_light_collector_near_enemy_base": 0
+          },
+          {
+            "events": {},
+            "deposits": 0,
+            "tree_income": 0,
+            "turns_light_collector_near_enemy_base": 0
+          }
+        ]
+      },
+      {
+        "start_exclusive": 270,
+        "end_inclusive": 299,
+        "players": [
+          {
+            "events": {
+              "plant": 2,
+              "deposit": 12,
+              "death": 4,
+              "recruit": 1,
+              "seize": 1
+            },
+            "deposits": 1206.6,
+            "tree_income": 633.93,
+            "turns_light_collector_near_enemy_base": 17
+          },
+          {
+            "events": {
+              "plant": 2,
+              "recruit": 7,
+              "death": 4,
+              "deposit": 5
+            },
+            "deposits": 522.42,
+            "tree_income": 139.32,
+            "turns_light_collector_near_enemy_base": 0
+          }
+        ]
+      }
+    ],
+    "snapshots": [
+      {
+        "step": 50,
+        "players": [
+          {
+            "cash": 40.5,
+            "workers": 9,
+            "collectors": 7,
+            "carried": 141.69,
+            "trees": 5
+          },
+          {
+            "cash": 6.43,
+            "workers": 7,
+            "collectors": 6,
+            "carried": 187.46,
+            "trees": 4
+          }
+        ]
+      },
+      {
+        "step": 100,
+        "players": [
+          {
+            "cash": 252.52,
+            "workers": 10,
+            "collectors": 8,
+            "carried": 91.45,
+            "trees": 8
+          },
+          {
+            "cash": 19.28,
+            "workers": 3,
+            "collectors": 1,
+            "carried": 51.0,
+            "trees": 1
+          }
+        ]
+      },
+      {
+        "step": 138,
+        "players": [
+          {
+            "cash": 1490.38,
+            "workers": 10,
+            "collectors": 8,
+            "carried": 337.21,
+            "trees": 11
+          },
+          {
+            "cash": 19.28,
+            "workers": 2,
+            "collectors": 1,
+            "carried": 0,
+            "trees": 0
+          }
+        ]
+      },
+      {
+        "step": 150,
+        "players": [
+          {
+            "cash": 1973.5,
+            "workers": 10,
+            "collectors": 8,
+            "carried": 174.57,
+            "trees": 10
+          },
+          {
+            "cash": 19.28,
+            "workers": 1,
+            "collectors": 0,
+            "carried": 0,
+            "trees": 0
+          }
+        ]
+      },
+      {
+        "step": 175,
+        "players": [
+          {
+            "cash": 2753.1,
+            "workers": 10,
+            "collectors": 8,
+            "carried": 839.6,
+            "trees": 12
+          },
+          {
+            "cash": 19.28,
+            "workers": 1,
+            "collectors": 0,
+            "carried": 0,
+            "trees": 0
+          }
+        ]
+      },
+      {
+        "step": 200,
+        "players": [
+          {
+            "cash": 3290.17,
+            "workers": 10,
+            "collectors": 8,
+            "carried": 670.46,
+            "trees": 15
+          },
+          {
+            "cash": 19.28,
+            "workers": 1,
+            "collectors": 0,
+            "carried": 0,
+            "trees": 0
+          }
+        ]
+      },
+      {
+        "step": 240,
+        "players": [
+          {
+            "cash": 4929.93,
+            "workers": 10,
+            "collectors": 8,
+            "carried": 470.58,
+            "trees": 11
+          },
+          {
+            "cash": 19.28,
+            "workers": 1,
+            "collectors": 0,
+            "carried": 0,
+            "trees": 0
+          }
+        ]
+      },
+      {
+        "step": 250,
+        "players": [
+          {
+            "cash": 5055.36,
+            "workers": 10,
+            "collectors": 8,
+            "carried": 752.55,
+            "trees": 10
+          },
+          {
+            "cash": 19.28,
+            "workers": 1,
+            "collectors": 0,
+            "carried": 0,
+            "trees": 0
+          }
+        ]
+      },
+      {
+        "step": 260,
+        "players": [
+          {
+            "cash": 5663.02,
+            "workers": 10,
+            "collectors": 8,
+            "carried": 437.88,
+            "trees": 14
+          },
+          {
+            "cash": 19.28,
+            "workers": 1,
+            "collectors": 0,
+            "carried": 0,
+            "trees": 0
+          }
+        ]
+      },
+      {
+        "step": 270,
+        "players": [
+          {
+            "cash": 5812.99,
+            "workers": 10,
+            "collectors": 8,
+            "carried": 734.37,
+            "trees": 13
+          },
+          {
+            "cash": 19.28,
+            "workers": 1,
+            "collectors": 0,
+            "carried": 0,
+            "trees": 0
+          }
+        ]
+      },
+      {
+        "step": 276,
+        "players": [
+          {
+            "cash": 5943.65,
+            "workers": 10,
+            "collectors": 8,
+            "carried": 772.76,
+            "trees": 14
+          },
+          {
+            "cash": 19.28,
+            "workers": 1,
+            "collectors": 0,
+            "carried": 0,
+            "trees": 0
+          }
+        ]
+      },
+      {
+        "step": 280,
+        "players": [
+          {
+            "cash": 6503.09,
+            "workers": 10,
+            "collectors": 8,
+            "carried": 403.12,
+            "trees": 12
+          },
+          {
+            "cash": 19.28,
+            "workers": 1,
+            "collectors": 0,
+            "carried": 0,
+            "trees": 0
+          }
+        ]
+      },
+      {
+        "step": 285,
+        "players": [
+          {
+            "cash": 6623.12,
+            "workers": 10,
+            "collectors": 8,
+            "carried": 484.12,
+            "trees": 11
+          },
+          {
+            "cash": 19.28,
+            "workers": 1,
+            "collectors": 0,
+            "carried": 0,
+            "trees": 0
+          }
+        ]
+      },
+      {
+        "step": 286,
+        "players": [
+          {
+            "cash": 6640.3,
+            "workers": 10,
+            "collectors": 8,
+            "carried": 260.08,
+            "trees": 11
+          },
+          {
+            "cash": 238.03,
+            "workers": 1,
+            "collectors": 0,
+            "carried": 0,
+            "trees": 1
+          }
+        ]
+      },
+      {
+        "step": 290,
+        "players": [
+          {
+            "cash": 6669.17,
+            "workers": 10,
+            "collectors": 8,
+            "carried": 458.49,
+            "trees": 10
+          },
+          {
+            "cash": 160.56,
+            "workers": 5,
+            "collectors": 4,
+            "carried": 0,
+            "trees": 1
+          }
+        ]
+      },
+      {
+        "step": 299,
+        "players": [
+          {
+            "cash": 7389.78,
+            "workers": 7,
+            "collectors": 6,
+            "carried": 77.22,
+            "trees": 9
+          },
+          {
+            "cash": 389.76,
+            "workers": 4,
+            "collectors": 4,
+            "carried": 0,
+            "trees": 1
+          }
+        ]
+      }
+    ],
+    "scores": {
+      "a": 7389.78,
+      "b": 389.76
+    }
+  }
+}

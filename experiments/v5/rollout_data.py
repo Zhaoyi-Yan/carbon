@@ -7,10 +7,12 @@ from pathlib import Path
 import numpy as np
 from backbone import load
 from extract import TEACHERS
+from unit_credit import outcome_weights
 
 
-def init():
-    global MODEL, NET
+def init(stride,credit):
+    global MODEL, NET, STRIDE, CREDIT
+    STRIDE,CREDIT=stride,credit
     MODEL=load();NET=MODEL._net()
 
 
@@ -18,16 +20,17 @@ def prepare(task):
     g,path,out=task
     if out.exists():return
     frames=json.loads(gzip.decompress(path.read_bytes()))['steps']
-    all_x=[];all_styles=[];labels=[];teachers=[];values=[];scalars=[];future=[]
+    all_x=[];all_styles=[];labels=[];teachers=[];values=[];scalars=[];future=[];credits=[]
     for side,slot in enumerate(g['order']):
         teacher=TEACHERS.get(g['strategies'][slot]['id'])
         if teacher is None:continue
         tr=MODEL.BeliefTracker(MODEL._Bel,side);prev=None
-        phase=int(g['id'][:5],16)%6
+        phase=int(g['id'][:5],16)%STRIDE
         for t,(before,after) in enumerate(zip(frames,frames[1:])):
             pl=before[0]['observation']['players'];action=after[side]['action'] or {}
             est,known=tr.step(pl,t,before[side]['observation']['carbon'])
-            if t%6==phase:
+            if t%STRIDE==phase:
+                if CREDIT:credits.append(outcome_weights(frames,t,side))
                 x=MODEL.encode(pl,t,side,est,known,prev)
                 all_x.append(np.uint8(np.rint(x*100.).clip(0,255)))
                 all_styles.append(teacher)
@@ -48,13 +51,15 @@ def prepare(task):
         teachers.extend(np.concatenate([w,b],axis=2).astype(np.float16))
         values.extend(v)
     np.savez_compressed(out,X=xx,T=np.array(all_styles,np.int8),A=np.stack(labels),L=np.stack(teachers),
-                        V=np.array(values,np.float32),S=ss,Y=np.array(future,np.float32))
+                        V=np.array(values,np.float32),S=ss,Y=np.array(future,np.float32),**({'W':np.stack(credits)} if CREDIT else {}))
 
 
 def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('cache',type=Path);p.add_argument('split',type=Path)
     p.add_argument('snapshots',type=Path,nargs='+');p.add_argument('--jobs',type=int,default=2)
+    p.add_argument('--stride',type=int,choices=range(1,15),default=6)
+    p.add_argument('--credit',action='store_true')
     a=p.parse_args();a.cache.mkdir(exist_ok=True,parents=True)
     v=json.loads(a.split.read_text());names=set(v['training_matches']+v['validation_matches'])
     games={}
@@ -62,7 +67,7 @@ def main():
         for g in json.loads((root/'index.json').read_text()):
             path=root/g['file'];name=path.name.split('.')[0]
             if path.exists() and name in names:games.setdefault(name,(g,path,a.cache/(name+'.npz')))
-    with ProcessPoolExecutor(a.jobs,initializer=init) as pool:
+    with ProcessPoolExecutor(a.jobs,initializer=init,initargs=(a.stride,a.credit)) as pool:
         for i,_ in enumerate(pool.map(prepare,games.values(),chunksize=2),1):
             if i%80==0:print(i,flush=True)
 

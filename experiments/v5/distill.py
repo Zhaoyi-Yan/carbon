@@ -53,6 +53,8 @@ class Student(nn.Module):
 
 def data(root,names):
     fields={k:[] for k in ('X','S','L','T','A','Y','V')}
+    with np.load(root/(names[0]+'.npz')) as check:
+        if 'W' in check:fields['W']=[]
     for name in names:
         with np.load(root/(name+'.npz')) as z:
             for k in fields:fields[k].append(z[k])

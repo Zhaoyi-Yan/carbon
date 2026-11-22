@@ -52,3 +52,7 @@ python experiments/v5/distill.py /tmp/v5-boards experiments/v5/validation.json /
 在同一张开发图 845511055 上，multistyle 两边分别胜 572.18、334.26 分，longlook 两边都负。八个训练回放局面的计时显示，longlook 平均展开 8.38 步，multistyle 为 2.75 步。小网络的额外深度未转化成该图的胜局，按预登记规则由 multistyle 进入第二批独立地图。[搜索剖析](search-profile.json) · [multistyle 原始记录](../../analysis/arena/v5-development-multistyle.jsonl) · [longlook 原始记录](../../analysis/arena/v5-development-longlook.jsonl)
 
 另取[较晚发布的公开快照](https://github.com/JUZI1/carbon-league-replays/tree/05f255b32442e61c8967a761dc557aad613f4c28)中 6 场新增对局，在全部 5,355 个单位决策上比较同一视野下的策略。v4 的准确率是 75.18%，整网重训后使用通用风格的准确率是 75.95%，使用已知教师风格时为 75.93%，后者预测实际行动的平均负对数似然由 0.630 降到 0.592。[独立快照复核](temporal-validation.json)
+
+multistyle 在预先封存的第二批四图上为 **7 胜 1 负**，场均 +419.63。唯一一次失利为 106481006 的出生位 0，分差 −47.75。八场均打满 299 个决策步。未达到八战全胜的条件。[八场原始结果](../../analysis/arena/v5-confirmation-multistyle.jsonl)
+
+[两局线上得分压制复盘](../../analysis/denial/README.md)分析了持续限制树经济以及现金低于重启门槛的两种情形。新候选以原版 yan-v4 继续换边验证。

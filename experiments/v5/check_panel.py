@@ -43,10 +43,12 @@ def review(games, seeds, candidate, opponent):
 def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('record',type=Path);p.add_argument('candidate_sha')
-    p.add_argument('--panel',choices=('qualification','confirmation'),default='qualification')
+    p.add_argument('--panel',choices=('qualification','confirmation','worker'),default='qualification')
     a=p.parse_args();here=Path(__file__).parent
     design=json.loads((here/'design.json').read_text())
-    seeds=design['qualification'] if a.panel=='qualification' else json.loads((here/'confirmation.json').read_text())['seeds']
+    panels={'qualification':('design.json','qualification'),'confirmation':('confirmation.json','seeds'),
+            'worker':('worker-confirmation.json','qualification')}
+    file,key=panels[a.panel];seeds=json.loads((here/file).read_text())[key]
     games=[json.loads(row) for row in a.record.read_text().splitlines()]
     result=review(games,seeds,a.candidate_sha,design['opponent_sha256'])
     print(json.dumps(result,indent=2))
