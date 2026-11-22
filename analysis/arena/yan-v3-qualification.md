@@ -7,3 +7,7 @@
 第二个候选沿用护树搜索，对模拟棋盘中的行动采样做批处理。[完整加速版](https://github.com/Zhaoyi-Yan/carbon/blob/791c2f23f7dfa46228f6578a5df8e3391a334a7a/submission.py)。若第一批未通过，可在另一批冻结种子 839712143、80450718、802954434、533778689 上以相同条件测试加速版。每个候选只计算自己事先选定的这一批。种子来自 ASCII 字符串 `yan-v3-frozen-eval-{i}` 和 `yan-v3-batched-holdout-{i}` 的 SHA-256，取前四字节大端整数模十亿，i 取 0 至 3。
 
 环境为 Apple M4、Python 3.12.16、NumPy 1.26.4、PyTorch 2.5.1 CPU，四局并行。每局的代码和地图指纹、实际搜索次数、耗时、比分记录在 JSONL。
+
+## 加速版的动作核对
+
+从四场 Apollo 全长回放取 168 个决策局面，覆盖双方、开局和终局。使用同一局面、策略概率、随机数和固定回程指令，比较 1,008 组模拟动作以及采样后的下一枚随机数，两版全部一致。交替顺序测三遍，同样 1,008 组动作的 CPU 时间中位数从 0.131 秒降至 0.035 秒，单个采样组件约快 3.69 倍。真实搜索仍按墙钟分配预算，候选实际选择的策略可能不同。[生成器](../../experiments/batch_rollout.py) · [复算脚本](../../experiments/batch_rollout_check.py) · [计时原始数据](../../experiments/batch_rollout_check.json)
