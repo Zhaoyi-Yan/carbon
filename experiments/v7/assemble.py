@@ -20,12 +20,17 @@ import master
 import late_hire
 import postcargo
 import rollout_fog
+import receipt_motion
+import receipt_tail
+import rollout_cache
+import shipment_warning
+import small_batches
 
 HERE=Path(__file__).resolve().parent
 ROOT=HERE.parents[1]
 
 
-VERSIONS=('quay','tidepool','pilot','jetty','narrows','soundings','pilotage','fairlead')
+VERSIONS=('quay','tidepool','pilot','jetty','narrows','soundings','pilotage','fairlead','tidewatch')
 
 
 def create(name):
@@ -50,6 +55,10 @@ def create(name):
     if stage>=VERSIONS.index('fairlead'):
         code=rollout_fog.build(code,mirror=True)
         code=late_hire.build(postcargo.build(code))
+    if stage>=VERSIONS.index('tidewatch'):
+        code=receipt_tail.build(receipt_motion.build(code))
+        code=shipment_warning.build(code,.3799)
+        code=small_batches.build(rollout_cache.build(code))
     if len(code.encode())>=10_000_000:raise ValueError('single-file tournament size')
     compile(code,name,'exec')
     return code

@@ -1,0 +1,59 @@
+{
+  "maps": [
+    "717ff4e42071fb07e8b9efc4c8b04dfd0663e4bb70a333055e919e95aa3da600",
+    "37db1a81e6e6a2229a9db732f064754f2af11d66bc306c83800efde5c9acb2d5",
+    "cd759828f550a19d03cc9239fc553ef0fe1f1d96e3f94c37d4bedbf1d3a07fac",
+    "1406873e243e0c9d5e26e7109329279567b1de8df1fc055101f5ec38cf73d707",
+    "1d4e9a1b738ad7b9eb687ee510dd4c942e0a54ec7a772b6708de3f09729eede7",
+    "7af4760f5bd14195567915e576b3d9e017e167e8f41fee885aa28dae2da22f89",
+    "ce1fe786bf1c563297d8b39c67b62518368a60d296949cd6a6bd0de6655838f6",
+    "d58ec7c686f4e470502bb954dfa132378196855571bd0be029ffde33013405db",
+    "e157e4cefab1ba95b4646278f274ec5f4bd3637988156d756919acd0f7ca59fe",
+    "d563c7db08f6244275e947a41c10d784b41cf711c16c9cf659f483206182d7d6",
+    "f68675a02c2572234d744fa4094f399103979dc2db849f619ee9e7894fd27dae",
+    "0b0698f412ec95e63a851ccc7bbe59cd6d5f35ae4ff388ac3a934de608fed2a6",
+    "fefb7f72ba923e9026beba7a0a3b97652fefd20c48ae6c2f667aeb2406f06930",
+    "9dd985ad4c02310b6675c17f73a5c0120c54bdc8605a3c00b986cf890469ccdc",
+    "e95e5a5590f91f80c0c062bb9eb04ca81ac76d053780f1a8840e8204efcab716"
+  ],
+  "identical_sampled_teams": 1380,
+  "identical_proposals": {
+    "tree": {
+      "cases": 345,
+      "mean_ms": [
+        0.3362,
+        0.222
+      ],
+      "p95_ms": [
+        0.6983,
+        0.5923
+      ]
+    },
+    "bank": {
+      "cases": 345,
+      "mean_ms": [
+        0.1071,
+        0.0909
+      ],
+      "p95_ms": [
+        0.2929,
+        0.2505
+      ]
+    },
+    "intercept": {
+      "cases": 345,
+      "mean_ms": [
+        0.396,
+        0.2448
+      ],
+      "p95_ms": [
+        1.2832,
+        0.7497
+      ]
+    }
+  },
+  "draw_microseconds": [
+    103.86,
+    2.5
+  ]
+}
