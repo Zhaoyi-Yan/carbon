@@ -6,7 +6,7 @@ from math import inf
 MOVES = ("UP", "RIGHT", "DOWN", "LEFT")
 OPENING = "mixed"
 MAX_PLANTERS = 2
-RETURN_RATE = 2.7
+RETURN_RATE = 1.3
 STATE = {}
 
 
@@ -194,7 +194,7 @@ def navigate(start, options, target, score, rows, distances, penalty=1.0):
 
 
 def collector_moves(start, load, options, distances, home, remaining, carbon, trespass,
-                    trees, bases, drain, coverage, config, old_target, claimed, threat):
+                    trees, bases, drain, coverage, config, old_target, claimed, threat, neighbors):
     rows = {dest: (-30.0, dest) for dest in options}
     rate = config.get("initialCollectRate", 0.3)
     tax = config.get("smeltCost", 0)
@@ -210,6 +210,8 @@ def collector_moves(start, load, options, distances, home, remaining, carbon, tr
             value = -2.0
         navigate(start, options, target, value, rows, distances, 2.5)
 
+    # Plan a return via one or two deposits. A neighbor on the way home can
+    # add a harvest without requiring any additional movement.
     for target, stock in enumerate(carbon):
         walk = distances[start][target]
         if (stock < 3 or walk > 8 or trespass[target] + 2 < home[target]
@@ -233,6 +235,24 @@ def collector_moves(start, load, options, distances, home, remaining, carbon, tr
                 value += 0.14 * load / max(1, home[target])
                 value -= 0.035 * load * (walk + turns) / max(1, home[start])
             best = max(best, value)
+        if not short_horizon and stock >= 12 and walk <= 5:
+            for second in neighbors[target]:
+                if (second in trees or second in claimed or not home[second]
+                        or not trespass[second] or carbon[second] < 15
+                        or trespass[second] + 2 < home[second]):
+                    continue
+                # A discounted follow-up accounts for other workers harvesting first.
+                second_stock = carbon[second] * max(0.45, 0.83 - 0.12 * drain[second])
+                for first_turns, second_turns in ((1, 2), (2, 2), (2, 3)):
+                    time = walk + first_turns + 1 + second_turns + home[second]
+                    if time > remaining:
+                        continue
+                    gain = stock * (1 - (1 - rate) ** first_turns)
+                    gain += second_stock * (1 - (1 - rate) ** second_turns)
+                    value = gain * survival / (time + min(2, home[second]) * 0.65)
+                    value += 0.14 * load / max(1, home[second])
+                    value -= 0.035 * load * (walk + first_turns + second_turns) / max(1, home[start])
+                    best = max(best, value - 0.35)
         best += 0.24 * (target == old_target) - 0.55 * (target in claimed)
         navigate(start, options, target, best, rows, distances, 1.65)
 
@@ -343,7 +363,14 @@ def agent(observation, configuration):
                 continue
             competition = max(1, coverage[cell] + (pos not in trees))
             depletion = min(0.95, absorption * competition)
-            income += carbon[cell] * (1 - (1 - depletion) ** horizon) / competition
+            # Near our bases, available deposits are worth more to collectors.
+            # Across the center line, planting also denies deposits to the opponent.
+            territory_weight = 1.0
+            if pos not in trees:
+                territory_weight += 0.055 * max(-5, min(5, home[cell] - trespass[cell]))
+                if home[cell] <= 2:
+                    territory_weight *= 0.76
+            income += carbon[cell] * territory_weight * (1 - (1 - depletion) ** horizon) / competition
         if pos in trees:
             income *= 1.85 if not owned else 0.0
         # Opposing collectors pay additional carbon in busy routes near their bases.
@@ -362,7 +389,7 @@ def agent(observation, configuration):
         if role == "COLLECTOR":
             scores = collector_moves(start, load, options, distances, home, remaining, carbon,
                                      trespass, trees, own_base_cells, drain, coverage,
-                                     configuration, old_targets.get(key), claimed, threat)
+                                     configuration, old_targets.get(key), claimed, threat, neighbors)
         else:
             scores = planter_moves(start, options, distances, home, trespass, remaining,
                                    trees, carbon, tree_value, price, seize, cash, threat,
