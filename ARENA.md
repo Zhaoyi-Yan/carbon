@@ -4,7 +4,7 @@
 
 ## 每轮先挑战自己的主力
 
-默认对手是本轮提交的 **yan-v3**，对应标签 `v6-tree-guard-batch`。它在四张新图换边挑战 yan-v2，取得 5 胜 3 负。可显式传入 `--baseline yan-v2` 或 `--baseline yan-v1` 做跨代回归。前两版分别对应 `v5-tree-value` 和 `v3-search`，均已用本人账户下载文件的 SHA-256 核实。[yan-v3 评测及上传记录](analysis/arena/yan-v3-qualification.md)
+默认对手是维护者已提交的 **yan-v4**，对应标签 `v7-claude-style`。回归对手 **yan-v3** 对应标签 `v6-tree-guard-batch`。它在四张新图换边挑战 yan-v2，取得 5 胜 3 负。可显式传入 `--baseline yan-v2` 或 `--baseline yan-v1` 做跨代回归。前两版分别对应 `v5-tree-value` 和 `v3-search`，均已用本人账户下载文件的 SHA-256 核实。[yan-v3 评测及上传记录](analysis/arena/yan-v3-qualification.md)
 
 新候选先挑战冻结的主力，再用历史主力及不同风格对手复查弱点。每张图双方都打两个出生位。单张图用于筛选，晋级前需要在开发时没看过的多张地图上复测。
 

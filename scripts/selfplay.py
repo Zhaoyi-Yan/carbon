@@ -1,6 +1,6 @@
 """Play a candidate against a frozen Carbon League strategy on both seats of every seed.
 
-The default opponent is the submitted yan-v3 account strategy. Use yan-v1, yan-v2, yan-v3 or a
+The default opponent is the submitted yan-v4 account strategy. Use a frozen account name or a
 single-file Python strategy as the candidate or baseline. The arena writes one JSONL
 record per game, with both names, file hashes, seat order, scores and timing.
 """
@@ -15,6 +15,9 @@ import tempfile
 ROOT = Path(__file__).resolve().parents[1]
 # Account handle -> immutable repository revision, verified source digest, shallow-clone copy.
 FROZEN = {
+    "yan-v4": ("a023edcbdd974ef1052a19283b17e1d9c5b37d32",
+               "a3d54e4672458e53f5dfd47444b59a25326f5d1592575f968a1a59f26c98b4b0",
+               "opponents/yan-v4.py"),
     "yan-v3": ("791c2f23f7dfa46228f6578a5df8e3391a334a7a",
                "ee2b1a51039aaea356e28c6e326d3ec4eb4c06cda054808f068f132447add737",
                "opponents/yan-v3.py"),
@@ -56,7 +59,7 @@ def source_for(spec, repo=ROOT):
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--candidate", required=True, help="working strategy file or frozen account name")
-    parser.add_argument("--baseline", default="yan-v3", help="opponent file or frozen account name (default: yan-v3)")
+    parser.add_argument("--baseline", default="yan-v4", help="opponent file or frozen account name (default: yan-v4)")
     parser.add_argument("--seeds", type=int, nargs="+", required=True, help="holdout map seeds; each runs twice")
     parser.add_argument("--steps", type=int, default=300)
     parser.add_argument("--jobs", type=int, default=1)

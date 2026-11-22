@@ -1,6 +1,6 @@
 # 策略版本索引
 
-主分支的六个标签保存达到阶段目标的单文件策略。下表还原了本地留存的实验快照。相同文件按 SHA-256 去重。归档提交的日期是整理日期，排列顺序不代表每个实验都基于上一行继续开发。
+主分支的标签保存达到阶段目标的单文件策略。下表还原了本地留存的实验快照。相同文件按 SHA-256 去重。归档提交的日期是整理日期，排列顺序不代表每个实验都基于上一行继续开发。
 
 | 阶段 | 策略 | 原有本地记录 |
 | --- | --- | --- |
@@ -10,6 +10,7 @@
 | [v4-replay-policy](https://github.com/Zhaoyi-Yan/carbon/blob/v4-replay-policy/submission.py) | 用 Apollo 回放学习工人行动、招募和开局 | 对 v3 为 4 胜 0 负，平均领先 1223.57 |
 | [v5-tree-value](https://github.com/Zhaoyi-Yan/carbon/blob/v5-tree-value/submission.py) | 搜索中加入未来 18 步树木收益预测 | 对 Master3s2、v3 各 4 胜，其他三个对手合计 6 胜，共 14 胜 0 负 |
 | [v6-tree-guard-batch](https://github.com/Zhaoyi-Yan/carbon/blob/v6-tree-guard-batch/submission.py) | 线上 yan-v3，护树时改换种植点或由空载采集员协防，CPU 批量采样 | 对冻结的 yan-v2 四图换边 5 胜 3 负，平均领先 176.63。[八局与提交记录](analysis/arena/yan-v3-qualification.md) |
+| [v7-claude-style](https://github.com/Zhaoyi-Yan/carbon/blob/v7-claude-style/submission.py) | 维护者提交的 yan-v4，Claude 本地最终版 | 对 yan-v3 三图换边 5 胜 1 负，平均领先 1042.18。[对局记录](ARENA.md) |
 
 ## 冻结的线上版本与新候选
 
