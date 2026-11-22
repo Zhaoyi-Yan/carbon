@@ -1384,6 +1384,53 @@ def _plan(n, D2):
     return rows, steps, passes
 
 
+def route_rows(players, previous, seat, step, logits, size, minimum_load, distances, destinations):
+    """Construct five candidate moves using only the public unit state and observer-side prior."""
+    own = players[seat]
+    opposing = players[1-seat]
+    homes = list(own[1].values())
+    if not homes:
+        return []
+    bank_dist = distances[:, homes].min(1)
+    pursuers = [(pos, cargo) for pos, cargo, role in opposing[2].values() if role == 'COLLECTOR']
+    enemy_tree = {t[0] for t in opposing[3].values()}
+    allies = {w[0] for w in own[2].values()}
+    rows = []
+    for worker, (pos, load, role) in own[2].items():
+        if role != 'COLLECTOR' or load < minimum_load:
+            continue
+        dest = destinations[pos]
+        steps_home = bank_dist[pos] - bank_dist[dest]
+        previous_pos = previous[seat][2].get(worker, [pos])[0] if previous is not None else pos
+        # If multiple cardinal moves wrap to one destination on a tiny board,
+        # the learned model is used only on the standard 15x15 board.
+        last = np.flatnonzero(destinations[previous_pos] == pos)
+        lighter = [p for p, c in pursuers if c < load]
+        danger = distances[np.ix_(dest, lighter)].min(1) if lighter else np.full(5, size)
+        tied = [p for p, c in pursuers if c == load]
+        tie_risk = (distances[np.ix_(dest, tied)].min(1) <= 1) if tied else np.zeros(5)
+        # Decision-time context: at least one off-base possible destination can
+        # also be reached by an opposing, lighter collector on this turn.
+        contested = bool(np.any((danger <= 1) & (bank_dist[dest] != 0)))
+        idle = np.arange(5) == 0
+        log_load = min(float(np.log1p(load/minimum_load)), 2.5)
+        danger_move = danger <= 1
+        prior = logits[pos].astype(np.float64)
+        x = np.column_stack((
+            prior - prior.max(), idle, steps_home, steps_home * log_load,
+            bank_dist[dest] == 0, idle * log_load, danger_move, tie_risk,
+            danger_move * steps_home, np.minimum(3, danger)/3.,
+            np.arange(5) == (last[0] if len(last) else -1),
+            [int(d) in enemy_tree for d in dest],
+            [int(d) != pos and int(d) in allies for d in dest],
+            steps_home * (step >= 270),
+        ))
+        rows.append((worker, pos, x, contested, steps_home))
+    return rows
+
+_ROUTE_DEST = np.asarray([[move(i,a) for a in range(5)] for i in range(N)])
+_ROUTE_WEIGHTS = np.asarray([0.12769111331031063, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0])
+
 def _search(obs, configuration, est, act0, lw0, lb0, prev, t0, home=()):
     """Returns the move to play: act0, the policy's own, unless a searched one scores better.
     home: the workers act0 sends straight home (go_home).  With _S_HOMEFIX every candidate keeps their moves: the candidates are sampled without
@@ -1449,6 +1496,9 @@ def _search(obs, configuration, est, act0, lw0, lb0, prev, t0, home=()):
     # the opponent's view at the root, for its first move
     xo = _quant(encode(players, step, op, est, full, prev))[None]
     lwo, lbo, _ = net(xo.astype(np.float32), _SID)
+    if (configuration.get('moveCost', 0) == 0 and configuration.get('episodeSteps', 300) == 300):
+        for _, pos, features, _, _ in route_rows(players, prev, op, step, lwo[0], SIZE, 75, FEAT_DIST, _ROUTE_DEST):
+            lwo[0, pos] = _TEMP * (features @ _ROUTE_WEIGHTS)
     opp = {}
 
     def begin(cs, ms):              # boards one turn ahead: (candidate, rollout, observation dict, previous players)
