@@ -33,6 +33,18 @@ CARBON_DEBUG=1 .arena-venv/bin/python scripts/selfplay.py \
 
 同一地图 `19417` 完整换边，yan-v2 从 0 号位以 9887.60 比 8101.27 胜，从 1 号位以 9067.12 比 8295.30 胜，平均现金分差 +1279.08。两局均为 299 步，每方搜索 298–299 次。此前在旧 benchmark 使用种子 811、853 换边，yan-v2 另取得四胜。三个种子是三张地图。[隔离竞技场逐局记录](analysis/arena/self-19417.jsonl) · [旧 benchmark 的四局](strategy-notes.txt)
 
+## Claude 本地最终版与 yan-v3
+
+截至 2026-11-22，Claude 本地最终版（SHA-256 `a3d54e4672458e53f5dfd47444b59a25326f5d1592575f968a1a59f26c98b4b0`）与已提交的 yan-v3（`ee2b1a51039aaea356e28c6e326d3ec4eb4c06cda054808f068f132447add737`）在三张地图换边直接交手。Claude 共 5 胜 1 负，场均资金领先 1042.18。六局全部打满 299 步，双方均无超过一秒的慢步。表中分差均从 Claude 一侧计算。
+
+| 地图种子 | Claude 坐 0 号位 | Claude 坐 1 号位 |
+| --- | ---: | ---: |
+| 897419481 | +1559.10 | +2044.68 |
+| 283554314 | +784.10 | −227.51 |
+| 365960692 | +1142.65 | +950.07 |
+
+首张图来自三方循环赛，第二批两张新图独立换边复测，Claude 为 3 胜 1 负、场均领先 662.33。复测种子取 ASCII 字符串 `claude-final-vs-yan-v3-confirm-0` 和 `claude-final-vs-yan-v3-confirm-1` 的 SHA-256 前四字节，按大端取模十亿。[首张图原始记录](https://github.com/Zhaoyi-Yan/carbon/blob/2292dc463ba3f5c4a8d84eb4139c0e63acd2d674/analysis/arena/live-adaptation-897419481.jsonl) · [新增四场原始记录](analysis/arena/claude-final-vs-yan-v3-confirm.jsonl)
+
 ## 多个 AI 如何一起改策略
 
 1. **观察对手**。使用[前五回放逐局数据](analysis/top-five-games.jsonl)区分对手。按整张地图切分示范数据，双方与同局所有步数放在同组。遇到同类局面，分开检验空载前压、护送满载工人和经济扩张等选择。
