@@ -24,6 +24,10 @@
 | [争夺中树木的收益校准](https://github.com/Zhaoyi-Yan/carbon/blob/69f549d6b0f4e3995f339e3d325f03ebc4b690dd/submission.py) | 31427 | 0 胜 2 负 | −141.56 | [换边实测和留图误差](experiments/contested_trees.md) |
 | [单采集员前压](experiments/pressure_opponent.md) | 20481 | 0 胜 2 负 | −1187.515 | [隔离竞技场](experiments/pressure_20481.jsonl) |
 
+## 以 yan-v3 为对手的实验
+
+[局内调整对手返程预测和终盘风险](https://github.com/Zhaoyi-Yan/carbon/blob/2292dc4/experiments/live_adaptation.md)在两张地图换边挑战 yan-v3，2 胜 2 负、场均 +181.65；同图对 Claude 本地最终版两负，原版 yan-v3 在该图也两负。77 场回放的返程概率误差小幅降低。候选和逐局结果保存在实验分支。
+
 ## 实验快照
 
 在 GitHub 点击文件名可查看和下载当次的完整单文件。探索分支包含早期草稿、搜索变体、风格和采样温度试验。joint 是未做整局评测的实验。逐局评测及已知败局见[策略记录](strategy-notes.txt)。
