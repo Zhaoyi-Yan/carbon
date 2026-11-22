@@ -1,0 +1,129 @@
+{
+  "candidate_sha256": "5bcabdb9daa0b8f89b461d118edec68d90c1d459f2ec75ccea80a0b2eb7b091a",
+  "initialization_seconds": 6.681,
+  "test": "Both game seats; official moves teacher-forced between comparisons. At switches and every 13 turns independently sample each policy root from identical trackers and RNG. Search bypassed for parent action parity.",
+  "counts": {
+    "pursuit_states": 75,
+    "pursuit_actions": 662,
+    "pursuit_different_actions": 1,
+    "reserve_states": 27,
+    "reserve_actions": 318,
+    "reserve_different_actions": 0
+  },
+  "different": [
+    {
+      "game": "carbon-qq-art-page.html",
+      "seat": 0,
+      "turn": 178,
+      "team": "pursuit",
+      "different": [
+        "player-0-worker-33"
+      ]
+    }
+  ],
+  "runs": [
+    {
+      "game": "carbon-qq-art-page.html",
+      "seat": 0,
+      "counts": {
+        "pursuit": 258,
+        "reserve": 41
+      },
+      "switches": [
+        [
+          0,
+          "pursuit"
+        ],
+        [
+          125,
+          "reserve"
+        ],
+        [
+          158,
+          "pursuit"
+        ],
+        [
+          170,
+          "reserve"
+        ],
+        [
+          178,
+          "pursuit"
+        ]
+      ]
+    },
+    {
+      "game": "carbon-qq-art-page.html",
+      "seat": 1,
+      "counts": {
+        "pursuit": 235,
+        "reserve": 64
+      },
+      "switches": [
+        [
+          0,
+          "pursuit"
+        ],
+        [
+          198,
+          "reserve"
+        ],
+        [
+          209,
+          "pursuit"
+        ],
+        [
+          221,
+          "reserve"
+        ],
+        [
+          243,
+          "pursuit"
+        ],
+        [
+          256,
+          "reserve"
+        ],
+        [
+          286,
+          "pursuit"
+        ],
+        [
+          298,
+          "reserve"
+        ]
+      ]
+    },
+    {
+      "game": "starvation-4063.html.gz",
+      "seat": 0,
+      "counts": {
+        "pursuit": 125,
+        "reserve": 174
+      },
+      "switches": [
+        [
+          0,
+          "pursuit"
+        ],
+        [
+          125,
+          "reserve"
+        ]
+      ]
+    },
+    {
+      "game": "starvation-4063.html.gz",
+      "seat": 1,
+      "counts": {
+        "pursuit": 299
+      },
+      "switches": [
+        [
+          0,
+          "pursuit"
+        ]
+      ]
+    }
+  ]
+}

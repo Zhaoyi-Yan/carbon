@@ -1,0 +1,68 @@
+{
+  "version": "1",
+  "source": {
+    "frozen": "yan-v6.py",
+    "approximate": "experiments/v7/checkpoints/harbormaster.py"
+  },
+  "frozen_archive": "5b6bc7e4a169c16701752bc9909e31eb86d874d5e512194f0c5a8d053e6f79ae",
+  "source_archive": "ab78813366f5a39393826f8ddb4afc6c9518c9ec9e2c21a344fb10b0a9d737e8",
+  "decoded_archive": "16f5035fe777cac37ba994dcd19292dce8aa5d56ed54ce7a62c01732850d577b",
+  "fragment_sha256": "5a8dc5effa4ff02fe2792883d62f74e7c4150ec906c4c051151161575930ae86",
+  "delta_fragment_sha256": "5f5eb25bdf878afed4b9b220a38c351db765de45664d6645a022c188f32324da",
+  "budget": 5912710,
+  "frozen_chars": 5146610,
+  "differential_chars": 679793,
+  "combined_chars": 5826403,
+  "modes": [
+    {
+      "characters": 995023,
+      "six_bit_scalars": 1097280,
+      "quantized_scalars": 1097280,
+      "requested_six_fraction": 1.0
+    },
+    {
+      "characters": 918583,
+      "six_bit_scalars": 822882,
+      "quantized_scalars": 1097280,
+      "requested_six_fraction": 0.75
+    },
+    {
+      "characters": 821263,
+      "six_bit_scalars": 548568,
+      "quantized_scalars": 1097280,
+      "requested_six_fraction": 0.5
+    },
+    {
+      "characters": 760978,
+      "six_bit_scalars": 383976,
+      "quantized_scalars": 1097280,
+      "requested_six_fraction": 0.35
+    },
+    {
+      "characters": 720513,
+      "six_bit_scalars": 274242,
+      "quantized_scalars": 1097280,
+      "requested_six_fraction": 0.25
+    },
+    {
+      "characters": 679793,
+      "six_bit_scalars": 164562,
+      "quantized_scalars": 1097280,
+      "requested_six_fraction": 0.15
+    },
+    {
+      "characters": 604583,
+      "six_bit_scalars": 0,
+      "quantized_scalars": 1097280,
+      "requested_six_fraction": 0.0
+    }
+  ],
+  "cold_seconds": [
+    0.09176,
+    0.12387,
+    0.0409,
+    0.3026
+  ],
+  "standard_policy": "Both reconstructed objects accept the original _Policy(Base64NPZ) constructor. The original _VALUE for each model is used independently.",
+  "api": "build_pair(frozen_source, harbormaster_source, total_chars=5912710, delta_chars=700000); _dual_harbor_weights(_WEIGHTS)"
+}

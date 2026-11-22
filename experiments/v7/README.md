@@ -24,6 +24,8 @@ Master7sE 对局中，第 47 步到第 252 步的两次己方工人交货之间�
 | [Pilotage](checkpoints/pilotage.py) | 9–7 | 4/8，5/8 | +51.60 | 前 75 步平均多入库 65.73，全场平均少入库 121.81，净树收入多 186.52。三图双胜、两图双负。双方均无慢步。[全部结果](../../analysis/v7/06-qualifying-summary.json) · [资金变化](../../analysis/v7/06-qualifying-economy.json) |
 | [Fairlead](checkpoints/fairlead.py) | 6–10 | 2/8，4/8 | −169.60 | 四图双负、两图双胜。平均净树收入多 258.80，入库少 419.04。双方各有 10、9 个慢步，16 局均正常结束。[逐图分差与用时](../../analysis/v7/07-qualifying-summary.json) · [双方资金来源](../../analysis/v7/07-qualifying-economy.json) |
 | [Tidewatch](checkpoints/tidewatch.py) | 7–8，另 1 局对手超时 | 2 胜，5 胜 | +32.71 | 有效 15 局中的平均分差。首个完整结果产生前已为同一文件指定四路并发、另外八图的整批复验。[第八批逐图结果](../../analysis/v7/08-qualifying-summary.json) · [第九批预登记](../../analysis/v7/tidewatch-repeat-design.json) |
+| [Tidewatch，低并发复验](checkpoints/tidewatch.py) | 5–11 | 3/8，2/8 | −300.39 | 八图均正常完成，三图双负。平均净树收益多 5.22，基地入款少 328.11。[逐图结果](../../analysis/v7/09-qualifying-summary.json) · [裁判资金来源](../../analysis/v7/09-qualifying-economy.json) |
+| [Harbormaster](checkpoints/harbormaster.py) | 评测中 | | | 总结局门槛沿用前九轮，全部 8 张图各换边一次。[冻结文件和新图](../../analysis/v7/10-qualifying.json) |
 
 在仓库根目录，以下命令可以重建已冻结的文件，并复现存档分叉的现金流。
 
@@ -98,3 +100,9 @@ Harbormaster 以 Soundings 的工人网络与估值为基础。己方现金不�
 调整开局两个职业的出生基地，在四张开发图上的八局平均增加 542.58 现金分差。预留四图的八局中，只有两局分差改善，平均少 402.47，两个座位都下降。Harbormaster 继续用网络为每个基地选首发职业。[开局换边验证](../../analysis/v7/early-assignment.json)
 
 从八张历史地图的第 150 步分叉，三个版本分别面对同一个逐步应手的 v6。v6 赢 8 局，Soundings 赢 6 局，Tidewatch 赢 5 局。七个起点已经领先，前半场均由 v6 对当时的对手打出。开发、留出两批各有四图，Soundings 相对 Tidewatch 的终局均分分别为 +411.27 和 −21.87。[各图三个后半场的完整结果](../../analysis/v7/phase-switch.md)
+
+## 两个整套策略的局内切换
+
+Crosscurrent 在同一个文件内保留冻结 v6 的完整主网络，并用压缩差值存储 Harbormaster 的主网络。双方未来 5 步和 10 步的预计入库参与判断现金领先幅度。第 125 步后，现金和预期入库均占优时可交给 v6，现金落后、基本收入中断或对手即将集中交货时可回到 Harbormaster。切换双方共用合法视野、动作和收入历史，同一回合只运行所选策略的搜索。校准的 320 局里，重建 Harbormaster 后实际采样的 2722 条工人指令有 2720 条相同。在两场原局各自的两个座位连续走完时，102 个抽查点中的 318 个防守分支动作全部与冻结 v6 的根动作相同，662 个追分分支动作有一个不同。独立进程两次冷启动分别为 8.53 和 7.28 秒。[权重与两份决策网络](../../analysis/v7/dual-weights-study.md) · [切换记录](../../analysis/v7/crosscurrent-handoffs.json)
+
+在截图的第 164 步接管，新文件三个分支都选择追分策略，前两条分支在第 173 步自车交货，第三条直到第 192 步才交货。压缩对静态动作的影响很小，个别重新对抗的结果仍可显著改变。[三个种子与第 89 步的对照](../../analysis/v7/crosscurrent-master-e-rescue.md)

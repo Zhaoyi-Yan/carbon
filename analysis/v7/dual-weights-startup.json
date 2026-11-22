@@ -1,0 +1,49 @@
+{
+  "sha256": "5a8dc5effa4ff02fe2792883d62f74e7c4150ec906c4c051151161575930ae86",
+  "size": 5826403,
+  "seconds": [
+    "read_compile_numpy_import_decode_frozen",
+    "rebuild_harbor",
+    "load_both_standard_policy_objects",
+    "wall_including_fresh_process"
+  ],
+  "trials": [
+    [
+      0.11912,
+      0.12558,
+      0.05393,
+      0.36317
+    ],
+    [
+      0.09176,
+      0.12387,
+      0.0426,
+      0.3026
+    ],
+    [
+      0.0895,
+      0.10839,
+      0.03291,
+      0.27093
+    ],
+    [
+      0.0879,
+      0.12194,
+      0.0409,
+      0.29243
+    ],
+    [
+      0.11758,
+      0.13841,
+      0.03558,
+      0.33462
+    ]
+  ],
+  "median": [
+    0.09176,
+    0.12387,
+    0.0409,
+    0.3026
+  ],
+  "note": "Five independent processes, no persistent bytecode, OS file caches shared. Includes parsing both policy objects; network convolution initialization not included."
+}

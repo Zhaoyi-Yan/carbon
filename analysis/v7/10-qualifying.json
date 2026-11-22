@@ -1,0 +1,16 @@
+{
+  "candidate": "harbormaster",
+  "sha256": "d0ba5f631ceeb9ba5670a0013422caca414e407252e6907b90ebe9b33700be87",
+  "opponent_sha256": "e5c328aa5d18ced597791e7b839088f1a37d18e4e8dc83dd3d54b13d66e877b0",
+  "seeds": [
+    256473752,
+    134478453,
+    787160190,
+    541104191,
+    476174853,
+    738919805,
+    864778296,
+    195158415
+  ],
+  "criterion": "Freeze file hash before each batch. Eight new maps, 12/16 wins, at least 5 wins per seat and positive mean. If passed, four separately reserved maps, same unchanged hash, at least 5/8 and 2 each seat, positive mean. All games must finish normally. Retain failed batches."
+}

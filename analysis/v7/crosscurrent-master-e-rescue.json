@@ -1,0 +1,2693 @@
+{
+ "match": "4063a34afedb6d4767a9118e1dee9e5d",
+ "official_result_seed": 157458776,
+ "official_replay_seed": 1331727176,
+ "seats": [
+  "Master7sE behavior clone",
+  "Crosscurrent"
+ ],
+ "candidate_sha256": "5bcabdb9daa0b8f89b461d118edec68d90c1d459f2ec75ccea80a0b2eb7b091a",
+ "baseline_sha256": "7d418ef3744dfff2b183d156cc7cfd0709e1804fb92490484d0060b07aa2f026",
+ "clone_weights": {
+  "worker": "c049bd3c8b522993cd7d772a013f10e8d648ec5e463793945a7b7e30dbee069b",
+  "recruit": "632b5fd56830514a7b2ad4059eb2180f4d9ae70482a7af1e2b02fc1a4a967a4e",
+  "trunk": "edad6caa7e7f9e4a2ac98bc5462fabd0584c0d8d78cc60f25326fa98d8f849e8"
+ },
+ "source_prefix_state": {
+  "89": {
+   "liquidity_step": 88,
+   "last_delivery": 41,
+   "dual_team": "pursuit",
+   "dual_switch": 0,
+   "corridor_track": null
+  },
+  "164": {
+   "liquidity_step": 163,
+   "last_delivery": 41,
+   "dual_team": "pursuit",
+   "dual_switch": 0,
+   "corridor_track": null
+  }
+ },
+ "smoke": {
+  "reserve": {
+   "search_record": [
+    "reserve",
+    164,
+    4,
+    2,
+    1,
+    1,
+    0.0,
+    18011
+   ],
+   "action": {
+    "player-1-worker-11": "RIGHT",
+    "player-1-worker-4": "UP",
+    "player-1-worker-18": "DOWN"
+   }
+  },
+  "pursuit": {
+   "search_record": [
+    "pursuit",
+    164,
+    4,
+    2,
+    1,
+    1,
+    0.0,
+    18011
+   ],
+   "action": {
+    "player-1-worker-11": "RIGHT",
+    "player-1-worker-4": "DOWN",
+    "player-1-worker-18": "DOWN"
+   }
+  }
+ },
+ "search_record_columns": [
+  "team",
+  "step",
+  "width cap",
+  "depth",
+  "sampled replies",
+  "max rollouts",
+  "clock",
+  "branch seed"
+ ],
+ "independent_clone_calibration": "master-e-rescue.json",
+ "cases": [
+  {
+   "arm": "crosscurrent",
+   "start": 164,
+   "through": 299,
+   "rng_seed": 18011,
+   "seats": [
+    "Master7sE-BC",
+    "crosscurrent"
+   ],
+   "opening": [
+    {
+     "cash": 2079.3,
+     "workers": 10,
+     "collectors": 8,
+     "planters": 2,
+     "trees": 10,
+     "cargo": 53.792
+    },
+    {
+     "cash": 7.53,
+     "workers": 3,
+     "collectors": 2,
+     "planters": 1,
+     "trees": 0,
+     "cargo": 457.552
+    }
+   ],
+   "first": {
+    "own_seat0": {
+     "t": 170,
+     "worker": "player-0-worker-28",
+     "amount": 81.0
+    },
+    "own_seat1": {
+     "t": 173,
+     "worker": "player-1-worker-4",
+     "amount": 241.318
+    }
+   },
+   "milestones": {
+    "174": {
+     "seats": [
+      {
+       "cash": 2404.22,
+       "workers": 10,
+       "collectors": 8,
+       "planters": 2,
+       "trees": 9,
+       "cargo": 185.884
+      },
+      {
+       "cash": 179.05,
+       "workers": 5,
+       "collectors": 4,
+       "planters": 1,
+       "trees": 1,
+       "cargo": 116.369
+      }
+     ],
+     "gross_by_recipient_source": [
+      [
+       81.0,
+       0.0
+      ],
+      [
+       0.0,
+       241.318
+      ]
+     ],
+     "margin_QQ": -2225.17
+    },
+    "189": {
+     "seats": [
+      {
+       "cash": 2633.82,
+       "workers": 10,
+       "collectors": 6,
+       "planters": 4,
+       "trees": 7,
+       "cargo": 114.735
+      },
+      {
+       "cash": 91.59,
+       "workers": 10,
+       "collectors": 7,
+       "planters": 3,
+       "trees": 4,
+       "cargo": 304.37
+      }
+     ],
+     "gross_by_recipient_source": [
+      [
+       432.554,
+       0.0
+      ],
+      [
+       0.0,
+       417.687
+      ]
+     ],
+     "margin_QQ": -2542.23
+    },
+    "299": {
+     "seats": [
+      {
+       "cash": 6138.87,
+       "workers": 6,
+       "collectors": 5,
+       "planters": 1,
+       "trees": 4,
+       "cargo": 107.218
+      },
+      {
+       "cash": 4477.24,
+       "workers": 4,
+       "collectors": 4,
+       "planters": 0,
+       "trees": 2,
+       "cargo": 29.542
+      }
+     ],
+     "gross_by_recipient_source": [
+      [
+       4143.062,
+       0.0
+      ],
+      [
+       0.0,
+       4829.892
+      ]
+     ],
+     "margin_QQ": -1661.63
+    }
+   },
+   "final_cash_margin": -1661.63,
+   "rewards": [
+    6138.87,
+    4477.24
+   ],
+   "statuses": [
+    "ACTIVE",
+    "ACTIVE"
+   ],
+   "action_sha256": "d3038193122aaecb1966006ac3c83547d80351a6f8ff48b8b06c13a197824db0",
+   "deposits": [
+    [
+     170,
+     0,
+     0,
+     "player-0-worker-28",
+     81.0
+    ],
+    [
+     173,
+     1,
+     1,
+     "player-1-worker-4",
+     241.318
+    ],
+    [
+     178,
+     0,
+     0,
+     "player-0-worker-28",
+     102.0
+    ],
+    [
+     179,
+     0,
+     0,
+     "player-0-worker-25",
+     146.791
+    ],
+    [
+     182,
+     1,
+     1,
+     "player-1-worker-11",
+     176.369
+    ],
+    [
+     189,
+     0,
+     0,
+     "player-0-worker-23",
+     102.762
+    ],
+    [
+     196,
+     0,
+     0,
+     "player-0-worker-25",
+     187.747
+    ],
+    [
+     202,
+     1,
+     1,
+     "player-1-worker-28",
+     80.059
+    ],
+    [
+     208,
+     1,
+     1,
+     "player-1-worker-36",
+     65.7
+    ],
+    [
+     209,
+     0,
+     0,
+     "player-0-worker-16",
+     173.161
+    ],
+    [
+     211,
+     1,
+     1,
+     "player-1-worker-23",
+     372.628
+    ],
+    [
+     213,
+     0,
+     0,
+     "player-0-worker-46",
+     30.0
+    ],
+    [
+     213,
+     1,
+     1,
+     "player-1-worker-25",
+     302.195
+    ],
+    [
+     214,
+     1,
+     1,
+     "player-1-worker-26",
+     185.08
+    ],
+    [
+     216,
+     0,
+     0,
+     "player-0-worker-46",
+     30.0
+    ],
+    [
+     216,
+     1,
+     1,
+     "player-1-worker-30",
+     52.441
+    ],
+    [
+     219,
+     1,
+     1,
+     "player-1-worker-23",
+     75.99
+    ],
+    [
+     220,
+     1,
+     1,
+     "player-1-worker-19",
+     222.229
+    ],
+    [
+     224,
+     0,
+     0,
+     "player-0-worker-23",
+     406.695
+    ],
+    [
+     224,
+     1,
+     1,
+     "player-1-worker-26",
+     75.99
+    ],
+    [
+     226,
+     0,
+     0,
+     "player-0-worker-39",
+     225.703
+    ],
+    [
+     227,
+     1,
+     1,
+     "player-1-worker-30",
+     76.509
+    ],
+    [
+     230,
+     0,
+     0,
+     "player-0-worker-45",
+     163.801
+    ],
+    [
+     230,
+     1,
+     1,
+     "player-1-worker-39",
+     60.278
+    ],
+    [
+     243,
+     0,
+     0,
+     "player-0-worker-43",
+     382.769
+    ],
+    [
+     245,
+     1,
+     1,
+     "player-1-worker-25",
+     190.386
+    ],
+    [
+     246,
+     1,
+     1,
+     "player-1-worker-42",
+     16.451
+    ],
+    [
+     247,
+     0,
+     0,
+     "player-0-worker-46",
+     200.536
+    ],
+    [
+     248,
+     0,
+     0,
+     "player-0-worker-51",
+     115.883
+    ],
+    [
+     250,
+     0,
+     0,
+     "player-0-worker-52",
+     49.127
+    ],
+    [
+     250,
+     1,
+     1,
+     "player-1-worker-30",
+     165.77
+    ],
+    [
+     252,
+     0,
+     0,
+     "player-0-worker-45",
+     51.0
+    ],
+    [
+     253,
+     0,
+     0,
+     "player-0-worker-40",
+     262.789
+    ],
+    [
+     253,
+     1,
+     1,
+     "player-1-worker-36",
+     266.635
+    ],
+    [
+     255,
+     0,
+     0,
+     "player-0-worker-52",
+     24.133
+    ],
+    [
+     256,
+     0,
+     0,
+     "player-0-worker-49",
+     156.326
+    ],
+    [
+     257,
+     1,
+     1,
+     "player-1-worker-19",
+     158.986
+    ],
+    [
+     259,
+     1,
+     1,
+     "player-1-worker-45",
+     59.709
+    ],
+    [
+     261,
+     0,
+     0,
+     "player-0-worker-23",
+     176.547
+    ],
+    [
+     262,
+     1,
+     1,
+     "player-1-worker-35",
+     190.93
+    ],
+    [
+     263,
+     0,
+     0,
+     "player-0-worker-57",
+     21.868
+    ],
+    [
+     269,
+     0,
+     0,
+     "player-0-worker-49",
+     36.411
+    ],
+    [
+     269,
+     1,
+     1,
+     "player-1-worker-19",
+     49.127
+    ],
+    [
+     270,
+     0,
+     0,
+     "player-0-worker-60",
+     12.17
+    ],
+    [
+     271,
+     1,
+     1,
+     "player-1-worker-48",
+     39.397
+    ],
+    [
+     273,
+     0,
+     0,
+     "player-0-worker-45",
+     74.393
+    ],
+    [
+     275,
+     0,
+     0,
+     "player-0-worker-48",
+     140.869
+    ],
+    [
+     275,
+     1,
+     1,
+     "player-1-worker-23",
+     146.911
+    ],
+    [
+     279,
+     1,
+     1,
+     "player-1-worker-23",
+     51.0
+    ],
+    [
+     281,
+     1,
+     1,
+     "player-1-worker-45",
+     313.681
+    ],
+    [
+     282,
+     1,
+     1,
+     "player-1-worker-30",
+     99.094
+    ],
+    [
+     283,
+     1,
+     1,
+     "player-1-worker-23",
+     26.512
+    ],
+    [
+     283,
+     1,
+     1,
+     "player-1-worker-43",
+     98.365
+    ],
+    [
+     287,
+     1,
+     1,
+     "player-1-worker-49",
+     106.903
+    ],
+    [
+     291,
+     0,
+     0,
+     "player-0-worker-45",
+     96.35
+    ],
+    [
+     291,
+     0,
+     0,
+     "player-0-worker-56",
+     123.811
+    ],
+    [
+     291,
+     1,
+     1,
+     "player-1-worker-48",
+     79.34
+    ],
+    [
+     292,
+     0,
+     0,
+     "player-0-worker-62",
+     65.901
+    ],
+    [
+     292,
+     1,
+     1,
+     "player-1-worker-49",
+     40.822
+    ],
+    [
+     293,
+     1,
+     1,
+     "player-1-worker-19",
+     128.512
+    ],
+    [
+     294,
+     0,
+     0,
+     "player-0-worker-61",
+     147.047
+    ],
+    [
+     294,
+     1,
+     1,
+     "player-1-worker-45",
+     108.761
+    ],
+    [
+     295,
+     0,
+     0,
+     "player-0-worker-52",
+     256.012
+    ],
+    [
+     295,
+     1,
+     1,
+     "player-1-worker-30",
+     43.608
+    ],
+    [
+     295,
+     1,
+     1,
+     "player-1-worker-50",
+     121.687
+    ],
+    [
+     296,
+     1,
+     1,
+     "player-1-worker-23",
+     72.577
+    ],
+    [
+     296,
+     1,
+     1,
+     "player-1-worker-47",
+     134.836
+    ],
+    [
+     296,
+     1,
+     1,
+     "player-1-worker-49",
+     41.359
+    ],
+    [
+     297,
+     0,
+     0,
+     "player-0-worker-61",
+     3.154
+    ],
+    [
+     297,
+     1,
+     1,
+     "player-1-worker-43",
+     39.127
+    ],
+    [
+     297,
+     1,
+     1,
+     "player-1-worker-48",
+     16.681
+    ],
+    [
+     298,
+     0,
+     0,
+     "player-0-worker-62",
+     25.58
+    ],
+    [
+     298,
+     0,
+     0,
+     "player-0-worker-64",
+     70.726
+    ],
+    [
+     298,
+     1,
+     1,
+     "player-1-worker-30",
+     12.404
+    ],
+    [
+     299,
+     1,
+     1,
+     "player-1-worker-23",
+     4.459
+    ],
+    [
+     299,
+     1,
+     1,
+     "player-1-worker-50",
+     19.078
+    ]
+   ],
+   "route_intervals": [
+    [
+     164,
+     298,
+     "pursuit"
+    ]
+   ],
+   "choice_counts": {
+    "pursuit": 135
+   },
+   "search_counts": {
+    "pursuit": 135
+   }
+  },
+  {
+   "arm": "crosscurrent",
+   "start": 164,
+   "through": 299,
+   "rng_seed": 38039,
+   "seats": [
+    "Master7sE-BC",
+    "crosscurrent"
+   ],
+   "opening": [
+    {
+     "cash": 2079.3,
+     "workers": 10,
+     "collectors": 8,
+     "planters": 2,
+     "trees": 10,
+     "cargo": 53.792
+    },
+    {
+     "cash": 7.53,
+     "workers": 3,
+     "collectors": 2,
+     "planters": 1,
+     "trees": 0,
+     "cargo": 457.552
+    }
+   ],
+   "first": {
+    "own_seat1": {
+     "t": 173,
+     "worker": "player-1-worker-4",
+     "amount": 214.505
+    },
+    "own_seat0": {
+     "t": 175,
+     "worker": "player-0-worker-25",
+     "amount": 110.296
+    }
+   },
+   "milestones": {
+    "174": {
+     "seats": [
+      {
+       "cash": 2231.46,
+       "workers": 10,
+       "collectors": 8,
+       "planters": 2,
+       "trees": 10,
+       "cargo": 452.68
+      },
+      {
+       "cash": 172.03,
+       "workers": 4,
+       "collectors": 3,
+       "planters": 1,
+       "trees": 1,
+       "cargo": 159.629
+      }
+     ],
+     "gross_by_recipient_source": [
+      [
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       214.505
+      ]
+     ],
+     "margin_QQ": -2059.43
+    },
+    "189": {
+     "seats": [
+      {
+       "cash": 2732.99,
+       "workers": 9,
+       "collectors": 6,
+       "planters": 3,
+       "trees": 9,
+       "cargo": 433.514
+      },
+      {
+       "cash": 53.16,
+       "workers": 8,
+       "collectors": 6,
+       "planters": 2,
+       "trees": 2,
+       "cargo": 278.999
+      }
+     ],
+     "gross_by_recipient_source": [
+      [
+       397.588,
+       0.0
+      ],
+      [
+       0.0,
+       290.042
+      ]
+     ],
+     "margin_QQ": -2679.83
+    },
+    "299": {
+     "seats": [
+      {
+       "cash": 7144.95,
+       "workers": 9,
+       "collectors": 7,
+       "planters": 2,
+       "trees": 6,
+       "cargo": 147.235
+      },
+      {
+       "cash": 3701.5,
+       "workers": 5,
+       "collectors": 5,
+       "planters": 0,
+       "trees": 1,
+       "cargo": 0
+      }
+     ],
+     "gross_by_recipient_source": [
+      [
+       4283.569,
+       0.0
+      ],
+      [
+       0.0,
+       3907.452
+      ]
+     ],
+     "margin_QQ": -3443.45
+    }
+   },
+   "final_cash_margin": -3443.45,
+   "rewards": [
+    7144.95,
+    3701.5
+   ],
+   "statuses": [
+    "ACTIVE",
+    "ACTIVE"
+   ],
+   "action_sha256": "6a76013384eea65fd03249a6b8c7d1366b639008ac75c8dcad4033db6bf10c37",
+   "deposits": [
+    [
+     173,
+     1,
+     1,
+     "player-1-worker-4",
+     214.505
+    ],
+    [
+     175,
+     0,
+     0,
+     "player-0-worker-25",
+     110.296
+    ],
+    [
+     181,
+     0,
+     0,
+     "player-0-worker-26",
+     102.0
+    ],
+    [
+     183,
+     0,
+     0,
+     "player-0-worker-16",
+     185.292
+    ],
+    [
+     185,
+     1,
+     1,
+     "player-1-worker-23",
+     38.217
+    ],
+    [
+     186,
+     1,
+     1,
+     "player-1-worker-19",
+     37.32
+    ],
+    [
+     195,
+     0,
+     0,
+     "player-0-worker-28",
+     322.514
+    ],
+    [
+     197,
+     0,
+     0,
+     "player-0-worker-16",
+     51.0
+    ],
+    [
+     198,
+     1,
+     1,
+     "player-1-worker-4",
+     197.392
+    ],
+    [
+     199,
+     0,
+     0,
+     "player-0-worker-35",
+     51.0
+    ],
+    [
+     206,
+     1,
+     1,
+     "player-1-worker-29",
+     24.3
+    ],
+    [
+     213,
+     0,
+     0,
+     "player-0-worker-32",
+     101.938
+    ],
+    [
+     219,
+     1,
+     1,
+     "player-1-worker-11",
+     447.354
+    ],
+    [
+     223,
+     0,
+     0,
+     "player-0-worker-34",
+     215.228
+    ],
+    [
+     223,
+     0,
+     0,
+     "player-0-worker-36",
+     179.564
+    ],
+    [
+     223,
+     1,
+     1,
+     "player-1-worker-23",
+     317.776
+    ],
+    [
+     226,
+     0,
+     0,
+     "player-0-worker-36",
+     30.0
+    ],
+    [
+     229,
+     0,
+     0,
+     "player-0-worker-26",
+     295.043
+    ],
+    [
+     230,
+     1,
+     1,
+     "player-1-worker-22",
+     111.214
+    ],
+    [
+     233,
+     1,
+     1,
+     "player-1-worker-25",
+     269.699
+    ],
+    [
+     235,
+     0,
+     0,
+     "player-0-worker-34",
+     40.579
+    ],
+    [
+     236,
+     0,
+     0,
+     "player-0-worker-36",
+     102.0
+    ],
+    [
+     241,
+     0,
+     0,
+     "player-0-worker-35",
+     73.177
+    ],
+    [
+     243,
+     0,
+     0,
+     "player-0-worker-28",
+     237.761
+    ],
+    [
+     243,
+     1,
+     1,
+     "player-1-worker-24",
+     424.445
+    ],
+    [
+     252,
+     0,
+     0,
+     "player-0-worker-16",
+     450.694
+    ],
+    [
+     253,
+     0,
+     0,
+     "player-0-worker-20",
+     105.287
+    ],
+    [
+     254,
+     0,
+     0,
+     "player-0-worker-35",
+     64.079
+    ],
+    [
+     257,
+     1,
+     1,
+     "player-1-worker-11",
+     199.044
+    ],
+    [
+     260,
+     1,
+     1,
+     "player-1-worker-11",
+     27.672
+    ],
+    [
+     263,
+     1,
+     1,
+     "player-1-worker-11",
+     8.644
+    ],
+    [
+     267,
+     1,
+     1,
+     "player-1-worker-24",
+     177.643
+    ],
+    [
+     268,
+     0,
+     0,
+     "player-0-worker-26",
+     166.073
+    ],
+    [
+     268,
+     1,
+     1,
+     "player-1-worker-36",
+     30.0
+    ],
+    [
+     271,
+     1,
+     1,
+     "player-1-worker-32",
+     296.463
+    ],
+    [
+     272,
+     1,
+     1,
+     "player-1-worker-36",
+     51.0
+    ],
+    [
+     276,
+     0,
+     0,
+     "player-0-worker-43",
+     185.07
+    ],
+    [
+     277,
+     1,
+     1,
+     "player-1-worker-24",
+     64.144
+    ],
+    [
+     281,
+     0,
+     0,
+     "player-0-worker-48",
+     182.4
+    ],
+    [
+     283,
+     0,
+     0,
+     "player-0-worker-20",
+     87.5
+    ],
+    [
+     283,
+     1,
+     1,
+     "player-1-worker-36",
+     59.418
+    ],
+    [
+     284,
+     0,
+     0,
+     "player-0-worker-16",
+     113.89
+    ],
+    [
+     285,
+     0,
+     0,
+     "player-0-worker-47",
+     209.518
+    ],
+    [
+     288,
+     1,
+     1,
+     "player-1-worker-42",
+     162.87
+    ],
+    [
+     289,
+     0,
+     0,
+     "player-0-worker-20",
+     37.874
+    ],
+    [
+     290,
+     1,
+     1,
+     "player-1-worker-41",
+     167.253
+    ],
+    [
+     291,
+     1,
+     1,
+     "player-1-worker-24",
+     85.603
+    ],
+    [
+     292,
+     1,
+     1,
+     "player-1-worker-22",
+     222.516
+    ],
+    [
+     292,
+     1,
+     1,
+     "player-1-worker-32",
+     115.176
+    ],
+    [
+     293,
+     0,
+     0,
+     "player-0-worker-26",
+     216.686
+    ],
+    [
+     293,
+     0,
+     0,
+     "player-0-worker-51",
+     63.391
+    ],
+    [
+     295,
+     1,
+     1,
+     "player-1-worker-22",
+     18.585
+    ],
+    [
+     295,
+     1,
+     1,
+     "player-1-worker-24",
+     13.638
+    ],
+    [
+     296,
+     1,
+     1,
+     "player-1-worker-41",
+     41.714
+    ],
+    [
+     297,
+     0,
+     0,
+     "player-0-worker-20",
+     39.515
+    ],
+    [
+     297,
+     1,
+     1,
+     "player-1-worker-32",
+     19.354
+    ],
+    [
+     298,
+     0,
+     0,
+     "player-0-worker-48",
+     92.954
+    ],
+    [
+     298,
+     0,
+     0,
+     "player-0-worker-50",
+     118.463
+    ],
+    [
+     298,
+     1,
+     1,
+     "player-1-worker-40",
+     33.917
+    ],
+    [
+     299,
+     0,
+     0,
+     "player-0-worker-26",
+     20.24
+    ],
+    [
+     299,
+     0,
+     0,
+     "player-0-worker-51",
+     32.542
+    ],
+    [
+     299,
+     1,
+     1,
+     "player-1-worker-22",
+     20.36
+    ],
+    [
+     299,
+     1,
+     1,
+     "player-1-worker-24",
+     7.09
+    ],
+    [
+     299,
+     1,
+     1,
+     "player-1-worker-41",
+     3.122
+    ]
+   ],
+   "route_intervals": [
+    [
+     164,
+     298,
+     "pursuit"
+    ]
+   ],
+   "choice_counts": {
+    "pursuit": 135
+   },
+   "search_counts": {
+    "pursuit": 135
+   }
+  },
+  {
+   "arm": "crosscurrent",
+   "start": 164,
+   "through": 299,
+   "rng_seed": 62047,
+   "seats": [
+    "Master7sE-BC",
+    "crosscurrent"
+   ],
+   "opening": [
+    {
+     "cash": 2079.3,
+     "workers": 10,
+     "collectors": 8,
+     "planters": 2,
+     "trees": 10,
+     "cargo": 53.792
+    },
+    {
+     "cash": 7.53,
+     "workers": 3,
+     "collectors": 2,
+     "planters": 1,
+     "trees": 0,
+     "cargo": 457.552
+    }
+   ],
+   "first": {
+    "own_seat0": {
+     "t": 183,
+     "worker": "player-0-worker-28",
+     "amount": 264.0
+    },
+    "own_seat1": {
+     "t": 192,
+     "worker": "player-1-worker-11",
+     "amount": 71.487
+    }
+   },
+   "milestones": {
+    "174": {
+     "seats": [
+      {
+       "cash": 2292.52,
+       "workers": 10,
+       "collectors": 8,
+       "planters": 2,
+       "trees": 9,
+       "cargo": 549.623
+      },
+      {
+       "cash": 7.53,
+       "workers": 2,
+       "collectors": 1,
+       "planters": 1,
+       "trees": 0,
+       "cargo": 186.828
+      }
+     ],
+     "gross_by_recipient_source": [
+      [
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       0.0
+      ]
+     ],
+     "margin_QQ": -2284.99
+    },
+    "189": {
+     "seats": [
+      {
+       "cash": 3360.81,
+       "workers": 10,
+       "collectors": 8,
+       "planters": 2,
+       "trees": 9,
+       "cargo": 699.762
+      },
+      {
+       "cash": 7.53,
+       "workers": 2,
+       "collectors": 1,
+       "planters": 1,
+       "trees": 0,
+       "cargo": 99.288
+      }
+     ],
+     "gross_by_recipient_source": [
+      [
+       657.19,
+       0.0
+      ],
+      [
+       0.0,
+       0.0
+      ]
+     ],
+     "margin_QQ": -3353.28
+    },
+    "299": {
+     "seats": [
+      {
+       "cash": 9331.98,
+       "workers": 8,
+       "collectors": 5,
+       "planters": 3,
+       "trees": 5,
+       "cargo": 0
+      },
+      {
+       "cash": 86.27,
+       "workers": 0,
+       "collectors": 0,
+       "planters": 0,
+       "trees": 0,
+       "cargo": 0
+      }
+     ],
+     "gross_by_recipient_source": [
+      [
+       4830.701,
+       0.0
+      ],
+      [
+       0.0,
+       118.173
+      ]
+     ],
+     "margin_QQ": -9245.71
+    }
+   },
+   "final_cash_margin": -9245.71,
+   "rewards": [
+    9331.98,
+    86.27
+   ],
+   "statuses": [
+    "ACTIVE",
+    "ACTIVE"
+   ],
+   "action_sha256": "2000317027fddecde626eb65696d5140fc1b6acfd1be1f3131ab00e5908744cc",
+   "deposits": [
+    [
+     183,
+     0,
+     0,
+     "player-0-worker-28",
+     264.0
+    ],
+    [
+     185,
+     0,
+     0,
+     "player-0-worker-16",
+     393.19
+    ],
+    [
+     192,
+     1,
+     1,
+     "player-1-worker-11",
+     71.487
+    ],
+    [
+     193,
+     0,
+     0,
+     "player-0-worker-25",
+     238.294
+    ],
+    [
+     194,
+     0,
+     0,
+     "player-0-worker-14",
+     109.26
+    ],
+    [
+     194,
+     0,
+     0,
+     "player-0-worker-22",
+     235.641
+    ],
+    [
+     197,
+     0,
+     0,
+     "player-0-worker-16",
+     125.112
+    ],
+    [
+     206,
+     0,
+     0,
+     "player-0-worker-23",
+     346.363
+    ],
+    [
+     206,
+     0,
+     0,
+     "player-0-worker-25",
+     116.7
+    ],
+    [
+     214,
+     0,
+     0,
+     "player-0-worker-16",
+     211.72
+    ],
+    [
+     214,
+     0,
+     0,
+     "player-0-worker-28",
+     132.0
+    ],
+    [
+     221,
+     0,
+     0,
+     "player-0-worker-22",
+     217.228
+    ],
+    [
+     228,
+     0,
+     0,
+     "player-0-worker-23",
+     84.99
+    ],
+    [
+     233,
+     0,
+     0,
+     "player-0-worker-22",
+     145.648
+    ],
+    [
+     235,
+     0,
+     0,
+     "player-0-worker-23",
+     65.7
+    ],
+    [
+     243,
+     0,
+     0,
+     "player-0-worker-22",
+     81.0
+    ],
+    [
+     247,
+     0,
+     0,
+     "player-0-worker-32",
+     37.874
+    ],
+    [
+     248,
+     0,
+     0,
+     "player-0-worker-28",
+     225.902
+    ],
+    [
+     252,
+     0,
+     0,
+     "player-0-worker-33",
+     254.37
+    ],
+    [
+     258,
+     0,
+     0,
+     "player-0-worker-32",
+     118.081
+    ],
+    [
+     259,
+     0,
+     0,
+     "player-0-worker-22",
+     24.941
+    ],
+    [
+     266,
+     0,
+     0,
+     "player-0-worker-23",
+     221.518
+    ],
+    [
+     269,
+     0,
+     0,
+     "player-0-worker-22",
+     51.0
+    ],
+    [
+     270,
+     0,
+     0,
+     "player-0-worker-34",
+     26.355
+    ],
+    [
+     275,
+     1,
+     1,
+     "player-1-worker-19",
+     6.222
+    ],
+    [
+     277,
+     0,
+     0,
+     "player-0-worker-22",
+     102.0
+    ],
+    [
+     277,
+     0,
+     0,
+     "player-0-worker-23",
+     116.7
+    ],
+    [
+     281,
+     0,
+     0,
+     "player-0-worker-28",
+     154.222
+    ],
+    [
+     283,
+     0,
+     0,
+     "player-0-worker-37",
+     65.7
+    ],
+    [
+     284,
+     1,
+     1,
+     "player-1-worker-19",
+     40.464
+    ],
+    [
+     286,
+     0,
+     0,
+     "player-0-worker-34",
+     116.7
+    ],
+    [
+     288,
+     0,
+     0,
+     "player-0-worker-23",
+     101.156
+    ],
+    [
+     289,
+     0,
+     0,
+     "player-0-worker-22",
+     24.297
+    ],
+    [
+     289,
+     0,
+     0,
+     "player-0-worker-37",
+     51.0
+    ],
+    [
+     290,
+     0,
+     0,
+     "player-0-worker-33",
+     78.672
+    ],
+    [
+     293,
+     0,
+     0,
+     "player-0-worker-34",
+     53.088
+    ],
+    [
+     295,
+     0,
+     0,
+     "player-0-worker-22",
+     51.0
+    ],
+    [
+     296,
+     0,
+     0,
+     "player-0-worker-23",
+     81.0
+    ],
+    [
+     296,
+     0,
+     0,
+     "player-0-worker-37",
+     46.489
+    ],
+    [
+     297,
+     0,
+     0,
+     "player-0-worker-33",
+     56.451
+    ],
+    [
+     298,
+     0,
+     0,
+     "player-0-worker-34",
+     5.338
+    ]
+   ],
+   "route_intervals": [
+    [
+     164,
+     298,
+     "pursuit"
+    ]
+   ],
+   "choice_counts": {
+    "pursuit": 135
+   },
+   "search_counts": {
+    "pursuit": 135
+   }
+  },
+  {
+   "arm": "crosscurrent",
+   "start": 89,
+   "through": 124,
+   "rng_seed": 18011,
+   "seats": [
+    "Master7sE-BC",
+    "crosscurrent"
+   ],
+   "opening": [
+    {
+     "cash": 227.04,
+     "workers": 10,
+     "collectors": 9,
+     "planters": 1,
+     "trees": 7,
+     "cargo": 19.993
+    },
+    {
+     "cash": 7.53,
+     "workers": 4,
+     "collectors": 3,
+     "planters": 1,
+     "trees": 0,
+     "cargo": 285.608
+    }
+   ],
+   "first": {
+    "own_seat1": {
+     "t": 92,
+     "worker": "player-1-worker-11",
+     "amount": 129.299
+    },
+    "own_seat0": {
+     "t": 106,
+     "worker": "player-0-worker-16",
+     "amount": 172.432
+    }
+   },
+   "milestones": {
+    "99": {
+     "seats": [
+      {
+       "cash": 470.63,
+       "workers": 10,
+       "collectors": 9,
+       "planters": 1,
+       "trees": 8,
+       "cargo": 256.704
+      },
+      {
+       "cash": 58.73,
+       "workers": 6,
+       "collectors": 5,
+       "planters": 1,
+       "trees": 1,
+       "cargo": 205.251
+      }
+     ],
+     "gross_by_recipient_source": [
+      [
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       129.299
+      ]
+     ],
+     "margin_QQ": -411.9
+    },
+    "114": {
+     "seats": [
+      {
+       "cash": 1161.13,
+       "workers": 9,
+       "collectors": 7,
+       "planters": 2,
+       "trees": 10,
+       "cargo": 51.0
+      },
+      {
+       "cash": 118.02,
+       "workers": 8,
+       "collectors": 5,
+       "planters": 3,
+       "trees": 1,
+       "cargo": 154.572
+      }
+     ],
+     "gross_by_recipient_source": [
+      [
+       349.132,
+       0.0
+      ],
+      [
+       0.0,
+       382.611
+      ]
+     ],
+     "margin_QQ": -1043.11
+    },
+    "124": {
+     "seats": [
+      {
+       "cash": 1129.36,
+       "workers": 10,
+       "collectors": 7,
+       "planters": 3,
+       "trees": 7,
+       "cargo": 293.925
+      },
+      {
+       "cash": 28.97,
+       "workers": 9,
+       "collectors": 6,
+       "planters": 3,
+       "trees": 3,
+       "cargo": 377.69
+      }
+     ],
+     "gross_by_recipient_source": [
+      [
+       349.132,
+       0.0
+      ],
+      [
+       0.0,
+       423.411
+      ]
+     ],
+     "margin_QQ": -1100.39
+    }
+   },
+   "final_cash_margin": -1100.39,
+   "rewards": [
+    1129.36,
+    28.97
+   ],
+   "statuses": [
+    "ACTIVE",
+    "ACTIVE"
+   ],
+   "action_sha256": "3c9558a96386cfafe87fcae4b10757a78e76c54233e69ac50354de57628eb0ca",
+   "deposits": [
+    [
+     92,
+     1,
+     1,
+     "player-1-worker-11",
+     129.299
+    ],
+    [
+     106,
+     0,
+     0,
+     "player-0-worker-16",
+     172.432
+    ],
+    [
+     108,
+     0,
+     0,
+     "player-0-worker-22",
+     176.7
+    ],
+    [
+     109,
+     1,
+     1,
+     "player-1-worker-19",
+     60.514
+    ],
+    [
+     111,
+     1,
+     1,
+     "player-1-worker-4",
+     192.798
+    ],
+    [
+     119,
+     1,
+     1,
+     "player-1-worker-4",
+     40.8
+    ]
+   ],
+   "route_intervals": [
+    [
+     89,
+     123,
+     "pursuit"
+    ]
+   ],
+   "choice_counts": {
+    "pursuit": 35
+   },
+   "search_counts": {
+    "pursuit": 35
+   }
+  },
+  {
+   "arm": "crosscurrent",
+   "start": 89,
+   "through": 124,
+   "rng_seed": 38039,
+   "seats": [
+    "Master7sE-BC",
+    "crosscurrent"
+   ],
+   "opening": [
+    {
+     "cash": 227.04,
+     "workers": 10,
+     "collectors": 9,
+     "planters": 1,
+     "trees": 7,
+     "cargo": 19.993
+    },
+    {
+     "cash": 7.53,
+     "workers": 4,
+     "collectors": 3,
+     "planters": 1,
+     "trees": 0,
+     "cargo": 285.608
+    }
+   ],
+   "first": {
+    "own_seat1": {
+     "t": 92,
+     "worker": "player-1-worker-11",
+     "amount": 129.299
+    },
+    "own_seat0": {
+     "t": 106,
+     "worker": "player-0-worker-22",
+     "amount": 167.7
+    }
+   },
+   "milestones": {
+    "99": {
+     "seats": [
+      {
+       "cash": 443.33,
+       "workers": 10,
+       "collectors": 8,
+       "planters": 2,
+       "trees": 7,
+       "cargo": 243.419
+      },
+      {
+       "cash": 44.13,
+       "workers": 6,
+       "collectors": 4,
+       "planters": 2,
+       "trees": 1,
+       "cargo": 146.239
+      }
+     ],
+     "gross_by_recipient_source": [
+      [
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       129.299
+      ]
+     ],
+     "margin_QQ": -399.2
+    },
+    "114": {
+     "seats": [
+      {
+       "cash": 1078.09,
+       "workers": 10,
+       "collectors": 8,
+       "planters": 2,
+       "trees": 8,
+       "cargo": 436.301
+      },
+      {
+       "cash": 96.56,
+       "workers": 10,
+       "collectors": 7,
+       "planters": 3,
+       "trees": 4,
+       "cargo": 231.44
+      }
+     ],
+     "gross_by_recipient_source": [
+      [
+       295.681,
+       0.0
+      ],
+      [
+       0.0,
+       192.793
+      ]
+     ],
+     "margin_QQ": -981.53
+    },
+    "124": {
+     "seats": [
+      {
+       "cash": 1626.07,
+       "workers": 10,
+       "collectors": 8,
+       "planters": 2,
+       "trees": 7,
+       "cargo": 471.356
+      },
+      {
+       "cash": 178.69,
+       "workers": 10,
+       "collectors": 7,
+       "planters": 3,
+       "trees": 4,
+       "cargo": 773.556
+      }
+     ],
+     "gross_by_recipient_source": [
+      [
+       757.186,
+       0.0
+      ],
+      [
+       0.0,
+       192.793
+      ]
+     ],
+     "margin_QQ": -1447.38
+    }
+   },
+   "final_cash_margin": -1447.38,
+   "rewards": [
+    1626.07,
+    178.69
+   ],
+   "statuses": [
+    "ACTIVE",
+    "ACTIVE"
+   ],
+   "action_sha256": "11c2e2e0a98178454c9527da070e2fe32bde36def7ce95fb6df7d22f05903312",
+   "deposits": [
+    [
+     92,
+     1,
+     1,
+     "player-1-worker-11",
+     129.299
+    ],
+    [
+     106,
+     0,
+     0,
+     "player-0-worker-22",
+     167.7
+    ],
+    [
+     106,
+     1,
+     1,
+     "player-1-worker-4",
+     63.494
+    ],
+    [
+     109,
+     0,
+     0,
+     "player-0-worker-14",
+     116.7
+    ],
+    [
+     113,
+     0,
+     0,
+     "player-0-worker-20",
+     11.281
+    ],
+    [
+     116,
+     0,
+     0,
+     "player-0-worker-24",
+     51.0
+    ],
+    [
+     119,
+     0,
+     0,
+     "player-0-worker-16",
+     293.805
+    ],
+    [
+     124,
+     0,
+     0,
+     "player-0-worker-23",
+     116.7
+    ]
+   ],
+   "route_intervals": [
+    [
+     89,
+     123,
+     "pursuit"
+    ]
+   ],
+   "choice_counts": {
+    "pursuit": 35
+   },
+   "search_counts": {
+    "pursuit": 35
+   }
+  },
+  {
+   "arm": "crosscurrent",
+   "start": 89,
+   "through": 124,
+   "rng_seed": 62047,
+   "seats": [
+    "Master7sE-BC",
+    "crosscurrent"
+   ],
+   "opening": [
+    {
+     "cash": 227.04,
+     "workers": 10,
+     "collectors": 9,
+     "planters": 1,
+     "trees": 7,
+     "cargo": 19.993
+    },
+    {
+     "cash": 7.53,
+     "workers": 4,
+     "collectors": 3,
+     "planters": 1,
+     "trees": 0,
+     "cargo": 285.608
+    }
+   ],
+   "first": {
+    "own_seat1": {
+     "t": 92,
+     "worker": "player-1-worker-11",
+     "amount": 129.299
+    },
+    "own_seat0": {
+     "t": 107,
+     "worker": "player-0-worker-16",
+     "amount": 220.58
+    }
+   },
+   "milestones": {
+    "99": {
+     "seats": [
+      {
+       "cash": 388.74,
+       "workers": 10,
+       "collectors": 8,
+       "planters": 2,
+       "trees": 8,
+       "cargo": 253.993
+      },
+      {
+       "cash": 14.31,
+       "workers": 5,
+       "collectors": 3,
+       "planters": 2,
+       "trees": 1,
+       "cargo": 102.043
+      }
+     ],
+     "gross_by_recipient_source": [
+      [
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       142.703
+      ]
+     ],
+     "margin_QQ": -374.43
+    },
+    "114": {
+     "seats": [
+      {
+       "cash": 1283.73,
+       "workers": 10,
+       "collectors": 8,
+       "planters": 2,
+       "trees": 10,
+       "cargo": 89.336
+      },
+      {
+       "cash": 37.49,
+       "workers": 5,
+       "collectors": 4,
+       "planters": 1,
+       "trees": 2,
+       "cargo": 91.251
+      }
+     ],
+     "gross_by_recipient_source": [
+      [
+       505.58,
+       0.0
+      ],
+      [
+       0.0,
+       142.703
+      ]
+     ],
+     "margin_QQ": -1246.24
+    },
+    "124": {
+     "seats": [
+      {
+       "cash": 1489.27,
+       "workers": 10,
+       "collectors": 8,
+       "planters": 2,
+       "trees": 12,
+       "cargo": 185.993
+      },
+      {
+       "cash": 30.2,
+       "workers": 6,
+       "collectors": 5,
+       "planters": 1,
+       "trees": 0,
+       "cargo": 126.206
+      }
+     ],
+     "gross_by_recipient_source": [
+      [
+       594.916,
+       0.0
+      ],
+      [
+       0.0,
+       142.703
+      ]
+     ],
+     "margin_QQ": -1459.07
+    }
+   },
+   "final_cash_margin": -1459.07,
+   "rewards": [
+    1489.27,
+    30.2
+   ],
+   "statuses": [
+    "ACTIVE",
+    "ACTIVE"
+   ],
+   "action_sha256": "41c9a50335bef14a8536970726c94939e4c0d2e2d7c06d551eae7713ca9b19d6",
+   "deposits": [
+    [
+     92,
+     1,
+     1,
+     "player-1-worker-11",
+     129.299
+    ],
+    [
+     99,
+     1,
+     1,
+     "player-1-worker-20",
+     13.404
+    ],
+    [
+     107,
+     0,
+     0,
+     "player-0-worker-16",
+     220.58
+    ],
+    [
+     110,
+     0,
+     0,
+     "player-0-worker-22",
+     285.0
+    ],
+    [
+     118,
+     0,
+     0,
+     "player-0-worker-28",
+     89.336
+    ]
+   ],
+   "route_intervals": [
+    [
+     89,
+     123,
+     "pursuit"
+    ]
+   ],
+   "choice_counts": {
+    "pursuit": 35
+   },
+   "search_counts": {
+    "pursuit": 35
+   }
+  }
+ ],
+ "comparison": [
+  {
+   "start": 164,
+   "seed": 18011,
+   "v6": {
+    "first_own_deposit": {
+     "t": 215,
+     "worker": "player-1-worker-4",
+     "amount": 273.636
+    },
+    "own_deposits_25": 0.0,
+    "workers_25": 3,
+    "cash_25": 7.53,
+    "trees_25": 0,
+    "end_margin": -6112.63,
+    "same_action_hash_as_crosscurrent": false
+   },
+   "harbormaster": {
+    "first_own_deposit": {
+     "t": 173,
+     "worker": "player-1-worker-4",
+     "amount": 241.318
+    },
+    "own_deposits_25": 417.687,
+    "workers_25": 10,
+    "cash_25": 91.59,
+    "trees_25": 4,
+    "end_margin": -2610.64,
+    "same_action_hash_as_crosscurrent": false
+   },
+   "crosscurrent": {
+    "first_own_deposit": {
+     "t": 173,
+     "worker": "player-1-worker-4",
+     "amount": 241.318
+    },
+    "own_deposits_25": 417.687,
+    "workers_25": 10,
+    "cash_25": 91.59,
+    "trees_25": 4,
+    "end_margin": -1661.63,
+    "same_action_hash_as_crosscurrent": true
+   }
+  },
+  {
+   "start": 164,
+   "seed": 38039,
+   "v6": {
+    "first_own_deposit": {
+     "t": 217,
+     "worker": "player-1-worker-4",
+     "amount": 298.187
+    },
+    "own_deposits_25": 0.0,
+    "workers_25": 1,
+    "cash_25": 7.53,
+    "trees_25": 0,
+    "end_margin": -6598.42,
+    "same_action_hash_as_crosscurrent": false
+   },
+   "harbormaster": {
+    "first_own_deposit": {
+     "t": 173,
+     "worker": "player-1-worker-4",
+     "amount": 214.505
+    },
+    "own_deposits_25": 290.042,
+    "workers_25": 9,
+    "cash_25": 53.16,
+    "trees_25": 2,
+    "end_margin": -3334.88,
+    "same_action_hash_as_crosscurrent": false
+   },
+   "crosscurrent": {
+    "first_own_deposit": {
+     "t": 173,
+     "worker": "player-1-worker-4",
+     "amount": 214.505
+    },
+    "own_deposits_25": 290.042,
+    "workers_25": 8,
+    "cash_25": 53.16,
+    "trees_25": 2,
+    "end_margin": -3443.45,
+    "same_action_hash_as_crosscurrent": true
+   }
+  },
+  {
+   "start": 164,
+   "seed": 62047,
+   "v6": {
+    "first_own_deposit": {
+     "t": 218,
+     "worker": "player-1-worker-11",
+     "amount": 242.965
+    },
+    "own_deposits_25": 0.0,
+    "workers_25": 2,
+    "cash_25": 7.53,
+    "trees_25": 0,
+    "end_margin": -7362.77,
+    "same_action_hash_as_crosscurrent": false
+   },
+   "harbormaster": {
+    "first_own_deposit": {
+     "t": 184,
+     "worker": "player-1-worker-11",
+     "amount": 186.828
+    },
+    "own_deposits_25": 186.828,
+    "workers_25": 8,
+    "cash_25": 44.36,
+    "trees_25": 0,
+    "end_margin": -5009.23,
+    "same_action_hash_as_crosscurrent": false
+   },
+   "crosscurrent": {
+    "first_own_deposit": {
+     "t": 192,
+     "worker": "player-1-worker-11",
+     "amount": 71.487
+    },
+    "own_deposits_25": 0.0,
+    "workers_25": 2,
+    "cash_25": 7.53,
+    "trees_25": 0,
+    "end_margin": -9245.71,
+    "same_action_hash_as_crosscurrent": true
+   }
+  },
+  {
+   "start": 89,
+   "seed": 18011,
+   "v6": {
+    "first_own_deposit": null,
+    "own_deposits_25": 0.0,
+    "workers_25": 4,
+    "cash_25": 7.53,
+    "trees_25": 0,
+    "end_margin": -1804.72,
+    "same_action_hash_as_crosscurrent": false
+   },
+   "harbormaster": {
+    "first_own_deposit": {
+     "t": 92,
+     "worker": "player-1-worker-11",
+     "amount": 129.299
+    },
+    "own_deposits_25": 382.611,
+    "workers_25": 8,
+    "cash_25": 118.02,
+    "trees_25": 1,
+    "end_margin": -1130.99,
+    "same_action_hash_as_crosscurrent": false
+   },
+   "crosscurrent": {
+    "first_own_deposit": {
+     "t": 92,
+     "worker": "player-1-worker-11",
+     "amount": 129.299
+    },
+    "own_deposits_25": 382.611,
+    "workers_25": 8,
+    "cash_25": 118.02,
+    "trees_25": 1,
+    "end_margin": -1100.39,
+    "same_action_hash_as_crosscurrent": true
+   }
+  },
+  {
+   "start": 89,
+   "seed": 38039,
+   "v6": {
+    "first_own_deposit": {
+     "t": 111,
+     "worker": "player-1-worker-4",
+     "amount": 124.784
+    },
+    "own_deposits_25": 124.784,
+    "workers_25": 7,
+    "cash_25": 12.31,
+    "trees_25": 0,
+    "end_margin": -1768.58,
+    "same_action_hash_as_crosscurrent": false
+   },
+   "harbormaster": {
+    "first_own_deposit": {
+     "t": 92,
+     "worker": "player-1-worker-11",
+     "amount": 129.299
+    },
+    "own_deposits_25": 192.793,
+    "workers_25": 10,
+    "cash_25": 96.56,
+    "trees_25": 4,
+    "end_margin": -1447.38,
+    "same_action_hash_as_crosscurrent": true
+   },
+   "crosscurrent": {
+    "first_own_deposit": {
+     "t": 92,
+     "worker": "player-1-worker-11",
+     "amount": 129.299
+    },
+    "own_deposits_25": 192.793,
+    "workers_25": 10,
+    "cash_25": 96.56,
+    "trees_25": 4,
+    "end_margin": -1447.38,
+    "same_action_hash_as_crosscurrent": true
+   }
+  },
+  {
+   "start": 89,
+   "seed": 62047,
+   "v6": {
+    "first_own_deposit": null,
+    "own_deposits_25": 0.0,
+    "workers_25": 4,
+    "cash_25": 7.53,
+    "trees_25": 0,
+    "end_margin": -1877.56,
+    "same_action_hash_as_crosscurrent": false
+   },
+   "harbormaster": {
+    "first_own_deposit": {
+     "t": 92,
+     "worker": "player-1-worker-11",
+     "amount": 129.299
+    },
+    "own_deposits_25": 142.703,
+    "workers_25": 6,
+    "cash_25": 11.6,
+    "trees_25": 2,
+    "end_margin": -1411.41,
+    "same_action_hash_as_crosscurrent": false
+   },
+   "crosscurrent": {
+    "first_own_deposit": {
+     "t": 92,
+     "worker": "player-1-worker-11",
+     "amount": 129.299
+    },
+    "own_deposits_25": 142.703,
+    "workers_25": 5,
+    "cash_25": 37.49,
+    "trees_25": 2,
+    "end_margin": -1459.07,
+    "same_action_hash_as_crosscurrent": true
+   }
+  }
+ ]
+}
