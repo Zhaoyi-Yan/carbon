@@ -545,7 +545,7 @@ _VALUE = "UEsDBC0AAAAIAAAAIQDrHQBQ//////////8NABQAdjEud2VpZ2h0Lm5weQEAEACAGAAAAA
 
 
 _POLICY = _Policy(_WEIGHTS)
-_TEMP = 0.75
+_TEMP = 1.0
 _SID = _POLICY.sid('TJB-o18-rush-v41')
 _RETIRE = 0       # with 10 units a planter and a collector may end on one cell, if that is the move sampled; 2: also two planters; 3: any own collision with 10 units
 _BANK = 12           # in the last so many turns collectors may end together on an own base, if that is the move sampled
