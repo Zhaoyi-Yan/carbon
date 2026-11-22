@@ -1,0 +1,134 @@
+Carbon League 策略交接 · 2026-11-22
+
+本轮目标与数据
+  本轮分析时，CarbonEdge_Apollo 位列大模型榜第 1，评分 3210.38。它的源码私有。
+  下载了官方回放仓库同一快照中该策略的全部 21 局。它对 5 个对手共 18 胜 3 负，
+  其中 9 局在 0 号位、12 局在 1 号位。每局 300 帧且双方正常结束。
+  replays/apollo/ 下保存完整 json.gz 与 manifest.json。策略身份依据 order 映射，
+  终局资金与官方记录核对一致。全榜提供的 93 局记录中，本次完整回放覆盖 21 局。
+  官方榜单 https://117.72.210.134/api/leaderboard
+  官方导出说明 https://117.72.210.134/static/replay-api.txt
+  快照 https://github.com/JUZI1/carbon-league-replays
+  快照提交 88006809b12e0f92bb9dbdf1b7242ce7de9f0360
+
+回放观察
+  全部 21 局在上方基地先招种植员、下方基地先招采集员。第 75 步平均阵容为
+  7.8 名采集员、2.0 名种植员，平均持有 6.3 棵树；对手平均持有 4.9 棵。
+  每局树木总收入为 Apollo 3457.0、对手 2874.7。胜局平均领先 801.3，
+  败局平均落后 731.5。每局新种 31.2 比 26.8 棵，夺树 21.6 比 23.4 次。
+  18 场胜局里也有树木收入落后的例子。树木指标用于判断投资机会，最终按现金决胜。
+  阵亡前一帧的工人载碳总和每局平均 268.6 比 359.4。该指标包含可能被友军回收的碳。
+  对 SpongeBaby-CarbonNet-v2.0 的 338efe0060442151c6b8bcde919f0de6 局，
+  Apollo 第 75 步落后 173，第 150 步领先 183，最终赢 1122，全局树木收入多 1081。
+
+模型与评估方法
+  旧版沿用 Claude 公开的 claude-AlphaCarbon-Master3s2 底座和原文件署名 Ryanx
+  的模拟器。本轮在冻结的骨干网络上训练新的行动头、招募头。辅助任务预测每名工人
+  六步后的移动方向与存活状态。真实根节点和搜索备选动作使用新模型，对手仍用原模型。
+  标准双基地且资金充足时采用回放中观察到的一采一种开局。
+  以 16 张地图训练、5 张地图选权重，各场完整划分，地图种子无交集。行动标签取
+  下一帧的已执行指令。输入只含决策时公开的单位状态及该座位的部分可见碳量，
+  碳图经过与实战相同的 BeliefTracker 估计。留出的五场用于模型选择。
+  树木收益模型根据相邻可吸收碳量、树龄、重叠吸收区、工人载碳和双方抵达距离，
+  预测未来最多 18 步的净收入。预测目标按 0.96 每步折现，若树被对手夺走则反号。
+  同时计入双方树的价值，供搜索比较局面。留出比赛中单树预测平均绝对误差 6.25，
+  以训练集恒定中位数预测为 12.50。胜率单独用本地原版环境检验。
+
+可复现训练
+  在仓库根目录运行下列命令。输出目录可自行选择。
+  python train_replays.py --output /tmp/carbon-retrained
+  产物包含 head.npz、tree.npz 和单文件 candidate.py。用同一批回放、PyTorch 2.12.1
+  重新执行后，两组权重数组和导出的候选文件均与比赛所用版本完全一致。
+  训练样本为 33,719 个采集员决策、9,254 个种植员决策、2,476 个可招募基地决策。
+  单树收益模型还使用双方树木的后续实际收入作为训练目标。
+  原版模拟环境 https://github.com/moliqingwa/carbon_challenge
+  公开源码对照的原始策略 https://117.72.210.134/source/d679ed45ab595e8b7bb1ea51c3451154
+  对手和本轮开始前的本地策略分别保存在 opponents/claude-AlphaCarbon-Master3s2.py、
+  opponents/local-before-apollo.py。前者按本轮抓取的榜单仍是公开源码中评分最高的策略。
+
+  官方示例的招募门槛是 100，而原版开局只有 80，因此该对手主要用于验证整局接口。
+
+本轮最终交付与本地对战结果
+  submission.py，SHA-256 0483eca2a5e8031270dfb89b87cd5d901ee81f823383f6094f8ed839dec6a7dd，2,982,591 字节。
+  最终文件在原版模拟器完成以下 14 场，全部取胜，均到第 299 步。每张地图交换出生位。
+  组别                      种子      出生位    本方现金       对手现金      分差
+  claude-AlphaCarbon-Master3s2 733        0       9475.01       8293.58    +1181.43
+  claude-AlphaCarbon-Master3s2 733        1       8929.68       7884.21    +1045.47
+  claude-AlphaCarbon-Master3s2 809        0       7933.05       7271.26     +661.79
+  claude-AlphaCarbon-Master3s2 809        1       8448.83       7753.77     +695.06
+  previous                   811        0       5813.37       5192.80     +620.57
+  previous                   811        1       6351.08       4513.35    +1837.73
+  previous                   853        0       6817.76       6514.92     +302.84
+  previous                   853        1       7164.64       6458.89     +705.75
+  example                    887        0      12079.60         80.00   +11999.60
+  example                    887        1      14192.04         80.00   +14112.04
+  juzi                       887        0      14393.13       9276.26    +5116.87
+  juzi                       887        1      10027.71       4470.55    +5557.16
+  candidate_v3               887        0       9856.21       5555.51    +4300.70
+  candidate_v3               887        1       9255.69       4856.12    +4399.57
+
+  对 Master3s2 四场全胜，平均资金领先 895.94。对旧版四场全胜，平均领先 866.72。
+  这八场中对手每局搜索 298–299 次。官方示例、juzi 和 deepseek-candidate-v3 各 2 胜。
+  对公开对手最初的一个进程池中断，途中比分未计入；同样种子和出生位重跑到终局。
+  全套单步最高 1.724 秒，最慢的一局有 2 步超过 1 秒。部分对手使用随机采样，
+  搜索宽度也随机器负载变化。本机计时不含平台进程通信。没有在线成绩或与 Apollo 的实战结果。
+  行动模型先单独对旧版测试，在 677、691 两个种子换边 4 胜 0 负，平均领先 1223.57。
+  该组使用不同地图，未计入最终文件的 14 局，也不能据此拆分两种模型的胜率贡献。
+
+  强对手复测命令（需将 PYTHONPATH 设置到原版 zerosum_env 的父目录）
+  CARBON_DEBUG=1 python benchmark.py --opponents opponents/claude-AlphaCarbon-Master3s2.py --seeds 733 809 --jobs 2 --min-opponent-searches 200
+  CARBON_DEBUG=1 python benchmark.py --opponents opponents/local-before-apollo.py --seeds 811 853 --jobs 2 --min-opponent-searches 200
+
+上轮交接原文（以下“当前”指本轮改动前的版本，即 opponents/local-before-apollo.py）
+Carbon League 策略交接
+
+当前策略
+  submission.py 是本地挑战版。入口为 agent(observation, configuration)。
+  底座是 Claude 公开的 claude-AlphaCarbon-Master3s2，包括策略权重、价值网络、碳量
+  估计和源文件中署名 Ryanx 的快速对局引擎。当前版在该底座上改动了实战与模拟的
+  独立采样温度、按单步计算预算分配搜索宽度和深度，以及终盘回程交付。
+  标准 15×15 棋盘使用 NumPy 和 PyTorch CPU。其他尺寸走上一版启发式。
+  策略只保存在本地，未提交排行榜。
+
+对手
+  核查时 claude-AlphaCarbon-Master3s2 是公开源码中评分最高的策略，大模型榜第 17，
+  Elo 2596.44。原始源码保存在 opponents/claude-AlphaCarbon-Master3s2.py。
+  SHA-256 为 65f268b2919ce30fe19355115a928eada032a6beaa018d801662d434c083f2b5。
+  公开榜 https://117.72.210.134/api/leaderboard
+  原版源码 https://117.72.210.134/source/d679ed45ab595e8b7bb1ea51c3451154
+
+本地最高公开源码挑战
+  原版对手启用了搜索，每局完成 298–299 次搜索，双方只收到原版部分可见观测。
+  每张地图交换出生位各打一场，四场都完成第 299 步。现金分差为本方减对手。
+
+  种子  出生位     本方现金      对手现金     分差
+  419       0       7,989.75     7,388.00      +601.75
+  419       1       7,777.45     8,251.20      -473.75
+  463       0       7,577.57     6,695.70      +881.87
+  463       1       7,678.71     7,439.46      +239.25
+
+  这组系列赛 3 胜 1 负，平均现金分差 +312.28。候选单步最长 925.16 毫秒。
+  目标对手按原版使用内部随机采样，搜索也随实际耗时调整，复跑比分会波动。
+  本轮赢了系列赛，样本量和其中一场败局均保留，尚未验证线上 Elo。
+
+回归检查
+  当前交付文件在种子 13 的 100 步快测中，对官方示例、juzi 和 deepseek-candidate-v3
+  各两战全胜，六场都完成第 99 步。另核对了非标准尺寸的启发式入口。
+
+历史对照
+  上一代 Master2 改版在官方示例、juzi 和 deepseek-candidate-v3 上 36 战全胜。
+  对最高公开源码用种子 13 双出生位测试时，上一代两战全负、平均差 -1,368.28。
+  旋转集成候选在种子 61 两战全胜，换种子 131、229 后四战全负。
+  价值集成候选在种子 311 双出生位全负，平均差 -580.25。
+
+复现
+  benchmark.py 使用原版 zerosum_env 结算，两方模块分别加载。测试环境是本机
+  Python 3.13.11、NumPy 2.4.2 和 PyTorch 2.12.1 CPU。原版环境仓库如下。
+  https://github.com/moliqingwa/carbon_challenge
+
+  CARBON_DEBUG=1 PYTHONPATH=/path/to/carbon_challenge python benchmark.py \
+    --opponents opponents/claude-AlphaCarbon-Master3s2.py --seeds 419 463 \
+    --jobs 4 --min-opponent-searches 200 --progress-every 75
+
+  脚本逐局输出比分、单步耗时和对手完成的搜索次数。出现败局或平局时退出码为 1。
+  搜索次数低于指定门槛时，脚本仍保留比分，最后返回 2。

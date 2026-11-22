@@ -4,7 +4,8 @@ The policy, critic, belief tracker, and rollout engine are inherited from
 that public strategy, including the upstream credit to Ryanx for the engine.
 The real-action policy is adapted by imitation of public CarbonEdge_Apollo replays.
 Source data: https://github.com/JUZI1/carbon-league-replays
-The search retains an independent opponent model, adaptive budgeting and terminal banking.
+The search also forecasts the next 18 turns of net tree revenue using a separate replay-trained model.
+It retains an independent opponent model, adaptive budgeting and terminal banking.
 """
 
 import base64
@@ -1214,6 +1215,74 @@ def _scalars(players, step, me):
     return np.array([(cash[me] - cash[o]) / 3000.0, (cargo[me] - cargo[o]) / 3000.0, step / 300.0, (nt[me] - nt[o]) / 10.0, (nw[me] - nw[o]) / 10.0], np.float32)
 
 
+_TREE_NEIGHBORS = np.asarray(NB, dtype=np.intp)
+_TREE_AROUND = np.asarray([[i, *NB8[i]] for i in range(N)], dtype=np.intp)
+
+
+def _tree_features(players, carbon, meta, step, config):
+    trees = [(key, pos, age, side) for side, pl in enumerate(players)
+             for key, (pos, age) in pl[3].items()]
+    if not trees:
+        return (), np.empty(0, dtype=np.intp), None
+    keys, positions, ages, owners = zip(*trees)
+    pos, owner = np.asarray(positions), np.asarray(owners)
+    life = np.minimum(np.maximum(0, config.get('treeLifespan', 50) - np.asarray(ages)),
+                      max(0, config.get('episodeSteps', 300) - 1 - step))
+    horizon = np.minimum(18, life)
+    carbon = np.asarray(carbon)
+    four = _TREE_NEIGHBORS[pos]
+    tree_map = np.zeros(N)
+    tree_map[pos] = 1
+    cover = tree_map[_TREE_NEIGHBORS].sum(axis=1)
+    supply = carbon[four] * (1 - tree_map[four])
+    rate = config.get('cellAbsorptionRate', .0375)
+    decay = np.clip(1 - rate * cover[four], 0, 1)
+    supply_value = (supply * (1 - decay ** horizon[:, None]) / np.maximum(1, cover[four])).sum(axis=1)
+    base_dist = np.empty((2, len(pos)))
+    planter_dist = np.full((2, len(pos)), 15.)
+    collector_dist = planter_dist.copy()
+    cargo = np.zeros((2, N))
+    for side, pl in enumerate(players):
+        bases = list(pl[1].values())
+        base_dist[side] = FEAT_DIST[np.ix_(pos, bases)].min(axis=1) if bases else 15
+        planters, collectors = [], []
+        for square, load, kind in pl[2].values():
+            if kind == 'PLANTER':
+                planters.append(square)
+            else:
+                collectors.append(square)
+                cargo[side, square] = load
+        if planters:
+            planter_dist[side] = FEAT_DIST[np.ix_(pos, planters)].min(axis=1)
+        if collectors:
+            collector_dist[side] = FEAT_DIST[np.ix_(pos, collectors)].min(axis=1)
+    i = np.arange(len(pos))
+    tax = cargo[(1 - owner)[:, None], _TREE_AROUND[pos]].sum(axis=1) * config.get('collectorAbsorptionRate', .1)
+    income = np.asarray([meta.get(key, (None, 0))[1] for key in keys])
+    features = np.column_stack((horizon, life, supply_value, supply.mean(axis=1), supply.max(axis=1),
+                                cover[four].mean(axis=1), tax, income, base_dist[owner, i],
+                                base_dist[1-owner, i], planter_dist[owner, i], planter_dist[1-owner, i],
+                                collector_dist[owner, i], collector_dist[1-owner, i],
+                                np.log1p(np.maximum(tax, 0)), np.log1p(np.maximum(income, 0))))
+    return keys, owner, features
+
+def _future_tree_income(board, me, configuration):
+    state = board.get('_st')
+    meta = state.trees_meta if state is not None else board.get('trees', {})
+    _, owners, features = _tree_features(board['players'], board['carbon'], meta,
+                                          board['step'], configuration)
+    if features is None:
+        return 0.
+    weights = _TREE_MODEL
+    x = np.clip((features - weights['mean']) * weights['scale'], -7, 7)
+    forecast = np.maximum(x @ weights['w'] + weights['b'], 0) @ weights['out'] + weights['offset']
+    forecast = np.where(features[:, 0] > 0, forecast, 0.)
+    return float(np.where(owners == me, forecast, -forecast).sum())
+
+with np.load(io.BytesIO(base64.b64decode("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")), allow_pickle=False) as _tree_parameters:
+    _TREE_MODEL = dict(_tree_parameters)
+
+
 def _banking_value(players, me, step):
     remaining = max(0, LAST_TURN + 1 - step)
     workers, _, bases, cash = parse(players)
@@ -1430,6 +1499,8 @@ def _search(obs, configuration, est, act0, lw0, lb0, prev, t0, home=()):
                     mix = 0.72 * (22 - horizon) / 22
                     banked = _banking_value(future['players'], me, future['step'])
                     value = (1 - mix) * value + mix * banked
+                if not both and horizon > 0:
+                    value += _future_tree_income(future, me, configuration) / 3000.
                 v.append(float(value))
             passes += 1
             if both:
