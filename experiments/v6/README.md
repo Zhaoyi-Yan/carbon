@@ -22,7 +22,7 @@
 
 第一个冻结文件在另三张预留图上为 **2 胜 4 负**，平均分差 +52.86，0 号位 2 胜 1 负，1 号位三场全负。六场均正常结束，双方均未出现超过一秒的决策。[首版文件存档](https://github.com/Zhaoyi-Yan/carbon/blob/7260fac/yan-v6.py) · [六场原始记录](../../analysis/arena/v6-confirmation.jsonl)
 
-第二份候选在 learned 的基础上按角色校准对手动作概率。针对相同一组模拟对手应对，它比较每项备选行动相对原行动的收益；若一种行动收益很高但换个应对就容易大亏，搜索会调低其分数。领先时扣分较多，落后时会多承担一些风险。另取四张未使用的地图，每张交换出生位。[源码生成器](build_contested.py) · [冻结哈希与判定规则](contested-panel.json)
+第二份候选在 learned 的基础上按角色校准对手动作概率。针对相同一组模拟对手应对，它比较每项备选行动相对原行动的收益。若一种行动收益很高但换个应对就容易大亏，搜索会调低其分数。领先时扣分较多，落后时会多承担一些风险。另取四张未使用的地图，每张交换出生位。[源码生成器](build_contested.py) · [冻结哈希与判定规则](contested-panel.json)
 
 第二份候选在四张新图八局中 3 胜 5 负，场均 -424.28。采用相同应对来比较收益的机制未在这批地图取得胜势。[八场原始记录](../../analysis/arena/v6-confirmation-contested.jsonl)
 
@@ -46,4 +46,16 @@ python experiments/v6/guard_audit.py "$SNAPSHOT" /tmp/v6-guard.json
 python experiments/v6/build_initiative.py /tmp/initiative.py
 python experiments/v6/build_reserve.py /tmp/reserve.py experiments/v6/projection.json
 python experiments/v6/learn_export.py yan-v5.py experiments/v6/learned-heads.npz /tmp/learned.py
+```
+
+
+## 交付文件
+
+[yan-v6.py](../../yan-v6.py) 基于胜方行动微调的网络，在开局树收入持续落后时启动争树提案，在资金不足、工人负载较重时比较不同基地的返程和接应路线，同时包含最后一名工人的保护规则。每步只读取线上正常观测。SHA-256 为 `1995bbcc07592296e6fe6f816412acccb2d39ea2c79787cd937a210513f69afa`。[训练与构建代码](build_response.py)
+
+在额外四图的八场换边赛中，这一文件对原版 yan-v5 为 **5 胜 3 负**，场均 −103.21，未达到这批对局的正分差要求。498585364 和 648819440 两边都赢，725648836 各胜一边，568554483 两边都负（−1258.63、−548.07）。八场都正常打满，双方均无慢步。[八场记录](../../analysis/arena/v6-confirmation-response.jsonl) · [原定条件](response-panel.json)
+
+```sh
+python experiments/v6/build_response.py /tmp/response.py
+python experiments/v6/build_guard.py /tmp/response.py /tmp/yan-v6.py
 ```

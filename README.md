@@ -1,6 +1,8 @@
 # Carbon League 策略
 
-根目录的 [submission.py](submission.py) 是用于比赛的单文件 Python 策略，权重已内嵌。标准 15×15 棋盘使用 NumPy 和 PyTorch CPU 在本地推理。当前根目录文件为维护者已提交的 **yan-v4**（`v7-claude-style`），自对战默认挑战这个版本。以下是历史版本 **yan-v3**（`v6-tree-guard-batch`）。它沿用公开回放训练的行动和招募模型，在争夺树木时比较改种邻格、派空载采集员协防等走法，并在 CPU 上批量采样模拟行动。
+本实验分支的 [yan-v6.py](yan-v6.py) 和 [submission.py](submission.py) 是同一份单文件候选，权重已内嵌。标准 15×15 棋盘使用 NumPy 和 PyTorch CPU 推理。线上已有的 [yan-v5](yan-v5.py) 是本轮换边对战的冻结基线。[线上回放和本地结果](experiments/v6/README.md)记录了每份候选的评测。
+
+以下是历史版本 **yan-v3**（`v6-tree-guard-batch`）。它沿用公开回放训练的行动和招募模型，在争夺树木时比较改种邻格、派空载采集员协防等走法，并在 CPU 上批量采样模拟行动。
 
 yan-v3 在四张预先留出的新图上与 yan-v2 换边对战，得到 **5 胜 3 负，场均资金领先 176.63**。已按该文件提交线上评测。可用 `--baseline yan-v3` 复测上代。上一版 yan-v2 对应 `v5-tree-value`，yan-v1 对应 `v3-search`。[八局逐图结果](analysis/arena/yan-v3-qualification.md) · [自对战用法](ARENA.md)
 
