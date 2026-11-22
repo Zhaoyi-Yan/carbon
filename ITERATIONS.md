@@ -12,10 +12,11 @@
 
 ## 冻结的线上版本与新候选
 
-从本人账户下载的 yan-v2 与标签 v5-tree-value 完全相同（SHA-256 `0483eca2a5e8031270dfb89b87cd5d901ee81f823383f6094f8ed839dec6a7dd`），yan-v1 与 v3-search 完全相同（`29aa472ef0484b65bb3ffdc85113aef2d1daa1e25377bfe5355a4d5e3567a11c`）。下表均以冻结的 yan-v2 为对手，两个出生位各一局，分差从候选一侧计算。
+从本人账户下载的 yan-v2 与标签 v5-tree-value 完全相同（SHA-256 `0483eca2a5e8031270dfb89b87cd5d901ee81f823383f6094f8ed839dec6a7dd`），yan-v1 与 v3-search 完全相同（`29aa472ef0484b65bb3ffdc85113aef2d1daa1e25377bfe5355a4d5e3567a11c`）。下表均以冻结的 yan-v2 为对手，每张地图从两个出生位各打一局，分差从候选一侧计算。
 
 | 候选 | 种子 | 换边战绩 | 平均现金分差 | 记录 |
 | --- | ---: | ---: | ---: | --- |
+| [种植改点与空载协防](https://github.com/Zhaoyi-Yan/carbon/blob/9e99a57fb2d16783c53ab351c197f82b877877ff/submission.py) | 35831、41893、47269 | 4 胜 2 负 | +37.08 | [两张独立复测图 2 胜 2 负，逐局分差](experiments/tree_guard_search.md) |
 | [路线概率温度校准](https://github.com/Zhaoyi-Yan/carbon/blob/c61c413fd39b751fff4f0207b38e520634625db9/submission.py) | 17471 | 0 胜 2 负 | −455.73 | [隔离竞技场](analysis/arena/temperature-17471.jsonl) |
 | [Apollo 回程特征](https://github.com/Zhaoyi-Yan/carbon/blob/bbf3d0badaec6ecefe9c5d1a49920ea117882833/submission.py) | 17471 | 1 胜 1 负 | −443.12 | [原 benchmark 计时](experiments/route_forecast.md) |
 | [搜索中复用己方行动头](https://github.com/Zhaoyi-Yan/carbon/blob/08a8137e578db46a2ab4d5a06a2cd735009d5a9e/submission.py) | 26117 | 1 胜 1 负 | −7.955 | [逐局记录](analysis/arena/own-rollout-26117.jsonl) · [18 场线上动作核对](experiments/own_rollout.md) |
