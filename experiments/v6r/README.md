@@ -36,6 +36,8 @@ CARBON_DEBUG=1 python scripts/selfplay.py --candidate experiments/v6r/checkpoint
 
 第一份候选在八图换边确认中为 9 胜 7 负，场均 +27.30。0 号位 3 胜、1 号位 6 胜。两张图双胜，一张图双败。全部正常结束，未达到赛前的 12 胜及单座位胜数要求。[16 局原始比分](../../analysis/v6r-qual-01-grove.jsonl) · [逐图、分座位与用时](../../analysis/v6r-qual-01-summary.json)
 
+第二份候选的八图实战最终为 10 胜 6 负，两席各 4 胜和 6 胜，平均分差 +84.31。逐步复核原版裁判，场均实际基地入款差 +15.96，净树收入差 -31.02，招募支出带来的资金差 +99.38。本轮也未达到预设晋级条件。[16 局原始动作和比分](../../analysis/v6r-qual-02-canopy.jsonl) · [每图结果](../../analysis/v6r-qual-02-summary.json) · [逐项收支](../../analysis/v6r-qual-02-economy.json)
+
 ## 第三份候选
 
 [zenith.py](checkpoints/zenith.py) 专门处理新种的树尚无历史收入时的估值。根据合法观测估计四邻碳量，扣除相邻树争用和静止采集员占位，预测结算前归属这棵树的净收益。45 张整图留出的 2,560 棵新树上，平均绝对误差从 33.46 降到 25.16。局内方案还允许推迟一笔招聘，在同一回合用 20 资金种下第一棵值得种的树；其他走法仍交由搜索比较。[幼树经济估值](sapling.md)

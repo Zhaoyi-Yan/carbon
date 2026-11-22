@@ -1,0 +1,4469 @@
+{
+  "model_sha256": "e925768e7349425c22c90bac2841792e491f56e9d34b052f6564502572c36c8c",
+  "cpu_threads": 1,
+  "width_cap": 14,
+  "requested_depth": 5,
+  "rollouts": 1,
+  "root_sampling_temperature": 0.3,
+  "selection": "Two pre- and two post-first-tree states when first tree by step 34; otherwise steps 5,13,23,33.",
+  "confidence": "Probability of the realized feasible root proposal at canopy action temperature; unit aggregate also gives unscaled 0.8 threshold.",
+  "teacher_forcing": "Advance normal root and recorded observations every turn. Feed recorded historical own action back to the belief tracker. Run actual search only for the prespecified states; cap width/depth/rollouts and disable wall cutoff.",
+  "summary": {
+    "all": {
+      "n": 226,
+      "root_match": 186,
+      "search_match": 169,
+      "played_match": 169,
+      "changed": 32,
+      "lost_match": 22,
+      "gained_match": 5,
+      "both_wrong_change": 5
+    },
+    "planter": {
+      "n": 53,
+      "root_match": 45,
+      "search_match": 37,
+      "played_match": 36,
+      "changed": 14,
+      "lost_match": 11,
+      "gained_match": 3,
+      "both_wrong_change": 0
+    },
+    "pre_planter": {
+      "n": 22,
+      "root_match": 20,
+      "search_match": 18,
+      "played_match": 17,
+      "changed": 2,
+      "lost_match": 2,
+      "gained_match": 0,
+      "both_wrong_change": 0
+    },
+    "eligible": {
+      "n": 154,
+      "root_match": 114,
+      "search_match": 97,
+      "played_match": 97,
+      "changed": 32,
+      "lost_match": 22,
+      "gained_match": 5,
+      "both_wrong_change": 5
+    },
+    "pre_eligible": {
+      "n": 67,
+      "root_match": 46,
+      "search_match": 39,
+      "played_match": 38,
+      "changed": 12,
+      "lost_match": 8,
+      "gained_match": 1,
+      "both_wrong_change": 3
+    },
+    "collector": {
+      "n": 77,
+      "root_match": 64,
+      "search_match": 54,
+      "played_match": 55,
+      "changed": 15,
+      "lost_match": 11,
+      "gained_match": 1,
+      "both_wrong_change": 3
+    },
+    "pre_collector": {
+      "n": 27,
+      "root_match": 24,
+      "search_match": 18,
+      "played_match": 18,
+      "changed": 7,
+      "lost_match": 6,
+      "gained_match": 0,
+      "both_wrong_change": 1
+    },
+    "high90_eligible": {
+      "n": 112,
+      "root_match": 98,
+      "search_match": 83,
+      "played_match": 82,
+      "changed": 18,
+      "lost_match": 16,
+      "gained_match": 1,
+      "both_wrong_change": 1
+    },
+    "high90_collector": {
+      "n": 60,
+      "root_match": 53,
+      "search_match": 46,
+      "played_match": 46,
+      "changed": 8,
+      "lost_match": 7,
+      "gained_match": 0,
+      "both_wrong_change": 1
+    },
+    "pre_high90_collector": {
+      "n": 22,
+      "root_match": 21,
+      "search_match": 17,
+      "played_match": 17,
+      "changed": 4,
+      "lost_match": 4,
+      "gained_match": 0,
+      "both_wrong_change": 0
+    },
+    "high80_unscaled_eligible": {
+      "n": 84,
+      "root_match": 79,
+      "search_match": 71,
+      "played_match": 71,
+      "changed": 10,
+      "lost_match": 9,
+      "gained_match": 1,
+      "both_wrong_change": 0
+    },
+    "base": {
+      "n": 96,
+      "root_match": 77,
+      "search_match": 78,
+      "played_match": 78,
+      "changed": 3,
+      "lost_match": 0,
+      "gained_match": 1,
+      "both_wrong_change": 2
+    },
+    "pre_base": {
+      "n": 56,
+      "root_match": 40,
+      "search_match": 41,
+      "played_match": 41,
+      "changed": 3,
+      "lost_match": 0,
+      "gained_match": 1,
+      "both_wrong_change": 2
+    },
+    "unaffordable_or_full_bases": {
+      "n": 72,
+      "root_match": 72,
+      "search_match": 72,
+      "played_match": 72,
+      "changed": 0,
+      "lost_match": 0,
+      "gained_match": 0,
+      "both_wrong_change": 0
+    },
+    "first_tree_planter_pre": {
+      "n": 19,
+      "root_match": 18,
+      "search_match": 16,
+      "played_match": 15,
+      "changed": 2,
+      "lost_match": 2,
+      "gained_match": 0,
+      "both_wrong_change": 0
+    },
+    "actual_first_tree_decision": {
+      "n": 10,
+      "root_match": 10,
+      "search_match": 10,
+      "played_match": 9,
+      "changed": 0,
+      "lost_match": 0,
+      "gained_match": 0,
+      "both_wrong_change": 0
+    },
+    "high90_planter": {
+      "n": 42,
+      "root_match": 40,
+      "search_match": 32,
+      "played_match": 31,
+      "changed": 10,
+      "lost_match": 9,
+      "gained_match": 1,
+      "both_wrong_change": 0
+    },
+    "pre_high90_planter": {
+      "n": 18,
+      "root_match": 18,
+      "search_match": 16,
+      "played_match": 15,
+      "changed": 2,
+      "lost_match": 2,
+      "gained_match": 0,
+      "both_wrong_change": 0
+    },
+    "post_collector": {
+      "n": 50,
+      "root_match": 40,
+      "search_match": 36,
+      "played_match": 37,
+      "changed": 8,
+      "lost_match": 5,
+      "gained_match": 1,
+      "both_wrong_change": 2
+    },
+    "post_eligible": {
+      "n": 87,
+      "root_match": 68,
+      "search_match": 58,
+      "played_match": 59,
+      "changed": 20,
+      "lost_match": 14,
+      "gained_match": 4,
+      "both_wrong_change": 2
+    },
+    "post_high90_collector": {
+      "n": 38,
+      "root_match": 32,
+      "search_match": 29,
+      "played_match": 29,
+      "changed": 4,
+      "lost_match": 3,
+      "gained_match": 0,
+      "both_wrong_change": 1
+    },
+    "post_planter": {
+      "n": 31,
+      "root_match": 25,
+      "search_match": 19,
+      "played_match": 19,
+      "changed": 12,
+      "lost_match": 9,
+      "gained_match": 3,
+      "both_wrong_change": 0
+    },
+    "post_high90_planter": {
+      "n": 24,
+      "root_match": 22,
+      "search_match": 16,
+      "played_match": 16,
+      "changed": 8,
+      "lost_match": 7,
+      "gained_match": 1,
+      "both_wrong_change": 0
+    },
+    "post_base": {
+      "n": 40,
+      "root_match": 37,
+      "search_match": 37,
+      "played_match": 37,
+      "changed": 0,
+      "lost_match": 0,
+      "gained_match": 0,
+      "both_wrong_change": 0
+    },
+    "eligible_bases": {
+      "n": 24,
+      "root_match": 5,
+      "search_match": 6,
+      "played_match": 6,
+      "changed": 3,
+      "lost_match": 0,
+      "gained_match": 1,
+      "both_wrong_change": 2
+    },
+    "high90_base": {
+      "n": 10,
+      "root_match": 5,
+      "search_match": 5,
+      "played_match": 5,
+      "changed": 0,
+      "lost_match": 0,
+      "gained_match": 0,
+      "both_wrong_change": 0
+    },
+    "post_high90_base": {
+      "n": 4,
+      "root_match": 3,
+      "search_match": 3,
+      "played_match": 3,
+      "changed": 0,
+      "lost_match": 0,
+      "gained_match": 0,
+      "both_wrong_change": 0
+    },
+    "pre_high90_base": {
+      "n": 6,
+      "root_match": 2,
+      "search_match": 2,
+      "played_match": 2,
+      "changed": 0,
+      "lost_match": 0,
+      "gained_match": 0,
+      "both_wrong_change": 0
+    }
+  },
+  "samples": [
+    {
+      "game": "0e35eb181d361e29c314340ec542c446-1",
+      "seed": 1974146516,
+      "seat": 1,
+      "teacher": "Artemis",
+      "step": 14,
+      "first_tree": 26,
+      "phase": "pre",
+      "actual_first_tree_decision": false,
+      "root_joint": {
+        "player-1-worker-0": "RIGHT",
+        "player-1-worker-1": "RIGHT"
+      },
+      "searched_joint": {
+        "player-1-worker-0": "RIGHT"
+      },
+      "played_joint": {
+        "player-1-worker-0": "RIGHT"
+      },
+      "teacher_joint": {
+        "player-1-worker-0": "UP",
+        "player-1-worker-1": "LEFT"
+      },
+      "search_candidates": 9,
+      "depth": 5,
+      "selected": 2,
+      "units": [
+        {
+          "uid": "player-1-worker-0",
+          "kind": "planter",
+          "root": 2,
+          "search": 2,
+          "played": 2,
+          "teacher": 1,
+          "sampling_p": 0.767161,
+          "softmax_p": 0.4312484,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-worker-1",
+          "kind": "collector",
+          "root": 2,
+          "search": 0,
+          "played": 0,
+          "teacher": 4,
+          "sampling_p": 0.287549,
+          "softmax_p": 0.4251593,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-worker-2",
+          "kind": "collector",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 1.0,
+          "softmax_p": 0.9993899,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-recrtCenter-0",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.9620581,
+          "softmax_p": 0.6581577,
+          "eligible": false,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-recrtCenter-1",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.991217,
+          "softmax_p": 0.7177907,
+          "eligible": false,
+          "created_first_tree": false
+        }
+      ]
+    },
+    {
+      "game": "0e35eb181d361e29c314340ec542c446-1",
+      "seed": 1974146516,
+      "seat": 1,
+      "teacher": "Artemis",
+      "step": 25,
+      "first_tree": 26,
+      "phase": "pre",
+      "actual_first_tree_decision": true,
+      "root_joint": {
+        "player-1-worker-1": "DOWN",
+        "player-1-worker-2": "LEFT",
+        "player-1-worker-4": "UP",
+        "player-1-worker-5": "LEFT"
+      },
+      "searched_joint": {
+        "player-1-worker-1": "DOWN",
+        "player-1-worker-2": "LEFT",
+        "player-1-worker-4": "RIGHT",
+        "player-1-worker-5": "LEFT"
+      },
+      "played_joint": {
+        "player-1-worker-1": "DOWN",
+        "player-1-worker-2": "LEFT",
+        "player-1-worker-4": "RIGHT",
+        "player-1-worker-5": "LEFT"
+      },
+      "teacher_joint": {
+        "player-1-worker-5": "LEFT",
+        "player-1-worker-2": "LEFT",
+        "player-1-worker-4": "UP",
+        "player-1-worker-1": "DOWN"
+      },
+      "search_candidates": 14,
+      "depth": 5,
+      "selected": 4,
+      "units": [
+        {
+          "uid": "player-1-worker-1",
+          "kind": "collector",
+          "root": 3,
+          "search": 3,
+          "played": 3,
+          "teacher": 3,
+          "sampling_p": 1.0,
+          "softmax_p": 0.9934791,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-worker-2",
+          "kind": "collector",
+          "root": 4,
+          "search": 4,
+          "played": 4,
+          "teacher": 4,
+          "sampling_p": 1.0,
+          "softmax_p": 0.9930057,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-worker-3",
+          "kind": "planter",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.4204819,
+          "softmax_p": 0.3941242,
+          "eligible": true,
+          "created_first_tree": true
+        },
+        {
+          "uid": "player-1-worker-4",
+          "kind": "collector",
+          "root": 1,
+          "search": 2,
+          "played": 2,
+          "teacher": 1,
+          "sampling_p": 0.9999537,
+          "softmax_p": 0.9332896,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-worker-5",
+          "kind": "planter",
+          "root": 4,
+          "search": 4,
+          "played": 4,
+          "teacher": 4,
+          "sampling_p": 0.9874303,
+          "softmax_p": 0.6793448,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-recrtCenter-0",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 1.0,
+          "softmax_p": 0.9990413,
+          "eligible": false,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-recrtCenter-1",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.0005432,
+          "softmax_p": 0.0947184,
+          "eligible": false,
+          "created_first_tree": false
+        }
+      ]
+    },
+    {
+      "game": "0e35eb181d361e29c314340ec542c446-1",
+      "seed": 1974146516,
+      "seat": 1,
+      "teacher": "Artemis",
+      "step": 29,
+      "first_tree": 26,
+      "phase": "post",
+      "actual_first_tree_decision": false,
+      "root_joint": {
+        "player-1-worker-1": "UP",
+        "player-1-worker-6": "RIGHT",
+        "player-1-worker-5": "UP",
+        "player-1-worker-3": "UP",
+        "player-1-worker-2": "DOWN"
+      },
+      "searched_joint": {
+        "player-1-worker-1": "UP",
+        "player-1-worker-6": "RIGHT",
+        "player-1-worker-5": "UP",
+        "player-1-worker-3": "LEFT",
+        "player-1-worker-2": "DOWN"
+      },
+      "played_joint": {
+        "player-1-worker-1": "UP",
+        "player-1-worker-6": "RIGHT",
+        "player-1-worker-5": "UP",
+        "player-1-worker-3": "LEFT",
+        "player-1-worker-2": "DOWN"
+      },
+      "teacher_joint": {
+        "player-1-worker-3": "UP",
+        "player-1-worker-6": "RIGHT",
+        "player-1-worker-5": "UP",
+        "player-1-worker-1": "UP",
+        "player-1-worker-2": "DOWN"
+      },
+      "search_candidates": 14,
+      "depth": 5,
+      "selected": 3,
+      "units": [
+        {
+          "uid": "player-1-worker-1",
+          "kind": "collector",
+          "root": 1,
+          "search": 1,
+          "played": 1,
+          "teacher": 1,
+          "sampling_p": 1.0,
+          "softmax_p": 0.9959741,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-worker-2",
+          "kind": "collector",
+          "root": 3,
+          "search": 3,
+          "played": 3,
+          "teacher": 3,
+          "sampling_p": 0.7898378,
+          "softmax_p": 0.5969132,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-worker-3",
+          "kind": "planter",
+          "root": 1,
+          "search": 4,
+          "played": 4,
+          "teacher": 1,
+          "sampling_p": 0.9688268,
+          "softmax_p": 0.5881824,
+          "eligible": true,
+          "created_first_tree": true
+        },
+        {
+          "uid": "player-1-worker-4",
+          "kind": "collector",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.9999454,
+          "softmax_p": 0.9209688,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-worker-5",
+          "kind": "planter",
+          "root": 1,
+          "search": 1,
+          "played": 1,
+          "teacher": 1,
+          "sampling_p": 0.9952585,
+          "softmax_p": 0.7745614,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-worker-6",
+          "kind": "planter",
+          "root": 2,
+          "search": 2,
+          "played": 2,
+          "teacher": 2,
+          "sampling_p": 0.9972977,
+          "softmax_p": 0.8423129,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-recrtCenter-0",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.0206237,
+          "softmax_p": 0.2081102,
+          "eligible": false,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-recrtCenter-1",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 1.0,
+          "softmax_p": 0.9981846,
+          "eligible": false,
+          "created_first_tree": false
+        }
+      ]
+    },
+    {
+      "game": "0e35eb181d361e29c314340ec542c446-1",
+      "seed": 1974146516,
+      "seat": 1,
+      "teacher": "Artemis",
+      "step": 34,
+      "first_tree": 26,
+      "phase": "post",
+      "actual_first_tree_decision": false,
+      "root_joint": {
+        "player-1-worker-6": "RIGHT",
+        "player-1-worker-2": "RIGHT",
+        "player-1-worker-8": "LEFT",
+        "player-1-worker-3": "DOWN",
+        "player-1-worker-4": "UP",
+        "player-1-worker-1": "LEFT"
+      },
+      "searched_joint": {
+        "player-1-worker-2": "RIGHT",
+        "player-1-worker-6": "RIGHT",
+        "player-1-worker-3": "DOWN",
+        "player-1-worker-4": "UP",
+        "player-1-worker-1": "DOWN",
+        "player-1-worker-8": "DOWN"
+      },
+      "played_joint": {
+        "player-1-worker-2": "RIGHT",
+        "player-1-worker-6": "RIGHT",
+        "player-1-worker-3": "DOWN",
+        "player-1-worker-4": "UP",
+        "player-1-worker-1": "DOWN",
+        "player-1-worker-8": "DOWN"
+      },
+      "teacher_joint": {
+        "player-1-recrtCenter-0": "RECCOLLECTOR",
+        "player-1-worker-6": "RIGHT",
+        "player-1-worker-3": "LEFT",
+        "player-1-worker-4": "UP",
+        "player-1-worker-2": "RIGHT",
+        "player-1-worker-8": "LEFT",
+        "player-1-worker-1": "LEFT"
+      },
+      "search_candidates": 14,
+      "depth": 5,
+      "selected": 9,
+      "units": [
+        {
+          "uid": "player-1-worker-1",
+          "kind": "collector",
+          "root": 4,
+          "search": 3,
+          "played": 3,
+          "teacher": 4,
+          "sampling_p": 0.6276793,
+          "softmax_p": 0.5099357,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-worker-2",
+          "kind": "collector",
+          "root": 2,
+          "search": 2,
+          "played": 2,
+          "teacher": 2,
+          "sampling_p": 0.9999386,
+          "softmax_p": 0.9354859,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-worker-3",
+          "kind": "planter",
+          "root": 3,
+          "search": 3,
+          "played": 3,
+          "teacher": 4,
+          "sampling_p": 0.8963311,
+          "softmax_p": 0.6354672,
+          "eligible": true,
+          "created_first_tree": true
+        },
+        {
+          "uid": "player-1-worker-4",
+          "kind": "collector",
+          "root": 1,
+          "search": 1,
+          "played": 1,
+          "teacher": 1,
+          "sampling_p": 0.8181751,
+          "softmax_p": 0.6077445,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-worker-6",
+          "kind": "planter",
+          "root": 2,
+          "search": 2,
+          "played": 2,
+          "teacher": 2,
+          "sampling_p": 0.9999499,
+          "softmax_p": 0.9266987,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-worker-7",
+          "kind": "collector",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.8942327,
+          "softmax_p": 0.5936135,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-worker-8",
+          "kind": "collector",
+          "root": 4,
+          "search": 3,
+          "played": 3,
+          "teacher": 4,
+          "sampling_p": 0.9943777,
+          "softmax_p": 0.7783951,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-recrtCenter-0",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 1,
+          "sampling_p": 0.2315647,
+          "softmax_p": 0.3954589,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-recrtCenter-1",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.9967747,
+          "softmax_p": 0.836261,
+          "eligible": true,
+          "created_first_tree": false
+        }
+      ]
+    },
+    {
+      "game": "e518e0aeff3cfbf788bc2764e07293b0-1",
+      "seed": 331963963,
+      "seat": 1,
+      "teacher": "Artemis",
+      "step": 4,
+      "first_tree": 7,
+      "phase": "pre",
+      "actual_first_tree_decision": false,
+      "root_joint": {
+        "player-1-worker-1": "UP"
+      },
+      "searched_joint": {
+        "player-1-worker-1": "RIGHT"
+      },
+      "played_joint": {
+        "player-1-worker-1": "RIGHT"
+      },
+      "teacher_joint": {
+        "player-1-worker-1": "UP"
+      },
+      "search_candidates": 3,
+      "depth": 5,
+      "selected": 1,
+      "units": [
+        {
+          "uid": "player-1-worker-0",
+          "kind": "collector",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 1.0,
+          "softmax_p": 0.9970708,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-worker-1",
+          "kind": "planter",
+          "root": 1,
+          "search": 2,
+          "played": 2,
+          "teacher": 1,
+          "sampling_p": 0.9295546,
+          "softmax_p": 0.6669828,
+          "eligible": true,
+          "created_first_tree": true
+        },
+        {
+          "uid": "player-1-recrtCenter-0",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.9999945,
+          "softmax_p": 0.9717423,
+          "eligible": false,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-recrtCenter-1",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 2.4e-06,
+          "softmax_p": 0.0200438,
+          "eligible": false,
+          "created_first_tree": false
+        }
+      ]
+    },
+    {
+      "game": "e518e0aeff3cfbf788bc2764e07293b0-1",
+      "seed": 331963963,
+      "seat": 1,
+      "teacher": "Artemis",
+      "step": 6,
+      "first_tree": 7,
+      "phase": "pre",
+      "actual_first_tree_decision": true,
+      "root_joint": {
+        "player-1-worker-0": "RIGHT"
+      },
+      "searched_joint": {
+        "player-1-worker-0": "RIGHT"
+      },
+      "played_joint": {
+        "player-1-worker-0": "RIGHT"
+      },
+      "teacher_joint": {},
+      "search_candidates": 3,
+      "depth": 5,
+      "selected": 0,
+      "units": [
+        {
+          "uid": "player-1-worker-0",
+          "kind": "collector",
+          "root": 2,
+          "search": 2,
+          "played": 2,
+          "teacher": 0,
+          "sampling_p": 0.9944478,
+          "softmax_p": 0.825186,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-worker-1",
+          "kind": "planter",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.9999987,
+          "softmax_p": 0.9729733,
+          "eligible": true,
+          "created_first_tree": true
+        },
+        {
+          "uid": "player-1-recrtCenter-0",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 1.0,
+          "softmax_p": 0.9998137,
+          "eligible": false,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-recrtCenter-1",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.0035701,
+          "softmax_p": 0.1555862,
+          "eligible": false,
+          "created_first_tree": false
+        }
+      ]
+    },
+    {
+      "game": "e518e0aeff3cfbf788bc2764e07293b0-1",
+      "seed": 331963963,
+      "seat": 1,
+      "teacher": "Artemis",
+      "step": 10,
+      "first_tree": 7,
+      "phase": "post",
+      "actual_first_tree_decision": false,
+      "root_joint": {
+        "player-1-worker-1": "LEFT",
+        "player-1-worker-2": "RIGHT"
+      },
+      "searched_joint": {
+        "player-1-worker-1": "LEFT",
+        "player-1-worker-2": "RIGHT"
+      },
+      "played_joint": {
+        "player-1-worker-1": "LEFT",
+        "player-1-worker-2": "RIGHT"
+      },
+      "teacher_joint": {
+        "player-1-worker-1": "LEFT",
+        "player-1-worker-2": "RIGHT"
+      },
+      "search_candidates": 8,
+      "depth": 5,
+      "selected": 0,
+      "units": [
+        {
+          "uid": "player-1-worker-0",
+          "kind": "collector",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.999981,
+          "softmax_p": 0.9630803,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-worker-1",
+          "kind": "planter",
+          "root": 4,
+          "search": 4,
+          "played": 4,
+          "teacher": 4,
+          "sampling_p": 0.9864065,
+          "softmax_p": 0.7270027,
+          "eligible": true,
+          "created_first_tree": true
+        },
+        {
+          "uid": "player-1-worker-2",
+          "kind": "collector",
+          "root": 2,
+          "search": 2,
+          "played": 2,
+          "teacher": 2,
+          "sampling_p": 0.1140283,
+          "softmax_p": 0.3494665,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-recrtCenter-0",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.9176736,
+          "softmax_p": 0.657683,
+          "eligible": false,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-recrtCenter-1",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.0409062,
+          "softmax_p": 0.2769537,
+          "eligible": false,
+          "created_first_tree": false
+        }
+      ]
+    },
+    {
+      "game": "e518e0aeff3cfbf788bc2764e07293b0-1",
+      "seed": 331963963,
+      "seat": 1,
+      "teacher": "Artemis",
+      "step": 16,
+      "first_tree": 7,
+      "phase": "post",
+      "actual_first_tree_decision": false,
+      "root_joint": {
+        "player-1-worker-3": "UP",
+        "player-1-worker-1": "UP",
+        "player-1-worker-0": "UP"
+      },
+      "searched_joint": {
+        "player-1-worker-3": "UP",
+        "player-1-worker-1": "UP",
+        "player-1-worker-0": "UP"
+      },
+      "played_joint": {
+        "player-1-worker-3": "UP",
+        "player-1-worker-1": "UP",
+        "player-1-worker-0": "UP"
+      },
+      "teacher_joint": {
+        "player-1-recrtCenter-1": "RECCOLLECTOR",
+        "player-1-worker-3": "UP",
+        "player-1-worker-1": "UP"
+      },
+      "search_candidates": 11,
+      "depth": 5,
+      "selected": 0,
+      "units": [
+        {
+          "uid": "player-1-worker-0",
+          "kind": "collector",
+          "root": 1,
+          "search": 1,
+          "played": 1,
+          "teacher": 0,
+          "sampling_p": 0.9294209,
+          "softmax_p": 0.5984685,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-worker-1",
+          "kind": "planter",
+          "root": 1,
+          "search": 1,
+          "played": 1,
+          "teacher": 1,
+          "sampling_p": 0.9923603,
+          "softmax_p": 0.7339523,
+          "eligible": true,
+          "created_first_tree": true
+        },
+        {
+          "uid": "player-1-worker-3",
+          "kind": "planter",
+          "root": 1,
+          "search": 1,
+          "played": 1,
+          "teacher": 1,
+          "sampling_p": 0.9999959,
+          "softmax_p": 0.9627776,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-recrtCenter-0",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.9999886,
+          "softmax_p": 0.9678763,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-recrtCenter-1",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 1,
+          "sampling_p": 0.0854326,
+          "softmax_p": 0.3267459,
+          "eligible": true,
+          "created_first_tree": false
+        }
+      ]
+    },
+    {
+      "game": "6173390b43b884ef8b9c8e22ea5f3318-1",
+      "seed": 422706927,
+      "seat": 0,
+      "teacher": "Artemis",
+      "step": 5,
+      "first_tree": 49,
+      "phase": "pre",
+      "actual_first_tree_decision": false,
+      "root_joint": {
+        "player-0-recrtCenter-0": "RECCOLLECTOR",
+        "player-0-recrtCenter-1": "RECCOLLECTOR"
+      },
+      "searched_joint": {
+        "player-0-recrtCenter-0": "RECCOLLECTOR",
+        "player-0-recrtCenter-1": "RECCOLLECTOR"
+      },
+      "played_joint": {
+        "player-0-recrtCenter-0": "RECCOLLECTOR",
+        "player-0-recrtCenter-1": "RECCOLLECTOR"
+      },
+      "teacher_joint": {},
+      "search_candidates": 6,
+      "depth": 5,
+      "selected": 0,
+      "units": [
+        {
+          "uid": "player-0-recrtCenter-0",
+          "kind": "base",
+          "root": 1,
+          "search": 1,
+          "played": 1,
+          "teacher": 0,
+          "sampling_p": 0.8649744,
+          "softmax_p": 0.565414,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-recrtCenter-1",
+          "kind": "base",
+          "root": 1,
+          "search": 1,
+          "played": 1,
+          "teacher": 0,
+          "sampling_p": 0.8649744,
+          "softmax_p": 0.565414,
+          "eligible": true,
+          "created_first_tree": false
+        }
+      ]
+    },
+    {
+      "game": "6173390b43b884ef8b9c8e22ea5f3318-1",
+      "seed": 422706927,
+      "seat": 0,
+      "teacher": "Artemis",
+      "step": 13,
+      "first_tree": 49,
+      "phase": "pre",
+      "actual_first_tree_decision": false,
+      "root_joint": {
+        "player-0-recrtCenter-0": "RECCOLLECTOR",
+        "player-0-recrtCenter-1": "RECCOLLECTOR"
+      },
+      "searched_joint": {
+        "player-0-recrtCenter-0": "RECCOLLECTOR",
+        "player-0-recrtCenter-1": "RECCOLLECTOR"
+      },
+      "played_joint": {
+        "player-0-recrtCenter-0": "RECCOLLECTOR",
+        "player-0-recrtCenter-1": "RECCOLLECTOR"
+      },
+      "teacher_joint": {},
+      "search_candidates": 4,
+      "depth": 5,
+      "selected": 0,
+      "units": [
+        {
+          "uid": "player-0-recrtCenter-0",
+          "kind": "base",
+          "root": 1,
+          "search": 1,
+          "played": 1,
+          "teacher": 0,
+          "sampling_p": 0.8820391,
+          "softmax_p": 0.5664664,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-recrtCenter-1",
+          "kind": "base",
+          "root": 1,
+          "search": 1,
+          "played": 1,
+          "teacher": 0,
+          "sampling_p": 0.8820392,
+          "softmax_p": 0.5664665,
+          "eligible": true,
+          "created_first_tree": false
+        }
+      ]
+    },
+    {
+      "game": "6173390b43b884ef8b9c8e22ea5f3318-1",
+      "seed": 422706927,
+      "seat": 0,
+      "teacher": "Artemis",
+      "step": 23,
+      "first_tree": 49,
+      "phase": "pre",
+      "actual_first_tree_decision": false,
+      "root_joint": {
+        "player-0-recrtCenter-0": "RECCOLLECTOR",
+        "player-0-recrtCenter-1": "RECCOLLECTOR"
+      },
+      "searched_joint": {
+        "player-0-recrtCenter-0": "RECCOLLECTOR",
+        "player-0-recrtCenter-1": "RECCOLLECTOR"
+      },
+      "played_joint": {
+        "player-0-recrtCenter-0": "RECCOLLECTOR",
+        "player-0-recrtCenter-1": "RECCOLLECTOR"
+      },
+      "teacher_joint": {},
+      "search_candidates": 6,
+      "depth": 5,
+      "selected": 0,
+      "units": [
+        {
+          "uid": "player-0-recrtCenter-0",
+          "kind": "base",
+          "root": 1,
+          "search": 1,
+          "played": 1,
+          "teacher": 0,
+          "sampling_p": 0.9014439,
+          "softmax_p": 0.568554,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-recrtCenter-1",
+          "kind": "base",
+          "root": 1,
+          "search": 1,
+          "played": 1,
+          "teacher": 0,
+          "sampling_p": 0.9014441,
+          "softmax_p": 0.5685541,
+          "eligible": true,
+          "created_first_tree": false
+        }
+      ]
+    },
+    {
+      "game": "6173390b43b884ef8b9c8e22ea5f3318-1",
+      "seed": 422706927,
+      "seat": 0,
+      "teacher": "Artemis",
+      "step": 33,
+      "first_tree": 49,
+      "phase": "pre",
+      "actual_first_tree_decision": false,
+      "root_joint": {
+        "player-0-recrtCenter-0": "RECCOLLECTOR",
+        "player-0-recrtCenter-1": "RECCOLLECTOR"
+      },
+      "searched_joint": {
+        "player-0-recrtCenter-0": "RECCOLLECTOR",
+        "player-0-recrtCenter-1": "RECPLANTER"
+      },
+      "played_joint": {
+        "player-0-recrtCenter-0": "RECCOLLECTOR",
+        "player-0-recrtCenter-1": "RECPLANTER"
+      },
+      "teacher_joint": {},
+      "search_candidates": 6,
+      "depth": 5,
+      "selected": 4,
+      "units": [
+        {
+          "uid": "player-0-recrtCenter-0",
+          "kind": "base",
+          "root": 1,
+          "search": 1,
+          "played": 1,
+          "teacher": 0,
+          "sampling_p": 0.7353225,
+          "softmax_p": 0.4704557,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-recrtCenter-1",
+          "kind": "base",
+          "root": 1,
+          "search": 2,
+          "played": 2,
+          "teacher": 0,
+          "sampling_p": 0.7353227,
+          "softmax_p": 0.4704559,
+          "eligible": true,
+          "created_first_tree": false
+        }
+      ]
+    },
+    {
+      "game": "6523af3ebb2d8c6306f7b086a82ec116-1",
+      "seed": 534424076,
+      "seat": 1,
+      "teacher": "Artemis",
+      "step": 5,
+      "first_tree": 51,
+      "phase": "pre",
+      "actual_first_tree_decision": false,
+      "root_joint": {
+        "player-1-recrtCenter-0": "RECCOLLECTOR",
+        "player-1-recrtCenter-1": "RECCOLLECTOR"
+      },
+      "searched_joint": {
+        "player-1-recrtCenter-1": "RECCOLLECTOR"
+      },
+      "played_joint": {
+        "player-1-recrtCenter-1": "RECCOLLECTOR"
+      },
+      "teacher_joint": {},
+      "search_candidates": 6,
+      "depth": 5,
+      "selected": 5,
+      "units": [
+        {
+          "uid": "player-1-recrtCenter-0",
+          "kind": "base",
+          "root": 1,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.8649741,
+          "softmax_p": 0.5654138,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-recrtCenter-1",
+          "kind": "base",
+          "root": 1,
+          "search": 1,
+          "played": 1,
+          "teacher": 0,
+          "sampling_p": 0.8649742,
+          "softmax_p": 0.5654138,
+          "eligible": true,
+          "created_first_tree": false
+        }
+      ]
+    },
+    {
+      "game": "6523af3ebb2d8c6306f7b086a82ec116-1",
+      "seed": 534424076,
+      "seat": 1,
+      "teacher": "Artemis",
+      "step": 13,
+      "first_tree": 51,
+      "phase": "pre",
+      "actual_first_tree_decision": false,
+      "root_joint": {
+        "player-1-recrtCenter-0": "RECCOLLECTOR",
+        "player-1-recrtCenter-1": "RECCOLLECTOR"
+      },
+      "searched_joint": {
+        "player-1-recrtCenter-0": "RECCOLLECTOR",
+        "player-1-recrtCenter-1": "RECCOLLECTOR"
+      },
+      "played_joint": {
+        "player-1-recrtCenter-0": "RECCOLLECTOR",
+        "player-1-recrtCenter-1": "RECCOLLECTOR"
+      },
+      "teacher_joint": {},
+      "search_candidates": 6,
+      "depth": 5,
+      "selected": 0,
+      "units": [
+        {
+          "uid": "player-1-recrtCenter-0",
+          "kind": "base",
+          "root": 1,
+          "search": 1,
+          "played": 1,
+          "teacher": 0,
+          "sampling_p": 0.8820394,
+          "softmax_p": 0.5664665,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-recrtCenter-1",
+          "kind": "base",
+          "root": 1,
+          "search": 1,
+          "played": 1,
+          "teacher": 0,
+          "sampling_p": 0.8820394,
+          "softmax_p": 0.5664666,
+          "eligible": true,
+          "created_first_tree": false
+        }
+      ]
+    },
+    {
+      "game": "6523af3ebb2d8c6306f7b086a82ec116-1",
+      "seed": 534424076,
+      "seat": 1,
+      "teacher": "Artemis",
+      "step": 23,
+      "first_tree": 51,
+      "phase": "pre",
+      "actual_first_tree_decision": false,
+      "root_joint": {
+        "player-1-recrtCenter-0": "RECCOLLECTOR",
+        "player-1-recrtCenter-1": "RECCOLLECTOR"
+      },
+      "searched_joint": {
+        "player-1-recrtCenter-0": "RECCOLLECTOR",
+        "player-1-recrtCenter-1": "RECCOLLECTOR"
+      },
+      "played_joint": {
+        "player-1-recrtCenter-0": "RECCOLLECTOR",
+        "player-1-recrtCenter-1": "RECCOLLECTOR"
+      },
+      "teacher_joint": {},
+      "search_candidates": 6,
+      "depth": 5,
+      "selected": 0,
+      "units": [
+        {
+          "uid": "player-1-recrtCenter-0",
+          "kind": "base",
+          "root": 1,
+          "search": 1,
+          "played": 1,
+          "teacher": 0,
+          "sampling_p": 0.9014439,
+          "softmax_p": 0.568554,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-recrtCenter-1",
+          "kind": "base",
+          "root": 1,
+          "search": 1,
+          "played": 1,
+          "teacher": 0,
+          "sampling_p": 0.9014439,
+          "softmax_p": 0.568554,
+          "eligible": true,
+          "created_first_tree": false
+        }
+      ]
+    },
+    {
+      "game": "6523af3ebb2d8c6306f7b086a82ec116-1",
+      "seed": 534424076,
+      "seat": 1,
+      "teacher": "Artemis",
+      "step": 33,
+      "first_tree": 51,
+      "phase": "pre",
+      "actual_first_tree_decision": false,
+      "root_joint": {
+        "player-1-recrtCenter-0": "RECCOLLECTOR",
+        "player-1-recrtCenter-1": "RECCOLLECTOR"
+      },
+      "searched_joint": {
+        "player-1-recrtCenter-0": "RECPLANTER",
+        "player-1-recrtCenter-1": "RECCOLLECTOR"
+      },
+      "played_joint": {
+        "player-1-recrtCenter-0": "RECPLANTER",
+        "player-1-recrtCenter-1": "RECCOLLECTOR"
+      },
+      "teacher_joint": {},
+      "search_candidates": 8,
+      "depth": 5,
+      "selected": 1,
+      "units": [
+        {
+          "uid": "player-1-recrtCenter-0",
+          "kind": "base",
+          "root": 1,
+          "search": 2,
+          "played": 2,
+          "teacher": 0,
+          "sampling_p": 0.7353231,
+          "softmax_p": 0.4704561,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-recrtCenter-1",
+          "kind": "base",
+          "root": 1,
+          "search": 1,
+          "played": 1,
+          "teacher": 0,
+          "sampling_p": 0.7353224,
+          "softmax_p": 0.4704557,
+          "eligible": true,
+          "created_first_tree": false
+        }
+      ]
+    },
+    {
+      "game": "45869c71d4f1add508b049840e388e1f-1",
+      "seed": 1223065123,
+      "seat": 1,
+      "teacher": "Artemis",
+      "step": 4,
+      "first_tree": 8,
+      "phase": "pre",
+      "actual_first_tree_decision": false,
+      "root_joint": {
+        "player-1-worker-1": "RIGHT"
+      },
+      "searched_joint": {
+        "player-1-worker-1": "RIGHT"
+      },
+      "played_joint": {
+        "player-1-worker-1": "RIGHT"
+      },
+      "teacher_joint": {
+        "player-1-worker-1": "RIGHT"
+      },
+      "search_candidates": 4,
+      "depth": 5,
+      "selected": 0,
+      "units": [
+        {
+          "uid": "player-1-worker-0",
+          "kind": "collector",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 1.0,
+          "softmax_p": 0.9999753,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-worker-1",
+          "kind": "planter",
+          "root": 2,
+          "search": 2,
+          "played": 2,
+          "teacher": 2,
+          "sampling_p": 0.2364918,
+          "softmax_p": 0.3272099,
+          "eligible": true,
+          "created_first_tree": true
+        },
+        {
+          "uid": "player-1-recrtCenter-0",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.9999999,
+          "softmax_p": 0.9883769,
+          "eligible": false,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-recrtCenter-1",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 5.6e-06,
+          "softmax_p": 0.0257575,
+          "eligible": false,
+          "created_first_tree": false
+        }
+      ]
+    },
+    {
+      "game": "45869c71d4f1add508b049840e388e1f-1",
+      "seed": 1223065123,
+      "seat": 1,
+      "teacher": "Artemis",
+      "step": 7,
+      "first_tree": 8,
+      "phase": "pre",
+      "actual_first_tree_decision": true,
+      "root_joint": {},
+      "searched_joint": {},
+      "played_joint": {},
+      "teacher_joint": {},
+      "search_candidates": 5,
+      "depth": 5,
+      "selected": 0,
+      "units": [
+        {
+          "uid": "player-1-worker-0",
+          "kind": "collector",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.9989496,
+          "softmax_p": 0.8279743,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-worker-1",
+          "kind": "planter",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.991213,
+          "softmax_p": 0.7991571,
+          "eligible": true,
+          "created_first_tree": true
+        },
+        {
+          "uid": "player-1-recrtCenter-0",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 1.0,
+          "softmax_p": 0.999249,
+          "eligible": false,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-recrtCenter-1",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.7048722,
+          "softmax_p": 0.5626903,
+          "eligible": false,
+          "created_first_tree": false
+        }
+      ]
+    },
+    {
+      "game": "45869c71d4f1add508b049840e388e1f-1",
+      "seed": 1223065123,
+      "seat": 1,
+      "teacher": "Artemis",
+      "step": 11,
+      "first_tree": 8,
+      "phase": "post",
+      "actual_first_tree_decision": false,
+      "root_joint": {
+        "player-1-worker-0": "DOWN",
+        "player-1-worker-2": "DOWN"
+      },
+      "searched_joint": {
+        "player-1-worker-0": "DOWN",
+        "player-1-worker-2": "RIGHT",
+        "player-1-worker-1": "UP"
+      },
+      "played_joint": {
+        "player-1-worker-0": "DOWN",
+        "player-1-worker-2": "RIGHT",
+        "player-1-worker-1": "UP"
+      },
+      "teacher_joint": {
+        "player-1-worker-0": "DOWN",
+        "player-1-worker-2": "DOWN"
+      },
+      "search_candidates": 7,
+      "depth": 5,
+      "selected": 4,
+      "units": [
+        {
+          "uid": "player-1-worker-0",
+          "kind": "collector",
+          "root": 3,
+          "search": 3,
+          "played": 3,
+          "teacher": 3,
+          "sampling_p": 1.0,
+          "softmax_p": 0.9966784,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-worker-1",
+          "kind": "planter",
+          "root": 0,
+          "search": 1,
+          "played": 1,
+          "teacher": 0,
+          "sampling_p": 0.9999908,
+          "softmax_p": 0.9597533,
+          "eligible": true,
+          "created_first_tree": true
+        },
+        {
+          "uid": "player-1-worker-2",
+          "kind": "collector",
+          "root": 3,
+          "search": 2,
+          "played": 2,
+          "teacher": 3,
+          "sampling_p": 0.9276574,
+          "softmax_p": 0.6766947,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-recrtCenter-0",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.9999933,
+          "softmax_p": 0.9679267,
+          "eligible": false,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-recrtCenter-1",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.9999781,
+          "softmax_p": 0.9532809,
+          "eligible": false,
+          "created_first_tree": false
+        }
+      ]
+    },
+    {
+      "game": "45869c71d4f1add508b049840e388e1f-1",
+      "seed": 1223065123,
+      "seat": 1,
+      "teacher": "Artemis",
+      "step": 17,
+      "first_tree": 8,
+      "phase": "post",
+      "actual_first_tree_decision": false,
+      "root_joint": {
+        "player-1-worker-1": "RIGHT",
+        "player-1-worker-2": "LEFT"
+      },
+      "searched_joint": {
+        "player-1-worker-2": "LEFT"
+      },
+      "played_joint": {
+        "player-1-worker-2": "LEFT"
+      },
+      "teacher_joint": {
+        "player-1-worker-1": "RIGHT",
+        "player-1-worker-2": "UP"
+      },
+      "search_candidates": 10,
+      "depth": 5,
+      "selected": 6,
+      "units": [
+        {
+          "uid": "player-1-worker-1",
+          "kind": "planter",
+          "root": 2,
+          "search": 0,
+          "played": 0,
+          "teacher": 2,
+          "sampling_p": 0.9806682,
+          "softmax_p": 0.6512873,
+          "eligible": true,
+          "created_first_tree": true
+        },
+        {
+          "uid": "player-1-worker-2",
+          "kind": "collector",
+          "root": 4,
+          "search": 4,
+          "played": 4,
+          "teacher": 1,
+          "sampling_p": 0.7463502,
+          "softmax_p": 0.5384221,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-recrtCenter-0",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.0010953,
+          "softmax_p": 0.1103727,
+          "eligible": false,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-recrtCenter-1",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.9999571,
+          "softmax_p": 0.9471909,
+          "eligible": false,
+          "created_first_tree": false
+        }
+      ]
+    },
+    {
+      "game": "1cc46f477941046042b7978a287d7dfe-1",
+      "seed": 195419132,
+      "seat": 0,
+      "teacher": "Artemis",
+      "step": 4,
+      "first_tree": 8,
+      "phase": "pre",
+      "actual_first_tree_decision": false,
+      "root_joint": {
+        "player-0-worker-0": "RIGHT",
+        "player-0-worker-1": "UP"
+      },
+      "searched_joint": {
+        "player-0-worker-0": "RIGHT",
+        "player-0-worker-1": "UP"
+      },
+      "played_joint": {
+        "player-0-worker-0": "RIGHT",
+        "player-0-worker-1": "UP"
+      },
+      "teacher_joint": {
+        "player-0-worker-0": "RIGHT"
+      },
+      "search_candidates": 3,
+      "depth": 5,
+      "selected": 0,
+      "units": [
+        {
+          "uid": "player-0-worker-0",
+          "kind": "planter",
+          "root": 2,
+          "search": 2,
+          "played": 2,
+          "teacher": 2,
+          "sampling_p": 1.0,
+          "softmax_p": 0.9912952,
+          "eligible": true,
+          "created_first_tree": true
+        },
+        {
+          "uid": "player-0-worker-1",
+          "kind": "collector",
+          "root": 1,
+          "search": 1,
+          "played": 1,
+          "teacher": 0,
+          "sampling_p": 0.8143122,
+          "softmax_p": 0.6048343,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-recrtCenter-0",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.0005015,
+          "softmax_p": 0.0926111,
+          "eligible": false,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-recrtCenter-1",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.9998457,
+          "softmax_p": 0.9185792,
+          "eligible": false,
+          "created_first_tree": false
+        }
+      ]
+    },
+    {
+      "game": "1cc46f477941046042b7978a287d7dfe-1",
+      "seed": 195419132,
+      "seat": 0,
+      "teacher": "Artemis",
+      "step": 7,
+      "first_tree": 8,
+      "phase": "pre",
+      "actual_first_tree_decision": true,
+      "root_joint": {
+        "player-0-worker-1": "LEFT"
+      },
+      "searched_joint": {
+        "player-0-worker-1": "UP"
+      },
+      "played_joint": {
+        "player-0-worker-1": "UP"
+      },
+      "teacher_joint": {
+        "player-0-worker-1": "LEFT"
+      },
+      "search_candidates": 4,
+      "depth": 5,
+      "selected": 1,
+      "units": [
+        {
+          "uid": "player-0-worker-0",
+          "kind": "planter",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 1.0,
+          "softmax_p": 0.9940236,
+          "eligible": true,
+          "created_first_tree": true
+        },
+        {
+          "uid": "player-0-worker-1",
+          "kind": "collector",
+          "root": 4,
+          "search": 1,
+          "played": 1,
+          "teacher": 4,
+          "sampling_p": 0.9999988,
+          "softmax_p": 0.980287,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-recrtCenter-0",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.9896014,
+          "softmax_p": 0.7949347,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-recrtCenter-1",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 1.0,
+          "softmax_p": 0.9983309,
+          "eligible": true,
+          "created_first_tree": false
+        }
+      ]
+    },
+    {
+      "game": "1cc46f477941046042b7978a287d7dfe-1",
+      "seed": 195419132,
+      "seat": 0,
+      "teacher": "Artemis",
+      "step": 11,
+      "first_tree": 8,
+      "phase": "post",
+      "actual_first_tree_decision": false,
+      "root_joint": {
+        "player-0-worker-0": "RIGHT"
+      },
+      "searched_joint": {},
+      "played_joint": {},
+      "teacher_joint": {
+        "player-0-worker-0": "RIGHT"
+      },
+      "search_candidates": 3,
+      "depth": 5,
+      "selected": 1,
+      "units": [
+        {
+          "uid": "player-0-worker-0",
+          "kind": "planter",
+          "root": 2,
+          "search": 0,
+          "played": 0,
+          "teacher": 2,
+          "sampling_p": 0.9998727,
+          "softmax_p": 0.9325886,
+          "eligible": true,
+          "created_first_tree": true
+        },
+        {
+          "uid": "player-0-worker-1",
+          "kind": "collector",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.9999998,
+          "softmax_p": 0.9889131,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-recrtCenter-0",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 4.2e-06,
+          "softmax_p": 0.0236085,
+          "eligible": false,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-recrtCenter-1",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.9999999,
+          "softmax_p": 0.989345,
+          "eligible": false,
+          "created_first_tree": false
+        }
+      ]
+    },
+    {
+      "game": "1cc46f477941046042b7978a287d7dfe-1",
+      "seed": 195419132,
+      "seat": 0,
+      "teacher": "Artemis",
+      "step": 17,
+      "first_tree": 8,
+      "phase": "post",
+      "actual_first_tree_decision": false,
+      "root_joint": {
+        "player-0-worker-0": "UP",
+        "player-0-worker-3": "DOWN"
+      },
+      "searched_joint": {
+        "player-0-worker-0": "UP"
+      },
+      "played_joint": {
+        "player-0-worker-0": "UP"
+      },
+      "teacher_joint": {
+        "player-0-worker-0": "UP"
+      },
+      "search_candidates": 11,
+      "depth": 5,
+      "selected": 1,
+      "units": [
+        {
+          "uid": "player-0-worker-0",
+          "kind": "planter",
+          "root": 1,
+          "search": 1,
+          "played": 1,
+          "teacher": 1,
+          "sampling_p": 0.9999126,
+          "softmax_p": 0.8857867,
+          "eligible": true,
+          "created_first_tree": true
+        },
+        {
+          "uid": "player-0-worker-1",
+          "kind": "collector",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 1.0,
+          "softmax_p": 0.9992047,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-worker-2",
+          "kind": "collector",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 1.0,
+          "softmax_p": 0.998852,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-worker-3",
+          "kind": "collector",
+          "root": 3,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.496369,
+          "softmax_p": 0.4897088,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-recrtCenter-0",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.9123605,
+          "softmax_p": 0.5962827,
+          "eligible": false,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-recrtCenter-1",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.99634,
+          "softmax_p": 0.7894362,
+          "eligible": false,
+          "created_first_tree": false
+        }
+      ]
+    },
+    {
+      "game": "9107c596d070f54c60fc175bf616af09-1",
+      "seed": 490502654,
+      "seat": 1,
+      "teacher": "Apollo",
+      "step": 3,
+      "first_tree": 6,
+      "phase": "pre",
+      "actual_first_tree_decision": false,
+      "root_joint": {
+        "player-1-worker-0": "LEFT"
+      },
+      "searched_joint": {
+        "player-1-worker-0": "LEFT"
+      },
+      "played_joint": {
+        "player-1-worker-0": "LEFT"
+      },
+      "teacher_joint": {
+        "player-1-worker-0": "LEFT"
+      },
+      "search_candidates": 4,
+      "depth": 5,
+      "selected": 0,
+      "units": [
+        {
+          "uid": "player-1-worker-0",
+          "kind": "planter",
+          "root": 4,
+          "search": 4,
+          "played": 4,
+          "teacher": 4,
+          "sampling_p": 0.9128997,
+          "softmax_p": 0.6473517,
+          "eligible": true,
+          "created_first_tree": true
+        },
+        {
+          "uid": "player-1-worker-1",
+          "kind": "collector",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 1.0,
+          "softmax_p": 0.9992051,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-recrtCenter-0",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 3.9e-06,
+          "softmax_p": 0.0232041,
+          "eligible": false,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-recrtCenter-1",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 1.0,
+          "softmax_p": 0.9964111,
+          "eligible": false,
+          "created_first_tree": false
+        }
+      ]
+    },
+    {
+      "game": "9107c596d070f54c60fc175bf616af09-1",
+      "seed": 490502654,
+      "seat": 1,
+      "teacher": "Apollo",
+      "step": 5,
+      "first_tree": 6,
+      "phase": "pre",
+      "actual_first_tree_decision": true,
+      "root_joint": {
+        "player-1-worker-1": "LEFT"
+      },
+      "searched_joint": {
+        "player-1-worker-1": "LEFT"
+      },
+      "played_joint": {
+        "player-1-worker-1": "LEFT"
+      },
+      "teacher_joint": {
+        "player-1-worker-1": "LEFT"
+      },
+      "search_candidates": 6,
+      "depth": 5,
+      "selected": 0,
+      "units": [
+        {
+          "uid": "player-1-worker-0",
+          "kind": "planter",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.9974743,
+          "softmax_p": 0.8392918,
+          "eligible": true,
+          "created_first_tree": true
+        },
+        {
+          "uid": "player-1-worker-1",
+          "kind": "collector",
+          "root": 4,
+          "search": 4,
+          "played": 4,
+          "teacher": 4,
+          "sampling_p": 0.99273,
+          "softmax_p": 0.8073515,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-recrtCenter-0",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.0122808,
+          "softmax_p": 0.2108324,
+          "eligible": false,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-recrtCenter-1",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 1.0,
+          "softmax_p": 0.9999094,
+          "eligible": false,
+          "created_first_tree": false
+        }
+      ]
+    },
+    {
+      "game": "9107c596d070f54c60fc175bf616af09-1",
+      "seed": 490502654,
+      "seat": 1,
+      "teacher": "Apollo",
+      "step": 9,
+      "first_tree": 6,
+      "phase": "post",
+      "actual_first_tree_decision": false,
+      "root_joint": {},
+      "searched_joint": {
+        "player-1-worker-0": "DOWN",
+        "player-1-worker-1": "RIGHT"
+      },
+      "played_joint": {
+        "player-1-worker-0": "DOWN",
+        "player-1-worker-1": "RIGHT"
+      },
+      "teacher_joint": {
+        "player-1-worker-2": "DOWN"
+      },
+      "search_candidates": 10,
+      "depth": 5,
+      "selected": 9,
+      "units": [
+        {
+          "uid": "player-1-worker-0",
+          "kind": "planter",
+          "root": 0,
+          "search": 3,
+          "played": 3,
+          "teacher": 0,
+          "sampling_p": 0.9804456,
+          "softmax_p": 0.6935085,
+          "eligible": true,
+          "created_first_tree": true
+        },
+        {
+          "uid": "player-1-worker-1",
+          "kind": "collector",
+          "root": 0,
+          "search": 2,
+          "played": 2,
+          "teacher": 0,
+          "sampling_p": 0.9985005,
+          "softmax_p": 0.8201882,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-worker-2",
+          "kind": "collector",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 3,
+          "sampling_p": 0.9997316,
+          "softmax_p": 0.8870332,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-recrtCenter-0",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.9985821,
+          "softmax_p": 0.8740748,
+          "eligible": false,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-recrtCenter-1",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.9999999,
+          "softmax_p": 0.9892781,
+          "eligible": false,
+          "created_first_tree": false
+        }
+      ]
+    },
+    {
+      "game": "9107c596d070f54c60fc175bf616af09-1",
+      "seed": 490502654,
+      "seat": 1,
+      "teacher": "Apollo",
+      "step": 15,
+      "first_tree": 6,
+      "phase": "post",
+      "actual_first_tree_decision": false,
+      "root_joint": {
+        "player-1-worker-2": "LEFT",
+        "player-1-worker-1": "RIGHT",
+        "player-1-worker-3": "LEFT",
+        "player-1-worker-0": "RIGHT"
+      },
+      "searched_joint": {
+        "player-1-worker-2": "LEFT",
+        "player-1-worker-1": "RIGHT",
+        "player-1-worker-3": "LEFT",
+        "player-1-worker-0": "LEFT"
+      },
+      "played_joint": {
+        "player-1-worker-2": "LEFT",
+        "player-1-worker-1": "RIGHT",
+        "player-1-worker-3": "LEFT",
+        "player-1-worker-0": "LEFT"
+      },
+      "teacher_joint": {
+        "player-1-worker-0": "RIGHT",
+        "player-1-worker-3": "DOWN",
+        "player-1-worker-2": "LEFT"
+      },
+      "search_candidates": 14,
+      "depth": 5,
+      "selected": 10,
+      "units": [
+        {
+          "uid": "player-1-worker-0",
+          "kind": "planter",
+          "root": 2,
+          "search": 4,
+          "played": 4,
+          "teacher": 2,
+          "sampling_p": 0.6648147,
+          "softmax_p": 0.3507958,
+          "eligible": true,
+          "created_first_tree": true
+        },
+        {
+          "uid": "player-1-worker-1",
+          "kind": "collector",
+          "root": 2,
+          "search": 2,
+          "played": 2,
+          "teacher": 0,
+          "sampling_p": 0.983287,
+          "softmax_p": 0.7596916,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-worker-2",
+          "kind": "collector",
+          "root": 4,
+          "search": 4,
+          "played": 4,
+          "teacher": 4,
+          "sampling_p": 0.9987916,
+          "softmax_p": 0.8442965,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-worker-3",
+          "kind": "collector",
+          "root": 4,
+          "search": 4,
+          "played": 4,
+          "teacher": 3,
+          "sampling_p": 0.9728727,
+          "softmax_p": 0.7403821,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-recrtCenter-0",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.9855641,
+          "softmax_p": 0.7586632,
+          "eligible": false,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-recrtCenter-1",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.8747305,
+          "softmax_p": 0.5674859,
+          "eligible": false,
+          "created_first_tree": false
+        }
+      ]
+    },
+    {
+      "game": "631a646fd1b1194a50b31ae19e3009c4-1",
+      "seed": 570148676,
+      "seat": 1,
+      "teacher": "Apollo",
+      "step": 3,
+      "first_tree": 7,
+      "phase": "pre",
+      "actual_first_tree_decision": false,
+      "root_joint": {
+        "player-1-worker-0": "DOWN"
+      },
+      "searched_joint": {
+        "player-1-worker-0": "DOWN"
+      },
+      "played_joint": {
+        "player-1-worker-0": "DOWN"
+      },
+      "teacher_joint": {
+        "player-1-worker-0": "DOWN"
+      },
+      "search_candidates": 4,
+      "depth": 5,
+      "selected": 0,
+      "units": [
+        {
+          "uid": "player-1-worker-0",
+          "kind": "planter",
+          "root": 3,
+          "search": 3,
+          "played": 3,
+          "teacher": 3,
+          "sampling_p": 0.9463536,
+          "softmax_p": 0.6600887,
+          "eligible": true,
+          "created_first_tree": true
+        },
+        {
+          "uid": "player-1-worker-1",
+          "kind": "collector",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 1.0,
+          "softmax_p": 0.9983515,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-recrtCenter-0",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 3.5e-05,
+          "softmax_p": 0.0438777,
+          "eligible": false,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-recrtCenter-1",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.9999924,
+          "softmax_p": 0.9611335,
+          "eligible": false,
+          "created_first_tree": false
+        }
+      ]
+    },
+    {
+      "game": "631a646fd1b1194a50b31ae19e3009c4-1",
+      "seed": 570148676,
+      "seat": 1,
+      "teacher": "Apollo",
+      "step": 6,
+      "first_tree": 7,
+      "phase": "pre",
+      "actual_first_tree_decision": true,
+      "root_joint": {
+        "player-1-worker-1": "UP"
+      },
+      "searched_joint": {
+        "player-1-worker-1": "UP"
+      },
+      "played_joint": {
+        "player-1-worker-1": "UP",
+        "player-1-worker-0": "UP"
+      },
+      "teacher_joint": {
+        "player-1-worker-1": "UP"
+      },
+      "search_candidates": 4,
+      "depth": 5,
+      "selected": 0,
+      "units": [
+        {
+          "uid": "player-1-worker-0",
+          "kind": "planter",
+          "root": 0,
+          "search": 0,
+          "played": 1,
+          "teacher": 0,
+          "sampling_p": 0.9839602,
+          "softmax_p": 0.771521,
+          "eligible": true,
+          "created_first_tree": true
+        },
+        {
+          "uid": "player-1-worker-1",
+          "kind": "collector",
+          "root": 1,
+          "search": 1,
+          "played": 1,
+          "teacher": 1,
+          "sampling_p": 0.9999574,
+          "softmax_p": 0.9521067,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-recrtCenter-0",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.0003056,
+          "softmax_p": 0.0806471,
+          "eligible": false,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-recrtCenter-1",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 1.0,
+          "softmax_p": 0.9997098,
+          "eligible": false,
+          "created_first_tree": false
+        }
+      ]
+    },
+    {
+      "game": "631a646fd1b1194a50b31ae19e3009c4-1",
+      "seed": 570148676,
+      "seat": 1,
+      "teacher": "Apollo",
+      "step": 10,
+      "first_tree": 7,
+      "phase": "post",
+      "actual_first_tree_decision": false,
+      "root_joint": {
+        "player-1-worker-2": "UP",
+        "player-1-worker-0": "LEFT"
+      },
+      "searched_joint": {
+        "player-1-worker-2": "UP",
+        "player-1-worker-0": "DOWN"
+      },
+      "played_joint": {
+        "player-1-worker-2": "UP",
+        "player-1-worker-0": "DOWN"
+      },
+      "teacher_joint": {
+        "player-1-worker-0": "DOWN",
+        "player-1-worker-2": "UP"
+      },
+      "search_candidates": 9,
+      "depth": 5,
+      "selected": 4,
+      "units": [
+        {
+          "uid": "player-1-worker-0",
+          "kind": "planter",
+          "root": 4,
+          "search": 3,
+          "played": 3,
+          "teacher": 3,
+          "sampling_p": 0.9996399,
+          "softmax_p": 0.8606246,
+          "eligible": true,
+          "created_first_tree": true
+        },
+        {
+          "uid": "player-1-worker-1",
+          "kind": "collector",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 1.0,
+          "softmax_p": 0.995383,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-worker-2",
+          "kind": "collector",
+          "root": 1,
+          "search": 1,
+          "played": 1,
+          "teacher": 1,
+          "sampling_p": 0.9999589,
+          "softmax_p": 0.9475333,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-recrtCenter-0",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.1502744,
+          "softmax_p": 0.3396484,
+          "eligible": false,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-recrtCenter-1",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.98957,
+          "softmax_p": 0.7385373,
+          "eligible": false,
+          "created_first_tree": false
+        }
+      ]
+    },
+    {
+      "game": "631a646fd1b1194a50b31ae19e3009c4-1",
+      "seed": 570148676,
+      "seat": 1,
+      "teacher": "Apollo",
+      "step": 16,
+      "first_tree": 7,
+      "phase": "post",
+      "actual_first_tree_decision": false,
+      "root_joint": {
+        "player-1-worker-2": "LEFT",
+        "player-1-worker-3": "LEFT",
+        "player-1-worker-4": "UP",
+        "player-1-worker-0": "LEFT",
+        "player-1-worker-1": "RIGHT"
+      },
+      "searched_joint": {
+        "player-1-worker-2": "LEFT",
+        "player-1-worker-3": "LEFT",
+        "player-1-worker-4": "UP",
+        "player-1-worker-1": "RIGHT"
+      },
+      "played_joint": {
+        "player-1-worker-2": "LEFT",
+        "player-1-worker-3": "LEFT",
+        "player-1-worker-4": "UP",
+        "player-1-worker-1": "RIGHT"
+      },
+      "teacher_joint": {
+        "player-1-worker-4": "LEFT",
+        "player-1-worker-3": "LEFT",
+        "player-1-worker-2": "LEFT",
+        "player-1-worker-1": "RIGHT"
+      },
+      "search_candidates": 14,
+      "depth": 5,
+      "selected": 9,
+      "units": [
+        {
+          "uid": "player-1-worker-0",
+          "kind": "planter",
+          "root": 4,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.1223164,
+          "softmax_p": 0.2459227,
+          "eligible": true,
+          "created_first_tree": true
+        },
+        {
+          "uid": "player-1-worker-1",
+          "kind": "collector",
+          "root": 2,
+          "search": 2,
+          "played": 2,
+          "teacher": 2,
+          "sampling_p": 0.1135996,
+          "softmax_p": 0.3500037,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-worker-2",
+          "kind": "collector",
+          "root": 4,
+          "search": 4,
+          "played": 4,
+          "teacher": 4,
+          "sampling_p": 1.0,
+          "softmax_p": 0.9987534,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-worker-3",
+          "kind": "collector",
+          "root": 4,
+          "search": 4,
+          "played": 4,
+          "teacher": 4,
+          "sampling_p": 0.9999604,
+          "softmax_p": 0.9474904,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-worker-4",
+          "kind": "planter",
+          "root": 1,
+          "search": 1,
+          "played": 1,
+          "teacher": 4,
+          "sampling_p": 0.8238196,
+          "softmax_p": 0.5695962,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-recrtCenter-0",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.4169844,
+          "softmax_p": 0.4367878,
+          "eligible": false,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-recrtCenter-1",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.6113178,
+          "softmax_p": 0.5331725,
+          "eligible": false,
+          "created_first_tree": false
+        }
+      ]
+    },
+    {
+      "game": "6279308face2cdcb2ac4807dcaedc9c4-1",
+      "seed": 129005236,
+      "seat": 0,
+      "teacher": "Apollo",
+      "step": 7,
+      "first_tree": 14,
+      "phase": "pre",
+      "actual_first_tree_decision": false,
+      "root_joint": {
+        "player-0-worker-0": "DOWN",
+        "player-0-worker-2": "LEFT"
+      },
+      "searched_joint": {
+        "player-0-worker-0": "LEFT",
+        "player-0-worker-2": "LEFT"
+      },
+      "played_joint": {
+        "player-0-worker-0": "LEFT",
+        "player-0-worker-2": "LEFT"
+      },
+      "teacher_joint": {
+        "player-0-worker-0": "DOWN",
+        "player-0-worker-2": "LEFT"
+      },
+      "search_candidates": 4,
+      "depth": 5,
+      "selected": 2,
+      "units": [
+        {
+          "uid": "player-0-worker-0",
+          "kind": "planter",
+          "root": 3,
+          "search": 4,
+          "played": 4,
+          "teacher": 3,
+          "sampling_p": 0.9983309,
+          "softmax_p": 0.8533067,
+          "eligible": true,
+          "created_first_tree": true
+        },
+        {
+          "uid": "player-0-worker-1",
+          "kind": "collector",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 1.0,
+          "softmax_p": 0.9999787,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-worker-2",
+          "kind": "collector",
+          "root": 4,
+          "search": 4,
+          "played": 4,
+          "teacher": 4,
+          "sampling_p": 0.995906,
+          "softmax_p": 0.8382573,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-recrtCenter-0",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.0280716,
+          "softmax_p": 0.2466762,
+          "eligible": false,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-recrtCenter-1",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.9971103,
+          "softmax_p": 0.8239518,
+          "eligible": false,
+          "created_first_tree": false
+        }
+      ]
+    },
+    {
+      "game": "6279308face2cdcb2ac4807dcaedc9c4-1",
+      "seed": 129005236,
+      "seat": 0,
+      "teacher": "Apollo",
+      "step": 13,
+      "first_tree": 14,
+      "phase": "pre",
+      "actual_first_tree_decision": true,
+      "root_joint": {
+        "player-0-worker-4": "DOWN",
+        "player-0-worker-3": "LEFT"
+      },
+      "searched_joint": {
+        "player-0-worker-4": "DOWN",
+        "player-0-worker-3": "DOWN"
+      },
+      "played_joint": {
+        "player-0-worker-4": "DOWN",
+        "player-0-worker-3": "DOWN"
+      },
+      "teacher_joint": {
+        "player-0-worker-4": "DOWN",
+        "player-0-worker-3": "LEFT"
+      },
+      "search_candidates": 14,
+      "depth": 5,
+      "selected": 1,
+      "units": [
+        {
+          "uid": "player-0-worker-0",
+          "kind": "planter",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.996038,
+          "softmax_p": 0.8121549,
+          "eligible": true,
+          "created_first_tree": true
+        },
+        {
+          "uid": "player-0-worker-1",
+          "kind": "collector",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.892514,
+          "softmax_p": 0.5507503,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-worker-2",
+          "kind": "collector",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 1.0,
+          "softmax_p": 0.9993949,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-worker-3",
+          "kind": "collector",
+          "root": 4,
+          "search": 3,
+          "played": 3,
+          "teacher": 4,
+          "sampling_p": 0.8717622,
+          "softmax_p": 0.4884156,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-worker-4",
+          "kind": "planter",
+          "root": 3,
+          "search": 3,
+          "played": 3,
+          "teacher": 3,
+          "sampling_p": 0.9993777,
+          "softmax_p": 0.8987116,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-recrtCenter-0",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.999999,
+          "softmax_p": 0.9757599,
+          "eligible": false,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-recrtCenter-1",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.9998646,
+          "softmax_p": 0.9350956,
+          "eligible": false,
+          "created_first_tree": false
+        }
+      ]
+    },
+    {
+      "game": "6279308face2cdcb2ac4807dcaedc9c4-1",
+      "seed": 129005236,
+      "seat": 0,
+      "teacher": "Apollo",
+      "step": 17,
+      "first_tree": 14,
+      "phase": "post",
+      "actual_first_tree_decision": false,
+      "root_joint": {
+        "player-0-worker-0": "RIGHT",
+        "player-0-worker-2": "UP"
+      },
+      "searched_joint": {
+        "player-0-worker-0": "RIGHT",
+        "player-0-worker-2": "DOWN",
+        "player-0-worker-4": "DOWN"
+      },
+      "played_joint": {
+        "player-0-worker-0": "RIGHT",
+        "player-0-worker-2": "DOWN",
+        "player-0-worker-4": "DOWN"
+      },
+      "teacher_joint": {
+        "player-0-recrtCenter-1": "RECCOLLECTOR",
+        "player-0-worker-0": "RIGHT",
+        "player-0-worker-1": "UP",
+        "player-0-worker-2": "LEFT"
+      },
+      "search_candidates": 13,
+      "depth": 5,
+      "selected": 12,
+      "units": [
+        {
+          "uid": "player-0-worker-0",
+          "kind": "planter",
+          "root": 2,
+          "search": 2,
+          "played": 2,
+          "teacher": 2,
+          "sampling_p": 0.9998382,
+          "softmax_p": 0.9250364,
+          "eligible": true,
+          "created_first_tree": true
+        },
+        {
+          "uid": "player-0-worker-1",
+          "kind": "collector",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 1,
+          "sampling_p": 0.9999909,
+          "softmax_p": 0.9600465,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-worker-2",
+          "kind": "collector",
+          "root": 1,
+          "search": 3,
+          "played": 3,
+          "teacher": 4,
+          "sampling_p": 0.9929689,
+          "softmax_p": 0.6937394,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-worker-3",
+          "kind": "collector",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 1.0,
+          "softmax_p": 0.9947161,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-worker-4",
+          "kind": "planter",
+          "root": 0,
+          "search": 3,
+          "played": 3,
+          "teacher": 0,
+          "sampling_p": 0.999933,
+          "softmax_p": 0.9163267,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-recrtCenter-0",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 1.0,
+          "softmax_p": 0.9929497,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-recrtCenter-1",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 1,
+          "sampling_p": 0.9997005,
+          "softmax_p": 0.9060628,
+          "eligible": true,
+          "created_first_tree": false
+        }
+      ]
+    },
+    {
+      "game": "6279308face2cdcb2ac4807dcaedc9c4-1",
+      "seed": 129005236,
+      "seat": 0,
+      "teacher": "Apollo",
+      "step": 23,
+      "first_tree": 14,
+      "phase": "post",
+      "actual_first_tree_decision": false,
+      "root_joint": {
+        "player-0-worker-1": "LEFT",
+        "player-0-worker-2": "RIGHT",
+        "player-0-worker-7": "LEFT",
+        "player-0-worker-8": "DOWN",
+        "player-0-worker-4": "LEFT",
+        "player-0-worker-5": "UP",
+        "player-0-worker-6": "DOWN",
+        "player-0-worker-0": "DOWN"
+      },
+      "searched_joint": {
+        "player-0-worker-1": "LEFT",
+        "player-0-worker-2": "RIGHT",
+        "player-0-worker-7": "LEFT",
+        "player-0-worker-8": "DOWN",
+        "player-0-worker-4": "LEFT",
+        "player-0-worker-5": "UP",
+        "player-0-worker-0": "RIGHT",
+        "player-0-worker-6": "RIGHT"
+      },
+      "played_joint": {
+        "player-0-worker-1": "LEFT",
+        "player-0-worker-2": "RIGHT",
+        "player-0-worker-7": "LEFT",
+        "player-0-worker-8": "DOWN",
+        "player-0-worker-4": "LEFT",
+        "player-0-worker-5": "UP",
+        "player-0-worker-0": "RIGHT",
+        "player-0-worker-6": "RIGHT"
+      },
+      "teacher_joint": {
+        "player-0-worker-7": "LEFT",
+        "player-0-worker-0": "RIGHT",
+        "player-0-worker-4": "UP",
+        "player-0-worker-2": "RIGHT",
+        "player-0-worker-1": "LEFT",
+        "player-0-worker-5": "UP",
+        "player-0-worker-8": "DOWN",
+        "player-0-worker-6": "DOWN"
+      },
+      "search_candidates": 14,
+      "depth": 5,
+      "selected": 9,
+      "units": [
+        {
+          "uid": "player-0-worker-0",
+          "kind": "planter",
+          "root": 3,
+          "search": 2,
+          "played": 2,
+          "teacher": 2,
+          "sampling_p": 0.3794903,
+          "softmax_p": 0.3617412,
+          "eligible": true,
+          "created_first_tree": true
+        },
+        {
+          "uid": "player-0-worker-1",
+          "kind": "collector",
+          "root": 4,
+          "search": 4,
+          "played": 4,
+          "teacher": 4,
+          "sampling_p": 1.0,
+          "softmax_p": 0.9980146,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-worker-2",
+          "kind": "collector",
+          "root": 2,
+          "search": 2,
+          "played": 2,
+          "teacher": 2,
+          "sampling_p": 0.999999,
+          "softmax_p": 0.9843205,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-worker-3",
+          "kind": "collector",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.9999992,
+          "softmax_p": 0.967398,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-worker-4",
+          "kind": "planter",
+          "root": 4,
+          "search": 4,
+          "played": 4,
+          "teacher": 1,
+          "sampling_p": 0.9919522,
+          "softmax_p": 0.6925386,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-worker-5",
+          "kind": "collector",
+          "root": 1,
+          "search": 1,
+          "played": 1,
+          "teacher": 1,
+          "sampling_p": 0.8880892,
+          "softmax_p": 0.589208,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-worker-6",
+          "kind": "collector",
+          "root": 3,
+          "search": 2,
+          "played": 2,
+          "teacher": 3,
+          "sampling_p": 0.6931391,
+          "softmax_p": 0.3718929,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-worker-7",
+          "kind": "planter",
+          "root": 4,
+          "search": 4,
+          "played": 4,
+          "teacher": 4,
+          "sampling_p": 0.9997678,
+          "softmax_p": 0.9102064,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-worker-8",
+          "kind": "collector",
+          "root": 3,
+          "search": 3,
+          "played": 3,
+          "teacher": 3,
+          "sampling_p": 0.9946157,
+          "softmax_p": 0.7241609,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-recrtCenter-0",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.9999993,
+          "softmax_p": 0.9801534,
+          "eligible": false,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-recrtCenter-1",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.9999909,
+          "softmax_p": 0.9588937,
+          "eligible": false,
+          "created_first_tree": false
+        }
+      ]
+    },
+    {
+      "game": "53a975fac52b167a27aeb1eaa4f219a5-1",
+      "seed": 158222097,
+      "seat": 1,
+      "teacher": "Apollo",
+      "step": 2,
+      "first_tree": 5,
+      "phase": "pre",
+      "actual_first_tree_decision": false,
+      "root_joint": {
+        "player-1-worker-0": "LEFT"
+      },
+      "searched_joint": {
+        "player-1-worker-0": "LEFT"
+      },
+      "played_joint": {
+        "player-1-worker-0": "LEFT"
+      },
+      "teacher_joint": {
+        "player-1-worker-0": "LEFT"
+      },
+      "search_candidates": 3,
+      "depth": 5,
+      "selected": 0,
+      "units": [
+        {
+          "uid": "player-1-worker-0",
+          "kind": "planter",
+          "root": 4,
+          "search": 4,
+          "played": 4,
+          "teacher": 4,
+          "sampling_p": 1.0,
+          "softmax_p": 0.9926894,
+          "eligible": true,
+          "created_first_tree": true
+        },
+        {
+          "uid": "player-1-worker-1",
+          "kind": "collector",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.9999999,
+          "softmax_p": 0.9931036,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-recrtCenter-0",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 5.33e-05,
+          "softmax_p": 0.0494773,
+          "eligible": false,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-recrtCenter-1",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.9999088,
+          "softmax_p": 0.9356589,
+          "eligible": false,
+          "created_first_tree": false
+        }
+      ]
+    },
+    {
+      "game": "53a975fac52b167a27aeb1eaa4f219a5-1",
+      "seed": 158222097,
+      "seat": 1,
+      "teacher": "Apollo",
+      "step": 4,
+      "first_tree": 5,
+      "phase": "pre",
+      "actual_first_tree_decision": true,
+      "root_joint": {},
+      "searched_joint": {
+        "player-1-worker-1": "LEFT"
+      },
+      "played_joint": {
+        "player-1-worker-1": "LEFT"
+      },
+      "teacher_joint": {},
+      "search_candidates": 5,
+      "depth": 5,
+      "selected": 1,
+      "units": [
+        {
+          "uid": "player-1-worker-0",
+          "kind": "planter",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 1.0,
+          "softmax_p": 0.9922105,
+          "eligible": true,
+          "created_first_tree": true
+        },
+        {
+          "uid": "player-1-worker-1",
+          "kind": "collector",
+          "root": 0,
+          "search": 4,
+          "played": 4,
+          "teacher": 0,
+          "sampling_p": 0.9999688,
+          "softmax_p": 0.9323364,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-recrtCenter-0",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.703877,
+          "softmax_p": 0.5638334,
+          "eligible": false,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-recrtCenter-1",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 1.0,
+          "softmax_p": 0.9999049,
+          "eligible": false,
+          "created_first_tree": false
+        }
+      ]
+    },
+    {
+      "game": "53a975fac52b167a27aeb1eaa4f219a5-1",
+      "seed": 158222097,
+      "seat": 1,
+      "teacher": "Apollo",
+      "step": 8,
+      "first_tree": 5,
+      "phase": "post",
+      "actual_first_tree_decision": false,
+      "root_joint": {
+        "player-1-worker-0": "RIGHT",
+        "player-1-worker-1": "LEFT"
+      },
+      "searched_joint": {
+        "player-1-worker-1": "LEFT",
+        "player-1-worker-0": "DOWN"
+      },
+      "played_joint": {
+        "player-1-worker-1": "LEFT",
+        "player-1-worker-0": "DOWN"
+      },
+      "teacher_joint": {
+        "player-1-worker-0": "RIGHT"
+      },
+      "search_candidates": 8,
+      "depth": 5,
+      "selected": 1,
+      "units": [
+        {
+          "uid": "player-1-worker-0",
+          "kind": "planter",
+          "root": 2,
+          "search": 3,
+          "played": 3,
+          "teacher": 2,
+          "sampling_p": 0.838937,
+          "softmax_p": 0.471788,
+          "eligible": true,
+          "created_first_tree": true
+        },
+        {
+          "uid": "player-1-worker-1",
+          "kind": "collector",
+          "root": 4,
+          "search": 4,
+          "played": 4,
+          "teacher": 0,
+          "sampling_p": 0.5633106,
+          "softmax_p": 0.51863,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-recrtCenter-0",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 1.1e-06,
+          "softmax_p": 0.0160434,
+          "eligible": false,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-recrtCenter-1",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.9999964,
+          "softmax_p": 0.9755691,
+          "eligible": false,
+          "created_first_tree": false
+        }
+      ]
+    },
+    {
+      "game": "53a975fac52b167a27aeb1eaa4f219a5-1",
+      "seed": 158222097,
+      "seat": 1,
+      "teacher": "Apollo",
+      "step": 14,
+      "first_tree": 5,
+      "phase": "post",
+      "actual_first_tree_decision": false,
+      "root_joint": {
+        "player-1-worker-0": "DOWN",
+        "player-1-worker-2": "RIGHT"
+      },
+      "searched_joint": {
+        "player-1-worker-0": "DOWN"
+      },
+      "played_joint": {
+        "player-1-worker-0": "DOWN",
+        "player-1-worker-2": "LEFT"
+      },
+      "teacher_joint": {
+        "player-1-worker-0": "DOWN",
+        "player-1-worker-2": "LEFT"
+      },
+      "search_candidates": 13,
+      "depth": 5,
+      "selected": 5,
+      "units": [
+        {
+          "uid": "player-1-worker-0",
+          "kind": "planter",
+          "root": 3,
+          "search": 3,
+          "played": 3,
+          "teacher": 3,
+          "sampling_p": 0.9999292,
+          "softmax_p": 0.9152754,
+          "eligible": true,
+          "created_first_tree": true
+        },
+        {
+          "uid": "player-1-worker-1",
+          "kind": "collector",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.9930452,
+          "softmax_p": 0.815496,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-worker-2",
+          "kind": "collector",
+          "root": 2,
+          "search": 0,
+          "played": 4,
+          "teacher": 4,
+          "sampling_p": 0.7671445,
+          "softmax_p": 0.5181425,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-worker-3",
+          "kind": "collector",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.9876848,
+          "softmax_p": 0.7670199,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-recrtCenter-0",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.0071875,
+          "softmax_p": 0.1775849,
+          "eligible": false,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-1-recrtCenter-1",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.9998302,
+          "softmax_p": 0.9199337,
+          "eligible": false,
+          "created_first_tree": false
+        }
+      ]
+    },
+    {
+      "game": "8cfa0cb23550156f8a8759f379c9f037-1",
+      "seed": 1162399049,
+      "seat": 0,
+      "teacher": "Apollo",
+      "step": 2,
+      "first_tree": 5,
+      "phase": "pre",
+      "actual_first_tree_decision": false,
+      "root_joint": {
+        "player-0-worker-0": "DOWN"
+      },
+      "searched_joint": {
+        "player-0-worker-0": "DOWN"
+      },
+      "played_joint": {
+        "player-0-worker-0": "DOWN"
+      },
+      "teacher_joint": {
+        "player-0-worker-0": "DOWN"
+      },
+      "search_candidates": 3,
+      "depth": 5,
+      "selected": 0,
+      "units": [
+        {
+          "uid": "player-0-worker-0",
+          "kind": "planter",
+          "root": 3,
+          "search": 3,
+          "played": 3,
+          "teacher": 3,
+          "sampling_p": 1.0,
+          "softmax_p": 0.9902419,
+          "eligible": true,
+          "created_first_tree": true
+        },
+        {
+          "uid": "player-0-worker-1",
+          "kind": "collector",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 1.0,
+          "softmax_p": 0.9971143,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-recrtCenter-0",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.0026363,
+          "softmax_p": 0.1434787,
+          "eligible": false,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-recrtCenter-1",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.9985409,
+          "softmax_p": 0.8447405,
+          "eligible": false,
+          "created_first_tree": false
+        }
+      ]
+    },
+    {
+      "game": "8cfa0cb23550156f8a8759f379c9f037-1",
+      "seed": 1162399049,
+      "seat": 0,
+      "teacher": "Apollo",
+      "step": 4,
+      "first_tree": 5,
+      "phase": "pre",
+      "actual_first_tree_decision": true,
+      "root_joint": {},
+      "searched_joint": {},
+      "played_joint": {},
+      "teacher_joint": {},
+      "search_candidates": 3,
+      "depth": 5,
+      "selected": 0,
+      "units": [
+        {
+          "uid": "player-0-worker-0",
+          "kind": "planter",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.9999995,
+          "softmax_p": 0.9794285,
+          "eligible": true,
+          "created_first_tree": true
+        },
+        {
+          "uid": "player-0-worker-1",
+          "kind": "collector",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.9999785,
+          "softmax_p": 0.9608685,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-recrtCenter-0",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.7904356,
+          "softmax_p": 0.5965303,
+          "eligible": false,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-recrtCenter-1",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 1.0,
+          "softmax_p": 0.9996589,
+          "eligible": false,
+          "created_first_tree": false
+        }
+      ]
+    },
+    {
+      "game": "8cfa0cb23550156f8a8759f379c9f037-1",
+      "seed": 1162399049,
+      "seat": 0,
+      "teacher": "Apollo",
+      "step": 8,
+      "first_tree": 5,
+      "phase": "post",
+      "actual_first_tree_decision": false,
+      "root_joint": {
+        "player-0-worker-0": "DOWN"
+      },
+      "searched_joint": {
+        "player-0-worker-0": "DOWN"
+      },
+      "played_joint": {
+        "player-0-worker-0": "DOWN"
+      },
+      "teacher_joint": {
+        "player-0-worker-0": "DOWN"
+      },
+      "search_candidates": 3,
+      "depth": 5,
+      "selected": 0,
+      "units": [
+        {
+          "uid": "player-0-worker-0",
+          "kind": "planter",
+          "root": 3,
+          "search": 3,
+          "played": 3,
+          "teacher": 3,
+          "sampling_p": 1.0,
+          "softmax_p": 0.9906436,
+          "eligible": true,
+          "created_first_tree": true
+        },
+        {
+          "uid": "player-0-worker-1",
+          "kind": "collector",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 1.0,
+          "softmax_p": 0.9987735,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-recrtCenter-0",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 1.3e-06,
+          "softmax_p": 0.0167683,
+          "eligible": false,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-recrtCenter-1",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.9999995,
+          "softmax_p": 0.9848024,
+          "eligible": false,
+          "created_first_tree": false
+        }
+      ]
+    },
+    {
+      "game": "8cfa0cb23550156f8a8759f379c9f037-1",
+      "seed": 1162399049,
+      "seat": 0,
+      "teacher": "Apollo",
+      "step": 14,
+      "first_tree": 5,
+      "phase": "post",
+      "actual_first_tree_decision": false,
+      "root_joint": {
+        "player-0-worker-1": "LEFT",
+        "player-0-worker-0": "DOWN"
+      },
+      "searched_joint": {
+        "player-0-worker-1": "LEFT",
+        "player-0-worker-0": "DOWN"
+      },
+      "played_joint": {
+        "player-0-worker-1": "LEFT",
+        "player-0-worker-0": "DOWN"
+      },
+      "teacher_joint": {
+        "player-0-worker-0": "DOWN",
+        "player-0-worker-1": "LEFT"
+      },
+      "search_candidates": 4,
+      "depth": 5,
+      "selected": 0,
+      "units": [
+        {
+          "uid": "player-0-worker-0",
+          "kind": "planter",
+          "root": 3,
+          "search": 3,
+          "played": 3,
+          "teacher": 3,
+          "sampling_p": 0.9999752,
+          "softmax_p": 0.9451437,
+          "eligible": true,
+          "created_first_tree": true
+        },
+        {
+          "uid": "player-0-worker-1",
+          "kind": "collector",
+          "root": 4,
+          "search": 4,
+          "played": 4,
+          "teacher": 4,
+          "sampling_p": 1.0,
+          "softmax_p": 0.9960731,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-worker-2",
+          "kind": "collector",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 1.0,
+          "softmax_p": 0.9978684,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-recrtCenter-0",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.9997864,
+          "softmax_p": 0.9026312,
+          "eligible": false,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-recrtCenter-1",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.7648376,
+          "softmax_p": 0.5527807,
+          "eligible": false,
+          "created_first_tree": false
+        }
+      ]
+    },
+    {
+      "game": "e2c0eb629674da05c07f4f47f906d5dc-1",
+      "seed": 784661155,
+      "seat": 0,
+      "teacher": "Apollo",
+      "step": 6,
+      "first_tree": 12,
+      "phase": "pre",
+      "actual_first_tree_decision": false,
+      "root_joint": {
+        "player-0-worker-1": "DOWN",
+        "player-0-worker-0": "DOWN"
+      },
+      "searched_joint": {
+        "player-0-worker-1": "DOWN",
+        "player-0-worker-0": "DOWN"
+      },
+      "played_joint": {
+        "player-0-worker-1": "DOWN",
+        "player-0-worker-0": "DOWN"
+      },
+      "teacher_joint": {
+        "player-0-worker-0": "UP",
+        "player-0-worker-1": "DOWN"
+      },
+      "search_candidates": 6,
+      "depth": 5,
+      "selected": 0,
+      "units": [
+        {
+          "uid": "player-0-worker-0",
+          "kind": "planter",
+          "root": 3,
+          "search": 3,
+          "played": 3,
+          "teacher": 1,
+          "sampling_p": 0.4863134,
+          "softmax_p": 0.3784999,
+          "eligible": true,
+          "created_first_tree": true
+        },
+        {
+          "uid": "player-0-worker-1",
+          "kind": "collector",
+          "root": 3,
+          "search": 3,
+          "played": 3,
+          "teacher": 3,
+          "sampling_p": 0.9986878,
+          "softmax_p": 0.8765255,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-recrtCenter-0",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.0,
+          "softmax_p": 0.0045576,
+          "eligible": false,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-recrtCenter-1",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 1.0,
+          "softmax_p": 0.999182,
+          "eligible": false,
+          "created_first_tree": false
+        }
+      ]
+    },
+    {
+      "game": "e2c0eb629674da05c07f4f47f906d5dc-1",
+      "seed": 784661155,
+      "seat": 0,
+      "teacher": "Apollo",
+      "step": 11,
+      "first_tree": 12,
+      "phase": "pre",
+      "actual_first_tree_decision": true,
+      "root_joint": {
+        "player-0-worker-1": "LEFT"
+      },
+      "searched_joint": {
+        "player-0-worker-2": "UP"
+      },
+      "played_joint": {
+        "player-0-worker-2": "UP"
+      },
+      "teacher_joint": {
+        "player-0-worker-1": "LEFT"
+      },
+      "search_candidates": 5,
+      "depth": 5,
+      "selected": 4,
+      "units": [
+        {
+          "uid": "player-0-worker-0",
+          "kind": "planter",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 1.0,
+          "softmax_p": 0.999247,
+          "eligible": true,
+          "created_first_tree": true
+        },
+        {
+          "uid": "player-0-worker-1",
+          "kind": "collector",
+          "root": 4,
+          "search": 0,
+          "played": 0,
+          "teacher": 4,
+          "sampling_p": 0.6304731,
+          "softmax_p": 0.5394713,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-worker-2",
+          "kind": "collector",
+          "root": 0,
+          "search": 1,
+          "played": 1,
+          "teacher": 0,
+          "sampling_p": 0.999967,
+          "softmax_p": 0.9561413,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-recrtCenter-0",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.9998603,
+          "softmax_p": 0.922191,
+          "eligible": false,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-recrtCenter-1",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 1.0,
+          "softmax_p": 0.995248,
+          "eligible": false,
+          "created_first_tree": false
+        }
+      ]
+    },
+    {
+      "game": "e2c0eb629674da05c07f4f47f906d5dc-1",
+      "seed": 784661155,
+      "seat": 0,
+      "teacher": "Apollo",
+      "step": 15,
+      "first_tree": 12,
+      "phase": "post",
+      "actual_first_tree_decision": false,
+      "root_joint": {
+        "player-0-worker-3": "RIGHT",
+        "player-0-worker-4": "UP",
+        "player-0-worker-0": "UP"
+      },
+      "searched_joint": {
+        "player-0-worker-3": "RIGHT",
+        "player-0-worker-4": "UP",
+        "player-0-worker-0": "UP"
+      },
+      "played_joint": {
+        "player-0-worker-3": "RIGHT",
+        "player-0-worker-4": "UP",
+        "player-0-worker-0": "UP"
+      },
+      "teacher_joint": {
+        "player-0-worker-4": "UP",
+        "player-0-worker-0": "UP",
+        "player-0-worker-3": "RIGHT"
+      },
+      "search_candidates": 10,
+      "depth": 5,
+      "selected": 0,
+      "units": [
+        {
+          "uid": "player-0-worker-0",
+          "kind": "planter",
+          "root": 1,
+          "search": 1,
+          "played": 1,
+          "teacher": 1,
+          "sampling_p": 0.5053316,
+          "softmax_p": 0.4072376,
+          "eligible": true,
+          "created_first_tree": true
+        },
+        {
+          "uid": "player-0-worker-1",
+          "kind": "collector",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 1.0,
+          "softmax_p": 0.9964498,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-worker-2",
+          "kind": "collector",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 1.0,
+          "softmax_p": 0.9968085,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-worker-3",
+          "kind": "collector",
+          "root": 2,
+          "search": 2,
+          "played": 2,
+          "teacher": 2,
+          "sampling_p": 0.9999999,
+          "softmax_p": 0.991914,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-worker-4",
+          "kind": "planter",
+          "root": 1,
+          "search": 1,
+          "played": 1,
+          "teacher": 1,
+          "sampling_p": 0.9444495,
+          "softmax_p": 0.6865517,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-recrtCenter-0",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.9700028,
+          "softmax_p": 0.7360713,
+          "eligible": false,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-recrtCenter-1",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.2721751,
+          "softmax_p": 0.379363,
+          "eligible": false,
+          "created_first_tree": false
+        }
+      ]
+    },
+    {
+      "game": "e2c0eb629674da05c07f4f47f906d5dc-1",
+      "seed": 784661155,
+      "seat": 0,
+      "teacher": "Apollo",
+      "step": 21,
+      "first_tree": 12,
+      "phase": "post",
+      "actual_first_tree_decision": false,
+      "root_joint": {
+        "player-0-worker-4": "DOWN",
+        "player-0-worker-1": "DOWN",
+        "player-0-worker-0": "RIGHT",
+        "player-0-worker-2": "LEFT",
+        "player-0-worker-5": "RIGHT"
+      },
+      "searched_joint": {
+        "player-0-worker-4": "DOWN",
+        "player-0-worker-1": "DOWN",
+        "player-0-worker-0": "RIGHT",
+        "player-0-worker-2": "LEFT",
+        "player-0-worker-5": "UP"
+      },
+      "played_joint": {
+        "player-0-worker-4": "DOWN",
+        "player-0-worker-1": "DOWN",
+        "player-0-worker-0": "RIGHT",
+        "player-0-worker-2": "LEFT",
+        "player-0-worker-5": "UP"
+      },
+      "teacher_joint": {
+        "player-0-worker-0": "RIGHT",
+        "player-0-worker-4": "DOWN",
+        "player-0-worker-5": "RIGHT",
+        "player-0-worker-1": "DOWN",
+        "player-0-worker-2": "LEFT"
+      },
+      "search_candidates": 12,
+      "depth": 5,
+      "selected": 1,
+      "units": [
+        {
+          "uid": "player-0-worker-0",
+          "kind": "planter",
+          "root": 2,
+          "search": 2,
+          "played": 2,
+          "teacher": 2,
+          "sampling_p": 0.9992951,
+          "softmax_p": 0.8412291,
+          "eligible": true,
+          "created_first_tree": true
+        },
+        {
+          "uid": "player-0-worker-1",
+          "kind": "collector",
+          "root": 3,
+          "search": 3,
+          "played": 3,
+          "teacher": 3,
+          "sampling_p": 0.9999937,
+          "softmax_p": 0.9731359,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-worker-2",
+          "kind": "collector",
+          "root": 4,
+          "search": 4,
+          "played": 4,
+          "teacher": 4,
+          "sampling_p": 0.9992622,
+          "softmax_p": 0.8668494,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-worker-3",
+          "kind": "collector",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.9980861,
+          "softmax_p": 0.8670669,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-worker-4",
+          "kind": "planter",
+          "root": 3,
+          "search": 3,
+          "played": 3,
+          "teacher": 3,
+          "sampling_p": 1.0,
+          "softmax_p": 0.9971513,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-worker-5",
+          "kind": "planter",
+          "root": 2,
+          "search": 1,
+          "played": 1,
+          "teacher": 2,
+          "sampling_p": 0.9916338,
+          "softmax_p": 0.7932044,
+          "eligible": true,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-recrtCenter-0",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.1585245,
+          "softmax_p": 0.2784209,
+          "eligible": false,
+          "created_first_tree": false
+        },
+        {
+          "uid": "player-0-recrtCenter-1",
+          "kind": "base",
+          "root": 0,
+          "search": 0,
+          "played": 0,
+          "teacher": 0,
+          "sampling_p": 0.9999994,
+          "softmax_p": 0.9851797,
+          "eligible": false,
+          "created_first_tree": false
+        }
+      ]
+    }
+  ]
+}
