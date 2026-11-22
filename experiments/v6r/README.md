@@ -18,10 +18,18 @@
 
 ```sh
 git show 9907fc5:yan-v6.py > /tmp/carbon-parent-v6.py
-python experiments/v6r/artemis_fetch.py --help
+python experiments/v6r/artemis_fetch.py --data /tmp/carbon-artemis
 python experiments/v6r/data.py /tmp/carbon-boards /tmp/carbon-artemis
 python experiments/v6r/train.py /tmp/carbon-boards /tmp/carbon-parent-v6.py /tmp/elite.npz /tmp/elite-report.json
 CARBON_DEBUG=1 python scripts/selfplay.py --candidate experiments/v6r/checkpoints/grove.py --baseline yan-v5 --seeds 481710710 --jobs 1 --output /tmp/carbon-grove-check.jsonl
 ```
 
 [第一轮冻结清单](qualification-1.json) 记录候选哈希、八个新地图种子和通过条件。每张图换边，必须取得至少 12 场正常胜利、两个出生位至少各胜 5 场、平均分差为正。开发成绩与留图成绩单列。策略按墙钟时间调整搜索，复跑同一地图时，CPU 负载也可能改变走法。
+
+## 第二份候选
+
+[canopy.py](checkpoints/canopy.py) 在两个新开发种子（180798099、605220840）换边对 v5 四战全胜。第一张两个出生位分差 +154.63、+1020.06，第二张为 +1104.17、+1210.54。第二份候选在第一份候选之外保留了两个高手风格的联合动作供搜索比选。在最有希望的两个分支上，它用便宜的小模型再推演至多 14 步，比较后续可兑现的碳与树收入。在携碳工人遇敌时，另用游戏引擎模拟对方的几种应手。Artemis 面对首轮双采集时，19 局全从格号较大的基地出种植员，这条观察用于双采开局的基地分工。[四局比分](../../analysis/v6r-dev-canopy.jsonl) · [第二轮八图及冻结哈希](qualification-2.json)
+
+新的对局可在 selfplay 命令上加 `--record-actions`。结果行的 `actions_and_post_cash` 保留原版裁判每回合收到的两组动作和结算后资金，可用地图种子在同版裁判中逐步重放。动作记录在两位策略均已结束该回合的决策后写入。
+
+[利用公开树收入推断雾区碳量](sensing.md) · [接触时应手的一步反事实](reply-stress.jsonl) · [己方旧版本在公开比赛中的行动预测](rival-validation.json)

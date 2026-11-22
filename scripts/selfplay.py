@@ -67,6 +67,7 @@ def main(argv=None):
     parser.add_argument("--steps", type=int, default=300)
     parser.add_argument("--jobs", type=int, default=1)
     parser.add_argument("--output", type=Path, required=True, help="new arena JSONL file")
+    parser.add_argument("--record-actions", action="store_true", help="include replayable actions and cash after every turn")
     args = parser.parse_args(argv)
     try:
         candidate, opponent = [source_for(spec) for spec in (args.candidate, args.baseline)]
@@ -88,6 +89,8 @@ def main(argv=None):
         command = [sys.executable, str(ROOT / "arena.py"), "--strategies", f"{cname}={cpath}",
                    f"{bname}={bpath}", "--seeds", *map(str, args.seeds), "--steps", str(args.steps),
                    "--jobs", str(args.jobs), "--output", str(args.output)]
+        if args.record_actions:
+            command.append("--record-actions")
         print(f"{cname} ({cdigest[:12]}) vs {bname} ({bdigest[:12]})", flush=True)
         return subprocess.run(command).returncode
 

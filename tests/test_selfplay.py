@@ -77,11 +77,15 @@ class SelfPlayTests(unittest.TestCase):
             result = root / "paired.jsonl"
             subprocess.run([sys.executable, str(selfplay.ROOT / "scripts/selfplay.py"),
                             "--candidate", str(left), "--baseline", str(right), "--steps", "3",
-                            "--seeds", "99", "--output", str(result)], capture_output=True, check=True)
+                            "--seeds", "99", "--output", str(result), "--record-actions"], capture_output=True, check=True)
             games = [json.loads(line) for line in result.read_text().splitlines()]
             self.assertEqual([g["status"] for g in games], ["completed", "completed"])
             self.assertEqual([[p["name"] for p in g["players"]] for g in games],
                              [["left", "right"], ["right", "left"]])
+            for game in games:
+                history=game["actions_and_post_cash"]
+                self.assertEqual(len(history), game["turns"])
+                self.assertEqual(history[-1], [[{}, {}], game["cash"]])
             self.assertEqual(games[0]["map_sha256"], games[1]["map_sha256"])
 
 

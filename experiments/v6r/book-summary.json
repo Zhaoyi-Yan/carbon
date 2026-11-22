@@ -1,0 +1,63 @@
+{
+  "parent_sha256": "1995bbcc07592296e6fe6f816412acccb2d39ea2c79787cd937a210513f69afa",
+  "snapshot": "1f456cfdb568010b5ff8c276ed74b39d609f115b",
+  "cohort": {
+    "Artemis": 48,
+    "Apollo": 105,
+    "unique_initial_layouts": 153,
+    "first_twenty_actions_ending_at_decision_step": 20
+  },
+  "opening_observed": {
+    "Artemis": {
+      "seats": 48,
+      "no_own_hire_in_first_decision": 48,
+      "then_saw_two_enemy_collectors": 19
+    },
+    "Apollo": {
+      "seats": 105,
+      "no_own_hire_in_first_decision": 0,
+      "then_saw_two_enemy_collectors": 0
+    },
+    "yan-v5": {
+      "seats": 68,
+      "no_own_hire_in_first_decision": 0,
+      "then_saw_two_enemy_collectors": 0
+    }
+  },
+  "recruitment_conditional": {
+    "trials": 19,
+    "Artemis_lower_collector_upper_planter": 19,
+    "frozen_yan_v6_independent_base_argmax_matches": 0,
+    "subsequent_first_tree_planted_by_that_worker": 19,
+    "first_tree_visible_frame_min_median_max": [
+      5,
+      7,
+      16
+    ],
+    "spawn_to_first_tree_toroidal_manhattan_min_median_max": [
+      2,
+      4,
+      7
+    ],
+    "first_move_inward_vertical": 10,
+    "first_move_inward_horizontal": 9
+  },
+  "integration": {
+    "default": "Single joint recruitment proposal at decision step 1, if our two bases have not hired and two opposing collectors are already visible. The original search may reject it. No initial wait is introduced.",
+    "worker_retrieval": "Optional --workers book-table.json; its standalone movement prediction underperformed the frozen policy.",
+    "live_smoke": {
+      "held_position_match": "e518e0aeff3cfbf788bc2764e07293b0",
+      "step": 1,
+      "candidate_index": 1,
+      "candidate_count": 2,
+      "selected_index": 0
+    },
+    "standalone_recruit_sha256": "628001afdd5fbf7a4e490c05a80927f4699682949bb6a5043716ba6739f8ab8e",
+    "standalone_with_workers_sha256": "0c17e73b983fc30996ddbcff61e37c87d54e2c19627290fd43f0e42dcb78d091"
+  },
+  "limits": [
+    "Four-fold exclusion is by full initial layout for retrieval; this does not establish which games the pretrained policy had seen.",
+    "Opening agreement is measured against recorded moves, not paired-game win rate.",
+    "The frozen comparison in the recruitment test uses independent raw base-head greedy predictions, not closed-loop games."
+  ]
+}

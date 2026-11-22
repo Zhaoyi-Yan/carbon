@@ -181,10 +181,13 @@ def finish_forfeit(result):
 
 
 def run_game(task):
-    seats, seed, steps = task
+    seats, seed, steps, *options = task
+    record = bool(options and options[0])
     result = dict(schema_version=1, seed=seed, episode_steps=steps, turns=0, map_sha256=None, layout_sha256=None,
                   engine_sha256=None, status="engine_error", winner=None, scores=None, cash=None,
                   players=[dict(name=p.name, sha256=p.sha256, failure=None) for p in seats])
+    if record:
+        result["actions_and_post_cash"] = []
     try:
         limit_math_threads()
         configure_engine()
@@ -223,7 +226,11 @@ def run_game(task):
                         p.data["failure"] = dict(kind=kind, phase="act", turn=turn, detail=str(exc))
                 if finish_forfeit(result):
                     return result
+                if record:
+                    actions = [dict(entry.action) for entry in state]
                 carbon.compute_next_board(state, env)
+                if record:
+                    result["actions_and_post_cash"].append([actions, [p[0] for p in state[0].observation.players]])
                 result["turns"] = turn+1
                 if any(entry.status != "ACTIVE" for entry in state):
                     break
@@ -259,6 +266,7 @@ def main():
     parser.add_argument("--steps", type=int, default=300)
     parser.add_argument("--jobs", type=int, default=1)
     parser.add_argument("--output", type=Path, required=True, help="new JSONL file, one record per game")
+    parser.add_argument("--record-actions", action="store_true", help="keep both seats’ moves and post-turn cash for replay")
     args = parser.parse_args()
     try:
         strategies = parse_strategies(args.strategies)
@@ -268,7 +276,7 @@ def main():
         parser.error("jobs must be positive and steps must be in 2..300")
     if any(not 0 <= s < 2**32 for s in args.seeds) or len(args.seeds) != len(set(args.seeds)):
         parser.error("seeds must be unique integers in 0..4294967295")
-    tasks = [(seats, seed, args.steps) for pair in combinations(strategies, 2)
+    tasks = [(seats, seed, args.steps, args.record_actions) for pair in combinations(strategies, 2)
              for seed in args.seeds for seats in (pair, pair[::-1])]
     standings = {p.name: Counter() for p in strategies}
     try:
