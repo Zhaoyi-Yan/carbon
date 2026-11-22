@@ -1266,6 +1266,16 @@ def _tree_features(players, carbon, meta, step, config):
                                 np.log1p(np.maximum(tax, 0)), np.log1p(np.maximum(income, 0))))
     return keys, owner, features
 
+def _contest_bin(features):
+    # Model the opponent's travel time, which planter is closer and time left to collect.
+    enemy = features[:, 11].astype(int)
+    friendly = features[:, 10]
+    race = np.where(friendly < enemy, 0, np.where(friendly == enemy, 1, 2))
+    lifetime = np.searchsorted([6, 12], features[:, 0], side='left')
+    return np.minimum(enemy, 4) * 9 + race * 3 + lifetime
+
+_CONTEST_CORRECTION = np.array([0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.606428, -1.013531, -2.406935, -0.2109, 0.194801, 1.378704, -0.1828, -0.079356, 2.127612, 0.076337, -1.010284, -0.301708, -0.288761, 0.085031, -2.229074, -0.178839, 0.729302, 0.894014, 0.01434, -0.180847, -0.777328, -0.405287, -0.153322, -0.910431, 0.113255, 0.060687, 0.617601, 0.207038, 0.081689, -0.530536, 0.120602, 0.808637, -0.38365, 0.216579, 0.564099, 1.091627, 0.045968, 0.282594, -0.274537])
+
 def _future_tree_income(board, me, configuration):
     state = board.get('_st')
     meta = state.trees_meta if state is not None else board.get('trees', {})
@@ -1276,6 +1286,7 @@ def _future_tree_income(board, me, configuration):
     weights = _TREE_MODEL
     x = np.clip((features - weights['mean']) * weights['scale'], -7, 7)
     forecast = np.maximum(x @ weights['w'] + weights['b'], 0) @ weights['out'] + weights['offset']
+    forecast += np.where(features[:, 11] <= 4, _CONTEST_CORRECTION[_contest_bin(features)], 0.)
     forecast = np.where(features[:, 0] > 0, forecast, 0.)
     return float(np.where(owners == me, forecast, -forecast).sum())
 
