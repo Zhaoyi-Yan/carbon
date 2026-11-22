@@ -12,7 +12,9 @@
 | claude-AlphaCarbon-Master3s2 | 733、809 | 4 胜 0 负 | 895.94 |
 | 官方示例、juzi、DeepSeek v3 | 887 | 各 2 胜 0 负 | 见逐局记录 |
 
-以上 14 场均打满 299 步。Apollo 的 21 场公开回放用于训练和选择权重，与 Apollo 本体的直接对战成绩仍待验证。[逐局比分及实验条件](strategy-notes.txt)
+以上 14 场均打满 299 步。上线版本核实后，另以隔离竞技场在 19417 换边对打，yan-v2 两局分别领先 yan-v1 1786.33 和 771.82。[本次两局原始记录](analysis/arena/self-19417.jsonl)
+
+Apollo 的 21 场公开回放用于训练和选择权重，与 Apollo 本体的直接对战成绩仍待验证。[逐局比分及实验条件](strategy-notes.txt)
 
 ## 离线竞技场与前五研究
 
