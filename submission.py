@@ -983,10 +983,10 @@ _S_K = 32             # joint moves compared at most
 _S_GEN = ((2.5, 8), (1.0, 3), (3.5, 8), (0.0, 6), (5.0, 8))     # the candidates after the policy's own, in this order: (temperature of the
                       # workers' logits, how many); temperature 0.0: the policy's own move with one worker's move changed to its next most likely one
 _S_DUPS = 8           # so many samples in a row that were all seen before: no more at that temperature
-_S_M = 2              # rollouts per move at first
-_S_MMAX = 2           # ... for the last two moves, when there is time
-_S_STAGES = ((1, 0.53), (3, 0.33))       # (turns ahead, the share of the candidates that goes on from there): two at least, the policy's own among them
-_S_D2 = 5             # turns played ahead by the ones left
+_S_M = 1              # rollouts per move at first
+_S_MMAX = 1           # ... for the last two moves, when there is time
+_S_STAGES = ((1, 0.5), (4, 0.25))       # (turns ahead, the share of the candidates that goes on from there): two at least, the policy's own among them
+_S_D2 = 8             # turns played ahead by the ones left
 _S_FILL = 0.90        # the plan of the whole search may take this share of the time left
 _S_ROWS = 32          # rows in one network pass at most (every size up to it is warmed up at import)
 _S_EPS = 0.0
@@ -1327,8 +1327,7 @@ def _search(obs, configuration, est, act0, lw0, lb0, prev, t0, home=()):
         for c in cs:
             for m in ms:
                 if m not in opp:
-                    reply_scale = 1.06 if m % 2 else 0.88
-                    opp[m] = _sample(players, op, lwo[0] / reply_scale, lbo[0], np.random.RandomState(seed0 + 7 + 31 * m), step)
+                    opp[m] = _sample(players, op, lwo[0], lbo[0], np.random.RandomState(seed0 + 7 + 31 * m), step)
                 acts = [cands[c], opp[m]] if me == 0 else [opp[m], cands[c]]
                 out.append([c, m, _turn(root, configuration, acts), players])
         return out
@@ -1500,8 +1499,7 @@ def _search(obs, configuration, est, act0, lw0, lb0, prev, t0, home=()):
     _S_STATS['searched'] += 1; _S_STATS['time'].append(dt)
     for k, x in (('depth', depth), ('rolls', rolls), ('cands', len(cands))):
         _S_STATS[k][x] = _S_STATS[k].get(x, 0) + 1
-    mean = {c: 0.84 * sum(val[c, m] for m in range(rolls)) / rolls
-            + 0.16 * min(val[c, m] for m in range(rolls)) for c in alive}
+    mean = {c: sum(val[c, m] for m in range(rolls)) / rolls for c in alive}
     best = max(alive, key=lambda c: mean[c])
     if best == 0 or mean[best] - mean[0] <= _S_EPS:
         best = 0
