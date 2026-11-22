@@ -35,3 +35,5 @@
 | 533778689 | +577.43 | +773.35 |
 
 2026 年 11 月 22 日，yanzhaoyi 以 **yan-v3** 提交这份 2,988,748 字节的单文件。比赛网站确认策略已进入评测队列，平台源码可见性沿用前两版的私有设置。提交文件 SHA-256 为 `ee2b1a51039aaea356e28c6e326d3ec4eb4c06cda054808f068f132447add737`。[公开版本源文件](https://github.com/Zhaoyi-Yan/carbon/blob/v6-tree-guard-batch/submission.py)
+
+平台策略编号为 `f08b12d0d2ff15662e59cc4672c911d5`。首场定位对手是 stephen-K4TacSearch-v4，对局编号为 `f6edf71facd7bcf768fcc4c58ea64b7b`。[平台对局记录](https://117.72.210.134/api/matches?compact=1&limit=30&strategy=f08b12d0d2ff15662e59cc4672c911d5)
