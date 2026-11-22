@@ -28,6 +28,7 @@ import small_batches
 import harbormaster
 import breakwater
 import dual_policy
+import lifeline
 
 HERE=Path(__file__).resolve().parent
 ROOT=HERE.parents[1]
@@ -37,9 +38,11 @@ VERSIONS=('quay','tidepool','pilot','jetty','narrows','soundings','pilotage','fa
 
 
 def create(name):
-    if name in ('harbormaster','breakwater','crosscurrent'):
+    if name in ('harbormaster','breakwater','crosscurrent','lifeline'):
         if name=='harbormaster':
             code=harbormaster.build(create('soundings'))
+        elif name=='lifeline':
+            code=lifeline.build(create('soundings'))
         elif name=='breakwater':
             code=breakwater.build((ROOT/'yan-v6.py').read_bytes())
         else:
@@ -78,7 +81,7 @@ def create(name):
 
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument('version',choices=(*VERSIONS,'harbormaster','breakwater','crosscurrent'));p.add_argument('output',type=Path)
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('version',choices=(*VERSIONS,'harbormaster','breakwater','crosscurrent','lifeline'));p.add_argument('output',type=Path)
     a=p.parse_args()
     data=create(a.version).encode()
     with a.output.open('xb') as f:f.write(data)

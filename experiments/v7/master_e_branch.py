@@ -25,8 +25,8 @@ def shot(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def load_ours(name,path):
-    if shot(path)!=FROZEN[name]:raise ValueError('Candidate bytes changed: '+name)
+def load_ours(name,path,expected_sha=None):
+    if shot(path)!=(expected_sha or FROZEN[name]):raise ValueError('Candidate bytes changed: '+name)
     src=path.read_text()
     start=src.index('    if _S_COST[0] > 0.0:',src.index('def _search('));end=src.index('    stages =',start)
     src=src[:start]+'    most,D2,M=4,min(D2,2),1\n'+src[end:]

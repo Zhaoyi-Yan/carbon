@@ -1,0 +1,3971 @@
+{
+ "policy": "Frozen Harbormaster, both arms. Change only the loaded collector first action; subsequent moves react with the same policy and per-turn seeds.",
+ "opponent": "Reactive known-style Master7sE clone, seat 0; its subsequent actions also recomputed. Endpoints are official referee gross own-to-own deposits and cash differences.",
+ "eligibility": "First model-supported proposal found in each predeclared time window, never selected on actual branch outcome.",
+ "seeds": [
+  31051,
+  49069
+ ],
+ "window_candidates": [
+  [
+   40,
+   55,
+   65
+  ],
+  [
+   89,
+   95,
+   103
+  ],
+  [
+   125,
+   140,
+   150
+  ],
+  [
+   164,
+   172,
+   183
+  ],
+  [
+   200,
+   215,
+   230
+  ]
+ ],
+ "model_sha256": "cf90e4021edcb522fd5e42d146947583a01c334ebffd9e26376f1ceea6240664",
+ "referee_input_sha256": "373fb467a84e597347a4528015f47d228e7be00f586f96677c7bb4bdaa74f794",
+ "maps": [
+  {
+   "match": "4063a34afedb6d4767a9118e1dee9e5d",
+   "map_seed": 1331727176,
+   "checked": [
+    [
+     31051,
+     40,
+     false
+    ],
+    [
+     31051,
+     55,
+     true
+    ],
+    [
+     31051,
+     89,
+     false
+    ],
+    [
+     31051,
+     95,
+     true
+    ],
+    [
+     31051,
+     125,
+     false
+    ],
+    [
+     31051,
+     140,
+     true
+    ],
+    [
+     31051,
+     164,
+     true
+    ],
+    [
+     31051,
+     200,
+     false
+    ],
+    [
+     31051,
+     215,
+     false
+    ],
+    [
+     31051,
+     230,
+     false
+    ],
+    [
+     49069,
+     40,
+     false
+    ],
+    [
+     49069,
+     55,
+     true
+    ],
+    [
+     49069,
+     89,
+     false
+    ],
+    [
+     49069,
+     95,
+     true
+    ],
+    [
+     49069,
+     125,
+     false
+    ],
+    [
+     49069,
+     140,
+     true
+    ],
+    [
+     49069,
+     164,
+     true
+    ],
+    [
+     49069,
+     200,
+     false
+    ],
+    [
+     49069,
+     215,
+     false
+    ],
+    [
+     49069,
+     230,
+     false
+    ]
+   ],
+   "pairs": [
+    {
+     "match": "4063a34afedb6d4767a9118e1dee9e5d",
+     "map_seed": 1331727176,
+     "seed": 31051,
+     "start": 55,
+     "edit": {
+      "uid": "player-1-worker-4",
+      "load": 96.0291,
+      "old": "RIGHT",
+      "new": "NONE",
+      "delta": 25.334,
+      "estimate": [
+       [
+        65.799,
+        97.361
+       ],
+       [
+        96.195,
+        117.632
+       ]
+      ],
+      "worker": "player-1-worker-4",
+      "n_locked": 0,
+      "baseline": {
+       "player-1-worker-7": "RIGHT",
+       "player-1-worker-11": "UP",
+       "player-1-worker-4": "RIGHT"
+      },
+      "edited": {
+       "player-1-worker-7": "RIGHT",
+       "player-1-worker-11": "UP"
+      }
+     },
+     "original": {
+      "windows": {
+       "10": {
+        "us": 178.756,
+        "foe": 0,
+        "uid": 96.029,
+        "cash_margin": 17.09
+       },
+       "20": {
+        "us": 328.658,
+        "foe": 65.7,
+        "uid": 96.029,
+        "cash_margin": 75.72
+       }
+      },
+      "deposits": [
+       [
+        61,
+        1,
+        1,
+        "player-1-worker-4",
+        96.029
+       ],
+       [
+        63,
+        1,
+        1,
+        "player-1-worker-11",
+        82.727
+       ],
+       [
+        68,
+        1,
+        1,
+        "player-1-worker-18",
+        24.589
+       ],
+       [
+        71,
+        1,
+        1,
+        "player-1-worker-19",
+        55.465
+       ],
+       [
+        72,
+        0,
+        0,
+        "player-0-worker-24",
+        65.7
+       ],
+       [
+        73,
+        1,
+        1,
+        "player-1-worker-22",
+        36.915
+       ],
+       [
+        74,
+        1,
+        1,
+        "player-1-worker-18",
+        32.933
+       ]
+      ],
+      "initial": [
+       {
+        "cash": 23.11,
+        "workers": 9,
+        "collectors": 6,
+        "planters": 3,
+        "trees": 4,
+        "cargo": 0
+       },
+       {
+        "cash": 27.28,
+        "workers": 3,
+        "collectors": 2,
+        "planters": 1,
+        "trees": 3,
+        "cargo": 168.262
+       }
+      ],
+      "actions_sha": "bd898c2d680a14670d18b2ba006ce4fa3caa6c22c2fdb6aca925972053e0c817"
+     },
+     "modified": {
+      "windows": {
+       "10": {
+        "us": 182.618,
+        "foe": 42.882,
+        "uid": 110.385,
+        "cash_margin": 31.32
+       },
+       "20": {
+        "us": 287.227,
+        "foe": 277.982,
+        "uid": 110.385,
+        "cash_margin": -157.76
+       }
+      },
+      "deposits": [
+       [
+        62,
+        1,
+        1,
+        "player-1-worker-11",
+        72.233
+       ],
+       [
+        64,
+        1,
+        1,
+        "player-1-worker-4",
+        110.385
+       ],
+       [
+        65,
+        0,
+        0,
+        "player-0-worker-22",
+        42.882
+       ],
+       [
+        69,
+        1,
+        1,
+        "player-1-worker-11",
+        50.759
+       ],
+       [
+        71,
+        1,
+        1,
+        "player-1-worker-18",
+        53.85
+       ],
+       [
+        74,
+        0,
+        0,
+        "player-0-worker-21",
+        145.67
+       ],
+       [
+        75,
+        0,
+        0,
+        "player-0-worker-23",
+        89.43
+       ]
+      ],
+      "initial": [
+       {
+        "cash": 23.11,
+        "workers": 9,
+        "collectors": 6,
+        "planters": 3,
+        "trees": 4,
+        "cargo": 0
+       },
+       {
+        "cash": 27.28,
+        "workers": 3,
+        "collectors": 2,
+        "planters": 1,
+        "trees": 3,
+        "cargo": 168.262
+       }
+      ],
+      "actions_sha": "131757b60af975bccc1078163ad9c86325f36aef972493cd6877699aa05a0061"
+     },
+     "delta": {
+      "10": {
+       "us": 3.862,
+       "foe": 42.882,
+       "uid": 14.356,
+       "cash_margin": 14.23,
+       "net_own_minus_foe": -39.02
+      },
+      "20": {
+       "us": -41.431,
+       "foe": 212.282,
+       "uid": 14.356,
+       "cash_margin": -233.48,
+       "net_own_minus_foe": -253.713
+      }
+     }
+    },
+    {
+     "match": "4063a34afedb6d4767a9118e1dee9e5d",
+     "map_seed": 1331727176,
+     "seed": 31051,
+     "start": 95,
+     "edit": {
+      "uid": "player-1-worker-11",
+      "load": 159.62879999999998,
+      "old": "RIGHT",
+      "new": "DOWN",
+      "delta": 32.38,
+      "estimate": [
+       [
+        17.893,
+        60.809
+       ],
+       [
+        58.395,
+        85.068
+       ]
+      ],
+      "worker": "player-1-worker-11",
+      "n_locked": 0,
+      "baseline": {
+       "player-1-worker-17": "UP",
+       "player-1-worker-18": "RIGHT",
+       "player-1-worker-4": "UP",
+       "player-1-worker-11": "RIGHT"
+      },
+      "edited": {
+       "player-1-worker-17": "UP",
+       "player-1-worker-18": "RIGHT",
+       "player-1-worker-4": "UP",
+       "player-1-worker-11": "DOWN"
+      }
+     },
+     "original": {
+      "windows": {
+       "10": {
+        "us": 81.635,
+        "foe": 0,
+        "uid": 0,
+        "cash_margin": -593.51
+       },
+       "20": {
+        "us": 209.338,
+        "foe": 81.0,
+        "uid": 127.703,
+        "cash_margin": -838.25
+       }
+      },
+      "deposits": [
+       [
+        100,
+        1,
+        1,
+        "player-1-worker-4",
+        81.635
+       ],
+       [
+        106,
+        1,
+        1,
+        "player-1-worker-11",
+        127.703
+       ],
+       [
+        107,
+        0,
+        0,
+        "player-0-worker-14",
+        81.0
+       ]
+      ],
+      "initial": [
+       {
+        "cash": 351.4,
+        "workers": 10,
+        "collectors": 9,
+        "planters": 1,
+        "trees": 7,
+        "cargo": 19.993
+       },
+       {
+        "cash": 7.53,
+        "workers": 4,
+        "collectors": 3,
+        "planters": 1,
+        "trees": 0,
+        "cargo": 285.608
+       }
+      ],
+      "actions_sha": "382f31c3e7919fb682a921e6e41873a194a5833c828281365f931506e6c20f2d"
+     },
+     "modified": {
+      "windows": {
+       "10": {
+        "us": 81.635,
+        "foe": 0,
+        "uid": 0,
+        "cash_margin": -583.32
+       },
+       "20": {
+        "us": 81.635,
+        "foe": 350.467,
+        "uid": 0,
+        "cash_margin": -1211.01
+       }
+      },
+      "deposits": [
+       [
+        100,
+        1,
+        1,
+        "player-1-worker-4",
+        81.635
+       ],
+       [
+        113,
+        0,
+        0,
+        "player-0-worker-16",
+        219.067
+       ],
+       [
+        114,
+        0,
+        0,
+        "player-0-worker-25",
+        131.4
+       ]
+      ],
+      "initial": [
+       {
+        "cash": 351.4,
+        "workers": 10,
+        "collectors": 9,
+        "planters": 1,
+        "trees": 7,
+        "cargo": 19.993
+       },
+       {
+        "cash": 7.53,
+        "workers": 4,
+        "collectors": 3,
+        "planters": 1,
+        "trees": 0,
+        "cargo": 285.608
+       }
+      ],
+      "actions_sha": "0e70996e5250243060fa86e7d730b746a5b3ac26dc5d230301b0dda253a82564"
+     },
+     "delta": {
+      "10": {
+       "us": 0.0,
+       "foe": 0,
+       "uid": 0,
+       "cash_margin": 10.19,
+       "net_own_minus_foe": 0.0
+      },
+      "20": {
+       "us": -127.703,
+       "foe": 269.467,
+       "uid": -127.703,
+       "cash_margin": -372.76,
+       "net_own_minus_foe": -397.17
+      }
+     }
+    },
+    {
+     "match": "4063a34afedb6d4767a9118e1dee9e5d",
+     "map_seed": 1331727176,
+     "seed": 31051,
+     "start": 140,
+     "edit": {
+      "uid": "player-1-worker-4",
+      "load": 268.5807,
+      "old": "RIGHT",
+      "new": "NONE",
+      "delta": 31.393,
+      "estimate": [
+       [
+        0.0,
+        28.94
+       ],
+       [
+        22.421,
+        69.305
+       ]
+      ],
+      "worker": "player-1-worker-4",
+      "n_locked": 0,
+      "baseline": {
+       "player-1-worker-11": "RIGHT",
+       "player-1-worker-17": "DOWN",
+       "player-1-worker-4": "RIGHT"
+      },
+      "edited": {
+       "player-1-worker-11": "RIGHT",
+       "player-1-worker-17": "DOWN"
+      }
+     },
+     "original": {
+      "windows": {
+       "10": {
+        "us": 0,
+        "foe": 0,
+        "uid": 0,
+        "cash_margin": -1847.58
+       },
+       "20": {
+        "us": 0,
+        "foe": 0,
+        "uid": 0,
+        "cash_margin": -2091.36
+       }
+      },
+      "deposits": [],
+      "initial": [
+       {
+        "cash": 1500.31,
+        "workers": 10,
+        "collectors": 8,
+        "planters": 2,
+        "trees": 11,
+        "cargo": 2.792
+       },
+       {
+        "cash": 7.53,
+        "workers": 4,
+        "collectors": 3,
+        "planters": 1,
+        "trees": 0,
+        "cargo": 428.209
+       }
+      ],
+      "actions_sha": "21b98dc4a4a0716c0247ff44d9e8aa29255ffa9ab677c2715121cc27ae2cba39"
+     },
+     "modified": {
+      "windows": {
+       "10": {
+        "us": 0,
+        "foe": 0,
+        "uid": 0,
+        "cash_margin": -1807.39
+       },
+       "20": {
+        "us": 0,
+        "foe": 0,
+        "uid": 0,
+        "cash_margin": -1977.35
+       }
+      },
+      "deposits": [],
+      "initial": [
+       {
+        "cash": 1500.31,
+        "workers": 10,
+        "collectors": 8,
+        "planters": 2,
+        "trees": 11,
+        "cargo": 2.792
+       },
+       {
+        "cash": 7.53,
+        "workers": 4,
+        "collectors": 3,
+        "planters": 1,
+        "trees": 0,
+        "cargo": 428.209
+       }
+      ],
+      "actions_sha": "b6081d953a228210f91eaa23a679edef118d3583ea20b007acc62f0bf628ef49"
+     },
+     "delta": {
+      "10": {
+       "us": 0,
+       "foe": 0,
+       "uid": 0,
+       "cash_margin": 40.19,
+       "net_own_minus_foe": 0
+      },
+      "20": {
+       "us": 0,
+       "foe": 0,
+       "uid": 0,
+       "cash_margin": 114.01,
+       "net_own_minus_foe": 0
+      }
+     }
+    },
+    {
+     "match": "4063a34afedb6d4767a9118e1dee9e5d",
+     "map_seed": 1331727176,
+     "seed": 31051,
+     "start": 164,
+     "edit": {
+      "uid": "player-1-worker-4",
+      "load": 297.92339999999996,
+      "old": "DOWN",
+      "new": "UP",
+      "delta": 46.967,
+      "estimate": [
+       [
+        0.0,
+        50.426
+       ],
+       [
+        55.869,
+        88.491
+       ]
+      ],
+      "worker": "player-1-worker-4",
+      "n_locked": 0,
+      "baseline": {
+       "player-1-worker-11": "RIGHT",
+       "player-1-worker-4": "DOWN",
+       "player-1-worker-18": "UP"
+      },
+      "edited": {
+       "player-1-worker-11": "RIGHT",
+       "player-1-worker-4": "UP",
+       "player-1-worker-18": "UP"
+      }
+     },
+     "original": {
+      "windows": {
+       "10": {
+        "us": 0,
+        "foe": 0,
+        "uid": 0,
+        "cash_margin": -2270.95
+       },
+       "20": {
+        "us": 116.369,
+        "foe": 617.27,
+        "uid": 0,
+        "cash_margin": -3031.88
+       }
+      },
+      "deposits": [
+       [
+        176,
+        1,
+        1,
+        "player-1-worker-11",
+        116.369
+       ],
+       [
+        180,
+        0,
+        0,
+        "player-0-worker-25",
+        164.57
+       ],
+       [
+        183,
+        0,
+        0,
+        "player-0-worker-22",
+        218.7
+       ],
+       [
+        184,
+        0,
+        0,
+        "player-0-worker-28",
+        234.0
+       ]
+      ],
+      "initial": [
+       {
+        "cash": 2079.3,
+        "workers": 10,
+        "collectors": 8,
+        "planters": 2,
+        "trees": 10,
+        "cargo": 53.792
+       },
+       {
+        "cash": 7.53,
+        "workers": 3,
+        "collectors": 2,
+        "planters": 1,
+        "trees": 0,
+        "cargo": 457.552
+       }
+      ],
+      "actions_sha": "834be720591a0f0ea5bd89b2dfae5f1adb84ff490eaec0a966fa77449509839e"
+     },
+     "modified": {
+      "windows": {
+       "10": {
+        "us": 0,
+        "foe": 0,
+        "uid": 0,
+        "cash_margin": -2363.53
+       },
+       "20": {
+        "us": 136.533,
+        "foe": 425.912,
+        "uid": 0,
+        "cash_margin": -2905.67
+       }
+      },
+      "deposits": [
+       [
+        176,
+        0,
+        0,
+        "player-0-worker-22",
+        143.326
+       ],
+       [
+        179,
+        0,
+        0,
+        "player-0-worker-25",
+        135.886
+       ],
+       [
+        181,
+        0,
+        0,
+        "player-0-worker-23",
+        146.7
+       ],
+       [
+        184,
+        1,
+        1,
+        "player-1-worker-11",
+        136.533
+       ]
+      ],
+      "initial": [
+       {
+        "cash": 2079.3,
+        "workers": 10,
+        "collectors": 8,
+        "planters": 2,
+        "trees": 10,
+        "cargo": 53.792
+       },
+       {
+        "cash": 7.53,
+        "workers": 3,
+        "collectors": 2,
+        "planters": 1,
+        "trees": 0,
+        "cargo": 457.552
+       }
+      ],
+      "actions_sha": "8ba5ca9e978f3309a9053ca789a7afa63ab7a14885569b92b919c8d60732eb8d"
+     },
+     "delta": {
+      "10": {
+       "us": 0,
+       "foe": 0,
+       "uid": 0,
+       "cash_margin": -92.58,
+       "net_own_minus_foe": 0
+      },
+      "20": {
+       "us": 20.164,
+       "foe": -191.358,
+       "uid": 0,
+       "cash_margin": 126.21,
+       "net_own_minus_foe": 211.522
+      }
+     }
+    },
+    {
+     "match": "4063a34afedb6d4767a9118e1dee9e5d",
+     "map_seed": 1331727176,
+     "seed": 49069,
+     "start": 55,
+     "edit": {
+      "uid": "player-1-worker-4",
+      "load": 96.0291,
+      "old": "RIGHT",
+      "new": "NONE",
+      "delta": 25.334,
+      "estimate": [
+       [
+        65.799,
+        97.361
+       ],
+       [
+        96.195,
+        117.632
+       ]
+      ],
+      "worker": "player-1-worker-4",
+      "n_locked": 0,
+      "baseline": {
+       "player-1-worker-7": "RIGHT",
+       "player-1-worker-11": "UP",
+       "player-1-worker-4": "RIGHT"
+      },
+      "edited": {
+       "player-1-worker-7": "RIGHT",
+       "player-1-worker-11": "UP"
+      }
+     },
+     "original": {
+      "windows": {
+       "10": {
+        "us": 72.233,
+        "foe": 0,
+        "uid": 0,
+        "cash_margin": -1.96
+       },
+       "20": {
+        "us": 238.965,
+        "foe": 149.924,
+        "uid": 120.618,
+        "cash_margin": 14.27
+       }
+      },
+      "deposits": [
+       [
+        62,
+        1,
+        1,
+        "player-1-worker-11",
+        72.233
+       ],
+       [
+        66,
+        0,
+        0,
+        "player-0-worker-20",
+        76.558
+       ],
+       [
+        68,
+        1,
+        1,
+        "player-1-worker-17",
+        18.439
+       ],
+       [
+        70,
+        1,
+        1,
+        "player-1-worker-4",
+        120.618
+       ],
+       [
+        73,
+        0,
+        0,
+        "player-0-worker-14",
+        73.366
+       ],
+       [
+        73,
+        1,
+        1,
+        "player-1-worker-17",
+        27.675
+       ]
+      ],
+      "initial": [
+       {
+        "cash": 23.11,
+        "workers": 9,
+        "collectors": 6,
+        "planters": 3,
+        "trees": 4,
+        "cargo": 0
+       },
+       {
+        "cash": 27.28,
+        "workers": 3,
+        "collectors": 2,
+        "planters": 1,
+        "trees": 3,
+        "cargo": 168.262
+       }
+      ],
+      "actions_sha": "761e0e3aa6d09ab7c4e3e1daae5fc763161ed2bbf7aab35477c4c155beced7a7"
+     },
+     "modified": {
+      "windows": {
+       "10": {
+        "us": 140.385,
+        "foe": 0,
+        "uid": 140.385,
+        "cash_margin": 155.97
+       },
+       "20": {
+        "us": 222.536,
+        "foe": 76.558,
+        "uid": 140.385,
+        "cash_margin": -9.0
+       }
+      },
+      "deposits": [
+       [
+        65,
+        1,
+        1,
+        "player-1-worker-4",
+        140.385
+       ],
+       [
+        66,
+        0,
+        0,
+        "player-0-worker-20",
+        76.558
+       ],
+       [
+        72,
+        1,
+        1,
+        "player-1-worker-16",
+        35.103
+       ],
+       [
+        74,
+        1,
+        1,
+        "player-1-worker-18",
+        47.048
+       ]
+      ],
+      "initial": [
+       {
+        "cash": 23.11,
+        "workers": 9,
+        "collectors": 6,
+        "planters": 3,
+        "trees": 4,
+        "cargo": 0
+       },
+       {
+        "cash": 27.28,
+        "workers": 3,
+        "collectors": 2,
+        "planters": 1,
+        "trees": 3,
+        "cargo": 168.262
+       }
+      ],
+      "actions_sha": "9dda77b2fbdcbaf535c38cedc032f1876a6f650e54ef98cb29e355b0161a20e9"
+     },
+     "delta": {
+      "10": {
+       "us": 68.152,
+       "foe": 0,
+       "uid": 140.385,
+       "cash_margin": 157.93,
+       "net_own_minus_foe": 68.152
+      },
+      "20": {
+       "us": -16.429,
+       "foe": -73.366,
+       "uid": 19.767,
+       "cash_margin": -23.27,
+       "net_own_minus_foe": 56.937
+      }
+     }
+    },
+    {
+     "match": "4063a34afedb6d4767a9118e1dee9e5d",
+     "map_seed": 1331727176,
+     "seed": 49069,
+     "start": 95,
+     "edit": {
+      "uid": "player-1-worker-4",
+      "load": 125.97959999999999,
+      "old": "DOWN",
+      "new": "UP",
+      "delta": 34.709,
+      "estimate": [
+       [
+        4.133,
+        58.539
+       ],
+       [
+        49.999,
+        82.092
+       ]
+      ],
+      "worker": "player-1-worker-4",
+      "n_locked": 0,
+      "baseline": {
+       "player-1-worker-17": "UP",
+       "player-1-worker-18": "RIGHT",
+       "player-1-worker-4": "DOWN",
+       "player-1-worker-11": "RIGHT"
+      },
+      "edited": {
+       "player-1-worker-17": "UP",
+       "player-1-worker-18": "RIGHT",
+       "player-1-worker-4": "UP",
+       "player-1-worker-11": "RIGHT"
+      }
+     },
+     "original": {
+      "windows": {
+       "10": {
+        "us": 100.784,
+        "foe": 0,
+        "uid": 100.784,
+        "cash_margin": -481.2
+       },
+       "20": {
+        "us": 228.487,
+        "foe": 0,
+        "uid": 100.784,
+        "cash_margin": -773.37
+       }
+      },
+      "deposits": [
+       [
+        102,
+        1,
+        1,
+        "player-1-worker-4",
+        100.784
+       ],
+       [
+        108,
+        1,
+        1,
+        "player-1-worker-11",
+        127.703
+       ]
+      ],
+      "initial": [
+       {
+        "cash": 351.4,
+        "workers": 10,
+        "collectors": 9,
+        "planters": 1,
+        "trees": 7,
+        "cargo": 19.993
+       },
+       {
+        "cash": 7.53,
+        "workers": 4,
+        "collectors": 3,
+        "planters": 1,
+        "trees": 0,
+        "cargo": 285.608
+       }
+      ],
+      "actions_sha": "91b25c393fddd8c57028ea9b10ea91a87d92264f1f7ab2d36313bd0978f1d792"
+     },
+     "modified": {
+      "windows": {
+       "10": {
+        "us": 90.705,
+        "foe": 95.855,
+        "uid": 90.705,
+        "cash_margin": -658.55
+       },
+       "20": {
+        "us": 205.638,
+        "foe": 359.972,
+        "uid": 90.705,
+        "cash_margin": -1169.72
+       }
+      },
+      "deposits": [
+       [
+        102,
+        1,
+        1,
+        "player-1-worker-4",
+        90.705
+       ],
+       [
+        105,
+        0,
+        0,
+        "player-0-worker-20",
+        95.855
+       ],
+       [
+        110,
+        0,
+        0,
+        "player-0-worker-16",
+        147.417
+       ],
+       [
+        114,
+        1,
+        1,
+        "player-1-worker-11",
+        114.933
+       ],
+       [
+        115,
+        0,
+        0,
+        "player-0-worker-25",
+        116.7
+       ]
+      ],
+      "initial": [
+       {
+        "cash": 351.4,
+        "workers": 10,
+        "collectors": 9,
+        "planters": 1,
+        "trees": 7,
+        "cargo": 19.993
+       },
+       {
+        "cash": 7.53,
+        "workers": 4,
+        "collectors": 3,
+        "planters": 1,
+        "trees": 0,
+        "cargo": 285.608
+       }
+      ],
+      "actions_sha": "c56b53adb98086b9be3d5cf9676115c0e38c8749320573e585140a935806ac1b"
+     },
+     "delta": {
+      "10": {
+       "us": -10.079,
+       "foe": 95.855,
+       "uid": -10.079,
+       "cash_margin": -177.35,
+       "net_own_minus_foe": -105.934
+      },
+      "20": {
+       "us": -22.849,
+       "foe": 359.972,
+       "uid": -10.079,
+       "cash_margin": -396.35,
+       "net_own_minus_foe": -382.821
+      }
+     }
+    },
+    {
+     "match": "4063a34afedb6d4767a9118e1dee9e5d",
+     "map_seed": 1331727176,
+     "seed": 49069,
+     "start": 140,
+     "edit": {
+      "uid": "player-1-worker-4",
+      "load": 268.5807,
+      "old": "RIGHT",
+      "new": "NONE",
+      "delta": 31.393,
+      "estimate": [
+       [
+        0.0,
+        28.94
+       ],
+       [
+        22.421,
+        69.305
+       ]
+      ],
+      "worker": "player-1-worker-4",
+      "n_locked": 0,
+      "baseline": {
+       "player-1-worker-11": "RIGHT",
+       "player-1-worker-17": "DOWN",
+       "player-1-worker-4": "RIGHT"
+      },
+      "edited": {
+       "player-1-worker-11": "RIGHT",
+       "player-1-worker-17": "DOWN"
+      }
+     },
+     "original": {
+      "windows": {
+       "10": {
+        "us": 0,
+        "foe": 0,
+        "uid": 0,
+        "cash_margin": -1767.6
+       },
+       "20": {
+        "us": 268.581,
+        "foe": 270.629,
+        "uid": 268.581,
+        "cash_margin": -2144.15
+       }
+      },
+      "deposits": [
+       [
+        152,
+        1,
+        1,
+        "player-1-worker-4",
+        268.581
+       ],
+       [
+        154,
+        0,
+        0,
+        "player-0-worker-22",
+        270.629
+       ]
+      ],
+      "initial": [
+       {
+        "cash": 1500.31,
+        "workers": 10,
+        "collectors": 8,
+        "planters": 2,
+        "trees": 11,
+        "cargo": 2.792
+       },
+       {
+        "cash": 7.53,
+        "workers": 4,
+        "collectors": 3,
+        "planters": 1,
+        "trees": 0,
+        "cargo": 428.209
+       }
+      ],
+      "actions_sha": "b2fe8afddfad9a19ecda67a869dc5bbe432a1cb9603d96e22fa5402b82767a2e"
+     },
+     "modified": {
+      "windows": {
+       "10": {
+        "us": 0,
+        "foe": 0,
+        "uid": 0,
+        "cash_margin": -1683.09
+       },
+       "20": {
+        "us": 0,
+        "foe": 240.629,
+        "uid": 0,
+        "cash_margin": -2055.59
+       }
+      },
+      "deposits": [
+       [
+        151,
+        0,
+        0,
+        "player-0-worker-22",
+        240.629
+       ]
+      ],
+      "initial": [
+       {
+        "cash": 1500.31,
+        "workers": 10,
+        "collectors": 8,
+        "planters": 2,
+        "trees": 11,
+        "cargo": 2.792
+       },
+       {
+        "cash": 7.53,
+        "workers": 4,
+        "collectors": 3,
+        "planters": 1,
+        "trees": 0,
+        "cargo": 428.209
+       }
+      ],
+      "actions_sha": "33483e778a51ccd38917ae036895a1754a39e21ecd616e02283504af50fbffe1"
+     },
+     "delta": {
+      "10": {
+       "us": 0,
+       "foe": 0,
+       "uid": 0,
+       "cash_margin": 84.51,
+       "net_own_minus_foe": 0
+      },
+      "20": {
+       "us": -268.581,
+       "foe": -30.0,
+       "uid": -268.581,
+       "cash_margin": 88.56,
+       "net_own_minus_foe": -238.581
+      }
+     }
+    },
+    {
+     "match": "4063a34afedb6d4767a9118e1dee9e5d",
+     "map_seed": 1331727176,
+     "seed": 49069,
+     "start": 164,
+     "edit": {
+      "uid": "player-1-worker-4",
+      "load": 297.92339999999996,
+      "old": "DOWN",
+      "new": "UP",
+      "delta": 46.967,
+      "estimate": [
+       [
+        0.0,
+        50.426
+       ],
+       [
+        55.869,
+        88.491
+       ]
+      ],
+      "worker": "player-1-worker-4",
+      "n_locked": 0,
+      "baseline": {
+       "player-1-worker-11": "RIGHT",
+       "player-1-worker-4": "DOWN",
+       "player-1-worker-18": "LEFT"
+      },
+      "edited": {
+       "player-1-worker-11": "RIGHT",
+       "player-1-worker-4": "UP",
+       "player-1-worker-18": "LEFT"
+      }
+     },
+     "original": {
+      "windows": {
+       "10": {
+        "us": 241.318,
+        "foe": 0,
+        "uid": 241.318,
+        "cash_margin": -2099.31
+       },
+       "20": {
+        "us": 271.318,
+        "foe": 670.531,
+        "uid": 241.318,
+        "cash_margin": -2875.19
+       }
+      },
+      "deposits": [
+       [
+        173,
+        1,
+        1,
+        "player-1-worker-4",
+        241.318
+       ],
+       [
+        178,
+        0,
+        0,
+        "player-0-worker-25",
+        126.282
+       ],
+       [
+        179,
+        0,
+        0,
+        "player-0-worker-16",
+        134.557
+       ],
+       [
+        180,
+        0,
+        0,
+        "player-0-worker-28",
+        409.692
+       ],
+       [
+        181,
+        1,
+        1,
+        "player-1-worker-24",
+        30.0
+       ]
+      ],
+      "initial": [
+       {
+        "cash": 2079.3,
+        "workers": 10,
+        "collectors": 8,
+        "planters": 2,
+        "trees": 10,
+        "cargo": 53.792
+       },
+       {
+        "cash": 7.53,
+        "workers": 3,
+        "collectors": 2,
+        "planters": 1,
+        "trees": 0,
+        "cargo": 457.552
+       }
+      ],
+      "actions_sha": "fc3f48c492cf6181145d19e35d9e28b33abc74c378748cc5e2dc2335d94112bb"
+     },
+     "modified": {
+      "windows": {
+       "10": {
+        "us": 0,
+        "foe": 0,
+        "uid": 0,
+        "cash_margin": -2143.47
+       },
+       "20": {
+        "us": 0,
+        "foe": 418.885,
+        "uid": 0,
+        "cash_margin": -2652.44
+       }
+      },
+      "deposits": [
+       [
+        180,
+        0,
+        0,
+        "player-0-worker-16",
+        138.895
+       ],
+       [
+        183,
+        0,
+        0,
+        "player-0-worker-28",
+        279.99
+       ]
+      ],
+      "initial": [
+       {
+        "cash": 2079.3,
+        "workers": 10,
+        "collectors": 8,
+        "planters": 2,
+        "trees": 10,
+        "cargo": 53.792
+       },
+       {
+        "cash": 7.53,
+        "workers": 3,
+        "collectors": 2,
+        "planters": 1,
+        "trees": 0,
+        "cargo": 457.552
+       }
+      ],
+      "actions_sha": "3598b03c4ecf4869bf5f8471322f965b0b2851b8852869616e6d5ae5ed269667"
+     },
+     "delta": {
+      "10": {
+       "us": -241.318,
+       "foe": 0,
+       "uid": -241.318,
+       "cash_margin": -44.16,
+       "net_own_minus_foe": -241.318
+      },
+      "20": {
+       "us": -271.318,
+       "foe": -251.646,
+       "uid": -241.318,
+       "cash_margin": 222.75,
+       "net_own_minus_foe": -19.672
+      }
+     }
+    }
+   ]
+  },
+  {
+   "match": "cf276b32e4fd38f43497e60f271a3854",
+   "map_seed": 397168106,
+   "checked": [
+    [
+     31051,
+     40,
+     false
+    ],
+    [
+     31051,
+     55,
+     true
+    ],
+    [
+     31051,
+     89,
+     false
+    ],
+    [
+     31051,
+     95,
+     true
+    ],
+    [
+     31051,
+     125,
+     false
+    ],
+    [
+     31051,
+     140,
+     false
+    ],
+    [
+     31051,
+     150,
+     false
+    ],
+    [
+     31051,
+     164,
+     true
+    ],
+    [
+     31051,
+     200,
+     false
+    ],
+    [
+     31051,
+     215,
+     true
+    ],
+    [
+     49069,
+     40,
+     false
+    ],
+    [
+     49069,
+     55,
+     true
+    ],
+    [
+     49069,
+     89,
+     false
+    ],
+    [
+     49069,
+     95,
+     true
+    ],
+    [
+     49069,
+     125,
+     false
+    ],
+    [
+     49069,
+     140,
+     false
+    ],
+    [
+     49069,
+     150,
+     false
+    ],
+    [
+     49069,
+     164,
+     true
+    ],
+    [
+     49069,
+     200,
+     false
+    ],
+    [
+     49069,
+     215,
+     true
+    ]
+   ],
+   "pairs": [
+    {
+     "match": "cf276b32e4fd38f43497e60f271a3854",
+     "map_seed": 397168106,
+     "seed": 31051,
+     "start": 55,
+     "edit": {
+      "uid": "player-1-worker-8",
+      "load": 167.28449999999995,
+      "old": "NONE",
+      "new": "RIGHT",
+      "delta": 24.613,
+      "estimate": [
+       [
+        92.429,
+        185.76
+       ],
+       [
+        133.979,
+        193.437
+       ]
+      ],
+      "worker": "player-1-worker-8",
+      "n_locked": 0,
+      "baseline": {
+       "player-1-worker-4": "UP",
+       "player-1-worker-14": "DOWN",
+       "player-1-worker-15": "UP",
+       "player-1-worker-5": "UP",
+       "player-1-worker-13": "LEFT",
+       "player-1-worker-7": "UP",
+       "player-1-worker-12": "UP",
+       "player-1-worker-11": "DOWN",
+       "player-1-worker-2": "RIGHT"
+      },
+      "edited": {
+       "player-1-worker-4": "UP",
+       "player-1-worker-14": "DOWN",
+       "player-1-worker-15": "UP",
+       "player-1-worker-5": "UP",
+       "player-1-worker-13": "LEFT",
+       "player-1-worker-7": "UP",
+       "player-1-worker-12": "UP",
+       "player-1-worker-11": "DOWN",
+       "player-1-worker-2": "RIGHT",
+       "player-1-worker-8": "RIGHT"
+      }
+     },
+     "original": {
+      "windows": {
+       "10": {
+        "us": 183.938,
+        "foe": 128.678,
+        "uid": 0,
+        "cash_margin": 357.45
+       },
+       "20": {
+        "us": 506.574,
+        "foe": 163.425,
+        "uid": 251.063,
+        "cash_margin": 751.17
+       }
+      },
+      "deposits": [
+       [
+        56,
+        0,
+        0,
+        "player-0-worker-8",
+        128.678
+       ],
+       [
+        56,
+        1,
+        1,
+        "player-1-worker-4",
+        112.965
+       ],
+       [
+        62,
+        1,
+        1,
+        "player-1-worker-5",
+        70.973
+       ],
+       [
+        66,
+        0,
+        0,
+        "player-0-worker-13",
+        34.747
+       ],
+       [
+        73,
+        1,
+        1,
+        "player-1-worker-11",
+        71.573
+       ],
+       [
+        74,
+        1,
+        1,
+        "player-1-worker-8",
+        251.063
+       ]
+      ],
+      "initial": [
+       {
+        "cash": 268.85,
+        "workers": 9,
+        "collectors": 7,
+        "planters": 2,
+        "trees": 4,
+        "cargo": 258.527
+       },
+       {
+        "cash": 534.68,
+        "workers": 10,
+        "collectors": 7,
+        "planters": 3,
+        "trees": 6,
+        "cargo": 332.275
+       }
+      ],
+      "actions_sha": "b56ddd1d92bec97b1ace0295b59942c57354af3f038eef465bf94ceb39d4e2f9"
+     },
+     "modified": {
+      "windows": {
+       "10": {
+        "us": 351.222,
+        "foe": 128.678,
+        "uid": 167.284,
+        "cash_margin": 551.95
+       },
+       "20": {
+        "us": 351.222,
+        "foe": 451.984,
+        "uid": 167.284,
+        "cash_margin": 270.08
+       }
+      },
+      "deposits": [
+       [
+        56,
+        0,
+        0,
+        "player-0-worker-8",
+        128.678
+       ],
+       [
+        56,
+        1,
+        1,
+        "player-1-worker-4",
+        112.965
+       ],
+       [
+        60,
+        1,
+        1,
+        "player-1-worker-8",
+        167.284
+       ],
+       [
+        62,
+        1,
+        1,
+        "player-1-worker-5",
+        70.973
+       ],
+       [
+        66,
+        0,
+        0,
+        "player-0-worker-13",
+        34.747
+       ],
+       [
+        71,
+        0,
+        0,
+        "player-0-worker-14",
+        69.877
+       ],
+       [
+        74,
+        0,
+        0,
+        "player-0-worker-1",
+        218.682
+       ]
+      ],
+      "initial": [
+       {
+        "cash": 268.85,
+        "workers": 9,
+        "collectors": 7,
+        "planters": 2,
+        "trees": 4,
+        "cargo": 258.527
+       },
+       {
+        "cash": 534.68,
+        "workers": 10,
+        "collectors": 7,
+        "planters": 3,
+        "trees": 6,
+        "cargo": 332.275
+       }
+      ],
+      "actions_sha": "533087f18dab11061c60f49be925b4a968384c0c7864cffc55dd639d8444506c"
+     },
+     "delta": {
+      "10": {
+       "us": 167.284,
+       "foe": 0.0,
+       "uid": 167.284,
+       "cash_margin": 194.5,
+       "net_own_minus_foe": 167.284
+      },
+      "20": {
+       "us": -155.352,
+       "foe": 288.559,
+       "uid": -83.779,
+       "cash_margin": -481.09,
+       "net_own_minus_foe": -443.911
+      }
+     }
+    },
+    {
+     "match": "cf276b32e4fd38f43497e60f271a3854",
+     "map_seed": 397168106,
+     "seed": 31051,
+     "start": 95,
+     "edit": {
+      "uid": "player-1-worker-4",
+      "load": 75.67169999999999,
+      "old": "RIGHT",
+      "new": "UP",
+      "delta": 35.038,
+      "estimate": [
+       [
+        17.226,
+        82.373
+       ],
+       [
+        69.673,
+        100.002
+       ]
+      ],
+      "worker": "player-1-worker-4",
+      "n_locked": 0,
+      "baseline": {
+       "player-1-worker-12": "DOWN",
+       "player-1-worker-14": "DOWN",
+       "player-1-worker-2": "DOWN",
+       "player-1-worker-11": "DOWN",
+       "player-1-worker-8": "LEFT",
+       "player-1-worker-4": "RIGHT",
+       "player-1-worker-20": "RIGHT",
+       "player-1-worker-16": "UP"
+      },
+      "edited": {
+       "player-1-worker-12": "DOWN",
+       "player-1-worker-14": "DOWN",
+       "player-1-worker-2": "DOWN",
+       "player-1-worker-11": "DOWN",
+       "player-1-worker-8": "LEFT",
+       "player-1-worker-4": "UP",
+       "player-1-worker-20": "RIGHT",
+       "player-1-worker-16": "UP"
+      }
+     },
+     "original": {
+      "windows": {
+       "10": {
+        "us": 193.769,
+        "foe": 386.448,
+        "uid": 0,
+        "cash_margin": 443.05
+       },
+       "20": {
+        "us": 509.469,
+        "foe": 598.269,
+        "uid": 166.907,
+        "cash_margin": 464.24
+       }
+      },
+      "deposits": [
+       [
+        96,
+        0,
+        0,
+        "player-0-worker-15",
+        241.627
+       ],
+       [
+        96,
+        0,
+        0,
+        "player-0-worker-21",
+        87.902
+       ],
+       [
+        97,
+        1,
+        1,
+        "player-1-worker-5",
+        193.769
+       ],
+       [
+        101,
+        0,
+        0,
+        "player-0-worker-15",
+        19.853
+       ],
+       [
+        104,
+        0,
+        0,
+        "player-0-worker-19",
+        37.066
+       ],
+       [
+        107,
+        0,
+        0,
+        "player-0-worker-4",
+        155.238
+       ],
+       [
+        111,
+        0,
+        0,
+        "player-0-worker-4",
+        14.565
+       ],
+       [
+        111,
+        1,
+        1,
+        "player-1-worker-19",
+        128.977
+       ],
+       [
+        114,
+        0,
+        0,
+        "player-0-worker-24",
+        42.018
+       ],
+       [
+        114,
+        1,
+        1,
+        "player-1-worker-23",
+        19.816
+       ],
+       [
+        115,
+        1,
+        1,
+        "player-1-worker-4",
+        166.907
+       ]
+      ],
+      "initial": [
+       {
+        "cash": 746.16,
+        "workers": 10,
+        "collectors": 9,
+        "planters": 1,
+        "trees": 4,
+        "cargo": 609.635
+       },
+       {
+        "cash": 1464.1,
+        "workers": 10,
+        "collectors": 7,
+        "planters": 3,
+        "trees": 6,
+        "cargo": 376.503
+       }
+      ],
+      "actions_sha": "104cb343e3df7611b6be7c70783907cd79703b4d8a7054481b6931923f31c151"
+     },
+     "modified": {
+      "windows": {
+       "10": {
+        "us": 269.441,
+        "foe": 349.382,
+        "uid": 75.672,
+        "cash_margin": 650.99
+       },
+       "20": {
+        "us": 532.037,
+        "foe": 533.44,
+        "uid": 75.672,
+        "cash_margin": 602.56
+       }
+      },
+      "deposits": [
+       [
+        96,
+        0,
+        0,
+        "player-0-worker-15",
+        241.627
+       ],
+       [
+        96,
+        0,
+        0,
+        "player-0-worker-21",
+        87.902
+       ],
+       [
+        97,
+        1,
+        1,
+        "player-1-worker-5",
+        193.769
+       ],
+       [
+        99,
+        1,
+        1,
+        "player-1-worker-4",
+        75.672
+       ],
+       [
+        101,
+        0,
+        0,
+        "player-0-worker-15",
+        19.853
+       ],
+       [
+        109,
+        0,
+        0,
+        "player-0-worker-1",
+        184.058
+       ],
+       [
+        109,
+        1,
+        1,
+        "player-1-worker-19",
+        83.876
+       ],
+       [
+        112,
+        1,
+        1,
+        "player-1-worker-21",
+        15.643
+       ],
+       [
+        114,
+        1,
+        1,
+        "player-1-worker-16",
+        33.292
+       ],
+       [
+        115,
+        1,
+        1,
+        "player-1-worker-2",
+        129.785
+       ]
+      ],
+      "initial": [
+       {
+        "cash": 746.16,
+        "workers": 10,
+        "collectors": 9,
+        "planters": 1,
+        "trees": 4,
+        "cargo": 609.635
+       },
+       {
+        "cash": 1464.1,
+        "workers": 10,
+        "collectors": 7,
+        "planters": 3,
+        "trees": 6,
+        "cargo": 376.503
+       }
+      ],
+      "actions_sha": "9974adfdc145a80d75d92eabc43cd617f9dc45dfda028e1fcb66894651f111e2"
+     },
+     "delta": {
+      "10": {
+       "us": 75.672,
+       "foe": -37.066,
+       "uid": 75.672,
+       "cash_margin": 207.94,
+       "net_own_minus_foe": 112.738
+      },
+      "20": {
+       "us": 22.568,
+       "foe": -64.829,
+       "uid": -91.235,
+       "cash_margin": 138.32,
+       "net_own_minus_foe": 87.397
+      }
+     }
+    },
+    {
+     "match": "cf276b32e4fd38f43497e60f271a3854",
+     "map_seed": 397168106,
+     "seed": 31051,
+     "start": 164,
+     "edit": {
+      "uid": "player-1-worker-21",
+      "load": 195.00509999999997,
+      "old": "NONE",
+      "new": "UP",
+      "delta": 25.14,
+      "estimate": [
+       [
+        6.085,
+        131.889
+       ],
+       [
+        25.402,
+        162.853
+       ]
+      ],
+      "worker": "player-1-worker-21",
+      "n_locked": 0,
+      "baseline": {
+       "player-1-worker-26": "LEFT",
+       "player-1-worker-27": "UP",
+       "player-1-worker-30": "RIGHT",
+       "player-1-worker-34": "UP",
+       "player-1-worker-31": "UP",
+       "player-1-worker-28": "UP",
+       "player-1-worker-33": "LEFT",
+       "player-1-worker-8": "DOWN"
+      },
+      "edited": {
+       "player-1-worker-26": "LEFT",
+       "player-1-worker-27": "UP",
+       "player-1-worker-30": "RIGHT",
+       "player-1-worker-34": "UP",
+       "player-1-worker-31": "UP",
+       "player-1-worker-28": "UP",
+       "player-1-worker-33": "LEFT",
+       "player-1-worker-8": "DOWN",
+       "player-1-worker-21": "UP"
+      }
+     },
+     "original": {
+      "windows": {
+       "10": {
+        "us": 130.39,
+        "foe": 375.328,
+        "uid": 0,
+        "cash_margin": 171.0
+       },
+       "20": {
+        "us": 695.682,
+        "foe": 441.998,
+        "uid": 284.269,
+        "cash_margin": 738.94
+       }
+      },
+      "deposits": [
+       [
+        168,
+        0,
+        0,
+        "player-0-worker-19",
+        375.328
+       ],
+       [
+        169,
+        1,
+        1,
+        "player-1-worker-34",
+        39.079
+       ],
+       [
+        171,
+        1,
+        1,
+        "player-1-worker-31",
+        91.311
+       ],
+       [
+        176,
+        0,
+        0,
+        "player-0-worker-18",
+        66.67
+       ],
+       [
+        178,
+        1,
+        1,
+        "player-1-worker-36",
+        65.7
+       ],
+       [
+        179,
+        1,
+        1,
+        "player-1-worker-21",
+        284.269
+       ],
+       [
+        180,
+        1,
+        1,
+        "player-1-worker-35",
+        72.57
+       ],
+       [
+        182,
+        1,
+        1,
+        "player-1-worker-28",
+        142.753
+       ]
+      ],
+      "initial": [
+       {
+        "cash": 1992.93,
+        "workers": 10,
+        "collectors": 7,
+        "planters": 3,
+        "trees": 6,
+        "cargo": 706.987
+       },
+       {
+        "cash": 2372.1,
+        "workers": 10,
+        "collectors": 7,
+        "planters": 3,
+        "trees": 7,
+        "cargo": 409.572
+       }
+      ],
+      "actions_sha": "0ea5642bc461339aff6a7ceb2104d2a05cf021b228b154e0491511aee23edc59"
+     },
+     "modified": {
+      "windows": {
+       "10": {
+        "us": 129.862,
+        "foe": 375.328,
+        "uid": 0,
+        "cash_margin": 111.15
+       },
+       "20": {
+        "us": 668.097,
+        "foe": 528.889,
+        "uid": 228.837,
+        "cash_margin": 556.85
+       }
+      },
+      "deposits": [
+       [
+        168,
+        0,
+        0,
+        "player-0-worker-19",
+        375.328
+       ],
+       [
+        168,
+        1,
+        1,
+        "player-1-worker-34",
+        24.478
+       ],
+       [
+        173,
+        1,
+        1,
+        "player-1-worker-31",
+        105.384
+       ],
+       [
+        176,
+        0,
+        0,
+        "player-0-worker-25",
+        153.561
+       ],
+       [
+        176,
+        1,
+        1,
+        "player-1-worker-21",
+        228.837
+       ],
+       [
+        178,
+        1,
+        1,
+        "player-1-worker-36",
+        51.0
+       ],
+       [
+        181,
+        1,
+        1,
+        "player-1-worker-8",
+        85.545
+       ],
+       [
+        181,
+        1,
+        1,
+        "player-1-worker-27",
+        132.593
+       ],
+       [
+        183,
+        1,
+        1,
+        "player-1-worker-35",
+        40.26
+       ]
+      ],
+      "initial": [
+       {
+        "cash": 1992.93,
+        "workers": 10,
+        "collectors": 7,
+        "planters": 3,
+        "trees": 6,
+        "cargo": 706.987
+       },
+       {
+        "cash": 2372.1,
+        "workers": 10,
+        "collectors": 7,
+        "planters": 3,
+        "trees": 7,
+        "cargo": 409.572
+       }
+      ],
+      "actions_sha": "3818076056b2f5e6a471567b906fe3c1e55c1660826e131908fd4bc8ea5163e8"
+     },
+     "delta": {
+      "10": {
+       "us": -0.528,
+       "foe": 0.0,
+       "uid": 0,
+       "cash_margin": -59.85,
+       "net_own_minus_foe": -0.528
+      },
+      "20": {
+       "us": -27.585,
+       "foe": 86.891,
+       "uid": -55.432,
+       "cash_margin": -182.09,
+       "net_own_minus_foe": -114.476
+      }
+     }
+    },
+    {
+     "match": "cf276b32e4fd38f43497e60f271a3854",
+     "map_seed": 397168106,
+     "seed": 31051,
+     "start": 215,
+     "edit": {
+      "uid": "player-1-worker-34",
+      "load": 95.3976,
+      "old": "NONE",
+      "new": "UP",
+      "delta": 16.476,
+      "estimate": [
+       [
+        26.06,
+        94.191
+       ],
+       [
+        46.502,
+        106.702
+       ]
+      ],
+      "worker": "player-1-worker-34",
+      "n_locked": 0,
+      "baseline": {
+       "player-1-worker-41": "RIGHT",
+       "player-1-worker-40": "LEFT",
+       "player-1-worker-39": "LEFT",
+       "player-1-worker-42": "UP",
+       "player-1-worker-28": "LEFT",
+       "player-1-worker-38": "UP"
+      },
+      "edited": {
+       "player-1-worker-41": "RIGHT",
+       "player-1-worker-40": "LEFT",
+       "player-1-worker-39": "LEFT",
+       "player-1-worker-42": "UP",
+       "player-1-worker-28": "LEFT",
+       "player-1-worker-38": "UP",
+       "player-1-worker-34": "UP"
+      }
+     },
+     "original": {
+      "windows": {
+       "10": {
+        "us": 211.98,
+        "foe": 401.014,
+        "uid": 0,
+        "cash_margin": 383.44
+       },
+       "20": {
+        "us": 640.597,
+        "foe": 894.122,
+        "uid": 155.399,
+        "cash_margin": 304.29
+       }
+      },
+      "deposits": [
+       [
+        218,
+        1,
+        1,
+        "player-1-worker-40",
+        109.063
+       ],
+       [
+        219,
+        0,
+        0,
+        "player-0-worker-19",
+        241.469
+       ],
+       [
+        219,
+        1,
+        1,
+        "player-1-worker-37",
+        24.552
+       ],
+       [
+        223,
+        0,
+        0,
+        "player-0-worker-44",
+        159.545
+       ],
+       [
+        224,
+        1,
+        1,
+        "player-1-worker-28",
+        78.365
+       ],
+       [
+        226,
+        1,
+        1,
+        "player-1-worker-21",
+        132.784
+       ],
+       [
+        226,
+        1,
+        1,
+        "player-1-worker-34",
+        155.399
+       ],
+       [
+        229,
+        0,
+        0,
+        "player-0-worker-43",
+        250.495
+       ],
+       [
+        229,
+        1,
+        1,
+        "player-1-worker-39",
+        61.782
+       ],
+       [
+        230,
+        1,
+        1,
+        "player-1-worker-21",
+        36.054
+       ],
+       [
+        232,
+        0,
+        0,
+        "player-0-worker-50",
+        51.0
+       ],
+       [
+        232,
+        1,
+        1,
+        "player-1-worker-41",
+        42.598
+       ],
+       [
+        235,
+        0,
+        0,
+        "player-0-worker-1",
+        191.613
+       ]
+      ],
+      "initial": [
+       {
+        "cash": 3127.88,
+        "workers": 10,
+        "collectors": 8,
+        "planters": 2,
+        "trees": 5,
+        "cargo": 783.62
+       },
+       {
+        "cash": 3643.81,
+        "workers": 10,
+        "collectors": 8,
+        "planters": 2,
+        "trees": 3,
+        "cargo": 432.149
+       }
+      ],
+      "actions_sha": "622ba05854c0eaeadd873d1b72665792276dcd5fafad43aa5aa72b9b649ce442"
+     },
+     "modified": {
+      "windows": {
+       "10": {
+        "us": 344.902,
+        "foe": 401.014,
+        "uid": 132.922,
+        "cash_margin": 456.3
+       },
+       "20": {
+        "us": 635.426,
+        "foe": 764.809,
+        "uid": 198.622,
+        "cash_margin": 300.01
+       }
+      },
+      "deposits": [
+       [
+        218,
+        1,
+        1,
+        "player-1-worker-40",
+        109.063
+       ],
+       [
+        219,
+        0,
+        0,
+        "player-0-worker-19",
+        241.469
+       ],
+       [
+        219,
+        1,
+        1,
+        "player-1-worker-37",
+        24.552
+       ],
+       [
+        223,
+        0,
+        0,
+        "player-0-worker-44",
+        159.545
+       ],
+       [
+        224,
+        1,
+        1,
+        "player-1-worker-28",
+        78.365
+       ],
+       [
+        224,
+        1,
+        1,
+        "player-1-worker-34",
+        132.922
+       ],
+       [
+        226,
+        1,
+        1,
+        "player-1-worker-21",
+        132.784
+       ],
+       [
+        228,
+        1,
+        1,
+        "player-1-worker-41",
+        42.766
+       ],
+       [
+        229,
+        0,
+        0,
+        "player-0-worker-44",
+        48.807
+       ],
+       [
+        231,
+        0,
+        0,
+        "player-0-worker-43",
+        295.057
+       ],
+       [
+        233,
+        0,
+        0,
+        "player-0-worker-48",
+        19.931
+       ],
+       [
+        233,
+        1,
+        1,
+        "player-1-worker-34",
+        65.7
+       ],
+       [
+        233,
+        1,
+        1,
+        "player-1-worker-41",
+        49.274
+       ]
+      ],
+      "initial": [
+       {
+        "cash": 3127.88,
+        "workers": 10,
+        "collectors": 8,
+        "planters": 2,
+        "trees": 5,
+        "cargo": 783.62
+       },
+       {
+        "cash": 3643.81,
+        "workers": 10,
+        "collectors": 8,
+        "planters": 2,
+        "trees": 3,
+        "cargo": 432.149
+       }
+      ],
+      "actions_sha": "2f14504e2ba95f05a228a38ed4fdd0404038293c62805220e974626de5bc20d7"
+     },
+     "delta": {
+      "10": {
+       "us": 132.922,
+       "foe": 0.0,
+       "uid": 132.922,
+       "cash_margin": 72.86,
+       "net_own_minus_foe": 132.922
+      },
+      "20": {
+       "us": -5.171,
+       "foe": -129.313,
+       "uid": 43.223,
+       "cash_margin": -4.28,
+       "net_own_minus_foe": 124.142
+      }
+     }
+    },
+    {
+     "match": "cf276b32e4fd38f43497e60f271a3854",
+     "map_seed": 397168106,
+     "seed": 49069,
+     "start": 55,
+     "edit": {
+      "uid": "player-1-worker-8",
+      "load": 167.28449999999995,
+      "old": "NONE",
+      "new": "RIGHT",
+      "delta": 24.613,
+      "estimate": [
+       [
+        92.429,
+        185.76
+       ],
+       [
+        133.979,
+        193.437
+       ]
+      ],
+      "worker": "player-1-worker-8",
+      "n_locked": 0,
+      "baseline": {
+       "player-1-worker-14": "DOWN",
+       "player-1-worker-15": "UP",
+       "player-1-worker-4": "UP",
+       "player-1-worker-5": "UP",
+       "player-1-worker-7": "UP",
+       "player-1-worker-13": "LEFT",
+       "player-1-worker-12": "UP",
+       "player-1-worker-11": "DOWN",
+       "player-1-worker-2": "DOWN"
+      },
+      "edited": {
+       "player-1-worker-14": "DOWN",
+       "player-1-worker-15": "UP",
+       "player-1-worker-4": "UP",
+       "player-1-worker-5": "UP",
+       "player-1-worker-7": "UP",
+       "player-1-worker-13": "LEFT",
+       "player-1-worker-12": "UP",
+       "player-1-worker-11": "DOWN",
+       "player-1-worker-2": "DOWN",
+       "player-1-worker-8": "RIGHT"
+      }
+     },
+     "original": {
+      "windows": {
+       "10": {
+        "us": 173.219,
+        "foe": 155.319,
+        "uid": 0,
+        "cash_margin": 520.51
+       },
+       "20": {
+        "us": 439.2,
+        "foe": 332.658,
+        "uid": 235.981,
+        "cash_margin": 714.15
+       }
+      },
+      "deposits": [
+       [
+        56,
+        0,
+        0,
+        "player-0-worker-8",
+        128.678
+       ],
+       [
+        56,
+        1,
+        1,
+        "player-1-worker-4",
+        112.965
+       ],
+       [
+        62,
+        1,
+        1,
+        "player-1-worker-5",
+        60.254
+       ],
+       [
+        65,
+        0,
+        0,
+        "player-0-worker-17",
+        26.641
+       ],
+       [
+        66,
+        0,
+        0,
+        "player-0-worker-1",
+        177.339
+       ],
+       [
+        70,
+        1,
+        1,
+        "player-1-worker-2",
+        30.0
+       ],
+       [
+        73,
+        1,
+        1,
+        "player-1-worker-8",
+        235.981
+       ]
+      ],
+      "initial": [
+       {
+        "cash": 268.85,
+        "workers": 9,
+        "collectors": 7,
+        "planters": 2,
+        "trees": 4,
+        "cargo": 258.527
+       },
+       {
+        "cash": 534.68,
+        "workers": 10,
+        "collectors": 7,
+        "planters": 3,
+        "trees": 6,
+        "cargo": 332.275
+       }
+      ],
+      "actions_sha": "22f0060c54e82eed279d1c03909fbcbcc688114df15e6ada0cad7761cbb885b6"
+     },
+     "modified": {
+      "windows": {
+       "10": {
+        "us": 280.249,
+        "foe": 128.678,
+        "uid": 167.284,
+        "cash_margin": 595.11
+       },
+       "20": {
+        "us": 384.946,
+        "foe": 386.32,
+        "uid": 167.284,
+        "cash_margin": 470.74
+       }
+      },
+      "deposits": [
+       [
+        56,
+        0,
+        0,
+        "player-0-worker-8",
+        128.678
+       ],
+       [
+        56,
+        1,
+        1,
+        "player-1-worker-4",
+        112.965
+       ],
+       [
+        60,
+        1,
+        1,
+        "player-1-worker-8",
+        167.284
+       ],
+       [
+        66,
+        0,
+        0,
+        "player-0-worker-1",
+        177.339
+       ],
+       [
+        66,
+        0,
+        1,
+        "player-1-worker-11",
+        0.923
+       ],
+       [
+        69,
+        1,
+        1,
+        "player-1-worker-2",
+        64.153
+       ],
+       [
+        69,
+        1,
+        1,
+        "player-1-worker-18",
+        40.544
+       ],
+       [
+        72,
+        0,
+        0,
+        "player-0-worker-14",
+        80.303
+       ]
+      ],
+      "initial": [
+       {
+        "cash": 268.85,
+        "workers": 9,
+        "collectors": 7,
+        "planters": 2,
+        "trees": 4,
+        "cargo": 258.527
+       },
+       {
+        "cash": 534.68,
+        "workers": 10,
+        "collectors": 7,
+        "planters": 3,
+        "trees": 6,
+        "cargo": 332.275
+       }
+      ],
+      "actions_sha": "d7dcb6d16166dde90afde087653bd7aab20b2f66e3cdc463230e70de0fb27ff8"
+     },
+     "delta": {
+      "10": {
+       "us": 107.03,
+       "foe": -26.641,
+       "uid": 167.284,
+       "cash_margin": 74.6,
+       "net_own_minus_foe": 133.671
+      },
+      "20": {
+       "us": -54.254,
+       "foe": 53.662,
+       "uid": -68.697,
+       "cash_margin": -243.41,
+       "net_own_minus_foe": -107.916
+      }
+     }
+    },
+    {
+     "match": "cf276b32e4fd38f43497e60f271a3854",
+     "map_seed": 397168106,
+     "seed": 49069,
+     "start": 95,
+     "edit": {
+      "uid": "player-1-worker-4",
+      "load": 75.67169999999999,
+      "old": "RIGHT",
+      "new": "UP",
+      "delta": 35.038,
+      "estimate": [
+       [
+        17.226,
+        82.373
+       ],
+       [
+        69.673,
+        100.002
+       ]
+      ],
+      "worker": "player-1-worker-4",
+      "n_locked": 0,
+      "baseline": {
+       "player-1-worker-12": "DOWN",
+       "player-1-worker-14": "DOWN",
+       "player-1-worker-2": "DOWN",
+       "player-1-worker-11": "DOWN",
+       "player-1-worker-8": "LEFT",
+       "player-1-worker-4": "RIGHT",
+       "player-1-worker-20": "RIGHT",
+       "player-1-worker-16": "DOWN"
+      },
+      "edited": {
+       "player-1-worker-12": "DOWN",
+       "player-1-worker-14": "DOWN",
+       "player-1-worker-2": "DOWN",
+       "player-1-worker-11": "DOWN",
+       "player-1-worker-8": "LEFT",
+       "player-1-worker-4": "UP",
+       "player-1-worker-20": "RIGHT",
+       "player-1-worker-16": "DOWN"
+      }
+     },
+     "original": {
+      "windows": {
+       "10": {
+        "us": 193.769,
+        "foe": 397.731,
+        "uid": 0,
+        "cash_margin": 455.23
+       },
+       "20": {
+        "us": 342.485,
+        "foe": 598.714,
+        "uid": 0,
+        "cash_margin": 481.98
+       }
+      },
+      "deposits": [
+       [
+        96,
+        0,
+        0,
+        "player-0-worker-15",
+        241.627
+       ],
+       [
+        96,
+        0,
+        0,
+        "player-0-worker-21",
+        87.902
+       ],
+       [
+        97,
+        1,
+        1,
+        "player-1-worker-5",
+        193.769
+       ],
+       [
+        102,
+        0,
+        0,
+        "player-0-worker-19",
+        68.202
+       ],
+       [
+        106,
+        0,
+        0,
+        "player-0-worker-1",
+        158.23
+       ],
+       [
+        106,
+        1,
+        1,
+        "player-1-worker-8",
+        46.207
+       ],
+       [
+        109,
+        1,
+        1,
+        "player-1-worker-16",
+        36.773
+       ],
+       [
+        110,
+        0,
+        0,
+        "player-0-worker-1",
+        42.753
+       ],
+       [
+        111,
+        1,
+        1,
+        "player-1-worker-21",
+        38.443
+       ],
+       [
+        112,
+        1,
+        1,
+        "player-1-worker-16",
+        27.293
+       ]
+      ],
+      "initial": [
+       {
+        "cash": 746.16,
+        "workers": 10,
+        "collectors": 9,
+        "planters": 1,
+        "trees": 4,
+        "cargo": 609.635
+       },
+       {
+        "cash": 1464.1,
+        "workers": 10,
+        "collectors": 7,
+        "planters": 3,
+        "trees": 6,
+        "cargo": 376.503
+       }
+      ],
+      "actions_sha": "ef89ce08ae3a58bd84a9c18582bdfd63d0aa95722048383ea66425df52c21809"
+     },
+     "modified": {
+      "windows": {
+       "10": {
+        "us": 303.965,
+        "foe": 420.076,
+        "uid": 110.196,
+        "cash_margin": 489.56
+       },
+       "20": {
+        "us": 303.965,
+        "foe": 605.268,
+        "uid": 110.196,
+        "cash_margin": 392.66
+       }
+      },
+      "deposits": [
+       [
+        96,
+        0,
+        0,
+        "player-0-worker-15",
+        241.627
+       ],
+       [
+        96,
+        0,
+        0,
+        "player-0-worker-21",
+        87.902
+       ],
+       [
+        97,
+        1,
+        1,
+        "player-1-worker-5",
+        193.769
+       ],
+       [
+        99,
+        1,
+        1,
+        "player-1-worker-4",
+        75.672
+       ],
+       [
+        103,
+        1,
+        1,
+        "player-1-worker-4",
+        34.524
+       ],
+       [
+        105,
+        0,
+        0,
+        "player-0-worker-19",
+        90.547
+       ],
+       [
+        106,
+        0,
+        0,
+        "player-0-worker-1",
+        148.947
+       ],
+       [
+        108,
+        0,
+        0,
+        "player-0-worker-21",
+        36.245
+       ]
+      ],
+      "initial": [
+       {
+        "cash": 746.16,
+        "workers": 10,
+        "collectors": 9,
+        "planters": 1,
+        "trees": 4,
+        "cargo": 609.635
+       },
+       {
+        "cash": 1464.1,
+        "workers": 10,
+        "collectors": 7,
+        "planters": 3,
+        "trees": 6,
+        "cargo": 376.503
+       }
+      ],
+      "actions_sha": "43d61986382487ca2e862d6ed4b46850535061f026e703f28f24bb91898ac69a"
+     },
+     "delta": {
+      "10": {
+       "us": 110.196,
+       "foe": 22.345,
+       "uid": 110.196,
+       "cash_margin": 34.33,
+       "net_own_minus_foe": 87.851
+      },
+      "20": {
+       "us": -38.52,
+       "foe": 6.554,
+       "uid": 110.196,
+       "cash_margin": -89.32,
+       "net_own_minus_foe": -45.074
+      }
+     }
+    },
+    {
+     "match": "cf276b32e4fd38f43497e60f271a3854",
+     "map_seed": 397168106,
+     "seed": 49069,
+     "start": 164,
+     "edit": {
+      "uid": "player-1-worker-21",
+      "load": 195.00509999999997,
+      "old": "NONE",
+      "new": "UP",
+      "delta": 25.14,
+      "estimate": [
+       [
+        6.085,
+        131.889
+       ],
+       [
+        25.402,
+        162.853
+       ]
+      ],
+      "worker": "player-1-worker-21",
+      "n_locked": 0,
+      "baseline": {
+       "player-1-worker-26": "LEFT",
+       "player-1-worker-27": "UP",
+       "player-1-worker-30": "RIGHT",
+       "player-1-worker-34": "UP",
+       "player-1-worker-31": "UP",
+       "player-1-worker-28": "UP",
+       "player-1-worker-33": "LEFT",
+       "player-1-worker-8": "DOWN"
+      },
+      "edited": {
+       "player-1-worker-26": "LEFT",
+       "player-1-worker-27": "UP",
+       "player-1-worker-30": "RIGHT",
+       "player-1-worker-34": "UP",
+       "player-1-worker-31": "UP",
+       "player-1-worker-28": "UP",
+       "player-1-worker-33": "LEFT",
+       "player-1-worker-8": "DOWN",
+       "player-1-worker-21": "UP"
+      }
+     },
+     "original": {
+      "windows": {
+       "10": {
+        "us": 24.478,
+        "foe": 375.328,
+        "uid": 0,
+        "cash_margin": 71.02
+       },
+       "20": {
+        "us": 434.973,
+        "foe": 736.174,
+        "uid": 0,
+        "cash_margin": 79.55
+       }
+      },
+      "deposits": [
+       [
+        168,
+        0,
+        0,
+        "player-0-worker-19",
+        375.328
+       ],
+       [
+        168,
+        1,
+        1,
+        "player-1-worker-34",
+        24.478
+       ],
+       [
+        175,
+        0,
+        0,
+        "player-0-worker-19",
+        98.521
+       ],
+       [
+        175,
+        1,
+        1,
+        "player-1-worker-31",
+        123.416
+       ],
+       [
+        176,
+        1,
+        1,
+        "player-1-worker-35",
+        72.656
+       ],
+       [
+        177,
+        0,
+        0,
+        "player-0-worker-25",
+        161.468
+       ],
+       [
+        180,
+        0,
+        0,
+        "player-0-worker-18",
+        100.857
+       ],
+       [
+        183,
+        1,
+        1,
+        "player-1-worker-34",
+        59.013
+       ],
+       [
+        184,
+        1,
+        1,
+        "player-1-worker-27",
+        155.41
+       ]
+      ],
+      "initial": [
+       {
+        "cash": 1992.93,
+        "workers": 10,
+        "collectors": 7,
+        "planters": 3,
+        "trees": 6,
+        "cargo": 706.987
+       },
+       {
+        "cash": 2372.1,
+        "workers": 10,
+        "collectors": 7,
+        "planters": 3,
+        "trees": 7,
+        "cargo": 409.572
+       }
+      ],
+      "actions_sha": "1025ae9186218b0ccb15c8d2a7073a978d30749009e92db100c58672ab73df7c"
+     },
+     "modified": {
+      "windows": {
+       "10": {
+        "us": 120.451,
+        "foe": 375.328,
+        "uid": 0,
+        "cash_margin": 155.7
+       },
+       "20": {
+        "us": 566.049,
+        "foe": 578.462,
+        "uid": 293.844,
+        "cash_margin": 439.72
+       }
+      },
+      "deposits": [
+       [
+        168,
+        0,
+        0,
+        "player-0-worker-19",
+        375.328
+       ],
+       [
+        169,
+        1,
+        1,
+        "player-1-worker-34",
+        39.079
+       ],
+       [
+        172,
+        1,
+        1,
+        "player-1-worker-31",
+        81.372
+       ],
+       [
+        175,
+        0,
+        0,
+        "player-0-worker-19",
+        98.521
+       ],
+       [
+        176,
+        1,
+        1,
+        "player-1-worker-31",
+        43.305
+       ],
+       [
+        178,
+        0,
+        0,
+        "player-0-worker-18",
+        104.613
+       ],
+       [
+        179,
+        1,
+        1,
+        "player-1-worker-31",
+        27.0
+       ],
+       [
+        182,
+        1,
+        1,
+        "player-1-worker-21",
+        293.844
+       ],
+       [
+        182,
+        1,
+        1,
+        "player-1-worker-35",
+        81.449
+       ]
+      ],
+      "initial": [
+       {
+        "cash": 1992.93,
+        "workers": 10,
+        "collectors": 7,
+        "planters": 3,
+        "trees": 6,
+        "cargo": 706.987
+       },
+       {
+        "cash": 2372.1,
+        "workers": 10,
+        "collectors": 7,
+        "planters": 3,
+        "trees": 7,
+        "cargo": 409.572
+       }
+      ],
+      "actions_sha": "ab5b5597c5db1d1e7aff42c3deb008d70108e0a7340ea1134d8b238a70a9b62c"
+     },
+     "delta": {
+      "10": {
+       "us": 95.973,
+       "foe": 0.0,
+       "uid": 0,
+       "cash_margin": 84.68,
+       "net_own_minus_foe": 95.973
+      },
+      "20": {
+       "us": 131.076,
+       "foe": -157.712,
+       "uid": 293.844,
+       "cash_margin": 360.17,
+       "net_own_minus_foe": 288.788
+      }
+     }
+    },
+    {
+     "match": "cf276b32e4fd38f43497e60f271a3854",
+     "map_seed": 397168106,
+     "seed": 49069,
+     "start": 215,
+     "edit": {
+      "uid": "player-1-worker-34",
+      "load": 95.3976,
+      "old": "NONE",
+      "new": "UP",
+      "delta": 16.476,
+      "estimate": [
+       [
+        26.06,
+        94.191
+       ],
+       [
+        46.502,
+        106.702
+       ]
+      ],
+      "worker": "player-1-worker-34",
+      "n_locked": 0,
+      "baseline": {
+       "player-1-worker-41": "RIGHT",
+       "player-1-worker-40": "LEFT",
+       "player-1-worker-39": "LEFT",
+       "player-1-worker-42": "UP",
+       "player-1-worker-28": "LEFT",
+       "player-1-worker-38": "UP"
+      },
+      "edited": {
+       "player-1-worker-41": "RIGHT",
+       "player-1-worker-40": "LEFT",
+       "player-1-worker-39": "LEFT",
+       "player-1-worker-42": "UP",
+       "player-1-worker-28": "LEFT",
+       "player-1-worker-38": "UP",
+       "player-1-worker-34": "UP"
+      }
+     },
+     "original": {
+      "windows": {
+       "10": {
+        "us": 215.892,
+        "foe": 401.014,
+        "uid": 0,
+        "cash_margin": 325.38
+       },
+       "20": {
+        "us": 400.199,
+        "foe": 899.206,
+        "uid": 0,
+        "cash_margin": -9.8
+       }
+      },
+      "deposits": [
+       [
+        218,
+        1,
+        1,
+        "player-1-worker-40",
+        109.063
+       ],
+       [
+        219,
+        0,
+        0,
+        "player-0-worker-19",
+        241.469
+       ],
+       [
+        221,
+        1,
+        1,
+        "player-1-worker-37",
+        28.464
+       ],
+       [
+        223,
+        0,
+        0,
+        "player-0-worker-44",
+        159.545
+       ],
+       [
+        224,
+        1,
+        1,
+        "player-1-worker-28",
+        78.365
+       ],
+       [
+        226,
+        1,
+        1,
+        "player-1-worker-21",
+        138.406
+       ],
+       [
+        227,
+        0,
+        0,
+        "player-0-worker-44",
+        47.613
+       ],
+       [
+        229,
+        0,
+        0,
+        "player-0-worker-18",
+        148.852
+       ],
+       [
+        230,
+        1,
+        1,
+        "player-1-worker-40",
+        45.901
+       ],
+       [
+        233,
+        0,
+        0,
+        "player-0-worker-43",
+        301.727
+       ]
+      ],
+      "initial": [
+       {
+        "cash": 3127.88,
+        "workers": 10,
+        "collectors": 8,
+        "planters": 2,
+        "trees": 5,
+        "cargo": 783.62
+       },
+       {
+        "cash": 3643.81,
+        "workers": 10,
+        "collectors": 8,
+        "planters": 2,
+        "trees": 3,
+        "cargo": 432.149
+       }
+      ],
+      "actions_sha": "df69e830ded377fb0850343477f9061bdf0230ff724c6070b4b1474466b9a30e"
+     },
+     "modified": {
+      "windows": {
+       "10": {
+        "us": 342.963,
+        "foe": 401.014,
+        "uid": 132.922,
+        "cash_margin": 457.97
+       },
+       "20": {
+        "us": 627.642,
+        "foe": 720.21,
+        "uid": 194.127,
+        "cash_margin": 411.91
+       }
+      },
+      "deposits": [
+       [
+        218,
+        1,
+        1,
+        "player-1-worker-40",
+        109.063
+       ],
+       [
+        219,
+        0,
+        0,
+        "player-0-worker-19",
+        241.469
+       ],
+       [
+        223,
+        0,
+        0,
+        "player-0-worker-44",
+        159.545
+       ],
+       [
+        223,
+        1,
+        1,
+        "player-1-worker-40",
+        22.613
+       ],
+       [
+        224,
+        1,
+        1,
+        "player-1-worker-28",
+        78.365
+       ],
+       [
+        224,
+        1,
+        1,
+        "player-1-worker-34",
+        132.922
+       ],
+       [
+        226,
+        1,
+        1,
+        "player-1-worker-21",
+        135.245
+       ],
+       [
+        227,
+        0,
+        0,
+        "player-0-worker-43",
+        231.673
+       ],
+       [
+        229,
+        1,
+        1,
+        "player-1-worker-21",
+        20.591
+       ],
+       [
+        229,
+        1,
+        1,
+        "player-1-worker-34",
+        61.205
+       ],
+       [
+        230,
+        1,
+        1,
+        "player-1-worker-39",
+        67.638
+       ],
+       [
+        234,
+        0,
+        0,
+        "player-0-worker-44",
+        87.523
+       ]
+      ],
+      "initial": [
+       {
+        "cash": 3127.88,
+        "workers": 10,
+        "collectors": 8,
+        "planters": 2,
+        "trees": 5,
+        "cargo": 783.62
+       },
+       {
+        "cash": 3643.81,
+        "workers": 10,
+        "collectors": 8,
+        "planters": 2,
+        "trees": 3,
+        "cargo": 432.149
+       }
+      ],
+      "actions_sha": "1510e2ca4d7f5cbb502632d36b083a908ea210e52685da4f6b62a6c82c3e0b28"
+     },
+     "delta": {
+      "10": {
+       "us": 127.071,
+       "foe": 0.0,
+       "uid": 132.922,
+       "cash_margin": 132.59,
+       "net_own_minus_foe": 127.071
+      },
+      "20": {
+       "us": 227.443,
+       "foe": -178.996,
+       "uid": 194.127,
+       "cash_margin": 421.71,
+       "net_own_minus_foe": 406.439
+      }
+     }
+    }
+   ]
+  }
+ ],
+ "summary": {
+  "all": {
+   "10": {
+    "us": {
+     "mean": 39.765,
+     "positive": 9,
+     "equal": 4,
+     "negative": 3
+    },
+    "foe": {
+     "mean": 6.086,
+     "positive": 3,
+     "equal": 11,
+     "negative": 2
+    },
+    "uid": {
+     "mean": 43.101,
+     "positive": 8,
+     "equal": 6,
+     "negative": 2
+    },
+    "net_own_minus_foe": {
+     "mean": 33.679,
+     "positive": 8,
+     "equal": 4,
+     "negative": 4
+    },
+    "cash_margin": {
+     "mean": 45.913,
+     "positive": 12,
+     "equal": 0,
+     "negative": 4
+    }
+   },
+   "20": {
+    "us": {
+     "mean": -39.246,
+     "positive": 4,
+     "equal": 1,
+     "negative": 11
+    },
+    "foe": {
+     "mean": 12.51,
+     "positive": 7,
+     "equal": 1,
+     "negative": 8
+    },
+    "uid": {
+     "mean": -16.957,
+     "positive": 6,
+     "equal": 2,
+     "negative": 8
+    },
+    "net_own_minus_foe": {
+     "mean": -51.757,
+     "positive": 6,
+     "equal": 1,
+     "negative": 9
+    },
+    "cash_margin": {
+     "mean": -34.645,
+     "positive": 7,
+     "equal": 0,
+     "negative": 9
+    }
+   }
+  },
+  "4063a34afedb6d4767a9118e1dee9e5d": {
+   "10": {
+    "us": {
+     "mean": -22.423,
+     "positive": 2,
+     "equal": 4,
+     "negative": 2
+    },
+    "foe": {
+     "mean": 17.342,
+     "positive": 2,
+     "equal": 6,
+     "negative": 0
+    },
+    "uid": {
+     "mean": -12.082,
+     "positive": 2,
+     "equal": 4,
+     "negative": 2
+    },
+    "net_own_minus_foe": {
+     "mean": -39.765,
+     "positive": 1,
+     "equal": 4,
+     "negative": 3
+    },
+    "cash_margin": {
+     "mean": -0.88,
+     "positive": 5,
+     "equal": 0,
+     "negative": 3
+    }
+   },
+   "20": {
+    "us": {
+     "mean": -91.018,
+     "positive": 1,
+     "equal": 1,
+     "negative": 6
+    },
+    "foe": {
+     "mean": 36.919,
+     "positive": 3,
+     "equal": 1,
+     "negative": 4
+    },
+    "uid": {
+     "mean": -76.695,
+     "positive": 2,
+     "equal": 2,
+     "negative": 4
+    },
+    "net_own_minus_foe": {
+     "mean": -127.937,
+     "positive": 2,
+     "equal": 1,
+     "negative": 5
+    },
+    "cash_margin": {
+     "mean": -59.291,
+     "positive": 4,
+     "equal": 0,
+     "negative": 4
+    }
+   }
+  },
+  "cf276b32e4fd38f43497e60f271a3854": {
+   "10": {
+    "us": {
+     "mean": 101.953,
+     "positive": 7,
+     "equal": 0,
+     "negative": 1
+    },
+    "foe": {
+     "mean": -5.17,
+     "positive": 1,
+     "equal": 5,
+     "negative": 2
+    },
+    "uid": {
+     "mean": 98.285,
+     "positive": 6,
+     "equal": 2,
+     "negative": 0
+    },
+    "net_own_minus_foe": {
+     "mean": 107.123,
+     "positive": 7,
+     "equal": 0,
+     "negative": 1
+    },
+    "cash_margin": {
+     "mean": 92.706,
+     "positive": 7,
+     "equal": 0,
+     "negative": 1
+    }
+   },
+   "20": {
+    "us": {
+     "mean": 12.526,
+     "positive": 3,
+     "equal": 0,
+     "negative": 5
+    },
+    "foe": {
+     "mean": -11.898,
+     "positive": 4,
+     "equal": 0,
+     "negative": 4
+    },
+    "uid": {
+     "mean": 42.781,
+     "positive": 4,
+     "equal": 0,
+     "negative": 4
+    },
+    "net_own_minus_foe": {
+     "mean": 24.424,
+     "positive": 4,
+     "equal": 0,
+     "negative": 4
+    },
+    "cash_margin": {
+     "mean": -9.999,
+     "positive": 3,
+     "equal": 0,
+     "negative": 5
+    }
+   }
+  }
+ }
+}

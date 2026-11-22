@@ -1,0 +1,64 @@
+{
+ "model_sha": "cf90e4021edcb522fd5e42d146947583a01c334ebffd9e26376f1ceea6240664",
+ "test_maps": 36,
+ "train_maps": 128,
+ "metrics": {
+  "all_five_landings_but_selected_action_hidden": {
+   "n": 14171,
+   "mae": [
+    52.663,
+    72.131
+   ],
+   "rmse": [
+    76.477,
+    94.91
+   ],
+   "actual_mean": [
+    86.72000122070312,
+    151.61700439453125
+   ],
+   "prediction_mean": [
+    90.037,
+    153.399
+   ]
+  },
+  "conditional_predictions_averaged_over_five": {
+   "n": 14171,
+   "mae": [
+    57.469,
+    74.122
+   ],
+   "rmse": [
+    78.343,
+    95.484
+   ],
+   "actual_mean": [
+    86.72000122070312,
+    151.61700439453125
+   ],
+   "prediction_mean": [
+    78.084,
+    145.851
+   ]
+  },
+  "conditional_actual_first_action": {
+   "n": 14171,
+   "mae": [
+    48.088,
+    71.605
+   ],
+   "rmse": [
+    72.757,
+    94.223
+   ],
+   "actual_mean": [
+    86.72000122070312,
+    151.61700439453125
+   ],
+   "prediction_mean": [
+    89.488,
+    153.369
+   ]
+  }
+ }
+}

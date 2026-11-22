@@ -16,7 +16,7 @@ def main():
     rates=[];values={};tests=[]
     if not a.alerts_only:
         refnet=m._TorchNet(m._POLICY,None);wide=m._WinoNet(refnet);small=m._V7ChannelsLast(refnet)
-    select=getattr(m,'_v7_shipping_alert',m._v7_root_shipping)
+    select=getattr(m,'_v7_late_alarm',getattr(m,'_v7_shipping_alert',m._v7_root_shipping))
     for t,f in enumerate(frames[:-1]):
         ob=dict(f[0]['observation']);ob.pop('full_carbon',None);pl=ob['players']
         est,known=tr.step(pl,t,ob['carbon']);est,known=m._sense_tree_carbon(tr.bel,ob,cfg,prev,est,known)

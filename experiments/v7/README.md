@@ -25,7 +25,8 @@ Master7sE 对局中，第 47 步到第 252 步的两次己方工人交货之间�
 | [Fairlead](checkpoints/fairlead.py) | 6–10 | 2/8，4/8 | −169.60 | 四图双负、两图双胜。平均净树收入多 258.80，入库少 419.04。双方各有 10、9 个慢步，16 局均正常结束。[逐图分差与用时](../../analysis/v7/07-qualifying-summary.json) · [双方资金来源](../../analysis/v7/07-qualifying-economy.json) |
 | [Tidewatch](checkpoints/tidewatch.py) | 7–8，另 1 局对手超时 | 2 胜，5 胜 | +32.71 | 有效 15 局中的平均分差。首个完整结果产生前已为同一文件指定四路并发、另外八图的整批复验。[第八批逐图结果](../../analysis/v7/08-qualifying-summary.json) · [第九批预登记](../../analysis/v7/tidewatch-repeat-design.json) |
 | [Tidewatch，低并发复验](checkpoints/tidewatch.py) | 5–11 | 3/8，2/8 | −300.39 | 八图均正常完成，三图双负。平均净树收益多 5.22，基地入款少 328.11。[逐图结果](../../analysis/v7/09-qualifying-summary.json) · [裁判资金来源](../../analysis/v7/09-qualifying-economy.json) |
-| [Harbormaster](checkpoints/harbormaster.py) | 评测中 | | | 总结局门槛沿用前九轮，全部 8 张图各换边一次。[冻结文件和新图](../../analysis/v7/10-qualifying.json) |
+| [Harbormaster](checkpoints/harbormaster.py) | 8–8 | 5/8，3/8 | −119.15 | 两图双胜，两图双负。平均净树收益少 57.35、入库少 48.66。[逐图分差](../../analysis/v7/10-qualifying-summary.json) · [收支](../../analysis/v7/10-qualifying-economy.json) |
+| [Crosscurrent](checkpoints/crosscurrent.py) | 评测中 | | | 同一文件在第十一批八张新图换边。[冻结地图](../../analysis/v7/11-qualifying.json) |
 
 在仓库根目录，以下命令可以重建已冻结的文件，并复现存档分叉的现金流。
 
@@ -108,3 +109,9 @@ Crosscurrent 在同一个文件内保留冻结 v6 的完整主网络，并用压
 在截图的第 164 步接管，新文件三个分支都选择追分策略，前两条分支在第 173 步自车交货，第三条直到第 192 步才交货。压缩对静态动作的影响很小，个别重新对抗的结果仍可显著改变。[三个种子与第 89 步的对照](../../analysis/v7/crosscurrent-master-e-rescue.md)
 
 以冻结 v6 的主网络运行绝大部分普通棋局，只在己方断流或对方集中回款时加入回库和截击搜索，也做了独立对照。四张既有开发图换边，固定宽度四、深度二、一个对手应手、三步延伸。这个变体 1 胜 7 负，场均 −232.14；同条件 Harbormaster 3 胜 5 负，场均 +131.93。[十六局开发对照](../../analysis/v7/conditional-development.json)
+
+## 以较强的单个网络为基础做小范围修正
+
+Lifeline 保留第五轮 Soundings 的整套搜索和权重。只有己方陷入周转困难、出现三四步内安全可达的路线，才让友军协调让路。第 150 步以后若双方都有可入库货物、对方触发大额回款预警，才扩大回库和拦截的比较。两个原局六步交货为 103.53、129.30，Artemis 第 190 步触发两套比较。该文件冻结用于第十二批新图。[源码](checkpoints/lifeline.py) · [原局紧急交货](../../analysis/v7/lifeline-corridors.json) · [大额入库对照](../../analysis/v7/lifeline-warning.json)
+
+学得某辆车行动后的未来入库金额，可将真实动作下 10 步预测绝对误差从 52.66 降至 48.09。在两张排除在训练外的实盘上，让双方重新行动，主动改一辆车的第一步在 10 步时平均增加 33.68 入库差，20 步时平均减少 51.76。保留作为离线研究。[按行动预测与分叉核验](../../analysis/v7/carrier-action.md)
