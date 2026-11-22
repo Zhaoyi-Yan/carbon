@@ -1,0 +1,1156 @@
+{
+ "summary": {
+  "1": {
+   "weighted": {
+    "base": {
+     "distinct_maps": 7,
+     "eligible_pairs": 11,
+     "agreement": 0.6363636363636364,
+     "weighted_agreement": 0.6174424755611604,
+     "mean_best_regret": 92.3
+    },
+    "new": {
+     "distinct_maps": 7,
+     "eligible_pairs": 11,
+     "agreement": 0.6363636363636364,
+     "weighted_agreement": 0.6878349390011468,
+     "mean_best_regret": 70.47
+    }
+   },
+   "terminal": {
+    "base": {
+     "distinct_maps": 7,
+     "eligible_pairs": 11,
+     "agreement": 0.36363636363636365,
+     "weighted_agreement": 0.5153798905186212,
+     "mean_best_regret": 222.2
+    },
+    "new": {
+     "distinct_maps": 7,
+     "eligible_pairs": 11,
+     "agreement": 0.5454545454545454,
+     "weighted_agreement": 0.6197606724378694,
+     "mean_best_regret": 158.72
+    }
+   }
+  },
+  "3": {
+   "weighted": {
+    "base": {
+     "distinct_maps": 9,
+     "eligible_pairs": 21,
+     "agreement": 0.42857142857142855,
+     "weighted_agreement": 0.4331876642061001,
+     "mean_best_regret": 206.53
+    },
+    "new": {
+     "distinct_maps": 9,
+     "eligible_pairs": 21,
+     "agreement": 0.42857142857142855,
+     "weighted_agreement": 0.4331876642061001,
+     "mean_best_regret": 206.53
+    }
+   },
+   "terminal": {
+    "base": {
+     "distinct_maps": 9,
+     "eligible_pairs": 21,
+     "agreement": 0.47619047619047616,
+     "weighted_agreement": 0.2918118787532202,
+     "mean_best_regret": 437.43
+    },
+    "new": {
+     "distinct_maps": 9,
+     "eligible_pairs": 21,
+     "agreement": 0.47619047619047616,
+     "weighted_agreement": 0.2918118787532202,
+     "mean_best_regret": 437.43
+    }
+   }
+  }
+ },
+ "cases": [
+  {
+   "seed": 733867961,
+   "seat": 0,
+   "layout": "b3f1787c50069c8e8e0d4aab14ebf7c4f0d88229f265d44a2d379f5d779ecd08",
+   "family": "phase-switch",
+   "branches": {
+    "1": [
+     {
+      "base": 2138.69091796875,
+      "new": 1802.7857666015625,
+      "signature": "df009ab824eb9cce2cf5b8e09b1a6aec42161d9c5979eacbc19de034e675fb73",
+      "name": "soundings",
+      "weighted": 1810.7240000000002,
+      "terminal": 1823.0600000000004,
+      "target_horizons": [
+       1869.3599999999997,
+       1582.9099999999999,
+       2320.95
+      ]
+     },
+     {
+      "base": 2138.69091796875,
+      "new": 1802.7857666015625,
+      "signature": "df009ab824eb9cce2cf5b8e09b1a6aec42161d9c5979eacbc19de034e675fb73",
+      "name": "tidewatch",
+      "weighted": 1983.9072,
+      "terminal": 2112.7300000000005,
+      "target_horizons": [
+       2150.98,
+       1961.9900000000002,
+       1806.9899999999998
+      ]
+     },
+     {
+      "base": 2138.69091796875,
+      "new": 1802.7857666015625,
+      "signature": "df009ab824eb9cce2cf5b8e09b1a6aec42161d9c5979eacbc19de034e675fb73",
+      "name": "estuary",
+      "weighted": 1522.9184000000002,
+      "terminal": 1641.12,
+      "target_horizons": [
+       1876.7200000000003,
+       1495.5400000000004,
+       1098.7800000000007
+      ]
+     }
+    ],
+    "3": [
+     {
+      "base": 2187.002685546875,
+      "new": 1856.53857421875,
+      "signature": "b88ee80b21f28c92e2ed8d3c9420914ce97b08742c84c000a9c3a55b8f8e6925",
+      "name": "soundings",
+      "weighted": 1793.7204000000002,
+      "terminal": 1823.0600000000004,
+      "target_horizons": [
+       1947.5899999999997,
+       1588.3600000000006,
+       2112.24
+      ]
+     },
+     {
+      "base": 2187.002685546875,
+      "new": 1856.53857421875,
+      "signature": "b88ee80b21f28c92e2ed8d3c9420914ce97b08742c84c000a9c3a55b8f8e6925",
+      "name": "tidewatch",
+      "weighted": 1989.9368,
+      "terminal": 2112.7300000000005,
+      "target_horizons": [
+       2222.5699999999997,
+       1853.0099999999998,
+       2020.2600000000002
+      ]
+     },
+     {
+      "base": 2187.002685546875,
+      "new": 1856.53857421875,
+      "signature": "b88ee80b21f28c92e2ed8d3c9420914ce97b08742c84c000a9c3a55b8f8e6925",
+      "name": "estuary",
+      "weighted": 1546.3684,
+      "terminal": 1641.12,
+      "target_horizons": [
+       1901.9100000000003,
+       1595.6299999999997,
+       920.5299999999997
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "seed": 146939584,
+   "seat": 1,
+   "layout": "ca8ec54aaefc98e99ef5c7026c96e5548050068d1ad5f798fca47029bb37a125",
+   "family": "phase-switch",
+   "branches": {
+    "1": [
+     {
+      "base": 199.61741638183594,
+      "new": 8.030678749084473,
+      "signature": "4df0d00c000f89ec349f36c148b4aa73844409b2b1830676e31c06930286c3cc",
+      "name": "soundings",
+      "weighted": -80.79119999999972,
+      "terminal": 4.190000000000509,
+      "target_horizons": [
+       -134.42999999999984,
+       -127.63999999999942,
+       116.10999999999967
+      ]
+     },
+     {
+      "base": 199.61741638183594,
+      "new": 8.030678749084473,
+      "signature": "4df0d00c000f89ec349f36c148b4aa73844409b2b1830676e31c06930286c3cc",
+      "name": "tidewatch",
+      "weighted": -657.8847999999998,
+      "terminal": -843.7399999999998,
+      "target_horizons": [
+       173.84000000000015,
+       -828.3999999999996,
+       -1378.96
+      ]
+     },
+     {
+      "base": 177.09178161621094,
+      "new": -13.600923538208008,
+      "signature": "0f878bcffaba71ab18199ce4295b77e15b1023b2c6dc21c0d6bd78c157258bc3",
+      "name": "estuary",
+      "weighted": -284.11880000000014,
+      "terminal": 203.89999999999964,
+      "target_horizons": [
+       -122.94000000000005,
+       -20.63000000000011,
+       -1194.8400000000001
+      ]
+     }
+    ],
+    "3": [
+     {
+      "base": -1.1232197284698486,
+      "new": -159.38284301757812,
+      "signature": "261e38eaec5f41d6b9511009aa985075ea94db8c1f7889da6d81f3c27d8b575c",
+      "name": "soundings",
+      "weighted": 114.9923999999998,
+      "terminal": 4.190000000000509,
+      "target_horizons": [
+       -62.61000000000058,
+       295.6099999999997,
+       -105.96999999999935
+      ]
+     },
+     {
+      "base": -1.1232197284698486,
+      "new": -159.38284301757812,
+      "signature": "261e38eaec5f41d6b9511009aa985075ea94db8c1f7889da6d81f3c27d8b575c",
+      "name": "tidewatch",
+      "weighted": -579.522,
+      "terminal": -843.7399999999998,
+      "target_horizons": [
+       148.42999999999984,
+       -646.8699999999999,
+       -1423.5500000000002
+      ]
+     },
+     {
+      "base": -1.1232197284698486,
+      "new": -159.38284301757812,
+      "signature": "261e38eaec5f41d6b9511009aa985075ea94db8c1f7889da6d81f3c27d8b575c",
+      "name": "estuary",
+      "weighted": -172.68120000000036,
+      "terminal": 203.89999999999964,
+      "target_horizons": [
+       -22.470000000000255,
+       -33.43000000000029,
+       -745.0300000000007
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "seed": 931323443,
+   "seat": 0,
+   "layout": "e09c2a0301635a691e15fd472eda596795ff9d0d88d03ba0a89dbd6e8972e732",
+   "family": "phase-switch",
+   "branches": {
+    "1": [
+     {
+      "base": 95.3455581665039,
+      "new": -74.2244873046875,
+      "signature": "d5dbb960540b460e6688547eac2535e8e14f1b47f60eba13577d93ead28a18ef",
+      "name": "soundings",
+      "weighted": 27.664399999999965,
+      "terminal": 220.07000000000062,
+      "target_horizons": [
+       -182.26000000000022,
+       178.86000000000013,
+       -71.55000000000018
+      ]
+     },
+     {
+      "base": 95.3455581665039,
+      "new": -74.2244873046875,
+      "signature": "d5dbb960540b460e6688547eac2535e8e14f1b47f60eba13577d93ead28a18ef",
+      "name": "tidewatch",
+      "weighted": -711.0844000000001,
+      "terminal": -1214.21,
+      "target_horizons": [
+       -394.82000000000016,
+       -601.19,
+       -1439.58
+      ]
+     },
+     {
+      "base": 98.68544006347656,
+      "new": -69.30729675292969,
+      "signature": "bc3702c391ed19ce546010e61a58908b0250fb2cb320572b83ea3c8a2f08143a",
+      "name": "estuary",
+      "weighted": 31.698000000000125,
+      "terminal": 4.1899999999996,
+      "target_horizons": [
+       278.1199999999999,
+       -45.679999999999836,
+       -112.10999999999967
+      ]
+     }
+    ],
+    "3": [
+     {
+      "base": 257.6351318359375,
+      "new": 47.27583312988281,
+      "signature": "1add3b1ae2c39312fb81fb55499308a01a68e540e49772537f172e8f9e8e4954",
+      "name": "soundings",
+      "weighted": -11.95039999999986,
+      "terminal": 220.07000000000062,
+      "target_horizons": [
+       -93.48000000000002,
+       162.45000000000027,
+       -351.25
+      ]
+     },
+     {
+      "base": 266.3147888183594,
+      "new": 58.843597412109375,
+      "signature": "d9edd78263ada0ff6f3a37be16fbd4d16273a2d25ba9dbaa404a67db252d7304",
+      "name": "tidewatch",
+      "weighted": -666.6740000000001,
+      "terminal": -1214.21,
+      "target_horizons": [
+       -356.4100000000003,
+       -584.7599999999998,
+       -1314.0200000000004
+      ]
+     },
+     {
+      "base": 166.58091735839844,
+      "new": -28.789836883544922,
+      "signature": "9474d183da17328fc25e8fd457a65a9952c7bb5c7d8998a8977131628b658d9b",
+      "name": "estuary",
+      "weighted": -21.00640000000003,
+      "terminal": 4.1899999999996,
+      "target_horizons": [
+       -44.55000000000018,
+       30.63000000000011,
+       -122.30000000000018
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "seed": 992798929,
+   "seat": 1,
+   "layout": "6008e52a97d43b5aa70b1135c4e76e650f6d3cbfc9350de9a37f1163f570e727",
+   "family": "phase-switch",
+   "branches": {
+    "1": [
+     {
+      "base": 1583.90234375,
+      "new": 1270.951171875,
+      "signature": "394d7b693ccd1534c18c26280f76be5554bb41e69006e8fca6fda66b58d50e1e",
+      "name": "soundings",
+      "weighted": 1157.5359999999996,
+      "terminal": 621.8599999999997,
+      "target_horizons": [
+       1652.2799999999997,
+       1095.1299999999997,
+       627.1499999999996
+      ]
+     },
+     {
+      "base": 1580.4984130859375,
+      "new": 1275.2288818359375,
+      "signature": "9003f695159d9034cdf5f446ba04b7a2e8c497ac4193a6a7c152333a3b6fb0e4",
+      "name": "tidewatch",
+      "weighted": 1584.9579999999999,
+      "terminal": 969.3200000000006,
+      "target_horizons": [
+       1637.6799999999998,
+       1764.33,
+       1044.7799999999997
+      ]
+     },
+     {
+      "base": 1552.740234375,
+      "new": 1242.0379638671875,
+      "signature": "31a4d134d37a9c014eec4781cd5507f541293492d9c506eedd9816648429ad14",
+      "name": "estuary",
+      "weighted": 1341.8147999999999,
+      "terminal": 1129.6599999999999,
+      "target_horizons": [
+       1589.17,
+       1239.6599999999999,
+       1261.12
+      ]
+     }
+    ],
+    "3": [
+     {
+      "base": 1640.4163818359375,
+      "new": 1311.248779296875,
+      "signature": "16add6e4d8d05d5a213b6affc1f17d074a7c287ce3855f18fa53ec4acc1746e9",
+      "name": "soundings",
+      "weighted": 1136.6400000000003,
+      "terminal": 621.8599999999997,
+      "target_horizons": [
+       1719.6400000000003,
+       1033.19,
+       589.4099999999999
+      ]
+     },
+     {
+      "base": 1663.75390625,
+      "new": 1313.9146728515625,
+      "signature": "e569c0a0b811776224f5cdcc3b75b1b656bcc3118e10f3190fff5912f3a5c3fe",
+      "name": "tidewatch",
+      "weighted": 1665.0852,
+      "terminal": 969.3200000000006,
+      "target_horizons": [
+       1897.4399999999996,
+       1779.6499999999996,
+       1041.92
+      ]
+     },
+     {
+      "base": 1720.0538330078125,
+      "new": 1368.3851318359375,
+      "signature": "e4a0a26148b16e2882d0b63b8c9cd1854b79913d8c299cc85bc65cd28165f3bb",
+      "name": "estuary",
+      "weighted": 1254.7868,
+      "terminal": 1129.6599999999999,
+      "target_horizons": [
+       1490.1499999999996,
+       1115.4899999999998,
+       1287.4500000000007
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "seed": 22588782,
+   "seat": 0,
+   "layout": "11453dd13ac151128517d2655dcb526fcb2e4ff17b8b5bdd026d4f2aba226228",
+   "family": "phase-switch",
+   "branches": {
+    "1": [
+     {
+      "base": 648.91064453125,
+      "new": 403.5723571777344,
+      "signature": "81c360f12df5e08c1e25fcb0cc10cb77593ac97ad2620147f11595dc2a72c8f6",
+      "name": "soundings",
+      "weighted": 358.89599999999984,
+      "terminal": 175.03999999999996,
+      "target_horizons": [
+       498.2399999999998,
+       103.98999999999978,
+       826.5699999999997
+      ]
+     },
+     {
+      "base": 650.1878662109375,
+      "new": 402.4313049316406,
+      "signature": "42f7b7e697f0f397102906ef51c5d42fb26c04701adda40fc4be31aaf5d71fc2",
+      "name": "tidewatch",
+      "weighted": 726.9147999999999,
+      "terminal": 8.409999999999854,
+      "target_horizons": [
+       700.6500000000001,
+       1024.1399999999999,
+       -9.100000000000364
+      ]
+     },
+     {
+      "base": 650.1878662109375,
+      "new": 402.4313049316406,
+      "signature": "42f7b7e697f0f397102906ef51c5d42fb26c04701adda40fc4be31aaf5d71fc2",
+      "name": "estuary",
+      "weighted": 540.1360000000001,
+      "terminal": 147.8199999999997,
+      "target_horizons": [
+       464.94000000000005,
+       433.34000000000015,
+       923.0799999999999
+      ]
+     }
+    ],
+    "3": [
+     {
+      "base": 593.0030517578125,
+      "new": 374.73370361328125,
+      "signature": "7a4be3d1f9f59064dac4a2a923041da247dcd26786e572431b8c4cbb66946d92",
+      "name": "soundings",
+      "weighted": 161.85040000000015,
+      "terminal": 175.03999999999996,
+      "target_horizons": [
+       539.52,
+       -125.65999999999985,
+       380.6400000000003
+      ]
+     },
+     {
+      "base": 708.074951171875,
+      "new": 458.7962341308594,
+      "signature": "2268cd891e8e54c8df37e1e59586a6383cd8fac438d103de0bb6dc7e60567507",
+      "name": "tidewatch",
+      "weighted": 758.8432000000001,
+      "terminal": 8.409999999999854,
+      "target_horizons": [
+       925.3700000000003,
+       1104.4299999999998,
+       -372.8199999999997
+      ]
+     },
+     {
+      "base": 732.19677734375,
+      "new": 483.97161865234375,
+      "signature": "5f86cb46701d34c211ef2b06367ce83bde78134fb0304427e7256fcb1bd7364c",
+      "name": "estuary",
+      "weighted": 642.1612,
+      "terminal": 147.8199999999997,
+      "target_horizons": [
+       752.3400000000001,
+       486.89999999999964,
+       891.5900000000001
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "seed": 922510366,
+   "seat": 1,
+   "layout": "48d9b21fdd98ceeb4d8658e4c96b43951aaac47aa14d291b3c4a8375295eac79",
+   "family": "phase-switch",
+   "branches": {
+    "1": [
+     {
+      "base": 319.8258056640625,
+      "new": 133.6145477294922,
+      "signature": "140b0b49dba76f2683b69484c8c356a56371c6c957344ad9578487906f58ac79",
+      "name": "soundings",
+      "weighted": 403.6688000000001,
+      "terminal": -190.92999999999938,
+      "target_horizons": [
+       206.10000000000036,
+       648.29,
+       44.25
+      ]
+     },
+     {
+      "base": 319.8258056640625,
+      "new": 133.6145477294922,
+      "signature": "140b0b49dba76f2683b69484c8c356a56371c6c957344ad9578487906f58ac79",
+      "name": "tidewatch",
+      "weighted": 207.76640000000006,
+      "terminal": 285.53999999999996,
+      "target_horizons": [
+       312.74000000000024,
+       252.90999999999985,
+       -56.56999999999971
+      ]
+     },
+     {
+      "base": 319.8258056640625,
+      "new": 133.6145477294922,
+      "signature": "140b0b49dba76f2683b69484c8c356a56371c6c957344ad9578487906f58ac79",
+      "name": "estuary",
+      "weighted": 324.48440000000056,
+      "terminal": 110.35000000000036,
+      "target_horizons": [
+       146.6500000000001,
+       473.3700000000008,
+       186.35000000000036
+      ]
+     }
+    ],
+    "3": [
+     {
+      "base": 398.571533203125,
+      "new": 186.25750732421875,
+      "signature": "ddd4fedcdbc7835e2ce38d0e11b58af5a154a8c626aed120f481bd1d72362207",
+      "name": "soundings",
+      "weighted": 359.3264,
+      "terminal": -190.92999999999938,
+      "target_horizons": [
+       -45.289999999999964,
+       676.3299999999999,
+       101.57999999999993
+      ]
+     },
+     {
+      "base": 398.571533203125,
+      "new": 186.25750732421875,
+      "signature": "ddd4fedcdbc7835e2ce38d0e11b58af5a154a8c626aed120f481bd1d72362207",
+      "name": "tidewatch",
+      "weighted": 232.3408000000001,
+      "terminal": 285.53999999999996,
+      "target_horizons": [
+       351.9200000000001,
+       209.65999999999985,
+       123.90000000000055
+      ]
+     },
+     {
+      "base": 381.0638427734375,
+      "new": 171.5258331298828,
+      "signature": "3bd91e3995958d2cc3ce8deeaeec34e37bdab46db9209daab601ac803e08058d",
+      "name": "estuary",
+      "weighted": 413.93160000000023,
+      "terminal": 110.35000000000036,
+      "target_horizons": [
+       156.83000000000038,
+       621.21,
+       234.95000000000073
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "seed": 195817997,
+   "seat": 0,
+   "layout": "ba8edeeecce440e9c90514df4b79f9d06a6345459f3ccf6573e4c857f3562054",
+   "family": "phase-switch",
+   "branches": {
+    "1": [
+     {
+      "base": -196.4272003173828,
+      "new": -342.9365234375,
+      "signature": "096d78b7ce0fcacf375f54746e3099e4b41f0b0d44a3a5f026e1d8a5a0eaecec",
+      "name": "soundings",
+      "weighted": -504.08399999999995,
+      "terminal": -381.9500000000007,
+      "target_horizons": [
+       -658.1700000000001,
+       -428.2199999999998,
+       -485.6100000000001
+      ]
+     },
+     {
+      "base": -196.4272003173828,
+      "new": -342.9365234375,
+      "signature": "096d78b7ce0fcacf375f54746e3099e4b41f0b0d44a3a5f026e1d8a5a0eaecec",
+      "name": "tidewatch",
+      "weighted": -211.14560000000012,
+      "terminal": -431.6099999999997,
+      "target_horizons": [
+       -580.0900000000001,
+       108.52999999999975,
+       -525.7799999999997
+      ]
+     },
+     {
+      "base": -196.4272003173828,
+      "new": -342.9365234375,
+      "signature": "096d78b7ce0fcacf375f54746e3099e4b41f0b0d44a3a5f026e1d8a5a0eaecec",
+      "name": "estuary",
+      "weighted": -103.09439999999995,
+      "terminal": 64.4399999999996,
+      "target_horizons": [
+       -590.6499999999999,
+       239.1300000000001,
+       -310.3000000000002
+      ]
+     }
+    ],
+    "3": [
+     {
+      "base": -215.5931854248047,
+      "new": -351.49169921875,
+      "signature": "a6b9fbfc32b20f715e79e20a001a65b28c3c1cc3ed79f27c01cb0eb05ae8a82d",
+      "name": "soundings",
+      "weighted": -345.5824000000001,
+      "terminal": -381.9500000000007,
+      "target_horizons": [
+       -305.6300000000001,
+       -309.8499999999999,
+       -494.4200000000005
+      ]
+     },
+     {
+      "base": -215.5931854248047,
+      "new": -351.49169921875,
+      "signature": "a6b9fbfc32b20f715e79e20a001a65b28c3c1cc3ed79f27c01cb0eb05ae8a82d",
+      "name": "tidewatch",
+      "weighted": -171.45479999999995,
+      "terminal": -431.6099999999997,
+      "target_horizons": [
+       -629.8699999999999,
+       95.69000000000005,
+       -224.25
+      ]
+     },
+     {
+      "base": -239.8414306640625,
+      "new": -370.77777099609375,
+      "signature": "5cd13036acca0a2b19028def939de91b8b7288da267f0719062c5339435eb6fa",
+      "name": "estuary",
+      "weighted": -20.98759999999986,
+      "terminal": 64.4399999999996,
+      "target_horizons": [
+       -509.3499999999999,
+       347.57000000000016,
+       -295.52999999999975
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "seed": 146773749,
+   "seat": 1,
+   "layout": "aeea2690b2338f31d3fb9666ecc550fea1788b8e8946977a31cf9b9ae18e1f59",
+   "family": "phase-switch",
+   "branches": {
+    "1": [
+     {
+      "base": 1068.393798828125,
+      "new": 782.693115234375,
+      "signature": "9d31e60601ce4d35ac03e86af47e688d5d00f33e0229da41beefc9006c458d05",
+      "name": "soundings",
+      "weighted": 789.5847999999996,
+      "terminal": 527.4399999999996,
+      "target_horizons": [
+       167.3800000000001,
+       955.2699999999995,
+       1229.8899999999994
+      ]
+     },
+     {
+      "base": 1020.88818359375,
+      "new": 739.6744995117188,
+      "signature": "c818d2f0e3c709814c84b76dd18f60da2cd4a16a584d161b00bd9986b635f333",
+      "name": "tidewatch",
+      "weighted": 709.9528000000001,
+      "terminal": 354.7399999999998,
+      "target_horizons": [
+       514.56,
+       697.25,
+       1016.5300000000007
+      ]
+     },
+     {
+      "base": 1045.1370849609375,
+      "new": 766.437744140625,
+      "signature": "347c423b44dc44354f8e453138162c05f4e333bab70361a557e74e21e9da7e1c",
+      "name": "estuary",
+      "weighted": 741.5971999999999,
+      "terminal": 784.7200000000003,
+      "target_horizons": [
+       649.4000000000001,
+       747.6599999999999,
+       854.9099999999999
+      ]
+     }
+    ],
+    "3": [
+     {
+      "base": 1104.01953125,
+      "new": 813.6807250976562,
+      "signature": "b4164616628c7a83a7236013e1f3db8c738b5c144667353a124f414e9b2029f5",
+      "name": "soundings",
+      "weighted": 727.0372000000001,
+      "terminal": 527.4399999999996,
+      "target_horizons": [
+       189.3800000000001,
+       951.3400000000001,
+       896.5699999999997
+      ]
+     },
+     {
+      "base": 987.21923828125,
+      "new": 693.6076049804688,
+      "signature": "933c9b65ab75e499d94348131684b4c6068e9b7d636b32d4dc4959db02ac1958",
+      "name": "tidewatch",
+      "weighted": 738.2136000000002,
+      "terminal": 354.7399999999998,
+      "target_horizons": [
+       549.54,
+       717.7200000000003,
+       1055.6400000000003
+      ]
+     },
+     {
+      "base": 1013.26220703125,
+      "new": 727.4857177734375,
+      "signature": "a085c44be79c72b03e0f1c2240bbba2159809613577f3c11f5f32d1cd827bce7",
+      "name": "estuary",
+      "weighted": 847.1431999999995,
+      "terminal": 784.7200000000003,
+      "target_horizons": [
+       693.5700000000002,
+       1027.1299999999992,
+       594.1799999999994
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "seed": 77752323,
+   "seat": 0,
+   "layout": "77984fb0adeb821ad87d428fe0cce4585a05f299b654507442c0759b638ebde6",
+   "family": "phase-deficit",
+   "branches": {
+    "1": [
+     {
+      "base": -9.659439086914062,
+      "new": -184.3440399169922,
+      "signature": "f36b01d26e80fdd8fd2edbc16b18b36ebe24e7630820c2e231754e9a7a16eb81",
+      "name": "soundings",
+      "weighted": -213.5259999999999,
+      "terminal": 92.15999999999985,
+      "target_horizons": [
+       -191.96000000000004,
+       -306.65999999999985,
+       -1.569999999999709
+      ]
+     },
+     {
+      "base": -9.659439086914062,
+      "new": -184.3440399169922,
+      "signature": "f36b01d26e80fdd8fd2edbc16b18b36ebe24e7630820c2e231754e9a7a16eb81",
+      "name": "tidewatch",
+      "weighted": -81.93920000000006,
+      "terminal": 371.8599999999997,
+      "target_horizons": [
+       -172.1500000000001,
+       -133.36000000000013,
+       178.05000000000018
+      ]
+     },
+     {
+      "base": -9.659439086914062,
+      "new": -184.3440399169922,
+      "signature": "f36b01d26e80fdd8fd2edbc16b18b36ebe24e7630820c2e231754e9a7a16eb81",
+      "name": "estuary",
+      "weighted": -220.65719999999996,
+      "terminal": -576.71,
+      "target_horizons": [
+       -612.1999999999998,
+       -22.909999999999854,
+       -186.64000000000033
+      ]
+     }
+    ],
+    "3": [
+     {
+      "base": -81.81578063964844,
+      "new": -229.64903259277344,
+      "signature": "6d8d4ee922a82ee5170ad6574d48809da01c9615480103badc43c24fe394b1ef",
+      "name": "soundings",
+      "weighted": -173.32639999999995,
+      "terminal": 92.15999999999985,
+      "target_horizons": [
+       -139.38999999999987,
+       -285.96000000000004,
+       72.01000000000022
+      ]
+     },
+     {
+      "base": -81.81578063964844,
+      "new": -229.64903259277344,
+      "signature": "6d8d4ee922a82ee5170ad6574d48809da01c9615480103badc43c24fe394b1ef",
+      "name": "tidewatch",
+      "weighted": -75.74479999999977,
+      "terminal": 371.8599999999997,
+      "target_horizons": [
+       -161.8800000000001,
+       -117.31999999999971,
+       152.9400000000005
+      ]
+     },
+     {
+      "base": -71.41014862060547,
+      "new": -223.16854858398438,
+      "signature": "1f1c73bf09ba260a2e367a03bdea5632b9ae29236e144b040405afab950fa489",
+      "name": "estuary",
+      "weighted": -222.6915999999999,
+      "terminal": -576.71,
+      "target_horizons": [
+       -702.9399999999996,
+       -13.61999999999989,
+       -93.93000000000029
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "seed": 568554483,
+   "seat": 1,
+   "layout": "35fafca153da5437b8d5ae6125094286d21102c0989fea967443412319454f14",
+   "family": "phase-deficit",
+   "branches": {
+    "1": [
+     {
+      "base": -727.169677734375,
+      "new": -764.7444458007812,
+      "signature": "55fd1fcc909e7fb7b06339511b39dc2b94cd590ad452d7b3c7b1f00208b71268",
+      "name": "soundings",
+      "weighted": -391.2376000000002,
+      "terminal": -844.6999999999998,
+      "target_horizons": [
+       -638.8599999999997,
+       -184.49000000000024,
+       -582.1100000000006
+      ]
+     },
+     {
+      "base": -727.169677734375,
+      "new": -764.7444458007812,
+      "signature": "55fd1fcc909e7fb7b06339511b39dc2b94cd590ad452d7b3c7b1f00208b71268",
+      "name": "tidewatch",
+      "weighted": -154.11959999999993,
+      "terminal": 6.010000000000218,
+      "target_horizons": [
+       -607.9299999999998,
+       44.440000000000055,
+       -35.039999999999964
+      ]
+     },
+     {
+      "base": -727.169677734375,
+      "new": -764.7444458007812,
+      "signature": "55fd1fcc909e7fb7b06339511b39dc2b94cd590ad452d7b3c7b1f00208b71268",
+      "name": "estuary",
+      "weighted": -475.48799999999994,
+      "terminal": -434.7000000000007,
+      "target_horizons": [
+       -510.73,
+       -374.8299999999999,
+       -687.8599999999997
+      ]
+     }
+    ],
+    "3": [
+     {
+      "base": -678.844482421875,
+      "new": -727.1077270507812,
+      "signature": "bc988d18722f56aca9deef4747f78cf91273d0352ca3c922d62aecdedc211ca8",
+      "name": "soundings",
+      "weighted": -423.28999999999985,
+      "terminal": -844.6999999999998,
+      "target_horizons": [
+       -574.5299999999997,
+       -241.67999999999984,
+       -683.7399999999998
+      ]
+     },
+     {
+      "base": -678.844482421875,
+      "new": -727.1077270507812,
+      "signature": "bc988d18722f56aca9deef4747f78cf91273d0352ca3c922d62aecdedc211ca8",
+      "name": "tidewatch",
+      "weighted": -104.11200000000012,
+      "terminal": 6.010000000000218,
+      "target_horizons": [
+       -632.52,
+       148.17999999999984,
+       -20.300000000000182
+      ]
+     },
+     {
+      "base": -678.844482421875,
+      "new": -727.1077270507812,
+      "signature": "bc988d18722f56aca9deef4747f78cf91273d0352ca3c922d62aecdedc211ca8",
+      "name": "estuary",
+      "weighted": -473.0772000000002,
+      "terminal": -434.7000000000007,
+      "target_horizons": [
+       -480.07000000000016,
+       -387.5300000000002,
+       -685.71
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "seed": 171684640,
+   "seat": 0,
+   "layout": "4008e1d90eefb4e04df8738d8ec1a4f2a9e532e4215adb33f97b454a826edd4b",
+   "family": "phase-deficit",
+   "branches": {
+    "1": [
+     {
+      "base": -227.88092041015625,
+      "new": -383.8289489746094,
+      "signature": "684517ecfcad095361a28cd1f05a272bd00b43c2601e53b65e111257935da1b3",
+      "name": "soundings",
+      "weighted": -594.6360000000002,
+      "terminal": -1008.5,
+      "target_horizons": [
+       -291.5,
+       -693.7000000000003,
+       -761.46
+      ]
+     },
+     {
+      "base": -227.88092041015625,
+      "new": -383.8289489746094,
+      "signature": "684517ecfcad095361a28cd1f05a272bd00b43c2601e53b65e111257935da1b3",
+      "name": "tidewatch",
+      "weighted": -396.5192000000001,
+      "terminal": -1168.8900000000003,
+      "target_horizons": [
+       -466.53999999999996,
+       -240.70000000000027,
+       -703.6199999999999
+      ]
+     },
+     {
+      "base": -229.3890380859375,
+      "new": -388.67144775390625,
+      "signature": "22d47c0e88e30325ba3df0e2b448a1ef4fc7ce025d9a3d991ba0caaf149d0848",
+      "name": "estuary",
+      "weighted": -362.12520000000006,
+      "terminal": -1018.9800000000005,
+      "target_horizons": [
+       -450.8899999999999,
+       -286.4499999999998,
+       -434.6100000000006
+      ]
+     }
+    ],
+    "3": [
+     {
+      "base": -360.9463806152344,
+      "new": -529.70166015625,
+      "signature": "ad8b41b7a5f16a9edbf5484ce529b34db48e2862044f0d8f1a3db6947b1cb4ce",
+      "name": "soundings",
+      "weighted": -646.2411999999997,
+      "terminal": -1008.5,
+      "target_horizons": [
+       -331.4699999999998,
+       -681.1299999999997,
+       -996.21
+      ]
+     },
+     {
+      "base": -383.89520263671875,
+      "new": -549.2529296875,
+      "signature": "7fd6fc4d04ac400581b5b5bbe5f363a9e82b5fac9059515c78a5c4cc9c657444",
+      "name": "tidewatch",
+      "weighted": -398.99599999999975,
+      "terminal": -1168.8900000000003,
+      "target_horizons": [
+       -364.6199999999999,
+       -216.26999999999953,
+       -922.21
+      ]
+     },
+     {
+      "base": -330.2463684082031,
+      "new": -507.9101257324219,
+      "signature": "a9311e49f348078be603915a513d7d38a53a8955ebbcb8d6320d4c645ff80203",
+      "name": "estuary",
+      "weighted": -365.60199999999986,
+      "terminal": -1018.9800000000005,
+      "target_horizons": [
+       -429.9199999999996,
+       -167.5699999999997,
+       -790.4400000000005
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "seed": 455366690,
+   "seat": 1,
+   "layout": "e0606391f23290dc3df25a1c2959d859e722484a449bd491078edf2fa4331c6c",
+   "family": "phase-deficit",
+   "branches": {
+    "1": [
+     {
+      "base": -1659.0089111328125,
+      "new": -1675.29296875,
+      "signature": "88ffee46b51495b41e53ffd7e737d8a565388e7305ce9df5d21a945a5aaf126d",
+      "name": "soundings",
+      "weighted": -1909.7668,
+      "terminal": -1958.7699999999995,
+      "target_horizons": [
+       -1790.7299999999996,
+       -1939.2200000000003,
+       -1999.8400000000001
+      ]
+     },
+     {
+      "base": -1659.0089111328125,
+      "new": -1675.29296875,
+      "signature": "88ffee46b51495b41e53ffd7e737d8a565388e7305ce9df5d21a945a5aaf126d",
+      "name": "tidewatch",
+      "weighted": -2101.126,
+      "terminal": -2409.99,
+      "target_horizons": [
+       -1467.0999999999995,
+       -2317.6000000000004,
+       -2425.9300000000003
+      ]
+     },
+     {
+      "base": -1635.091064453125,
+      "new": -1653.124755859375,
+      "signature": "396c3930c128809b94a80a29ce8848d020ed07a9b6c5dcdbb38510e0662a1875",
+      "name": "estuary",
+      "weighted": -1715.6816000000001,
+      "terminal": -1094.17,
+      "target_horizons": [
+       -1830.37,
+       -1585.3500000000004,
+       -1893.9800000000005
+      ]
+     }
+    ],
+    "3": [
+     {
+      "base": -1569.9127197265625,
+      "new": -1585.6572265625,
+      "signature": "a77b01d89d20d393bd31ee01990b7199c25ab5797284781ca8dde3a0eaa39a8d",
+      "name": "soundings",
+      "weighted": -1870.0928000000001,
+      "terminal": -1958.7699999999995,
+      "target_horizons": [
+       -1790.1799999999994,
+       -1897.9700000000003,
+       -1909.4899999999998
+      ]
+     },
+     {
+      "base": -1641.7071533203125,
+      "new": -1648.8221435546875,
+      "signature": "35c1491a49c35aebbf418dca33cdcdb47e194dba03aa20764f5ed021f75a6b06",
+      "name": "tidewatch",
+      "weighted": -2016.4576000000002,
+      "terminal": -2409.99,
+      "target_horizons": [
+       -1567.2700000000004,
+       -2067.3,
+       -2513.13
+      ]
+     },
+     {
+      "base": -1654.9591064453125,
+      "new": -1658.6143798828125,
+      "signature": "0208f87f65f2edd3d072f9841676163d84d07952e9db97991f92aad8ce09c20f",
+      "name": "estuary",
+      "weighted": -1766.8876000000005,
+      "terminal": -1094.17,
+      "target_horizons": [
+       -1858.38,
+       -1596.21,
+       -2082.5600000000004
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "model_sha256": "f81aca5fbf4116babeee7e09f96a5b0c0eb6ce479986e9c8ff4f7659c1e1b5e0",
+ "design": "All 12 roots and 36 archived policy continuations from historical phase-switch / phase-deficit are disjoint from the 64 tournament layouts. Reconstruct real prefix. Score the candidate first move, or first three joint moves, from the exact same legal root belief, using the frozen agent one-step simulator. Compare with verified observed 20/52/100 future cash, and separately terminal margin. Equal leaf signatures are merged; future continuations sharing them are averaged. Changes after the first step reflect their own policies. No tuning on this test."
+}
