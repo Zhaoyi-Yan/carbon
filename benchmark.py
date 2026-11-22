@@ -2,8 +2,10 @@
 
 import argparse
 import importlib.util
+import os
 import random
 import statistics
+import sys
 import time
 from collections import defaultdict
 from concurrent.futures import ProcessPoolExecutor
@@ -11,10 +13,14 @@ from pathlib import Path
 from types import SimpleNamespace
 
 
-def load_strategy(name, path):
+def load_strategy(name, path, source=None):
     spec = importlib.util.spec_from_file_location(name, path)
     module = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(module)
+    sys.modules[name] = module
+    if source is None:
+        spec.loader.exec_module(module)
+    else:
+        exec(compile(source, str(path), "exec"), module.__dict__)
     return module
 
 
@@ -29,31 +35,60 @@ def validate_actions(action, player):
             raise ValueError(f"invalid action {unit!r}: {command!r}")
 
 
-def play_match(task):
-    # Keep benchmark BLAS within one core per child, including during imports.
-    import os
+def configure_engine():
+    # Honour an explicit upstream checkout, otherwise prefer the bundled interpreter.
+    paths = os.environ.get("PYTHONPATH", "").split(os.pathsep)
+    upstream = next((Path(p) for p in paths if p and (Path(p) / "zerosum_env").is_dir()), None)
+    root = upstream or Path(__file__).resolve().parent / "vendor"
+    if (root / "zerosum_env").is_dir() and str(root) not in sys.path[:1]:
+        sys.path.insert(0, str(root))
+
+
+def limit_math_threads():
     for variable in ("OPENBLAS_NUM_THREADS", "OMP_NUM_THREADS", "MKL_NUM_THREADS",
                      "VECLIB_MAXIMUM_THREADS"):
         os.environ[variable] = "1"
 
+
+def new_game(seed, steps):
     import numpy as np
     from zerosum_env import utils
     from zerosum_env.envs.carbon import carbon
 
-    candidate_path, opponent_path, seed, seat, steps, min_searches, progress_every = task
     random.seed(seed)
     np.random.seed(seed)
     fields = carbon.specification["configuration"]
     config = {key: value.get("default") if isinstance(value, dict) else value
               for key, value in fields.items()}
     config.update(episodeSteps=steps, randomSeed=seed)
-    config = utils.structify(config)
+    env = SimpleNamespace(configuration=utils.structify(config))
     state = [SimpleNamespace(
         observation=utils.structify({"step": 0, "player": player, "remainingOverageTime": 5}),
         reward=80, status="ACTIVE", action={},
     ) for player in range(2)]
-    carbon.populate_board(state, SimpleNamespace(configuration=config))
+    carbon.populate_board(state, env)
+    return state, env
 
+
+def observe(state, player, turn, remaining=5):
+    from zerosum_env import utils
+
+    board = state[0].observation
+    return utils.structify({
+        "step": turn, "player": player, "remainingOverageTime": remaining,
+        "players": board.players, "trees": board.trees,
+        "carbon": state[player].observation.carbon,
+    })
+
+
+def play_match(task):
+    limit_math_threads()
+    configure_engine()
+    from zerosum_env.envs.carbon import carbon
+
+    candidate_path, opponent_path, seed, seat, steps, min_searches, progress_every = task
+    state, env = new_game(seed, steps)
+    config = env.configuration
     policies = [None, None]
     policies[seat] = load_strategy("candidate", candidate_path)
     policies[1 - seat] = load_strategy("opponent", opponent_path)
@@ -65,11 +100,7 @@ def play_match(task):
     for turn in range(steps - 1):
         board = state[0].observation
         for player, entry in enumerate(state):
-            obs = utils.structify({
-                "step": turn, "player": player, "remainingOverageTime": 5,
-                "players": board.players, "trees": board.trees,
-                "carbon": entry.observation.carbon,
-            })
+            obs = observe(state, player, turn)
             started = time.perf_counter()
             entry.action = policies[player].agent(obs, config)
             elapsed = time.perf_counter() - started
@@ -77,7 +108,7 @@ def play_match(task):
             if player == seat:
                 durations.append(elapsed)
                 slow_steps += elapsed > 1.0
-        carbon.compute_next_board(state, SimpleNamespace(configuration=config))
+        carbon.compute_next_board(state, env)
         if progress_every and (turn + 1) % progress_every == 0:
             scores = [entry.reward for entry in state]
             print(f"{label} turn={turn + 1} scores={scores[seat]:.0f}/{scores[1 - seat]:.0f}", flush=True)
