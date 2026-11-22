@@ -72,14 +72,14 @@ def replay(archive):
     return summary, steps
 
 
-def replay_actions(result, actions, candidate_sha):
+def replay_actions(result, actions, candidate_sha, baseline_sha=V5_SHA):
     from zerosum_env.envs.carbon import carbon, helpers
     if result["engine_sha256"] != engine_fingerprint(carbon):
         raise ValueError("referee differs from game recorder")
     if result["status"] != "completed" or result["turns"] != len(actions):
         raise ValueError("incomplete recorded game")
     seat = [p["sha256"] for p in result["players"]].index(candidate_sha)
-    if result["players"][1-seat]["sha256"] != V5_SHA:
+    if result["players"][1-seat]["sha256"] != baseline_sha:
         raise ValueError("baseline mismatch")
     state, env = new_game(result["seed"], result["episode_steps"])
     initial = snapshot(state[0].observation)

@@ -1,0 +1,3297 @@
+{
+ "match": "4063a34afedb6d4767a9118e1dee9e5d",
+ "replay": "https://117.72.210.134/replay/4063a34afedb6d4767a9118e1dee9e5d/1",
+ "game": 1,
+ "original_seats": [
+  "claude-AlphaCarbon-Master7sE",
+  "yan-QQ-v6"
+ ],
+ "official_result_seed": 157458776,
+ "referee_randomSeed": 1331727176,
+ "official_map_sha256": "7a35c318027553b621f101698a6b2ce2f338a4022caed07a78b12d91f34c3b0e",
+ "source_players_sha256": "e841097c56397b3b8b7d5f2829b4a9c554d54d3ef256860c412802235f6b3f80",
+ "phase_order": [
+  "QQ",
+  "Master"
+ ],
+ "spans": [
+  {
+   "start": 0,
+   "end": 25,
+   "side_QQ_Master": [
+    {
+     "end": {
+      "cash": 64.32,
+      "cargo": 0,
+      "collectors": 2,
+      "planters": 1,
+      "trees": 1
+     },
+     "net": -15.68,
+     "flows": {
+      "base": 112.8,
+      "base_own": 112.8,
+      "collision_tree": 0,
+      "dead_cargo_our_tree": 0,
+      "deaths": 1,
+      "hire_cost": 120,
+      "hires": 4,
+      "plant_cost": 40,
+      "plants": 2,
+      "rounding": -0.015,
+      "tree": 31.534
+     }
+    },
+    {
+     "end": {
+      "cash": 31.04,
+      "cargo": 0,
+      "collectors": 4,
+      "planters": 1,
+      "trees": 1
+     },
+     "net": -48.96,
+     "flows": {
+      "base": 139.675,
+      "base_own": 139.675,
+      "dead_cargo_enemy_tree": 0,
+      "deaths": 1,
+      "hire_cost": 180,
+      "hires": 6,
+      "rounding": 0.005,
+      "seize_cost": 20,
+      "seizes": 1,
+      "tree": 11.36,
+      "tree_captured_origin": 11.36
+     }
+    }
+   ]
+  },
+  {
+   "start": 25,
+   "end": 50,
+   "side_QQ_Master": [
+    {
+     "end": {
+      "cash": 17.43,
+      "cargo": 123.962,
+      "collectors": 6,
+      "planters": 1,
+      "trees": 2
+     },
+     "net": -46.89,
+     "flows": {
+      "base": 205.037,
+      "base_own": 205.037,
+      "dead_cargo_ground": 0,
+      "dead_cargo_our_base": 64.144,
+      "deaths": 6,
+      "hire_cost": 300,
+      "hires": 10,
+      "plant_cost": 57.741,
+      "plants": 2,
+      "rounding": 0.008,
+      "tree": 105.806
+     }
+    },
+    {
+     "end": {
+      "cash": 96.1,
+      "cargo": 0,
+      "collectors": 8,
+      "planters": 2,
+      "trees": 5
+     },
+     "net": 65.06,
+     "flows": {
+      "base": 309.496,
+      "base_own": 309.496,
+      "dead_cargo_ground": 0,
+      "dead_cargo_opponent": 0,
+      "deaths": 7,
+      "hire_cost": 360,
+      "hires": 12,
+      "plant_cost": 91.409,
+      "plants": 3,
+      "rounding": 0.027,
+      "seize_cost": 20,
+      "seizes": 1,
+      "tree": 226.946,
+      "tree_captured_origin": 56.269
+     }
+    }
+   ]
+  },
+  {
+   "start": 50,
+   "end": 75,
+   "side_QQ_Master": [
+    {
+     "end": {
+      "cash": 12.27,
+      "cargo": 198.213,
+      "collectors": 3,
+      "planters": 1,
+      "trees": 1
+     },
+     "net": -5.16,
+     "flows": {
+      "dead_cargo_ground": 0,
+      "deaths": 7,
+      "hire_cost": 120,
+      "hires": 4,
+      "rounding": -0.023,
+      "seize_cost": 40,
+      "seizes": 2,
+      "tree": 154.863,
+      "tree_captured_origin": 25.658
+     }
+    },
+    {
+     "end": {
+      "cash": 33.53,
+      "cargo": 19.993,
+      "collectors": 8,
+      "planters": 2,
+      "trees": 7
+     },
+     "net": -62.57,
+     "flows": {
+      "base": 45.493,
+      "base_own": 45.493,
+      "dead_cargo_ground": 0,
+      "dead_cargo_opponent": 0,
+      "deaths": 8,
+      "hire_cost": 240,
+      "hires": 8,
+      "plant_cost": 117.391,
+      "plants": 3,
+      "rounding": 0.008,
+      "seize_cost": 60,
+      "seizes": 3,
+      "tree": 309.32,
+      "tree_captured_origin": 80.514
+     }
+    }
+   ]
+  },
+  {
+   "start": 75,
+   "end": 88,
+   "side_QQ_Master": [
+    {
+     "end": {
+      "cash": 7.53,
+      "cargo": 285.608,
+      "collectors": 3,
+      "planters": 1,
+      "trees": 1
+     },
+     "net": -4.74,
+     "flows": {
+      "dead_cargo_ground": 0,
+      "deaths": 1,
+      "hire_cost": 30,
+      "hires": 1,
+      "rounding": 0.005,
+      "tree": 25.255
+     }
+    },
+    {
+     "end": {
+      "cash": 199.37,
+      "cargo": 19.993,
+      "collectors": 9,
+      "planters": 1,
+      "trees": 7
+     },
+     "net": 165.84,
+     "flows": {
+      "dead_cargo_ground": 0,
+      "deaths": 1,
+      "hire_cost": 30,
+      "hires": 1,
+      "plant_cost": 88.968,
+      "plants": 2,
+      "rounding": -0.008,
+      "tree": 284.817,
+      "tree_captured_origin": 22.515
+     }
+    }
+   ]
+  },
+  {
+   "start": 88,
+   "end": 164,
+   "side_QQ_Master": [
+    {
+     "end": {
+      "cash": 7.53,
+      "cargo": 457.552,
+      "collectors": 2,
+      "planters": 1,
+      "trees": 0
+     },
+     "net": 0.0,
+     "flows": {
+      "dead_cargo_ground": 0,
+      "deaths": 1,
+      "rounding": 0.0
+     }
+    },
+    {
+     "end": {
+      "cash": 2079.3,
+      "cargo": 53.792,
+      "collectors": 8,
+      "planters": 2,
+      "trees": 10
+     },
+     "net": 1879.93,
+     "flows": {
+      "base": 136.693,
+      "base_own": 136.693,
+      "dead_cargo_ground": 0,
+      "deaths": 2,
+      "hire_cost": 60,
+      "hires": 2,
+      "plant_cost": 807.498,
+      "plants": 15,
+      "rounding": 0.041,
+      "tree": 2610.693,
+      "tree_captured_origin": 9.216
+     }
+    }
+   ]
+  },
+  {
+   "start": 164,
+   "end": 215,
+   "side_QQ_Master": [
+    {
+     "end": {
+      "cash": 7.53,
+      "cargo": 752.307,
+      "collectors": 2,
+      "planters": 0,
+      "trees": 0
+     },
+     "net": 0.0,
+     "flows": {
+      "dead_cargo_ground": 0,
+      "deaths": 1,
+      "rounding": 0.0
+     }
+    },
+    {
+     "end": {
+      "cash": 3420.08,
+      "cargo": 21.613,
+      "collectors": 9,
+      "planters": 1,
+      "trees": 12
+     },
+     "net": 1340.78,
+     "flows": {
+      "base": 330.199,
+      "base_own": 330.199,
+      "dead_cargo_ground": 0,
+      "deaths": 4,
+      "hire_cost": 120,
+      "hires": 4,
+      "plant_cost": 793.833,
+      "plants": 12,
+      "rounding": -0.005,
+      "tree": 1924.419
+     }
+    }
+   ]
+  },
+  {
+   "start": 215,
+   "end": 252,
+   "side_QQ_Master": [
+    {
+     "end": {
+      "cash": 362.13,
+      "cargo": 445.069,
+      "collectors": 1,
+      "planters": 0,
+      "trees": 0
+     },
+     "net": 354.6,
+     "flows": {
+      "base": 354.592,
+      "base_enemy": 10.319,
+      "base_own": 344.274,
+      "dead_cargo_our_base": 344.274,
+      "deaths": 1,
+      "rounding": 0.008
+     }
+    },
+    {
+     "end": {
+      "cash": 4491.61,
+      "cargo": 81.716,
+      "collectors": 9,
+      "planters": 1,
+      "trees": 7
+     },
+     "net": 1071.53,
+     "flows": {
+      "base": 463.265,
+      "base_own": 463.265,
+      "plant_cost": 277.929,
+      "plants": 5,
+      "rounding": -0.008,
+      "tree": 886.202
+     }
+    }
+   ]
+  },
+  {
+   "start": 252,
+   "end": 299,
+   "side_QQ_Master": [
+    {
+     "end": {
+      "cash": 2013.46,
+      "cargo": 0,
+      "collectors": 3,
+      "planters": 1,
+      "trees": 4
+     },
+     "net": 1651.33,
+     "flows": {
+      "base": 1899.74,
+      "base_enemy": 34.025,
+      "base_own": 1865.715,
+      "collision_tree": 0,
+      "dead_cargo_ground": 0,
+      "dead_cargo_opponent": 418.36,
+      "dead_cargo_our_base": 792.159,
+      "dead_cargo_our_tree": 0,
+      "deaths": 14,
+      "hire_cost": 510,
+      "hires": 17,
+      "plant_cost": 110.468,
+      "plants": 4,
+      "rounding": -0.004,
+      "seize_cost": 20,
+      "seizes": 1,
+      "tree": 392.062,
+      "tree_captured_origin": 6.056
+     }
+    },
+    {
+     "end": {
+      "cash": 6027.01,
+      "cargo": 427.101,
+      "collectors": 7,
+      "planters": 0,
+      "trees": 0
+     },
+     "net": 1535.4,
+     "flows": {
+      "base": 1838.639,
+      "base_own": 1838.639,
+      "dead_cargo_enemy_base": 0,
+      "dead_cargo_enemy_tree": 0,
+      "dead_cargo_ground": 0,
+      "dead_cargo_opponent": 245.217,
+      "dead_cargo_our_base": 29.404,
+      "deaths": 17,
+      "hire_cost": 420,
+      "hires": 14,
+      "rounding": 0.003,
+      "tree": 116.758
+     }
+    }
+   ]
+  },
+  {
+   "start": 0,
+   "end": 164,
+   "side_QQ_Master": [
+    {
+     "end": {
+      "cash": 7.53,
+      "cargo": 457.552,
+      "collectors": 2,
+      "planters": 1,
+      "trees": 0
+     },
+     "net": -72.47,
+     "flows": {
+      "base": 317.837,
+      "base_own": 317.837,
+      "collision_tree": 0,
+      "dead_cargo_ground": 0,
+      "dead_cargo_our_base": 64.144,
+      "dead_cargo_our_tree": 0,
+      "deaths": 16,
+      "hire_cost": 570,
+      "hires": 19,
+      "plant_cost": 97.741,
+      "plants": 4,
+      "rounding": -0.024,
+      "seize_cost": 40,
+      "seizes": 2,
+      "tree": 317.458,
+      "tree_captured_origin": 25.658
+     }
+    },
+    {
+     "end": {
+      "cash": 2079.3,
+      "cargo": 53.792,
+      "collectors": 8,
+      "planters": 2,
+      "trees": 10
+     },
+     "net": 1999.3,
+     "flows": {
+      "base": 631.357,
+      "base_own": 631.357,
+      "dead_cargo_enemy_tree": 0,
+      "dead_cargo_ground": 0,
+      "dead_cargo_opponent": 0,
+      "deaths": 19,
+      "hire_cost": 870,
+      "hires": 29,
+      "plant_cost": 1105.267,
+      "plants": 23,
+      "rounding": 0.074,
+      "seize_cost": 100,
+      "seizes": 5,
+      "tree": 3443.136,
+      "tree_captured_origin": 179.873
+     }
+    }
+   ]
+  },
+  {
+   "start": 0,
+   "end": 299,
+   "side_QQ_Master": [
+    {
+     "end": {
+      "cash": 2013.46,
+      "cargo": 0,
+      "collectors": 3,
+      "planters": 1,
+      "trees": 4
+     },
+     "net": 1933.46,
+     "flows": {
+      "base": 2572.17,
+      "base_enemy": 44.344,
+      "base_own": 2527.826,
+      "collision_tree": 0,
+      "dead_cargo_ground": 0,
+      "dead_cargo_opponent": 418.36,
+      "dead_cargo_our_base": 1200.577,
+      "dead_cargo_our_tree": 0,
+      "deaths": 32,
+      "hire_cost": 1080,
+      "hires": 36,
+      "plant_cost": 208.209,
+      "plants": 8,
+      "rounding": -0.021,
+      "seize_cost": 60,
+      "seizes": 3,
+      "tree": 709.52,
+      "tree_captured_origin": 31.713
+     }
+    },
+    {
+     "end": {
+      "cash": 6027.01,
+      "cargo": 427.101,
+      "collectors": 7,
+      "planters": 0,
+      "trees": 0
+     },
+     "net": 5947.01,
+     "flows": {
+      "base": 3263.46,
+      "base_own": 3263.46,
+      "dead_cargo_enemy_base": 0,
+      "dead_cargo_enemy_tree": 0,
+      "dead_cargo_ground": 0,
+      "dead_cargo_opponent": 245.217,
+      "dead_cargo_our_base": 29.404,
+      "deaths": 40,
+      "hire_cost": 1410,
+      "hires": 47,
+      "plant_cost": 2177.029,
+      "plants": 40,
+      "rounding": 0.064,
+      "seize_cost": 100,
+      "seizes": 5,
+      "tree": 6370.515,
+      "tree_captured_origin": 179.873
+     }
+    }
+   ]
+  }
+ ],
+ "checkpoint_flows": {
+  "49": [
+   {
+    "cash": 35.07,
+    "cargo": 103.534,
+    "collectors": 5,
+    "planters": 1,
+    "trees": 2,
+    "tree": 12.839775,
+    "rounding": 0.0002250000000003638
+   },
+   {
+    "cash": 114.52,
+    "cargo": 0,
+    "collectors": 8,
+    "planters": 1,
+    "trees": 5,
+    "deaths": 1,
+    "dead_cargo_opponent": 0,
+    "hires": 1,
+    "hire_cost": 30,
+    "tree": 12.030225000000002,
+    "tree_captured_origin": 1.4233875,
+    "rounding": -0.00022500000001457465
+   }
+  ],
+  "75": [
+   {
+    "cash": 12.27,
+    "cargo": 198.213,
+    "collectors": 3,
+    "planters": 1,
+    "trees": 1,
+    "tree": 2.512875,
+    "rounding": -0.002874999999999517
+   },
+   {
+    "cash": 33.53,
+    "cargo": 19.993,
+    "collectors": 8,
+    "planters": 2,
+    "trees": 7,
+    "tree": 18.4392375,
+    "tree_captured_origin": 2.2402499999999996,
+    "plants": 1,
+    "plant_cost": 41.909814847836365,
+    "rounding": 0.0005773478363622075
+   }
+  ],
+  "86": [
+   {
+    "cash": 34.41,
+    "cargo": 285.608,
+    "collectors": 3,
+    "planters": 0,
+    "trees": 1,
+    "tree": 1.6503,
+    "rounding": -0.00030000000000285354
+   },
+   {
+    "cash": 194.34,
+    "cargo": 19.993,
+    "collectors": 9,
+    "planters": 1,
+    "trees": 6,
+    "tree": 18.8933625,
+    "tree_captured_origin": 1.4711999999999998,
+    "rounding": -0.003362499999980173
+   }
+  ],
+  "87": [
+   {
+    "cash": 6.0,
+    "cargo": 285.608,
+    "collectors": 3,
+    "planters": 1,
+    "trees": 1,
+    "hires": 1,
+    "hire_cost": 30,
+    "tree": 1.5884249999999998,
+    "rounding": 0.0015750000000025466
+   },
+   {
+    "cash": 170.62,
+    "cargo": 19.993,
+    "collectors": 9,
+    "planters": 1,
+    "trees": 7,
+    "tree": 18.1848375,
+    "tree_captured_origin": 1.4160374999999998,
+    "plants": 1,
+    "plant_cost": 41.909814847836365,
+    "rounding": 0.00497734783638748
+   }
+  ],
+  "88": [
+   {
+    "cash": 7.53,
+    "cargo": 285.608,
+    "collectors": 3,
+    "planters": 1,
+    "trees": 1,
+    "tree": 1.528875,
+    "rounding": 0.0011250000000000426
+   },
+   {
+    "cash": 199.37,
+    "cargo": 19.993,
+    "collectors": 9,
+    "planters": 1,
+    "trees": 7,
+    "tree": 28.752899999999997,
+    "tree_captured_origin": 1.3629375,
+    "rounding": -0.002900000000011005
+   }
+  ],
+  "89": [
+   {
+    "cash": 7.53,
+    "cargo": 285.608,
+    "collectors": 3,
+    "planters": 1,
+    "trees": 0,
+    "rounding": 0.0
+   },
+   {
+    "cash": 227.04,
+    "cargo": 19.993,
+    "collectors": 9,
+    "planters": 1,
+    "trees": 7,
+    "tree": 27.6747,
+    "tree_captured_origin": 1.311825,
+    "rounding": -0.004700000000013915
+   }
+  ],
+  "100": [
+   {
+    "cash": 7.53,
+    "cargo": 285.608,
+    "collectors": 3,
+    "planters": 1,
+    "trees": 0,
+    "rounding": 0.0
+   },
+   {
+    "cash": 451.85,
+    "cargo": 19.993,
+    "collectors": 9,
+    "planters": 1,
+    "trees": 8,
+    "tree": 42.851325,
+    "rounding": -0.0013249999999516149
+   }
+  ],
+  "164": [
+   {
+    "cash": 7.53,
+    "cargo": 457.552,
+    "collectors": 2,
+    "planters": 1,
+    "trees": 0,
+    "rounding": 0.0
+   },
+   {
+    "cash": 2079.3,
+    "cargo": 53.792,
+    "collectors": 8,
+    "planters": 2,
+    "trees": 10,
+    "tree": 32.903025,
+    "rounding": -0.0030249999999796273
+   }
+  ],
+  "190": [
+   {
+    "cash": 7.53,
+    "cargo": 616.465,
+    "collectors": 2,
+    "planters": 1,
+    "trees": 0,
+    "rounding": 0.0
+   },
+   {
+    "cash": 2673.2,
+    "cargo": 3.404,
+    "collectors": 8,
+    "planters": 2,
+    "trees": 11,
+    "tree": 39.819599999999994,
+    "rounding": 0.0003999999998995918
+   }
+  ],
+  "215": [
+   {
+    "cash": 7.53,
+    "cargo": 752.307,
+    "collectors": 2,
+    "planters": 0,
+    "trees": 0,
+    "rounding": 0.0
+   },
+   {
+    "cash": 3420.08,
+    "cargo": 21.613,
+    "collectors": 9,
+    "planters": 1,
+    "trees": 12,
+    "tree": 31.960012499999998,
+    "rounding": -1.250000013897079e-05
+   }
+  ],
+  "250": [
+   {
+    "cash": 10.01,
+    "cargo": 765.913,
+    "collectors": 2,
+    "planters": 0,
+    "trees": 0,
+    "rounding": 0.0
+   },
+   {
+    "cash": 4469.83,
+    "cargo": 22.688,
+    "collectors": 9,
+    "planters": 1,
+    "trees": 7,
+    "tree": 11.6443875,
+    "rounding": -0.004387500000120781
+   }
+  ],
+  "251": [
+   {
+    "cash": 10.01,
+    "cargo": 765.913,
+    "collectors": 2,
+    "planters": 0,
+    "trees": 0,
+    "rounding": 0.0
+   },
+   {
+    "cash": 4480.96,
+    "cargo": 22.688,
+    "collectors": 9,
+    "planters": 1,
+    "trees": 7,
+    "tree": 11.1333375,
+    "rounding": -0.0033375000002706656
+   }
+  ],
+  "252": [
+   {
+    "cash": 362.13,
+    "cargo": 445.069,
+    "collectors": 1,
+    "planters": 0,
+    "trees": 0,
+    "base": 352.1169,
+    "base_enemy": 7.8431999999999995,
+    "base_own": 344.27369999999996,
+    "deaths": 1,
+    "dead_cargo_our_base": 344.27369999999996,
+    "rounding": 0.003100000000017644
+   },
+   {
+    "cash": 4491.61,
+    "cargo": 81.716,
+    "collectors": 9,
+    "planters": 1,
+    "trees": 7,
+    "tree": 10.646887500000002,
+    "rounding": 0.003112499999588181
+   }
+  ],
+  "299": [
+   {
+    "cash": 2013.46,
+    "cargo": 0,
+    "collectors": 3,
+    "planters": 1,
+    "trees": 4,
+    "base": 82.2657,
+    "base_own": 82.2657,
+    "deaths": 2,
+    "dead_cargo_our_base": 54.630900000000004,
+    "tree": 14.7447375,
+    "rounding": -0.0004375000000891305
+   },
+   {
+    "cash": 6027.01,
+    "cargo": 427.101,
+    "collectors": 7,
+    "planters": 0,
+    "trees": 0,
+    "base": 49.12140000000001,
+    "base_own": 49.12140000000001,
+    "deaths": 1,
+    "dead_cargo_our_base": 29.404200000000003,
+    "rounding": -0.0014000000001033186
+   }
+  ]
+ },
+ "route_checks": {
+  "50-87": {
+   "loaded_worker_turns": 74,
+   "both_bases_within_enemy_reach": 32,
+   "no_safe_shortening_step": 33,
+   "has_safe_shortening_step": 41,
+   "safe_shortening_declined": 10,
+   "any_shortening_chosen": 31,
+   "one_step_from_deposit": 0,
+   "one_step_deposit_declined": 0
+  },
+  "88-164": {
+   "loaded_worker_turns": 152,
+   "both_bases_within_enemy_reach": 98,
+   "no_safe_shortening_step": 59,
+   "has_safe_shortening_step": 93,
+   "safe_shortening_declined": 22,
+   "any_shortening_chosen": 71,
+   "one_step_from_deposit": 0,
+   "one_step_deposit_declined": 0
+  },
+  "164-215": {
+   "loaded_worker_turns": 102,
+   "both_bases_within_enemy_reach": 48,
+   "no_safe_shortening_step": 43,
+   "has_safe_shortening_step": 59,
+   "safe_shortening_declined": 15,
+   "any_shortening_chosen": 44,
+   "one_step_from_deposit": 0,
+   "one_step_deposit_declined": 0
+  },
+  "88-252": {
+   "loaded_worker_turns": 328,
+   "both_bases_within_enemy_reach": 168,
+   "no_safe_shortening_step": 138,
+   "has_safe_shortening_step": 190,
+   "safe_shortening_declined": 44,
+   "any_shortening_chosen": 146,
+   "one_step_from_deposit": 1,
+   "one_step_deposit_declined": 0
+  }
+ },
+ "route_probes": [
+  {
+   "step": 50,
+   "uid": "player-1-worker-4",
+   "cargo": 81.73,
+   "nearest": 4,
+   "fixed": {
+    "arrival": 56,
+    "steps": 6,
+    "path": [
+     24,
+     24,
+     24,
+     25,
+     40,
+     55,
+     70
+    ],
+    "origin": 24
+   },
+   "all_neighbor": {
+    "arrival": 57,
+    "steps": 7,
+    "path": [
+     24,
+     24,
+     25,
+     26,
+     41,
+     56,
+     71,
+     70
+    ],
+    "origin": 24
+   }
+  },
+  {
+   "step": 50,
+   "uid": "player-1-worker-11",
+   "cargo": 42.23,
+   "nearest": 5,
+   "fixed": {
+    "arrival": 55,
+    "steps": 5,
+    "path": [
+     187,
+     172,
+     171,
+     170,
+     169,
+     154
+    ],
+    "origin": 187
+   },
+   "all_neighbor": {
+    "arrival": 56,
+    "steps": 6,
+    "path": [
+     187,
+     187,
+     186,
+     185,
+     184,
+     169,
+     154
+    ],
+    "origin": 187
+   }
+  },
+  {
+   "step": 75,
+   "uid": "player-1-worker-4",
+   "cargo": 125.98,
+   "nearest": 4,
+   "fixed": {
+    "arrival": 80,
+    "steps": 5,
+    "path": [
+     10,
+     25,
+     40,
+     40,
+     55,
+     70
+    ],
+    "origin": 10
+   },
+   "all_neighbor": {
+    "arrival": 87,
+    "steps": 12,
+    "path": [
+     10,
+     220,
+     205,
+     205,
+     190,
+     175,
+     174,
+     159,
+     158,
+     157,
+     156,
+     155,
+     154
+    ],
+    "origin": 10
+   }
+  },
+  {
+   "step": 75,
+   "uid": "player-1-worker-11",
+   "cargo": 72.23,
+   "nearest": 4,
+   "fixed": {
+    "arrival": 79,
+    "steps": 4,
+    "path": [
+     82,
+     67,
+     68,
+     69,
+     70
+    ],
+    "origin": 82
+   },
+   "all_neighbor": {
+    "arrival": 83,
+    "steps": 8,
+    "path": [
+     82,
+     81,
+     96,
+     111,
+     126,
+     141,
+     156,
+     155,
+     154
+    ],
+    "origin": 82
+   }
+  },
+  {
+   "step": 87,
+   "uid": "player-1-worker-4",
+   "cargo": 125.98,
+   "nearest": 4,
+   "fixed": {
+    "arrival": 92,
+    "steps": 5,
+    "path": [
+     24,
+     25,
+     25,
+     40,
+     55,
+     70
+    ],
+    "origin": 24
+   },
+   "all_neighbor": {
+    "arrival": 97,
+    "steps": 10,
+    "path": [
+     24,
+     9,
+     219,
+     219,
+     219,
+     220,
+     10,
+     25,
+     40,
+     55,
+     70
+    ],
+    "origin": 24
+   }
+  },
+  {
+   "step": 87,
+   "uid": "player-1-worker-11",
+   "cargo": 159.63,
+   "nearest": 5,
+   "fixed": {
+    "arrival": 92,
+    "steps": 5,
+    "path": [
+     111,
+     126,
+     141,
+     140,
+     139,
+     154
+    ],
+    "origin": 111
+   },
+   "all_neighbor": {
+    "arrival": 92,
+    "steps": 5,
+    "path": [
+     111,
+     126,
+     141,
+     140,
+     139,
+     154
+    ],
+    "origin": 111
+   }
+  },
+  {
+   "step": 90,
+   "uid": "player-1-worker-4",
+   "cargo": 125.98,
+   "nearest": 7,
+   "fixed": {
+    "arrival": 97,
+    "steps": 7,
+    "path": [
+     7,
+     8,
+     9,
+     10,
+     25,
+     40,
+     55,
+     70
+    ],
+    "origin": 7
+   },
+   "all_neighbor": {
+    "arrival": 97,
+    "steps": 7,
+    "path": [
+     7,
+     8,
+     9,
+     10,
+     25,
+     40,
+     55,
+     70
+    ],
+    "origin": 7
+   }
+  },
+  {
+   "step": 90,
+   "uid": "player-1-worker-11",
+   "cargo": 159.63,
+   "nearest": 2,
+   "fixed": {
+    "arrival": 92,
+    "steps": 2,
+    "path": [
+     124,
+     139,
+     154
+    ],
+    "origin": 124
+   },
+   "all_neighbor": {
+    "arrival": 92,
+    "steps": 2,
+    "path": [
+     124,
+     139,
+     154
+    ],
+    "origin": 124
+   }
+  },
+  {
+   "step": 110,
+   "uid": "player-1-worker-4",
+   "cargo": 125.98,
+   "nearest": 4,
+   "fixed": {
+    "arrival": 114,
+    "steps": 4,
+    "path": [
+     172,
+     171,
+     156,
+     155,
+     154
+    ],
+    "origin": 172
+   },
+   "all_neighbor": {
+    "arrival": 121,
+    "steps": 11,
+    "path": [
+     172,
+     173,
+     174,
+     174,
+     159,
+     144,
+     129,
+     114,
+     99,
+     84,
+     69,
+     70
+    ],
+    "origin": 172
+   }
+  },
+  {
+   "step": 110,
+   "uid": "player-1-worker-11",
+   "cargo": 159.63,
+   "nearest": 4,
+   "fixed": {
+    "arrival": 114,
+    "steps": 4,
+    "path": [
+     142,
+     141,
+     156,
+     155,
+     154
+    ],
+    "origin": 142
+   },
+   "all_neighbor": {
+    "arrival": 121,
+    "steps": 11,
+    "path": [
+     142,
+     143,
+     128,
+     129,
+     130,
+     130,
+     115,
+     100,
+     99,
+     84,
+     69,
+     70
+    ],
+    "origin": 142
+   }
+  },
+  {
+   "step": 130,
+   "uid": "player-1-worker-4",
+   "cargo": 155.98,
+   "nearest": 5,
+   "fixed": {
+    "arrival": 136,
+    "steps": 6,
+    "path": [
+     187,
+     187,
+     172,
+     171,
+     170,
+     169,
+     154
+    ],
+    "origin": 187
+   },
+   "all_neighbor": {
+    "arrival": 140,
+    "steps": 10,
+    "path": [
+     187,
+     188,
+     189,
+     190,
+     205,
+     220,
+     10,
+     25,
+     40,
+     55,
+     70
+    ],
+    "origin": 187
+   }
+  },
+  {
+   "step": 130,
+   "uid": "player-1-worker-11",
+   "cargo": 159.63,
+   "nearest": 6,
+   "fixed": {
+    "arrival": 136,
+    "steps": 6,
+    "path": [
+     92,
+     107,
+     122,
+     137,
+     138,
+     139,
+     154
+    ],
+    "origin": 92
+   },
+   "all_neighbor": {
+    "arrival": 139,
+    "steps": 9,
+    "path": [
+     92,
+     93,
+     94,
+     94,
+     95,
+     110,
+     125,
+     124,
+     139,
+     154
+    ],
+    "origin": 92
+   }
+  },
+  {
+   "step": 150,
+   "uid": "player-1-worker-4",
+   "cargo": 297.92,
+   "nearest": 4,
+   "fixed": {
+    "arrival": 155,
+    "steps": 5,
+    "path": [
+     142,
+     142,
+     157,
+     156,
+     155,
+     154
+    ],
+    "origin": 142
+   },
+   "all_neighbor": {
+    "arrival": 159,
+    "steps": 9,
+    "path": [
+     142,
+     127,
+     127,
+     127,
+     126,
+     126,
+     141,
+     140,
+     139,
+     154
+    ],
+    "origin": 142
+   }
+  },
+  {
+   "step": 150,
+   "uid": "player-1-worker-11",
+   "cargo": 159.63,
+   "nearest": 4,
+   "fixed": {
+    "arrival": 156,
+    "steps": 6,
+    "path": [
+     94,
+     109,
+     108,
+     123,
+     138,
+     153,
+     154
+    ],
+    "origin": 94
+   },
+   "all_neighbor": {
+    "arrival": 158,
+    "steps": 8,
+    "path": [
+     94,
+     109,
+     108,
+     107,
+     122,
+     137,
+     152,
+     153,
+     154
+    ],
+    "origin": 94
+   }
+  },
+  {
+   "step": 164,
+   "uid": "player-1-worker-4",
+   "cargo": 297.92,
+   "nearest": 6,
+   "fixed": {
+    "arrival": 170,
+    "steps": 6,
+    "path": [
+     188,
+     173,
+     172,
+     171,
+     170,
+     169,
+     154
+    ],
+    "origin": 188
+   },
+   "all_neighbor": {
+    "arrival": 173,
+    "steps": 9,
+    "path": [
+     188,
+     189,
+     204,
+     219,
+     9,
+     24,
+     39,
+     54,
+     69,
+     70
+    ],
+    "origin": 188
+   }
+  },
+  {
+   "step": 164,
+   "uid": "player-1-worker-11",
+   "cargo": 159.63,
+   "nearest": 4,
+   "fixed": {
+    "arrival": 168,
+    "steps": 4,
+    "path": [
+     114,
+     99,
+     84,
+     69,
+     70
+    ],
+    "origin": 114
+   },
+   "all_neighbor": {
+    "arrival": 172,
+    "steps": 8,
+    "path": [
+     114,
+     129,
+     128,
+     113,
+     98,
+     83,
+     68,
+     69,
+     70
+    ],
+    "origin": 114
+   }
+  },
+  {
+   "step": 190,
+   "uid": "player-1-worker-4",
+   "cargo": 350.01,
+   "nearest": 7,
+   "fixed": {
+    "arrival": 198,
+    "steps": 8,
+    "path": [
+     204,
+     204,
+     205,
+     220,
+     10,
+     25,
+     40,
+     55,
+     70
+    ],
+    "origin": 204
+   },
+   "all_neighbor": {
+    "arrival": 198,
+    "steps": 8,
+    "path": [
+     204,
+     189,
+     174,
+     159,
+     158,
+     157,
+     156,
+     155,
+     154
+    ],
+    "origin": 204
+   }
+  },
+  {
+   "step": 190,
+   "uid": "player-1-worker-11",
+   "cargo": 266.46,
+   "nearest": 4,
+   "fixed": {
+    "arrival": 194,
+    "steps": 4,
+    "path": [
+     102,
+     87,
+     72,
+     71,
+     70
+    ],
+    "origin": 102
+   },
+   "all_neighbor": {
+    "arrival": 199,
+    "steps": 9,
+    "path": [
+     102,
+     103,
+     118,
+     117,
+     117,
+     116,
+     115,
+     100,
+     85,
+     70
+    ],
+    "origin": 102
+   }
+  },
+  {
+   "step": 210,
+   "uid": "player-1-worker-4",
+   "cargo": 395.47,
+   "nearest": 3,
+   "fixed": {
+    "arrival": 214,
+    "steps": 4,
+    "path": [
+     25,
+     40,
+     40,
+     55,
+     70
+    ],
+    "origin": 25
+   },
+   "all_neighbor": {
+    "arrival": 219,
+    "steps": 9,
+    "path": [
+     25,
+     40,
+     39,
+     38,
+     23,
+     38,
+     53,
+     68,
+     69,
+     70
+    ],
+    "origin": 25
+   }
+  },
+  {
+   "step": 210,
+   "uid": "player-1-worker-11",
+   "cargo": 317.46,
+   "nearest": 3,
+   "fixed": {
+    "arrival": 215,
+    "steps": 5,
+    "path": [
+     73,
+     73,
+     73,
+     72,
+     71,
+     70
+    ],
+    "origin": 73
+   },
+   "all_neighbor": {
+    "arrival": 217,
+    "steps": 7,
+    "path": [
+     73,
+     74,
+     89,
+     88,
+     87,
+     86,
+     85,
+     70
+    ],
+    "origin": 73
+   }
+  },
+  {
+   "step": 230,
+   "uid": "player-1-worker-4",
+   "cargo": 410.24,
+   "nearest": 4,
+   "fixed": {
+    "arrival": 234,
+    "steps": 4,
+    "path": [
+     38,
+     53,
+     54,
+     55,
+     70
+    ],
+    "origin": 38
+   },
+   "all_neighbor": {
+    "arrival": 234,
+    "steps": 4,
+    "path": [
+     38,
+     53,
+     68,
+     69,
+     70
+    ],
+    "origin": 38
+   }
+  },
+  {
+   "step": 230,
+   "uid": "player-1-worker-11",
+   "cargo": 344.27,
+   "nearest": 4,
+   "fixed": {
+    "arrival": 235,
+    "steps": 5,
+    "path": [
+     58,
+     57,
+     57,
+     72,
+     71,
+     70
+    ],
+    "origin": 58
+   },
+   "all_neighbor": {
+    "arrival": 237,
+    "steps": 7,
+    "path": [
+     58,
+     57,
+     42,
+     42,
+     41,
+     56,
+     71,
+     70
+    ],
+    "origin": 58
+   }
+  },
+  {
+   "step": 250,
+   "uid": "player-1-worker-4",
+   "cargo": 421.64,
+   "nearest": 7,
+   "fixed": {
+    "arrival": 257,
+    "steps": 7,
+    "path": [
+     21,
+     22,
+     23,
+     24,
+     25,
+     40,
+     55,
+     70
+    ],
+    "origin": 21
+   },
+   "all_neighbor": {
+    "arrival": 258,
+    "steps": 8,
+    "path": [
+     21,
+     6,
+     216,
+     201,
+     186,
+     171,
+     170,
+     155,
+     154
+    ],
+    "origin": 21
+   }
+  },
+  {
+   "step": 250,
+   "uid": "player-1-worker-11",
+   "cargo": 344.27,
+   "nearest": 2,
+   "fixed": {
+    "arrival": 252,
+    "steps": 2,
+    "path": [
+     72,
+     71,
+     70
+    ],
+    "origin": 72
+   },
+   "all_neighbor": {
+    "arrival": 252,
+    "steps": 2,
+    "path": [
+     72,
+     71,
+     70
+    ],
+    "origin": 72
+   }
+  }
+ ],
+ "route_limit": 14,
+ "probes_note": "Conditional on recorded trajectories of every other worker. fixed excludes actual enemy collector landings; all_neighbor excludes every one-step reply reachable by any opposing collector. Cash credits all cargo reaching own base including fatal collisions. Other players may react in a live branch; entered cells can pay tree tax.",
+ "two_step_certificates": [
+  {
+   "step": 22,
+   "uid": "player-1-worker-0",
+   "cell": 56,
+   "cargo": 34.561,
+   "cash": 16.02,
+   "chosen_cell": 55,
+   "chosen_first_safe": true,
+   "options": [
+    {
+     "cell": 71,
+     "bases": [
+      70
+     ],
+     "receipt_floor": 34.561
+    },
+    {
+     "cell": 55,
+     "bases": [
+      70
+     ],
+     "receipt_floor": 34.561
+    }
+   ]
+  },
+  {
+   "step": 23,
+   "uid": "player-1-worker-2",
+   "cell": 184,
+   "cargo": 35.598,
+   "cash": 18.84,
+   "chosen_cell": 169,
+   "chosen_first_safe": true,
+   "options": [
+    {
+     "cell": 169,
+     "bases": [
+      154
+     ],
+     "receipt_floor": 35.598
+    }
+   ]
+  },
+  {
+   "step": 37,
+   "uid": "player-1-worker-0",
+   "cell": 56,
+   "cargo": 79.399,
+   "cash": 26.19,
+   "chosen_cell": 71,
+   "chosen_first_safe": true,
+   "options": [
+    {
+     "cell": 71,
+     "bases": [
+      70
+     ],
+     "receipt_floor": 79.399
+    },
+    {
+     "cell": 55,
+     "bases": [
+      70
+     ],
+     "receipt_floor": 79.399
+    }
+   ]
+  },
+  {
+   "step": 37,
+   "uid": "player-1-worker-5",
+   "cell": 168,
+   "cargo": 43.05,
+   "cash": 26.19,
+   "chosen_cell": 168,
+   "chosen_first_safe": false,
+   "options": [
+    {
+     "cell": 153,
+     "bases": [
+      154
+     ],
+     "receipt_floor": 43.05
+    },
+    {
+     "cell": 169,
+     "bases": [
+      154
+     ],
+     "receipt_floor": 43.05
+    }
+   ]
+  },
+  {
+   "step": 38,
+   "uid": "player-1-worker-5",
+   "cell": 168,
+   "cargo": 55.459,
+   "cash": 26.19,
+   "chosen_cell": 168,
+   "chosen_first_safe": false,
+   "options": [
+    {
+     "cell": 169,
+     "bases": [
+      154
+     ],
+     "receipt_floor": 55.459
+    }
+   ]
+  },
+  {
+   "step": 39,
+   "uid": "player-1-worker-5",
+   "cell": 168,
+   "cargo": 64.144,
+   "cash": 85.59,
+   "chosen_cell": 169,
+   "chosen_first_safe": true,
+   "options": [
+    {
+     "cell": 169,
+     "bases": [
+      154
+     ],
+     "receipt_floor": 64.144
+    }
+   ]
+  },
+  {
+   "step": 90,
+   "uid": "player-1-worker-11",
+   "cell": 124,
+   "cargo": 159.629,
+   "cash": 7.53,
+   "chosen_cell": 123,
+   "chosen_first_safe": false,
+   "options": [
+    {
+     "cell": 139,
+     "bases": [
+      154
+     ],
+     "receipt_floor": 127.703
+    }
+   ]
+  },
+  {
+   "step": 250,
+   "uid": "player-1-worker-11",
+   "cell": 72,
+   "cargo": 344.274,
+   "cash": 10.01,
+   "chosen_cell": 71,
+   "chosen_first_safe": true,
+   "options": [
+    {
+     "cell": 71,
+     "bases": [
+      70
+     ],
+     "receipt_floor": 344.274
+    }
+   ]
+  },
+  {
+   "step": 263,
+   "uid": "player-1-worker-26",
+   "cell": 56,
+   "cargo": 30.0,
+   "cash": 54.7,
+   "chosen_cell": 56,
+   "chosen_first_safe": false,
+   "options": [
+    {
+     "cell": 55,
+     "bases": [
+      70
+     ],
+     "receipt_floor": 30.0
+    }
+   ]
+  },
+  {
+   "step": 264,
+   "uid": "player-1-worker-26",
+   "cell": 56,
+   "cargo": 51.0,
+   "cash": 30.41,
+   "chosen_cell": 56,
+   "chosen_first_safe": false,
+   "options": [
+    {
+     "cell": 71,
+     "bases": [
+      70
+     ],
+     "receipt_floor": 51.0
+    },
+    {
+     "cell": 55,
+     "bases": [
+      70
+     ],
+     "receipt_floor": 51.0
+    }
+   ]
+  },
+  {
+   "step": 265,
+   "uid": "player-1-worker-26",
+   "cell": 56,
+   "cargo": 65.7,
+   "cash": 35.93,
+   "chosen_cell": 55,
+   "chosen_first_safe": true,
+   "options": [
+    {
+     "cell": 71,
+     "bases": [
+      70
+     ],
+     "receipt_floor": 65.7
+    },
+    {
+     "cell": 55,
+     "bases": [
+      70
+     ],
+     "receipt_floor": 65.7
+    }
+   ]
+  },
+  {
+   "step": 267,
+   "uid": "player-1-worker-26",
+   "cell": 54,
+   "cargo": 65.7,
+   "cash": 16.34,
+   "chosen_cell": 54,
+   "chosen_first_safe": false,
+   "options": [
+    {
+     "cell": 55,
+     "bases": [
+      70
+     ],
+     "receipt_floor": 65.7
+    },
+    {
+     "cell": 69,
+     "bases": [
+      70
+     ],
+     "receipt_floor": 65.7
+    }
+   ]
+  },
+  {
+   "step": 268,
+   "uid": "player-1-worker-26",
+   "cell": 54,
+   "cargo": 95.7,
+   "cash": 21.24,
+   "chosen_cell": 54,
+   "chosen_first_safe": false,
+   "options": [
+    {
+     "cell": 69,
+     "bases": [
+      70
+     ],
+     "receipt_floor": 95.7
+    }
+   ]
+  },
+  {
+   "step": 269,
+   "uid": "player-1-worker-27",
+   "cell": 72,
+   "cargo": 52.712,
+   "cash": 25.95,
+   "chosen_cell": 71,
+   "chosen_first_safe": true,
+   "options": [
+    {
+     "cell": 71,
+     "bases": [
+      70
+     ],
+     "receipt_floor": 52.712
+    }
+   ]
+  },
+  {
+   "step": 285,
+   "uid": "player-1-worker-28",
+   "cell": 72,
+   "cargo": 106.133,
+   "cash": 11.18,
+   "chosen_cell": 71,
+   "chosen_first_safe": true,
+   "options": [
+    {
+     "cell": 71,
+     "bases": [
+      70
+     ],
+     "receipt_floor": 106.133
+    }
+   ]
+  },
+  {
+   "step": 291,
+   "uid": "player-1-worker-4",
+   "cell": 68,
+   "cargo": 684.816,
+   "cash": 175.38,
+   "chosen_cell": 69,
+   "chosen_first_safe": true,
+   "options": [
+    {
+     "cell": 69,
+     "bases": [
+      70
+     ],
+     "receipt_floor": 684.816
+    }
+   ]
+  },
+  {
+   "step": 291,
+   "uid": "player-1-worker-26",
+   "cell": 56,
+   "cargo": 354.929,
+   "cash": 175.38,
+   "chosen_cell": 71,
+   "chosen_first_safe": true,
+   "options": [
+    {
+     "cell": 71,
+     "bases": [
+      70
+     ],
+     "receipt_floor": 354.929
+    }
+   ]
+  },
+  {
+   "step": 291,
+   "uid": "player-1-worker-29",
+   "cell": 124,
+   "cargo": 264.405,
+   "cash": 175.38,
+   "chosen_cell": 139,
+   "chosen_first_safe": true,
+   "options": [
+    {
+     "cell": 139,
+     "bases": [
+      154
+     ],
+     "receipt_floor": 264.405
+    }
+   ]
+  },
+  {
+   "step": 294,
+   "uid": "player-1-worker-32",
+   "cell": 40,
+   "cargo": 175.349,
+   "cash": 1541.03,
+   "chosen_cell": 55,
+   "chosen_first_safe": true,
+   "options": [
+    {
+     "cell": 55,
+     "bases": [
+      70
+     ],
+     "receipt_floor": 175.349
+    }
+   ]
+  }
+ ],
+ "verified_fixed_paths": [
+  {
+   "begins": 90,
+   "uid": "player-1-worker-4",
+   "arrival": 97,
+   "route": [
+    7,
+    8,
+    9,
+    10,
+    25,
+    40,
+    55,
+    70
+   ],
+   "credited_carrier": 91.839,
+   "official_cash": 7.53,
+   "alternative_cash": 99.37,
+   "delta": 91.84,
+   "our_cash_events": [
+    [
+     97,
+     "bank",
+     91.839
+    ]
+   ]
+  },
+  {
+   "begins": 90,
+   "uid": "player-1-worker-11",
+   "arrival": 92,
+   "route": [
+    124,
+    139,
+    154
+   ],
+   "credited_carrier": 127.703,
+   "official_cash": 7.53,
+   "alternative_cash": 120.7,
+   "delta": 113.17,
+   "our_cash_events": [
+    [
+     92,
+     "bank",
+     127.703
+    ],
+    [
+     92,
+     "seize",
+     -20.0
+    ],
+    [
+     92,
+     "tree_yield",
+     5.466
+    ]
+   ]
+  },
+  {
+   "begins": 164,
+   "uid": "player-1-worker-4",
+   "arrival": 173,
+   "route": [
+    188,
+    189,
+    204,
+    219,
+    9,
+    24,
+    39,
+    54,
+    69,
+    70
+   ],
+   "credited_carrier": 140.737,
+   "official_cash": 7.53,
+   "alternative_cash": 128.27,
+   "delta": 120.74,
+   "our_cash_events": [
+    [
+     173,
+     "bank",
+     140.737
+    ],
+    [
+     173,
+     "plant",
+     -20.0
+    ]
+   ]
+  },
+  {
+   "begins": 164,
+   "uid": "player-1-worker-11",
+   "arrival": 172,
+   "route": [
+    114,
+    129,
+    128,
+    113,
+    98,
+    83,
+    68,
+    69,
+    70
+   ],
+   "credited_carrier": 91.946,
+   "official_cash": 7.53,
+   "alternative_cash": 79.48,
+   "delta": 71.95,
+   "our_cash_events": [
+    [
+     172,
+     "bank",
+     91.946
+    ],
+    [
+     172,
+     "plant",
+     -20.0
+    ]
+   ]
+  }
+ ],
+ "events": {
+  "columns": {
+   "deposits": [
+    "arrival",
+    "cargo_owner_seat",
+    "id",
+    "amount",
+    "base_owner_seat",
+    "cell"
+   ],
+   "casualties": [
+    "arrival",
+    "seat",
+    "id",
+    "cargo",
+    "destination",
+    "cell"
+   ],
+   "tree_changes": [
+    "arrival",
+    "new_owner_seat",
+    "operation",
+    "id",
+    "cell",
+    "age"
+   ]
+  },
+  "deposits": [
+   [
+    7,
+    0,
+    "player-0-worker-0",
+    6.688,
+    0,
+    64
+   ],
+   [
+    10,
+    1,
+    "player-1-worker-0",
+    14.539,
+    1,
+    70
+   ],
+   [
+    13,
+    0,
+    "player-0-worker-1",
+    24.803,
+    0,
+    160
+   ],
+   [
+    17,
+    0,
+    "player-0-worker-0",
+    29.616,
+    0,
+    64
+   ],
+   [
+    17,
+    1,
+    "player-1-worker-0",
+    28.102,
+    1,
+    70
+   ],
+   [
+    19,
+    0,
+    "player-0-worker-1",
+    23.837,
+    0,
+    160
+   ],
+   [
+    24,
+    0,
+    "player-0-worker-0",
+    34.561,
+    0,
+    64
+   ],
+   [
+    24,
+    1,
+    "player-1-worker-0",
+    34.561,
+    1,
+    70
+   ],
+   [
+    25,
+    0,
+    "player-0-worker-3",
+    20.17,
+    0,
+    64
+   ],
+   [
+    25,
+    1,
+    "player-1-worker-2",
+    35.598,
+    1,
+    154
+   ],
+   [
+    30,
+    0,
+    "player-0-worker-0",
+    32.994,
+    0,
+    64
+   ],
+   [
+    33,
+    1,
+    "player-1-worker-5",
+    25.552,
+    1,
+    154
+   ],
+   [
+    35,
+    1,
+    "player-1-worker-4",
+    26.318,
+    1,
+    70
+   ],
+   [
+    36,
+    0,
+    "player-0-worker-6",
+    11.025,
+    0,
+    160
+   ],
+   [
+    39,
+    1,
+    "player-1-worker-0",
+    79.399,
+    1,
+    70
+   ],
+   [
+    40,
+    0,
+    "player-0-worker-3",
+    83.076,
+    0,
+    64
+   ],
+   [
+    41,
+    1,
+    "player-1-worker-5",
+    64.144,
+    1,
+    154
+   ],
+   [
+    45,
+    0,
+    "player-0-worker-5",
+    116.7,
+    0,
+    64
+   ],
+   [
+    47,
+    0,
+    "player-0-worker-6",
+    65.7,
+    0,
+    160
+   ],
+   [
+    47,
+    1,
+    "player-1-worker-10",
+    9.623,
+    1,
+    70
+   ],
+   [
+    67,
+    0,
+    "player-0-worker-22",
+    45.493,
+    0,
+    64
+   ],
+   [
+    122,
+    0,
+    "player-0-worker-16",
+    136.693,
+    0,
+    160
+   ],
+   [
+    173,
+    0,
+    "player-0-worker-28",
+    108.199,
+    0,
+    160
+   ],
+   [
+    214,
+    0,
+    "player-0-worker-30",
+    222.0,
+    0,
+    160
+   ],
+   [
+    220,
+    0,
+    "player-0-worker-26",
+    2.476,
+    1,
+    70
+   ],
+   [
+    236,
+    0,
+    "player-0-worker-16",
+    178.339,
+    0,
+    160
+   ],
+   [
+    247,
+    0,
+    "player-0-worker-29",
+    284.927,
+    0,
+    160
+   ],
+   [
+    252,
+    0,
+    "player-0-worker-20",
+    7.843,
+    1,
+    70
+   ],
+   [
+    252,
+    1,
+    "player-1-worker-11",
+    344.274,
+    1,
+    70
+   ],
+   [
+    255,
+    0,
+    "player-0-worker-14",
+    51.0,
+    0,
+    64
+   ],
+   [
+    265,
+    0,
+    "player-0-worker-28",
+    111.855,
+    0,
+    64
+   ],
+   [
+    269,
+    0,
+    "player-0-worker-29",
+    218.905,
+    0,
+    160
+   ],
+   [
+    270,
+    0,
+    "player-0-worker-14",
+    116.7,
+    0,
+    64
+   ],
+   [
+    271,
+    1,
+    "player-1-worker-27",
+    52.712,
+    1,
+    70
+   ],
+   [
+    274,
+    0,
+    "player-0-worker-41",
+    51.0,
+    0,
+    160
+   ],
+   [
+    279,
+    0,
+    "player-0-worker-32",
+    233.818,
+    0,
+    64
+   ],
+   [
+    286,
+    0,
+    "player-0-worker-28",
+    89.665,
+    0,
+    64
+   ],
+   [
+    287,
+    0,
+    "player-0-worker-37",
+    164.252,
+    0,
+    64
+   ],
+   [
+    287,
+    1,
+    "player-1-worker-28",
+    106.133,
+    1,
+    70
+   ],
+   [
+    292,
+    1,
+    "player-1-worker-35",
+    9.983,
+    1,
+    70
+   ],
+   [
+    293,
+    0,
+    "player-0-worker-14",
+    34.025,
+    1,
+    70
+   ],
+   [
+    293,
+    1,
+    "player-1-worker-4",
+    684.816,
+    1,
+    70
+   ],
+   [
+    293,
+    1,
+    "player-1-worker-29",
+    264.405,
+    1,
+    154
+   ],
+   [
+    294,
+    0,
+    "player-0-worker-38",
+    216.778,
+    0,
+    160
+   ],
+   [
+    294,
+    1,
+    "player-1-worker-26",
+    354.929,
+    1,
+    70
+   ],
+   [
+    295,
+    0,
+    "player-0-worker-37",
+    69.407,
+    0,
+    64
+   ],
+   [
+    296,
+    1,
+    "player-1-worker-19",
+    127.256,
+    1,
+    154
+   ],
+   [
+    296,
+    1,
+    "player-1-worker-32",
+    175.349,
+    1,
+    70
+   ],
+   [
+    297,
+    0,
+    "player-0-worker-45",
+    106.379,
+    0,
+    160
+   ],
+   [
+    297,
+    1,
+    "player-1-worker-26",
+    7.866,
+    1,
+    70
+   ],
+   [
+    298,
+    0,
+    "player-0-worker-32",
+    165.43,
+    0,
+    64
+   ],
+   [
+    298,
+    0,
+    "player-0-worker-43",
+    194.328,
+    0,
+    160
+   ],
+   [
+    299,
+    0,
+    "player-0-worker-28",
+    19.717,
+    0,
+    64
+   ],
+   [
+    299,
+    0,
+    "player-0-worker-46",
+    29.404,
+    0,
+    64
+   ],
+   [
+    299,
+    1,
+    "player-1-worker-19",
+    12.095,
+    1,
+    154
+   ],
+   [
+    299,
+    1,
+    "player-1-worker-29",
+    2.645,
+    1,
+    154
+   ],
+   [
+    299,
+    1,
+    "player-1-worker-32",
+    42.536,
+    1,
+    70
+   ],
+   [
+    299,
+    1,
+    "player-1-worker-35",
+    24.99,
+    1,
+    70
+   ]
+  ],
+  "loaded_casualties": [
+   [
+    41,
+    1,
+    "player-1-worker-5",
+    64.144,
+    "our_base",
+    154
+   ],
+   [
+    252,
+    1,
+    "player-1-worker-11",
+    344.274,
+    "our_base",
+    70
+   ],
+   [
+    255,
+    0,
+    "player-0-worker-31",
+    3.454,
+    "opponent",
+    139
+   ],
+   [
+    264,
+    0,
+    "player-0-worker-16",
+    1.712,
+    "opponent",
+    71
+   ],
+   [
+    270,
+    0,
+    "player-0-worker-26",
+    187.369,
+    "opponent",
+    175
+   ],
+   [
+    271,
+    1,
+    "player-1-worker-27",
+    52.712,
+    "our_base",
+    70
+   ],
+   [
+    274,
+    0,
+    "player-0-worker-34",
+    0.238,
+    "opponent",
+    55
+   ],
+   [
+    291,
+    1,
+    "player-1-worker-28",
+    26.55,
+    "opponent",
+    55
+   ],
+   [
+    291,
+    0,
+    "player-0-worker-44",
+    9.983,
+    "opponent",
+    69
+   ],
+   [
+    293,
+    1,
+    "player-1-worker-4",
+    684.816,
+    "our_base",
+    70
+   ],
+   [
+    295,
+    1,
+    "player-1-worker-21",
+    391.81,
+    "opponent",
+    153
+   ],
+   [
+    298,
+    0,
+    "player-0-worker-14",
+    42.461,
+    "opponent",
+    55
+   ],
+   [
+    299,
+    0,
+    "player-0-worker-46",
+    29.404,
+    "our_base",
+    64
+   ],
+   [
+    299,
+    1,
+    "player-1-worker-19",
+    12.095,
+    "our_base",
+    154
+   ],
+   [
+    299,
+    1,
+    "player-1-worker-32",
+    42.536,
+    "our_base",
+    70
+   ]
+  ],
+  "tree_changes": [
+   [
+    8,
+    1,
+    "plants",
+    "player-1-tree-0",
+    159,
+    1
+   ],
+   [
+    16,
+    0,
+    "seizes",
+    "player-1-tree-0",
+    159,
+    9
+   ],
+   [
+    18,
+    1,
+    "plants",
+    "player-1-tree-1",
+    177,
+    1
+   ],
+   [
+    26,
+    0,
+    "seizes",
+    "player-1-tree-1",
+    177,
+    9
+   ],
+   [
+    30,
+    0,
+    "plants",
+    "player-0-tree-0",
+    194,
+    1
+   ],
+   [
+    35,
+    0,
+    "plants",
+    "player-0-tree-1",
+    166,
+    1
+   ],
+   [
+    39,
+    1,
+    "plants",
+    "player-1-tree-2",
+    112,
+    1
+   ],
+   [
+    45,
+    0,
+    "plants",
+    "player-0-tree-2",
+    199,
+    1
+   ],
+   [
+    47,
+    1,
+    "plants",
+    "player-1-tree-3",
+    44,
+    1
+   ],
+   [
+    54,
+    1,
+    "seizes",
+    "player-0-tree-0",
+    194,
+    25
+   ],
+   [
+    56,
+    0,
+    "seizes",
+    "player-1-tree-3",
+    44,
+    10
+   ],
+   [
+    59,
+    0,
+    "seizes",
+    "player-0-tree-0",
+    194,
+    30
+   ],
+   [
+    61,
+    1,
+    "seizes",
+    "player-0-tree-2",
+    199,
+    17
+   ],
+   [
+    67,
+    0,
+    "seizes",
+    "player-0-tree-2",
+    199,
+    23
+   ],
+   [
+    67,
+    0,
+    "plants",
+    "player-0-tree-3",
+    121,
+    1
+   ],
+   [
+    69,
+    0,
+    "plants",
+    "player-0-tree-4",
+    214,
+    1
+   ],
+   [
+    75,
+    0,
+    "plants",
+    "player-0-tree-5",
+    153,
+    1
+   ],
+   [
+    78,
+    0,
+    "plants",
+    "player-0-tree-6",
+    155,
+    1
+   ],
+   [
+    87,
+    0,
+    "plants",
+    "player-0-tree-7",
+    205,
+    1
+   ],
+   [
+    93,
+    0,
+    "plants",
+    "player-0-tree-8",
+    39,
+    1
+   ],
+   [
+    96,
+    0,
+    "plants",
+    "player-0-tree-9",
+    69,
+    1
+   ],
+   [
+    99,
+    0,
+    "plants",
+    "player-0-tree-10",
+    55,
+    1
+   ],
+   [
+    104,
+    0,
+    "plants",
+    "player-0-tree-11",
+    59,
+    1
+   ],
+   [
+    109,
+    0,
+    "plants",
+    "player-0-tree-12",
+    16,
+    1
+   ],
+   [
+    115,
+    0,
+    "plants",
+    "player-0-tree-13",
+    4,
+    1
+   ],
+   [
+    122,
+    0,
+    "plants",
+    "player-0-tree-14",
+    220,
+    1
+   ],
+   [
+    124,
+    0,
+    "plants",
+    "player-0-tree-15",
+    169,
+    1
+   ],
+   [
+    130,
+    0,
+    "plants",
+    "player-0-tree-16",
+    12,
+    1
+   ],
+   [
+    131,
+    0,
+    "plants",
+    "player-0-tree-17",
+    151,
+    1
+   ],
+   [
+    139,
+    0,
+    "plants",
+    "player-0-tree-18",
+    180,
+    1
+   ],
+   [
+    147,
+    0,
+    "plants",
+    "player-0-tree-19",
+    35,
+    1
+   ],
+   [
+    148,
+    0,
+    "plants",
+    "player-0-tree-20",
+    58,
+    1
+   ],
+   [
+    153,
+    0,
+    "plants",
+    "player-0-tree-21",
+    61,
+    1
+   ],
+   [
+    160,
+    0,
+    "plants",
+    "player-0-tree-22",
+    54,
+    1
+   ],
+   [
+    168,
+    0,
+    "plants",
+    "player-0-tree-23",
+    83,
+    1
+   ],
+   [
+    172,
+    0,
+    "plants",
+    "player-0-tree-24",
+    214,
+    1
+   ],
+   [
+    173,
+    0,
+    "plants",
+    "player-0-tree-25",
+    112,
+    1
+   ],
+   [
+    177,
+    0,
+    "plants",
+    "player-0-tree-26",
+    141,
+    1
+   ],
+   [
+    181,
+    0,
+    "plants",
+    "player-0-tree-27",
+    140,
+    1
+   ],
+   [
+    184,
+    0,
+    "plants",
+    "player-0-tree-28",
+    52,
+    1
+   ],
+   [
+    186,
+    0,
+    "plants",
+    "player-0-tree-29",
+    168,
+    1
+   ],
+   [
+    191,
+    0,
+    "plants",
+    "player-0-tree-30",
+    152,
+    1
+   ],
+   [
+    196,
+    0,
+    "plants",
+    "player-0-tree-31",
+    163,
+    1
+   ],
+   [
+    199,
+    0,
+    "plants",
+    "player-0-tree-32",
+    172,
+    1
+   ],
+   [
+    203,
+    0,
+    "plants",
+    "player-0-tree-33",
+    117,
+    1
+   ],
+   [
+    208,
+    0,
+    "plants",
+    "player-0-tree-34",
+    120,
+    1
+   ],
+   [
+    222,
+    0,
+    "plants",
+    "player-0-tree-35",
+    165,
+    1
+   ],
+   [
+    225,
+    0,
+    "plants",
+    "player-0-tree-36",
+    167,
+    1
+   ],
+   [
+    230,
+    0,
+    "plants",
+    "player-0-tree-37",
+    199,
+    1
+   ],
+   [
+    237,
+    0,
+    "plants",
+    "player-0-tree-38",
+    155,
+    1
+   ],
+   [
+    243,
+    0,
+    "plants",
+    "player-0-tree-39",
+    169,
+    1
+   ],
+   [
+    258,
+    1,
+    "plants",
+    "player-1-tree-4",
+    157,
+    1
+   ],
+   [
+    259,
+    1,
+    "seizes",
+    "player-0-tree-39",
+    169,
+    17
+   ],
+   [
+    281,
+    1,
+    "plants",
+    "player-1-tree-5",
+    180,
+    1
+   ],
+   [
+    285,
+    1,
+    "plants",
+    "player-1-tree-6",
+    178,
+    1
+   ],
+   [
+    293,
+    1,
+    "plants",
+    "player-1-tree-7",
+    191,
+    1
+   ]
+  ]
+ },
+ "max_single_step_cash_rounding": 0.005000000000109139
+}

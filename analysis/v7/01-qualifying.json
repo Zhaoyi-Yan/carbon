@@ -1,0 +1,16 @@
+{
+  "candidate": "quay",
+  "sha256": "deb410763e9c230f3dadbdad440d9343351a0aee3eab2fad089578490df2dcec",
+  "opponent_sha256": "e5c328aa5d18ced597791e7b839088f1a37d18e4e8dc83dd3d54b13d66e877b0",
+  "seeds": [
+    233862518,
+    125029328,
+    950806241,
+    929349546,
+    545087153,
+    499044317,
+    46289341,
+    10723257
+  ],
+  "criterion": "Freeze file hash before each batch. Eight new maps, 12/16 wins, at least 5 wins per seat and positive mean. If passed, four separately reserved maps, same unchanged hash, at least 5/8 and 2 each seat, positive mean. All games must finish normally. Retain failed batches."
+}

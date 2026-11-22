@@ -1,0 +1,189 @@
+{
+  "validation_maps": 24,
+  "training_maps": 64,
+  "training_transitions": 28068,
+  "target_excluded": "6121ec0ff5ccac020570cc3ac18f9dbe4ce60ddab3f00075aa1dd3afa8f15d49",
+  "parent": "yan-v6.py",
+  "history": "Legal seat-visible carbon updated every historical frame. Root net called on each sampled frame and predecessor; earlier style state sparse.",
+  "metric": "Conditional on worker still alive; paths forecast positions at 1,2,3 plies. Same neural first action in all three methods.",
+  "metrics": {
+    "loaded": {
+      "1": {
+        "at_risk": 238,
+        "observed": 238,
+        "fitted": {
+          "nll": 0.66168,
+          "hit1": 0.77311,
+          "prob_true": 0.73805,
+          "brier": 0.31644
+        },
+        "shortest": {
+          "nll": 0.66168,
+          "hit1": 0.77311,
+          "prob_true": 0.73805,
+          "brier": 0.31644
+        },
+        "inertia": {
+          "nll": 0.66168,
+          "hit1": 0.77311,
+          "prob_true": 0.73805,
+          "brier": 0.31644
+        }
+      },
+      "2": {
+        "at_risk": 238,
+        "observed": 238,
+        "fitted": {
+          "nll": 1.70559,
+          "hit1": 0.34874,
+          "prob_true": 0.24115,
+          "brier": 0.76544
+        },
+        "shortest": {
+          "nll": 2.70764,
+          "hit1": 0.22269,
+          "prob_true": 0.20697,
+          "brier": 1.07349
+        },
+        "inertia": {
+          "nll": 1.94476,
+          "hit1": 0.36975,
+          "prob_true": 0.26663,
+          "brier": 0.8159
+        }
+      },
+      "3": {
+        "at_risk": 238,
+        "observed": 236,
+        "fitted": {
+          "nll": 2.49378,
+          "hit1": 0.17373,
+          "prob_true": 0.11197,
+          "brier": 0.89723
+        },
+        "shortest": {
+          "nll": 4.05646,
+          "hit1": 0.11864,
+          "prob_true": 0.11383,
+          "brier": 1.24117
+        },
+        "inertia": {
+          "nll": 2.85251,
+          "hit1": 0.14831,
+          "prob_true": 0.11369,
+          "brier": 0.96857
+        }
+      }
+    },
+    "light": {
+      "1": {
+        "at_risk": 551,
+        "observed": 542,
+        "fitted": {
+          "nll": 0.88713,
+          "hit1": 0.72325,
+          "prob_true": 0.65259,
+          "brier": 0.41096
+        },
+        "shortest": {
+          "nll": 0.88713,
+          "hit1": 0.72325,
+          "prob_true": 0.65259,
+          "brier": 0.41096
+        },
+        "inertia": {
+          "nll": 0.88713,
+          "hit1": 0.72325,
+          "prob_true": 0.65259,
+          "brier": 0.41096
+        }
+      },
+      "2": {
+        "at_risk": 551,
+        "observed": 526,
+        "fitted": {
+          "nll": 1.88936,
+          "hit1": 0.32129,
+          "prob_true": 0.20342,
+          "brier": 0.79158
+        },
+        "shortest": {
+          "nll": 3.44445,
+          "hit1": 0.11407,
+          "prob_true": 0.11356,
+          "brier": 1.25439
+        },
+        "inertia": {
+          "nll": 2.38507,
+          "hit1": 0.30989,
+          "prob_true": 0.2379,
+          "brier": 0.9481
+        }
+      },
+      "3": {
+        "at_risk": 551,
+        "observed": 513,
+        "fitted": {
+          "nll": 2.62804,
+          "hit1": 0.17544,
+          "prob_true": 0.09162,
+          "brier": 0.90295
+        },
+        "shortest": {
+          "nll": 5.07913,
+          "hit1": 0.07018,
+          "prob_true": 0.06462,
+          "brier": 1.33581
+        },
+        "inertia": {
+          "nll": 3.27585,
+          "hit1": 0.14035,
+          "prob_true": 0.10233,
+          "brier": 1.04947
+        }
+      }
+    }
+  },
+  "loaded_h3_nll_by_map": {
+    "shortest": {
+      "maps": 22,
+      "improves": 22,
+      "mean": -1.67649,
+      "bootstrap_ci": [
+        -2.05337,
+        -1.37977
+      ]
+    },
+    "inertia": {
+      "maps": 22,
+      "improves": 21,
+      "mean": -0.25287,
+      "bootstrap_ci": [
+        -0.40285,
+        -0.02399
+      ]
+    }
+  },
+  "roots": 120,
+  "ms_p50_p95_p99": [
+    2.1531,
+    6.1007,
+    9.4341
+  ],
+  "proposals": 1,
+  "changes": [
+    {
+      "layout": "85321835bab0d3df01e4db30b3e6015c4edb7d6086a9674d4a4af103e639fb63",
+      "t": 253,
+      "side": 1,
+      "uid": "player-1-worker-32",
+      "load": 354.61469999999997,
+      "before": "NONE",
+      "after": "LEFT",
+      "actual_losing_enemy_lands": [
+        false,
+        false
+      ]
+    }
+  ]
+}

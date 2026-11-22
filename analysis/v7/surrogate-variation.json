@@ -1,0 +1,194 @@
+{
+ "temperature": 0.55,
+ "rule": "i.i.d. Gumbel noise in raw logits, shared across branches by seed, step, seat, cell and action; no target data used.",
+ "source_revision": "3d96b8d032a102c297968e40911d893c9abc160d",
+ "phase_start": 190,
+ "by_game": [
+  {
+   "match": "ea49460d23e3ec1cd023fef176fd49ea",
+   "seat": 1,
+   "seed": 335665593,
+   "difference": {
+    "workers": 1048,
+    "two_embeddings_diff": 15,
+    "varied_artemis_diff": 123,
+    "joint_turns": 109,
+    "varied_joint_diff": 77
+   }
+  },
+  {
+   "match": "96853d68b0d4d7d8f63bedb99bc27125",
+   "seat": 1,
+   "seed": 1932786111,
+   "difference": {
+    "workers": 1049,
+    "two_embeddings_diff": 6,
+    "varied_artemis_diff": 102,
+    "joint_turns": 109,
+    "varied_joint_diff": 68
+   }
+  },
+  {
+   "match": "8b5a10762f84bd19a2e8fb335449c37c",
+   "seat": 0,
+   "seed": 1046715959,
+   "difference": {
+    "workers": 1048,
+    "two_embeddings_diff": 5,
+    "varied_artemis_diff": 96,
+    "joint_turns": 109,
+    "varied_joint_diff": 69
+   }
+  },
+  {
+   "match": "4419ce2aaffb31ee16c6e4db60a7f4dd",
+   "seat": 0,
+   "seed": 1588103311,
+   "difference": {
+    "workers": 1034,
+    "two_embeddings_diff": 9,
+    "varied_artemis_diff": 108,
+    "joint_turns": 109,
+    "varied_joint_diff": 72
+   }
+  },
+  {
+   "match": "fa91f9c64237d2ba17e0fccc2b41ddbf",
+   "seat": 1,
+   "seed": 590723723,
+   "difference": {
+    "workers": 1045,
+    "two_embeddings_diff": 8,
+    "varied_artemis_diff": 82,
+    "joint_turns": 109,
+    "varied_joint_diff": 56
+   }
+  },
+  {
+   "match": "45f2b502419c22ae3f36b422b3d57bef",
+   "seat": 0,
+   "seed": 2013536981,
+   "difference": {
+    "workers": 1045,
+    "two_embeddings_diff": 9,
+    "varied_artemis_diff": 108,
+    "joint_turns": 109,
+    "varied_joint_diff": 73
+   }
+  },
+  {
+   "match": "e658f0313b0ad091c0a8d6fe122573d9",
+   "seat": 0,
+   "seed": 795592683,
+   "difference": {
+    "workers": 1067,
+    "two_embeddings_diff": 5,
+    "varied_artemis_diff": 106,
+    "joint_turns": 109,
+    "varied_joint_diff": 71
+   }
+  },
+  {
+   "match": "54168b172c76450d6dba9682995ce0b6",
+   "seat": 0,
+   "seed": 2098247112,
+   "difference": {
+    "workers": 1056,
+    "two_embeddings_diff": 5,
+    "varied_artemis_diff": 99,
+    "joint_turns": 109,
+    "varied_joint_diff": 67
+   }
+  },
+  {
+   "match": "941595b84d3746c544f0f759e2999f4b",
+   "seat": 1,
+   "seed": 698372087,
+   "difference": {
+    "workers": 1048,
+    "two_embeddings_diff": 7,
+    "varied_artemis_diff": 99,
+    "joint_turns": 109,
+    "varied_joint_diff": 66
+   }
+  }
+ ],
+ "totals": {
+  "workers": 9440,
+  "two_embeddings_diff": 69,
+  "varied_artemis_diff": 923,
+  "joint_turns": 981,
+  "varied_joint_diff": 619
+ },
+ "teacher_forced": {
+  "artemis": {
+   "worker_accuracy": 0.7982,
+   "workers": 9440,
+   "collector_accuracy": 0.8116,
+   "collectors": 7759,
+   "planter_accuracy": 0.7365,
+   "planters": 1681,
+   "loaded_close_accuracy": 0.8326,
+   "loaded_close": 1314,
+   "eligible_base_accuracy": 0.8805,
+   "eligible_bases": 502,
+   "hire_precision": 0.9231,
+   "hire_recall": 0.8125,
+   "hires_actual": 192,
+   "hires_predicted": 169,
+   "correct_hire_role_on_overlap": 0.9295,
+   "actual_deposited": 36042.44,
+   "predicted_deposited": 37156.38,
+   "deposit_turn_precision": 0.8803,
+   "deposit_turn_recall": 0.9398,
+   "deposit_turns_actual": 266,
+   "deposit_turns_predicted": 284
+  },
+  "apollo": {
+   "worker_accuracy": 0.7965,
+   "workers": 9440,
+   "collector_accuracy": 0.8093,
+   "collectors": 7759,
+   "planter_accuracy": 0.7377,
+   "planters": 1681,
+   "loaded_close_accuracy": 0.8311,
+   "loaded_close": 1314,
+   "eligible_base_accuracy": 0.8765,
+   "eligible_bases": 502,
+   "hire_precision": 0.9226,
+   "hire_recall": 0.8073,
+   "hires_actual": 192,
+   "hires_predicted": 168,
+   "correct_hire_role_on_overlap": 0.9226,
+   "actual_deposited": 36042.44,
+   "predicted_deposited": 37239.71,
+   "deposit_turn_precision": 0.8741,
+   "deposit_turn_recall": 0.9398,
+   "deposit_turns_actual": 266,
+   "deposit_turns_predicted": 286
+  },
+  "apollo-varied": {
+   "worker_accuracy": 0.7742,
+   "workers": 9440,
+   "collector_accuracy": 0.7885,
+   "collectors": 7759,
+   "planter_accuracy": 0.7079,
+   "planters": 1681,
+   "loaded_close_accuracy": 0.8265,
+   "loaded_close": 1314,
+   "eligible_base_accuracy": 0.8625,
+   "eligible_bases": 502,
+   "hire_precision": 0.9036,
+   "hire_recall": 0.7812,
+   "hires_actual": 192,
+   "hires_predicted": 166,
+   "correct_hire_role_on_overlap": 0.9267,
+   "actual_deposited": 36042.44,
+   "predicted_deposited": 36291.64,
+   "deposit_turn_precision": 0.8873,
+   "deposit_turn_recall": 0.9474,
+   "deposit_turns_actual": 266,
+   "deposit_turns_predicted": 284
+  }
+ }
+}

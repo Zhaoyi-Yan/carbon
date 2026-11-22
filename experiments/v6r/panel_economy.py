@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 from statistics import mean
 
-from trace_economy import check_near,configure_engine,contributions,limit_math_threads,replay_actions
+from trace_economy import V5_SHA,check_near,configure_engine,contributions,limit_math_threads,replay_actions
 
 
 def breakdown(record,seat):
@@ -21,13 +21,13 @@ def breakdown(record,seat):
                 tree_turns=difference('counts','eligible_tree_turns'))
 
 
-def run(files,sha):
+def run(files,sha,baseline_sha=V5_SHA):
     out=[]
     for filename in files:
         for line in filename.read_text().splitlines():
             result=json.loads(line);turns=result.pop('actions_and_post_cash')
             if result['status']!='completed':continue
-            summary,_=replay_actions(result,turns,sha);seat=summary['v6_seat']
+            summary,_=replay_actions(result,turns,sha,baseline_sha);seat=summary['v6_seat']
             final=breakdown(summary,seat)
             check_near(final['score_change'],result['cash'][seat]-result['cash'][1-seat],'terminal cash decomposition')
             out.append(dict(seed=result['seed'],seat=seat,terminal_cash=result['cash'],result=final,
@@ -41,6 +41,7 @@ def run(files,sha):
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('freeze',type=Path);p.add_argument('files',type=Path,nargs='+')
     p.add_argument('--output',type=Path,required=True);a=p.parse_args();configure_engine();limit_math_threads()
-    data=run(a.files,json.loads(a.freeze.read_text())['sha256'])
+    frozen=json.loads(a.freeze.read_text())
+    data=run(a.files,frozen['sha256'],frozen.get('opponent_sha256',V5_SHA))
     a.output.write_text(json.dumps(data,indent=2)+'\n')
     print(data['games'],data['average'],flush=True)

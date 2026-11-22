@@ -1,0 +1,2502 @@
+{
+  "branch": {
+    "pairs": 6,
+    "averaged_deltas": [
+      {
+        "changed_workers_bank": 241.65,
+        "changed_workers_harvest": -49.63,
+        "changed_workers_loot": 0.0,
+        "s0_bank": 322.01,
+        "s0_deaths": 0.67,
+        "s0_harvest": -94.25,
+        "s1_bank": -202.61,
+        "s1_deaths": 0.5,
+        "s1_harvest": 21.13,
+        "unchanged_workers_bank": 80.36
+      },
+      {
+        "changed_workers_bank": -177.34,
+        "changed_workers_harvest": -11.25,
+        "changed_workers_loot": 103.75,
+        "s0_bank": -330.43,
+        "s0_deaths": 0.17,
+        "s0_harvest": 107.43,
+        "s1_bank": 344.7,
+        "s1_deaths": 0.83,
+        "s1_harvest": 25.12,
+        "unchanged_workers_bank": -153.09
+      }
+    ],
+    "root_edit_groups": {
+      "(('player-0-worker-23', 'RIGHT', 'UP'),)": 6
+    },
+    "rows": [
+      {
+        "key": "artemis-18011-bank",
+        "root_changed": [
+          {
+            "uid": "player-0-worker-23",
+            "cargo": 241.6509,
+            "pos": 180,
+            "original": "RIGHT",
+            "bank": "UP",
+            "home_distance": [
+              8,
+              6
+            ]
+          }
+        ],
+        "delta": [
+          {
+            "changed_workers_bank": 241.651,
+            "changed_workers_harvest": -50.059,
+            "changed_workers_loot": 0,
+            "s0_bank": 415.16,
+            "s0_deaths": 2,
+            "s0_harvest": -113.177,
+            "s1_bank": -190.074,
+            "s1_deaths": 2,
+            "s1_harvest": 5.12,
+            "unchanged_workers_bank": 173.509
+          },
+          {
+            "changed_workers_bank": -367.963,
+            "changed_workers_harvest": -17.123,
+            "changed_workers_loot": 0,
+            "s0_bank": -597.331,
+            "s0_deaths": 1,
+            "s0_harvest": 44.971,
+            "s1_bank": 205.294,
+            "s1_deaths": 1,
+            "s1_harvest": -136.631,
+            "unchanged_workers_bank": -229.368
+          }
+        ],
+        "paths": {
+          "bank": [
+            {
+              "window_end": 200,
+              "totals": {
+                "changed_workers_bank": 241.651,
+                "changed_workers_harvest": 0,
+                "changed_workers_loot": 0,
+                "s0_bank": 415.16,
+                "s0_deaths": 5,
+                "s0_harvest": 110.611,
+                "s1_bank": 497.346,
+                "s1_deaths": 5,
+                "s1_harvest": 451.197,
+                "unchanged_workers_bank": 173.509
+              },
+              "cash": [
+                4164.22,
+                3561.87
+              ],
+              "bank_events": [
+                [
+                  193,
+                  1,
+                  "player-1-worker-13",
+                  196.04
+                ],
+                [
+                  194,
+                  1,
+                  "player-1-worker-24",
+                  34.27
+                ],
+                [
+                  195,
+                  0,
+                  "player-0-worker-34",
+                  65.57
+                ],
+                [
+                  195,
+                  1,
+                  "player-1-worker-20",
+                  241.62
+                ],
+                [
+                  197,
+                  0,
+                  "player-0-worker-23",
+                  241.65
+                ],
+                [
+                  199,
+                  1,
+                  "player-1-worker-20",
+                  25.41
+                ],
+                [
+                  200,
+                  0,
+                  "player-0-worker-2",
+                  107.94
+                ]
+              ]
+            },
+            {
+              "window_end": 210,
+              "totals": {
+                "changed_workers_bank": 0,
+                "changed_workers_harvest": 59.13,
+                "changed_workers_loot": 0,
+                "s0_bank": 76.731,
+                "s0_deaths": 2,
+                "s0_harvest": 271.979,
+                "s1_bank": 382.043,
+                "s1_deaths": 2,
+                "s1_harvest": 306.915,
+                "unchanged_workers_bank": 76.731
+              },
+              "cash": [
+                4268.37,
+                3873.45
+              ],
+              "bank_events": [
+                [
+                  202,
+                  1,
+                  "player-1-worker-25",
+                  303.0
+                ],
+                [
+                  205,
+                  1,
+                  "player-1-worker-25",
+                  22.28
+                ],
+                [
+                  207,
+                  1,
+                  "player-1-worker-48",
+                  56.76
+                ],
+                [
+                  208,
+                  0,
+                  "player-0-worker-46",
+                  76.73
+                ]
+              ]
+            }
+          ],
+          "control": [
+            {
+              "window_end": 200,
+              "totals": {
+                "changed_workers_bank": 0,
+                "changed_workers_harvest": 50.059,
+                "changed_workers_loot": 0,
+                "s0_deaths": 3,
+                "s0_harvest": 223.788,
+                "s1_bank": 687.42,
+                "s1_deaths": 3,
+                "s1_harvest": 446.077,
+                "unchanged_workers_bank": 0
+              },
+              "cash": [
+                3596.72,
+                3806.09
+              ],
+              "bank_events": [
+                [
+                  193,
+                  1,
+                  "player-1-worker-13",
+                  196.04
+                ],
+                [
+                  194,
+                  1,
+                  "player-1-worker-20",
+                  226.66
+                ],
+                [
+                  195,
+                  1,
+                  "player-1-worker-24",
+                  46.2
+                ],
+                [
+                  196,
+                  1,
+                  "player-1-worker-25",
+                  174.7
+                ],
+                [
+                  197,
+                  1,
+                  "player-1-worker-13",
+                  43.82
+                ]
+              ]
+            },
+            {
+              "window_end": 210,
+              "totals": {
+                "changed_workers_bank": 367.963,
+                "changed_workers_harvest": 76.253,
+                "changed_workers_loot": 0,
+                "s0_bank": 674.062,
+                "s0_deaths": 1,
+                "s0_harvest": 227.008,
+                "s1_bank": 176.749,
+                "s1_deaths": 1,
+                "s1_harvest": 443.546,
+                "unchanged_workers_bank": 306.099
+              },
+              "cash": [
+                4464.36,
+                3922.84
+              ],
+              "bank_events": [
+                [
+                  201,
+                  0,
+                  "player-0-worker-2",
+                  140.1
+                ],
+                [
+                  202,
+                  1,
+                  "player-1-worker-44",
+                  90.0
+                ],
+                [
+                  203,
+                  1,
+                  "player-1-worker-43",
+                  59.75
+                ],
+                [
+                  207,
+                  0,
+                  "player-0-worker-46",
+                  100.3
+                ],
+                [
+                  208,
+                  0,
+                  "player-0-worker-2",
+                  65.7
+                ],
+                [
+                  208,
+                  1,
+                  "player-1-worker-24",
+                  27.0
+                ],
+                [
+                  210,
+                  0,
+                  "player-0-worker-23",
+                  367.96
+                ]
+              ]
+            }
+          ]
+        },
+        "final_margin_delta": -1336.72
+      },
+      {
+        "key": "artemis-38039-bank",
+        "root_changed": [
+          {
+            "uid": "player-0-worker-23",
+            "cargo": 241.6509,
+            "pos": 180,
+            "original": "RIGHT",
+            "bank": "UP",
+            "home_distance": [
+              8,
+              6
+            ]
+          }
+        ],
+        "delta": [
+          {
+            "changed_workers_bank": 241.651,
+            "changed_workers_harvest": -73.052,
+            "changed_workers_loot": 0,
+            "s0_bank": 266.689,
+            "s0_deaths": 0,
+            "s0_harvest": -62.053,
+            "s1_bank": -244.737,
+            "s1_deaths": -1,
+            "s1_harvest": -23.976,
+            "unchanged_workers_bank": 25.038
+          },
+          {
+            "changed_workers_bank": 0,
+            "changed_workers_harvest": -47.877,
+            "changed_workers_loot": 0,
+            "s0_bank": 1.812,
+            "s0_deaths": -3,
+            "s0_harvest": 172.903,
+            "s1_bank": 308.99,
+            "s1_deaths": -2,
+            "s1_harvest": 117.998,
+            "unchanged_workers_bank": 1.812
+          }
+        ],
+        "paths": {
+          "bank": [
+            {
+              "window_end": 200,
+              "totals": {
+                "changed_workers_bank": 241.651,
+                "changed_workers_harvest": 0,
+                "changed_workers_loot": 0,
+                "s0_bank": 388.494,
+                "s0_deaths": 3,
+                "s0_harvest": 149.863,
+                "s1_bank": 515.756,
+                "s1_deaths": 3,
+                "s1_harvest": 487.26,
+                "unchanged_workers_bank": 146.843
+              },
+              "cash": [
+                4201.3,
+                3608.58
+              ],
+              "bank_events": [
+                [
+                  193,
+                  1,
+                  "player-1-worker-13",
+                  196.04
+                ],
+                [
+                  194,
+                  1,
+                  "player-1-worker-24",
+                  34.27
+                ],
+                [
+                  195,
+                  0,
+                  "player-0-worker-34",
+                  65.57
+                ],
+                [
+                  195,
+                  1,
+                  "player-1-worker-20",
+                  241.62
+                ],
+                [
+                  196,
+                  0,
+                  "player-0-worker-2",
+                  81.27
+                ],
+                [
+                  197,
+                  0,
+                  "player-0-worker-23",
+                  241.65
+                ],
+                [
+                  197,
+                  1,
+                  "player-1-worker-13",
+                  43.82
+                ]
+              ]
+            },
+            {
+              "window_end": 210,
+              "totals": {
+                "changed_workers_bank": 0,
+                "changed_workers_harvest": 28.113,
+                "changed_workers_loot": 0,
+                "s0_bank": 52.812,
+                "s0_harvest": 354.737,
+                "s1_bank": 816.935,
+                "s1_deaths": 1,
+                "s1_harvest": 355.978,
+                "unchanged_workers_bank": 52.812
+              },
+              "cash": [
+                4305.5,
+                4294.04
+              ],
+              "bank_events": [
+                [
+                  202,
+                  1,
+                  "player-1-worker-25",
+                  299.15
+                ],
+                [
+                  203,
+                  1,
+                  "player-1-worker-43",
+                  54.03
+                ],
+                [
+                  205,
+                  0,
+                  "player-0-worker-47",
+                  30.0
+                ],
+                [
+                  208,
+                  0,
+                  "player-0-worker-47",
+                  22.81
+                ],
+                [
+                  209,
+                  1,
+                  "player-1-worker-8",
+                  398.06
+                ],
+                [
+                  210,
+                  1,
+                  "player-1-worker-43",
+                  65.7
+                ]
+              ]
+            }
+          ],
+          "control": [
+            {
+              "window_end": 200,
+              "totals": {
+                "changed_workers_bank": 0,
+                "changed_workers_harvest": 73.052,
+                "changed_workers_loot": 0,
+                "s0_bank": 121.805,
+                "s0_deaths": 3,
+                "s0_harvest": 211.916,
+                "s1_bank": 760.493,
+                "s1_deaths": 4,
+                "s1_harvest": 511.236,
+                "unchanged_workers_bank": 121.805
+              },
+              "cash": [
+                3860.27,
+                3850.61
+              ],
+              "bank_events": [
+                [
+                  193,
+                  1,
+                  "player-1-worker-13",
+                  196.04
+                ],
+                [
+                  196,
+                  1,
+                  "player-1-worker-25",
+                  174.7
+                ],
+                [
+                  197,
+                  1,
+                  "player-1-worker-20",
+                  268.81
+                ],
+                [
+                  198,
+                  1,
+                  "player-1-worker-13",
+                  56.45
+                ],
+                [
+                  198,
+                  1,
+                  "player-1-worker-24",
+                  64.49
+                ],
+                [
+                  199,
+                  0,
+                  "player-0-worker-2",
+                  121.81
+                ]
+              ]
+            },
+            {
+              "window_end": 210,
+              "totals": {
+                "changed_workers_bank": 0,
+                "changed_workers_harvest": 75.99,
+                "changed_workers_loot": 0,
+                "s0_bank": 51.0,
+                "s0_deaths": 3,
+                "s0_harvest": 181.834,
+                "s1_bank": 507.945,
+                "s1_deaths": 3,
+                "s1_harvest": 237.98,
+                "unchanged_workers_bank": 51.0
+              },
+              "cash": [
+                4064.17,
+                4283.17
+              ],
+              "bank_events": [
+                [
+                  203,
+                  1,
+                  "player-1-worker-44",
+                  100.29
+                ],
+                [
+                  203,
+                  1,
+                  "player-1-worker-43",
+                  54.03
+                ],
+                [
+                  206,
+                  1,
+                  "player-1-worker-13",
+                  41.58
+                ],
+                [
+                  206,
+                  1,
+                  "player-1-worker-8",
+                  312.05
+                ],
+                [
+                  210,
+                  0,
+                  "player-0-worker-48",
+                  51.0
+                ]
+              ]
+            }
+          ]
+        },
+        "final_margin_delta": -508.81
+      },
+      {
+        "key": "artemis-62047-bank",
+        "root_changed": [
+          {
+            "uid": "player-0-worker-23",
+            "cargo": 241.6509,
+            "pos": 180,
+            "original": "RIGHT",
+            "bank": "UP",
+            "home_distance": [
+              8,
+              6
+            ]
+          }
+        ],
+        "delta": [
+          {
+            "changed_workers_bank": 241.651,
+            "changed_workers_harvest": -40.677,
+            "changed_workers_loot": 0,
+            "s0_bank": 284.172,
+            "s0_deaths": 0,
+            "s0_harvest": -105.915,
+            "s1_bank": -186.286,
+            "s1_deaths": 0,
+            "s1_harvest": 47.574,
+            "unchanged_workers_bank": 42.521
+          },
+          {
+            "changed_workers_bank": 1.618,
+            "changed_workers_harvest": 0.777,
+            "changed_workers_loot": 311.239,
+            "s0_bank": -309.621,
+            "s0_deaths": 1,
+            "s0_harvest": 205.502,
+            "s1_bank": 163.253,
+            "s1_deaths": 2,
+            "s1_harvest": -125.398,
+            "unchanged_workers_bank": -311.239
+          }
+        ],
+        "paths": {
+          "bank": [
+            {
+              "window_end": 200,
+              "totals": {
+                "changed_workers_bank": 241.651,
+                "changed_workers_harvest": 0,
+                "changed_workers_loot": 0,
+                "s0_bank": 388.494,
+                "s0_deaths": 4,
+                "s0_harvest": 34.042,
+                "s1_bank": 454.894,
+                "s1_deaths": 5,
+                "s1_harvest": 487.136,
+                "unchanged_workers_bank": 146.843
+              },
+              "cash": [
+                4111.53,
+                3516.81
+              ],
+              "bank_events": [
+                [
+                  193,
+                  1,
+                  "player-1-worker-13",
+                  196.04
+                ],
+                [
+                  193,
+                  1,
+                  "player-1-worker-24",
+                  17.23
+                ],
+                [
+                  195,
+                  0,
+                  "player-0-worker-34",
+                  65.57
+                ],
+                [
+                  195,
+                  1,
+                  "player-1-worker-20",
+                  241.62
+                ],
+                [
+                  196,
+                  0,
+                  "player-0-worker-2",
+                  81.27
+                ],
+                [
+                  197,
+                  0,
+                  "player-0-worker-23",
+                  241.65
+                ]
+              ]
+            },
+            {
+              "window_end": 210,
+              "totals": {
+                "changed_workers_bank": 311.239,
+                "changed_workers_harvest": 28.07,
+                "changed_workers_loot": 311.239,
+                "s0_deaths": 2,
+                "s0_harvest": 400.315,
+                "s1_bank": 835.081,
+                "s1_deaths": 3,
+                "s1_harvest": 251.092,
+                "unchanged_workers_bank": -311.239
+              },
+              "cash": [
+                4048.02,
+                4234.34
+              ],
+              "bank_events": [
+                [
+                  202,
+                  1,
+                  "player-1-worker-47",
+                  48.93
+                ],
+                [
+                  203,
+                  1,
+                  "player-0-worker-23",
+                  311.24
+                ],
+                [
+                  204,
+                  1,
+                  "player-1-worker-43",
+                  72.92
+                ],
+                [
+                  205,
+                  1,
+                  "player-1-worker-47",
+                  14.8
+                ],
+                [
+                  210,
+                  1,
+                  "player-1-worker-8",
+                  387.19
+                ]
+              ]
+            }
+          ],
+          "control": [
+            {
+              "window_end": 200,
+              "totals": {
+                "changed_workers_bank": 0,
+                "changed_workers_harvest": 40.677,
+                "changed_workers_loot": 0,
+                "s0_bank": 104.322,
+                "s0_deaths": 4,
+                "s0_harvest": 139.957,
+                "s1_bank": 641.18,
+                "s1_deaths": 5,
+                "s1_harvest": 439.562,
+                "unchanged_workers_bank": 104.322
+              },
+              "cash": [
+                3798.33,
+                3671.29
+              ],
+              "bank_events": [
+                [
+                  193,
+                  1,
+                  "player-1-worker-13",
+                  196.04
+                ],
+                [
+                  193,
+                  1,
+                  "player-1-worker-24",
+                  17.23
+                ],
+                [
+                  194,
+                  1,
+                  "player-1-worker-20",
+                  226.66
+                ],
+                [
+                  197,
+                  1,
+                  "player-1-worker-25",
+                  201.25
+                ],
+                [
+                  198,
+                  0,
+                  "player-0-worker-2",
+                  104.32
+                ]
+              ]
+            },
+            {
+              "window_end": 210,
+              "totals": {
+                "changed_workers_bank": 309.621,
+                "changed_workers_harvest": 27.293,
+                "changed_workers_loot": 0,
+                "s0_bank": 309.621,
+                "s0_deaths": 1,
+                "s0_harvest": 194.813,
+                "s1_bank": 671.828,
+                "s1_deaths": 1,
+                "s1_harvest": 376.49,
+                "unchanged_workers_bank": 0.0
+              },
+              "cash": [
+                4134.75,
+                4272.71
+              ],
+              "bank_events": [
+                [
+                  203,
+                  1,
+                  "player-1-worker-44",
+                  100.29
+                ],
+                [
+                  204,
+                  1,
+                  "player-1-worker-43",
+                  54.64
+                ],
+                [
+                  206,
+                  0,
+                  "player-0-worker-23",
+                  309.62
+                ],
+                [
+                  207,
+                  1,
+                  "player-1-worker-25",
+                  42.83
+                ],
+                [
+                  208,
+                  1,
+                  "player-1-worker-8",
+                  366.04
+                ],
+                [
+                  210,
+                  1,
+                  "player-1-worker-13",
+                  108.03
+                ]
+              ]
+            }
+          ]
+        },
+        "final_margin_delta": 157.27
+      },
+      {
+        "key": "apollo-18011-bank",
+        "root_changed": [
+          {
+            "uid": "player-0-worker-23",
+            "cargo": 241.6509,
+            "pos": 180,
+            "original": "RIGHT",
+            "bank": "UP",
+            "home_distance": [
+              8,
+              6
+            ]
+          }
+        ],
+        "delta": [
+          {
+            "changed_workers_bank": 241.651,
+            "changed_workers_harvest": -50.059,
+            "changed_workers_loot": 0,
+            "s0_bank": 415.16,
+            "s0_deaths": 2,
+            "s0_harvest": -123.516,
+            "s1_bank": -190.074,
+            "s1_deaths": 1,
+            "s1_harvest": 30.871,
+            "unchanged_workers_bank": 173.509
+          },
+          {
+            "changed_workers_bank": -367.963,
+            "changed_workers_harvest": 14.243,
+            "changed_workers_loot": 0,
+            "s0_bank": -489.296,
+            "s0_deaths": 3,
+            "s0_harvest": -50.02,
+            "s1_bank": 232.023,
+            "s1_deaths": 3,
+            "s1_harvest": 129.552,
+            "unchanged_workers_bank": -121.333
+          }
+        ],
+        "paths": {
+          "bank": [
+            {
+              "window_end": 200,
+              "totals": {
+                "changed_workers_bank": 241.651,
+                "changed_workers_harvest": 0,
+                "changed_workers_loot": 0,
+                "s0_bank": 415.16,
+                "s0_deaths": 5,
+                "s0_harvest": 110.611,
+                "s1_bank": 497.346,
+                "s1_deaths": 5,
+                "s1_harvest": 451.197,
+                "unchanged_workers_bank": 173.509
+              },
+              "cash": [
+                4164.22,
+                3561.87
+              ],
+              "bank_events": [
+                [
+                  193,
+                  1,
+                  "player-1-worker-13",
+                  196.04
+                ],
+                [
+                  194,
+                  1,
+                  "player-1-worker-24",
+                  34.27
+                ],
+                [
+                  195,
+                  0,
+                  "player-0-worker-34",
+                  65.57
+                ],
+                [
+                  195,
+                  1,
+                  "player-1-worker-20",
+                  241.62
+                ],
+                [
+                  197,
+                  0,
+                  "player-0-worker-23",
+                  241.65
+                ],
+                [
+                  199,
+                  1,
+                  "player-1-worker-20",
+                  25.41
+                ],
+                [
+                  200,
+                  0,
+                  "player-0-worker-2",
+                  107.94
+                ]
+              ]
+            },
+            {
+              "window_end": 210,
+              "totals": {
+                "changed_workers_bank": 0,
+                "changed_workers_harvest": 90.496,
+                "changed_workers_loot": 0,
+                "s0_bank": 84.464,
+                "s0_deaths": 3,
+                "s0_harvest": 252.688,
+                "s1_bank": 344.391,
+                "s1_deaths": 3,
+                "s1_harvest": 361.363,
+                "unchanged_workers_bank": 84.464
+              },
+              "cash": [
+                4252.93,
+                3821.95
+              ],
+              "bank_events": [
+                [
+                  202,
+                  1,
+                  "player-1-worker-25",
+                  303.0
+                ],
+                [
+                  209,
+                  0,
+                  "player-0-worker-46",
+                  84.46
+                ],
+                [
+                  209,
+                  1,
+                  "player-1-worker-51",
+                  41.39
+                ]
+              ]
+            }
+          ],
+          "control": [
+            {
+              "window_end": 200,
+              "totals": {
+                "changed_workers_bank": 0,
+                "changed_workers_harvest": 50.059,
+                "changed_workers_loot": 0,
+                "s0_deaths": 3,
+                "s0_harvest": 234.127,
+                "s1_bank": 687.42,
+                "s1_deaths": 4,
+                "s1_harvest": 420.326,
+                "unchanged_workers_bank": 0
+              },
+              "cash": [
+                3495.71,
+                3752.19
+              ],
+              "bank_events": [
+                [
+                  193,
+                  1,
+                  "player-1-worker-13",
+                  196.04
+                ],
+                [
+                  194,
+                  1,
+                  "player-1-worker-20",
+                  226.66
+                ],
+                [
+                  195,
+                  1,
+                  "player-1-worker-24",
+                  46.2
+                ],
+                [
+                  196,
+                  1,
+                  "player-1-worker-25",
+                  174.7
+                ],
+                [
+                  197,
+                  1,
+                  "player-1-worker-13",
+                  43.82
+                ]
+              ]
+            },
+            {
+              "window_end": 210,
+              "totals": {
+                "changed_workers_bank": 367.963,
+                "changed_workers_harvest": 76.253,
+                "changed_workers_loot": 0,
+                "s0_bank": 573.76,
+                "s0_harvest": 302.708,
+                "s1_bank": 112.368,
+                "s1_harvest": 231.811,
+                "unchanged_workers_bank": 205.797
+              },
+              "cash": [
+                4331.42,
+                3816.03
+              ],
+              "bank_events": [
+                [
+                  201,
+                  1,
+                  "player-1-worker-44",
+                  65.7
+                ],
+                [
+                  204,
+                  1,
+                  "player-1-worker-44",
+                  19.67
+                ],
+                [
+                  206,
+                  0,
+                  "player-0-worker-2",
+                  205.8
+                ],
+                [
+                  209,
+                  1,
+                  "player-1-worker-47",
+                  27.0
+                ],
+                [
+                  210,
+                  0,
+                  "player-0-worker-23",
+                  367.96
+                ]
+              ]
+            }
+          ]
+        },
+        "final_margin_delta": -785.98
+      },
+      {
+        "key": "apollo-38039-bank",
+        "root_changed": [
+          {
+            "uid": "player-0-worker-23",
+            "cargo": 241.6509,
+            "pos": 180,
+            "original": "RIGHT",
+            "bank": "UP",
+            "home_distance": [
+              8,
+              6
+            ]
+          }
+        ],
+        "delta": [
+          {
+            "changed_workers_bank": 241.651,
+            "changed_workers_harvest": -43.271,
+            "changed_workers_loot": 0,
+            "s0_bank": 266.689,
+            "s0_deaths": 0,
+            "s0_harvest": -32.272,
+            "s1_bank": -244.737,
+            "s1_deaths": 0,
+            "s1_harvest": -42.732,
+            "unchanged_workers_bank": 25.038
+          },
+          {
+            "changed_workers_bank": -331.321,
+            "changed_workers_harvest": -18.286,
+            "changed_workers_loot": 0,
+            "s0_bank": -278.509,
+            "s0_deaths": -3,
+            "s0_harvest": 83.02,
+            "s1_bank": 508.144,
+            "s1_deaths": -3,
+            "s1_harvest": 90.801,
+            "unchanged_workers_bank": 52.812
+          }
+        ],
+        "paths": {
+          "bank": [
+            {
+              "window_end": 200,
+              "totals": {
+                "changed_workers_bank": 241.651,
+                "changed_workers_harvest": 0,
+                "changed_workers_loot": 0,
+                "s0_bank": 388.494,
+                "s0_deaths": 3,
+                "s0_harvest": 149.863,
+                "s1_bank": 515.756,
+                "s1_deaths": 3,
+                "s1_harvest": 487.26,
+                "unchanged_workers_bank": 146.843
+              },
+              "cash": [
+                4201.3,
+                3608.58
+              ],
+              "bank_events": [
+                [
+                  193,
+                  1,
+                  "player-1-worker-13",
+                  196.04
+                ],
+                [
+                  194,
+                  1,
+                  "player-1-worker-24",
+                  34.27
+                ],
+                [
+                  195,
+                  0,
+                  "player-0-worker-34",
+                  65.57
+                ],
+                [
+                  195,
+                  1,
+                  "player-1-worker-20",
+                  241.62
+                ],
+                [
+                  196,
+                  0,
+                  "player-0-worker-2",
+                  81.27
+                ],
+                [
+                  197,
+                  0,
+                  "player-0-worker-23",
+                  241.65
+                ],
+                [
+                  197,
+                  1,
+                  "player-1-worker-13",
+                  43.82
+                ]
+              ]
+            },
+            {
+              "window_end": 210,
+              "totals": {
+                "changed_workers_bank": 0,
+                "changed_workers_harvest": 28.113,
+                "changed_workers_loot": 0,
+                "s0_bank": 52.812,
+                "s0_harvest": 354.737,
+                "s1_bank": 816.935,
+                "s1_deaths": 1,
+                "s1_harvest": 355.978,
+                "unchanged_workers_bank": 52.812
+              },
+              "cash": [
+                4305.5,
+                4294.04
+              ],
+              "bank_events": [
+                [
+                  202,
+                  1,
+                  "player-1-worker-25",
+                  299.15
+                ],
+                [
+                  203,
+                  1,
+                  "player-1-worker-43",
+                  54.03
+                ],
+                [
+                  205,
+                  0,
+                  "player-0-worker-47",
+                  30.0
+                ],
+                [
+                  208,
+                  0,
+                  "player-0-worker-47",
+                  22.81
+                ],
+                [
+                  209,
+                  1,
+                  "player-1-worker-8",
+                  398.06
+                ],
+                [
+                  210,
+                  1,
+                  "player-1-worker-43",
+                  65.7
+                ]
+              ]
+            }
+          ],
+          "control": [
+            {
+              "window_end": 200,
+              "totals": {
+                "changed_workers_bank": 0,
+                "changed_workers_harvest": 43.271,
+                "changed_workers_loot": 0,
+                "s0_bank": 121.805,
+                "s0_deaths": 3,
+                "s0_harvest": 182.135,
+                "s1_bank": 760.493,
+                "s1_deaths": 3,
+                "s1_harvest": 529.992,
+                "unchanged_workers_bank": 121.805
+              },
+              "cash": [
+                3879.53,
+                3851.85
+              ],
+              "bank_events": [
+                [
+                  193,
+                  1,
+                  "player-1-worker-13",
+                  196.04
+                ],
+                [
+                  196,
+                  1,
+                  "player-1-worker-25",
+                  174.7
+                ],
+                [
+                  197,
+                  1,
+                  "player-1-worker-20",
+                  268.81
+                ],
+                [
+                  198,
+                  1,
+                  "player-1-worker-13",
+                  56.45
+                ],
+                [
+                  198,
+                  1,
+                  "player-1-worker-24",
+                  64.49
+                ],
+                [
+                  199,
+                  0,
+                  "player-0-worker-2",
+                  121.81
+                ]
+              ]
+            },
+            {
+              "window_end": 210,
+              "totals": {
+                "changed_workers_bank": 331.321,
+                "changed_workers_harvest": 46.399,
+                "changed_workers_loot": 0,
+                "s0_bank": 331.321,
+                "s0_deaths": 3,
+                "s0_harvest": 271.717,
+                "s1_bank": 308.791,
+                "s1_deaths": 4,
+                "s1_harvest": 265.177,
+                "unchanged_workers_bank": 0.0
+              },
+              "cash": [
+                4245.44,
+                3946.52
+              ],
+              "bank_events": [
+                [
+                  203,
+                  1,
+                  "player-1-worker-44",
+                  100.29
+                ],
+                [
+                  203,
+                  1,
+                  "player-1-worker-43",
+                  54.03
+                ],
+                [
+                  206,
+                  1,
+                  "player-1-worker-24",
+                  43.2
+                ],
+                [
+                  207,
+                  0,
+                  "player-0-worker-23",
+                  331.32
+                ],
+                [
+                  208,
+                  1,
+                  "player-1-worker-13",
+                  61.95
+                ],
+                [
+                  209,
+                  1,
+                  "player-1-worker-44",
+                  49.32
+                ]
+              ]
+            }
+          ]
+        },
+        "final_margin_delta": 277.59
+      },
+      {
+        "key": "apollo-62047-bank",
+        "root_changed": [
+          {
+            "uid": "player-0-worker-23",
+            "cargo": 241.6509,
+            "pos": 180,
+            "original": "RIGHT",
+            "bank": "UP",
+            "home_distance": [
+              8,
+              6
+            ]
+          }
+        ],
+        "delta": [
+          {
+            "changed_workers_bank": 241.651,
+            "changed_workers_harvest": -40.677,
+            "changed_workers_loot": 0,
+            "s0_bank": 284.172,
+            "s0_deaths": 0,
+            "s0_harvest": -128.549,
+            "s1_bank": -159.736,
+            "s1_deaths": 1,
+            "s1_harvest": 109.907,
+            "unchanged_workers_bank": 42.521
+          },
+          {
+            "changed_workers_bank": 1.618,
+            "changed_workers_harvest": 0.777,
+            "changed_workers_loot": 311.239,
+            "s0_bank": -309.621,
+            "s0_deaths": 2,
+            "s0_harvest": 188.215,
+            "s1_bank": 650.501,
+            "s1_deaths": 4,
+            "s1_harvest": 74.375,
+            "unchanged_workers_bank": -311.239
+          }
+        ],
+        "paths": {
+          "bank": [
+            {
+              "window_end": 200,
+              "totals": {
+                "changed_workers_bank": 241.651,
+                "changed_workers_harvest": 0,
+                "changed_workers_loot": 0,
+                "s0_bank": 388.494,
+                "s0_deaths": 4,
+                "s0_harvest": 34.042,
+                "s1_bank": 454.894,
+                "s1_deaths": 5,
+                "s1_harvest": 487.136,
+                "unchanged_workers_bank": 146.843
+              },
+              "cash": [
+                4111.53,
+                3516.81
+              ],
+              "bank_events": [
+                [
+                  193,
+                  1,
+                  "player-1-worker-13",
+                  196.04
+                ],
+                [
+                  193,
+                  1,
+                  "player-1-worker-24",
+                  17.23
+                ],
+                [
+                  195,
+                  0,
+                  "player-0-worker-34",
+                  65.57
+                ],
+                [
+                  195,
+                  1,
+                  "player-1-worker-20",
+                  241.62
+                ],
+                [
+                  196,
+                  0,
+                  "player-0-worker-2",
+                  81.27
+                ],
+                [
+                  197,
+                  0,
+                  "player-0-worker-23",
+                  241.65
+                ]
+              ]
+            },
+            {
+              "window_end": 210,
+              "totals": {
+                "changed_workers_bank": 311.239,
+                "changed_workers_harvest": 28.07,
+                "changed_workers_loot": 311.239,
+                "s0_deaths": 3,
+                "s0_harvest": 400.315,
+                "s1_bank": 835.081,
+                "s1_deaths": 5,
+                "s1_harvest": 251.092,
+                "unchanged_workers_bank": -311.239
+              },
+              "cash": [
+                4048.02,
+                4204.34
+              ],
+              "bank_events": [
+                [
+                  202,
+                  1,
+                  "player-1-worker-47",
+                  48.93
+                ],
+                [
+                  203,
+                  1,
+                  "player-0-worker-23",
+                  311.24
+                ],
+                [
+                  204,
+                  1,
+                  "player-1-worker-43",
+                  72.92
+                ],
+                [
+                  205,
+                  1,
+                  "player-1-worker-47",
+                  14.8
+                ],
+                [
+                  210,
+                  1,
+                  "player-1-worker-8",
+                  387.19
+                ]
+              ]
+            }
+          ],
+          "control": [
+            {
+              "window_end": 200,
+              "totals": {
+                "changed_workers_bank": 0,
+                "changed_workers_harvest": 40.677,
+                "changed_workers_loot": 0,
+                "s0_bank": 104.322,
+                "s0_deaths": 4,
+                "s0_harvest": 162.591,
+                "s1_bank": 614.63,
+                "s1_deaths": 4,
+                "s1_harvest": 377.229,
+                "unchanged_workers_bank": 104.322
+              },
+              "cash": [
+                3813.71,
+                3673.65
+              ],
+              "bank_events": [
+                [
+                  193,
+                  1,
+                  "player-1-worker-13",
+                  196.04
+                ],
+                [
+                  193,
+                  1,
+                  "player-1-worker-24",
+                  17.23
+                ],
+                [
+                  194,
+                  1,
+                  "player-1-worker-20",
+                  226.66
+                ],
+                [
+                  196,
+                  1,
+                  "player-1-worker-25",
+                  174.7
+                ],
+                [
+                  198,
+                  0,
+                  "player-0-worker-2",
+                  104.32
+                ]
+              ]
+            },
+            {
+              "window_end": 210,
+              "totals": {
+                "changed_workers_bank": 309.621,
+                "changed_workers_harvest": 27.293,
+                "changed_workers_loot": 0,
+                "s0_bank": 309.621,
+                "s0_deaths": 1,
+                "s0_harvest": 212.1,
+                "s1_bank": 184.58,
+                "s1_deaths": 1,
+                "s1_harvest": 176.717,
+                "unchanged_workers_bank": 0.0
+              },
+              "cash": [
+                4188.33,
+                3839.14
+              ],
+              "bank_events": [
+                [
+                  203,
+                  1,
+                  "player-1-worker-44",
+                  116.05
+                ],
+                [
+                  204,
+                  1,
+                  "player-1-worker-43",
+                  54.64
+                ],
+                [
+                  205,
+                  1,
+                  "player-1-worker-37",
+                  13.9
+                ],
+                [
+                  206,
+                  0,
+                  "player-0-worker-23",
+                  309.62
+                ]
+              ]
+            }
+          ]
+        },
+        "final_margin_delta": -374.76
+      }
+    ]
+  },
+  "branch-varied": {
+    "pairs": 3,
+    "averaged_deltas": [
+      {
+        "changed_workers_bank": 241.65,
+        "changed_workers_harvest": -42.41,
+        "changed_workers_loot": 0.0,
+        "s0_bank": 329.69,
+        "s0_deaths": 2.0,
+        "s0_harvest": -43.99,
+        "s1_bank": -190.37,
+        "s1_deaths": 1.67,
+        "s1_harvest": 9.06,
+        "unchanged_workers_bank": 88.04
+      },
+      {
+        "changed_workers_bank": -220.02,
+        "changed_workers_harvest": 28.38,
+        "changed_workers_loot": 0.0,
+        "s0_bank": -335.93,
+        "s0_deaths": 0.0,
+        "s0_harvest": 36.59,
+        "s1_bank": 283.32,
+        "s1_deaths": 0.33,
+        "s1_harvest": -130.28,
+        "unchanged_workers_bank": -115.91
+      }
+    ],
+    "root_edit_groups": {
+      "(('player-0-worker-23', 'RIGHT', 'UP'),)": 3
+    },
+    "rows": [
+      {
+        "key": "apollo-varied-18011-bank",
+        "root_changed": [
+          {
+            "uid": "player-0-worker-23",
+            "cargo": 241.6509,
+            "pos": 180,
+            "original": "RIGHT",
+            "bank": "UP",
+            "home_distance": [
+              8,
+              6
+            ]
+          }
+        ],
+        "delta": [
+          {
+            "changed_workers_bank": 241.651,
+            "changed_workers_harvest": -43.271,
+            "changed_workers_loot": 0,
+            "s0_bank": 415.16,
+            "s0_deaths": 2,
+            "s0_harvest": -104.326,
+            "s1_bank": -161.346,
+            "s1_deaths": 2,
+            "s1_harvest": 15.067,
+            "unchanged_workers_bank": 173.51
+          },
+          {
+            "changed_workers_bank": -331.321,
+            "changed_workers_harvest": 46.459,
+            "changed_workers_loot": 0,
+            "s0_bank": -636.005,
+            "s0_deaths": -1,
+            "s0_harvest": -57.983,
+            "s1_bank": 81.252,
+            "s1_deaths": -1,
+            "s1_harvest": -288.382,
+            "unchanged_workers_bank": -304.683
+          }
+        ],
+        "paths": {
+          "bank": [
+            {
+              "window_end": 200,
+              "totals": {
+                "changed_workers_bank": 241.651,
+                "changed_workers_harvest": 0,
+                "changed_workers_loot": 0,
+                "s0_bank": 415.16,
+                "s0_deaths": 5,
+                "s0_harvest": 96.1,
+                "s1_bank": 499.559,
+                "s1_deaths": 5,
+                "s1_harvest": 474.679,
+                "unchanged_workers_bank": 173.51
+              },
+              "cash": [
+                4078.57,
+                3553.19
+              ],
+              "bank_events": [
+                [
+                  192,
+                  1,
+                  "player-1-worker-13",
+                  178.56
+                ],
+                [
+                  194,
+                  1,
+                  "player-1-worker-24",
+                  34.27
+                ],
+                [
+                  195,
+                  0,
+                  "player-0-worker-34",
+                  65.57
+                ],
+                [
+                  195,
+                  1,
+                  "player-1-worker-20",
+                  241.62
+                ],
+                [
+                  197,
+                  0,
+                  "player-0-worker-23",
+                  241.65
+                ],
+                [
+                  198,
+                  0,
+                  "player-0-worker-2",
+                  107.94
+                ],
+                [
+                  198,
+                  1,
+                  "player-1-worker-20",
+                  16.94
+                ],
+                [
+                  199,
+                  1,
+                  "player-1-worker-48",
+                  28.17
+                ]
+              ]
+            },
+            {
+              "window_end": 210,
+              "totals": {
+                "changed_workers_bank": 0,
+                "changed_workers_harvest": 92.858,
+                "changed_workers_loot": 0,
+                "s0_harvest": 261.619,
+                "s1_bank": 407.024,
+                "s1_deaths": 1,
+                "s1_harvest": 208.18,
+                "unchanged_workers_bank": 0
+              },
+              "cash": [
+                4179.56,
+                3942.25
+              ],
+              "bank_events": [
+                [
+                  202,
+                  1,
+                  "player-1-worker-25",
+                  299.15
+                ],
+                [
+                  202,
+                  1,
+                  "player-1-worker-43",
+                  47.63
+                ],
+                [
+                  210,
+                  1,
+                  "player-1-worker-48",
+                  60.25
+                ]
+              ]
+            }
+          ],
+          "control": [
+            {
+              "window_end": 200,
+              "totals": {
+                "changed_workers_bank": 0,
+                "changed_workers_harvest": 43.271,
+                "changed_workers_loot": 0,
+                "s0_deaths": 3,
+                "s0_harvest": 200.426,
+                "s1_bank": 660.905,
+                "s1_deaths": 3,
+                "s1_harvest": 459.612,
+                "unchanged_workers_bank": 0
+              },
+              "cash": [
+                3813.07,
+                3752.39
+              ],
+              "bank_events": [
+                [
+                  192,
+                  1,
+                  "player-1-worker-13",
+                  178.56
+                ],
+                [
+                  195,
+                  1,
+                  "player-1-worker-24",
+                  46.2
+                ],
+                [
+                  196,
+                  1,
+                  "player-1-worker-25",
+                  174.7
+                ],
+                [
+                  196,
+                  1,
+                  "player-1-worker-20",
+                  261.45
+                ]
+              ]
+            },
+            {
+              "window_end": 210,
+              "totals": {
+                "changed_workers_bank": 331.321,
+                "changed_workers_harvest": 46.399,
+                "changed_workers_loot": 0,
+                "s0_bank": 636.005,
+                "s0_deaths": 1,
+                "s0_harvest": 319.602,
+                "s1_bank": 325.772,
+                "s1_deaths": 2,
+                "s1_harvest": 496.562,
+                "unchanged_workers_bank": 304.683
+              },
+              "cash": [
+                4525.07,
+                3942.86
+              ],
+              "bank_events": [
+                [
+                  201,
+                  0,
+                  "player-0-worker-2",
+                  140.1
+                ],
+                [
+                  203,
+                  1,
+                  "player-1-worker-44",
+                  99.2
+                ],
+                [
+                  205,
+                  1,
+                  "player-1-worker-13",
+                  109.52
+                ],
+                [
+                  207,
+                  0,
+                  "player-0-worker-23",
+                  331.32
+                ],
+                [
+                  207,
+                  1,
+                  "player-1-worker-25",
+                  63.93
+                ],
+                [
+                  209,
+                  0,
+                  "player-0-worker-34",
+                  82.92
+                ],
+                [
+                  209,
+                  0,
+                  "player-0-worker-2",
+                  81.67
+                ],
+                [
+                  209,
+                  1,
+                  "player-1-worker-43",
+                  53.12
+                ]
+              ]
+            }
+          ]
+        },
+        "final_margin_delta": 407.47
+      },
+      {
+        "key": "apollo-varied-38039-bank",
+        "root_changed": [
+          {
+            "uid": "player-0-worker-23",
+            "cargo": 241.6509,
+            "pos": 180,
+            "original": "RIGHT",
+            "bank": "UP",
+            "home_distance": [
+              8,
+              6
+            ]
+          }
+        ],
+        "delta": [
+          {
+            "changed_workers_bank": 241.651,
+            "changed_workers_harvest": -43.271,
+            "changed_workers_loot": 0,
+            "s0_bank": 266.689,
+            "s0_deaths": 1,
+            "s0_harvest": 66.568,
+            "s1_bank": -174.699,
+            "s1_deaths": 0,
+            "s1_harvest": 33.296,
+            "unchanged_workers_bank": 25.038
+          },
+          {
+            "changed_workers_bank": 0,
+            "changed_workers_harvest": 85.077,
+            "changed_workers_loot": 0,
+            "s0_bank": 117.307,
+            "s0_deaths": 2,
+            "s0_harvest": 153.498,
+            "s1_bank": 142.256,
+            "s1_deaths": 2,
+            "s1_harvest": -77.613,
+            "unchanged_workers_bank": 117.307
+          }
+        ],
+        "paths": {
+          "bank": [
+            {
+              "window_end": 200,
+              "totals": {
+                "changed_workers_bank": 241.651,
+                "changed_workers_harvest": 0,
+                "changed_workers_loot": 0,
+                "s0_bank": 388.494,
+                "s0_deaths": 3,
+                "s0_harvest": 248.703,
+                "s1_bank": 485.125,
+                "s1_deaths": 3,
+                "s1_harvest": 457.128,
+                "unchanged_workers_bank": 146.843
+              },
+              "cash": [
+                4229.85,
+                3507.05
+              ],
+              "bank_events": [
+                [
+                  192,
+                  1,
+                  "player-1-worker-13",
+                  178.56
+                ],
+                [
+                  195,
+                  0,
+                  "player-0-worker-34",
+                  65.57
+                ],
+                [
+                  195,
+                  1,
+                  "player-1-worker-24",
+                  45.12
+                ],
+                [
+                  196,
+                  0,
+                  "player-0-worker-2",
+                  81.27
+                ],
+                [
+                  196,
+                  1,
+                  "player-1-worker-20",
+                  261.45
+                ],
+                [
+                  197,
+                  0,
+                  "player-0-worker-23",
+                  241.65
+                ]
+              ]
+            },
+            {
+              "window_end": 210,
+              "totals": {
+                "changed_workers_bank": 0,
+                "changed_workers_harvest": 85.077,
+                "changed_workers_loot": 0,
+                "s0_bank": 117.307,
+                "s0_deaths": 2,
+                "s0_harvest": 321.171,
+                "s1_bank": 808.847,
+                "s1_deaths": 2,
+                "s1_harvest": 389.567,
+                "unchanged_workers_bank": 117.307
+              },
+              "cash": [
+                4400.54,
+                4316.94
+              ],
+              "bank_events": [
+                [
+                  201,
+                  1,
+                  "player-1-worker-43",
+                  38.71
+                ],
+                [
+                  203,
+                  1,
+                  "player-1-worker-25",
+                  325.85
+                ],
+                [
+                  204,
+                  0,
+                  "player-0-worker-2",
+                  85.97
+                ],
+                [
+                  205,
+                  0,
+                  "player-0-worker-41",
+                  31.34
+                ],
+                [
+                  207,
+                  1,
+                  "player-1-worker-8",
+                  355.05
+                ],
+                [
+                  209,
+                  1,
+                  "player-1-worker-49",
+                  49.32
+                ],
+                [
+                  209,
+                  1,
+                  "player-1-worker-48",
+                  39.91
+                ]
+              ]
+            }
+          ],
+          "control": [
+            {
+              "window_end": 200,
+              "totals": {
+                "changed_workers_bank": 0,
+                "changed_workers_harvest": 43.271,
+                "changed_workers_loot": 0,
+                "s0_bank": 121.805,
+                "s0_deaths": 2,
+                "s0_harvest": 182.135,
+                "s1_bank": 659.824,
+                "s1_deaths": 3,
+                "s1_harvest": 423.832,
+                "unchanged_workers_bank": 121.805
+              },
+              "cash": [
+                3963.27,
+                3782.92
+              ],
+              "bank_events": [
+                [
+                  192,
+                  1,
+                  "player-1-worker-13",
+                  178.56
+                ],
+                [
+                  195,
+                  1,
+                  "player-1-worker-24",
+                  45.12
+                ],
+                [
+                  196,
+                  1,
+                  "player-1-worker-25",
+                  174.7
+                ],
+                [
+                  196,
+                  1,
+                  "player-1-worker-20",
+                  261.45
+                ],
+                [
+                  199,
+                  0,
+                  "player-0-worker-2",
+                  121.81
+                ]
+              ]
+            },
+            {
+              "window_end": 210,
+              "totals": {
+                "changed_workers_bank": 0,
+                "changed_workers_harvest": 0,
+                "changed_workers_loot": 0,
+                "s0_harvest": 167.673,
+                "s1_bank": 666.591,
+                "s1_harvest": 467.18,
+                "unchanged_workers_bank": 0
+              },
+              "cash": [
+                3971.98,
+                4408.34
+              ],
+              "bank_events": [
+                [
+                  202,
+                  1,
+                  "player-1-worker-43",
+                  43.35
+                ],
+                [
+                  203,
+                  1,
+                  "player-1-worker-44",
+                  117.6
+                ],
+                [
+                  206,
+                  1,
+                  "player-1-worker-8",
+                  304.35
+                ],
+                [
+                  209,
+                  1,
+                  "player-1-worker-44",
+                  46.31
+                ],
+                [
+                  209,
+                  1,
+                  "player-1-worker-8",
+                  16.24
+                ],
+                [
+                  210,
+                  1,
+                  "player-1-worker-48",
+                  95.56
+                ],
+                [
+                  210,
+                  1,
+                  "player-1-worker-43",
+                  43.2
+                ]
+              ]
+            }
+          ]
+        },
+        "final_margin_delta": 287.75
+      },
+      {
+        "key": "apollo-varied-62047-bank",
+        "root_changed": [
+          {
+            "uid": "player-0-worker-23",
+            "cargo": 241.6509,
+            "pos": 180,
+            "original": "RIGHT",
+            "bank": "UP",
+            "home_distance": [
+              8,
+              6
+            ]
+          }
+        ],
+        "delta": [
+          {
+            "changed_workers_bank": 241.651,
+            "changed_workers_harvest": -40.677,
+            "changed_workers_loot": 0,
+            "s0_bank": 307.223,
+            "s0_deaths": 3,
+            "s0_harvest": -94.21,
+            "s1_bank": -235.075,
+            "s1_deaths": 3,
+            "s1_harvest": -21.186,
+            "unchanged_workers_bank": 65.572
+          },
+          {
+            "changed_workers_bank": -328.727,
+            "changed_workers_harvest": -46.399,
+            "changed_workers_loot": 0,
+            "s0_bank": -489.094,
+            "s0_deaths": -1,
+            "s0_harvest": 14.263,
+            "s1_bank": 626.467,
+            "s1_deaths": 0,
+            "s1_harvest": -24.857,
+            "unchanged_workers_bank": -160.367
+          }
+        ],
+        "paths": {
+          "bank": [
+            {
+              "window_end": 200,
+              "totals": {
+                "changed_workers_bank": 241.651,
+                "changed_workers_harvest": 0,
+                "changed_workers_loot": 0,
+                "s0_bank": 369.123,
+                "s0_deaths": 6,
+                "s0_harvest": 14.671,
+                "s1_bank": 462.804,
+                "s1_deaths": 6,
+                "s1_harvest": 467.565,
+                "unchanged_workers_bank": 127.472
+              },
+              "cash": [
+                4021.99,
+                3449.84
+              ],
+              "bank_events": [
+                [
+                  193,
+                  1,
+                  "player-1-worker-13",
+                  196.04
+                ],
+                [
+                  194,
+                  1,
+                  "player-1-worker-37",
+                  40.1
+                ],
+                [
+                  194,
+                  1,
+                  "player-1-worker-20",
+                  226.66
+                ],
+                [
+                  195,
+                  0,
+                  "player-0-worker-34",
+                  65.57
+                ],
+                [
+                  195,
+                  0,
+                  "player-0-worker-2",
+                  61.9
+                ],
+                [
+                  197,
+                  0,
+                  "player-0-worker-23",
+                  241.65
+                ]
+              ]
+            },
+            {
+              "window_end": 210,
+              "totals": {
+                "changed_workers_bank": 0,
+                "changed_workers_harvest": 0,
+                "changed_workers_loot": 0,
+                "s0_bank": 52.812,
+                "s0_deaths": 1,
+                "s0_harvest": 306.291,
+                "s1_bank": 841.811,
+                "s1_deaths": 2,
+                "s1_harvest": 321.451,
+                "unchanged_workers_bank": 52.812
+              },
+              "cash": [
+                4172.73,
+                4213.36
+              ],
+              "bank_events": [
+                [
+                  201,
+                  1,
+                  "player-1-worker-43",
+                  63.98
+                ],
+                [
+                  202,
+                  1,
+                  "player-1-worker-49",
+                  39.07
+                ],
+                [
+                  204,
+                  1,
+                  "player-1-worker-25",
+                  331.23
+                ],
+                [
+                  205,
+                  0,
+                  "player-0-worker-50",
+                  30.0
+                ],
+                [
+                  206,
+                  1,
+                  "player-1-worker-8",
+                  356.53
+                ],
+                [
+                  208,
+                  0,
+                  "player-0-worker-50",
+                  22.81
+                ],
+                [
+                  210,
+                  1,
+                  "player-1-worker-8",
+                  51.0
+                ]
+              ]
+            }
+          ],
+          "control": [
+            {
+              "window_end": 200,
+              "totals": {
+                "changed_workers_bank": 0,
+                "changed_workers_harvest": 40.677,
+                "changed_workers_loot": 0,
+                "s0_bank": 61.9,
+                "s0_deaths": 3,
+                "s0_harvest": 108.881,
+                "s1_bank": 697.879,
+                "s1_deaths": 3,
+                "s1_harvest": 488.751,
+                "unchanged_workers_bank": 61.9
+              },
+              "cash": [
+                3815.39,
+                3775.58
+              ],
+              "bank_events": [
+                [
+                  193,
+                  1,
+                  "player-1-worker-13",
+                  196.04
+                ],
+                [
+                  194,
+                  1,
+                  "player-1-worker-20",
+                  226.66
+                ],
+                [
+                  195,
+                  0,
+                  "player-0-worker-2",
+                  61.9
+                ],
+                [
+                  198,
+                  1,
+                  "player-1-worker-25",
+                  210.84
+                ],
+                [
+                  199,
+                  1,
+                  "player-1-worker-43",
+                  21.22
+                ],
+                [
+                  200,
+                  1,
+                  "player-1-worker-47",
+                  43.12
+                ]
+              ]
+            },
+            {
+              "window_end": 210,
+              "totals": {
+                "changed_workers_bank": 328.727,
+                "changed_workers_harvest": 46.399,
+                "changed_workers_loot": 0,
+                "s0_bank": 541.906,
+                "s0_deaths": 2,
+                "s0_harvest": 292.028,
+                "s1_bank": 215.344,
+                "s1_deaths": 2,
+                "s1_harvest": 346.308,
+                "unchanged_workers_bank": 213.179
+              },
+              "cash": [
+                4265.86,
+                3973.42
+              ],
+              "bank_events": [
+                [
+                  201,
+                  0,
+                  "player-0-worker-34",
+                  65.57
+                ],
+                [
+                  202,
+                  0,
+                  "player-0-worker-46",
+                  65.46
+                ],
+                [
+                  202,
+                  1,
+                  "player-1-worker-43",
+                  25.3
+                ],
+                [
+                  204,
+                  1,
+                  "player-1-worker-37",
+                  155.95
+                ],
+                [
+                  204,
+                  1,
+                  "player-1-worker-47",
+                  34.09
+                ],
+                [
+                  207,
+                  0,
+                  "player-0-worker-23",
+                  328.73
+                ],
+                [
+                  210,
+                  0,
+                  "player-0-worker-46",
+                  82.15
+                ]
+              ]
+            }
+          ]
+        },
+        "final_margin_delta": -276.55
+      }
+    ]
+  },
+  "scope": "One post-turn-190 initial state, two families of opponent proxies. Received action logs only; archived cash checked at both horizons. Effects include later decisions by both teams."
+}

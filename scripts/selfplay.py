@@ -1,6 +1,6 @@
 """Play a candidate against a frozen Carbon League strategy on both seats of every seed.
 
-The default opponent is the frozen yan-v5 release. Use a frozen account name or a
+The default opponent is the frozen yan-v6 release. Use a frozen account name or a
 single-file Python strategy as the candidate or baseline. The arena writes one JSONL
 record per game, with both names, file hashes, seat order, scores and timing.
 """
@@ -65,7 +65,7 @@ def source_for(spec, repo=ROOT):
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--candidate", required=True, help="working strategy file or frozen account name")
-    parser.add_argument("--baseline", default="yan-v5", help="opponent file or frozen account name (default: yan-v5)")
+    parser.add_argument("--baseline", default="yan-v6", help="opponent file or frozen account name (default: yan-v6)")
     parser.add_argument("--seeds", type=int, nargs="+", required=True, help="holdout map seeds; each runs twice")
     parser.add_argument("--steps", type=int, default=300)
     parser.add_argument("--jobs", type=int, default=1)

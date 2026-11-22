@@ -1,0 +1,397 @@
+{
+ "frozen_source_sha": "e5c328aa5d18ced597791e7b839088f1a37d18e4e8dc83dd3d54b13d66e877b0",
+ "windows": [
+  [
+   48,
+   72
+  ],
+  [
+   166,
+   190
+  ],
+  [
+   246,
+   270
+  ]
+ ],
+ "select_rule": "Two rotations. EWMA of worker likelihood gain, 19 effective labels, enter at 0.028 nat, keep at 0.008; previous-style hysteresis 0.025. Chosen on the prior development split before opening confirmation predictions.",
+ "validation": "Opponent actions from next frame only used as scoring labels; online evidence only inferred from surviving positions. Both candidates use viewer fog. Original shadow+v5 root is the paired legacy prediction. Blocks restart all opponent-router memory at beginning. First 6 turns in each 24-turn block are warmup. No paired games run.",
+ "teacher_embedding_rows": 23,
+ "tiny_embedding_rows": 21,
+ "student_indices_checked_in_real_search": true,
+ "extra_ms_median": 5.907,
+ "extra_ms_p95": 14.744,
+ "pooled": {
+  "decisions": 648,
+  "worker_observations": 6282,
+  "selected_apollo": 15,
+  "selected_artemis": 32,
+  "selected_legacy": 601,
+  "changed_argmax": 6,
+  "worker_accuracy": [
+   0.80707,
+   0.80675
+  ],
+  "worker_nll": [
+   0.49657,
+   0.49654
+  ],
+  "eligible_base_observations": 316,
+  "base_accuracy": [
+   0.81329,
+   0.81013
+  ],
+  "median_block_warmup": 6
+ },
+ "selected_map_partition": "confirmation",
+ "rows": [
+  {
+   "match": "96853d68b0d4d7d8f63bedb99bc27125",
+   "opponent": "RyanX-AIPowercore-it960-hyb",
+   "seat": 0,
+   "cohort": "post_training",
+   "seed": 1932786111,
+   "metrics": {
+    "decisions": 54,
+    "worker_observations": 515,
+    "selected_apollo": 0,
+    "selected_artemis": 0,
+    "selected_legacy": 54,
+    "changed_argmax": 0,
+    "worker_accuracy": [
+     0.78835,
+     0.78835
+    ],
+    "worker_nll": [
+     0.61274,
+     0.61274
+    ],
+    "eligible_base_observations": 40,
+    "base_accuracy": [
+     0.85,
+     0.85
+    ],
+    "median_block_warmup": 6
+   }
+  },
+  {
+   "match": "96853d68b0d4d7d8f63bedb99bc27125",
+   "opponent": "CarbonEdge_Artemis",
+   "seat": 1,
+   "cohort": "post_training",
+   "seed": 1932786111,
+   "metrics": {
+    "decisions": 54,
+    "worker_observations": 519,
+    "selected_apollo": 0,
+    "selected_artemis": 0,
+    "selected_legacy": 54,
+    "changed_argmax": 0,
+    "worker_accuracy": [
+     0.80539,
+     0.80539
+    ],
+    "worker_nll": [
+     0.50085,
+     0.50085
+    ],
+    "eligible_base_observations": 30,
+    "base_accuracy": [
+     0.8,
+     0.8
+    ],
+    "median_block_warmup": 6
+   }
+  },
+  {
+   "match": "4419ce2aaffb31ee16c6e4db60a7f4dd",
+   "opponent": "CarbonEdge_Artemis",
+   "seat": 0,
+   "cohort": "post_training",
+   "seed": 1588103311,
+   "metrics": {
+    "decisions": 54,
+    "worker_observations": 526,
+    "selected_apollo": 0,
+    "selected_artemis": 9,
+    "selected_legacy": 45,
+    "changed_argmax": 2,
+    "worker_accuracy": [
+     0.75665,
+     0.75285
+    ],
+    "worker_nll": [
+     0.55699,
+     0.55669
+    ],
+    "eligible_base_observations": 28,
+    "base_accuracy": [
+     0.75,
+     0.75
+    ],
+    "median_block_warmup": 6
+   }
+  },
+  {
+   "match": "4419ce2aaffb31ee16c6e4db60a7f4dd",
+   "opponent": "SpongeBaby-CarbonNet-v2.0",
+   "seat": 1,
+   "cohort": "post_training",
+   "seed": 1588103311,
+   "metrics": {
+    "decisions": 54,
+    "worker_observations": 528,
+    "selected_apollo": 0,
+    "selected_artemis": 14,
+    "selected_legacy": 40,
+    "changed_argmax": 1,
+    "worker_accuracy": [
+     0.8447,
+     0.8428
+    ],
+    "worker_nll": [
+     0.39021,
+     0.38725
+    ],
+    "eligible_base_observations": 24,
+    "base_accuracy": [
+     0.79167,
+     0.75
+    ],
+    "median_block_warmup": 6
+   }
+  },
+  {
+   "match": "45f2b502419c22ae3f36b422b3d57bef",
+   "opponent": "CarbonEdge_Artemis",
+   "seat": 0,
+   "cohort": "post_training",
+   "seed": 2013536981,
+   "metrics": {
+    "decisions": 54,
+    "worker_observations": 532,
+    "selected_apollo": 0,
+    "selected_artemis": 3,
+    "selected_legacy": 51,
+    "changed_argmax": 1,
+    "worker_accuracy": [
+     0.81767,
+     0.81955
+    ],
+    "worker_nll": [
+     0.50204,
+     0.50182
+    ],
+    "eligible_base_observations": 16,
+    "base_accuracy": [
+     0.9375,
+     0.9375
+    ],
+    "median_block_warmup": 6
+   }
+  },
+  {
+   "match": "45f2b502419c22ae3f36b422b3d57bef",
+   "opponent": "SpongeBaby-CarbonNet-v3.0",
+   "seat": 1,
+   "cohort": "post_training",
+   "seed": 2013536981,
+   "metrics": {
+    "decisions": 54,
+    "worker_observations": 525,
+    "selected_apollo": 0,
+    "selected_artemis": 1,
+    "selected_legacy": 53,
+    "changed_argmax": 0,
+    "worker_accuracy": [
+     0.85714,
+     0.85714
+    ],
+    "worker_nll": [
+     0.39093,
+     0.39141
+    ],
+    "eligible_base_observations": 26,
+    "base_accuracy": [
+     0.84615,
+     0.84615
+    ],
+    "median_block_warmup": 6
+   }
+  },
+  {
+   "match": "e658f0313b0ad091c0a8d6fe122573d9",
+   "opponent": "CarbonEdge_Artemis",
+   "seat": 0,
+   "cohort": "post_training",
+   "seed": 795592683,
+   "metrics": {
+    "decisions": 54,
+    "worker_observations": 531,
+    "selected_apollo": 3,
+    "selected_artemis": 0,
+    "selected_legacy": 51,
+    "changed_argmax": 0,
+    "worker_accuracy": [
+     0.78908,
+     0.78908
+    ],
+    "worker_nll": [
+     0.53726,
+     0.53846
+    ],
+    "eligible_base_observations": 16,
+    "base_accuracy": [
+     0.9375,
+     0.9375
+    ],
+    "median_block_warmup": 6
+   }
+  },
+  {
+   "match": "e658f0313b0ad091c0a8d6fe122573d9",
+   "opponent": "z7-SiegeGuard-it720-v1",
+   "seat": 1,
+   "cohort": "post_training",
+   "seed": 795592683,
+   "metrics": {
+    "decisions": 54,
+    "worker_observations": 527,
+    "selected_apollo": 0,
+    "selected_artemis": 0,
+    "selected_legacy": 54,
+    "changed_argmax": 0,
+    "worker_accuracy": [
+     0.81025,
+     0.81025
+    ],
+    "worker_nll": [
+     0.48949,
+     0.48949
+    ],
+    "eligible_base_observations": 26,
+    "base_accuracy": [
+     0.76923,
+     0.76923
+    ],
+    "median_block_warmup": 6
+   }
+  },
+  {
+   "match": "54168b172c76450d6dba9682995ce0b6",
+   "opponent": "CarbonEdge_Artemis",
+   "seat": 0,
+   "cohort": "post_training",
+   "seed": 2098247112,
+   "metrics": {
+    "decisions": 54,
+    "worker_observations": 527,
+    "selected_apollo": 12,
+    "selected_artemis": 0,
+    "selected_legacy": 42,
+    "changed_argmax": 2,
+    "worker_accuracy": [
+     0.79886,
+     0.79886
+    ],
+    "worker_nll": [
+     0.50905,
+     0.5088
+    ],
+    "eligible_base_observations": 22,
+    "base_accuracy": [
+     0.77273,
+     0.77273
+    ],
+    "median_block_warmup": 6
+   }
+  },
+  {
+   "match": "54168b172c76450d6dba9682995ce0b6",
+   "opponent": "claude-AlphaCarbon-Master7sE",
+   "seat": 1,
+   "cohort": "post_training",
+   "seed": 2098247112,
+   "metrics": {
+    "decisions": 54,
+    "worker_observations": 526,
+    "selected_apollo": 0,
+    "selected_artemis": 0,
+    "selected_legacy": 54,
+    "changed_argmax": 0,
+    "worker_accuracy": [
+     0.79278,
+     0.79278
+    ],
+    "worker_nll": [
+     0.52329,
+     0.52329
+    ],
+    "eligible_base_observations": 24,
+    "base_accuracy": [
+     0.83333,
+     0.83333
+    ],
+    "median_block_warmup": 6
+   }
+  },
+  {
+   "match": "941595b84d3746c544f0f759e2999f4b",
+   "opponent": "RyanX-AIPowercore-it940-v4b",
+   "seat": 0,
+   "cohort": "post_training",
+   "seed": 698372087,
+   "metrics": {
+    "decisions": 54,
+    "worker_observations": 501,
+    "selected_apollo": 0,
+    "selected_artemis": 3,
+    "selected_legacy": 51,
+    "changed_argmax": 0,
+    "worker_accuracy": [
+     0.83633,
+     0.83633
+    ],
+    "worker_nll": [
+     0.4525,
+     0.45369
+    ],
+    "eligible_base_observations": 36,
+    "base_accuracy": [
+     0.77778,
+     0.77778
+    ],
+    "median_block_warmup": 6
+   }
+  },
+  {
+   "match": "941595b84d3746c544f0f759e2999f4b",
+   "opponent": "CarbonEdge_Artemis",
+   "seat": 1,
+   "cohort": "post_training",
+   "seed": 698372087,
+   "metrics": {
+    "decisions": 54,
+    "worker_observations": 525,
+    "selected_apollo": 0,
+    "selected_artemis": 2,
+    "selected_legacy": 52,
+    "changed_argmax": 0,
+    "worker_accuracy": [
+     0.78857,
+     0.78857
+    ],
+    "worker_nll": [
+     0.49366,
+     0.49421
+    ],
+    "eligible_base_observations": 28,
+    "base_accuracy": [
+     0.78571,
+     0.78571
+    ],
+    "median_block_warmup": 6
+   }
+  }
+ ]
+}

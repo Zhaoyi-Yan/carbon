@@ -1,0 +1,140 @@
+{
+  "layout": "6121ec0ff5ccac020570cc3ac18f9dbe4ce60ddab3f00075aa1dd3afa8f15d49",
+  "step": 190,
+  "game": 1,
+  "source": "Original match QQ-v6 vs Artemis, seat 0, historical own actions teacher-forced through turn 189.",
+  "other_movement": "Loss-risk uses independent marginal rival occupancy combined cellwise; occupied depots and paths whose cargo already booked are excluded.",
+  "inspected_uid": "player-0-worker-23",
+  "cargo": 241.65,
+  "candidates": [
+    {
+      "action": "RIGHT",
+      "root_probability": 0.93868,
+      "end": 181,
+      "unpaid_collision_probability": [
+        0.0,
+        0.0987,
+        0.0904
+      ],
+      "probability_paid_by": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "action": "UP",
+      "root_probability": 0.0257,
+      "end": 165,
+      "unpaid_collision_probability": [
+        0.0,
+        0.0134,
+        0.0263
+      ],
+      "probability_paid_by": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "opposing_loaded": [
+    {
+      "uid": "player-1-worker-8",
+      "pos": 209,
+      "cargo": 215.35,
+      "likely_move": "RIGHT",
+      "actual_route": [
+        195,
+        196,
+        196
+      ],
+      "likely_positions": [
+        195,
+        196,
+        181
+      ],
+      "probability_paid_by": [
+        0.0,
+        -0.0,
+        -0.0
+      ]
+    },
+    {
+      "uid": "player-1-worker-13",
+      "pos": 71,
+      "cargo": 153.58,
+      "likely_move": "NONE",
+      "actual_route": [
+        71,
+        70,
+        85
+      ],
+      "likely_positions": [
+        71,
+        71,
+        71
+      ],
+      "probability_paid_by": [
+        0.053,
+        0.265,
+        0.386
+      ]
+    },
+    {
+      "uid": "player-1-worker-20",
+      "pos": 151,
+      "cargo": 205.28,
+      "likely_move": "RIGHT",
+      "actual_route": [
+        152,
+        152,
+        153
+      ],
+      "likely_positions": [
+        152,
+        153,
+        154
+      ],
+      "probability_paid_by": [
+        0.0,
+        -0.0,
+        0.257
+      ]
+    },
+    {
+      "uid": "player-1-worker-25",
+      "pos": 38,
+      "cargo": 123.7,
+      "likely_move": "NONE",
+      "actual_route": [
+        38,
+        38,
+        38
+      ],
+      "likely_positions": [
+        38,
+        38,
+        38
+      ],
+      "probability_paid_by": [
+        -0.0,
+        -0.0,
+        -0.0
+      ]
+    }
+  ],
+  "base": {
+    "player-0-worker-40": "LEFT",
+    "player-0-worker-23": "RIGHT",
+    "player-0-worker-43": "UP",
+    "player-0-worker-2": "RIGHT",
+    "player-0-worker-44": "DOWN",
+    "player-0-worker-29": "LEFT",
+    "player-0-worker-41": "LEFT",
+    "player-0-worker-37": "RIGHT",
+    "player-0-worker-42": "DOWN"
+  },
+  "convoy": null,
+  "replay_evidence": "Subsequent receipt amounts and branch-cash attribution are in receipt-target.json and convoy-branches.json."
+}
