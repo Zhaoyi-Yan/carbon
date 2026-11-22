@@ -23,7 +23,7 @@ Master7sE 对局中，第 47 步到第 252 步的两次己方工人交货之间�
 | [Soundings](checkpoints/soundings.py) | 11–5 | 6/8，5/8 | +336.83 | 四图双胜，一图双负，距离晋级差一个胜场。双方均无慢步。单局平均基地入款多 400.17、净树收支少 153.74、招聘少花 90。[全体胜负](../../analysis/v7/05-qualifying-summary.json) · [逐图收支](../../analysis/v7/05-qualifying-economy.json) |
 | [Pilotage](checkpoints/pilotage.py) | 9–7 | 4/8，5/8 | +51.60 | 前 75 步平均多入库 65.73，全场平均少入库 121.81，净树收入多 186.52。三图双胜、两图双负。双方均无慢步。[全部结果](../../analysis/v7/06-qualifying-summary.json) · [资金变化](../../analysis/v7/06-qualifying-economy.json) |
 | [Fairlead](checkpoints/fairlead.py) | 6–10 | 2/8，4/8 | −169.60 | 四图双负、两图双胜。平均净树收入多 258.80，入库少 419.04。双方各有 10、9 个慢步，16 局均正常结束。[逐图分差与用时](../../analysis/v7/07-qualifying-summary.json) · [双方资金来源](../../analysis/v7/07-qualifying-economy.json) |
-| [Tidewatch](checkpoints/tidewatch.py) | 评测中 | | | 第八批首局冻结对手发生超时。记录该批全体赛果；在首个完整结果产生前指定同一文件、四路并发、另外八图的整批复验。[第八批地图](../../analysis/v7/08-qualifying.json) · [第九批预登记](../../analysis/v7/tidewatch-repeat-design.json) |
+| [Tidewatch](checkpoints/tidewatch.py) | 7–8，另 1 局对手超时 | 2 胜，5 胜 | +32.71 | 有效 15 局中的平均分差。首个完整结果产生前已为同一文件指定四路并发、另外八图的整批复验。[第八批逐图结果](../../analysis/v7/08-qualifying-summary.json) · [第九批预登记](../../analysis/v7/tidewatch-repeat-design.json) |
 
 在仓库根目录，以下命令可以重建已冻结的文件，并复现存档分叉的现金流。
 

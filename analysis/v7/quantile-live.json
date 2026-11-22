@@ -1,0 +1,284 @@
+{
+  "parent_sha": "edad6caa7e7f9e4a2ac98bc5462fabd0584c0d8d78cc60f25326fa98d8f849e8",
+  "candidate_sha": "b4352401ae72d19f8c9b8e6d1aef59ad1142c9a5c218436c1d61738c8288064c",
+  "matched_sequential_rng_states": 1280,
+  "total_searched": 1,
+  "module_ms_p50_p95_p99": [
+    0.1228,
+    0.3547,
+    0.611
+  ],
+  "initial_window": [
+    0,
+    128
+  ],
+  "decisions": [
+    {
+      "cohort": "local-v6",
+      "map": "0e052f1acd8d2e4e0beb55aeb41bd4283ecb2658000ae93355da44b378abb3b1",
+      "replay": "22588782-0",
+      "observing": 1
+    },
+    {
+      "cohort": "v5",
+      "map": "0e052f1acd8d2e4e0beb55aeb41bd4283ecb2658000ae93355da44b378abb3b1",
+      "replay": "22588782-0",
+      "observing": 0
+    },
+    {
+      "cohort": "local-v6",
+      "map": "16c848a403fbce498bbaaa273205ac71e1070ed7dccfffa088b4cf49eaa7e0bd",
+      "replay": "171684640-0",
+      "observing": 1
+    },
+    {
+      "cohort": "public-v6",
+      "map": "0b0698f412ec95e63a851ccc7bbe59cd6d5f35ae4ff388ac3a934de608fed2a6",
+      "replay": "252cd2acd336a5f5d44770ee57f14e71",
+      "observing": 0
+    },
+    {
+      "cohort": "public-v6",
+      "map": "37db1a81e6e6a2229a9db732f064754f2af11d66bc306c83800efde5c9acb2d5",
+      "replay": "0ef592a8efa3a24b7dab62a439f659c0",
+      "observing": 0
+    },
+    {
+      "cohort": "CarbonEdge_Artemis",
+      "map": "9f36ab19350c7fa4eb650f6bd5ac5e54d40190b3947f43cd2e384dd2ca100b81",
+      "replay": "462766dbfbef37511dba2fb05f7d05a3-1.json.gz",
+      "observing": 1
+    },
+    {
+      "cohort": "CarbonEdge_Artemis",
+      "map": "7bfefe93d01077b64522202d9d17488a01bb456d52513d145fb2f525d64c8e82",
+      "replay": "e0877b124675ef246b48914516be95b9-1.json.gz",
+      "observing": 0
+    },
+    {
+      "cohort": "CarbonEdge_Artemis",
+      "map": "63287b26432d449db8c03a59222de5904119b1b2fe5fda3697f7f8aac30fa969",
+      "replay": "7c9b78d21853215cc9cc3547505efd09-1.json.gz",
+      "observing": 0
+    },
+    {
+      "cohort": "CarbonEdge_Artemis",
+      "map": "3354c9fd8e37d5382c8c2be1ad7b797f737d876387422dc91504273a81b1d16f",
+      "replay": "8c3862388f88c768c6880a8f5f5837fe-1.json.gz",
+      "observing": 1
+    },
+    {
+      "cohort": "CarbonEdge_Prometheus",
+      "map": "946cf74ba08a728e4cda04af6f702d8fce8ae0d7b460c2e8fd464e5e6f01d828",
+      "replay": "65ce9b6b6ff51f452c3b49d1e1ad07fc-1.json.gz",
+      "observing": 1
+    }
+  ],
+  "metrics": {
+    "local-v6": {
+      "all": {
+        "delta_nll": 0.000106,
+        "nll": 0.476787,
+        "top1": 0.860687,
+        "mass": 0.831169,
+        "alternate_hit": 0.114027,
+        "gate": 0.642653,
+        "n": 2096,
+        "maps": 2,
+        "map_delta": 0.000105,
+        "gain_maps": 0,
+        "map_delta95": [
+          3.5e-05,
+          0.000174
+        ]
+      },
+      "loaded": {
+        "delta_nll": -0.001185,
+        "nll": 0.25935,
+        "top1": 0.92053,
+        "mass": 0.883331,
+        "alternate_hit": 0.068433,
+        "gate": 0.781457,
+        "n": 453,
+        "maps": 2,
+        "map_delta": -0.001091,
+        "gain_maps": 1,
+        "map_delta95": [
+          -0.002461,
+          0.000279
+        ]
+      }
+    },
+    "combined-v6": {
+      "all": {
+        "delta_nll": -0.001339,
+        "nll": 0.424662,
+        "top1": 0.868532,
+        "mass": 0.836129,
+        "alternate_hit": 0.103951,
+        "gate": 0.758467,
+        "n": 4252,
+        "maps": 4,
+        "map_delta": -0.001311,
+        "gain_maps": 2,
+        "map_delta95": [
+          -0.002817,
+          0.000105
+        ]
+      },
+      "loaded": {
+        "delta_nll": -0.003415,
+        "nll": 0.292107,
+        "top1": 0.909287,
+        "mass": 0.873414,
+        "alternate_hit": 0.075594,
+        "gate": 0.890929,
+        "n": 926,
+        "maps": 4,
+        "map_delta": -0.003031,
+        "gain_maps": 3,
+        "map_delta95": [
+          -0.007084,
+          -0.000233
+        ]
+      }
+    },
+    "v5": {
+      "all": {
+        "delta_nll": 0.0,
+        "nll": 0.978927,
+        "top1": 0.767977,
+        "mass": 0.752362,
+        "alternate_hit": 0.173538,
+        "gate": 0.0,
+        "n": 1043,
+        "maps": 1,
+        "map_delta": 0.0,
+        "gain_maps": 0,
+        "map_delta95": [
+          0.0,
+          0.0
+        ]
+      },
+      "loaded": {
+        "delta_nll": 0.0,
+        "nll": 0.58633,
+        "top1": 0.862245,
+        "mass": 0.836793,
+        "alternate_hit": 0.112245,
+        "gate": 0.0,
+        "n": 196,
+        "maps": 1,
+        "map_delta": 0.0,
+        "gain_maps": 0,
+        "map_delta95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "public-v6": {
+      "all": {
+        "delta_nll": -0.002744,
+        "nll": 0.373987,
+        "top1": 0.87616,
+        "mass": 0.840951,
+        "alternate_hit": 0.094156,
+        "gate": 0.871058,
+        "n": 2156,
+        "maps": 2,
+        "map_delta": -0.002727,
+        "gain_maps": 2,
+        "map_delta95": [
+          -0.003768,
+          -0.001687
+        ]
+      },
+      "loaded": {
+        "delta_nll": -0.005552,
+        "nll": 0.32348,
+        "top1": 0.89852,
+        "mass": 0.863916,
+        "alternate_hit": 0.082452,
+        "gate": 0.995772,
+        "n": 473,
+        "maps": 2,
+        "map_delta": -0.004971,
+        "gain_maps": 2,
+        "map_delta95": [
+          -0.009198,
+          -0.000744
+        ]
+      }
+    },
+    "CarbonEdge_Artemis": {
+      "all": {
+        "delta_nll": 0.0,
+        "nll": 0.879179,
+        "top1": 0.780005,
+        "mass": 0.767117,
+        "alternate_hit": 0.16034,
+        "gate": 0.0,
+        "n": 4241,
+        "maps": 4,
+        "map_delta": 0.0,
+        "gain_maps": 0,
+        "map_delta95": [
+          0.0,
+          0.0
+        ]
+      },
+      "loaded": {
+        "delta_nll": 0.0,
+        "nll": 0.681193,
+        "top1": 0.836265,
+        "mass": 0.821157,
+        "alternate_hit": 0.124493,
+        "gate": 0.0,
+        "n": 739,
+        "maps": 4,
+        "map_delta": 0.0,
+        "gain_maps": 0,
+        "map_delta95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "CarbonEdge_Prometheus": {
+      "all": {
+        "delta_nll": 0.0,
+        "nll": 0.892568,
+        "top1": 0.7818,
+        "mass": 0.767547,
+        "alternate_hit": 0.157534,
+        "gate": 0.0,
+        "n": 1022,
+        "maps": 1,
+        "map_delta": 0.0,
+        "gain_maps": 0,
+        "map_delta95": [
+          0.0,
+          0.0
+        ]
+      },
+      "loaded": {
+        "delta_nll": 0.0,
+        "nll": 0.812746,
+        "top1": 0.81768,
+        "mass": 0.809445,
+        "alternate_hit": 0.132597,
+        "gate": 0.0,
+        "n": 181,
+        "maps": 1,
+        "map_delta": 0.0,
+        "gain_maps": 0,
+        "map_delta95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  "caveat": "Entire previous history of both behavior evidence and quantile evidence carried forward. One actual search; other observations teacher-forced and only legal public root was evaluated. gate field here measures fraction of rows actually altered."
+}

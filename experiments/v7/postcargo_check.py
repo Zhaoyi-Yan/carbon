@@ -109,7 +109,7 @@ def tail(m,start,t,side,cfg,frames,own):
                              round(lost[side],3),round(lost[1-side],3),round(orient(held),3),fallback]
     return out
 
-def run(m,orig,g,side,turns,verify):
+def run(m,orig,g,side,turns,verify,extra_scores=None):
     frames=g['steps'];cfg=g['configuration'];straight,cash_error=replay_state(m,g)
     m._ST.clear();m._FC_HISTORY.clear();real=m._search;research=m._reply_choice
     m._ST['tr']=m.BeliefTracker(m._Bel,side);m._ST['rng']=np.random.RandomState(m._SEED);m._ST['prev']=None
@@ -133,6 +133,8 @@ def run(m,orig,g,side,turns,verify):
                     raw.append(vals);newraw.append(revised)
                 a=int(np.argmax(old));b=int(np.argmax(fresh))
                 keys={'searched':0,'legacy':a,'corrected':b,'veto':a if fresh[a]>fresh[0]+6. else 0}
+                if extra_scores is not None:
+                    keys.update(extra_scores(raw,newraw,weights,candidates,t))
                 snapshot.update(moves={k:candidates[j][0] for k,j in keys.items()},forecast=dict(old_gap=old[a]-old[0],
                                 adjusted_legacy_gap=fresh[a]-fresh[0],adjusted_winner_gap=fresh[b]-fresh[0]),
                                 count=len(candidates),replies=len(weights))

@@ -1,0 +1,94 @@
+{
+  "candidate": "tidewatch",
+  "sha256": "101586bc07558cbcd6753c48e7973e85602776d1e5b4976300084782cef834d4",
+  "baseline_sha256": "e5c328aa5d18ced597791e7b839088f1a37d18e4e8dc83dd3d54b13d66e877b0",
+  "complete": true,
+  "games": [
+    [
+      591124566,
+      1786.74,
+      null
+    ],
+    [
+      661169510,
+      -421.74,
+      300.85
+    ],
+    [
+      102253612,
+      -917.43,
+      -711.63
+    ],
+    [
+      397570277,
+      653.72,
+      294.29
+    ],
+    [
+      67309273,
+      -1209.49,
+      1058.45
+    ],
+    [
+      693513926,
+      -469.53,
+      -1220.95
+    ],
+    [
+      222684543,
+      -190.68,
+      1595.03
+    ],
+    [
+      336900244,
+      -575.77,
+      518.82
+    ]
+  ],
+  "wins": 7,
+  "losses": 8,
+  "draws": 0,
+  "wins_by_seat": [
+    2,
+    5
+  ],
+  "average": 32.71,
+  "median": -190.68,
+  "both_wins": 1,
+  "both_losses": 2,
+  "searches_range": [
+    [
+      1,
+      247
+    ],
+    [
+      3,
+      242
+    ]
+  ],
+  "slow_steps": [
+    26,
+    24
+  ],
+  "maximum_move_seconds": [
+    1.466,
+    1.465
+  ],
+  "invalid": [
+    [
+      591124566,
+      1,
+      "forfeit"
+    ]
+  ],
+  "passed": false,
+  "freshness": {
+    "maps": 8,
+    "public_layouts": 217,
+    "other_local_layouts": 90,
+    "public_overlap": 0,
+    "other_local_overlap": 0,
+    "receipt_and_target_layouts": 863,
+    "receipt_and_target_overlap": 0
+  }
+}

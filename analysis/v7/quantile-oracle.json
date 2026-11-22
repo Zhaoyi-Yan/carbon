@@ -1,0 +1,183 @@
+{
+  "ledger": "All root MT19937 position, Gaussian cache and 624 internal words exactly match after every audited turn. Each base and each worker consumes one scalar in insertion order, including unaffordable bases and forced returns.",
+  "rng_checks": 512,
+  "method": "Target-side recorded fog is only used for this upper-bound diagnosis, never for deployed fitting. Frozen agent uses true own root logits including response and cargo residual. Turn-by-turn search and post-search picker bypassed, own action history forced to recorded moves. joint_final disagreement includes actual search, postprocessing, and potential hosting/runtime differences. Public v6 identity is its declared frozen version.",
+  "window": [
+    0,
+    64
+  ],
+  "sources": [
+    {
+      "id": "22588782-0",
+      "source": "local",
+      "layout": "0e052f1acd8d2e4e0beb55aeb41bd4283ecb2658000ae93355da44b378abb3b1",
+      "seed": 22588782,
+      "side": 0
+    },
+    {
+      "id": "171684640-0",
+      "source": "local",
+      "layout": "16c848a403fbce498bbaaa273205ac71e1070ed7dccfffa088b4cf49eaa7e0bd",
+      "seed": 171684640,
+      "side": 0
+    },
+    {
+      "id": "77752323-0",
+      "source": "local",
+      "layout": "3fd0833d42f2c63ebacdef9d082491aabe576e906d4e1ba827b78a7703deea16",
+      "seed": 77752323,
+      "side": 0
+    },
+    {
+      "id": "733867961-0",
+      "source": "local",
+      "layout": "bbc72d43e607546736bc6bf264b518c3b166513203be249c9f9671fe75afac91",
+      "seed": 733867961,
+      "side": 0
+    },
+    {
+      "id": "252cd2acd336a5f5d44770ee57f14e71",
+      "source": "public",
+      "layout": "0b0698f412ec95e63a851ccc7bbe59cd6d5f35ae4ff388ac3a934de608fed2a6",
+      "seed": 1231503537,
+      "side": 1
+    },
+    {
+      "id": "0ef592a8efa3a24b7dab62a439f659c0",
+      "source": "public",
+      "layout": "37db1a81e6e6a2229a9db732f064754f2af11d66bc306c83800efde5c9acb2d5",
+      "seed": 537394796,
+      "side": 1
+    },
+    {
+      "id": "b18842b9d68f1a6bc8319009dea663cd",
+      "source": "public",
+      "layout": "45b68279a9c1829ca4664a210de8aa69feac93c93d804f5fd585010ac0a4302b",
+      "seed": 705761762,
+      "side": 1
+    },
+    {
+      "id": "0b6a9f20f5913c4d83d4851a52d44cd0",
+      "source": "public",
+      "layout": "647e8790c92ab5bf6d5806c433bd87e9659015c16ae733a3ae2bd00c64dfbf20",
+      "seed": 1548675519,
+      "side": 0
+    }
+  ],
+  "results": {
+    "all": {
+      "all": {
+        "seed37_final": 0.90198,
+        "seed36_final": 0.87002,
+        "greedy_final": 0.88828,
+        "seed37_joint": 0.9933,
+        "joint_final": 0.90563,
+        "raw_draw_differs_greedy": 0.0621,
+        "units": 3285
+      },
+      "non_greedy": {
+        "seed37_final": 0.32153,
+        "seed36_final": 0.19891,
+        "greedy_final": 0.0,
+        "seed37_joint": 0.9564,
+        "joint_final": 0.35422,
+        "raw_draw_differs_greedy": 0.35695,
+        "units": 367
+      },
+      "loaded": {
+        "seed37_final": 0.91921,
+        "seed36_final": 0.90611,
+        "greedy_final": 0.91048,
+        "seed37_joint": 0.99345,
+        "joint_final": 0.92576,
+        "raw_draw_differs_greedy": 0.04367,
+        "units": 458
+      },
+      "loaded_non_greedy": {
+        "seed37_final": 0.29268,
+        "seed36_final": 0.29268,
+        "greedy_final": 0.0,
+        "seed37_joint": 0.92683,
+        "joint_final": 0.36585,
+        "raw_draw_differs_greedy": 0.29268,
+        "units": 41
+      }
+    },
+    "local": {
+      "all": {
+        "seed37_final": 0.89181,
+        "seed36_final": 0.86919,
+        "greedy_final": 0.88081,
+        "seed37_joint": 0.99633,
+        "joint_final": 0.89364,
+        "raw_draw_differs_greedy": 0.06785,
+        "units": 1636
+      },
+      "non_greedy": {
+        "seed37_final": 0.31282,
+        "seed36_final": 0.23077,
+        "greedy_final": 0.0,
+        "seed37_joint": 0.97949,
+        "joint_final": 0.32821,
+        "raw_draw_differs_greedy": 0.34872,
+        "units": 195
+      },
+      "loaded": {
+        "seed37_final": 0.90421,
+        "seed36_final": 0.90805,
+        "greedy_final": 0.91188,
+        "seed37_joint": 0.99234,
+        "joint_final": 0.91188,
+        "raw_draw_differs_greedy": 0.03065,
+        "units": 261
+      },
+      "loaded_non_greedy": {
+        "seed37_final": 0.13043,
+        "seed36_final": 0.26087,
+        "greedy_final": 0.0,
+        "seed37_joint": 0.91304,
+        "joint_final": 0.21739,
+        "raw_draw_differs_greedy": 0.13043,
+        "units": 23
+      }
+    },
+    "public": {
+      "all": {
+        "seed37_final": 0.91207,
+        "seed36_final": 0.87083,
+        "greedy_final": 0.89569,
+        "seed37_joint": 0.9903,
+        "joint_final": 0.91753,
+        "raw_draw_differs_greedy": 0.0564,
+        "units": 1649
+      },
+      "non_greedy": {
+        "seed37_final": 0.3314,
+        "seed36_final": 0.16279,
+        "greedy_final": 0.0,
+        "seed37_joint": 0.93023,
+        "joint_final": 0.38372,
+        "raw_draw_differs_greedy": 0.36628,
+        "units": 172
+      },
+      "loaded": {
+        "seed37_final": 0.93909,
+        "seed36_final": 0.90355,
+        "greedy_final": 0.90863,
+        "seed37_joint": 0.99492,
+        "joint_final": 0.94416,
+        "raw_draw_differs_greedy": 0.06091,
+        "units": 197
+      },
+      "loaded_non_greedy": {
+        "seed37_final": 0.5,
+        "seed36_final": 0.33333,
+        "greedy_final": 0.0,
+        "seed37_joint": 0.94444,
+        "joint_final": 0.55556,
+        "raw_draw_differs_greedy": 0.5,
+        "units": 18
+      }
+    }
+  }
+}
