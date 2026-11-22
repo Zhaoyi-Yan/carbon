@@ -1,0 +1,1183 @@
+{
+  "candidate_sha256": "101586bc07558cbcd6753c48e7973e85602776d1e5b4976300084782cef834d4",
+  "opponent_sha256": "65f268b2919ce30fe19355115a928eada032a6beaa018d801662d434c083f2b5",
+  "design": "Historical Master7sE map and exact positions. Both own policies select live moves with the same four joint candidates, two search plies, one response and three extra tail plies. Rival is the responsive public Master3s2 root, optionally prioritizing depot blockade for up to 45 turns when we are poor and hold cargo. One shared per-step random stream, all continuations run to termination.",
+  "cases": [
+    {
+      "policy": "candidate",
+      "start": 48,
+      "opponent": "public-master-root",
+      "first_deposit": 51,
+      "longest_cash_below_recruitment": 2,
+      "marks": [
+        {
+          "step": 54,
+          "cash": [
+            103.65,
+            28.65
+          ],
+          "workers": [
+            10,
+            10
+          ],
+          "trees": [
+            5,
+            3
+          ],
+          "delivered": [
+            0,
+            103.53
+          ],
+          "tree_income": [
+            73.07,
+            72.89
+          ]
+        },
+        {
+          "step": 60,
+          "cash": [
+            148.27,
+            25.49
+          ],
+          "workers": [
+            9,
+            10
+          ],
+          "trees": [
+            6,
+            5
+          ],
+          "delivered": [
+            69.29,
+            148.81
+          ],
+          "tree_income": [
+            172.51,
+            148.57
+          ]
+        },
+        {
+          "step": 73,
+          "cash": [
+            143.6,
+            113.03
+          ],
+          "workers": [
+            10,
+            10
+          ],
+          "trees": [
+            4,
+            8
+          ],
+          "delivered": [
+            89.74,
+            200.04
+          ],
+          "tree_income": [
+            338.37,
+            385.85
+          ]
+        },
+        {
+          "step": 98,
+          "cash": [
+            899.65,
+            1076.07
+          ],
+          "workers": [
+            10,
+            10
+          ],
+          "trees": [
+            2,
+            8
+          ],
+          "delivered": [
+            870.96,
+            970.81
+          ],
+          "tree_income": [
+            464.49,
+            800.68
+          ]
+        },
+        {
+          "step": 148,
+          "cash": [
+            1500.97,
+            2421.35
+          ],
+          "workers": [
+            10,
+            10
+          ],
+          "trees": [
+            6,
+            3
+          ],
+          "delivered": [
+            1756.46,
+            2238.98
+          ],
+          "tree_income": [
+            919.16,
+            1177.8
+          ]
+        },
+        {
+          "step": 299,
+          "cash": [
+            4433.99,
+            5878.25
+          ],
+          "workers": [
+            3,
+            6
+          ],
+          "trees": [
+            1,
+            3
+          ],
+          "delivered": [
+            5378.81,
+            6036.18
+          ],
+          "tree_income": [
+            1968.17,
+            2255.54
+          ]
+        }
+      ]
+    },
+    {
+      "policy": "v6",
+      "start": 48,
+      "opponent": "public-master-root",
+      "first_deposit": 53,
+      "longest_cash_below_recruitment": 1,
+      "marks": [
+        {
+          "step": 54,
+          "cash": [
+            105.91,
+            24.31
+          ],
+          "workers": [
+            10,
+            8
+          ],
+          "trees": [
+            5,
+            3
+          ],
+          "delivered": [
+            0,
+            42.23
+          ],
+          "tree_income": [
+            75.33,
+            69.85
+          ]
+        },
+        {
+          "step": 60,
+          "cash": [
+            114.08,
+            162.02
+          ],
+          "workers": [
+            9,
+            10
+          ],
+          "trees": [
+            7,
+            3
+          ],
+          "delivered": [
+            75.31,
+            216.01
+          ],
+          "tree_income": [
+            144.22,
+            123.78
+          ]
+        },
+        {
+          "step": 73,
+          "cash": [
+            194.87,
+            133.52
+          ],
+          "workers": [
+            9,
+            9
+          ],
+          "trees": [
+            4,
+            6
+          ],
+          "delivered": [
+            151.62,
+            216.01
+          ],
+          "tree_income": [
+            328.72,
+            278.69
+          ]
+        },
+        {
+          "step": 98,
+          "cash": [
+            689.96,
+            859.57
+          ],
+          "workers": [
+            10,
+            10
+          ],
+          "trees": [
+            5,
+            5
+          ],
+          "delivered": [
+            766.16,
+            914.94
+          ],
+          "tree_income": [
+            520.79,
+            497.1
+          ]
+        },
+        {
+          "step": 148,
+          "cash": [
+            1762.99,
+            2260.49
+          ],
+          "workers": [
+            9,
+            9
+          ],
+          "trees": [
+            4,
+            4
+          ],
+          "delivered": [
+            2060.95,
+            2416.44
+          ],
+          "tree_income": [
+            907.35,
+            826.99
+          ]
+        },
+        {
+          "step": 299,
+          "cash": [
+            4725.54,
+            5775.23
+          ],
+          "workers": [
+            5,
+            7
+          ],
+          "trees": [
+            4,
+            3
+          ],
+          "delivered": [
+            5763.61,
+            6193.08
+          ],
+          "tree_income": [
+            2074.17,
+            1688.1
+          ]
+        }
+      ]
+    },
+    {
+      "policy": "candidate",
+      "start": 48,
+      "opponent": "45-turn-depot-pressure",
+      "first_deposit": 51,
+      "longest_cash_below_recruitment": 1,
+      "marks": [
+        {
+          "step": 54,
+          "cash": [
+            75.29,
+            22.34
+          ],
+          "workers": [
+            10,
+            9
+          ],
+          "trees": [
+            5,
+            3
+          ],
+          "delivered": [
+            0,
+            103.53
+          ],
+          "tree_income": [
+            74.71,
+            66.56
+          ]
+        },
+        {
+          "step": 60,
+          "cash": [
+            52.5,
+            73.93
+          ],
+          "workers": [
+            10,
+            10
+          ],
+          "trees": [
+            3,
+            5
+          ],
+          "delivered": [
+            0,
+            143.9
+          ],
+          "tree_income": [
+            123.84,
+            147.79
+          ]
+        },
+        {
+          "step": 73,
+          "cash": [
+            78.11,
+            268.54
+          ],
+          "workers": [
+            9,
+            9
+          ],
+          "trees": [
+            1,
+            7
+          ],
+          "delivered": [
+            52.58,
+            279.52
+          ],
+          "tree_income": [
+            186.88,
+            363.84
+          ]
+        },
+        {
+          "step": 98,
+          "cash": [
+            227.9,
+            1228.43
+          ],
+          "workers": [
+            10,
+            10
+          ],
+          "trees": [
+            4,
+            5
+          ],
+          "delivered": [
+            354.02,
+            1292.04
+          ],
+          "tree_income": [
+            611.64,
+            674.62
+          ]
+        },
+        {
+          "step": 148,
+          "cash": [
+            938.08,
+            2137.67
+          ],
+          "workers": [
+            10,
+            10
+          ],
+          "trees": [
+            5,
+            5
+          ],
+          "delivered": [
+            1576.33,
+            2485.52
+          ],
+          "tree_income": [
+            1100.22,
+            1506.54
+          ]
+        },
+        {
+          "step": 299,
+          "cash": [
+            5308.39,
+            6772.6
+          ],
+          "workers": [
+            7,
+            7
+          ],
+          "trees": [
+            4,
+            3
+          ],
+          "delivered": [
+            6122.04,
+            7299.13
+          ],
+          "tree_income": [
+            2771.63,
+            2836.37
+          ]
+        }
+      ]
+    },
+    {
+      "policy": "v6",
+      "start": 48,
+      "opponent": "45-turn-depot-pressure",
+      "first_deposit": 56,
+      "longest_cash_below_recruitment": 3,
+      "marks": [
+        {
+          "step": 54,
+          "cash": [
+            110.16,
+            23.93
+          ],
+          "workers": [
+            9,
+            8
+          ],
+          "trees": [
+            6,
+            2
+          ],
+          "delivered": [
+            0,
+            0
+          ],
+          "tree_income": [
+            79.57,
+            61.7
+          ]
+        },
+        {
+          "step": 60,
+          "cash": [
+            68.58,
+            82.36
+          ],
+          "workers": [
+            10,
+            10
+          ],
+          "trees": [
+            6,
+            2
+          ],
+          "delivered": [
+            0,
+            111.07
+          ],
+          "tree_income": [
+            165.05,
+            119.06
+          ]
+        },
+        {
+          "step": 73,
+          "cash": [
+            94.9,
+            443.62
+          ],
+          "workers": [
+            9,
+            10
+          ],
+          "trees": [
+            5,
+            5
+          ],
+          "delivered": [
+            20.72,
+            481.66
+          ],
+          "tree_income": [
+            381.14,
+            283.15
+          ]
+        },
+        {
+          "step": 98,
+          "cash": [
+            424.2,
+            1254.2
+          ],
+          "workers": [
+            9,
+            9
+          ],
+          "trees": [
+            2,
+            7
+          ],
+          "delivered": [
+            406.8,
+            1122.93
+          ],
+          "tree_income": [
+            527.79,
+            716.26
+          ]
+        },
+        {
+          "step": 148,
+          "cash": [
+            1279.06,
+            2870.95
+          ],
+          "workers": [
+            9,
+            9
+          ],
+          "trees": [
+            6,
+            5
+          ],
+          "delivered": [
+            1630.35,
+            2689.7
+          ],
+          "tree_income": [
+            958.86,
+            1191.0
+          ]
+        },
+        {
+          "step": 299,
+          "cash": [
+            4638.9,
+            7072.21
+          ],
+          "workers": [
+            5,
+            4
+          ],
+          "trees": [
+            0,
+            3
+          ],
+          "delivered": [
+            5733.86,
+            7027.11
+          ],
+          "tree_income": [
+            2130.88,
+            2734.81
+          ]
+        }
+      ]
+    },
+    {
+      "policy": "candidate",
+      "start": 164,
+      "opponent": "public-master-root",
+      "first_deposit": 168,
+      "longest_cash_below_recruitment": 3,
+      "marks": [
+        {
+          "step": 170,
+          "cash": [
+            2209.78,
+            47.16
+          ],
+          "workers": [
+            10,
+            7
+          ],
+          "trees": [
+            10,
+            0
+          ],
+          "delivered": [
+            0,
+            159.63
+          ],
+          "tree_income": [
+            183.9,
+            0
+          ]
+        },
+        {
+          "step": 176,
+          "cash": [
+            2532.33,
+            39.29
+          ],
+          "workers": [
+            10,
+            8
+          ],
+          "trees": [
+            9,
+            1
+          ],
+          "delivered": [
+            263.86,
+            186.63
+          ],
+          "tree_income": [
+            357.27,
+            15.14
+          ]
+        },
+        {
+          "step": 189,
+          "cash": [
+            3230.37,
+            359.19
+          ],
+          "workers": [
+            9,
+            9
+          ],
+          "trees": [
+            4,
+            3
+          ],
+          "delivered": [
+            776.56,
+            545.86
+          ],
+          "tree_income": [
+            602.6,
+            105.81
+          ]
+        },
+        {
+          "step": 214,
+          "cash": [
+            4261.55,
+            1593.98
+          ],
+          "workers": [
+            10,
+            10
+          ],
+          "trees": [
+            7,
+            5
+          ],
+          "delivered": [
+            1916.7,
+            1797.48
+          ],
+          "tree_income": [
+            880.02,
+            459.68
+          ]
+        },
+        {
+          "step": 264,
+          "cash": [
+            5492.94,
+            3037.77
+          ],
+          "workers": [
+            10,
+            10
+          ],
+          "trees": [
+            4,
+            5
+          ],
+          "delivered": [
+            3228.52,
+            3230.84
+          ],
+          "tree_income": [
+            1464.15,
+            823.57
+          ]
+        },
+        {
+          "step": 299,
+          "cash": [
+            7352.89,
+            4621.34
+          ],
+          "workers": [
+            8,
+            8
+          ],
+          "trees": [
+            2,
+            4
+          ],
+          "delivered": [
+            5073.26,
+            4779.82
+          ],
+          "tree_income": [
+            1730.64,
+            1104.99
+          ]
+        }
+      ]
+    },
+    {
+      "policy": "v6",
+      "start": 164,
+      "opponent": "public-master-root",
+      "first_deposit": 170,
+      "longest_cash_below_recruitment": 5,
+      "marks": [
+        {
+          "step": 170,
+          "cash": [
+            2209.78,
+            218.16
+          ],
+          "workers": [
+            10,
+            3
+          ],
+          "trees": [
+            10,
+            0
+          ],
+          "delivered": [
+            0,
+            210.63
+          ],
+          "tree_income": [
+            183.9,
+            0
+          ]
+        },
+        {
+          "step": 176,
+          "cash": [
+            2403.21,
+            316.59
+          ],
+          "workers": [
+            10,
+            8
+          ],
+          "trees": [
+            9,
+            2
+          ],
+          "delivered": [
+            176.89,
+            508.55
+          ],
+          "tree_income": [
+            382.68,
+            40.5
+          ]
+        },
+        {
+          "step": 189,
+          "cash": [
+            3210.09,
+            534.87
+          ],
+          "workers": [
+            9,
+            9
+          ],
+          "trees": [
+            5,
+            5
+          ],
+          "delivered": [
+            767.78,
+            800.75
+          ],
+          "tree_income": [
+            702.08,
+            147.85
+          ]
+        },
+        {
+          "step": 214,
+          "cash": [
+            4046.21,
+            1617.62
+          ],
+          "workers": [
+            10,
+            10
+          ],
+          "trees": [
+            7,
+            3
+          ],
+          "delivered": [
+            1546.59,
+            1776.16
+          ],
+          "tree_income": [
+            1120.91,
+            365.19
+          ]
+        },
+        {
+          "step": 264,
+          "cash": [
+            5660.49,
+            2878.63
+          ],
+          "workers": [
+            10,
+            10
+          ],
+          "trees": [
+            2,
+            7
+          ],
+          "delivered": [
+            3153.8,
+            3177.69
+          ],
+          "tree_income": [
+            1686.94,
+            706.52
+          ]
+        },
+        {
+          "step": 299,
+          "cash": [
+            6841.72,
+            4615.43
+          ],
+          "workers": [
+            6,
+            6
+          ],
+          "trees": [
+            3,
+            1
+          ],
+          "delivered": [
+            4340.82,
+            4781.41
+          ],
+          "tree_income": [
+            1887.98,
+            911.5
+          ]
+        }
+      ]
+    },
+    {
+      "policy": "candidate",
+      "start": 164,
+      "opponent": "45-turn-depot-pressure",
+      "first_deposit": 173,
+      "longest_cash_below_recruitment": 8,
+      "marks": [
+        {
+          "step": 170,
+          "cash": [
+            2161.59,
+            7.53
+          ],
+          "workers": [
+            10,
+            2
+          ],
+          "trees": [
+            10,
+            0
+          ],
+          "delivered": [
+            0,
+            0
+          ],
+          "tree_income": [
+            165.71,
+            0
+          ]
+        },
+        {
+          "step": 176,
+          "cash": [
+            2313.65,
+            128.85
+          ],
+          "workers": [
+            10,
+            4
+          ],
+          "trees": [
+            10,
+            0
+          ],
+          "delivered": [
+            0,
+            241.32
+          ],
+          "tree_income": [
+            411.89,
+            0
+          ]
+        },
+        {
+          "step": 189,
+          "cash": [
+            2629.07,
+            26.24
+          ],
+          "workers": [
+            9,
+            9
+          ],
+          "trees": [
+            11,
+            2
+          ],
+          "delivered": [
+            276.33,
+            358.02
+          ],
+          "tree_income": [
+            976.44,
+            30.69
+          ]
+        },
+        {
+          "step": 214,
+          "cash": [
+            2904.88,
+            1055.62
+          ],
+          "workers": [
+            10,
+            10
+          ],
+          "trees": [
+            6,
+            5
+          ],
+          "delivered": [
+            420.03,
+            1367.64
+          ],
+          "tree_income": [
+            1560.8,
+            360.47
+          ]
+        },
+        {
+          "step": 264,
+          "cash": [
+            4373.66,
+            2188.81
+          ],
+          "workers": [
+            10,
+            10
+          ],
+          "trees": [
+            5,
+            7
+          ],
+          "delivered": [
+            2234.01,
+            2463.69
+          ],
+          "tree_income": [
+            2123.38,
+            866.59
+          ]
+        },
+        {
+          "step": 299,
+          "cash": [
+            6606.56,
+            4277.67
+          ],
+          "workers": [
+            5,
+            7
+          ],
+          "trees": [
+            1,
+            4
+          ],
+          "delivered": [
+            4487.51,
+            4515.99
+          ],
+          "tree_income": [
+            2344.66,
+            1143.15
+          ]
+        }
+      ]
+    },
+    {
+      "policy": "v6",
+      "start": 164,
+      "opponent": "45-turn-depot-pressure",
+      "first_deposit": 189,
+      "longest_cash_below_recruitment": 24,
+      "marks": [
+        {
+          "step": 170,
+          "cash": [
+            2208.44,
+            7.53
+          ],
+          "workers": [
+            10,
+            2
+          ],
+          "trees": [
+            10,
+            0
+          ],
+          "delivered": [
+            0,
+            0
+          ],
+          "tree_income": [
+            182.56,
+            0
+          ]
+        },
+        {
+          "step": 176,
+          "cash": [
+            2279.27,
+            7.53
+          ],
+          "workers": [
+            10,
+            1
+          ],
+          "trees": [
+            10,
+            0
+          ],
+          "delivered": [
+            0,
+            0
+          ],
+          "tree_income": [
+            390.22,
+            0
+          ]
+        },
+        {
+          "step": 189,
+          "cash": [
+            2529.39,
+            306.14
+          ],
+          "workers": [
+            10,
+            1
+          ],
+          "trees": [
+            15,
+            0
+          ],
+          "delivered": [
+            0,
+            298.61
+          ],
+          "tree_income": [
+            1266.58,
+            0
+          ]
+        },
+        {
+          "step": 214,
+          "cash": [
+            3061.62,
+            357.89
+          ],
+          "workers": [
+            8,
+            8
+          ],
+          "trees": [
+            10,
+            6
+          ],
+          "delivered": [
+            78.67,
+            655.9
+          ],
+          "tree_income": [
+            2650.85,
+            234.46
+          ]
+        },
+        {
+          "step": 264,
+          "cash": [
+            4422.7,
+            1463.24
+          ],
+          "workers": [
+            10,
+            10
+          ],
+          "trees": [
+            4,
+            3
+          ],
+          "delivered": [
+            1383.96,
+            1911.34
+          ],
+          "tree_income": [
+            3333.39,
+            504.38
+          ]
+        },
+        {
+          "step": 299,
+          "cash": [
+            5844.67,
+            2814.37
+          ],
+          "workers": [
+            5,
+            6
+          ],
+          "trees": [
+            2,
+            3
+          ],
+          "delivered": [
+            2733.46,
+            3284.41
+          ],
+          "tree_income": [
+            3465.89,
+            604.35
+          ]
+        }
+      ]
+    }
+  ]
+}

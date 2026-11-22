@@ -1,0 +1,84 @@
+{
+ "torch_numpy_forward_max_error": 2.384185791015625e-07,
+ "scalar_calibration": [
+  0.8147921900738724,
+  0.7606239080301956
+ ],
+ "D_E_only_maps": 8,
+ "per_map_delta_NLL_hit": [
+  [
+   0.00077,
+   -0.00196
+  ],
+  [
+   -0.01615,
+   -0.01207
+  ],
+  [
+   -0.02635,
+   -0.00254
+  ],
+  [
+   -0.01556,
+   -0.00978
+  ],
+  [
+   -0.00712,
+   0.00398
+  ],
+  [
+   -0.00842,
+   0.00626
+  ],
+  [
+   -0.05307,
+   0.02206
+  ],
+  [
+   -0.01642,
+   0.01931
+  ]
+ ],
+ "mean_delta_vs_calibrated": [
+  -0.01779,
+  0.00316
+ ],
+ "map_paired_bootstrap_95_NLL_hit": [
+  [
+   -0.03007,
+   -0.00429
+  ],
+  [
+   -0.00862,
+   0.01107
+  ]
+ ],
+ "constrained_heavy": {
+  "definition": "Original prior-worker metric: t>75, load>=65, and an enemy collector no heavier than this worker within two cells.",
+  "counts": 201,
+  "scores": {
+   "frozen_calibrated": {
+    "nll": 0.49244,
+    "hit": 0.77612
+   },
+   "prior_linear_oracle": {
+    "nll": 0.52436,
+    "hit": 0.77114
+   },
+   "worker_routed": {
+    "nll": 0.52899,
+    "hit": 0.76617
+   }
+  }
+ },
+ "source_id_accuracy": 0.50559,
+ "source_id_balanced_accuracy": 0.54711,
+ "source_id_constant_D_accuracy": 0.62416,
+ "D_E_local_argmax_team_turns": {
+  "all": 447,
+  "different": 171,
+  "more_teacher_moves": 70,
+  "fewer_teacher_moves": 65,
+  "equal_teacher_moves": 312
+ }
+}

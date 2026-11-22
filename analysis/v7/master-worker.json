@@ -1,0 +1,7586 @@
+{
+ "train_maps": 42,
+ "inner_development_maps": [
+  "1086d93297e1b9d0ab75a4052ba69e10ca66308fb3033efe3c353cf88a666a9d",
+  "58576719ab8ca8c16e3de4be8ec5cf5ab62be335ada241d35173dea8671738a6",
+  "67dc9462aaf69f2f0ef10782fd3386f92fccf15e1f9df1373d240c48341f027a",
+  "69b8a0815575c84e9b8cc76839ce1b14de6ffc1cc3e6625b195250df1fd31447",
+  "838a336357da90284fb2741203efd76beeb810db64d16c7186401188fb86cc82",
+  "a0f313f427844729735f6fea1b16c2e06f4ded4bab075c27b8c256ed6d1425e6",
+  "acb52a43487a26233ef5849dcf87baf1a0fb6175257cadc193901a23f6446c25",
+  "da88c21685623c9ad3d4a99049aa407cf796a0d420de7f75eab077d82bd5a9fb"
+ ],
+ "validation_maps": 13,
+ "training_ids": [
+  "e518e0aeff3cfbf788bc2764e07293b0",
+  "45869c71d4f1add508b049840e388e1f",
+  "f5e69abd6f15278bf9ae01a40601c330",
+  "9107c596d070f54c60fc175bf616af09",
+  "631a646fd1b1194a50b31ae19e3009c4",
+  "6279308face2cdcb2ac4807dcaedc9c4",
+  "53a975fac52b167a27aeb1eaa4f219a5",
+  "d7d24986c9ebab487b1bc8853dcea0ec",
+  "47888afc098db221a6bda6923c0e5783",
+  "b05d118c38d7d7054ba210f6cbbcf6e0",
+  "afe4ab003a0d6222783cff3fde074af2",
+  "767a4bf43ca1dc86118292659de1670a",
+  "68d05f61cd96e7dc49941fd48ed56287",
+  "65d0acf26835a6a8364b84750e5fc204",
+  "2fa5a4c664fc27bbcfac7eec01c8edc3",
+  "3476f7a9ef2477d8da4752f50e64cfca",
+  "fe3beb57e34a752098e098efc37db7c6",
+  "e64bba2caf9ec944723477193a967218",
+  "9be25a99800a9631b7a66a3793d78d4f",
+  "4d99efc73c00979051d3f33e13c1d163",
+  "7ad550d6acbf90789ff0aa69ac256fb8",
+  "fff1837bb9b4965626d37ef178a187e3",
+  "67026be02dc9e80c66096a55f58c4e75",
+  "c4ebf349000d1aab992057825960afc4",
+  "a420dcf89b5f174ccfcff12218048f6d",
+  "1430f7e5bb9a71a59bf3b00c84aa1746",
+  "bd7c38af97d85e0c931b0a6597c2518a",
+  "5b01f1d2429fe367731442c1763561ce",
+  "b1d2d362ee6be9f01477592334e07bb7",
+  "53bde7f13376ea8af50f0548880cd18c",
+  "65fbd2e7adfee709e40a23d1290d6494",
+  "1f9ac3db7020dd54813c566e18cc1f2b",
+  "6c6c16cceae95f66761c65b37ff3bdf4",
+  "cd9c7bb19e091b36ea2c3f3939471be2",
+  "79574338632ea14aada175d1a8b40f9a",
+  "4ae73e12bd05711cd4c4ab9a393e3383",
+  "bb84e62eee6363d7b8387b5993b20987",
+  "c1a648dbef73a4514054db136d00b649",
+  "3eb5dd5c4163df2b21d212f24a621bfe",
+  "0741ae41e8b86f7eea359253549068c3",
+  "8b7a16e37b9fecd356bb0e59f7c0ea45",
+  "f1accc76ab0218a9015dcc1fe098be6a"
+ ],
+ "epochs": 1,
+ "inner_dev_nll": [
+  0.68468,
+  0.68824,
+  0.68662,
+  0.68599,
+  0.68535,
+  0.68643,
+  0.68737,
+  0.68668,
+  0.68795,
+  0.69357,
+  0.69023,
+  0.69156,
+  0.69619,
+  0.69469,
+  0.70062,
+  0.69814,
+  0.70032,
+  0.70512
+ ],
+ "weights_sha256": "c049bd3c8b522993cd7d772a013f10e8d648ec5e463793945a7b7e30dbee069b",
+ "model_bytes": 21405,
+ "scopes": "Heavy: seated collector load>=65 within four of own home; action moves closer. Pressure: load<=15 within four of rival depot or three of a collector with at least 35 more cargo; action moves closer to either objective. Rich: estimated soil>=45, no tree/depot; action is stay. Precision/recall in each applicable group are separate from exact move.",
+ "metrics": {
+  "all": {
+   "all": {
+    "worker_routed": {
+     "units": 6128,
+     "nll": 0.54842,
+     "hit": 0.7766
+    },
+    "worker_oracle": {
+     "units": 6128,
+     "nll": 0.54751,
+     "hit": 0.77774
+    },
+    "frozen_root": {
+     "units": 6128,
+     "nll": 0.56381,
+     "hit": 0.77578
+    },
+    "prior_linear_oracle": {
+     "units": 6128,
+     "nll": 0.54242,
+     "hit": 0.7797
+    }
+   },
+   "collectors": {
+    "worker_routed": {
+     "units": 4839,
+     "nll": 0.53079,
+     "hit": 0.78405
+    },
+    "worker_oracle": {
+     "units": 4839,
+     "nll": 0.53004,
+     "hit": 0.7857
+    },
+    "frozen_root": {
+     "units": 4839,
+     "nll": 0.54811,
+     "hit": 0.7826
+    },
+    "prior_linear_oracle": {
+     "units": 4839,
+     "nll": 0.52616,
+     "hit": 0.78529
+    }
+   },
+   "planters": {
+    "worker_routed": {
+     "units": 1289,
+     "nll": 0.61463,
+     "hit": 0.74864
+    },
+    "worker_oracle": {
+     "units": 1289,
+     "nll": 0.61312,
+     "hit": 0.74787
+    },
+    "frozen_root": {
+     "units": 1289,
+     "nll": 0.62275,
+     "hit": 0.75019
+    },
+    "prior_linear_oracle": {
+     "units": 1289,
+     "nll": 0.60344,
+     "hit": 0.75873
+    }
+   },
+   "heavy_near_home": {
+    "worker_routed": {
+     "units": 484,
+     "nll": 0.4054,
+     "hit": 0.84504,
+     "action_frequency": 0.6095,
+     "predicted_frequency": 0.6281,
+     "precision": 0.9013,
+     "recall": 0.9288
+    },
+    "worker_oracle": {
+     "units": 484,
+     "nll": 0.4038,
+     "hit": 0.85331,
+     "action_frequency": 0.6095,
+     "predicted_frequency": 0.6281,
+     "precision": 0.9046,
+     "recall": 0.9322
+    },
+    "frozen_root": {
+     "units": 484,
+     "nll": 0.44065,
+     "hit": 0.83471,
+     "action_frequency": 0.6095,
+     "predicted_frequency": 0.5971,
+     "precision": 0.9135,
+     "recall": 0.8949
+    },
+    "prior_linear_oracle": {
+     "units": 484,
+     "nll": 0.39105,
+     "hit": 0.84091,
+     "action_frequency": 0.6095,
+     "predicted_frequency": 0.6322,
+     "precision": 0.8987,
+     "recall": 0.9322
+    }
+   },
+   "light_pressure": {
+    "worker_routed": {
+     "units": 1474,
+     "nll": 0.65783,
+     "hit": 0.73677,
+     "action_frequency": 0.7103,
+     "predicted_frequency": 0.7205,
+     "precision": 0.9124,
+     "recall": 0.9255
+    },
+    "worker_oracle": {
+     "units": 1474,
+     "nll": 0.65787,
+     "hit": 0.73948,
+     "action_frequency": 0.7103,
+     "predicted_frequency": 0.7212,
+     "precision": 0.9106,
+     "recall": 0.9245
+    },
+    "frozen_root": {
+     "units": 1474,
+     "nll": 0.68889,
+     "hit": 0.73948,
+     "action_frequency": 0.7103,
+     "predicted_frequency": 0.7137,
+     "precision": 0.9097,
+     "recall": 0.914
+    },
+    "prior_linear_oracle": {
+     "units": 1474,
+     "nll": 0.65764,
+     "hit": 0.73948,
+     "action_frequency": 0.7103,
+     "predicted_frequency": 0.7259,
+     "precision": 0.9084,
+     "recall": 0.9284
+    }
+   },
+   "rich_ore": {
+    "worker_routed": {
+     "units": 1327,
+     "nll": 0.43782,
+     "hit": 0.82894,
+     "action_frequency": 0.4416,
+     "predicted_frequency": 0.4454,
+     "precision": 0.9069,
+     "recall": 0.9147
+    },
+    "worker_oracle": {
+     "units": 1327,
+     "nll": 0.43686,
+     "hit": 0.83195,
+     "action_frequency": 0.4416,
+     "predicted_frequency": 0.4491,
+     "precision": 0.906,
+     "recall": 0.9215
+    },
+    "frozen_root": {
+     "units": 1327,
+     "nll": 0.45743,
+     "hit": 0.83421,
+     "action_frequency": 0.4416,
+     "predicted_frequency": 0.5019,
+     "precision": 0.8529,
+     "recall": 0.9693
+    },
+    "prior_linear_oracle": {
+     "units": 1327,
+     "nll": 0.4356,
+     "hit": 0.83798,
+     "action_frequency": 0.4416,
+     "predicted_frequency": 0.4506,
+     "precision": 0.908,
+     "recall": 0.9266
+    }
+   }
+  },
+  "Master7sD": {
+   "all": {
+    "worker_routed": {
+     "units": 2282,
+     "nll": 0.59599,
+     "hit": 0.75548
+    },
+    "worker_oracle": {
+     "units": 2282,
+     "nll": 0.59703,
+     "hit": 0.75548
+    },
+    "frozen_root": {
+     "units": 2282,
+     "nll": 0.62262,
+     "hit": 0.74847
+    },
+    "prior_linear_oracle": {
+     "units": 2282,
+     "nll": 0.59269,
+     "hit": 0.75504
+    }
+   },
+   "collectors": {
+    "worker_routed": {
+     "units": 1833,
+     "nll": 0.57933,
+     "hit": 0.76159
+    },
+    "worker_oracle": {
+     "units": 1833,
+     "nll": 0.58084,
+     "hit": 0.76214
+    },
+    "frozen_root": {
+     "units": 1833,
+     "nll": 0.6079,
+     "hit": 0.75286
+    },
+    "prior_linear_oracle": {
+     "units": 1833,
+     "nll": 0.57725,
+     "hit": 0.7605
+    }
+   },
+   "planters": {
+    "worker_routed": {
+     "units": 449,
+     "nll": 0.66402,
+     "hit": 0.73051
+    },
+    "worker_oracle": {
+     "units": 449,
+     "nll": 0.66311,
+     "hit": 0.72829
+    },
+    "frozen_root": {
+     "units": 449,
+     "nll": 0.68273,
+     "hit": 0.73051
+    },
+    "prior_linear_oracle": {
+     "units": 449,
+     "nll": 0.65569,
+     "hit": 0.73274
+    }
+   },
+   "heavy_near_home": {
+    "worker_routed": {
+     "units": 151,
+     "nll": 0.41366,
+     "hit": 0.82119,
+     "action_frequency": 0.6358,
+     "predicted_frequency": 0.6424,
+     "precision": 0.9175,
+     "recall": 0.9271
+    },
+    "worker_oracle": {
+     "units": 151,
+     "nll": 0.41279,
+     "hit": 0.83444,
+     "action_frequency": 0.6358,
+     "predicted_frequency": 0.649,
+     "precision": 0.9184,
+     "recall": 0.9375
+    },
+    "frozen_root": {
+     "units": 151,
+     "nll": 0.48931,
+     "hit": 0.7947,
+     "action_frequency": 0.6358,
+     "predicted_frequency": 0.6093,
+     "precision": 0.913,
+     "recall": 0.875
+    },
+    "prior_linear_oracle": {
+     "units": 151,
+     "nll": 0.39716,
+     "hit": 0.82119,
+     "action_frequency": 0.6358,
+     "predicted_frequency": 0.6623,
+     "precision": 0.9,
+     "recall": 0.9375
+    }
+   },
+   "light_pressure": {
+    "worker_routed": {
+     "units": 642,
+     "nll": 0.66494,
+     "hit": 0.73053,
+     "action_frequency": 0.7212,
+     "predicted_frequency": 0.7181,
+     "precision": 0.9241,
+     "recall": 0.9201
+    },
+    "worker_oracle": {
+     "units": 642,
+     "nll": 0.66495,
+     "hit": 0.72897,
+     "action_frequency": 0.7212,
+     "predicted_frequency": 0.7165,
+     "precision": 0.9217,
+     "recall": 0.9158
+    },
+    "frozen_root": {
+     "units": 642,
+     "nll": 0.6966,
+     "hit": 0.7243,
+     "action_frequency": 0.7212,
+     "predicted_frequency": 0.7212,
+     "precision": 0.9136,
+     "recall": 0.9136
+    },
+    "prior_linear_oracle": {
+     "units": 642,
+     "nll": 0.65941,
+     "hit": 0.73676,
+     "action_frequency": 0.7212,
+     "predicted_frequency": 0.7274,
+     "precision": 0.9165,
+     "recall": 0.9244
+    }
+   },
+   "rich_ore": {
+    "worker_routed": {
+     "units": 462,
+     "nll": 0.46812,
+     "hit": 0.80519,
+     "action_frequency": 0.4134,
+     "predicted_frequency": 0.4329,
+     "precision": 0.86,
+     "recall": 0.9005
+    },
+    "worker_oracle": {
+     "units": 462,
+     "nll": 0.46996,
+     "hit": 0.80519,
+     "action_frequency": 0.4134,
+     "predicted_frequency": 0.4286,
+     "precision": 0.8636,
+     "recall": 0.8953
+    },
+    "frozen_root": {
+     "units": 462,
+     "nll": 0.50423,
+     "hit": 0.80087,
+     "action_frequency": 0.4134,
+     "predicted_frequency": 0.5065,
+     "precision": 0.7906,
+     "recall": 0.9686
+    },
+    "prior_linear_oracle": {
+     "units": 462,
+     "nll": 0.46675,
+     "hit": 0.81602,
+     "action_frequency": 0.4134,
+     "predicted_frequency": 0.4242,
+     "precision": 0.8724,
+     "recall": 0.8953
+    }
+   }
+  },
+  "Master7sE": {
+   "all": {
+    "worker_routed": {
+     "units": 1400,
+     "nll": 0.65077,
+     "hit": 0.72929
+    },
+    "worker_oracle": {
+     "units": 1400,
+     "nll": 0.65194,
+     "hit": 0.72857
+    },
+    "frozen_root": {
+     "units": 1400,
+     "nll": 0.68763,
+     "hit": 0.735
+    },
+    "prior_linear_oracle": {
+     "units": 1400,
+     "nll": 0.65219,
+     "hit": 0.73286
+    }
+   },
+   "collectors": {
+    "worker_routed": {
+     "units": 1119,
+     "nll": 0.63253,
+     "hit": 0.74441
+    },
+    "worker_oracle": {
+     "units": 1119,
+     "nll": 0.63324,
+     "hit": 0.74352
+    },
+    "frozen_root": {
+     "units": 1119,
+     "nll": 0.67147,
+     "hit": 0.74978
+    },
+    "prior_linear_oracle": {
+     "units": 1119,
+     "nll": 0.63896,
+     "hit": 0.7471
+    }
+   },
+   "planters": {
+    "worker_routed": {
+     "units": 281,
+     "nll": 0.72342,
+     "hit": 0.66904
+    },
+    "worker_oracle": {
+     "units": 281,
+     "nll": 0.7264,
+     "hit": 0.66904
+    },
+    "frozen_root": {
+     "units": 281,
+     "nll": 0.75198,
+     "hit": 0.67616
+    },
+    "prior_linear_oracle": {
+     "units": 281,
+     "nll": 0.70489,
+     "hit": 0.67616
+    }
+   },
+   "heavy_near_home": {
+    "worker_routed": {
+     "units": 113,
+     "nll": 0.51598,
+     "hit": 0.80531,
+     "action_frequency": 0.6549,
+     "predicted_frequency": 0.6726,
+     "precision": 0.8816,
+     "recall": 0.9054
+    },
+    "worker_oracle": {
+     "units": 113,
+     "nll": 0.51463,
+     "hit": 0.80531,
+     "action_frequency": 0.6549,
+     "predicted_frequency": 0.6726,
+     "precision": 0.8816,
+     "recall": 0.9054
+    },
+    "frozen_root": {
+     "units": 113,
+     "nll": 0.52711,
+     "hit": 0.81416,
+     "action_frequency": 0.6549,
+     "predicted_frequency": 0.646,
+     "precision": 0.8904,
+     "recall": 0.8784
+    },
+    "prior_linear_oracle": {
+     "units": 113,
+     "nll": 0.51632,
+     "hit": 0.81416,
+     "action_frequency": 0.6549,
+     "predicted_frequency": 0.6637,
+     "precision": 0.8933,
+     "recall": 0.9054
+    }
+   },
+   "light_pressure": {
+    "worker_routed": {
+     "units": 409,
+     "nll": 0.81385,
+     "hit": 0.67971,
+     "action_frequency": 0.709,
+     "predicted_frequency": 0.7359,
+     "precision": 0.8771,
+     "recall": 0.9103
+    },
+    "worker_oracle": {
+     "units": 409,
+     "nll": 0.81644,
+     "hit": 0.68215,
+     "action_frequency": 0.709,
+     "predicted_frequency": 0.7359,
+     "precision": 0.8771,
+     "recall": 0.9103
+    },
+    "frozen_root": {
+     "units": 409,
+     "nll": 0.88466,
+     "hit": 0.69193,
+     "action_frequency": 0.709,
+     "predicted_frequency": 0.7237,
+     "precision": 0.8818,
+     "recall": 0.9
+    },
+    "prior_linear_oracle": {
+     "units": 409,
+     "nll": 0.83008,
+     "hit": 0.67971,
+     "action_frequency": 0.709,
+     "predicted_frequency": 0.7335,
+     "precision": 0.8833,
+     "recall": 0.9138
+    }
+   },
+   "rich_ore": {
+    "worker_routed": {
+     "units": 300,
+     "nll": 0.54941,
+     "hit": 0.78667,
+     "action_frequency": 0.42,
+     "predicted_frequency": 0.4167,
+     "precision": 0.904,
+     "recall": 0.8968
+    },
+    "worker_oracle": {
+     "units": 300,
+     "nll": 0.55087,
+     "hit": 0.78667,
+     "action_frequency": 0.42,
+     "predicted_frequency": 0.4267,
+     "precision": 0.8906,
+     "recall": 0.9048
+    },
+    "frozen_root": {
+     "units": 300,
+     "nll": 0.57602,
+     "hit": 0.8,
+     "action_frequency": 0.42,
+     "predicted_frequency": 0.4667,
+     "precision": 0.8429,
+     "recall": 0.9365
+    },
+    "prior_linear_oracle": {
+     "units": 300,
+     "nll": 0.56065,
+     "hit": 0.79333,
+     "action_frequency": 0.42,
+     "predicted_frequency": 0.4233,
+     "precision": 0.9055,
+     "recall": 0.9127
+    }
+   }
+  },
+  "Master7sB2": {
+   "all": {
+    "worker_routed": {
+     "units": 2446,
+     "nll": 0.44547,
+     "hit": 0.82339
+    },
+    "worker_oracle": {
+     "units": 2446,
+     "nll": 0.44155,
+     "hit": 0.82666
+    },
+    "frozen_root": {
+     "units": 2446,
+     "nll": 0.43808,
+     "hit": 0.82461
+    },
+    "prior_linear_oracle": {
+     "units": 2446,
+     "nll": 0.43269,
+     "hit": 0.82952
+    }
+   },
+   "collectors": {
+    "worker_routed": {
+     "units": 1887,
+     "nll": 0.4233,
+     "hit": 0.82936
+    },
+    "worker_oracle": {
+     "units": 1887,
+     "nll": 0.41949,
+     "hit": 0.8336
+    },
+    "frozen_root": {
+     "units": 1887,
+     "nll": 0.41688,
+     "hit": 0.83095
+    },
+    "prior_linear_oracle": {
+     "units": 1887,
+     "nll": 0.40965,
+     "hit": 0.83201
+    }
+   },
+   "planters": {
+    "worker_routed": {
+     "units": 559,
+     "nll": 0.52028,
+     "hit": 0.80322
+    },
+    "worker_oracle": {
+     "units": 559,
+     "nll": 0.51603,
+     "hit": 0.80322
+    },
+    "frozen_root": {
+     "units": 559,
+     "nll": 0.50962,
+     "hit": 0.80322
+    },
+    "prior_linear_oracle": {
+     "units": 559,
+     "nll": 0.51047,
+     "hit": 0.82111
+    }
+   },
+   "heavy_near_home": {
+    "worker_routed": {
+     "units": 220,
+     "nll": 0.34293,
+     "hit": 0.88182,
+     "action_frequency": 0.5682,
+     "predicted_frequency": 0.5955,
+     "precision": 0.9008,
+     "recall": 0.944
+    },
+    "worker_oracle": {
+     "units": 220,
+     "nll": 0.3407,
+     "hit": 0.89091,
+     "action_frequency": 0.5682,
+     "predicted_frequency": 0.5909,
+     "precision": 0.9077,
+     "recall": 0.944
+    },
+    "frozen_root": {
+     "units": 220,
+     "nll": 0.36285,
+     "hit": 0.87273,
+     "action_frequency": 0.5682,
+     "predicted_frequency": 0.5636,
+     "precision": 0.9274,
+     "recall": 0.92
+    },
+    "prior_linear_oracle": {
+     "units": 220,
+     "nll": 0.3225,
+     "hit": 0.86818,
+     "action_frequency": 0.5682,
+     "predicted_frequency": 0.5955,
+     "precision": 0.9008,
+     "recall": 0.944
+    }
+   },
+   "light_pressure": {
+    "worker_routed": {
+     "units": 423,
+     "nll": 0.4962,
+     "hit": 0.80142,
+     "action_frequency": 0.695,
+     "predicted_frequency": 0.7092,
+     "precision": 0.93,
+     "recall": 0.949
+    },
+    "worker_oracle": {
+     "units": 423,
+     "nll": 0.49381,
+     "hit": 0.81087,
+     "action_frequency": 0.695,
+     "predicted_frequency": 0.7139,
+     "precision": 0.9272,
+     "recall": 0.9524
+    },
+    "frozen_root": {
+     "units": 423,
+     "nll": 0.48789,
+     "hit": 0.80851,
+     "action_frequency": 0.695,
+     "predicted_frequency": 0.6927,
+     "precision": 0.9317,
+     "recall": 0.9286
+    },
+    "prior_linear_oracle": {
+     "units": 423,
+     "nll": 0.48823,
+     "hit": 0.80142,
+     "action_frequency": 0.695,
+     "predicted_frequency": 0.7163,
+     "precision": 0.9208,
+     "recall": 0.949
+    }
+   },
+   "rich_ore": {
+    "worker_routed": {
+     "units": 565,
+     "nll": 0.35378,
+     "hit": 0.8708,
+     "action_frequency": 0.4761,
+     "predicted_frequency": 0.4708,
+     "precision": 0.9436,
+     "recall": 0.9331
+    },
+    "worker_oracle": {
+     "units": 565,
+     "nll": 0.34925,
+     "hit": 0.87788,
+     "action_frequency": 0.4761,
+     "predicted_frequency": 0.4779,
+     "precision": 0.9444,
+     "recall": 0.948
+    },
+    "frozen_root": {
+     "units": 565,
+     "nll": 0.35618,
+     "hit": 0.87965,
+     "action_frequency": 0.4761,
+     "predicted_frequency": 0.5168,
+     "precision": 0.9075,
+     "recall": 0.9851
+    },
+    "prior_linear_oracle": {
+     "units": 565,
+     "nll": 0.34373,
+     "hit": 0.87965,
+     "action_frequency": 0.4761,
+     "predicted_frequency": 0.4867,
+     "precision": 0.9345,
+     "recall": 0.9554
+    }
+   }
+  },
+  "Master7sD/Master7sE": {
+   "all": {
+    "worker_routed": {
+     "units": 3682,
+     "nll": 0.61682,
+     "hit": 0.74552
+    },
+    "worker_oracle": {
+     "units": 3682,
+     "nll": 0.61791,
+     "hit": 0.74525
+    },
+    "frozen_root": {
+     "units": 3682,
+     "nll": 0.64734,
+     "hit": 0.74335
+    },
+    "prior_linear_oracle": {
+     "units": 3682,
+     "nll": 0.61531,
+     "hit": 0.74661
+    }
+   },
+   "collectors": {
+    "worker_routed": {
+     "units": 2952,
+     "nll": 0.59949,
+     "hit": 0.75508
+    },
+    "worker_oracle": {
+     "units": 2952,
+     "nll": 0.6007,
+     "hit": 0.75508
+    },
+    "frozen_root": {
+     "units": 2952,
+     "nll": 0.632,
+     "hit": 0.75169
+    },
+    "prior_linear_oracle": {
+     "units": 2952,
+     "nll": 0.60064,
+     "hit": 0.75542
+    }
+   },
+   "planters": {
+    "worker_routed": {
+     "units": 730,
+     "nll": 0.68689,
+     "hit": 0.70685
+    },
+    "worker_oracle": {
+     "units": 730,
+     "nll": 0.68747,
+     "hit": 0.70548
+    },
+    "frozen_root": {
+     "units": 730,
+     "nll": 0.70939,
+     "hit": 0.70959
+    },
+    "prior_linear_oracle": {
+     "units": 730,
+     "nll": 0.67463,
+     "hit": 0.71096
+    }
+   },
+   "heavy_near_home": {
+    "worker_routed": {
+     "units": 264,
+     "nll": 0.45745,
+     "hit": 0.81439,
+     "action_frequency": 0.6439,
+     "predicted_frequency": 0.6553,
+     "precision": 0.9017,
+     "recall": 0.9176
+    },
+    "worker_oracle": {
+     "units": 264,
+     "nll": 0.45638,
+     "hit": 0.82197,
+     "action_frequency": 0.6439,
+     "predicted_frequency": 0.6591,
+     "precision": 0.9023,
+     "recall": 0.9235
+    },
+    "frozen_root": {
+     "units": 264,
+     "nll": 0.50549,
+     "hit": 0.80303,
+     "action_frequency": 0.6439,
+     "predicted_frequency": 0.625,
+     "precision": 0.903,
+     "recall": 0.8765
+    },
+    "prior_linear_oracle": {
+     "units": 264,
+     "nll": 0.44817,
+     "hit": 0.81818,
+     "action_frequency": 0.6439,
+     "predicted_frequency": 0.6629,
+     "precision": 0.8971,
+     "recall": 0.9235
+    }
+   },
+   "light_pressure": {
+    "worker_routed": {
+     "units": 1051,
+     "nll": 0.72289,
+     "hit": 0.71075,
+     "action_frequency": 0.7165,
+     "predicted_frequency": 0.725,
+     "precision": 0.9055,
+     "recall": 0.9163
+    },
+    "worker_oracle": {
+     "units": 1051,
+     "nll": 0.7239,
+     "hit": 0.71075,
+     "action_frequency": 0.7165,
+     "predicted_frequency": 0.7241,
+     "precision": 0.9041,
+     "recall": 0.9137
+    },
+    "frozen_root": {
+     "units": 1051,
+     "nll": 0.76979,
+     "hit": 0.7117,
+     "action_frequency": 0.7165,
+     "predicted_frequency": 0.7222,
+     "precision": 0.9012,
+     "recall": 0.9084
+    },
+    "prior_linear_oracle": {
+     "units": 1051,
+     "nll": 0.72583,
+     "hit": 0.71456,
+     "action_frequency": 0.7165,
+     "predicted_frequency": 0.7298,
+     "precision": 0.9035,
+     "recall": 0.9203
+    }
+   },
+   "rich_ore": {
+    "worker_routed": {
+     "units": 762,
+     "nll": 0.50012,
+     "hit": 0.7979,
+     "action_frequency": 0.416,
+     "predicted_frequency": 0.4265,
+     "precision": 0.8769,
+     "recall": 0.8991
+    },
+    "worker_oracle": {
+     "units": 762,
+     "nll": 0.50182,
+     "hit": 0.7979,
+     "action_frequency": 0.416,
+     "predicted_frequency": 0.4278,
+     "precision": 0.8742,
+     "recall": 0.8991
+    },
+    "frozen_root": {
+     "units": 762,
+     "nll": 0.53249,
+     "hit": 0.80052,
+     "action_frequency": 0.416,
+     "predicted_frequency": 0.4908,
+     "precision": 0.8102,
+     "recall": 0.9558
+    },
+    "prior_linear_oracle": {
+     "units": 762,
+     "nll": 0.50372,
+     "hit": 0.80709,
+     "action_frequency": 0.416,
+     "predicted_frequency": 0.4239,
+     "precision": 0.8854,
+     "recall": 0.9022
+    }
+   }
+  }
+ },
+ "validation": [
+  {
+   "match": "1012bed474be7305e70fe09fd4cde9ef",
+   "seat": 0,
+   "seed": 900916768,
+   "teacher": "Master7sE",
+   "layout": "7398f28816983b6843334861171398b9ac75a6571251b15144c9c8ba7b85bda6",
+   "raw": {
+    "all": {
+     "worker_routed": [
+      509,
+      286.87347412109375,
+      393
+     ],
+     "worker_oracle": [
+      509,
+      287.0281066894531,
+      392
+     ],
+     "frozen_root": [
+      509,
+      295.4344482421875,
+      394
+     ],
+     "prior_linear_oracle": [
+      509,
+      286.27581787109375,
+      401
+     ]
+    },
+    "collectors": {
+     "worker_routed": [
+      399,
+      213.05148315429688,
+      316
+     ],
+     "worker_oracle": [
+      399,
+      212.69195556640625,
+      315
+     ],
+     "frozen_root": [
+      399,
+      219.40017700195312,
+      317
+     ],
+     "prior_linear_oracle": [
+      399,
+      212.65753173828125,
+      320
+     ]
+    },
+    "planters": {
+     "worker_routed": [
+      110,
+      73.82203674316406,
+      77
+     ],
+     "worker_oracle": [
+      110,
+      74.33616638183594,
+      77
+     ],
+     "frozen_root": [
+      110,
+      76.03427124023438,
+      77
+     ],
+     "prior_linear_oracle": [
+      110,
+      73.61829376220703,
+      81
+     ]
+    },
+    "heavy_near_home": {
+     "worker_routed": [
+      58,
+      27.66524314880371,
+      48,
+      35,
+      40,
+      33
+     ],
+     "worker_oracle": [
+      58,
+      27.147018432617188,
+      48,
+      35,
+      40,
+      33
+     ],
+     "frozen_root": [
+      58,
+      25.377588272094727,
+      49,
+      35,
+      38,
+      32
+     ],
+     "prior_linear_oracle": [
+      58,
+      28.054044723510742,
+      49,
+      35,
+      39,
+      33
+     ]
+    },
+    "light_pressure": {
+     "worker_routed": [
+      95,
+      59.991661071777344,
+      74,
+      63,
+      63,
+      57
+     ],
+     "worker_oracle": [
+      95,
+      60.256343841552734,
+      74,
+      63,
+      63,
+      57
+     ],
+     "frozen_root": [
+      95,
+      64.09173583984375,
+      75,
+      63,
+      60,
+      55
+     ],
+     "prior_linear_oracle": [
+      95,
+      58.046966552734375,
+      75,
+      63,
+      61,
+      56
+     ]
+    },
+    "rich_ore": {
+     "worker_routed": [
+      109,
+      46.352359771728516,
+      91,
+      63,
+      59,
+      56
+     ],
+     "worker_oracle": [
+      109,
+      45.68329620361328,
+      91,
+      63,
+      59,
+      56
+     ],
+     "frozen_root": [
+      109,
+      43.55060577392578,
+      91,
+      63,
+      66,
+      58
+     ],
+     "prior_linear_oracle": [
+      109,
+      47.90204620361328,
+      91,
+      63,
+      61,
+      57
+     ]
+    }
+   },
+   "gate": {
+    "mean_E": 0.5709784030914307,
+    "D_E_correct": 52,
+    "n": 60
+   },
+   "turns": [
+    [
+     2,
+     0,
+     0
+    ],
+    [
+     4,
+     0,
+     0
+    ],
+    [
+     6,
+     0,
+     0
+    ],
+    [
+     8,
+     0,
+     0
+    ],
+    [
+     10,
+     0,
+     0
+    ],
+    [
+     12,
+     0,
+     0
+    ],
+    [
+     14,
+     0,
+     0
+    ],
+    [
+     16,
+     1,
+     -1
+    ],
+    [
+     18,
+     1,
+     -1
+    ],
+    [
+     20,
+     0,
+     0
+    ],
+    [
+     22,
+     1,
+     1
+    ],
+    [
+     24,
+     1,
+     1
+    ],
+    [
+     26,
+     0,
+     0
+    ],
+    [
+     28,
+     2,
+     1
+    ],
+    [
+     30,
+     0,
+     0
+    ],
+    [
+     32,
+     0,
+     0
+    ],
+    [
+     34,
+     0,
+     0
+    ],
+    [
+     36,
+     0,
+     0
+    ],
+    [
+     38,
+     2,
+     0
+    ],
+    [
+     40,
+     1,
+     1
+    ],
+    [
+     42,
+     0,
+     0
+    ],
+    [
+     44,
+     0,
+     0
+    ],
+    [
+     46,
+     1,
+     -1
+    ],
+    [
+     48,
+     0,
+     0
+    ],
+    [
+     50,
+     1,
+     -1
+    ],
+    [
+     52,
+     1,
+     1
+    ],
+    [
+     54,
+     1,
+     -1
+    ],
+    [
+     56,
+     0,
+     0
+    ],
+    [
+     58,
+     0,
+     0
+    ],
+    [
+     60,
+     0,
+     0
+    ],
+    [
+     62,
+     0,
+     0
+    ],
+    [
+     64,
+     0,
+     0
+    ],
+    [
+     70,
+     0,
+     0
+    ],
+    [
+     78,
+     2,
+     1
+    ],
+    [
+     86,
+     1,
+     0
+    ],
+    [
+     94,
+     0,
+     0
+    ],
+    [
+     102,
+     1,
+     1
+    ],
+    [
+     110,
+     0,
+     0
+    ],
+    [
+     118,
+     0,
+     0
+    ],
+    [
+     126,
+     1,
+     1
+    ],
+    [
+     134,
+     0,
+     0
+    ],
+    [
+     142,
+     0,
+     0
+    ],
+    [
+     150,
+     0,
+     0
+    ],
+    [
+     158,
+     0,
+     0
+    ],
+    [
+     166,
+     0,
+     0
+    ],
+    [
+     174,
+     0,
+     0
+    ],
+    [
+     182,
+     0,
+     0
+    ],
+    [
+     190,
+     1,
+     1
+    ],
+    [
+     198,
+     1,
+     -1
+    ],
+    [
+     206,
+     0,
+     0
+    ],
+    [
+     214,
+     0,
+     0
+    ],
+    [
+     222,
+     1,
+     -1
+    ],
+    [
+     230,
+     3,
+     -3
+    ],
+    [
+     238,
+     0,
+     0
+    ],
+    [
+     246,
+     0,
+     0
+    ],
+    [
+     254,
+     0,
+     0
+    ],
+    [
+     262,
+     0,
+     0
+    ],
+    [
+     270,
+     0,
+     0
+    ],
+    [
+     278,
+     0,
+     0
+    ],
+    [
+     286,
+     0,
+     0
+    ]
+   ]
+  },
+  {
+   "match": "785ae91618edb772a3cca538a3bf8396",
+   "seat": 0,
+   "seed": 1211562470,
+   "teacher": "Master7sE",
+   "layout": "fe112f946a5c6a1af3e1f3451b53d26610c2314d80d7269443c63457fb57b99c",
+   "raw": {
+    "all": {
+     "worker_routed": [
+      497,
+      278.217041015625,
+      371
+     ],
+     "worker_oracle": [
+      497,
+      278.08544921875,
+      370
+     ],
+     "frozen_root": [
+      497,
+      290.97430419921875,
+      377
+     ],
+     "prior_linear_oracle": [
+      497,
+      275.595458984375,
+      373
+     ]
+    },
+    "collectors": {
+     "worker_routed": [
+      393,
+      200.78485107421875,
+      305
+     ],
+     "worker_oracle": [
+      393,
+      200.54458618164062,
+      304
+     ],
+     "frozen_root": [
+      393,
+      210.80142211914062,
+      310
+     ],
+     "prior_linear_oracle": [
+      393,
+      201.96029663085938,
+      307
+     ]
+    },
+    "planters": {
+     "worker_routed": [
+      104,
+      77.43218231201172,
+      66
+     ],
+     "worker_oracle": [
+      104,
+      77.54086303710938,
+      66
+     ],
+     "frozen_root": [
+      104,
+      80.1728744506836,
+      67
+     ],
+     "prior_linear_oracle": [
+      104,
+      73.63517761230469,
+      66
+     ]
+    },
+    "heavy_near_home": {
+     "worker_routed": [
+      45,
+      15.459526062011719,
+      39,
+      31,
+      29,
+      28
+     ],
+     "worker_oracle": [
+      45,
+      15.451261520385742,
+      39,
+      31,
+      29,
+      28
+     ],
+     "frozen_root": [
+      45,
+      15.668395042419434,
+      39,
+      31,
+      28,
+      27
+     ],
+     "prior_linear_oracle": [
+      45,
+      15.501570701599121,
+      39,
+      31,
+      29,
+      28
+     ]
+    },
+    "light_pressure": {
+     "worker_routed": [
+      87,
+      48.33124923706055,
+      67,
+      59,
+      59,
+      53
+     ],
+     "worker_oracle": [
+      87,
+      48.297550201416016,
+      67,
+      59,
+      60,
+      54
+     ],
+     "frozen_root": [
+      87,
+      50.41255569458008,
+      70,
+      59,
+      59,
+      54
+     ],
+     "prior_linear_oracle": [
+      87,
+      50.09355926513672,
+      68,
+      59,
+      61,
+      54
+     ]
+    },
+    "rich_ore": {
+     "worker_routed": [
+      106,
+      45.376495361328125,
+      88,
+      51,
+      52,
+      47
+     ],
+     "worker_oracle": [
+      106,
+      45.3445930480957,
+      88,
+      51,
+      52,
+      47
+     ],
+     "frozen_root": [
+      106,
+      49.17831802368164,
+      91,
+      51,
+      55,
+      49
+     ],
+     "prior_linear_oracle": [
+      106,
+      46.61507034301758,
+      88,
+      51,
+      52,
+      47
+     ]
+    }
+   },
+   "gate": {
+    "mean_E": 0.533014714717865,
+    "D_E_correct": 43,
+    "n": 60
+   },
+   "turns": [
+    [
+     2,
+     0,
+     0
+    ],
+    [
+     4,
+     0,
+     0
+    ],
+    [
+     6,
+     0,
+     0
+    ],
+    [
+     8,
+     0,
+     0
+    ],
+    [
+     10,
+     1,
+     1
+    ],
+    [
+     12,
+     0,
+     0
+    ],
+    [
+     14,
+     0,
+     0
+    ],
+    [
+     16,
+     0,
+     0
+    ],
+    [
+     18,
+     0,
+     0
+    ],
+    [
+     20,
+     0,
+     0
+    ],
+    [
+     22,
+     0,
+     0
+    ],
+    [
+     24,
+     1,
+     -1
+    ],
+    [
+     26,
+     0,
+     0
+    ],
+    [
+     28,
+     0,
+     0
+    ],
+    [
+     30,
+     0,
+     0
+    ],
+    [
+     32,
+     1,
+     1
+    ],
+    [
+     34,
+     1,
+     1
+    ],
+    [
+     36,
+     1,
+     0
+    ],
+    [
+     38,
+     1,
+     1
+    ],
+    [
+     40,
+     1,
+     -1
+    ],
+    [
+     42,
+     0,
+     0
+    ],
+    [
+     44,
+     1,
+     -1
+    ],
+    [
+     46,
+     0,
+     0
+    ],
+    [
+     48,
+     0,
+     0
+    ],
+    [
+     50,
+     0,
+     0
+    ],
+    [
+     52,
+     0,
+     0
+    ],
+    [
+     54,
+     1,
+     -1
+    ],
+    [
+     56,
+     2,
+     -2
+    ],
+    [
+     58,
+     0,
+     0
+    ],
+    [
+     60,
+     0,
+     0
+    ],
+    [
+     62,
+     0,
+     0
+    ],
+    [
+     64,
+     0,
+     0
+    ],
+    [
+     70,
+     0,
+     0
+    ],
+    [
+     78,
+     0,
+     0
+    ],
+    [
+     86,
+     2,
+     2
+    ],
+    [
+     94,
+     1,
+     -1
+    ],
+    [
+     102,
+     0,
+     0
+    ],
+    [
+     110,
+     0,
+     0
+    ],
+    [
+     118,
+     0,
+     0
+    ],
+    [
+     126,
+     1,
+     0
+    ],
+    [
+     134,
+     0,
+     0
+    ],
+    [
+     142,
+     0,
+     0
+    ],
+    [
+     150,
+     1,
+     0
+    ],
+    [
+     158,
+     0,
+     0
+    ],
+    [
+     166,
+     0,
+     0
+    ],
+    [
+     174,
+     0,
+     0
+    ],
+    [
+     182,
+     1,
+     -1
+    ],
+    [
+     190,
+     1,
+     0
+    ],
+    [
+     198,
+     0,
+     0
+    ],
+    [
+     206,
+     1,
+     1
+    ],
+    [
+     214,
+     2,
+     -2
+    ],
+    [
+     222,
+     0,
+     0
+    ],
+    [
+     230,
+     0,
+     0
+    ],
+    [
+     238,
+     0,
+     0
+    ],
+    [
+     246,
+     1,
+     -1
+    ],
+    [
+     254,
+     0,
+     0
+    ],
+    [
+     262,
+     2,
+     -2
+    ],
+    [
+     270,
+     2,
+     1
+    ],
+    [
+     278,
+     0,
+     0
+    ],
+    [
+     286,
+     1,
+     -1
+    ]
+   ]
+  },
+  {
+   "match": "efa15ce0a9b4d18398cbe73ad5ca6dc6",
+   "seat": 1,
+   "seed": 1074001050,
+   "teacher": "Master7sE",
+   "layout": "1f50da532eef1e0235009dd79374004664b13e13beb08848c69cdac0abca9936",
+   "raw": {
+    "all": {
+     "worker_routed": [
+      394,
+      345.98980712890625,
+      257
+     ],
+     "worker_oracle": [
+      394,
+      347.5992431640625,
+      258
+     ],
+     "frozen_root": [
+      394,
+      376.26922607421875,
+      258
+     ],
+     "prior_linear_oracle": [
+      394,
+      351.1971130371094,
+      252
+     ]
+    },
+    "collectors": {
+     "worker_routed": [
+      327,
+      293.96429443359375,
+      212
+     ],
+     "worker_oracle": [
+      327,
+      295.35675048828125,
+      213
+     ],
+     "frozen_root": [
+      327,
+      321.17041015625,
+      212
+     ],
+     "prior_linear_oracle": [
+      327,
+      300.37530517578125,
+      209
+     ]
+    },
+    "planters": {
+     "worker_routed": [
+      67,
+      52.02553176879883,
+      45
+     ],
+     "worker_oracle": [
+      67,
+      52.24248123168945,
+      45
+     ],
+     "frozen_root": [
+      67,
+      55.09882736206055,
+      46
+     ],
+     "prior_linear_oracle": [
+      67,
+      50.82179260253906,
+      43
+     ]
+    },
+    "heavy_near_home": {
+     "worker_routed": [
+      10,
+      15.180533409118652,
+      4,
+      8,
+      7,
+      6
+     ],
+     "worker_oracle": [
+      10,
+      15.555124282836914,
+      4,
+      8,
+      7,
+      6
+     ],
+     "frozen_root": [
+      10,
+      18.51705551147461,
+      4,
+      8,
+      7,
+      6
+     ],
+     "prior_linear_oracle": [
+      10,
+      14.789047241210938,
+      4,
+      8,
+      7,
+      6
+     ]
+    },
+    "light_pressure": {
+     "worker_routed": [
+      227,
+      224.53997802734375,
+      137,
+      168,
+      179,
+      154
+     ],
+     "worker_oracle": [
+      227,
+      225.37152099609375,
+      138,
+      168,
+      178,
+      153
+     ],
+     "frozen_root": [
+      227,
+      247.3227081298828,
+      138,
+      168,
+      177,
+      152
+     ],
+     "prior_linear_oracle": [
+      227,
+      231.3624267578125,
+      135,
+      168,
+      178,
+      155
+     ]
+    },
+    "rich_ore": {
+     "worker_routed": [
+      85,
+      73.09384155273438,
+      57,
+      12,
+      14,
+      10
+     ],
+     "worker_oracle": [
+      85,
+      74.23282623291016,
+      57,
+      12,
+      17,
+      11
+     ],
+     "frozen_root": [
+      85,
+      80.07655334472656,
+      58,
+      12,
+      19,
+      11
+     ],
+     "prior_linear_oracle": [
+      85,
+      73.67649841308594,
+      59,
+      12,
+      14,
+      11
+     ]
+    }
+   },
+   "gate": {
+    "mean_E": 0.45144763588905334,
+    "D_E_correct": 25,
+    "n": 48
+   },
+   "turns": [
+    [
+     2,
+     0,
+     0
+    ],
+    [
+     4,
+     0,
+     0
+    ],
+    [
+     6,
+     1,
+     1
+    ],
+    [
+     8,
+     0,
+     0
+    ],
+    [
+     10,
+     0,
+     0
+    ],
+    [
+     12,
+     0,
+     0
+    ],
+    [
+     14,
+     1,
+     -1
+    ],
+    [
+     16,
+     0,
+     0
+    ],
+    [
+     18,
+     0,
+     0
+    ],
+    [
+     20,
+     0,
+     0
+    ],
+    [
+     22,
+     0,
+     0
+    ],
+    [
+     24,
+     1,
+     -1
+    ],
+    [
+     26,
+     0,
+     0
+    ],
+    [
+     28,
+     0,
+     0
+    ],
+    [
+     30,
+     0,
+     0
+    ],
+    [
+     32,
+     1,
+     1
+    ],
+    [
+     34,
+     0,
+     0
+    ],
+    [
+     36,
+     0,
+     0
+    ],
+    [
+     38,
+     0,
+     0
+    ],
+    [
+     40,
+     0,
+     0
+    ],
+    [
+     42,
+     0,
+     0
+    ],
+    [
+     44,
+     0,
+     0
+    ],
+    [
+     46,
+     0,
+     0
+    ],
+    [
+     48,
+     3,
+     1
+    ],
+    [
+     50,
+     0,
+     0
+    ],
+    [
+     52,
+     0,
+     0
+    ],
+    [
+     54,
+     0,
+     0
+    ],
+    [
+     56,
+     1,
+     1
+    ],
+    [
+     58,
+     2,
+     1
+    ],
+    [
+     60,
+     1,
+     -1
+    ],
+    [
+     62,
+     1,
+     -1
+    ],
+    [
+     64,
+     0,
+     0
+    ],
+    [
+     70,
+     0,
+     0
+    ],
+    [
+     78,
+     0,
+     0
+    ],
+    [
+     86,
+     0,
+     0
+    ],
+    [
+     94,
+     1,
+     0
+    ],
+    [
+     102,
+     0,
+     0
+    ],
+    [
+     110,
+     1,
+     1
+    ],
+    [
+     118,
+     1,
+     -1
+    ],
+    [
+     126,
+     1,
+     -1
+    ],
+    [
+     134,
+     1,
+     -1
+    ],
+    [
+     142,
+     1,
+     -1
+    ],
+    [
+     150,
+     2,
+     1
+    ],
+    [
+     158,
+     0,
+     0
+    ],
+    [
+     166,
+     1,
+     0
+    ],
+    [
+     174,
+     0,
+     0
+    ],
+    [
+     182,
+     0,
+     0
+    ],
+    [
+     190,
+     3,
+     0
+    ]
+   ]
+  },
+  {
+   "match": "9e5f1d1688216bd29ecb28ebe04c7f22",
+   "seat": 1,
+   "seed": 166457320,
+   "teacher": "Master7sB2",
+   "layout": "911aaef7e96dbe29a587f8050d1bde3cb87d31627edaaf71ae89e7b4f7a8471d",
+   "raw": {
+    "all": {
+     "worker_routed": [
+      512,
+      262.50506591796875,
+      401
+     ],
+     "worker_oracle": [
+      512,
+      261.9629211425781,
+      405
+     ],
+     "frozen_root": [
+      512,
+      265.7138977050781,
+      405
+     ],
+     "prior_linear_oracle": [
+      512,
+      258.90924072265625,
+      414
+     ]
+    },
+    "collectors": {
+     "worker_routed": [
+      395,
+      205.36651611328125,
+      303
+     ],
+     "worker_oracle": [
+      395,
+      204.820068359375,
+      307
+     ],
+     "frozen_root": [
+      395,
+      207.59310913085938,
+      307
+     ],
+     "prior_linear_oracle": [
+      395,
+      201.2047119140625,
+      315
+     ]
+    },
+    "planters": {
+     "worker_routed": [
+      117,
+      57.138553619384766,
+      98
+     ],
+     "worker_oracle": [
+      117,
+      57.14286804199219,
+      98
+     ],
+     "frozen_root": [
+      117,
+      58.12078094482422,
+      98
+     ],
+     "prior_linear_oracle": [
+      117,
+      57.70452117919922,
+      99
+     ]
+    },
+    "heavy_near_home": {
+     "worker_routed": [
+      32,
+      13.960500717163086,
+      27,
+      16,
+      17,
+      15
+     ],
+     "worker_oracle": [
+      32,
+      14.085859298706055,
+      28,
+      16,
+      17,
+      15
+     ],
+     "frozen_root": [
+      32,
+      15.743557929992676,
+      27,
+      16,
+      17,
+      15
+     ],
+     "prior_linear_oracle": [
+      32,
+      13.91408920288086,
+      27,
+      16,
+      17,
+      15
+     ]
+    },
+    "light_pressure": {
+     "worker_routed": [
+      93,
+      58.11448669433594,
+      69,
+      63,
+      65,
+      59
+     ],
+     "worker_oracle": [
+      93,
+      57.42909240722656,
+      70,
+      63,
+      66,
+      59
+     ],
+     "frozen_root": [
+      93,
+      55.33298873901367,
+      70,
+      63,
+      63,
+      57
+     ],
+     "prior_linear_oracle": [
+      93,
+      58.28711700439453,
+      71,
+      63,
+      65,
+      59
+     ]
+    },
+    "rich_ore": {
+     "worker_routed": [
+      99,
+      49.326297760009766,
+      80,
+      34,
+      34,
+      30
+     ],
+     "worker_oracle": [
+      99,
+      49.42979049682617,
+      82,
+      34,
+      34,
+      31
+     ],
+     "frozen_root": [
+      99,
+      51.44938278198242,
+      83,
+      34,
+      40,
+      34
+     ],
+     "prior_linear_oracle": [
+      99,
+      49.76137161254883,
+      85,
+      34,
+      36,
+      33
+     ]
+    }
+   },
+   "gate": {
+    "mean_E": 0.5091970562934875,
+    "D_E_correct": 25,
+    "n": 60
+   },
+   "turns": [
+    [
+     2,
+     0,
+     0
+    ],
+    [
+     4,
+     0,
+     0
+    ],
+    [
+     6,
+     0,
+     0
+    ],
+    [
+     8,
+     0,
+     0
+    ],
+    [
+     10,
+     0,
+     0
+    ],
+    [
+     12,
+     0,
+     0
+    ],
+    [
+     14,
+     1,
+     -1
+    ],
+    [
+     16,
+     0,
+     0
+    ],
+    [
+     18,
+     0,
+     0
+    ],
+    [
+     20,
+     3,
+     -1
+    ],
+    [
+     22,
+     0,
+     0
+    ],
+    [
+     24,
+     3,
+     0
+    ],
+    [
+     26,
+     0,
+     0
+    ],
+    [
+     28,
+     1,
+     1
+    ],
+    [
+     30,
+     0,
+     0
+    ],
+    [
+     32,
+     2,
+     -2
+    ],
+    [
+     34,
+     0,
+     0
+    ],
+    [
+     36,
+     1,
+     1
+    ],
+    [
+     38,
+     2,
+     1
+    ],
+    [
+     40,
+     1,
+     0
+    ],
+    [
+     42,
+     1,
+     0
+    ],
+    [
+     44,
+     0,
+     0
+    ],
+    [
+     46,
+     0,
+     0
+    ],
+    [
+     48,
+     1,
+     0
+    ],
+    [
+     50,
+     1,
+     -1
+    ],
+    [
+     52,
+     0,
+     0
+    ],
+    [
+     54,
+     1,
+     1
+    ],
+    [
+     56,
+     2,
+     0
+    ],
+    [
+     58,
+     1,
+     0
+    ],
+    [
+     60,
+     1,
+     1
+    ],
+    [
+     62,
+     1,
+     -1
+    ],
+    [
+     64,
+     1,
+     -1
+    ],
+    [
+     70,
+     0,
+     0
+    ],
+    [
+     78,
+     0,
+     0
+    ],
+    [
+     86,
+     0,
+     0
+    ],
+    [
+     94,
+     1,
+     -1
+    ],
+    [
+     102,
+     2,
+     1
+    ],
+    [
+     110,
+     0,
+     0
+    ],
+    [
+     118,
+     1,
+     1
+    ],
+    [
+     126,
+     0,
+     0
+    ],
+    [
+     134,
+     2,
+     0
+    ],
+    [
+     142,
+     0,
+     0
+    ],
+    [
+     150,
+     2,
+     -2
+    ],
+    [
+     158,
+     0,
+     0
+    ],
+    [
+     166,
+     0,
+     0
+    ],
+    [
+     174,
+     1,
+     -1
+    ],
+    [
+     182,
+     2,
+     0
+    ],
+    [
+     190,
+     0,
+     0
+    ],
+    [
+     198,
+     0,
+     0
+    ],
+    [
+     206,
+     1,
+     -1
+    ],
+    [
+     214,
+     0,
+     0
+    ],
+    [
+     222,
+     0,
+     0
+    ],
+    [
+     230,
+     0,
+     0
+    ],
+    [
+     238,
+     1,
+     1
+    ],
+    [
+     246,
+     0,
+     0
+    ],
+    [
+     254,
+     0,
+     0
+    ],
+    [
+     262,
+     0,
+     0
+    ],
+    [
+     270,
+     0,
+     0
+    ],
+    [
+     278,
+     0,
+     0
+    ],
+    [
+     286,
+     0,
+     0
+    ]
+   ]
+  },
+  {
+   "match": "0eb4fcb3485b4af9708098814e570f33",
+   "seat": 1,
+   "seed": 1612871497,
+   "teacher": "Master7sD",
+   "layout": "51c06f5803d8088f991de51eb4d002315c2bc6ae617153bb8680158cd9106845",
+   "raw": {
+    "all": {
+     "worker_routed": [
+      511,
+      325.82525634765625,
+      378
+     ],
+     "worker_oracle": [
+      511,
+      326.3908386230469,
+      375
+     ],
+     "frozen_root": [
+      511,
+      337.722900390625,
+      383
+     ],
+     "prior_linear_oracle": [
+      511,
+      322.662841796875,
+      384
+     ]
+    },
+    "collectors": {
+     "worker_routed": [
+      443,
+      270.5732421875,
+      333
+     ],
+     "worker_oracle": [
+      443,
+      271.4683532714844,
+      330
+     ],
+     "frozen_root": [
+      443,
+      278.0958251953125,
+      335
+     ],
+     "prior_linear_oracle": [
+      443,
+      267.53338623046875,
+      338
+     ]
+    },
+    "planters": {
+     "worker_routed": [
+      68,
+      55.252017974853516,
+      45
+     ],
+     "worker_oracle": [
+      68,
+      54.922462463378906,
+      45
+     ],
+     "frozen_root": [
+      68,
+      59.627079010009766,
+      48
+     ],
+     "prior_linear_oracle": [
+      68,
+      55.12944030761719,
+      46
+     ]
+    },
+    "heavy_near_home": {
+     "worker_routed": [
+      15,
+      10.685765266418457,
+      9,
+      9,
+      10,
+      7
+     ],
+     "worker_oracle": [
+      15,
+      10.586813926696777,
+      9,
+      9,
+      10,
+      7
+     ],
+     "frozen_root": [
+      15,
+      13.395894050598145,
+      10,
+      9,
+      9,
+      7
+     ],
+     "prior_linear_oracle": [
+      15,
+      10.124146461486816,
+      9,
+      9,
+      10,
+      7
+     ]
+    },
+    "light_pressure": {
+     "worker_routed": [
+      232,
+      147.93325805664062,
+      179,
+      175,
+      174,
+      167
+     ],
+     "worker_oracle": [
+      232,
+      148.09750366210938,
+      179,
+      175,
+      174,
+      166
+     ],
+     "frozen_root": [
+      232,
+      150.01318359375,
+      179,
+      175,
+      177,
+      167
+     ],
+     "prior_linear_oracle": [
+      232,
+      146.5286407470703,
+      183,
+      175,
+      177,
+      168
+     ]
+    },
+    "rich_ore": {
+     "worker_routed": [
+      81,
+      40.708683013916016,
+      63,
+      25,
+      25,
+      19
+     ],
+     "worker_oracle": [
+      81,
+      40.6676139831543,
+      63,
+      25,
+      25,
+      19
+     ],
+     "frozen_root": [
+      81,
+      44.3322639465332,
+      68,
+      25,
+      32,
+      25
+     ],
+     "prior_linear_oracle": [
+      81,
+      39.67991256713867,
+      66,
+      25,
+      24,
+      20
+     ]
+    }
+   },
+   "gate": {
+    "mean_E": 0.5042408108711243,
+    "D_E_correct": 31,
+    "n": 60
+   },
+   "turns": [
+    [
+     2,
+     0,
+     0
+    ],
+    [
+     4,
+     0,
+     0
+    ],
+    [
+     6,
+     0,
+     0
+    ],
+    [
+     8,
+     0,
+     0
+    ],
+    [
+     10,
+     0,
+     0
+    ],
+    [
+     12,
+     0,
+     0
+    ],
+    [
+     14,
+     0,
+     0
+    ],
+    [
+     16,
+     0,
+     0
+    ],
+    [
+     18,
+     0,
+     0
+    ],
+    [
+     20,
+     0,
+     0
+    ],
+    [
+     22,
+     1,
+     1
+    ],
+    [
+     24,
+     0,
+     0
+    ],
+    [
+     26,
+     1,
+     0
+    ],
+    [
+     28,
+     0,
+     0
+    ],
+    [
+     30,
+     0,
+     0
+    ],
+    [
+     32,
+     0,
+     0
+    ],
+    [
+     34,
+     1,
+     -1
+    ],
+    [
+     36,
+     0,
+     0
+    ],
+    [
+     38,
+     1,
+     -1
+    ],
+    [
+     40,
+     1,
+     1
+    ],
+    [
+     42,
+     0,
+     0
+    ],
+    [
+     44,
+     0,
+     0
+    ],
+    [
+     46,
+     1,
+     1
+    ],
+    [
+     48,
+     0,
+     0
+    ],
+    [
+     50,
+     1,
+     -1
+    ],
+    [
+     52,
+     1,
+     1
+    ],
+    [
+     54,
+     0,
+     0
+    ],
+    [
+     56,
+     1,
+     -1
+    ],
+    [
+     58,
+     2,
+     -1
+    ],
+    [
+     60,
+     2,
+     2
+    ],
+    [
+     62,
+     0,
+     0
+    ],
+    [
+     64,
+     0,
+     0
+    ],
+    [
+     70,
+     2,
+     2
+    ],
+    [
+     78,
+     1,
+     -1
+    ],
+    [
+     86,
+     0,
+     0
+    ],
+    [
+     94,
+     1,
+     1
+    ],
+    [
+     102,
+     0,
+     0
+    ],
+    [
+     110,
+     0,
+     0
+    ],
+    [
+     118,
+     2,
+     -2
+    ],
+    [
+     126,
+     1,
+     -1
+    ],
+    [
+     134,
+     1,
+     -1
+    ],
+    [
+     142,
+     2,
+     0
+    ],
+    [
+     150,
+     0,
+     0
+    ],
+    [
+     158,
+     1,
+     1
+    ],
+    [
+     166,
+     1,
+     -1
+    ],
+    [
+     174,
+     1,
+     -1
+    ],
+    [
+     182,
+     2,
+     0
+    ],
+    [
+     190,
+     2,
+     -2
+    ],
+    [
+     198,
+     1,
+     -1
+    ],
+    [
+     206,
+     0,
+     0
+    ],
+    [
+     214,
+     1,
+     0
+    ],
+    [
+     222,
+     1,
+     1
+    ],
+    [
+     230,
+     2,
+     -2
+    ],
+    [
+     238,
+     2,
+     1
+    ],
+    [
+     246,
+     0,
+     0
+    ],
+    [
+     254,
+     0,
+     0
+    ],
+    [
+     262,
+     0,
+     0
+    ],
+    [
+     270,
+     0,
+     0
+    ],
+    [
+     278,
+     1,
+     -1
+    ],
+    [
+     286,
+     1,
+     1
+    ]
+   ]
+  },
+  {
+   "match": "ba7e1f7fc45d646702f3a2dab1a1e8f3",
+   "seat": 1,
+   "seed": 1610990862,
+   "teacher": "Master7sD",
+   "layout": "990b7adde86f7bd4661986aa39e5206e82f3f912fca2467f41962dfe92ce39ee",
+   "raw": {
+    "all": {
+     "worker_routed": [
+      502,
+      296.1214599609375,
+      387
+     ],
+     "worker_oracle": [
+      502,
+      297.01318359375,
+      385
+     ],
+     "frozen_root": [
+      502,
+      304.824951171875,
+      385
+     ],
+     "prior_linear_oracle": [
+      502,
+      295.49273681640625,
+      379
+     ]
+    },
+    "collectors": {
+     "worker_routed": [
+      396,
+      238.48977661132812,
+      303
+     ],
+     "worker_oracle": [
+      396,
+      239.67160034179688,
+      302
+     ],
+     "frozen_root": [
+      396,
+      246.96438598632812,
+      299
+     ],
+     "prior_linear_oracle": [
+      396,
+      236.81228637695312,
+      297
+     ]
+    },
+    "planters": {
+     "worker_routed": [
+      106,
+      57.6317024230957,
+      84
+     ],
+     "worker_oracle": [
+      106,
+      57.341590881347656,
+      83
+     ],
+     "frozen_root": [
+      106,
+      57.86056900024414,
+      86
+     ],
+     "prior_linear_oracle": [
+      106,
+      58.68045425415039,
+      82
+     ]
+    },
+    "heavy_near_home": {
+     "worker_routed": [
+      38,
+      7.1821675300598145,
+      36,
+      22,
+      22,
+      22
+     ],
+     "worker_oracle": [
+      38,
+      7.245857238769531,
+      36,
+      22,
+      22,
+      22
+     ],
+     "frozen_root": [
+      38,
+      7.3091044425964355,
+      34,
+      22,
+      21,
+      21
+     ],
+     "prior_linear_oracle": [
+      38,
+      7.147712707519531,
+      36,
+      22,
+      22,
+      22
+     ]
+    },
+    "light_pressure": {
+     "worker_routed": [
+      149,
+      109.55824279785156,
+      106,
+      98,
+      99,
+      87
+     ],
+     "worker_oracle": [
+      149,
+      109.66361999511719,
+      106,
+      98,
+      99,
+      87
+     ],
+     "frozen_root": [
+      149,
+      114.80024719238281,
+      106,
+      98,
+      100,
+      87
+     ],
+     "prior_linear_oracle": [
+      149,
+      109.14002227783203,
+      103,
+      98,
+      97,
+      84
+     ]
+    },
+    "rich_ore": {
+     "worker_routed": [
+      121,
+      56.46079635620117,
+      100,
+      51,
+      53,
+      47
+     ],
+     "worker_oracle": [
+      121,
+      56.92103958129883,
+      99,
+      51,
+      52,
+      46
+     ],
+     "frozen_root": [
+      121,
+      56.90084457397461,
+      98,
+      51,
+      60,
+      49
+     ],
+     "prior_linear_oracle": [
+      121,
+      55.614994049072266,
+      99,
+      51,
+      51,
+      45
+     ]
+    }
+   },
+   "gate": {
+    "mean_E": 0.49933770298957825,
+    "D_E_correct": 27,
+    "n": 60
+   },
+   "turns": [
+    [
+     2,
+     0,
+     0
+    ],
+    [
+     4,
+     0,
+     0
+    ],
+    [
+     6,
+     0,
+     0
+    ],
+    [
+     8,
+     0,
+     0
+    ],
+    [
+     10,
+     0,
+     0
+    ],
+    [
+     12,
+     0,
+     0
+    ],
+    [
+     14,
+     0,
+     0
+    ],
+    [
+     16,
+     0,
+     0
+    ],
+    [
+     18,
+     0,
+     0
+    ],
+    [
+     20,
+     0,
+     0
+    ],
+    [
+     22,
+     0,
+     0
+    ],
+    [
+     24,
+     1,
+     -1
+    ],
+    [
+     26,
+     0,
+     0
+    ],
+    [
+     28,
+     1,
+     1
+    ],
+    [
+     30,
+     0,
+     0
+    ],
+    [
+     32,
+     1,
+     1
+    ],
+    [
+     34,
+     0,
+     0
+    ],
+    [
+     36,
+     1,
+     0
+    ],
+    [
+     38,
+     0,
+     0
+    ],
+    [
+     40,
+     0,
+     0
+    ],
+    [
+     42,
+     0,
+     0
+    ],
+    [
+     44,
+     1,
+     1
+    ],
+    [
+     46,
+     2,
+     2
+    ],
+    [
+     48,
+     1,
+     0
+    ],
+    [
+     50,
+     1,
+     -1
+    ],
+    [
+     52,
+     0,
+     0
+    ],
+    [
+     54,
+     1,
+     -1
+    ],
+    [
+     56,
+     0,
+     0
+    ],
+    [
+     58,
+     0,
+     0
+    ],
+    [
+     60,
+     0,
+     0
+    ],
+    [
+     62,
+     0,
+     0
+    ],
+    [
+     64,
+     1,
+     1
+    ],
+    [
+     70,
+     2,
+     2
+    ],
+    [
+     78,
+     1,
+     -1
+    ],
+    [
+     86,
+     2,
+     0
+    ],
+    [
+     94,
+     0,
+     0
+    ],
+    [
+     102,
+     1,
+     1
+    ],
+    [
+     110,
+     1,
+     0
+    ],
+    [
+     118,
+     0,
+     0
+    ],
+    [
+     126,
+     0,
+     0
+    ],
+    [
+     134,
+     1,
+     -1
+    ],
+    [
+     142,
+     1,
+     1
+    ],
+    [
+     150,
+     2,
+     1
+    ],
+    [
+     158,
+     1,
+     -1
+    ],
+    [
+     166,
+     0,
+     0
+    ],
+    [
+     174,
+     0,
+     0
+    ],
+    [
+     182,
+     0,
+     0
+    ],
+    [
+     190,
+     0,
+     0
+    ],
+    [
+     198,
+     0,
+     0
+    ],
+    [
+     206,
+     0,
+     0
+    ],
+    [
+     214,
+     2,
+     0
+    ],
+    [
+     222,
+     0,
+     0
+    ],
+    [
+     230,
+     0,
+     0
+    ],
+    [
+     238,
+     2,
+     0
+    ],
+    [
+     246,
+     1,
+     -1
+    ],
+    [
+     254,
+     1,
+     -1
+    ],
+    [
+     262,
+     1,
+     1
+    ],
+    [
+     270,
+     0,
+     0
+    ],
+    [
+     278,
+     1,
+     -1
+    ],
+    [
+     286,
+     2,
+     -1
+    ]
+   ]
+  },
+  {
+   "match": "9e6ab9948c9e2f7c4d196041422bf246",
+   "seat": 0,
+   "seed": 1688590380,
+   "teacher": "Master7sD",
+   "layout": "245462cdd92f042d7b5202ae2acdd1ffaf916f473f9da3f7c0c41e79a9492a08",
+   "raw": {
+    "all": {
+     "worker_routed": [
+      479,
+      241.1827850341797,
+      382
+     ],
+     "worker_oracle": [
+      479,
+      242.2479248046875,
+      385
+     ],
+     "frozen_root": [
+      479,
+      247.3687744140625,
+      379
+     ],
+     "prior_linear_oracle": [
+      479,
+      243.7265625,
+      376
+     ]
+    },
+    "collectors": {
+     "worker_routed": [
+      394,
+      194.04515075683594,
+      316
+     ],
+     "worker_oracle": [
+      394,
+      194.94378662109375,
+      320
+     ],
+     "frozen_root": [
+      394,
+      200.20428466796875,
+      314
+     ],
+     "prior_linear_oracle": [
+      394,
+      196.47747802734375,
+      312
+     ]
+    },
+    "planters": {
+     "worker_routed": [
+      85,
+      47.13762664794922,
+      66
+     ],
+     "worker_oracle": [
+      85,
+      47.304141998291016,
+      65
+     ],
+     "frozen_root": [
+      85,
+      47.16449737548828,
+      65
+     ],
+     "prior_linear_oracle": [
+      85,
+      47.249080657958984,
+      64
+     ]
+    },
+    "heavy_near_home": {
+     "worker_routed": [
+      54,
+      20.431093215942383,
+      45,
+      34,
+      35,
+      32
+     ],
+     "worker_oracle": [
+      54,
+      20.559175491333008,
+      46,
+      34,
+      35,
+      32
+     ],
+     "frozen_root": [
+      54,
+      22.070514678955078,
+      45,
+      34,
+      33,
+      31
+     ],
+     "prior_linear_oracle": [
+      54,
+      19.585498809814453,
+      45,
+      34,
+      35,
+      32
+     ]
+    },
+    "light_pressure": {
+     "worker_routed": [
+      51,
+      21.958473205566406,
+      41,
+      37,
+      37,
+      36
+     ],
+     "worker_oracle": [
+      51,
+      22.058258056640625,
+      41,
+      37,
+      37,
+      36
+     ],
+     "frozen_root": [
+      51,
+      21.751813888549805,
+      41,
+      37,
+      36,
+      35
+     ],
+     "prior_linear_oracle": [
+      51,
+      22.220577239990234,
+      42,
+      37,
+      37,
+      36
+     ]
+    },
+    "rich_ore": {
+     "worker_routed": [
+      113,
+      44.75086975097656,
+      91,
+      61,
+      62,
+      55
+     ],
+     "worker_oracle": [
+      113,
+      45.02138137817383,
+      93,
+      61,
+      61,
+      55
+     ],
+     "frozen_root": [
+      113,
+      47.39700698852539,
+      93,
+      61,
+      72,
+      59
+     ],
+     "prior_linear_oracle": [
+      113,
+      46.136207580566406,
+      91,
+      61,
+      63,
+      55
+     ]
+    }
+   },
+   "gate": {
+    "mean_E": 0.5682551860809326,
+    "D_E_correct": 14,
+    "n": 60
+   },
+   "turns": [
+    [
+     2,
+     0,
+     0
+    ],
+    [
+     4,
+     0,
+     0
+    ],
+    [
+     6,
+     0,
+     0
+    ],
+    [
+     8,
+     0,
+     0
+    ],
+    [
+     10,
+     0,
+     0
+    ],
+    [
+     12,
+     0,
+     0
+    ],
+    [
+     14,
+     0,
+     0
+    ],
+    [
+     16,
+     0,
+     0
+    ],
+    [
+     18,
+     0,
+     0
+    ],
+    [
+     20,
+     0,
+     0
+    ],
+    [
+     22,
+     1,
+     1
+    ],
+    [
+     24,
+     0,
+     0
+    ],
+    [
+     26,
+     0,
+     0
+    ],
+    [
+     28,
+     0,
+     0
+    ],
+    [
+     30,
+     0,
+     0
+    ],
+    [
+     32,
+     0,
+     0
+    ],
+    [
+     34,
+     0,
+     0
+    ],
+    [
+     36,
+     0,
+     0
+    ],
+    [
+     38,
+     1,
+     0
+    ],
+    [
+     40,
+     1,
+     1
+    ],
+    [
+     42,
+     2,
+     0
+    ],
+    [
+     44,
+     0,
+     0
+    ],
+    [
+     46,
+     0,
+     0
+    ],
+    [
+     48,
+     0,
+     0
+    ],
+    [
+     50,
+     0,
+     0
+    ],
+    [
+     52,
+     0,
+     0
+    ],
+    [
+     54,
+     1,
+     -1
+    ],
+    [
+     56,
+     2,
+     0
+    ],
+    [
+     58,
+     0,
+     0
+    ],
+    [
+     60,
+     0,
+     0
+    ],
+    [
+     62,
+     0,
+     0
+    ],
+    [
+     64,
+     0,
+     0
+    ],
+    [
+     70,
+     1,
+     1
+    ],
+    [
+     78,
+     0,
+     0
+    ],
+    [
+     86,
+     0,
+     0
+    ],
+    [
+     94,
+     1,
+     -1
+    ],
+    [
+     102,
+     1,
+     -1
+    ],
+    [
+     110,
+     2,
+     0
+    ],
+    [
+     118,
+     0,
+     0
+    ],
+    [
+     126,
+     0,
+     0
+    ],
+    [
+     134,
+     0,
+     0
+    ],
+    [
+     142,
+     1,
+     -1
+    ],
+    [
+     150,
+     0,
+     0
+    ],
+    [
+     158,
+     2,
+     1
+    ],
+    [
+     166,
+     0,
+     0
+    ],
+    [
+     174,
+     2,
+     2
+    ],
+    [
+     182,
+     0,
+     0
+    ],
+    [
+     190,
+     0,
+     0
+    ],
+    [
+     198,
+     1,
+     1
+    ],
+    [
+     206,
+     0,
+     0
+    ],
+    [
+     214,
+     0,
+     0
+    ],
+    [
+     222,
+     1,
+     -1
+    ],
+    [
+     230,
+     2,
+     0
+    ],
+    [
+     238,
+     2,
+     0
+    ],
+    [
+     246,
+     1,
+     1
+    ],
+    [
+     254,
+     1,
+     -1
+    ],
+    [
+     262,
+     1,
+     1
+    ],
+    [
+     270,
+     0,
+     0
+    ],
+    [
+     278,
+     1,
+     1
+    ],
+    [
+     286,
+     1,
+     -1
+    ]
+   ]
+  },
+  {
+   "match": "9e852f79c739dbb079f9995704c1fca9",
+   "seat": 0,
+   "seed": 1521029745,
+   "teacher": "Master7sB2",
+   "layout": "c0cb61dcc60c3d6bf916e20570aff8edad8959163f6565bf78f9dfee8ed30e44",
+   "raw": {
+    "all": {
+     "worker_routed": [
+      474,
+      199.4798583984375,
+      397
+     ],
+     "worker_oracle": [
+      474,
+      196.70492553710938,
+      396
+     ],
+     "frozen_root": [
+      474,
+      194.71128845214844,
+      396
+     ],
+     "prior_linear_oracle": [
+      474,
+      190.43258666992188,
+      396
+     ]
+    },
+    "collectors": {
+     "worker_routed": [
+      360,
+      138.40292358398438,
+      305
+     ],
+     "worker_oracle": [
+      360,
+      136.42440795898438,
+      304
+     ],
+     "frozen_root": [
+      360,
+      136.0545654296875,
+      304
+     ],
+     "prior_linear_oracle": [
+      360,
+      133.03512573242188,
+      301
+     ]
+    },
+    "planters": {
+     "worker_routed": [
+      114,
+      61.076934814453125,
+      92
+     ],
+     "worker_oracle": [
+      114,
+      60.2805290222168,
+      92
+     ],
+     "frozen_root": [
+      114,
+      58.6567268371582,
+      92
+     ],
+     "prior_linear_oracle": [
+      114,
+      57.397457122802734,
+      95
+     ]
+    },
+    "heavy_near_home": {
+     "worker_routed": [
+      41,
+      18.05953598022461,
+      35,
+      22,
+      23,
+      20
+     ],
+     "worker_oracle": [
+      41,
+      17.844053268432617,
+      37,
+      22,
+      22,
+      20
+     ],
+     "frozen_root": [
+      41,
+      19.54848289489746,
+      36,
+      22,
+      22,
+      20
+     ],
+     "prior_linear_oracle": [
+      41,
+      15.743523597717285,
+      35,
+      22,
+      21,
+      19
+     ]
+    },
+    "light_pressure": {
+     "worker_routed": [
+      92,
+      41.37150573730469,
+      74,
+      68,
+      70,
+      66
+     ],
+     "worker_oracle": [
+      92,
+      40.787052154541016,
+      74,
+      68,
+      69,
+      65
+     ],
+     "frozen_root": [
+      92,
+      39.34435272216797,
+      75,
+      68,
+      66,
+      63
+     ],
+     "prior_linear_oracle": [
+      92,
+      39.77742004394531,
+      73,
+      68,
+      68,
+      64
+     ]
+    },
+    "rich_ore": {
+     "worker_routed": [
+      122,
+      38.106903076171875,
+      108,
+      58,
+      58,
+      55
+     ],
+     "worker_oracle": [
+      122,
+      37.307857513427734,
+      108,
+      58,
+      60,
+      56
+     ],
+     "frozen_root": [
+      122,
+      38.186519622802734,
+      110,
+      58,
+      62,
+      58
+     ],
+     "prior_linear_oracle": [
+      122,
+      37.37141799926758,
+      109,
+      58,
+      60,
+      56
+     ]
+    }
+   },
+   "gate": {
+    "mean_E": 0.4988877475261688,
+    "D_E_correct": 26,
+    "n": 60
+   },
+   "turns": [
+    [
+     2,
+     0,
+     0
+    ],
+    [
+     4,
+     0,
+     0
+    ],
+    [
+     6,
+     0,
+     0
+    ],
+    [
+     8,
+     0,
+     0
+    ],
+    [
+     10,
+     0,
+     0
+    ],
+    [
+     12,
+     0,
+     0
+    ],
+    [
+     14,
+     0,
+     0
+    ],
+    [
+     16,
+     0,
+     0
+    ],
+    [
+     18,
+     1,
+     0
+    ],
+    [
+     20,
+     0,
+     0
+    ],
+    [
+     22,
+     0,
+     0
+    ],
+    [
+     24,
+     0,
+     0
+    ],
+    [
+     26,
+     0,
+     0
+    ],
+    [
+     28,
+     0,
+     0
+    ],
+    [
+     30,
+     0,
+     0
+    ],
+    [
+     32,
+     0,
+     0
+    ],
+    [
+     34,
+     0,
+     0
+    ],
+    [
+     36,
+     0,
+     0
+    ],
+    [
+     38,
+     1,
+     1
+    ],
+    [
+     40,
+     0,
+     0
+    ],
+    [
+     42,
+     1,
+     0
+    ],
+    [
+     44,
+     0,
+     0
+    ],
+    [
+     46,
+     0,
+     0
+    ],
+    [
+     48,
+     0,
+     0
+    ],
+    [
+     50,
+     1,
+     -1
+    ],
+    [
+     52,
+     0,
+     0
+    ],
+    [
+     54,
+     0,
+     0
+    ],
+    [
+     56,
+     0,
+     0
+    ],
+    [
+     58,
+     1,
+     -1
+    ],
+    [
+     60,
+     0,
+     0
+    ],
+    [
+     62,
+     0,
+     0
+    ],
+    [
+     64,
+     2,
+     0
+    ],
+    [
+     70,
+     0,
+     0
+    ],
+    [
+     78,
+     1,
+     1
+    ],
+    [
+     86,
+     1,
+     1
+    ],
+    [
+     94,
+     1,
+     -1
+    ],
+    [
+     102,
+     1,
+     -1
+    ],
+    [
+     110,
+     0,
+     0
+    ],
+    [
+     118,
+     0,
+     0
+    ],
+    [
+     126,
+     1,
+     1
+    ],
+    [
+     134,
+     2,
+     2
+    ],
+    [
+     142,
+     0,
+     0
+    ],
+    [
+     150,
+     0,
+     0
+    ],
+    [
+     158,
+     1,
+     -1
+    ],
+    [
+     166,
+     1,
+     1
+    ],
+    [
+     174,
+     0,
+     0
+    ],
+    [
+     182,
+     0,
+     0
+    ],
+    [
+     190,
+     1,
+     -1
+    ],
+    [
+     198,
+     0,
+     0
+    ],
+    [
+     206,
+     0,
+     0
+    ],
+    [
+     214,
+     0,
+     0
+    ],
+    [
+     222,
+     1,
+     1
+    ],
+    [
+     230,
+     1,
+     1
+    ],
+    [
+     238,
+     0,
+     0
+    ],
+    [
+     246,
+     1,
+     1
+    ],
+    [
+     254,
+     2,
+     -2
+    ],
+    [
+     262,
+     0,
+     0
+    ],
+    [
+     270,
+     0,
+     0
+    ],
+    [
+     278,
+     1,
+     0
+    ],
+    [
+     286,
+     1,
+     -1
+    ]
+   ]
+  },
+  {
+   "match": "94abf21111438cf1b579ba633cc0f96d",
+   "seat": 0,
+   "seed": 947571874,
+   "teacher": "Master7sB2",
+   "layout": "b354ccc12cc06f73798a61ed9d0f55712c5da0478924fddd81f0d8cef1fe1573",
+   "raw": {
+    "all": {
+     "worker_routed": [
+      518,
+      211.08795166015625,
+      439
+     ],
+     "worker_oracle": [
+      518,
+      208.31005859375,
+      440
+     ],
+     "frozen_root": [
+      518,
+      201.4783172607422,
+      439
+     ],
+     "prior_linear_oracle": [
+      518,
+      204.37432861328125,
+      435
+     ]
+    },
+    "collectors": {
+     "worker_routed": [
+      414,
+      158.11297607421875,
+      353
+     ],
+     "worker_oracle": [
+      414,
+      155.7132568359375,
+      354
+     ],
+     "frozen_root": [
+      414,
+      150.03753662109375,
+      355
+     ],
+     "prior_linear_oracle": [
+      414,
+      150.60430908203125,
+      349
+     ]
+    },
+    "planters": {
+     "worker_routed": [
+      104,
+      52.97496795654297,
+      86
+     ],
+     "worker_oracle": [
+      104,
+      52.59678649902344,
+      86
+     ],
+     "frozen_root": [
+      104,
+      51.44078063964844,
+      84
+     ],
+     "prior_linear_oracle": [
+      104,
+      53.77001953125,
+      86
+     ]
+    },
+    "heavy_near_home": {
+     "worker_routed": [
+      55,
+      10.544891357421875,
+      52,
+      28,
+      31,
+      28
+     ],
+     "worker_oracle": [
+      55,
+      10.219053268432617,
+      51,
+      28,
+      31,
+      28
+     ],
+     "frozen_root": [
+      55,
+      10.924417495727539,
+      50,
+      28,
+      30,
+      27
+     ],
+     "prior_linear_oracle": [
+      55,
+      8.870081901550293,
+      52,
+      28,
+      30,
+      28
+     ]
+    },
+    "light_pressure": {
+     "worker_routed": [
+      76,
+      34.53907775878906,
+      64,
+      54,
+      54,
+      51
+     ],
+     "worker_oracle": [
+      76,
+      34.506839752197266,
+      64,
+      54,
+      54,
+      51
+     ],
+     "frozen_root": [
+      76,
+      34.07542419433594,
+      63,
+      54,
+      53,
+      50
+     ],
+     "prior_linear_oracle": [
+      76,
+      34.45361328125,
+      61,
+      54,
+      56,
+      51
+     ]
+    },
+    "rich_ore": {
+     "worker_routed": [
+      133,
+      34.95293426513672,
+      123,
+      72,
+      68,
+      68
+     ],
+     "worker_oracle": [
+      133,
+      33.869773864746094,
+      123,
+      72,
+      70,
+      69
+     ],
+     "frozen_root": [
+      133,
+      32.46604919433594,
+      121,
+      72,
+      75,
+      70
+     ],
+     "prior_linear_oracle": [
+      133,
+      31.37890625,
+      119,
+      72,
+      69,
+      67
+     ]
+    }
+   },
+   "gate": {
+    "mean_E": 0.5438581705093384,
+    "D_E_correct": 18,
+    "n": 60
+   },
+   "turns": [
+    [
+     2,
+     0,
+     0
+    ],
+    [
+     4,
+     0,
+     0
+    ],
+    [
+     6,
+     0,
+     0
+    ],
+    [
+     8,
+     0,
+     0
+    ],
+    [
+     10,
+     0,
+     0
+    ],
+    [
+     12,
+     0,
+     0
+    ],
+    [
+     14,
+     0,
+     0
+    ],
+    [
+     16,
+     0,
+     0
+    ],
+    [
+     18,
+     0,
+     0
+    ],
+    [
+     20,
+     0,
+     0
+    ],
+    [
+     22,
+     0,
+     0
+    ],
+    [
+     24,
+     0,
+     0
+    ],
+    [
+     26,
+     0,
+     0
+    ],
+    [
+     28,
+     1,
+     0
+    ],
+    [
+     30,
+     0,
+     0
+    ],
+    [
+     32,
+     0,
+     0
+    ],
+    [
+     34,
+     2,
+     2
+    ],
+    [
+     36,
+     0,
+     0
+    ],
+    [
+     38,
+     0,
+     0
+    ],
+    [
+     40,
+     0,
+     0
+    ],
+    [
+     42,
+     0,
+     0
+    ],
+    [
+     44,
+     0,
+     0
+    ],
+    [
+     46,
+     0,
+     0
+    ],
+    [
+     48,
+     1,
+     1
+    ],
+    [
+     50,
+     0,
+     0
+    ],
+    [
+     52,
+     0,
+     0
+    ],
+    [
+     54,
+     0,
+     0
+    ],
+    [
+     56,
+     0,
+     0
+    ],
+    [
+     58,
+     0,
+     0
+    ],
+    [
+     60,
+     0,
+     0
+    ],
+    [
+     62,
+     1,
+     1
+    ],
+    [
+     64,
+     0,
+     0
+    ],
+    [
+     70,
+     1,
+     -1
+    ],
+    [
+     78,
+     1,
+     1
+    ],
+    [
+     86,
+     0,
+     0
+    ],
+    [
+     94,
+     0,
+     0
+    ],
+    [
+     102,
+     2,
+     0
+    ],
+    [
+     110,
+     0,
+     0
+    ],
+    [
+     118,
+     1,
+     0
+    ],
+    [
+     126,
+     1,
+     -1
+    ],
+    [
+     134,
+     0,
+     0
+    ],
+    [
+     142,
+     0,
+     0
+    ],
+    [
+     150,
+     0,
+     0
+    ],
+    [
+     158,
+     0,
+     0
+    ],
+    [
+     166,
+     2,
+     2
+    ],
+    [
+     174,
+     1,
+     -1
+    ],
+    [
+     182,
+     0,
+     0
+    ],
+    [
+     190,
+     0,
+     0
+    ],
+    [
+     198,
+     1,
+     -1
+    ],
+    [
+     206,
+     3,
+     -3
+    ],
+    [
+     214,
+     0,
+     0
+    ],
+    [
+     222,
+     0,
+     0
+    ],
+    [
+     230,
+     2,
+     2
+    ],
+    [
+     238,
+     0,
+     0
+    ],
+    [
+     246,
+     0,
+     0
+    ],
+    [
+     254,
+     1,
+     -1
+    ],
+    [
+     262,
+     0,
+     0
+    ],
+    [
+     270,
+     1,
+     -1
+    ],
+    [
+     278,
+     1,
+     1
+    ],
+    [
+     286,
+     1,
+     -1
+    ]
+   ]
+  },
+  {
+   "match": "dc765ca36a2c8e61e6fa851e652ef944",
+   "seat": 1,
+   "seed": 2041015425,
+   "teacher": "Master7sB2",
+   "layout": "02c70b1800e1f105e456e6b234fdf9b60e58ba417ab8428524e82aaac9594c8e",
+   "raw": {
+    "all": {
+     "worker_routed": [
+      486,
+      196.1181640625,
+      409
+     ],
+     "worker_oracle": [
+      486,
+      193.87826538085938,
+      411
+     ],
+     "frozen_root": [
+      486,
+      191.51754760742188,
+      406
+     ],
+     "prior_linear_oracle": [
+      486,
+      191.077392578125,
+      410
+     ]
+    },
+    "collectors": {
+     "worker_routed": [
+      361,
+      139.47781372070312,
+      307
+     ],
+     "worker_oracle": [
+      361,
+      138.02069091796875,
+      309
+     ],
+     "frozen_root": [
+      361,
+      137.09677124023438,
+      304
+     ],
+     "prior_linear_oracle": [
+      361,
+      135.86758422851562,
+      305
+     ]
+    },
+    "planters": {
+     "worker_routed": [
+      125,
+      56.64035415649414,
+      102
+     ],
+     "worker_oracle": [
+      125,
+      55.85757827758789,
+      102
+     ],
+     "frozen_root": [
+      125,
+      54.4207763671875,
+      102
+     ],
+     "prior_linear_oracle": [
+      125,
+      55.2098274230957,
+      105
+     ]
+    },
+    "heavy_near_home": {
+     "worker_routed": [
+      40,
+      14.853074073791504,
+      35,
+      25,
+      24,
+      23
+     ],
+     "worker_oracle": [
+      40,
+      14.867012023925781,
+      35,
+      25,
+      24,
+      23
+     ],
+     "frozen_root": [
+      40,
+      16.18374252319336,
+      34,
+      25,
+      22,
+      22
+     ],
+     "prior_linear_oracle": [
+      40,
+      14.991006851196289,
+      33,
+      25,
+      25,
+      23
+     ]
+    },
+    "light_pressure": {
+     "worker_routed": [
+      83,
+      28.463403701782227,
+      72,
+      57,
+      59,
+      56
+     ],
+     "worker_oracle": [
+      83,
+      28.069263458251953,
+      74,
+      57,
+      60,
+      57
+     ],
+     "frozen_root": [
+      83,
+      26.73519515991211,
+      74,
+      57,
+      59,
+      56
+     ],
+     "prior_linear_oracle": [
+      83,
+      26.914133071899414,
+      72,
+      57,
+      60,
+      56
+     ]
+    },
+    "rich_ore": {
+     "worker_routed": [
+      118,
+      38.89044189453125,
+      101,
+      61,
+      61,
+      56
+     ],
+     "worker_oracle": [
+      118,
+      38.420963287353516,
+      103,
+      61,
+      61,
+      57
+     ],
+     "frozen_root": [
+      118,
+      38.971622467041016,
+      104,
+      61,
+      65,
+      59
+     ],
+     "prior_linear_oracle": [
+      118,
+      38.06992721557617,
+      104,
+      61,
+      65,
+      59
+     ]
+    }
+   },
+   "gate": {
+    "mean_E": 0.5244371891021729,
+    "D_E_correct": 19,
+    "n": 60
+   },
+   "turns": [
+    [
+     2,
+     0,
+     0
+    ],
+    [
+     4,
+     0,
+     0
+    ],
+    [
+     6,
+     0,
+     0
+    ],
+    [
+     8,
+     0,
+     0
+    ],
+    [
+     10,
+     0,
+     0
+    ],
+    [
+     12,
+     0,
+     0
+    ],
+    [
+     14,
+     0,
+     0
+    ],
+    [
+     16,
+     1,
+     1
+    ],
+    [
+     18,
+     0,
+     0
+    ],
+    [
+     20,
+     0,
+     0
+    ],
+    [
+     22,
+     0,
+     0
+    ],
+    [
+     24,
+     1,
+     1
+    ],
+    [
+     26,
+     0,
+     0
+    ],
+    [
+     28,
+     1,
+     -1
+    ],
+    [
+     30,
+     0,
+     0
+    ],
+    [
+     32,
+     2,
+     1
+    ],
+    [
+     34,
+     0,
+     0
+    ],
+    [
+     36,
+     0,
+     0
+    ],
+    [
+     38,
+     0,
+     0
+    ],
+    [
+     40,
+     0,
+     0
+    ],
+    [
+     42,
+     0,
+     0
+    ],
+    [
+     44,
+     1,
+     1
+    ],
+    [
+     46,
+     1,
+     -1
+    ],
+    [
+     48,
+     0,
+     0
+    ],
+    [
+     50,
+     0,
+     0
+    ],
+    [
+     52,
+     0,
+     0
+    ],
+    [
+     54,
+     1,
+     -1
+    ],
+    [
+     56,
+     1,
+     1
+    ],
+    [
+     58,
+     0,
+     0
+    ],
+    [
+     60,
+     0,
+     0
+    ],
+    [
+     62,
+     1,
+     1
+    ],
+    [
+     64,
+     0,
+     0
+    ],
+    [
+     70,
+     1,
+     -1
+    ],
+    [
+     78,
+     1,
+     1
+    ],
+    [
+     86,
+     0,
+     0
+    ],
+    [
+     94,
+     0,
+     0
+    ],
+    [
+     102,
+     0,
+     0
+    ],
+    [
+     110,
+     1,
+     0
+    ],
+    [
+     118,
+     1,
+     -1
+    ],
+    [
+     126,
+     0,
+     0
+    ],
+    [
+     134,
+     1,
+     1
+    ],
+    [
+     142,
+     0,
+     0
+    ],
+    [
+     150,
+     2,
+     0
+    ],
+    [
+     158,
+     1,
+     -1
+    ],
+    [
+     166,
+     1,
+     -1
+    ],
+    [
+     174,
+     0,
+     0
+    ],
+    [
+     182,
+     0,
+     0
+    ],
+    [
+     190,
+     0,
+     0
+    ],
+    [
+     198,
+     0,
+     0
+    ],
+    [
+     206,
+     1,
+     -1
+    ],
+    [
+     214,
+     1,
+     1
+    ],
+    [
+     222,
+     1,
+     0
+    ],
+    [
+     230,
+     0,
+     0
+    ],
+    [
+     238,
+     1,
+     1
+    ],
+    [
+     246,
+     0,
+     0
+    ],
+    [
+     254,
+     0,
+     0
+    ],
+    [
+     262,
+     0,
+     0
+    ],
+    [
+     270,
+     1,
+     1
+    ],
+    [
+     278,
+     1,
+     1
+    ],
+    [
+     286,
+     1,
+     -1
+    ]
+   ]
+  },
+  {
+   "match": "1d470eb9d9f4a504c73059f429ae210a",
+   "seat": 0,
+   "seed": 1401619249,
+   "teacher": "Master7sB2",
+   "layout": "8ada14e0111d4979db882601edb3fe1b1b6770aa9dead4c396648010113e3314",
+   "raw": {
+    "all": {
+     "worker_routed": [
+      456,
+      220.41928100585938,
+      368
+     ],
+     "worker_oracle": [
+      456,
+      219.1780548095703,
+      370
+     ],
+     "frozen_root": [
+      456,
+      218.11758422851562,
+      371
+     ],
+     "prior_linear_oracle": [
+      456,
+      213.5606689453125,
+      374
+     ]
+    },
+    "collectors": {
+     "worker_routed": [
+      357,
+      157.41302490234375,
+      297
+     ],
+     "worker_oracle": [
+      357,
+      156.59303283691406,
+      299
+     ],
+     "frozen_root": [
+      357,
+      155.87908935546875,
+      298
+     ],
+     "prior_linear_oracle": [
+      357,
+      152.29232788085938,
+      300
+     ]
+    },
+    "planters": {
+     "worker_routed": [
+      99,
+      63.00625228881836,
+      71
+     ],
+     "worker_oracle": [
+      99,
+      62.58502197265625,
+      71
+     ],
+     "frozen_root": [
+      99,
+      62.238502502441406,
+      73
+     ],
+     "prior_linear_oracle": [
+      99,
+      61.268333435058594,
+      74
+     ]
+    },
+    "heavy_near_home": {
+     "worker_routed": [
+      52,
+      18.02661895751953,
+      45,
+      34,
+      36,
+      32
+     ],
+     "worker_oracle": [
+      52,
+      17.937837600708008,
+      45,
+      34,
+      36,
+      32
+     ],
+     "frozen_root": [
+      52,
+      17.427860260009766,
+      45,
+      34,
+      33,
+      31
+     ],
+     "prior_linear_oracle": [
+      52,
+      17.432029724121094,
+      44,
+      34,
+      38,
+      33
+     ]
+    },
+    "light_pressure": {
+     "worker_routed": [
+      79,
+      47.40398025512695,
+      60,
+      52,
+      52,
+      47
+     ],
+     "worker_oracle": [
+      79,
+      48.08803176879883,
+      61,
+      52,
+      53,
+      48
+     ],
+     "frozen_root": [
+      79,
+      50.88914108276367,
+      60,
+      52,
+      52,
+      47
+     ],
+     "prior_linear_oracle": [
+      79,
+      47.089046478271484,
+      62,
+      52,
+      54,
+      49
+     ]
+    },
+    "rich_ore": {
+     "worker_routed": [
+      93,
+      38.6113166809082,
+      80,
+      44,
+      45,
+      42
+     ],
+     "worker_oracle": [
+      93,
+      38.29505157470703,
+      80,
+      44,
+      45,
+      42
+     ],
+     "frozen_root": [
+      93,
+      40.170780181884766,
+      79,
+      44,
+      50,
+      44
+     ],
+     "prior_linear_oracle": [
+      93,
+      37.62649154663086,
+      80,
+      44,
+      45,
+      42
+     ]
+    }
+   },
+   "gate": {
+    "mean_E": 0.5330387949943542,
+    "D_E_correct": 17,
+    "n": 60
+   },
+   "turns": [
+    [
+     2,
+     0,
+     0
+    ],
+    [
+     4,
+     0,
+     0
+    ],
+    [
+     6,
+     0,
+     0
+    ],
+    [
+     8,
+     0,
+     0
+    ],
+    [
+     10,
+     0,
+     0
+    ],
+    [
+     12,
+     0,
+     0
+    ],
+    [
+     14,
+     0,
+     0
+    ],
+    [
+     16,
+     0,
+     0
+    ],
+    [
+     18,
+     0,
+     0
+    ],
+    [
+     20,
+     0,
+     0
+    ],
+    [
+     22,
+     0,
+     0
+    ],
+    [
+     24,
+     0,
+     0
+    ],
+    [
+     26,
+     0,
+     0
+    ],
+    [
+     28,
+     0,
+     0
+    ],
+    [
+     30,
+     0,
+     0
+    ],
+    [
+     32,
+     0,
+     0
+    ],
+    [
+     34,
+     1,
+     -1
+    ],
+    [
+     36,
+     0,
+     0
+    ],
+    [
+     38,
+     0,
+     0
+    ],
+    [
+     40,
+     0,
+     0
+    ],
+    [
+     42,
+     0,
+     0
+    ],
+    [
+     44,
+     1,
+     -1
+    ],
+    [
+     46,
+     2,
+     2
+    ],
+    [
+     48,
+     1,
+     -1
+    ],
+    [
+     50,
+     0,
+     0
+    ],
+    [
+     52,
+     0,
+     0
+    ],
+    [
+     54,
+     1,
+     -1
+    ],
+    [
+     56,
+     0,
+     0
+    ],
+    [
+     58,
+     0,
+     0
+    ],
+    [
+     60,
+     0,
+     0
+    ],
+    [
+     62,
+     1,
+     -1
+    ],
+    [
+     64,
+     0,
+     0
+    ],
+    [
+     70,
+     0,
+     0
+    ],
+    [
+     78,
+     0,
+     0
+    ],
+    [
+     86,
+     2,
+     0
+    ],
+    [
+     94,
+     1,
+     -1
+    ],
+    [
+     102,
+     0,
+     0
+    ],
+    [
+     110,
+     0,
+     0
+    ],
+    [
+     118,
+     0,
+     0
+    ],
+    [
+     126,
+     1,
+     1
+    ],
+    [
+     134,
+     1,
+     -1
+    ],
+    [
+     142,
+     0,
+     0
+    ],
+    [
+     150,
+     0,
+     0
+    ],
+    [
+     158,
+     1,
+     -1
+    ],
+    [
+     166,
+     0,
+     0
+    ],
+    [
+     174,
+     0,
+     0
+    ],
+    [
+     182,
+     0,
+     0
+    ],
+    [
+     190,
+     0,
+     0
+    ],
+    [
+     198,
+     0,
+     0
+    ],
+    [
+     206,
+     1,
+     1
+    ],
+    [
+     214,
+     1,
+     1
+    ],
+    [
+     222,
+     1,
+     1
+    ],
+    [
+     230,
+     0,
+     0
+    ],
+    [
+     238,
+     0,
+     0
+    ],
+    [
+     246,
+     0,
+     0
+    ],
+    [
+     254,
+     0,
+     0
+    ],
+    [
+     262,
+     0,
+     0
+    ],
+    [
+     270,
+     0,
+     0
+    ],
+    [
+     278,
+     1,
+     -1
+    ],
+    [
+     286,
+     0,
+     0
+    ]
+   ]
+  },
+  {
+   "match": "7335246a15fdca46a14d6b42613bc50f",
+   "seat": 0,
+   "seed": 1958331026,
+   "teacher": "Master7sD",
+   "layout": "5b1e7dc4eea38dcb80b5d335b3efc64306007bbb9091b0334341f59bc74f3e14",
+   "raw": {
+    "all": {
+     "worker_routed": [
+      272,
+      230.82693481445312,
+      175
+     ],
+     "worker_oracle": [
+      272,
+      230.15399169921875,
+      176
+     ],
+     "frozen_root": [
+      272,
+      255.9707489013672,
+      169
+     ],
+     "prior_linear_oracle": [
+      272,
+      225.73507690429688,
+      175
+     ]
+    },
+    "collectors": {
+     "worker_routed": [
+      222,
+      183.3811798095703,
+      145
+     ],
+     "worker_oracle": [
+      222,
+      182.67095947265625,
+      145
+     ],
+     "frozen_root": [
+      222,
+      204.951904296875,
+      141
+     ],
+     "prior_linear_oracle": [
+      222,
+      181.06201171875,
+      146
+     ]
+    },
+    "planters": {
+     "worker_routed": [
+      50,
+      47.44574737548828,
+      30
+     ],
+     "worker_oracle": [
+      50,
+      47.4830207824707,
+      31
+     ],
+     "frozen_root": [
+      50,
+      51.018836975097656,
+      28
+     ],
+     "prior_linear_oracle": [
+      50,
+      44.67307662963867,
+      29
+     ]
+    },
+    "heavy_near_home": {
+     "worker_routed": [
+      8,
+      9.79227352142334,
+      5,
+      5,
+      4,
+      4
+     ],
+     "worker_oracle": [
+      8,
+      9.52938461303711,
+      5,
+      5,
+      4,
+      4
+     ],
+     "frozen_root": [
+      8,
+      14.04530143737793,
+      4,
+      5,
+      4,
+      3
+     ],
+     "prior_linear_oracle": [
+      8,
+      9.537452697753906,
+      6,
+      5,
+      6,
+      5
+     ]
+    },
+    "light_pressure": {
+     "worker_routed": [
+      119,
+      96.09156799316406,
+      75,
+      85,
+      81,
+      74
+     ],
+     "worker_oracle": [
+      119,
+      95.87944030761719,
+      75,
+      85,
+      81,
+      74
+     ],
+     "frozen_root": [
+      119,
+      105.5267105102539,
+      74,
+      85,
+      82,
+      74
+     ],
+     "prior_linear_oracle": [
+      119,
+      94.26579284667969,
+      75,
+      85,
+      85,
+      76
+     ]
+    },
+    "rich_ore": {
+     "worker_routed": [
+      53,
+      37.63126754760742,
+      37,
+      11,
+      16,
+      10
+     ],
+     "worker_oracle": [
+      53,
+      37.34147644042969,
+      37,
+      11,
+      16,
+      10
+     ],
+     "frozen_root": [
+      53,
+      44.35945129394531,
+      35,
+      11,
+      22,
+      11
+     ],
+     "prior_linear_oracle": [
+      53,
+      35.32499313354492,
+      39,
+      11,
+      14,
+      10
+     ]
+    }
+   },
+   "gate": {
+    "mean_E": 0.4745255410671234,
+    "D_E_correct": 20,
+    "n": 39
+   },
+   "turns": [
+    [
+     2,
+     0,
+     0
+    ],
+    [
+     4,
+     0,
+     0
+    ],
+    [
+     6,
+     0,
+     0
+    ],
+    [
+     8,
+     0,
+     0
+    ],
+    [
+     10,
+     1,
+     1
+    ],
+    [
+     12,
+     0,
+     0
+    ],
+    [
+     14,
+     0,
+     0
+    ],
+    [
+     16,
+     0,
+     0
+    ],
+    [
+     18,
+     1,
+     -1
+    ],
+    [
+     20,
+     0,
+     0
+    ],
+    [
+     22,
+     0,
+     0
+    ],
+    [
+     24,
+     1,
+     1
+    ],
+    [
+     26,
+     0,
+     0
+    ],
+    [
+     28,
+     0,
+     0
+    ],
+    [
+     30,
+     1,
+     0
+    ],
+    [
+     32,
+     0,
+     0
+    ],
+    [
+     34,
+     2,
+     2
+    ],
+    [
+     36,
+     0,
+     0
+    ],
+    [
+     38,
+     0,
+     0
+    ],
+    [
+     40,
+     0,
+     0
+    ],
+    [
+     42,
+     0,
+     0
+    ],
+    [
+     44,
+     1,
+     0
+    ],
+    [
+     46,
+     0,
+     0
+    ],
+    [
+     48,
+     0,
+     0
+    ],
+    [
+     50,
+     0,
+     0
+    ],
+    [
+     52,
+     2,
+     1
+    ],
+    [
+     54,
+     1,
+     0
+    ],
+    [
+     56,
+     0,
+     0
+    ],
+    [
+     58,
+     0,
+     0
+    ],
+    [
+     60,
+     2,
+     1
+    ],
+    [
+     62,
+     0,
+     0
+    ],
+    [
+     64,
+     0,
+     0
+    ],
+    [
+     70,
+     1,
+     -1
+    ],
+    [
+     78,
+     0,
+     0
+    ],
+    [
+     86,
+     2,
+     2
+    ],
+    [
+     94,
+     0,
+     0
+    ],
+    [
+     102,
+     0,
+     0
+    ],
+    [
+     110,
+     1,
+     0
+    ],
+    [
+     118,
+     3,
+     0
+    ]
+   ]
+  },
+  {
+   "match": "91e7b29acd9f232ac5d0fb90ae8e894b",
+   "seat": 1,
+   "seed": 1225896274,
+   "teacher": "Master7sD",
+   "layout": "fed607e4a97e5cae03c9d4e0777a663d17ad11799ff3e95ecf38a782bc6bbcbc",
+   "raw": {
+    "all": {
+     "worker_routed": [
+      518,
+      266.0975341796875,
+      402
+     ],
+     "worker_oracle": [
+      518,
+      266.61517333984375,
+      403
+     ],
+     "frozen_root": [
+      518,
+      274.9375,
+      392
+     ],
+     "prior_linear_oracle": [
+      518,
+      264.8905029296875,
+      409
+     ]
+    },
+    "collectors": {
+     "worker_routed": [
+      378,
+      175.41769409179688,
+      299
+     ],
+     "worker_oracle": [
+      378,
+      175.9317169189453,
+      300
+     ],
+     "frozen_root": [
+      378,
+      184.061767578125,
+      291
+     ],
+     "prior_linear_oracle": [
+      378,
+      176.21568298339844,
+      301
+     ]
+    },
+    "planters": {
+     "worker_routed": [
+      140,
+      90.67985534667969,
+      103
+     ],
+     "worker_oracle": [
+      140,
+      90.68346405029297,
+      103
+     ],
+     "frozen_root": [
+      140,
+      90.875732421875,
+      101
+     ],
+     "prior_linear_oracle": [
+      140,
+      88.67481994628906,
+      108
+     ]
+    },
+    "heavy_near_home": {
+     "worker_routed": [
+      36,
+      14.371448516845703,
+      29,
+      26,
+      26,
+      24
+     ],
+     "worker_oracle": [
+      36,
+      14.410416603088379,
+      30,
+      26,
+      27,
+      25
+     ],
+     "frozen_root": [
+      36,
+      17.064420700073242,
+      27,
+      26,
+      25,
+      22
+     ],
+     "prior_linear_oracle": [
+      36,
+      13.576519966125488,
+      28,
+      26,
+      27,
+      24
+     ]
+    },
+    "light_pressure": {
+     "worker_routed": [
+      91,
+      51.350555419921875,
+      68,
+      68,
+      70,
+      62
+     ],
+     "worker_oracle": [
+      91,
+      51.19858932495117,
+      67,
+      68,
+      69,
+      61
+     ],
+     "frozen_root": [
+      91,
+      55.126522064208984,
+      65,
+      68,
+      68,
+      60
+     ],
+     "prior_linear_oracle": [
+      91,
+      51.18763732910156,
+      70,
+      68,
+      71,
+      64
+     ]
+    },
+    "rich_ore": {
+     "worker_routed": [
+      94,
+      36.719642639160156,
+      81,
+      43,
+      44,
+      41
+     ],
+     "worker_oracle": [
+      94,
+      37.17124557495117,
+      80,
+      43,
+      44,
+      41
+     ],
+     "frozen_root": [
+      94,
+      39.964508056640625,
+      76,
+      43,
+      48,
+      41
+     ],
+     "prior_linear_oracle": [
+      94,
+      38.88180160522461,
+      82,
+      43,
+      44,
+      41
+     ]
+    }
+   },
+   "gate": {
+    "mean_E": 0.5506413578987122,
+    "D_E_correct": 14,
+    "n": 60
+   },
+   "turns": [
+    [
+     2,
+     0,
+     0
+    ],
+    [
+     4,
+     0,
+     0
+    ],
+    [
+     6,
+     0,
+     0
+    ],
+    [
+     8,
+     0,
+     0
+    ],
+    [
+     10,
+     0,
+     0
+    ],
+    [
+     12,
+     0,
+     0
+    ],
+    [
+     14,
+     0,
+     0
+    ],
+    [
+     16,
+     0,
+     0
+    ],
+    [
+     18,
+     0,
+     0
+    ],
+    [
+     20,
+     0,
+     0
+    ],
+    [
+     22,
+     0,
+     0
+    ],
+    [
+     24,
+     1,
+     -1
+    ],
+    [
+     26,
+     1,
+     1
+    ],
+    [
+     28,
+     2,
+     1
+    ],
+    [
+     30,
+     0,
+     0
+    ],
+    [
+     32,
+     0,
+     0
+    ],
+    [
+     34,
+     0,
+     0
+    ],
+    [
+     36,
+     1,
+     1
+    ],
+    [
+     38,
+     0,
+     0
+    ],
+    [
+     40,
+     0,
+     0
+    ],
+    [
+     42,
+     0,
+     0
+    ],
+    [
+     44,
+     0,
+     0
+    ],
+    [
+     46,
+     0,
+     0
+    ],
+    [
+     48,
+     0,
+     0
+    ],
+    [
+     50,
+     0,
+     0
+    ],
+    [
+     52,
+     0,
+     0
+    ],
+    [
+     54,
+     3,
+     2
+    ],
+    [
+     56,
+     0,
+     0
+    ],
+    [
+     58,
+     0,
+     0
+    ],
+    [
+     60,
+     0,
+     0
+    ],
+    [
+     62,
+     1,
+     1
+    ],
+    [
+     64,
+     1,
+     -1
+    ],
+    [
+     70,
+     1,
+     -1
+    ],
+    [
+     78,
+     0,
+     0
+    ],
+    [
+     86,
+     2,
+     0
+    ],
+    [
+     94,
+     0,
+     0
+    ],
+    [
+     102,
+     1,
+     1
+    ],
+    [
+     110,
+     1,
+     0
+    ],
+    [
+     118,
+     1,
+     1
+    ],
+    [
+     126,
+     1,
+     -1
+    ],
+    [
+     134,
+     2,
+     0
+    ],
+    [
+     142,
+     0,
+     0
+    ],
+    [
+     150,
+     0,
+     0
+    ],
+    [
+     158,
+     0,
+     0
+    ],
+    [
+     166,
+     1,
+     0
+    ],
+    [
+     174,
+     2,
+     2
+    ],
+    [
+     182,
+     0,
+     0
+    ],
+    [
+     190,
+     0,
+     0
+    ],
+    [
+     198,
+     1,
+     1
+    ],
+    [
+     206,
+     2,
+     0
+    ],
+    [
+     214,
+     0,
+     0
+    ],
+    [
+     222,
+     2,
+     2
+    ],
+    [
+     230,
+     0,
+     0
+    ],
+    [
+     238,
+     1,
+     0
+    ],
+    [
+     246,
+     0,
+     0
+    ],
+    [
+     254,
+     1,
+     1
+    ],
+    [
+     262,
+     0,
+     0
+    ],
+    [
+     270,
+     0,
+     0
+    ],
+    [
+     278,
+     0,
+     0
+    ],
+    [
+     286,
+     0,
+     0
+    ]
+   ]
+  }
+ ],
+ "target": {
+  "match": "4063a34afedb6d4767a9118e1dee9e5d",
+  "teacher": "Master7sE",
+  "seat": 0,
+  "gate": {
+   "mean_E": 0.41221779584884644,
+   "D_E_correct": 17,
+   "n": 62
+  },
+  "metrics": {
+   "all": {
+    "worker_routed": {
+     "units": 482,
+     "nll": 0.8581,
+     "hit": 0.66598
+    },
+    "worker_oracle": {
+     "units": 482,
+     "nll": 0.86023,
+     "hit": 0.6639
+    },
+    "frozen_root": {
+     "units": 482,
+     "nll": 0.93524,
+     "hit": 0.65145
+    }
+   },
+   "collectors": {
+    "worker_routed": {
+     "units": 390,
+     "nll": 0.84916,
+     "hit": 0.67692
+    },
+    "worker_oracle": {
+     "units": 390,
+     "nll": 0.85086,
+     "hit": 0.67179
+    },
+    "frozen_root": {
+     "units": 390,
+     "nll": 0.92802,
+     "hit": 0.65641
+    }
+   },
+   "planters": {
+    "worker_routed": {
+     "units": 92,
+     "nll": 0.89596,
+     "hit": 0.61957
+    },
+    "worker_oracle": {
+     "units": 92,
+     "nll": 0.89998,
+     "hit": 0.63043
+    },
+    "frozen_root": {
+     "units": 92,
+     "nll": 0.96583,
+     "hit": 0.63043
+    }
+   },
+   "heavy_near_home": {
+    "worker_routed": {
+     "units": 21,
+     "nll": 0.44012,
+     "hit": 0.85714,
+     "action_frequency": 0.5714,
+     "predicted_frequency": 0.5714,
+     "precision": 1.0,
+     "recall": 1.0
+    },
+    "worker_oracle": {
+     "units": 21,
+     "nll": 0.44101,
+     "hit": 0.80952,
+     "action_frequency": 0.5714,
+     "predicted_frequency": 0.5238,
+     "precision": 1.0,
+     "recall": 0.9167
+    },
+    "frozen_root": {
+     "units": 21,
+     "nll": 0.45745,
+     "hit": 0.90476,
+     "action_frequency": 0.5714,
+     "predicted_frequency": 0.5238,
+     "precision": 1.0,
+     "recall": 0.9167
+    }
+   },
+   "light_pressure": {
+    "worker_routed": {
+     "units": 249,
+     "nll": 0.91864,
+     "hit": 0.6506,
+     "action_frequency": 0.7711,
+     "predicted_frequency": 0.8072,
+     "precision": 0.8905,
+     "recall": 0.9323
+    },
+    "worker_oracle": {
+     "units": 249,
+     "nll": 0.92031,
+     "hit": 0.64659,
+     "action_frequency": 0.7711,
+     "predicted_frequency": 0.8072,
+     "precision": 0.8905,
+     "recall": 0.9323
+    },
+    "frozen_root": {
+     "units": 249,
+     "nll": 1.00148,
+     "hit": 0.61044,
+     "action_frequency": 0.7711,
+     "predicted_frequency": 0.8072,
+     "precision": 0.8706,
+     "recall": 0.9115
+    }
+   },
+   "rich_ore": {
+    "worker_routed": {
+     "units": 78,
+     "nll": 0.66656,
+     "hit": 0.75641,
+     "action_frequency": 0.2821,
+     "predicted_frequency": 0.2949,
+     "precision": 0.7826,
+     "recall": 0.8182
+    },
+    "worker_oracle": {
+     "units": 78,
+     "nll": 0.66813,
+     "hit": 0.75641,
+     "action_frequency": 0.2821,
+     "predicted_frequency": 0.2949,
+     "precision": 0.7826,
+     "recall": 0.8182
+    },
+    "frozen_root": {
+     "units": 78,
+     "nll": 0.69667,
+     "hit": 0.76923,
+     "action_frequency": 0.2821,
+     "predicted_frequency": 0.359,
+     "precision": 0.75,
+     "recall": 0.9545
+    }
+   }
+  },
+  "turns": [
+   [
+    2,
+    0,
+    0
+   ],
+   [
+    4,
+    0,
+    0
+   ],
+   [
+    6,
+    0,
+    0
+   ],
+   [
+    8,
+    0,
+    0
+   ],
+   [
+    10,
+    0,
+    0
+   ],
+   [
+    12,
+    0,
+    0
+   ],
+   [
+    14,
+    0,
+    0
+   ],
+   [
+    16,
+    0,
+    0
+   ],
+   [
+    18,
+    0,
+    0
+   ],
+   [
+    20,
+    0,
+    0
+   ],
+   [
+    22,
+    1,
+    -1
+   ],
+   [
+    24,
+    1,
+    1
+   ],
+   [
+    26,
+    0,
+    0
+   ],
+   [
+    28,
+    0,
+    0
+   ],
+   [
+    30,
+    0,
+    0
+   ],
+   [
+    32,
+    1,
+    -1
+   ],
+   [
+    34,
+    0,
+    0
+   ],
+   [
+    36,
+    0,
+    0
+   ],
+   [
+    38,
+    1,
+    1
+   ],
+   [
+    40,
+    0,
+    0
+   ],
+   [
+    42,
+    0,
+    0
+   ],
+   [
+    44,
+    0,
+    0
+   ],
+   [
+    46,
+    0,
+    0
+   ],
+   [
+    48,
+    0,
+    0
+   ],
+   [
+    50,
+    0,
+    0
+   ],
+   [
+    52,
+    0,
+    0
+   ],
+   [
+    54,
+    0,
+    0
+   ],
+   [
+    56,
+    0,
+    0
+   ],
+   [
+    58,
+    1,
+    1
+   ],
+   [
+    60,
+    0,
+    0
+   ],
+   [
+    62,
+    1,
+    -1
+   ],
+   [
+    64,
+    0,
+    0
+   ],
+   [
+    70,
+    0,
+    0
+   ],
+   [
+    78,
+    0,
+    0
+   ],
+   [
+    86,
+    1,
+    0
+   ],
+   [
+    90,
+    1,
+    1
+   ],
+   [
+    94,
+    2,
+    2
+   ],
+   [
+    102,
+    1,
+    0
+   ],
+   [
+    110,
+    1,
+    0
+   ],
+   [
+    118,
+    1,
+    -1
+   ],
+   [
+    126,
+    1,
+    -1
+   ],
+   [
+    134,
+    0,
+    0
+   ],
+   [
+    142,
+    0,
+    0
+   ],
+   [
+    150,
+    0,
+    0
+   ],
+   [
+    158,
+    2,
+    -2
+   ],
+   [
+    164,
+    2,
+    2
+   ],
+   [
+    166,
+    1,
+    -1
+   ],
+   [
+    174,
+    2,
+    2
+   ],
+   [
+    182,
+    0,
+    0
+   ],
+   [
+    190,
+    2,
+    1
+   ],
+   [
+    198,
+    0,
+    0
+   ],
+   [
+    206,
+    2,
+    2
+   ],
+   [
+    214,
+    0,
+    0
+   ],
+   [
+    222,
+    1,
+    -1
+   ],
+   [
+    230,
+    1,
+    1
+   ],
+   [
+    238,
+    1,
+    1
+   ],
+   [
+    246,
+    1,
+    1
+   ],
+   [
+    254,
+    1,
+    -1
+   ],
+   [
+    262,
+    0,
+    0
+   ],
+   [
+    270,
+    1,
+    1
+   ],
+   [
+    278,
+    2,
+    0
+   ],
+   [
+    286,
+    0,
+    0
+   ]
+  ]
+ },
+ "limitations": "Original Master cache shares the exact same 42/13 split. The trunk used older public pretraining so independence is for the new adapter. Oracle supplies true D/B2/E identity; routed mode does not. No win rate inferred from imitation."
+}

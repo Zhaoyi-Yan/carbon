@@ -1,0 +1,61 @@
+{
+ "standalone": {
+  "soundings": {
+   "export_sha256": "bc97d6671908d0a9711fc1372e38ce06a6eb501175b1b29bb54547975a0bd01d",
+   "size": 9141798,
+   "shared_weights_literal_sha256": "1b30bea0ac9c282125e011b3fad79e2c5cee4862f129aff5de5f2c055dd6cd6c"
+  },
+  "fairlead": {
+   "export_sha256": "75bdd467c0d4c2fbc00e7305e79241d70973117369a9816cc05c2e8b5d9a4407",
+   "size": 9155485,
+   "shared_weights_literal_sha256": "1b30bea0ac9c282125e011b3fad79e2c5cee4862f129aff5de5f2c055dd6cd6c"
+  }
+ },
+ "source": "4063a34afedb6d4767a9118e1dee9e5d",
+ "seat": 0,
+ "test": "Existing root search, fixed width five and depth two at turns 90 and 164; full fog history, source actions only before each decision. Proposed alternatives keep current recruits and locked workers.",
+ "observed": [
+  {
+   "t": 90,
+   "changed_workers": 1,
+   "protected": 0,
+   "joint_millis": 0.677,
+   "proposal": {
+    "player-0-worker-24": "DOWN",
+    "player-0-worker-23": "UP",
+    "player-0-worker-25": "UP",
+    "player-0-worker-14": "LEFT",
+    "player-0-worker-21": "UP",
+    "player-0-worker-20": "LEFT",
+    "player-0-worker-26": "LEFT",
+    "player-0-worker-22": "UP"
+   },
+   "actually_admitted": true,
+   "final_command_equals_proposal": false
+  },
+  {
+   "t": 164,
+   "changed_workers": 3,
+   "protected": 0,
+   "joint_millis": 0.209,
+   "proposal": {
+    "player-0-worker-20": "DOWN",
+    "player-0-worker-27": "UP",
+    "player-0-worker-23": "LEFT",
+    "player-0-worker-26": "LEFT",
+    "player-0-worker-14": "DOWN",
+    "player-0-worker-16": "RIGHT",
+    "player-0-worker-22": "RIGHT",
+    "player-0-worker-19": "DOWN",
+    "player-0-worker-28": "RIGHT",
+    "player-0-worker-25": "RIGHT"
+   },
+   "actually_admitted": true,
+   "final_command_equals_proposal": false
+  }
+ ],
+ "inference_ms_p50_p95": [
+  0.4673,
+  1.3141
+ ]
+}
