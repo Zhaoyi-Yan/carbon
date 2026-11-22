@@ -62,7 +62,7 @@ class SelfPlayTests(unittest.TestCase):
             self.assertFalse(output.exists())
 
     def test_packaged_opponents_match_submitted_versions(self):
-        for name in ("yan-v2", "yan-v3", "yan-v4", "yan-v5", "yan-v6"):
+        for name in ("yan-v2", "yan-v3", "yan-v4", "yan-v5", "yan-v6", "yan-v7"):
             with self.subTest(name=name), patch.object(selfplay.subprocess, "run", side_effect=FileNotFoundError):
                 recovered, _, source = selfplay.source_for(name)
                 self.assertEqual(recovered, name)

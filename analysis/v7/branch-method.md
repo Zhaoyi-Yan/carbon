@@ -24,7 +24,7 @@ python experiments/v7/branch_audit.py
 python experiments/v7/branch_summary.py
 ```
 
-重新生成原始24条策略分叉及一条重复对照，需要冻结版作为顶层 `submission.py`（同一份字节在 `experiments/v6r/checkpoints/estuary.py`）。使用单独的该版代码检出时可直接运行以下命令。
+重新生成原始 24 条策略分叉及一条重复对照时，脚本读取仓库顶层冻结的 `yan-v6.py`，并校验它的 SHA-256。
 
 ```sh
 python experiments/v7/branch_run.py --workers 3

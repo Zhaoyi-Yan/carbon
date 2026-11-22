@@ -15,6 +15,9 @@ import tempfile
 ROOT = Path(__file__).resolve().parents[1]
 # Account handle -> immutable repository revision, verified source digest, shallow-clone copy.
 FROZEN = {
+    "yan-v7": ("v10-yan-v7-selfplay-prior",
+               "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6",
+               "yan-v7.py"),
     "yan-v6": ("v9-yan-v6-estuary",
                "e5c328aa5d18ced597791e7b839088f1a37d18e4e8dc83dd3d54b13d66e877b0",
                "yan-v6.py"),

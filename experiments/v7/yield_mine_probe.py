@@ -63,7 +63,7 @@ def main():
             cases.append(c)
         result=analyze(controls,cases)
         write(output,dict(cohort='independent_development' if fresh else 'initial_development',finished_maps=len(controls),simulated_games=games,policy_sha256=sha(HERE/'yield_mine.py'),
-            frozen_sha256=sha(ROOT/'submission.py'),method='Both sides recompute fixed, no-search v6 root actions each turn. One profitable extra stay per turn at most, steps 4 to 74. Interventions only rerun games with a first differing action. Development maps; no qualifying layouts.',
+            frozen_sha256=sha(ROOT/'yan-v6.py'),method='Both sides recompute fixed, no-search v6 root actions each turn. One profitable extra stay per turn at most, steps 4 to 74. Interventions only rerun games with a first differing action. Development maps; no qualifying layouts.',
             summary=result,controls=controls,candidates=cases))
         print(seed,[(x['stays'],x['delta']['75']['harvest'],x['delta']['75']['margin'],x['delta']['299']['margin']) for x in result['rows'][-2:]],flush=True)
 

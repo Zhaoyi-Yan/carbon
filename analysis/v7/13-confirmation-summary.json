@@ -1,0 +1,68 @@
+{
+  "candidate": "selfplay-prior",
+  "sha256": "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6",
+  "baseline_sha256": "e5c328aa5d18ced597791e7b839088f1a37d18e4e8dc83dd3d54b13d66e877b0",
+  "complete": true,
+  "games": [
+    [
+      248946067,
+      618.28,
+      720.93
+    ],
+    [
+      131759341,
+      1519.8,
+      177.6
+    ],
+    [
+      768553195,
+      1112.27,
+      -337.93
+    ],
+    [
+      270794178,
+      1026.3,
+      148.75
+    ]
+  ],
+  "wins": 7,
+  "losses": 1,
+  "draws": 0,
+  "wins_by_seat": [
+    4,
+    3
+  ],
+  "average": 623.25,
+  "median": 669.61,
+  "both_wins": 3,
+  "both_losses": 0,
+  "searches_range": [
+    [
+      289,
+      293
+    ],
+    [
+      289,
+      294
+    ]
+  ],
+  "slow_steps": [
+    0,
+    0
+  ],
+  "maximum_move_seconds": [
+    0.837,
+    0.825
+  ],
+  "invalid": [],
+  "passed": true,
+  "freshness": {
+    "maps": 4,
+    "public_layouts": 217,
+    "other_local_layouts": 90,
+    "public_overlap": 0,
+    "other_local_overlap": 0,
+    "receipt_and_target_layouts": 863,
+    "receipt_and_target_overlap": 0
+  }
+}

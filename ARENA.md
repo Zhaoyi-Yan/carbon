@@ -63,3 +63,7 @@ CARBON_DEBUG=1 .arena-venv/bin/python scripts/selfplay.py \
 ## 本地 yan-v6 对照
 
 线上已验证的对手可用 `--baseline yan-v5`。本轮本地晋级文件可用 `--baseline yan-v6`，两者均校验完整 SHA-256。八图初筛和四图独立复核各自记录地图、座位、搜索用时与全部败局。[初筛](analysis/v6r-qual-05-summary.json) · [复核](analysis/v6r-confirm-05-summary.json)
+
+## 本地 yan-v7 对照
+
+使用 `--candidate yan-v7 --baseline yan-v6` 可复测两代，也可用 `--baseline yan-v7` 挑战本地晋级策略。两份代码都校验 SHA-256。对冻结的线上 yan-v6，八张新图换边 14 胜 2 负，另外四张预留图换边 7 胜 1 负。两批使用同一个文件，合计 21 胜 3 负，场均资金分差 +409.63。[八图初筛](analysis/v7/13-qualifying-summary.json) · [四图复核](analysis/v7/13-confirmation-summary.json) · [策略与败局](experiments/v7/README.md)

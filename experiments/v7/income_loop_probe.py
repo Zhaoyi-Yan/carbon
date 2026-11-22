@@ -166,7 +166,7 @@ def main():
             cases.append(got)
         print(seed,[(r['seat'],len(r['edits'][r['seat']]),r['marks']['299'][r['seat']]['cash']) for r in cases[-2:]],flush=True)
         result=summary(controls,cases)
-        write(OUTPUT,dict(finished_maps=len(controls),nominal_games=len(controls)*3,simulated_games=n,baseline_sha256=sha(ROOT/'submission.py'),
+        write(OUTPUT,dict(finished_maps=len(controls),nominal_games=len(controls)*3,simulated_games=n,baseline_sha256=sha(ROOT/'yan-v6.py'),
                          income_sha256=sha(HERE/'income_loop.py'),receipt_sha256=sha(receipts.MODEL),summary=result,controls=controls,candidates=cases,
                          method='Four predeclared development layouts, both seats. One frozen root per player, no forward search. Control shadow tracks when the mission first changes a move, then stops on that seat. Unchanged controls are identical deterministic games; paired controlled rolls re-execute every step when a move does change. Positive receipt followed by a hire is an association, not proof of incremental financing.'))
 

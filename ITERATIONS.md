@@ -18,6 +18,10 @@
 
 [本地晋级版 yan-v6](https://github.com/Zhaoyi-Yan/carbon/blob/v9-yan-v6-estuary/submission.py) 经五轮独立换边评测产生。前四份候选分别为 9–7、10–6、8–8、11–5。第五份在八张新图对 v5 12–4，两座位各胜 5、7 局，场均 +874.90。冻结同一文件再用四张新图换边，成绩 6–2，场均 +296.76。合计 24 场，0 号位 7/12，1 号位 11/12。单文件 SHA-256 为 `e5c328aa5d18ced597791e7b839088f1a37d18e4e8dc83dd3d54b13d66e877b0`。双方按裁判实测时间搜索，同一地图复跑也可能出现不同走法。[两张旧图的收支诊断](analysis/v6r-diagnostic.md) · [完整新图记录](experiments/v6r/README.md)
 
+## yan-v7 的本地晋级
+
+[冻结版本 v10-yan-v7-selfplay-prior](https://github.com/Zhaoyi-Yan/carbon/blob/v10-yan-v7-selfplay-prior/yan-v7.py)。对冻结的线上 yan-v6，八张新图换边 14 胜 2 负，另外四张预留图换边 7 胜 1 负。两批使用同一个文件，合计 21 胜 3 负，场均资金分差 +409.63。 两批均打满 299 步。文件 SHA-256 为 `4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6`。[八图初筛](analysis/v7/13-qualifying-summary.json) · [四图复核](analysis/v7/13-confirmation-summary.json) · [策略与败局](experiments/v7/README.md)
+
 ## 冻结的线上版本与新候选
 
 从本人账户下载的 yan-v2 与标签 v5-tree-value 完全相同（SHA-256 `0483eca2a5e8031270dfb89b87cd5d901ee81f823383f6094f8ed839dec6a7dd`），yan-v1 与 v3-search 完全相同（`29aa472ef0484b65bb3ffdc85113aef2d1daa1e25377bfe5355a4d5e3567a11c`）。下表均以冻结的 yan-v2 为对手，每张地图从两个出生位各打一局，分差从候选一侧计算。

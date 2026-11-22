@@ -1,6 +1,10 @@
 # Carbon League 策略
 
-[yan-v6.py](yan-v6.py) 和 [submission.py](submission.py) 是同一个本地晋级文件，包含策略网络、价值网络、压缩的 v5 对手模型与快速推演模型。标准 15×15 棋盘用 NumPy 和 PyTorch CPU 推理。对冻结的线上 [yan-v5](yan-v5.py)，首批新图换边 12 胜 4 负，另批四图换边 6 胜 2 负。两批合计 12 张新图、18 胜 6 负，场均领先 682.19。本次交付记录本地成绩，赛事上传由维护者决定。[首次八图](analysis/v6r-qual-05-summary.json) · [独立四图](analysis/v6r-confirm-05-summary.json) · [策略与逐轮评测](experiments/v6r/README.md)
+[yan-v7.py](yan-v7.py) 和 [submission.py](submission.py) 是同一份本地晋级文件，内含全部模型权重。对冻结的线上 yan-v6，八张新图换边 14 胜 2 负，另外四张预留图换边 7 胜 1 负。两批使用同一个文件，合计 21 胜 3 负，场均资金分差 +409.63。它根据双方未来 5 和 10 步的预计入库比较晚盘走法，资金断流时优先检查能安全兑现的货物。普通局面会从自己的历史搜索中学一套工人动作，作为原搜索多比较的一种选择。赛事平台由维护者另行上传。[八图初筛](analysis/v7/13-qualifying-summary.json) · [四图复核](analysis/v7/13-confirmation-summary.json) · [策略与败局](experiments/v7/README.md)
+
+## 历史主力 yan-v6
+
+[yan-v6.py](yan-v6.py) 是冻结的前代本地晋级文件，包含策略网络、价值网络、压缩的 v5 对手模型与快速推演模型。标准 15×15 棋盘用 NumPy 和 PyTorch CPU 推理。对冻结的线上 [yan-v5](yan-v5.py)，首批新图换边 12 胜 4 负，另批四图换边 6 胜 2 负。两批合计 12 张新图、18 胜 6 负，场均领先 682.19。本次交付记录本地成绩，赛事上传由维护者决定。[首次八图](analysis/v6r-qual-05-summary.json) · [独立四图](analysis/v6r-confirm-05-summary.json) · [策略与逐轮评测](experiments/v6r/README.md)
 
 以下是历史版本 **yan-v3**（`v6-tree-guard-batch`）。它沿用公开回放训练的行动和招募模型，在争夺树木时比较改种邻格、派空载采集员协防等走法，并在 CPU 上批量采样模拟行动。
 

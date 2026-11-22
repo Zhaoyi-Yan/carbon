@@ -1,0 +1,149 @@
+{
+  "candidate_sha256": "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6",
+  "candidate": {
+    "games": 8,
+    "sustained_low_cash": 0,
+    "peak_low_cash_drought": 2,
+    "lost_all_income": 0,
+    "peak_without_income": 0
+  },
+  "frozen_v6": {
+    "games": 8,
+    "sustained_low_cash": 0,
+    "peak_low_cash_drought": 2,
+    "lost_all_income": 0,
+    "peak_without_income": 0
+  },
+  "games": [
+    {
+      "seed": 131759341,
+      "seat": 1,
+      "candidate": {
+        "severe_turns": 0,
+        "longest_severe": 0,
+        "without_income_source": 0,
+        "longest_without_income": 0
+      },
+      "baseline": {
+        "severe_turns": 1,
+        "longest_severe": 1,
+        "without_income_source": 0,
+        "longest_without_income": 0
+      }
+    },
+    {
+      "seed": 248946067,
+      "seat": 0,
+      "candidate": {
+        "severe_turns": 0,
+        "longest_severe": 0,
+        "without_income_source": 0,
+        "longest_without_income": 0
+      },
+      "baseline": {
+        "severe_turns": 0,
+        "longest_severe": 0,
+        "without_income_source": 0,
+        "longest_without_income": 0
+      }
+    },
+    {
+      "seed": 131759341,
+      "seat": 0,
+      "candidate": {
+        "severe_turns": 0,
+        "longest_severe": 0,
+        "without_income_source": 0,
+        "longest_without_income": 0
+      },
+      "baseline": {
+        "severe_turns": 4,
+        "longest_severe": 2,
+        "without_income_source": 0,
+        "longest_without_income": 0
+      }
+    },
+    {
+      "seed": 248946067,
+      "seat": 1,
+      "candidate": {
+        "severe_turns": 2,
+        "longest_severe": 2,
+        "without_income_source": 0,
+        "longest_without_income": 0
+      },
+      "baseline": {
+        "severe_turns": 1,
+        "longest_severe": 1,
+        "without_income_source": 0,
+        "longest_without_income": 0
+      }
+    },
+    {
+      "seed": 270794178,
+      "seat": 0,
+      "candidate": {
+        "severe_turns": 1,
+        "longest_severe": 1,
+        "without_income_source": 0,
+        "longest_without_income": 0
+      },
+      "baseline": {
+        "severe_turns": 2,
+        "longest_severe": 1,
+        "without_income_source": 0,
+        "longest_without_income": 0
+      }
+    },
+    {
+      "seed": 768553195,
+      "seat": 1,
+      "candidate": {
+        "severe_turns": 0,
+        "longest_severe": 0,
+        "without_income_source": 0,
+        "longest_without_income": 0
+      },
+      "baseline": {
+        "severe_turns": 2,
+        "longest_severe": 1,
+        "without_income_source": 0,
+        "longest_without_income": 0
+      }
+    },
+    {
+      "seed": 768553195,
+      "seat": 0,
+      "candidate": {
+        "severe_turns": 0,
+        "longest_severe": 0,
+        "without_income_source": 0,
+        "longest_without_income": 0
+      },
+      "baseline": {
+        "severe_turns": 0,
+        "longest_severe": 0,
+        "without_income_source": 0,
+        "longest_without_income": 0
+      }
+    },
+    {
+      "seed": 270794178,
+      "seat": 1,
+      "candidate": {
+        "severe_turns": 1,
+        "longest_severe": 1,
+        "without_income_source": 0,
+        "longest_without_income": 0
+      },
+      "baseline": {
+        "severe_turns": 0,
+        "longest_severe": 0,
+        "without_income_source": 0,
+        "longest_without_income": 0
+      }
+    }
+  ],
+  "severe": "Turns 30..250, cash < 30, cargo >= 90, cash deficit >= 60, at least ten consecutive turns.",
+  "lost_all_income": "No collector, no tree and cash < 20. External enemy deposits on an own base can still restore liquidity."
+}
