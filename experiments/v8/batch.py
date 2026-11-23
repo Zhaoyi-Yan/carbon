@@ -12,13 +12,15 @@ sys.path.insert(0, str(ROOT))
 from arena import Strategy, run_game
 from benchmark import configure_engine, limit_math_threads
 from scripts.selfplay import source_for
-from economy import build
+from economy import build as build_logits
+from option import build as build_option
 
 ARMS = ('trees', 'cargo', 'combined')
 
 
-def seeds(stage):
-    return [int.from_bytes(hashlib.sha256(f'yan-v8-payback-20261123/{stage}/{i}'.encode()).digest()[:4],
+def seeds(stage, variant):
+    label = "payback" if variant=="logits" else "payback-option"
+    return [int.from_bytes(hashlib.sha256(f'yan-v8-{label}-20261123/{stage}/{i}'.encode()).digest()[:4],
                            'big') % 1000000000 for i in range(4)]
 
 
@@ -32,9 +34,9 @@ def candidate_scores(rows):
     return all(len(v) == 4 and sum(x>0 for x in v) >= 3 for v in outcomes) and sum(map(sum, outcomes)) > 0
 
 
-def stage(out, stage_name, arms, players, jobs):
+def stage(out, stage_name, arms, players, jobs, variant):
     tasks = []
-    for n, seed in enumerate(seeds(stage_name)):
+    for n, seed in enumerate(seeds(stage_name, variant)):
         for j in range(len(arms)):
             arm = arms[(j+n) % len(arms)]
             for i in (n % 2, 1-n % 2):
@@ -56,7 +58,9 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('out', type=Path)
     parser.add_argument('--jobs', type=int, default=3)
+    parser.add_argument('--variant', choices=('logits','option'), default='logits')
     args = parser.parse_args()
+    build = build_logits if args.variant=='logits' else build_option
     os.environ['CARBON_DEBUG'] = '1'
     limit_math_threads()
     configure_engine()
@@ -73,12 +77,12 @@ def main():
         path.write_bytes(source)
         players[arm] = Strategy(arm, path, hashlib.sha256(source).hexdigest())
     protocol = dict(baseline_tag='v10-yan-v7-selfplay-prior', sha256={a:p.sha256 for a,p in players.items()},
-                    screening=seeds('screening'), confirmation=seeds('confirmation'),
+                    variant=args.variant, screening=seeds('screening', args.variant), confirmation=seeds('confirmation', args.variant),
                     gate='At each stage, require at least 3/4 wins per seat and a positive mean margin. Only the combined arm can advance.')
     (out/'protocol.json').write_text(json.dumps(protocol,indent=2)+'\n')
-    rows = stage(out, 'screening', ARMS, players, args.jobs)
+    rows = stage(out, 'screening', ARMS, players, args.jobs, args.variant)
     if candidate_scores(rows['combined']):
-        stage(out, 'confirmation', ('combined',), players, args.jobs)
+        stage(out, 'confirmation', ('combined',), players, args.jobs, args.variant)
     print('Batch complete.', flush=True)
 
 
