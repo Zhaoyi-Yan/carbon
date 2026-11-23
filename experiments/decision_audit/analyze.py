@@ -11,6 +11,7 @@ def signature(action):
 
 def analyze(games):
     coverage = defaultdict(Counter)
+    shadows = defaultdict(Counter)
     site = defaultdict(list)
     changed = Counter()
     for game in games:
@@ -20,21 +21,21 @@ def analyze(games):
             admitted = {signature(a):i for i,a in enumerate(trace.get('admitted',[]))}
             scored = {int(i) for i in trace.get('scored_depth',{})}
             scores = {int(i):value for i,value in trace.get('final_scores',{}).items()}
-            root_actions = defaultdict(set)
-            for field in ('proposed','probes'):
-                for source, action in trace.get(field,[]):
-                    root_actions[source,signature(action)].add(field)
-            for (source,key),origins in root_actions.items():
-                stats = coverage[source]
-                stats['generated' if 'proposed' in origins else 'shadow_only'] += 1
-                i = admitted.get(key)
-                if i is None:
-                    stats['outside_pool'] += 1
-                else:
-                    stats['admitted'] += 1
-                    stats['evaluated'] += i in scored
-                    stats['selected'] += i==trace.get('selected')
-                    stats['executed'] += key==signature(dict(trace['stages'])['executed'])
+            executed = signature(dict(trace['stages'])['executed'])
+            for field, table in (('proposed',coverage), ('probes',shadows)):
+                # An identical move can have multiple origins. Only an actual generator
+                # receives admission credit; probe counts describe action matches.
+                for source,key in {(name,signature(a)) for name,a in trace.get(field,[])}:
+                    stats = table[source]
+                    stats['actions'] += 1
+                    i = admitted.get(key)
+                    if i is None:
+                        stats['outside_pool'] += 1
+                    else:
+                        stats['in_pool'] += 1
+                        stats['evaluated'] += i in scored
+                        stats['selected'] += i==trace.get('selected')
+                        stats['executed'] += key==executed
             previous = None
             for name,action in trace['stages']:
                 if previous is not None and action != previous:
@@ -64,7 +65,7 @@ def analyze(games):
     for name, outcomes in site.items():
         effects[name] = dict(games=len(outcomes),roots=sum(x['roots'] for x in outcomes),
                              average=round(mean(x['mean'] for x in outcomes),2),by_game=outcomes)
-    return dict(coverage=coverage,postprocessor_changes=changed,effects=effects)
+    return dict(coverage=coverage,shadow_matches=shadows,postprocessor_changes=changed,effects=effects)
 
 
 def main():

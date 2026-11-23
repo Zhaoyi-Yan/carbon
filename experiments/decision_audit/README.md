@@ -25,3 +25,18 @@ python3 experiments/decision_audit/rank_batch.py arena-runs/rank-cycle-1
 The batch labels steps 215 and 260 from twelve archived v7 versus v6 maps. Each training map contributes the same weight. Four v7 mirror maps are held out for within-root comparisons. A ridge fit estimates a small residual correction to the final v7 score from five legal features of the joint move. These cover immediate deposits, depot progress, possible interception, visible harvest, and attempted tree takeover. The cap is 0.055 search-score units relative to the highest v7 score. It applies only to surviving finalists at turns 180 through 284 and adds no simulated move or neural pass.
 
 Whole games use the regular wall-clock arena against frozen v7 and v4. The runner pairs v7 and the challenger against v4 on the same four fresh maps, with both seats, to check transfer to an opponent absent from training. The audit logs are produced locally as a batch. The compact archive stores the fitted model, holdout judgments, arena times, per-game scores and action records. Rebuild a tested challenger using `python3 experiments/decision_audit/rank.py MODEL_JSON OUTPUT_PY`.
+
+## Repeated finalist decisions from ranked public games
+
+Use a local replay cache containing the public v7 match manifest and HTML replay files archived by the leaderboard analysis.
+
+```sh
+python3 experiments/decision_audit/paired_forks.py PATH_TO_REPLAY_CACHE NEW_OUTPUT_DIRECTORY
+python3 experiments/decision_audit/repeat_report.py NEW_OUTPUT_DIRECTORY
+```
+
+The protocol assigns twelve distinct layouts to three cash-pressure, three threatened-carrier, three threatened-tree and three ordinary roots, with six roots per historical v7 seat. Cash pressure means less than one recruit's price. These replay prefixes rarely reach that state late, so the three cash windows are 15–39, 35–74 and 60–179. The other groups use 45–109, 110–189 and 190–269. Individual threats may overlap. Ordinary roots require all three checks to be false. Slots and fallback turns are assigned before scoring by a deterministic hash of source, category and turn. A fallback can only replace a root without two comparable search finalists.
+
+The referee replays the public joint actions and checks both players' observations against the historical frames. Proxy memory is reconstructed by running each side of frozen v7 on its own observations and recording historical actions. Published replays do not contain private agent memory. Each arm starts with independent copies of both reconstructed memories. A constant root stream fixes the finalist pair and the opponent's first action across all continuations. The intervention forces only the final choice inside the search. Each arm then runs v7's normal postprocessing, memory updates and subsequent decisions. Three common streams control per-turn policy sampling after the first action. Internal search uses the frozen width-4, depth-at-most-2, one-reply, three-tail-step configuration. A separate A/A game compares the fully forced natural choice to ordinary v7 in this same harness, checking both players' actions and referee states every step through the end.
+
+Terminal effects are alternative minus original in own-minus-opponent score units. A supplementary reproducibility check chooses the alternative only if the other two streams for that root both favor it, then scores the choice on the withheld stream. This measures repeatability given two counterfactual labels for that same root. A deployable ranker would additionally need to predict a successful switch using only the observation on a previously unseen map.

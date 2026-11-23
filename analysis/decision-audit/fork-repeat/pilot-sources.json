@@ -1,0 +1,107 @@
+{
+  "coverage": {
+    "root": {
+      "actions": 12,
+      "in_pool": 12,
+      "evaluated": 12,
+      "selected": 5,
+      "executed": 5
+    },
+    "shipping:bank": {
+      "actions": 7,
+      "in_pool": 7,
+      "evaluated": 7,
+      "selected": 0,
+      "executed": 0
+    },
+    "style": {
+      "actions": 12,
+      "in_pool": 12,
+      "evaluated": 12,
+      "selected": 5,
+      "executed": 4
+    },
+    "patch": {
+      "actions": 5,
+      "in_pool": 5,
+      "evaluated": 5,
+      "selected": 1,
+      "executed": 1
+    },
+    "teacher": {
+      "actions": 12,
+      "in_pool": 12,
+      "evaluated": 12,
+      "selected": 3,
+      "executed": 3
+    },
+    "deviation": {
+      "actions": 8,
+      "in_pool": 4,
+      "evaluated": 4,
+      "selected": 1,
+      "executed": 1,
+      "outside_pool": 4
+    },
+    "shipping:intercept": {
+      "actions": 4,
+      "in_pool": 4,
+      "evaluated": 4,
+      "selected": 0,
+      "executed": 0
+    }
+  },
+  "shadow_matches": {
+    "deviation": {
+      "actions": 24,
+      "outside_pool": 17,
+      "in_pool": 7,
+      "evaluated": 7,
+      "selected": 1,
+      "executed": 1
+    },
+    "style": {
+      "actions": 31,
+      "outside_pool": 16,
+      "in_pool": 15,
+      "evaluated": 15,
+      "selected": 5,
+      "executed": 5
+    },
+    "shipping:bank": {
+      "actions": 10,
+      "in_pool": 7,
+      "evaluated": 7,
+      "selected": 0,
+      "executed": 0,
+      "outside_pool": 3
+    },
+    "patch": {
+      "actions": 10,
+      "in_pool": 7,
+      "evaluated": 7,
+      "selected": 2,
+      "executed": 2,
+      "outside_pool": 3
+    },
+    "shipping:tree": {
+      "actions": 5,
+      "outside_pool": 5
+    },
+    "teacher": {
+      "actions": 12,
+      "in_pool": 12,
+      "evaluated": 12,
+      "selected": 3,
+      "executed": 3
+    },
+    "shipping:intercept": {
+      "actions": 6,
+      "in_pool": 4,
+      "evaluated": 4,
+      "selected": 0,
+      "executed": 0,
+      "outside_pool": 2
+    }
+  }
+}
