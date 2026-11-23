@@ -14,10 +14,11 @@ from benchmark import configure_engine, new_game
 from starvation_replay import cash_flows
 
 
-def audit(row, contract, checkpoints=()):
+def audit(row, contract, checkpoints=(), *, candidate=None):
     from zerosum_env.envs.carbon import carbon
     players = row['players']
-    seat = next(i for i,p in enumerate(players) if p['name'] != 'yan-v7')
+    seat = (next(i for i,p in enumerate(players) if p['name'] != 'yan-v7') if candidate is None
+            else next(i for i,p in enumerate(players) if p['name']==candidate))
     result = dict(arm=players[seat]['name'], seed=row['seed'], seat=seat, layout=row['layout_sha256'],
                   status=row['status'], turns=row['turns'], players=players)
     if row['engine_sha256'] != engine_fingerprint(carbon):

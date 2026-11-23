@@ -1,0 +1,134 @@
+{
+  "screening": [
+    914131732,
+    391915741,
+    786396273,
+    290512034
+  ],
+  "confirmation": [],
+  "training_roots": [
+    215,
+    260
+  ],
+  "archived": [
+    {
+      "split": "fit",
+      "seed": 2977426,
+      "layout": "9c22e4b79fd8941630a04876becdd7267e7f2615d5fa4041cda4fbb3aaf6d300",
+      "seat": 0,
+      "opponent": "yan-v6"
+    },
+    {
+      "split": "fit",
+      "seed": 63608458,
+      "layout": "e89a3b4fbd793dbf1d8adcca53a9a5f70cb8ecc29a62dbe372786336db7ece64",
+      "seat": 1,
+      "opponent": "yan-v6"
+    },
+    {
+      "split": "fit",
+      "seed": 131759341,
+      "layout": "5dc454111aa545d4f376e7a7335be532d2a0b0ac6050fba71ca4ce14ce14809c",
+      "seat": 0,
+      "opponent": "yan-v6"
+    },
+    {
+      "split": "fit",
+      "seed": 187721058,
+      "layout": "de829b84022b00222631b7c9379fd0638287d51c989d6b24aaf4224ae2e452a1",
+      "seat": 1,
+      "opponent": "yan-v6"
+    },
+    {
+      "split": "fit",
+      "seed": 214492188,
+      "layout": "90fc7f73ea005ccbcf90e18618f70af6259c4c2ce72232f8e6d90b1977a20d6f",
+      "seat": 0,
+      "opponent": "yan-v6"
+    },
+    {
+      "split": "fit",
+      "seed": 248946067,
+      "layout": "58361b3d382ae98f4b5cee2f89faf471d5fc6473a434ea2507b81c0d845f08bb",
+      "seat": 1,
+      "opponent": "yan-v6"
+    },
+    {
+      "split": "fit",
+      "seed": 270794178,
+      "layout": "1b81fae5af167523d3c9e0d73e770e34dd1ab2e756eb373f2f1e89acd130d71f",
+      "seat": 0,
+      "opponent": "yan-v6"
+    },
+    {
+      "split": "fit",
+      "seed": 622922574,
+      "layout": "66a934ffd822409fb5c25a78a7fbf8375abe03548b31b8ed98ce905e3684ca1e",
+      "seat": 1,
+      "opponent": "yan-v6"
+    },
+    {
+      "split": "fit",
+      "seed": 626507336,
+      "layout": "17d7e5f2157efb0596aa1bb167dcd44c8043ec2379c8dabe6227a1552951347a",
+      "seat": 0,
+      "opponent": "yan-v6"
+    },
+    {
+      "split": "fit",
+      "seed": 663402471,
+      "layout": "8a5470daa52bfcbc81c4981bb2a231580f0fe22fb3dc457b2179fdf0e4f17ce0",
+      "seat": 1,
+      "opponent": "yan-v6"
+    },
+    {
+      "split": "fit",
+      "seed": 768553195,
+      "layout": "6b18b9a6e71f1edbc6c23bfa2315744056f6271973a474de22a676b813036ccf",
+      "seat": 0,
+      "opponent": "yan-v6"
+    },
+    {
+      "split": "fit",
+      "seed": 919112046,
+      "layout": "18d1912aa80138e11edbdbe10bde5c8b3ebb9e718efb73d11736131df99374de",
+      "seat": 1,
+      "opponent": "yan-v6"
+    },
+    {
+      "split": "holdout",
+      "seed": 4777473,
+      "layout": "8451f43e3ff34229bf826c70aaf67b0b14d8c620ed4fed964c7d171f3060888d",
+      "seat": 0,
+      "opponent": "yan-v7"
+    },
+    {
+      "split": "holdout",
+      "seed": 531729840,
+      "layout": "e9ced8f6bfd7d5876c17482f4fd2d9f6d37a611cc81a14b94793802aa5567f04",
+      "seat": 0,
+      "opponent": "yan-v7"
+    },
+    {
+      "split": "holdout",
+      "seed": 626790576,
+      "layout": "f3b5fe2c4a0231eac88442c6a60fb4c596928f82c88a59e16c83495302da8025",
+      "seat": 0,
+      "opponent": "yan-v7"
+    },
+    {
+      "split": "holdout",
+      "seed": 637608883,
+      "layout": "3ffe1868feee50e3e66f7f941b486295fabcdd2bf589bf0521763100b83ab5f1",
+      "seat": 0,
+      "opponent": "yan-v7"
+    }
+  ],
+  "sha256": {
+    "yan-v7": "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6",
+    "yan-v4": "a3d54e4672458e53f5dfd47444b59a25326f5d1592575f968a1a59f26c98b4b0",
+    "rank": "1d074d48ba81ef8d12369f07ee7bebbb1ebc8f86f69ea614a0feb26e87467f71",
+    "yan-v7-control": "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6"
+  },
+  "evaluation": "Four frozen fresh paired maps per matchup. v4 withheld from all rank learning. Same seats and maps for v4 control."
+}

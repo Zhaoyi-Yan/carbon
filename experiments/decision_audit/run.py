@@ -106,7 +106,7 @@ def signature(action):
     return tuple(sorted(action.items()))
 
 
-def branch_case(snapshot, raw_history, mods, cfg, visible, own, turn, trace_index):
+def branch_case(snapshot, raw_history, mods, cfg, visible, own, turn, trace_index, outside=True):
     board, info = snapshot
     state,env = restore(board,cfg)
     reset(mods,raw_history)
@@ -137,7 +137,7 @@ def branch_case(snapshot, raw_history, mods, cfg, visible, own, turn, trace_inde
     known = set(map(signature,admitted)) | choices.keys()
     extra = sorted({signature(a) for _,a in trace.get('probes',[]) if signature(a) not in known
                     and all(a.get(u)==move for u,move in trace['protected'].items())})
-    if extra:
+    if extra and outside:
         include('outside-pool',dict(extra[trace_index % len(extra)]))
 
     results=[]
@@ -159,7 +159,9 @@ def branch_case(snapshot, raw_history, mods, cfg, visible, own, turn, trace_inde
 
 
 def audit_match(args):
-    row, own, opponent, trace_code = args
+    row, own, opponent, trace_code, *options = args
+    turns = options[0] if options else TURNS
+    outside = options[1] if len(options)>1 else True
     configure_engine()
     from zerosum_env.envs.carbon import carbon
     assert engine_fingerprint(carbon)==row['engine_sha256']
@@ -177,16 +179,16 @@ def audit_match(args):
         budget(m,False)
     snapshots = {}
     for t,(actual,expected) in enumerate(row['actions_and_post_cash']):
-        if t in TURNS:
+        if t in turns:
             snapshots[t] = ((archive_state(state),board_digest(state)),history(mods))
         for i,m in enumerate(mods):
             choose(m,state,i,t,visible)
             commit_action(m,observe(state,i,t),actual[i])
         step(state,env,actual)
         assert [p[0] for p in state[0].observation.players]==expected
-        if t==max(TURNS):
+        if t==max(turns):
             break
-    roots = [branch_case(snapshots[t][0],snapshots[t][1],mods,cfg,visible,own,t,i) for i,t in enumerate(TURNS)]
+    roots = [branch_case(snapshots[t][0],snapshots[t][1],mods,cfg,visible,own,t,i,outside) for i,t in enumerate(turns)]
     return dict(seed=row['seed'],layout=row['layout_sha256'],own=own,opponent=opponent.stem,roots=roots)
 
 

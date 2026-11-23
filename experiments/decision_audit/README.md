@@ -15,3 +15,13 @@ At each root the first opponent action is held identical across continuations. T
 The first run is a pipeline pilot. It uses four historical local maps, with two v7 versus v6 and two v7 mirror games. It inherits the existing fixed-width and fixed-depth harness, which differs from tournament wall-clock search. Analyze roots within their original map. A tested candidate's result is conditional on the selected opponent and seed, and score comparisons apply only to candidates evaluated at comparable depths. The traces and paired payoffs are inputs for the closed-loop ranking experiment in the design document.
 
 The first batch finished all 36 continuations at step 299. The trace changed the search output at one of 12 roots, where the executed move improved the terminal margin by 295.72. Five of 11 outside candidates improved on the original search choice, with an average of −140 when weighted equally by source game. The candidate ranked first beat the second in five of 12 comparisons. Its map-weighted advantage was +2.49. Both ranking and outside-candidate results varied substantially by opponent and map. All four historical roots came from games observed from seat 0. Broader coverage is needed before fitting a ranking head or changing the search or execution chain.
+
+## Closed-loop finalist ranker
+
+```sh
+python3 experiments/decision_audit/rank_batch.py arena-runs/rank-cycle-1
+```
+
+The batch labels steps 215 and 260 from twelve archived v7 versus v6 maps. Each training map contributes the same weight. Four v7 mirror maps are held out for within-root comparisons. A ridge fit estimates a small residual correction to the final v7 score from five legal features of the joint move. These cover immediate deposits, depot progress, possible interception, visible harvest, and attempted tree takeover. The cap is 0.055 search-score units relative to the highest v7 score. It applies only to surviving finalists at turns 180 through 284 and adds no simulated move or neural pass.
+
+Whole games use the regular wall-clock arena against frozen v7 and v4. The runner pairs v7 and the challenger against v4 on the same four fresh maps, with both seats, to check transfer to an opponent absent from training. The audit logs are produced locally as a batch. The compact archive stores the fitted model, holdout judgments, arena times, per-game scores and action records. Rebuild a tested challenger using `python3 experiments/decision_audit/rank.py MODEL_JSON OUTPUT_PY`.
