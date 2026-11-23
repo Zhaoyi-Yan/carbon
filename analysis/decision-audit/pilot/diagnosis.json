@@ -1,0 +1,189 @@
+{
+  "coverage": {
+    "root": {
+      "generated": 12,
+      "admitted": 12,
+      "evaluated": 12,
+      "selected": 5,
+      "executed": 5
+    },
+    "shipping:bank": {
+      "generated": 7,
+      "admitted": 7,
+      "evaluated": 7,
+      "selected": 0,
+      "executed": 0,
+      "shadow_only": 3,
+      "outside_pool": 3
+    },
+    "teacher": {
+      "generated": 12,
+      "admitted": 12,
+      "evaluated": 12,
+      "selected": 3,
+      "executed": 3
+    },
+    "style": {
+      "generated": 12,
+      "admitted": 21,
+      "evaluated": 21,
+      "selected": 7,
+      "executed": 6,
+      "shadow_only": 25,
+      "outside_pool": 16
+    },
+    "patch": {
+      "generated": 5,
+      "admitted": 7,
+      "evaluated": 7,
+      "selected": 2,
+      "executed": 2,
+      "shadow_only": 5,
+      "outside_pool": 3
+    },
+    "shipping:tree": {
+      "shadow_only": 5,
+      "outside_pool": 5
+    },
+    "deviation": {
+      "shadow_only": 20,
+      "outside_pool": 20,
+      "generated": 8,
+      "admitted": 8,
+      "evaluated": 8,
+      "selected": 1,
+      "executed": 1
+    },
+    "shipping:intercept": {
+      "generated": 4,
+      "admitted": 4,
+      "evaluated": 4,
+      "selected": 0,
+      "executed": 0,
+      "shadow_only": 2,
+      "outside_pool": 2
+    }
+  },
+  "postprocessor_changes": {
+    "_reply_choice": 1
+  },
+  "effects": {
+    "executed_minus_search": {
+      "games": 4,
+      "roots": 12,
+      "average": 24.64,
+      "by_game": [
+        {
+          "seed": 248946067,
+          "opponent": "yan-v6",
+          "roots": 3,
+          "mean": 0.0,
+          "better": 0,
+          "equal": 3
+        },
+        {
+          "seed": 768553195,
+          "opponent": "yan-v6",
+          "roots": 3,
+          "mean": 98.573,
+          "better": 1,
+          "equal": 2
+        },
+        {
+          "seed": 531729840,
+          "opponent": "yan-v7",
+          "roots": 3,
+          "mean": 0.0,
+          "better": 0,
+          "equal": 3
+        },
+        {
+          "seed": 637608883,
+          "opponent": "yan-v7",
+          "roots": 3,
+          "mean": 0.0,
+          "better": 0,
+          "equal": 3
+        }
+      ]
+    },
+    "outside_minus_search": {
+      "games": 4,
+      "roots": 11,
+      "average": -139.98,
+      "by_game": [
+        {
+          "seed": 248946067,
+          "opponent": "yan-v6",
+          "roots": 2,
+          "mean": -457.895,
+          "better": 0,
+          "equal": 0
+        },
+        {
+          "seed": 768553195,
+          "opponent": "yan-v6",
+          "roots": 3,
+          "mean": -521.71,
+          "better": 1,
+          "equal": 0
+        },
+        {
+          "seed": 531729840,
+          "opponent": "yan-v7",
+          "roots": 3,
+          "mean": 84.87,
+          "better": 2,
+          "equal": 0
+        },
+        {
+          "seed": 637608883,
+          "opponent": "yan-v7",
+          "roots": 3,
+          "mean": 334.81,
+          "better": 3,
+          "equal": 0
+        }
+      ]
+    },
+    "ranked_first_minus_second": {
+      "games": 4,
+      "roots": 12,
+      "average": 2.49,
+      "by_game": [
+        {
+          "seed": 248946067,
+          "opponent": "yan-v6",
+          "roots": 3,
+          "mean": 56.123,
+          "better": 1,
+          "equal": 0
+        },
+        {
+          "seed": 768553195,
+          "opponent": "yan-v6",
+          "roots": 3,
+          "mean": 481.287,
+          "better": 3,
+          "equal": 0
+        },
+        {
+          "seed": 531729840,
+          "opponent": "yan-v7",
+          "roots": 3,
+          "mean": -155.967,
+          "better": 1,
+          "equal": 0
+        },
+        {
+          "seed": 637608883,
+          "opponent": "yan-v7",
+          "roots": 3,
+          "mean": -371.483,
+          "better": 0,
+          "equal": 0
+        }
+      ]
+    }
+  }
+}

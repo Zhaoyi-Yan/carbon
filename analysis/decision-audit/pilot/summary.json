@@ -1,0 +1,103 @@
+{
+  "v7": "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6",
+  "salt": 317,
+  "turns": [
+    90,
+    185,
+    245
+  ],
+  "games": 4,
+  "stages": {
+    "search:visited": 12,
+    "_reply_choice:visited": 12,
+    "_v6_last_worker:visited": 12,
+    "_v7_cash_route:visited": 12,
+    "_v7_keep_float:visited": 12,
+    "_v7_short_deposit:visited": 12,
+    "_v7_corridor:visited": 12,
+    "_v7_solvency:visited": 12,
+    "_r6_opening:visited": 12,
+    "_v7_early_income:visited": 12,
+    "executed:visited": 12,
+    "_reply_choice:changed": 1
+  },
+  "sources": {
+    "teacher": {
+      "unique_generated": 12,
+      "admitted": 12,
+      "scored": 12
+    },
+    "root": {
+      "unique_generated": 12,
+      "admitted": 12,
+      "scored": 12
+    },
+    "shipping:bank": {
+      "unique_generated": 7,
+      "admitted": 7,
+      "scored": 7
+    },
+    "style": {
+      "unique_generated": 12,
+      "admitted": 12,
+      "scored": 12
+    },
+    "patch": {
+      "unique_generated": 5,
+      "admitted": 5,
+      "scored": 5
+    },
+    "deviation": {
+      "unique_generated": 8,
+      "admitted": 4,
+      "scored": 4,
+      "not_admitted": 4
+    },
+    "shipping:intercept": {
+      "unique_generated": 4,
+      "admitted": 4,
+      "scored": 4
+    }
+  },
+  "comparisons": {
+    "search": {
+      "count": 12,
+      "mean": -24.64,
+      "higher": 0,
+      "equal": 11,
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -295.72,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "outside-pool": {
+      "count": 11,
+      "mean": -137.96,
+      "higher": 5,
+      "equal": 0,
+      "values": [
+        -675.85,
+        -239.94,
+        -1394.61,
+        -246.04,
+        -220.2,
+        34.98,
+        -261.81,
+        481.44,
+        319.63,
+        312.19,
+        372.61
+      ]
+    }
+  }
+}
