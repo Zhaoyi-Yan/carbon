@@ -14,7 +14,7 @@ from benchmark import configure_engine, new_game
 from starvation_replay import cash_flows
 
 
-def audit(row, contract):
+def audit(row, contract, checkpoints=()):
     from zerosum_env.envs.carbon import carbon
     players = row['players']
     seat = next(i for i,p in enumerate(players) if p['name'] != 'yan-v7')
@@ -33,6 +33,8 @@ def audit(row, contract):
     frames = [[dict(observation=state[0].observation), {}]]
     origin = {}
     ledgers = [[Counter(),Counter()] for _ in range(3)]
+    opening = [dict(first=None, by_port=Counter(), deaths=0) for _ in range(2)]
+    snapshots = {}
     for t,(actions,expected) in enumerate(row['actions_and_post_cash'], 1):
         for s,moves in zip(state,actions):
             s.action = moves
@@ -41,6 +43,18 @@ def audit(row, contract):
         assert [p[0] for p in board.players] == expected
         after = [dict(observation=board,action=actions[0]), dict(action=actions[1])]
         flows, deposits, _, _ = cash_flows(frames[0], after, env.configuration, origin)
+        if checkpoints and t<=max(checkpoints):
+            for i, f in enumerate(flows):
+                opening[i]['deaths'] += f['deaths']
+            for _, origin_side, _, amount, receiver, port in deposits:
+                if origin_side==receiver and amount>0:
+                    ledger_entry=opening[receiver]
+                    if ledger_entry['first'] is None:
+                        ledger_entry['first']=t
+                    ledger_entry['by_port'][port]+=amount
+            if t in checkpoints:
+                snapshots[t]=[dict(cash=expected[i],first=opening[i]['first'],deaths=opening[i]['deaths'],
+                                   by_port=dict(opening[i]['by_port'])) for i in (seat,1-seat)]
         frames[0] = after
         ledger = ledgers[0 if t<=190 else 1 if t<=250 else 2]
         for i,f in enumerate(flows):
@@ -55,6 +69,8 @@ def audit(row, contract):
     result.update(margin=round(row['scores'][seat]-row['scores'][1-seat],2), scores=row['scores'],
                   phases=[[[k,round(a[k],3),round(b[k],3)] for k in a.keys()|b.keys()]
                           for a,b in [(pair[seat],pair[1-seat]) for pair in ledgers]])
+    if checkpoints:
+        result['opening']=snapshots
     return result
 
 
