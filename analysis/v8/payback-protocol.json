@@ -1,0 +1,22 @@
+{
+  "baseline_tag": "v10-yan-v7-selfplay-prior",
+  "sha256": {
+    "yan-v7": "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6",
+    "trees": "99749e1b43cb8b3cad20fc754c5e4a40b8c0438f8f161de80fde70f10dff8d2f",
+    "cargo": "264206f0cd241b651eab957ad0fdd8f698bc7fb00dd0d9761725f5067ae18211",
+    "combined": "4526fd2487318abac09fcf09617854327c2e20a87537da276128e53936192e74"
+  },
+  "screening": [
+    415767322,
+    199530544,
+    305073690,
+    37072118
+  ],
+  "confirmation": [
+    624556393,
+    85031765,
+    128947758,
+    384760749
+  ],
+  "gate": "At each stage, require at least 3/4 wins per seat and a positive mean margin. Only the combined arm can advance."
+}
