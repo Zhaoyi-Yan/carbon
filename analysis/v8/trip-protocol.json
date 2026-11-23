@@ -1,0 +1,27 @@
+{
+  "baseline_tag": "v10-yan-v7-selfplay-prior",
+  "sha256": {
+    "cargo-trips": "1f1009336b360f59a4d910900999f8c9ccc7b52fd8131a5a96328c47b8b9ca99",
+    "yan-v7": "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6",
+    "v7-control": "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6"
+  },
+  "screening": [
+    280265062,
+    731654341,
+    41387789,
+    597251215
+  ],
+  "confirmation": [
+    60586773,
+    661106696,
+    669576539,
+    125102044
+  ],
+  "controls": [
+    531729840,
+    637608883,
+    626790576,
+    4777473
+  ],
+  "rule": "Both panels always run. In each require 3/4 wins per seat, positive mean, complete normal search-enabled games. Controls are not counted."
+}

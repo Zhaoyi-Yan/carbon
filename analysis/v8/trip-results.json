@@ -1,0 +1,3273 @@
+{
+  "protocol": {
+    "baseline_tag": "v10-yan-v7-selfplay-prior",
+    "sha256": {
+      "cargo-trips": "1f1009336b360f59a4d910900999f8c9ccc7b52fd8131a5a96328c47b8b9ca99",
+      "yan-v7": "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6",
+      "v7-control": "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6"
+    },
+    "screening": [
+      280265062,
+      731654341,
+      41387789,
+      597251215
+    ],
+    "confirmation": [
+      60586773,
+      661106696,
+      669576539,
+      125102044
+    ],
+    "controls": [
+      531729840,
+      637608883,
+      626790576,
+      4777473
+    ],
+    "rule": "Both panels always run. In each require 3/4 wins per seat, positive mean, complete normal search-enabled games. Controls are not counted."
+  },
+  "freshness": {
+    "prior_layouts": 1077,
+    "maps": {
+      "280265062": "76db2bba0c8c85941a562c735335d3c677d32d6f40189e24868dcfbba79af2e6",
+      "731654341": "9a68ff13b3725c9ab7f0ea8d23189727357ed28aad59e1fdd238e126be5069aa",
+      "41387789": "055ae366cc268b2a95994c8384c63baa22e84bfb92f9478b8058476ba0c47bc1",
+      "597251215": "2402f3564c971e1e197495ffb4828df41614df80a3dcc0ed85a53d72a55b8977",
+      "60586773": "5a3a8b06e32e61f3b59058b2a851adcaad1a4c85547d7499c246b1a6b91f5eb1",
+      "661106696": "8b544d34f4bb45a1ae595ea1f9fc58b76568ff8d166f2c8f49893cfa396a2240",
+      "669576539": "ba1770b783ff52bdbf36400544e0ee8106ea08ba3abbef2f3c71844cf1f186c5",
+      "125102044": "57967f55d1de2d25385d0ac2176c8baf1d98de5dab12b9127686bb4fd3d75c54"
+    }
+  },
+  "panels": {
+    "screening": {
+      "games": [
+        {
+          "arm": "cargo-trips",
+          "seed": 41387789,
+          "seat": 0,
+          "layout": "055ae366cc268b2a95994c8384c63baa22e84bfb92f9478b8058476ba0c47bc1",
+          "status": "completed",
+          "turns": 299,
+          "players": [
+            {
+              "name": "cargo-trips",
+              "sha256": "1f1009336b360f59a4d910900999f8c9ccc7b52fd8131a5a96328c47b8b9ca99",
+              "init_seconds": 2.665095458040014,
+              "total_act_seconds": 144.40355116548017,
+              "max_act_seconds": 0.8532514160033315,
+              "slow_steps": 0,
+              "calls": 299,
+              "search_enabled": true,
+              "searches": 284,
+              "failure": null
+            },
+            {
+              "name": "yan-v7",
+              "sha256": "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6",
+              "init_seconds": 2.226606040960178,
+              "total_act_seconds": 146.3119453357067,
+              "max_act_seconds": 0.8494804170913994,
+              "slow_steps": 0,
+              "calls": 299,
+              "search_enabled": true,
+              "searches": 282,
+              "failure": null
+            }
+          ],
+          "margin": -1454.61,
+          "scores": [
+            4718.07,
+            6172.68
+          ],
+          "phases": [
+            [
+              [
+                "deliveries",
+                34,
+                42
+              ],
+              [
+                "hire_cost",
+                1380,
+                1320
+              ],
+              [
+                "own_receipts",
+                3139.86,
+                3848.476
+              ],
+              [
+                "tree_net",
+                461.432,
+                662.192
+              ],
+              [
+                "plants",
+                18,
+                18
+              ],
+              [
+                "seizes",
+                13,
+                14
+              ],
+              [
+                "base",
+                3139.86,
+                3848.476
+              ]
+            ],
+            [
+              [
+                "deliveries",
+                12,
+                16
+              ],
+              [
+                "hire_cost",
+                510,
+                390
+              ],
+              [
+                "own_receipts",
+                1329.256,
+                1804.574
+              ],
+              [
+                "tree_net",
+                116.207,
+                72.474
+              ],
+              [
+                "plants",
+                8,
+                4
+              ],
+              [
+                "seizes",
+                4,
+                7
+              ],
+              [
+                "base",
+                1329.256,
+                1804.574
+              ]
+            ],
+            [
+              [
+                "deliveries",
+                21,
+                22
+              ],
+              [
+                "hire_cost",
+                60,
+                120
+              ],
+              [
+                "own_receipts",
+                1412.25,
+                1444.713
+              ],
+              [
+                "tree_net",
+                129.005,
+                90.259
+              ],
+              [
+                "plants",
+                3,
+                4
+              ],
+              [
+                "seizes",
+                4,
+                2
+              ],
+              [
+                "base",
+                1412.25,
+                1444.713
+              ]
+            ]
+          ]
+        },
+        {
+          "arm": "cargo-trips",
+          "seed": 41387789,
+          "seat": 1,
+          "layout": "055ae366cc268b2a95994c8384c63baa22e84bfb92f9478b8058476ba0c47bc1",
+          "status": "completed",
+          "turns": 299,
+          "players": [
+            {
+              "name": "yan-v7",
+              "sha256": "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6",
+              "init_seconds": 2.5779254999943078,
+              "total_act_seconds": 142.94039372028783,
+              "max_act_seconds": 0.9094247079920024,
+              "slow_steps": 0,
+              "calls": 299,
+              "search_enabled": true,
+              "searches": 287,
+              "failure": null
+            },
+            {
+              "name": "cargo-trips",
+              "sha256": "1f1009336b360f59a4d910900999f8c9ccc7b52fd8131a5a96328c47b8b9ca99",
+              "init_seconds": 2.2323866658844054,
+              "total_act_seconds": 144.36281800013967,
+              "max_act_seconds": 0.8255534160416573,
+              "slow_steps": 0,
+              "calls": 299,
+              "search_enabled": true,
+              "searches": 289,
+              "failure": null
+            }
+          ],
+          "margin": 59.82,
+          "scores": [
+            5349.81,
+            5409.63
+          ],
+          "phases": [
+            [
+              [
+                "deliveries",
+                44,
+                42
+              ],
+              [
+                "hire_cost",
+                1650,
+                1620
+              ],
+              [
+                "own_receipts",
+                3779.616,
+                3940.498
+              ],
+              [
+                "tree_net",
+                463.795,
+                889.967
+              ],
+              [
+                "plants",
+                16,
+                18
+              ],
+              [
+                "seizes",
+                13,
+                11
+              ],
+              [
+                "base",
+                3779.616,
+                3940.498
+              ]
+            ],
+            [
+              [
+                "deliveries",
+                16,
+                8
+              ],
+              [
+                "hire_cost",
+                330,
+                360
+              ],
+              [
+                "own_receipts",
+                1338.0,
+                1038.507
+              ],
+              [
+                "tree_net",
+                24.806,
+                33.838
+              ],
+              [
+                "plants",
+                7,
+                5
+              ],
+              [
+                "seizes",
+                3,
+                5
+              ],
+              [
+                "base",
+                1347.536,
+                1038.507
+              ]
+            ],
+            [
+              [
+                "deliveries",
+                21,
+                21
+              ],
+              [
+                "hire_cost",
+                210,
+                240
+              ],
+              [
+                "own_receipts",
+                1698.341,
+                1450.501
+              ],
+              [
+                "tree_net",
+                205.577,
+                136.388
+              ],
+              [
+                "plants",
+                3,
+                4
+              ],
+              [
+                "seizes",
+                5,
+                5
+              ],
+              [
+                "base",
+                1698.341,
+                1450.501
+              ]
+            ]
+          ]
+        },
+        {
+          "arm": "cargo-trips",
+          "seed": 280265062,
+          "seat": 0,
+          "layout": "76db2bba0c8c85941a562c735335d3c677d32d6f40189e24868dcfbba79af2e6",
+          "status": "completed",
+          "turns": 299,
+          "players": [
+            {
+              "name": "cargo-trips",
+              "sha256": "1f1009336b360f59a4d910900999f8c9ccc7b52fd8131a5a96328c47b8b9ca99",
+              "init_seconds": 2.817388790892437,
+              "total_act_seconds": 147.34852320165373,
+              "max_act_seconds": 0.8485161669086665,
+              "slow_steps": 0,
+              "calls": 299,
+              "search_enabled": true,
+              "searches": 295,
+              "failure": null
+            },
+            {
+              "name": "yan-v7",
+              "sha256": "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6",
+              "init_seconds": 2.5761679590214044,
+              "total_act_seconds": 141.4468626640737,
+              "max_act_seconds": 0.7926892081741244,
+              "slow_steps": 0,
+              "calls": 299,
+              "search_enabled": true,
+              "searches": 290,
+              "failure": null
+            }
+          ],
+          "margin": -942.1,
+          "scores": [
+            6829.93,
+            7772.03
+          ],
+          "phases": [
+            [
+              [
+                "deliveries",
+                41,
+                45
+              ],
+              [
+                "hire_cost",
+                1410,
+                1350
+              ],
+              [
+                "own_receipts",
+                3828.827,
+                4884.583
+              ],
+              [
+                "tree_net",
+                280.3,
+                1000.87
+              ],
+              [
+                "plants",
+                23,
+                20
+              ],
+              [
+                "seizes",
+                17,
+                20
+              ],
+              [
+                "base",
+                3828.827,
+                4884.583
+              ]
+            ],
+            [
+              [
+                "deliveries",
+                15,
+                9
+              ],
+              [
+                "hire_cost",
+                360,
+                360
+              ],
+              [
+                "own_receipts",
+                1894.368,
+                1148.567
+              ],
+              [
+                "tree_net",
+                160.136,
+                221.728
+              ],
+              [
+                "plants",
+                8,
+                5
+              ],
+              [
+                "seizes",
+                2,
+                9
+              ],
+              [
+                "base",
+                1894.368,
+                1148.567
+              ]
+            ],
+            [
+              [
+                "deliveries",
+                25,
+                23
+              ],
+              [
+                "hire_cost",
+                210,
+                210
+              ],
+              [
+                "own_receipts",
+                2134.838,
+                2184.4
+              ],
+              [
+                "tree_net",
+                431.478,
+                171.857
+              ],
+              [
+                "plants",
+                5,
+                0
+              ],
+              [
+                "seizes",
+                2,
+                3
+              ],
+              [
+                "base",
+                2134.838,
+                2184.4
+              ]
+            ]
+          ]
+        },
+        {
+          "arm": "cargo-trips",
+          "seed": 280265062,
+          "seat": 1,
+          "layout": "76db2bba0c8c85941a562c735335d3c677d32d6f40189e24868dcfbba79af2e6",
+          "status": "completed",
+          "turns": 299,
+          "players": [
+            {
+              "name": "yan-v7",
+              "sha256": "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6",
+              "init_seconds": 2.8453124158550054,
+              "total_act_seconds": 146.5726109542884,
+              "max_act_seconds": 0.7857456658966839,
+              "slow_steps": 0,
+              "calls": 299,
+              "search_enabled": true,
+              "searches": 293,
+              "failure": null
+            },
+            {
+              "name": "cargo-trips",
+              "sha256": "1f1009336b360f59a4d910900999f8c9ccc7b52fd8131a5a96328c47b8b9ca99",
+              "init_seconds": 2.578792749904096,
+              "total_act_seconds": 147.47579466202296,
+              "max_act_seconds": 0.7697604168206453,
+              "slow_steps": 0,
+              "calls": 299,
+              "search_enabled": true,
+              "searches": 291,
+              "failure": null
+            }
+          ],
+          "margin": 923.31,
+          "scores": [
+            6840.21,
+            7763.52
+          ],
+          "phases": [
+            [
+              [
+                "deliveries",
+                55,
+                43
+              ],
+              [
+                "hire_cost",
+                1470,
+                1650
+              ],
+              [
+                "own_receipts",
+                5077.802,
+                4093.772
+              ],
+              [
+                "tree_net",
+                294.654,
+                795.633
+              ],
+              [
+                "plants",
+                20,
+                21
+              ],
+              [
+                "seizes",
+                16,
+                17
+              ],
+              [
+                "base",
+                5077.802,
+                4093.772
+              ]
+            ],
+            [
+              [
+                "deliveries",
+                20,
+                13
+              ],
+              [
+                "hire_cost",
+                270,
+                390
+              ],
+              [
+                "own_receipts",
+                2109.003,
+                1408.913
+              ],
+              [
+                "tree_net",
+                110.696,
+                391.02
+              ],
+              [
+                "plants",
+                10,
+                4
+              ],
+              [
+                "seizes",
+                7,
+                6
+              ],
+              [
+                "base",
+                2109.003,
+                1408.913
+              ]
+            ],
+            [
+              [
+                "deliveries",
+                22,
+                23
+              ],
+              [
+                "hire_cost",
+                270,
+                210
+              ],
+              [
+                "own_receipts",
+                1798.86,
+                2175.96
+              ],
+              [
+                "tree_net",
+                302.55,
+                144.918
+              ],
+              [
+                "plants",
+                4,
+                3
+              ],
+              [
+                "seizes",
+                1,
+                6
+              ],
+              [
+                "base",
+                1798.86,
+                2175.96
+              ]
+            ]
+          ]
+        },
+        {
+          "arm": "cargo-trips",
+          "seed": 597251215,
+          "seat": 0,
+          "layout": "2402f3564c971e1e197495ffb4828df41614df80a3dcc0ed85a53d72a55b8977",
+          "status": "completed",
+          "turns": 299,
+          "players": [
+            {
+              "name": "cargo-trips",
+              "sha256": "1f1009336b360f59a4d910900999f8c9ccc7b52fd8131a5a96328c47b8b9ca99",
+              "init_seconds": 2.663518625078723,
+              "total_act_seconds": 146.23248013318516,
+              "max_act_seconds": 0.8070484169293195,
+              "slow_steps": 0,
+              "calls": 299,
+              "search_enabled": true,
+              "searches": 292,
+              "failure": null
+            },
+            {
+              "name": "yan-v7",
+              "sha256": "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6",
+              "init_seconds": 2.7631148339714855,
+              "total_act_seconds": 149.1860543852672,
+              "max_act_seconds": 0.8365258751437068,
+              "slow_steps": 0,
+              "calls": 299,
+              "search_enabled": true,
+              "searches": 290,
+              "failure": null
+            }
+          ],
+          "margin": -856.59,
+          "scores": [
+            6633.27,
+            7489.86
+          ],
+          "phases": [
+            [
+              [
+                "deliveries",
+                37,
+                49
+              ],
+              [
+                "hire_cost",
+                1260,
+                1350
+              ],
+              [
+                "own_receipts",
+                3962.609,
+                4542.085
+              ],
+              [
+                "tree_net",
+                417.282,
+                450.486
+              ],
+              [
+                "plants",
+                19,
+                19
+              ],
+              [
+                "seizes",
+                16,
+                15
+              ],
+              [
+                "base",
+                3962.609,
+                4542.085
+              ]
+            ],
+            [
+              [
+                "deliveries",
+                12,
+                13
+              ],
+              [
+                "hire_cost",
+                390,
+                360
+              ],
+              [
+                "own_receipts",
+                1333.735,
+                1460.67
+              ],
+              [
+                "tree_net",
+                316.503,
+                2.35
+              ],
+              [
+                "plants",
+                4,
+                4
+              ],
+              [
+                "seizes",
+                5,
+                4
+              ],
+              [
+                "base",
+                1333.735,
+                1460.67
+              ]
+            ],
+            [
+              [
+                "deliveries",
+                29,
+                26
+              ],
+              [
+                "hire_cost",
+                270,
+                210
+              ],
+              [
+                "own_receipts",
+                2400.877,
+                2608.637
+              ],
+              [
+                "tree_net",
+                42.212,
+                265.635
+              ],
+              [
+                "plants",
+                2,
+                6
+              ],
+              [
+                "seizes",
+                0,
+                2
+              ],
+              [
+                "base",
+                2400.877,
+                2608.637
+              ]
+            ]
+          ]
+        },
+        {
+          "arm": "cargo-trips",
+          "seed": 597251215,
+          "seat": 1,
+          "layout": "2402f3564c971e1e197495ffb4828df41614df80a3dcc0ed85a53d72a55b8977",
+          "status": "completed",
+          "turns": 299,
+          "players": [
+            {
+              "name": "yan-v7",
+              "sha256": "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6",
+              "init_seconds": 3.4432575409300625,
+              "total_act_seconds": 148.45102465315722,
+              "max_act_seconds": 0.8978568748570979,
+              "slow_steps": 0,
+              "calls": 299,
+              "search_enabled": true,
+              "searches": 290,
+              "failure": null
+            },
+            {
+              "name": "cargo-trips",
+              "sha256": "1f1009336b360f59a4d910900999f8c9ccc7b52fd8131a5a96328c47b8b9ca99",
+              "init_seconds": 2.6511249581817538,
+              "total_act_seconds": 145.63243109243922,
+              "max_act_seconds": 0.861099542118609,
+              "slow_steps": 0,
+              "calls": 299,
+              "search_enabled": true,
+              "searches": 288,
+              "failure": null
+            }
+          ],
+          "margin": -651.89,
+          "scores": [
+            7601.13,
+            6949.24
+          ],
+          "phases": [
+            [
+              [
+                "deliveries",
+                42,
+                45
+              ],
+              [
+                "hire_cost",
+                1260,
+                1140
+              ],
+              [
+                "own_receipts",
+                4271.399,
+                4111.092
+              ],
+              [
+                "tree_net",
+                286.006,
+                952.643
+              ],
+              [
+                "plants",
+                19,
+                19
+              ],
+              [
+                "seizes",
+                8,
+                13
+              ],
+              [
+                "base",
+                4271.399,
+                4111.092
+              ]
+            ],
+            [
+              [
+                "deliveries",
+                18,
+                21
+              ],
+              [
+                "hire_cost",
+                420,
+                450
+              ],
+              [
+                "own_receipts",
+                1602.963,
+                2497.257
+              ],
+              [
+                "tree_net",
+                168.541,
+                -27.703
+              ],
+              [
+                "plants",
+                6,
+                7
+              ],
+              [
+                "seizes",
+                7,
+                6
+              ],
+              [
+                "base",
+                1602.963,
+                2497.257
+              ]
+            ],
+            [
+              [
+                "deliveries",
+                26,
+                22
+              ],
+              [
+                "hire_cost",
+                240,
+                210
+              ],
+              [
+                "own_receipts",
+                2116.339,
+                1591.149
+              ],
+              [
+                "tree_net",
+                343.994,
+                196.696
+              ],
+              [
+                "plants",
+                4,
+                3
+              ],
+              [
+                "seizes",
+                2,
+                2
+              ],
+              [
+                "base",
+                2116.339,
+                1591.149
+              ]
+            ]
+          ]
+        },
+        {
+          "arm": "cargo-trips",
+          "seed": 731654341,
+          "seat": 0,
+          "layout": "9a68ff13b3725c9ab7f0ea8d23189727357ed28aad59e1fdd238e126be5069aa",
+          "status": "completed",
+          "turns": 299,
+          "players": [
+            {
+              "name": "cargo-trips",
+              "sha256": "1f1009336b360f59a4d910900999f8c9ccc7b52fd8131a5a96328c47b8b9ca99",
+              "init_seconds": 2.761857124976814,
+              "total_act_seconds": 145.3101434968412,
+              "max_act_seconds": 0.8250478329136968,
+              "slow_steps": 0,
+              "calls": 299,
+              "search_enabled": true,
+              "searches": 285,
+              "failure": null
+            },
+            {
+              "name": "yan-v7",
+              "sha256": "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6",
+              "init_seconds": 2.089943917002529,
+              "total_act_seconds": 141.96302149444818,
+              "max_act_seconds": 0.7921462908852845,
+              "slow_steps": 0,
+              "calls": 299,
+              "search_enabled": true,
+              "searches": 283,
+              "failure": null
+            }
+          ],
+          "margin": 1032.39,
+          "scores": [
+            7363.36,
+            6330.97
+          ],
+          "phases": [
+            [
+              [
+                "deliveries",
+                42,
+                43
+              ],
+              [
+                "hire_cost",
+                1500,
+                1590
+              ],
+              [
+                "own_receipts",
+                4760.201,
+                4471.663
+              ],
+              [
+                "tree_net",
+                1015.579,
+                418.862
+              ],
+              [
+                "plants",
+                19,
+                19
+              ],
+              [
+                "seizes",
+                22,
+                14
+              ],
+              [
+                "base",
+                4760.201,
+                4481.182
+              ]
+            ],
+            [
+              [
+                "deliveries",
+                20,
+                17
+              ],
+              [
+                "hire_cost",
+                240,
+                240
+              ],
+              [
+                "own_receipts",
+                1661.216,
+                2036.058
+              ],
+              [
+                "tree_net",
+                194.594,
+                57.62
+              ],
+              [
+                "plants",
+                6,
+                6
+              ],
+              [
+                "seizes",
+                0,
+                2
+              ],
+              [
+                "base",
+                1661.216,
+                2036.058
+              ]
+            ],
+            [
+              [
+                "deliveries",
+                15,
+                10
+              ],
+              [
+                "hire_cost",
+                240,
+                240
+              ],
+              [
+                "own_receipts",
+                1443.724,
+                1181.664
+              ],
+              [
+                "tree_net",
+                188.058,
+                145.587
+              ],
+              [
+                "plants",
+                1,
+                3
+              ],
+              [
+                "seizes",
+                4,
+                6
+              ],
+              [
+                "base",
+                1443.724,
+                1181.664
+              ]
+            ]
+          ]
+        },
+        {
+          "arm": "cargo-trips",
+          "seed": 731654341,
+          "seat": 1,
+          "layout": "9a68ff13b3725c9ab7f0ea8d23189727357ed28aad59e1fdd238e126be5069aa",
+          "status": "completed",
+          "turns": 299,
+          "players": [
+            {
+              "name": "yan-v7",
+              "sha256": "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6",
+              "init_seconds": 2.007823375053704,
+              "total_act_seconds": 143.18806970096193,
+              "max_act_seconds": 0.8368232089560479,
+              "slow_steps": 0,
+              "calls": 299,
+              "search_enabled": true,
+              "searches": 284,
+              "failure": null
+            },
+            {
+              "name": "cargo-trips",
+              "sha256": "1f1009336b360f59a4d910900999f8c9ccc7b52fd8131a5a96328c47b8b9ca99",
+              "init_seconds": 2.1162922501098365,
+              "total_act_seconds": 141.35256195929833,
+              "max_act_seconds": 0.831586416810751,
+              "slow_steps": 0,
+              "calls": 299,
+              "search_enabled": true,
+              "searches": 282,
+              "failure": null
+            }
+          ],
+          "margin": -795.88,
+          "scores": [
+            6151.05,
+            5355.17
+          ],
+          "phases": [
+            [
+              [
+                "deliveries",
+                38,
+                38
+              ],
+              [
+                "hire_cost",
+                1170,
+                1260
+              ],
+              [
+                "own_receipts",
+                4008.047,
+                4431.427
+              ],
+              [
+                "tree_net",
+                498.363,
+                953.395
+              ],
+              [
+                "plants",
+                22,
+                15
+              ],
+              [
+                "seizes",
+                15,
+                16
+              ],
+              [
+                "base",
+                4008.047,
+                4441.414
+              ]
+            ],
+            [
+              [
+                "deliveries",
+                10,
+                10
+              ],
+              [
+                "hire_cost",
+                570,
+                540
+              ],
+              [
+                "own_receipts",
+                1205.402,
+                1066.847
+              ],
+              [
+                "tree_net",
+                185.441,
+                -4.95
+              ],
+              [
+                "plants",
+                4,
+                9
+              ],
+              [
+                "seizes",
+                5,
+                8
+              ],
+              [
+                "base",
+                1205.402,
+                1066.847
+              ]
+            ],
+            [
+              [
+                "deliveries",
+                12,
+                17
+              ],
+              [
+                "hire_cost",
+                420,
+                450
+              ],
+              [
+                "own_receipts",
+                1475.123,
+                1656.169
+              ],
+              [
+                "tree_net",
+                62.864,
+                208.177
+              ],
+              [
+                "plants",
+                3,
+                4
+              ],
+              [
+                "seizes",
+                6,
+                7
+              ],
+              [
+                "base",
+                1475.123,
+                1656.169
+              ]
+            ]
+          ]
+        }
+      ],
+      "summary": {
+        "valid": 8,
+        "total": 8,
+        "wins_by_seat": [
+          1,
+          2
+        ],
+        "wins": 3,
+        "draws": 0,
+        "average_margin": -335.69,
+        "margins": {
+          "280265062": {
+            "0": -942.1,
+            "1": 923.31
+          },
+          "731654341": {
+            "1": -795.88,
+            "0": 1032.39
+          },
+          "41387789": {
+            "1": 59.82,
+            "0": -1454.61
+          },
+          "597251215": {
+            "1": -651.89,
+            "0": -856.59
+          }
+        },
+        "all_turns": {
+          "delta": {
+            "base": -163.19,
+            "deliveries": 1.12,
+            "hire_cost": -18.75,
+            "own_receipts": -161.94,
+            "plants": 1.75,
+            "seizes": -2.88,
+            "tree_net": -191.23
+          },
+          "average_delivery": [
+            95.35,
+            98.83
+          ]
+        },
+        "final_49": {
+          "delta": {
+            "base": 23.39,
+            "deliveries": 0.88,
+            "hire_cost": 3.75,
+            "own_receipts": 23.39,
+            "plants": -0.25,
+            "seizes": -1.12,
+            "tree_net": 43.28
+          },
+          "average_delivery": [
+            84.68,
+            87.15
+          ]
+        }
+      },
+      "passed": false
+    },
+    "confirmation": {
+      "games": [
+        {
+          "arm": "cargo-trips",
+          "seed": 60586773,
+          "seat": 0,
+          "layout": "5a3a8b06e32e61f3b59058b2a851adcaad1a4c85547d7499c246b1a6b91f5eb1",
+          "status": "completed",
+          "turns": 299,
+          "players": [
+            {
+              "name": "cargo-trips",
+              "sha256": "1f1009336b360f59a4d910900999f8c9ccc7b52fd8131a5a96328c47b8b9ca99",
+              "init_seconds": 2.8159657910000533,
+              "total_act_seconds": 144.75424025580287,
+              "max_act_seconds": 0.8540122918784618,
+              "slow_steps": 0,
+              "calls": 299,
+              "search_enabled": true,
+              "searches": 287,
+              "failure": null
+            },
+            {
+              "name": "yan-v7",
+              "sha256": "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6",
+              "init_seconds": 2.4948810839559883,
+              "total_act_seconds": 143.00439336826093,
+              "max_act_seconds": 0.7925101658329368,
+              "slow_steps": 0,
+              "calls": 299,
+              "search_enabled": true,
+              "searches": 286,
+              "failure": null
+            }
+          ],
+          "margin": -39.37,
+          "scores": [
+            6984.24,
+            7023.61
+          ],
+          "phases": [
+            [
+              [
+                "deliveries",
+                41,
+                48
+              ],
+              [
+                "hire_cost",
+                1200,
+                1170
+              ],
+              [
+                "own_receipts",
+                4521.712,
+                4811.748
+              ],
+              [
+                "tree_net",
+                399.311,
+                291.722
+              ],
+              [
+                "plants",
+                18,
+                18
+              ],
+              [
+                "seizes",
+                17,
+                19
+              ],
+              [
+                "base",
+                4521.712,
+                4811.748
+              ]
+            ],
+            [
+              [
+                "deliveries",
+                11,
+                12
+              ],
+              [
+                "hire_cost",
+                360,
+                360
+              ],
+              [
+                "own_receipts",
+                1585.631,
+                1370.882
+              ],
+              [
+                "tree_net",
+                -46.521,
+                349.223
+              ],
+              [
+                "plants",
+                5,
+                7
+              ],
+              [
+                "seizes",
+                7,
+                9
+              ],
+              [
+                "base",
+                1585.631,
+                1370.882
+              ]
+            ],
+            [
+              [
+                "deliveries",
+                25,
+                19
+              ],
+              [
+                "hire_cost",
+                210,
+                240
+              ],
+              [
+                "own_receipts",
+                2075.502,
+                1700.758
+              ],
+              [
+                "tree_net",
+                138.622,
+                189.317
+              ],
+              [
+                "plants",
+                4,
+                4
+              ],
+              [
+                "seizes",
+                2,
+                2
+              ],
+              [
+                "base",
+                2075.502,
+                1700.758
+              ]
+            ]
+          ]
+        },
+        {
+          "arm": "cargo-trips",
+          "seed": 60586773,
+          "seat": 1,
+          "layout": "5a3a8b06e32e61f3b59058b2a851adcaad1a4c85547d7499c246b1a6b91f5eb1",
+          "status": "completed",
+          "turns": 299,
+          "players": [
+            {
+              "name": "yan-v7",
+              "sha256": "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6",
+              "init_seconds": 3.1227128750178963,
+              "total_act_seconds": 143.0883533724118,
+              "max_act_seconds": 0.8583196250256151,
+              "slow_steps": 0,
+              "calls": 299,
+              "search_enabled": true,
+              "searches": 289,
+              "failure": null
+            },
+            {
+              "name": "cargo-trips",
+              "sha256": "1f1009336b360f59a4d910900999f8c9ccc7b52fd8131a5a96328c47b8b9ca99",
+              "init_seconds": 2.505409208126366,
+              "total_act_seconds": 142.09909491753206,
+              "max_act_seconds": 0.8242737089749426,
+              "slow_steps": 0,
+              "calls": 299,
+              "search_enabled": true,
+              "searches": 288,
+              "failure": null
+            }
+          ],
+          "margin": -343.23,
+          "scores": [
+            7612.24,
+            7269.01
+          ],
+          "phases": [
+            [
+              [
+                "deliveries",
+                42,
+                47
+              ],
+              [
+                "hire_cost",
+                1380,
+                1320
+              ],
+              [
+                "own_receipts",
+                3723.922,
+                4488.601
+              ],
+              [
+                "tree_net",
+                960.768,
+                625.697
+              ],
+              [
+                "plants",
+                20,
+                16
+              ],
+              [
+                "seizes",
+                11,
+                14
+              ],
+              [
+                "base",
+                3723.922,
+                4488.601
+              ]
+            ],
+            [
+              [
+                "deliveries",
+                18,
+                12
+              ],
+              [
+                "hire_cost",
+                300,
+                270
+              ],
+              [
+                "own_receipts",
+                2192.338,
+                1363.771
+              ],
+              [
+                "tree_net",
+                95.352,
+                168.271
+              ],
+              [
+                "plants",
+                8,
+                3
+              ],
+              [
+                "seizes",
+                1,
+                4
+              ],
+              [
+                "base",
+                2192.338,
+                1363.771
+              ]
+            ],
+            [
+              [
+                "deliveries",
+                19,
+                16
+              ],
+              [
+                "hire_cost",
+                150,
+                180
+              ],
+              [
+                "own_receipts",
+                1922.816,
+                2422.552
+              ],
+              [
+                "tree_net",
+                123.838,
+                233.328
+              ],
+              [
+                "plants",
+                4,
+                3
+              ],
+              [
+                "seizes",
+                4,
+                4
+              ],
+              [
+                "base",
+                1922.816,
+                2422.552
+              ]
+            ]
+          ]
+        },
+        {
+          "arm": "cargo-trips",
+          "seed": 125102044,
+          "seat": 0,
+          "layout": "57967f55d1de2d25385d0ac2176c8baf1d98de5dab12b9127686bb4fd3d75c54",
+          "status": "completed",
+          "turns": 299,
+          "players": [
+            {
+              "name": "cargo-trips",
+              "sha256": "1f1009336b360f59a4d910900999f8c9ccc7b52fd8131a5a96328c47b8b9ca99",
+              "init_seconds": 2.8673521671444178,
+              "total_act_seconds": 132.02089255326428,
+              "max_act_seconds": 0.8267540000379086,
+              "slow_steps": 0,
+              "calls": 299,
+              "search_enabled": true,
+              "searches": 289,
+              "failure": null
+            },
+            {
+              "name": "yan-v7",
+              "sha256": "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6",
+              "init_seconds": 2.2496890840120614,
+              "total_act_seconds": 128.79212195659056,
+              "max_act_seconds": 0.8316589999012649,
+              "slow_steps": 0,
+              "calls": 299,
+              "search_enabled": true,
+              "searches": 290,
+              "failure": null
+            }
+          ],
+          "margin": -384.11,
+          "scores": [
+            6013.42,
+            6397.53
+          ],
+          "phases": [
+            [
+              [
+                "deliveries",
+                49,
+                49
+              ],
+              [
+                "hire_cost",
+                1590,
+                1650
+              ],
+              [
+                "own_receipts",
+                4496.842,
+                4001.418
+              ],
+              [
+                "tree_net",
+                95.996,
+                883.285
+              ],
+              [
+                "plants",
+                18,
+                19
+              ],
+              [
+                "seizes",
+                15,
+                20
+              ],
+              [
+                "base",
+                4496.842,
+                4001.418
+              ]
+            ],
+            [
+              [
+                "deliveries",
+                13,
+                15
+              ],
+              [
+                "hire_cost",
+                210,
+                270
+              ],
+              [
+                "own_receipts",
+                1144.855,
+                1411.18
+              ],
+              [
+                "tree_net",
+                269.173,
+                148.75
+              ],
+              [
+                "plants",
+                4,
+                7
+              ],
+              [
+                "seizes",
+                4,
+                3
+              ],
+              [
+                "base",
+                1144.855,
+                1411.18
+              ]
+            ],
+            [
+              [
+                "deliveries",
+                21,
+                26
+              ],
+              [
+                "hire_cost",
+                180,
+                240
+              ],
+              [
+                "own_receipts",
+                1752.16,
+                1744.222
+              ],
+              [
+                "tree_net",
+                154.466,
+                288.731
+              ],
+              [
+                "plants",
+                5,
+                2
+              ],
+              [
+                "seizes",
+                4,
+                1
+              ],
+              [
+                "base",
+                1752.16,
+                1744.222
+              ]
+            ]
+          ]
+        },
+        {
+          "arm": "cargo-trips",
+          "seed": 125102044,
+          "seat": 1,
+          "layout": "57967f55d1de2d25385d0ac2176c8baf1d98de5dab12b9127686bb4fd3d75c54",
+          "status": "completed",
+          "turns": 299,
+          "players": [
+            {
+              "name": "yan-v7",
+              "sha256": "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6",
+              "init_seconds": 2.55043145804666,
+              "total_act_seconds": 147.28513402771205,
+              "max_act_seconds": 0.8126802500337362,
+              "slow_steps": 0,
+              "calls": 299,
+              "search_enabled": true,
+              "searches": 287,
+              "failure": null
+            },
+            {
+              "name": "cargo-trips",
+              "sha256": "1f1009336b360f59a4d910900999f8c9ccc7b52fd8131a5a96328c47b8b9ca99",
+              "init_seconds": 2.8102567919995636,
+              "total_act_seconds": 143.8292397807818,
+              "max_act_seconds": 0.8333978338632733,
+              "slow_steps": 0,
+              "calls": 299,
+              "search_enabled": true,
+              "searches": 288,
+              "failure": null
+            }
+          ],
+          "margin": 852.71,
+          "scores": [
+            6420.1,
+            7272.81
+          ],
+          "phases": [
+            [
+              [
+                "deliveries",
+                50,
+                45
+              ],
+              [
+                "hire_cost",
+                1110,
+                1230
+              ],
+              [
+                "own_receipts",
+                4366.74,
+                3780.312
+              ],
+              [
+                "tree_net",
+                706.375,
+                654.094
+              ],
+              [
+                "plants",
+                18,
+                18
+              ],
+              [
+                "seizes",
+                20,
+                15
+              ],
+              [
+                "base",
+                4366.74,
+                3780.312
+              ]
+            ],
+            [
+              [
+                "deliveries",
+                21,
+                21
+              ],
+              [
+                "hire_cost",
+                300,
+                330
+              ],
+              [
+                "own_receipts",
+                1997.742,
+                1704.177
+              ],
+              [
+                "tree_net",
+                101.773,
+                173.458
+              ],
+              [
+                "plants",
+                7,
+                4
+              ],
+              [
+                "seizes",
+                2,
+                4
+              ],
+              [
+                "base",
+                1997.742,
+                1704.177
+              ]
+            ],
+            [
+              [
+                "deliveries",
+                26,
+                24
+              ],
+              [
+                "hire_cost",
+                300,
+                240
+              ],
+              [
+                "own_receipts",
+                1635.547,
+                1757.728
+              ],
+              [
+                "tree_net",
+                94.543,
+                70.32
+              ],
+              [
+                "plants",
+                5,
+                2
+              ],
+              [
+                "seizes",
+                3,
+                4
+              ],
+              [
+                "base",
+                1635.547,
+                1757.728
+              ]
+            ]
+          ]
+        },
+        {
+          "arm": "cargo-trips",
+          "seed": 661106696,
+          "seat": 0,
+          "layout": "8b544d34f4bb45a1ae595ea1f9fc58b76568ff8d166f2c8f49893cfa396a2240",
+          "status": "completed",
+          "turns": 299,
+          "players": [
+            {
+              "name": "cargo-trips",
+              "sha256": "1f1009336b360f59a4d910900999f8c9ccc7b52fd8131a5a96328c47b8b9ca99",
+              "init_seconds": 2.176676917122677,
+              "total_act_seconds": 146.0524817481637,
+              "max_act_seconds": 0.824751416919753,
+              "slow_steps": 0,
+              "calls": 299,
+              "search_enabled": true,
+              "searches": 287,
+              "failure": null
+            },
+            {
+              "name": "yan-v7",
+              "sha256": "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6",
+              "init_seconds": 2.4215782911051065,
+              "total_act_seconds": 140.63616198464297,
+              "max_act_seconds": 0.8166305001359433,
+              "slow_steps": 0,
+              "calls": 299,
+              "search_enabled": true,
+              "searches": 285,
+              "failure": null
+            }
+          ],
+          "margin": -202.14,
+          "scores": [
+            7121.59,
+            7323.73
+          ],
+          "phases": [
+            [
+              [
+                "deliveries",
+                35,
+                43
+              ],
+              [
+                "hire_cost",
+                1200,
+                1350
+              ],
+              [
+                "own_receipts",
+                3934.498,
+                4590.845
+              ],
+              [
+                "tree_net",
+                599.638,
+                448.941
+              ],
+              [
+                "plants",
+                15,
+                20
+              ],
+              [
+                "seizes",
+                18,
+                18
+              ],
+              [
+                "base",
+                3934.498,
+                4590.845
+              ]
+            ],
+            [
+              [
+                "deliveries",
+                15,
+                14
+              ],
+              [
+                "hire_cost",
+                330,
+                330
+              ],
+              [
+                "own_receipts",
+                2009.071,
+                1742.664
+              ],
+              [
+                "tree_net",
+                32.421,
+                171.172
+              ],
+              [
+                "plants",
+                5,
+                7
+              ],
+              [
+                "seizes",
+                3,
+                3
+              ],
+              [
+                "base",
+                2009.071,
+                1742.664
+              ]
+            ],
+            [
+              [
+                "deliveries",
+                26,
+                24
+              ],
+              [
+                "hire_cost",
+                270,
+                210
+              ],
+              [
+                "own_receipts",
+                2084.883,
+                2048.088
+              ],
+              [
+                "tree_net",
+                181.073,
+                132.049
+              ],
+              [
+                "plants",
+                4,
+                2
+              ],
+              [
+                "seizes",
+                4,
+                5
+              ],
+              [
+                "base",
+                2084.883,
+                2048.088
+              ]
+            ]
+          ]
+        },
+        {
+          "arm": "cargo-trips",
+          "seed": 661106696,
+          "seat": 1,
+          "layout": "8b544d34f4bb45a1ae595ea1f9fc58b76568ff8d166f2c8f49893cfa396a2240",
+          "status": "completed",
+          "turns": 299,
+          "players": [
+            {
+              "name": "yan-v7",
+              "sha256": "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6",
+              "init_seconds": 2.154473542002961,
+              "total_act_seconds": 145.50687158294022,
+              "max_act_seconds": 0.8836268328595906,
+              "slow_steps": 0,
+              "calls": 299,
+              "search_enabled": true,
+              "searches": 289,
+              "failure": null
+            },
+            {
+              "name": "cargo-trips",
+              "sha256": "1f1009336b360f59a4d910900999f8c9ccc7b52fd8131a5a96328c47b8b9ca99",
+              "init_seconds": 2.297733624931425,
+              "total_act_seconds": 142.07598092546687,
+              "max_act_seconds": 0.8103980000596493,
+              "slow_steps": 0,
+              "calls": 299,
+              "search_enabled": true,
+              "searches": 289,
+              "failure": null
+            }
+          ],
+          "margin": -562.49,
+          "scores": [
+            6166.09,
+            5603.6
+          ],
+          "phases": [
+            [
+              [
+                "deliveries",
+                48,
+                46
+              ],
+              [
+                "hire_cost",
+                1530,
+                1620
+              ],
+              [
+                "own_receipts",
+                4245.186,
+                3827.656
+              ],
+              [
+                "tree_net",
+                345.782,
+                578.412
+              ],
+              [
+                "plants",
+                25,
+                14
+              ],
+              [
+                "seizes",
+                12,
+                21
+              ],
+              [
+                "base",
+                4245.186,
+                3827.656
+              ]
+            ],
+            [
+              [
+                "deliveries",
+                14,
+                10
+              ],
+              [
+                "hire_cost",
+                600,
+                570
+              ],
+              [
+                "own_receipts",
+                1261.353,
+                1665.545
+              ],
+              [
+                "tree_net",
+                85.451,
+                16.664
+              ],
+              [
+                "plants",
+                6,
+                7
+              ],
+              [
+                "seizes",
+                8,
+                5
+              ],
+              [
+                "base",
+                1261.353,
+                1665.545
+              ]
+            ],
+            [
+              [
+                "deliveries",
+                19,
+                23
+              ],
+              [
+                "hire_cost",
+                210,
+                180
+              ],
+              [
+                "own_receipts",
+                1647.068,
+                2182.862
+              ],
+              [
+                "tree_net",
+                278.68,
+                185.0
+              ],
+              [
+                "plants",
+                3,
+                1
+              ],
+              [
+                "seizes",
+                4,
+                4
+              ],
+              [
+                "base",
+                1647.068,
+                2182.862
+              ]
+            ]
+          ]
+        },
+        {
+          "arm": "cargo-trips",
+          "seed": 669576539,
+          "seat": 0,
+          "layout": "ba1770b783ff52bdbf36400544e0ee8106ea08ba3abbef2f3c71844cf1f186c5",
+          "status": "completed",
+          "turns": 299,
+          "players": [
+            {
+              "name": "cargo-trips",
+              "sha256": "1f1009336b360f59a4d910900999f8c9ccc7b52fd8131a5a96328c47b8b9ca99",
+              "init_seconds": 3.8088816250674427,
+              "total_act_seconds": 150.88355241622776,
+              "max_act_seconds": 0.8441913749556988,
+              "slow_steps": 0,
+              "calls": 299,
+              "search_enabled": true,
+              "searches": 294,
+              "failure": null
+            },
+            {
+              "name": "yan-v7",
+              "sha256": "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6",
+              "init_seconds": 3.0263966671191156,
+              "total_act_seconds": 146.19843312213197,
+              "max_act_seconds": 0.8302156659774482,
+              "slow_steps": 0,
+              "calls": 299,
+              "search_enabled": true,
+              "searches": 292,
+              "failure": null
+            }
+          ],
+          "margin": -294.3,
+          "scores": [
+            6034.11,
+            6328.41
+          ],
+          "phases": [
+            [
+              [
+                "deliveries",
+                48,
+                46
+              ],
+              [
+                "hire_cost",
+                1200,
+                1140
+              ],
+              [
+                "own_receipts",
+                3535.459,
+                3917.537
+              ],
+              [
+                "tree_net",
+                151.389,
+                395.982
+              ],
+              [
+                "plants",
+                14,
+                21
+              ],
+              [
+                "seizes",
+                11,
+                16
+              ],
+              [
+                "base",
+                3535.459,
+                3917.537
+              ]
+            ],
+            [
+              [
+                "deliveries",
+                16,
+                16
+              ],
+              [
+                "hire_cost",
+                420,
+                420
+              ],
+              [
+                "own_receipts",
+                1858.47,
+                1621.904
+              ],
+              [
+                "tree_net",
+                63.647,
+                90.463
+              ],
+              [
+                "plants",
+                8,
+                5
+              ],
+              [
+                "seizes",
+                5,
+                4
+              ],
+              [
+                "base",
+                1858.47,
+                1621.904
+              ]
+            ],
+            [
+              [
+                "deliveries",
+                30,
+                17
+              ],
+              [
+                "hire_cost",
+                120,
+                150
+              ],
+              [
+                "own_receipts",
+                1911.811,
+                1500.475
+              ],
+              [
+                "tree_net",
+                173.266,
+                432.014
+              ],
+              [
+                "plants",
+                1,
+                6
+              ],
+              [
+                "seizes",
+                1,
+                3
+              ],
+              [
+                "base",
+                1911.811,
+                1500.475
+              ]
+            ]
+          ]
+        },
+        {
+          "arm": "cargo-trips",
+          "seed": 669576539,
+          "seat": 1,
+          "layout": "ba1770b783ff52bdbf36400544e0ee8106ea08ba3abbef2f3c71844cf1f186c5",
+          "status": "completed",
+          "turns": 299,
+          "players": [
+            {
+              "name": "yan-v7",
+              "sha256": "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6",
+              "init_seconds": 2.6945443749427795,
+              "total_act_seconds": 146.806402543094,
+              "max_act_seconds": 0.8294497500173748,
+              "slow_steps": 0,
+              "calls": 299,
+              "search_enabled": true,
+              "searches": 288,
+              "failure": null
+            },
+            {
+              "name": "cargo-trips",
+              "sha256": "1f1009336b360f59a4d910900999f8c9ccc7b52fd8131a5a96328c47b8b9ca99",
+              "init_seconds": 3.033000292023644,
+              "total_act_seconds": 144.84004927868955,
+              "max_act_seconds": 0.8308665829245001,
+              "slow_steps": 0,
+              "calls": 299,
+              "search_enabled": true,
+              "searches": 284,
+              "failure": null
+            }
+          ],
+          "margin": 429.66,
+          "scores": [
+            7132.6,
+            7562.26
+          ],
+          "phases": [
+            [
+              [
+                "deliveries",
+                41,
+                40
+              ],
+              [
+                "hire_cost",
+                1170,
+                1410
+              ],
+              [
+                "own_receipts",
+                4249.54,
+                4197.437
+              ],
+              [
+                "tree_net",
+                612.01,
+                487.457
+              ],
+              [
+                "plants",
+                19,
+                16
+              ],
+              [
+                "seizes",
+                17,
+                12
+              ],
+              [
+                "base",
+                4249.54,
+                4197.437
+              ]
+            ],
+            [
+              [
+                "deliveries",
+                17,
+                16
+              ],
+              [
+                "hire_cost",
+                210,
+                210
+              ],
+              [
+                "own_receipts",
+                1706.187,
+                1662.886
+              ],
+              [
+                "tree_net",
+                213.332,
+                60.612
+              ],
+              [
+                "plants",
+                8,
+                4
+              ],
+              [
+                "seizes",
+                5,
+                5
+              ],
+              [
+                "base",
+                1706.187,
+                1662.886
+              ]
+            ],
+            [
+              [
+                "deliveries",
+                24,
+                24
+              ],
+              [
+                "hire_cost",
+                180,
+                180
+              ],
+              [
+                "own_receipts",
+                2075.283,
+                2238.638
+              ],
+              [
+                "tree_net",
+                185.961,
+                205.642
+              ],
+              [
+                "plants",
+                3,
+                5
+              ],
+              [
+                "seizes",
+                1,
+                2
+              ],
+              [
+                "base",
+                2075.283,
+                2238.638
+              ]
+            ]
+          ]
+        }
+      ],
+      "summary": {
+        "valid": 8,
+        "total": 8,
+        "wins_by_seat": [
+          0,
+          2
+        ],
+        "wins": 2,
+        "draws": 0,
+        "average_margin": -67.91,
+        "margins": {
+          "60586773": {
+            "0": -39.37,
+            "1": -343.23
+          },
+          "661106696": {
+            "0": -202.14,
+            "1": -562.49
+          },
+          "669576539": {
+            "1": 429.66,
+            "0": -294.3
+          },
+          "125102044": {
+            "1": 852.71,
+            "0": -384.11
+          }
+        },
+        "all_turns": {
+          "delta": {
+            "base": 22.59,
+            "deliveries": 2.0,
+            "hire_cost": -67.5,
+            "own_receipts": 22.59,
+            "plants": 2.0,
+            "seizes": -2.25,
+            "tree_net": -158.03
+          },
+          "average_delivery": [
+            92.58,
+            94.57
+          ]
+        },
+        "final_49": {
+          "delta": {
+            "base": -61.28,
+            "deliveries": 2.12,
+            "hire_cost": 0.0,
+            "own_receipts": -61.28,
+            "plants": 0.5,
+            "seizes": -0.25,
+            "tree_net": -50.74
+          },
+          "average_delivery": [
+            79.5,
+            90.15
+          ]
+        }
+      },
+      "passed": false
+    },
+    "controls": {
+      "games": [
+        {
+          "arm": "v7-control",
+          "seed": 4777473,
+          "seat": 0,
+          "layout": "8451f43e3ff34229bf826c70aaf67b0b14d8c620ed4fed964c7d171f3060888d",
+          "status": "completed",
+          "turns": 299,
+          "players": [
+            {
+              "name": "v7-control",
+              "sha256": "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6",
+              "init_seconds": 2.3293947919737548,
+              "total_act_seconds": 133.10215637437068,
+              "max_act_seconds": 0.8017539579886943,
+              "slow_steps": 0,
+              "calls": 299,
+              "search_enabled": true,
+              "searches": 291,
+              "failure": null
+            },
+            {
+              "name": "yan-v7",
+              "sha256": "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6",
+              "init_seconds": 2.1298750420100987,
+              "total_act_seconds": 132.03147633722983,
+              "max_act_seconds": 0.8149606669321656,
+              "slow_steps": 0,
+              "calls": 299,
+              "search_enabled": true,
+              "searches": 289,
+              "failure": null
+            }
+          ],
+          "margin": 1958.48,
+          "scores": [
+            7670.76,
+            5712.28
+          ],
+          "phases": [
+            [
+              [
+                "deliveries",
+                34,
+                35
+              ],
+              [
+                "hire_cost",
+                1320,
+                1290
+              ],
+              [
+                "own_receipts",
+                4451.916,
+                2892.319
+              ],
+              [
+                "tree_net",
+                1056.07,
+                533.787
+              ],
+              [
+                "plants",
+                17,
+                19
+              ],
+              [
+                "seizes",
+                15,
+                12
+              ],
+              [
+                "base",
+                4451.916,
+                2892.319
+              ]
+            ],
+            [
+              [
+                "deliveries",
+                15,
+                12
+              ],
+              [
+                "hire_cost",
+                330,
+                270
+              ],
+              [
+                "own_receipts",
+                1762.158,
+                2311.949
+              ],
+              [
+                "tree_net",
+                207.817,
+                220.071
+              ],
+              [
+                "plants",
+                9,
+                4
+              ],
+              [
+                "seizes",
+                3,
+                5
+              ],
+              [
+                "base",
+                1762.158,
+                2311.949
+              ]
+            ],
+            [
+              [
+                "deliveries",
+                21,
+                19
+              ],
+              [
+                "hire_cost",
+                150,
+                240
+              ],
+              [
+                "own_receipts",
+                1741.281,
+                1386.314
+              ],
+              [
+                "tree_net",
+                171.603,
+                87.877
+              ],
+              [
+                "plants",
+                3,
+                3
+              ],
+              [
+                "seizes",
+                2,
+                3
+              ],
+              [
+                "base",
+                1741.281,
+                1386.314
+              ]
+            ]
+          ]
+        },
+        {
+          "arm": "v7-control",
+          "seed": 531729840,
+          "seat": 0,
+          "layout": "e9ced8f6bfd7d5876c17482f4fd2d9f6d37a611cc81a14b94793802aa5567f04",
+          "status": "completed",
+          "turns": 299,
+          "players": [
+            {
+              "name": "v7-control",
+              "sha256": "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6",
+              "init_seconds": 2.4173891658429056,
+              "total_act_seconds": 143.2964329503011,
+              "max_act_seconds": 0.8389204170089215,
+              "slow_steps": 0,
+              "calls": 299,
+              "search_enabled": true,
+              "searches": 288,
+              "failure": null
+            },
+            {
+              "name": "yan-v7",
+              "sha256": "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6",
+              "init_seconds": 2.66935958317481,
+              "total_act_seconds": 146.15454440983012,
+              "max_act_seconds": 0.8184046659152955,
+              "slow_steps": 0,
+              "calls": 299,
+              "search_enabled": true,
+              "searches": 293,
+              "failure": null
+            }
+          ],
+          "margin": 171.76,
+          "scores": [
+            7584.13,
+            7412.37
+          ],
+          "phases": [
+            [
+              [
+                "deliveries",
+                48,
+                45
+              ],
+              [
+                "hire_cost",
+                1170,
+                1320
+              ],
+              [
+                "own_receipts",
+                4576.722,
+                4631.268
+              ],
+              [
+                "tree_net",
+                728.262,
+                619.172
+              ],
+              [
+                "plants",
+                18,
+                20
+              ],
+              [
+                "seizes",
+                19,
+                17
+              ],
+              [
+                "base",
+                4576.722,
+                4631.268
+              ]
+            ],
+            [
+              [
+                "deliveries",
+                15,
+                16
+              ],
+              [
+                "hire_cost",
+                360,
+                360
+              ],
+              [
+                "own_receipts",
+                1456.66,
+                1466.806
+              ],
+              [
+                "tree_net",
+                109.617,
+                115.401
+              ],
+              [
+                "plants",
+                7,
+                7
+              ],
+              [
+                "seizes",
+                6,
+                3
+              ],
+              [
+                "base",
+                1456.66,
+                1466.806
+              ]
+            ],
+            [
+              [
+                "deliveries",
+                20,
+                22
+              ],
+              [
+                "hire_cost",
+                270,
+                300
+              ],
+              [
+                "own_receipts",
+                2213.79,
+                2138.114
+              ],
+              [
+                "tree_net",
+                219.066,
+                341.509
+              ],
+              [
+                "plants",
+                3,
+                3
+              ],
+              [
+                "seizes",
+                4,
+                5
+              ],
+              [
+                "base",
+                2213.79,
+                2138.114
+              ]
+            ]
+          ]
+        },
+        {
+          "arm": "v7-control",
+          "seed": 626790576,
+          "seat": 0,
+          "layout": "f3b5fe2c4a0231eac88442c6a60fb4c596928f82c88a59e16c83495302da8025",
+          "status": "completed",
+          "turns": 299,
+          "players": [
+            {
+              "name": "v7-control",
+              "sha256": "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6",
+              "init_seconds": 3.1432400830090046,
+              "total_act_seconds": 147.43803757755086,
+              "max_act_seconds": 0.832262041978538,
+              "slow_steps": 0,
+              "calls": 299,
+              "search_enabled": true,
+              "searches": 285,
+              "failure": null
+            },
+            {
+              "name": "yan-v7",
+              "sha256": "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6",
+              "init_seconds": 3.2952874589245766,
+              "total_act_seconds": 144.77704025269486,
+              "max_act_seconds": 0.8224047089461237,
+              "slow_steps": 0,
+              "calls": 299,
+              "search_enabled": true,
+              "searches": 285,
+              "failure": null
+            }
+          ],
+          "margin": -721.89,
+          "scores": [
+            7557.3,
+            8279.19
+          ],
+          "phases": [
+            [
+              [
+                "deliveries",
+                50,
+                45
+              ],
+              [
+                "hire_cost",
+                1260,
+                1200
+              ],
+              [
+                "own_receipts",
+                4473.646,
+                4354.879
+              ],
+              [
+                "tree_net",
+                244.768,
+                875.267
+              ],
+              [
+                "plants",
+                17,
+                23
+              ],
+              [
+                "seizes",
+                22,
+                20
+              ],
+              [
+                "base",
+                4473.646,
+                4354.879
+              ]
+            ],
+            [
+              [
+                "deliveries",
+                19,
+                12
+              ],
+              [
+                "hire_cost",
+                360,
+                330
+              ],
+              [
+                "own_receipts",
+                1958.619,
+                1758.295
+              ],
+              [
+                "tree_net",
+                25.565,
+                268.582
+              ],
+              [
+                "plants",
+                9,
+                3
+              ],
+              [
+                "seizes",
+                4,
+                6
+              ],
+              [
+                "base",
+                1958.619,
+                1758.295
+              ]
+            ],
+            [
+              [
+                "deliveries",
+                30,
+                22
+              ],
+              [
+                "hire_cost",
+                270,
+                270
+              ],
+              [
+                "own_receipts",
+                2441.738,
+                2645.248
+              ],
+              [
+                "tree_net",
+                223.035,
+                96.917
+              ],
+              [
+                "plants",
+                2,
+                4
+              ],
+              [
+                "seizes",
+                3,
+                5
+              ],
+              [
+                "base",
+                2441.738,
+                2645.248
+              ]
+            ]
+          ]
+        },
+        {
+          "arm": "v7-control",
+          "seed": 637608883,
+          "seat": 0,
+          "layout": "3ffe1868feee50e3e66f7f941b486295fabcdd2bf589bf0521763100b83ab5f1",
+          "status": "completed",
+          "turns": 299,
+          "players": [
+            {
+              "name": "v7-control",
+              "sha256": "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6",
+              "init_seconds": 2.947983124991879,
+              "total_act_seconds": 144.61662201955914,
+              "max_act_seconds": 0.9362248340621591,
+              "slow_steps": 0,
+              "calls": 299,
+              "search_enabled": true,
+              "searches": 288,
+              "failure": null
+            },
+            {
+              "name": "yan-v7",
+              "sha256": "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6",
+              "init_seconds": 2.566156917018816,
+              "total_act_seconds": 144.8240258807782,
+              "max_act_seconds": 0.8537488339934498,
+              "slow_steps": 0,
+              "calls": 299,
+              "search_enabled": true,
+              "searches": 286,
+              "failure": null
+            }
+          ],
+          "margin": 386.26,
+          "scores": [
+            7092.43,
+            6706.17
+          ],
+          "phases": [
+            [
+              [
+                "deliveries",
+                43,
+                47
+              ],
+              [
+                "hire_cost",
+                1200,
+                1230
+              ],
+              [
+                "own_receipts",
+                4287.008,
+                4577.763
+              ],
+              [
+                "tree_net",
+                765.608,
+                447.68
+              ],
+              [
+                "plants",
+                20,
+                15
+              ],
+              [
+                "seizes",
+                12,
+                11
+              ],
+              [
+                "base",
+                4287.008,
+                4579.108
+              ]
+            ],
+            [
+              [
+                "deliveries",
+                14,
+                16
+              ],
+              [
+                "hire_cost",
+                240,
+                270
+              ],
+              [
+                "own_receipts",
+                1361.961,
+                1319.466
+              ],
+              [
+                "tree_net",
+                -96.619,
+                -14.569
+              ],
+              [
+                "plants",
+                5,
+                7
+              ],
+              [
+                "seizes",
+                3,
+                6
+              ],
+              [
+                "base",
+                1361.961,
+                1319.466
+              ]
+            ],
+            [
+              [
+                "deliveries",
+                22,
+                22
+              ],
+              [
+                "hire_cost",
+                90,
+                120
+              ],
+              [
+                "own_receipts",
+                1764.028,
+                1759.741
+              ],
+              [
+                "tree_net",
+                460.403,
+                154.842
+              ],
+              [
+                "plants",
+                6,
+                1
+              ],
+              [
+                "seizes",
+                0,
+                1
+              ],
+              [
+                "base",
+                1764.028,
+                1759.741
+              ]
+            ]
+          ]
+        }
+      ],
+      "summary": {
+        "valid": 4,
+        "total": 4,
+        "wins_by_seat": [
+          3,
+          0
+        ],
+        "wins": 3,
+        "draws": 0,
+        "average_margin": 448.65,
+        "margins": {
+          "531729840": {
+            "0": 171.76
+          },
+          "637608883": {
+            "0": 386.26
+          },
+          "626790576": {
+            "0": -721.89
+          },
+          "4777473": {
+            "0": 1958.48
+          }
+        },
+        "all_turns": {
+          "delta": {
+            "base": 311.5,
+            "deliveries": 4.5,
+            "hire_cost": -45.0,
+            "own_receipts": 311.84,
+            "plants": 1.75,
+            "seizes": -0.25,
+            "tree_net": 92.16
+          },
+          "average_delivery": [
+            98.16,
+            99.82
+          ]
+        },
+        "final_49": {
+          "delta": {
+            "base": 57.86,
+            "deliveries": 2.0,
+            "hire_cost": -37.5,
+            "own_receipts": 57.86,
+            "plants": 0.75,
+            "seizes": -1.25,
+            "tree_net": 98.24
+          },
+          "average_delivery": [
+            87.75,
+            93.29
+          ]
+        }
+      },
+      "passed": null
+    }
+  },
+  "passed": false
+}
