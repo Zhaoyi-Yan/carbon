@@ -1,5 +1,9 @@
 # Carbon League 策略
 
+## Carbon-Zero 独立强化学习路线
+
+[Carbon-Zero：从终局目标出发的独立策略学习方案](analysis/carbon-zero-research-plan-20261124.md) 是新的研究主线：保留已发布 v8 作为冻结基线，独立实现真实环境、纯策略网络、高手回放 BC、on-policy PPO 及后续联赛训练。Codex 先按文档第 12 节执行 M0–M2 的最小闭环和首个可行学习检查点；旧评分审计保留为独立研究，不是 Zero 的前置条件。当前尚无 Zero 实战结果，不改变线上策略。
+
 ## yan-v8 实验交接
 
 当前已发布基线为 [yan-v8.py](yan-v8.py)，冻结标签为 `v11-yan-v8-elite-refit`。[2026-11-24 最新实验结论与下一轮执行计划](analysis/yan-v8-next-experiments-20261124.md)整理了持续树任务、回本筛选和联合动作实验的新结果，并给出固定版本、回放数据要求、四个评分审查案例及后续受控实验。Codex 接手时先阅读该文档。
