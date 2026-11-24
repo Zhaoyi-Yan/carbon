@@ -1,5 +1,7 @@
 # Carbon-Zero：首轮 PPO 退化复盘与完整终局 RL 实验
 
+> **后续状态（2026-11-24）：**完整终局 A/C/D 与 B1 残差 critic 已有后续实验。当前接续入口为 [B1 复审与下一轮执行协议](carbon-zero-b1-review-20261124.md)，核对实验快照 `afcfe81`，补齐混合效用复算、固定现金基线/B2诊断的实现问题和持续critic校准方案。下文保留为首轮失败之后的历史设计。
+
 日期：2026-11-24  
 状态：研究交接 / 待实施。本文新增的是诊断、假说与实验协议，未新增训练或对局成绩。  
 证据冻结点：[experiment/carbon-zero @ c73c283](https://github.com/Zhaoyi-Yan/carbon/commit/c73c2837e7a0ead8c29f0ffe0c17f9416db66e72)。  
