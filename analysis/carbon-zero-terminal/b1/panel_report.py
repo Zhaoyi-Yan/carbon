@@ -12,8 +12,7 @@ import numpy as np
 
 OUT = Path(sys.argv[1] if len(sys.argv) > 1 else Path(__file__).with_name('evaluation'))
 RIVALS = ('ZW0', 'ft3-generic-no-search', 'yan-v6-no-search')
-NAMES = [n for n in ('ZW0', 'A10', 'B1_10k', 'B1_50k', 'A50', 'C50', 'C100')
-         if (OUT / f'{n}.json').exists()]
+NAMES = sorted(p.stem for p in OUT.glob('*.json') if p.stem != 'protocol')
 BLOCKS = {n: json.loads((OUT / f'{n}.json').read_text())['rivals'] for n in NAMES}
 
 
@@ -52,16 +51,21 @@ def show():
     print('paired deltas vs frozen ZW0: U (primary), margin; bootstrap over maps')
     for name in NAMES:
         for rival in RIVALS:
+            if rival not in BLOCKS[name]:
+                continue
             rows = BLOCKS[name][rival]['games']
             text = f'{name:8} {rival:22} {wdl(rows):8} U={line(paired("ZW0", name, rival, "utility"), 1, 3)}'
             if name != 'ZW0':
                 text += f' margin={line(paired("ZW0", name, rival, "margin"), 1, 0)}'
             print(text)
-    for x, y in (('A10', 'B1_10k'), ('A50', 'B1_50k'), ('C50', 'B1_50k'), ('B1_10k', 'B1_50k')):
+    for x, y in (('A10', 'B1_10k'), ('A50', 'B1_50k'), ('C50', 'B1_50k'), ('B1_10k', 'B1_50k'),
+                 ('M50', 'G50')):
         if not all(p in NAMES for p in (x, y)):
             continue
         print(f'\n== {y} - {x} (paired) ==')
         for rival in RIVALS:
+            if rival not in BLOCKS[x]:
+                continue
             print(f'  {rival:22} U={line(paired(x, y, rival, "utility"), 1, 3)}'
                   f' margin={line(paired(x, y, rival, "margin"), 1, 0)}')
 
