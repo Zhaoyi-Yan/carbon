@@ -1,6 +1,12 @@
 # Carbon League 策略
 
-[yan-v7.py](yan-v7.py) 和 [submission.py](submission.py) 是同一份本地晋级文件，内含全部模型权重。对冻结的线上 yan-v6，八张新图换边 14 胜 2 负，另外四张预留图换边 7 胜 1 负。两批使用同一个文件，合计 21 胜 3 负，场均资金分差 +409.63。它根据双方未来 5 和 10 步的预计入库比较晚盘走法，资金断流时优先检查能安全兑现的货物。普通局面会从自己的历史搜索中学一套工人动作，作为原搜索多比较的一种选择。赛事平台由维护者另行上传。[八图初筛](analysis/v7/13-qualifying-summary.json) · [四图复核](analysis/v7/13-confirmation-summary.json) · [策略与败局](experiments/v7/README.md)
+## yan-v8 实验交接
+
+当前已发布基线为 [yan-v8.py](yan-v8.py)，冻结标签为 `v11-yan-v8-elite-refit`。[2026-11-24 最新实验结论与下一轮执行计划](analysis/yan-v8-next-experiments-20261124.md)整理了持续树任务、回本筛选和联合动作实验的新结果，并给出固定版本、回放数据要求、四个评分审查案例及后续受控实验。Codex 接手时先阅读该文档。
+
+## 历史主力 yan-v7
+
+[yan-v7.py](yan-v7.py) 保存前代本地晋级策略，冻结标签为 `v10-yan-v7-selfplay-prior`，内含全部模型权重。对冻结的线上 yan-v6，八张新图换边 14 胜 2 负，另外四张预留图换边 7 胜 1 负。两批使用同一个文件，合计 21 胜 3 负，场均资金分差 +409.63。它根据双方未来 5 和 10 步的预计入库比较晚盘走法，资金断流时优先检查能安全兑现的货物。普通局面会从自己的历史搜索中学一套工人动作，作为原搜索多比较的一种选择。赛事平台由维护者另行上传。[八图初筛](analysis/v7/13-qualifying-summary.json) · [四图复核](analysis/v7/13-confirmation-summary.json) · [策略与败局](experiments/v7/README.md)
 
 ## 历史主力 yan-v6
 
