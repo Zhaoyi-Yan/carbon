@@ -1,0 +1,2235 @@
+{
+  "source_commit": "e8a4151825b79d793b14cad85463765ba2aec9b3",
+  "input_sha256": {
+    "analysis/carbon-zero-terminal/b1/mg/G-50k/episodes.json": "9b26283f5e52a48764f819bf56cca3d5a62ab47255a351704b76af7a7e937d15",
+    "analysis/carbon-zero-terminal/b1/mg/G-50k/protocol.json": "ea8f53458637ef6748506f1e23a29424825a0eb6be9c237713b18bb577f97edc",
+    "analysis/carbon-zero-terminal/b1/mg/G-50k/updates.json": "e0a024fd3dec668c95bc8602c7ee381cc43814c3d887273a5697f8f102d2aaed",
+    "analysis/carbon-zero-terminal/b1/mg/G-50k-s2/episodes.json": "c295be3d17158fc5dd51cc609911e1384df948cf75e781a2e27d7c0868e5a051",
+    "analysis/carbon-zero-terminal/b1/mg/G-50k-s2/protocol.json": "70085f5eb0a5fdde55114916c4513bb5d946d33fcb2496ac91c0b18a66a47bf0",
+    "analysis/carbon-zero-terminal/b1/mg/G-50k-s2/updates.json": "1fa31efcfe0946a5699f52b7ee6151ecdcbf0048c9477eba41530c250dbe2ad2",
+    "analysis/carbon-zero-terminal/b1/mg/M-50k/episodes.json": "5438a8973777e4fc8778e2ff6882f5f2c01ae90f85d86bcb4e79029f9fa53e38",
+    "analysis/carbon-zero-terminal/b1/mg/M-50k/protocol.json": "667d7c8024e08bf0f154ba14e9afd0abb72938ebb26f0490057629ba8a5532ce",
+    "analysis/carbon-zero-terminal/b1/mg/M-50k/updates.json": "69d0e2cdf2ca3b2e7636a5a8be41fa7f7de9b6009f1edc04d2588559deecf0bc",
+    "analysis/carbon-zero-terminal/b1/mg/M-50k-s2/episodes.json": "3c6a84e1b15ad514d7754e18f187721f640fd20518954c9245cc65aba588953a",
+    "analysis/carbon-zero-terminal/b1/mg/M-50k-s2/protocol.json": "ba0da18e4dfecc6a6fc7aa2b0cb9100d8b917aa457289d84ed2daa756c9885cd",
+    "analysis/carbon-zero-terminal/b1/mg/M-50k-s2/updates.json": "fb2a76f880b1ad660768b80c7ef1721524d9cc53b4a7ebedf1bb8341da29fecd",
+    "analysis/carbon-zero-terminal/b1/mg/Mwide-s1/episodes.json": "2a0d11a8901a55e1d841e64d1fea79c4ed7681f2f87a1af54f3f62d4be371033",
+    "analysis/carbon-zero-terminal/b1/mg/Mwide-s1/protocol.json": "77d5c47adfa28c77420ce4333b3edaee311311f9666e4fe81e169ce8ccc9ffd2",
+    "analysis/carbon-zero-terminal/b1/mg/Mwide-s1/updates.json": "67d0e4d33850f2ec3bede8bbd53d464fa244e76e71983890fe3e6826a21ed55f",
+    "analysis/carbon-zero-terminal/b1/mg/evaluation/G50.json": "c0dbc20356f1c89f860bfc80ce6e49eee71f46ff42238d05fb158888a4127c3c",
+    "analysis/carbon-zero-terminal/b1/mg/evaluation/G50_s2.json": "2818bf7dd91dc2bd3e29321f2cede892d29e698b2a652774d3cdad4c3972cd99",
+    "analysis/carbon-zero-terminal/b1/mg/evaluation/M50.json": "3c8e8fc714d7fcc3a320ed94cd01cd6a58fc9e0f9a0abc3f3ad86c7d30abafd9",
+    "analysis/carbon-zero-terminal/b1/mg/evaluation/M50_s2.json": "b73cab174b6abdcded852a0899577ba64ac97276addce11abad0afd77ba58ff1",
+    "analysis/carbon-zero-terminal/b1/mg/evaluation/Mwide_s1.json": "64d4b6daaa761be8b66ba45534ad8f4de8b191fa28b207c6f8d0ac9afab4c6a3",
+    "analysis/carbon-zero-terminal/b1/mg/evaluation/ZW0.json": "0d3a51d7c35cd6d240c5a13941aef6d8381af6d006c10c2d33e588ba1439757f",
+    "analysis/carbon-zero-terminal/b1/mg/evaluation/protocol.json": "838d0a75e398d7c5244665fb9d81edcac3ae92ae4cab19491f84f59abd34b6d4",
+    "analysis/carbon-zero-terminal/b1/mg/smoke-G-10k/episodes.json": "58e4470a874cb1b094a7109597d79af99b52090260f3b04cc87afe574f5dbb6d",
+    "analysis/carbon-zero-terminal/b1/mg/smoke-G-10k/protocol.json": "e100aaacbc319088ebfd160f1c7629edc9141f2fb61be7e7459be9eacf290e81",
+    "analysis/carbon-zero-terminal/b1/mg/smoke-G-10k/updates.json": "688a1b5ed9a054b9b38d94b127bf93263be817d42dfb6963e354f927b6a55f0e",
+    "analysis/carbon-zero-terminal/b1/mg/smoke-M-10k/episodes.json": "cbb24d717258f3e498351a89459368c3f1c66f48e002ef99f41e8cfdd2caec55",
+    "analysis/carbon-zero-terminal/b1/mg/smoke-M-10k/protocol.json": "78839deb30c0ee2949dc8f76bd6f4812e48072586993dee04fa33a7756defc08",
+    "analysis/carbon-zero-terminal/b1/mg/smoke-M-10k/updates.json": "77252e322304dc6cac6adf3360e08215419e5bcfd9d3fd4ac24405b3a5b8a343"
+  },
+  "method": {
+    "numpy": "2.3.5",
+    "python": "3.12.14",
+    "rng_seed": 20261124,
+    "bootstrap_replicates": 100000,
+    "unit": "map; retain all rivals, seats, and fixed training seeds within each sampled map",
+    "interval": "exploratory unadjusted 95% percentile bootstrap",
+    "limits": [
+      "All candidates share the same 12 development maps; there are not 24 independent maps after seed averaging.",
+      "Intervals condition on these specific trained checkpoints, not the distribution of all training seeds.",
+      "Failure of the prespecified budget gate stops this configuration; it does not establish equivalence or refute RL in general.",
+      "One M-wide seed jointly reallocates maps and repetitions; it cannot rule out map coverage as a general bottleneck."
+    ]
+  },
+  "evaluation": {
+    "ZW0": {
+      "checkpoint_sha256": null,
+      "rivals": {
+        "ZW0": {
+          "overall": {
+            "games": 24,
+            "wins": 13,
+            "draws": 0,
+            "losses": 11,
+            "mean_margin": 383.06625,
+            "mean_utility": 0.13032586374302882,
+            "eliminations": 0,
+            "E": 7176
+          },
+          "seats": {
+            "0": {
+              "games": 12,
+              "wins": 6,
+              "draws": 0,
+              "losses": 6,
+              "mean_margin": 265.27499999999986,
+              "mean_utility": 0.06770619239662211,
+              "eliminations": 0,
+              "E": 3588
+            },
+            "1": {
+              "games": 12,
+              "wins": 7,
+              "draws": 0,
+              "losses": 5,
+              "mean_margin": 500.8575000000001,
+              "mean_utility": 0.19294553508943557,
+              "eliminations": 0,
+              "E": 3588
+            }
+          }
+        },
+        "ft3-generic-no-search": {
+          "overall": {
+            "games": 24,
+            "wins": 16,
+            "draws": 0,
+            "losses": 8,
+            "mean_margin": 550.9700000000001,
+            "mean_utility": 0.2511321831726356,
+            "eliminations": 0,
+            "E": 7176
+          },
+          "seats": {
+            "0": {
+              "games": 12,
+              "wins": 8,
+              "draws": 0,
+              "losses": 4,
+              "mean_margin": 364.48999999999984,
+              "mean_utility": 0.26358121935247697,
+              "eliminations": 0,
+              "E": 3588
+            },
+            "1": {
+              "games": 12,
+              "wins": 8,
+              "draws": 0,
+              "losses": 4,
+              "mean_margin": 737.4500000000002,
+              "mean_utility": 0.23868314699279417,
+              "eliminations": 0,
+              "E": 3588
+            }
+          }
+        },
+        "yan-v6-no-search": {
+          "overall": {
+            "games": 24,
+            "wins": 5,
+            "draws": 0,
+            "losses": 19,
+            "mean_margin": -932.0791666666665,
+            "mean_utility": -0.47347463971071485,
+            "eliminations": 0,
+            "E": 7176
+          },
+          "seats": {
+            "0": {
+              "games": 12,
+              "wins": 3,
+              "draws": 0,
+              "losses": 9,
+              "mean_margin": -492.28666666666646,
+              "mean_utility": -0.39057293745542476,
+              "eliminations": 0,
+              "E": 3588
+            },
+            "1": {
+              "games": 12,
+              "wins": 2,
+              "draws": 0,
+              "losses": 10,
+              "mean_margin": -1371.8716666666667,
+              "mean_utility": -0.556376341966005,
+              "eliminations": 0,
+              "E": 3588
+            }
+          }
+        }
+      }
+    },
+    "M50": {
+      "checkpoint_sha256": "a57598900cf0f85256de52241e1d6aee45130a835ffe24d29b653fce99108cab",
+      "rivals": {
+        "ZW0": {
+          "overall": {
+            "games": 24,
+            "wins": 17,
+            "draws": 0,
+            "losses": 7,
+            "mean_margin": 509.69666666666643,
+            "mean_utility": 0.3546875674215819,
+            "eliminations": 1,
+            "E": 6886
+          },
+          "seats": {
+            "0": {
+              "games": 12,
+              "wins": 9,
+              "draws": 0,
+              "losses": 3,
+              "mean_margin": 590.770833333333,
+              "mean_utility": 0.4240383922678547,
+              "eliminations": 1,
+              "E": 3298
+            },
+            "1": {
+              "games": 12,
+              "wins": 8,
+              "draws": 0,
+              "losses": 4,
+              "mean_margin": 428.62249999999995,
+              "mean_utility": 0.28533674257530905,
+              "eliminations": 0,
+              "E": 3588
+            }
+          }
+        },
+        "ft3-generic-no-search": {
+          "overall": {
+            "games": 24,
+            "wins": 13,
+            "draws": 0,
+            "losses": 11,
+            "mean_margin": -7.0474999999999755,
+            "mean_utility": 0.04053545806448753,
+            "eliminations": 0,
+            "E": 7176
+          },
+          "seats": {
+            "0": {
+              "games": 12,
+              "wins": 6,
+              "draws": 0,
+              "losses": 6,
+              "mean_margin": 30.76833333333343,
+              "mean_utility": 0.009212734323181204,
+              "eliminations": 0,
+              "E": 3588
+            },
+            "1": {
+              "games": 12,
+              "wins": 7,
+              "draws": 0,
+              "losses": 5,
+              "mean_margin": -44.86333333333338,
+              "mean_utility": 0.07185818180579386,
+              "eliminations": 0,
+              "E": 3588
+            }
+          }
+        },
+        "yan-v6-no-search": {
+          "overall": {
+            "games": 24,
+            "wins": 7,
+            "draws": 0,
+            "losses": 17,
+            "mean_margin": -617.9249999999998,
+            "mean_utility": -0.345566424291849,
+            "eliminations": 0,
+            "E": 7176
+          },
+          "seats": {
+            "0": {
+              "games": 12,
+              "wins": 4,
+              "draws": 0,
+              "losses": 8,
+              "mean_margin": -496.6708333333332,
+              "mean_utility": -0.27125794964147804,
+              "eliminations": 0,
+              "E": 3588
+            },
+            "1": {
+              "games": 12,
+              "wins": 3,
+              "draws": 0,
+              "losses": 9,
+              "mean_margin": -739.1791666666664,
+              "mean_utility": -0.4198748989422199,
+              "eliminations": 0,
+              "E": 3588
+            }
+          }
+        }
+      }
+    },
+    "G50": {
+      "checkpoint_sha256": "b3ddd433aa2e5eff07799e8adc60187bfd3ff08f70eac392fd4d9b14995a725d",
+      "rivals": {
+        "ZW0": {
+          "overall": {
+            "games": 24,
+            "wins": 10,
+            "draws": 0,
+            "losses": 14,
+            "mean_margin": 205.81875000000014,
+            "mean_utility": -0.0714388107619696,
+            "eliminations": 0,
+            "E": 7176
+          },
+          "seats": {
+            "0": {
+              "games": 12,
+              "wins": 4,
+              "draws": 0,
+              "losses": 8,
+              "mean_margin": -83.65249999999992,
+              "mean_utility": -0.19159856241133322,
+              "eliminations": 0,
+              "E": 3588
+            },
+            "1": {
+              "games": 12,
+              "wins": 6,
+              "draws": 0,
+              "losses": 6,
+              "mean_margin": 495.2900000000002,
+              "mean_utility": 0.04872094088739402,
+              "eliminations": 0,
+              "E": 3588
+            }
+          }
+        },
+        "ft3-generic-no-search": {
+          "overall": {
+            "games": 24,
+            "wins": 8,
+            "draws": 0,
+            "losses": 16,
+            "mean_margin": -145.80041666666668,
+            "mean_utility": -0.22675819614823509,
+            "eliminations": 0,
+            "E": 7176
+          },
+          "seats": {
+            "0": {
+              "games": 12,
+              "wins": 5,
+              "draws": 0,
+              "losses": 7,
+              "mean_margin": -188.54583333333326,
+              "mean_utility": -0.1322755759819241,
+              "eliminations": 0,
+              "E": 3588
+            },
+            "1": {
+              "games": 12,
+              "wins": 3,
+              "draws": 0,
+              "losses": 9,
+              "mean_margin": -103.05500000000006,
+              "mean_utility": -0.3212408163145461,
+              "eliminations": 0,
+              "E": 3588
+            }
+          }
+        },
+        "yan-v6-no-search": {
+          "overall": {
+            "games": 24,
+            "wins": 4,
+            "draws": 0,
+            "losses": 20,
+            "mean_margin": -940.6916666666665,
+            "mean_utility": -0.531895454618646,
+            "eliminations": 0,
+            "E": 7176
+          },
+          "seats": {
+            "0": {
+              "games": 12,
+              "wins": 2,
+              "draws": 0,
+              "losses": 10,
+              "mean_margin": -636.4,
+              "mean_utility": -0.5079730152016341,
+              "eliminations": 0,
+              "E": 3588
+            },
+            "1": {
+              "games": 12,
+              "wins": 2,
+              "draws": 0,
+              "losses": 10,
+              "mean_margin": -1244.9833333333333,
+              "mean_utility": -0.5558178940356578,
+              "eliminations": 0,
+              "E": 3588
+            }
+          }
+        }
+      }
+    },
+    "M50_s2": {
+      "checkpoint_sha256": "d0e0428a67004e6696655576c7634c64cc423f3b59f0ac5cec59b5d611ab4ee2",
+      "rivals": {
+        "ZW0": {
+          "overall": {
+            "games": 24,
+            "wins": 12,
+            "draws": 0,
+            "losses": 12,
+            "mean_margin": 27.554583333333273,
+            "mean_utility": -0.009424350366249426,
+            "eliminations": 1,
+            "E": 6886
+          },
+          "seats": {
+            "0": {
+              "games": 12,
+              "wins": 8,
+              "draws": 0,
+              "losses": 4,
+              "mean_margin": 111.15166666666657,
+              "mean_utility": 0.19995060878427037,
+              "eliminations": 0,
+              "E": 3588
+            },
+            "1": {
+              "games": 12,
+              "wins": 4,
+              "draws": 0,
+              "losses": 8,
+              "mean_margin": -56.04250000000002,
+              "mean_utility": -0.2187993095167692,
+              "eliminations": 1,
+              "E": 3298
+            }
+          }
+        },
+        "ft3-generic-no-search": {
+          "overall": {
+            "games": 24,
+            "wins": 16,
+            "draws": 0,
+            "losses": 8,
+            "mean_margin": 327.0924999999999,
+            "mean_utility": 0.2646313511358551,
+            "eliminations": 1,
+            "E": 6928
+          },
+          "seats": {
+            "0": {
+              "games": 12,
+              "wins": 8,
+              "draws": 0,
+              "losses": 4,
+              "mean_margin": 170.60249999999994,
+              "mean_utility": 0.25140872563006866,
+              "eliminations": 1,
+              "E": 3340
+            },
+            "1": {
+              "games": 12,
+              "wins": 8,
+              "draws": 0,
+              "losses": 4,
+              "mean_margin": 483.5824999999999,
+              "mean_utility": 0.27785397664164163,
+              "eliminations": 0,
+              "E": 3588
+            }
+          }
+        },
+        "yan-v6-no-search": {
+          "overall": {
+            "games": 24,
+            "wins": 5,
+            "draws": 0,
+            "losses": 19,
+            "mean_margin": -1017.6291666666666,
+            "mean_utility": -0.4629638084763131,
+            "eliminations": 1,
+            "E": 7042
+          },
+          "seats": {
+            "0": {
+              "games": 12,
+              "wins": 5,
+              "draws": 0,
+              "losses": 7,
+              "mean_margin": -140.3100000000001,
+              "mean_utility": -0.11888919248516681,
+              "eliminations": 0,
+              "E": 3588
+            },
+            "1": {
+              "games": 12,
+              "wins": 0,
+              "draws": 0,
+              "losses": 12,
+              "mean_margin": -1894.9483333333335,
+              "mean_utility": -0.8070384244674593,
+              "eliminations": 1,
+              "E": 3454
+            }
+          }
+        }
+      }
+    },
+    "G50_s2": {
+      "checkpoint_sha256": "e27a40d9bf1d6f9a417bf9813fc4af72ed29abbb434eed8e966d915344cc5f42",
+      "rivals": {
+        "ZW0": {
+          "overall": {
+            "games": 24,
+            "wins": 14,
+            "draws": 0,
+            "losses": 10,
+            "mean_margin": 274.3133333333332,
+            "mean_utility": 0.15548259918315113,
+            "eliminations": 0,
+            "E": 7176
+          },
+          "seats": {
+            "0": {
+              "games": 12,
+              "wins": 6,
+              "draws": 0,
+              "losses": 6,
+              "mean_margin": 183.26083333333304,
+              "mean_utility": 0.0413210320567177,
+              "eliminations": 0,
+              "E": 3588
+            },
+            "1": {
+              "games": 12,
+              "wins": 8,
+              "draws": 0,
+              "losses": 4,
+              "mean_margin": 365.36583333333334,
+              "mean_utility": 0.26964416630958454,
+              "eliminations": 0,
+              "E": 3588
+            }
+          }
+        },
+        "ft3-generic-no-search": {
+          "overall": {
+            "games": 24,
+            "wins": 11,
+            "draws": 0,
+            "losses": 13,
+            "mean_margin": 115.29125000000006,
+            "mean_utility": -0.02668788127886146,
+            "eliminations": 0,
+            "E": 7176
+          },
+          "seats": {
+            "0": {
+              "games": 12,
+              "wins": 5,
+              "draws": 0,
+              "losses": 7,
+              "mean_margin": 16.69500000000009,
+              "mean_utility": -0.08882393015659878,
+              "eliminations": 0,
+              "E": 3588
+            },
+            "1": {
+              "games": 12,
+              "wins": 6,
+              "draws": 0,
+              "losses": 6,
+              "mean_margin": 213.88750000000005,
+              "mean_utility": 0.035448167598875806,
+              "eliminations": 0,
+              "E": 3588
+            }
+          }
+        },
+        "yan-v6-no-search": {
+          "overall": {
+            "games": 24,
+            "wins": 5,
+            "draws": 0,
+            "losses": 19,
+            "mean_margin": -1347.1845833333334,
+            "mean_utility": -0.4793711671397031,
+            "eliminations": 0,
+            "E": 7176
+          },
+          "seats": {
+            "0": {
+              "games": 12,
+              "wins": 4,
+              "draws": 0,
+              "losses": 8,
+              "mean_margin": -518.2258333333335,
+              "mean_utility": -0.30170154733090976,
+              "eliminations": 0,
+              "E": 3588
+            },
+            "1": {
+              "games": 12,
+              "wins": 1,
+              "draws": 0,
+              "losses": 11,
+              "mean_margin": -2176.143333333334,
+              "mean_utility": -0.6570407869484964,
+              "eliminations": 0,
+              "E": 3588
+            }
+          }
+        }
+      }
+    },
+    "Mwide_s1": {
+      "checkpoint_sha256": "38da9f9eefa0d5db7d6a993cbbf5bdc73e9ff71b85cfb3eae7b9284b7728d2b5",
+      "rivals": {
+        "ZW0": {
+          "overall": {
+            "games": 24,
+            "wins": 16,
+            "draws": 0,
+            "losses": 8,
+            "mean_margin": 272.2224999999999,
+            "mean_utility": 0.24443235041334077,
+            "eliminations": 0,
+            "E": 7176
+          },
+          "seats": {
+            "0": {
+              "games": 12,
+              "wins": 7,
+              "draws": 0,
+              "losses": 5,
+              "mean_margin": 222.99083333333314,
+              "mean_utility": 0.15354696887066502,
+              "eliminations": 0,
+              "E": 3588
+            },
+            "1": {
+              "games": 12,
+              "wins": 9,
+              "draws": 0,
+              "losses": 3,
+              "mean_margin": 321.45416666666665,
+              "mean_utility": 0.3353177319560165,
+              "eliminations": 0,
+              "E": 3588
+            }
+          }
+        },
+        "ft3-generic-no-search": {
+          "overall": {
+            "games": 24,
+            "wins": 11,
+            "draws": 0,
+            "losses": 13,
+            "mean_margin": 62.26416666666679,
+            "mean_utility": -0.029427753446254618,
+            "eliminations": 0,
+            "E": 7176
+          },
+          "seats": {
+            "0": {
+              "games": 12,
+              "wins": 7,
+              "draws": 0,
+              "losses": 5,
+              "mean_margin": 180.03750000000028,
+              "mean_utility": 0.13308352341474294,
+              "eliminations": 0,
+              "E": 3588
+            },
+            "1": {
+              "games": 12,
+              "wins": 4,
+              "draws": 0,
+              "losses": 8,
+              "mean_margin": -55.509166666666715,
+              "mean_utility": -0.1919390303072522,
+              "eliminations": 0,
+              "E": 3588
+            }
+          }
+        },
+        "yan-v6-no-search": {
+          "overall": {
+            "games": 24,
+            "wins": 3,
+            "draws": 0,
+            "losses": 21,
+            "mean_margin": -1537.9054166666667,
+            "mean_utility": -0.5912441573885819,
+            "eliminations": 1,
+            "E": 7036
+          },
+          "seats": {
+            "0": {
+              "games": 12,
+              "wins": 1,
+              "draws": 0,
+              "losses": 11,
+              "mean_margin": -1853.9333333333334,
+              "mean_utility": -0.6229566131825236,
+              "eliminations": 0,
+              "E": 3588
+            },
+            "1": {
+              "games": 12,
+              "wins": 2,
+              "draws": 0,
+              "losses": 10,
+              "mean_margin": -1221.8775000000003,
+              "mean_utility": -0.5595317015946403,
+              "eliminations": 1,
+              "E": 3448
+            }
+          }
+        }
+      }
+    }
+  },
+  "paired": {
+    "M50": {
+      "utility": {
+        "ZW0": {
+          "mean": 0.2243617036785531,
+          "percentile95": [
+            -0.08577588480633756,
+            0.5385708112060092
+          ],
+          "maps": 12
+        },
+        "ft3-generic-no-search": {
+          "mean": -0.21059672510814806,
+          "percentile95": [
+            -0.49027319705836586,
+            0.022273148532085313
+          ],
+          "maps": 12
+        },
+        "yan-v6-no-search": {
+          "mean": 0.12790821541886593,
+          "percentile95": [
+            -0.20772455886107954,
+            0.4556664220466396
+          ],
+          "maps": 12
+        },
+        "macro": {
+          "mean": 0.047224397996423646,
+          "percentile95": [
+            -0.09488922041035606,
+            0.18441959304672703
+          ],
+          "maps": 12
+        },
+        "macro_seats": {
+          "0": {
+            "mean": 0.07375956755196121,
+            "percentile95": [
+              -0.11788060953568229,
+              0.2867330226683918
+            ],
+            "maps": 12
+          },
+          "1": {
+            "mean": 0.02068922844088607,
+            "percentile95": [
+              -0.23904307552426676,
+              0.2806344985744506
+            ],
+            "maps": 12
+          }
+        }
+      },
+      "margin": {
+        "ZW0": {
+          "mean": 126.63041666666652,
+          "percentile95": [
+            -216.7217187500003,
+            480.63541666666566
+          ],
+          "maps": 12
+        },
+        "ft3-generic-no-search": {
+          "mean": -558.0174999999998,
+          "percentile95": [
+            -1145.3502604166667,
+            -121.05201041666665
+          ],
+          "maps": 12
+        },
+        "yan-v6-no-search": {
+          "mean": 314.15416666666664,
+          "percentile95": [
+            -267.2391979166666,
+            857.1858749999993
+          ],
+          "maps": 12
+        },
+        "macro": {
+          "mean": -39.07763888888895,
+          "percentile95": [
+            -306.1925312500001,
+            213.8626180555554
+          ],
+          "maps": 12
+        }
+      },
+      "win_score": {
+        "ZW0": {
+          "mean": 0.16666666666666666,
+          "percentile95": [
+            -0.08333333333333333,
+            0.4166666666666667
+          ],
+          "maps": 12
+        },
+        "ft3-generic-no-search": {
+          "mean": -0.125,
+          "percentile95": [
+            -0.3333333333333333,
+            0.041666666666666664
+          ],
+          "maps": 12
+        },
+        "yan-v6-no-search": {
+          "mean": 0.08333333333333333,
+          "percentile95": [
+            -0.125,
+            0.2916666666666667
+          ],
+          "maps": 12
+        },
+        "macro": {
+          "mean": 0.041666666666666664,
+          "percentile95": [
+            -0.06944444444444443,
+            0.1388888888888889
+          ],
+          "maps": 12
+        }
+      }
+    },
+    "G50": {
+      "utility": {
+        "ZW0": {
+          "mean": -0.20176467450499835,
+          "percentile95": [
+            -0.3800265174968523,
+            -0.04529952061518624
+          ],
+          "maps": 12
+        },
+        "ft3-generic-no-search": {
+          "mean": -0.47789037932087064,
+          "percentile95": [
+            -0.7826549627621953,
+            -0.16362138288709133
+          ],
+          "maps": 12
+        },
+        "yan-v6-no-search": {
+          "mean": -0.058420814907931086,
+          "percentile95": [
+            -0.2651684987695764,
+            0.13820912077235514
+          ],
+          "maps": 12
+        },
+        "macro": {
+          "mean": -0.24602528957793338,
+          "percentile95": [
+            -0.380871048429584,
+            -0.10161689964532088
+          ],
+          "maps": 12
+        },
+        "macro_seats": {
+          "0": {
+            "mean": -0.2575205426295219,
+            "percentile95": [
+              -0.511708005958207,
+              0.035665558133866404
+            ],
+            "maps": 12
+          },
+          "1": {
+            "mean": -0.23453003652634488,
+            "percentile95": [
+              -0.4476331464707593,
+              0.03161103947395912
+            ],
+            "maps": 12
+          }
+        }
+      },
+      "margin": {
+        "ZW0": {
+          "mean": -177.24749999999983,
+          "percentile95": [
+            -450.1710937499997,
+            126.07919791666653
+          ],
+          "maps": 12
+        },
+        "ft3-generic-no-search": {
+          "mean": -696.7704166666667,
+          "percentile95": [
+            -1255.0208854166665,
+            -266.88023958333395
+          ],
+          "maps": 12
+        },
+        "yan-v6-no-search": {
+          "mean": -8.612499999999992,
+          "percentile95": [
+            -708.0885729166666,
+            806.5831666666664
+          ],
+          "maps": 12
+        },
+        "macro": {
+          "mean": -294.2101388888888,
+          "percentile95": [
+            -623.7127256944443,
+            56.29877430555557
+          ],
+          "maps": 12
+        }
+      },
+      "win_score": {
+        "ZW0": {
+          "mean": -0.125,
+          "percentile95": [
+            -0.25,
+            0.0
+          ],
+          "maps": 12
+        },
+        "ft3-generic-no-search": {
+          "mean": -0.3333333333333333,
+          "percentile95": [
+            -0.5833333333333334,
+            -0.08333333333333333
+          ],
+          "maps": 12
+        },
+        "yan-v6-no-search": {
+          "mean": -0.041666666666666664,
+          "percentile95": [
+            -0.16666666666666666,
+            0.08333333333333333
+          ],
+          "maps": 12
+        },
+        "macro": {
+          "mean": -0.16666666666666666,
+          "percentile95": [
+            -0.2638888888888889,
+            -0.05555555555555555
+          ],
+          "maps": 12
+        }
+      }
+    },
+    "M50_s2": {
+      "utility": {
+        "ZW0": {
+          "mean": -0.1397502141092782,
+          "percentile95": [
+            -0.3927853201933041,
+            0.12489615534063343
+          ],
+          "maps": 12
+        },
+        "ft3-generic-no-search": {
+          "mean": 0.01349916796321952,
+          "percentile95": [
+            -0.44202623578445926,
+            0.4703551100663995
+          ],
+          "maps": 12
+        },
+        "yan-v6-no-search": {
+          "mean": 0.01051083123440182,
+          "percentile95": [
+            -0.26389385618580186,
+            0.2975048278027088
+          ],
+          "maps": 12
+        },
+        "macro": {
+          "mean": -0.038580071637218945,
+          "percentile95": [
+            -0.28543966850114844,
+            0.2288362955609729
+          ],
+          "maps": 12
+        },
+        "macro_seats": {
+          "0": {
+            "mean": 0.130585222545166,
+            "percentile95": [
+              -0.14336313425986036,
+              0.44960838210524734
+            ],
+            "maps": 12
+          },
+          "1": {
+            "mean": -0.20774536581960387,
+            "percentile95": [
+              -0.5166616024577612,
+              0.11188011483672176
+            ],
+            "maps": 12
+          }
+        }
+      },
+      "margin": {
+        "ZW0": {
+          "mean": -355.5116666666667,
+          "percentile95": [
+            -645.2302500000001,
+            -86.48059375000004
+          ],
+          "maps": 12
+        },
+        "ft3-generic-no-search": {
+          "mean": -223.87750000000005,
+          "percentile95": [
+            -924.54359375,
+            409.8044062499999
+          ],
+          "maps": 12
+        },
+        "yan-v6-no-search": {
+          "mean": -85.55000000000007,
+          "percentile95": [
+            -559.4267187500004,
+            387.57243749999964
+          ],
+          "maps": 12
+        },
+        "macro": {
+          "mean": -221.64638888888896,
+          "percentile95": [
+            -662.7908472222224,
+            162.74018402777781
+          ],
+          "maps": 12
+        }
+      },
+      "win_score": {
+        "ZW0": {
+          "mean": -0.041666666666666664,
+          "percentile95": [
+            -0.25,
+            0.16666666666666666
+          ],
+          "maps": 12
+        },
+        "ft3-generic-no-search": {
+          "mean": 0.0,
+          "percentile95": [
+            -0.3333333333333333,
+            0.3333333333333333
+          ],
+          "maps": 12
+        },
+        "yan-v6-no-search": {
+          "mean": 0.0,
+          "percentile95": [
+            -0.20833333333333334,
+            0.20833333333333334
+          ],
+          "maps": 12
+        },
+        "macro": {
+          "mean": -0.013888888888888893,
+          "percentile95": [
+            -0.19444444444444442,
+            0.18055555555555555
+          ],
+          "maps": 12
+        }
+      }
+    },
+    "G50_s2": {
+      "utility": {
+        "ZW0": {
+          "mean": 0.025156735440122296,
+          "percentile95": [
+            -0.23828397972590137,
+            0.294595957587547
+          ],
+          "maps": 12
+        },
+        "ft3-generic-no-search": {
+          "mean": -0.27782006445149704,
+          "percentile95": [
+            -0.5711929927217976,
+            0.012199544036245753
+          ],
+          "maps": 12
+        },
+        "yan-v6-no-search": {
+          "mean": -0.005896527428988173,
+          "percentile95": [
+            -0.2704163080282676,
+            0.2648572951870077
+          ],
+          "maps": 12
+        },
+        "macro": {
+          "mean": -0.08618661881345431,
+          "percentile95": [
+            -0.2616312107622141,
+            0.08706473214328572
+          ],
+          "maps": 12
+        },
+        "macro_seats": {
+          "0": {
+            "mean": -0.09663963990815506,
+            "percentile95": [
+              -0.27380017755247876,
+              0.09458035229136753
+            ],
+            "maps": 12
+          },
+          "1": {
+            "mean": -0.07573359771875358,
+            "percentile95": [
+              -0.3739210283137598,
+              0.2242031289423713
+            ],
+            "maps": 12
+          }
+        }
+      },
+      "margin": {
+        "ZW0": {
+          "mean": -108.75291666666676,
+          "percentile95": [
+            -400.3660000000004,
+            160.35759374999998
+          ],
+          "maps": 12
+        },
+        "ft3-generic-no-search": {
+          "mean": -435.67875000000004,
+          "percentile95": [
+            -1051.83240625,
+            42.46562499999967
+          ],
+          "maps": 12
+        },
+        "yan-v6-no-search": {
+          "mean": -415.10541666666694,
+          "percentile95": [
+            -1247.018947916667,
+            191.05282291666674
+          ],
+          "maps": 12
+        },
+        "macro": {
+          "mean": -319.84569444444463,
+          "percentile95": [
+            -660.5191701388891,
+            -26.684690972222537
+          ],
+          "maps": 12
+        }
+      },
+      "win_score": {
+        "ZW0": {
+          "mean": 0.041666666666666664,
+          "percentile95": [
+            -0.16666666666666666,
+            0.25
+          ],
+          "maps": 12
+        },
+        "ft3-generic-no-search": {
+          "mean": -0.20833333333333334,
+          "percentile95": [
+            -0.4166666666666667,
+            0.0
+          ],
+          "maps": 12
+        },
+        "yan-v6-no-search": {
+          "mean": 0.0,
+          "percentile95": [
+            -0.20833333333333334,
+            0.20833333333333334
+          ],
+          "maps": 12
+        },
+        "macro": {
+          "mean": -0.05555555555555555,
+          "percentile95": [
+            -0.19444444444444442,
+            0.08333333333333333
+          ],
+          "maps": 12
+        }
+      }
+    },
+    "Mwide_s1": {
+      "utility": {
+        "ZW0": {
+          "mean": 0.11410648667031191,
+          "percentile95": [
+            -0.19751581603750565,
+            0.4361514059571325
+          ],
+          "maps": 12
+        },
+        "ft3-generic-no-search": {
+          "mean": -0.2805599366188902,
+          "percentile95": [
+            -0.6005292852603521,
+            0.044294048766763496
+          ],
+          "maps": 12
+        },
+        "yan-v6-no-search": {
+          "mean": -0.11776951767786707,
+          "percentile95": [
+            -0.3511267049746317,
+            0.13706298930488345
+          ],
+          "maps": 12
+        },
+        "macro": {
+          "mean": -0.09474098920881513,
+          "percentile95": [
+            -0.2931870781154908,
+            0.12667764469261966
+          ],
+          "maps": 12
+        },
+        "macro_seats": {
+          "0": {
+            "mean": -0.09234686506359664,
+            "percentile95": [
+              -0.38609373048364065,
+              0.2564917141078394
+            ],
+            "maps": 12
+          },
+          "1": {
+            "mean": -0.09713511335403358,
+            "percentile95": [
+              -0.41654390486546383,
+              0.2458842070837431
+            ],
+            "maps": 12
+          }
+        }
+      },
+      "margin": {
+        "ZW0": {
+          "mean": -110.84375000000007,
+          "percentile95": [
+            -528.2708229166668,
+            291.1047291666666
+          ],
+          "maps": 12
+        },
+        "ft3-generic-no-search": {
+          "mean": -488.70583333333326,
+          "percentile95": [
+            -947.3208749999997,
+            -102.71
+          ],
+          "maps": 12
+        },
+        "yan-v6-no-search": {
+          "mean": -605.8262500000002,
+          "percentile95": [
+            -2039.2740312499998,
+            493.5722395833324
+          ],
+          "maps": 12
+        },
+        "macro": {
+          "mean": -401.7919444444445,
+          "percentile95": [
+            -993.6203298611109,
+            116.76892708333251
+          ],
+          "maps": 12
+        }
+      },
+      "win_score": {
+        "ZW0": {
+          "mean": 0.125,
+          "percentile95": [
+            -0.08333333333333333,
+            0.375
+          ],
+          "maps": 12
+        },
+        "ft3-generic-no-search": {
+          "mean": -0.20833333333333334,
+          "percentile95": [
+            -0.4583333333333333,
+            0.041666666666666664
+          ],
+          "maps": 12
+        },
+        "yan-v6-no-search": {
+          "mean": -0.08333333333333333,
+          "percentile95": [
+            -0.2916666666666667,
+            0.125
+          ],
+          "maps": 12
+        },
+        "macro": {
+          "mean": -0.055555555555555546,
+          "percentile95": [
+            -0.20833333333333334,
+            0.11111111111111112
+          ],
+          "maps": 12
+        }
+      }
+    },
+    "M_s1_minus_G_s1": {
+      "utility": {
+        "ZW0": {
+          "mean": 0.42612637818355154,
+          "percentile95": [
+            0.14886210646530812,
+            0.7383476379414017
+          ],
+          "maps": 12
+        },
+        "ft3-generic-no-search": {
+          "mean": 0.2672936542127227,
+          "percentile95": [
+            -0.0313060076622919,
+            0.527355014057336
+          ],
+          "maps": 12
+        },
+        "yan-v6-no-search": {
+          "mean": 0.18632903032679704,
+          "percentile95": [
+            -0.07826605084136548,
+            0.4295740457663621
+          ],
+          "maps": 12
+        },
+        "macro": {
+          "mean": 0.2932496875743571,
+          "percentile95": [
+            0.21162517612414303,
+            0.37554905748292394
+          ],
+          "maps": 12
+        },
+        "macro_seats": {
+          "0": {
+            "mean": 0.3312801101814832,
+            "percentile95": [
+              0.0706476331056996,
+              0.5885564539715739
+            ],
+            "maps": 12
+          },
+          "1": {
+            "mean": 0.25521926496723096,
+            "percentile95": [
+              -0.0216509990439532,
+              0.5431272052171363
+            ],
+            "maps": 12
+          }
+        }
+      },
+      "margin": {
+        "ZW0": {
+          "mean": 303.87791666666635,
+          "percentile95": [
+            -156.79070833333358,
+            781.610270833332
+          ],
+          "maps": 12
+        },
+        "ft3-generic-no-search": {
+          "mean": 138.7529166666667,
+          "percentile95": [
+            -135.94527083333327,
+            399.12758333333335
+          ],
+          "maps": 12
+        },
+        "yan-v6-no-search": {
+          "mean": 322.76666666666665,
+          "percentile95": [
+            -325.78281249999986,
+            991.6516354166666
+          ],
+          "maps": 12
+        },
+        "macro": {
+          "mean": 255.1324999999999,
+          "percentile95": [
+            30.860527777777683,
+            442.76386111111077
+          ],
+          "maps": 12
+        }
+      },
+      "win_score": {
+        "ZW0": {
+          "mean": 0.2916666666666667,
+          "percentile95": [
+            0.08333333333333333,
+            0.5
+          ],
+          "maps": 12
+        },
+        "ft3-generic-no-search": {
+          "mean": 0.20833333333333334,
+          "percentile95": [
+            0.0,
+            0.4166666666666667
+          ],
+          "maps": 12
+        },
+        "yan-v6-no-search": {
+          "mean": 0.125,
+          "percentile95": [
+            -0.041666666666666664,
+            0.2916666666666667
+          ],
+          "maps": 12
+        },
+        "macro": {
+          "mean": 0.20833333333333337,
+          "percentile95": [
+            0.1388888888888889,
+            0.2777777777777778
+          ],
+          "maps": 12
+        }
+      }
+    },
+    "M_s2_minus_G_s2": {
+      "utility": {
+        "ZW0": {
+          "mean": -0.16490694954940055,
+          "percentile95": [
+            -0.5509251272498981,
+            0.17883828615920278
+          ],
+          "maps": 12
+        },
+        "ft3-generic-no-search": {
+          "mean": 0.29131923241471663,
+          "percentile95": [
+            -0.11519299719675609,
+            0.6980396159847339
+          ],
+          "maps": 12
+        },
+        "yan-v6-no-search": {
+          "mean": 0.01640735866339001,
+          "percentile95": [
+            -0.2826040076674464,
+            0.3166449288522242
+          ],
+          "maps": 12
+        },
+        "macro": {
+          "mean": 0.04760654717623535,
+          "percentile95": [
+            -0.12626613660289257,
+            0.24364460766298293
+          ],
+          "maps": 12
+        },
+        "macro_seats": {
+          "0": {
+            "mean": 0.22722486245332107,
+            "percentile95": [
+              -0.00864052238173522,
+              0.47178754841241044
+            ],
+            "maps": 12
+          },
+          "1": {
+            "mean": -0.13201176810085033,
+            "percentile95": [
+              -0.3001715291148056,
+              0.0489930110041745
+            ],
+            "maps": 12
+          }
+        }
+      },
+      "margin": {
+        "ZW0": {
+          "mean": -246.75874999999994,
+          "percentile95": [
+            -693.8079166666668,
+            141.5270208333333
+          ],
+          "maps": 12
+        },
+        "ft3-generic-no-search": {
+          "mean": 211.8012499999999,
+          "percentile95": [
+            -266.93623958333393,
+            685.5380000000001
+          ],
+          "maps": 12
+        },
+        "yan-v6-no-search": {
+          "mean": 329.555416666667,
+          "percentile95": [
+            -488.23677083333354,
+            1452.1204374999993
+          ],
+          "maps": 12
+        },
+        "macro": {
+          "mean": 98.19930555555563,
+          "percentile95": [
+            -274.749045138889,
+            573.2281944444445
+          ],
+          "maps": 12
+        }
+      },
+      "win_score": {
+        "ZW0": {
+          "mean": -0.08333333333333333,
+          "percentile95": [
+            -0.375,
+            0.16666666666666666
+          ],
+          "maps": 12
+        },
+        "ft3-generic-no-search": {
+          "mean": 0.20833333333333334,
+          "percentile95": [
+            -0.08333333333333333,
+            0.5
+          ],
+          "maps": 12
+        },
+        "yan-v6-no-search": {
+          "mean": 0.0,
+          "percentile95": [
+            -0.20833333333333334,
+            0.20833333333333334
+          ],
+          "maps": 12
+        },
+        "macro": {
+          "mean": 0.04166666666666668,
+          "percentile95": [
+            -0.08333333333333333,
+            0.18055555555555558
+          ],
+          "maps": 12
+        }
+      }
+    },
+    "M_two_seed_mean_minus_ZW0": {
+      "utility": {
+        "ZW0": {
+          "mean": 0.042305744784637424,
+          "percentile95": [
+            -0.19127016652250534,
+            0.2796056409817302
+          ],
+          "maps": 12
+        },
+        "ft3-generic-no-search": {
+          "mean": -0.09854877857246425,
+          "percentile95": [
+            -0.4281146453620652,
+            0.22058717887452056
+          ],
+          "maps": 12
+        },
+        "yan-v6-no-search": {
+          "mean": 0.06920952332663388,
+          "percentile95": [
+            -0.15436590427506824,
+            0.3011141661268139
+          ],
+          "maps": 12
+        },
+        "macro": {
+          "mean": 0.004322163179602346,
+          "percentile95": [
+            -0.1655548654554411,
+            0.1918047992315967
+          ],
+          "maps": 12
+        },
+        "macro_seats": {
+          "0": {
+            "mean": 0.10217239504856361,
+            "percentile95": [
+              -0.10625247820481849,
+              0.3512774787037647
+            ],
+            "maps": 12
+          },
+          "1": {
+            "mean": -0.09352806868935888,
+            "percentile95": [
+              -0.3447632825873262,
+              0.16540897762391313
+            ],
+            "maps": 12
+          }
+        }
+      },
+      "margin": {
+        "ZW0": {
+          "mean": -114.44062500000011,
+          "percentile95": [
+            -362.71063541666666,
+            110.03522395833302
+          ],
+          "maps": 12
+        },
+        "ft3-generic-no-search": {
+          "mean": -390.94750000000005,
+          "percentile95": [
+            -1018.5974895833333,
+            126.40468749999997
+          ],
+          "maps": 12
+        },
+        "yan-v6-no-search": {
+          "mean": 114.3020833333333,
+          "percentile95": [
+            -261.11182291666665,
+            515.0835260416663
+          ],
+          "maps": 12
+        },
+        "macro": {
+          "mean": -130.36201388888895,
+          "percentile95": [
+            -466.2030572916667,
+            166.3536111111111
+          ],
+          "maps": 12
+        }
+      },
+      "win_score": {
+        "ZW0": {
+          "mean": 0.0625,
+          "percentile95": [
+            -0.125,
+            0.25
+          ],
+          "maps": 12
+        },
+        "ft3-generic-no-search": {
+          "mean": -0.0625,
+          "percentile95": [
+            -0.3125,
+            0.16666666666666666
+          ],
+          "maps": 12
+        },
+        "yan-v6-no-search": {
+          "mean": 0.041666666666666664,
+          "percentile95": [
+            -0.125,
+            0.20833333333333334
+          ],
+          "maps": 12
+        },
+        "macro": {
+          "mean": 0.013888888888888881,
+          "percentile95": [
+            -0.11111111111111112,
+            0.14583333333333334
+          ],
+          "maps": 12
+        }
+      }
+    },
+    "G_two_seed_mean_minus_ZW0": {
+      "utility": {
+        "ZW0": {
+          "mean": -0.08830396953243803,
+          "percentile95": [
+            -0.24787492053851526,
+            0.06837258413876317
+          ],
+          "maps": 12
+        },
+        "ft3-generic-no-search": {
+          "mean": -0.3778552218861839,
+          "percentile95": [
+            -0.6381723789610444,
+            -0.116568987763912
+          ],
+          "maps": 12
+        },
+        "yan-v6-no-search": {
+          "mean": -0.03215867116845965,
+          "percentile95": [
+            -0.23032124575045423,
+            0.16545735363486327
+          ],
+          "maps": 12
+        },
+        "macro": {
+          "mean": -0.16610595419569385,
+          "percentile95": [
+            -0.30643694131451515,
+            -0.023117554931603775
+          ],
+          "maps": 12
+        },
+        "macro_seats": {
+          "0": {
+            "mean": -0.17708009126883847,
+            "percentile95": [
+              -0.37295185774870415,
+              0.04854698324561048
+            ],
+            "maps": 12
+          },
+          "1": {
+            "mean": -0.1551318171225492,
+            "percentile95": [
+              -0.3794996010611181,
+              0.09318623318323001
+            ],
+            "maps": 12
+          }
+        }
+      },
+      "margin": {
+        "ZW0": {
+          "mean": -143.0002083333333,
+          "percentile95": [
+            -373.5690677083335,
+            107.93994791666678
+          ],
+          "maps": 12
+        },
+        "ft3-generic-no-search": {
+          "mean": -566.2245833333333,
+          "percentile95": [
+            -1143.678265625,
+            -140.69076041666682
+          ],
+          "maps": 12
+        },
+        "yan-v6-no-search": {
+          "mean": -211.85895833333348,
+          "percentile95": [
+            -570.0008333333335,
+            135.90129687499967
+          ],
+          "maps": 12
+        },
+        "macro": {
+          "mean": -307.0279166666667,
+          "percentile95": [
+            -542.8654965277781,
+            -106.17290798611127
+          ],
+          "maps": 12
+        }
+      },
+      "win_score": {
+        "ZW0": {
+          "mean": -0.041666666666666664,
+          "percentile95": [
+            -0.16666666666666666,
+            0.08333333333333333
+          ],
+          "maps": 12
+        },
+        "ft3-generic-no-search": {
+          "mean": -0.2708333333333333,
+          "percentile95": [
+            -0.4583333333333333,
+            -0.08333333333333333
+          ],
+          "maps": 12
+        },
+        "yan-v6-no-search": {
+          "mean": -0.020833333333333332,
+          "percentile95": [
+            -0.16666666666666666,
+            0.125
+          ],
+          "maps": 12
+        },
+        "macro": {
+          "mean": -0.1111111111111111,
+          "percentile95": [
+            -0.2222222222222222,
+            0.0069444444444444475
+          ],
+          "maps": 12
+        }
+      }
+    },
+    "M_two_seed_mean_minus_G_two_seed_mean": {
+      "utility": {
+        "ZW0": {
+          "mean": 0.13060971431707546,
+          "percentile95": [
+            -0.11329598046860434,
+            0.3631040656917396
+          ],
+          "maps": 12
+        },
+        "ft3-generic-no-search": {
+          "mean": 0.2793064433137196,
+          "percentile95": [
+            0.028663399030882095,
+            0.517959229735707
+          ],
+          "maps": 12
+        },
+        "yan-v6-no-search": {
+          "mean": 0.10136819449509353,
+          "percentile95": [
+            -0.07802749809007126,
+            0.287378843768959
+          ],
+          "maps": 12
+        },
+        "macro": {
+          "mean": 0.1704281173752962,
+          "percentile95": [
+            0.07895434395261212,
+            0.26802019068435107
+          ],
+          "maps": 12
+        },
+        "macro_seats": {
+          "0": {
+            "mean": 0.2792524863174021,
+            "percentile95": [
+              0.07638700222872222,
+              0.4617410396245346
+            ],
+            "maps": 12
+          },
+          "1": {
+            "mean": 0.061603748433190324,
+            "percentile95": [
+              -0.08332027319565952,
+              0.2039619660679688
+            ],
+            "maps": 12
+          }
+        }
+      },
+      "margin": {
+        "ZW0": {
+          "mean": 28.55958333333321,
+          "percentile95": [
+            -345.85281250000025,
+            328.9887760416664
+          ],
+          "maps": 12
+        },
+        "ft3-generic-no-search": {
+          "mean": 175.2770833333333,
+          "percentile95": [
+            -134.53612500000008,
+            455.24990104166636
+          ],
+          "maps": 12
+        },
+        "yan-v6-no-search": {
+          "mean": 326.16104166666673,
+          "percentile95": [
+            -63.32426562499989,
+            754.9384010416668
+          ],
+          "maps": 12
+        },
+        "macro": {
+          "mean": 176.66590277777777,
+          "percentile95": [
+            13.17374479166658,
+            353.7407916666666
+          ],
+          "maps": 12
+        }
+      },
+      "win_score": {
+        "ZW0": {
+          "mean": 0.10416666666666667,
+          "percentile95": [
+            -0.08333333333333333,
+            0.2708333333333333
+          ],
+          "maps": 12
+        },
+        "ft3-generic-no-search": {
+          "mean": 0.20833333333333334,
+          "percentile95": [
+            0.020833333333333332,
+            0.375
+          ],
+          "maps": 12
+        },
+        "yan-v6-no-search": {
+          "mean": 0.0625,
+          "percentile95": [
+            -0.0625,
+            0.1875
+          ],
+          "maps": 12
+        },
+        "macro": {
+          "mean": 0.125,
+          "percentile95": [
+            0.05555555555555555,
+            0.20138888888888887
+          ],
+          "maps": 12
+        }
+      }
+    },
+    "Mwide_s1_minus_M_s1": {
+      "utility": {
+        "ZW0": {
+          "mean": -0.11025521700824113,
+          "percentile95": [
+            -0.3095004874890521,
+            0.08157342876424857
+          ],
+          "maps": 12
+        },
+        "ft3-generic-no-search": {
+          "mean": -0.06996321151074218,
+          "percentile95": [
+            -0.393717910767686,
+            0.22788558969251888
+          ],
+          "maps": 12
+        },
+        "yan-v6-no-search": {
+          "mean": -0.245677733096733,
+          "percentile95": [
+            -0.644870262238967,
+            0.13286078008907248
+          ],
+          "maps": 12
+        },
+        "macro": {
+          "mean": -0.14196538720523877,
+          "percentile95": [
+            -0.3077746093203417,
+            0.0047217800944200075
+          ],
+          "maps": 12
+        },
+        "macro_seats": {
+          "0": {
+            "mean": -0.16610643261555788,
+            "percentile95": [
+              -0.37681364868034595,
+              0.06193391664517675
+            ],
+            "maps": 12
+          },
+          "1": {
+            "mean": -0.11782434179491967,
+            "percentile95": [
+              -0.387082341395059,
+              0.14261156042610867
+            ],
+            "maps": 12
+          }
+        }
+      },
+      "margin": {
+        "ZW0": {
+          "mean": -237.4741666666666,
+          "percentile95": [
+            -557.6687500000002,
+            85.06571874999996
+          ],
+          "maps": 12
+        },
+        "ft3-generic-no-search": {
+          "mean": 69.31166666666677,
+          "percentile95": [
+            -185.68124999999998,
+            299.7318958333334
+          ],
+          "maps": 12
+        },
+        "yan-v6-no-search": {
+          "mean": -919.9804166666669,
+          "percentile95": [
+            -2243.066666666667,
+            128.28445833333288
+          ],
+          "maps": 12
+        },
+        "macro": {
+          "mean": -362.71430555555554,
+          "percentile95": [
+            -806.7458958333332,
+            -1.13760416666672
+          ],
+          "maps": 12
+        }
+      },
+      "win_score": {
+        "ZW0": {
+          "mean": -0.041666666666666664,
+          "percentile95": [
+            -0.16666666666666666,
+            0.08333333333333333
+          ],
+          "maps": 12
+        },
+        "ft3-generic-no-search": {
+          "mean": -0.08333333333333333,
+          "percentile95": [
+            -0.3333333333333333,
+            0.16666666666666666
+          ],
+          "maps": 12
+        },
+        "yan-v6-no-search": {
+          "mean": -0.16666666666666666,
+          "percentile95": [
+            -0.4583333333333333,
+            0.08333333333333333
+          ],
+          "maps": 12
+        },
+        "macro": {
+          "mean": -0.09722222222222222,
+          "percentile95": [
+            -0.20833333333333334,
+            0.013888888888888888
+          ],
+          "maps": 12
+        }
+      }
+    }
+  },
+  "training": {
+    "M-50k": {
+      "seed": 24000000,
+      "games": 176,
+      "wins": 80,
+      "draws": 1,
+      "losses": 95,
+      "mean_margin": -60.13971590909091,
+      "mean_utility": -0.057066587445162235,
+      "eliminations": 1,
+      "E": 52329,
+      "batches": 11,
+      "maps": 22,
+      "optimizer_steps": 109,
+      "costs": {
+        "collection_seconds": 183.13497995911166,
+        "optimization_seconds": 170.3730588364415,
+        "recorded_baseline_seconds": 0,
+        "baseline_time_recorded_in_all_batches": false
+      }
+    },
+    "G-50k": {
+      "seed": 24000000,
+      "games": 176,
+      "wins": 71,
+      "draws": 1,
+      "losses": 104,
+      "mean_margin": -64.07659090909091,
+      "mean_utility": -0.11380714325690619,
+      "eliminations": 1,
+      "E": 52329,
+      "batches": 11,
+      "maps": 22,
+      "optimizer_steps": 109,
+      "costs": {
+        "collection_seconds": 182.08964045811445,
+        "optimization_seconds": 176.48966595623642,
+        "recorded_baseline_seconds": 0,
+        "baseline_time_recorded_in_all_batches": false
+      }
+    },
+    "M-50k-s2": {
+      "seed": 24010000,
+      "games": 176,
+      "wins": 86,
+      "draws": 2,
+      "losses": 88,
+      "mean_margin": -19.742215909090888,
+      "mean_utility": -0.01741427871249551,
+      "eliminations": 3,
+      "E": 51750,
+      "batches": 11,
+      "maps": 22,
+      "optimizer_steps": 108,
+      "costs": {
+        "collection_seconds": 188.0607457489241,
+        "optimization_seconds": 176.35817195801064,
+        "recorded_baseline_seconds": 0,
+        "baseline_time_recorded_in_all_batches": false
+      }
+    },
+    "G-50k-s2": {
+      "seed": 24010000,
+      "games": 176,
+      "wins": 82,
+      "draws": 3,
+      "losses": 91,
+      "mean_margin": -72.76153409090911,
+      "mean_utility": -0.04330927645469357,
+      "eliminations": 4,
+      "E": 51461,
+      "batches": 11,
+      "maps": 22,
+      "optimizer_steps": 107,
+      "costs": {
+        "collection_seconds": 187.1251454600133,
+        "optimization_seconds": 182.85984029015526,
+        "recorded_baseline_seconds": 0,
+        "baseline_time_recorded_in_all_batches": false
+      }
+    },
+    "Mwide-s1": {
+      "seed": 24000000,
+      "games": 176,
+      "wins": 83,
+      "draws": 2,
+      "losses": 91,
+      "mean_margin": -113.13357954545455,
+      "mean_utility": -0.04398949722424983,
+      "eliminations": 3,
+      "E": 51751,
+      "batches": 11,
+      "maps": 88,
+      "optimizer_steps": 107,
+      "costs": {
+        "collection_seconds": 172.60370800085366,
+        "optimization_seconds": 96.86146504292265,
+        "recorded_baseline_seconds": 25.434060205938295,
+        "baseline_time_recorded_in_all_batches": true
+      }
+    },
+    "smoke-M-10k": {
+      "seed": 24000000,
+      "games": 48,
+      "wins": 19,
+      "draws": 0,
+      "losses": 29,
+      "mean_margin": -95.6697916666667,
+      "mean_utility": -0.13119213726306458,
+      "eliminations": 0,
+      "E": 14352,
+      "batches": 3,
+      "maps": 6,
+      "optimizer_steps": 30,
+      "costs": {
+        "collection_seconds": 49.04993566614576,
+        "optimization_seconds": 31.8499982918147,
+        "recorded_baseline_seconds": 0,
+        "baseline_time_recorded_in_all_batches": false
+      }
+    },
+    "smoke-G-10k": {
+      "seed": 24000000,
+      "games": 48,
+      "wins": 20,
+      "draws": 0,
+      "losses": 28,
+      "mean_margin": -137.30750000000003,
+      "mean_utility": -0.12307541374542881,
+      "eliminations": 0,
+      "E": 14352,
+      "batches": 3,
+      "maps": 6,
+      "optimizer_steps": 30,
+      "costs": {
+        "collection_seconds": 48.45236054202542,
+        "optimization_seconds": 29.66502608312294,
+        "recorded_baseline_seconds": 0,
+        "baseline_time_recorded_in_all_batches": false
+      }
+    }
+  },
+  "resources": {
+    "five_main_runs": {
+      "games": 880,
+      "wins": 402,
+      "draws": 9,
+      "losses": 469,
+      "mean_margin": -65.97072727272727,
+      "mean_utility": -0.05511735661870146,
+      "eliminations": 12,
+      "E": 259620
+    },
+    "two_smoke_records": {
+      "games": 96,
+      "wins": 39,
+      "draws": 0,
+      "losses": 57,
+      "mean_margin": -116.4886458333334,
+      "mean_utility": -0.12713377550424668,
+      "eliminations": 0,
+      "E": 28704
+    },
+    "latest_three_new_runs": {
+      "games": 528,
+      "wins": 251,
+      "draws": 7,
+      "losses": 270,
+      "mean_margin": -68.54577651515152,
+      "mean_utility": -0.0349043507971463,
+      "eliminations": 10,
+      "E": 154962
+    },
+    "evaluation_all_six_candidates": {
+      "games": 432,
+      "wins": 186,
+      "draws": 0,
+      "losses": 246,
+      "mean_margin": -212.1096064814815,
+      "mean_utility": -0.1003902928051832,
+      "eliminations": 5,
+      "E": 128066
+    },
+    "training_E_including_separately_recorded_smokes": 288324,
+    "training_plus_evaluation_E_including_smokes": 416390,
+    "training_logged_collection_plus_optimization_seconds": 1874.9737422938924,
+    "training_additionally_logged_baseline_seconds": 25.434060205938295,
+    "time_note": "Not end-to-end runtime. Older runs omit baseline/advantage construction; wall-clock overlap between runs is unknown.",
+    "scope": "Only M/G and M-wide artifacts in this mg directory; excludes prior PPO/B1/critic work. Smoke prefixes repeat main prefixes and are not statistical replications."
+  },
+  "gates": {
+    "M_two_seed_confirmation_eligible": false,
+    "G_two_seed_confirmation_eligible": false,
+    "wide_gt_same_seed_M": false,
+    "wide_gt_ZW0": false,
+    "wide_no_opponent_upper95_below_zero_vs_M": true
+  },
+  "audit": {
+    "all_evaluation_pairing_and_utility_checks_passed": true
+  }
+}

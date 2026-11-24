@@ -1,16 +1,16 @@
 # Carbon League 策略
 
-## Carbon-Zero 独立强化学习路线
+## 当前研究交接：回到完整 yan-v8 上改进
 
 [研究方案 v2](analysis/carbon-zero-research-plan-20261124.md) 定义了复用 ft3 Apollo、合法观测、固定温度、混合终局效用的 Zero-W 路线。[首轮 200k PPO 实验](https://github.com/Zhaoyi-Yan/carbon/blob/c73c2837e7a0ead8c29f0ffe0c17f9416db66e72/analysis/carbon-zero/README.md) 已完成但棋力退化，冻结 v8 不变。
 
-**当前 Codex 交接：[M/G 首种子复审与 M-wide 对照](analysis/carbon-zero-mg-review-20261125.md)。** 已核对 `be792f6`：诊断形状已修复，M/G 核心对照成立。首种子 M 相对 G 的三对手宏 ΔU 为 +0.293，12/12 图同向；M 相对 ZW0 仅 +0.047，区间跨零，对 generic 仍负向。按原规则完成第二种子两臂，满足门槛才独立确认。下一次新增训练优先比较每批 2 图×2 席×4 复本与 8 图×2 席×1 复本，在相同完整对局/批次预算下扩大地图覆盖；保持 MC、critic、对手和优化设置。[前轮 B1-fixed/M-G 协议](analysis/carbon-zero-b1fixed-review-20261124.md)、[B1 复审](analysis/carbon-zero-b1-review-20261124.md)和[更早 PPO/RLOO 方案](analysis/carbon-zero-rl-followup-20261124.md)保留为历史记录。
+**当前 Codex 交接：[暂停当前 Zero 配方，回到完整 v8 的能力上改进](analysis/carbon-route-reset-20261125.md)。** 已核对最新 `e8a4151`：M 第二种子没有复现净增益，M-wide 也未改善；暂停当前 M/G/M-wide，不自动追加第二个 wide 种子、40 图确认或百万步训练。当前 Zero 没有继承完整 v8 的搜索、解码与后处理，尚无当前 M 对完整 v8 的直接比赛。下一轮仅尝试用可追溯的完整 v8 最终动作更新其已有轻量候选 prior，保留完整系统，在固定预算下用同一候选直接挑战冻结 v8；具体数据、计算与停止条件见交接文档。[M/G 首种子复审](analysis/carbon-zero-mg-review-20261125.md)、[B1-fixed/M-G 协议](analysis/carbon-zero-b1fixed-review-20261124.md)、[B1 复审](analysis/carbon-zero-b1-review-20261124.md)和[更早 PPO/RLOO 方案](analysis/carbon-zero-rl-followup-20261124.md)保留为历史记录。
 
 以后每轮新的研究分析、建议和实验协议写入 GitHub 的 analysis 文档并更新这里的入口；实施结果保留在对应实验分支。
 
 ## yan-v8 实验交接
 
-当前已发布基线为 [yan-v8.py](yan-v8.py)，冻结标签为 `v11-yan-v8-elite-refit`。[2026-11-24 最新实验结论与下一轮执行计划](analysis/yan-v8-next-experiments-20261124.md)整理了持续树任务、回本筛选和联合动作实验的新结果，并给出固定版本、回放数据要求、四个评分审查案例及后续受控实验。Codex 接手时先阅读该文档。
+当前已发布基线为 [yan-v8.py](yan-v8.py)，冻结标签为 `v11-yan-v8-elite-refit`。[2026-11-24 实验结论与执行计划](analysis/yan-v8-next-experiments-20261124.md)保留了持续树任务、回本筛选和联合动作实验的结果、回放要求及评分审查案例。最新执行优先级以上方路线调整文档为准。
 
 ## 历史主力 yan-v7
 
