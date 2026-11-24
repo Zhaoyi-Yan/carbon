@@ -1,0 +1,248 @@
+{
+  "case": {
+    "match": "e0d9d7024e187b76541dcf3d37199fb6",
+    "seat": 1,
+    "opponent": "SpongeBaby-CarbonNet-v4.0",
+    "layout": "61903c905edbefaee5ab3c4bc36375645149a545cf1a4fdbba7f5db285c3acb6",
+    "seed": 238513727,
+    "replay_sha256": "0ba630bbdd9f93c3fe6d3b9334ca6612be5a3067c1ed1a527418301eff243af8",
+    "category": "left",
+    "turn": 219,
+    "unit": "player-1-worker-53",
+    "cell": 36,
+    "cost": 53.41739735129123,
+    "cash": 3486.84,
+    "recorded_command": "DOWN"
+  },
+  "proxy": "yan-v8",
+  "salt": 7237,
+  "board": "99d46001b3bb06d2cca2db2c3bc156b11bf87c480bc53a0357a46612c7a500b8",
+  "first_actions": [
+    {
+      "player-0-worker-34": "UP",
+      "player-0-worker-50": "RIGHT",
+      "player-0-worker-47": "RIGHT",
+      "player-0-worker-30": "RIGHT",
+      "player-0-worker-40": "DOWN",
+      "player-0-worker-41": "UP",
+      "player-0-worker-42": "LEFT",
+      "player-0-worker-49": "DOWN",
+      "player-0-worker-45": "UP"
+    },
+    {
+      "player-1-worker-37": "UP",
+      "player-1-worker-45": "DOWN",
+      "player-1-worker-46": "UP",
+      "player-1-worker-53": "DOWN",
+      "player-1-worker-38": "DOWN",
+      "player-1-worker-33": "UP",
+      "player-1-worker-52": "RIGHT"
+    }
+  ],
+  "original_plants": false,
+  "arms": {
+    "original": {
+      "first": {
+        "cash_margin": 5.81,
+        "target_net": 0.0,
+        "ledger": {
+          "own": {
+            "base": 76.69439999999999,
+            "net_tree": 6.035137499999999,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "opponent": {
+            "base": 0,
+            "net_tree": 14.735662499999998,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "net": {
+            "base": 76.694,
+            "net_tree": -8.701,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          }
+        }
+      },
+      "end": 299,
+      "scores": [
+        6426.99,
+        6483.51
+      ],
+      "margin": 56.52,
+      "marks": {
+        "220": {
+          "cash_margin": 5.81,
+          "target_net": 0.0,
+          "ledger": {
+            "own": {
+              "base": 76.69439999999999,
+              "net_tree": 6.035137499999999,
+              "hire": 0,
+              "plants": 0,
+              "seizes": 0,
+              "deaths": 0
+            },
+            "opponent": {
+              "base": 0,
+              "net_tree": 14.735662499999998,
+              "hire": 0,
+              "plants": 0,
+              "seizes": 0,
+              "deaths": 0
+            },
+            "net": {
+              "base": 76.694,
+              "net_tree": -8.701,
+              "hire": 0,
+              "plants": 0,
+              "seizes": 0,
+              "deaths": 0
+            }
+          }
+        },
+        "229": {
+          "cash_margin": -300.95,
+          "target_net": 0.0,
+          "ledger": {
+            "own": {
+              "base": 566.5527000000001,
+              "net_tree": 17.43365,
+              "hire": 30,
+              "plants": 0,
+              "seizes": 2,
+              "deaths": 1
+            },
+            "opponent": {
+              "base": 749.5203,
+              "net_tree": 73.23300264870876,
+              "hire": 30,
+              "plants": 1,
+              "seizes": 0,
+              "deaths": 1
+            },
+            "net": {
+              "base": -182.968,
+              "net_tree": -55.799,
+              "hire": 0,
+              "plants": -1,
+              "seizes": 2,
+              "deaths": 0
+            }
+          }
+        },
+        "237": {
+          "cash_margin": 63.02,
+          "target_net": 0.0,
+          "ledger": {
+            "own": {
+              "base": 962.8923,
+              "net_tree": 56.878474999999995,
+              "hire": 60,
+              "plants": 0,
+              "seizes": 2,
+              "deaths": 2
+            },
+            "opponent": {
+              "base": 783.2976,
+              "net_tree": 111.29251691986408,
+              "hire": 60,
+              "plants": 2,
+              "seizes": 0,
+              "deaths": 2
+            },
+            "net": {
+              "base": 179.595,
+              "net_tree": -54.414,
+              "hire": 0,
+              "plants": -2,
+              "seizes": 2,
+              "deaths": 0
+            }
+          }
+        },
+        "254": {
+          "cash_margin": 85.1,
+          "target_net": 0.0,
+          "ledger": {
+            "own": {
+              "base": 1335.364695,
+              "net_tree": 66.45014278870877,
+              "hire": 180,
+              "plants": 1,
+              "seizes": 4,
+              "deaths": 6
+            },
+            "opponent": {
+              "base": 1110.7523999999999,
+              "net_tree": 113.7598601026503,
+              "hire": 150,
+              "plants": 5,
+              "seizes": 0,
+              "deaths": 5
+            },
+            "net": {
+              "base": 224.612,
+              "net_tree": -47.31,
+              "hire": 30,
+              "plants": -4,
+              "seizes": 4,
+              "deaths": 1
+            }
+          }
+        },
+        "299": {
+          "cash_margin": 56.52,
+          "target_net": 0.0,
+          "ledger": {
+            "own": {
+              "base": 3210.614564725981,
+              "net_tree": 206.04491064675375,
+              "hire": 420,
+              "plants": 4,
+              "seizes": 5,
+              "deaths": 18
+            },
+            "opponent": {
+              "base": 2853.3250925847406,
+              "net_tree": 414.6278677766692,
+              "hire": 390,
+              "plants": 5,
+              "seizes": 3,
+              "deaths": 17
+            },
+            "net": {
+              "base": 357.289,
+              "net_tree": -208.583,
+              "hire": 30,
+              "plants": -1,
+              "seizes": 2,
+              "deaths": 1
+            }
+          }
+        }
+      },
+      "target_id": null,
+      "target_cost": 0.0,
+      "target_yield": [
+        0.0,
+        0.0
+      ],
+      "target_turns": [
+        0,
+        0
+      ],
+      "amendments": [],
+      "exit": null,
+      "trajectory": "84b682431f2d2d4c61c61b679f4e9e1922ef284acc22daa4d5ef1fed09b165a4"
+    }
+  }
+}

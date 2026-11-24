@@ -77,9 +77,9 @@ def insert_after(source, anchor, extra):
     return source.replace(anchor, anchor+'\n'+extra)
 
 
-def build(source):
-    if hashlib.sha256(source.encode()).hexdigest() != V7_SHA256:
-        raise ValueError('Expected frozen yan-v7 source')
+def build(source, *, expected_sha256=V7_SHA256):
+    if hashlib.sha256(source.encode()).hexdigest() != expected_sha256:
+        raise ValueError('Strategy source does not match the frozen digest')
     entry = 'def _act(obs, configuration=None, t0=None):'
     start = source.index(entry)
     end = source.index('\ndef agent(', start)

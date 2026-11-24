@@ -60,6 +60,13 @@ def warm(mod, state, seat, turn, cfg, action):
 
 
 def prefix(data, case, mods, turn):
+    state, mem, visible = replay_prefix(data,mods,turn)
+    flags, context = classify(state[0].observation.players, case['seat'], data['configuration'])
+    assert flags[case['category']]
+    return archive_state(state), mem, visible, context
+
+
+def replay_prefix(data, mods, turn):
     from zerosum_env.envs.carbon import idgen
     frames = data['steps']
     cfg = data['configuration']
@@ -80,9 +87,7 @@ def prefix(data, case, mods, turn):
         for side, mod in enumerate(mods):
             warm(mod,state,side,t,visible,actions[side])
         step(state,env,actions)
-    flags, context = classify(state[0].observation.players, case['seat'], cfg)
-    assert flags[case['category']]
-    return archive_state(state), history(mods), visible, context
+    return state, history(mods), visible
 
 
 def summaries(obs, a, b):
