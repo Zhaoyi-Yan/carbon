@@ -1,0 +1,78 @@
+[
+  {
+    "joint_kl": -3.498712430882733e-11,
+    "clipped": 0.0,
+    "entropy": 0.24099746346473694,
+    "value_loss": 0.02921084500849247,
+    "gradient_norm": 0.24854335188865662,
+    "logprob_error": 0.0,
+    "E": 1024,
+    "L": 1024,
+    "total_E": 86029,
+    "optimization_seconds": 3.2814295839052647,
+    "cumulative": {
+      "encode": 1.2812517937272787,
+      "forward": 3.5618289986159652,
+      "referee": 1.2582682881038636,
+      "rollout": 6.119906666921452
+    },
+    "forwards": 129,
+    "finished": 1,
+    "gradient_diagnostic": null,
+    "baseline_max_abs_diff": 0.0,
+    "baseline_in_optimizer": false
+  },
+  {
+    "joint_kl": -1.8917489796876907e-10,
+    "clipped": 0.0,
+    "entropy": 0.19030840694904327,
+    "value_loss": 0.022738220170140266,
+    "gradient_norm": 0.15896914899349213,
+    "logprob_error": 0.0,
+    "E": 2048,
+    "L": 2048,
+    "total_E": 87053,
+    "optimization_seconds": 1.0719409170560539,
+    "cumulative": {
+      "encode": 2.1156249633058906,
+      "forward": 4.825839204713702,
+      "referee": 2.8739694950636476,
+      "rollout": 9.856184124946594
+    },
+    "forwards": 258,
+    "finished": 1,
+    "gradient_diagnostic": null,
+    "baseline_max_abs_diff": 0.0,
+    "baseline_in_optimizer": false
+  },
+  {
+    "joint_kl": -8.149072527885437e-10,
+    "clipped": 0.0,
+    "entropy": 0.20206700265407562,
+    "value_loss": 0.030060280114412308,
+    "gradient_norm": 16.848215103149414,
+    "logprob_error": 0.0,
+    "anchor_kl": 0.0,
+    "E": 3072,
+    "L": 3072,
+    "total_E": 88077,
+    "optimization_seconds": 7.145439750049263,
+    "cumulative": {
+      "encode": 2.8219612955581397,
+      "forward": 5.9477637896779925,
+      "referee": 4.4129859891254455,
+      "rollout": 13.245170832844451
+    },
+    "forwards": 387,
+    "finished": 1,
+    "gradient_diagnostic": {
+      "policy": 41.094356536865234,
+      "value": 0.0,
+      "entropy": 0.021476592868566513,
+      "reference": 1.1420446526244632e-06,
+      "policy_value_cosine": null
+    },
+    "baseline_max_abs_diff": 0.0,
+    "baseline_in_optimizer": false
+  }
+]
