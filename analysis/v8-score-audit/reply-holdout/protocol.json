@@ -1,0 +1,63 @@
+{
+  "roots": [
+    {
+      "match": "aa15324c94fbecfd92720dd49df19c3b",
+      "turn": 43,
+      "seat": 0,
+      "opponent": "claude-AlphaCarbon-Master7sE",
+      "seed": 1074150585,
+      "layout": "c6d20223ee0d82be6b834897e6076e188aad001fa5e8e2356273ffe27e1a420f",
+      "replay_sha256": "f2dbcf6305311c688f7f52b338509b1efb675a5bd6a823a90ce75b7d0c90a728"
+    },
+    {
+      "match": "f6f1aca7c026b41ac4fa3e1d806ac772",
+      "turn": 82,
+      "seat": 0,
+      "opponent": "RyanX-AIPowercore-it960-hyb",
+      "seed": 1946222200,
+      "layout": "cbe7eac2c16512c84083192d6193a288926a6d56fae90352a1a8eadf5b00de9c",
+      "replay_sha256": "332723a7060254bc0f128786bffa25737d64aed08a6a8aed2345f7b9af17b13a"
+    },
+    {
+      "match": "79a17925b581e848d1d909d61afdd271",
+      "turn": 41,
+      "seat": 0,
+      "opponent": "SpongeBaby-CarbonNet-v4.0",
+      "seed": 1376442639,
+      "layout": "5460de135081ce0e307eb9bab8d3a9890200538bad9981f7557669cb73594dc0",
+      "replay_sha256": "fbd0afa3527a55ca6308d4df54b18bab66eba3192986a1945918345f1d166ea8"
+    },
+    {
+      "match": "e0d9d7024e187b76541dcf3d37199fb6",
+      "turn": 30,
+      "seat": 1,
+      "opponent": "SpongeBaby-CarbonNet-v4.0",
+      "seed": 238513727,
+      "layout": "61903c905edbefaee5ab3c4bc36375645149a545cf1a4fdbba7f5db285c3acb6",
+      "replay_sha256": "0ba630bbdd9f93c3fe6d3b9334ca6612be5a3067c1ed1a527418301eff243af8"
+    },
+    {
+      "match": "05a6d9486c614a7cd20a066ddff98f2e",
+      "turn": 33,
+      "seat": 1,
+      "opponent": "SpongeBaby-CarbonNet-v4.0",
+      "seed": 224633682,
+      "layout": "61ded2749d2beef8eed262b00e036ef8d91208e58fb09dd9e04fa88cb4b43704",
+      "replay_sha256": "d7638e24f239197bb120be799cd00dda33187966a32e47539d519320e733ec53"
+    },
+    {
+      "match": "461e3fe35b12302ba460e04d24094602",
+      "turn": 117,
+      "seat": 1,
+      "opponent": "Artemis",
+      "seed": 1326521408,
+      "layout": "16e717f9f856aaaca7fc95944cf66dba3bf68d86d2e785f581aed3124a3a8aa3",
+      "replay_sha256": "b07cd3f88d748fd70c7d4cddbf388f20d484b208bb2f1a5e8d27728b8ca82702"
+    }
+  ],
+  "frozen": [
+    "v11-yan-v8-elite-refit",
+    "a87f8e6b83656c771cb5a25d6b6f383b245127e7c782e4c6c7c4a0a2cc15d396"
+  ],
+  "budget": "one reply per scoring pass, holdout, salt 8141"
+}

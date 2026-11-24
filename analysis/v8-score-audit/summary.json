@@ -1,0 +1,279 @@
+[
+  {
+    "case": {
+      "match": "b02fe3801ed1a033338d5cce15c2ee6d",
+      "seat": 0,
+      "opponent": "CarbonEdge_Prometheus",
+      "seed": 32257995,
+      "layout": "c44a3dbd202d8403682f8abc4471f5bbb5aea3aa982df68e0b666a61abd51fdc",
+      "replay_sha256": "84f8adff8e522e3bffb37e2e7a774a07ed20f889fdf189cbf1b09e286add8d26",
+      "turn": 209,
+      "unit": "player-0-worker-39",
+      "cell": 7,
+      "cost": 61.27048572884466,
+      "cash": 4470.19,
+      "recorded_command": "RIGHT",
+      "cohort": "trees",
+      "prior_choice": "left"
+    },
+    "changed": [
+      {
+        "unit": "player-0-worker-2",
+        "commands": [
+          "UP",
+          "STAY"
+        ],
+        "position": 116,
+        "cargo": 102.34550999999999,
+        "kind": "COLLECTOR",
+        "tiles": [
+          101,
+          116
+        ],
+        "nearby": []
+      }
+    ],
+    "score_delta": {
+      "raw": -0.0023081302642822266,
+      "fc": 0.0010487731681201873,
+      "netcash": 0.002952295714979708,
+      "leaf": -0.00022002803308057706,
+      "prior": 0.0,
+      "pre_tail": -0.00022002803308057706,
+      "tail": -0.0007016885288940178,
+      "final": -0.000451225071070982
+    },
+    "followup_margins": {
+      "v8": 67.87,
+      "historical": 350.52
+    },
+    "consistency": {
+      "root": true,
+      "full_five_step_digest": "3cbd05e63e221235e1f83713e5f02590568d66f7c1cf910b09d459eae2cd99b7",
+      "finalist_action_reproduced": true,
+      "score_reproduced": true,
+      "forced_memory_matches": true
+    }
+  },
+  {
+    "case": {
+      "match": "422eb40662920ca572bb10d455e900ec",
+      "seat": 1,
+      "opponent": "Artemis",
+      "seed": 225914159,
+      "layout": "3c215327401a304cbcf283de0af241eecc8cbbdcd7407edcbc11d7cc40751d3f",
+      "replay_sha256": "ce9230db747e9439d4664881877ff869bc9aa72ab750d8a736c4497cdd8fa769",
+      "turn": 90,
+      "unit": "player-1-worker-30",
+      "cell": 152,
+      "cost": 82.94677659577712,
+      "cash": 744.73,
+      "recorded_command": "LEFT",
+      "cohort": "trees",
+      "prior_choice": "left"
+    },
+    "changed": [
+      {
+        "unit": "player-1-worker-24",
+        "commands": [
+          "UP",
+          "RIGHT"
+        ],
+        "position": 168,
+        "cargo": 130.4793,
+        "kind": "COLLECTOR",
+        "tiles": [
+          153,
+          169
+        ],
+        "nearby": [
+          [
+            1,
+            "player-1-worker-30",
+            152,
+            0,
+            "PLANTER"
+          ]
+        ]
+      },
+      {
+        "unit": "player-1-worker-28",
+        "commands": [
+          "UP",
+          "RIGHT"
+        ],
+        "position": 41,
+        "cargo": 0,
+        "kind": "PLANTER",
+        "tiles": [
+          26,
+          42
+        ],
+        "nearby": [
+          [
+            0,
+            "player-0-worker-12",
+            26,
+            0,
+            "PLANTER"
+          ],
+          [
+            1,
+            "player-1-worker-26",
+            27,
+            0,
+            "COLLECTOR"
+          ]
+        ]
+      }
+    ],
+    "score_delta": {
+      "raw": -0.0003902316093444824,
+      "fc": 0.0029072671305117592,
+      "netcash": 0.0002907507634002382,
+      "leaf": 0.0004944670371422877,
+      "prior": 0.0,
+      "pre_tail": 0.0004944670371422877,
+      "tail": -0.020509168448953313,
+      "final": -0.009587277996183585
+    },
+    "followup_margins": {
+      "v8": 98.57,
+      "historical": 1206.24
+    },
+    "consistency": {
+      "root": true,
+      "full_five_step_digest": "3936e193a007a42c7f77f81945cbfd7684ec629248099365fd7aa6005b7e0c8f",
+      "finalist_action_reproduced": true,
+      "score_reproduced": true,
+      "forced_memory_matches": true
+    }
+  },
+  {
+    "case": {
+      "match": "ef1582ed1be039f3114cc258950cb04a",
+      "seat": 1,
+      "opponent": "CarbonEdge_Prometheus",
+      "seed": 845868730,
+      "layout": "dbc8288b8baba0b5b8ce260c7b3fb93136b2525aec081861c7040e2b6598ee76",
+      "replay_sha256": "cf0919cf5237087e21fc919643d9faf48b41f5696126817549fd729b7733384c",
+      "turn": 181,
+      "unit": "player-1-worker-44",
+      "cell": 114,
+      "cost": 61.27048572884466,
+      "cash": 3403.01,
+      "recorded_command": "LEFT",
+      "cohort": "trees",
+      "prior_choice": "left"
+    },
+    "changed": [
+      {
+        "unit": "player-1-worker-40",
+        "commands": [
+          "UP",
+          "STAY"
+        ],
+        "position": 85,
+        "cargo": 92.5188,
+        "kind": "COLLECTOR",
+        "tiles": [
+          70,
+          85
+        ],
+        "nearby": []
+      }
+    ],
+    "score_delta": {
+      "raw": 0.009110398590564728,
+      "fc": 0.004734067664344116,
+      "netcash": 0.007503492025621523,
+      "leaf": 0.007753442266912547,
+      "prior": 0.0,
+      "pre_tail": 0.007753442266912547,
+      "tail": -0.024752164109896512,
+      "final": -0.0078492487939558
+    },
+    "followup_margins": {
+      "v8": -719.4,
+      "historical": -48.6
+    },
+    "consistency": {
+      "root": true,
+      "full_five_step_digest": "869938d43e8a6797a87291ab854403cbf53204bf2e508f467e55b76cf38d8477",
+      "finalist_action_reproduced": true,
+      "score_reproduced": true,
+      "forced_memory_matches": true
+    }
+  },
+  {
+    "case": {
+      "match": "cf04f35e3658f47cf17dc32ae10dc1cc",
+      "seat": 0,
+      "opponent": "CarbonEdge_Prometheus",
+      "seed": 1676842485,
+      "layout": "43d86e7b3d4843b153b897c212bcc03cafad44339c5363fd82998272490d144a",
+      "replay_sha256": "5db2d4238c1fe4a3dc366c8b7e21c07476c837170a317b539a306be3c4a28202",
+      "turn": 104,
+      "unit": "player-0-worker-26",
+      "cell": 158,
+      "cost": 41.909814847836365,
+      "cash": 2122.7,
+      "recorded_command": "UP",
+      "cohort": "trees",
+      "prior_choice": "left"
+    },
+    "changed": [
+      {
+        "unit": "player-0-worker-13",
+        "commands": [
+          "DOWN",
+          "UP"
+        ],
+        "position": 222,
+        "cargo": 186.1002,
+        "kind": "COLLECTOR",
+        "tiles": [
+          12,
+          207
+        ],
+        "nearby": []
+      },
+      {
+        "unit": "player-0-worker-8",
+        "commands": [
+          "RIGHT",
+          "UP"
+        ],
+        "position": 183,
+        "cargo": 318.0983999999999,
+        "kind": "COLLECTOR",
+        "tiles": [
+          184,
+          168
+        ],
+        "nearby": []
+      }
+    ],
+    "score_delta": {
+      "raw": -0.011229544878005981,
+      "fc": 0.010308832255236322,
+      "netcash": 0.03246853081967682,
+      "leaf": 0.004754090536185307,
+      "prior": 0.0112,
+      "pre_tail": -0.006445909463814681,
+      "tail": 0.002525160995545561,
+      "final": -0.0021397956433217846
+    },
+    "followup_margins": {
+      "v8": -773.84,
+      "historical": 31.93
+    },
+    "consistency": {
+      "root": true,
+      "full_five_step_digest": "54f97345f77305d2830aa209d0a87c3bd92db5045cfadfa04bf6b75101b073e9",
+      "finalist_action_reproduced": true,
+      "score_reproduced": true,
+      "forced_memory_matches": true
+    }
+  }
+]

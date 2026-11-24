@@ -1,0 +1,85 @@
+{
+  "frozen": [
+    "v11-yan-v8-elite-refit",
+    "a87f8e6b83656c771cb5a25d6b6f383b245127e7c782e4c6c7c4a0a2cc15d396"
+  ],
+  "root_salt": 8141,
+  "search": {
+    "width": 4,
+    "depth": 2,
+    "replies": 1,
+    "tail": 3,
+    "wall_clock": false
+  },
+  "roots": [
+    {
+      "match": "b02fe3801ed1a033338d5cce15c2ee6d",
+      "seat": 0,
+      "opponent": "CarbonEdge_Prometheus",
+      "seed": 32257995,
+      "layout": "c44a3dbd202d8403682f8abc4471f5bbb5aea3aa982df68e0b666a61abd51fdc",
+      "replay_sha256": "84f8adff8e522e3bffb37e2e7a774a07ed20f889fdf189cbf1b09e286add8d26",
+      "turn": 209,
+      "unit": "player-0-worker-39",
+      "cell": 7,
+      "cost": 61.27048572884466,
+      "cash": 4470.19,
+      "recorded_command": "RIGHT",
+      "cohort": "trees",
+      "prior_choice": "left"
+    },
+    {
+      "match": "422eb40662920ca572bb10d455e900ec",
+      "seat": 1,
+      "opponent": "Artemis",
+      "seed": 225914159,
+      "layout": "3c215327401a304cbcf283de0af241eecc8cbbdcd7407edcbc11d7cc40751d3f",
+      "replay_sha256": "ce9230db747e9439d4664881877ff869bc9aa72ab750d8a736c4497cdd8fa769",
+      "turn": 90,
+      "unit": "player-1-worker-30",
+      "cell": 152,
+      "cost": 82.94677659577712,
+      "cash": 744.73,
+      "recorded_command": "LEFT",
+      "cohort": "trees",
+      "prior_choice": "left"
+    },
+    {
+      "match": "ef1582ed1be039f3114cc258950cb04a",
+      "seat": 1,
+      "opponent": "CarbonEdge_Prometheus",
+      "seed": 845868730,
+      "layout": "dbc8288b8baba0b5b8ce260c7b3fb93136b2525aec081861c7040e2b6598ee76",
+      "replay_sha256": "cf0919cf5237087e21fc919643d9faf48b41f5696126817549fd729b7733384c",
+      "turn": 181,
+      "unit": "player-1-worker-44",
+      "cell": 114,
+      "cost": 61.27048572884466,
+      "cash": 3403.01,
+      "recorded_command": "LEFT",
+      "cohort": "trees",
+      "prior_choice": "left"
+    },
+    {
+      "match": "cf04f35e3658f47cf17dc32ae10dc1cc",
+      "seat": 0,
+      "opponent": "CarbonEdge_Prometheus",
+      "seed": 1676842485,
+      "layout": "43d86e7b3d4843b153b897c212bcc03cafad44339c5363fd82998272490d144a",
+      "replay_sha256": "5db2d4238c1fe4a3dc366c8b7e21c07476c837170a317b539a306be3c4a28202",
+      "turn": 104,
+      "unit": "player-0-worker-26",
+      "cell": 158,
+      "cost": 41.909814847836365,
+      "cash": 2122.7,
+      "recorded_command": "UP",
+      "cohort": "trees",
+      "prior_choice": "left"
+    }
+  ],
+  "runtime": {
+    "python": "3.12.16",
+    "numpy": "1.26.4",
+    "torch": "2.5.1"
+  }
+}
