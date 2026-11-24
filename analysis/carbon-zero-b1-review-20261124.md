@@ -1,5 +1,7 @@
 # Carbon-Zero B1 复审：先验证学习信号，再扩大更新
 
+> **后续状态：**`d6008ed`已完成固定w/B2修复及B1-fixed两种子50k实验。当前接续入口为[B1-fixed新结果复审与M/G对照](carbon-zero-b1fixed-review-20261124.md)。新结果没有支持继续扩大B1-fixed；优势诊断另有广播错误，已附独立复现。以下保留为上一轮设计，不要重复执行已完成的P0/P2。
+
 2026-11-24。状态：**研究复审及下一轮执行协议；尚无新训练或晋级结果。**
 
 本次核对 `experiment/carbon-zero-b1-residual` 的不可变快照 **`afcfe81712676dcc0d680e47881db6ecc71ea55b`**，代码提交 `66694a0`，其前置完整终局实验为 `868a0abe5d840f84614cfa437452e9b0f921b468`。下文的“已发现”来自该快照的代码、逐局 JSON 和 critic 留出预测；“建议”均尚待 Codex 实施。当前发布仍是 `v11-yan-v8-elite-refit`。

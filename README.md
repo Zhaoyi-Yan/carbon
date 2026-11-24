@@ -4,7 +4,7 @@
 
 [研究方案 v2](analysis/carbon-zero-research-plan-20261124.md) 定义了复用 ft3 Apollo、合法观测、固定温度、混合终局效用的 Zero-W 路线。[首轮 200k PPO 实验](https://github.com/Zhaoyi-Yan/carbon/blob/c73c2837e7a0ead8c29f0ffe0c17f9416db66e72/analysis/carbon-zero/README.md) 已完成但棋力退化，冻结 v8 不变。
 
-**当前 Codex 交接：[B1 残差 critic 复审与下一轮执行协议](analysis/carbon-zero-b1-review-20261124.md)。** 已核对 `afcfe81` 的 B1 10k/50k 与终局 RL 结果，并提交原始数据复算：混合效用与平均分差在部分对照中方向相反，B1 尚未证明增益或非劣。优先修正固定现金基线和 B2 诊断，检查 PPO 期间 critic 的持续校准；维持现有学习率与 anchor，受控复验 B1-fixed，再按诊断决定完整终局状态基线或 B2。发布 v8 不变。[前轮 PPO / RLOO / 预训练 critic 方案](analysis/carbon-zero-rl-followup-20261124.md)保留为历史协议。
+**当前 Codex 交接：[B1-fixed 新结果复审与 M/G 对照](analysis/carbon-zero-b1fixed-review-20261124.md)。** 已核对 `d6008ed`：固定w和B2修复已有运行证据，B1-fixed两种子未显示稳定增益。新校准脚本的非残差优势存在形状广播错误，已有独立复现；GAE与MC差距大也不能直接证明GAE失效。下一轮暂停扩大B1-fixed，修诊断后，以同一冻结critic、完整对局和优化器做MC状态基线/整局GAE两臂各约50k对照，补齐新候选的三对手共同地图评估。[前轮B1协议](analysis/carbon-zero-b1-review-20261124.md)和[更早PPO/RLOO方案](analysis/carbon-zero-rl-followup-20261124.md)保留为历史记录。
 
 以后每轮新的研究分析、建议和实验协议写入 GitHub 的 analysis 文档并更新这里的入口；实施结果保留在对应实验分支。
 

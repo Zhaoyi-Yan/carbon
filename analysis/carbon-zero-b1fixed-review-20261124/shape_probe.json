@@ -1,0 +1,84 @@
+{
+  "audited_commit": "d6008ed2e8bc42df056ab08ac48711d19c4249c8",
+  "source_files_sha256": {
+    "experiments/carbon_zero/terminal_calibration.py": "d1cb996a511cdae8e5ba5872f81d51003e0be243390fcbfcde5f36e97283e788",
+    "experiments/carbon_zero/policy.py": "c7c720f225f677e4ff3130e3a9914ce4983c4e809c48b0512983609162a6c4c6",
+    "experiments/carbon_zero/ppo.py": "84fb0449a3d06a7f2a6a4a31053230c45e67eafe7694fce3f405b3d7487c70db"
+  },
+  "source_files_verified_against_git": true,
+  "terminal_calibration_source_sha256": "d1cb996a511cdae8e5ba5872f81d51003e0be243390fcbfcde5f36e97283e788",
+  "scope": "Actual calibration NumPy functions; synthetic zero critic and tensor conversion; no neural inference or games.",
+  "cases": {
+    "current_code": {
+      "prediction_shape": [
+        4,
+        1
+      ],
+      "mc_shape": [
+        4,
+        4
+      ],
+      "value_all": {
+        "N": 4,
+        "MSE": 0.5565469886855446,
+        "bias": -0.7402929640181034,
+        "EV": 0.0,
+        "corr": null
+      },
+      "gae_vs_mc_all": {
+        "N": 4,
+        "mean_abs": 0.10791902559931889,
+        "mean_signed": -0.05123233034037969,
+        "corr": null,
+        "mean_gae": 0.6890606336777237,
+        "mean_mc": 0.7402929640181034
+      },
+      "unequal_episode_lengths_4_and_5": {
+        "success": false,
+        "error_type": "ValueError",
+        "message": "all the input array dimensions except for the concatenation axis must match exactly, but along dimension 1, the array at index 0 has size 4 and the array at index 1 has size 5"
+      }
+    },
+    "flatten_predictions": {
+      "prediction_shape": [
+        4
+      ],
+      "mc_shape": [
+        4
+      ],
+      "value_all": {
+        "N": 4,
+        "MSE": 0.5565469886855446,
+        "bias": -0.7402929640181034,
+        "EV": 0.0,
+        "corr": null
+      },
+      "gae_vs_mc_all": {
+        "N": 4,
+        "mean_abs": 0.05123233034037969,
+        "mean_signed": -0.05123233034037969,
+        "corr": 0.9055651940943749,
+        "mean_gae": 0.6890606336777237,
+        "mean_mc": 0.7402929640181034
+      },
+      "unequal_episode_lengths_4_and_5": {
+        "success": true,
+        "states": 9
+      }
+    }
+  },
+  "exact_critic_counterexample": {
+    "type": "Synthetic mathematical counterexample, not Carbon experiment data.",
+    "environment": "Horizon 299; Phi=0; only terminal reward is an independent fair +/-1 coin, independent of every state/action.",
+    "critic": "V=0 is the exact conditional expected return at every nonterminal state.",
+    "trajectories": "One realized +1 trajectory and one realized -1 trajectory; same length.",
+    "lambda": 0.95,
+    "GAE_formula": "0.95 ** (298-t) * R",
+    "MC_formula": "R",
+    "gae_mc_corr": 0.3611574803613696,
+    "mean_abs_difference": 0.9331103825052164,
+    "lambda_one_equals_mc": true,
+    "implication": "Large realized GAE/MC difference or correlation below 0.5 alone cannot establish an inaccurate critic, incorrect GAE, or an expected policy-gradient error."
+  },
+  "assertions_passed": true
+}
