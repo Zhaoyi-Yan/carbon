@@ -2,7 +2,9 @@
 
 ## Carbon-Zero 独立强化学习路线
 
-[Carbon-Zero：从终局目标出发的独立策略学习方案（v2）](analysis/carbon-zero-research-plan-20261124.md) 已吸收 Claude 的复核意见：先复用强 BC 权重（优先核验 ft3 Apollo）、合法 54 通道与 BeliefTracker、固定风格和校准温度；用真实裁判及经 parity 验证的快速引擎、混合终局效用与 PPO 跑 10–20 万 E 试点，同时测无搜索和兼容旧搜索的棋力。Codex 直接执行文档第 12 节。独立新网络和动态 League 是后续对照，不阻塞首轮。当前尚无 Zero 新实战结果，冻结 v8，不改变线上策略。
+[研究方案 v2](analysis/carbon-zero-research-plan-20261124.md) 定义了复用 ft3 Apollo、合法观测、固定温度、混合终局效用的 Zero-W 路线。[首轮 200k PPO 实验](https://github.com/Zhaoyi-Yan/carbon/blob/c73c2837e7a0ead8c29f0ffe0c17f9416db66e72/analysis/carbon-zero/README.md) 已完成但棋力退化，冻结 v8 不变。
+
+**当前 Codex 交接：[首轮 PPO 退化复盘与完整终局 RL 实验](analysis/carbon-zero-rl-followup-20261124.md)。** 优先完整对局 RLOO 与预训练 critic 的 PPO 对照，控制累计 KL，先从冻结 ZW0 证明自主学习增益，不重复扩大原 PPO。以后每轮新的研究分析、建议和实验协议写入 GitHub 的 analysis 文档并更新这里的入口；实施结果保留在对应实验分支。
 
 ## yan-v8 实验交接
 

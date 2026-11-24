@@ -4,6 +4,8 @@
 状态：更新后的实验计划，尚无本方案新增训练或棋力结果。原方案见 [fe8a342](https://github.com/Zhaoyi-Yan/carbon/blob/fe8a3420f53311f35cb18b5e7fec821e829cf6fd/analysis/carbon-zero-research-plan-20261124.md)。  
 目的：不再以修复 yan-v8 某个失败案例为主要研发范式，建立一个可持续产生更强策略的学习闭环。本文为新的独立研究主线，不要求完成旧评分审计后才开始。保留旧路线和所有负结果作为对照。
 
+> **首轮执行状态与后续优先级（2026-11-24）**：200k PPO 试点已完成，出现退化；见 [首轮报告](https://github.com/Zhaoyi-Yan/carbon/blob/c73c2837e7a0ead8c29f0ffe0c17f9416db66e72/analysis/carbon-zero/README.md)。接下来以 [完整终局 RL 实验交接](carbon-zero-rl-followup-20261124.md) 为准，不重复执行本文件第 12 节的首轮主跑。以下保留原 v2 设计，便于复现和追溯。
+
 ## 0. 核心决策：重建学习机制，不必从随机权重重来
 
 此前持续树任务、回本筛选和评分审计没有获得稳定棋力改善；单树回本也不等于全队终局收益。[1][2] v7 的 own-search、selfplay-value 是历史动作与现金标签监督，不是当前策略用真实对局奖励反复更新整个 actor 的 RL。[3] 这不证明 v8 已达到理论上限，更不证明 PPO 必然成功。
