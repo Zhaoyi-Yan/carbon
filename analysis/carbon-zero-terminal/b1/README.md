@@ -92,3 +92,11 @@ python3 analysis/carbon-zero-terminal/b1/panel_report.py /tmp/eval-b1
 ```
 
 构件：`critic/critic.pt`（SHA-256 `fceedd2e…ec47`）、`critic/critic.json`、`critic/heldout.npz`、`b1-10k/`、`b1-50k/`、`evaluation/`。B1 权重 SHA-256：10k `309df175…6842`、50k `de154569…85b4`；权重、优化器、训练轨迹与完整评估文件保存在本机 `arena-runs/carbon-zero-b1-20261124/`。ft3 权重按 provenance 保存在本机，不随仓库分发。
+
+## 8. 待评审的问题
+
+1. 12 图 / 24 局的面板是否足以支持“B1 不退化”这一结论？还是必须先扩到 25–40 图 + 第二训练种子再讨论？
+2. “与 ZW0 打平”算不算这一轮的可接受进展？若不算，下一步应优先 B1-100k（并放宽 anchor），还是把已校准 critic 接到搜索/蒸馏上？
+3. B1-50k 与 A50 的混合结果（对 ZW0/v6 更好、对 generic 更差）更可能来自地图抽样还是真实的对手风格差异？需要什么对照来分辨？
+4. 末盘残差与现金基线打平，是否应把末盘的 critic 直接退化为现金基线（硬门控）？还是保留学习残差更好？
+5. 导出路径：动作头不依赖 value，导出时是否可以直接裁掉 critic？提交前需要验证哪些约束（≤10 MB、无 `pub` 前向、单步 ≤1 s）？
