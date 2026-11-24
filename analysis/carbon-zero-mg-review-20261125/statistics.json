@@ -1,0 +1,2771 @@
+{
+  "source_commit": "be792f64e3b25b392b1cd502e5b55cfbf11e0950",
+  "input_sha256": {
+    "analysis/carbon-zero-terminal/b1/mg/G-50k/episodes.json": "9b26283f5e52a48764f819bf56cca3d5a62ab47255a351704b76af7a7e937d15",
+    "analysis/carbon-zero-terminal/b1/mg/G-50k/protocol.json": "ea8f53458637ef6748506f1e23a29424825a0eb6be9c237713b18bb577f97edc",
+    "analysis/carbon-zero-terminal/b1/mg/G-50k/updates.json": "e0a024fd3dec668c95bc8602c7ee381cc43814c3d887273a5697f8f102d2aaed",
+    "analysis/carbon-zero-terminal/b1/mg/M-50k/episodes.json": "5438a8973777e4fc8778e2ff6882f5f2c01ae90f85d86bcb4e79029f9fa53e38",
+    "analysis/carbon-zero-terminal/b1/mg/M-50k/protocol.json": "667d7c8024e08bf0f154ba14e9afd0abb72938ebb26f0490057629ba8a5532ce",
+    "analysis/carbon-zero-terminal/b1/mg/M-50k/updates.json": "69d0e2cdf2ca3b2e7636a5a8be41fa7f7de9b6009f1edc04d2588559deecf0bc",
+    "analysis/carbon-zero-terminal/b1/mg/evaluation/G50.json": "c0dbc20356f1c89f860bfc80ce6e49eee71f46ff42238d05fb158888a4127c3c",
+    "analysis/carbon-zero-terminal/b1/mg/evaluation/M50.json": "3c8e8fc714d7fcc3a320ed94cd01cd6a58fc9e0f9a0abc3f3ad86c7d30abafd9",
+    "analysis/carbon-zero-terminal/b1/mg/evaluation/ZW0.json": "0d3a51d7c35cd6d240c5a13941aef6d8381af6d006c10c2d33e588ba1439757f",
+    "analysis/carbon-zero-terminal/b1/mg/evaluation/protocol.json": "838d0a75e398d7c5244665fb9d81edcac3ae92ae4cab19491f84f59abd34b6d4",
+    "analysis/carbon-zero-terminal/b1/mg/smoke-G-10k/episodes.json": "58e4470a874cb1b094a7109597d79af99b52090260f3b04cc87afe574f5dbb6d",
+    "analysis/carbon-zero-terminal/b1/mg/smoke-G-10k/protocol.json": "e100aaacbc319088ebfd160f1c7629edc9141f2fb61be7e7459be9eacf290e81",
+    "analysis/carbon-zero-terminal/b1/mg/smoke-G-10k/updates.json": "688a1b5ed9a054b9b38d94b127bf93263be817d42dfb6963e354f927b6a55f0e",
+    "analysis/carbon-zero-terminal/b1/mg/smoke-M-10k/episodes.json": "cbb24d717258f3e498351a89459368c3f1c66f48e002ef99f41e8cfdd2caec55",
+    "analysis/carbon-zero-terminal/b1/mg/smoke-M-10k/protocol.json": "78839deb30c0ee2949dc8f76bd6f4812e48072586993dee04fa33a7756defc08",
+    "analysis/carbon-zero-terminal/b1/mg/smoke-M-10k/updates.json": "77252e322304dc6cac6adf3360e08215419e5bcfd9d3fd4ac24405b3a5b8a343",
+    "analysis/carbon-zero-terminal/b1/evaluation-shared/ZW0.json": "cb1f2955a48c6d648e4c26a28b90918c005e0748e59424316949cf332dff331a",
+    "analysis/carbon-zero-terminal/b1/evaluation/ZW0.json": "b87d706da9c032931d64845f7a7128ad144683217316ef2959c8c378a2ae2972",
+    "analysis/carbon-zero-terminal/b1/critic/critic.json": "9fc24d319f4edcbafc56c076828af1ecbed813038c48a53d092efc51c2428813",
+    "analysis/carbon-zero-terminal/critic/critic.json": "6d88e3dfbb90b882f19f70923b5025c75557d301e1b40cc76c8b42863e693edb",
+    "analysis/carbon-zero-terminal/critic-expanded/critic.json": "cdaf04f4e0ef14720a237545179e9b6178ce7ca227e2884aca6839ed511fdeb4",
+    "analysis/carbon-zero-terminal/evaluation/ZW0.json": "8dc999960dfc5646d13c798ad6c550bb8e688ef8f41dc30d91499b11de28ab50",
+    "analysis/carbon-zero-terminal/confirmation/ZW0.json": "738d2744f97b4de75bfb3531809bc50204b3b055379e77ad80328c1d884ba5fa"
+  },
+  "method": {
+    "python_version": "3.12.14",
+    "numpy_version": "2.3.5",
+    "rng": "numpy.default_rng PCG64 reset for each same-sized bootstrap",
+    "seed": 20261124,
+    "replicates": 100000,
+    "interval": "unadjusted exploratory 95% percentile bootstrap",
+    "sampling_unit": "map; preserve two seats and all three rivals in the same map cluster",
+    "primary": "equal-weight mean paired delta-U across the three rivals",
+    "limitations": [
+      "One M and one G training seed at this snapshot; second-seed results absent.",
+      "Bootstrap conditions on these fixed checkpoints, not training-seed randomness.",
+      "New development maps differ from the previous plan to reuse the old shared panel.",
+      "The continuation gate allocates research budget, not a statistical promotion."
+    ]
+  },
+  "evaluation": {
+    "ZW0": {
+      "checkpoint_sha256": null,
+      "rivals": {
+        "ZW0": {
+          "overall": {
+            "games": 24,
+            "wins": 13,
+            "draws": 0,
+            "losses": 11,
+            "mean_margin": 383.06625,
+            "median_margin": 101.64999999999964,
+            "mean_utility": 0.13032586374302882,
+            "full_games": 24,
+            "eliminations": 0
+          },
+          "seats": {
+            "0": {
+              "games": 12,
+              "wins": 6,
+              "draws": 0,
+              "losses": 6,
+              "mean_margin": 265.27499999999986,
+              "median_margin": 35.97499999999991,
+              "mean_utility": 0.06770619239662211,
+              "full_games": 12,
+              "eliminations": 0
+            },
+            "1": {
+              "games": 12,
+              "wins": 7,
+              "draws": 0,
+              "losses": 5,
+              "mean_margin": 500.8575000000001,
+              "median_margin": 116.69500000000016,
+              "mean_utility": 0.19294553508943557,
+              "full_games": 12,
+              "eliminations": 0
+            }
+          }
+        },
+        "ft3-generic-no-search": {
+          "overall": {
+            "games": 24,
+            "wins": 16,
+            "draws": 0,
+            "losses": 8,
+            "mean_margin": 550.9700000000001,
+            "median_margin": 268.49500000000035,
+            "mean_utility": 0.2511321831726356,
+            "full_games": 24,
+            "eliminations": 0
+          },
+          "seats": {
+            "0": {
+              "games": 12,
+              "wins": 8,
+              "draws": 0,
+              "losses": 4,
+              "mean_margin": 364.48999999999984,
+              "median_margin": 268.49500000000035,
+              "mean_utility": 0.26358121935247697,
+              "full_games": 12,
+              "eliminations": 0
+            },
+            "1": {
+              "games": 12,
+              "wins": 8,
+              "draws": 0,
+              "losses": 4,
+              "mean_margin": 737.4500000000002,
+              "median_margin": 276.1100000000001,
+              "mean_utility": 0.23868314699279417,
+              "full_games": 12,
+              "eliminations": 0
+            }
+          }
+        },
+        "yan-v6-no-search": {
+          "overall": {
+            "games": 24,
+            "wins": 5,
+            "draws": 0,
+            "losses": 19,
+            "mean_margin": -932.0791666666665,
+            "median_margin": -631.6199999999999,
+            "mean_utility": -0.47347463971071485,
+            "full_games": 24,
+            "eliminations": 0
+          },
+          "seats": {
+            "0": {
+              "games": 12,
+              "wins": 3,
+              "draws": 0,
+              "losses": 9,
+              "mean_margin": -492.28666666666646,
+              "median_margin": -559.6299999999997,
+              "mean_utility": -0.39057293745542476,
+              "full_games": 12,
+              "eliminations": 0
+            },
+            "1": {
+              "games": 12,
+              "wins": 2,
+              "draws": 0,
+              "losses": 10,
+              "mean_margin": -1371.8716666666667,
+              "median_margin": -702.8849999999998,
+              "mean_utility": -0.556376341966005,
+              "full_games": 12,
+              "eliminations": 0
+            }
+          }
+        }
+      },
+      "all_rivals_pooled": {
+        "games": 72,
+        "wins": 34,
+        "draws": 0,
+        "losses": 38,
+        "mean_margin": 0.6523611111111146,
+        "median_margin": -57.00500000000011,
+        "mean_utility": -0.030672197598350173,
+        "full_games": 72,
+        "eliminations": 0
+      }
+    },
+    "M50": {
+      "checkpoint_sha256": "a57598900cf0f85256de52241e1d6aee45130a835ffe24d29b653fce99108cab",
+      "rivals": {
+        "ZW0": {
+          "overall": {
+            "games": 24,
+            "wins": 17,
+            "draws": 0,
+            "losses": 7,
+            "mean_margin": 509.69666666666643,
+            "median_margin": 425.1099999999997,
+            "mean_utility": 0.3546875674215819,
+            "full_games": 23,
+            "eliminations": 1
+          },
+          "seats": {
+            "0": {
+              "games": 12,
+              "wins": 9,
+              "draws": 0,
+              "losses": 3,
+              "mean_margin": 590.770833333333,
+              "median_margin": 379.53499999999985,
+              "mean_utility": 0.4240383922678547,
+              "full_games": 11,
+              "eliminations": 1
+            },
+            "1": {
+              "games": 12,
+              "wins": 8,
+              "draws": 0,
+              "losses": 4,
+              "mean_margin": 428.62249999999995,
+              "median_margin": 600.0500000000002,
+              "mean_utility": 0.28533674257530905,
+              "full_games": 12,
+              "eliminations": 0
+            }
+          }
+        },
+        "ft3-generic-no-search": {
+          "overall": {
+            "games": 24,
+            "wins": 13,
+            "draws": 0,
+            "losses": 11,
+            "mean_margin": -7.0474999999999755,
+            "median_margin": 31.19499999999971,
+            "mean_utility": 0.04053545806448753,
+            "full_games": 24,
+            "eliminations": 0
+          },
+          "seats": {
+            "0": {
+              "games": 12,
+              "wins": 6,
+              "draws": 0,
+              "losses": 6,
+              "mean_margin": 30.76833333333343,
+              "median_margin": -55.620000000000346,
+              "mean_utility": 0.009212734323181204,
+              "full_games": 12,
+              "eliminations": 0
+            },
+            "1": {
+              "games": 12,
+              "wins": 7,
+              "draws": 0,
+              "losses": 5,
+              "mean_margin": -44.86333333333338,
+              "median_margin": 31.19499999999971,
+              "mean_utility": 0.07185818180579386,
+              "full_games": 12,
+              "eliminations": 0
+            }
+          }
+        },
+        "yan-v6-no-search": {
+          "overall": {
+            "games": 24,
+            "wins": 7,
+            "draws": 0,
+            "losses": 17,
+            "mean_margin": -617.9249999999998,
+            "median_margin": -578.0050000000001,
+            "mean_utility": -0.345566424291849,
+            "full_games": 24,
+            "eliminations": 0
+          },
+          "seats": {
+            "0": {
+              "games": 12,
+              "wins": 4,
+              "draws": 0,
+              "losses": 8,
+              "mean_margin": -496.6708333333332,
+              "median_margin": -263.8949999999995,
+              "mean_utility": -0.27125794964147804,
+              "full_games": 12,
+              "eliminations": 0
+            },
+            "1": {
+              "games": 12,
+              "wins": 3,
+              "draws": 0,
+              "losses": 9,
+              "mean_margin": -739.1791666666664,
+              "median_margin": -629.4700000000003,
+              "mean_utility": -0.4198748989422199,
+              "full_games": 12,
+              "eliminations": 0
+            }
+          }
+        }
+      },
+      "all_rivals_pooled": {
+        "games": 72,
+        "wins": 37,
+        "draws": 0,
+        "losses": 35,
+        "mean_margin": -38.4252777777778,
+        "median_margin": 16.174999999999272,
+        "mean_utility": 0.016552200398073473,
+        "full_games": 71,
+        "eliminations": 1
+      }
+    },
+    "G50": {
+      "checkpoint_sha256": "b3ddd433aa2e5eff07799e8adc60187bfd3ff08f70eac392fd4d9b14995a725d",
+      "rivals": {
+        "ZW0": {
+          "overall": {
+            "games": 24,
+            "wins": 10,
+            "draws": 0,
+            "losses": 14,
+            "mean_margin": 205.81875000000014,
+            "median_margin": -74.59499999999935,
+            "mean_utility": -0.0714388107619696,
+            "full_games": 24,
+            "eliminations": 0
+          },
+          "seats": {
+            "0": {
+              "games": 12,
+              "wins": 4,
+              "draws": 0,
+              "losses": 8,
+              "mean_margin": -83.65249999999992,
+              "median_margin": -138.0050000000001,
+              "mean_utility": -0.19159856241133322,
+              "full_games": 12,
+              "eliminations": 0
+            },
+            "1": {
+              "games": 12,
+              "wins": 6,
+              "draws": 0,
+              "losses": 6,
+              "mean_margin": 495.2900000000002,
+              "median_margin": 117.01000000000067,
+              "mean_utility": 0.04872094088739402,
+              "full_games": 12,
+              "eliminations": 0
+            }
+          }
+        },
+        "ft3-generic-no-search": {
+          "overall": {
+            "games": 24,
+            "wins": 8,
+            "draws": 0,
+            "losses": 16,
+            "mean_margin": -145.80041666666668,
+            "median_margin": -350.4850000000001,
+            "mean_utility": -0.22675819614823509,
+            "full_games": 24,
+            "eliminations": 0
+          },
+          "seats": {
+            "0": {
+              "games": 12,
+              "wins": 5,
+              "draws": 0,
+              "losses": 7,
+              "mean_margin": -188.54583333333326,
+              "median_margin": -172.41500000000042,
+              "mean_utility": -0.1322755759819241,
+              "full_games": 12,
+              "eliminations": 0
+            },
+            "1": {
+              "games": 12,
+              "wins": 3,
+              "draws": 0,
+              "losses": 9,
+              "mean_margin": -103.05500000000006,
+              "median_margin": -599.6399999999999,
+              "mean_utility": -0.3212408163145461,
+              "full_games": 12,
+              "eliminations": 0
+            }
+          }
+        },
+        "yan-v6-no-search": {
+          "overall": {
+            "games": 24,
+            "wins": 4,
+            "draws": 0,
+            "losses": 20,
+            "mean_margin": -940.6916666666665,
+            "median_margin": -694.1850000000004,
+            "mean_utility": -0.531895454618646,
+            "full_games": 24,
+            "eliminations": 0
+          },
+          "seats": {
+            "0": {
+              "games": 12,
+              "wins": 2,
+              "draws": 0,
+              "losses": 10,
+              "mean_margin": -636.4,
+              "median_margin": -626.0300000000002,
+              "mean_utility": -0.5079730152016341,
+              "full_games": 12,
+              "eliminations": 0
+            },
+            "1": {
+              "games": 12,
+              "wins": 2,
+              "draws": 0,
+              "losses": 10,
+              "mean_margin": -1244.9833333333333,
+              "median_margin": -752.7149999999997,
+              "mean_utility": -0.5558178940356578,
+              "full_games": 12,
+              "eliminations": 0
+            }
+          }
+        }
+      },
+      "all_rivals_pooled": {
+        "games": 72,
+        "wins": 22,
+        "draws": 0,
+        "losses": 50,
+        "mean_margin": -293.55777777777774,
+        "median_margin": -424.27999999999975,
+        "mean_utility": -0.27669748717628356,
+        "full_games": 72,
+        "eliminations": 0
+      }
+    }
+  },
+  "paired": {
+    "M50-ZW0": {
+      "utility": {
+        "ZW0": {
+          "both_seats": {
+            "mean": 0.2243617036785531,
+            "percentile95": [
+              -0.08577588480633756,
+              0.5385708112060092
+            ],
+            "maps": 12,
+            "map_sd": 0.5769493238665385,
+            "positive_maps": 9,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              0.12793265733065018,
+              0.3035047889714741
+            ]
+          },
+          "seat0": {
+            "mean": 0.3563321998712327,
+            "percentile95": [
+              -0.0832821090198444,
+              0.807931263696175
+            ],
+            "maps": 12,
+            "map_sd": 0.8237024884677551,
+            "positive_maps": 6,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              0.2456531830150002,
+              0.4878672895137566
+            ]
+          },
+          "seat1": {
+            "mean": 0.09239120748587344,
+            "percentile95": [
+              -0.48342653964906857,
+              0.649914641476094
+            ],
+            "maps": 12,
+            "map_sd": 1.0486337417097609,
+            "positive_maps": 7,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              -0.027680710123398476,
+              0.2388172016615396
+            ]
+          }
+        },
+        "ft3-generic-no-search": {
+          "both_seats": {
+            "mean": -0.21059672510814806,
+            "percentile95": [
+              -0.49027319705836586,
+              0.022273148532085313
+            ],
+            "maps": 12,
+            "map_sd": 0.48044044479717884,
+            "positive_maps": 2,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              -0.2709717101726406,
+              -0.10333731284996288
+            ]
+          },
+          "seat0": {
+            "mean": -0.25436848502929577,
+            "percentile95": [
+              -0.6774126170885351,
+              0.15537547466893484
+            ],
+            "maps": 12,
+            "map_sd": 0.749518738735343,
+            "positive_maps": 4,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              -0.386280500835496,
+              -0.1491909924456018
+            ]
+          },
+          "seat1": {
+            "mean": -0.16682496518700032,
+            "percentile95": [
+              -0.600536739621319,
+              0.2709787422303342
+            ],
+            "maps": 12,
+            "map_sd": 0.8171851876050126,
+            "positive_maps": 4,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              -0.2895969796549956,
+              -0.055710823944586464
+            ]
+          }
+        },
+        "yan-v6-no-search": {
+          "both_seats": {
+            "mean": 0.12790821541886593,
+            "percentile95": [
+              -0.20772455886107954,
+              0.4556664220466396
+            ],
+            "maps": 12,
+            "map_sd": 0.6143798585993073,
+            "positive_maps": 5,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              0.06346041056302097,
+              0.2237771694235855
+            ]
+          },
+          "seat0": {
+            "mean": 0.11931498781394677,
+            "percentile95": [
+              -0.37662882349139276,
+              0.6362867509325945
+            ],
+            "maps": 12,
+            "map_sd": 0.935288238892862,
+            "positive_maps": 6,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              -0.007571503104638045,
+              0.2499213415978445
+            ]
+          },
+          "seat1": {
+            "mean": 0.13650144302378517,
+            "percentile95": [
+              -0.2722219198638259,
+              0.5598167814049242
+            ],
+            "maps": 12,
+            "map_sd": 0.7890810295522673,
+            "positive_maps": 7,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              0.0009662101754000961,
+              0.2814678048943471
+            ]
+          }
+        },
+        "macro": {
+          "both_seats": {
+            "mean": 0.047224397996423646,
+            "percentile95": [
+              -0.09488922041035606,
+              0.18441959304672703
+            ],
+            "maps": 12,
+            "map_sd": 0.2596574034388252,
+            "positive_maps": 7,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              0.007128226669275362,
+              0.08809182505684797
+            ]
+          },
+          "seat0": {
+            "mean": 0.07375956755196121,
+            "percentile95": [
+              -0.11788060953568229,
+              0.2867330226683918
+            ],
+            "maps": 12,
+            "map_sd": 0.37309182415458375,
+            "positive_maps": 8,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              -0.0025293060743360007,
+              0.13071848754897764
+            ]
+          },
+          "seat1": {
+            "mean": 0.02068922844088607,
+            "percentile95": [
+              -0.23904307552426676,
+              0.2806344985744506
+            ],
+            "maps": 12,
+            "map_sd": 0.47880304959703895,
+            "positive_maps": 6,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              -0.05396563168773409,
+              0.09575120510661188
+            ]
+          },
+          "map_values": {
+            "141636975": 0.09266456888235027,
+            "458278869": 0.20808361185492477,
+            "1073276868": -0.0004950289095480842,
+            "1310099224": 0.1879818074708517,
+            "1552143124": -0.3284778175806526,
+            "1700344960": 0.1832738339993794,
+            "2130037077": -0.20965277701665871,
+            "2214916908": -0.402317299668244,
+            "2383991108": 0.4882822825950548,
+            "2840759899": 0.27996182484520593,
+            "2946607612": 0.11974970708498318,
+            "3022930324": -0.052361937600563006
+          }
+        }
+      },
+      "margin": {
+        "ZW0": {
+          "both_seats": {
+            "mean": 126.63041666666652,
+            "percentile95": [
+              -216.7217187500003,
+              480.63541666666566
+            ],
+            "maps": 12,
+            "map_sd": 645.6737793064709,
+            "positive_maps": 7,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              12.785454545454492,
+              228.87999999999985
+            ]
+          },
+          "seat0": {
+            "mean": 325.49583333333317,
+            "percentile95": [
+              -229.97500000000022,
+              981.012666666666
+            ],
+            "maps": 12,
+            "map_sd": 1126.4890187856677,
+            "positive_maps": 5,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              126.35909090909081,
+              460.95818181818163
+            ]
+          },
+          "seat1": {
+            "mean": -72.23500000000013,
+            "percentile95": [
+              -776.5693125,
+              550.050458333333
+            ],
+            "maps": 12,
+            "map_sd": 1224.1280829264113,
+            "positive_maps": 7,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              -235.3981818181819,
+              185.8999999999998
+            ]
+          }
+        },
+        "ft3-generic-no-search": {
+          "both_seats": {
+            "mean": -558.0174999999998,
+            "percentile95": [
+              -1145.3502604166667,
+              -121.05201041666665
+            ],
+            "maps": 12,
+            "map_sd": 965.3439599496978,
+            "positive_maps": 1,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              -644.8649999999998,
+              -316.93909090909074
+            ]
+          },
+          "seat0": {
+            "mean": -333.7216666666664,
+            "percentile95": [
+              -704.1745416666665,
+              15.66933333333395
+            ],
+            "maps": 12,
+            "map_sd": 670.5806827442149,
+            "positive_maps": 4,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              -419.9663636363634,
+              -228.77363636363606
+            ]
+          },
+          "seat1": {
+            "mean": -782.3133333333335,
+            "percentile95": [
+              -1930.7350000000004,
+              -2.880166666667302
+            ],
+            "maps": 12,
+            "map_sd": 1866.508918890282,
+            "positive_maps": 4,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              -905.1527272727272,
+              -276.6254545454547
+            ]
+          }
+        },
+        "yan-v6-no-search": {
+          "both_seats": {
+            "mean": 314.15416666666664,
+            "percentile95": [
+              -267.2391979166666,
+              857.1858749999993
+            ],
+            "maps": 12,
+            "map_sd": 1040.5653221508385,
+            "positive_maps": 6,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              166.02636363636367,
+              518.6227272727273
+            ]
+          },
+          "seat0": {
+            "mean": -4.384166666666715,
+            "percentile95": [
+              -667.2719166666664,
+              647.8659999999995
+            ],
+            "maps": 12,
+            "map_sd": 1211.2138380413585,
+            "positive_maps": 6,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              -167.0481818181818,
+              207.98727272727263
+            ]
+          },
+          "seat1": {
+            "mean": 632.6925,
+            "percentile95": [
+              -381.00916666666666,
+              1725.18325
+            ],
+            "maps": 12,
+            "map_sd": 1953.0329821965952,
+            "positive_maps": 7,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              259.34636363636366,
+              919.8618181818182
+            ]
+          }
+        },
+        "macro": {
+          "both_seats": {
+            "mean": -39.07763888888895,
+            "percentile95": [
+              -306.1925312500001,
+              213.8626180555554
+            ],
+            "maps": 12,
+            "map_sd": 484.20369162477465,
+            "positive_maps": 6,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              -90.0295454545455,
+              39.82212121212116
+            ]
+          },
+          "seat0": {
+            "mean": -4.203333333333348,
+            "percentile95": [
+              -261.0167777777778,
+              249.49512499999943
+            ],
+            "maps": 12,
+            "map_sd": 472.83478840207204,
+            "positive_maps": 8,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              -79.61515151515151,
+              72.82757575757574
+            ]
+          },
+          "seat1": {
+            "mean": -73.9519444444445,
+            "percentile95": [
+              -644.0630555555557,
+              457.871111111111
+            ],
+            "maps": 12,
+            "map_sd": 1022.3889391616666,
+            "positive_maps": 6,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              -224.73545454545456,
+              126.08878787878781
+            ]
+          }
+        }
+      },
+      "win_score": {
+        "ZW0": {
+          "both_seats": {
+            "mean": 0.16666666666666666,
+            "percentile95": [
+              -0.08333333333333333,
+              0.4166666666666667
+            ],
+            "maps": 12,
+            "map_sd": 0.44381268229929727,
+            "positive_maps": 5,
+            "zero_maps": 5,
+            "leave_one_map_out_range": [
+              0.09090909090909091,
+              0.22727272727272727
+            ]
+          },
+          "seat0": {
+            "mean": 0.25,
+            "percentile95": [
+              -0.08333333333333333,
+              0.5833333333333334
+            ],
+            "maps": 12,
+            "map_sd": 0.621581560508061,
+            "positive_maps": 4,
+            "zero_maps": 7,
+            "leave_one_map_out_range": [
+              0.18181818181818182,
+              0.36363636363636365
+            ]
+          },
+          "seat1": {
+            "mean": 0.08333333333333333,
+            "percentile95": [
+              -0.3333333333333333,
+              0.5
+            ],
+            "maps": 12,
+            "map_sd": 0.7929614610987591,
+            "positive_maps": 4,
+            "zero_maps": 5,
+            "leave_one_map_out_range": [
+              0.0,
+              0.18181818181818182
+            ]
+          }
+        },
+        "ft3-generic-no-search": {
+          "both_seats": {
+            "mean": -0.125,
+            "percentile95": [
+              -0.3333333333333333,
+              0.041666666666666664
+            ],
+            "maps": 12,
+            "map_sd": 0.37688918072220456,
+            "positive_maps": 1,
+            "zero_maps": 8,
+            "leave_one_map_out_range": [
+              -0.18181818181818182,
+              -0.045454545454545456
+            ]
+          },
+          "seat0": {
+            "mean": -0.16666666666666666,
+            "percentile95": [
+              -0.5,
+              0.16666666666666666
+            ],
+            "maps": 12,
+            "map_sd": 0.5773502691896258,
+            "positive_maps": 1,
+            "zero_maps": 8,
+            "leave_one_map_out_range": [
+              -0.2727272727272727,
+              -0.09090909090909091
+            ]
+          },
+          "seat1": {
+            "mean": -0.08333333333333333,
+            "percentile95": [
+              -0.4166666666666667,
+              0.25
+            ],
+            "maps": 12,
+            "map_sd": 0.6685579234215215,
+            "positive_maps": 2,
+            "zero_maps": 7,
+            "leave_one_map_out_range": [
+              -0.18181818181818182,
+              0.0
+            ]
+          }
+        },
+        "yan-v6-no-search": {
+          "both_seats": {
+            "mean": 0.08333333333333333,
+            "percentile95": [
+              -0.125,
+              0.2916666666666667
+            ],
+            "maps": 12,
+            "map_sd": 0.417423554968361,
+            "positive_maps": 5,
+            "zero_maps": 4,
+            "leave_one_map_out_range": [
+              0.045454545454545456,
+              0.13636363636363635
+            ]
+          },
+          "seat0": {
+            "mean": 0.08333333333333333,
+            "percentile95": [
+              -0.25,
+              0.4166666666666667
+            ],
+            "maps": 12,
+            "map_sd": 0.6685579234215214,
+            "positive_maps": 3,
+            "zero_maps": 7,
+            "leave_one_map_out_range": [
+              0.0,
+              0.18181818181818182
+            ]
+          },
+          "seat1": {
+            "mean": 0.08333333333333333,
+            "percentile95": [
+              -0.16666666666666666,
+              0.3333333333333333
+            ],
+            "maps": 12,
+            "map_sd": 0.5149286505444371,
+            "positive_maps": 2,
+            "zero_maps": 9,
+            "leave_one_map_out_range": [
+              0.0,
+              0.18181818181818182
+            ]
+          }
+        },
+        "macro": {
+          "both_seats": {
+            "mean": 0.041666666666666664,
+            "percentile95": [
+              -0.06944444444444443,
+              0.1388888888888889
+            ],
+            "maps": 12,
+            "map_sd": 0.18969672765983203,
+            "positive_maps": 6,
+            "zero_maps": 3,
+            "leave_one_map_out_range": [
+              0.015151515151515154,
+              0.07575757575757575
+            ]
+          },
+          "seat0": {
+            "mean": 0.05555555555555556,
+            "percentile95": [
+              -0.08333333333333333,
+              0.2222222222222222
+            ],
+            "maps": 12,
+            "map_sd": 0.27828236997890726,
+            "positive_maps": 3,
+            "zero_maps": 7,
+            "leave_one_map_out_range": [
+              1.0092936587501423e-17,
+              0.09090909090909091
+            ]
+          },
+          "seat1": {
+            "mean": 0.027777777777777766,
+            "percentile95": [
+              -0.16666666666666666,
+              0.2222222222222222
+            ],
+            "maps": 12,
+            "map_sd": 0.3612082231502772,
+            "positive_maps": 4,
+            "zero_maps": 5,
+            "leave_one_map_out_range": [
+              -0.03030303030303031,
+              0.09090909090909088
+            ]
+          }
+        }
+      }
+    },
+    "G50-ZW0": {
+      "utility": {
+        "ZW0": {
+          "both_seats": {
+            "mean": -0.20176467450499835,
+            "percentile95": [
+              -0.3800265174968523,
+              -0.04529952061518624
+            ],
+            "maps": 12,
+            "map_sd": 0.31137108828211685,
+            "positive_maps": 4,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              -0.23065380975800912,
+              -0.1525009246657905
+            ]
+          },
+          "seat0": {
+            "mean": -0.25930475480795523,
+            "percentile95": [
+              -0.7660843074595678,
+              0.2717823973966822
+            ],
+            "maps": 12,
+            "map_sd": 0.9511835345038323,
+            "positive_maps": 4,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              -0.4030364126448353,
+              -0.14653160248055064
+            ]
+          },
+          "seat1": {
+            "mean": -0.1442245942020415,
+            "percentile95": [
+              -0.606091655983902,
+              0.3121057276961677
+            ],
+            "maps": 12,
+            "map_sd": 0.8565357015555912,
+            "positive_maps": 5,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              -0.2765677626341287,
+              -0.024774839635996884
+            ]
+          }
+        },
+        "ft3-generic-no-search": {
+          "both_seats": {
+            "mean": -0.47789037932087064,
+            "percentile95": [
+              -0.7826549627621953,
+              -0.16362138288709133
+            ],
+            "maps": 12,
+            "map_sd": 0.5725606740754146,
+            "positive_maps": 2,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              -0.5744456287016036,
+              -0.39991662061627636
+            ]
+          },
+          "seat0": {
+            "mean": -0.39585679533440116,
+            "percentile95": [
+              -0.7279237695241328,
+              -0.10866022665860998
+            ],
+            "maps": 12,
+            "map_sd": 0.5787693095601969,
+            "positive_maps": 3,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              -0.44330156631865875,
+              -0.2996374584545846
+            ]
+          },
+          "seat1": {
+            "mean": -0.5599239633073404,
+            "percentile95": [
+              -1.030909221300028,
+              -0.029663077760598587
+            ],
+            "maps": 12,
+            "map_sd": 0.9218716219921483,
+            "positive_maps": 1,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              -0.7488218809161249,
+              -0.4715964611178835
+            ]
+          }
+        },
+        "yan-v6-no-search": {
+          "both_seats": {
+            "mean": -0.058420814907931086,
+            "percentile95": [
+              -0.2651684987695764,
+              0.13820912077235514
+            ],
+            "maps": 12,
+            "map_sd": 0.37180296456154105,
+            "positive_maps": 5,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              -0.11638138952845631,
+              0.0006900624419665355
+            ]
+          },
+          "seat0": {
+            "mean": -0.11740007774620938,
+            "percentile95": [
+              -0.5273429616959134,
+              0.2768359781619071
+            ],
+            "maps": 12,
+            "map_sd": 0.7425453179762821,
+            "positive_maps": 5,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              -0.25022783349280997,
+              0.004872283072999634
+            ]
+          },
+          "seat1": {
+            "mean": 0.0005584479303472149,
+            "percentile95": [
+              -0.09295382967003903,
+              0.09487840531338498
+            ],
+            "maps": 12,
+            "map_sd": 0.1745465000088284,
+            "positive_maps": 5,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              -0.022737122247579875,
+              0.02878533141447005
+            ]
+          }
+        },
+        "macro": {
+          "both_seats": {
+            "mean": -0.24602528957793338,
+            "percentile95": [
+              -0.380871048429584,
+              -0.10161689964532088
+            ],
+            "maps": 12,
+            "map_sd": 0.2606712366064504,
+            "positive_maps": 3,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              -0.28505253058815794,
+              -0.22131095222139185
+            ]
+          },
+          "seat0": {
+            "mean": -0.2575205426295219,
+            "percentile95": [
+              -0.511708005958207,
+              0.035665558133866404
+            ],
+            "maps": 12,
+            "map_sd": 0.507895828875745,
+            "positive_maps": 3,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              -0.3626424282316854,
+              -0.1890699969402771
+            ]
+          },
+          "seat1": {
+            "mean": -0.23453003652634488,
+            "percentile95": [
+              -0.4476331464707593,
+              0.03161103947395912
+            ],
+            "maps": 12,
+            "map_sd": 0.446615812880559,
+            "positive_maps": 2,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              -0.3315589287186878,
+              -0.20623158193072613
+            ]
+          },
+          "map_values": {
+            "141636975": -0.28323401976544765,
+            "458278869": 0.068174018481451,
+            "1073276868": -0.5178830004998903,
+            "1310099224": -0.03184217585203408,
+            "1552143124": -0.4429021221075977,
+            "1700344960": 0.07415154344293964,
+            "2130037077": -0.5055440561192125,
+            "2214916908": -0.5099217945181762,
+            "2383991108": 0.1832743615345367,
+            "2840759899": -0.1864806757295,
+            "2946607612": -0.3163726259600861,
+            "3022930324": -0.48372292784218335
+          }
+        }
+      },
+      "margin": {
+        "ZW0": {
+          "both_seats": {
+            "mean": -177.24749999999983,
+            "percentile95": [
+              -450.1710937499997,
+              126.07919791666653
+            ],
+            "maps": 12,
+            "map_sd": 531.789660599428,
+            "positive_maps": 5,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              -280.90181818181804,
+              -119.19818181818164
+            ]
+          },
+          "seat0": {
+            "mean": -348.9274999999998,
+            "percentile95": [
+              -804.5026249999996,
+              102.26491666666658
+            ],
+            "maps": 12,
+            "map_sd": 840.7815860703655,
+            "positive_maps": 4,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              -472.3418181818179,
+              -224.34090909090892
+            ]
+          },
+          "seat1": {
+            "mean": -5.567499999999882,
+            "percentile95": [
+              -558.5030416666666,
+              638.1317708333336
+            ],
+            "maps": 12,
+            "map_sd": 1103.189612953977,
+            "positive_maps": 5,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              -249.41454545454542,
+              133.7463636363638
+            ]
+          }
+        },
+        "ft3-generic-no-search": {
+          "both_seats": {
+            "mean": -696.7704166666667,
+            "percentile95": [
+              -1255.0208854166665,
+              -266.88023958333395
+            ],
+            "maps": 12,
+            "map_sd": 924.3903828481141,
+            "positive_maps": 2,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              -779.0772727272728,
+              -469.8227272727274
+            ]
+          },
+          "seat0": {
+            "mean": -553.0358333333331,
+            "percentile95": [
+              -957.214208333333,
+              -162.39968750000023
+            ],
+            "maps": 12,
+            "map_sd": 738.2187956334593,
+            "positive_maps": 3,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              -639.4163636363635,
+              -434.8145454545453
+            ]
+          },
+          "seat1": {
+            "mean": -840.5050000000001,
+            "percentile95": [
+              -1704.6884166666669,
+              -83.33054166666726
+            ],
+            "maps": 12,
+            "map_sd": 1491.3681145877736,
+            "positive_maps": 1,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              -1075.1763636363637,
+              -504.8309090909092
+            ]
+          }
+        },
+        "yan-v6-no-search": {
+          "both_seats": {
+            "mean": -8.612499999999992,
+            "percentile95": [
+              -708.0885729166666,
+              806.5831666666664
+            ],
+            "maps": 12,
+            "map_sd": 1408.710989627655,
+            "positive_maps": 5,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              -330.6022727272727,
+              193.65454545454557
+            ]
+          },
+          "seat0": {
+            "mean": -144.11333333333346,
+            "percentile95": [
+              -730.2743958333335,
+              423.72122916666626
+            ],
+            "maps": 12,
+            "map_sd": 1065.4003919255667,
+            "positive_maps": 5,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              -270.50454545454556,
+              23.662727272727103
+            ]
+          },
+          "seat1": {
+            "mean": 126.88833333333348,
+            "percentile95": [
+              -941.0030208333333,
+              1421.8913124999997
+            ],
+            "maps": 12,
+            "map_sd": 2205.530988536994,
+            "positive_maps": 5,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              -404.5572727272725,
+              431.07272727272755
+            ]
+          }
+        },
+        "macro": {
+          "both_seats": {
+            "mean": -294.2101388888888,
+            "percentile95": [
+              -623.7127256944443,
+              56.29877430555557
+            ],
+            "maps": 12,
+            "map_sd": 629.5621092956894,
+            "positive_maps": 3,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              -424.685606060606,
+              -185.68999999999994
+            ]
+          },
+          "seat0": {
+            "mean": -348.69222222222214,
+            "percentile95": [
+              -694.8186111111108,
+              -7.58811111111132
+            ],
+            "maps": 12,
+            "map_sd": 638.0962051247544,
+            "positive_maps": 4,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              -451.2118181818181,
+              -253.86424242424238
+            ]
+          },
+          "seat1": {
+            "mean": -239.72805555555558,
+            "percentile95": [
+              -704.3275277777777,
+              313.76237499999985
+            ],
+            "maps": 12,
+            "map_sd": 945.3911401241119,
+            "positive_maps": 3,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              -458.27878787878785,
+              -107.72424242424245
+            ]
+          }
+        }
+      },
+      "win_score": {
+        "ZW0": {
+          "both_seats": {
+            "mean": -0.125,
+            "percentile95": [
+              -0.25,
+              0.0
+            ],
+            "maps": 12,
+            "map_sd": 0.22613350843332272,
+            "positive_maps": 0,
+            "zero_maps": 9,
+            "leave_one_map_out_range": [
+              -0.13636363636363635,
+              -0.09090909090909091
+            ]
+          },
+          "seat0": {
+            "mean": -0.16666666666666666,
+            "percentile95": [
+              -0.5833333333333334,
+              0.25
+            ],
+            "maps": 12,
+            "map_sd": 0.7177405625652735,
+            "positive_maps": 2,
+            "zero_maps": 6,
+            "leave_one_map_out_range": [
+              -0.2727272727272727,
+              -0.09090909090909091
+            ]
+          },
+          "seat1": {
+            "mean": -0.08333333333333333,
+            "percentile95": [
+              -0.4166666666666667,
+              0.25
+            ],
+            "maps": 12,
+            "map_sd": 0.6685579234215215,
+            "positive_maps": 2,
+            "zero_maps": 7,
+            "leave_one_map_out_range": [
+              -0.18181818181818182,
+              0.0
+            ]
+          }
+        },
+        "ft3-generic-no-search": {
+          "both_seats": {
+            "mean": -0.3333333333333333,
+            "percentile95": [
+              -0.5833333333333334,
+              -0.08333333333333333
+            ],
+            "maps": 12,
+            "map_sd": 0.44381268229929727,
+            "positive_maps": 1,
+            "zero_maps": 4,
+            "leave_one_map_out_range": [
+              -0.4090909090909091,
+              -0.2727272727272727
+            ]
+          },
+          "seat0": {
+            "mean": -0.25,
+            "percentile95": [
+              -0.5,
+              0.0
+            ],
+            "maps": 12,
+            "map_sd": 0.45226701686664544,
+            "positive_maps": 0,
+            "zero_maps": 9,
+            "leave_one_map_out_range": [
+              -0.2727272727272727,
+              -0.18181818181818182
+            ]
+          },
+          "seat1": {
+            "mean": -0.4166666666666667,
+            "percentile95": [
+              -0.75,
+              0.0
+            ],
+            "maps": 12,
+            "map_sd": 0.6685579234215214,
+            "positive_maps": 1,
+            "zero_maps": 5,
+            "leave_one_map_out_range": [
+              -0.5454545454545454,
+              -0.36363636363636365
+            ]
+          }
+        },
+        "yan-v6-no-search": {
+          "both_seats": {
+            "mean": -0.041666666666666664,
+            "percentile95": [
+              -0.16666666666666666,
+              0.08333333333333333
+            ],
+            "maps": 12,
+            "map_sd": 0.25746432527221863,
+            "positive_maps": 1,
+            "zero_maps": 9,
+            "leave_one_map_out_range": [
+              -0.09090909090909091,
+              0.0
+            ]
+          },
+          "seat0": {
+            "mean": -0.08333333333333333,
+            "percentile95": [
+              -0.3333333333333333,
+              0.16666666666666666
+            ],
+            "maps": 12,
+            "map_sd": 0.5149286505444373,
+            "positive_maps": 1,
+            "zero_maps": 9,
+            "leave_one_map_out_range": [
+              -0.18181818181818182,
+              0.0
+            ]
+          },
+          "seat1": {
+            "mean": 0.0,
+            "percentile95": [
+              0.0,
+              0.0
+            ],
+            "maps": 12,
+            "map_sd": 0.0,
+            "positive_maps": 0,
+            "zero_maps": 12,
+            "leave_one_map_out_range": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "macro": {
+          "both_seats": {
+            "mean": -0.16666666666666666,
+            "percentile95": [
+              -0.2638888888888889,
+              -0.05555555555555555
+            ],
+            "maps": 12,
+            "map_sd": 0.20100756305184242,
+            "positive_maps": 2,
+            "zero_maps": 2,
+            "leave_one_map_out_range": [
+              -0.19696969696969696,
+              -0.1515151515151515
+            ]
+          },
+          "seat0": {
+            "mean": -0.16666666666666663,
+            "percentile95": [
+              -0.3333333333333333,
+              0.055555555555555546
+            ],
+            "maps": 12,
+            "map_sd": 0.3623715376697393,
+            "positive_maps": 2,
+            "zero_maps": 2,
+            "leave_one_map_out_range": [
+              -0.24242424242424238,
+              -0.12121212121212119
+            ]
+          },
+          "seat1": {
+            "mean": -0.16666666666666666,
+            "percentile95": [
+              -0.3333333333333333,
+              0.027777777777777787
+            ],
+            "maps": 12,
+            "map_sd": 0.33333333333333326,
+            "positive_maps": 2,
+            "zero_maps": 1,
+            "leave_one_map_out_range": [
+              -0.2424242424242424,
+              -0.1515151515151515
+            ]
+          }
+        }
+      }
+    },
+    "M50-G50": {
+      "utility": {
+        "ZW0": {
+          "both_seats": {
+            "mean": 0.42612637818355154,
+            "percentile95": [
+              0.14886210646530812,
+              0.7383476379414017
+            ],
+            "maps": 12,
+            "map_sd": 0.5497325634461743,
+            "positive_maps": 10,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              0.33538003135947314,
+              0.47566681353386503
+            ]
+          },
+          "seat0": {
+            "mean": 0.615636954679188,
+            "percentile95": [
+              0.0772863119468954,
+              1.1274507903528135
+            ],
+            "maps": 12,
+            "map_sd": 0.9810423193477584,
+            "positive_maps": 6,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              0.5111039920244174,
+              0.781921780809688
+            ]
+          },
+          "seat1": {
+            "mean": 0.23661580168791496,
+            "percentile95": [
+              -0.39908212029636236,
+              0.8194774038814914
+            ],
+            "maps": 12,
+            "map_sd": 1.1392551093710095,
+            "positive_maps": 8,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              0.13134690919910302,
+              0.3982553915504589
+            ]
+          }
+        },
+        "ft3-generic-no-search": {
+          "both_seats": {
+            "mean": 0.2672936542127227,
+            "percentile95": [
+              -0.0313060076622919,
+              0.527355014057336
+            ],
+            "maps": 12,
+            "map_sd": 0.518419041167282,
+            "positive_maps": 10,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              0.2199181128326166,
+              0.3607212049744405
+            ]
+          },
+          "seat0": {
+            "mean": 0.14148831030510534,
+            "percentile95": [
+              -0.3346857720560159,
+              0.6240837863813828
+            ],
+            "maps": 12,
+            "map_sd": 0.8933527996953042,
+            "positive_maps": 6,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              0.022431600633025305,
+              0.26485228734405236
+            ]
+          },
+          "seat1": {
+            "mean": 0.39309899812033994,
+            "percentile95": [
+              -0.18208612155447476,
+              0.9326120696153242
+            ],
+            "maps": 12,
+            "map_sd": 1.0301799699970509,
+            "positive_maps": 8,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              0.3010161782043971,
+              0.5544055743654401
+            ]
+          }
+        },
+        "yan-v6-no-search": {
+          "both_seats": {
+            "mean": 0.18632903032679704,
+            "percentile95": [
+              -0.07826605084136548,
+              0.4295740457663621
+            ],
+            "maps": 12,
+            "map_sd": 0.47298254807078655,
+            "positive_maps": 9,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              0.1318993703353937,
+              0.2811367540007573
+            ]
+          },
+          "seat0": {
+            "mean": 0.23671506556015617,
+            "percentile95": [
+              -0.04520378815826488,
+              0.5772904634398259
+            ],
+            "maps": 12,
+            "map_sd": 0.5813591135361696,
+            "positive_maps": 8,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              0.12964116274182624,
+              0.29038539986576867
+            ]
+          },
+          "seat1": {
+            "mean": 0.13594299509343796,
+            "percentile95": [
+              -0.2422313375106154,
+              0.5068489940257718
+            ],
+            "maps": 12,
+            "map_sd": 0.704440287345132,
+            "positive_maps": 8,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              0.02283967708457507,
+              0.27929009329508075
+            ]
+          }
+        },
+        "macro": {
+          "both_seats": {
+            "mean": 0.2932496875743571,
+            "percentile95": [
+              0.21162517612414303,
+              0.37554905748292394
+            ],
+            "maps": 12,
+            "map_sd": 0.15253827911967577,
+            "positive_maps": 12,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              0.27287347993654026,
+              0.3101265232765775
+            ]
+          },
+          "seat0": {
+            "mean": 0.3312801101814832,
+            "percentile95": [
+              0.0706476331056996,
+              0.5885564539715739
+            ],
+            "maps": 12,
+            "map_sd": 0.4797617745381875,
+            "positive_maps": 9,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              0.2625165141576668,
+              0.3980452179957121
+            ]
+          },
+          "seat1": {
+            "mean": 0.25521926496723096,
+            "percentile95": [
+              -0.0216509990439532,
+              0.5431272052171363
+            ],
+            "maps": 12,
+            "map_sd": 0.5222694328132784,
+            "positive_maps": 8,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              0.16441781624365628,
+              0.32350257162228435
+            ]
+          },
+          "map_values": {
+            "141636975": 0.37589858864779807,
+            "458278869": 0.13990959337347383,
+            "1073276868": 0.5173879715903423,
+            "1310099224": 0.2198239833228858,
+            "1552143124": 0.11442430452694517,
+            "1700344960": 0.10912229055643982,
+            "2130037077": 0.29589127910255386,
+            "2214916908": 0.10760449484993231,
+            "2383991108": 0.3050079210605181,
+            "2840759899": 0.46644250057470593,
+            "2946607612": 0.43612233304506925,
+            "3022930324": 0.4313609902416203
+          }
+        }
+      },
+      "margin": {
+        "ZW0": {
+          "both_seats": {
+            "mean": 303.87791666666635,
+            "percentile95": [
+              -156.79070833333358,
+              781.610270833332
+            ],
+            "maps": 12,
+            "map_sd": 866.4476908841334,
+            "positive_maps": 8,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              160.99727272727247,
+              438.11272727272694
+            ]
+          },
+          "seat0": {
+            "mean": 674.423333333333,
+            "percentile95": [
+              22.03299999999979,
+              1409.1136249999986
+            ],
+            "maps": 12,
+            "map_sd": 1288.9791383411864,
+            "positive_maps": 6,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              440.9109090909087,
+              796.0663636363632
+            ]
+          },
+          "seat1": {
+            "mean": -66.66750000000025,
+            "percentile95": [
+              -1269.479375,
+              808.3261874999996
+            ],
+            "maps": 12,
+            "map_sd": 1961.272694220052,
+            "positive_maps": 8,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              -193.50909090909119,
+              435.3145454545452
+            ]
+          }
+        },
+        "ft3-generic-no-search": {
+          "both_seats": {
+            "mean": 138.7529166666667,
+            "percentile95": [
+              -135.94527083333327,
+              399.12758333333335
+            ],
+            "maps": 12,
+            "map_sd": 495.1851513298212,
+            "positive_maps": 9,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              58.352727272727286,
+              239.6177272727273
+            ]
+          },
+          "seat0": {
+            "mean": 219.3141666666667,
+            "percentile95": [
+              -283.3660208333332,
+              744.722958333333
+            ],
+            "maps": 12,
+            "map_sd": 951.5702883937621,
+            "positive_maps": 6,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              77.5618181818183,
+              336.18000000000006
+            ]
+          },
+          "seat1": {
+            "mean": 58.191666666666684,
+            "percentile95": [
+              -552.3731874999999,
+              615.7222499999999
+            ],
+            "maps": 12,
+            "map_sd": 1083.0293757774853,
+            "positive_maps": 8,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              -54.12363636363625,
+              228.20545454545456
+            ]
+          }
+        },
+        "yan-v6-no-search": {
+          "both_seats": {
+            "mean": 322.76666666666665,
+            "percentile95": [
+              -325.78281249999986,
+              991.6516354166666
+            ],
+            "maps": 12,
+            "map_sd": 1217.611193177656,
+            "positive_maps": 9,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              85.53999999999996,
+              507.22909090909087
+            ]
+          },
+          "seat0": {
+            "mean": 139.72916666666674,
+            "percentile95": [
+              -536.2065416666663,
+              757.9368124999993
+            ],
+            "maps": 12,
+            "map_sd": 1207.9958980925114,
+            "positive_maps": 8,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              13.937272727272763,
+              329.3536363636365
+            ]
+          },
+          "seat1": {
+            "mean": 505.80416666666656,
+            "percentile95": [
+              -310.90083333333337,
+              1622.2985416666663
+            ],
+            "maps": 12,
+            "map_sd": 1811.670693312759,
+            "positive_maps": 8,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              37.9190909090908,
+              685.6590909090909
+            ]
+          }
+        },
+        "macro": {
+          "both_seats": {
+            "mean": 255.1324999999999,
+            "percentile95": [
+              30.860527777777683,
+              442.76386111111077
+            ],
+            "maps": 12,
+            "map_sd": 385.05802923262763,
+            "positive_maps": 10,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              221.9419696969696,
+              338.49954545454534
+            ]
+          },
+          "seat0": {
+            "mean": 344.4888888888888,
+            "percentile95": [
+              -58.7344652777779,
+              759.0546597222218
+            ],
+            "maps": 12,
+            "map_sd": 755.6035372653744,
+            "positive_maps": 9,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              217.21121212121207,
+              443.4557575757575
+            ]
+          },
+          "seat1": {
+            "mean": 165.776111111111,
+            "percentile95": [
+              -100.31663888888899,
+              427.7120625
+            ],
+            "maps": 12,
+            "map_sd": 490.11481973194344,
+            "positive_maps": 9,
+            "zero_maps": 0,
+            "leave_one_map_out_range": [
+              97.90575757575748,
+              233.81303030303016
+            ]
+          }
+        }
+      },
+      "win_score": {
+        "ZW0": {
+          "both_seats": {
+            "mean": 0.2916666666666667,
+            "percentile95": [
+              0.08333333333333333,
+              0.5
+            ],
+            "maps": 12,
+            "map_sd": 0.39648073054937955,
+            "positive_maps": 5,
+            "zero_maps": 7,
+            "leave_one_map_out_range": [
+              0.22727272727272727,
+              0.3181818181818182
+            ]
+          },
+          "seat0": {
+            "mean": 0.4166666666666667,
+            "percentile95": [
+              0.08333333333333333,
+              0.75
+            ],
+            "maps": 12,
+            "map_sd": 0.6685579234215214,
+            "positive_maps": 6,
+            "zero_maps": 5,
+            "leave_one_map_out_range": [
+              0.36363636363636365,
+              0.5454545454545454
+            ]
+          },
+          "seat1": {
+            "mean": 0.16666666666666666,
+            "percentile95": [
+              -0.25,
+              0.5833333333333334
+            ],
+            "maps": 12,
+            "map_sd": 0.834847109936722,
+            "positive_maps": 5,
+            "zero_maps": 4,
+            "leave_one_map_out_range": [
+              0.09090909090909091,
+              0.2727272727272727
+            ]
+          }
+        },
+        "ft3-generic-no-search": {
+          "both_seats": {
+            "mean": 0.20833333333333334,
+            "percentile95": [
+              0.0,
+              0.4166666666666667
+            ],
+            "maps": 12,
+            "map_sd": 0.39648073054937955,
+            "positive_maps": 7,
+            "zero_maps": 3,
+            "leave_one_map_out_range": [
+              0.18181818181818182,
+              0.2727272727272727
+            ]
+          },
+          "seat0": {
+            "mean": 0.08333333333333333,
+            "percentile95": [
+              -0.25,
+              0.4166666666666667
+            ],
+            "maps": 12,
+            "map_sd": 0.6685579234215214,
+            "positive_maps": 3,
+            "zero_maps": 7,
+            "leave_one_map_out_range": [
+              0.0,
+              0.18181818181818182
+            ]
+          },
+          "seat1": {
+            "mean": 0.3333333333333333,
+            "percentile95": [
+              -0.08333333333333333,
+              0.75
+            ],
+            "maps": 12,
+            "map_sd": 0.7784989441615229,
+            "positive_maps": 6,
+            "zero_maps": 4,
+            "leave_one_map_out_range": [
+              0.2727272727272727,
+              0.45454545454545453
+            ]
+          }
+        },
+        "yan-v6-no-search": {
+          "both_seats": {
+            "mean": 0.125,
+            "percentile95": [
+              -0.041666666666666664,
+              0.2916666666666667
+            ],
+            "maps": 12,
+            "map_sd": 0.3107907802540305,
+            "positive_maps": 4,
+            "zero_maps": 7,
+            "leave_one_map_out_range": [
+              0.09090909090909091,
+              0.18181818181818182
+            ]
+          },
+          "seat0": {
+            "mean": 0.16666666666666666,
+            "percentile95": [
+              0.0,
+              0.4166666666666667
+            ],
+            "maps": 12,
+            "map_sd": 0.38924947208076155,
+            "positive_maps": 2,
+            "zero_maps": 10,
+            "leave_one_map_out_range": [
+              0.09090909090909091,
+              0.18181818181818182
+            ]
+          },
+          "seat1": {
+            "mean": 0.08333333333333333,
+            "percentile95": [
+              -0.16666666666666666,
+              0.3333333333333333
+            ],
+            "maps": 12,
+            "map_sd": 0.5149286505444371,
+            "positive_maps": 2,
+            "zero_maps": 9,
+            "leave_one_map_out_range": [
+              0.0,
+              0.18181818181818182
+            ]
+          }
+        },
+        "macro": {
+          "both_seats": {
+            "mean": 0.20833333333333337,
+            "percentile95": [
+              0.1388888888888889,
+              0.2777777777777778
+            ],
+            "maps": 12,
+            "map_sd": 0.1256297269074015,
+            "positive_maps": 10,
+            "zero_maps": 2,
+            "leave_one_map_out_range": [
+              0.196969696969697,
+              0.22727272727272732
+            ]
+          },
+          "seat0": {
+            "mean": 0.2222222222222222,
+            "percentile95": [
+              0.027777777777777787,
+              0.3888888888888889
+            ],
+            "maps": 12,
+            "map_sd": 0.3282439759448873,
+            "positive_maps": 8,
+            "zero_maps": 2,
+            "leave_one_map_out_range": [
+              0.18181818181818182,
+              0.2727272727272727
+            ]
+          },
+          "seat1": {
+            "mean": 0.19444444444444442,
+            "percentile95": [
+              -0.027777777777777776,
+              0.4166666666666667
+            ],
+            "maps": 12,
+            "map_sd": 0.4133708031240485,
+            "positive_maps": 7,
+            "zero_maps": 2,
+            "leave_one_map_out_range": [
+              0.12121212121212119,
+              0.2424242424242424
+            ]
+          }
+        }
+      }
+    }
+  },
+  "training": {
+    "M-50k": {
+      "seed": 24000000,
+      "requested_budget": 50000,
+      "actual_E": 52329,
+      "batches": 11,
+      "optimizer_steps": 109,
+      "maps": 22,
+      "overall": {
+        "games": 176,
+        "wins": 80,
+        "draws": 1,
+        "losses": 95,
+        "mean_margin": -60.13971590909091,
+        "median_margin": -63.835000000000036,
+        "mean_utility": -0.057066587445162235,
+        "full_games": 175,
+        "eliminations": 1
+      },
+      "seats": {
+        "0": {
+          "games": 88,
+          "wins": 46,
+          "draws": 1,
+          "losses": 41,
+          "mean_margin": -0.3563636363636275,
+          "median_margin": 28.55999999999949,
+          "mean_utility": 0.035748110129788804,
+          "full_games": 87,
+          "eliminations": 1
+        },
+        "1": {
+          "games": 88,
+          "wins": 34,
+          "draws": 0,
+          "losses": 54,
+          "mean_margin": -119.9230681818182,
+          "median_margin": -156.30499999999984,
+          "mean_utility": -0.14988128502011325,
+          "full_games": 88,
+          "eliminations": 0
+        }
+      },
+      "full_only": {
+        "games": 175,
+        "wins": 80,
+        "draws": 0,
+        "losses": 95,
+        "mean_margin": -60.48337142857143,
+        "median_margin": -72.25,
+        "mean_utility": -0.05739268223056314,
+        "full_games": 175,
+        "eliminations": 0
+      },
+      "eliminations": [
+        {
+          "seed": 3244450468,
+          "seat": 0,
+          "learner_rng": 4158898079041820221,
+          "opponent_rng": 14781564456402537333,
+          "group": 0,
+          "layout_sha256": "326c744f1fa6376d92282009962c1288ceb5d948206f08dd877c64354f13b088",
+          "turns": 4,
+          "scores": [
+            -297,
+            -297
+          ],
+          "cash": [
+            20,
+            20
+          ],
+          "margin": 0,
+          "utility": 0.0,
+          "elimination": true
+        }
+      ],
+      "log_ranges": {
+        "policy": {
+          "min": -0.038766917586326596,
+          "max": 0.12165319174528122,
+          "batch_mean": 0.05016621943219857
+        },
+        "old_KL": {
+          "min": 0.008523798917303793,
+          "max": 0.019395615166286007,
+          "batch_mean": 0.010797131848595777
+        },
+        "clip_rate": {
+          "min": 0.10344460159540177,
+          "max": 0.22791193127632142,
+          "batch_mean": 0.13458923324190006
+        },
+        "gradient_norm": {
+          "min": 4.853322558932835,
+          "max": 7.305029058456421,
+          "batch_mean": 5.917682203861198
+        },
+        "logprob_error": {
+          "min": 0.0,
+          "max": 9.775161743164062e-06,
+          "batch_mean": 8.886510675603693e-07
+        }
+      },
+      "collection_seconds": 183.13497995911166,
+      "optimization_seconds": 170.3730588364415,
+      "stored_advantage_fields": [
+        "arm",
+        "mean_mc",
+        "mean_gae",
+        "mean_abs_gap",
+        "zero_groups"
+      ],
+      "advantage_note": "Stored mean_mc/mean_gae are per-game means averaged in a batch; signed means do not identify variance or RMS.",
+      "signed_mean_mc_across_batches": -0.09374905785682591,
+      "signed_mean_gae_across_batches": -0.009236374298449267
+    },
+    "G-50k": {
+      "seed": 24000000,
+      "requested_budget": 50000,
+      "actual_E": 52329,
+      "batches": 11,
+      "optimizer_steps": 109,
+      "maps": 22,
+      "overall": {
+        "games": 176,
+        "wins": 71,
+        "draws": 1,
+        "losses": 104,
+        "mean_margin": -64.07659090909091,
+        "median_margin": -139.79499999999962,
+        "mean_utility": -0.11380714325690619,
+        "full_games": 175,
+        "eliminations": 1
+      },
+      "seats": {
+        "0": {
+          "games": 88,
+          "wins": 40,
+          "draws": 1,
+          "losses": 47,
+          "mean_margin": 45.19261363636363,
+          "median_margin": -70.52500000000009,
+          "mean_utility": -0.027347761818576878,
+          "full_games": 87,
+          "eliminations": 1
+        },
+        "1": {
+          "games": 88,
+          "wins": 31,
+          "draws": 0,
+          "losses": 57,
+          "mean_margin": -173.34579545454545,
+          "median_margin": -221.54999999999927,
+          "mean_utility": -0.20026652469523548,
+          "full_games": 88,
+          "eliminations": 0
+        }
+      },
+      "full_only": {
+        "games": 175,
+        "wins": 71,
+        "draws": 0,
+        "losses": 104,
+        "mean_margin": -64.44274285714286,
+        "median_margin": -140.13999999999942,
+        "mean_utility": -0.11445746978980276,
+        "full_games": 175,
+        "eliminations": 0
+      },
+      "eliminations": [
+        {
+          "seed": 3244450468,
+          "seat": 0,
+          "learner_rng": 4158898079041820221,
+          "opponent_rng": 14781564456402537333,
+          "group": 0,
+          "layout_sha256": "326c744f1fa6376d92282009962c1288ceb5d948206f08dd877c64354f13b088",
+          "turns": 4,
+          "scores": [
+            -297,
+            -297
+          ],
+          "cash": [
+            20,
+            20
+          ],
+          "margin": 0,
+          "utility": 0.0,
+          "elimination": true
+        }
+      ],
+      "log_ranges": {
+        "policy": {
+          "min": 0.0007477255887351931,
+          "max": 0.013817394757643342,
+          "batch_mean": 0.007059747971255672
+        },
+        "old_KL": {
+          "min": 0.007249278470044374,
+          "max": 0.018369571497896687,
+          "batch_mean": 0.009834806234780584
+        },
+        "clip_rate": {
+          "min": 0.09538352265954017,
+          "max": 0.21997514218091965,
+          "batch_mean": 0.1237946113176418
+        },
+        "gradient_norm": {
+          "min": 1.8105772614479065,
+          "max": 2.25648832321167,
+          "batch_mean": 2.0510605551979757
+        },
+        "logprob_error": {
+          "min": 0.0,
+          "max": 7.152557373046875e-06,
+          "batch_mean": 6.502324884588068e-07
+        }
+      },
+      "collection_seconds": 182.08964045811445,
+      "optimization_seconds": 176.48966595623642,
+      "stored_advantage_fields": [
+        "arm",
+        "mean_mc",
+        "mean_gae",
+        "mean_abs_gap",
+        "zero_groups"
+      ],
+      "advantage_note": "Stored mean_mc/mean_gae are per-game means averaged in a batch; signed means do not identify variance or RMS.",
+      "signed_mean_mc_across_batches": -0.12901711448048728,
+      "signed_mean_gae_across_batches": -0.012624385639686476
+    },
+    "smoke-M-10k": {
+      "seed": 24000000,
+      "requested_budget": 10000,
+      "actual_E": 14352,
+      "batches": 3,
+      "optimizer_steps": 30,
+      "maps": 6,
+      "overall": {
+        "games": 48,
+        "wins": 19,
+        "draws": 0,
+        "losses": 29,
+        "mean_margin": -95.6697916666667,
+        "median_margin": -136.27500000000055,
+        "mean_utility": -0.13119213726306458,
+        "full_games": 48,
+        "eliminations": 0
+      },
+      "seats": {
+        "0": {
+          "games": 24,
+          "wins": 14,
+          "draws": 0,
+          "losses": 10,
+          "mean_margin": 119.5845833333334,
+          "median_margin": 194.64999999999918,
+          "mean_utility": 0.12008842979685552,
+          "full_games": 24,
+          "eliminations": 0
+        },
+        "1": {
+          "games": 24,
+          "wins": 5,
+          "draws": 0,
+          "losses": 19,
+          "mean_margin": -310.9241666666668,
+          "median_margin": -312.97000000000025,
+          "mean_utility": -0.38247270432298475,
+          "full_games": 24,
+          "eliminations": 0
+        }
+      },
+      "full_only": {
+        "games": 48,
+        "wins": 19,
+        "draws": 0,
+        "losses": 29,
+        "mean_margin": -95.6697916666667,
+        "median_margin": -136.27500000000055,
+        "mean_utility": -0.13119213726306458,
+        "full_games": 48,
+        "eliminations": 0
+      },
+      "eliminations": [],
+      "log_ranges": {
+        "policy": {
+          "min": 0.04470480792224407,
+          "max": 0.10349114760756492,
+          "batch_mean": 0.07323046252131461
+        },
+        "old_KL": {
+          "min": 0.011161965120118111,
+          "max": 0.019395615166286007,
+          "batch_mean": 0.01474552662039065
+        },
+        "clip_rate": {
+          "min": 0.13366477340459823,
+          "max": 0.22791193127632142,
+          "batch_mean": 0.1744081437587738
+        },
+        "gradient_norm": {
+          "min": 5.462446641921997,
+          "max": 7.305029058456421,
+          "batch_mean": 6.20671246846517
+        },
+        "logprob_error": {
+          "min": 0.0,
+          "max": 0.0,
+          "batch_mean": 0.0
+        }
+      },
+      "collection_seconds": 49.04993566614576,
+      "optimization_seconds": 31.8499982918147,
+      "stored_advantage_fields": [
+        "arm",
+        "mean_mc",
+        "mean_gae",
+        "mean_abs_gap",
+        "zero_groups"
+      ],
+      "advantage_note": "Stored mean_mc/mean_gae are per-game means averaged in a batch; signed means do not identify variance or RMS.",
+      "signed_mean_mc_across_batches": -0.13630839618622248,
+      "signed_mean_gae_across_batches": -0.013578997614483038
+    },
+    "smoke-G-10k": {
+      "seed": 24000000,
+      "requested_budget": 10000,
+      "actual_E": 14352,
+      "batches": 3,
+      "optimizer_steps": 30,
+      "maps": 6,
+      "overall": {
+        "games": 48,
+        "wins": 20,
+        "draws": 0,
+        "losses": 28,
+        "mean_margin": -137.30750000000003,
+        "median_margin": -210.7800000000002,
+        "mean_utility": -0.12307541374542881,
+        "full_games": 48,
+        "eliminations": 0
+      },
+      "seats": {
+        "0": {
+          "games": 24,
+          "wins": 12,
+          "draws": 0,
+          "losses": 12,
+          "mean_margin": 33.96833333333336,
+          "median_margin": -79.58500000000004,
+          "mean_utility": 0.006052902514700614,
+          "full_games": 24,
+          "eliminations": 0
+        },
+        "1": {
+          "games": 24,
+          "wins": 8,
+          "draws": 0,
+          "losses": 16,
+          "mean_margin": -308.5833333333334,
+          "median_margin": -347.71000000000004,
+          "mean_utility": -0.25220373000555824,
+          "full_games": 24,
+          "eliminations": 0
+        }
+      },
+      "full_only": {
+        "games": 48,
+        "wins": 20,
+        "draws": 0,
+        "losses": 28,
+        "mean_margin": -137.30750000000003,
+        "median_margin": -210.7800000000002,
+        "mean_utility": -0.12307541374542881,
+        "full_games": 48,
+        "eliminations": 0
+      },
+      "eliminations": [],
+      "log_ranges": {
+        "policy": {
+          "min": 0.002964808832621202,
+          "max": 0.010723810363560914,
+          "batch_mean": 0.0076568083973446235
+        },
+        "old_KL": {
+          "min": 0.011411631846567617,
+          "max": 0.018369571497896687,
+          "batch_mean": 0.01384291788660145
+        },
+        "clip_rate": {
+          "min": 0.14243607968091965,
+          "max": 0.21997514218091965,
+          "batch_mean": 0.17014678021272023
+        },
+        "gradient_norm": {
+          "min": 2.0734519720077516,
+          "max": 2.2524487495422365,
+          "batch_mean": 2.1900412718455
+        },
+        "logprob_error": {
+          "min": 0.0,
+          "max": 0.0,
+          "batch_mean": 0.0
+        }
+      },
+      "collection_seconds": 48.45236054202542,
+      "optimization_seconds": 29.66502608312294,
+      "stored_advantage_fields": [
+        "arm",
+        "mean_mc",
+        "mean_gae",
+        "mean_abs_gap",
+        "zero_groups"
+      ],
+      "advantage_note": "Stored mean_mc/mean_gae are per-game means averaged in a batch; signed means do not identify variance or RMS.",
+      "signed_mean_mc_across_batches": -0.13401557562712574,
+      "signed_mean_gae_across_batches": -0.013060039530197779
+    }
+  },
+  "audit": {
+    "training_pairing": [
+      {
+        "batch": 0,
+        "same_layout_seat_rng": true,
+        "identical_complete_episode_records": 16
+      },
+      {
+        "batch": 1,
+        "same_layout_seat_rng": true,
+        "identical_complete_episode_records": 0
+      },
+      {
+        "batch": 2,
+        "same_layout_seat_rng": true,
+        "identical_complete_episode_records": 0
+      },
+      {
+        "batch": 3,
+        "same_layout_seat_rng": true,
+        "identical_complete_episode_records": 0
+      },
+      {
+        "batch": 4,
+        "same_layout_seat_rng": true,
+        "identical_complete_episode_records": 0
+      },
+      {
+        "batch": 5,
+        "same_layout_seat_rng": true,
+        "identical_complete_episode_records": 0
+      },
+      {
+        "batch": 6,
+        "same_layout_seat_rng": true,
+        "identical_complete_episode_records": 0
+      },
+      {
+        "batch": 7,
+        "same_layout_seat_rng": true,
+        "identical_complete_episode_records": 0
+      },
+      {
+        "batch": 8,
+        "same_layout_seat_rng": true,
+        "identical_complete_episode_records": 0
+      },
+      {
+        "batch": 9,
+        "same_layout_seat_rng": true,
+        "identical_complete_episode_records": 0
+      },
+      {
+        "batch": 10,
+        "same_layout_seat_rng": true,
+        "identical_complete_episode_records": 1
+      }
+    ],
+    "smoke_is_exact_episode_prefix": {
+      "M": true,
+      "G": true
+    },
+    "first_batch_evidence_scope": "Episode records and public cash-gap sequences identical; complete action-trace hash was not committed in this directory.",
+    "evaluation_layout_overlap": {
+      "analysis/carbon-zero-terminal/b1/evaluation-shared/ZW0.json": {
+        "source_maps": 12,
+        "intersection": 0
+      },
+      "analysis/carbon-zero-terminal/b1/evaluation/ZW0.json": {
+        "source_maps": 36,
+        "intersection": 0
+      },
+      "analysis/carbon-zero-terminal/b1/critic/critic.json:training_games": {
+        "source_maps": 28,
+        "intersection": 0
+      },
+      "analysis/carbon-zero-terminal/b1/critic/critic.json:heldout_games": {
+        "source_maps": 8,
+        "intersection": 0
+      },
+      "analysis/carbon-zero-terminal/critic/critic.json:training_games": {
+        "source_maps": 14,
+        "intersection": 0
+      },
+      "analysis/carbon-zero-terminal/critic/critic.json:heldout_games": {
+        "source_maps": 4,
+        "intersection": 0
+      },
+      "analysis/carbon-zero-terminal/critic-expanded/critic.json:training_games": {
+        "source_maps": 28,
+        "intersection": 0
+      },
+      "analysis/carbon-zero-terminal/critic-expanded/critic.json:heldout_games": {
+        "source_maps": 8,
+        "intersection": 0
+      },
+      "analysis/carbon-zero-terminal/evaluation/ZW0.json": {
+        "source_maps": 12,
+        "intersection": 0
+      },
+      "analysis/carbon-zero-terminal/confirmation/ZW0.json": {
+        "source_maps": 24,
+        "intersection": 0
+      },
+      "current_M_G_training": {
+        "source_maps": 22,
+        "intersection": 0
+      }
+    },
+    "evaluation_pairing_valid": true,
+    "M_macro_sensitivity": {
+      "note": "Exploratory influence check only; not an added or modified continuation gate.",
+      "positive_maps": 7,
+      "negative_maps": 5,
+      "leave_one_out_nonpositive": 0,
+      "leave_one_out_range": [
+        0.007128226669275362,
+        0.08809182505684797
+      ],
+      "leave_two_out_combinations": 66,
+      "leave_two_out_nonpositive": 6,
+      "leave_two_out_range": [
+        -0.020155133148317694,
+        0.12974878932059802
+      ]
+    },
+    "recorded_training_budget": {
+      "main_two_arm_E": 104658,
+      "separate_smoke_two_arm_E": 28704,
+      "note": "Smoke and main logs represent matching prefixes, not independent seeds; runner restarts from ZW0 and has no resume argument. Do not add them as statistical replications."
+    }
+  },
+  "selection": {
+    "M50": {
+      "stored_rule": {
+        "primary": "equal-weight delta-U over ZW0 / ft3-generic / yan-v6 on the shared 12-map dev panel",
+        "promote_if": "point estimate > 0 and no single-opponent 95% map-bootstrap upper bound < 0",
+        "confirm_seed": 24010000,
+        "note": "pre-registered before the first training run; exploratory, not a statistical promotion rule"
+      },
+      "macro_delta_U": 0.047224397996423646,
+      "opponent_upper95": {
+        "ZW0": 0.5385708112060092,
+        "ft3-generic-no-search": 0.022273148532085313,
+        "yan-v6-no-search": 0.4556664220466396
+      },
+      "passes_budget_screen": true
+    },
+    "G50": {
+      "stored_rule": {
+        "primary": "equal-weight delta-U over ZW0 / ft3-generic / yan-v6 on the shared 12-map dev panel",
+        "promote_if": "point estimate > 0 and no single-opponent 95% map-bootstrap upper bound < 0",
+        "confirm_seed": 24010000,
+        "note": "pre-registered before the first training run; exploratory, not a statistical promotion rule"
+      },
+      "macro_delta_U": -0.24602528957793338,
+      "opponent_upper95": {
+        "ZW0": -0.04529952061518624,
+        "ft3-generic-no-search": -0.16362138288709133,
+        "yan-v6-no-search": 0.13820912077235514
+      },
+      "passes_budget_screen": false
+    }
+  }
+}

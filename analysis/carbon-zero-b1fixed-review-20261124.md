@@ -1,5 +1,7 @@
 # Carbon-Zero B1-fixed 新结果复审与 M/G 对照
 
+> 后续状态（2026-11-25）：M/G 首种子结果已提交并完成复审，见 [M/G 复审与 M-wide 下一轮协议](carbon-zero-mg-review-20261125.md)。本文保留 B1-fixed 证据及原 M/G 预定规则；当前执行入口以新文档为准。
+
 2026-11-24。核对快照：**`d6008ed2e8bc42df056ab08ac48711d19c4249c8`**，分支 `experiment/carbon-zero-b1-residual`。前置：[B1 复审与执行协议](carbon-zero-b1-review-20261124.md)。
 
 **决定：B1-fixed 暂停扩大训练，也不为它追加40图确认。下一轮先修正优势诊断，再做两个各约50k E的受控实验：M为完整MC状态基线，G为同一完整冻结critic的整局GAE。两者共用采集和优化设置，只改变优势估计器。**
