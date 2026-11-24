@@ -22,6 +22,10 @@
 
 [冻结版本 v10-yan-v7-selfplay-prior](https://github.com/Zhaoyi-Yan/carbon/blob/v10-yan-v7-selfplay-prior/yan-v7.py)。对冻结的线上 yan-v6，八张新图换边 14 胜 2 负，另外四张预留图换边 7 胜 1 负。两批使用同一个文件，合计 21 胜 3 负，场均资金分差 +409.63。 两批均打满 299 步。文件 SHA-256 为 `4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6`。[八图初筛](analysis/v7/13-qualifying-summary.json) · [四图复核](analysis/v7/13-confirmation-summary.json) · [策略与败局](experiments/v7/README.md)
 
+## yan-v8 的本地晋级
+
+固定通用主风格，保留补充数据版重训的主网、价值分支和小型推演网。对冻结 v7，四张新图换边 6 胜 2 负，四张独立新图复核也是 6 胜 2 负。两轮都在两个出生位各赢三局。2026-11-24 以 `yan-QQ-v8` 提交平台，提交后进入评测。交付标签为 `v11-yan-v8-elite-refit`。[实验报告及逐局记录](analysis/elite-refit/ablation/README.md)
+
 ## 冻结的线上版本与新候选
 
 从本人账户下载的 yan-v2 与标签 v5-tree-value 完全相同（SHA-256 `0483eca2a5e8031270dfb89b87cd5d901ee81f823383f6094f8ed839dec6a7dd`），yan-v1 与 v3-search 完全相同（`29aa472ef0484b65bb3ffdc85113aef2d1daa1e25377bfe5355a4d5e3567a11c`）。下表均以冻结的 yan-v2 为对手，每张地图从两个出生位各打一局，分差从候选一侧计算。

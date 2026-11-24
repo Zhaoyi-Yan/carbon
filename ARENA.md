@@ -67,3 +67,8 @@ CARBON_DEBUG=1 .arena-venv/bin/python scripts/selfplay.py \
 ## 本地 yan-v7 对照
 
 使用 `--candidate yan-v7 --baseline yan-v6` 可复测两代，也可用 `--baseline yan-v7` 挑战本地晋级策略。两份代码都校验 SHA-256。对冻结的线上 yan-v6，八张新图换边 14 胜 2 负，另外四张预留图换边 7 胜 1 负。两批使用同一个文件，合计 21 胜 3 负，场均资金分差 +409.63。[八图初筛](analysis/v7/13-qualifying-summary.json) · [四图复核](analysis/v7/13-confirmation-summary.json) · [策略与败局](experiments/v7/README.md)
+
+
+## 本地 yan-v8 对照
+
+用 `--candidate yan-v8 --baseline yan-v7` 复测这次晋级，用 `--baseline yan-v8` 挑战新主力。初筛与独立复核各四张新图，均从两边各打一局，均为 6 胜 2 负。用 `v11-yan-v8-elite-refit` 标签校验交付文件。[结果、超时重试和原始对局](analysis/elite-refit/ablation/README.md)

@@ -1,0 +1,986 @@
+{
+  "samples": {
+    "top6": [
+      6144,
+      11541,
+      16263
+    ],
+    "top6-plus": [
+      6144,
+      11720,
+      16806
+    ]
+  },
+  "main": {
+    "yan-v7": {
+      "2/loaded_return": {
+        "loss": 0.6748536913018478,
+        "accuracy": 0.7263157894736842,
+        "count": 95
+      },
+      "3/loaded_return": {
+        "loss": 0.3756278991699219,
+        "accuracy": 0.8555555555555555,
+        "count": 180
+      },
+      "2/low_cash": {
+        "loss": 0.531579647064209,
+        "accuracy": 0.82,
+        "count": 50
+      },
+      "3/low_cash": {
+        "loss": 0.7243721457733505,
+        "accuracy": 0.7011494252873564,
+        "count": 87
+      },
+      "2/planted": {
+        "loss": 0.007806246620020829,
+        "accuracy": 1.0,
+        "count": 4
+      },
+      "3/planted": {
+        "loss": 0.548874199972488,
+        "accuracy": 0.75,
+        "count": 16
+      },
+      "2/seized": {
+        "loss": 0.006892538443207741,
+        "accuracy": 1.0,
+        "count": 15
+      },
+      "3/seized": {
+        "loss": 0.012267830877135566,
+        "accuracy": 1.0,
+        "count": 16
+      },
+      "2/left_plant": {
+        "loss": 0.6135097545327493,
+        "accuracy": 0.7766990291262136,
+        "count": 103
+      },
+      "3/left_plant": {
+        "loss": 0.8535153565106092,
+        "accuracy": 0.6666666666666666,
+        "count": 222
+      },
+      "2/left_seize": {
+        "loss": 0.9227218478918076,
+        "accuracy": 0.8,
+        "count": 5
+      },
+      "3/left_seize": {
+        "loss": 0.7533810277779897,
+        "accuracy": 0.8,
+        "count": 15
+      },
+      "2/value": {
+        "loss": 0.0647081208229065,
+        "accuracy": 0.0,
+        "count": 100
+      },
+      "3/value": {
+        "loss": 0.0701981071382761,
+        "accuracy": 0.0,
+        "count": 200
+      },
+      "2/recruit": {
+        "loss": 0.6981981478888413,
+        "accuracy": 0.7241379310344828,
+        "count": 29
+      },
+      "3/recruit": {
+        "loss": 0.8075701060394446,
+        "accuracy": 0.7435897435897436,
+        "count": 39
+      },
+      "1/loaded_return": {
+        "loss": 0.3388596125475065,
+        "accuracy": 0.8503937007874016,
+        "count": 127
+      },
+      "1/low_cash": {
+        "loss": 0.46789389271889964,
+        "accuracy": 0.8064516129032258,
+        "count": 62
+      },
+      "1/planted": {
+        "loss": 0.42371809738896055,
+        "accuracy": 0.8571428571428571,
+        "count": 14
+      },
+      "1/seized": {
+        "loss": 0.25863535122928927,
+        "accuracy": 0.9333333333333333,
+        "count": 15
+      },
+      "1/left_plant": {
+        "loss": 0.5158226591168028,
+        "accuracy": 0.7878787878787878,
+        "count": 165
+      },
+      "1/left_seize": {
+        "loss": 0.9124503268135918,
+        "accuracy": 0.5,
+        "count": 18
+      },
+      "1/value": {
+        "loss": 0.06383860250314077,
+        "accuracy": 0.0,
+        "count": 150
+      },
+      "1/recruit": {
+        "loss": 0.6619795733376553,
+        "accuracy": 0.7368421052631579,
+        "count": 38
+      },
+      "5/loaded_return": {
+        "loss": 0.5544339120388031,
+        "accuracy": 0.8125,
+        "count": 192
+      },
+      "5/low_cash": {
+        "loss": 0.4572101774123999,
+        "accuracy": 0.8269230769230769,
+        "count": 104
+      },
+      "5/planted": {
+        "loss": 0.3678327520688375,
+        "accuracy": 0.8666666666666667,
+        "count": 15
+      },
+      "5/seized": {
+        "loss": 0.006174383987224876,
+        "accuracy": 1.0,
+        "count": 13
+      },
+      "5/left_plant": {
+        "loss": 0.5975819430497016,
+        "accuracy": 0.7510917030567685,
+        "count": 229
+      },
+      "5/left_seize": {
+        "loss": 0.7531182765960693,
+        "accuracy": 0.6923076923076923,
+        "count": 13
+      },
+      "5/value": {
+        "loss": 0.11632791804064305,
+        "accuracy": 0.0,
+        "count": 218
+      },
+      "5/recruit": {
+        "loss": 0.90609664673155,
+        "accuracy": 0.5818181818181818,
+        "count": 55
+      },
+      "4/loaded_return": {
+        "loss": 0.45950296422937414,
+        "accuracy": 0.8241758241758241,
+        "count": 91
+      },
+      "4/low_cash": {
+        "loss": 0.663489129808214,
+        "accuracy": 0.7083333333333334,
+        "count": 72
+      },
+      "4/planted": {
+        "loss": 0.05329824002304425,
+        "accuracy": 1.0,
+        "count": 6
+      },
+      "4/seized": {
+        "loss": 0.19295500218868256,
+        "accuracy": 0.8888888888888888,
+        "count": 9
+      },
+      "4/left_plant": {
+        "loss": 0.7718303916380578,
+        "accuracy": 0.5979381443298969,
+        "count": 97
+      },
+      "4/left_seize": {
+        "loss": 0.8475268908909389,
+        "accuracy": 0.8571428571428571,
+        "count": 7
+      },
+      "4/value": {
+        "loss": 0.13131602764129638,
+        "accuracy": 0.0,
+        "count": 100
+      },
+      "4/recruit": {
+        "loss": 0.6925987679025402,
+        "accuracy": 0.6086956521739131,
+        "count": 23
+      },
+      "0/loaded_return": {
+        "loss": 0.49446809887886045,
+        "accuracy": 0.775,
+        "count": 40
+      },
+      "0/low_cash": {
+        "loss": 0.7469621775101642,
+        "accuracy": 0.6428571428571429,
+        "count": 98
+      },
+      "0/planted": {
+        "loss": 0.19379720389842986,
+        "accuracy": 0.8,
+        "count": 5
+      },
+      "0/seized": {
+        "loss": 1.2832902194932103,
+        "accuracy": 0.6666666666666666,
+        "count": 3
+      },
+      "0/left_plant": {
+        "loss": 0.583505141429412,
+        "accuracy": 0.7692307692307693,
+        "count": 39
+      },
+      "0/left_seize": {
+        "loss": 0.4620019793510437,
+        "accuracy": 1.0,
+        "count": 2
+      },
+      "0/value": {
+        "loss": 0.08593989372253417,
+        "accuracy": 0.0,
+        "count": 50
+      },
+      "0/recruit": {
+        "loss": 1.1738133430480957,
+        "accuracy": 0.4166666666666667,
+        "count": 12
+      }
+    },
+    "top6-plus": {
+      "2/loaded_return": {
+        "loss": 0.6189265652706749,
+        "accuracy": 0.7157894736842105,
+        "count": 95
+      },
+      "3/loaded_return": {
+        "loss": 0.37254597345987955,
+        "accuracy": 0.8611111111111112,
+        "count": 180
+      },
+      "2/low_cash": {
+        "loss": 0.5454906654357911,
+        "accuracy": 0.8,
+        "count": 50
+      },
+      "3/low_cash": {
+        "loss": 0.7203651515916846,
+        "accuracy": 0.7241379310344828,
+        "count": 87
+      },
+      "2/planted": {
+        "loss": 0.021130261273356155,
+        "accuracy": 1.0,
+        "count": 4
+      },
+      "3/planted": {
+        "loss": 0.720014275982976,
+        "accuracy": 0.5625,
+        "count": 16
+      },
+      "2/seized": {
+        "loss": 0.006681691389530897,
+        "accuracy": 1.0,
+        "count": 15
+      },
+      "3/seized": {
+        "loss": 0.019059116807056853,
+        "accuracy": 1.0,
+        "count": 16
+      },
+      "2/left_plant": {
+        "loss": 0.6124879225943852,
+        "accuracy": 0.7669902912621359,
+        "count": 103
+      },
+      "3/left_plant": {
+        "loss": 0.8421509722331623,
+        "accuracy": 0.6711711711711712,
+        "count": 222
+      },
+      "2/left_seize": {
+        "loss": 0.8689740359783172,
+        "accuracy": 0.8,
+        "count": 5
+      },
+      "3/left_seize": {
+        "loss": 0.9128233211735884,
+        "accuracy": 0.8,
+        "count": 15
+      },
+      "2/value": {
+        "loss": 0.06017175376415253,
+        "accuracy": 0.0,
+        "count": 100
+      },
+      "3/value": {
+        "loss": 0.06601807065308093,
+        "accuracy": 0.0,
+        "count": 200
+      },
+      "2/recruit": {
+        "loss": 0.6039773945150704,
+        "accuracy": 0.7931034482758621,
+        "count": 29
+      },
+      "3/recruit": {
+        "loss": 0.7719920810598594,
+        "accuracy": 0.7948717948717948,
+        "count": 39
+      },
+      "1/loaded_return": {
+        "loss": 0.36178187873419815,
+        "accuracy": 0.84251968503937,
+        "count": 127
+      },
+      "1/low_cash": {
+        "loss": 0.4606928825378418,
+        "accuracy": 0.8225806451612904,
+        "count": 62
+      },
+      "1/planted": {
+        "loss": 0.525353388977237,
+        "accuracy": 0.7857142857142857,
+        "count": 14
+      },
+      "1/seized": {
+        "loss": 0.2844244530472982,
+        "accuracy": 0.9333333333333333,
+        "count": 15
+      },
+      "1/left_plant": {
+        "loss": 0.5213960358590791,
+        "accuracy": 0.7757575757575758,
+        "count": 165
+      },
+      "1/left_seize": {
+        "loss": 1.0185040632883708,
+        "accuracy": 0.5,
+        "count": 18
+      },
+      "1/value": {
+        "loss": 0.0651322333017985,
+        "accuracy": 0.0,
+        "count": 150
+      },
+      "1/recruit": {
+        "loss": 0.5295071695980272,
+        "accuracy": 0.7894736842105263,
+        "count": 38
+      },
+      "5/loaded_return": {
+        "loss": 0.4918370420734088,
+        "accuracy": 0.828125,
+        "count": 192
+      },
+      "5/low_cash": {
+        "loss": 0.4414217437689121,
+        "accuracy": 0.8461538461538461,
+        "count": 104
+      },
+      "5/planted": {
+        "loss": 0.5911825601011514,
+        "accuracy": 0.6666666666666666,
+        "count": 15
+      },
+      "5/seized": {
+        "loss": 0.008558002331903061,
+        "accuracy": 1.0,
+        "count": 13
+      },
+      "5/left_plant": {
+        "loss": 0.5902606067959398,
+        "accuracy": 0.7467248908296943,
+        "count": 229
+      },
+      "5/left_seize": {
+        "loss": 0.8150133353013259,
+        "accuracy": 0.6153846153846154,
+        "count": 13
+      },
+      "5/value": {
+        "loss": 0.12067591665534798,
+        "accuracy": 0.0,
+        "count": 218
+      },
+      "5/recruit": {
+        "loss": 0.6153426904569973,
+        "accuracy": 0.7454545454545455,
+        "count": 55
+      },
+      "4/loaded_return": {
+        "loss": 0.4658130813430954,
+        "accuracy": 0.8461538461538461,
+        "count": 91
+      },
+      "4/low_cash": {
+        "loss": 0.6314648257361518,
+        "accuracy": 0.7222222222222222,
+        "count": 72
+      },
+      "4/planted": {
+        "loss": 0.08585022195863228,
+        "accuracy": 1.0,
+        "count": 6
+      },
+      "4/seized": {
+        "loss": 0.1754476096895006,
+        "accuracy": 0.8888888888888888,
+        "count": 9
+      },
+      "4/left_plant": {
+        "loss": 0.7343565950688627,
+        "accuracy": 0.6288659793814433,
+        "count": 97
+      },
+      "4/left_seize": {
+        "loss": 0.800492559160505,
+        "accuracy": 0.7142857142857143,
+        "count": 7
+      },
+      "4/value": {
+        "loss": 0.1218944901227951,
+        "accuracy": 0.0,
+        "count": 100
+      },
+      "4/recruit": {
+        "loss": 0.5764079715894617,
+        "accuracy": 0.7391304347826086,
+        "count": 23
+      },
+      "0/loaded_return": {
+        "loss": 0.531003987789154,
+        "accuracy": 0.775,
+        "count": 40
+      },
+      "0/low_cash": {
+        "loss": 0.7357643283143336,
+        "accuracy": 0.6530612244897959,
+        "count": 98
+      },
+      "0/planted": {
+        "loss": 0.4279296562075615,
+        "accuracy": 0.8,
+        "count": 5
+      },
+      "0/seized": {
+        "loss": 0.9699717205949128,
+        "accuracy": 0.6666666666666666,
+        "count": 3
+      },
+      "0/left_plant": {
+        "loss": 0.5676325284517728,
+        "accuracy": 0.7692307692307693,
+        "count": 39
+      },
+      "0/left_seize": {
+        "loss": 0.4720446467399597,
+        "accuracy": 0.5,
+        "count": 2
+      },
+      "0/value": {
+        "loss": 0.08791584014892578,
+        "accuracy": 0.0,
+        "count": 50
+      },
+      "0/recruit": {
+        "loss": 1.1093911131223042,
+        "accuracy": 0.5833333333333334,
+        "count": 12
+      }
+    }
+  },
+  "small": {
+    "yan-v7": {
+      "2/loaded_return": {
+        "loss": 0.8699954886185496,
+        "accuracy": 0.6631578947368421,
+        "count": 95
+      },
+      "3/loaded_return": {
+        "loss": 0.715369521247016,
+        "accuracy": 0.7333333333333333,
+        "count": 180
+      },
+      "2/low_cash": {
+        "loss": 0.7416225433349609,
+        "accuracy": 0.72,
+        "count": 50
+      },
+      "3/low_cash": {
+        "loss": 0.8557617034035168,
+        "accuracy": 0.6896551724137931,
+        "count": 87
+      },
+      "2/planted": {
+        "loss": 0.12133332155644894,
+        "accuracy": 1.0,
+        "count": 4
+      },
+      "3/planted": {
+        "loss": 0.9595820307731628,
+        "accuracy": 0.5625,
+        "count": 16
+      },
+      "2/seized": {
+        "loss": 0.18177910645802817,
+        "accuracy": 1.0,
+        "count": 15
+      },
+      "3/seized": {
+        "loss": 0.1410582481767051,
+        "accuracy": 1.0,
+        "count": 16
+      },
+      "2/left_plant": {
+        "loss": 1.0996810672352615,
+        "accuracy": 0.5631067961165048,
+        "count": 103
+      },
+      "3/left_plant": {
+        "loss": 1.0580586259429519,
+        "accuracy": 0.5720720720720721,
+        "count": 222
+      },
+      "2/left_seize": {
+        "loss": 1.6907760381698609,
+        "accuracy": 0.2,
+        "count": 5
+      },
+      "3/left_seize": {
+        "loss": 1.2957812428474427,
+        "accuracy": 0.6,
+        "count": 15
+      },
+      "2/value": {
+        "loss": 0.06775748908519745,
+        "accuracy": 0.0,
+        "count": 100
+      },
+      "3/value": {
+        "loss": 0.08798920035362244,
+        "accuracy": 0.0,
+        "count": 200
+      },
+      "2/recruit": {
+        "loss": 0.7214790212696996,
+        "accuracy": 0.7241379310344828,
+        "count": 29
+      },
+      "3/recruit": {
+        "loss": 1.0489356212126904,
+        "accuracy": 0.46153846153846156,
+        "count": 39
+      },
+      "1/loaded_return": {
+        "loss": 0.6716583807637372,
+        "accuracy": 0.7086614173228346,
+        "count": 127
+      },
+      "1/low_cash": {
+        "loss": 0.8476349769100067,
+        "accuracy": 0.7096774193548387,
+        "count": 62
+      },
+      "1/planted": {
+        "loss": 0.645403306399073,
+        "accuracy": 0.7857142857142857,
+        "count": 14
+      },
+      "1/seized": {
+        "loss": 0.3246874904880921,
+        "accuracy": 0.8666666666666667,
+        "count": 15
+      },
+      "1/left_plant": {
+        "loss": 0.9873282981641365,
+        "accuracy": 0.6787878787878788,
+        "count": 165
+      },
+      "1/left_seize": {
+        "loss": 1.2145118878947363,
+        "accuracy": 0.4444444444444444,
+        "count": 18
+      },
+      "1/value": {
+        "loss": 0.07876595298449199,
+        "accuracy": 0.0,
+        "count": 150
+      },
+      "1/recruit": {
+        "loss": 0.8432159110119468,
+        "accuracy": 0.5526315789473685,
+        "count": 38
+      },
+      "5/loaded_return": {
+        "loss": 0.8041467765967051,
+        "accuracy": 0.640625,
+        "count": 192
+      },
+      "5/low_cash": {
+        "loss": 0.8232709054763501,
+        "accuracy": 0.6730769230769231,
+        "count": 104
+      },
+      "5/planted": {
+        "loss": 1.0651050488154092,
+        "accuracy": 0.4666666666666667,
+        "count": 15
+      },
+      "5/seized": {
+        "loss": 0.09866143075319436,
+        "accuracy": 1.0,
+        "count": 13
+      },
+      "5/left_plant": {
+        "loss": 1.0240635825036395,
+        "accuracy": 0.5851528384279476,
+        "count": 229
+      },
+      "5/left_seize": {
+        "loss": 1.5247932214003344,
+        "accuracy": 0.46153846153846156,
+        "count": 13
+      },
+      "5/value": {
+        "loss": 0.12453597114173644,
+        "accuracy": 0.0,
+        "count": 218
+      },
+      "5/recruit": {
+        "loss": 0.9344493757594715,
+        "accuracy": 0.6545454545454545,
+        "count": 55
+      },
+      "4/loaded_return": {
+        "loss": 0.7207706786774017,
+        "accuracy": 0.7692307692307693,
+        "count": 91
+      },
+      "4/low_cash": {
+        "loss": 0.9098379479514228,
+        "accuracy": 0.625,
+        "count": 72
+      },
+      "4/planted": {
+        "loss": 0.2672177006800969,
+        "accuracy": 1.0,
+        "count": 6
+      },
+      "4/seized": {
+        "loss": 0.524106502532959,
+        "accuracy": 0.8888888888888888,
+        "count": 9
+      },
+      "4/left_plant": {
+        "loss": 0.9329314477664908,
+        "accuracy": 0.5670103092783505,
+        "count": 97
+      },
+      "4/left_seize": {
+        "loss": 1.074469906943185,
+        "accuracy": 0.2857142857142857,
+        "count": 7
+      },
+      "4/value": {
+        "loss": 0.10783264994621276,
+        "accuracy": 0.0,
+        "count": 100
+      },
+      "4/recruit": {
+        "loss": 0.9734301878058392,
+        "accuracy": 0.6086956521739131,
+        "count": 23
+      },
+      "0/loaded_return": {
+        "loss": 0.9724741697311401,
+        "accuracy": 0.625,
+        "count": 40
+      },
+      "0/low_cash": {
+        "loss": 0.9585333843620456,
+        "accuracy": 0.6224489795918368,
+        "count": 98
+      },
+      "0/planted": {
+        "loss": 1.0580345273017884,
+        "accuracy": 0.6,
+        "count": 5
+      },
+      "0/seized": {
+        "loss": 1.3658448494970798,
+        "accuracy": 0.6666666666666666,
+        "count": 3
+      },
+      "0/left_plant": {
+        "loss": 1.191687755095653,
+        "accuracy": 0.46153846153846156,
+        "count": 39
+      },
+      "0/left_seize": {
+        "loss": 0.48888635635375977,
+        "accuracy": 1.0,
+        "count": 2
+      },
+      "0/value": {
+        "loss": 0.13031224489212037,
+        "accuracy": 0.0,
+        "count": 50
+      },
+      "0/recruit": {
+        "loss": 1.6809388796488445,
+        "accuracy": 0.5,
+        "count": 12
+      }
+    },
+    "top6-plus": {
+      "2/loaded_return": {
+        "loss": 0.8480094558314273,
+        "accuracy": 0.6947368421052632,
+        "count": 95
+      },
+      "3/loaded_return": {
+        "loss": 0.7164132542080349,
+        "accuracy": 0.7277777777777777,
+        "count": 180
+      },
+      "2/low_cash": {
+        "loss": 0.7435756683349609,
+        "accuracy": 0.7,
+        "count": 50
+      },
+      "3/low_cash": {
+        "loss": 0.8713581150975721,
+        "accuracy": 0.6781609195402298,
+        "count": 87
+      },
+      "2/planted": {
+        "loss": 0.19763001427054405,
+        "accuracy": 1.0,
+        "count": 4
+      },
+      "3/planted": {
+        "loss": 1.0973394364118576,
+        "accuracy": 0.5,
+        "count": 16
+      },
+      "2/seized": {
+        "loss": 0.2604872226715088,
+        "accuracy": 0.9333333333333333,
+        "count": 15
+      },
+      "3/seized": {
+        "loss": 0.16255653137341142,
+        "accuracy": 1.0,
+        "count": 16
+      },
+      "2/left_plant": {
+        "loss": 1.0705755289318493,
+        "accuracy": 0.5825242718446602,
+        "count": 103
+      },
+      "3/left_plant": {
+        "loss": 1.0392239695196752,
+        "accuracy": 0.5720720720720721,
+        "count": 222
+      },
+      "2/left_seize": {
+        "loss": 1.6718827605247497,
+        "accuracy": 0.2,
+        "count": 5
+      },
+      "3/left_seize": {
+        "loss": 1.24700315395991,
+        "accuracy": 0.6,
+        "count": 15
+      },
+      "2/value": {
+        "loss": 0.061195327043533324,
+        "accuracy": 0.0,
+        "count": 100
+      },
+      "3/value": {
+        "loss": 0.08230730473995208,
+        "accuracy": 0.0,
+        "count": 200
+      },
+      "2/recruit": {
+        "loss": 0.8073987385322308,
+        "accuracy": 0.5517241379310345,
+        "count": 29
+      },
+      "3/recruit": {
+        "loss": 1.1419954238793788,
+        "accuracy": 0.4358974358974359,
+        "count": 39
+      },
+      "1/loaded_return": {
+        "loss": 0.666886100618858,
+        "accuracy": 0.7244094488188977,
+        "count": 127
+      },
+      "1/low_cash": {
+        "loss": 0.8402820094939201,
+        "accuracy": 0.7096774193548387,
+        "count": 62
+      },
+      "1/planted": {
+        "loss": 0.7793694596205439,
+        "accuracy": 0.7857142857142857,
+        "count": 14
+      },
+      "1/seized": {
+        "loss": 0.3763827525700132,
+        "accuracy": 0.8666666666666667,
+        "count": 15
+      },
+      "1/left_plant": {
+        "loss": 0.9624466173576586,
+        "accuracy": 0.6787878787878788,
+        "count": 165
+      },
+      "1/left_seize": {
+        "loss": 1.1912698282135858,
+        "accuracy": 0.4444444444444444,
+        "count": 18
+      },
+      "1/value": {
+        "loss": 0.07481456796328227,
+        "accuracy": 0.0,
+        "count": 150
+      },
+      "1/recruit": {
+        "loss": 0.8974167798694811,
+        "accuracy": 0.5263157894736842,
+        "count": 38
+      },
+      "5/loaded_return": {
+        "loss": 0.775014246503512,
+        "accuracy": 0.6614583333333334,
+        "count": 192
+      },
+      "5/low_cash": {
+        "loss": 0.7771127269818232,
+        "accuracy": 0.6730769230769231,
+        "count": 104
+      },
+      "5/planted": {
+        "loss": 1.2443292617797852,
+        "accuracy": 0.4,
+        "count": 15
+      },
+      "5/seized": {
+        "loss": 0.12542781921533439,
+        "accuracy": 1.0,
+        "count": 13
+      },
+      "5/left_plant": {
+        "loss": 0.9964698771722452,
+        "accuracy": 0.5851528384279476,
+        "count": 229
+      },
+      "5/left_seize": {
+        "loss": 1.4535566293276274,
+        "accuracy": 0.5384615384615384,
+        "count": 13
+      },
+      "5/value": {
+        "loss": 0.12905206182681092,
+        "accuracy": 0.0,
+        "count": 218
+      },
+      "5/recruit": {
+        "loss": 1.0185525449839505,
+        "accuracy": 0.509090909090909,
+        "count": 55
+      },
+      "4/loaded_return": {
+        "loss": 0.7058779119135259,
+        "accuracy": 0.7582417582417582,
+        "count": 91
+      },
+      "4/low_cash": {
+        "loss": 0.8883871303664314,
+        "accuracy": 0.625,
+        "count": 72
+      },
+      "4/planted": {
+        "loss": 0.4063755124807358,
+        "accuracy": 1.0,
+        "count": 6
+      },
+      "4/seized": {
+        "loss": 0.5970445473988851,
+        "accuracy": 0.8888888888888888,
+        "count": 9
+      },
+      "4/left_plant": {
+        "loss": 0.9076087401085293,
+        "accuracy": 0.6082474226804123,
+        "count": 97
+      },
+      "4/left_seize": {
+        "loss": 1.0561003684997559,
+        "accuracy": 0.7142857142857143,
+        "count": 7
+      },
+      "4/value": {
+        "loss": 0.10237243711948395,
+        "accuracy": 0.0,
+        "count": 100
+      },
+      "4/recruit": {
+        "loss": 1.173988736194113,
+        "accuracy": 0.43478260869565216,
+        "count": 23
+      },
+      "0/loaded_return": {
+        "loss": 0.93609539270401,
+        "accuracy": 0.65,
+        "count": 40
+      },
+      "0/low_cash": {
+        "loss": 0.9536060411102918,
+        "accuracy": 0.6020408163265306,
+        "count": 98
+      },
+      "0/planted": {
+        "loss": 1.342769718170166,
+        "accuracy": 0.6,
+        "count": 5
+      },
+      "0/seized": {
+        "loss": 1.2832116981347401,
+        "accuracy": 0.6666666666666666,
+        "count": 3
+      },
+      "0/left_plant": {
+        "loss": 1.1767884278908753,
+        "accuracy": 0.46153846153846156,
+        "count": 39
+      },
+      "0/left_seize": {
+        "loss": 0.5924405455589294,
+        "accuracy": 1.0,
+        "count": 2
+      },
+      "0/value": {
+        "loss": 0.11802273511886596,
+        "accuracy": 0.0,
+        "count": 50
+      },
+      "0/recruit": {
+        "loss": 1.928775469462077,
+        "accuracy": 0.25,
+        "count": 12
+      }
+    }
+  }
+}

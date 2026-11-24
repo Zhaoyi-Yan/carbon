@@ -4,6 +4,6 @@
 
 对局结果注明对手版本、地图种子和出生位，同一版本保留败局记录。游戏排行榜的上传由维护者决定。
 
-每轮新候选先挑战我们自己线上已验证的最强版本。冻结基线的 Git 标签和文件 SHA-256，候选与基线在相同地图交换出生位，以双方都正常结束的完整对局判断胜负。当前默认对手为线上 yan-QQ-v6，使用标签 v9-yan-v6-estuary 的交付文件。yan-v5 的冻结标签为 v8-yan-v5-multistyle。前代 yan-v4 为 Claude 本地最终版，yan-v3 对应 v6-tree-guard-batch。保留 yan-v2（v5-tree-value）和 yan-v1（v3-search）用于跨代回归。Master3s2 仅作历史参考。晋级前用开发时未使用的多张地图复核，记录逐局分差和单边失利。基线随新主力一起更新。
+每轮新候选先挑战我们自己线上已验证的最强版本。冻结基线的 Git 标签和文件 SHA-256，候选与基线在相同地图交换出生位，以双方都正常结束的完整对局判断胜负。跨代对照 yan-QQ-v6 使用标签 v9-yan-v6-estuary 的交付文件。yan-v5 的冻结标签为 v8-yan-v5-multistyle。前代 yan-v4 为 Claude 本地最终版，yan-v3 对应 v6-tree-guard-batch。保留 yan-v2（v5-tree-value）和 yan-v1（v3-search）用于跨代回归。Master3s2 仅作历史参考。晋级前用开发时未使用的多张地图复核，记录逐局分差和单边失利。基线随新主力一起更新。
 
-当前本地晋级版为 yan-v7（标签 `v10-yan-v7-selfplay-prior`），可用 `--baseline yan-v7` 复测。最近一个已经线上验证的基线为 yan-QQ-v6。
+当前本地晋级版为 yan-v8（标签 `v11-yan-v8-elite-refit`），可用 `--baseline yan-v8` 复测。线上 yan-QQ-v8 已提交并进入评测。最近一个已有线上对战记录的基线是 yan-QQ-v7（标签 `v10-yan-v7-selfplay-prior`）。
