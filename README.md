@@ -4,7 +4,7 @@
 
 [研究方案 v2](analysis/carbon-zero-research-plan-20261124.md) 定义了复用 ft3 Apollo、合法观测、固定温度、混合终局效用的 Zero-W 路线。[首轮 200k PPO 实验](https://github.com/Zhaoyi-Yan/carbon/blob/c73c2837e7a0ead8c29f0ffe0c17f9416db66e72/analysis/carbon-zero/README.md) 已完成但棋力退化，冻结 v8 不变。
 
-**当前 Codex 交接：[B1-fixed 新结果复审与 M/G 对照](analysis/carbon-zero-b1fixed-review-20261124.md)。** 已核对 `d6008ed`：固定w和B2修复已有运行证据，B1-fixed两种子未显示稳定增益。新校准脚本的非残差优势存在形状广播错误，已有独立复现；GAE与MC差距大也不能直接证明GAE失效。下一轮暂停扩大B1-fixed，修诊断后，以同一冻结critic、完整对局和优化器做MC状态基线/整局GAE两臂各约50k对照，补齐新候选的三对手共同地图评估。[前轮B1协议](analysis/carbon-zero-b1-review-20261124.md)和[更早PPO/RLOO方案](analysis/carbon-zero-rl-followup-20261124.md)保留为历史记录。
+**当前 Codex 交接：[M/G 首种子复审与 M-wide 对照](analysis/carbon-zero-mg-review-20261125.md)。** 已核对 `be792f6`：诊断形状已修复，M/G 核心对照成立。首种子 M 相对 G 的三对手宏 ΔU 为 +0.293，12/12 图同向；M 相对 ZW0 仅 +0.047，区间跨零，对 generic 仍负向。按原规则完成第二种子两臂，满足门槛才独立确认。下一次新增训练优先比较每批 2 图×2 席×4 复本与 8 图×2 席×1 复本，在相同完整对局/批次预算下扩大地图覆盖；保持 MC、critic、对手和优化设置。[前轮 B1-fixed/M-G 协议](analysis/carbon-zero-b1fixed-review-20261124.md)、[B1 复审](analysis/carbon-zero-b1-review-20261124.md)和[更早 PPO/RLOO 方案](analysis/carbon-zero-rl-followup-20261124.md)保留为历史记录。
 
 以后每轮新的研究分析、建议和实验协议写入 GitHub 的 analysis 文档并更新这里的入口；实施结果保留在对应实验分支。
 
