@@ -2,7 +2,7 @@
 
 ## Carbon-Zero 独立强化学习路线
 
-[Carbon-Zero：从终局目标出发的独立策略学习方案](analysis/carbon-zero-research-plan-20261124.md) 是新的研究主线：保留已发布 v8 作为冻结基线，独立实现真实环境、纯策略网络、高手回放 BC、on-policy PPO 及后续联赛训练。Codex 先按文档第 12 节执行 M0–M2 的最小闭环和首个可行学习检查点；旧评分审计保留为独立研究，不是 Zero 的前置条件。当前尚无 Zero 实战结果，不改变线上策略。
+[Carbon-Zero：从终局目标出发的独立策略学习方案（v2）](analysis/carbon-zero-research-plan-20261124.md) 已吸收 Claude 的复核意见：先复用强 BC 权重（优先核验 ft3 Apollo）、合法 54 通道与 BeliefTracker、固定风格和校准温度；用真实裁判及经 parity 验证的快速引擎、混合终局效用与 PPO 跑 10–20 万 E 试点，同时测无搜索和兼容旧搜索的棋力。Codex 直接执行文档第 12 节。独立新网络和动态 League 是后续对照，不阻塞首轮。当前尚无 Zero 新实战结果，冻结 v8，不改变线上策略。
 
 ## yan-v8 实验交接
 
