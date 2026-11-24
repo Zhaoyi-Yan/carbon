@@ -1,0 +1,4821 @@
+{
+  "trees": {
+    "plant": {
+      "roots": 8,
+      "comparisons": 15,
+      "ready_changes": 8,
+      "means": {
+        "10": {
+          "better": 1,
+          "worse": 3,
+          "tied": 4,
+          "mean": -47.66
+        },
+        "20": {
+          "better": 2,
+          "worse": 2,
+          "tied": 4,
+          "mean": 25.41
+        },
+        "terminal": {
+          "better": 1,
+          "worse": 3,
+          "tied": 4,
+          "mean": -54.51
+        }
+      },
+      "ledger_means": {
+        "10": {
+          "own_cash": -7.09,
+          "enemy_cash": 40.57,
+          "base": -17.87,
+          "net_tree": -33.54,
+          "hire": -3.75
+        },
+        "20": {
+          "own_cash": 38.43,
+          "enemy_cash": 13.02,
+          "base": 54.16,
+          "net_tree": -23.13,
+          "hire": 5.62
+        },
+        "terminal": {
+          "own_cash": -163.56,
+          "enemy_cash": -109.05,
+          "base": -11.06,
+          "net_tree": -13.45,
+          "hire": 30
+        }
+      },
+      "search_stages": {
+        "selected": 2,
+        "not_generated": 6
+      },
+      "strictly_positive_both_replies": {
+        "20": {
+          "not_generated": 2
+        },
+        "10": {
+          "not_generated": 1
+        }
+      },
+      "rows": [
+        {
+          "seed": 446825987,
+          "side": 0,
+          "turn": 223,
+          "opponent": "claude-AlphaCarbon-Master7sE",
+          "response": "v8",
+          "root": "4665cd15a5516650cd80eb5cda90cf43",
+          "same_reply": true,
+          "ready": true,
+          "differs": false,
+          "stage": "selected",
+          "audit": {
+            "proposed": [
+              "teacher"
+            ],
+            "admitted": true,
+            "scored_depth": 2,
+            "finalist_score": -0.048912213324612736,
+            "winning_score": -0.048912213324612736,
+            "selected": true,
+            "matching_unit_command": 4,
+            "stage_hits": [
+              "search",
+              "_reply_choice",
+              "_v6_last_worker",
+              "_v7_cash_route",
+              "_v7_keep_float",
+              "_v7_short_deposit",
+              "_v7_corridor",
+              "_v7_solvency",
+              "_r6_opening",
+              "_v7_early_income",
+              "executed"
+            ],
+            "search_action_matches": true
+          },
+          "altered_after_search": null,
+          "10": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "20": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "terminal": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          }
+        },
+        {
+          "seed": 446825987,
+          "side": 0,
+          "turn": 223,
+          "opponent": "claude-AlphaCarbon-Master7sE",
+          "response": "historical",
+          "root": "4665cd15a5516650cd80eb5cda90cf43",
+          "same_reply": true,
+          "ready": true,
+          "differs": false,
+          "stage": "selected",
+          "audit": {
+            "proposed": [
+              "teacher"
+            ],
+            "admitted": true,
+            "scored_depth": 2,
+            "finalist_score": -0.048912213324612736,
+            "winning_score": -0.048912213324612736,
+            "selected": true,
+            "matching_unit_command": 4,
+            "stage_hits": [
+              "search",
+              "_reply_choice",
+              "_v6_last_worker",
+              "_v7_cash_route",
+              "_v7_keep_float",
+              "_v7_short_deposit",
+              "_v7_corridor",
+              "_v7_solvency",
+              "_r6_opening",
+              "_v7_early_income",
+              "executed"
+            ],
+            "search_action_matches": true
+          },
+          "altered_after_search": null,
+          "10": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "20": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "terminal": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          }
+        },
+        {
+          "seed": 1946222200,
+          "side": 0,
+          "turn": 92,
+          "opponent": "RyanX-AIPowercore-it960-hyb",
+          "response": "v8",
+          "root": "f6f1aca7c026b41ac4fa3e1d806ac772",
+          "same_reply": false,
+          "ready": true,
+          "differs": false,
+          "stage": "not_generated",
+          "audit": {
+            "proposed": [],
+            "admitted": false,
+            "scored_depth": null,
+            "finalist_score": null,
+            "winning_score": 0.23086769746279318,
+            "selected": false,
+            "matching_unit_command": 4,
+            "stage_hits": [
+              "_reply_choice",
+              "_v6_last_worker",
+              "_v7_cash_route",
+              "_v7_keep_float",
+              "_v7_short_deposit",
+              "_v7_corridor",
+              "_v7_solvency",
+              "_r6_opening",
+              "_v7_early_income",
+              "executed"
+            ],
+            "search_action_matches": false
+          },
+          "altered_after_search": null,
+          "10": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "20": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "terminal": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          }
+        },
+        {
+          "seed": 1946222200,
+          "side": 0,
+          "turn": 92,
+          "opponent": "RyanX-AIPowercore-it960-hyb",
+          "response": "historical",
+          "root": "f6f1aca7c026b41ac4fa3e1d806ac772",
+          "same_reply": false,
+          "ready": true,
+          "differs": false,
+          "stage": "not_generated",
+          "audit": {
+            "proposed": [],
+            "admitted": false,
+            "scored_depth": null,
+            "finalist_score": null,
+            "winning_score": 0.23086769746279318,
+            "selected": false,
+            "matching_unit_command": 4,
+            "stage_hits": [
+              "_reply_choice",
+              "_v6_last_worker",
+              "_v7_cash_route",
+              "_v7_keep_float",
+              "_v7_short_deposit",
+              "_v7_corridor",
+              "_v7_solvency",
+              "_r6_opening",
+              "_v7_early_income",
+              "executed"
+            ],
+            "search_action_matches": false
+          },
+          "altered_after_search": null,
+          "10": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "20": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "terminal": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          }
+        },
+        {
+          "seed": 32257995,
+          "side": 0,
+          "turn": 209,
+          "opponent": "CarbonEdge_Prometheus",
+          "response": "v8",
+          "root": "b02fe3801ed1a033338d5cce15c2ee6d",
+          "same_reply": false,
+          "ready": true,
+          "differs": true,
+          "stage": "not_generated",
+          "audit": {
+            "proposed": [],
+            "admitted": false,
+            "scored_depth": null,
+            "finalist_score": null,
+            "winning_score": 0.13459133699900855,
+            "selected": false,
+            "matching_unit_command": 0,
+            "stage_hits": [],
+            "search_action_matches": false
+          },
+          "altered_after_search": null,
+          "10": {
+            "cash": -167.02,
+            "own_cash": 41.3,
+            "enemy_cash": 208.32,
+            "base": -138.27,
+            "net_tree": -58.77,
+            "hire": -30,
+            "plants": 2,
+            "seizes": -1,
+            "deaths": -1
+          },
+          "20": {
+            "cash": 280.84,
+            "own_cash": 207.58,
+            "enemy_cash": -73.26,
+            "base": 198.1,
+            "net_tree": 52.74,
+            "hire": -30,
+            "plants": 0,
+            "seizes": -1,
+            "deaths": -1
+          },
+          "terminal": {
+            "cash": -208.21,
+            "own_cash": 798.25,
+            "enemy_cash": 1006.46,
+            "base": -241.21,
+            "net_tree": -26.94,
+            "hire": -60,
+            "plants": 4,
+            "seizes": 1,
+            "deaths": -4
+          }
+        },
+        {
+          "seed": 32257995,
+          "side": 0,
+          "turn": 209,
+          "opponent": "CarbonEdge_Prometheus",
+          "response": "historical",
+          "root": "b02fe3801ed1a033338d5cce15c2ee6d",
+          "same_reply": false,
+          "ready": true,
+          "differs": true,
+          "stage": "not_generated",
+          "audit": {
+            "proposed": [],
+            "admitted": false,
+            "scored_depth": null,
+            "finalist_score": null,
+            "winning_score": 0.13459133699900855,
+            "selected": false,
+            "matching_unit_command": 0,
+            "stage_hits": [],
+            "search_action_matches": false
+          },
+          "altered_after_search": null,
+          "10": {
+            "cash": -14.73,
+            "own_cash": -17.54,
+            "enemy_cash": -2.81,
+            "base": 0.0,
+            "net_tree": 15.25,
+            "hire": 30,
+            "plants": -1,
+            "seizes": 3,
+            "deaths": 1
+          },
+          "20": {
+            "cash": 345.37,
+            "own_cash": 131.84,
+            "enemy_cash": -213.53,
+            "base": 285.32,
+            "net_tree": 90.07,
+            "hire": 30,
+            "plants": 1,
+            "seizes": 0,
+            "deaths": 1
+          },
+          "terminal": {
+            "cash": 933.97,
+            "own_cash": 267.57,
+            "enemy_cash": -666.4,
+            "base": 969.94,
+            "net_tree": 54.08,
+            "hire": 90,
+            "plants": 5,
+            "seizes": 1,
+            "deaths": 5
+          }
+        },
+        {
+          "seed": 1676842485,
+          "side": 0,
+          "turn": 104,
+          "opponent": "CarbonEdge_Prometheus",
+          "response": "v8",
+          "root": "cf04f35e3658f47cf17dc32ae10dc1cc",
+          "same_reply": false,
+          "ready": true,
+          "differs": true,
+          "stage": "not_generated",
+          "audit": {
+            "proposed": [],
+            "admitted": false,
+            "scored_depth": null,
+            "finalist_score": null,
+            "winning_score": 0.39516503724832996,
+            "selected": false,
+            "matching_unit_command": 0,
+            "stage_hits": [],
+            "search_action_matches": false
+          },
+          "altered_after_search": null,
+          "10": {
+            "cash": 23.9,
+            "own_cash": 157.86,
+            "enemy_cash": 133.96,
+            "base": 17.62,
+            "net_tree": 6.27,
+            "hire": 0,
+            "plants": 1,
+            "seizes": -1,
+            "deaths": 0
+          },
+          "20": {
+            "cash": 28.61,
+            "own_cash": 225.11,
+            "enemy_cash": 196.5,
+            "base": -48.44,
+            "net_tree": 77.03,
+            "hire": 0,
+            "plants": -1,
+            "seizes": -2,
+            "deaths": 1
+          },
+          "terminal": {
+            "cash": -1100.99,
+            "own_cash": -1403.42,
+            "enemy_cash": -302.43,
+            "base": -749.29,
+            "net_tree": -261.78,
+            "hire": 90,
+            "plants": 6,
+            "seizes": -1,
+            "deaths": 3
+          }
+        },
+        {
+          "seed": 1676842485,
+          "side": 0,
+          "turn": 104,
+          "opponent": "CarbonEdge_Prometheus",
+          "response": "historical",
+          "root": "cf04f35e3658f47cf17dc32ae10dc1cc",
+          "same_reply": false,
+          "ready": true,
+          "differs": true,
+          "stage": "not_generated",
+          "audit": {
+            "proposed": [],
+            "admitted": false,
+            "scored_depth": null,
+            "finalist_score": null,
+            "winning_score": 0.39516503724832996,
+            "selected": false,
+            "matching_unit_command": 0,
+            "stage_hits": [],
+            "search_action_matches": false
+          },
+          "altered_after_search": null,
+          "10": {
+            "cash": 28.64,
+            "own_cash": 108.89,
+            "enemy_cash": 80.25,
+            "base": 73.73,
+            "net_tree": -75.09,
+            "hire": -30,
+            "plants": 3,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "20": {
+            "cash": -154.63,
+            "own_cash": 23.94,
+            "enemy_cash": 178.57,
+            "base": 8.47,
+            "net_tree": -133.12,
+            "hire": 30,
+            "plants": 5,
+            "seizes": -3,
+            "deaths": 1
+          },
+          "terminal": {
+            "cash": -95.26,
+            "own_cash": -1458.37,
+            "enemy_cash": -1363.11,
+            "base": 629.64,
+            "net_tree": -484.84,
+            "hire": 240,
+            "plants": 1,
+            "seizes": -6,
+            "deaths": 10
+          }
+        },
+        {
+          "seed": 1700136949,
+          "side": 1,
+          "turn": 189,
+          "opponent": "CarbonEdge_Apollo",
+          "response": "v8",
+          "root": "5bf38b08e50d7acb47c4244c9e1f53ed",
+          "same_reply": false,
+          "ready": true,
+          "differs": false,
+          "stage": "selected",
+          "audit": {
+            "proposed": [
+              "root"
+            ],
+            "admitted": true,
+            "scored_depth": 2,
+            "finalist_score": -0.10298896363821419,
+            "winning_score": -0.10298896363821419,
+            "selected": true,
+            "matching_unit_command": 4,
+            "stage_hits": [
+              "search",
+              "_reply_choice",
+              "_v6_last_worker",
+              "_v7_cash_route",
+              "_v7_keep_float",
+              "_v7_short_deposit",
+              "_v7_corridor",
+              "_v7_solvency",
+              "_r6_opening",
+              "_v7_early_income",
+              "executed"
+            ],
+            "search_action_matches": true
+          },
+          "altered_after_search": null,
+          "10": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "20": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "terminal": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          }
+        },
+        {
+          "seed": 1700136949,
+          "side": 1,
+          "turn": 189,
+          "opponent": "CarbonEdge_Apollo",
+          "response": "historical",
+          "root": "5bf38b08e50d7acb47c4244c9e1f53ed",
+          "same_reply": false,
+          "ready": true,
+          "differs": false,
+          "stage": "selected",
+          "audit": {
+            "proposed": [
+              "root"
+            ],
+            "admitted": true,
+            "scored_depth": 2,
+            "finalist_score": -0.10298896363821419,
+            "winning_score": -0.10298896363821419,
+            "selected": true,
+            "matching_unit_command": 4,
+            "stage_hits": [
+              "search",
+              "_reply_choice",
+              "_v6_last_worker",
+              "_v7_cash_route",
+              "_v7_keep_float",
+              "_v7_short_deposit",
+              "_v7_corridor",
+              "_v7_solvency",
+              "_r6_opening",
+              "_v7_early_income",
+              "executed"
+            ],
+            "search_action_matches": true
+          },
+          "altered_after_search": null,
+          "10": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "20": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "terminal": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          }
+        },
+        {
+          "seed": 787902507,
+          "side": 1,
+          "turn": 194,
+          "opponent": "CarbonEdge_Apollo",
+          "response": "v8",
+          "root": "22e38a164fb7167d36f51d92ca1e5dc2",
+          "same_reply": false,
+          "ready": true,
+          "differs": false,
+          "stage": "not_generated",
+          "audit": {
+            "proposed": [],
+            "admitted": false,
+            "scored_depth": null,
+            "finalist_score": null,
+            "winning_score": -0.0702746248158233,
+            "selected": false,
+            "matching_unit_command": 4,
+            "stage_hits": [
+              "_reply_choice",
+              "_v6_last_worker",
+              "_v7_cash_route",
+              "_v7_keep_float",
+              "_v7_short_deposit",
+              "_v7_corridor",
+              "_v7_solvency",
+              "_r6_opening",
+              "_v7_early_income",
+              "executed"
+            ],
+            "search_action_matches": false
+          },
+          "altered_after_search": null,
+          "10": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "20": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "terminal": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          }
+        },
+        {
+          "seed": 787902507,
+          "side": 1,
+          "turn": 194,
+          "opponent": "CarbonEdge_Apollo",
+          "response": "historical",
+          "root": "22e38a164fb7167d36f51d92ca1e5dc2",
+          "same_reply": false,
+          "ready": true,
+          "differs": false,
+          "stage": "not_generated",
+          "audit": {
+            "proposed": [],
+            "admitted": false,
+            "scored_depth": null,
+            "finalist_score": null,
+            "winning_score": -0.0702746248158233,
+            "selected": false,
+            "matching_unit_command": 4,
+            "stage_hits": [
+              "_reply_choice",
+              "_v6_last_worker",
+              "_v7_cash_route",
+              "_v7_keep_float",
+              "_v7_short_deposit",
+              "_v7_corridor",
+              "_v7_solvency",
+              "_r6_opening",
+              "_v7_early_income",
+              "executed"
+            ],
+            "search_action_matches": false
+          },
+          "altered_after_search": null,
+          "10": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "20": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "terminal": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          }
+        },
+        {
+          "seed": 225914159,
+          "side": 1,
+          "turn": 90,
+          "opponent": "Artemis",
+          "response": "v8",
+          "root": "422eb40662920ca572bb10d455e900ec",
+          "same_reply": false,
+          "ready": true,
+          "differs": true,
+          "stage": "not_generated",
+          "audit": {
+            "proposed": [],
+            "admitted": false,
+            "scored_depth": null,
+            "finalist_score": null,
+            "winning_score": 0.2982561472365919,
+            "selected": false,
+            "matching_unit_command": 0,
+            "stage_hits": [],
+            "search_action_matches": false
+          },
+          "altered_after_search": null,
+          "10": {
+            "cash": -31.51,
+            "own_cash": -17.55,
+            "enemy_cash": 13.96,
+            "base": 75.94,
+            "net_tree": -107.47,
+            "hire": 0,
+            "plants": 1,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "20": {
+            "cash": -110.08,
+            "own_cash": -203.64,
+            "enemy_cash": -93.56,
+            "base": 111.02,
+            "net_tree": -191.13,
+            "hire": 30,
+            "plants": 1,
+            "seizes": 1,
+            "deaths": 1
+          },
+          "terminal": {
+            "cash": -693.48,
+            "own_cash": -1066.57,
+            "enemy_cash": -373.09,
+            "base": -569.57,
+            "net_tree": -63.98,
+            "hire": 60,
+            "plants": -12,
+            "seizes": 5,
+            "deaths": 2
+          }
+        },
+        {
+          "seed": 225914159,
+          "side": 1,
+          "turn": 90,
+          "opponent": "Artemis",
+          "response": "historical",
+          "root": "422eb40662920ca572bb10d455e900ec",
+          "same_reply": false,
+          "ready": true,
+          "differs": true,
+          "stage": "not_generated",
+          "audit": {
+            "proposed": [],
+            "admitted": false,
+            "scored_depth": null,
+            "finalist_score": null,
+            "winning_score": 0.2982561472365919,
+            "selected": false,
+            "matching_unit_command": 0,
+            "stage_hits": [],
+            "search_action_matches": false
+          },
+          "altered_after_search": null,
+          "10": {
+            "cash": -203.41,
+            "own_cash": -225.03,
+            "enemy_cash": -21.62,
+            "base": -65.7,
+            "net_tree": -167.7,
+            "hire": -30,
+            "plants": 2,
+            "seizes": 1,
+            "deaths": -1
+          },
+          "20": {
+            "cash": -189.54,
+            "own_cash": -253.35,
+            "enemy_cash": -63.81,
+            "base": -66.82,
+            "net_tree": -152.71,
+            "hire": -30,
+            "plants": 4,
+            "seizes": 3,
+            "deaths": -1
+          },
+          "terminal": {
+            "cash": 690.46,
+            "own_cash": -275.61,
+            "enemy_cash": -966.07,
+            "base": 740.56,
+            "net_tree": -80.21,
+            "hire": -30,
+            "plants": 12,
+            "seizes": -3,
+            "deaths": -2
+          }
+        },
+        {
+          "seed": 845868730,
+          "side": 1,
+          "turn": 181,
+          "opponent": "CarbonEdge_Prometheus",
+          "response": "v8",
+          "root": "ef1582ed1be039f3114cc258950cb04a",
+          "same_reply": false,
+          "ready": true,
+          "differs": true,
+          "stage": "not_generated",
+          "audit": {
+            "proposed": [],
+            "admitted": false,
+            "scored_depth": null,
+            "finalist_score": null,
+            "winning_score": 0.03628105762656098,
+            "selected": false,
+            "matching_unit_command": 0,
+            "stage_hits": [],
+            "search_action_matches": false
+          },
+          "altered_after_search": null,
+          "10": {
+            "cash": -308.61,
+            "own_cash": -155.29,
+            "enemy_cash": 153.32,
+            "base": -199.13,
+            "net_tree": -109.46,
+            "hire": 0,
+            "plants": 2,
+            "seizes": 1,
+            "deaths": 1
+          },
+          "20": {
+            "cash": 107.13,
+            "own_cash": 223.58,
+            "enemy_cash": 116.45,
+            "base": 264.28,
+            "net_tree": -97.14,
+            "hire": 60,
+            "plants": 3,
+            "seizes": 5,
+            "deaths": 2
+          },
+          "terminal": {
+            "cash": -439.17,
+            "own_cash": 58.63,
+            "enemy_cash": 497.8,
+            "base": -923.76,
+            "net_tree": 574.64,
+            "hire": 90,
+            "plants": 3,
+            "seizes": 4,
+            "deaths": -1
+          }
+        },
+        {
+          "seed": 845868730,
+          "side": 1,
+          "turn": 181,
+          "opponent": "CarbonEdge_Prometheus",
+          "response": "historical",
+          "root": "ef1582ed1be039f3114cc258950cb04a",
+          "same_reply": false,
+          "ready": true,
+          "differs": true,
+          "stage": "not_generated",
+          "audit": {
+            "proposed": [],
+            "admitted": false,
+            "scored_depth": null,
+            "finalist_score": null,
+            "winning_score": 0.03628105762656098,
+            "selected": false,
+            "matching_unit_command": 0,
+            "stage_hits": [],
+            "search_action_matches": false
+          },
+          "altered_after_search": null,
+          "10": {
+            "cash": -89.78,
+            "own_cash": -6.1,
+            "enemy_cash": 83.68,
+            "base": -50.15,
+            "net_tree": -39.64,
+            "hire": 0,
+            "plants": 1,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "20": {
+            "cash": 98.82,
+            "own_cash": 259.79,
+            "enemy_cash": 160.97,
+            "base": 114.65,
+            "net_tree": -15.85,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "terminal": {
+            "cash": 40.55,
+            "own_cash": 462.53,
+            "enemy_cash": 421.98,
+            "base": -33.25,
+            "net_tree": 73.78,
+            "hire": 0,
+            "plants": 5,
+            "seizes": 4,
+            "deaths": -1
+          }
+        }
+      ]
+    },
+    "defer": {
+      "roots": 8,
+      "comparisons": 15,
+      "ready_changes": 7,
+      "means": {
+        "10": {
+          "better": 1,
+          "worse": 3,
+          "tied": 4,
+          "mean": 35.2
+        },
+        "20": {
+          "better": 1,
+          "worse": 3,
+          "tied": 4,
+          "mean": -86.48
+        },
+        "terminal": {
+          "better": 1,
+          "worse": 3,
+          "tied": 4,
+          "mean": -62.6
+        }
+      },
+      "ledger_means": {
+        "10": {
+          "own_cash": 72.21,
+          "enemy_cash": 37.02,
+          "base": 22.33,
+          "net_tree": 10.99,
+          "hire": -1.88
+        },
+        "20": {
+          "own_cash": -32.31,
+          "enemy_cash": 54.17,
+          "base": -113.24,
+          "net_tree": 26.76,
+          "hire": 0
+        },
+        "terminal": {
+          "own_cash": -0.75,
+          "enemy_cash": 61.85,
+          "base": -97.29,
+          "net_tree": 27.18,
+          "hire": -7.5
+        }
+      },
+      "search_stages": {
+        "not_generated": 5,
+        "selected": 3
+      },
+      "strictly_positive_both_replies": {
+        "10": {
+          "not_generated": 1
+        },
+        "20": {
+          "not_generated": 1
+        }
+      },
+      "rows": [
+        {
+          "seed": 446825987,
+          "side": 0,
+          "turn": 223,
+          "opponent": "claude-AlphaCarbon-Master7sE",
+          "response": "v8",
+          "root": "4665cd15a5516650cd80eb5cda90cf43",
+          "same_reply": true,
+          "ready": true,
+          "differs": true,
+          "stage": "not_generated",
+          "audit": {
+            "proposed": [],
+            "admitted": false,
+            "scored_depth": null,
+            "finalist_score": null,
+            "winning_score": -0.048912213324612736,
+            "selected": false,
+            "matching_unit_command": 0,
+            "stage_hits": [],
+            "search_action_matches": false
+          },
+          "altered_after_search": null,
+          "10": {
+            "cash": -95.02,
+            "own_cash": -40.85,
+            "enemy_cash": 54.17,
+            "base": -8.66,
+            "net_tree": -26.37,
+            "hire": 60,
+            "plants": 0,
+            "seizes": 1,
+            "deaths": 1
+          },
+          "20": {
+            "cash": -158.27,
+            "own_cash": -111.56,
+            "enemy_cash": 46.71,
+            "base": -194.61,
+            "net_tree": 66.31,
+            "hire": 30,
+            "plants": -1,
+            "seizes": 0,
+            "deaths": 1
+          },
+          "terminal": {
+            "cash": 338.4,
+            "own_cash": 10.66,
+            "enemy_cash": -327.74,
+            "base": 0.69,
+            "net_tree": 307.57,
+            "hire": -30,
+            "plants": -5,
+            "seizes": 5,
+            "deaths": -3
+          }
+        },
+        {
+          "seed": 446825987,
+          "side": 0,
+          "turn": 223,
+          "opponent": "claude-AlphaCarbon-Master7sE",
+          "response": "historical",
+          "root": "4665cd15a5516650cd80eb5cda90cf43",
+          "same_reply": true,
+          "ready": true,
+          "differs": true,
+          "stage": "not_generated",
+          "audit": {
+            "proposed": [],
+            "admitted": false,
+            "scored_depth": null,
+            "finalist_score": null,
+            "winning_score": -0.048912213324612736,
+            "selected": false,
+            "matching_unit_command": 0,
+            "stage_hits": [],
+            "search_action_matches": false
+          },
+          "altered_after_search": null,
+          "10": {
+            "cash": -95.02,
+            "own_cash": -40.85,
+            "enemy_cash": 54.17,
+            "base": -8.66,
+            "net_tree": -26.37,
+            "hire": 60,
+            "plants": 0,
+            "seizes": 1,
+            "deaths": 1
+          },
+          "20": {
+            "cash": -158.27,
+            "own_cash": -111.56,
+            "enemy_cash": 46.71,
+            "base": -194.61,
+            "net_tree": 66.31,
+            "hire": 30,
+            "plants": -1,
+            "seizes": 0,
+            "deaths": 1
+          },
+          "terminal": {
+            "cash": 338.4,
+            "own_cash": 10.66,
+            "enemy_cash": -327.74,
+            "base": 0.69,
+            "net_tree": 307.57,
+            "hire": -30,
+            "plants": -5,
+            "seizes": 5,
+            "deaths": -3
+          }
+        },
+        {
+          "seed": 1946222200,
+          "side": 0,
+          "turn": 92,
+          "opponent": "RyanX-AIPowercore-it960-hyb",
+          "response": "v8",
+          "root": "f6f1aca7c026b41ac4fa3e1d806ac772",
+          "same_reply": false,
+          "ready": true,
+          "differs": true,
+          "stage": "not_generated",
+          "audit": {
+            "proposed": [],
+            "admitted": false,
+            "scored_depth": null,
+            "finalist_score": null,
+            "winning_score": 0.23086769746279318,
+            "selected": false,
+            "matching_unit_command": 0,
+            "stage_hits": [],
+            "search_action_matches": false
+          },
+          "altered_after_search": null,
+          "10": {
+            "cash": 559.03,
+            "own_cash": 670.26,
+            "enemy_cash": 111.23,
+            "base": 520.92,
+            "net_tree": 38.12,
+            "hire": 0,
+            "plants": -1,
+            "seizes": 1,
+            "deaths": 0
+          },
+          "20": {
+            "cash": 349.83,
+            "own_cash": 211.86,
+            "enemy_cash": -137.97,
+            "base": 315.71,
+            "net_tree": 34.15,
+            "hire": 0,
+            "plants": -2,
+            "seizes": 2,
+            "deaths": 0
+          },
+          "terminal": {
+            "cash": -649.44,
+            "own_cash": 213.9,
+            "enemy_cash": 863.34,
+            "base": -435.31,
+            "net_tree": -34.14,
+            "hire": 180,
+            "plants": -17,
+            "seizes": 12,
+            "deaths": 11
+          }
+        },
+        {
+          "seed": 1946222200,
+          "side": 0,
+          "turn": 92,
+          "opponent": "RyanX-AIPowercore-it960-hyb",
+          "response": "historical",
+          "root": "f6f1aca7c026b41ac4fa3e1d806ac772",
+          "same_reply": false,
+          "ready": true,
+          "differs": true,
+          "stage": "not_generated",
+          "audit": {
+            "proposed": [],
+            "admitted": false,
+            "scored_depth": null,
+            "finalist_score": null,
+            "winning_score": 0.23086769746279318,
+            "selected": false,
+            "matching_unit_command": 0,
+            "stage_hits": [],
+            "search_action_matches": false
+          },
+          "altered_after_search": null,
+          "10": {
+            "cash": 772.2,
+            "own_cash": 712.07,
+            "enemy_cash": -60.13,
+            "base": 563.0,
+            "net_tree": 149.19,
+            "hire": -60,
+            "plants": -3,
+            "seizes": 3,
+            "deaths": -2
+          },
+          "20": {
+            "cash": 88.15,
+            "own_cash": 80.55,
+            "enemy_cash": -7.6,
+            "base": -144.78,
+            "net_tree": 172.89,
+            "hire": -60,
+            "plants": -3,
+            "seizes": 3,
+            "deaths": -2
+          },
+          "terminal": {
+            "cash": -301.45,
+            "own_cash": -234.74,
+            "enemy_cash": 66.71,
+            "base": -198.89,
+            "net_tree": -312.64,
+            "hire": -210,
+            "plants": -7,
+            "seizes": -1,
+            "deaths": -6
+          }
+        },
+        {
+          "seed": 32257995,
+          "side": 0,
+          "turn": 209,
+          "opponent": "CarbonEdge_Prometheus",
+          "response": "v8",
+          "root": "b02fe3801ed1a033338d5cce15c2ee6d",
+          "same_reply": false,
+          "ready": true,
+          "differs": false,
+          "stage": "selected",
+          "audit": {
+            "proposed": [
+              "root"
+            ],
+            "admitted": true,
+            "scored_depth": 2,
+            "finalist_score": 0.13459133699900855,
+            "winning_score": 0.13459133699900855,
+            "selected": true,
+            "matching_unit_command": 4,
+            "stage_hits": [
+              "search",
+              "_reply_choice",
+              "_v6_last_worker",
+              "_v7_cash_route",
+              "_v7_keep_float",
+              "_v7_short_deposit",
+              "_v7_corridor",
+              "_v7_solvency",
+              "_r6_opening",
+              "_v7_early_income",
+              "executed"
+            ],
+            "search_action_matches": true
+          },
+          "altered_after_search": null,
+          "10": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "20": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "terminal": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          }
+        },
+        {
+          "seed": 32257995,
+          "side": 0,
+          "turn": 209,
+          "opponent": "CarbonEdge_Prometheus",
+          "response": "historical",
+          "root": "b02fe3801ed1a033338d5cce15c2ee6d",
+          "same_reply": false,
+          "ready": true,
+          "differs": false,
+          "stage": "selected",
+          "audit": {
+            "proposed": [
+              "root"
+            ],
+            "admitted": true,
+            "scored_depth": 2,
+            "finalist_score": 0.13459133699900855,
+            "winning_score": 0.13459133699900855,
+            "selected": true,
+            "matching_unit_command": 4,
+            "stage_hits": [
+              "search",
+              "_reply_choice",
+              "_v6_last_worker",
+              "_v7_cash_route",
+              "_v7_keep_float",
+              "_v7_short_deposit",
+              "_v7_corridor",
+              "_v7_solvency",
+              "_r6_opening",
+              "_v7_early_income",
+              "executed"
+            ],
+            "search_action_matches": true
+          },
+          "altered_after_search": null,
+          "10": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "20": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "terminal": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          }
+        },
+        {
+          "seed": 1676842485,
+          "side": 0,
+          "turn": 104,
+          "opponent": "CarbonEdge_Prometheus",
+          "response": "v8",
+          "root": "cf04f35e3658f47cf17dc32ae10dc1cc",
+          "same_reply": false,
+          "ready": true,
+          "differs": false,
+          "stage": "not_generated",
+          "audit": {
+            "proposed": [],
+            "admitted": false,
+            "scored_depth": null,
+            "finalist_score": null,
+            "winning_score": 0.39516503724832996,
+            "selected": false,
+            "matching_unit_command": 2,
+            "stage_hits": [
+              "_reply_choice",
+              "_v6_last_worker",
+              "_v7_cash_route",
+              "_v7_keep_float",
+              "_v7_short_deposit",
+              "_v7_corridor",
+              "_v7_solvency",
+              "_r6_opening",
+              "_v7_early_income",
+              "executed"
+            ],
+            "search_action_matches": false
+          },
+          "altered_after_search": null,
+          "10": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "20": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "terminal": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          }
+        },
+        {
+          "seed": 1676842485,
+          "side": 0,
+          "turn": 104,
+          "opponent": "CarbonEdge_Prometheus",
+          "response": "historical",
+          "root": "cf04f35e3658f47cf17dc32ae10dc1cc",
+          "same_reply": false,
+          "ready": true,
+          "differs": false,
+          "stage": "not_generated",
+          "audit": {
+            "proposed": [],
+            "admitted": false,
+            "scored_depth": null,
+            "finalist_score": null,
+            "winning_score": 0.39516503724832996,
+            "selected": false,
+            "matching_unit_command": 2,
+            "stage_hits": [
+              "_reply_choice",
+              "_v6_last_worker",
+              "_v7_cash_route",
+              "_v7_keep_float",
+              "_v7_short_deposit",
+              "_v7_corridor",
+              "_v7_solvency",
+              "_r6_opening",
+              "_v7_early_income",
+              "executed"
+            ],
+            "search_action_matches": false
+          },
+          "altered_after_search": null,
+          "10": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "20": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "terminal": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          }
+        },
+        {
+          "seed": 1700136949,
+          "side": 1,
+          "turn": 189,
+          "opponent": "CarbonEdge_Apollo",
+          "response": "v8",
+          "root": "5bf38b08e50d7acb47c4244c9e1f53ed",
+          "same_reply": false,
+          "ready": true,
+          "differs": true,
+          "stage": "not_generated",
+          "audit": {
+            "proposed": [],
+            "admitted": false,
+            "scored_depth": null,
+            "finalist_score": null,
+            "winning_score": -0.10298896363821419,
+            "selected": false,
+            "matching_unit_command": 0,
+            "stage_hits": [],
+            "search_action_matches": false
+          },
+          "altered_after_search": null,
+          "10": {
+            "cash": -79.92,
+            "own_cash": -114.22,
+            "enemy_cash": -34.3,
+            "base": -32.94,
+            "net_tree": -76.98,
+            "hire": -30,
+            "plants": 1,
+            "seizes": -2,
+            "deaths": -1
+          },
+          "20": {
+            "cash": -157.43,
+            "own_cash": 15.21,
+            "enemy_cash": 172.64,
+            "base": -226.4,
+            "net_tree": 8.97,
+            "hire": -60,
+            "plants": -1,
+            "seizes": 1,
+            "deaths": -2
+          },
+          "terminal": {
+            "cash": 619.57,
+            "own_cash": 347.26,
+            "enemy_cash": -272.31,
+            "base": 616.42,
+            "net_tree": -116.86,
+            "hire": -120,
+            "plants": -5,
+            "seizes": 2,
+            "deaths": -4
+          }
+        },
+        {
+          "seed": 1700136949,
+          "side": 1,
+          "turn": 189,
+          "opponent": "CarbonEdge_Apollo",
+          "response": "historical",
+          "root": "5bf38b08e50d7acb47c4244c9e1f53ed",
+          "same_reply": false,
+          "ready": true,
+          "differs": true,
+          "stage": "not_generated",
+          "audit": {
+            "proposed": [],
+            "admitted": false,
+            "scored_depth": null,
+            "finalist_score": null,
+            "winning_score": -0.10298896363821419,
+            "selected": false,
+            "matching_unit_command": 0,
+            "stage_hits": [],
+            "search_action_matches": false
+          },
+          "altered_after_search": null,
+          "10": {
+            "cash": -490.16,
+            "own_cash": -319.21,
+            "enemy_cash": 170.95,
+            "base": -512.74,
+            "net_tree": -7.41,
+            "hire": -30,
+            "plants": -1,
+            "seizes": 1,
+            "deaths": 0
+          },
+          "20": {
+            "cash": -955.01,
+            "own_cash": -333.77,
+            "enemy_cash": 621.24,
+            "base": -862.86,
+            "net_tree": -62.13,
+            "hire": 30,
+            "plants": 1,
+            "seizes": 3,
+            "deaths": 1
+          },
+          "terminal": {
+            "cash": -1020.69,
+            "own_cash": -376.23,
+            "enemy_cash": 644.46,
+            "base": -1056.58,
+            "net_tree": 65.97,
+            "hire": 30,
+            "plants": 4,
+            "seizes": 2,
+            "deaths": -1
+          }
+        },
+        {
+          "seed": 787902507,
+          "side": 1,
+          "turn": 194,
+          "opponent": "CarbonEdge_Apollo",
+          "response": "v8",
+          "root": "22e38a164fb7167d36f51d92ca1e5dc2",
+          "same_reply": false,
+          "ready": true,
+          "differs": true,
+          "stage": "not_generated",
+          "audit": {
+            "proposed": [],
+            "admitted": false,
+            "scored_depth": null,
+            "finalist_score": null,
+            "winning_score": -0.0702746248158233,
+            "selected": false,
+            "matching_unit_command": 0,
+            "stage_hits": [],
+            "search_action_matches": false
+          },
+          "altered_after_search": null,
+          "10": {
+            "cash": -56.8,
+            "own_cash": 291.63,
+            "enemy_cash": 348.43,
+            "base": -163.64,
+            "net_tree": 76.83,
+            "hire": -30,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": -1
+          },
+          "20": {
+            "cash": -326.6,
+            "own_cash": -286.65,
+            "enemy_cash": 39.95,
+            "base": -476.31,
+            "net_tree": 149.71,
+            "hire": 0,
+            "plants": -1,
+            "seizes": 2,
+            "deaths": 0
+          },
+          "terminal": {
+            "cash": -24.03,
+            "own_cash": -51.24,
+            "enemy_cash": -27.21,
+            "base": -364.47,
+            "net_tree": 280.52,
+            "hire": -60,
+            "plants": 4,
+            "seizes": -4,
+            "deaths": 0
+          }
+        },
+        {
+          "seed": 787902507,
+          "side": 1,
+          "turn": 194,
+          "opponent": "CarbonEdge_Apollo",
+          "response": "historical",
+          "root": "22e38a164fb7167d36f51d92ca1e5dc2",
+          "same_reply": false,
+          "ready": true,
+          "differs": true,
+          "stage": "not_generated",
+          "audit": {
+            "proposed": [],
+            "admitted": false,
+            "scored_depth": null,
+            "finalist_score": null,
+            "winning_score": -0.0702746248158233,
+            "selected": false,
+            "matching_unit_command": 0,
+            "stage_hits": [],
+            "search_action_matches": false
+          },
+          "altered_after_search": null,
+          "10": {
+            "cash": 48.85,
+            "own_cash": -3.42,
+            "enemy_cash": -52.27,
+            "base": 0.0,
+            "net_tree": 48.84,
+            "hire": 0,
+            "plants": -1,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "20": {
+            "cash": -66.09,
+            "own_cash": 19.01,
+            "enemy_cash": 85.1,
+            "base": -28.01,
+            "net_tree": -8.1,
+            "hire": 30,
+            "plants": -1,
+            "seizes": 1,
+            "deaths": 1
+          },
+          "terminal": {
+            "cash": -302.38,
+            "own_cash": 67.73,
+            "enemy_cash": 370.11,
+            "base": -119.2,
+            "net_tree": -63.19,
+            "hire": 120,
+            "plants": 1,
+            "seizes": 6,
+            "deaths": 0
+          }
+        },
+        {
+          "seed": 225914159,
+          "side": 1,
+          "turn": 90,
+          "opponent": "Artemis",
+          "response": "v8",
+          "root": "422eb40662920ca572bb10d455e900ec",
+          "same_reply": false,
+          "ready": true,
+          "differs": false,
+          "stage": "selected",
+          "audit": {
+            "proposed": [
+              "style"
+            ],
+            "admitted": true,
+            "scored_depth": 2,
+            "finalist_score": 0.2982561472365919,
+            "winning_score": 0.2982561472365919,
+            "selected": true,
+            "matching_unit_command": 4,
+            "stage_hits": [
+              "search",
+              "_reply_choice",
+              "_v6_last_worker",
+              "_v7_cash_route",
+              "_v7_keep_float",
+              "_v7_short_deposit",
+              "_v7_corridor",
+              "_v7_solvency",
+              "_r6_opening",
+              "_v7_early_income",
+              "executed"
+            ],
+            "search_action_matches": true
+          },
+          "altered_after_search": null,
+          "10": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "20": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "terminal": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          }
+        },
+        {
+          "seed": 225914159,
+          "side": 1,
+          "turn": 90,
+          "opponent": "Artemis",
+          "response": "historical",
+          "root": "422eb40662920ca572bb10d455e900ec",
+          "same_reply": false,
+          "ready": true,
+          "differs": false,
+          "stage": "selected",
+          "audit": {
+            "proposed": [
+              "style"
+            ],
+            "admitted": true,
+            "scored_depth": 2,
+            "finalist_score": 0.2982561472365919,
+            "winning_score": 0.2982561472365919,
+            "selected": true,
+            "matching_unit_command": 4,
+            "stage_hits": [
+              "search",
+              "_reply_choice",
+              "_v6_last_worker",
+              "_v7_cash_route",
+              "_v7_keep_float",
+              "_v7_short_deposit",
+              "_v7_corridor",
+              "_v7_solvency",
+              "_r6_opening",
+              "_v7_early_income",
+              "executed"
+            ],
+            "search_action_matches": true
+          },
+          "altered_after_search": null,
+          "10": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "20": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "terminal": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          }
+        },
+        {
+          "seed": 845868730,
+          "side": 1,
+          "turn": 181,
+          "opponent": "CarbonEdge_Prometheus",
+          "response": "v8",
+          "root": "ef1582ed1be039f3114cc258950cb04a",
+          "same_reply": false,
+          "ready": true,
+          "differs": false,
+          "stage": "selected",
+          "audit": {
+            "proposed": [
+              "style"
+            ],
+            "admitted": true,
+            "scored_depth": 2,
+            "finalist_score": 0.03628105762656098,
+            "winning_score": 0.03628105762656098,
+            "selected": true,
+            "matching_unit_command": 4,
+            "stage_hits": [
+              "search",
+              "_reply_choice",
+              "_v6_last_worker",
+              "_v7_cash_route",
+              "_v7_keep_float",
+              "_v7_short_deposit",
+              "_v7_corridor",
+              "_v7_solvency",
+              "_r6_opening",
+              "_v7_early_income",
+              "executed"
+            ],
+            "search_action_matches": true
+          },
+          "altered_after_search": null,
+          "10": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "20": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "terminal": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          }
+        },
+        {
+          "seed": 845868730,
+          "side": 1,
+          "turn": 181,
+          "opponent": "CarbonEdge_Prometheus",
+          "response": "historical",
+          "root": "ef1582ed1be039f3114cc258950cb04a",
+          "same_reply": false,
+          "ready": true,
+          "differs": false,
+          "stage": "selected",
+          "audit": {
+            "proposed": [
+              "style"
+            ],
+            "admitted": true,
+            "scored_depth": 2,
+            "finalist_score": 0.03628105762656098,
+            "winning_score": 0.03628105762656098,
+            "selected": true,
+            "matching_unit_command": 4,
+            "stage_hits": [
+              "search",
+              "_reply_choice",
+              "_v6_last_worker",
+              "_v7_cash_route",
+              "_v7_keep_float",
+              "_v7_short_deposit",
+              "_v7_corridor",
+              "_v7_solvency",
+              "_r6_opening",
+              "_v7_early_income",
+              "executed"
+            ],
+            "search_action_matches": true
+          },
+          "altered_after_search": null,
+          "10": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "20": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "terminal": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          }
+        }
+      ]
+    },
+    "runner_up": {
+      "roots": 8,
+      "comparisons": 15,
+      "ready_changes": 13,
+      "means": {
+        "10": {
+          "better": 4,
+          "worse": 3,
+          "tied": 1,
+          "mean": -15.71
+        },
+        "20": {
+          "better": 3,
+          "worse": 4,
+          "tied": 1,
+          "mean": -121.45
+        },
+        "terminal": {
+          "better": 4,
+          "worse": 3,
+          "tied": 1,
+          "mean": -14.19
+        }
+      },
+      "ledger_means": {
+        "10": {
+          "own_cash": 11.49,
+          "enemy_cash": 27.2,
+          "base": -10.49,
+          "net_tree": 4.16,
+          "hire": 9.38
+        },
+        "20": {
+          "own_cash": -3.86,
+          "enemy_cash": 117.59,
+          "base": -134.01,
+          "net_tree": 18.18,
+          "hire": 5.62
+        },
+        "terminal": {
+          "own_cash": 6.17,
+          "enemy_cash": 20.35,
+          "base": 80.2,
+          "net_tree": -66.28,
+          "hire": 28.12
+        }
+      },
+      "search_stages": {
+        "ranked_below": 8
+      },
+      "strictly_positive_both_replies": {
+        "10": {
+          "ranked_below": 1
+        },
+        "terminal": {
+          "ranked_below": 2
+        },
+        "20": {
+          "ranked_below": 1
+        }
+      },
+      "rows": [
+        {
+          "seed": 446825987,
+          "side": 0,
+          "turn": 223,
+          "opponent": "claude-AlphaCarbon-Master7sE",
+          "response": "v8",
+          "root": "4665cd15a5516650cd80eb5cda90cf43",
+          "same_reply": true,
+          "ready": true,
+          "differs": true,
+          "stage": "ranked_below",
+          "audit": {
+            "proposed": [
+              "root"
+            ],
+            "admitted": true,
+            "scored_depth": 2,
+            "finalist_score": -0.05341380590337465,
+            "winning_score": -0.048912213324612736,
+            "selected": false,
+            "matching_unit_command": null,
+            "stage_hits": [],
+            "search_action_matches": false
+          },
+          "altered_after_search": false,
+          "10": {
+            "cash": 1.82,
+            "own_cash": 29.34,
+            "enemy_cash": 27.52,
+            "base": 0.0,
+            "net_tree": 31.8,
+            "hire": 30,
+            "plants": -1,
+            "seizes": 1,
+            "deaths": 1
+          },
+          "20": {
+            "cash": 52.96,
+            "own_cash": 256.93,
+            "enemy_cash": 203.97,
+            "base": 36.7,
+            "net_tree": 46.24,
+            "hire": 30,
+            "plants": -2,
+            "seizes": 0,
+            "deaths": 1
+          },
+          "terminal": {
+            "cash": -375.1,
+            "own_cash": 394.54,
+            "enemy_cash": 769.64,
+            "base": -246.75,
+            "net_tree": -98.45,
+            "hire": 30,
+            "plants": 2,
+            "seizes": 2,
+            "deaths": -2
+          }
+        },
+        {
+          "seed": 446825987,
+          "side": 0,
+          "turn": 223,
+          "opponent": "claude-AlphaCarbon-Master7sE",
+          "response": "historical",
+          "root": "4665cd15a5516650cd80eb5cda90cf43",
+          "same_reply": true,
+          "ready": true,
+          "differs": true,
+          "stage": "ranked_below",
+          "audit": {
+            "proposed": [
+              "root"
+            ],
+            "admitted": true,
+            "scored_depth": 2,
+            "finalist_score": -0.05341380590337465,
+            "winning_score": -0.048912213324612736,
+            "selected": false,
+            "matching_unit_command": null,
+            "stage_hits": [],
+            "search_action_matches": false
+          },
+          "altered_after_search": false,
+          "10": {
+            "cash": 1.82,
+            "own_cash": 29.34,
+            "enemy_cash": 27.52,
+            "base": 0.0,
+            "net_tree": 31.8,
+            "hire": 30,
+            "plants": -1,
+            "seizes": 1,
+            "deaths": 1
+          },
+          "20": {
+            "cash": 52.96,
+            "own_cash": 256.93,
+            "enemy_cash": 203.97,
+            "base": 36.7,
+            "net_tree": 46.24,
+            "hire": 30,
+            "plants": -2,
+            "seizes": 0,
+            "deaths": 1
+          },
+          "terminal": {
+            "cash": -375.1,
+            "own_cash": 394.54,
+            "enemy_cash": 769.64,
+            "base": -246.75,
+            "net_tree": -98.45,
+            "hire": 30,
+            "plants": 2,
+            "seizes": 2,
+            "deaths": -2
+          }
+        },
+        {
+          "seed": 1946222200,
+          "side": 0,
+          "turn": 92,
+          "opponent": "RyanX-AIPowercore-it960-hyb",
+          "response": "v8",
+          "root": "f6f1aca7c026b41ac4fa3e1d806ac772",
+          "same_reply": false,
+          "ready": true,
+          "differs": false,
+          "stage": "ranked_below",
+          "audit": {
+            "proposed": [
+              "root",
+              "style"
+            ],
+            "admitted": true,
+            "scored_depth": 2,
+            "finalist_score": 0.20936031537292027,
+            "winning_score": 0.23086769746279318,
+            "selected": false,
+            "matching_unit_command": null,
+            "stage_hits": [],
+            "search_action_matches": false
+          },
+          "altered_after_search": true,
+          "10": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "20": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "terminal": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          }
+        },
+        {
+          "seed": 1946222200,
+          "side": 0,
+          "turn": 92,
+          "opponent": "RyanX-AIPowercore-it960-hyb",
+          "response": "historical",
+          "root": "f6f1aca7c026b41ac4fa3e1d806ac772",
+          "same_reply": false,
+          "ready": true,
+          "differs": false,
+          "stage": "ranked_below",
+          "audit": {
+            "proposed": [
+              "root",
+              "style"
+            ],
+            "admitted": true,
+            "scored_depth": 2,
+            "finalist_score": 0.20936031537292027,
+            "winning_score": 0.23086769746279318,
+            "selected": false,
+            "matching_unit_command": null,
+            "stage_hits": [],
+            "search_action_matches": false
+          },
+          "altered_after_search": true,
+          "10": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "20": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "terminal": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          }
+        },
+        {
+          "seed": 32257995,
+          "side": 0,
+          "turn": 209,
+          "opponent": "CarbonEdge_Prometheus",
+          "response": "v8",
+          "root": "b02fe3801ed1a033338d5cce15c2ee6d",
+          "same_reply": false,
+          "ready": true,
+          "differs": true,
+          "stage": "ranked_below",
+          "audit": {
+            "proposed": [
+              "teacher"
+            ],
+            "admitted": true,
+            "scored_depth": 2,
+            "finalist_score": 0.13414011192793757,
+            "winning_score": 0.13459133699900855,
+            "selected": false,
+            "matching_unit_command": null,
+            "stage_hits": [],
+            "search_action_matches": false
+          },
+          "altered_after_search": false,
+          "10": {
+            "cash": 77.05,
+            "own_cash": 63.81,
+            "enemy_cash": -13.24,
+            "base": 110.88,
+            "net_tree": -63.84,
+            "hire": -30,
+            "plants": 1,
+            "seizes": 0,
+            "deaths": -1
+          },
+          "20": {
+            "cash": 219.23,
+            "own_cash": 41.01,
+            "enemy_cash": -178.22,
+            "base": 138.24,
+            "net_tree": -9.0,
+            "hire": -90,
+            "plants": 1,
+            "seizes": 0,
+            "deaths": -3
+          },
+          "terminal": {
+            "cash": 67.87,
+            "own_cash": 76.89,
+            "enemy_cash": 9.02,
+            "base": 154.36,
+            "net_tree": -146.41,
+            "hire": -60,
+            "plants": 2,
+            "seizes": 0,
+            "deaths": -5
+          }
+        },
+        {
+          "seed": 32257995,
+          "side": 0,
+          "turn": 209,
+          "opponent": "CarbonEdge_Prometheus",
+          "response": "historical",
+          "root": "b02fe3801ed1a033338d5cce15c2ee6d",
+          "same_reply": false,
+          "ready": true,
+          "differs": true,
+          "stage": "ranked_below",
+          "audit": {
+            "proposed": [
+              "teacher"
+            ],
+            "admitted": true,
+            "scored_depth": 2,
+            "finalist_score": 0.13414011192793757,
+            "winning_score": 0.13459133699900855,
+            "selected": false,
+            "matching_unit_command": null,
+            "stage_hits": [],
+            "search_action_matches": false
+          },
+          "altered_after_search": false,
+          "10": {
+            "cash": 50.25,
+            "own_cash": 26.83,
+            "enemy_cash": -23.42,
+            "base": 0.0,
+            "net_tree": 50.25,
+            "hire": 0,
+            "plants": -1,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "20": {
+            "cash": -23.53,
+            "own_cash": 82.21,
+            "enemy_cash": 105.74,
+            "base": -81.91,
+            "net_tree": 88.4,
+            "hire": 30,
+            "plants": -2,
+            "seizes": 0,
+            "deaths": 1
+          },
+          "terminal": {
+            "cash": 350.52,
+            "own_cash": -234.3,
+            "enemy_cash": -584.82,
+            "base": 23.62,
+            "net_tree": 356.96,
+            "hire": 30,
+            "plants": -1,
+            "seizes": 4,
+            "deaths": -1
+          }
+        },
+        {
+          "seed": 1676842485,
+          "side": 0,
+          "turn": 104,
+          "opponent": "CarbonEdge_Prometheus",
+          "response": "v8",
+          "root": "cf04f35e3658f47cf17dc32ae10dc1cc",
+          "same_reply": false,
+          "ready": true,
+          "differs": true,
+          "stage": "ranked_below",
+          "audit": {
+            "proposed": [
+              "shipping:bank"
+            ],
+            "admitted": true,
+            "scored_depth": 2,
+            "finalist_score": 0.3930252416050082,
+            "winning_score": 0.39516503724832996,
+            "selected": false,
+            "matching_unit_command": null,
+            "stage_hits": [],
+            "search_action_matches": false
+          },
+          "altered_after_search": false,
+          "10": {
+            "cash": 127.68,
+            "own_cash": 264.59,
+            "enemy_cash": 136.91,
+            "base": 147.34,
+            "net_tree": 10.37,
+            "hire": 30,
+            "plants": 0,
+            "seizes": 1,
+            "deaths": 1
+          },
+          "20": {
+            "cash": 62.14,
+            "own_cash": 125.47,
+            "enemy_cash": 63.33,
+            "base": -118.38,
+            "net_tree": 180.53,
+            "hire": 0,
+            "plants": -2,
+            "seizes": 0,
+            "deaths": 1
+          },
+          "terminal": {
+            "cash": -773.84,
+            "own_cash": -188.28,
+            "enemy_cash": 585.56,
+            "base": 65.22,
+            "net_tree": -779.07,
+            "hire": 60,
+            "plants": -6,
+            "seizes": 1,
+            "deaths": 9
+          }
+        },
+        {
+          "seed": 1676842485,
+          "side": 0,
+          "turn": 104,
+          "opponent": "CarbonEdge_Prometheus",
+          "response": "historical",
+          "root": "cf04f35e3658f47cf17dc32ae10dc1cc",
+          "same_reply": false,
+          "ready": true,
+          "differs": true,
+          "stage": "ranked_below",
+          "audit": {
+            "proposed": [
+              "shipping:bank"
+            ],
+            "admitted": true,
+            "scored_depth": 2,
+            "finalist_score": 0.3930252416050082,
+            "winning_score": 0.39516503724832996,
+            "selected": false,
+            "matching_unit_command": null,
+            "stage_hits": [],
+            "search_action_matches": false
+          },
+          "altered_after_search": false,
+          "10": {
+            "cash": -76.55,
+            "own_cash": 130.6,
+            "enemy_cash": 207.15,
+            "base": -40.09,
+            "net_tree": -6.46,
+            "hire": 30,
+            "plants": 2,
+            "seizes": -1,
+            "deaths": 1
+          },
+          "20": {
+            "cash": -147.38,
+            "own_cash": -229.28,
+            "enemy_cash": -81.9,
+            "base": -27.62,
+            "net_tree": -59.77,
+            "hire": 60,
+            "plants": 3,
+            "seizes": -3,
+            "deaths": 2
+          },
+          "terminal": {
+            "cash": 31.93,
+            "own_cash": -1837.43,
+            "enemy_cash": -1869.36,
+            "base": 433.37,
+            "net_tree": -281.45,
+            "hire": 120,
+            "plants": -1,
+            "seizes": -3,
+            "deaths": 2
+          }
+        },
+        {
+          "seed": 1700136949,
+          "side": 1,
+          "turn": 189,
+          "opponent": "CarbonEdge_Apollo",
+          "response": "v8",
+          "root": "5bf38b08e50d7acb47c4244c9e1f53ed",
+          "same_reply": false,
+          "ready": true,
+          "differs": true,
+          "stage": "ranked_below",
+          "audit": {
+            "proposed": [
+              "style"
+            ],
+            "admitted": true,
+            "scored_depth": 2,
+            "finalist_score": -0.11340041210383017,
+            "winning_score": -0.10298896363821419,
+            "selected": false,
+            "matching_unit_command": null,
+            "stage_hits": [],
+            "search_action_matches": false
+          },
+          "altered_after_search": false,
+          "10": {
+            "cash": 199.35,
+            "own_cash": -80.09,
+            "enemy_cash": -279.44,
+            "base": 197.6,
+            "net_tree": -28.25,
+            "hire": -30,
+            "plants": 1,
+            "seizes": -1,
+            "deaths": -1
+          },
+          "20": {
+            "cash": -413.12,
+            "own_cash": 103.02,
+            "enemy_cash": 516.14,
+            "base": -471.04,
+            "net_tree": 27.92,
+            "hire": -30,
+            "plants": 2,
+            "seizes": -3,
+            "deaths": -1
+          },
+          "terminal": {
+            "cash": 789.97,
+            "own_cash": 81.93,
+            "enemy_cash": -708.04,
+            "base": 922.71,
+            "net_tree": -132.76,
+            "hire": 0,
+            "plants": 4,
+            "seizes": 3,
+            "deaths": 4
+          }
+        },
+        {
+          "seed": 1700136949,
+          "side": 1,
+          "turn": 189,
+          "opponent": "CarbonEdge_Apollo",
+          "response": "historical",
+          "root": "5bf38b08e50d7acb47c4244c9e1f53ed",
+          "same_reply": false,
+          "ready": true,
+          "differs": true,
+          "stage": "ranked_below",
+          "audit": {
+            "proposed": [
+              "style"
+            ],
+            "admitted": true,
+            "scored_depth": 2,
+            "finalist_score": -0.11340041210383017,
+            "winning_score": -0.10298896363821419,
+            "selected": false,
+            "matching_unit_command": null,
+            "stage_hits": [],
+            "search_action_matches": false
+          },
+          "altered_after_search": false,
+          "10": {
+            "cash": -505.88,
+            "own_cash": -424.67,
+            "enemy_cash": 81.21,
+            "base": -540.87,
+            "net_tree": 4.97,
+            "hire": -30,
+            "plants": 0,
+            "seizes": 1,
+            "deaths": 1
+          },
+          "20": {
+            "cash": -829.79,
+            "own_cash": -270.76,
+            "enemy_cash": 559.03,
+            "base": -863.16,
+            "net_tree": 33.36,
+            "hire": 0,
+            "plants": 2,
+            "seizes": 1,
+            "deaths": 0
+          },
+          "terminal": {
+            "cash": -568.17,
+            "own_cash": -174.34,
+            "enemy_cash": 393.83,
+            "base": -352.32,
+            "net_tree": -155.9,
+            "hire": 60,
+            "plants": 7,
+            "seizes": 0,
+            "deaths": 2
+          }
+        },
+        {
+          "seed": 787902507,
+          "side": 1,
+          "turn": 194,
+          "opponent": "CarbonEdge_Apollo",
+          "response": "v8",
+          "root": "22e38a164fb7167d36f51d92ca1e5dc2",
+          "same_reply": false,
+          "ready": true,
+          "differs": true,
+          "stage": "ranked_below",
+          "audit": {
+            "proposed": [
+              "deviation"
+            ],
+            "admitted": true,
+            "scored_depth": 2,
+            "finalist_score": -0.07761029930851512,
+            "winning_score": -0.0702746248158233,
+            "selected": false,
+            "matching_unit_command": null,
+            "stage_hits": [],
+            "search_action_matches": false
+          },
+          "altered_after_search": true,
+          "10": {
+            "cash": 0.84,
+            "own_cash": 0.0,
+            "enemy_cash": -0.84,
+            "base": 0.0,
+            "net_tree": 0.84,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "20": {
+            "cash": -679.47,
+            "own_cash": -534.29,
+            "enemy_cash": 145.18,
+            "base": -717.85,
+            "net_tree": 38.39,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 2,
+            "deaths": 0
+          },
+          "terminal": {
+            "cash": 569.04,
+            "own_cash": 604.64,
+            "enemy_cash": 35.6,
+            "base": 403.46,
+            "net_tree": 135.61,
+            "hire": -30,
+            "plants": -2,
+            "seizes": 0,
+            "deaths": 1
+          }
+        },
+        {
+          "seed": 787902507,
+          "side": 1,
+          "turn": 194,
+          "opponent": "CarbonEdge_Apollo",
+          "response": "historical",
+          "root": "22e38a164fb7167d36f51d92ca1e5dc2",
+          "same_reply": false,
+          "ready": true,
+          "differs": true,
+          "stage": "ranked_below",
+          "audit": {
+            "proposed": [
+              "deviation"
+            ],
+            "admitted": true,
+            "scored_depth": 2,
+            "finalist_score": -0.07761029930851512,
+            "winning_score": -0.0702746248158233,
+            "selected": false,
+            "matching_unit_command": null,
+            "stage_hits": [],
+            "search_action_matches": false
+          },
+          "altered_after_search": true,
+          "10": {
+            "cash": -38.85,
+            "own_cash": 30.0,
+            "enemy_cash": 68.85,
+            "base": 0.0,
+            "net_tree": -38.85,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "20": {
+            "cash": -25.03,
+            "own_cash": 42.48,
+            "enemy_cash": 67.51,
+            "base": -9.5,
+            "net_tree": -15.53,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 1,
+            "deaths": 0
+          },
+          "terminal": {
+            "cash": -480.92,
+            "own_cash": 270.86,
+            "enemy_cash": 751.78,
+            "base": -282.0,
+            "net_tree": -108.88,
+            "hire": 90,
+            "plants": 6,
+            "seizes": 1,
+            "deaths": -2
+          }
+        },
+        {
+          "seed": 225914159,
+          "side": 1,
+          "turn": 90,
+          "opponent": "Artemis",
+          "response": "v8",
+          "root": "422eb40662920ca572bb10d455e900ec",
+          "same_reply": false,
+          "ready": true,
+          "differs": true,
+          "stage": "ranked_below",
+          "audit": {
+            "proposed": [
+              "root"
+            ],
+            "admitted": true,
+            "scored_depth": 2,
+            "finalist_score": 0.2886688692404083,
+            "winning_score": 0.2982561472365919,
+            "selected": false,
+            "matching_unit_command": null,
+            "stage_hits": [],
+            "search_action_matches": false
+          },
+          "altered_after_search": false,
+          "10": {
+            "cash": -111.56,
+            "own_cash": 121.28,
+            "enemy_cash": 232.84,
+            "base": -118.45,
+            "net_tree": 6.87,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 1,
+            "deaths": 0
+          },
+          "20": {
+            "cash": 161.8,
+            "own_cash": 214.01,
+            "enemy_cash": 52.21,
+            "base": 115.72,
+            "net_tree": 46.04,
+            "hire": 0,
+            "plants": -1,
+            "seizes": 1,
+            "deaths": 0
+          },
+          "terminal": {
+            "cash": 98.57,
+            "own_cash": -535.33,
+            "enemy_cash": -633.9,
+            "base": 17.53,
+            "net_tree": 110.96,
+            "hire": 30,
+            "plants": -7,
+            "seizes": 2,
+            "deaths": -1
+          }
+        },
+        {
+          "seed": 225914159,
+          "side": 1,
+          "turn": 90,
+          "opponent": "Artemis",
+          "response": "historical",
+          "root": "422eb40662920ca572bb10d455e900ec",
+          "same_reply": false,
+          "ready": true,
+          "differs": true,
+          "stage": "ranked_below",
+          "audit": {
+            "proposed": [
+              "root"
+            ],
+            "admitted": true,
+            "scored_depth": 2,
+            "finalist_score": 0.2886688692404083,
+            "winning_score": 0.2982561472365919,
+            "selected": false,
+            "matching_unit_command": null,
+            "stage_hits": [],
+            "search_action_matches": false
+          },
+          "altered_after_search": false,
+          "10": {
+            "cash": 3.49,
+            "own_cash": -71.43,
+            "enemy_cash": -74.92,
+            "base": 0.0,
+            "net_tree": 63.5,
+            "hire": 60,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 1
+          },
+          "20": {
+            "cash": 28.85,
+            "own_cash": -117.58,
+            "enemy_cash": -146.43,
+            "base": 24.53,
+            "net_tree": 34.34,
+            "hire": 30,
+            "plants": 2,
+            "seizes": -1,
+            "deaths": 1
+          },
+          "terminal": {
+            "cash": 1206.24,
+            "own_cash": 782.91,
+            "enemy_cash": -423.33,
+            "base": 1436.85,
+            "net_tree": -350.69,
+            "hire": -120,
+            "plants": -1,
+            "seizes": -2,
+            "deaths": -4
+          }
+        },
+        {
+          "seed": 845868730,
+          "side": 1,
+          "turn": 181,
+          "opponent": "CarbonEdge_Prometheus",
+          "response": "v8",
+          "root": "ef1582ed1be039f3114cc258950cb04a",
+          "same_reply": false,
+          "ready": true,
+          "differs": true,
+          "stage": "ranked_below",
+          "audit": {
+            "proposed": [
+              "root",
+              "teacher"
+            ],
+            "admitted": true,
+            "scored_depth": 2,
+            "finalist_score": 0.028431808832605182,
+            "winning_score": 0.03628105762656098,
+            "selected": false,
+            "matching_unit_command": null,
+            "stage_hits": [],
+            "search_action_matches": false
+          },
+          "altered_after_search": false,
+          "10": {
+            "cash": -89.19,
+            "own_cash": -32.73,
+            "enemy_cash": 56.46,
+            "base": -42.21,
+            "net_tree": -46.96,
+            "hire": 0,
+            "plants": 1,
+            "seizes": 0,
+            "deaths": 1
+          },
+          "20": {
+            "cash": -432.88,
+            "own_cash": -16.63,
+            "enemy_cash": 416.25,
+            "base": -282.67,
+            "net_tree": -150.22,
+            "hire": 0,
+            "plants": 2,
+            "seizes": 4,
+            "deaths": 0
+          },
+          "terminal": {
+            "cash": -719.4,
+            "own_cash": 265.92,
+            "enemy_cash": 985.32,
+            "base": -999.92,
+            "net_tree": 430.55,
+            "hire": 150,
+            "plants": -2,
+            "seizes": 12,
+            "deaths": 0
+          }
+        },
+        {
+          "seed": 845868730,
+          "side": 1,
+          "turn": 181,
+          "opponent": "CarbonEdge_Prometheus",
+          "response": "historical",
+          "root": "ef1582ed1be039f3114cc258950cb04a",
+          "same_reply": false,
+          "ready": true,
+          "differs": true,
+          "stage": "ranked_below",
+          "audit": {
+            "proposed": [
+              "root",
+              "teacher"
+            ],
+            "admitted": true,
+            "scored_depth": 2,
+            "finalist_score": 0.028431808832605182,
+            "winning_score": 0.03628105762656098,
+            "selected": false,
+            "matching_unit_command": null,
+            "stage_hits": [],
+            "search_action_matches": false
+          },
+          "altered_after_search": false,
+          "10": {
+            "cash": 108.43,
+            "own_cash": 96.97,
+            "enemy_cash": -11.46,
+            "base": 117.91,
+            "net_tree": 50.48,
+            "hire": 60,
+            "plants": -1,
+            "seizes": -1,
+            "deaths": 2
+          },
+          "20": {
+            "cash": 30.1,
+            "own_cash": -15.22,
+            "enemy_cash": -45.32,
+            "base": 76.11,
+            "net_tree": -16.06,
+            "hire": 30,
+            "plants": -1,
+            "seizes": 2,
+            "deaths": 1
+          },
+          "terminal": {
+            "cash": -48.6,
+            "own_cash": 196.11,
+            "enemy_cash": 244.71,
+            "base": -46.11,
+            "net_tree": 57.43,
+            "hire": 60,
+            "plants": 8,
+            "seizes": 0,
+            "deaths": 3
+          }
+        }
+      ]
+    }
+  },
+  "late": {
+    "bank": {
+      "roots": 4,
+      "comparisons": 7,
+      "ready_changes": 7,
+      "means": {
+        "10": {
+          "better": 0,
+          "worse": 4,
+          "tied": 0,
+          "mean": -89.44
+        },
+        "20": {
+          "better": 2,
+          "worse": 2,
+          "tied": 0,
+          "mean": -89.41
+        },
+        "terminal": {
+          "better": 1,
+          "worse": 3,
+          "tied": 0,
+          "mean": -112.75
+        }
+      },
+      "ledger_means": {
+        "10": {
+          "own_cash": -64.76,
+          "enemy_cash": 24.68,
+          "base": -52.43,
+          "net_tree": -29.51,
+          "hire": 7.5
+        },
+        "20": {
+          "own_cash": 43.69,
+          "enemy_cash": 133.1,
+          "base": -34.4,
+          "net_tree": -55.0,
+          "hire": 0
+        },
+        "terminal": {
+          "own_cash": 37.41,
+          "enemy_cash": 150.17,
+          "base": -60.99,
+          "net_tree": -25.5,
+          "hire": 26.25
+        }
+      },
+      "search_stages": {
+        "not_generated": 3,
+        "pruned": 1
+      },
+      "strictly_positive_both_replies": {},
+      "rows": [
+        {
+          "seed": 446825987,
+          "side": 0,
+          "turn": 250,
+          "opponent": "claude-AlphaCarbon-Master7sE",
+          "response": "v8",
+          "root": "4665cd15a5516650cd80eb5cda90cf43",
+          "same_reply": false,
+          "ready": true,
+          "differs": true,
+          "stage": "not_generated",
+          "audit": {
+            "proposed": [],
+            "admitted": false,
+            "scored_depth": null,
+            "finalist_score": null,
+            "winning_score": -0.10205701939939957,
+            "selected": false,
+            "matching_unit_command": null,
+            "stage_hits": [],
+            "search_action_matches": false
+          },
+          "altered_after_search": null,
+          "10": {
+            "cash": 21.35,
+            "own_cash": 182.55,
+            "enemy_cash": 161.2,
+            "base": 78.09,
+            "net_tree": -86.75,
+            "hire": -30,
+            "plants": 2,
+            "seizes": -2,
+            "deaths": 0
+          },
+          "20": {
+            "cash": -390.28,
+            "own_cash": 16.76,
+            "enemy_cash": 407.04,
+            "base": -219.8,
+            "net_tree": -140.49,
+            "hire": 30,
+            "plants": 4,
+            "seizes": 0,
+            "deaths": 1
+          },
+          "terminal": {
+            "cash": -278.86,
+            "own_cash": 89.71,
+            "enemy_cash": 368.57,
+            "base": -68.86,
+            "net_tree": -149.98,
+            "hire": 60,
+            "plants": 7,
+            "seizes": -3,
+            "deaths": 5
+          }
+        },
+        {
+          "seed": 446825987,
+          "side": 0,
+          "turn": 250,
+          "opponent": "claude-AlphaCarbon-Master7sE",
+          "response": "historical",
+          "root": "4665cd15a5516650cd80eb5cda90cf43",
+          "same_reply": false,
+          "ready": true,
+          "differs": true,
+          "stage": "not_generated",
+          "audit": {
+            "proposed": [],
+            "admitted": false,
+            "scored_depth": null,
+            "finalist_score": null,
+            "winning_score": -0.10205701939939957,
+            "selected": false,
+            "matching_unit_command": null,
+            "stage_hits": [],
+            "search_action_matches": false
+          },
+          "altered_after_search": null,
+          "10": {
+            "cash": -147.94,
+            "own_cash": -154.46,
+            "enemy_cash": -6.52,
+            "base": -130.26,
+            "net_tree": -17.66,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "20": {
+            "cash": -458.43,
+            "own_cash": -225.82,
+            "enemy_cash": 232.61,
+            "base": -399.7,
+            "net_tree": -88.69,
+            "hire": -30,
+            "plants": 2,
+            "seizes": 1,
+            "deaths": -1
+          },
+          "terminal": {
+            "cash": -100.98,
+            "own_cash": 79.94,
+            "enemy_cash": 180.92,
+            "base": -239.56,
+            "net_tree": 108.58,
+            "hire": -30,
+            "plants": 4,
+            "seizes": -1,
+            "deaths": -3
+          }
+        },
+        {
+          "seed": 1946222200,
+          "side": 0,
+          "turn": 258,
+          "opponent": "RyanX-AIPowercore-it960-hyb",
+          "response": "v8",
+          "root": "f6f1aca7c026b41ac4fa3e1d806ac772",
+          "same_reply": false,
+          "ready": true,
+          "differs": true,
+          "stage": "pruned",
+          "audit": {
+            "proposed": [
+              "shipping:bank"
+            ],
+            "admitted": true,
+            "scored_depth": 1,
+            "finalist_score": null,
+            "winning_score": 0.02032729939113012,
+            "selected": false,
+            "matching_unit_command": null,
+            "stage_hits": [],
+            "search_action_matches": false
+          },
+          "altered_after_search": null,
+          "10": {
+            "cash": -279.59,
+            "own_cash": -315.53,
+            "enemy_cash": -35.94,
+            "base": -200.36,
+            "net_tree": -79.23,
+            "hire": 0,
+            "plants": 2,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "20": {
+            "cash": -58.45,
+            "own_cash": 7.26,
+            "enemy_cash": 65.71,
+            "base": 148.7,
+            "net_tree": -237.11,
+            "hire": -30,
+            "plants": 5,
+            "seizes": -4,
+            "deaths": -1
+          },
+          "terminal": {
+            "cash": 226.01,
+            "own_cash": 51.95,
+            "enemy_cash": -174.06,
+            "base": 449.52,
+            "net_tree": -193.46,
+            "hire": 30,
+            "plants": 7,
+            "seizes": -2,
+            "deaths": 0
+          }
+        },
+        {
+          "seed": 1946222200,
+          "side": 0,
+          "turn": 258,
+          "opponent": "RyanX-AIPowercore-it960-hyb",
+          "response": "historical",
+          "root": "f6f1aca7c026b41ac4fa3e1d806ac772",
+          "same_reply": false,
+          "ready": true,
+          "differs": true,
+          "stage": "pruned",
+          "audit": {
+            "proposed": [
+              "shipping:bank"
+            ],
+            "admitted": true,
+            "scored_depth": 1,
+            "finalist_score": null,
+            "winning_score": 0.02032729939113012,
+            "selected": false,
+            "matching_unit_command": null,
+            "stage_hits": [],
+            "search_action_matches": false
+          },
+          "altered_after_search": null,
+          "10": {
+            "cash": -127.39,
+            "own_cash": -66.03,
+            "enemy_cash": 61.36,
+            "base": -51.0,
+            "net_tree": -76.4,
+            "hire": 0,
+            "plants": 3,
+            "seizes": -1,
+            "deaths": 0
+          },
+          "20": {
+            "cash": 167.86,
+            "own_cash": 260.18,
+            "enemy_cash": 92.32,
+            "base": 213.53,
+            "net_tree": -45.69,
+            "hire": 0,
+            "plants": 5,
+            "seizes": -4,
+            "deaths": 0
+          },
+          "terminal": {
+            "cash": -56.32,
+            "own_cash": -350.36,
+            "enemy_cash": -294.04,
+            "base": 168.84,
+            "net_tree": -165.19,
+            "hire": 60,
+            "plants": 2,
+            "seizes": -6,
+            "deaths": 3
+          }
+        },
+        {
+          "seed": 225914159,
+          "side": 1,
+          "turn": 239,
+          "opponent": "Artemis",
+          "response": "v8",
+          "root": "422eb40662920ca572bb10d455e900ec",
+          "same_reply": true,
+          "ready": true,
+          "differs": true,
+          "stage": "not_generated",
+          "audit": {
+            "proposed": [],
+            "admitted": false,
+            "scored_depth": null,
+            "finalist_score": null,
+            "winning_score": 0.11013985958528502,
+            "selected": false,
+            "matching_unit_command": null,
+            "stage_hits": [],
+            "search_action_matches": false
+          },
+          "altered_after_search": null,
+          "10": {
+            "cash": -18.39,
+            "own_cash": -4.29,
+            "enemy_cash": 14.1,
+            "base": 0.0,
+            "net_tree": 11.63,
+            "hire": 30,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 1
+          },
+          "20": {
+            "cash": -25.45,
+            "own_cash": 84.68,
+            "enemy_cash": 110.13,
+            "base": 64.95,
+            "net_tree": -60.38,
+            "hire": 30,
+            "plants": 1,
+            "seizes": -1,
+            "deaths": 1
+          },
+          "terminal": {
+            "cash": -102.01,
+            "own_cash": 201.22,
+            "enemy_cash": 303.23,
+            "base": 4.44,
+            "net_tree": -46.44,
+            "hire": 60,
+            "plants": 2,
+            "seizes": -2,
+            "deaths": -2
+          }
+        },
+        {
+          "seed": 225914159,
+          "side": 1,
+          "turn": 239,
+          "opponent": "Artemis",
+          "response": "historical",
+          "root": "422eb40662920ca572bb10d455e900ec",
+          "same_reply": true,
+          "ready": true,
+          "differs": true,
+          "stage": "not_generated",
+          "audit": {
+            "proposed": [],
+            "admitted": false,
+            "scored_depth": null,
+            "finalist_score": null,
+            "winning_score": 0.11013985958528502,
+            "selected": false,
+            "matching_unit_command": null,
+            "stage_hits": [],
+            "search_action_matches": false
+          },
+          "altered_after_search": null,
+          "10": {
+            "cash": -18.39,
+            "own_cash": -4.29,
+            "enemy_cash": 14.1,
+            "base": 0.0,
+            "net_tree": 11.63,
+            "hire": 30,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 1
+          },
+          "20": {
+            "cash": -25.45,
+            "own_cash": 84.68,
+            "enemy_cash": 110.13,
+            "base": 64.95,
+            "net_tree": -60.38,
+            "hire": 30,
+            "plants": 1,
+            "seizes": -1,
+            "deaths": 1
+          },
+          "terminal": {
+            "cash": -102.01,
+            "own_cash": 201.22,
+            "enemy_cash": 303.23,
+            "base": 4.44,
+            "net_tree": -46.44,
+            "hire": 60,
+            "plants": 2,
+            "seizes": -2,
+            "deaths": -2
+          }
+        },
+        {
+          "seed": 845868730,
+          "side": 1,
+          "turn": 254,
+          "opponent": "CarbonEdge_Prometheus",
+          "response": "v8",
+          "root": "ef1582ed1be039f3114cc258950cb04a",
+          "same_reply": false,
+          "ready": true,
+          "differs": true,
+          "stage": "not_generated",
+          "audit": {
+            "proposed": [],
+            "admitted": false,
+            "scored_depth": null,
+            "finalist_score": null,
+            "winning_score": -0.09963687496868949,
+            "selected": false,
+            "matching_unit_command": null,
+            "stage_hits": [],
+            "search_action_matches": false
+          },
+          "altered_after_search": null,
+          "10": {
+            "cash": -154.6,
+            "own_cash": -144.52,
+            "enemy_cash": 10.08,
+            "base": -115.93,
+            "net_tree": -38.68,
+            "hire": 0,
+            "plants": 1,
+            "seizes": -1,
+            "deaths": 0
+          },
+          "20": {
+            "cash": -85.32,
+            "own_cash": 5.61,
+            "enemy_cash": 90.93,
+            "base": -206.52,
+            "net_tree": 121.19,
+            "hire": 0,
+            "plants": -2,
+            "seizes": 1,
+            "deaths": 0
+          },
+          "terminal": {
+            "cash": -46.57,
+            "own_cash": 216.39,
+            "enemy_cash": 262.96,
+            "base": -133.52,
+            "net_tree": 116.99,
+            "hire": 30,
+            "plants": -5,
+            "seizes": 4,
+            "deaths": 1
+          }
+        },
+        {
+          "seed": 845868730,
+          "side": 1,
+          "turn": 254,
+          "opponent": "CarbonEdge_Prometheus",
+          "response": "historical",
+          "root": "ef1582ed1be039f3114cc258950cb04a",
+          "same_reply": false,
+          "ready": true,
+          "differs": true,
+          "stage": "not_generated",
+          "audit": {
+            "proposed": [],
+            "admitted": false,
+            "scored_depth": null,
+            "finalist_score": null,
+            "winning_score": -0.09963687496868949,
+            "selected": false,
+            "matching_unit_command": null,
+            "stage_hits": [],
+            "search_action_matches": false
+          },
+          "altered_after_search": null,
+          "10": {
+            "cash": 9.41,
+            "own_cash": -11.49,
+            "enemy_cash": -20.9,
+            "base": 0.0,
+            "net_tree": 39.41,
+            "hire": 30,
+            "plants": -1,
+            "seizes": 0,
+            "deaths": 1
+          },
+          "20": {
+            "cash": 160.21,
+            "own_cash": 116.14,
+            "enemy_cash": -44.07,
+            "base": 58.67,
+            "net_tree": 71.55,
+            "hire": -30,
+            "plants": -1,
+            "seizes": 1,
+            "deaths": -1
+          },
+          "terminal": {
+            "cash": -441.27,
+            "own_cash": -190.76,
+            "enemy_cash": 250.51,
+            "base": -673.21,
+            "net_tree": 171.95,
+            "hire": -60,
+            "plants": 3,
+            "seizes": 0,
+            "deaths": -5
+          }
+        }
+      ]
+    },
+    "intercept": {
+      "roots": 4,
+      "comparisons": 7,
+      "ready_changes": 1,
+      "means": {
+        "10": {
+          "better": 1,
+          "worse": 0,
+          "tied": 3,
+          "mean": 64.23
+        },
+        "20": {
+          "better": 1,
+          "worse": 0,
+          "tied": 3,
+          "mean": 42.73
+        },
+        "terminal": {
+          "better": 0,
+          "worse": 1,
+          "tied": 3,
+          "mean": -68.33
+        }
+      },
+      "ledger_means": {
+        "10": {
+          "own_cash": 54.66,
+          "enemy_cash": -9.58,
+          "base": 51.55,
+          "net_tree": 12.68,
+          "hire": 0
+        },
+        "20": {
+          "own_cash": 60.05,
+          "enemy_cash": 17.32,
+          "base": 53.59,
+          "net_tree": -3.36,
+          "hire": 7.5
+        },
+        "terminal": {
+          "own_cash": 14.11,
+          "enemy_cash": 82.44,
+          "base": -79.77,
+          "net_tree": 26.46,
+          "hire": 15
+        }
+      },
+      "search_stages": {
+        "not_generated": 1
+      },
+      "strictly_positive_both_replies": {},
+      "rows": [
+        {
+          "seed": 446825987,
+          "side": 0,
+          "turn": 250,
+          "opponent": "claude-AlphaCarbon-Master7sE",
+          "response": "v8",
+          "root": "4665cd15a5516650cd80eb5cda90cf43",
+          "same_reply": false,
+          "ready": false,
+          "differs": false,
+          "stage": "selected",
+          "audit": {
+            "proposed": [
+              "style"
+            ],
+            "admitted": true,
+            "scored_depth": 2,
+            "finalist_score": -0.10205701939939957,
+            "winning_score": -0.10205701939939957,
+            "selected": true,
+            "matching_unit_command": null,
+            "stage_hits": [
+              "search",
+              "_reply_choice",
+              "_v6_last_worker",
+              "_v7_cash_route",
+              "_v7_keep_float",
+              "_v7_short_deposit",
+              "_v7_corridor",
+              "_v7_solvency",
+              "_r6_opening",
+              "_v7_early_income",
+              "executed"
+            ],
+            "search_action_matches": true
+          },
+          "altered_after_search": null,
+          "10": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "20": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "terminal": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          }
+        },
+        {
+          "seed": 446825987,
+          "side": 0,
+          "turn": 250,
+          "opponent": "claude-AlphaCarbon-Master7sE",
+          "response": "historical",
+          "root": "4665cd15a5516650cd80eb5cda90cf43",
+          "same_reply": false,
+          "ready": false,
+          "differs": false,
+          "stage": "selected",
+          "audit": {
+            "proposed": [
+              "style"
+            ],
+            "admitted": true,
+            "scored_depth": 2,
+            "finalist_score": -0.10205701939939957,
+            "winning_score": -0.10205701939939957,
+            "selected": true,
+            "matching_unit_command": null,
+            "stage_hits": [
+              "search",
+              "_reply_choice",
+              "_v6_last_worker",
+              "_v7_cash_route",
+              "_v7_keep_float",
+              "_v7_short_deposit",
+              "_v7_corridor",
+              "_v7_solvency",
+              "_r6_opening",
+              "_v7_early_income",
+              "executed"
+            ],
+            "search_action_matches": true
+          },
+          "altered_after_search": null,
+          "10": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "20": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "terminal": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          }
+        },
+        {
+          "seed": 1946222200,
+          "side": 0,
+          "turn": 258,
+          "opponent": "RyanX-AIPowercore-it960-hyb",
+          "response": "v8",
+          "root": "f6f1aca7c026b41ac4fa3e1d806ac772",
+          "same_reply": false,
+          "ready": false,
+          "differs": false,
+          "stage": "selected",
+          "audit": {
+            "proposed": [
+              "root",
+              "teacher",
+              "style"
+            ],
+            "admitted": true,
+            "scored_depth": 2,
+            "finalist_score": 0.02032729939113012,
+            "winning_score": 0.02032729939113012,
+            "selected": true,
+            "matching_unit_command": null,
+            "stage_hits": [
+              "search",
+              "_reply_choice",
+              "_v6_last_worker",
+              "_v7_cash_route",
+              "_v7_keep_float",
+              "_v7_short_deposit",
+              "_v7_corridor",
+              "_v7_solvency",
+              "_r6_opening",
+              "_v7_early_income",
+              "executed"
+            ],
+            "search_action_matches": true
+          },
+          "altered_after_search": null,
+          "10": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "20": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "terminal": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          }
+        },
+        {
+          "seed": 1946222200,
+          "side": 0,
+          "turn": 258,
+          "opponent": "RyanX-AIPowercore-it960-hyb",
+          "response": "historical",
+          "root": "f6f1aca7c026b41ac4fa3e1d806ac772",
+          "same_reply": false,
+          "ready": false,
+          "differs": false,
+          "stage": "selected",
+          "audit": {
+            "proposed": [
+              "root",
+              "teacher",
+              "style"
+            ],
+            "admitted": true,
+            "scored_depth": 2,
+            "finalist_score": 0.02032729939113012,
+            "winning_score": 0.02032729939113012,
+            "selected": true,
+            "matching_unit_command": null,
+            "stage_hits": [
+              "search",
+              "_reply_choice",
+              "_v6_last_worker",
+              "_v7_cash_route",
+              "_v7_keep_float",
+              "_v7_short_deposit",
+              "_v7_corridor",
+              "_v7_solvency",
+              "_r6_opening",
+              "_v7_early_income",
+              "executed"
+            ],
+            "search_action_matches": true
+          },
+          "altered_after_search": null,
+          "10": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "20": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "terminal": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          }
+        },
+        {
+          "seed": 225914159,
+          "side": 1,
+          "turn": 239,
+          "opponent": "Artemis",
+          "response": "v8",
+          "root": "422eb40662920ca572bb10d455e900ec",
+          "same_reply": true,
+          "ready": true,
+          "differs": true,
+          "stage": "not_generated",
+          "audit": {
+            "proposed": [],
+            "admitted": false,
+            "scored_depth": null,
+            "finalist_score": null,
+            "winning_score": 0.11013985958528502,
+            "selected": false,
+            "matching_unit_command": null,
+            "stage_hits": [],
+            "search_action_matches": false
+          },
+          "altered_after_search": null,
+          "10": {
+            "cash": 256.93,
+            "own_cash": 218.62,
+            "enemy_cash": -38.31,
+            "base": 206.22,
+            "net_tree": 50.71,
+            "hire": 0,
+            "plants": -1,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "20": {
+            "cash": 170.91,
+            "own_cash": 240.18,
+            "enemy_cash": 69.27,
+            "base": 214.35,
+            "net_tree": -13.45,
+            "hire": 30,
+            "plants": -1,
+            "seizes": 0,
+            "deaths": 1
+          },
+          "terminal": {
+            "cash": -273.3,
+            "own_cash": 56.44,
+            "enemy_cash": 329.74,
+            "base": -319.08,
+            "net_tree": 105.83,
+            "hire": 60,
+            "plants": -1,
+            "seizes": 1,
+            "deaths": 0
+          }
+        },
+        {
+          "seed": 225914159,
+          "side": 1,
+          "turn": 239,
+          "opponent": "Artemis",
+          "response": "historical",
+          "root": "422eb40662920ca572bb10d455e900ec",
+          "same_reply": true,
+          "ready": true,
+          "differs": true,
+          "stage": "not_generated",
+          "audit": {
+            "proposed": [],
+            "admitted": false,
+            "scored_depth": null,
+            "finalist_score": null,
+            "winning_score": 0.11013985958528502,
+            "selected": false,
+            "matching_unit_command": null,
+            "stage_hits": [],
+            "search_action_matches": false
+          },
+          "altered_after_search": null,
+          "10": {
+            "cash": 256.93,
+            "own_cash": 218.62,
+            "enemy_cash": -38.31,
+            "base": 206.22,
+            "net_tree": 50.71,
+            "hire": 0,
+            "plants": -1,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "20": {
+            "cash": 170.91,
+            "own_cash": 240.18,
+            "enemy_cash": 69.27,
+            "base": 214.35,
+            "net_tree": -13.45,
+            "hire": 30,
+            "plants": -1,
+            "seizes": 0,
+            "deaths": 1
+          },
+          "terminal": {
+            "cash": -273.3,
+            "own_cash": 56.44,
+            "enemy_cash": 329.74,
+            "base": -319.08,
+            "net_tree": 105.83,
+            "hire": 60,
+            "plants": -1,
+            "seizes": 1,
+            "deaths": 0
+          }
+        },
+        {
+          "seed": 845868730,
+          "side": 1,
+          "turn": 254,
+          "opponent": "CarbonEdge_Prometheus",
+          "response": "v8",
+          "root": "ef1582ed1be039f3114cc258950cb04a",
+          "same_reply": false,
+          "ready": false,
+          "differs": false,
+          "stage": "selected",
+          "audit": {
+            "proposed": [
+              "root",
+              "teacher",
+              "style"
+            ],
+            "admitted": true,
+            "scored_depth": 2,
+            "finalist_score": -0.09963687496868949,
+            "winning_score": -0.09963687496868949,
+            "selected": true,
+            "matching_unit_command": null,
+            "stage_hits": [
+              "search",
+              "_reply_choice",
+              "_v6_last_worker",
+              "_v7_cash_route",
+              "_v7_keep_float",
+              "_v7_short_deposit",
+              "_v7_corridor",
+              "_v7_solvency",
+              "_r6_opening",
+              "_v7_early_income",
+              "executed"
+            ],
+            "search_action_matches": true
+          },
+          "altered_after_search": null,
+          "10": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "20": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "terminal": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          }
+        },
+        {
+          "seed": 845868730,
+          "side": 1,
+          "turn": 254,
+          "opponent": "CarbonEdge_Prometheus",
+          "response": "historical",
+          "root": "ef1582ed1be039f3114cc258950cb04a",
+          "same_reply": false,
+          "ready": false,
+          "differs": false,
+          "stage": "selected",
+          "audit": {
+            "proposed": [
+              "root",
+              "teacher",
+              "style"
+            ],
+            "admitted": true,
+            "scored_depth": 2,
+            "finalist_score": -0.09963687496868949,
+            "winning_score": -0.09963687496868949,
+            "selected": true,
+            "matching_unit_command": null,
+            "stage_hits": [
+              "search",
+              "_reply_choice",
+              "_v6_last_worker",
+              "_v7_cash_route",
+              "_v7_keep_float",
+              "_v7_short_deposit",
+              "_v7_corridor",
+              "_v7_solvency",
+              "_r6_opening",
+              "_v7_early_income",
+              "executed"
+            ],
+            "search_action_matches": true
+          },
+          "altered_after_search": null,
+          "10": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "20": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "terminal": {
+            "cash": 0.0,
+            "own_cash": 0.0,
+            "enemy_cash": 0.0,
+            "base": 0.0,
+            "net_tree": 0.0,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 0,
+            "deaths": 0
+          }
+        }
+      ]
+    },
+    "runner_up": {
+      "roots": 4,
+      "comparisons": 7,
+      "ready_changes": 7,
+      "means": {
+        "10": {
+          "better": 2,
+          "worse": 2,
+          "tied": 0,
+          "mean": 83.76
+        },
+        "20": {
+          "better": 1,
+          "worse": 3,
+          "tied": 0,
+          "mean": -103.85
+        },
+        "terminal": {
+          "better": 3,
+          "worse": 1,
+          "tied": 0,
+          "mean": 81.63
+        }
+      },
+      "ledger_means": {
+        "10": {
+          "own_cash": 100.59,
+          "enemy_cash": 16.83,
+          "base": 43.86,
+          "net_tree": 39.9,
+          "hire": 0
+        },
+        "20": {
+          "own_cash": 61.05,
+          "enemy_cash": 164.91,
+          "base": -110.36,
+          "net_tree": -1.01,
+          "hire": -7.5
+        },
+        "terminal": {
+          "own_cash": 80.98,
+          "enemy_cash": -0.66,
+          "base": 92.6,
+          "net_tree": 7.78,
+          "hire": 18.75
+        }
+      },
+      "search_stages": {
+        "ranked_below": 4
+      },
+      "strictly_positive_both_replies": {
+        "10": {
+          "ranked_below": 1
+        }
+      },
+      "rows": [
+        {
+          "seed": 446825987,
+          "side": 0,
+          "turn": 250,
+          "opponent": "claude-AlphaCarbon-Master7sE",
+          "response": "v8",
+          "root": "4665cd15a5516650cd80eb5cda90cf43",
+          "same_reply": false,
+          "ready": true,
+          "differs": true,
+          "stage": "ranked_below",
+          "audit": {
+            "proposed": [
+              "root"
+            ],
+            "admitted": true,
+            "scored_depth": 2,
+            "finalist_score": -0.1310662986693162,
+            "winning_score": -0.10205701939939957,
+            "selected": false,
+            "matching_unit_command": null,
+            "stage_hits": [],
+            "search_action_matches": false
+          },
+          "altered_after_search": false,
+          "10": {
+            "cash": -128.39,
+            "own_cash": 36.07,
+            "enemy_cash": 164.46,
+            "base": -34.15,
+            "net_tree": -124.24,
+            "hire": -30,
+            "plants": 3,
+            "seizes": -3,
+            "deaths": 0
+          },
+          "20": {
+            "cash": -435.37,
+            "own_cash": 248.27,
+            "enemy_cash": 683.64,
+            "base": -350.28,
+            "net_tree": -85.12,
+            "hire": 0,
+            "plants": 3,
+            "seizes": -3,
+            "deaths": 0
+          },
+          "terminal": {
+            "cash": -36.04,
+            "own_cash": 406.32,
+            "enemy_cash": 442.36,
+            "base": 25.39,
+            "net_tree": -31.46,
+            "hire": 30,
+            "plants": 5,
+            "seizes": -4,
+            "deaths": 3
+          }
+        },
+        {
+          "seed": 446825987,
+          "side": 0,
+          "turn": 250,
+          "opponent": "claude-AlphaCarbon-Master7sE",
+          "response": "historical",
+          "root": "4665cd15a5516650cd80eb5cda90cf43",
+          "same_reply": false,
+          "ready": true,
+          "differs": true,
+          "stage": "ranked_below",
+          "audit": {
+            "proposed": [
+              "root"
+            ],
+            "admitted": true,
+            "scored_depth": 2,
+            "finalist_score": -0.1310662986693162,
+            "winning_score": -0.10205701939939957,
+            "selected": false,
+            "matching_unit_command": null,
+            "stage_hits": [],
+            "search_action_matches": false
+          },
+          "altered_after_search": false,
+          "10": {
+            "cash": -187.14,
+            "own_cash": -20.94,
+            "enemy_cash": 166.2,
+            "base": -228.24,
+            "net_tree": 41.09,
+            "hire": 0,
+            "plants": -1,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "20": {
+            "cash": -308.26,
+            "own_cash": -119.1,
+            "enemy_cash": 189.16,
+            "base": -316.6,
+            "net_tree": 8.32,
+            "hire": 0,
+            "plants": 0,
+            "seizes": 2,
+            "deaths": 0
+          },
+          "terminal": {
+            "cash": 139.74,
+            "own_cash": -154.41,
+            "enemy_cash": -294.15,
+            "base": 403.83,
+            "net_tree": -234.11,
+            "hire": 30,
+            "plants": 2,
+            "seizes": -6,
+            "deaths": 0
+          }
+        },
+        {
+          "seed": 1946222200,
+          "side": 0,
+          "turn": 258,
+          "opponent": "RyanX-AIPowercore-it960-hyb",
+          "response": "v8",
+          "root": "f6f1aca7c026b41ac4fa3e1d806ac772",
+          "same_reply": false,
+          "ready": true,
+          "differs": true,
+          "stage": "ranked_below",
+          "audit": {
+            "proposed": [
+              "patch"
+            ],
+            "admitted": true,
+            "scored_depth": 2,
+            "finalist_score": -0.007545551553433533,
+            "winning_score": 0.02032729939113012,
+            "selected": false,
+            "matching_unit_command": null,
+            "stage_hits": [],
+            "search_action_matches": false
+          },
+          "altered_after_search": false,
+          "10": {
+            "cash": -134.02,
+            "own_cash": -181.17,
+            "enemy_cash": -47.15,
+            "base": -173.4,
+            "net_tree": 9.39,
+            "hire": -30,
+            "plants": -2,
+            "seizes": 1,
+            "deaths": 0
+          },
+          "20": {
+            "cash": -129.28,
+            "own_cash": 22.69,
+            "enemy_cash": 151.97,
+            "base": -47.91,
+            "net_tree": -111.33,
+            "hire": -30,
+            "plants": 0,
+            "seizes": 1,
+            "deaths": -1
+          },
+          "terminal": {
+            "cash": 284.74,
+            "own_cash": 92.4,
+            "enemy_cash": -192.34,
+            "base": 299.92,
+            "net_tree": -15.11,
+            "hire": 0,
+            "plants": -2,
+            "seizes": 0,
+            "deaths": 1
+          }
+        },
+        {
+          "seed": 1946222200,
+          "side": 0,
+          "turn": 258,
+          "opponent": "RyanX-AIPowercore-it960-hyb",
+          "response": "historical",
+          "root": "f6f1aca7c026b41ac4fa3e1d806ac772",
+          "same_reply": false,
+          "ready": true,
+          "differs": true,
+          "stage": "ranked_below",
+          "audit": {
+            "proposed": [
+              "patch"
+            ],
+            "admitted": true,
+            "scored_depth": 2,
+            "finalist_score": -0.007545551553433533,
+            "winning_score": 0.02032729939113012,
+            "selected": false,
+            "matching_unit_command": null,
+            "stage_hits": [],
+            "search_action_matches": false
+          },
+          "altered_after_search": false,
+          "10": {
+            "cash": -8.22,
+            "own_cash": -2.31,
+            "enemy_cash": 5.91,
+            "base": 0.0,
+            "net_tree": -8.24,
+            "hire": 0,
+            "plants": 0,
+            "seizes": -1,
+            "deaths": 0
+          },
+          "20": {
+            "cash": 52.48,
+            "own_cash": -82.99,
+            "enemy_cash": -135.47,
+            "base": 89.32,
+            "net_tree": -36.88,
+            "hire": 0,
+            "plants": 1,
+            "seizes": -2,
+            "deaths": 0
+          },
+          "terminal": {
+            "cash": -459.05,
+            "own_cash": -347.56,
+            "enemy_cash": 111.49,
+            "base": -237.61,
+            "net_tree": -131.45,
+            "hire": 90,
+            "plants": 0,
+            "seizes": -2,
+            "deaths": 1
+          }
+        },
+        {
+          "seed": 225914159,
+          "side": 1,
+          "turn": 239,
+          "opponent": "Artemis",
+          "response": "v8",
+          "root": "422eb40662920ca572bb10d455e900ec",
+          "same_reply": true,
+          "ready": true,
+          "differs": true,
+          "stage": "ranked_below",
+          "audit": {
+            "proposed": [
+              "root",
+              "style"
+            ],
+            "admitted": true,
+            "scored_depth": 2,
+            "finalist_score": 0.10667751596933184,
+            "winning_score": 0.11013985958528502,
+            "selected": false,
+            "matching_unit_command": null,
+            "stage_hits": [],
+            "search_action_matches": false
+          },
+          "altered_after_search": false,
+          "10": {
+            "cash": 295.27,
+            "own_cash": 241.24,
+            "enemy_cash": -54.03,
+            "base": 238.86,
+            "net_tree": 86.41,
+            "hire": 30,
+            "plants": -3,
+            "seizes": 1,
+            "deaths": 1
+          },
+          "20": {
+            "cash": -31.97,
+            "own_cash": 131.5,
+            "enemy_cash": 163.47,
+            "base": -10.36,
+            "net_tree": -21.62,
+            "hire": 0,
+            "plants": -3,
+            "seizes": 2,
+            "deaths": 0
+          },
+          "terminal": {
+            "cash": 323.88,
+            "own_cash": 232.12,
+            "enemy_cash": -91.76,
+            "base": 298.66,
+            "net_tree": 55.18,
+            "hire": 30,
+            "plants": -4,
+            "seizes": 3,
+            "deaths": -3
+          }
+        },
+        {
+          "seed": 225914159,
+          "side": 1,
+          "turn": 239,
+          "opponent": "Artemis",
+          "response": "historical",
+          "root": "422eb40662920ca572bb10d455e900ec",
+          "same_reply": true,
+          "ready": true,
+          "differs": true,
+          "stage": "ranked_below",
+          "audit": {
+            "proposed": [
+              "root",
+              "style"
+            ],
+            "admitted": true,
+            "scored_depth": 2,
+            "finalist_score": 0.10667751596933184,
+            "winning_score": 0.11013985958528502,
+            "selected": false,
+            "matching_unit_command": null,
+            "stage_hits": [],
+            "search_action_matches": false
+          },
+          "altered_after_search": false,
+          "10": {
+            "cash": 295.27,
+            "own_cash": 241.24,
+            "enemy_cash": -54.03,
+            "base": 238.86,
+            "net_tree": 86.41,
+            "hire": 30,
+            "plants": -3,
+            "seizes": 1,
+            "deaths": 1
+          },
+          "20": {
+            "cash": -31.97,
+            "own_cash": 131.5,
+            "enemy_cash": 163.47,
+            "base": -10.36,
+            "net_tree": -21.62,
+            "hire": 0,
+            "plants": -3,
+            "seizes": 2,
+            "deaths": 0
+          },
+          "terminal": {
+            "cash": 323.88,
+            "own_cash": 232.12,
+            "enemy_cash": -91.76,
+            "base": 298.66,
+            "net_tree": 55.18,
+            "hire": 30,
+            "plants": -4,
+            "seizes": 3,
+            "deaths": -3
+          }
+        },
+        {
+          "seed": 845868730,
+          "side": 1,
+          "turn": 254,
+          "opponent": "CarbonEdge_Prometheus",
+          "response": "v8",
+          "root": "ef1582ed1be039f3114cc258950cb04a",
+          "same_reply": false,
+          "ready": true,
+          "differs": true,
+          "stage": "ranked_below",
+          "audit": {
+            "proposed": [
+              "deviation"
+            ],
+            "admitted": true,
+            "scored_depth": 2,
+            "finalist_score": -0.10523526899478461,
+            "winning_score": -0.09963687496868949,
+            "selected": false,
+            "matching_unit_command": null,
+            "stage_hits": [],
+            "search_action_matches": false
+          },
+          "altered_after_search": false,
+          "10": {
+            "cash": 152.36,
+            "own_cash": 172.33,
+            "enemy_cash": 19.97,
+            "base": 86.68,
+            "net_tree": 65.7,
+            "hire": 0,
+            "plants": -1,
+            "seizes": -1,
+            "deaths": 0
+          },
+          "20": {
+            "cash": -14.11,
+            "own_cash": 138.04,
+            "enemy_cash": 152.15,
+            "base": -192.47,
+            "net_tree": 178.37,
+            "hire": 0,
+            "plants": -4,
+            "seizes": 2,
+            "deaths": 0
+          },
+          "terminal": {
+            "cash": 425.76,
+            "own_cash": 339.44,
+            "enemy_cash": -86.32,
+            "base": 98.14,
+            "net_tree": 327.66,
+            "hire": 0,
+            "plants": -7,
+            "seizes": 8,
+            "deaths": -7
+          }
+        },
+        {
+          "seed": 845868730,
+          "side": 1,
+          "turn": 254,
+          "opponent": "CarbonEdge_Prometheus",
+          "response": "historical",
+          "root": "ef1582ed1be039f3114cc258950cb04a",
+          "same_reply": false,
+          "ready": true,
+          "differs": true,
+          "stage": "ranked_below",
+          "audit": {
+            "proposed": [
+              "deviation"
+            ],
+            "admitted": true,
+            "scored_depth": 2,
+            "finalist_score": -0.10523526899478461,
+            "winning_score": -0.09963687496868949,
+            "selected": false,
+            "matching_unit_command": null,
+            "stage_hits": [],
+            "search_action_matches": false
+          },
+          "altered_after_search": false,
+          "10": {
+            "cash": 384.95,
+            "own_cash": 318.24,
+            "enemy_cash": -66.71,
+            "base": 222.24,
+            "net_tree": 162.71,
+            "hire": 0,
+            "plants": -3,
+            "seizes": 0,
+            "deaths": 0
+          },
+          "20": {
+            "cash": 67.65,
+            "own_cash": 18.52,
+            "enemy_cash": -49.13,
+            "base": -44.18,
+            "net_tree": 81.82,
+            "hire": -30,
+            "plants": -3,
+            "seizes": 0,
+            "deaths": -1
+          },
+          "terminal": {
+            "cash": -349.84,
+            "own_cash": -152.61,
+            "enemy_cash": 197.23,
+            "base": -446.22,
+            "net_tree": 36.36,
+            "hire": -60,
+            "plants": -4,
+            "seizes": 4,
+            "deaths": -8
+          }
+        }
+      ]
+    }
+  }
+}
