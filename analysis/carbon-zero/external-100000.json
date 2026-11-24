@@ -1,0 +1,448 @@
+{
+  "ZW0": {
+    "pure": {
+      "parity": [
+        7.62939453125e-06,
+        6.9141387939453125e-06
+      ],
+      "sha256": "c79475704c779364819ed40b1d1a6c7ee9c41330e1fd67cc270d79cc5a11451d",
+      "verified_actions": 64,
+      "size_bytes": 5539036,
+      "external": {
+        "ft3-generic-no-search": {
+          "source_sha256": "920f656a31277751651883099d3bc2891a68412a69533cce4af3e3c801ba9446",
+          "games": [
+            {
+              "seed": 2198371464,
+              "seat": 0,
+              "turns": 299,
+              "scores": [
+                8222.36,
+                7325.96
+              ],
+              "margin": 896.4,
+              "utility": 0.7676697898079206,
+              "elimination": false
+            },
+            {
+              "seed": 2198371464,
+              "seat": 1,
+              "turns": 299,
+              "scores": [
+                7473.51,
+                7172.44
+              ],
+              "margin": -301.07,
+              "utility": -0.5990303837980051,
+              "elimination": false
+            },
+            {
+              "seed": 1413482652,
+              "seat": 0,
+              "turns": 299,
+              "scores": [
+                5182.43,
+                5154.69
+              ],
+              "margin": 27.74,
+              "utility": 0.5092456126804423,
+              "elimination": false
+            },
+            {
+              "seed": 1413482652,
+              "seat": 1,
+              "turns": 299,
+              "scores": [
+                5946.93,
+                6332.23
+              ],
+              "margin": 385.3,
+              "utility": 0.6256812463415506,
+              "elimination": false
+            }
+          ]
+        },
+        "yan-v6-no-search": {
+          "source_sha256": "e5c328aa5d18ced597791e7b839088f1a37d18e4e8dc83dd3d54b13d66e877b0",
+          "games": [
+            {
+              "seed": 1760658325,
+              "seat": 0,
+              "turns": 299,
+              "scores": [
+                7631.62,
+                8778.42
+              ],
+              "margin": -1146.8,
+              "utility": -0.821869715365658,
+              "elimination": false
+            },
+            {
+              "seed": 1760658325,
+              "seat": 1,
+              "turns": 299,
+              "scores": [
+                8522.58,
+                8192.02
+              ],
+              "margin": -330.56,
+              "utility": -0.6084369320779668,
+              "elimination": false
+            },
+            {
+              "seed": 2015130574,
+              "seat": 0,
+              "turns": 299,
+              "scores": [
+                8841.28,
+                8642.46
+              ],
+              "margin": 198.82,
+              "utility": 0.5658879311893128,
+              "elimination": false
+            },
+            {
+              "seed": 2015130574,
+              "seat": 1,
+              "turns": 299,
+              "scores": [
+                7887.1,
+                7120.19
+              ],
+              "margin": -766.91,
+              "utility": -0.7354683623303251,
+              "elimination": false
+            }
+          ]
+        }
+      }
+    },
+    "search": {
+      "parity": [
+        7.62939453125e-06,
+        6.9141387939453125e-06
+      ],
+      "sha256": "41e401ab13a42ec1b0dd2aec7e51f0cb786a96e8771fefce6edd631399b8ea51",
+      "verified_legal_roots": 2,
+      "games": [
+        {
+          "schema_version": 1,
+          "seed": 2885784448,
+          "episode_steps": 300,
+          "turns": 299,
+          "map_sha256": "0c81d95af190006dafcdd15d4156afd332c857f14a0aad74380efe78925a8733",
+          "layout_sha256": "c33484321f68fdf66605ba773678ebb9d7ef2dc32cd14830840d519e9db951bb",
+          "engine_sha256": "0fef48294793290f1abf2a4d8f7c464e988c12b7c40f242a2079dc1dc38a3c9c",
+          "status": "completed",
+          "winner": 1,
+          "scores": [
+            6475.53,
+            8241.8
+          ],
+          "cash": [
+            6475.53,
+            8241.8
+          ],
+          "players": [
+            {
+              "name": "ZW0",
+              "sha256": "41e401ab13a42ec1b0dd2aec7e51f0cb786a96e8771fefce6edd631399b8ea51",
+              "init_seconds": 3.159875708865002,
+              "total_act_seconds": 153.97487179213203,
+              "max_act_seconds": 0.9073004170786589,
+              "slow_steps": 0,
+              "calls": 299,
+              "search_enabled": true,
+              "searches": 298,
+              "failure": null
+            },
+            {
+              "name": "yan-v8",
+              "sha256": "a87f8e6b83656c771cb5a25d6b6f383b245127e7c782e4c6c7c4a0a2cc15d396",
+              "init_seconds": 2.817337749991566,
+              "total_act_seconds": 156.68213258706965,
+              "max_act_seconds": 0.8541021670680493,
+              "slow_steps": 0,
+              "calls": 299,
+              "search_enabled": true,
+              "searches": 284,
+              "failure": null
+            }
+          ],
+          "seat": 0
+        },
+        {
+          "schema_version": 1,
+          "seed": 2885784448,
+          "episode_steps": 300,
+          "turns": 299,
+          "map_sha256": "0c81d95af190006dafcdd15d4156afd332c857f14a0aad74380efe78925a8733",
+          "layout_sha256": "c33484321f68fdf66605ba773678ebb9d7ef2dc32cd14830840d519e9db951bb",
+          "engine_sha256": "0fef48294793290f1abf2a4d8f7c464e988c12b7c40f242a2079dc1dc38a3c9c",
+          "status": "completed",
+          "winner": 1,
+          "scores": [
+            8126.3,
+            8291.32
+          ],
+          "cash": [
+            8126.3,
+            8291.32
+          ],
+          "players": [
+            {
+              "name": "yan-v8",
+              "sha256": "a87f8e6b83656c771cb5a25d6b6f383b245127e7c782e4c6c7c4a0a2cc15d396",
+              "init_seconds": 3.213251333218068,
+              "total_act_seconds": 153.7091320839245,
+              "max_act_seconds": 0.8549542080145329,
+              "slow_steps": 0,
+              "calls": 299,
+              "search_enabled": true,
+              "searches": 290,
+              "failure": null
+            },
+            {
+              "name": "ZW0",
+              "sha256": "41e401ab13a42ec1b0dd2aec7e51f0cb786a96e8771fefce6edd631399b8ea51",
+              "init_seconds": 2.7280424588825554,
+              "total_act_seconds": 154.94988543190993,
+              "max_act_seconds": 0.9240817499812692,
+              "slow_steps": 0,
+              "calls": 299,
+              "search_enabled": true,
+              "searches": 299,
+              "failure": null
+            }
+          ],
+          "seat": 1
+        }
+      ],
+      "seconds": 320.729898666963,
+      "size_bytes": 11178313
+    }
+  },
+  "ZW1": {
+    "pure": {
+      "parity": [
+        7.867813110351562e-06,
+        5.7220458984375e-06
+      ],
+      "sha256": "85be80f4c96055746093983865cace6d950c05e9ecc22384956bc2663dd09a67",
+      "verified_actions": 64,
+      "size_bytes": 5539512,
+      "external": {
+        "ft3-generic-no-search": {
+          "source_sha256": "920f656a31277751651883099d3bc2891a68412a69533cce4af3e3c801ba9446",
+          "games": [
+            {
+              "seed": 2198371464,
+              "seat": 0,
+              "turns": 299,
+              "scores": [
+                7510.22,
+                8533.46
+              ],
+              "margin": -1023.24,
+              "utility": -0.79646091388339,
+              "elimination": false
+            },
+            {
+              "seed": 2198371464,
+              "seat": 1,
+              "turns": 299,
+              "scores": [
+                7430.89,
+                7119.55
+              ],
+              "margin": -311.34,
+              "utility": -0.6023149210403428,
+              "elimination": false
+            },
+            {
+              "seed": 1413482652,
+              "seat": 0,
+              "turns": 299,
+              "scores": [
+                6749.79,
+                6847.09
+              ],
+              "margin": -97.3,
+              "utility": -0.5323879200217068,
+              "elimination": false
+            },
+            {
+              "seed": 1413482652,
+              "seat": 1,
+              "turns": 299,
+              "scores": [
+                7981.58,
+                6421.64
+              ],
+              "margin": -1559.94,
+              "utility": -0.8889361352397271,
+              "elimination": false
+            }
+          ]
+        },
+        "yan-v6-no-search": {
+          "source_sha256": "e5c328aa5d18ced597791e7b839088f1a37d18e4e8dc83dd3d54b13d66e877b0",
+          "games": [
+            {
+              "seed": 1760658325,
+              "seat": 0,
+              "turns": 299,
+              "scores": [
+                7403.66,
+                9438.95
+              ],
+              "margin": -2035.29,
+              "utility": -0.9378313918616271,
+              "elimination": false
+            },
+            {
+              "seed": 1760658325,
+              "seat": 1,
+              "turns": 299,
+              "scores": [
+                9533.87,
+                7639.02
+              ],
+              "margin": -1894.85,
+              "utility": -0.9259765288344157,
+              "elimination": false
+            },
+            {
+              "seed": 2015130574,
+              "seat": 0,
+              "turns": 299,
+              "scores": [
+                7301.51,
+                8934.35
+              ],
+              "margin": -1632.84,
+              "utility": -0.8981759810252418,
+              "elimination": false
+            },
+            {
+              "seed": 2015130574,
+              "seat": 1,
+              "turns": 299,
+              "scores": [
+                9836.26,
+                8517.76
+              ],
+              "margin": -1318.5,
+              "utility": -0.8529589973371989,
+              "elimination": false
+            }
+          ]
+        }
+      }
+    },
+    "search": {
+      "parity": [
+        7.867813110351562e-06,
+        5.7220458984375e-06
+      ],
+      "sha256": "72cc1a05e4fd95a9fb5009520e5c0ee1abc06a15d8f34ebc90d960796b2c8075",
+      "verified_legal_roots": 2,
+      "games": [
+        {
+          "schema_version": 1,
+          "seed": 2885784448,
+          "episode_steps": 300,
+          "turns": 299,
+          "map_sha256": "0c81d95af190006dafcdd15d4156afd332c857f14a0aad74380efe78925a8733",
+          "layout_sha256": "c33484321f68fdf66605ba773678ebb9d7ef2dc32cd14830840d519e9db951bb",
+          "engine_sha256": "0fef48294793290f1abf2a4d8f7c464e988c12b7c40f242a2079dc1dc38a3c9c",
+          "status": "completed",
+          "winner": 1,
+          "scores": [
+            7737.15,
+            9560.65
+          ],
+          "cash": [
+            7737.15,
+            9560.65
+          ],
+          "players": [
+            {
+              "name": "ZW1",
+              "sha256": "72cc1a05e4fd95a9fb5009520e5c0ee1abc06a15d8f34ebc90d960796b2c8075",
+              "init_seconds": 2.646416916977614,
+              "total_act_seconds": 93.70094446581788,
+              "max_act_seconds": 0.8151944170240313,
+              "slow_steps": 0,
+              "calls": 299,
+              "search_enabled": true,
+              "searches": 299,
+              "failure": null
+            },
+            {
+              "name": "yan-v8",
+              "sha256": "a87f8e6b83656c771cb5a25d6b6f383b245127e7c782e4c6c7c4a0a2cc15d396",
+              "init_seconds": 3.1012148337904364,
+              "total_act_seconds": 159.00352116930299,
+              "max_act_seconds": 0.8228603338357061,
+              "slow_steps": 0,
+              "calls": 299,
+              "search_enabled": true,
+              "searches": 285,
+              "failure": null
+            }
+          ],
+          "seat": 0
+        },
+        {
+          "schema_version": 1,
+          "seed": 2885784448,
+          "episode_steps": 300,
+          "turns": 299,
+          "map_sha256": "0c81d95af190006dafcdd15d4156afd332c857f14a0aad74380efe78925a8733",
+          "layout_sha256": "c33484321f68fdf66605ba773678ebb9d7ef2dc32cd14830840d519e9db951bb",
+          "engine_sha256": "0fef48294793290f1abf2a4d8f7c464e988c12b7c40f242a2079dc1dc38a3c9c",
+          "status": "completed",
+          "winner": 0,
+          "scores": [
+            9591.99,
+            7558.73
+          ],
+          "cash": [
+            9591.99,
+            7558.73
+          ],
+          "players": [
+            {
+              "name": "yan-v8",
+              "sha256": "a87f8e6b83656c771cb5a25d6b6f383b245127e7c782e4c6c7c4a0a2cc15d396",
+              "init_seconds": 2.6743105410132557,
+              "total_act_seconds": 151.77465163962916,
+              "max_act_seconds": 0.8683483749628067,
+              "slow_steps": 0,
+              "calls": 299,
+              "search_enabled": true,
+              "searches": 288,
+              "failure": null
+            },
+            {
+              "name": "ZW1",
+              "sha256": "72cc1a05e4fd95a9fb5009520e5c0ee1abc06a15d8f34ebc90d960796b2c8075",
+              "init_seconds": 3.000349290901795,
+              "total_act_seconds": 147.9638983749319,
+              "max_act_seconds": 0.8780705828685313,
+              "slow_steps": 0,
+              "calls": 299,
+              "search_enabled": true,
+              "searches": 298,
+              "failure": null
+            }
+          ],
+          "seat": 1
+        }
+      ],
+      "seconds": 309.4637726249639,
+      "size_bytes": 11178789
+    }
+  }
+}

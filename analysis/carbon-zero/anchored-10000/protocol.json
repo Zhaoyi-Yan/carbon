@@ -1,0 +1,80 @@
+{
+  "seed": 24000000,
+  "cpu_count": 10,
+  "threads": 2,
+  "device": "mps",
+  "engine": "0fef48294793290f1abf2a4d8f7c464e988c12b7c40f242a2079dc1dc38a3c9c",
+  "source_sha256": "920f656a31277751651883099d3bc2891a68412a69533cce4af3e3c801ba9446",
+  "style": {
+    "name": "CL-CarbonEdge_Apollo",
+    "index": 122
+  },
+  "config": {
+    "episodeSteps": 300,
+    "startingCarbon": 2500,
+    "size": 15,
+    "carbonCoverage": 45,
+    "numberOfBases": 2,
+    "startPosOffset": 1,
+    "startingCellCarbon": 50,
+    "maxCellCarbon": 100,
+    "recCollectorCost": 30,
+    "recCollectorIncreaseCost": 0,
+    "recPlanterCost": 30,
+    "recPlanterIncreaseCost": 0,
+    "moveCost": 0,
+    "smeltCost": 0,
+    "workerLimit": 10,
+    "planterLimit": 1,
+    "collectorLimit": 2,
+    "plantCost": 20,
+    "plantCostInflationRatio": 5,
+    "plantCostInflationBase": 1.235,
+    "playerTreeProtectiveNumber": 0,
+    "co2FrmWithered": 30,
+    "seizeCost": 20,
+    "initialCollectRate": 0.3,
+    "collectDecreaseRate": 0.0,
+    "regenRate": 0.03,
+    "treeLifespan": 50,
+    "cellAbsorptionRate": 0.0375,
+    "collectorAbsorptionRate": 0.1,
+    "agentTimeout": 60,
+    "actTimeout": 1,
+    "runTimeout": 9600
+  },
+  "frozen_v8": [
+    "v11-yan-v8-elite-refit",
+    "a87f8e6b83656c771cb5a25d6b6f383b245127e7c782e4c6c7c4a0a2cc15d396"
+  ],
+  "training": {
+    "beta": 0.5,
+    "K": 1500,
+    "alpha": 0.5,
+    "gamma": 1,
+    "gae": 0.95,
+    "envs": 16,
+    "rollout": 64,
+    "decoder": "sequential",
+    "lr": 3e-05,
+    "anchor_kl_weight": 0.1
+  },
+  "panels": {
+    "temperature": [
+      1445782263,
+      433621896,
+      2451923807,
+      2959986939
+    ],
+    "self": [
+      295182658,
+      3319417809,
+      3316968190,
+      1024381275
+    ],
+    "raw": [
+      117191089,
+      2006449865
+    ]
+  }
+}

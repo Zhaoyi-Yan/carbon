@@ -1,0 +1,96 @@
+{
+  "replay_sha256": "e3d3eda7dce6d513f2805842ad000c8096e31f43ef2ef5fbd1dbc56440507806",
+  "games": [
+    {
+      "seed": 531729840,
+      "layout_sha256": "e9ced8f6bfd7d5876c17482f4fd2d9f6d37a611cc81a14b94793802aa5567f04",
+      "strategy_sha256": [
+        "191b375409ad295ecefc914343811502a6b90e633ada905430e1f0464cdc9bae",
+        "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6"
+      ]
+    },
+    {
+      "seed": 531729840,
+      "layout_sha256": "e9ced8f6bfd7d5876c17482f4fd2d9f6d37a611cc81a14b94793802aa5567f04",
+      "strategy_sha256": [
+        "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6",
+        "191b375409ad295ecefc914343811502a6b90e633ada905430e1f0464cdc9bae"
+      ]
+    },
+    {
+      "seed": 531729840,
+      "layout_sha256": "e9ced8f6bfd7d5876c17482f4fd2d9f6d37a611cc81a14b94793802aa5567f04",
+      "strategy_sha256": [
+        "b1692a366884fc8193fb67545feb91827f4fcf9632490938d7a131afb66ed9f5",
+        "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6"
+      ]
+    },
+    {
+      "seed": 531729840,
+      "layout_sha256": "e9ced8f6bfd7d5876c17482f4fd2d9f6d37a611cc81a14b94793802aa5567f04",
+      "strategy_sha256": [
+        "e227cd44dd7996d1da6489c1009dcd6b6b70a1c25fa2835259f8226e341fe0e1",
+        "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6"
+      ]
+    },
+    {
+      "seed": 531729840,
+      "layout_sha256": "e9ced8f6bfd7d5876c17482f4fd2d9f6d37a611cc81a14b94793802aa5567f04",
+      "strategy_sha256": [
+        "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6",
+        "e227cd44dd7996d1da6489c1009dcd6b6b70a1c25fa2835259f8226e341fe0e1"
+      ]
+    },
+    {
+      "seed": 531729840,
+      "layout_sha256": "e9ced8f6bfd7d5876c17482f4fd2d9f6d37a611cc81a14b94793802aa5567f04",
+      "strategy_sha256": [
+        "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6",
+        "b1692a366884fc8193fb67545feb91827f4fcf9632490938d7a131afb66ed9f5"
+      ]
+    },
+    {
+      "seed": 637608883,
+      "layout_sha256": "3ffe1868feee50e3e66f7f941b486295fabcdd2bf589bf0521763100b83ab5f1",
+      "strategy_sha256": [
+        "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6",
+        "e227cd44dd7996d1da6489c1009dcd6b6b70a1c25fa2835259f8226e341fe0e1"
+      ]
+    },
+    {
+      "seed": 637608883,
+      "layout_sha256": "3ffe1868feee50e3e66f7f941b486295fabcdd2bf589bf0521763100b83ab5f1",
+      "strategy_sha256": [
+        "b1692a366884fc8193fb67545feb91827f4fcf9632490938d7a131afb66ed9f5",
+        "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6"
+      ]
+    }
+  ],
+  "roots": 112,
+  "temperature": 0.4,
+  "conditional_prefix": "sampled once from frozen actor on the replay observation",
+  "checkpoints": {
+    "10000": {
+      "mean_team_KL": 0.09955530613660812,
+      "bases": {
+        "slot_count": 100,
+        "KL_per_active_slot": 0.0030841755215078592,
+        "greedy_flip_rate": 0.0
+      },
+      "workers": {
+        "slot_count": 877,
+        "KL_per_active_slot": 0.012362344190478325,
+        "greedy_flip_rate": 0.0330672748004561
+      },
+      "team_KL_by_turn": {
+        "0": 2.9309176170499995e-05,
+        "40": 0.12201482057571411,
+        "100": 0.15181377530097961,
+        "160": 0.09092028439044952,
+        "220": 0.14068712294101715,
+        "280": 0.1138174757361412,
+        "298": 0.07760430872440338
+      }
+    }
+  }
+}

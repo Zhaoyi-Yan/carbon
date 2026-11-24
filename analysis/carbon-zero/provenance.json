@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-24",
+  "base_commit": "2603665994107513c667f8b4d7f084f4b379505e",
+  "teacher": {
+    "source": "Claude local experiment work/cand_ft3.py",
+    "source_sha256": "920f656a31277751651883099d3bc2891a68412a69533cce4af3e3c801ba9446",
+    "policy_b64_sha256": "369a3b9369d4382102273096b142f59ab91491e2cb706967db936fd493a78dcf",
+    "value_b64_sha256": "51c30a539a7a8554b04ddcc87b0cd2b14fad3cf6c8ef5f05fdb3614af9fdb418",
+    "screen_report_sha256": "42508e090986a4a0083aea96a81d477733048873aa0fd430c7503c70d99ea4c5",
+    "screen_games_sha256": "2e4b006d33d380c26404c7ab19ecde251154ae3b4c775bbbcd2368d13462fc57",
+    "search_games_sha256": "b2f25bb563fe5129dcdaded5381acdaf098ab08706c39402ca66c79df06ef006",
+    "style": "CL-CarbonEdge_Apollo",
+    "style_index": 122,
+    "architecture": {"input_planes": 54, "width": 96, "residual_blocks": 6},
+    "native_screen": {"search": false, "root_temperature": 0.4, "wins": 16, "losses": 0, "mean_margin": 1323}
+  },
+  "opponents": {
+    "yan-v6": {
+      "tag": "v9-yan-v6-estuary",
+      "sha256": "e5c328aa5d18ced597791e7b839088f1a37d18e4e8dc83dd3d54b13d66e877b0",
+      "search": false
+    },
+    "yan-v8": {
+      "tag": "v11-yan-v8-elite-refit",
+      "commit": "155dcc5275b8a23a223769346cc7c00661e36155",
+      "sha256": "a87f8e6b83656c771cb5a25d6b6f383b245127e7c782e4c6c7c4a0a2cc15d396",
+      "search": true
+    }
+  },
+  "scoring_guide": {
+    "url": "https://117.72.210.134/static/agent-guide.md",
+    "sha256": "97adbc81e39ef2b1834af96e261cd10e76424352abde5e04868b3467c2a5cec8",
+    "normal_game_win_weight": 0.5,
+    "normal_game_margin_weight": 0.5,
+    "exact_margin_function_documented": false
+  }
+}

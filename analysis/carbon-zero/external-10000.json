@@ -1,0 +1,254 @@
+{
+  "ZW0": {
+    "pure": {
+      "parity": [
+        7.62939453125e-06,
+        6.9141387939453125e-06
+      ],
+      "sha256": "c79475704c779364819ed40b1d1a6c7ee9c41330e1fd67cc270d79cc5a11451d",
+      "size_bytes": 5539036,
+      "external": {
+        "ft3-generic-no-search": {
+          "source_sha256": "920f656a31277751651883099d3bc2891a68412a69533cce4af3e3c801ba9446",
+          "games": [
+            {
+              "seed": 116073893,
+              "seat": 0,
+              "turns": 299,
+              "scores": [
+                8455.26,
+                8100.01
+              ],
+              "margin": 355.25,
+              "utility": 0.6162512392354972,
+              "elimination": false
+            },
+            {
+              "seed": 116073893,
+              "seat": 1,
+              "turns": 299,
+              "scores": [
+                9677.39,
+                8629.92
+              ],
+              "margin": -1047.47,
+              "utility": -0.8016480457920678,
+              "elimination": false
+            },
+            {
+              "seed": 2898361556,
+              "seat": 0,
+              "turns": 299,
+              "scores": [
+                7256.39,
+                6190.59
+              ],
+              "margin": 1065.8,
+              "utility": 0.8055055816293739,
+              "elimination": false
+            },
+            {
+              "seed": 2898361556,
+              "seat": 1,
+              "turns": 299,
+              "scores": [
+                8340.08,
+                7822.57
+              ],
+              "margin": -517.51,
+              "utility": -0.6659698928116464,
+              "elimination": false
+            }
+          ]
+        },
+        "yan-v6-no-search": {
+          "source_sha256": "e5c328aa5d18ced597791e7b839088f1a37d18e4e8dc83dd3d54b13d66e877b0",
+          "games": [
+            {
+              "seed": 159942885,
+              "seat": 0,
+              "turns": 299,
+              "scores": [
+                8933.17,
+                8847.18
+              ],
+              "margin": 85.99,
+              "utility": 0.5286319753369111,
+              "elimination": false
+            },
+            {
+              "seed": 159942885,
+              "seat": 1,
+              "turns": 299,
+              "scores": [
+                7476.05,
+                7104.03
+              ],
+              "margin": -372.02,
+              "utility": -0.6215251297917478,
+              "elimination": false
+            },
+            {
+              "seed": 1686095154,
+              "seat": 0,
+              "turns": 299,
+              "scores": [
+                6608.32,
+                6976.01
+              ],
+              "margin": -367.69,
+              "utility": -0.6201661093863571,
+              "elimination": false
+            },
+            {
+              "seed": 1686095154,
+              "seat": 1,
+              "turns": 299,
+              "scores": [
+                7472.89,
+                6594.24
+              ],
+              "margin": -878.65,
+              "utility": -0.7634220610955469,
+              "elimination": false
+            }
+          ]
+        }
+      }
+    },
+    "search": {
+      "parity": [
+        7.62939453125e-06,
+        6.9141387939453125e-06
+      ],
+      "sha256": "41e401ab13a42ec1b0dd2aec7e51f0cb786a96e8771fefce6edd631399b8ea51",
+      "verified_legal_roots": 2
+    }
+  },
+  "ZW1": {
+    "pure": {
+      "parity": [
+        6.3478946685791016e-06,
+        5.4836273193359375e-06
+      ],
+      "sha256": "c5c76df636c563febf012b51036ebd8aeb392e907751d2b1b2963ee198053614",
+      "size_bytes": 5539132,
+      "external": {
+        "ft3-generic-no-search": {
+          "source_sha256": "920f656a31277751651883099d3bc2891a68412a69533cce4af3e3c801ba9446",
+          "games": [
+            {
+              "seed": 116073893,
+              "seat": 0,
+              "turns": 299,
+              "scores": [
+                8221.7,
+                8600.19
+              ],
+              "margin": -378.49,
+              "utility": -0.6235522570398326,
+              "elimination": false
+            },
+            {
+              "seed": 116073893,
+              "seat": 1,
+              "turns": 299,
+              "scores": [
+                9733.97,
+                9073.26
+              ],
+              "margin": -660.71,
+              "utility": -0.7070183552693314,
+              "elimination": false
+            },
+            {
+              "seed": 2898361556,
+              "seat": 0,
+              "turns": 299,
+              "scores": [
+                7475.14,
+                7463.94
+              ],
+              "margin": 11.2,
+              "utility": 0.5037332639557203,
+              "elimination": false
+            },
+            {
+              "seed": 2898361556,
+              "seat": 1,
+              "turns": 299,
+              "scores": [
+                7132.45,
+                7718.16
+              ],
+              "margin": 585.71,
+              "utility": 0.6858841064066722,
+              "elimination": false
+            }
+          ]
+        },
+        "yan-v6-no-search": {
+          "source_sha256": "e5c328aa5d18ced597791e7b839088f1a37d18e4e8dc83dd3d54b13d66e877b0",
+          "games": [
+            {
+              "seed": 159942885,
+              "seat": 0,
+              "turns": 299,
+              "scores": [
+                8640.87,
+                9077.97
+              ],
+              "margin": -437.1,
+              "utility": -0.6417114314946045,
+              "elimination": false
+            },
+            {
+              "seed": 159942885,
+              "seat": 1,
+              "turns": 299,
+              "scores": [
+                8270.39,
+                8627.81
+              ],
+              "margin": 357.42,
+              "utility": 0.6169352405042438,
+              "elimination": false
+            },
+            {
+              "seed": 1686095154,
+              "seat": 0,
+              "turns": 299,
+              "scores": [
+                5351.33,
+                7265.38
+              ],
+              "margin": -1914.05,
+              "utility": -0.9277122325159202,
+              "elimination": false
+            },
+            {
+              "seed": 1686095154,
+              "seat": 1,
+              "turns": 299,
+              "scores": [
+                10912.66,
+                4822.87
+              ],
+              "margin": -6089.79,
+              "utility": -0.9997024765664075,
+              "elimination": false
+            }
+          ]
+        }
+      }
+    },
+    "search": {
+      "parity": [
+        6.3478946685791016e-06,
+        5.4836273193359375e-06
+      ],
+      "sha256": "3b01ea7e09d217ecb38ae5262f0fe28693f8390be90b6d543b4112225ae4e7b2",
+      "verified_legal_roots": 2
+    }
+  }
+}

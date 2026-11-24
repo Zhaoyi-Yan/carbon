@@ -1,0 +1,167 @@
+{
+  "temperature": 0.4,
+  "T04_vs_T1": {
+    "wins": 8,
+    "draws": 0,
+    "losses": 0,
+    "mean_margin": 1615.13375,
+    "mean_utility": 0.8708291909136974,
+    "seconds": 15.272985124960542,
+    "games": [
+      {
+        "seed": 1445782263,
+        "seat": 0,
+        "turns": 299,
+        "scores": [
+          8227.71,
+          6356.28
+        ],
+        "margin": 1871.43,
+        "utility": 0.9238074518584984,
+        "elimination": false
+      },
+      {
+        "seed": 1445782263,
+        "seat": 1,
+        "turns": 299,
+        "scores": [
+          5572.63,
+          6913.48
+        ],
+        "margin": 1340.85,
+        "utility": 0.8566573382400497,
+        "elimination": false
+      },
+      {
+        "seed": 433621896,
+        "seat": 0,
+        "turns": 299,
+        "scores": [
+          9454.68,
+          8010.69
+        ],
+        "margin": 1443.99,
+        "utility": 0.8727305091937868,
+        "elimination": false
+      },
+      {
+        "seed": 433621896,
+        "seat": 1,
+        "turns": 299,
+        "scores": [
+          9514.28,
+          10554.06
+        ],
+        "margin": 1039.78,
+        "utility": 0.8000126352547938,
+        "elimination": false
+      },
+      {
+        "seed": 2451923807,
+        "seat": 0,
+        "turns": 299,
+        "scores": [
+          7991.77,
+          7433.95
+        ],
+        "margin": 557.82,
+        "utility": 0.6778175169271257,
+        "elimination": false
+      },
+      {
+        "seed": 2451923807,
+        "seat": 1,
+        "turns": 299,
+        "scores": [
+          6502.4,
+          9183.5
+        ],
+        "margin": 2681.1,
+        "utility": 0.9727427468720758,
+        "elimination": false
+      },
+      {
+        "seed": 2959986939,
+        "seat": 0,
+        "turns": 299,
+        "scores": [
+          9561.47,
+          7315.51
+        ],
+        "margin": 2245.96,
+        "utility": 0.9523301810982355,
+        "elimination": false
+      },
+      {
+        "seed": 2959986939,
+        "seat": 1,
+        "turns": 299,
+        "scores": [
+          7319.2,
+          9059.34
+        ],
+        "margin": 1740.14,
+        "utility": 0.9105351478650131,
+        "elimination": false
+      }
+    ]
+  },
+  "decoder_vs_W_raw": {
+    "wins": 1,
+    "draws": 0,
+    "losses": 3,
+    "mean_margin": -222.0,
+    "mean_utility": -0.3207045690272089,
+    "seconds": 25.44415891589597,
+    "games": [
+      {
+        "seed": 117191089,
+        "seat": 0,
+        "turns": 299,
+        "scores": [
+          7774.93,
+          7618.85
+        ],
+        "margin": 156.08,
+        "utility": 0.5518397103944216,
+        "elimination": false
+      },
+      {
+        "seed": 117191089,
+        "seat": 1,
+        "turns": 299,
+        "scores": [
+          7664.51,
+          7637.15
+        ],
+        "margin": -27.36,
+        "utility": -0.5091189887338743,
+        "elimination": false
+      },
+      {
+        "seed": 2006449865,
+        "seat": 0,
+        "turns": 299,
+        "scores": [
+          8019.44,
+          8441.58
+        ],
+        "margin": -422.14,
+        "utility": -0.6371124891624258,
+        "elimination": false
+      },
+      {
+        "seed": 2006449865,
+        "seat": 1,
+        "turns": 299,
+        "scores": [
+          7954.94,
+          7360.36
+        ],
+        "margin": -594.58,
+        "utility": -0.6884265086069572,
+        "elimination": false
+      }
+    ]
+  }
+}

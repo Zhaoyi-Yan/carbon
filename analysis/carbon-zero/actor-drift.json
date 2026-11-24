@@ -1,0 +1,140 @@
+{
+  "replay_sha256": "e3d3eda7dce6d513f2805842ad000c8096e31f43ef2ef5fbd1dbc56440507806",
+  "games": [
+    {
+      "seed": 531729840,
+      "layout_sha256": "e9ced8f6bfd7d5876c17482f4fd2d9f6d37a611cc81a14b94793802aa5567f04",
+      "strategy_sha256": [
+        "191b375409ad295ecefc914343811502a6b90e633ada905430e1f0464cdc9bae",
+        "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6"
+      ]
+    },
+    {
+      "seed": 531729840,
+      "layout_sha256": "e9ced8f6bfd7d5876c17482f4fd2d9f6d37a611cc81a14b94793802aa5567f04",
+      "strategy_sha256": [
+        "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6",
+        "191b375409ad295ecefc914343811502a6b90e633ada905430e1f0464cdc9bae"
+      ]
+    },
+    {
+      "seed": 531729840,
+      "layout_sha256": "e9ced8f6bfd7d5876c17482f4fd2d9f6d37a611cc81a14b94793802aa5567f04",
+      "strategy_sha256": [
+        "b1692a366884fc8193fb67545feb91827f4fcf9632490938d7a131afb66ed9f5",
+        "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6"
+      ]
+    },
+    {
+      "seed": 531729840,
+      "layout_sha256": "e9ced8f6bfd7d5876c17482f4fd2d9f6d37a611cc81a14b94793802aa5567f04",
+      "strategy_sha256": [
+        "e227cd44dd7996d1da6489c1009dcd6b6b70a1c25fa2835259f8226e341fe0e1",
+        "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6"
+      ]
+    },
+    {
+      "seed": 531729840,
+      "layout_sha256": "e9ced8f6bfd7d5876c17482f4fd2d9f6d37a611cc81a14b94793802aa5567f04",
+      "strategy_sha256": [
+        "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6",
+        "e227cd44dd7996d1da6489c1009dcd6b6b70a1c25fa2835259f8226e341fe0e1"
+      ]
+    },
+    {
+      "seed": 531729840,
+      "layout_sha256": "e9ced8f6bfd7d5876c17482f4fd2d9f6d37a611cc81a14b94793802aa5567f04",
+      "strategy_sha256": [
+        "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6",
+        "b1692a366884fc8193fb67545feb91827f4fcf9632490938d7a131afb66ed9f5"
+      ]
+    },
+    {
+      "seed": 637608883,
+      "layout_sha256": "3ffe1868feee50e3e66f7f941b486295fabcdd2bf589bf0521763100b83ab5f1",
+      "strategy_sha256": [
+        "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6",
+        "e227cd44dd7996d1da6489c1009dcd6b6b70a1c25fa2835259f8226e341fe0e1"
+      ]
+    },
+    {
+      "seed": 637608883,
+      "layout_sha256": "3ffe1868feee50e3e66f7f941b486295fabcdd2bf589bf0521763100b83ab5f1",
+      "strategy_sha256": [
+        "b1692a366884fc8193fb67545feb91827f4fcf9632490938d7a131afb66ed9f5",
+        "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6"
+      ]
+    }
+  ],
+  "roots": 112,
+  "temperature": 0.4,
+  "conditional_prefix": "sampled once from frozen actor on the replay observation",
+  "checkpoints": {
+    "10000": {
+      "mean_team_KL": 0.2459496706724167,
+      "bases": {
+        "slot_count": 100,
+        "KL_per_active_slot": 0.015922794118523598,
+        "greedy_flip_rate": 0.0
+      },
+      "workers": {
+        "slot_count": 877,
+        "KL_per_active_slot": 0.029594169929623604,
+        "greedy_flip_rate": 0.05017103762827822
+      },
+      "team_KL_by_turn": {
+        "0": 2.7240188501309603e-05,
+        "40": 0.3099709153175354,
+        "100": 0.31238338351249695,
+        "160": 0.2513032555580139,
+        "220": 0.31753629446029663,
+        "280": 0.3623039126396179,
+        "298": 0.16812285780906677
+      }
+    },
+    "100000": {
+      "mean_team_KL": 2.5115933418273926,
+      "bases": {
+        "slot_count": 100,
+        "KL_per_active_slot": 0.28805139660835266,
+        "greedy_flip_rate": 0.08
+      },
+      "workers": {
+        "slot_count": 877,
+        "KL_per_active_slot": 0.2879057228565216,
+        "greedy_flip_rate": 0.15621436716077536
+      },
+      "team_KL_by_turn": {
+        "0": 0.0006624901434406638,
+        "40": 2.989823818206787,
+        "100": 3.3110013008117676,
+        "160": 3.3615517616271973,
+        "220": 2.6923646926879883,
+        "280": 2.4056220054626465,
+        "298": 2.8201277256011963
+      }
+    },
+    "200000": {
+      "mean_team_KL": 4.57607364654541,
+      "bases": {
+        "slot_count": 100,
+        "KL_per_active_slot": 0.4832182824611664,
+        "greedy_flip_rate": 0.1
+      },
+      "workers": {
+        "slot_count": 877,
+        "KL_per_active_slot": 0.5293025970458984,
+        "greedy_flip_rate": 0.21436716077537057
+      },
+      "team_KL_by_turn": {
+        "0": 0.00026895158225670457,
+        "40": 4.964107513427734,
+        "100": 4.799358367919922,
+        "160": 5.494585990905762,
+        "220": 6.416718482971191,
+        "280": 5.156461238861084,
+        "298": 5.20101261138916
+      }
+    }
+  }
+}
