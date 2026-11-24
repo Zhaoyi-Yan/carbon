@@ -48,12 +48,17 @@ def penalties(scores, target_logp, legal, rows_scale):
 def grad_breakdown(losses, trunk):
     all_grads = [torch.autograd.grad(loss, trunk, retain_graph=True, allow_unused=True)
                  for loss in losses.values()]
-    vectors = [torch.cat([g.reshape(-1) for g in grads if g is not None]) for grads in all_grads]
+    # A detached branch (B2) leaves None for every trunk coordinate; keep the
+    # vectors positionally aligned instead of dropping those entries.
+    vectors = [torch.cat([(g if g is not None else torch.zeros_like(p)).reshape(-1)
+                          for g, p in zip(grads, trunk, strict=True)]) for grads in all_grads]
     names = list(losses)
     result = {name: float(v.norm().detach().cpu()) for name, v in zip(names, vectors, strict=True)}
     if 'value' in names:
         a, b = (vectors[names.index(label)] for label in ('policy', 'value'))
-        result['policy_value_cosine'] = float(torch.nn.functional.cosine_similarity(a, b, dim=0).detach().cpu())
+        na, nb = float(a.norm()), float(b.norm())
+        result['policy_value_cosine'] = (None if na == 0. or nb == 0.
+                                         else float(torch.nn.functional.cosine_similarity(a, b, dim=0).detach().cpu()))
     return result
 
 

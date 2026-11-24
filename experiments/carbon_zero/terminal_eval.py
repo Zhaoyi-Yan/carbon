@@ -16,10 +16,11 @@ from terminal_games import Match, TEMPERATURE, keyed_seed, play
 RIVALS = ('ZW0', 'ft3-generic-no-search', 'yan-v6-no-search')
 
 
-def paired_map_panel(rival, count, replicate=False, namespace='terminal-rl-dev-v1'):
+def paired_map_panel(rival, count, replicate=False, namespace='terminal-rl-dev-v1', shared_maps=False):
     matches = []
     for i in range(count):
-        layout = keyed_seed(namespace, rival, i, 'layout') & 0xffffffff
+        layout = (keyed_seed(namespace, i, 'layout') if shared_maps
+                  else keyed_seed(namespace, rival, i, 'layout')) & 0xffffffff
         for seat in (0, 1):
             keys = (namespace, rival, i, seat)
             matches.append(Match(layout, seat, keyed_seed(*keys, 'AA' if replicate else 'learner'),
@@ -83,7 +84,9 @@ def main(a):
     reference = Actor(teacher._POLICY, style).to(a.device).eval()
     refs = [opponent_for(a.ft3, a.out, name, reference) for name in RIVALS]
     protocol = dict(source_sha256=FT3_SHA256, style=style, temperature=TEMPERATURE, decoder='sequential',
-                    panels={rival: [m.__dict__ for m in paired_map_panel(rival, a.maps, namespace=a.panel_id)]
+                    shared_maps=a.shared_maps,
+                    panels={rival: [m.__dict__ for m in paired_map_panel(
+                        rival, a.maps, namespace=a.panel_id, shared_maps=a.shared_maps)]
                             for rival in RIVALS},
                     opponents={rival: ref[2] for rival, ref in zip(RIVALS, refs, strict=True)},
                     AA='same ZW0 states/opponent stream, independent learner stream')
@@ -119,7 +122,8 @@ def main(a):
         for rival, (opponent, raw, _) in zip(RIVALS, refs, strict=True):
             if name == 'AA' and rival != 'ZW0':
                 continue
-            matches = paired_map_panel(rival, a.maps, replicate=(name == 'AA'), namespace=a.panel_id)
+            matches = paired_map_panel(rival, a.maps, replicate=(name == 'AA'),
+                                       namespace=a.panel_id, shared_maps=a.shared_maps)
             played, timing = play(teacher, actor, opponent, matches, a.device, raw=raw)
             rows = [row for row, _, _ in played]
             entry = dict(overall=stats(rows), games=rows, costs=timing,
@@ -139,5 +143,7 @@ if __name__ == '__main__':
     p.add_argument('--aa', action='store_true')
     p.add_argument('--maps', type=int, default=4)
     p.add_argument('--panel-id', default='terminal-rl-dev-v1')
+    p.add_argument('--shared-maps', action='store_true',
+                   help='Use one map list for every rival (new panels; old panels stay rival-specific)')
     p.add_argument('--device', default='mps' if torch.backends.mps.is_available() else 'cpu')
     main(p.parse_args())

@@ -1,6 +1,9 @@
-"""Summarize the B1 development panel: margins and paired deltas, bootstrapped over maps.
+"""Summarize the B1 development panel: mixed utility (primary), margin, WDL.
 
 Usage: python3 panel_report.py [evaluation-dir]
+Deltas are paired by map/seat against the frozen ZW0 run and bootstrapped over
+maps (4000 resamples).  The training objective is U, so U is the primary metric;
+the raw margin is kept to expose cases where the two disagree.
 """
 import json
 from pathlib import Path
@@ -35,26 +38,32 @@ def boot(deltas, rep=4000, seed=11):
     return np.percentile(vals, [2.5, 97.5])
 
 
+def paired(a, b, rival, key):
+    ga, gb = games(a, rival), games(b, rival)
+    return {k: gb[k][key] - ga[k][key] for k in ga}
+
+
+def line(d, scale=1.0, digits=3):
+    ci = boot(d)
+    return f'{np.mean(list(d.values())) * scale:+8.{digits}f} [{ci[0] * scale:+8.{digits}f},{ci[1] * scale:+8.{digits}f}]'
+
+
 def show():
+    print('paired deltas vs frozen ZW0: U (primary), margin; bootstrap over maps')
     for name in NAMES:
         for rival in RIVALS:
             rows = BLOCKS[name][rival]['games']
-            line = f'{name:8} {rival:22} {wdl(rows):8} mm={np.mean([g["margin"] for g in rows]):+8.1f}'
+            text = f'{name:8} {rival:22} {wdl(rows):8} U={line(paired("ZW0", name, rival, "utility"), 1, 3)}'
             if name != 'ZW0':
-                base = games('ZW0', rival)
-                d = {k: g['margin'] - base[k]['margin'] for k, g in games(name, rival).items()}
-                ci = boot(d)
-                line += f' d={np.mean(list(d.values())):+7.1f} CI[{ci[0]:+.0f},{ci[1]:+.0f}]'
-            print(line)
-    for x, y in (('A10', 'B1_10k'), ('A50', 'B1_50k'), ('B1_10k', 'B1_50k'), ('C50', 'B1_50k')):
+                text += f' margin={line(paired("ZW0", name, rival, "margin"), 1, 0)}'
+            print(text)
+    for x, y in (('A10', 'B1_10k'), ('A50', 'B1_50k'), ('C50', 'B1_50k'), ('B1_10k', 'B1_50k')):
         if not all(p in NAMES for p in (x, y)):
             continue
         print(f'\n== {y} - {x} (paired) ==')
         for rival in RIVALS:
-            a, b = games(x, rival), games(y, rival)
-            d = {k: b[k]['margin'] - a[k]['margin'] for k in a}
-            ci = boot(d)
-            print(f'  {rival:22} d={np.mean(list(d.values())):+7.1f} CI[{ci[0]:+.0f},{ci[1]:+.0f}]')
+            print(f'  {rival:22} U={line(paired(x, y, rival, "utility"), 1, 3)}'
+                  f' margin={line(paired(x, y, rival, "margin"), 1, 0)}')
 
 
 if __name__ == '__main__':

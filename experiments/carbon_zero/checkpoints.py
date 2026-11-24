@@ -23,7 +23,8 @@ from env import Game
 from evaluate import games,seeds
 from scripts.selfplay import source_for
 from export import build
-from policy import Actor, Encoder, STYLE, commands, coordinated_sample, load_ft3, logits, sample, slots
+from policy import (Actor, Encoder, STYLE, action_logits, actor_from_checkpoint, commands,
+                    coordinated_sample, load_ft3, sample, slots)
 
 
 def capture(panel, path):
@@ -76,9 +77,10 @@ def check_export_actions(teacher, actor, module, temperature, coordinated):
         for seat, obs in enumerate(game.observations()):
             names, cells, legal = slots(obs, game.config)
             features = trackers[seat].encode(obs)
-            scores, _ = logits(actor, torch.as_tensor(features[None]),
-                               torch.as_tensor(cells[None]), torch.as_tensor(legal[None]),
-                               temperature)
+            spatial = actor.spatial(torch.as_tensor(features[None]))
+            scores = action_logits(actor.workers(spatial), actor.bases(spatial),
+                                   torch.as_tensor(cells[None]), torch.as_tensor(legal[None]),
+                                   temperature)
             if coordinated:
                 choices, _ = coordinated_sample(scores, streams[seat], cells[None], legal[None])
             else:
@@ -105,8 +107,7 @@ def main(ft3, out, checkpoint, full):
     teacher=load_ft3(ft3)
     style=teacher._POLICY.sid(STYLE)
     base=Actor(teacher._POLICY,style)
-    learned=copy.deepcopy(base)
-    learned.load_state_dict(torch.load(out/f'checkpoint-{checkpoint}.pt',map_location='cpu',weights_only=True)['parameters'])
+    learned, _saved = actor_from_checkpoint(teacher, style, out/f'checkpoint-{checkpoint}.pt', 'cpu')
     temp=json.loads((out/'calibration.json').read_text())['temperature']
     coordinated=json.loads((out/'protocol.json').read_text())['training'].get('decoder')=='sequential'
     source=ft3.read_text()

@@ -69,7 +69,6 @@ def main(a):
         detach_value_trunk=a.detach_value_trunk,
     ).to(a.device)
     anchor = Actor(teacher._POLICY, style).to(a.device).eval().requires_grad_(False)
-    opt = torch.optim.AdamW(learner.parameters(), lr=3e-5)
     rng = np.random.default_rng(a.seed + 133)
     collector = Collector(teacher, 16, a.seed, a.device, coordinated=True)
     pretrain_e = 0
@@ -82,7 +81,7 @@ def main(a):
         saved = torch.load(a.control, weights_only=True, map_location='cpu')
         steps = saved['E']
         learner.load_state_dict(saved['parameters'])
-        opt.load_state_dict(saved['optimizer'])
+        saved_opt = saved['optimizer']
         collector.recover(saved['collector'])
         rng.bit_generator.state = saved['optimizer_rng']
         updates = json.loads((OLD_RUN / 'updates.json').read_text())
@@ -103,7 +102,23 @@ def main(a):
             experiment='frozen-policy-MC-residual-critic' if residual_critic else 'frozen-policy-MC-critic',
             sha256=digest(weight),
         )
-    arm = 'A' if a.control else ('B2' if a.detach_value_trunk else 'B1')
+    if residual_critic and not a.no_freeze_value_baseline:
+        learner.freeze_value_baseline()
+    opt = torch.optim.AdamW([p for p in learner.parameters() if p.requires_grad], lr=3e-5)
+    if a.control:
+        opt.load_state_dict(saved_opt)
+    baseline = None
+    if residual_critic:
+        w0 = learner.value_baseline.weight.detach().clone()
+        in_opt = any(learner.value_baseline.weight is p
+                     for group in opt.param_groups for p in group['params'])
+        baseline = dict(w0=w0, frozen=bool(learner.value_baseline_frozen), in_optimizer=in_opt,
+                        init_sha256=hashlib.sha256(w0.cpu().numpy().tobytes()).hexdigest(),
+                        init_max_abs=float(w0.abs().max()))
+        if baseline['frozen'] and in_opt:
+            raise ValueError('The frozen cash baseline entered the optimizer')
+    arm = 'A' if a.control else ('B2' if a.detach_value_trunk else
+                                  ('B1-fixed' if residual_critic and learner.value_baseline_frozen else 'B1'))
     output = a.out
     output.mkdir(parents=True, exist_ok=False)
     write(output / 'protocol.json', dict(
@@ -111,6 +126,8 @@ def main(a):
         seed=a.seed, device=a.device, style=style, temperature=TEMPERATURE,
         opponent='ZW0', decoder='sequential', initialization=initial, pretrain_E=pretrain_e,
         residual_critic=residual_critic, detach_value_trunk=a.detach_value_trunk,
+        freeze_value_baseline=bool(baseline and baseline['frozen']),
+        baseline=None if baseline is None else {k: v for k, v in baseline.items() if k != 'w0'},
         lr=3e-5, ref_KL=.1, beta=.5, K=1500, rollout=64, lambda_GAE=.95,
         actor_warmup_updates=2, environments=16))
     markers = [n for n in sorted({10000, 50000, 100000, a.budget}) if steps < n <= a.budget]
@@ -128,10 +145,23 @@ def main(a):
                        optimization_seconds=time.perf_counter() - first,
                        cumulative=dict(collector.timing), forwards=collector.calls,
                        finished=len(collector.episodes), gradient_diagnostic=audit)
+            if baseline is not None:
+                with torch.no_grad():
+                    row['baseline_max_abs_diff'] = float(
+                        (learner.value_baseline.weight - baseline['w0']).abs().max().cpu())
+                row['baseline_in_optimizer'] = any(
+                    learner.value_baseline.weight is p
+                    for group in opt.param_groups for p in group['params'])
             updates.append(row)
             write(output / 'updates.json', updates)
         checkpoint = dict(parameters=learner.state_dict(), optimizer=opt.state_dict(),
                           residual_critic=residual_critic, detach_value_trunk=a.detach_value_trunk,
+                          baseline=None if baseline is None else dict(
+                              frozen=baseline['frozen'], in_optimizer=baseline['in_optimizer'],
+                              init_sha256=baseline['init_sha256'],
+                              w0=baseline['w0'].cpu(),
+                              max_abs_diff=float((learner.value_baseline.weight.detach()
+                                                  - baseline['w0']).abs().max().cpu())),
                           E=steps, total_E=steps+pretrain_e,
                           next_seed=collector.next_seed, optimizer_rng=rng.bit_generator.state,
                           collector=collector.snapshot())
@@ -149,6 +179,8 @@ if __name__ == '__main__':
     warm.add_argument('--control', type=Path)
     warm.add_argument('--critic', type=Path)
     p.add_argument('--detach-value-trunk', action='store_true')
+    p.add_argument('--no-freeze-value-baseline', action='store_true',
+                   help='Reproduce the historical B1 semantics where the cash weights keep training')
     p.add_argument('--budget', type=int, default=50000)
     p.add_argument('--seed', type=int, default=24000000)
     p.add_argument('--device', default='mps' if torch.backends.mps.is_available() else 'cpu')

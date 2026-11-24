@@ -3,7 +3,8 @@ import argparse
 import hashlib
 from pathlib import Path
 
-from checkpoints import Actor, STYLE, check_export_actions, load_ft3, load_strategy, torch
+from checkpoints import STYLE, check_export_actions, load_ft3, load_strategy, torch
+from policy import actor_from_checkpoint
 from export import build
 from pilot import write
 from terminal_games import TEMPERATURE
@@ -14,9 +15,7 @@ def main(a):
     teacher = load_ft3(a.ft3)
     style = teacher._POLICY.sid(STYLE)
     assert style == 122
-    actor = Actor(teacher._POLICY, style).eval()
-    state = torch.load(a.checkpoint, map_location='cpu', weights_only=True)
-    actor.load_state_dict(state['parameters'])
+    actor, state = actor_from_checkpoint(teacher, style, a.checkpoint, 'cpu')
     code = build(a.ft3.read_text(), teacher._POLICY, actor, style, TEMPERATURE, 'pure', True)
     a.output.write_text(code)
     module = load_strategy('terminal_rl_export', a.output)

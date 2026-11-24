@@ -140,6 +140,26 @@ class TerminalTests(unittest.TestCase):
         self.assertIsNone(m.trunk.weight.grad)
 
 
+    def test_grad_breakdown_handles_detached_value(self):
+        from terminal_rloo import grad_breakdown
+
+        trunk = [torch.nn.Parameter(torch.randn(3, 3)), torch.nn.Parameter(torch.randn(3))]
+        head = torch.nn.Linear(3, 1)
+        x = torch.randn(4, 3)
+        h = x @ trunk[0] + trunk[1]
+        policy = h.square().mean()
+        detached = (head(h.detach()) - 1.0).square().mean()
+        result = grad_breakdown({'policy': policy, 'value': detached}, trunk)
+        self.assertGreater(result['policy'], 0.0)
+        self.assertEqual(result['value'], 0.0)
+        self.assertIsNone(result['policy_value_cosine'])
+
+        connected = (head(h) - 1.0).square().mean()
+        result = grad_breakdown({'policy': policy, 'value': connected}, trunk)
+        self.assertGreater(result['value'], 0.0)
+        self.assertIsNotNone(result['policy_value_cosine'])
+
+
 if __name__ == '__main__':
     torch.set_num_threads(2)
     unittest.main()

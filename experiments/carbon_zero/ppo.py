@@ -200,45 +200,47 @@ def update(model, optimizer, data, device, temperature, rng, warmup=False, ancho
         z,_,a,lp,*_=batch(test)
         error=float((joint_logprob(z,a)-lp).abs().max().cpu())
     assert error<2e-4,error
+    saved_mask = {name: param.requires_grad for name, param in model.named_parameters()}
     if warmup:
         for name,param in model.named_parameters():
-            param.requires_grad_(name.startswith(('value.', 'value_baseline.')))
-    for _ in range(2):
-        order=rng.permutation(count)
-        for start in range(0,count,256):
-            ids = order[start:start+256]
-            z,v,a,b,c,d,mask=batch(ids)
-            lp=joint_logprob(z,a)
-            ratio=(lp-b).exp()
-            joint_kl=(ratio-1-(lp-b)).mean()
+            param.requires_grad_(name.startswith('value.'))
+    try:
+        for _ in range(2):
+            order=rng.permutation(count)
+            for start in range(0,count,256):
+                ids = order[start:start+256]
+                z,v,a,b,c,d,mask=batch(ids)
+                lp=joint_logprob(z,a)
+                ratio=(lp-b).exp()
+                joint_kl=(ratio-1-(lp-b)).mean()
+                if not warmup and float(joint_kl.detach().cpu())>.02:
+                    break
+                logp=z.log_softmax(-1)
+                entropy=-(logp.exp()*logp).sum(-1)
+                valid=mask.sum(-1)>1
+                ent=(entropy*valid).sum(-1)/valid.sum(-1).clamp_min(1)
+                clip=(ratio-1).abs()>.2
+                value_loss=F.mse_loss(v,d.float())
+                actor_loss=-torch.minimum(ratio*c,ratio.clamp(.8,1.2)*c).mean()
+                loss=.5*value_loss
+                if not warmup:
+                    loss=loss+actor_loss-.01*ent.mean()
+                if anchor_logp is not None:
+                    frozen_logp = anchor_logp[torch.as_tensor(ids, device=device)]
+                    drift = (frozen_logp.exp() * (frozen_logp - logp)).sum((-1,-2)).mean()
+                    loss = loss + anchor_weight * drift
+                    anchor_values.append(drift.detach())
+                optimizer.zero_grad(set_to_none=True)
+                loss.backward()
+                norm=torch.nn.utils.clip_grad_norm_(model.parameters(),.5)
+                optimizer.step()
+                info=torch.stack((joint_kl,clip.float().mean(),ent.mean(),value_loss,norm))
+                stats.append(info.detach().cpu().numpy())
             if not warmup and float(joint_kl.detach().cpu())>.02:
                 break
-            logp=z.log_softmax(-1)
-            entropy=-(logp.exp()*logp).sum(-1)
-            valid=mask.sum(-1)>1
-            ent=(entropy*valid).sum(-1)/valid.sum(-1).clamp_min(1)
-            clip=(ratio-1).abs()>.2
-            value_loss=F.mse_loss(v,d.float())
-            actor_loss=-torch.minimum(ratio*c,ratio.clamp(.8,1.2)*c).mean()
-            loss=.5*value_loss
-            if not warmup:
-                loss=loss+actor_loss-.01*ent.mean()
-            if anchor_logp is not None:
-                frozen_logp = anchor_logp[torch.as_tensor(ids, device=device)]
-                drift = (frozen_logp.exp() * (frozen_logp - logp)).sum((-1,-2)).mean()
-                loss = loss + anchor_weight * drift
-                anchor_values.append(drift.detach())
-            optimizer.zero_grad(set_to_none=True)
-            loss.backward()
-            norm=torch.nn.utils.clip_grad_norm_(model.parameters(),.5)
-            optimizer.step()
-            info=torch.stack((joint_kl,clip.float().mean(),ent.mean(),value_loss,norm))
-            stats.append(info.detach().cpu().numpy())
-        if not warmup and float(joint_kl.detach().cpu())>.02:
-            break
-    if warmup:
-        for param in model.parameters():
-            param.requires_grad_(True)
+    finally:
+        for name, param in model.named_parameters():
+            param.requires_grad_(saved_mask[name])
     metrics = dict(zip(('joint_kl','clipped','entropy','value_loss','gradient_norm'),
                         map(float,np.asarray(stats).mean(0)),strict=True),logprob_error=error)
     if anchor_values:

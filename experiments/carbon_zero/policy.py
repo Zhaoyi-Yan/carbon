@@ -70,6 +70,7 @@ class Actor(nn.Module):
         width=arrays['stem.w'].shape[0]
         self.residual_critic = residual_critic
         self.detach_value_trunk = detach_value_trunk
+        self.value_baseline_frozen = False
         self.stem=nn.Conv2d(54,width,3)
         self.style=nn.Parameter(torch.from_numpy(arrays['emb'][style].copy()))
         self.blocks=nn.ModuleList([nn.ModuleList([nn.Conv2d(width,width,3),nn.Linear(width,width),
@@ -111,6 +112,13 @@ class Actor(nn.Module):
     @staticmethod
     def value_input(cells):
         return torch.cat((cells.mean(1),cells.amax(1)),1)
+
+    def freeze_value_baseline(self):
+        """Freeze the public cash baseline; the residual MLP stays trainable."""
+        if not self.residual_critic:
+            raise ValueError('Only a residual critic has a public baseline')
+        self.value_baseline.weight.requires_grad_(False)
+        self.value_baseline_frozen = True
 
     def predict_value(self, value_features, pub=None):
         if self.residual_critic:
