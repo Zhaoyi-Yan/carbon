@@ -1,0 +1,1095 @@
+{
+  "arm": "ZW0",
+  "checkpoint_sha256": null,
+  "rivals": {
+    "ZW0": {
+      "overall": {
+        "wins": 9,
+        "draws": 0,
+        "losses": 7,
+        "mean_margin": 118.85312500000003,
+        "median_margin": 93.58500000000004,
+        "mean_utility": 0.09369324726552526,
+        "full_games": 16,
+        "eliminations": 0
+      },
+      "games": [
+        {
+          "seed": 2851182217,
+          "seat": 1,
+          "learner_rng": 5443140729339540717,
+          "opponent_rng": 11864204416656984814,
+          "group": 0,
+          "layout_sha256": "7e9a6af169330595e26c900a83305befadcc5d6ddbd81110da68632f014d0d76",
+          "turns": 299,
+          "scores": [
+            6984.24,
+            7524.55
+          ],
+          "cash": [
+            6984.24,
+            7524.55
+          ],
+          "margin": 540.3100000000004,
+          "utility": 0.672698029391226,
+          "elimination": false
+        },
+        {
+          "seed": 2851182217,
+          "seat": 0,
+          "learner_rng": 17940390141859256855,
+          "opponent_rng": 17846464878074682670,
+          "group": 0,
+          "layout_sha256": "7e9a6af169330595e26c900a83305befadcc5d6ddbd81110da68632f014d0d76",
+          "turns": 299,
+          "scores": [
+            7742.54,
+            6334.96
+          ],
+          "cash": [
+            7742.54,
+            6334.96
+          ],
+          "margin": 1407.58,
+          "utility": 0.8672400650629073,
+          "elimination": false
+        },
+        {
+          "seed": 721430494,
+          "seat": 0,
+          "learner_rng": 6694403357913933266,
+          "opponent_rng": 15060855484440466084,
+          "group": 1,
+          "layout_sha256": "c8dca4994ae02e3aba64c2f5a32b208a6fa695631997cb829f9090bf0d0e806d",
+          "turns": 299,
+          "scores": [
+            7720.35,
+            7384.47
+          ],
+          "cash": [
+            7720.35,
+            7384.47
+          ],
+          "margin": 335.8800000000001,
+          "utility": 0.6101255520354468,
+          "elimination": false
+        },
+        {
+          "seed": 721430494,
+          "seat": 1,
+          "learner_rng": 8329258767904511690,
+          "opponent_rng": 7025856773407164631,
+          "group": 1,
+          "layout_sha256": "c8dca4994ae02e3aba64c2f5a32b208a6fa695631997cb829f9090bf0d0e806d",
+          "turns": 299,
+          "scores": [
+            6017.8,
+            5623.91
+          ],
+          "cash": [
+            6017.8,
+            5623.91
+          ],
+          "margin": -393.8900000000003,
+          "utility": -0.6283597804428585,
+          "elimination": false
+        },
+        {
+          "seed": 1855011385,
+          "seat": 1,
+          "learner_rng": 3471421710796802533,
+          "opponent_rng": 18074832769430369110,
+          "group": 2,
+          "layout_sha256": "99f004a27437b1c01ff9c058ca24f16a076fde140bbedd9a27cee189e9ae70c3",
+          "turns": 299,
+          "scores": [
+            8480.0,
+            7200.81
+          ],
+          "cash": [
+            8480.0,
+            7200.81
+          ],
+          "margin": -1279.1899999999996,
+          "utility": -0.8462629780041571,
+          "elimination": false
+        },
+        {
+          "seed": 1855011385,
+          "seat": 0,
+          "learner_rng": 6706609041493697261,
+          "opponent_rng": 8838490166638693765,
+          "group": 2,
+          "layout_sha256": "99f004a27437b1c01ff9c058ca24f16a076fde140bbedd9a27cee189e9ae70c3",
+          "turns": 299,
+          "scores": [
+            8058.59,
+            8049.42
+          ],
+          "cash": [
+            8058.59,
+            8049.42
+          ],
+          "margin": 9.170000000000073,
+          "utility": 0.50305662858846,
+          "elimination": false
+        },
+        {
+          "seed": 2051444518,
+          "seat": 0,
+          "learner_rng": 15848995245684786698,
+          "opponent_rng": 10483214910800635176,
+          "group": 3,
+          "layout_sha256": "6b6a98bbd334ddbb86b66ae67b87743a278fbeb596873feb2be5c3f0e01899bc",
+          "turns": 299,
+          "scores": [
+            6249.81,
+            7149.31
+          ],
+          "cash": [
+            6249.81,
+            7149.31
+          ],
+          "margin": -899.5,
+          "utility": -0.7684061659751498,
+          "elimination": false
+        },
+        {
+          "seed": 2051444518,
+          "seat": 1,
+          "learner_rng": 17200171523116088106,
+          "opponent_rng": 14915939348922507799,
+          "group": 3,
+          "layout_sha256": "6b6a98bbd334ddbb86b66ae67b87743a278fbeb596873feb2be5c3f0e01899bc",
+          "turns": 299,
+          "scores": [
+            7433.34,
+            7396.34
+          ],
+          "cash": [
+            7433.34,
+            7396.34
+          ],
+          "margin": -37.0,
+          "utility": -0.5123308325592484,
+          "elimination": false
+        },
+        {
+          "seed": 3265957433,
+          "seat": 1,
+          "learner_rng": 7652778477721982005,
+          "opponent_rng": 5946569807402940645,
+          "group": 4,
+          "layout_sha256": "53f0fd6d0278aa79f62348d56ddfdb7db4f805b5d5bc7d92ffb7a487483922c1",
+          "turns": 299,
+          "scores": [
+            7249.81,
+            7200.96
+          ],
+          "cash": [
+            7249.81,
+            7200.96
+          ],
+          "margin": -48.850000000000364,
+          "utility": -0.5162775791396805,
+          "elimination": false
+        },
+        {
+          "seed": 3265957433,
+          "seat": 0,
+          "learner_rng": 10101230348928006158,
+          "opponent_rng": 12167290053805639817,
+          "group": 4,
+          "layout_sha256": "53f0fd6d0278aa79f62348d56ddfdb7db4f805b5d5bc7d92ffb7a487483922c1",
+          "turns": 299,
+          "scores": [
+            5871.66,
+            5693.66
+          ],
+          "cash": [
+            5871.66,
+            5693.66
+          ],
+          "margin": 178.0,
+          "utility": 0.5590563869163492,
+          "elimination": false
+        },
+        {
+          "seed": 3889719947,
+          "seat": 0,
+          "learner_rng": 11229784475260606231,
+          "opponent_rng": 4971975797042107235,
+          "group": 5,
+          "layout_sha256": "e82464178a1e99a78f896922832bb989f85cb214850554a8ec9b9e2283c53fb2",
+          "turns": 299,
+          "scores": [
+            8675.75,
+            7248.25
+          ],
+          "cash": [
+            8675.75,
+            7248.25
+          ],
+          "margin": 1427.5,
+          "utility": 0.8702683282320283,
+          "elimination": false
+        },
+        {
+          "seed": 3889719947,
+          "seat": 1,
+          "learner_rng": 18419426838123220271,
+          "opponent_rng": 9830294994885119582,
+          "group": 5,
+          "layout_sha256": "e82464178a1e99a78f896922832bb989f85cb214850554a8ec9b9e2283c53fb2",
+          "turns": 299,
+          "scores": [
+            8935.23,
+            8262.75
+          ],
+          "cash": [
+            8935.23,
+            8262.75
+          ],
+          "margin": -672.4799999999996,
+          "utility": -0.7102585324894488,
+          "elimination": false
+        },
+        {
+          "seed": 3804744354,
+          "seat": 1,
+          "learner_rng": 1976472743576329600,
+          "opponent_rng": 14303328957452830245,
+          "group": 6,
+          "layout_sha256": "9c6c50af046cedd8211df9db56c1d596105ba4d1e5afcc38babaaae3ac3c12c6",
+          "turns": 299,
+          "scores": [
+            7019.91,
+            6526.77
+          ],
+          "cash": [
+            7019.91,
+            6526.77
+          ],
+          "margin": -493.1399999999994,
+          "utility": -0.6587030710166205,
+          "elimination": false
+        },
+        {
+          "seed": 3804744354,
+          "seat": 0,
+          "learner_rng": 4994228959621967995,
+          "opponent_rng": 2585263335856378203,
+          "group": 6,
+          "layout_sha256": "9c6c50af046cedd8211df9db56c1d596105ba4d1e5afcc38babaaae3ac3c12c6",
+          "turns": 299,
+          "scores": [
+            7092.49,
+            6792.95
+          ],
+          "cash": [
+            7092.49,
+            6792.95
+          ],
+          "margin": 299.53999999999996,
+          "utility": 0.5985402912730122,
+          "elimination": false
+        },
+        {
+          "seed": 4178270411,
+          "seat": 1,
+          "learner_rng": 1129624369746755665,
+          "opponent_rng": 17151216193444208469,
+          "group": 7,
+          "layout_sha256": "5ce621ded4732ddce66d7bc453954b0c3a6e79c2cc743927d133346adc41ef45",
+          "turns": 299,
+          "scores": [
+            8001.41,
+            8507.73
+          ],
+          "cash": [
+            8001.41,
+            8507.73
+          ],
+          "margin": 506.3199999999997,
+          "utility": 0.6626427019062686,
+          "elimination": false
+        },
+        {
+          "seed": 4178270411,
+          "seat": 0,
+          "learner_rng": 13329774410087107388,
+          "opponent_rng": 8684363648888955374,
+          "group": 7,
+          "layout_sha256": "5ce621ded4732ddce66d7bc453954b0c3a6e79c2cc743927d133346adc41ef45",
+          "turns": 299,
+          "scores": [
+            9300.18,
+            8278.78
+          ],
+          "cash": [
+            9300.18,
+            8278.78
+          ],
+          "margin": 1021.3999999999996,
+          "utility": 0.7960629124698693,
+          "elimination": false
+        }
+      ],
+      "costs": {
+        "encode": 4.139388204319403,
+        "inference": 4.035586843499914,
+        "referee": 7.0399112002924085,
+        "elapsed": 15.219061250099912,
+        "forwards": 598
+      },
+      "seats": {
+        "0": {
+          "wins": 7,
+          "draws": 0,
+          "losses": 1,
+          "mean_margin": 472.44624999999996,
+          "median_margin": 317.71000000000004,
+          "mean_utility": 0.5044929998253654,
+          "full_games": 8,
+          "eliminations": 0
+        },
+        "1": {
+          "wins": 2,
+          "draws": 0,
+          "losses": 6,
+          "mean_margin": -234.7399999999999,
+          "median_margin": -221.37000000000035,
+          "mean_utility": -0.3171065052943149,
+          "full_games": 8,
+          "eliminations": 0
+        }
+      }
+    },
+    "ft3-generic-no-search": {
+      "overall": {
+        "wins": 9,
+        "draws": 1,
+        "losses": 6,
+        "mean_margin": 61.80812499999985,
+        "median_margin": 69.36500000000024,
+        "mean_utility": 0.1126666925051664,
+        "full_games": 15,
+        "eliminations": 1
+      },
+      "games": [
+        {
+          "seed": 322105913,
+          "seat": 0,
+          "learner_rng": 8812208131566624424,
+          "opponent_rng": 5924079277908243136,
+          "group": 0,
+          "layout_sha256": "6fd64951b3896701c8dd6c47559f94ecaa9c74ada3fde3fcb19b25c8904a0172",
+          "turns": 299,
+          "scores": [
+            6903.29,
+            6634.68
+          ],
+          "cash": [
+            6903.29,
+            6634.68
+          ],
+          "margin": 268.6099999999997,
+          "utility": 0.5885917204016122,
+          "elimination": false
+        },
+        {
+          "seed": 322105913,
+          "seat": 1,
+          "learner_rng": 13075824863460790634,
+          "opponent_rng": 12504082657725476767,
+          "group": 0,
+          "layout_sha256": "6fd64951b3896701c8dd6c47559f94ecaa9c74ada3fde3fcb19b25c8904a0172",
+          "turns": 299,
+          "scores": [
+            8183.59,
+            8098.35
+          ],
+          "cash": [
+            8183.59,
+            8098.35
+          ],
+          "margin": -85.23999999999978,
+          "utility": -0.5283827880129631,
+          "elimination": false
+        },
+        {
+          "seed": 187853371,
+          "seat": 1,
+          "learner_rng": 14251647523320107423,
+          "opponent_rng": 7675631932695640015,
+          "group": 1,
+          "layout_sha256": "4ec1734e3298aed96d739c528582100dea4314a77379ff5ea3fbf8ff42ba8570",
+          "turns": 299,
+          "scores": [
+            8904.84,
+            9211.73
+          ],
+          "cash": [
+            8904.84,
+            9211.73
+          ],
+          "margin": 306.8899999999994,
+          "utility": 0.6008928407476412,
+          "elimination": false
+        },
+        {
+          "seed": 187853371,
+          "seat": 0,
+          "learner_rng": 17652057624090484252,
+          "opponent_rng": 9904760336572017452,
+          "group": 1,
+          "layout_sha256": "4ec1734e3298aed96d739c528582100dea4314a77379ff5ea3fbf8ff42ba8570",
+          "turns": 299,
+          "scores": [
+            8436.15,
+            8166.59
+          ],
+          "cash": [
+            8436.15,
+            8166.59
+          ],
+          "margin": 269.5599999999995,
+          "utility": 0.588898411187235,
+          "elimination": false
+        },
+        {
+          "seed": 1965857726,
+          "seat": 1,
+          "learner_rng": 6441307909302888904,
+          "opponent_rng": 1122497072618913152,
+          "group": 2,
+          "layout_sha256": "cc39c53fa16b4ce9bcc617e1c7e0e60aebba35f55c9ea33eea8162f8b33208b0",
+          "turns": 299,
+          "scores": [
+            6338.65,
+            6470.96
+          ],
+          "cash": [
+            6338.65,
+            6470.96
+          ],
+          "margin": 132.3100000000004,
+          "utility": 0.5439893074270267,
+          "elimination": false
+        },
+        {
+          "seed": 1965857726,
+          "seat": 0,
+          "learner_rng": 14060308977042883066,
+          "opponent_rng": 1309388973788207282,
+          "group": 2,
+          "layout_sha256": "cc39c53fa16b4ce9bcc617e1c7e0e60aebba35f55c9ea33eea8162f8b33208b0",
+          "turns": 8,
+          "scores": [
+            -293,
+            -293
+          ],
+          "cash": [
+            25.24,
+            20
+          ],
+          "margin": 0,
+          "utility": 0.0,
+          "elimination": true
+        },
+        {
+          "seed": 2446775436,
+          "seat": 0,
+          "learner_rng": 11022217880353430672,
+          "opponent_rng": 389409308144157959,
+          "group": 3,
+          "layout_sha256": "1ace326ed7fe072596aa067032c5aedac208554f684786bf6080d667bdd7fccc",
+          "turns": 299,
+          "scores": [
+            7475.67,
+            7326.94
+          ],
+          "cash": [
+            7475.67,
+            7326.94
+          ],
+          "margin": 148.73000000000047,
+          "utility": 0.5494148339781746,
+          "elimination": false
+        },
+        {
+          "seed": 2446775436,
+          "seat": 1,
+          "learner_rng": 12508917868655386298,
+          "opponent_rng": 15743057773790694632,
+          "group": 3,
+          "layout_sha256": "1ace326ed7fe072596aa067032c5aedac208554f684786bf6080d667bdd7fccc",
+          "turns": 299,
+          "scores": [
+            7872.3,
+            7878.72
+          ],
+          "cash": [
+            7872.3,
+            7878.72
+          ],
+          "margin": 6.420000000000073,
+          "utility": 0.5021399869329705,
+          "elimination": false
+        },
+        {
+          "seed": 3975782567,
+          "seat": 1,
+          "learner_rng": 3281305247632117271,
+          "opponent_rng": 16749142762520756961,
+          "group": 4,
+          "layout_sha256": "8a1e31deb82a097c9bd6e430a018d25488c4540ee4e662ff50f79cd9c56bb994",
+          "turns": 299,
+          "scores": [
+            8401.62,
+            7587.52
+          ],
+          "cash": [
+            8401.62,
+            7587.52
+          ],
+          "margin": -814.1000000000004,
+          "utility": -0.7475271045486287,
+          "elimination": false
+        },
+        {
+          "seed": 3975782567,
+          "seat": 0,
+          "learner_rng": 5342762004204168966,
+          "opponent_rng": 16342256856293054397,
+          "group": 4,
+          "layout_sha256": "8a1e31deb82a097c9bd6e430a018d25488c4540ee4e662ff50f79cd9c56bb994",
+          "turns": 299,
+          "scores": [
+            9008.66,
+            9644.63
+          ],
+          "cash": [
+            9008.66,
+            9644.63
+          ],
+          "margin": -635.9699999999993,
+          "utility": -0.7001390309020339,
+          "elimination": false
+        },
+        {
+          "seed": 2698720844,
+          "seat": 0,
+          "learner_rng": 9129089775954483792,
+          "opponent_rng": 7088775339967515005,
+          "group": 5,
+          "layout_sha256": "004e0e841d6414414993a81044c7aec2d2473bfba4d724d99872654b03608af9",
+          "turns": 299,
+          "scores": [
+            5135.32,
+            5273.45
+          ],
+          "cash": [
+            5135.32,
+            5273.45
+          ],
+          "margin": -138.1300000000001,
+          "utility": -0.5459136248321461,
+          "elimination": false
+        },
+        {
+          "seed": 2698720844,
+          "seat": 1,
+          "learner_rng": 13401668333770742279,
+          "opponent_rng": 5015211732128855004,
+          "group": 5,
+          "layout_sha256": "004e0e841d6414414993a81044c7aec2d2473bfba4d724d99872654b03608af9",
+          "turns": 299,
+          "scores": [
+            6311.24,
+            6159.3
+          ],
+          "cash": [
+            6311.24,
+            6159.3
+          ],
+          "margin": -151.9399999999996,
+          "utility": -0.5504741573044799,
+          "elimination": false
+        },
+        {
+          "seed": 2566552246,
+          "seat": 1,
+          "learner_rng": 1465029507634733603,
+          "opponent_rng": 5012119507792530917,
+          "group": 6,
+          "layout_sha256": "a930103730d0ad237f8bb4c438981f6c042776296b2a288f34362e248b17fc58",
+          "turns": 299,
+          "scores": [
+            8811.11,
+            8447.22
+          ],
+          "cash": [
+            8811.11,
+            8447.22
+          ],
+          "margin": -363.89000000000124,
+          "utility": -0.6189718803069016,
+          "elimination": false
+        },
+        {
+          "seed": 2566552246,
+          "seat": 0,
+          "learner_rng": 12225719505410973264,
+          "opponent_rng": 12778584346738640932,
+          "group": 6,
+          "layout_sha256": "a930103730d0ad237f8bb4c438981f6c042776296b2a288f34362e248b17fc58",
+          "turns": 299,
+          "scores": [
+            9114.47,
+            8247.61
+          ],
+          "cash": [
+            9114.47,
+            8247.61
+          ],
+          "margin": 866.8599999999988,
+          "utility": 0.7605711435554228,
+          "elimination": false
+        },
+        {
+          "seed": 827779599,
+          "seat": 0,
+          "learner_rng": 4182096356177959836,
+          "opponent_rng": 15553133706955451867,
+          "group": 7,
+          "layout_sha256": "518099e8b3d1afa1492001716fa815f3f000e86bb3be343f6b869fe1203e1ce2",
+          "turns": 299,
+          "scores": [
+            7158.53,
+            6248.87
+          ],
+          "cash": [
+            7158.53,
+            6248.87
+          ],
+          "margin": 909.6599999999999,
+          "utility": 0.7708081351302138,
+          "elimination": false
+        },
+        {
+          "seed": 827779599,
+          "seat": 1,
+          "learner_rng": 7922155281803434984,
+          "opponent_rng": 10651730312610378229,
+          "group": 7,
+          "layout_sha256": "518099e8b3d1afa1492001716fa815f3f000e86bb3be343f6b869fe1203e1ce2",
+          "turns": 299,
+          "scores": [
+            6275.41,
+            6544.57
+          ],
+          "cash": [
+            6275.41,
+            6544.57
+          ],
+          "margin": 269.15999999999985,
+          "utility": 0.5887692866295191,
+          "elimination": false
+        }
+      ],
+      "costs": {
+        "encode": 2.51818664977327,
+        "inference": 39.49465378164314,
+        "referee": 7.407435339409858,
+        "elapsed": 49.42770720808767,
+        "forwards": 299
+      },
+      "seats": {
+        "0": {
+          "wins": 5,
+          "draws": 1,
+          "losses": 2,
+          "mean_margin": 211.16499999999985,
+          "median_margin": 208.67000000000007,
+          "mean_utility": 0.2515289485648098,
+          "full_games": 7,
+          "eliminations": 1
+        },
+        "1": {
+          "wins": 4,
+          "draws": 0,
+          "losses": 4,
+          "mean_margin": -87.54875000000015,
+          "median_margin": -39.409999999999854,
+          "mean_utility": -0.026195563554476997,
+          "full_games": 8,
+          "eliminations": 0
+        }
+      }
+    },
+    "yan-v6-no-search": {
+      "overall": {
+        "wins": 2,
+        "draws": 0,
+        "losses": 14,
+        "mean_margin": -741.8962499999998,
+        "median_margin": -756.1549999999997,
+        "mean_utility": -0.5855998447225433,
+        "full_games": 16,
+        "eliminations": 0
+      },
+      "games": [
+        {
+          "seed": 449185590,
+          "seat": 0,
+          "learner_rng": 527676768308531149,
+          "opponent_rng": 17970928977706912457,
+          "group": 0,
+          "layout_sha256": "2fa3e36966e49ddf8d477c07e829f64424c562eab9e6a4731dbad211853664a4",
+          "turns": 299,
+          "scores": [
+            5763.63,
+            7109.17
+          ],
+          "cash": [
+            5763.63,
+            7109.17
+          ],
+          "margin": -1345.54,
+          "utility": -0.8574235084188495,
+          "elimination": false
+        },
+        {
+          "seed": 449185590,
+          "seat": 1,
+          "learner_rng": 14116210576037501452,
+          "opponent_rng": 16934245989499671742,
+          "group": 0,
+          "layout_sha256": "2fa3e36966e49ddf8d477c07e829f64424c562eab9e6a4731dbad211853664a4",
+          "turns": 299,
+          "scores": [
+            6328.23,
+            5916.48
+          ],
+          "cash": [
+            6328.23,
+            5916.48
+          ],
+          "margin": -411.75,
+          "utility": -0.6339035522622584,
+          "elimination": false
+        },
+        {
+          "seed": 2252062376,
+          "seat": 0,
+          "learner_rng": 178163456545174917,
+          "opponent_rng": 18426324800376151490,
+          "group": 1,
+          "layout_sha256": "f5953e8dbbec4ac08c5f01f03319eae8a41694e4bceb4d817e8974ba24ef1ce2",
+          "turns": 299,
+          "scores": [
+            8761.61,
+            9487.15
+          ],
+          "cash": [
+            8761.61,
+            9487.15
+          ],
+          "margin": -725.539999999999,
+          "utility": -0.7245982986920023,
+          "elimination": false
+        },
+        {
+          "seed": 2252062376,
+          "seat": 1,
+          "learner_rng": 12673574356740946128,
+          "opponent_rng": 18163419201749735973,
+          "group": 1,
+          "layout_sha256": "f5953e8dbbec4ac08c5f01f03319eae8a41694e4bceb4d817e8974ba24ef1ce2",
+          "turns": 299,
+          "scores": [
+            8137.94,
+            6907.42
+          ],
+          "cash": [
+            8137.94,
+            6907.42
+          ],
+          "margin": -1230.5199999999995,
+          "utility": -0.8376292573241577,
+          "elimination": false
+        },
+        {
+          "seed": 1235011108,
+          "seat": 1,
+          "learner_rng": 5007914815985435469,
+          "opponent_rng": 3676934460429612580,
+          "group": 2,
+          "layout_sha256": "3f9082c9aa29bd6207acc2da3ef752247fa06ee8927e10e26e7de4b34673dc06",
+          "turns": 299,
+          "scores": [
+            9819.27,
+            8211.45
+          ],
+          "cash": [
+            9819.27,
+            8211.45
+          ],
+          "margin": -1607.8199999999997,
+          "utility": -0.8950842311434207,
+          "elimination": false
+        },
+        {
+          "seed": 1235011108,
+          "seat": 0,
+          "learner_rng": 16536249291496588748,
+          "opponent_rng": 10046185722919645994,
+          "group": 2,
+          "layout_sha256": "3f9082c9aa29bd6207acc2da3ef752247fa06ee8927e10e26e7de4b34673dc06",
+          "turns": 299,
+          "scores": [
+            7917.09,
+            7664.57
+          ],
+          "cash": [
+            7917.09,
+            7664.57
+          ],
+          "margin": 252.52000000000044,
+          "utility": 0.5833870711272063,
+          "elimination": false
+        },
+        {
+          "seed": 1477919355,
+          "seat": 1,
+          "learner_rng": 8879034377651091078,
+          "opponent_rng": 4050890063100932483,
+          "group": 3,
+          "layout_sha256": "e2101109219363e1679b59c6bcc2d7130789dab12405bcd67ad4e147594aa36f",
+          "turns": 299,
+          "scores": [
+            7290.0,
+            6503.23
+          ],
+          "cash": [
+            7290.0,
+            6503.23
+          ],
+          "margin": -786.7700000000004,
+          "utility": -0.7405879486682896,
+          "elimination": false
+        },
+        {
+          "seed": 1477919355,
+          "seat": 0,
+          "learner_rng": 17754051829476776096,
+          "opponent_rng": 13399082836050381000,
+          "group": 3,
+          "layout_sha256": "e2101109219363e1679b59c6bcc2d7130789dab12405bcd67ad4e147594aa36f",
+          "turns": 299,
+          "scores": [
+            6861.85,
+            7137.35
+          ],
+          "cash": [
+            6861.85,
+            7137.35
+          ],
+          "margin": -275.5,
+          "utility": -0.5908144609422489,
+          "elimination": false
+        },
+        {
+          "seed": 2481426136,
+          "seat": 0,
+          "learner_rng": 5302988683451742905,
+          "opponent_rng": 12711322158688294582,
+          "group": 4,
+          "layout_sha256": "1312e90aa0271fb3542a7c52655b33d9146977badda6f3f639e6cf2fd48315b0",
+          "turns": 299,
+          "scores": [
+            6162.38,
+            7247.56
+          ],
+          "cash": [
+            6162.38,
+            7247.56
+          ],
+          "margin": -1085.1800000000003,
+          "utility": -0.8095219104092302,
+          "elimination": false
+        },
+        {
+          "seed": 2481426136,
+          "seat": 1,
+          "learner_rng": 12973769314363893731,
+          "opponent_rng": 10796605903978991149,
+          "group": 4,
+          "layout_sha256": "1312e90aa0271fb3542a7c52655b33d9146977badda6f3f639e6cf2fd48315b0",
+          "turns": 299,
+          "scores": [
+            7897.82,
+            7676.55
+          ],
+          "cash": [
+            7897.82,
+            7676.55
+          ],
+          "margin": -221.26999999999953,
+          "utility": -0.5732262963701603,
+          "elimination": false
+        },
+        {
+          "seed": 1516351186,
+          "seat": 1,
+          "learner_rng": 15483600999689471377,
+          "opponent_rng": 18113955113849082568,
+          "group": 5,
+          "layout_sha256": "d14134eaed8775d718e784e8d8624cef51e48eb012620a87664f1e88bd32127e",
+          "turns": 299,
+          "scores": [
+            9144.05,
+            8019.31
+          ],
+          "cash": [
+            9144.05,
+            8019.31
+          ],
+          "margin": -1124.7399999999989,
+          "utility": -0.817522766397917,
+          "elimination": false
+        },
+        {
+          "seed": 1516351186,
+          "seat": 0,
+          "learner_rng": 17678528960763168886,
+          "opponent_rng": 5935456367369275395,
+          "group": 5,
+          "layout_sha256": "d14134eaed8775d718e784e8d8624cef51e48eb012620a87664f1e88bd32127e",
+          "turns": 299,
+          "scores": [
+            8081.37,
+            8678.41
+          ],
+          "cash": [
+            8081.37,
+            8678.41
+          ],
+          "margin": -597.04,
+          "utility": -0.689129618506095,
+          "elimination": false
+        },
+        {
+          "seed": 432885704,
+          "seat": 1,
+          "learner_rng": 4966048634927373017,
+          "opponent_rng": 13349986451468600872,
+          "group": 6,
+          "layout_sha256": "28d78564a553a38623c80c22c370458ebcca50cd5fa6a5d149b1ebf416fdd8ae",
+          "turns": 299,
+          "scores": [
+            7403.93,
+            6875.19
+          ],
+          "cash": [
+            7403.93,
+            6875.19
+          ],
+          "margin": -528.7400000000007,
+          "utility": -0.6692924515832299,
+          "elimination": false
+        },
+        {
+          "seed": 432885704,
+          "seat": 0,
+          "learner_rng": 12217009636112175556,
+          "opponent_rng": 1583345128448154401,
+          "group": 6,
+          "layout_sha256": "28d78564a553a38623c80c22c370458ebcca50cd5fa6a5d149b1ebf416fdd8ae",
+          "turns": 299,
+          "scores": [
+            6040.18,
+            7110.66
+          ],
+          "cash": [
+            6040.18,
+            7110.66
+          ],
+          "margin": -1070.4799999999996,
+          "utility": -0.8064813163258233,
+          "elimination": false
+        },
+        {
+          "seed": 685192469,
+          "seat": 0,
+          "learner_rng": 7130436683844071945,
+          "opponent_rng": 18141811623262176353,
+          "group": 7,
+          "layout_sha256": "805da89e4729d89a4cb2729e3756e92d17a600bd9473406aa4a0352e46af3c3a",
+          "turns": 299,
+          "scores": [
+            7235.56,
+            8400.25
+          ],
+          "cash": [
+            7235.56,
+            8400.25
+          ],
+          "margin": -1164.6899999999996,
+          "utility": -0.8253350705075662,
+          "elimination": false
+        },
+        {
+          "seed": 685192469,
+          "seat": 1,
+          "learner_rng": 15418877766869849768,
+          "opponent_rng": 16825679087455731943,
+          "group": 7,
+          "layout_sha256": "805da89e4729d89a4cb2729e3756e92d17a600bd9473406aa4a0352e46af3c3a",
+          "turns": 299,
+          "scores": [
+            7404.23,
+            7456.95
+          ],
+          "cash": [
+            7404.23,
+            7456.95
+          ],
+          "margin": 52.720000000000255,
+          "utility": 0.5175661008633493,
+          "elimination": false
+        }
+      ],
+      "costs": {
+        "encode": 2.538269539596513,
+        "inference": 158.35806516557932,
+        "referee": 8.07208762736991,
+        "elapsed": 168.9720052080229,
+        "forwards": 299
+      },
+      "seats": {
+        "0": {
+          "wins": 1,
+          "draws": 0,
+          "losses": 7,
+          "mean_margin": -751.4312499999997,
+          "median_margin": -898.0099999999993,
+          "mean_utility": -0.5899896390843261,
+          "full_games": 8,
+          "eliminations": 0
+        },
+        "1": {
+          "wins": 1,
+          "draws": 0,
+          "losses": 7,
+          "mean_margin": -732.3612499999998,
+          "median_margin": -657.7550000000006,
+          "mean_utility": -0.5812100503607606,
+          "full_games": 8,
+          "eliminations": 0
+        }
+      }
+    }
+  }
+}

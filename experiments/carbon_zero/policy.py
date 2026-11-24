@@ -66,7 +66,7 @@ class Actor(nn.Module):
             for layer,name in zip(block,('c1','g','c2'),strict=True):
                 copy(layer,f'b{i}.{name}')
 
-    def forward(self, features):
+    def spatial(self, features):
         x=features.float().mul(.01)
         def pad(v):
             # Circular padding using concatenation works on CPU and MPS.
@@ -76,8 +76,15 @@ class Actor(nn.Module):
         for first,gate,second in self.blocks:
             h=first(pad(x)).relu()
             x=(x+second(pad(h+gate(h.mean((2,3)))[:,:,None,None]))).relu()
-        cells=x.flatten(2).transpose(1,2)
-        value=self.value(torch.cat((cells.mean(1),cells.amax(1)),1))[:,0]
+        return x.flatten(2).transpose(1,2)
+
+    @staticmethod
+    def value_input(cells):
+        return torch.cat((cells.mean(1),cells.amax(1)),1)
+
+    def forward(self, features):
+        cells = self.spatial(features)
+        value = self.value(self.value_input(cells))[:, 0]
         return self.workers(cells),self.bases(cells),value
 
 
@@ -100,11 +107,15 @@ def slots(obs, cfg):
     return names,cells,legal
 
 
+def action_logits(w, b, cells, legal, temperature):
+    rows=torch.arange(len(w),device=w.device)[:,None]
+    gathered=torch.cat((F.pad(b[rows,cells[:,:2]],(0,2)),w[rows,cells[:,2:]]),dim=1)
+    return (gathered/temperature).masked_fill(~legal,-1.e9)
+
+
 def logits(model, x, cells, legal, temperature):
     w,b,v=model(x)
-    rows=torch.arange(len(x),device=x.device)[:,None]
-    gathered=torch.cat((F.pad(b[rows,cells[:,:2]],(0,2)),w[rows,cells[:,2:]]),dim=1)
-    return (gathered/temperature).masked_fill(~legal,-1.e9),v
+    return action_logits(w,b,cells,legal,temperature),v
 
 
 def sample(logits, rng):
@@ -125,12 +136,12 @@ DESTINATIONS = np.asarray([[
 ] for p in range(225)])
 
 
-def coordinated_sample(scores,rng,cells,legal):
+def coordinated_sample(scores,rng,cells,legal,*,noise=None):
     """Fixed-order occupancy masks are conditional on actions already chosen."""
     z=scores.cpu().numpy()
     effective=legal.copy()
     destinations=DESTINATIONS[cells]
-    gumbel=rng.gumbel(size=z.shape)
+    gumbel=rng.gumbel(size=z.shape) if noise is None else noise
     chosen=np.zeros(z.shape[:2],np.int64)
     occupied=np.zeros((len(z),225),bool)
     rows=np.arange(len(z))

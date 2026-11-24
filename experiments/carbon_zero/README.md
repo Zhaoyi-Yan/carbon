@@ -26,3 +26,17 @@ python experiments/carbon_zero/diagnose.py FT3_PATH OUTPUT ARENA_JSONL ACTOR_DRI
 For each saved checkpoint, run `checkpoints.py FT3_PATH OUTPUT CHECKPOINT` to create the deployment exports and pure external panel. Add `--search-games` for a timed, complete v8 swap on one map, or use `--search-only` to add that panel to an existing result.
 
 Pass `--anchor-kl .1` for the short controlled comparison. It adds a KL term using the frozen ZW0 action probabilities on the learner's stored conditional masks. The reference remains fixed for the entire run.
+
+## Complete-game terminal RL
+
+Run terminal RLOO and calibrate a separate Monte Carlo value head with the frozen ft3 source.
+
+```sh
+python experiments/carbon_zero/test_terminal_rl.py
+python experiments/carbon_zero/terminal_rloo.py FT3 RUN/C --budget 100000
+python experiments/carbon_zero/terminal_critic.py FT3 RUN/critic --fit-batches 14 --test-batches 4 --validation-panel expanded
+python experiments/carbon_zero/terminal_ppo.py FT3 RUN/A --control ANCHORED_10000_PT --budget 100000
+python experiments/carbon_zero/terminal_eval.py FT3 RUN/evaluation --aa --candidate C100=RUN/C/checkpoint-100000.pt
+```
+
+RLOO checkpoints contain the optimizer, consumed group manifest and the next behavior version. Re-run the same command with `--resume` to continue from the last complete batch. Raw gzip traces contain sent commands, active slot IDs, conditional masks, chosen actions and old joint log-probabilities. `terminal_ppo.py --critic RUN/critic` starts the PPO arm from a value head that passed its held-out calibration. Export a saved actor using `terminal_export.py FT3 CHECKPOINT MODEL.py` and inspect policy drift with `terminal_drift.py FT3 RESULT --candidate LABEL=CHECKPOINT`.

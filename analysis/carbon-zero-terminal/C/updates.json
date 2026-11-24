@@ -1,0 +1,1844 @@
+[
+  {
+    "policy": -0.011140973113166789,
+    "old_KL": 0.021189518975410868,
+    "clip_rate": 0.22831761837005615,
+    "entropy_scaled": 0.0922132854660352,
+    "reference_KL_scaled": 0.009791934241851171,
+    "gradient_norm": 9.374105400509304,
+    "logprob_error": 8.58306884765625e-06,
+    "optimization_updates": 9,
+    "optimization_seconds": 14.675146041903645,
+    "gradient_diagnostic": {
+      "policy": 5.495611190795898,
+      "entropy": 0.005353019572794437,
+      "reference": 2.810380692608305e-07
+    },
+    "E": 4489,
+    "L": 4489,
+    "behavior_version": 0,
+    "groups": [
+      {
+        "group": 0,
+        "layout_seed": 898387989,
+        "seat": 0,
+        "game_count": 4,
+        "terminal_std": 0.6836589860244336,
+        "zero_advantage": false,
+        "advantages": [
+          0.9719076438315953,
+          0.8489156540568293,
+          -0.929099159384668,
+          -0.8917241385037569
+        ]
+      },
+      {
+        "group": 1,
+        "layout_seed": 898387989,
+        "seat": 1,
+        "game_count": 4,
+        "terminal_std": 0.7046104640804997,
+        "zero_advantage": false,
+        "advantages": [
+          0.5217110466184773,
+          0.5656548042386372,
+          -1.6270031254804167,
+          0.5396372746233019
+        ]
+      },
+      {
+        "group": 2,
+        "layout_seed": 2526941516,
+        "seat": 0,
+        "game_count": 4,
+        "terminal_std": 0.7100084139287244,
+        "zero_advantage": false,
+        "advantages": [
+          -0.7425428157525853,
+          0.9579713466831175,
+          -1.1305809267012128,
+          0.9151523957706807
+        ]
+      },
+      {
+        "group": 3,
+        "layout_seed": 2526941516,
+        "seat": 1,
+        "game_count": 4,
+        "terminal_std": 0.2611440572992121,
+        "zero_advantage": false,
+        "advantages": [
+          0.1754799501584321,
+          0.31489273935245077,
+          -0.5877995017959167,
+          0.09742681228503376
+        ]
+      }
+    ],
+    "collection": {
+      "encode": 3.898768960731104,
+      "inference": 5.3698138343170285,
+      "referee": 6.954116247361526,
+      "elapsed": 16.227173416875303,
+      "forwards": 598
+    },
+    "trace_sha256": "6c88d7c934eedfa7ce318302e346fd3b6cf46c9dd67d9d95b55ba279e6810998",
+    "batch_E": 4489,
+    "trace_file": "batch-000.jsonl.gz"
+  },
+  {
+    "policy": 0.002596507640555501,
+    "old_KL": 0.011127980036707185,
+    "clip_rate": 0.1373934656381607,
+    "entropy_scaled": 0.10276712626218795,
+    "reference_KL_scaled": 0.02211002279073,
+    "gradient_norm": 6.9319624423980715,
+    "logprob_error": 0.0,
+    "optimization_updates": 10,
+    "optimization_seconds": 11.024963166099042,
+    "gradient_diagnostic": null,
+    "E": 9273,
+    "L": 9273,
+    "behavior_version": 1,
+    "groups": [
+      {
+        "group": 0,
+        "layout_seed": 340000319,
+        "seat": 0,
+        "game_count": 4,
+        "terminal_std": 0.04296687319493752,
+        "zero_advantage": false,
+        "advantages": [
+          -0.09440593498061138,
+          0.0044966851643469434,
+          0.03618946580785165,
+          0.053719784008412784
+        ]
+      },
+      {
+        "group": 1,
+        "layout_seed": 340000319,
+        "seat": 1,
+        "game_count": 4,
+        "terminal_std": 0.08732739537240582,
+        "zero_advantage": false,
+        "advantages": [
+          -0.16903466542796833,
+          -0.03903698162714638,
+          0.06877713505013183,
+          0.13929451200498258
+        ]
+      },
+      {
+        "group": 2,
+        "layout_seed": 4290956346,
+        "seat": 0,
+        "game_count": 4,
+        "terminal_std": 0.5409437923389935,
+        "zero_advantage": false,
+        "advantages": [
+          -1.2178796645489467,
+          0.591743080961177,
+          0.1526931105747913,
+          0.47344347301297846
+        ]
+      },
+      {
+        "group": 3,
+        "layout_seed": 4290956346,
+        "seat": 1,
+        "game_count": 4,
+        "terminal_std": 0.6408613937590639,
+        "zero_advantage": false,
+        "advantages": [
+          0.9345585377383442,
+          -0.7037828848612501,
+          -0.9886627758393871,
+          0.757887122962293
+        ]
+      }
+    ],
+    "collection": {
+      "encode": 4.695311549352482,
+      "inference": 4.031727572437376,
+      "referee": 7.970899289473891,
+      "elapsed": 16.702003916027024,
+      "forwards": 598
+    },
+    "trace_sha256": "ec1694abd4f3074b01b08c11ed7e7dd34a8f4d900f4ed9ff18793baea973b3d3",
+    "batch_E": 4784,
+    "trace_file": "batch-001.jsonl.gz"
+  },
+  {
+    "policy": 0.0032620647718431426,
+    "old_KL": 0.008568077930931395,
+    "clip_rate": 0.11134588047862053,
+    "entropy_scaled": 0.10303017646074294,
+    "reference_KL_scaled": 0.018097941763699055,
+    "gradient_norm": 9.89573974609375,
+    "logprob_error": 0.0,
+    "optimization_updates": 10,
+    "optimization_seconds": 10.179424499860033,
+    "gradient_diagnostic": {
+      "policy": 7.1130828857421875,
+      "entropy": 0.006611500401049852,
+      "reference": 0.33894187211990356
+    },
+    "E": 14057,
+    "L": 14057,
+    "behavior_version": 2,
+    "groups": [
+      {
+        "group": 0,
+        "layout_seed": 2261381679,
+        "seat": 0,
+        "game_count": 4,
+        "terminal_std": 0.7824459022059757,
+        "zero_advantage": false,
+        "advantages": [
+          -1.1484744430233347,
+          -0.9315570408107247,
+          1.0819573490504488,
+          0.9980741347836105
+        ]
+      },
+      {
+        "group": 1,
+        "layout_seed": 2261381679,
+        "seat": 1,
+        "game_count": 4,
+        "terminal_std": 0.6103533057432202,
+        "zero_advantage": false,
+        "advantages": [
+          0.8657226310202294,
+          0.7581414891637275,
+          -0.8684516311693219,
+          -0.7554124890146351
+        ]
+      },
+      {
+        "group": 2,
+        "layout_seed": 3565588801,
+        "seat": 0,
+        "game_count": 4,
+        "terminal_std": 0.5698231993117994,
+        "zero_advantage": false,
+        "advantages": [
+          0.7332055038992555,
+          0.7855353278319712,
+          -0.7819982619053535,
+          -0.736742569825873
+        ]
+      },
+      {
+        "group": 3,
+        "layout_seed": 3565588801,
+        "seat": 1,
+        "game_count": 4,
+        "terminal_std": 0.749446253912713,
+        "zero_advantage": false,
+        "advantages": [
+          -0.8668614730131963,
+          0.9967308892743535,
+          0.9935409042276633,
+          -1.1234103204888206
+        ]
+      }
+    ],
+    "collection": {
+      "encode": 4.320043537998572,
+      "inference": 4.6993488820735365,
+      "referee": 7.3823534599505365,
+      "elapsed": 16.41055179084651,
+      "forwards": 598
+    },
+    "trace_sha256": "fd9096fac77056458e2b91336b1239c9b76e4cf81443e44e62945ce072f884c4",
+    "batch_E": 4784,
+    "trace_file": "batch-002.jsonl.gz"
+  },
+  {
+    "policy": -0.0010964231565594672,
+    "old_KL": 0.007168802111118566,
+    "clip_rate": 0.09236505627632141,
+    "entropy_scaled": 0.10165875181555747,
+    "reference_KL_scaled": 0.02862575985491276,
+    "gradient_norm": 8.200281143188477,
+    "logprob_error": 0.0,
+    "optimization_updates": 10,
+    "optimization_seconds": 9.612296667182818,
+    "gradient_diagnostic": null,
+    "E": 18841,
+    "L": 18841,
+    "behavior_version": 3,
+    "groups": [
+      {
+        "group": 0,
+        "layout_seed": 642394092,
+        "seat": 0,
+        "game_count": 4,
+        "terminal_std": 0.597070829470222,
+        "zero_advantage": false,
+        "advantages": [
+          -0.755086094792952,
+          -0.835972658008377,
+          0.8082995012401382,
+          0.7827592515611906
+        ]
+      },
+      {
+        "group": 1,
+        "layout_seed": 642394092,
+        "seat": 1,
+        "game_count": 4,
+        "terminal_std": 0.7187041809000932,
+        "zero_advantage": false,
+        "advantages": [
+          1.111405856771025,
+          -1.116253760036565,
+          0.7743972564416522,
+          -0.7695493531761124
+        ]
+      },
+      {
+        "group": 2,
+        "layout_seed": 273217388,
+        "seat": 0,
+        "game_count": 4,
+        "terminal_std": 0.06480363365872194,
+        "zero_advantage": false,
+        "advantages": [
+          -0.009423932399638643,
+          0.11352968269903663,
+          -0.12777072606826487,
+          0.023664975768866725
+        ]
+      },
+      {
+        "group": 3,
+        "layout_seed": 273217388,
+        "seat": 1,
+        "game_count": 4,
+        "terminal_std": 0.5446484040009055,
+        "zero_advantage": false,
+        "advantages": [
+          -0.2472606225230667,
+          -0.40808226064038644,
+          -0.5853037232064436,
+          1.2406466063698962
+        ]
+      }
+    ],
+    "collection": {
+      "encode": 4.115422669565305,
+      "inference": 4.587515666615218,
+      "referee": 6.771689832210541,
+      "elapsed": 15.483438875060529,
+      "forwards": 598
+    },
+    "trace_sha256": "5560f7f377095ae3a353aa80956aa25c54fd1bf0992eb7531e4b9797da42d262",
+    "batch_E": 4784,
+    "trace_file": "batch-003.jsonl.gz"
+  },
+  {
+    "policy": 0.002391953160986304,
+    "old_KL": 0.011698983794121886,
+    "clip_rate": 0.14371448904275894,
+    "entropy_scaled": 0.10040374025702477,
+    "reference_KL_scaled": 0.02871986012905836,
+    "gradient_norm": 9.668257761001588,
+    "logprob_error": 0.0,
+    "optimization_updates": 10,
+    "optimization_seconds": 9.74615537491627,
+    "gradient_diagnostic": null,
+    "E": 23625,
+    "L": 23625,
+    "behavior_version": 4,
+    "groups": [
+      {
+        "group": 0,
+        "layout_seed": 1747541067,
+        "seat": 0,
+        "game_count": 4,
+        "terminal_std": 0.5994590397848537,
+        "zero_advantage": false,
+        "advantages": [
+          -0.2675680268402079,
+          -0.4347102477707443,
+          1.3631230430929548,
+          -0.6608447684820028
+        ]
+      },
+      {
+        "group": 1,
+        "layout_seed": 1747541067,
+        "seat": 1,
+        "game_count": 4,
+        "terminal_std": 0.5399543714661887,
+        "zero_advantage": false,
+        "advantages": [
+          0.5655067353764566,
+          0.4463939456269211,
+          0.21592661269370916,
+          -1.227827293697087
+        ]
+      },
+      {
+        "group": 2,
+        "layout_seed": 4264766824,
+        "seat": 0,
+        "game_count": 4,
+        "terminal_std": 0.6928804091206923,
+        "zero_advantage": false,
+        "advantages": [
+          -1.0764577062129759,
+          -0.7561779525894582,
+          0.8711382112548786,
+          0.9614974475475555
+        ]
+      },
+      {
+        "group": 3,
+        "layout_seed": 4264766824,
+        "seat": 1,
+        "game_count": 4,
+        "terminal_std": 0.5511703617105623,
+        "zero_advantage": false,
+        "advantages": [
+          0.6016574702180417,
+          0.371342474169468,
+          0.2838974221524295,
+          -1.2568973665399388
+        ]
+      }
+    ],
+    "collection": {
+      "encode": 4.005202080355957,
+      "inference": 4.722265300806612,
+      "referee": 7.029532332904637,
+      "elapsed": 15.76295845885761,
+      "forwards": 598
+    },
+    "trace_sha256": "d46afb977066ce2989d75c4d13851e96c3cfb984d1a03cb9a1ff24917c7bc924",
+    "batch_E": 4784,
+    "trace_file": "batch-004.jsonl.gz"
+  },
+  {
+    "policy": 0.0014104465954005718,
+    "old_KL": 0.009047835558476436,
+    "clip_rate": 0.1142578125,
+    "entropy_scaled": 0.09972422271966934,
+    "reference_KL_scaled": 0.039480564557015894,
+    "gradient_norm": 8.867707300186158,
+    "logprob_error": 0.0,
+    "optimization_updates": 10,
+    "optimization_seconds": 9.306940625188872,
+    "gradient_diagnostic": null,
+    "E": 28409,
+    "L": 28409,
+    "behavior_version": 5,
+    "groups": [
+      {
+        "group": 0,
+        "layout_seed": 639786787,
+        "seat": 0,
+        "game_count": 4,
+        "terminal_std": 0.5785651614306272,
+        "zero_advantage": false,
+        "advantages": [
+          0.1592063861879208,
+          0.6368946402221063,
+          0.5054113608263867,
+          -1.3015123872364138
+        ]
+      },
+      {
+        "group": 1,
+        "layout_seed": 639786787,
+        "seat": 1,
+        "game_count": 4,
+        "terminal_std": 0.7196249986282074,
+        "zero_advantage": false,
+        "advantages": [
+          -0.7729806573153489,
+          0.8088463264276576,
+          -1.1202454799727208,
+          1.0843798108604121
+        ]
+      },
+      {
+        "group": 2,
+        "layout_seed": 3996023567,
+        "seat": 0,
+        "game_count": 4,
+        "terminal_std": 0.5481486100292438,
+        "zero_advantage": false,
+        "advantages": [
+          -0.27783544381050307,
+          1.232973275072425,
+          -0.2737384315651699,
+          -0.6813993996967519
+        ]
+      },
+      {
+        "group": 3,
+        "layout_seed": 3996023567,
+        "seat": 1,
+        "game_count": 4,
+        "terminal_std": 0.5700575836783734,
+        "zero_advantage": false,
+        "advantages": [
+          -0.5277891548490183,
+          -0.3324105271396345,
+          1.3109621850326627,
+          -0.45076250304400994
+        ]
+      }
+    ],
+    "collection": {
+      "encode": 4.055322502274066,
+      "inference": 4.582718804711476,
+      "referee": 6.587140830233693,
+      "elapsed": 15.231264874804765,
+      "forwards": 598
+    },
+    "trace_sha256": "6b2b8caca2baa99da730b2b51843d22255c1ca36da50d59141f44ebbd4f9ff25",
+    "batch_E": 4784,
+    "trace_file": "batch-005.jsonl.gz"
+  },
+  {
+    "policy": 0.002981648314744234,
+    "old_KL": 0.00784705593250692,
+    "clip_rate": 0.10447443127632142,
+    "entropy_scaled": 0.09897659048438072,
+    "reference_KL_scaled": 0.03500058129429817,
+    "gradient_norm": 8.699750900268555,
+    "logprob_error": 0.0,
+    "optimization_updates": 10,
+    "optimization_seconds": 9.633910540957004,
+    "gradient_diagnostic": null,
+    "E": 33193,
+    "L": 33193,
+    "behavior_version": 6,
+    "groups": [
+      {
+        "group": 0,
+        "layout_seed": 1782386746,
+        "seat": 0,
+        "game_count": 4,
+        "terminal_std": 0.5179202061460677,
+        "zero_advantage": false,
+        "advantages": [
+          0.45587206668986563,
+          0.28952912641570716,
+          -1.1906358162658155,
+          0.4452346231602428
+        ]
+      },
+      {
+        "group": 1,
+        "layout_seed": 1782386746,
+        "seat": 1,
+        "game_count": 4,
+        "terminal_std": 0.7190775395653008,
+        "zero_advantage": false,
+        "advantages": [
+          1.1161597688448097,
+          -0.8811549449624554,
+          -1.0194724103297377,
+          0.7844675864473833
+        ]
+      },
+      {
+        "group": 2,
+        "layout_seed": 469802289,
+        "seat": 0,
+        "game_count": 4,
+        "terminal_std": 0.6110903296946156,
+        "zero_advantage": false,
+        "advantages": [
+          0.8482545442782116,
+          0.7795572402837788,
+          -0.85502309281735,
+          -0.7727886917446405
+        ]
+      },
+      {
+        "group": 3,
+        "layout_seed": 469802289,
+        "seat": 1,
+        "game_count": 4,
+        "terminal_std": 0.5243973437965762,
+        "zero_advantage": false,
+        "advantages": [
+          0.4554289790918961,
+          0.3941210996722229,
+          0.36004598650960445,
+          -1.2095960652737234
+        ]
+      }
+    ],
+    "collection": {
+      "encode": 3.934997997013852,
+      "inference": 4.654114250326529,
+      "referee": 6.894207827979699,
+      "elapsed": 15.486837832955644,
+      "forwards": 598
+    },
+    "trace_sha256": "cda4827a9866e01261b726bbb9003589ba0c8fb8fe2b7dfd103c834ffec2a4f2",
+    "batch_E": 4784,
+    "trace_file": "batch-006.jsonl.gz"
+  },
+  {
+    "policy": 0.00020945497672073544,
+    "old_KL": 0.006766161268751602,
+    "clip_rate": 0.08492542654275895,
+    "entropy_scaled": 0.10223902612924576,
+    "reference_KL_scaled": 0.03896089643239975,
+    "gradient_norm": 7.939005947113037,
+    "logprob_error": 0.0,
+    "optimization_updates": 10,
+    "optimization_seconds": 12.94060695799999,
+    "gradient_diagnostic": null,
+    "E": 37977,
+    "L": 37977,
+    "behavior_version": 7,
+    "groups": [
+      {
+        "group": 0,
+        "layout_seed": 2334026701,
+        "seat": 0,
+        "game_count": 4,
+        "terminal_std": 0.6614131120983213,
+        "zero_advantage": false,
+        "advantages": [
+          1.0892707377865782,
+          -0.8805858518002329,
+          0.646377790814991,
+          -0.8550626768013364
+        ]
+      },
+      {
+        "group": 1,
+        "layout_seed": 2334026701,
+        "seat": 1,
+        "game_count": 4,
+        "terminal_std": 0.5974038944960548,
+        "zero_advantage": false,
+        "advantages": [
+          -0.7999263356375619,
+          -0.7931007347377043,
+          0.8047582975633847,
+          0.7882687728118815
+        ]
+      },
+      {
+        "group": 2,
+        "layout_seed": 2016286100,
+        "seat": 0,
+        "game_count": 4,
+        "terminal_std": 0.6288326648034185,
+        "zero_advantage": false,
+        "advantages": [
+          -0.4687468568864543,
+          -0.4312469234243596,
+          1.450311450592227,
+          -0.5503176702814133
+        ]
+      },
+      {
+        "group": 3,
+        "layout_seed": 2016286100,
+        "seat": 1,
+        "game_count": 4,
+        "terminal_std": 0.10079614326879449,
+        "zero_advantage": false,
+        "advantages": [
+          -0.20870617023349233,
+          0.16595170836477754,
+          0.03223319907072778,
+          0.010521262797986855
+        ]
+      }
+    ],
+    "collection": {
+      "encode": 4.716711912304163,
+      "inference": 4.722148054977879,
+      "referee": 7.721427325392142,
+      "elapsed": 17.176242500077933,
+      "forwards": 598
+    },
+    "trace_sha256": "88a94744bdf4a8bf848af98398e5758b01dcddd0c5fbeecd397a9966935e6f1a",
+    "batch_E": 4784,
+    "trace_file": "batch-007.jsonl.gz"
+  },
+  {
+    "policy": 0.001114562782458961,
+    "old_KL": 0.00628100447338511,
+    "clip_rate": 0.0822265625,
+    "entropy_scaled": 0.10431290045380592,
+    "reference_KL_scaled": 0.03667032606899738,
+    "gradient_norm": 8.021846532821655,
+    "logprob_error": 0.0,
+    "optimization_updates": 10,
+    "optimization_seconds": 11.954013166949153,
+    "gradient_diagnostic": null,
+    "E": 42761,
+    "L": 42761,
+    "behavior_version": 8,
+    "groups": [
+      {
+        "group": 0,
+        "layout_seed": 294907575,
+        "seat": 0,
+        "game_count": 4,
+        "terminal_std": 0.5397990513214622,
+        "zero_advantage": false,
+        "advantages": [
+          -1.2309633226204733,
+          0.5956458058626166,
+          0.32709803986356695,
+          0.3082194768942896
+        ]
+      },
+      {
+        "group": 1,
+        "layout_seed": 294907575,
+        "seat": 1,
+        "game_count": 4,
+        "terminal_std": 0.5681659223656025,
+        "zero_advantage": false,
+        "advantages": [
+          -0.21965006022664926,
+          1.287700883731618,
+          -0.6309007669958012,
+          -0.4371500565091675
+        ]
+      },
+      {
+        "group": 2,
+        "layout_seed": 3816763170,
+        "seat": 0,
+        "game_count": 4,
+        "terminal_std": 0.5074464746163347,
+        "zero_advantage": false,
+        "advantages": [
+          1.1496469524222326,
+          -0.27476633128508227,
+          -0.5974904503954237,
+          -0.27739017074172656
+        ]
+      },
+      {
+        "group": 3,
+        "layout_seed": 3816763170,
+        "seat": 1,
+        "game_count": 4,
+        "terminal_std": 0.5974184773023513,
+        "zero_advantage": false,
+        "advantages": [
+          -0.44533953065413684,
+          -0.524422444246498,
+          -0.4079944391990082,
+          1.377756414099643
+        ]
+      }
+    ],
+    "collection": {
+      "encode": 5.260609871475026,
+      "inference": 6.923876462504268,
+      "referee": 8.686167835723609,
+      "elapsed": 20.879076041048393,
+      "forwards": 598
+    },
+    "trace_sha256": "62cf091a17a673f1e6c08588ae953f622f320c2f41d9935076d7c199d7af5bb7",
+    "batch_E": 4784,
+    "trace_file": "batch-008.jsonl.gz"
+  },
+  {
+    "policy": 0.0019364801002666355,
+    "old_KL": 0.006949285687005613,
+    "clip_rate": 0.08579545468091965,
+    "entropy_scaled": 0.10150721073150634,
+    "reference_KL_scaled": 0.04132655505090952,
+    "gradient_norm": 9.091094923019408,
+    "logprob_error": 0.0,
+    "optimization_updates": 10,
+    "optimization_seconds": 14.799979459028691,
+    "gradient_diagnostic": null,
+    "E": 47545,
+    "L": 47545,
+    "behavior_version": 9,
+    "groups": [
+      {
+        "group": 0,
+        "layout_seed": 377653802,
+        "seat": 0,
+        "game_count": 4,
+        "terminal_std": 0.5285130661052135,
+        "zero_advantage": false,
+        "advantages": [
+          0.4287817956724547,
+          -1.21588905597703,
+          0.3089672484010763,
+          0.4781400119034987
+        ]
+      },
+      {
+        "group": 1,
+        "layout_seed": 377653802,
+        "seat": 1,
+        "game_count": 4,
+        "terminal_std": 0.6026677127348296,
+        "zero_advantage": false,
+        "advantages": [
+          0.6042532676725393,
+          0.4982949287397733,
+          0.2738286164237436,
+          -1.376376812836056
+        ]
+      },
+      {
+        "group": 2,
+        "layout_seed": 2911982682,
+        "seat": 0,
+        "game_count": 4,
+        "terminal_std": 0.61955328037726,
+        "zero_advantage": false,
+        "advantages": [
+          0.38942408994154576,
+          -1.4163676775006102,
+          0.36427666966129957,
+          0.662666917897765
+        ]
+      },
+      {
+        "group": 3,
+        "layout_seed": 2911982682,
+        "seat": 1,
+        "game_count": 4,
+        "terminal_std": 0.6185222578853766,
+        "zero_advantage": false,
+        "advantages": [
+          -1.4266532869843342,
+          0.47201914897551145,
+          0.5351590573470291,
+          0.4194750806617938
+        ]
+      }
+    ],
+    "collection": {
+      "encode": 5.7280263267457485,
+      "inference": 6.972809425322339,
+      "referee": 9.534082337049767,
+      "elapsed": 22.242506084032357,
+      "forwards": 598
+    },
+    "trace_sha256": "a80f6135553f2d72c320bbf528d177cabf8558208a25ba496c413f0a31da8f6b",
+    "batch_E": 4784,
+    "trace_file": "batch-009.jsonl.gz"
+  },
+  {
+    "policy": -0.0018976304563693702,
+    "old_KL": 0.008487432872344571,
+    "clip_rate": 0.10947558946079677,
+    "entropy_scaled": 0.0918884285622173,
+    "reference_KL_scaled": 0.03381537666751279,
+    "gradient_norm": 4.356296512815687,
+    "logprob_error": 8.106231689453125e-06,
+    "optimization_updates": 9,
+    "optimization_seconds": 15.452724500093609,
+    "gradient_diagnostic": {
+      "policy": 3.0062625408172607,
+      "entropy": 0.005317713599652052,
+      "reference": 0.4439218044281006
+    },
+    "E": 51874,
+    "L": 51874,
+    "behavior_version": 10,
+    "groups": [
+      {
+        "group": 0,
+        "layout_seed": 3480817596,
+        "seat": 0,
+        "game_count": 4,
+        "terminal_std": 0.114730763114652,
+        "zero_advantage": false,
+        "advantages": [
+          0.08656585624485214,
+          -0.1885202108137977,
+          -0.09964444379657526,
+          0.20159879836552083
+        ]
+      },
+      {
+        "group": 1,
+        "layout_seed": 3480817596,
+        "seat": 1,
+        "game_count": 4,
+        "terminal_std": 0.11082643850356486,
+        "zero_advantage": false,
+        "advantages": [
+          0.18835041132146793,
+          0.10027695064085614,
+          -0.15320179528393338,
+          -0.13542556667839042
+        ]
+      },
+      {
+        "group": 2,
+        "layout_seed": 1682586552,
+        "seat": 0,
+        "game_count": 4,
+        "terminal_std": 0.31460271784150673,
+        "zero_advantage": false,
+        "advantages": [
+          0.21827030601795241,
+          0.1511479481918044,
+          0.3468446078529818,
+          -0.7162628620627384
+        ]
+      },
+      {
+        "group": 3,
+        "layout_seed": 1682586552,
+        "seat": 1,
+        "game_count": 4,
+        "terminal_std": 0.7360183922534039,
+        "zero_advantage": false,
+        "advantages": [
+          -0.9203917689626019,
+          -1.0228652807261855,
+          0.7835399854374153,
+          1.1597170642513723
+        ]
+      }
+    ],
+    "collection": {
+      "encode": 6.214187916601077,
+      "inference": 8.011556554120034,
+      "referee": 9.56926613044925,
+      "elapsed": 23.802361250156537,
+      "forwards": 598
+    },
+    "trace_sha256": "49712b920fca9a679a5df9ba6eabc9b5b68c060e55f786ff4e20160ea137bf69",
+    "batch_E": 4329,
+    "trace_file": "batch-010.jsonl.gz"
+  },
+  {
+    "policy": 0.001644356525503099,
+    "old_KL": 0.011513717313937378,
+    "clip_rate": 0.1443359375,
+    "entropy_scaled": 0.10151637494564056,
+    "reference_KL_scaled": 0.03764145690947771,
+    "gradient_norm": 7.828251338005066,
+    "logprob_error": 0.0,
+    "optimization_updates": 10,
+    "optimization_seconds": 15.25624154205434,
+    "gradient_diagnostic": null,
+    "E": 56658,
+    "L": 56658,
+    "behavior_version": 11,
+    "groups": [
+      {
+        "group": 0,
+        "layout_seed": 3962181652,
+        "seat": 0,
+        "game_count": 4,
+        "terminal_std": 0.7311195879604018,
+        "zero_advantage": false,
+        "advantages": [
+          -1.6755826128356777,
+          0.43541835736991547,
+          0.48784388233928694,
+          0.7523203731264752
+        ]
+      },
+      {
+        "group": 1,
+        "layout_seed": 3962181652,
+        "seat": 1,
+        "game_count": 4,
+        "terminal_std": 0.5780425977751064,
+        "zero_advantage": false,
+        "advantages": [
+          1.3059789828963997,
+          -0.47497062398832846,
+          -0.6386554580580976,
+          -0.19235290084997367
+        ]
+      },
+      {
+        "group": 2,
+        "layout_seed": 2006628860,
+        "seat": 0,
+        "game_count": 4,
+        "terminal_std": 0.5858079948631634,
+        "zero_advantage": false,
+        "advantages": [
+          0.38430093609977806,
+          0.38437805369249195,
+          -1.345968260966833,
+          0.5772892711745631
+        ]
+      },
+      {
+        "group": 3,
+        "layout_seed": 2006628860,
+        "seat": 1,
+        "game_count": 4,
+        "terminal_std": 0.10893944839087341,
+        "zero_advantage": false,
+        "advantages": [
+          0.18759143287107438,
+          0.09139940615541094,
+          -0.1705673318408271,
+          -0.10842350718565837
+        ]
+      }
+    ],
+    "collection": {
+      "encode": 6.788293923949823,
+      "inference": 8.186309181153774,
+      "referee": 11.516074917279184,
+      "elapsed": 26.496313707903028,
+      "forwards": 598
+    },
+    "trace_sha256": "3be6473b442778405125d384ecc2d5f7abf646c33e5743bcce21c17d79c07bc5",
+    "batch_E": 4784,
+    "trace_file": "batch-011.jsonl.gz"
+  },
+  {
+    "policy": 0.002372901642229408,
+    "old_KL": 0.0071776893764536,
+    "clip_rate": 0.09817116409540176,
+    "entropy_scaled": 0.10204027965664864,
+    "reference_KL_scaled": 0.0384925339370966,
+    "gradient_norm": 9.894196510314941,
+    "logprob_error": 0.0,
+    "optimization_updates": 10,
+    "optimization_seconds": 14.310369499959052,
+    "gradient_diagnostic": null,
+    "E": 61442,
+    "L": 61442,
+    "behavior_version": 12,
+    "groups": [
+      {
+        "group": 0,
+        "layout_seed": 676025427,
+        "seat": 0,
+        "game_count": 4,
+        "terminal_std": 0.5201759470781079,
+        "zero_advantage": false,
+        "advantages": [
+          -0.28561725729485926,
+          -0.4523043103241699,
+          1.1953158419399872,
+          -0.45739427432095797
+        ]
+      },
+      {
+        "group": 1,
+        "layout_seed": 676025427,
+        "seat": 1,
+        "game_count": 4,
+        "terminal_std": 0.7124539263435493,
+        "zero_advantage": false,
+        "advantages": [
+          0.8872619664149202,
+          1.0102957513031516,
+          -0.9238872217768991,
+          -0.9736704959411728
+        ]
+      },
+      {
+        "group": 2,
+        "layout_seed": 4168843751,
+        "seat": 0,
+        "game_count": 4,
+        "terminal_std": 0.6436903220415625,
+        "zero_advantage": false,
+        "advantages": [
+          0.9265160358355482,
+          0.7871482001521883,
+          -0.8613749360339945,
+          -0.852289299953742
+        ]
+      },
+      {
+        "group": 3,
+        "layout_seed": 4168843751,
+        "seat": 1,
+        "game_count": 4,
+        "terminal_std": 0.7186870045978797,
+        "zero_advantage": false,
+        "advantages": [
+          0.4363836146942264,
+          0.533425062986868,
+          0.6829419253746148,
+          -1.6527506030557093
+        ]
+      }
+    ],
+    "collection": {
+      "encode": 6.47151083429344,
+      "inference": 8.160224843071774,
+      "referee": 10.922439409652725,
+      "elapsed": 25.56376100005582,
+      "forwards": 598
+    },
+    "trace_sha256": "3d382bfd416501e93e8a59c59300c14bc286f38a5c6dc0016bf27d4c6fbabb01",
+    "batch_E": 4784,
+    "trace_file": "batch-012.jsonl.gz"
+  },
+  {
+    "policy": 0.001717979460954666,
+    "old_KL": 0.007328007766773226,
+    "clip_rate": 0.09840198904275894,
+    "entropy_scaled": 0.0998563028872013,
+    "reference_KL_scaled": 0.03622518349438906,
+    "gradient_norm": 7.124207878112793,
+    "logprob_error": 0.0,
+    "optimization_updates": 10,
+    "optimization_seconds": 14.384873749921098,
+    "gradient_diagnostic": null,
+    "E": 66226,
+    "L": 66226,
+    "behavior_version": 13,
+    "groups": [
+      {
+        "group": 0,
+        "layout_seed": 4185514679,
+        "seat": 0,
+        "game_count": 4,
+        "terminal_std": 0.5480787567690524,
+        "zero_advantage": false,
+        "advantages": [
+          1.2412556460619923,
+          -0.6410525244621206,
+          -0.2536087850921107,
+          -0.3465943365077611
+        ]
+      },
+      {
+        "group": 1,
+        "layout_seed": 4185514679,
+        "seat": 1,
+        "game_count": 4,
+        "terminal_std": 0.5286800754608507,
+        "zero_advantage": false,
+        "advantages": [
+          -0.3854436120777604,
+          -0.37083246687902993,
+          1.2194209740047917,
+          -0.4631448950480012
+        ]
+      },
+      {
+        "group": 2,
+        "layout_seed": 1578314958,
+        "seat": 0,
+        "game_count": 4,
+        "terminal_std": 0.534595191942988,
+        "zero_advantage": false,
+        "advantages": [
+          0.23255690369630733,
+          0.5805694671406424,
+          -1.2160593053712823,
+          0.40293293453433243
+        ]
+      },
+      {
+        "group": 3,
+        "layout_seed": 1578314958,
+        "seat": 1,
+        "game_count": 4,
+        "terminal_std": 0.056792298134328886,
+        "zero_advantage": false,
+        "advantages": [
+          0.08586205644179061,
+          0.009957064676955488,
+          0.025825919147863956,
+          -0.1216450402666102
+        ]
+      }
+    ],
+    "collection": {
+      "encode": 6.528168712276965,
+      "inference": 7.486824337625876,
+      "referee": 11.456104200799018,
+      "elapsed": 25.476311083883047,
+      "forwards": 598
+    },
+    "trace_sha256": "851cf6202a668a0447596002d0a719abf164d0ee173d8e2b2767dcc2a27513d7",
+    "batch_E": 4784,
+    "trace_file": "batch-013.jsonl.gz"
+  },
+  {
+    "policy": 0.0016742399195209146,
+    "old_KL": 0.007493637919833418,
+    "clip_rate": 0.10268110781908035,
+    "entropy_scaled": 0.1041407860815525,
+    "reference_KL_scaled": 0.03930669017136097,
+    "gradient_norm": 12.174913787841797,
+    "logprob_error": 0.0,
+    "optimization_updates": 10,
+    "optimization_seconds": 15.21906516700983,
+    "gradient_diagnostic": null,
+    "E": 71010,
+    "L": 71010,
+    "behavior_version": 14,
+    "groups": [
+      {
+        "group": 0,
+        "layout_seed": 2447686093,
+        "seat": 0,
+        "game_count": 4,
+        "terminal_std": 0.7310204333292346,
+        "zero_advantage": false,
+        "advantages": [
+          -1.0776346932517278,
+          1.1636511066460924,
+          0.7573145530693536,
+          -0.8433309664637183
+        ]
+      },
+      {
+        "group": 1,
+        "layout_seed": 2447686093,
+        "seat": 1,
+        "game_count": 4,
+        "terminal_std": 0.7134916244770294,
+        "zero_advantage": false,
+        "advantages": [
+          1.0705637604736091,
+          0.7926738637716008,
+          -0.6973224057148516,
+          -1.1659152185303583
+        ]
+      },
+      {
+        "group": 2,
+        "layout_seed": 2453176600,
+        "seat": 0,
+        "game_count": 4,
+        "terminal_std": 0.6449149859508818,
+        "zero_advantage": false,
+        "advantages": [
+          -0.77272940147225,
+          0.8502447238143326,
+          -0.9428010943952185,
+          0.8652857720531357
+        ]
+      },
+      {
+        "group": 3,
+        "layout_seed": 2453176600,
+        "seat": 1,
+        "game_count": 4,
+        "terminal_std": 0.6975003032807081,
+        "zero_advantage": false,
+        "advantages": [
+          -0.8995712304783149,
+          -0.9501119272172286,
+          1.0608526880802434,
+          0.7888304696153003
+        ]
+      }
+    ],
+    "collection": {
+      "encode": 6.776710460195318,
+      "inference": 7.552620209287852,
+      "referee": 10.821474833413959,
+      "elapsed": 25.159422292141244,
+      "forwards": 598
+    },
+    "trace_sha256": "e9c3290278a3b1c758fc0da239c3c63b30b06632879a2bbba6f7b763109d5887",
+    "batch_E": 4784,
+    "trace_file": "batch-014.jsonl.gz"
+  },
+  {
+    "policy": 0.0010694827185943722,
+    "old_KL": 0.006776871675174334,
+    "clip_rate": 0.09509943127632141,
+    "entropy_scaled": 0.10504056960344314,
+    "reference_KL_scaled": 0.03992441426962614,
+    "gradient_norm": 8.465354251861573,
+    "logprob_error": 0.0,
+    "optimization_updates": 10,
+    "optimization_seconds": 14.71835537487641,
+    "gradient_diagnostic": null,
+    "E": 75794,
+    "L": 75794,
+    "behavior_version": 15,
+    "groups": [
+      {
+        "group": 0,
+        "layout_seed": 1007596518,
+        "seat": 0,
+        "game_count": 4,
+        "terminal_std": 0.5798803747525965,
+        "zero_advantage": false,
+        "advantages": [
+          0.32452758053909236,
+          0.691370550373783,
+          -1.3116452796798903,
+          0.2957471487670149
+        ]
+      },
+      {
+        "group": 1,
+        "layout_seed": 1007596518,
+        "seat": 1,
+        "game_count": 4,
+        "terminal_std": 0.6486271058551312,
+        "zero_advantage": false,
+        "advantages": [
+          0.6481860879268521,
+          -1.4876721226172638,
+          0.47489849701099884,
+          0.3645875376794128
+        ]
+      },
+      {
+        "group": 2,
+        "layout_seed": 3316540172,
+        "seat": 0,
+        "game_count": 4,
+        "terminal_std": 0.6159569461046713,
+        "zero_advantage": false,
+        "advantages": [
+          -0.5306165691774248,
+          -0.3866334147707214,
+          1.4194224454304891,
+          -0.5021724614823427
+        ]
+      },
+      {
+        "group": 3,
+        "layout_seed": 3316540172,
+        "seat": 1,
+        "game_count": 4,
+        "terminal_std": 0.0835122612941512,
+        "zero_advantage": false,
+        "advantages": [
+          -0.018622218430658883,
+          0.09369337316540187,
+          -0.1747433252362828,
+          0.09967217050153954
+        ]
+      }
+    ],
+    "collection": {
+      "encode": 6.303412585752085,
+      "inference": 7.790690703317523,
+      "referee": 10.997241572476923,
+      "elapsed": 25.096351207932457,
+      "forwards": 598
+    },
+    "trace_sha256": "a35f5bb28da400c8ed5621a28ad3e0cd3ccd11f5c294bddbed11e2584475c4eb",
+    "batch_E": 4784,
+    "trace_file": "batch-015.jsonl.gz"
+  },
+  {
+    "policy": 0.0013635650044307112,
+    "old_KL": 0.00847943947155727,
+    "clip_rate": 0.10825639218091965,
+    "entropy_scaled": 0.10461345762014389,
+    "reference_KL_scaled": 0.04125999733805656,
+    "gradient_norm": 8.456630325317382,
+    "logprob_error": 0.0,
+    "optimization_updates": 10,
+    "optimization_seconds": 14.430116875097156,
+    "gradient_diagnostic": null,
+    "E": 80578,
+    "L": 80578,
+    "behavior_version": 16,
+    "groups": [
+      {
+        "group": 0,
+        "layout_seed": 2987486976,
+        "seat": 0,
+        "game_count": 4,
+        "terminal_std": 0.5895900120334584,
+        "zero_advantage": false,
+        "advantages": [
+          -0.6973958699086972,
+          0.7980452944335701,
+          0.7693204163883881,
+          -0.8699698409132609
+        ]
+      },
+      {
+        "group": 1,
+        "layout_seed": 2987486976,
+        "seat": 1,
+        "game_count": 4,
+        "terminal_std": 0.6845237634364401,
+        "zero_advantage": false,
+        "advantages": [
+          0.6508430950317249,
+          0.41793494221607297,
+          -1.5742600502331798,
+          0.5054820129853815
+        ]
+      },
+      {
+        "group": 2,
+        "layout_seed": 2314662463,
+        "seat": 0,
+        "game_count": 4,
+        "terminal_std": 0.12707613330894083,
+        "zero_advantage": false,
+        "advantages": [
+          -0.15661847048921818,
+          0.1826778206226846,
+          0.1551853505597586,
+          -0.18124470069322474
+        ]
+      },
+      {
+        "group": 3,
+        "layout_seed": 2314662463,
+        "seat": 1,
+        "game_count": 4,
+        "terminal_std": 0.6597423330698796,
+        "zero_advantage": false,
+        "advantages": [
+          -0.8593130982628582,
+          1.0520909261365596,
+          0.6882402581481964,
+          -0.8810180860218978
+        ]
+      }
+    ],
+    "collection": {
+      "encode": 7.118140321690589,
+      "inference": 7.893382415175438,
+      "referee": 11.334387781796977,
+      "elapsed": 26.352405457990244,
+      "forwards": 598
+    },
+    "trace_sha256": "3ec14c712abc14128b3bf1e5d929b7febb7ed7ab8a762967406fac796cebc759",
+    "batch_E": 4784,
+    "trace_file": "batch-016.jsonl.gz"
+  },
+  {
+    "policy": 0.0033517795614898204,
+    "old_KL": 0.009373927253909642,
+    "clip_rate": 0.10969460234045983,
+    "entropy_scaled": 0.10674498602747917,
+    "reference_KL_scaled": 0.04929674342274666,
+    "gradient_norm": 10.87124843597412,
+    "logprob_error": 0.0,
+    "optimization_updates": 10,
+    "optimization_seconds": 14.857553540961817,
+    "gradient_diagnostic": null,
+    "E": 85362,
+    "L": 85362,
+    "behavior_version": 17,
+    "groups": [
+      {
+        "group": 0,
+        "layout_seed": 222024097,
+        "seat": 0,
+        "game_count": 4,
+        "terminal_std": 0.5754635024751696,
+        "zero_advantage": false,
+        "advantages": [
+          -0.6338920359302845,
+          1.3113085462563137,
+          -0.2933911605243488,
+          -0.38402534980168007
+        ]
+      },
+      {
+        "group": 1,
+        "layout_seed": 222024097,
+        "seat": 1,
+        "game_count": 4,
+        "terminal_std": 0.5914420498695707,
+        "zero_advantage": false,
+        "advantages": [
+          -0.36952498801950934,
+          1.3624772040434336,
+          -0.4679886887705044,
+          -0.5249635272534195
+        ]
+      },
+      {
+        "group": 2,
+        "layout_seed": 3374217239,
+        "seat": 0,
+        "game_count": 4,
+        "terminal_std": 0.6413524129369423,
+        "zero_advantage": false,
+        "advantages": [
+          -1.0491863276519677,
+          0.7955410453552281,
+          0.8881335536462641,
+          -0.6344882713495242
+        ]
+      },
+      {
+        "group": 3,
+        "layout_seed": 3374217239,
+        "seat": 1,
+        "game_count": 4,
+        "terminal_std": 0.8074310313725145,
+        "zero_advantage": false,
+        "advantages": [
+          1.119496873125328,
+          -1.0201909292198543,
+          1.031332410846578,
+          -1.130638354752052
+        ]
+      }
+    ],
+    "collection": {
+      "encode": 6.725689083803445,
+      "inference": 7.329152866732329,
+      "referee": 11.177041126880795,
+      "elapsed": 25.243970250012353,
+      "forwards": 598
+    },
+    "trace_sha256": "5712e3f571388e2ab51dca6cdb2ae51144ec5623b3ca04a417d1d7fb70e636f7",
+    "batch_E": 4784,
+    "trace_file": "batch-017.jsonl.gz"
+  },
+  {
+    "policy": -0.005580916379888852,
+    "old_KL": 0.00963668563720906,
+    "clip_rate": 0.1276453518205219,
+    "entropy_scaled": 0.09415077500873142,
+    "reference_KL_scaled": 0.04302283935248852,
+    "gradient_norm": 7.705846680535211,
+    "logprob_error": 9.5367431640625e-06,
+    "optimization_updates": 9,
+    "optimization_seconds": 14.467619667062536,
+    "gradient_diagnostic": null,
+    "E": 89851,
+    "L": 89851,
+    "behavior_version": 18,
+    "groups": [
+      {
+        "group": 0,
+        "layout_seed": 149618719,
+        "seat": 0,
+        "game_count": 4,
+        "terminal_std": 0.1169290930608966,
+        "zero_advantage": false,
+        "advantages": [
+          -0.2544149482285422,
+          0.045970076741219966,
+          0.1700297322392824,
+          0.03841513924804
+        ]
+      },
+      {
+        "group": 1,
+        "layout_seed": 149618719,
+        "seat": 1,
+        "game_count": 4,
+        "terminal_std": 0.6750880040247793,
+        "zero_advantage": false,
+        "advantages": [
+          -1.1167819720328938,
+          0.7587232537340727,
+          1.0017926671614925,
+          -0.6437339488626718
+        ]
+      },
+      {
+        "group": 2,
+        "layout_seed": 300310733,
+        "seat": 0,
+        "game_count": 4,
+        "terminal_std": 0.5859634401110396,
+        "zero_advantage": false,
+        "advantages": [
+          0.051680481666645704,
+          0.6049796254680567,
+          0.6353477854455477,
+          -1.2920078925802503
+        ]
+      },
+      {
+        "group": 3,
+        "layout_seed": 300310733,
+        "seat": 1,
+        "game_count": 4,
+        "terminal_std": 0.5288045540854508,
+        "zero_advantage": false,
+        "advantages": [
+          -1.0340234585386205,
+          0.8190960853437089,
+          0.44309031708028845,
+          -0.22816294388537672
+        ]
+      }
+    ],
+    "collection": {
+      "encode": 6.37641799589619,
+      "inference": 7.895286591490731,
+      "referee": 11.614174453075975,
+      "elapsed": 25.903061458840966,
+      "forwards": 598
+    },
+    "trace_sha256": "8b56648e1f74e02bfbcb9a456d577e7920eff9e8e5ba55bf409776e1df484aec",
+    "batch_E": 4489,
+    "trace_file": "batch-018.jsonl.gz"
+  },
+  {
+    "policy": 0.001223950821440667,
+    "old_KL": 0.008639519693679088,
+    "clip_rate": 0.10704900622367859,
+    "entropy_scaled": 0.10017675161361694,
+    "reference_KL_scaled": 0.04606744647026062,
+    "gradient_norm": 6.115108251571655,
+    "logprob_error": 0.0,
+    "optimization_updates": 10,
+    "optimization_seconds": 15.969975332962349,
+    "gradient_diagnostic": null,
+    "E": 94635,
+    "L": 94635,
+    "behavior_version": 19,
+    "groups": [
+      {
+        "group": 0,
+        "layout_seed": 3010803159,
+        "seat": 0,
+        "game_count": 4,
+        "terminal_std": 0.09279834021671983,
+        "zero_advantage": false,
+        "advantages": [
+          0.12003794280519875,
+          0.12173796428592783,
+          -0.08360172133051114,
+          -0.15817418576061545
+        ]
+      },
+      {
+        "group": 1,
+        "layout_seed": 3010803159,
+        "seat": 1,
+        "game_count": 4,
+        "terminal_std": 0.6518706576533473,
+        "zero_advantage": false,
+        "advantages": [
+          -0.2819883306691535,
+          -0.7189363879704916,
+          -0.4804684294619359,
+          1.4813931481015807
+        ]
+      },
+      {
+        "group": 2,
+        "layout_seed": 3584155240,
+        "seat": 0,
+        "game_count": 4,
+        "terminal_std": 0.45795175631448976,
+        "zero_advantage": false,
+        "advantages": [
+          1.056985876635954,
+          -0.3847430982875326,
+          -0.34446726859840576,
+          -0.3277755097500156
+        ]
+      },
+      {
+        "group": 3,
+        "layout_seed": 3584155240,
+        "seat": 1,
+        "game_count": 4,
+        "terminal_std": 0.04925202143641341,
+        "zero_advantage": false,
+        "advantages": [
+          -0.1132120801674219,
+          0.034510536660254644,
+          0.03083779149433778,
+          0.04786375201282992
+        ]
+      }
+    ],
+    "collection": {
+      "encode": 6.629207371501252,
+      "inference": 8.106613301904872,
+      "referee": 10.982779076788574,
+      "elapsed": 25.725667249877006,
+      "forwards": 598
+    },
+    "trace_sha256": "e05c2a64268503728e403570ebdfa7c6f6b3dace41c57533c36d9d9064551a52",
+    "batch_E": 4784,
+    "trace_file": "batch-019.jsonl.gz"
+  },
+  {
+    "policy": 0.009863588855498366,
+    "old_KL": 0.00679089271984089,
+    "clip_rate": 0.08806601994567448,
+    "entropy_scaled": 0.09100309097104603,
+    "reference_KL_scaled": 0.03988154149717755,
+    "gradient_norm": 8.000196986728245,
+    "logprob_error": 7.152557373046875e-06,
+    "optimization_updates": 9,
+    "optimization_seconds": 12.886588458903134,
+    "gradient_diagnostic": null,
+    "E": 99133,
+    "L": 99133,
+    "behavior_version": 20,
+    "groups": [
+      {
+        "group": 0,
+        "layout_seed": 2013551875,
+        "seat": 0,
+        "game_count": 4,
+        "terminal_std": 0.5643401957754721,
+        "zero_advantage": false,
+        "advantages": [
+          -0.527441059290505,
+          1.2748198044090182,
+          -0.5762955763619222,
+          -0.1710831687565911
+        ]
+      },
+      {
+        "group": 1,
+        "layout_seed": 2013551875,
+        "seat": 1,
+        "game_count": 4,
+        "terminal_std": 0.5027739554580662,
+        "zero_advantage": false,
+        "advantages": [
+          -0.661436150871992,
+          0.27825067359762945,
+          0.9691599794612945,
+          -0.5859745021869319
+        ]
+      },
+      {
+        "group": 2,
+        "layout_seed": 2414621570,
+        "seat": 0,
+        "game_count": 4,
+        "terminal_std": 0.6375080698892521,
+        "zero_advantage": false,
+        "advantages": [
+          -0.513042731649977,
+          -0.6099305643642828,
+          -0.33970992262377697,
+          1.462683218638037
+        ]
+      },
+      {
+        "group": 3,
+        "layout_seed": 2414621570,
+        "seat": 1,
+        "game_count": 4,
+        "terminal_std": 0.6182065958803583,
+        "zero_advantage": false,
+        "advantages": [
+          -0.5098610348968913,
+          -0.5568498366028373,
+          1.4218215539712078,
+          -0.35511068247147937
+        ]
+      }
+    ],
+    "collection": {
+      "encode": 6.80077154817991,
+      "inference": 7.793582992628217,
+      "referee": 11.237094521522522,
+      "elapsed": 25.83714370802045,
+      "forwards": 598
+    },
+    "trace_sha256": "88ff9a0d18b238566d936167cf83792f30735a7227f0100945834e177981cba2",
+    "batch_E": 4498,
+    "trace_file": "batch-020.jsonl.gz"
+  },
+  {
+    "policy": -0.013442234741523862,
+    "old_KL": 0.006612943537038518,
+    "clip_rate": 0.08550781309604645,
+    "entropy_scaled": 0.1028300890699029,
+    "reference_KL_scaled": 0.0459274610504508,
+    "gradient_norm": 8.36625416278839,
+    "logprob_error": 6.198883056640625e-06,
+    "optimization_updates": 10,
+    "optimization_seconds": 15.952503834152594,
+    "gradient_diagnostic": {
+      "policy": 5.731956481933594,
+      "entropy": 0.005949060432612896,
+      "reference": 0.49152085185050964
+    },
+    "E": 103801,
+    "L": 103801,
+    "behavior_version": 21,
+    "groups": [
+      {
+        "group": 0,
+        "layout_seed": 3222356679,
+        "seat": 0,
+        "game_count": 4,
+        "terminal_std": 0.5999466177691182,
+        "zero_advantage": false,
+        "advantages": [
+          -0.35529941405081206,
+          -0.4873232363675563,
+          -0.5380677490014318,
+          1.3806903994198005
+        ]
+      },
+      {
+        "group": 1,
+        "layout_seed": 3222356679,
+        "seat": 1,
+        "game_count": 4,
+        "terminal_std": 0.5428950739978694,
+        "zero_advantage": false,
+        "advantages": [
+          -0.5879897361992285,
+          1.2359141253344854,
+          -0.4038843681345503,
+          -0.24404002100070676
+        ]
+      },
+      {
+        "group": 2,
+        "layout_seed": 1956642485,
+        "seat": 0,
+        "game_count": 4,
+        "terminal_std": 0.6173114506227501,
+        "zero_advantage": false,
+        "advantages": [
+          0.7993791885441094,
+          0.8463023505282404,
+          -0.838443041447304,
+          -0.8072384976250458
+        ]
+      },
+      {
+        "group": 3,
+        "layout_seed": 1956642485,
+        "seat": 1,
+        "game_count": 4,
+        "terminal_std": 0.7061291242768416,
+        "zero_advantage": false,
+        "advantages": [
+          -1.2059327968529912,
+          1.0204827450582332,
+          0.8113611001783445,
+          -0.6259110483835866
+        ]
+      }
+    ],
+    "collection": {
+      "encode": 5.99383079377003,
+      "inference": 7.495802709134296,
+      "referee": 10.200896954862401,
+      "elapsed": 23.7037400000263,
+      "forwards": 598
+    },
+    "trace_sha256": "082cd26b8466d96da33b4578099f6a041cd608d36bdd00f6f6cfb292e5dfbc47",
+    "batch_E": 4668,
+    "trace_file": "batch-021.jsonl.gz"
+  }
+]
