@@ -13,6 +13,7 @@ sys.path[:0]=[str(ROOT),str(ROOT/'experiments/v7')]
 from benchmark import configure_engine,limit_math_threads,load_strategy
 from starvation_replay import read_replay,distance,LAND
 from collect import write
+from tree_labels import tree_flags, PLANTED, SEIZED
 
 V7='4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6'
 
@@ -31,7 +32,11 @@ def extract(task):
     r=entry['row']
     paths=Path(entry['path'])
     cache=dest/(key+'.npz')
-    if not cache.exists():
+    current=False
+    if cache.exists():
+        with np.load(cache,allow_pickle=False) as saved:
+            current='tree_mask_version' in saved and int(saved['tree_mask_version'])==1
+    if not current:
         assert hashlib.sha256(paths.read_bytes()).hexdigest()==entry['sha256']
         env=read_replay(paths)
         cfg,frames=env['configuration'],env['steps']
@@ -64,9 +69,10 @@ def extract(task):
                     q=LAND[pos][act.get(uid,'STAY')]
                     if k=='COLLECTOR' and c>=75 and min(distance(q,h) for h in own[1].values())<min(distance(pos,h) for h in own[1].values()):
                         mask[pos]|=1
-                newtrees=frames[t+1][0]['observation']['players'][side][3]
-                for uid,(pos,_) in newtrees.items():
-                    if uid not in own[3]:mask[pos]|=2
+                after=frames[t+1][0]['observation']['players']
+                trees=tree_flags(ps,after,side,act,cfg)
+                mask|=trees
+                mask[(trees & (PLANTED|SEIZED))!=0]|=2
                 if own[0]<cfg['recCollectorCost']:mask|=4
                 for name,value in dict(X=x,A=a,S=policy._scalars(ps,t,side),T=ids[teacher],M=mask,
                     Y=(1-2*side)*sum(w*cash[min(t+k,end)] for w,k in ((.28,20),(.52,52),(.20,100)))/3000).items():
@@ -74,7 +80,7 @@ def extract(task):
                 tracker.set_actions(ps,act)
                 prev=ps
         tmp=cache.with_suffix('.tmp.npz')
-        np.savez_compressed(tmp,**{k:np.asarray(v,dtype={'T':'u1','S':'f','Y':'f'}.get(k)) for k,v in rows.items()},layout=layout)
+        np.savez_compressed(tmp,**{k:np.asarray(v,dtype={'T':'u1','S':'f','Y':'f'}.get(k)) for k,v in rows.items()},layout=layout,tree_mask_version=1)
         tmp.replace(cache)
     with np.load(cache,allow_pickle=False) as z:
         teachers=sorted(map(int,np.unique(z['T'])))

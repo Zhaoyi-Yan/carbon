@@ -10,6 +10,7 @@ import torch
 import torch.nn.functional as F
 from network import INITIAL,PARENT,START,ROOT,make,pack
 from collect import write
+from tree_labels import PLANTED, SEIZED, LEFT_PLANT, LEFT_SEIZE
 
 sys.path.insert(0,str(ROOT/'experiments/v6r'))
 from train import symmetries
@@ -21,7 +22,7 @@ SEED=271124
 FIELDS=('X','A','S','Y','T','M')
 
 
-def sample(out,maps,arm,epoch):
+def sample(out,maps,arm,epoch,seen=None,fields=FIELDS):
     rng=np.random.default_rng(SEED+epoch)
     subset=[m for m in maps if m['fold']=='train']
     # Equalize teachers first, then games within each teacher. Each row is an entire team.
@@ -34,10 +35,10 @@ def sample(out,maps,arm,epoch):
         names=[m['game'] for m in subset if t in m['teachers']]
         for i,total in enumerate(rng.multinomial(count,np.full(len(names),1/len(names)))):
             if total:want[names[i]][t]=total
-    return assemble(out,want,rng)
+    return assemble(out,want,rng,seen,fields)
 
 
-def assemble(out,want,rng):
+def assemble(out,want,rng,seen=None,fields=FIELDS):
     rows=defaultdict(list)
     for name,targets in want.items():
         with np.load(out/'encoded'/(name+'.npz')) as z:
@@ -46,7 +47,8 @@ def assemble(out,want,rng):
                 possible=np.flatnonzero(tids==t)
                 if count is None:ind.extend(possible[::6])
                 else:ind.extend(rng.choice(possible,count,replace=count>len(possible)))
-            for k in FIELDS:rows[k].append(z[k][ind])
+            if seen is not None:seen.update((name,int(j)) for j in ind)
+            for k in fields:rows[k].append(z[k][ind])
     return {k:torch.from_numpy(np.concatenate(v)) for k,v in rows.items()}
 
 
@@ -70,6 +72,8 @@ def assess(net,rows,device):
                 masks={'worker' if i==0 else 'base':valid}
                 if i==0:
                     masks.update(loaded_return=valid & ((m&1)!=0),plant_or_seize=valid & ((m&2)!=0),low_cash=valid & ((m&4)!=0))
+                    for label,flag in (('planted',PLANTED),('seized',SEIZED),('left_plant',LEFT_PLANT),('left_seize',LEFT_SEIZE)):
+                        masks[label]=valid & ((m & flag)!=0)
                 else:masks['recruit']=valid & (choice>0)
                 for key,mask in masks.items():
                     counts=mask.sum(1).cpu().numpy();nll=(ce*mask).sum(1).cpu().numpy();ok=(hits*mask).sum(1).cpu().numpy()
@@ -138,14 +142,17 @@ def main(out):
             sched=torch.optim.lr_scheduler.CosineAnnealingLR(opt,EPOCHS,eta_min=.000025)
             rng=np.random.default_rng(SEED)
             best=float('inf')
-            record=dict(validation=[])
+            record=dict(validation=[],validation_slices=[],distinct_training_rows=[])
+            seen=set()
             for epoch in range(1,EPOCHS+1):
-                rows=sample(out,maps,arm,epoch)
+                rows=sample(out,maps,arm,epoch,seen)
+                record['distinct_training_rows'].append(len(seen))
                 update(net,prior,rows,dev,opt,rng);sched.step()
                 del rows
                 metrics=assess(net,val,dev)
                 objective=equal_teacher(metrics,'worker')+.45*equal_teacher(metrics,'base')+.3*equal_teacher(metrics,'value')
                 record['validation'].append(float(objective))
+                record['validation_slices'].append(metrics)
                 if objective<best:
                     best=objective;record['selected']=epoch
                     selected=copy.deepcopy(net.state_dict())
