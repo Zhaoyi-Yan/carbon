@@ -1,0 +1,26 @@
+{
+  "panel": "screen",
+  "games": 24,
+  "wins": 14,
+  "draws": 0,
+  "losses": 10,
+  "mean_margin": -156.32875000000004,
+  "mean_utility": 0.042834654078841114,
+  "sd_utility": 0.6848255578623066,
+  "seats": {
+    "0": {
+      "wins": 7,
+      "losses": 5,
+      "mean_utility": 0.06110008100898307
+    },
+    "1": {
+      "wins": 7,
+      "losses": 5,
+      "mean_utility": 0.024569227148699153
+    }
+  },
+  "failures": 0,
+  "max_act_seconds": 0.7582010831683874,
+  "decision": "screen passed: mean U > 0 and no runtime failure; confirm batch launched",
+  "candidate_sha256": "83bc00ca52ba42ece876830649c9bc488105e763179b62018558f555bb94fa9c"
+}
