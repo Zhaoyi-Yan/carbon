@@ -1,0 +1,540 @@
+{
+  "source_commit": "e97a386b290a1727f26331470094ab57cd452948",
+  "input_sha256": {
+    "analysis/v8/own-prior/README.md": "2308313db0906372227dc2ed58173a4c130e881b6418fa5536d37964424ef65a",
+    "analysis/v8/own-prior/screen-24.jsonl": "68fe4f68d2b4ac5693d4203c31b6042e5b9ea2a1f132f788dddeb2f57ad9d6bf",
+    "analysis/v8/own-prior/confirm-24.jsonl": "32ee3c91a6f6e229170b232a21f32160eacf88240579c704ee373dfb172d68df",
+    "analysis/v8/own-prior/screen-summary.json": "dd1e9a45abb61567bbc1c5bd926d5ba4bec38711fd169a2cb27debb9b54daaf9",
+    "analysis/v8/own-prior/confirm-summary.json": "8b1a6fc952a4070dcd986a01d5b9cdfe1a99accda6597dacfaa831665eead92a",
+    "analysis/v8/own-prior/own-search-fit-v8.json": "458442cf4efeb32e11fc1562a2412c994b4faee34dd959815de359ebd9d30b2d",
+    "analysis/v8/own-prior/own-search-model-v8.json": "39010674a8ee1fed661e4a0c277d00c14eb4f4d1c610d61f3b5911974522f45e",
+    "analysis/v8/own-prior/panels.json": "edb89a6b60ddb2c5fcd1388600471bf0fdbfe259bb9ecfc922225aabc2a652e3",
+    "yan-v8.py": "a87f8e6b83656c771cb5a25d6b6f383b245127e7c782e4c6c7c4a0a2cc15d396",
+    "yan-v8-own-prior.py": "83bc00ca52ba42ece876830649c9bc488105e763179b62018558f555bb94fa9c",
+    "yan-v8-own-prior.json": "c0813ad20b2ea42baf7038f218044c87a22f92b7890ce383c976ffc9b05bf8fb",
+    "experiments/v7/panels.json": "51dd5e05ddae9fe3cc855b4cd4685e5ddb93dd3bc9449e9757611550df648bd8",
+    "experiments/v8/own_prior_fit.py": "8b87e9bc9d502c128dfc98abfada6732dc7a757a939dad4dbb496f3cc3e8aaa1",
+    "experiments/v8/own_prior_panel.py": "0e5606f53e28f677b54eefaaef36d5f2a0c53c207486848be86f2f2ea44ec3fa",
+    "experiments/v8/own_prior_build.py": "dc521b728e8e9048bf0f5a7cd379e7ece9e952612e873ec43e6b83ff593e7445",
+    "benchmark.py": "ad742b91900a40865b34587d28719ef1b56ebd5252a4c2c91adc163c57710372",
+    "arena.py": "50619fd623cd925b1381a574f4d3fb820ff3f8c8b7b25273d28f312dc80962bd"
+  },
+  "panels": {
+    "screen": {
+      "games": 24,
+      "maps": 12,
+      "wins": 14,
+      "draws": 0,
+      "losses": 10,
+      "mean_margin": -156.32875000000004,
+      "mean_utility": 0.0428346540788411,
+      "map_bootstrap95": [
+        -0.24208471466686643,
+        0.3174327377258796
+      ],
+      "positive_map_means": 5,
+      "paired_map_results": {
+        "0": 2,
+        "1": 6,
+        "2": 4
+      },
+      "seats": {
+        "0": {
+          "wins": 7,
+          "losses": 5,
+          "mean_margin": -112.16166666666679,
+          "mean_utility": 0.061100081008983065,
+          "map_bootstrap95": [
+            -0.33603074044875036,
+            0.4458961725261232
+          ]
+        },
+        "1": {
+          "wins": 7,
+          "losses": 5,
+          "mean_margin": -200.4958333333333,
+          "mean_utility": 0.024569227148699163,
+          "map_bootstrap95": [
+            -0.33508549671430615,
+            0.37646747853235946
+          ]
+        }
+      },
+      "per_map": {
+        "246458587": {
+          "mean_utility": 0.5944497662200432,
+          "wins": 2,
+          "seat0_margin": 440.71000000000004,
+          "seat1_margin": 138.63999999999942
+        },
+        "530865949": {
+          "mean_utility": 0.6611359582775116,
+          "wins": 2,
+          "seat0_margin": 952.29,
+          "seat1_margin": 125.02000000000044
+        },
+        "990231874": {
+          "mean_utility": 0.04191594594736775,
+          "wins": 1,
+          "seat0_margin": 1255.6099999999997,
+          "seat1_margin": -857.5199999999995
+        },
+        "1994432251": {
+          "mean_utility": -0.1582311497291768,
+          "wins": 1,
+          "seat0_margin": 145.01999999999953,
+          "seat1_margin": -1390.8599999999997
+        },
+        "2233722925": {
+          "mean_utility": -0.10260012254616163,
+          "wins": 1,
+          "seat0_margin": -800.7300000000005,
+          "seat1_margin": 117.07999999999993
+        },
+        "2364235767": {
+          "mean_utility": -0.8069361426871552,
+          "wins": 0,
+          "seat0_margin": -1924.5600000000004,
+          "seat1_margin": -583.4200000000001
+        },
+        "2694746036": {
+          "mean_utility": -0.06755775747965814,
+          "wins": 1,
+          "seat0_margin": 189.5,
+          "seat1_margin": -628.1599999999999
+        },
+        "3093620031": {
+          "mean_utility": -0.11959240085350625,
+          "wins": 1,
+          "seat0_margin": -959.2999999999993,
+          "seat1_margin": 129.64000000000033
+        },
+        "3118297379": {
+          "mean_utility": -0.7393273077413958,
+          "wins": 0,
+          "seat0_margin": -911.0199999999995,
+          "seat1_margin": -662.5500000000002
+        },
+        "3407782242": {
+          "mean_utility": -0.06988336820197533,
+          "wins": 1,
+          "seat0_margin": -440.1200000000008,
+          "seat1_margin": 8.609999999999673
+        },
+        "3798015638": {
+          "mean_utility": 0.6804004403765296,
+          "wins": 2,
+          "seat0_margin": 104.94999999999982,
+          "seat1_margin": 1167.5
+        },
+        "3816900547": {
+          "mean_utility": 0.6002419873636704,
+          "wins": 2,
+          "seat0_margin": 601.71,
+          "seat1_margin": 30.06999999999971
+        }
+      },
+      "failures": 0,
+      "max_act_seconds": 0.7582010831683874,
+      "both_agents_max_act_seconds": 0.7820948751177639,
+      "candidate_max_act_seconds": 0.7582010831683874,
+      "all_turns": [
+        299
+      ],
+      "seat0_minus_seat1": {
+        "mean": 0.03653085386028393,
+        "map_bootstrap95": [
+          -0.49928147490062386,
+          0.586080810973809
+        ]
+      },
+      "exploratory_leave_one_map_out_mean_range": [
+        -0.015125871948221438,
+        0.12008654469393171
+      ]
+    },
+    "confirm": {
+      "games": 24,
+      "maps": 12,
+      "wins": 15,
+      "draws": 0,
+      "losses": 9,
+      "mean_margin": 112.08583333333335,
+      "mean_utility": 0.15616024721621327,
+      "map_bootstrap95": [
+        0.006005254466475323,
+        0.33066946651430523
+      ],
+      "positive_map_means": 6,
+      "paired_map_results": {
+        "0": 0,
+        "1": 9,
+        "2": 3
+      },
+      "seats": {
+        "0": {
+          "wins": 9,
+          "losses": 3,
+          "mean_margin": 211.46166666666673,
+          "mean_utility": 0.3123727218205155,
+          "map_bootstrap95": [
+            -0.04121389206560911,
+            0.619966626798539
+          ]
+        },
+        "1": {
+          "wins": 6,
+          "losses": 6,
+          "mean_margin": 12.70999999999996,
+          "mean_utility": -5.222738808899341e-05,
+          "map_bootstrap95": [
+            -0.3560089774926041,
+            0.3636195507437439
+          ]
+        }
+      },
+      "per_map": {
+        "108988937": {
+          "mean_utility": 0.5154392263418639,
+          "wins": 2,
+          "seat0_margin": 13.230000000000473,
+          "seat1_margin": 79.47999999999956
+        },
+        "807214668": {
+          "mean_utility": -0.03674763057238967,
+          "wins": 1,
+          "seat0_margin": 20.479999999999563,
+          "seat1_margin": -243.0699999999997
+        },
+        "1223309533": {
+          "mean_utility": 0.15359219320137202,
+          "wins": 1,
+          "seat0_margin": -96.55999999999949,
+          "seat1_margin": 1239.920000000001
+        },
+        "1361560857": {
+          "mean_utility": 0.13038222901079477,
+          "wins": 1,
+          "seat0_margin": 1223.42,
+          "seat1_margin": -228.47000000000025
+        },
+        "1411385181": {
+          "mean_utility": -0.047672867716696266,
+          "wins": 1,
+          "seat0_margin": 67.63000000000011,
+          "seat1_margin": -360.40000000000055
+        },
+        "1723052650": {
+          "mean_utility": -0.006595695475347718,
+          "wins": 1,
+          "seat0_margin": 834.7200000000003,
+          "seat1_margin": -888.8599999999997
+        },
+        "1768774191": {
+          "mean_utility": 0.6941059589942902,
+          "wins": 2,
+          "seat0_margin": 1020.1100000000006,
+          "seat1_margin": 280.5100000000002
+        },
+        "1927727768": {
+          "mean_utility": -0.07668024125905981,
+          "wins": 1,
+          "seat0_margin": 103.61999999999989,
+          "seat1_margin": -592.5500000000002
+        },
+        "3205994451": {
+          "mean_utility": 0.015949301817808348,
+          "wins": 1,
+          "seat0_margin": -692.54,
+          "seat1_margin": 814.5099999999993
+        },
+        "4081201885": {
+          "mean_utility": 0.6958824018716429,
+          "wins": 2,
+          "seat0_margin": 725.5600000000004,
+          "seat1_margin": 521.5299999999997
+        },
+        "4223603548": {
+          "mean_utility": -0.12795210492805503,
+          "wins": 1,
+          "seat0_margin": -1056.3600000000006,
+          "seat1_margin": 143.30000000000018
+        },
+        "4246515493": {
+          "mean_utility": -0.03577980469166425,
+          "wins": 1,
+          "seat0_margin": 374.22999999999956,
+          "seat1_margin": -613.3800000000001
+        }
+      },
+      "failures": 0,
+      "max_act_seconds": 0.7978766250889748,
+      "both_agents_max_act_seconds": 0.7978766250889748,
+      "candidate_max_act_seconds": 0.7978766250889748,
+      "all_turns": [
+        299
+      ],
+      "seat0_minus_seat1": {
+        "mean": 0.3124249492086045,
+        "map_bootstrap95": [
+          -0.34106307744649383,
+          0.9096947860131325
+        ]
+      },
+      "exploratory_leave_one_map_out_mean_range": [
+        0.10709459679299242,
+        0.18198864286569225
+      ],
+      "stored_map_bootstrap95": [
+        0.006042812164598903,
+        0.33125198675322326
+      ]
+    },
+    "pooled_descriptive": {
+      "games": 48,
+      "maps": 24,
+      "wins": 29,
+      "draws": 0,
+      "losses": 19,
+      "mean_margin": -22.12145833333335,
+      "mean_utility": 0.0994974506475272,
+      "map_bootstrap95": [
+        -0.06387593552596706,
+        0.2596824468777809
+      ],
+      "positive_map_means": 11,
+      "paired_map_results": {
+        "0": 2,
+        "1": 15,
+        "2": 7
+      },
+      "seats": {
+        "0": {
+          "wins": 16,
+          "losses": 8,
+          "mean_margin": 49.64999999999998,
+          "mean_utility": 0.18673640141474931,
+          "map_bootstrap95": [
+            -0.0883978196731406,
+            0.44282514862861977
+          ]
+        },
+        "1": {
+          "wins": 13,
+          "losses": 11,
+          "mean_margin": -93.89291666666668,
+          "mean_utility": 0.012258499880305085,
+          "map_bootstrap95": [
+            -0.2532321280697096,
+            0.272768681120697
+          ]
+        }
+      },
+      "per_map": {
+        "108988937": {
+          "mean_utility": 0.5154392263418639,
+          "wins": 2,
+          "seat0_margin": 13.230000000000473,
+          "seat1_margin": 79.47999999999956
+        },
+        "246458587": {
+          "mean_utility": 0.5944497662200432,
+          "wins": 2,
+          "seat0_margin": 440.71000000000004,
+          "seat1_margin": 138.63999999999942
+        },
+        "530865949": {
+          "mean_utility": 0.6611359582775116,
+          "wins": 2,
+          "seat0_margin": 952.29,
+          "seat1_margin": 125.02000000000044
+        },
+        "807214668": {
+          "mean_utility": -0.03674763057238967,
+          "wins": 1,
+          "seat0_margin": 20.479999999999563,
+          "seat1_margin": -243.0699999999997
+        },
+        "990231874": {
+          "mean_utility": 0.04191594594736775,
+          "wins": 1,
+          "seat0_margin": 1255.6099999999997,
+          "seat1_margin": -857.5199999999995
+        },
+        "1223309533": {
+          "mean_utility": 0.15359219320137202,
+          "wins": 1,
+          "seat0_margin": -96.55999999999949,
+          "seat1_margin": 1239.920000000001
+        },
+        "1361560857": {
+          "mean_utility": 0.13038222901079477,
+          "wins": 1,
+          "seat0_margin": 1223.42,
+          "seat1_margin": -228.47000000000025
+        },
+        "1411385181": {
+          "mean_utility": -0.047672867716696266,
+          "wins": 1,
+          "seat0_margin": 67.63000000000011,
+          "seat1_margin": -360.40000000000055
+        },
+        "1723052650": {
+          "mean_utility": -0.006595695475347718,
+          "wins": 1,
+          "seat0_margin": 834.7200000000003,
+          "seat1_margin": -888.8599999999997
+        },
+        "1768774191": {
+          "mean_utility": 0.6941059589942902,
+          "wins": 2,
+          "seat0_margin": 1020.1100000000006,
+          "seat1_margin": 280.5100000000002
+        },
+        "1927727768": {
+          "mean_utility": -0.07668024125905981,
+          "wins": 1,
+          "seat0_margin": 103.61999999999989,
+          "seat1_margin": -592.5500000000002
+        },
+        "1994432251": {
+          "mean_utility": -0.1582311497291768,
+          "wins": 1,
+          "seat0_margin": 145.01999999999953,
+          "seat1_margin": -1390.8599999999997
+        },
+        "2233722925": {
+          "mean_utility": -0.10260012254616163,
+          "wins": 1,
+          "seat0_margin": -800.7300000000005,
+          "seat1_margin": 117.07999999999993
+        },
+        "2364235767": {
+          "mean_utility": -0.8069361426871552,
+          "wins": 0,
+          "seat0_margin": -1924.5600000000004,
+          "seat1_margin": -583.4200000000001
+        },
+        "2694746036": {
+          "mean_utility": -0.06755775747965814,
+          "wins": 1,
+          "seat0_margin": 189.5,
+          "seat1_margin": -628.1599999999999
+        },
+        "3093620031": {
+          "mean_utility": -0.11959240085350625,
+          "wins": 1,
+          "seat0_margin": -959.2999999999993,
+          "seat1_margin": 129.64000000000033
+        },
+        "3118297379": {
+          "mean_utility": -0.7393273077413958,
+          "wins": 0,
+          "seat0_margin": -911.0199999999995,
+          "seat1_margin": -662.5500000000002
+        },
+        "3205994451": {
+          "mean_utility": 0.015949301817808348,
+          "wins": 1,
+          "seat0_margin": -692.54,
+          "seat1_margin": 814.5099999999993
+        },
+        "3407782242": {
+          "mean_utility": -0.06988336820197533,
+          "wins": 1,
+          "seat0_margin": -440.1200000000008,
+          "seat1_margin": 8.609999999999673
+        },
+        "3798015638": {
+          "mean_utility": 0.6804004403765296,
+          "wins": 2,
+          "seat0_margin": 104.94999999999982,
+          "seat1_margin": 1167.5
+        },
+        "3816900547": {
+          "mean_utility": 0.6002419873636704,
+          "wins": 2,
+          "seat0_margin": 601.71,
+          "seat1_margin": 30.06999999999971
+        },
+        "4081201885": {
+          "mean_utility": 0.6958824018716429,
+          "wins": 2,
+          "seat0_margin": 725.5600000000004,
+          "seat1_margin": 521.5299999999997
+        },
+        "4223603548": {
+          "mean_utility": -0.12795210492805503,
+          "wins": 1,
+          "seat0_margin": -1056.3600000000006,
+          "seat1_margin": 143.30000000000018
+        },
+        "4246515493": {
+          "mean_utility": -0.03577980469166425,
+          "wins": 1,
+          "seat0_margin": 374.22999999999956,
+          "seat1_margin": -613.3800000000001
+        }
+      },
+      "failures": 0,
+      "max_act_seconds": 0.7978766250889748,
+      "both_agents_max_act_seconds": 0.7978766250889748,
+      "candidate_max_act_seconds": 0.7978766250889748,
+      "all_turns": [
+        299
+      ],
+      "seat0_minus_seat1": {
+        "mean": 0.1744779015344442,
+        "map_bootstrap95": [
+          -0.24815131861928597,
+          0.5879520306755046
+        ]
+      },
+      "exploratory_leave_one_map_out_mean_range": [
+        0.07356767015952217,
+        0.13890760687946993
+      ]
+    }
+  },
+  "method": {
+    "rng_seed": 20261125,
+    "bootstrap_replicates": 1000000,
+    "numpy": "2.3.5",
+    "python": "3.12.14",
+    "interval": "unadjusted percentile bootstrap; sample whole maps retaining both seats",
+    "notes": [
+      "Same single candidate throughout both batches.",
+      "Independent confirmation is the prespecified decision sample; pooled interval is descriptive.",
+      "New bootstrap uses a documented fixed RNG and one million resamples; small differences from the stored interval are Monte Carlo differences.",
+      "Seat and leave-one-map-out summaries are exploratory, not additional gates.",
+      "Recorded replay fingerprints are checked for partition separation, but upstream replay bytes and deployment identity are not revalidated here."
+    ]
+  },
+  "fit": {
+    "train_layouts": 22,
+    "heldout_layouts": 11,
+    "train_workers": 12322,
+    "heldout_workers": 6101,
+    "map_macro_calibrated_nll": 0.33744408583102536,
+    "map_macro_learned_nll": 0.3354464675729011,
+    "map_macro_calibrated_accuracy": 0.8770566243396409,
+    "map_macro_learned_accuracy": 0.8796940938411241,
+    "nll_change": -0.0019976182581242963,
+    "accuracy_change_percentage_points": 0.2637469501483278,
+    "comparison": "new temperature-calibrated root logits versus same logits plus newly fitted residual; not old-v8-prior versus new-v8-prior"
+  },
+  "gates": {
+    "screen_pass": true,
+    "confirmation_pass": true,
+    "no_runtime_failures": true
+  },
+  "audit": {
+    "all_input_bytes_match_frozen_commit": true,
+    "all_game_hashes_match": true,
+    "initial_boards_regenerated": 220,
+    "engine_sha256": "0fef48294793290f1abf2a4d8f7c464e988c12b7c40f242a2079dc1dc38a3c9c",
+    "train_holdout_screen_confirm_layouts_disjoint": true,
+    "screen_confirm_disjoint_from_regenerated_v7_layouts": true,
+    "original_two_fingerprint_schemes_verified": true
+  }
+}

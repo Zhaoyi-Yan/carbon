@@ -1,10 +1,12 @@
 # Carbon League 策略
 
-## 当前研究交接：回到完整 yan-v8 上改进
+## 当前研究交接：v8 own-prior 已通过本轮本地验收
 
 [研究方案 v2](analysis/carbon-zero-research-plan-20261124.md) 定义了复用 ft3 Apollo、合法观测、固定温度、混合终局效用的 Zero-W 路线。[首轮 200k PPO 实验](https://github.com/Zhaoyi-Yan/carbon/blob/c73c2837e7a0ead8c29f0ffe0c17f9416db66e72/analysis/carbon-zero/README.md) 已完成但棋力退化，冻结 v8 不变。
 
-**当前 Codex 交接：[暂停当前 Zero 配方，回到完整 v8 的能力上改进](analysis/carbon-route-reset-20261125.md)。** 已核对最新 `e8a4151`：M 第二种子没有复现净增益，M-wide 也未改善；暂停当前 M/G/M-wide，不自动追加第二个 wide 种子、40 图确认或百万步训练。当前 Zero 没有继承完整 v8 的搜索、解码与后处理，尚无当前 M 对完整 v8 的直接比赛。下一轮仅尝试用可追溯的完整 v8 最终动作更新其已有轻量候选 prior，保留完整系统，在固定预算下用同一候选直接挑战冻结 v8；具体数据、计算与停止条件见交接文档。[M/G 首种子复审](analysis/carbon-zero-mg-review-20261125.md)、[B1-fixed/M-G 协议](analysis/carbon-zero-b1fixed-review-20261124.md)、[B1 复审](analysis/carbon-zero-b1-review-20261124.md)和[更早 PPO/RLOO 方案](analysis/carbon-zero-rl-followup-20261124.md)保留为历史记录。
+**当前 Codex 交接：[v8 own-prior 复审：本地验收通过，冻结候选并交付](analysis/v8-own-prior-review-20261125.md)。** 已核对 `experiment/v8-own-prior` 的 `e97a386`：只更新完整 v8 的两个已有 prior 参数槽，同一候选初筛 14–10、独立确认 15–9；确认平均 U +0.1562，地图区间下界约 +0.006，通过原定门槛。合并 48 局 29–19，但区间跨零、席位贡献不均，不能称稳定普遍优势或已能击败前六。冻结候选 SHA `83bc00ca…`，结束本轮开发，不追加第三批 v8 对战或重训；列为待维护者决定线上评测的候选，发布 v8 不变。
+
+[前轮路线调整与原协议](analysis/carbon-route-reset-20261125.md)已完成本次有限尝试；Zero 的 M/G/M-wide 继续暂停。[M/G 首种子复审](analysis/carbon-zero-mg-review-20261125.md)、[B1-fixed/M-G 协议](analysis/carbon-zero-b1fixed-review-20261124.md)、[B1 复审](analysis/carbon-zero-b1-review-20261124.md)和[更早 PPO/RLOO 方案](analysis/carbon-zero-rl-followup-20261124.md)保留为历史记录。
 
 以后每轮新的研究分析、建议和实验协议写入 GitHub 的 analysis 文档并更新这里的入口；实施结果保留在对应实验分支。
 
