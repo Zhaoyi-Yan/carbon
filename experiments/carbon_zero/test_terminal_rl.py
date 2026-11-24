@@ -140,6 +140,21 @@ class TerminalTests(unittest.TestCase):
         self.assertIsNone(m.trunk.weight.grad)
 
 
+    def test_wide_batch_keeps_old_pairs_and_balances_seats(self):
+        from terminal_games import group_matches
+
+        replicated = group_matches(('ns', 0), 0)
+        wide = group_matches(('ns', 0), 0, wide=True)
+        self.assertEqual(len(wide), 16)
+        self.assertEqual(len({m.seed for m in wide}), 8)
+        self.assertEqual({m.seat for m in wide}, {0, 1})
+        old = {(m.seed, m.seat, m.learner_rng, m.opponent_rng) for m in replicated
+               if m.group in (0, 1, 2, 3) and m.learner_rng in
+               {x.learner_rng for x in wide}}
+        keep = {(m.seed, m.seat, m.learner_rng, m.opponent_rng) for m in wide
+                if m.group in (0, 1, 2, 3)}
+        self.assertEqual(keep, old)
+
     def test_full_game_advantages_identity_and_shape_checks(self):
         from terminal_calibration import corr, full_game_advantages
 

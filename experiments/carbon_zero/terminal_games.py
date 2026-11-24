@@ -29,13 +29,19 @@ class Match:
     group: int
 
 
-def group_matches(namespace, batch, group_size=4):
+def group_matches(namespace, batch, group_size=4, wide=False):
+    """Two layouts x two seats x group_size replicates, or eight layouts x two seats.
+
+    The wide allocation keeps the pair=0,1 / member=0 layouts and random streams
+    and adds pair=2..7, still with two balanced seats and 16 games per batch.
+    """
+    pairs, members = (8, 1) if wide else (2, group_size)
     matches = []
-    for pair in range(2):
+    for pair in range(pairs):
         layout = keyed_seed(namespace, batch, pair, 'layout') & 0xffffffff
         for seat in (0, 1):
             group = 2 * pair + seat
-            for member in range(group_size):
+            for member in range(members):
                 keys = (namespace, batch, group, member)
                 matches.append(Match(layout, seat, keyed_seed(*keys, 'learner'),
                                      keyed_seed(*keys, 'opponent'), group))

@@ -1,0 +1,48 @@
+{
+  "arm": "M-wide",
+  "layout": "wide",
+  "seed": 24000000,
+  "style": 122,
+  "source_sha256": "920f656a31277751651883099d3bc2891a68412a69533cce4af3e3c801ba9446",
+  "critic_sha256": "fceedd2e7944394f2119377ae30997bc86adb8db00272f0dcd14e3548540ec47",
+  "critic_param_sha256": "1b86e187978f9eba12fc620f8f011ec50fcc8d3756feea439849550cd2c00b4b",
+  "engine_sha256": "0fef48294793290f1abf2a4d8f7c464e988c12b7c40f242a2079dc1dc38a3c9c",
+  "decoder": "sequential",
+  "temperature": 0.4,
+  "steps": 300,
+  "group_size": 1,
+  "groups_per_batch": 16,
+  "maps_per_batch": 8,
+  "frozen_opponent": "ZW0",
+  "beta": 0.5,
+  "K": 1500,
+  "lr": 3e-05,
+  "ref_KL": 0.1,
+  "entropy": 0.01,
+  "PPO_epsilon": 0.2,
+  "minibatch": 512,
+  "rollout": "complete games; one frozen behavior snapshot per batch",
+  "advantage": "MC state baseline",
+  "gates": {
+    "current": {
+      "arm": "M",
+      "seed": 24000000,
+      "note": "seed 1 macro dU > 0 and no opponent upper bound < 0"
+    },
+    "confirm": {
+      "seed": 24010000,
+      "note": "two seeds, no best-seed selection"
+    },
+    "wide": {
+      "rule": "M-wide - same-seed M macro dU > 0; M-wide - ZW0 macro dU > 0; no per-opponent M-wide - M 95% upper bound < 0",
+      "seed": 24010000,
+      "note": "only after the seed-1 wide screen passes"
+    },
+    "selection": {
+      "primary": "equal-weight delta-U over ZW0 / ft3-generic / yan-v6",
+      "steps": 3
+    }
+  },
+  "budget": 50000,
+  "batches": 11
+}
