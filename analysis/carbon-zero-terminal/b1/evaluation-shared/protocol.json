@@ -1,0 +1,183 @@
+{
+  "source_sha256": "920f656a31277751651883099d3bc2891a68412a69533cce4af3e3c801ba9446",
+  "style": 122,
+  "temperature": 0.4,
+  "decoder": "sequential",
+  "shared_maps": true,
+  "panels": {
+    "ZW0": [
+      {
+        "seed": 3801183314,
+        "seat": 0,
+        "learner_rng": 9367670524975910749,
+        "opponent_rng": 14556161413107391232,
+        "group": 0
+      },
+      {
+        "seed": 3801183314,
+        "seat": 1,
+        "learner_rng": 17831243945837971997,
+        "opponent_rng": 1865373289514199929,
+        "group": 0
+      },
+      {
+        "seed": 2838474379,
+        "seat": 0,
+        "learner_rng": 7991584712212634295,
+        "opponent_rng": 17957869815289783773,
+        "group": 1
+      },
+      {
+        "seed": 2838474379,
+        "seat": 1,
+        "learner_rng": 11693342328438777646,
+        "opponent_rng": 10394829848948336176,
+        "group": 1
+      },
+      {
+        "seed": 1723263379,
+        "seat": 0,
+        "learner_rng": 11010738245082829038,
+        "opponent_rng": 4521552796386568348,
+        "group": 2
+      },
+      {
+        "seed": 1723263379,
+        "seat": 1,
+        "learner_rng": 10310859905530414942,
+        "opponent_rng": 16295131438440772531,
+        "group": 2
+      },
+      {
+        "seed": 1631846349,
+        "seat": 0,
+        "learner_rng": 11468701599321452648,
+        "opponent_rng": 13846506366264276855,
+        "group": 3
+      },
+      {
+        "seed": 1631846349,
+        "seat": 1,
+        "learner_rng": 3712001223563268011,
+        "opponent_rng": 14684985334170923264,
+        "group": 3
+      },
+      {
+        "seed": 2015522248,
+        "seat": 0,
+        "learner_rng": 1557759278139440459,
+        "opponent_rng": 11976641565775761824,
+        "group": 4
+      },
+      {
+        "seed": 2015522248,
+        "seat": 1,
+        "learner_rng": 351921143018426825,
+        "opponent_rng": 15622184547935269229,
+        "group": 4
+      },
+      {
+        "seed": 4166716122,
+        "seat": 0,
+        "learner_rng": 1231000945432029169,
+        "opponent_rng": 3746169400632958121,
+        "group": 5
+      },
+      {
+        "seed": 4166716122,
+        "seat": 1,
+        "learner_rng": 1570600116699518328,
+        "opponent_rng": 5089357012521287797,
+        "group": 5
+      },
+      {
+        "seed": 278110982,
+        "seat": 0,
+        "learner_rng": 8065762199101632177,
+        "opponent_rng": 18247790569523052069,
+        "group": 6
+      },
+      {
+        "seed": 278110982,
+        "seat": 1,
+        "learner_rng": 5037848395156734010,
+        "opponent_rng": 2485061348715972936,
+        "group": 6
+      },
+      {
+        "seed": 1092893684,
+        "seat": 0,
+        "learner_rng": 11636484820161000603,
+        "opponent_rng": 9844053100241936049,
+        "group": 7
+      },
+      {
+        "seed": 1092893684,
+        "seat": 1,
+        "learner_rng": 12004840773072486626,
+        "opponent_rng": 1499239337631113021,
+        "group": 7
+      },
+      {
+        "seed": 2684657193,
+        "seat": 0,
+        "learner_rng": 9401448438145162299,
+        "opponent_rng": 14162567091995361242,
+        "group": 8
+      },
+      {
+        "seed": 2684657193,
+        "seat": 1,
+        "learner_rng": 2663553287947894595,
+        "opponent_rng": 9323523580793938694,
+        "group": 8
+      },
+      {
+        "seed": 1664201214,
+        "seat": 0,
+        "learner_rng": 5703970038097990306,
+        "opponent_rng": 11517600811864776598,
+        "group": 9
+      },
+      {
+        "seed": 1664201214,
+        "seat": 1,
+        "learner_rng": 6383506144677613658,
+        "opponent_rng": 13992315660811737551,
+        "group": 9
+      },
+      {
+        "seed": 1024180760,
+        "seat": 0,
+        "learner_rng": 5723095197765797338,
+        "opponent_rng": 12967077135294506887,
+        "group": 10
+      },
+      {
+        "seed": 1024180760,
+        "seat": 1,
+        "learner_rng": 11452127092226813780,
+        "opponent_rng": 4770501301213516920,
+        "group": 10
+      },
+      {
+        "seed": 2821654180,
+        "seat": 0,
+        "learner_rng": 6550644150716368745,
+        "opponent_rng": 5463288332813472989,
+        "group": 11
+      },
+      {
+        "seed": 2821654180,
+        "seat": 1,
+        "learner_rng": 5927470646219051805,
+        "opponent_rng": 5424760704034519499,
+        "group": 11
+      }
+    ]
+  },
+  "opponents": {
+    "ZW0": "920f656a31277751651883099d3bc2891a68412a69533cce4af3e3c801ba9446"
+  },
+  "AA": "same ZW0 states/opponent stream, independent learner stream"
+}

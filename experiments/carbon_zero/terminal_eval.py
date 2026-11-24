@@ -82,13 +82,16 @@ def main(a):
     style = teacher._POLICY.sid(STYLE)
     assert style == 122
     reference = Actor(teacher._POLICY, style).to(a.device).eval()
-    refs = [opponent_for(a.ft3, a.out, name, reference) for name in RIVALS]
+    rivals = tuple(name for name in a.rivals.split(',') if name)
+    if not rivals or any(name not in RIVALS for name in rivals):
+        raise ValueError(f'--rivals must be a subset of {RIVALS}')
+    refs = [opponent_for(a.ft3, a.out, name, reference) for name in rivals]
     protocol = dict(source_sha256=FT3_SHA256, style=style, temperature=TEMPERATURE, decoder='sequential',
                     shared_maps=a.shared_maps,
                     panels={rival: [m.__dict__ for m in paired_map_panel(
                         rival, a.maps, namespace=a.panel_id, shared_maps=a.shared_maps)]
-                            for rival in RIVALS},
-                    opponents={rival: ref[2] for rival, ref in zip(RIVALS, refs, strict=True)},
+                            for rival in rivals},
+                    opponents={rival: ref[2] for rival, ref in zip(rivals, refs, strict=True)},
                     AA='same ZW0 states/opponent stream, independent learner stream')
     protocol_path = a.out / 'protocol.json'
     if protocol_path.exists() and json.loads(protocol_path.read_text()) != protocol:
@@ -119,7 +122,7 @@ def main(a):
         if name != 'ZW0' and not baseline:
             baseline = json.loads((a.out / 'ZW0.json').read_text())['rivals']
         report = {}
-        for rival, (opponent, raw, _) in zip(RIVALS, refs, strict=True):
+        for rival, (opponent, raw, _) in zip(rivals, refs, strict=True):
             if name == 'AA' and rival != 'ZW0':
                 continue
             matches = paired_map_panel(rival, a.maps, replicate=(name == 'AA'),
@@ -143,6 +146,8 @@ if __name__ == '__main__':
     p.add_argument('--aa', action='store_true')
     p.add_argument('--maps', type=int, default=4)
     p.add_argument('--panel-id', default='terminal-rl-dev-v1')
+    p.add_argument('--rivals', default=','.join(RIVALS),
+                   help='Comma-separated subset of the evaluation rivals')
     p.add_argument('--shared-maps', action='store_true',
                    help='Use one map list for every rival (new panels; old panels stay rival-specific)')
     p.add_argument('--device', default='mps' if torch.backends.mps.is_available() else 'cpu')
