@@ -1,0 +1,30 @@
+{
+  "arm": "M",
+  "seed": 24010000,
+  "style": 122,
+  "source_sha256": "920f656a31277751651883099d3bc2891a68412a69533cce4af3e3c801ba9446",
+  "critic_sha256": "fceedd2e7944394f2119377ae30997bc86adb8db00272f0dcd14e3548540ec47",
+  "engine_sha256": "0fef48294793290f1abf2a4d8f7c464e988c12b7c40f242a2079dc1dc38a3c9c",
+  "decoder": "sequential",
+  "temperature": 0.4,
+  "steps": 300,
+  "group_size": 4,
+  "groups_per_batch": 4,
+  "frozen_opponent": "ZW0",
+  "beta": 0.5,
+  "K": 1500,
+  "lr": 3e-05,
+  "ref_KL": 0.1,
+  "entropy": 0.01,
+  "PPO_epsilon": 0.2,
+  "minibatch": 512,
+  "rollout": "complete games; one frozen behavior snapshot per batch",
+  "advantage": "MC state baseline",
+  "selection": {
+    "primary": "equal-weight delta-U over ZW0 / ft3-generic / yan-v6 on the shared 12-map dev panel",
+    "promote_if": "point estimate > 0 and no single-opponent 95% map-bootstrap upper bound < 0",
+    "confirm_seed": 24010000,
+    "note": "pre-registered before the first training run; exploratory, not a statistical promotion rule"
+  },
+  "budget": 50000
+}
