@@ -1,0 +1,882 @@
+{
+  "teacher": {
+    "id": "52af7735a7677815efb48cdf94269e29",
+    "name": "yan-QQ-v8",
+    "proxy_sha256": "a87f8e6b83656c771cb5a25d6b6f383b245127e7c782e4c6c7c4a0a2cc15d396",
+    "note": "online replays carry no source SHA; the frozen local file is the proxy"
+  },
+  "windows": {
+    "encode": [
+      [
+        0,
+        59
+      ],
+      [
+        85,
+        122
+      ],
+      [
+        162,
+        201
+      ],
+      [
+        245,
+        284
+      ]
+    ],
+    "sample": [
+      [
+        10,
+        59
+      ],
+      [
+        97,
+        122
+      ],
+      [
+        174,
+        201
+      ],
+      [
+        257,
+        284
+      ]
+    ]
+  },
+  "replay_index_sha256": "5bb471ce7e7b1ee477389897e62cdf91ce62054b97c94c6a508753a12e844f8e",
+  "teacher_seconds": 0.0,
+  "train_workers": 12322,
+  "train_layouts": 22,
+  "holdout_layouts": 11,
+  "sources": [
+    {
+      "id": "af14506400f4a415b973c0f59615777f",
+      "game": 1,
+      "file": "replays/af14506400f4a415b973c0f59615777f-1.json.gz",
+      "sha256": "88c366c92ee417e4874e4d15d4a2145ebaeae8985337ebd2acce1ef0e25290cf",
+      "layout": "e24570155ab922a9e035613728a4b3631faad9459eeff7adba012b6ec7d93e7c",
+      "seat": 0,
+      "seed": null,
+      "workers": 577
+    },
+    {
+      "id": "d1f1751dfd9f73dd32c3b93fb50d8c12",
+      "game": 1,
+      "file": "replays/d1f1751dfd9f73dd32c3b93fb50d8c12-1.json.gz",
+      "sha256": "15241dd6e12ab88f4c4494ea30298f5fd670a533dd4eb0f396a53d0787884f71",
+      "layout": "7fd842fbbb5165e4ee4e4f41e9cdd921b2b9d301444ba93c86c53bf09a5d68ad",
+      "seat": 0,
+      "seed": null,
+      "workers": 566
+    },
+    {
+      "id": "2be3a72553b100950f0ef92156e400b5",
+      "game": 1,
+      "file": "replays/2be3a72553b100950f0ef92156e400b5-1.json.gz",
+      "sha256": "03ccbb4cdd366a25cd115b8a28c706a3a90f9816410771b4688faf925b4f4987",
+      "layout": "3bb6fd72e416c6a985b7a3fe0e832788dae681fdc22260bee580bb22ba7505a0",
+      "seat": 0,
+      "seed": null,
+      "workers": 590
+    },
+    {
+      "id": "26aedb5e445edc55cd03b08ad19294b0",
+      "game": 1,
+      "file": "replays/26aedb5e445edc55cd03b08ad19294b0-1.json.gz",
+      "sha256": "e4796d752854d0198e9b467bb19e27cb8fd2b3911479bcde6e1aaeca44e98a07",
+      "layout": "351901319875d2765e4c5cabad91c75fc876cf72d4b7503cbb942ea5ab5bae97",
+      "seat": 0,
+      "seed": null,
+      "workers": 546
+    },
+    {
+      "id": "88e77df06ba5039c728f97c823a3f7eb",
+      "game": 1,
+      "file": "replays/88e77df06ba5039c728f97c823a3f7eb-1.json.gz",
+      "sha256": "9cfd00e936e4286e9ca0191bb4f91c8e73630f06c8e97736a46749cbfa92ef84",
+      "layout": "6ecad5fb16119ef80acae7f0cadb7e08d49040e9271c06630b9001b02d5952ba",
+      "seat": 1,
+      "seed": null,
+      "workers": 566
+    },
+    {
+      "id": "82db737195adbdd5891038c422af5869",
+      "game": 1,
+      "file": "replays/82db737195adbdd5891038c422af5869-1.json.gz",
+      "sha256": "28dd19198558f94d61283d7a9a32b9a03d0774bd0a449ecabdca2a9690119fe4",
+      "layout": "3242a1b93756f7ea137bf5ff40278ab08a64b07cb83517f64b03d201f67d0e13",
+      "seat": 0,
+      "seed": null,
+      "workers": 559
+    },
+    {
+      "id": "610142d2a97d18f01557e24f617e76d7",
+      "game": 1,
+      "file": "replays/610142d2a97d18f01557e24f617e76d7-1.json.gz",
+      "sha256": "b43ee24daa60c245fd516c55f95dbd653fc88c0d8a7f1967ba4d058113389040",
+      "layout": "8e542be5429ca16a046a5eb5cdbd8ae1f9391d420debf8498a498ae4b1096252",
+      "seat": 0,
+      "seed": null,
+      "workers": 558
+    },
+    {
+      "id": "45aca40c78e597117f984801bc702f7d",
+      "game": 1,
+      "file": "replays/45aca40c78e597117f984801bc702f7d-1.json.gz",
+      "sha256": "b373d70e6911479a950f273cbd7106abf5d66eeca8780210ea1fcae417547bb1",
+      "layout": "3a2482225d3c6f129b68d26e11239ef55d32cd7d52a92488f2ba1e68db7b1776",
+      "seat": 1,
+      "seed": null,
+      "workers": 561
+    },
+    {
+      "id": "01c0b34e1d1b3b423e54b13997258209",
+      "game": 1,
+      "file": "replays/01c0b34e1d1b3b423e54b13997258209-1.json.gz",
+      "sha256": "5c251d05e7d1170d529c1a26f74ee618cece3496b0c3928b99f37a50c336da88",
+      "layout": "341bb507dc9d148fbcb3983ddf3b16e05723923239a0080fcc26d869c0eea581",
+      "seat": 0,
+      "seed": null,
+      "workers": 574
+    },
+    {
+      "id": "f392a5948bdf00585b20b53dbc5f6c8a",
+      "game": 1,
+      "file": "replays/f392a5948bdf00585b20b53dbc5f6c8a-1.json.gz",
+      "sha256": "61a6c55938ee562b9d7c1dd8cbd01eb3aeaa5ea5055a8e165d924eb85e3492ed",
+      "layout": "a40c3b1c59e0fbd88f89463f9b1f381e111441e4068176bb260bfd347e9578e7",
+      "seat": 1,
+      "seed": null,
+      "workers": 567
+    },
+    {
+      "id": "2aac69b284b22fc3ca8b1c7bc3edf950",
+      "game": 1,
+      "file": "replays/2aac69b284b22fc3ca8b1c7bc3edf950-1.json.gz",
+      "sha256": "997aaf4920f7a0f1a575eca9a4998d7d30da1bf79b0f08b83436c1064ff2c989",
+      "layout": "3cf52cc3c0ded6acf8170af6be620b55bba8321467fe91ff4a7f451326a1e8e0",
+      "seat": 0,
+      "seed": null,
+      "workers": 521
+    },
+    {
+      "id": "009a5ec264ef3a07b415b0dee683c28a",
+      "game": 1,
+      "file": "replays/009a5ec264ef3a07b415b0dee683c28a-1.json.gz",
+      "sha256": "891fcce059c270e75921cf1735e7a457271f20b003b444c92506e4b25ade1bc7",
+      "layout": "e3fc35fd8bdc783a9afd672894f17bf8d77cb2ecafc736a9d6be41bf8b6538b7",
+      "seat": 0,
+      "seed": null,
+      "workers": 538
+    },
+    {
+      "id": "25904b6f8962e5f953c42954c39db14a",
+      "game": 1,
+      "file": "replays/25904b6f8962e5f953c42954c39db14a-1.json.gz",
+      "sha256": "1d4ce757750c146c06e990da8dcb4ea229e30de5b3fef1c7c4f6cdb588cc42a4",
+      "layout": "60b4fe4edc2442ad6605dbd5641b51683132e8d7a9a6db36f8f63e72114872fd",
+      "seat": 1,
+      "seed": null,
+      "workers": 557
+    },
+    {
+      "id": "1c6c407749d86744de8fb5e0ef937d48",
+      "game": 1,
+      "file": "replays/1c6c407749d86744de8fb5e0ef937d48-1.json.gz",
+      "sha256": "e5f6251a0cfbd5b83ae27b926f9bff9b3e11a5afbfe264a11f75bf600cb12711",
+      "layout": "dedab12c14375f00bd0a52f7ae065172b9092835a7566d897843e30ecf008123",
+      "seat": 0,
+      "seed": null,
+      "workers": 557
+    },
+    {
+      "id": "01dcc60a0693f70d5c929a3115282c9d",
+      "game": 1,
+      "file": "replays/01dcc60a0693f70d5c929a3115282c9d-1.json.gz",
+      "sha256": "9d6e2c987a0085404e860a465962be82f3e19b9118418ced6ab9068067e275e6",
+      "layout": "c3383565ef05b556a85d8edba46ba518e0e2790e39a16064fe66df5e4cd05599",
+      "seat": 0,
+      "seed": null,
+      "workers": 503
+    },
+    {
+      "id": "38dc109e2f182bee36afe8c58eafdce4",
+      "game": 1,
+      "file": "replays/38dc109e2f182bee36afe8c58eafdce4-1.json.gz",
+      "sha256": "c8caf6217bec659c9b11e1c2dfce7fb467ec03b6e78914f7aac47d16168bef75",
+      "layout": "f6150970405a104a0831559716caba7e442070f88b49b5fd51a7e5348bfe7925",
+      "seat": 1,
+      "seed": null,
+      "workers": 581
+    },
+    {
+      "id": "22a5bad16033937ab12d6425fa040f77",
+      "game": 1,
+      "file": "replays/22a5bad16033937ab12d6425fa040f77-1.json.gz",
+      "sha256": "2dd01479acbf2c45dc9d4eb1822d51cd0087b8ed7a04ca59c0ae927fe771985c",
+      "layout": "276ee34e3d2cba5d79231c4f0c9cda7b7c41f0ae747e4e426ff727af332ae755",
+      "seat": 1,
+      "seed": null,
+      "workers": 547
+    },
+    {
+      "id": "a363753521d8be347cf15c0b318a3fd1",
+      "game": 1,
+      "file": "replays/a363753521d8be347cf15c0b318a3fd1-1.json.gz",
+      "sha256": "5d02a1b26ea86e30987f76d5cf7e69eb7fec0bce88018e659b8b7bed1094c41b",
+      "layout": "e923ccf9b466cf2dca23f70e4896dffaf547c9cffadf38e1d599da7fd7482db2",
+      "seat": 0,
+      "seed": null,
+      "workers": 564
+    },
+    {
+      "id": "e74d6b3f6c7b4e0d9e5906b7f17ebfca",
+      "game": 1,
+      "file": "replays/e74d6b3f6c7b4e0d9e5906b7f17ebfca-1.json.gz",
+      "sha256": "2387a42d3a0ae27b677b8779e8d6eb7ac0ba795e0ce58ee7b7fbaf0fff2b1905",
+      "layout": "a27c6004fcf729eb309e8fe002147ee3f949fc730121b140d95f7984f7680092",
+      "seat": 1,
+      "seed": null,
+      "workers": 553
+    },
+    {
+      "id": "0ad6fc67db8c0225425db4c0e9cdf461",
+      "game": 1,
+      "file": "replays/0ad6fc67db8c0225425db4c0e9cdf461-1.json.gz",
+      "sha256": "2ecd5bff983276e8384d394d9235f3de4c710e211ac16527a06f8285f70881f5",
+      "layout": "748f1eada99716d9f80f2d0bc4fae7a101cd5d3a105ec34b36e6b516cec4e0d8",
+      "seat": 1,
+      "seed": null,
+      "workers": 548
+    },
+    {
+      "id": "d742c0b4552e394f06b97e804e682ead",
+      "game": 1,
+      "file": "replays/d742c0b4552e394f06b97e804e682ead-1.json.gz",
+      "sha256": "69161a0080bef2c634ed102bba05ebc0e6859bcba114d2576b5ba10d1e746675",
+      "layout": "49f01c4c1ed022ceee11984dad4e01d0a796a1a89511ebd34cc5c9d7ee55b4d8",
+      "seat": 0,
+      "seed": null,
+      "workers": 577
+    },
+    {
+      "id": "33a9187e0c7ce688e731c537d50ae820",
+      "game": 1,
+      "file": "replays/33a9187e0c7ce688e731c537d50ae820-1.json.gz",
+      "sha256": "66ee8061cd37c1f69ad32e8c9f39454434966cbce973ee10975e453c0c77f551",
+      "layout": "b6addd5107baf7cc792cc908fe6d6b49dd96443f9a935ddbbf4af05ec7b3179e",
+      "seat": 0,
+      "seed": null,
+      "workers": 564
+    },
+    {
+      "id": "51d81df9c4bb7cb601f722f6a4a26c21",
+      "game": 1,
+      "file": "replays/51d81df9c4bb7cb601f722f6a4a26c21-1.json.gz",
+      "sha256": "5b39f3c4b345164a93d34516fb5e6c1acedf7df0744be55c290afd3c335d16cb",
+      "layout": "913e734e00ab3314782d0dde73bd4b6f4e03830a0690686da58a786d0182ae47",
+      "seat": 0,
+      "seed": null,
+      "workers": 544
+    },
+    {
+      "id": "b2549178985c409d6fee03b70ff1960c",
+      "game": 1,
+      "file": "replays/b2549178985c409d6fee03b70ff1960c-1.json.gz",
+      "sha256": "3a6fb75e97f3209c6a9e2b9ee92a8d3373a6d7f4aae8271985877426fb865489",
+      "layout": "0b16d3002613364670fd86b7efdbab7849534d898811f1f95bee5cb024a17a5b",
+      "seat": 0,
+      "seed": null,
+      "workers": 552
+    },
+    {
+      "id": "884fa041aa42530641f06a51563da090",
+      "game": 1,
+      "file": "replays/884fa041aa42530641f06a51563da090-1.json.gz",
+      "sha256": "4f39a27675e7c96419756c65467294b4d5d7bd273dff9a2ede2367c3ea6bdfbd",
+      "layout": "8af76426f18d2413a4c99217759de7e8a62edd69fb3eadd89e4b7bc3d615dd75",
+      "seat": 0,
+      "seed": null,
+      "workers": 580
+    },
+    {
+      "id": "c83b33cc3f9d40a00f6c7590d5f8c0b1",
+      "game": 1,
+      "file": "replays/c83b33cc3f9d40a00f6c7590d5f8c0b1-1.json.gz",
+      "sha256": "8163f9f78a8ad2ce3e104350be4f9523847147426082e45c7b8e18a64753ae7b",
+      "layout": "7e20b3659b58cc66d3fd9d7310df1d561c0ded1ae229633f02fd7b8688379bfe",
+      "seat": 1,
+      "seed": null,
+      "workers": 555
+    },
+    {
+      "id": "655975cda6a6945a71f53ab69507ebfb",
+      "game": 1,
+      "file": "replays/655975cda6a6945a71f53ab69507ebfb-1.json.gz",
+      "sha256": "ad8fef70fce183a2bb4a61409da19587d15722411a6c23fd73fb88238b519bb0",
+      "layout": "64de0462287384ca3c74fc8b3c67f93f360bb9959bb61a7c2fec14fefd55b01b",
+      "seat": 1,
+      "seed": null,
+      "workers": 582
+    },
+    {
+      "id": "23f47ba3344f3716e6ab147ff31d1017",
+      "game": 1,
+      "file": "replays/23f47ba3344f3716e6ab147ff31d1017-1.json.gz",
+      "sha256": "23cc73cf016e9c136b7033e5fa8c87005bcbab38d48be0dc00dc5fd3a67db367",
+      "layout": "53a071703ba6ee75a10c4028b3bde11442239dbe3e5189ff03444e28de6e0ee7",
+      "seat": 0,
+      "seed": null,
+      "workers": 562
+    },
+    {
+      "id": "7db3a6bd888282140baca104985b7420",
+      "game": 1,
+      "file": "replays/7db3a6bd888282140baca104985b7420-1.json.gz",
+      "sha256": "a9140507f224be53cde216a76b99ea646d02e6566801b88f67b128f2ecbf4bac",
+      "layout": "81ed04ac7a6be5ed02dbbaa61254ff5ae198f255e30bb24143a3de847ed27ee0",
+      "seat": 1,
+      "seed": null,
+      "workers": 573
+    },
+    {
+      "id": "f57e259512bd62d7d7f2eb5eb7405f31",
+      "game": 1,
+      "file": "replays/f57e259512bd62d7d7f2eb5eb7405f31-1.json.gz",
+      "sha256": "872965c02a3720e37d50563d8689c1db62a8bf361d4a16bafa1ae2f40c86e049",
+      "layout": "8d3a473d1a904654a915aba06cf5713b300694435967451509ee6549b889526f",
+      "seat": 1,
+      "seed": null,
+      "workers": 541
+    },
+    {
+      "id": "213f3f8e921cae1e406423b638cbcfde",
+      "game": 1,
+      "file": "replays/213f3f8e921cae1e406423b638cbcfde-1.json.gz",
+      "sha256": "8e94042b6429c9b7def3d7697af3a19fc5d2e45fea8ba309da8bb88d2caeca3a",
+      "layout": "10e545a324699d875ed5b6850b801dc866f6e91dce3580ce3eef6b2ce5a2eb8b",
+      "seat": 0,
+      "seed": null,
+      "workers": 542
+    },
+    {
+      "id": "8a794c3d5b4a094b0f450c810fae59e9",
+      "game": 1,
+      "file": "replays/8a794c3d5b4a094b0f450c810fae59e9-1.json.gz",
+      "sha256": "33f8acd0debc4c79790c4a2a6aa7b947fe029a12bb7f16896afb71bcad9a8dd4",
+      "layout": "6cfe87e003e7947ad31748abf470ea6f915699320b7e85854dd58de7b744f82b",
+      "seat": 1,
+      "seed": null,
+      "workers": 564
+    },
+    {
+      "id": "65386a471a36da4e7e70ae4a016d2987",
+      "game": 1,
+      "file": "replays/65386a471a36da4e7e70ae4a016d2987-1.json.gz",
+      "sha256": "065258dc1f1d236894d4dec6a821dd4d0e65bbdf283658f8305e0eab2a9c9269",
+      "layout": "ff6ec13d58431221ef6a95504bc6b8f42518908695519f751f01037cd60cf8a1",
+      "seat": 0,
+      "seed": null,
+      "workers": 554
+    }
+  ],
+  "holdout": [
+    {
+      "id": "af14506400f4a415b973c0f59615777f",
+      "game": 1,
+      "file": "replays/af14506400f4a415b973c0f59615777f-1.json.gz",
+      "sha256": "88c366c92ee417e4874e4d15d4a2145ebaeae8985337ebd2acce1ef0e25290cf",
+      "layout": "e24570155ab922a9e035613728a4b3631faad9459eeff7adba012b6ec7d93e7c",
+      "seat": 0,
+      "seed": null,
+      "fold": "holdout",
+      "workers": 577,
+      "calibrated": [
+        0.400321528665877,
+        0.8457538994800693
+      ],
+      "learned": [
+        0.3949001273878749,
+        0.8422876949740035
+      ]
+    },
+    {
+      "id": "26aedb5e445edc55cd03b08ad19294b0",
+      "game": 1,
+      "file": "replays/26aedb5e445edc55cd03b08ad19294b0-1.json.gz",
+      "sha256": "e4796d752854d0198e9b467bb19e27cb8fd2b3911479bcde6e1aaeca44e98a07",
+      "layout": "351901319875d2765e4c5cabad91c75fc876cf72d4b7503cbb942ea5ab5bae97",
+      "seat": 0,
+      "seed": null,
+      "fold": "holdout",
+      "workers": 546,
+      "calibrated": [
+        0.32335029152996536,
+        0.86996336996337
+      ],
+      "learned": [
+        0.3198136835762375,
+        0.8827838827838828
+      ]
+    },
+    {
+      "id": "88e77df06ba5039c728f97c823a3f7eb",
+      "game": 1,
+      "file": "replays/88e77df06ba5039c728f97c823a3f7eb-1.json.gz",
+      "sha256": "9cfd00e936e4286e9ca0191bb4f91c8e73630f06c8e97736a46749cbfa92ef84",
+      "layout": "6ecad5fb16119ef80acae7f0cadb7e08d49040e9271c06630b9001b02d5952ba",
+      "seat": 1,
+      "seed": null,
+      "fold": "holdout",
+      "workers": 566,
+      "calibrated": [
+        0.3616017102302319,
+        0.8833922261484098
+      ],
+      "learned": [
+        0.3630603911925705,
+        0.8904593639575972
+      ]
+    },
+    {
+      "id": "610142d2a97d18f01557e24f617e76d7",
+      "game": 1,
+      "file": "replays/610142d2a97d18f01557e24f617e76d7-1.json.gz",
+      "sha256": "b43ee24daa60c245fd516c55f95dbd653fc88c0d8a7f1967ba4d058113389040",
+      "layout": "8e542be5429ca16a046a5eb5cdbd8ae1f9391d420debf8498a498ae4b1096252",
+      "seat": 0,
+      "seed": null,
+      "fold": "holdout",
+      "workers": 558,
+      "calibrated": [
+        0.29467545174238613,
+        0.8817204301075269
+      ],
+      "learned": [
+        0.29153499970703367,
+        0.8763440860215054
+      ]
+    },
+    {
+      "id": "2aac69b284b22fc3ca8b1c7bc3edf950",
+      "game": 1,
+      "file": "replays/2aac69b284b22fc3ca8b1c7bc3edf950-1.json.gz",
+      "sha256": "997aaf4920f7a0f1a575eca9a4998d7d30da1bf79b0f08b83436c1064ff2c989",
+      "layout": "3cf52cc3c0ded6acf8170af6be620b55bba8321467fe91ff4a7f451326a1e8e0",
+      "seat": 0,
+      "seed": null,
+      "fold": "holdout",
+      "workers": 521,
+      "calibrated": [
+        0.3340775677013312,
+        0.8790786948176583
+      ],
+      "learned": [
+        0.3365320447821984,
+        0.8790786948176583
+      ]
+    },
+    {
+      "id": "009a5ec264ef3a07b415b0dee683c28a",
+      "game": 1,
+      "file": "replays/009a5ec264ef3a07b415b0dee683c28a-1.json.gz",
+      "sha256": "891fcce059c270e75921cf1735e7a457271f20b003b444c92506e4b25ade1bc7",
+      "layout": "e3fc35fd8bdc783a9afd672894f17bf8d77cb2ecafc736a9d6be41bf8b6538b7",
+      "seat": 0,
+      "seed": null,
+      "fold": "holdout",
+      "workers": 538,
+      "calibrated": [
+        0.3639872849832103,
+        0.879182156133829
+      ],
+      "learned": [
+        0.3626183567388742,
+        0.8773234200743495
+      ]
+    },
+    {
+      "id": "38dc109e2f182bee36afe8c58eafdce4",
+      "game": 1,
+      "file": "replays/38dc109e2f182bee36afe8c58eafdce4-1.json.gz",
+      "sha256": "c8caf6217bec659c9b11e1c2dfce7fb467ec03b6e78914f7aac47d16168bef75",
+      "layout": "f6150970405a104a0831559716caba7e442070f88b49b5fd51a7e5348bfe7925",
+      "seat": 1,
+      "seed": null,
+      "fold": "holdout",
+      "workers": 581,
+      "calibrated": [
+        0.37601305202038987,
+        0.8605851979345955
+      ],
+      "learned": [
+        0.3751498721830138,
+        0.8623063683304647
+      ]
+    },
+    {
+      "id": "a363753521d8be347cf15c0b318a3fd1",
+      "game": 1,
+      "file": "replays/a363753521d8be347cf15c0b318a3fd1-1.json.gz",
+      "sha256": "5d02a1b26ea86e30987f76d5cf7e69eb7fec0bce88018e659b8b7bed1094c41b",
+      "layout": "e923ccf9b466cf2dca23f70e4896dffaf547c9cffadf38e1d599da7fd7482db2",
+      "seat": 0,
+      "seed": null,
+      "fold": "holdout",
+      "workers": 564,
+      "calibrated": [
+        0.32802770772679546,
+        0.8900709219858156
+      ],
+      "learned": [
+        0.325367992349624,
+        0.8953900709219859
+      ]
+    },
+    {
+      "id": "e74d6b3f6c7b4e0d9e5906b7f17ebfca",
+      "game": 1,
+      "file": "replays/e74d6b3f6c7b4e0d9e5906b7f17ebfca-1.json.gz",
+      "sha256": "2387a42d3a0ae27b677b8779e8d6eb7ac0ba795e0ce58ee7b7fbaf0fff2b1905",
+      "layout": "a27c6004fcf729eb309e8fe002147ee3f949fc730121b140d95f7984f7680092",
+      "seat": 1,
+      "seed": null,
+      "fold": "holdout",
+      "workers": 553,
+      "calibrated": [
+        0.24774326021308224,
+        0.9240506329113924
+      ],
+      "learned": [
+        0.2468927952596726,
+        0.9240506329113924
+      ]
+    },
+    {
+      "id": "c83b33cc3f9d40a00f6c7590d5f8c0b1",
+      "game": 1,
+      "file": "replays/c83b33cc3f9d40a00f6c7590d5f8c0b1-1.json.gz",
+      "sha256": "8163f9f78a8ad2ce3e104350be4f9523847147426082e45c7b8e18a64753ae7b",
+      "layout": "7e20b3659b58cc66d3fd9d7310df1d561c0ded1ae229633f02fd7b8688379bfe",
+      "seat": 1,
+      "seed": null,
+      "fold": "holdout",
+      "workers": 555,
+      "calibrated": [
+        0.3355378318072425,
+        0.8666666666666667
+      ],
+      "learned": [
+        0.33006760802042123,
+        0.872072072072072
+      ]
+    },
+    {
+      "id": "213f3f8e921cae1e406423b638cbcfde",
+      "game": 1,
+      "file": "replays/213f3f8e921cae1e406423b638cbcfde-1.json.gz",
+      "sha256": "8e94042b6429c9b7def3d7697af3a19fc5d2e45fea8ba309da8bb88d2caeca3a",
+      "layout": "10e545a324699d875ed5b6850b801dc866f6e91dce3580ce3eef6b2ce5a2eb8b",
+      "seat": 0,
+      "seed": null,
+      "fold": "holdout",
+      "workers": 542,
+      "calibrated": [
+        0.34654925752076704,
+        0.8671586715867159
+      ],
+      "learned": [
+        0.34397327210439094,
+        0.8745387453874539
+      ]
+    }
+  ],
+  "training": [
+    {
+      "id": "d1f1751dfd9f73dd32c3b93fb50d8c12",
+      "game": 1,
+      "file": "replays/d1f1751dfd9f73dd32c3b93fb50d8c12-1.json.gz",
+      "sha256": "15241dd6e12ab88f4c4494ea30298f5fd670a533dd4eb0f396a53d0787884f71",
+      "layout": "7fd842fbbb5165e4ee4e4f41e9cdd921b2b9d301444ba93c86c53bf09a5d68ad",
+      "seat": 0,
+      "seed": null,
+      "fold": "train"
+    },
+    {
+      "id": "2be3a72553b100950f0ef92156e400b5",
+      "game": 1,
+      "file": "replays/2be3a72553b100950f0ef92156e400b5-1.json.gz",
+      "sha256": "03ccbb4cdd366a25cd115b8a28c706a3a90f9816410771b4688faf925b4f4987",
+      "layout": "3bb6fd72e416c6a985b7a3fe0e832788dae681fdc22260bee580bb22ba7505a0",
+      "seat": 0,
+      "seed": null,
+      "fold": "train"
+    },
+    {
+      "id": "82db737195adbdd5891038c422af5869",
+      "game": 1,
+      "file": "replays/82db737195adbdd5891038c422af5869-1.json.gz",
+      "sha256": "28dd19198558f94d61283d7a9a32b9a03d0774bd0a449ecabdca2a9690119fe4",
+      "layout": "3242a1b93756f7ea137bf5ff40278ab08a64b07cb83517f64b03d201f67d0e13",
+      "seat": 0,
+      "seed": null,
+      "fold": "train"
+    },
+    {
+      "id": "45aca40c78e597117f984801bc702f7d",
+      "game": 1,
+      "file": "replays/45aca40c78e597117f984801bc702f7d-1.json.gz",
+      "sha256": "b373d70e6911479a950f273cbd7106abf5d66eeca8780210ea1fcae417547bb1",
+      "layout": "3a2482225d3c6f129b68d26e11239ef55d32cd7d52a92488f2ba1e68db7b1776",
+      "seat": 1,
+      "seed": null,
+      "fold": "train"
+    },
+    {
+      "id": "01c0b34e1d1b3b423e54b13997258209",
+      "game": 1,
+      "file": "replays/01c0b34e1d1b3b423e54b13997258209-1.json.gz",
+      "sha256": "5c251d05e7d1170d529c1a26f74ee618cece3496b0c3928b99f37a50c336da88",
+      "layout": "341bb507dc9d148fbcb3983ddf3b16e05723923239a0080fcc26d869c0eea581",
+      "seat": 0,
+      "seed": null,
+      "fold": "train"
+    },
+    {
+      "id": "f392a5948bdf00585b20b53dbc5f6c8a",
+      "game": 1,
+      "file": "replays/f392a5948bdf00585b20b53dbc5f6c8a-1.json.gz",
+      "sha256": "61a6c55938ee562b9d7c1dd8cbd01eb3aeaa5ea5055a8e165d924eb85e3492ed",
+      "layout": "a40c3b1c59e0fbd88f89463f9b1f381e111441e4068176bb260bfd347e9578e7",
+      "seat": 1,
+      "seed": null,
+      "fold": "train"
+    },
+    {
+      "id": "25904b6f8962e5f953c42954c39db14a",
+      "game": 1,
+      "file": "replays/25904b6f8962e5f953c42954c39db14a-1.json.gz",
+      "sha256": "1d4ce757750c146c06e990da8dcb4ea229e30de5b3fef1c7c4f6cdb588cc42a4",
+      "layout": "60b4fe4edc2442ad6605dbd5641b51683132e8d7a9a6db36f8f63e72114872fd",
+      "seat": 1,
+      "seed": null,
+      "fold": "train"
+    },
+    {
+      "id": "1c6c407749d86744de8fb5e0ef937d48",
+      "game": 1,
+      "file": "replays/1c6c407749d86744de8fb5e0ef937d48-1.json.gz",
+      "sha256": "e5f6251a0cfbd5b83ae27b926f9bff9b3e11a5afbfe264a11f75bf600cb12711",
+      "layout": "dedab12c14375f00bd0a52f7ae065172b9092835a7566d897843e30ecf008123",
+      "seat": 0,
+      "seed": null,
+      "fold": "train"
+    },
+    {
+      "id": "01dcc60a0693f70d5c929a3115282c9d",
+      "game": 1,
+      "file": "replays/01dcc60a0693f70d5c929a3115282c9d-1.json.gz",
+      "sha256": "9d6e2c987a0085404e860a465962be82f3e19b9118418ced6ab9068067e275e6",
+      "layout": "c3383565ef05b556a85d8edba46ba518e0e2790e39a16064fe66df5e4cd05599",
+      "seat": 0,
+      "seed": null,
+      "fold": "train"
+    },
+    {
+      "id": "22a5bad16033937ab12d6425fa040f77",
+      "game": 1,
+      "file": "replays/22a5bad16033937ab12d6425fa040f77-1.json.gz",
+      "sha256": "2dd01479acbf2c45dc9d4eb1822d51cd0087b8ed7a04ca59c0ae927fe771985c",
+      "layout": "276ee34e3d2cba5d79231c4f0c9cda7b7c41f0ae747e4e426ff727af332ae755",
+      "seat": 1,
+      "seed": null,
+      "fold": "train"
+    },
+    {
+      "id": "0ad6fc67db8c0225425db4c0e9cdf461",
+      "game": 1,
+      "file": "replays/0ad6fc67db8c0225425db4c0e9cdf461-1.json.gz",
+      "sha256": "2ecd5bff983276e8384d394d9235f3de4c710e211ac16527a06f8285f70881f5",
+      "layout": "748f1eada99716d9f80f2d0bc4fae7a101cd5d3a105ec34b36e6b516cec4e0d8",
+      "seat": 1,
+      "seed": null,
+      "fold": "train"
+    },
+    {
+      "id": "d742c0b4552e394f06b97e804e682ead",
+      "game": 1,
+      "file": "replays/d742c0b4552e394f06b97e804e682ead-1.json.gz",
+      "sha256": "69161a0080bef2c634ed102bba05ebc0e6859bcba114d2576b5ba10d1e746675",
+      "layout": "49f01c4c1ed022ceee11984dad4e01d0a796a1a89511ebd34cc5c9d7ee55b4d8",
+      "seat": 0,
+      "seed": null,
+      "fold": "train"
+    },
+    {
+      "id": "33a9187e0c7ce688e731c537d50ae820",
+      "game": 1,
+      "file": "replays/33a9187e0c7ce688e731c537d50ae820-1.json.gz",
+      "sha256": "66ee8061cd37c1f69ad32e8c9f39454434966cbce973ee10975e453c0c77f551",
+      "layout": "b6addd5107baf7cc792cc908fe6d6b49dd96443f9a935ddbbf4af05ec7b3179e",
+      "seat": 0,
+      "seed": null,
+      "fold": "train"
+    },
+    {
+      "id": "51d81df9c4bb7cb601f722f6a4a26c21",
+      "game": 1,
+      "file": "replays/51d81df9c4bb7cb601f722f6a4a26c21-1.json.gz",
+      "sha256": "5b39f3c4b345164a93d34516fb5e6c1acedf7df0744be55c290afd3c335d16cb",
+      "layout": "913e734e00ab3314782d0dde73bd4b6f4e03830a0690686da58a786d0182ae47",
+      "seat": 0,
+      "seed": null,
+      "fold": "train"
+    },
+    {
+      "id": "b2549178985c409d6fee03b70ff1960c",
+      "game": 1,
+      "file": "replays/b2549178985c409d6fee03b70ff1960c-1.json.gz",
+      "sha256": "3a6fb75e97f3209c6a9e2b9ee92a8d3373a6d7f4aae8271985877426fb865489",
+      "layout": "0b16d3002613364670fd86b7efdbab7849534d898811f1f95bee5cb024a17a5b",
+      "seat": 0,
+      "seed": null,
+      "fold": "train"
+    },
+    {
+      "id": "884fa041aa42530641f06a51563da090",
+      "game": 1,
+      "file": "replays/884fa041aa42530641f06a51563da090-1.json.gz",
+      "sha256": "4f39a27675e7c96419756c65467294b4d5d7bd273dff9a2ede2367c3ea6bdfbd",
+      "layout": "8af76426f18d2413a4c99217759de7e8a62edd69fb3eadd89e4b7bc3d615dd75",
+      "seat": 0,
+      "seed": null,
+      "fold": "train"
+    },
+    {
+      "id": "655975cda6a6945a71f53ab69507ebfb",
+      "game": 1,
+      "file": "replays/655975cda6a6945a71f53ab69507ebfb-1.json.gz",
+      "sha256": "ad8fef70fce183a2bb4a61409da19587d15722411a6c23fd73fb88238b519bb0",
+      "layout": "64de0462287384ca3c74fc8b3c67f93f360bb9959bb61a7c2fec14fefd55b01b",
+      "seat": 1,
+      "seed": null,
+      "fold": "train"
+    },
+    {
+      "id": "23f47ba3344f3716e6ab147ff31d1017",
+      "game": 1,
+      "file": "replays/23f47ba3344f3716e6ab147ff31d1017-1.json.gz",
+      "sha256": "23cc73cf016e9c136b7033e5fa8c87005bcbab38d48be0dc00dc5fd3a67db367",
+      "layout": "53a071703ba6ee75a10c4028b3bde11442239dbe3e5189ff03444e28de6e0ee7",
+      "seat": 0,
+      "seed": null,
+      "fold": "train"
+    },
+    {
+      "id": "7db3a6bd888282140baca104985b7420",
+      "game": 1,
+      "file": "replays/7db3a6bd888282140baca104985b7420-1.json.gz",
+      "sha256": "a9140507f224be53cde216a76b99ea646d02e6566801b88f67b128f2ecbf4bac",
+      "layout": "81ed04ac7a6be5ed02dbbaa61254ff5ae198f255e30bb24143a3de847ed27ee0",
+      "seat": 1,
+      "seed": null,
+      "fold": "train"
+    },
+    {
+      "id": "f57e259512bd62d7d7f2eb5eb7405f31",
+      "game": 1,
+      "file": "replays/f57e259512bd62d7d7f2eb5eb7405f31-1.json.gz",
+      "sha256": "872965c02a3720e37d50563d8689c1db62a8bf361d4a16bafa1ae2f40c86e049",
+      "layout": "8d3a473d1a904654a915aba06cf5713b300694435967451509ee6549b889526f",
+      "seat": 1,
+      "seed": null,
+      "fold": "train"
+    },
+    {
+      "id": "8a794c3d5b4a094b0f450c810fae59e9",
+      "game": 1,
+      "file": "replays/8a794c3d5b4a094b0f450c810fae59e9-1.json.gz",
+      "sha256": "33f8acd0debc4c79790c4a2a6aa7b947fe029a12bb7f16896afb71bcad9a8dd4",
+      "layout": "6cfe87e003e7947ad31748abf470ea6f915699320b7e85854dd58de7b744f82b",
+      "seat": 1,
+      "seed": null,
+      "fold": "train"
+    },
+    {
+      "id": "65386a471a36da4e7e70ae4a016d2987",
+      "game": 1,
+      "file": "replays/65386a471a36da4e7e70ae4a016d2987-1.json.gz",
+      "sha256": "065258dc1f1d236894d4dec6a821dd4d0e65bbdf283658f8305e0eab2a9c9269",
+      "layout": "ff6ec13d58431221ef6a95504bc6b8f42518908695519f751f01037cd60cf8a1",
+      "seat": 0,
+      "seed": null,
+      "fold": "train"
+    }
+  ],
+  "model": {
+    "scale": [
+      1.5208715,
+      1.6333947
+    ],
+    "coefficients": [
+      [
+        0.0195535,
+        0.0,
+        0.0,
+        0.1096353,
+        -0.0174582,
+        0.1410482,
+        0.1729739,
+        0.0482815,
+        0.0368584,
+        0.0939839,
+        -0.0725873,
+        -0.0947833,
+        0.0141388,
+        -0.0993591,
+        0.0059266,
+        -0.1159979,
+        0.050975,
+        -0.0962564,
+        -0.0333768,
+        -0.0139348,
+        0.0085816,
+        -0.0366799,
+        -0.0134085,
+        0.1224105,
+        0.0342192,
+        0.0,
+        -0.0177286
+      ],
+      [
+        0.0165406,
+        0.0,
+        0.0,
+        0.031063,
+        0.0883069,
+        -0.1228072,
+        -0.0372285,
+        0.0,
+        -0.0559313,
+        0.0,
+        0.0815057,
+        0.0,
+        -0.0036467,
+        0.1784402,
+        0.1602776,
+        -0.0148959,
+        -0.0087555,
+        0.0102643,
+        -0.098197,
+        0.0,
+        0.0,
+        -0.161652,
+        -0.0185364,
+        -0.0187094,
+        0.0,
+        0.0,
+        -0.0216651
+      ]
+    ]
+  }
+}
