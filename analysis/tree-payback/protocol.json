@@ -1,0 +1,588 @@
+{
+  "model": {
+    "center": [
+      0.6015623487913278,
+      1.3274647887323943,
+      1.6971830985915493,
+      1.6549295774647887,
+      0.461139293507678,
+      4.024693831552043,
+      1.0,
+      2.2183098591549295,
+      0.5352112676056338
+    ],
+    "scale": [
+      0.483721469878871,
+      0.8528035262555891,
+      1.6783183930490446,
+      2.551016849585993,
+      0.9030065647398786,
+      0.2562255809183829,
+      0.1,
+      0.7422481759435522,
+      0.8612304645752349
+    ],
+    "odds": [
+      0.2072817267575554,
+      0.8091630406150319,
+      -0.3223473469708826,
+      -0.2934668098775171,
+      0.3227403772002322,
+      0.21391099931484595,
+      -0.11848345389989136,
+      0.0,
+      0.1559600204172829,
+      0.3614933145175278
+    ],
+    "log_return": [
+      -0.05418612485893885,
+      0.4760774279412954,
+      -0.19017897056982425,
+      -0.04229400867324984,
+      0.15095520511294822,
+      0.15654831806750247,
+      -0.033732486910115274,
+      0.0,
+      0.03187640899065872,
+      0.1215838222094873
+    ]
+  },
+  "features": [
+    "stock_return",
+    "light_collector_pressure",
+    "planter_pressure",
+    "guard_edge",
+    "active_tax",
+    "price",
+    "remaining_life",
+    "planter_capacity",
+    "forest_competition"
+  ],
+  "thresholds": {
+    "min_probability": 0.65,
+    "min_net": 5.0
+  },
+  "frozen": {
+    "yan-v7": [
+      "v10-yan-v7-selfplay-prior",
+      "4894fe44c601b7360d37de2eed928802c73884f0929a5897604d174e333e02e6"
+    ],
+    "yan-v8": [
+      "v11-yan-v8-elite-refit",
+      "a87f8e6b83656c771cb5a25d6b6f383b245127e7c782e4c6c7c4a0a2cc15d396"
+    ]
+  },
+  "proxy_streams": [
+    [
+      "yan-v7",
+      2279
+    ],
+    [
+      "yan-v8",
+      7237
+    ]
+  ],
+  "train": [
+    {
+      "match": "05a6d9486c614a7cd20a066ddff98f2e",
+      "seat": 1,
+      "seed": 224633682,
+      "layout": "61ded2749d2beef8eed262b00e036ef8d91208e58fb09dd9e04fa88cb4b43704",
+      "replay_sha256": "d7638e24f239197bb120be799cd00dda33187966a32e47539d519320e733ec53",
+      "opponent": "SpongeBaby-CarbonNet-v4.0"
+    },
+    {
+      "match": "e0d9d7024e187b76541dcf3d37199fb6",
+      "seat": 1,
+      "seed": 238513727,
+      "layout": "61903c905edbefaee5ab3c4bc36375645149a545cf1a4fdbba7f5db285c3acb6",
+      "replay_sha256": "0ba630bbdd9f93c3fe6d3b9334ca6612be5a3067c1ed1a527418301eff243af8",
+      "opponent": "SpongeBaby-CarbonNet-v4.0"
+    },
+    {
+      "match": "461e3fe35b12302ba460e04d24094602",
+      "seat": 1,
+      "seed": 1326521408,
+      "layout": "16e717f9f856aaaca7fc95944cf66dba3bf68d86d2e785f581aed3124a3a8aa3",
+      "replay_sha256": "b07cd3f88d748fd70c7d4cddbf388f20d484b208bb2f1a5e8d27728b8ca82702",
+      "opponent": "Artemis"
+    },
+    {
+      "match": "e053a009d7e5650c48e60d6086791fa8",
+      "seat": 1,
+      "seed": 206759050,
+      "layout": "75b9534835fd7bceca86ca83a4044c3bfa7d190db40a01cfca92c21a5f86215c",
+      "replay_sha256": "ba26d6eb5ec903513f591fcf18814ae0f15fcf3769fb5d295c211d2d5acc3a9c",
+      "opponent": "CarbonEdge_Apollo"
+    },
+    {
+      "match": "69c4c8f7bf4ac988036e521152178d65",
+      "seat": 0,
+      "seed": 1216903205,
+      "layout": "8c16d015c9c4cb182a55bc840e58e7f2d2a0171c696cd1efa349cd1fafb0983b",
+      "replay_sha256": "dbe19a156aeee806d104ab373175b88132958abaff3a3967b32b4fecede8ab42",
+      "opponent": "CarbonEdge_Prometheus"
+    },
+    {
+      "match": "4f6f7ae34ba02066a770ab0a9b8368ef",
+      "seat": 1,
+      "seed": 2047775584,
+      "layout": "0f7eb73ad6129a081c18717a5bb9f2445a6341ce484c418e68ddffacb8b6fde5",
+      "replay_sha256": "ae531c00629a0842cc0d9344347257248077871f040a65440751a0fffd2285b1",
+      "opponent": "RyanX-AIPowercore-it960-hyb"
+    },
+    {
+      "match": "aa15324c94fbecfd92720dd49df19c3b",
+      "seat": 0,
+      "seed": 1074150585,
+      "layout": "c6d20223ee0d82be6b834897e6076e188aad001fa5e8e2356273ffe27e1a420f",
+      "replay_sha256": "f2dbcf6305311c688f7f52b338509b1efb675a5bd6a823a90ce75b7d0c90a728",
+      "opponent": "claude-AlphaCarbon-Master7sE"
+    },
+    {
+      "match": "4665cd15a5516650cd80eb5cda90cf43",
+      "seat": 0,
+      "seed": 446825987,
+      "layout": "385936fc3dd1f2c8b34367cfa3f38ea07e2ae5cc3c65be38e1773496290181e3",
+      "replay_sha256": "e366a8989a601fb114bdeb87821063bfbee0b3eccb6d504a2fd43614e4a4f2d4",
+      "opponent": "claude-AlphaCarbon-Master7sE"
+    }
+  ],
+  "holdout": [
+    {
+      "match": "1c4e37ac1250175a469cb5937569fdef",
+      "seat": 0,
+      "seed": 357204917,
+      "layout": "710db1e1c0447decbab84eb1513a65ce5e7120a1844024cd5a1d3fd003752724",
+      "replay_sha256": "931e7ca9b7b4538e5f064d92ab46628b72228548eae21a256809def64098ab09",
+      "opponent": "SpongeBaby-CarbonNet-v4.0"
+    },
+    {
+      "match": "968f4c8e84231070b0aa3ed719cc37ad",
+      "seat": 1,
+      "seed": 1148355530,
+      "layout": "eed61373bd87af1c089b0029143e7006fe365135f7a8c8e4d859429abdb5f513",
+      "replay_sha256": "90994f808f986a18abf0ca0b0eac9ab0da0fc43611a418a10aad9070efe43e96",
+      "opponent": "claude-AlphaCarbon-Master7sE"
+    },
+    {
+      "match": "b02fe3801ed1a033338d5cce15c2ee6d",
+      "seat": 0,
+      "seed": 32257995,
+      "layout": "c44a3dbd202d8403682f8abc4471f5bbb5aea3aa982df68e0b666a61abd51fdc",
+      "replay_sha256": "84f8adff8e522e3bffb37e2e7a774a07ed20f889fdf189cbf1b09e286add8d26",
+      "opponent": "CarbonEdge_Prometheus"
+    },
+    {
+      "match": "5bf38b08e50d7acb47c4244c9e1f53ed",
+      "seat": 1,
+      "seed": 1700136949,
+      "layout": "d74f15788b188a189d40436578c886ded8b8d215ac4cc6c3cac606083e7b3b82",
+      "replay_sha256": "99ab368a4bb1812481aae8635eb76fd944b81924f101c6dc7e8629ac6514d4d2",
+      "opponent": "CarbonEdge_Apollo"
+    },
+    {
+      "match": "3077a1a02885eb40dbf3d1e4fe4c5b27",
+      "seat": 0,
+      "seed": 1760665690,
+      "layout": "281ae1a5c325e0aec015f844498a6726d2a76c8c1aa903d20c2dad3330095a04",
+      "replay_sha256": "4f4ed67a18c0b60347ef9693caca28b235ade28a0bf01f233e3b6cb8c8816ad1",
+      "opponent": "RyanX-AIPowercore-it960-hyb"
+    },
+    {
+      "match": "79a17925b581e848d1d909d61afdd271",
+      "seat": 0,
+      "seed": 1376442639,
+      "layout": "5460de135081ce0e307eb9bab8d3a9890200538bad9981f7557669cb73594dc0",
+      "replay_sha256": "fbd0afa3527a55ca6308d4df54b18bab66eba3192986a1945918345f1d166ea8",
+      "opponent": "SpongeBaby-CarbonNet-v4.0"
+    },
+    {
+      "match": "cf04f35e3658f47cf17dc32ae10dc1cc",
+      "seat": 0,
+      "seed": 1676842485,
+      "layout": "43d86e7b3d4843b153b897c212bcc03cafad44339c5363fd82998272490d144a",
+      "replay_sha256": "5db2d4238c1fe4a3dc366c8b7e21c07476c837170a317b539a306be3c4a28202",
+      "opponent": "CarbonEdge_Prometheus"
+    },
+    {
+      "match": "22e38a164fb7167d36f51d92ca1e5dc2",
+      "seat": 1,
+      "seed": 787902507,
+      "layout": "4765853a31fd929be11f8f2ada43067f9cf07184c53a117f22c1e043e0b25da2",
+      "replay_sha256": "9fa0a694ea17820f3c95b335c8964bd5db75eb4d56f0ca779fa5b7c6601605f2",
+      "opponent": "CarbonEdge_Apollo"
+    },
+    {
+      "match": "279895a1ce950a44f39067966eae5e9e",
+      "seat": 1,
+      "seed": 1340525379,
+      "layout": "0b9e2785e85f062d7af62eee76e008ebe9829cf597d1f1d3dc6a98de170fa2a1",
+      "replay_sha256": "95b116cd762f6bf0b94de3c4fe174ae039bd5c8caecbdcdfeb5ecec62436b4d2",
+      "opponent": "SpongeBaby-CarbonNet-v4.0"
+    },
+    {
+      "match": "f6f1aca7c026b41ac4fa3e1d806ac772",
+      "seat": 0,
+      "seed": 1946222200,
+      "layout": "cbe7eac2c16512c84083192d6193a288926a6d56fae90352a1a8eadf5b00de9c",
+      "replay_sha256": "332723a7060254bc0f128786bffa25737d64aed08a6a8aed2345f7b9af17b13a",
+      "opponent": "RyanX-AIPowercore-it960-hyb"
+    },
+    {
+      "match": "ef1582ed1be039f3114cc258950cb04a",
+      "seat": 1,
+      "seed": 845868730,
+      "layout": "dbc8288b8baba0b5b8ce260c7b3fb93136b2525aec081861c7040e2b6598ee76",
+      "replay_sha256": "cf0919cf5237087e21fc919643d9faf48b41f5696126817549fd729b7733384c",
+      "opponent": "CarbonEdge_Prometheus"
+    },
+    {
+      "match": "422eb40662920ca572bb10d455e900ec",
+      "seat": 1,
+      "seed": 225914159,
+      "layout": "3c215327401a304cbcf283de0af241eecc8cbbdcd7407edcbc11d7cc40751d3f",
+      "replay_sha256": "ce9230db747e9439d4664881877ff869bc9aa72ab750d8a736c4497cdd8fa769",
+      "opponent": "Artemis"
+    }
+  ],
+  "training_trees": 284,
+  "prior": 0.5422535211267606,
+  "offline": {
+    "trees": 431,
+    "repaid": 246,
+    "brier": 0.1925,
+    "prior_brier": 0.2458,
+    "auc": 0.7706,
+    "stock_auc": 0.7516,
+    "eligible": 175,
+    "eligible_repaid": 146,
+    "by_seat": [
+      198,
+      233
+    ]
+  },
+  "considered": 1006,
+  "passed": 23,
+  "cases": [
+    {
+      "match": "1c4e37ac1250175a469cb5937569fdef",
+      "seat": 0,
+      "seed": 357204917,
+      "layout": "710db1e1c0447decbab84eb1513a65ce5e7120a1844024cd5a1d3fd003752724",
+      "replay_sha256": "931e7ca9b7b4538e5f064d92ab46628b72228548eae21a256809def64098ab09",
+      "opponent": "SpongeBaby-CarbonNet-v4.0",
+      "turn": 86,
+      "unit": "player-0-worker-26",
+      "cell": 19,
+      "cost": 20,
+      "cash": 1148.15,
+      "recorded_command": "UP",
+      "features": [
+        1.4733227822131771,
+        0.0,
+        5.0,
+        -1.0,
+        0.0,
+        3.044522437723423,
+        1.0,
+        2.0,
+        2.0
+      ],
+      "probability": 0.8972352429905449,
+      "projected_median_net": 42.46744284008319,
+      "selected": true,
+      "category": "eligible"
+    },
+    {
+      "match": "968f4c8e84231070b0aa3ed719cc37ad",
+      "seat": 1,
+      "seed": 1148355530,
+      "layout": "eed61373bd87af1c089b0029143e7006fe365135f7a8c8e4d859429abdb5f513",
+      "replay_sha256": "90994f808f986a18abf0ca0b0eac9ab0da0fc43611a418a10aad9070efe43e96",
+      "opponent": "claude-AlphaCarbon-Master7sE",
+      "turn": 204,
+      "unit": "player-1-worker-59",
+      "cell": 100,
+      "cost": 20,
+      "cash": 4098.12,
+      "recorded_command": "DOWN",
+      "features": [
+        1.4561701211177633,
+        0.0,
+        2.0,
+        1.0,
+        0.0,
+        3.044522437723423,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "probability": 0.8660162534080131,
+      "projected_median_net": 33.723888864778765,
+      "selected": true,
+      "category": "eligible"
+    },
+    {
+      "match": "b02fe3801ed1a033338d5cce15c2ee6d",
+      "seat": 0,
+      "seed": 32257995,
+      "layout": "c44a3dbd202d8403682f8abc4471f5bbb5aea3aa982df68e0b666a61abd51fdc",
+      "replay_sha256": "84f8adff8e522e3bffb37e2e7a774a07ed20f889fdf189cbf1b09e286add8d26",
+      "opponent": "CarbonEdge_Prometheus",
+      "turn": 241,
+      "unit": "player-0-worker-40",
+      "cell": 149,
+      "cost": 53.41739735129123,
+      "cash": 5482.22,
+      "recorded_command": "UP",
+      "features": [
+        0.19976055756021885,
+        0.0,
+        5.0,
+        -2.0,
+        0.0,
+        3.9966839069870943,
+        1.0,
+        3.0,
+        3.0
+      ],
+      "probability": 0.524860627890189,
+      "projected_median_net": -7.478620099448868,
+      "selected": false,
+      "category": "probe"
+    },
+    {
+      "match": "5bf38b08e50d7acb47c4244c9e1f53ed",
+      "seat": 1,
+      "seed": 1700136949,
+      "layout": "d74f15788b188a189d40436578c886ded8b8d215ac4cc6c3cac606083e7b3b82",
+      "replay_sha256": "99ab368a4bb1812481aae8635eb76fd944b81924f101c6dc7e8629ac6514d4d2",
+      "opponent": "CarbonEdge_Apollo",
+      "turn": 239,
+      "unit": "player-1-worker-62",
+      "cell": 156,
+      "cost": 53.41739735129123,
+      "cash": 4537.06,
+      "recorded_command": "RIGHT",
+      "features": [
+        1.3403136633217645,
+        0.0,
+        5.0,
+        -2.0,
+        0.0,
+        3.9966839069870943,
+        1.0,
+        4.0,
+        0.0
+      ],
+      "probability": 0.7227861195431852,
+      "projected_median_net": 44.15543474511459,
+      "selected": true,
+      "category": "eligible"
+    },
+    {
+      "match": "3077a1a02885eb40dbf3d1e4fe4c5b27",
+      "seat": 0,
+      "seed": 1760665690,
+      "layout": "281ae1a5c325e0aec015f844498a6726d2a76c8c1aa903d20c2dad3330095a04",
+      "replay_sha256": "4f4ed67a18c0b60347ef9693caca28b235ade28a0bf01f233e3b6cb8c8816ad1",
+      "opponent": "RyanX-AIPowercore-it960-hyb",
+      "turn": 86,
+      "unit": "player-0-worker-30",
+      "cell": 79,
+      "cost": 20,
+      "cash": 994.65,
+      "recorded_command": "LEFT",
+      "features": [
+        0.9963919998283237,
+        2.0,
+        3.0,
+        1.0,
+        2.772588722239781,
+        3.044522437723423,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "probability": 0.7760471741133168,
+      "projected_median_net": 19.464248739044628,
+      "selected": true,
+      "category": "eligible"
+    },
+    {
+      "match": "cf04f35e3658f47cf17dc32ae10dc1cc",
+      "seat": 0,
+      "seed": 1676842485,
+      "layout": "43d86e7b3d4843b153b897c212bcc03cafad44339c5363fd82998272490d144a",
+      "replay_sha256": "5db2d4238c1fe4a3dc366c8b7e21c07476c837170a317b539a306be3c4a28202",
+      "opponent": "CarbonEdge_Prometheus",
+      "turn": 87,
+      "unit": "player-0-worker-19",
+      "cell": 79,
+      "cost": 37.74074076747884,
+      "cash": 1786.26,
+      "recorded_command": "DOWN",
+      "features": [
+        1.8550273617037196,
+        2.0,
+        2.0,
+        3.0,
+        1.9959376426549615,
+        3.6568917793107194,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "probability": 0.9020389817844344,
+      "projected_median_net": 101.72552676877991,
+      "selected": true,
+      "category": "eligible"
+    },
+    {
+      "match": "22e38a164fb7167d36f51d92ca1e5dc2",
+      "seat": 1,
+      "seed": 787902507,
+      "layout": "4765853a31fd929be11f8f2ada43067f9cf07184c53a117f22c1e043e0b25da2",
+      "replay_sha256": "9fa0a694ea17820f3c95b335c8964bd5db75eb4d56f0ca779fa5b7c6601605f2",
+      "opponent": "CarbonEdge_Apollo",
+      "turn": 121,
+      "unit": "player-1-worker-29",
+      "cell": 57,
+      "cost": 41.909814847836365,
+      "cash": 2123.4,
+      "recorded_command": "UP",
+      "features": [
+        0.5270036953589055,
+        0.0,
+        3.0,
+        0.0,
+        0.0,
+        3.759100584098677,
+        1.0,
+        3.0,
+        2.0
+      ],
+      "probability": 0.719059097166355,
+      "projected_median_net": 11.26335881242234,
+      "selected": true,
+      "category": "eligible"
+    },
+    {
+      "match": "279895a1ce950a44f39067966eae5e9e",
+      "seat": 1,
+      "seed": 1340525379,
+      "layout": "0b9e2785e85f062d7af62eee76e008ebe9829cf597d1f1d3dc6a98de170fa2a1",
+      "replay_sha256": "95b116cd762f6bf0b94de3c4fe174ae039bd5c8caecbdcdfeb5ecec62436b4d2",
+      "opponent": "SpongeBaby-CarbonNet-v4.0",
+      "turn": 243,
+      "unit": "player-1-worker-46",
+      "cell": 116,
+      "cost": 61.27048572884466,
+      "cash": 5917.8,
+      "recorded_command": "DOWN",
+      "features": [
+        0.5463622253459548,
+        0.0,
+        5.0,
+        0.0,
+        0.0,
+        4.131487569220803,
+        1.0,
+        2.0,
+        3.0
+      ],
+      "probability": 0.659235690087831,
+      "projected_median_net": 17.76166653557101,
+      "selected": true,
+      "category": "eligible"
+    },
+    {
+      "match": "f6f1aca7c026b41ac4fa3e1d806ac772",
+      "seat": 0,
+      "seed": 1946222200,
+      "layout": "cbe7eac2c16512c84083192d6193a288926a6d56fae90352a1a8eadf5b00de9c",
+      "replay_sha256": "332723a7060254bc0f128786bffa25737d64aed08a6a8aed2345f7b9af17b13a",
+      "opponent": "RyanX-AIPowercore-it960-hyb",
+      "turn": 213,
+      "unit": "player-0-worker-61",
+      "cell": 65,
+      "cost": 53.41739735129123,
+      "cash": 3993.07,
+      "recorded_command": "RIGHT",
+      "features": [
+        0.14694826343653555,
+        1.0,
+        2.0,
+        3.0,
+        0.0,
+        3.9966839069870943,
+        1.0,
+        2.0,
+        2.0
+      ],
+      "probability": 0.5400344682657714,
+      "projected_median_net": -11.416758271360486,
+      "selected": false,
+      "category": "probe"
+    },
+    {
+      "match": "ef1582ed1be039f3114cc258950cb04a",
+      "seat": 1,
+      "seed": 845868730,
+      "layout": "dbc8288b8baba0b5b8ce260c7b3fb93136b2525aec081861c7040e2b6598ee76",
+      "replay_sha256": "cf0919cf5237087e21fc919643d9faf48b41f5696126817549fd729b7733384c",
+      "opponent": "CarbonEdge_Prometheus",
+      "turn": 236,
+      "unit": "player-1-worker-56",
+      "cell": 100,
+      "cost": 37.74074076747884,
+      "cash": 5734.26,
+      "recorded_command": "DOWN",
+      "features": [
+        0.7628058719440356,
+        0.0,
+        2.0,
+        2.0,
+        0.0,
+        3.6568917793107194,
+        1.0,
+        3.0,
+        0.0
+      ],
+      "probability": 0.7251025024220553,
+      "projected_median_net": 15.678024758483453,
+      "selected": true,
+      "category": "eligible"
+    },
+    {
+      "match": "422eb40662920ca572bb10d455e900ec",
+      "seat": 1,
+      "seed": 225914159,
+      "layout": "3c215327401a304cbcf283de0af241eecc8cbbdcd7407edcbc11d7cc40751d3f",
+      "replay_sha256": "ce9230db747e9439d4664881877ff869bc9aa72ab750d8a736c4497cdd8fa769",
+      "opponent": "Artemis",
+      "turn": 124,
+      "unit": "player-1-worker-40",
+      "cell": 109,
+      "cost": 37.74074076747884,
+      "cash": 1209.66,
+      "recorded_command": "LEFT",
+      "features": [
+        1.091363182999925,
+        2.0,
+        5.0,
+        0.0,
+        2.772588722239781,
+        3.6568917793107194,
+        1.0,
+        3.0,
+        0.0
+      ],
+      "probability": 0.6553726165285828,
+      "projected_median_net": 25.380854082870542,
+      "selected": true,
+      "category": "eligible"
+    }
+  ]
+}

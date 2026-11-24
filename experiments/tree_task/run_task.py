@@ -52,7 +52,7 @@ def metrics(ledger,seat):
     return dict(own=own,opponent=opp,net={k:round(own[k]-opp[k],3) for k in own})
 
 
-def simulate(mods,snapshot,cfg,visible,case,arm,salt,first,memory):
+def simulate(mods,snapshot,cfg,visible,case,arm,salt,first,memory,*,skip_conflict=False):
     state,env=restore(snapshot,cfg)
     reset(mods,memory)
     side,turn,cell,worker=[case[k] for k in ('seat','turn','cell','unit')]
@@ -67,6 +67,7 @@ def simulate(mods,snapshot,cfg,visible,case,arm,salt,first,memory):
     tracked_turns=[0,0]
     amendments=[]
     trace=hashlib.sha256()
+    forced_blocked=False
     for t in range(turn,299):
         before=state[0].observation
         actions=first if t==turn else [decision(m,state,i,t,visible,salt) for i,m in enumerate(mods)]
@@ -75,11 +76,15 @@ def simulate(mods,snapshot,cfg,visible,case,arm,salt,first,memory):
             natural=actions[side]
             target={u:a for u,a in natural.items() if u!=worker}
             blocked=cell in arrivals(obs['players'][side],target,worker)
-            if blocked:
+            if blocked and not skip_conflict:
                 raise ValueError(f'Forced root tile conflicts with teammate at {case["match"]}/{turn}')
-            actions=list(actions)
-            actions[side]=target
-            update_memory(mods[side],obs,natural,target)
+            forced_blocked=blocked
+            if not blocked:
+                actions=list(actions)
+                actions[side]=target
+                update_memory(mods[side],obs,natural,target)
+            elif task is not None:
+                task.stop='blocked'
         if t>turn and task is not None:
             obs=observe(state,side,t)
             natural=actions[side]
@@ -123,11 +128,12 @@ def simulate(mods,snapshot,cfg,visible,case,arm,salt,first,memory):
                 target_id=target_id,target_cost=target_cost,
                 target_yield=[round(v,3) for v in target_yield],target_turns=tracked_turns,
                 amendments=amendments,exit=task.stop if task is not None else None,
-                trajectory=trace.hexdigest())
+                trajectory=trace.hexdigest(),forced_blocked=forced_blocked)
 
 
 def evaluate(spec):
-    data,out,case,rival,salt,aa=spec
+    data,out,case,rival,salt,aa,*options=spec
+    requested=options[0] if options else ARMS
     configure_engine()
     side,turn=case['seat'],case['turn']
     path=data/(case['match']+'-1.html.gz')
@@ -153,13 +159,13 @@ def evaluate(spec):
     result=dict(case=case,proxy=rival,salt=salt,board=digest(start),audit=log,
                 first_actions=normal,original_plants=unit not in normal[side])
     arms={}
-    replay_arms=('original','original') if aa else ARMS
+    replay_arms=('original','original') if aa else requested
     for name in replay_arms:
-        row=simulate(mods,start,cfg,visible,case,name,salt,normal,memories)
+        row=simulate(mods,start,cfg,visible,case,name,salt,normal,memories,skip_conflict=bool(options))
         if aa and name in arms:
             assert row==arms[name], 'A/A diverged'
         arms[name]=row
-    if not aa:
+    if 'continue_task' in arms:
         assert arms['plant_once']['first']==arms['continue_task']['first']
         assert arms['plant_once']['target_id']==arms['continue_task']['target_id']
     result['arms']=arms

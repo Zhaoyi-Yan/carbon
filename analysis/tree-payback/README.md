@@ -1,0 +1,14 @@
+# New-tree payback screening
+
+The model was fitted to 284 planted trees from eight older v8 replays and validated on 431 planted trees from twelve distinct later public maps. The later maps came from complete matches against the six exact teacher strategy IDs frozen in the preceding refit. The source and map layout hashes are in the protocol. All observed training and validation labels count only income earned during first ownership, with a stop at first seizure, expiry or the game ending. The observed payback rate in the holdout was 246/431. The probability estimate had a Brier score of 0.1925 versus 0.2458 for the training base rate. AUC was 0.7706 versus 0.7516 for the stock-to-price estimate. The two predeclared gates selected 175 of the observed planted trees, of which 146 repaid their price.
+
+Among 1,006 affordable historical decisions to walk away, 23 passed both gates. One attempt per eligible map gave nine roots. Two remaining maps were used as below-gate probes. One held layout had no qualifying affordable walk-away position before estimating payback. Both local proxies reacted after the first step. The two arms shared the first enemy action, source memory and random stream, and finished all 44 continuations. The added action was only a stay command to the existing planter. A conflict with a teammate's first destination kept the baseline command, with the case retained in the summary.
+
+| Root panel | Roots | Proxy pairs | Candidate terminal margin improved / worsened / identical | Mean terminal change | Additional trees that repaid cost |
+|---|---:|---:|---:|---:|---:|
+| Passed the payback gates | 9 | 18 | 8 / 7 / 3 | +16.18 | 11/11 |
+| Below-gate probes | 2 | 4 | 1 / 1 / 2 | −60.80 | 2/2 |
+
+Three eligible pairs were blocked by teammates and four more attempts produced no tree. The eleven successful new trees came from six layouts and were retained by our side for their entire 50-turn ownership. Their subsequent regular income exceeded cost by 50.29 on average. Their terminal margin averaged −206.30, comprised of an all-team tree net change of −139.55, a depot receipts change of −20.41 and +46.36 recruitment cost, plus referee rounding. Seven of the eleven had a negative terminal change. At 18 turns the target tree had already gained 13.94 net on average, while total cash margin had fallen 165.11 and relative team receipts had fallen 94.98. Conditioning on successful planting uses information after the intervention. The all-attempt paired mean is the outcome of applying this gate on the tested roots. The comparison of the two root panels is descriptive because they use different maps.
+
+This run demonstrates a distinction between payback of the specific asset and a beneficial joint action in the tested games. The gate's small net team-score change and the limited root panel provide insufficient grounds for promotion. The logs include all simulated wins and losses.
