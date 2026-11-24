@@ -8,7 +8,7 @@ import torch
 import torch.nn.functional as F
 
 from env import Game, reward
-from policy import Encoder, commands, coordinated_sample, logits, sample, slots
+from policy import Encoder, commands, coordinated_sample, logits, public_features_from_obs, sample, slots
 
 
 def joint_logprob(scores, chosen):
@@ -80,13 +80,14 @@ class Collector:
             self.states.append(Position(g,e,spec['seed'],spec['seat'],list(spec['actions'])))
 
     def make_inputs(self, seats):
-        features=[]; positions=[]; legal=[]; names=[]; obs_rows=[]
+        features=[]; positions=[]; legal=[]; names=[]; obs_rows=[]; pubs=[]
         for p,side in seats:
             obs=p.game.observations()[side]
             w,pos,mask=slots(obs,p.game.config)
             features.append(p.enc[side].encode(obs))
             positions.append(pos);legal.append(mask);names.append(w);obs_rows.append(obs)
-        return [np.stack(x) for x in (features,positions,legal)],names,obs_rows
+            pubs.append(public_features_from_obs(obs))
+        return [np.stack(x) for x in (features,positions,legal)],names,obs_rows,np.stack(pubs)
 
     def tensors(self, arrays):
         return [torch.as_tensor(a,device=self.device) for a in arrays]
@@ -94,17 +95,21 @@ class Collector:
     @torch.inference_mode()
     def collect(self, learner, opponent, temperature, turns):
         start=time.perf_counter()
+        use_pub = getattr(learner, 'residual_critic', False)
+        opp_pub = getattr(opponent, 'residual_critic', False)
         parts=[]
         for _ in range(turns):
             own=[(p,p.seat) for p in self.states]
             enemy=[(p,1-p.seat) for p in self.states]
             now=time.perf_counter()
-            a,ids,obs=self.make_inputs(own)
-            b,enemy_ids,enemy_obs=self.make_inputs(enemy)
+            a,ids,obs,own_pubs=self.make_inputs(own)
+            b,enemy_ids,enemy_obs,enemy_pubs=self.make_inputs(enemy)
             self.timing['encode']+=time.perf_counter()-now
             now=time.perf_counter()
-            z,v=logits(learner,*self.tensors(a),temperature)
-            q,_=logits(opponent,*self.tensors(b),temperature)
+            z,v=logits(learner,*self.tensors(a),temperature,
+                       pub=torch.as_tensor(own_pubs,device=self.device) if use_pub else None)
+            q,_=logits(opponent,*self.tensors(b),temperature,
+                       pub=torch.as_tensor(enemy_pubs,device=self.device) if opp_pub else None)
             if self.coordinated:
                 aa,mask=coordinated_sample(z,self.rng,a[1],a[2])
                 bb,_=coordinated_sample(q,self.rng,b[1],b[2])
@@ -134,28 +139,40 @@ class Collector:
                                               kind='elimination' if eliminated else 'full',turns=p.game.turn))
                     self.states[i]=self.new()
             self.timing['referee']+=time.perf_counter()-now
-            parts.append((*a,aa,old,values,rewards,ends))
+            if use_pub:
+                parts.append((*a,aa,old,values,rewards,ends,own_pubs))
+            else:
+                parts.append((*a,aa,old,values,rewards,ends))
 
         # Encoding advances BeliefTracker. Bootstrap on a copy and leave the
         # retained tracker at the same point for the next sampling window.
         saved=[p.enc[p.seat].track for p in self.states]
         for p,track in zip(self.states,saved):
             p.enc[p.seat].track=copy.deepcopy(track)
-        tails,*_=self.make_inputs([(p,p.seat) for p in self.states])
+        tails,_,_,tail_pubs=self.make_inputs([(p,p.seat) for p in self.states])
         for p,track in zip(self.states,saved):
             p.enc[p.seat].track=track
-        _,tail=logits(learner,*self.tensors(tails),temperature)
+        _,tail=logits(learner,*self.tensors(tails),temperature,
+                      pub=torch.as_tensor(tail_pubs,device=self.device) if use_pub else None)
         self.calls+=1
-        features,cells,legal,acts,lp,v,r,end=[np.stack(chunk) for chunk in zip(*parts,strict=True)]
+        if use_pub:
+            features,cells,legal,acts,lp,v,r,end,pubs=[np.stack(chunk) for chunk in zip(*parts,strict=True)]
+        else:
+            features,cells,legal,acts,lp,v,r,end=[np.stack(chunk) for chunk in zip(*parts,strict=True)]
+            pubs=None
         adv=advantages(r,v,end,tail.cpu().numpy())
         target=adv+v
         self.timing['rollout']+=time.perf_counter()-start
-        fields=(features,cells,legal,acts,lp,adv,target)
+        fields=(features,cells,legal,acts,lp,adv,target,pubs) if use_pub else (features,cells,legal,acts,lp,adv,target)
         return [p.reshape((-1,*p.shape[2:])) for p in fields]
 
 
 def update(model, optimizer, data, device, temperature, rng, warmup=False, anchor=None, anchor_weight=0.):
-    features,cells,legal,acts,old,adv,target=data
+    if len(data) == 8:
+        features,cells,legal,acts,old,adv,target,pubs=data
+    else:
+        features,cells,legal,acts,old,adv,target=data
+        pubs=None
     adv=(adv-adv.mean())/max(adv.std(),1.e-6)
     stats=[]
     count=len(features)
@@ -169,13 +186,15 @@ def update(model, optimizer, data, device, temperature, rng, warmup=False, ancho
             for start in range(0, count, 256):
                 rows = slice(start, start + 256)
                 inputs = [torch.as_tensor(v[rows], device=device) for v in (features, cells, legal)]
-                scores, _ = logits(anchor, *inputs, temperature)
+                pub_batch = torch.as_tensor(pubs[rows], device=device) if pubs is not None else None
+                scores, _ = logits(anchor, *inputs, temperature, pub=pub_batch)
                 chunks.append(scores.log_softmax(-1))
             anchor_logp = torch.cat(chunks)
     anchor_values = []
     def batch(ids):
         a,b,c,d,e,f,g=(torch.as_tensor(field[ids],device=device) for field in (features,cells,legal,acts,old,adv,target))
-        z,v=logits(model,a,b,c,temperature)
+        pub_batch = torch.as_tensor(pubs[ids], device=device) if pubs is not None else None
+        z,v=logits(model,a,b,c,temperature,pub=pub_batch)
         return z,v,d,e,f,g,c
     with torch.no_grad():
         z,_,a,lp,*_=batch(test)
@@ -183,7 +202,7 @@ def update(model, optimizer, data, device, temperature, rng, warmup=False, ancho
     assert error<2e-4,error
     if warmup:
         for name,param in model.named_parameters():
-            param.requires_grad_(name.startswith('value.'))
+            param.requires_grad_(name.startswith(('value.', 'value_baseline.')))
     for _ in range(2):
         order=rng.permutation(count)
         for start in range(0,count,256):

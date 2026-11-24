@@ -41,18 +41,48 @@ class Encoder:
         self.previous=obs['players']
 
 
+PUBLIC_DIM = 6
+
+
+def public_state_features(gap, turn):
+    """Explicit legal public-state baseline features from cash gap and turn."""
+    gap_arr = np.asarray(gap, dtype=np.float64)
+    turn_arr = np.asarray(turn, dtype=np.float64)
+    fraction = turn_arr / 299.0
+    cash = np.tanh(gap_arr / 1500.0)
+    ones = np.ones_like(gap_arr, dtype=np.float64)
+    return np.stack(
+        (ones, cash, fraction, cash * fraction, cash * (fraction ** 2), np.sign(gap_arr) * fraction),
+        axis=-1,
+    ).astype(np.float32)
+
+
+def public_features_from_obs(obs):
+    seat = obs['player']
+    gap = obs['players'][seat][0] - obs['players'][1 - seat][0]
+    return public_state_features(gap, obs['step'])
+
+
 class Actor(nn.Module):
-    def __init__(self, policy, style):
+    def __init__(self, policy, style, *, residual_critic=False, detach_value_trunk=False):
         super().__init__()
         arrays=policy.p
         width=arrays['stem.w'].shape[0]
+        self.residual_critic = residual_critic
+        self.detach_value_trunk = detach_value_trunk
         self.stem=nn.Conv2d(54,width,3)
         self.style=nn.Parameter(torch.from_numpy(arrays['emb'][style].copy()))
         self.blocks=nn.ModuleList([nn.ModuleList([nn.Conv2d(width,width,3),nn.Linear(width,width),
                                                 nn.Conv2d(width,width,3)]) for _ in range(policy.nb)])
         self.workers=nn.Linear(width,5)
         self.bases=nn.Linear(width,3)
-        self.value=nn.Sequential(nn.Linear(2*width,64),nn.Tanh(),nn.Linear(64,1))
+        if residual_critic:
+            self.value_baseline = nn.Linear(PUBLIC_DIM, 1, bias=False)
+            nn.init.zeros_(self.value_baseline.weight)
+            self.value = nn.Sequential(nn.Linear(2 * width + PUBLIC_DIM, 64), nn.Tanh(), nn.Linear(64, 1))
+        else:
+            self.value_baseline = None
+            self.value=nn.Sequential(nn.Linear(2*width,64),nn.Tanh(),nn.Linear(64,1))
         nn.init.zeros_(self.value[-1].weight)
         nn.init.zeros_(self.value[-1].bias)
 
@@ -82,9 +112,20 @@ class Actor(nn.Module):
     def value_input(cells):
         return torch.cat((cells.mean(1),cells.amax(1)),1)
 
-    def forward(self, features):
+    def predict_value(self, value_features, pub=None):
+        if self.residual_critic:
+            if pub is None:
+                raise ValueError('Residual critic requires public state features')
+            pub = pub.float()
+            base = self.value_baseline(pub)[:, 0]
+            res = self.value(torch.cat((value_features, pub), dim=1))[:, 0]
+            return base + res
+        return self.value(value_features)[:, 0]
+
+    def forward(self, features, pub=None):
         cells = self.spatial(features)
-        value = self.value(self.value_input(cells))[:, 0]
+        value_cells = cells.detach() if self.detach_value_trunk else cells
+        value = self.predict_value(self.value_input(value_cells), pub)
         return self.workers(cells),self.bases(cells),value
 
 
@@ -113,8 +154,8 @@ def action_logits(w, b, cells, legal, temperature):
     return (gathered/temperature).masked_fill(~legal,-1.e9)
 
 
-def logits(model, x, cells, legal, temperature):
-    w,b,v=model(x)
+def logits(model, x, cells, legal, temperature, pub=None):
+    w,b,v=model(x, pub=pub) if getattr(model, 'residual_critic', False) else model(x)
     return action_logits(w,b,cells,legal,temperature),v
 
 
@@ -159,3 +200,13 @@ def coordinated_sample(scores,rng,cells,legal,*,noise=None):
         arriving=pick>0 if j<2 else live
         occupied[rows[arriving],tile[arriving]]=True
     return chosen,effective
+
+
+def actor_from_checkpoint(teacher, style, path, device='cpu'):
+    """Rebuild an Actor from a terminal-RL checkpoint, including critic flags."""
+    saved = torch.load(path, map_location='cpu', weights_only=True)
+    actor = Actor(teacher._POLICY, style,
+                  residual_critic=bool(saved.get('residual_critic', False)),
+                  detach_value_trunk=bool(saved.get('detach_value_trunk', False)))
+    actor.load_state_dict(saved['parameters'])
+    return actor.to(device).eval(), saved

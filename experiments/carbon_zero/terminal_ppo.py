@@ -22,10 +22,15 @@ def digest(path):
 
 def gradient_audit(model, base, trajectory, device):
     """Measure loss components on one frozen pre-update minibatch."""
-    x, c, m, a, old, adv, target = trajectory
+    if len(trajectory) == 8:
+        x, c, m, a, old, adv, target, pubs = trajectory
+        pub_t = torch.as_tensor(pubs[:32], device=device)
+    else:
+        x, c, m, a, old, adv, target = trajectory
+        pub_t = None
     ia = (adv - adv.mean()) / max(adv.std(), 1e-6)
     args = [torch.as_tensor(v[:32], device=device) for v in (x, c, m)]
-    z, value = logits(model, *args, TEMPERATURE)
+    z, value = logits(model, *args, TEMPERATURE, pub=pub_t)
     with torch.no_grad():
         ref, _ = logits(base, *args, TEMPERATURE)
         ref = ref.log_softmax(-1)
@@ -51,8 +56,19 @@ def main(a):
     teacher = load_ft3(a.ft3)
     style = teacher._POLICY.sid(STYLE)
     assert style == 122
-    learner = Actor(teacher._POLICY, style).to(a.device)
-    anchor = copy.deepcopy(learner).eval().requires_grad_(False)
+    residual_critic = False
+    calibrated = None
+    if a.critic:
+        calibrated = json.loads((a.critic / 'critic.json').read_text())
+        if not calibrated['qualified'] or calibrated['source_sha256'] != FT3_SHA256:
+            raise ValueError('The frozen critic has not passed held-out calibration')
+        residual_critic = bool(calibrated.get('residual_critic', False))
+    learner = Actor(
+        teacher._POLICY, style,
+        residual_critic=residual_critic,
+        detach_value_trunk=a.detach_value_trunk,
+    ).to(a.device)
+    anchor = Actor(teacher._POLICY, style).to(a.device).eval().requires_grad_(False)
     opt = torch.optim.AdamW(learner.parameters(), lr=3e-5)
     rng = np.random.default_rng(a.seed + 133)
     collector = Collector(teacher, 16, a.seed, a.device, coordinated=True)
@@ -74,21 +90,27 @@ def main(a):
             raise ValueError('Anchored PPO training logs mismatch')
         initial = dict(experiment='archived-anchored-10000', sha256=expected)
     else:
-        calibrated = json.loads((a.critic / 'critic.json').read_text())
-        if not calibrated['qualified'] or calibrated['source_sha256'] != FT3_SHA256:
-            raise ValueError('The frozen critic has not passed held-out calibration')
         weight = a.critic / 'critic.pt'
-        learner.value.load_state_dict(torch.load(weight, weights_only=True, map_location='cpu'))
+        loaded = torch.load(weight, weights_only=True, map_location='cpu')
+        if residual_critic:
+            learner.value_baseline.load_state_dict(loaded['value_baseline'])
+            learner.value.load_state_dict(loaded['value'])
+        else:
+            learner.value.load_state_dict(loaded)
         pretrain_e = calibrated['train_E'] + calibrated['heldout_E']
         steps, updates = 0, []
-        initial = dict(experiment='frozen-policy-MC-critic', sha256=digest(weight))
-    arm = 'A' if a.control else 'B1'
+        initial = dict(
+            experiment='frozen-policy-MC-residual-critic' if residual_critic else 'frozen-policy-MC-critic',
+            sha256=digest(weight),
+        )
+    arm = 'A' if a.control else ('B2' if a.detach_value_trunk else 'B1')
     output = a.out
     output.mkdir(parents=True, exist_ok=False)
     write(output / 'protocol.json', dict(
         arm=arm, source_sha256=FT3_SHA256, engine_sha256=engine_fingerprint(carbon),
         seed=a.seed, device=a.device, style=style, temperature=TEMPERATURE,
         opponent='ZW0', decoder='sequential', initialization=initial, pretrain_E=pretrain_e,
+        residual_critic=residual_critic, detach_value_trunk=a.detach_value_trunk,
         lr=3e-5, ref_KL=.1, beta=.5, K=1500, rollout=64, lambda_GAE=.95,
         actor_warmup_updates=2, environments=16))
     markers = [n for n in sorted({10000, 50000, 100000, a.budget}) if steps < n <= a.budget]
@@ -109,6 +131,7 @@ def main(a):
             updates.append(row)
             write(output / 'updates.json', updates)
         checkpoint = dict(parameters=learner.state_dict(), optimizer=opt.state_dict(),
+                          residual_critic=residual_critic, detach_value_trunk=a.detach_value_trunk,
                           E=steps, total_E=steps+pretrain_e,
                           next_seed=collector.next_seed, optimizer_rng=rng.bit_generator.state,
                           collector=collector.snapshot())
@@ -125,6 +148,7 @@ if __name__ == '__main__':
     warm = p.add_mutually_exclusive_group(required=True)
     warm.add_argument('--control', type=Path)
     warm.add_argument('--critic', type=Path)
+    p.add_argument('--detach-value-trunk', action='store_true')
     p.add_argument('--budget', type=int, default=50000)
     p.add_argument('--seed', type=int, default=24000000)
     p.add_argument('--device', default='mps' if torch.backends.mps.is_available() else 'cpu')

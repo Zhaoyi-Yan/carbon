@@ -1,0 +1,232 @@
+[
+  {
+    "joint_kl": -3.498712430882733e-11,
+    "clipped": 0.0,
+    "entropy": 0.24099746346473694,
+    "value_loss": 0.029205558821558952,
+    "gradient_norm": 0.2499280571937561,
+    "logprob_error": 0.0,
+    "E": 1024,
+    "L": 1024,
+    "total_E": 86029,
+    "optimization_seconds": 5.43986808299087,
+    "cumulative": {
+      "encode": 1.5071016671136022,
+      "forward": 4.537071124883369,
+      "referee": 1.7280698746908456,
+      "rollout": 7.799321917118505
+    },
+    "forwards": 129,
+    "finished": 1,
+    "gradient_diagnostic": null
+  },
+  {
+    "joint_kl": -1.8917489796876907e-10,
+    "clipped": 0.0,
+    "entropy": 0.19030840694904327,
+    "value_loss": 0.022716520354151726,
+    "gradient_norm": 0.16048315167427063,
+    "logprob_error": 0.0,
+    "E": 2048,
+    "L": 2048,
+    "total_E": 87053,
+    "optimization_seconds": 1.3337709170300514,
+    "cumulative": {
+      "encode": 2.3452615435235202,
+      "forward": 5.942667251685634,
+      "referee": 3.4546015828382224,
+      "rollout": 11.785654167179018
+    },
+    "forwards": 258,
+    "finished": 1,
+    "gradient_diagnostic": null
+  },
+  {
+    "joint_kl": -8.149072527885437e-10,
+    "clipped": 0.0,
+    "entropy": 0.20206700265407562,
+    "value_loss": 0.029979214072227478,
+    "gradient_norm": 16.84032440185547,
+    "logprob_error": 0.0,
+    "anchor_kl": 0.0,
+    "E": 3072,
+    "L": 3072,
+    "total_E": 88077,
+    "optimization_seconds": 2.0144959159661084,
+    "cumulative": {
+      "encode": 3.1417013357859105,
+      "forward": 7.37057462381199,
+      "referee": 5.040177617222071,
+      "rollout": 15.613996583037078
+    },
+    "forwards": 387,
+    "finished": 1,
+    "gradient_diagnostic": {
+      "policy": 41.1119270324707,
+      "value": 0.5917423367500305,
+      "entropy": 0.021476592868566513,
+      "reference": 1.1420446526244632e-06,
+      "policy_value_cosine": -0.12745296955108643
+    }
+  },
+  {
+    "joint_kl": 0.008394094184041023,
+    "clipped": 0.095703125,
+    "entropy": 0.1920505315065384,
+    "value_loss": 0.023495923727750778,
+    "gradient_norm": 19.44647979736328,
+    "logprob_error": 0.0,
+    "anchor_kl": 0.032795798033475876,
+    "E": 4096,
+    "L": 4096,
+    "total_E": 89101,
+    "optimization_seconds": 1.9612660000566393,
+    "cumulative": {
+      "encode": 3.8773757515009493,
+      "forward": 8.857546667568386,
+      "referee": 6.583557451143861,
+      "rollout": 19.39998370804824
+    },
+    "forwards": 516,
+    "finished": 1,
+    "gradient_diagnostic": null
+  },
+  {
+    "joint_kl": 0.005880123935639858,
+    "clipped": 0.0673828125,
+    "entropy": 0.2166275978088379,
+    "value_loss": 0.03423464298248291,
+    "gradient_norm": 15.968537330627441,
+    "logprob_error": 0.0,
+    "anchor_kl": 0.05241752415895462,
+    "E": 5120,
+    "L": 5120,
+    "total_E": 90125,
+    "optimization_seconds": 2.9540315000340343,
+    "cumulative": {
+      "encode": 4.862380205653608,
+      "forward": 10.235469791805372,
+      "referee": 7.787446205038577,
+      "rollout": 23.00104625010863
+    },
+    "forwards": 645,
+    "finished": 17,
+    "gradient_diagnostic": null
+  },
+  {
+    "joint_kl": 0.005534107331186533,
+    "clipped": 0.0771484375,
+    "entropy": 0.22798559069633484,
+    "value_loss": 0.028927968814969063,
+    "gradient_norm": 12.263923645019531,
+    "logprob_error": 0.0,
+    "anchor_kl": 0.07784982770681381,
+    "E": 6144,
+    "L": 6144,
+    "total_E": 91149,
+    "optimization_seconds": 2.914765707915649,
+    "cumulative": {
+      "encode": 6.018346952507272,
+      "forward": 11.618757795076817,
+      "referee": 9.292684703134,
+      "rollout": 27.064815249992535
+    },
+    "forwards": 774,
+    "finished": 17,
+    "gradient_diagnostic": null
+  },
+  {
+    "joint_kl": 0.005851062946021557,
+    "clipped": 0.07265625149011612,
+    "entropy": 0.19711056351661682,
+    "value_loss": 0.017670925706624985,
+    "gradient_norm": 14.809425354003906,
+    "logprob_error": 0.0,
+    "anchor_kl": 0.10840947926044464,
+    "E": 7168,
+    "L": 7168,
+    "total_E": 92173,
+    "optimization_seconds": 3.914476041914895,
+    "cumulative": {
+      "encode": 6.8500281176529825,
+      "forward": 13.181416337145492,
+      "referee": 10.932949415640905,
+      "rollout": 31.119327124906704
+    },
+    "forwards": 903,
+    "finished": 17,
+    "gradient_diagnostic": null
+  },
+  {
+    "joint_kl": 0.006229573395103216,
+    "clipped": 0.07109375298023224,
+    "entropy": 0.19284941256046295,
+    "value_loss": 0.020698225125670433,
+    "gradient_norm": 13.647905349731445,
+    "logprob_error": 0.0,
+    "anchor_kl": 0.11211715638637543,
+    "E": 8192,
+    "L": 8192,
+    "total_E": 93197,
+    "optimization_seconds": 3.9940950840245932,
+    "cumulative": {
+      "encode": 7.686185577418655,
+      "forward": 14.562805959489197,
+      "referee": 12.536753080552444,
+      "rollout": 34.97626124997623
+    },
+    "forwards": 1032,
+    "finished": 17,
+    "gradient_diagnostic": null
+  },
+  {
+    "joint_kl": 0.00584521796554327,
+    "clipped": 0.07890625298023224,
+    "entropy": 0.1718880534172058,
+    "value_loss": 0.025846313685178757,
+    "gradient_norm": 12.46818733215332,
+    "logprob_error": 0.0,
+    "anchor_kl": 0.12472717463970184,
+    "E": 9216,
+    "L": 9216,
+    "total_E": 94221,
+    "optimization_seconds": 3.5773486671969295,
+    "cumulative": {
+      "encode": 8.560246238252148,
+      "forward": 15.857617502100766,
+      "referee": 14.249677990796044,
+      "rollout": 38.89127150014974
+    },
+    "forwards": 1161,
+    "finished": 17,
+    "gradient_diagnostic": null
+  },
+  {
+    "joint_kl": 0.007536889519542456,
+    "clipped": 0.09765625,
+    "entropy": 0.21373789012432098,
+    "value_loss": 0.023137370124459267,
+    "gradient_norm": 21.011640548706055,
+    "logprob_error": 0.0,
+    "anchor_kl": 0.09014567732810974,
+    "E": 10000,
+    "L": 10000,
+    "total_E": 95005,
+    "optimization_seconds": 4.652831875020638,
+    "cumulative": {
+      "encode": 9.40368157508783,
+      "forward": 16.83836762048304,
+      "referee": 15.324872781988233,
+      "rollout": 41.825066457968205
+    },
+    "forwards": 1260,
+    "finished": 33,
+    "gradient_diagnostic": {
+      "policy": 35.67502975463867,
+      "value": 0.14181749522686005,
+      "entropy": 0.022728951647877693,
+      "reference": 1.6652480363845825,
+      "policy_value_cosine": 0.18066057562828064
+    }
+  }
+]

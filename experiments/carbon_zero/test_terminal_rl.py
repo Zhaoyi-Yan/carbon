@@ -104,6 +104,41 @@ class TerminalTests(unittest.TestCase):
         self.assertTrue(all(row['elimination'] and row['utility'] == 0 for row in rows))
         self.assertTrue(all(group['zero_advantage'] for group in groups))
 
+    def test_residual_critic_baseline_and_detached_trunk(self):
+        from policy import PUBLIC_DIM, public_state_features
+
+        pub = public_state_features(np.asarray([0.0, 1500.0, -750.0]), np.asarray([0, 150, 299]))
+        self.assertEqual(pub.shape, (3, PUBLIC_DIM))
+        self.assertEqual(pub.dtype, np.float32)
+
+        class TinyResidualActor(torch.nn.Module):
+            def __init__(self, detach_value_trunk=False):
+                super().__init__()
+                self.residual_critic = True
+                self.detach_value_trunk = detach_value_trunk
+                self.trunk = torch.nn.Linear(4, 4)
+                self.value_baseline = torch.nn.Linear(PUBLIC_DIM, 1, bias=False)
+                self.value = torch.nn.Sequential(torch.nn.Linear(4 + PUBLIC_DIM, 8), torch.nn.Tanh(), torch.nn.Linear(8, 1))
+                torch.nn.init.zeros_(self.value[-1].weight)
+                torch.nn.init.zeros_(self.value[-1].bias)
+
+            def forward(self, x, pub):
+                h = self.trunk(x)
+                vh = h.detach() if self.detach_value_trunk else h
+                return self.value_baseline(pub)[:, 0] + self.value(torch.cat((vh, pub), dim=1))[:, 0]
+
+        pub_t = torch.as_tensor(pub)
+        x_t = torch.randn(3, 4)
+        m = TinyResidualActor(detach_value_trunk=True)
+        w = torch.tensor([[0.1, 0.2, 0.3, 0.4, 0.5, 0.6]], dtype=torch.float32)
+        with torch.no_grad():
+            m.value_baseline.weight.copy_(w)
+        out = m(x_t, pub_t)
+        torch.testing.assert_close(out, (pub_t @ w.T)[:, 0])
+        loss = (out - torch.ones(3)).square().mean()
+        loss.backward()
+        self.assertIsNone(m.trunk.weight.grad)
+
 
 if __name__ == '__main__':
     torch.set_num_threads(2)

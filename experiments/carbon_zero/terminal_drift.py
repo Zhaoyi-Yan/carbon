@@ -4,7 +4,7 @@ import hashlib
 from pathlib import Path
 
 from pilot import Actor, STYLE, load_ft3, np, torch, write
-from policy import coordinated_sample
+from policy import actor_from_checkpoint, coordinated_sample
 from terminal_games import Match, keyed_seed, play
 from terminal_rloo import score
 
@@ -63,8 +63,7 @@ def compare(a):
     phase = np.asarray([stages(item['turn']) for item in manifest])
     for item in a.candidate:
         name, file = item.split('=', 1)
-        model = Actor(teacher._POLICY, style).to(a.device).eval()
-        model.load_state_dict(torch.load(file, map_location='cpu', weights_only=True)['parameters'])
+        model, _ = actor_from_checkpoint(teacher, style, Path(file), a.device)
         raw = score(model, *fixed)
         team_kl, changes = [], []
         for masks, ref in reference_logp:

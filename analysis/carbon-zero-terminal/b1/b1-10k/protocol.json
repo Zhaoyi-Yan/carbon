@@ -1,0 +1,26 @@
+{
+  "arm": "B1",
+  "source_sha256": "920f656a31277751651883099d3bc2891a68412a69533cce4af3e3c801ba9446",
+  "engine_sha256": "0fef48294793290f1abf2a4d8f7c464e988c12b7c40f242a2079dc1dc38a3c9c",
+  "seed": 24000000,
+  "device": "mps",
+  "style": 122,
+  "temperature": 0.4,
+  "opponent": "ZW0",
+  "decoder": "sequential",
+  "initialization": {
+    "experiment": "frozen-policy-MC-residual-critic",
+    "sha256": "fceedd2e7944394f2119377ae30997bc86adb8db00272f0dcd14e3548540ec47"
+  },
+  "pretrain_E": 85005,
+  "residual_critic": true,
+  "detach_value_trunk": false,
+  "lr": 3e-05,
+  "ref_KL": 0.1,
+  "beta": 0.5,
+  "K": 1500,
+  "rollout": 64,
+  "lambda_GAE": 0.95,
+  "actor_warmup_updates": 2,
+  "environments": 16
+}

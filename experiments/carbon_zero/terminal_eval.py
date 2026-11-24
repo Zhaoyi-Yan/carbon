@@ -8,6 +8,7 @@ import random
 from statistics import mean, median
 
 from pilot import Actor, FT3_SHA256, ROOT, STYLE, load_ft3, torch, write
+from policy import actor_from_checkpoint
 from benchmark import load_strategy
 from scripts.selfplay import source_for
 from terminal_games import Match, TEMPERATURE, keyed_seed, play
@@ -103,9 +104,7 @@ def main(a):
         if file:
             blob = Path(file)
             checkpoint_sha = hashlib.sha256(blob.read_bytes()).hexdigest()
-            actor = Actor(teacher._POLICY, style).eval()
-            actor.load_state_dict(torch.load(blob, map_location='cpu', weights_only=True)['parameters'])
-            actor.to(a.device)
+            actor, _ = actor_from_checkpoint(teacher, style, blob, a.device)
         elif name not in ('ZW0', 'AA'):
             raise ValueError(f'Missing checkpoint path for {name}')
         path = a.out / f'{name}.json'
