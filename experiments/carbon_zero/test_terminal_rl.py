@@ -140,6 +140,22 @@ class TerminalTests(unittest.TestCase):
         self.assertIsNone(m.trunk.weight.grad)
 
 
+    def test_full_game_advantages_identity_and_shape_checks(self):
+        from terminal_calibration import corr, full_game_advantages
+
+        rewards = np.array([0.0, 0.1, -0.05, 0.3])
+        values = np.array([0.1, -0.2, 0.05, 0.0])
+        mc = np.array([rewards[t:].sum() - values[t] for t in range(len(values))])
+        np.testing.assert_allclose(full_game_advantages(rewards, values, 1.0), mc, atol=1e-12)
+        gae = full_game_advantages(rewards, values, .95)
+        self.assertEqual(gae.shape, values.shape)
+        self.assertFalse(np.allclose(gae, mc))
+        # Different trajectory lengths must be handled per game, never broadcast.
+        longer = full_game_advantages(np.append(rewards, .2), np.append(values, .1), .95)
+        self.assertEqual(longer.shape, (5,))
+        with self.assertRaises(ValueError):
+            corr(np.zeros(4), np.zeros(5))
+
     def test_grad_breakdown_handles_detached_value(self):
         from terminal_rloo import grad_breakdown
 

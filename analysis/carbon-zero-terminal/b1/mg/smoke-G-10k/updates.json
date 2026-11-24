@@ -1,0 +1,100 @@
+[
+  {
+    "policy": 0.009281805995851756,
+    "old_KL": 0.018369571497896687,
+    "clip_rate": 0.21997514218091965,
+    "entropy_scaled": 0.10074025467038154,
+    "reference_KL_scaled": 0.009829365368932485,
+    "gradient_norm": 2.2442230939865113,
+    "logprob_error": 0.0,
+    "optimization_updates": 10,
+    "optimization_seconds": 12.54114529187791,
+    "gradient_diagnostic": {
+      "policy": 1.2342864274978638,
+      "entropy": 0.006481124088168144,
+      "reference": 3.0280287433015474e-07
+    },
+    "E": 4784,
+    "L": 4784,
+    "batch_E": 4784,
+    "behavior_version": 0,
+    "collection": {
+      "encode": 4.138147042598575,
+      "inference": 6.262883372837678,
+      "referee": 6.450916335918009,
+      "elapsed": 16.85539604211226,
+      "forwards": 598
+    },
+    "advantages": {
+      "arm": "G",
+      "mean_mc": -0.13058965340266065,
+      "mean_gae": -0.015397093258798122,
+      "mean_abs_gap": 0.351427884848604,
+      "zero_groups": 0
+    }
+  },
+  {
+    "policy": 0.002964808832621202,
+    "old_KL": 0.01174755031534005,
+    "clip_rate": 0.1480291187763214,
+    "entropy_scaled": 0.0987593688070774,
+    "reference_KL_scaled": 0.010810182522982359,
+    "gradient_norm": 2.0734519720077516,
+    "logprob_error": 0.0,
+    "optimization_updates": 10,
+    "optimization_seconds": 8.43973383307457,
+    "gradient_diagnostic": null,
+    "E": 9568,
+    "L": 9568,
+    "batch_E": 4784,
+    "behavior_version": 1,
+    "collection": {
+      "encode": 4.212295624660328,
+      "inference": 4.672186087351292,
+      "referee": 6.895878792274743,
+      "elapsed": 15.785877165850252,
+      "forwards": 598
+    },
+    "advantages": {
+      "arm": "G",
+      "mean_mc": -0.01889696551731044,
+      "mean_gae": -0.00432113790884614,
+      "mean_abs_gap": 0.37936441418078914,
+      "zero_groups": 0
+    }
+  },
+  {
+    "policy": 0.010723810363560914,
+    "old_KL": 0.011411631846567617,
+    "clip_rate": 0.14243607968091965,
+    "entropy_scaled": 0.10077045783400536,
+    "reference_KL_scaled": 0.015139369014650583,
+    "gradient_norm": 2.2524487495422365,
+    "logprob_error": 0.0,
+    "optimization_updates": 10,
+    "optimization_seconds": 8.684146958170459,
+    "gradient_diagnostic": {
+      "policy": 1.4230575561523438,
+      "entropy": 0.006608232855796814,
+      "reference": 0.4197253882884979
+    },
+    "E": 14352,
+    "L": 14352,
+    "batch_E": 4784,
+    "behavior_version": 2,
+    "collection": {
+      "encode": 4.163590123644099,
+      "inference": 4.570333294104785,
+      "referee": 7.071018580812961,
+      "elapsed": 15.811087334062904,
+      "forwards": 598
+    },
+    "advantages": {
+      "arm": "G",
+      "mean_mc": -0.25256010796140616,
+      "mean_gae": -0.019461887422949076,
+      "mean_abs_gap": 0.45916384391215925,
+      "zero_groups": 0
+    }
+  }
+]

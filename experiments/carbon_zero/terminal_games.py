@@ -52,6 +52,7 @@ class RunningGame:
     initial_potential: float
     rows: list = field(default_factory=list)
     action_trace: list = field(default_factory=list)
+    gaps: list = field(default_factory=list)
     shaped_return: float = 0.0
 
 
@@ -138,6 +139,7 @@ def play(teacher, learner, opponent, matches, device, *, capture=None, steps=300
                 active, observations, learner_moves, replies, samples, strict=True)):
             game, seat = p.game, p.spec.seat
             before = game.cash()
+            p.gaps.append(float(before[seat] - before[1 - seat]))
             sent = (own, other) if seat == 0 else (other, own)
             if capture == 'policy':
                 p.rows.append(sample)
@@ -163,7 +165,7 @@ def play(teacher, learner, opponent, matches, device, *, capture=None, steps=300
                 raise AssertionError('The full shaped return did not telescope')
             row = dict(**asdict(p.spec), layout_sha256=p.layout, turns=game.turn,
                        scores=scores, cash=game.cash(), margin=margin, utility=terminal_u,
-                       elimination=eliminated)
+                       elimination=eliminated, gaps=list(p.gaps))
             finished.append((row, p.rows, p.action_trace))
         timers['referee'] += time.perf_counter() - now
         active = pending
