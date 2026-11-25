@@ -1,0 +1,1707 @@
+{
+  "snapshot": "ddc3e6f6922474ad5894a8066be5b906bf35af55",
+  "definition": "Replay state t contains actions chosen from observation t-1. Bases ordered by ascending physical position. Empty actions do not establish intent.",
+  "games": [
+    {
+      "match": "5f557dcb32dbb33882f8676e4a23c13a",
+      "game": 1,
+      "file": "replays/5f557dcb32dbb33882f8676e4a23c13a-1.json.gz",
+      "artemis_seat": 0,
+      "opponent": {
+        "id": "943ad472036a3abfa301864da3f7a0fc",
+        "name": "天枢弈潮-NextGen-v2"
+      },
+      "first_recruit_artemis": {
+        "replay_state": 2,
+        "decision_observation_step": 1,
+        "base_actions": [
+          {
+            "base_id": "player-0-recrtCenter-0",
+            "position": 64,
+            "action": "RECPLANTER"
+          },
+          {
+            "base_id": "player-0-recrtCenter-1",
+            "position": 160,
+            "action": "RECCOLLECTOR"
+          }
+        ]
+      },
+      "first_recruit_opponent": {
+        "replay_state": 1,
+        "decision_observation_step": 0,
+        "base_actions": [
+          {
+            "base_id": "player-1-recrtCenter-0",
+            "position": 70,
+            "action": "RECPLANTER"
+          },
+          {
+            "base_id": "player-1-recrtCenter-1",
+            "position": 154,
+            "action": "RECCOLLECTOR"
+          }
+        ]
+      },
+      "first_three_steps": [
+        {
+          "replay_state": 1,
+          "decision_observation_step": 0,
+          "sides": [
+            {
+              "seat": 0,
+              "strategy": {
+                "id": "1f5b63b85d43a90ab4d4e75c294d1d62",
+                "name": "Artemis"
+              },
+              "actions": {},
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            },
+            {
+              "seat": 1,
+              "strategy": {
+                "id": "943ad472036a3abfa301864da3f7a0fc",
+                "name": "天枢弈潮-NextGen-v2"
+              },
+              "actions": {
+                "player-1-recrtCenter-0": "RECPLANTER",
+                "player-1-recrtCenter-1": "RECCOLLECTOR"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            }
+          ]
+        },
+        {
+          "replay_state": 2,
+          "decision_observation_step": 1,
+          "sides": [
+            {
+              "seat": 0,
+              "strategy": {
+                "id": "1f5b63b85d43a90ab4d4e75c294d1d62",
+                "name": "Artemis"
+              },
+              "actions": {
+                "player-0-recrtCenter-0": "RECPLANTER",
+                "player-0-recrtCenter-1": "RECCOLLECTOR"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            },
+            {
+              "seat": 1,
+              "strategy": {
+                "id": "943ad472036a3abfa301864da3f7a0fc",
+                "name": "天枢弈潮-NextGen-v2"
+              },
+              "actions": {
+                "player-1-worker-0": "LEFT",
+                "player-1-worker-1": "RIGHT"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            }
+          ]
+        },
+        {
+          "replay_state": 3,
+          "decision_observation_step": 2,
+          "sides": [
+            {
+              "seat": 0,
+              "strategy": {
+                "id": "1f5b63b85d43a90ab4d4e75c294d1d62",
+                "name": "Artemis"
+              },
+              "actions": {
+                "player-0-worker-0": "RIGHT",
+                "player-0-worker-1": "LEFT"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            },
+            {
+              "seat": 1,
+              "strategy": {
+                "id": "943ad472036a3abfa301864da3f7a0fc",
+                "name": "天枢弈潮-NextGen-v2"
+              },
+              "actions": {
+                "player-1-worker-0": "LEFT"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            }
+          ]
+        }
+      ],
+      "sha256": "91662b47d01cf9baac0333ecf58c8965dbed4ca3c7e3d7ba2fb5b85c8fdf679f"
+    },
+    {
+      "match": "0d750287564ce989de0ff8d00e08323e",
+      "game": 1,
+      "file": "replays/0d750287564ce989de0ff8d00e08323e-1.json.gz",
+      "artemis_seat": 1,
+      "opponent": {
+        "id": "9245bbeea861f25b15439aa4d7e5a939",
+        "name": "SpongeBaby-CarbonNet-v5.0"
+      },
+      "first_recruit_artemis": {
+        "replay_state": 2,
+        "decision_observation_step": 1,
+        "base_actions": [
+          {
+            "base_id": "player-1-recrtCenter-0",
+            "position": 70,
+            "action": "RECCOLLECTOR"
+          },
+          {
+            "base_id": "player-1-recrtCenter-1",
+            "position": 154,
+            "action": "RECPLANTER"
+          }
+        ]
+      },
+      "first_recruit_opponent": {
+        "replay_state": 1,
+        "decision_observation_step": 0,
+        "base_actions": [
+          {
+            "base_id": "player-0-recrtCenter-0",
+            "position": 64,
+            "action": "RECCOLLECTOR"
+          },
+          {
+            "base_id": "player-0-recrtCenter-1",
+            "position": 160,
+            "action": "RECCOLLECTOR"
+          }
+        ]
+      },
+      "first_three_steps": [
+        {
+          "replay_state": 1,
+          "decision_observation_step": 0,
+          "sides": [
+            {
+              "seat": 1,
+              "strategy": {
+                "id": "1f5b63b85d43a90ab4d4e75c294d1d62",
+                "name": "Artemis"
+              },
+              "actions": {},
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            },
+            {
+              "seat": 0,
+              "strategy": {
+                "id": "9245bbeea861f25b15439aa4d7e5a939",
+                "name": "SpongeBaby-CarbonNet-v5.0"
+              },
+              "actions": {
+                "player-0-recrtCenter-0": "RECCOLLECTOR",
+                "player-0-recrtCenter-1": "RECCOLLECTOR"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            }
+          ]
+        },
+        {
+          "replay_state": 2,
+          "decision_observation_step": 1,
+          "sides": [
+            {
+              "seat": 1,
+              "strategy": {
+                "id": "1f5b63b85d43a90ab4d4e75c294d1d62",
+                "name": "Artemis"
+              },
+              "actions": {
+                "player-1-recrtCenter-0": "RECCOLLECTOR",
+                "player-1-recrtCenter-1": "RECPLANTER"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            },
+            {
+              "seat": 0,
+              "strategy": {
+                "id": "9245bbeea861f25b15439aa4d7e5a939",
+                "name": "SpongeBaby-CarbonNet-v5.0"
+              },
+              "actions": {
+                "player-0-worker-0": "UP",
+                "player-0-worker-1": "DOWN"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            }
+          ]
+        },
+        {
+          "replay_state": 3,
+          "decision_observation_step": 2,
+          "sides": [
+            {
+              "seat": 1,
+              "strategy": {
+                "id": "1f5b63b85d43a90ab4d4e75c294d1d62",
+                "name": "Artemis"
+              },
+              "actions": {
+                "player-1-worker-1": "UP",
+                "player-1-worker-0": "UP"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            },
+            {
+              "seat": 0,
+              "strategy": {
+                "id": "9245bbeea861f25b15439aa4d7e5a939",
+                "name": "SpongeBaby-CarbonNet-v5.0"
+              },
+              "actions": {},
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            }
+          ]
+        }
+      ],
+      "sha256": "e95aa16c9cfe8d18383ff0816d76f62faf2a937f1a7e54ac9069cab889220226"
+    },
+    {
+      "match": "a5ff9b8020bc4047ba7beeb7a426c6d2",
+      "game": 1,
+      "file": "replays/a5ff9b8020bc4047ba7beeb7a426c6d2-1.json.gz",
+      "artemis_seat": 0,
+      "opponent": {
+        "id": "9245bbeea861f25b15439aa4d7e5a939",
+        "name": "SpongeBaby-CarbonNet-v5.0"
+      },
+      "first_recruit_artemis": {
+        "replay_state": 2,
+        "decision_observation_step": 1,
+        "base_actions": [
+          {
+            "base_id": "player-0-recrtCenter-0",
+            "position": 64,
+            "action": "RECCOLLECTOR"
+          },
+          {
+            "base_id": "player-0-recrtCenter-1",
+            "position": 160,
+            "action": "RECPLANTER"
+          }
+        ]
+      },
+      "first_recruit_opponent": {
+        "replay_state": 1,
+        "decision_observation_step": 0,
+        "base_actions": [
+          {
+            "base_id": "player-1-recrtCenter-0",
+            "position": 70,
+            "action": "RECCOLLECTOR"
+          },
+          {
+            "base_id": "player-1-recrtCenter-1",
+            "position": 154,
+            "action": "RECCOLLECTOR"
+          }
+        ]
+      },
+      "first_three_steps": [
+        {
+          "replay_state": 1,
+          "decision_observation_step": 0,
+          "sides": [
+            {
+              "seat": 0,
+              "strategy": {
+                "id": "1f5b63b85d43a90ab4d4e75c294d1d62",
+                "name": "Artemis"
+              },
+              "actions": {},
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            },
+            {
+              "seat": 1,
+              "strategy": {
+                "id": "9245bbeea861f25b15439aa4d7e5a939",
+                "name": "SpongeBaby-CarbonNet-v5.0"
+              },
+              "actions": {
+                "player-1-recrtCenter-0": "RECCOLLECTOR",
+                "player-1-recrtCenter-1": "RECCOLLECTOR"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            }
+          ]
+        },
+        {
+          "replay_state": 2,
+          "decision_observation_step": 1,
+          "sides": [
+            {
+              "seat": 0,
+              "strategy": {
+                "id": "1f5b63b85d43a90ab4d4e75c294d1d62",
+                "name": "Artemis"
+              },
+              "actions": {
+                "player-0-recrtCenter-0": "RECCOLLECTOR",
+                "player-0-recrtCenter-1": "RECPLANTER"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            },
+            {
+              "seat": 1,
+              "strategy": {
+                "id": "9245bbeea861f25b15439aa4d7e5a939",
+                "name": "SpongeBaby-CarbonNet-v5.0"
+              },
+              "actions": {
+                "player-1-worker-0": "UP",
+                "player-1-worker-1": "DOWN"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            }
+          ]
+        },
+        {
+          "replay_state": 3,
+          "decision_observation_step": 2,
+          "sides": [
+            {
+              "seat": 0,
+              "strategy": {
+                "id": "1f5b63b85d43a90ab4d4e75c294d1d62",
+                "name": "Artemis"
+              },
+              "actions": {
+                "player-0-worker-1": "UP",
+                "player-0-worker-0": "LEFT"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            },
+            {
+              "seat": 1,
+              "strategy": {
+                "id": "9245bbeea861f25b15439aa4d7e5a939",
+                "name": "SpongeBaby-CarbonNet-v5.0"
+              },
+              "actions": {
+                "player-1-worker-0": "LEFT",
+                "player-1-worker-1": "RIGHT"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            }
+          ]
+        }
+      ],
+      "sha256": "1423a4446cb675429617ada597cab2d4f7ea3e8514874618486e234fb6092fe8"
+    },
+    {
+      "match": "6d33fcc165b57cdf992e01be3f7a4087",
+      "game": 1,
+      "file": "replays/6d33fcc165b57cdf992e01be3f7a4087-1.json.gz",
+      "artemis_seat": 1,
+      "opponent": {
+        "id": "0b7eaf8e37a0e0c5e658b0e315f9fbb3",
+        "name": "RyanX-AIPowercore-it980-1660k"
+      },
+      "first_recruit_artemis": {
+        "replay_state": 2,
+        "decision_observation_step": 1,
+        "base_actions": [
+          {
+            "base_id": "player-1-recrtCenter-0",
+            "position": 70,
+            "action": "RECPLANTER"
+          },
+          {
+            "base_id": "player-1-recrtCenter-1",
+            "position": 154,
+            "action": "RECCOLLECTOR"
+          }
+        ]
+      },
+      "first_recruit_opponent": {
+        "replay_state": 1,
+        "decision_observation_step": 0,
+        "base_actions": [
+          {
+            "base_id": "player-0-recrtCenter-0",
+            "position": 64,
+            "action": "RECPLANTER"
+          },
+          {
+            "base_id": "player-0-recrtCenter-1",
+            "position": 160,
+            "action": "RECCOLLECTOR"
+          }
+        ]
+      },
+      "first_three_steps": [
+        {
+          "replay_state": 1,
+          "decision_observation_step": 0,
+          "sides": [
+            {
+              "seat": 1,
+              "strategy": {
+                "id": "1f5b63b85d43a90ab4d4e75c294d1d62",
+                "name": "Artemis"
+              },
+              "actions": {},
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            },
+            {
+              "seat": 0,
+              "strategy": {
+                "id": "0b7eaf8e37a0e0c5e658b0e315f9fbb3",
+                "name": "RyanX-AIPowercore-it980-1660k"
+              },
+              "actions": {
+                "player-0-recrtCenter-0": "RECPLANTER",
+                "player-0-recrtCenter-1": "RECCOLLECTOR"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            }
+          ]
+        },
+        {
+          "replay_state": 2,
+          "decision_observation_step": 1,
+          "sides": [
+            {
+              "seat": 1,
+              "strategy": {
+                "id": "1f5b63b85d43a90ab4d4e75c294d1d62",
+                "name": "Artemis"
+              },
+              "actions": {
+                "player-1-recrtCenter-0": "RECPLANTER",
+                "player-1-recrtCenter-1": "RECCOLLECTOR"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            },
+            {
+              "seat": 0,
+              "strategy": {
+                "id": "0b7eaf8e37a0e0c5e658b0e315f9fbb3",
+                "name": "RyanX-AIPowercore-it980-1660k"
+              },
+              "actions": {
+                "player-0-worker-0": "RIGHT",
+                "player-0-worker-1": "LEFT"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            }
+          ]
+        },
+        {
+          "replay_state": 3,
+          "decision_observation_step": 2,
+          "sides": [
+            {
+              "seat": 1,
+              "strategy": {
+                "id": "1f5b63b85d43a90ab4d4e75c294d1d62",
+                "name": "Artemis"
+              },
+              "actions": {
+                "player-1-worker-0": "LEFT",
+                "player-1-worker-1": "RIGHT"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            },
+            {
+              "seat": 0,
+              "strategy": {
+                "id": "0b7eaf8e37a0e0c5e658b0e315f9fbb3",
+                "name": "RyanX-AIPowercore-it980-1660k"
+              },
+              "actions": {
+                "player-0-worker-0": "RIGHT"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            }
+          ]
+        }
+      ],
+      "sha256": "566eb52e10cb4b522a730106d53589321246845a668ae579c2121cac41ff9b32"
+    },
+    {
+      "match": "6ae31044dcb483748e7252eb8b595b6a",
+      "game": 1,
+      "file": "replays/6ae31044dcb483748e7252eb8b595b6a-1.json.gz",
+      "artemis_seat": 1,
+      "opponent": {
+        "id": "0b7eaf8e37a0e0c5e658b0e315f9fbb3",
+        "name": "RyanX-AIPowercore-it980-1660k"
+      },
+      "first_recruit_artemis": {
+        "replay_state": 2,
+        "decision_observation_step": 1,
+        "base_actions": [
+          {
+            "base_id": "player-1-recrtCenter-0",
+            "position": 70,
+            "action": "RECPLANTER"
+          },
+          {
+            "base_id": "player-1-recrtCenter-1",
+            "position": 154,
+            "action": "RECCOLLECTOR"
+          }
+        ]
+      },
+      "first_recruit_opponent": {
+        "replay_state": 1,
+        "decision_observation_step": 0,
+        "base_actions": [
+          {
+            "base_id": "player-0-recrtCenter-0",
+            "position": 64,
+            "action": "RECPLANTER"
+          },
+          {
+            "base_id": "player-0-recrtCenter-1",
+            "position": 160,
+            "action": "RECCOLLECTOR"
+          }
+        ]
+      },
+      "first_three_steps": [
+        {
+          "replay_state": 1,
+          "decision_observation_step": 0,
+          "sides": [
+            {
+              "seat": 1,
+              "strategy": {
+                "id": "1f5b63b85d43a90ab4d4e75c294d1d62",
+                "name": "Artemis"
+              },
+              "actions": {},
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            },
+            {
+              "seat": 0,
+              "strategy": {
+                "id": "0b7eaf8e37a0e0c5e658b0e315f9fbb3",
+                "name": "RyanX-AIPowercore-it980-1660k"
+              },
+              "actions": {
+                "player-0-recrtCenter-0": "RECPLANTER",
+                "player-0-recrtCenter-1": "RECCOLLECTOR"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            }
+          ]
+        },
+        {
+          "replay_state": 2,
+          "decision_observation_step": 1,
+          "sides": [
+            {
+              "seat": 1,
+              "strategy": {
+                "id": "1f5b63b85d43a90ab4d4e75c294d1d62",
+                "name": "Artemis"
+              },
+              "actions": {
+                "player-1-recrtCenter-0": "RECPLANTER",
+                "player-1-recrtCenter-1": "RECCOLLECTOR"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            },
+            {
+              "seat": 0,
+              "strategy": {
+                "id": "0b7eaf8e37a0e0c5e658b0e315f9fbb3",
+                "name": "RyanX-AIPowercore-it980-1660k"
+              },
+              "actions": {
+                "player-0-worker-0": "DOWN",
+                "player-0-worker-1": "UP"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            }
+          ]
+        },
+        {
+          "replay_state": 3,
+          "decision_observation_step": 2,
+          "sides": [
+            {
+              "seat": 1,
+              "strategy": {
+                "id": "1f5b63b85d43a90ab4d4e75c294d1d62",
+                "name": "Artemis"
+              },
+              "actions": {
+                "player-1-worker-0": "LEFT",
+                "player-1-worker-1": "UP"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            },
+            {
+              "seat": 0,
+              "strategy": {
+                "id": "0b7eaf8e37a0e0c5e658b0e315f9fbb3",
+                "name": "RyanX-AIPowercore-it980-1660k"
+              },
+              "actions": {
+                "player-0-worker-0": "RIGHT"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            }
+          ]
+        }
+      ],
+      "sha256": "3a206827410b86a356e887f5454b46b5ac971ef1e86909ea35e2d6b0c2e5d3e0"
+    },
+    {
+      "match": "f7f88825c48dfb65a9fbd27c2b926ec0",
+      "game": 1,
+      "file": "replays/f7f88825c48dfb65a9fbd27c2b926ec0-1.json.gz",
+      "artemis_seat": 1,
+      "opponent": {
+        "id": "9245bbeea861f25b15439aa4d7e5a939",
+        "name": "SpongeBaby-CarbonNet-v5.0"
+      },
+      "first_recruit_artemis": {
+        "replay_state": 2,
+        "decision_observation_step": 1,
+        "base_actions": [
+          {
+            "base_id": "player-1-recrtCenter-0",
+            "position": 70,
+            "action": "RECCOLLECTOR"
+          },
+          {
+            "base_id": "player-1-recrtCenter-1",
+            "position": 154,
+            "action": "RECPLANTER"
+          }
+        ]
+      },
+      "first_recruit_opponent": {
+        "replay_state": 1,
+        "decision_observation_step": 0,
+        "base_actions": [
+          {
+            "base_id": "player-0-recrtCenter-0",
+            "position": 64,
+            "action": "RECCOLLECTOR"
+          },
+          {
+            "base_id": "player-0-recrtCenter-1",
+            "position": 160,
+            "action": "RECCOLLECTOR"
+          }
+        ]
+      },
+      "first_three_steps": [
+        {
+          "replay_state": 1,
+          "decision_observation_step": 0,
+          "sides": [
+            {
+              "seat": 1,
+              "strategy": {
+                "id": "1f5b63b85d43a90ab4d4e75c294d1d62",
+                "name": "Artemis"
+              },
+              "actions": {},
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            },
+            {
+              "seat": 0,
+              "strategy": {
+                "id": "9245bbeea861f25b15439aa4d7e5a939",
+                "name": "SpongeBaby-CarbonNet-v5.0"
+              },
+              "actions": {
+                "player-0-recrtCenter-0": "RECCOLLECTOR",
+                "player-0-recrtCenter-1": "RECCOLLECTOR"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            }
+          ]
+        },
+        {
+          "replay_state": 2,
+          "decision_observation_step": 1,
+          "sides": [
+            {
+              "seat": 1,
+              "strategy": {
+                "id": "1f5b63b85d43a90ab4d4e75c294d1d62",
+                "name": "Artemis"
+              },
+              "actions": {
+                "player-1-recrtCenter-0": "RECCOLLECTOR",
+                "player-1-recrtCenter-1": "RECPLANTER"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            },
+            {
+              "seat": 0,
+              "strategy": {
+                "id": "9245bbeea861f25b15439aa4d7e5a939",
+                "name": "SpongeBaby-CarbonNet-v5.0"
+              },
+              "actions": {
+                "player-0-worker-0": "UP",
+                "player-0-worker-1": "DOWN"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            }
+          ]
+        },
+        {
+          "replay_state": 3,
+          "decision_observation_step": 2,
+          "sides": [
+            {
+              "seat": 1,
+              "strategy": {
+                "id": "1f5b63b85d43a90ab4d4e75c294d1d62",
+                "name": "Artemis"
+              },
+              "actions": {
+                "player-1-worker-1": "UP",
+                "player-1-worker-0": "LEFT"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            },
+            {
+              "seat": 0,
+              "strategy": {
+                "id": "9245bbeea861f25b15439aa4d7e5a939",
+                "name": "SpongeBaby-CarbonNet-v5.0"
+              },
+              "actions": {
+                "player-0-worker-0": "RIGHT",
+                "player-0-worker-1": "LEFT"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            }
+          ]
+        }
+      ],
+      "sha256": "fd0b5e63cdc555700070f8ff846e0dc492f9074a0f99aee2e0cc07fb52864b93"
+    },
+    {
+      "match": "8b7fbe6473d0216d2bb2d1a394d389d9",
+      "game": 1,
+      "file": "replays/8b7fbe6473d0216d2bb2d1a394d389d9-1.json.gz",
+      "artemis_seat": 0,
+      "opponent": {
+        "id": "9245bbeea861f25b15439aa4d7e5a939",
+        "name": "SpongeBaby-CarbonNet-v5.0"
+      },
+      "first_recruit_artemis": {
+        "replay_state": 2,
+        "decision_observation_step": 1,
+        "base_actions": [
+          {
+            "base_id": "player-0-recrtCenter-0",
+            "position": 64,
+            "action": "RECCOLLECTOR"
+          },
+          {
+            "base_id": "player-0-recrtCenter-1",
+            "position": 160,
+            "action": "RECPLANTER"
+          }
+        ]
+      },
+      "first_recruit_opponent": {
+        "replay_state": 1,
+        "decision_observation_step": 0,
+        "base_actions": [
+          {
+            "base_id": "player-1-recrtCenter-0",
+            "position": 70,
+            "action": "RECCOLLECTOR"
+          },
+          {
+            "base_id": "player-1-recrtCenter-1",
+            "position": 154,
+            "action": "RECCOLLECTOR"
+          }
+        ]
+      },
+      "first_three_steps": [
+        {
+          "replay_state": 1,
+          "decision_observation_step": 0,
+          "sides": [
+            {
+              "seat": 0,
+              "strategy": {
+                "id": "1f5b63b85d43a90ab4d4e75c294d1d62",
+                "name": "Artemis"
+              },
+              "actions": {},
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            },
+            {
+              "seat": 1,
+              "strategy": {
+                "id": "9245bbeea861f25b15439aa4d7e5a939",
+                "name": "SpongeBaby-CarbonNet-v5.0"
+              },
+              "actions": {
+                "player-1-recrtCenter-0": "RECCOLLECTOR",
+                "player-1-recrtCenter-1": "RECCOLLECTOR"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            }
+          ]
+        },
+        {
+          "replay_state": 2,
+          "decision_observation_step": 1,
+          "sides": [
+            {
+              "seat": 0,
+              "strategy": {
+                "id": "1f5b63b85d43a90ab4d4e75c294d1d62",
+                "name": "Artemis"
+              },
+              "actions": {
+                "player-0-recrtCenter-0": "RECCOLLECTOR",
+                "player-0-recrtCenter-1": "RECPLANTER"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            },
+            {
+              "seat": 1,
+              "strategy": {
+                "id": "9245bbeea861f25b15439aa4d7e5a939",
+                "name": "SpongeBaby-CarbonNet-v5.0"
+              },
+              "actions": {
+                "player-1-worker-0": "UP",
+                "player-1-worker-1": "DOWN"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            }
+          ]
+        },
+        {
+          "replay_state": 3,
+          "decision_observation_step": 2,
+          "sides": [
+            {
+              "seat": 0,
+              "strategy": {
+                "id": "1f5b63b85d43a90ab4d4e75c294d1d62",
+                "name": "Artemis"
+              },
+              "actions": {
+                "player-0-worker-1": "LEFT",
+                "player-0-worker-0": "RIGHT"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            },
+            {
+              "seat": 1,
+              "strategy": {
+                "id": "9245bbeea861f25b15439aa4d7e5a939",
+                "name": "SpongeBaby-CarbonNet-v5.0"
+              },
+              "actions": {
+                "player-1-worker-0": "UP",
+                "player-1-worker-1": "RIGHT"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            }
+          ]
+        }
+      ],
+      "sha256": "f3ea73cab7f11332d53343a5d90de9034250813e72609adedfa7b4722b4da665"
+    },
+    {
+      "match": "88c6a8479c60c4912372de546b5d3427",
+      "game": 1,
+      "file": "replays/88c6a8479c60c4912372de546b5d3427-1.json.gz",
+      "artemis_seat": 1,
+      "opponent": {
+        "id": "0b7eaf8e37a0e0c5e658b0e315f9fbb3",
+        "name": "RyanX-AIPowercore-it980-1660k"
+      },
+      "first_recruit_artemis": {
+        "replay_state": 2,
+        "decision_observation_step": 1,
+        "base_actions": [
+          {
+            "base_id": "player-1-recrtCenter-0",
+            "position": 70,
+            "action": "RECPLANTER"
+          },
+          {
+            "base_id": "player-1-recrtCenter-1",
+            "position": 154,
+            "action": "RECCOLLECTOR"
+          }
+        ]
+      },
+      "first_recruit_opponent": {
+        "replay_state": 1,
+        "decision_observation_step": 0,
+        "base_actions": [
+          {
+            "base_id": "player-0-recrtCenter-0",
+            "position": 64,
+            "action": "RECPLANTER"
+          },
+          {
+            "base_id": "player-0-recrtCenter-1",
+            "position": 160,
+            "action": "RECCOLLECTOR"
+          }
+        ]
+      },
+      "first_three_steps": [
+        {
+          "replay_state": 1,
+          "decision_observation_step": 0,
+          "sides": [
+            {
+              "seat": 1,
+              "strategy": {
+                "id": "1f5b63b85d43a90ab4d4e75c294d1d62",
+                "name": "Artemis"
+              },
+              "actions": {},
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            },
+            {
+              "seat": 0,
+              "strategy": {
+                "id": "0b7eaf8e37a0e0c5e658b0e315f9fbb3",
+                "name": "RyanX-AIPowercore-it980-1660k"
+              },
+              "actions": {
+                "player-0-recrtCenter-0": "RECPLANTER",
+                "player-0-recrtCenter-1": "RECCOLLECTOR"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            }
+          ]
+        },
+        {
+          "replay_state": 2,
+          "decision_observation_step": 1,
+          "sides": [
+            {
+              "seat": 1,
+              "strategy": {
+                "id": "1f5b63b85d43a90ab4d4e75c294d1d62",
+                "name": "Artemis"
+              },
+              "actions": {
+                "player-1-recrtCenter-0": "RECPLANTER",
+                "player-1-recrtCenter-1": "RECCOLLECTOR"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            },
+            {
+              "seat": 0,
+              "strategy": {
+                "id": "0b7eaf8e37a0e0c5e658b0e315f9fbb3",
+                "name": "RyanX-AIPowercore-it980-1660k"
+              },
+              "actions": {
+                "player-0-worker-0": "DOWN",
+                "player-0-worker-1": "UP"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            }
+          ]
+        },
+        {
+          "replay_state": 3,
+          "decision_observation_step": 2,
+          "sides": [
+            {
+              "seat": 1,
+              "strategy": {
+                "id": "1f5b63b85d43a90ab4d4e75c294d1d62",
+                "name": "Artemis"
+              },
+              "actions": {
+                "player-1-worker-0": "LEFT",
+                "player-1-worker-1": "UP"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            },
+            {
+              "seat": 0,
+              "strategy": {
+                "id": "0b7eaf8e37a0e0c5e658b0e315f9fbb3",
+                "name": "RyanX-AIPowercore-it980-1660k"
+              },
+              "actions": {
+                "player-0-worker-0": "DOWN"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            }
+          ]
+        }
+      ],
+      "sha256": "e7d97d6f4423651c72a045bf3381c18389bccbcfac1d01b46cdf5c9d9e0f5db3"
+    },
+    {
+      "match": "001e7701a42be94b6efcdb3b1d5bf9f4",
+      "game": 1,
+      "file": "replays/001e7701a42be94b6efcdb3b1d5bf9f4-1.json.gz",
+      "artemis_seat": 0,
+      "opponent": {
+        "id": "0b7eaf8e37a0e0c5e658b0e315f9fbb3",
+        "name": "RyanX-AIPowercore-it980-1660k"
+      },
+      "first_recruit_artemis": {
+        "replay_state": 3,
+        "decision_observation_step": 2,
+        "base_actions": [
+          {
+            "base_id": "player-0-recrtCenter-0",
+            "position": 64,
+            "action": "RECPLANTER"
+          },
+          {
+            "base_id": "player-0-recrtCenter-1",
+            "position": 160,
+            "action": "RECCOLLECTOR"
+          }
+        ]
+      },
+      "first_recruit_opponent": {
+        "replay_state": 1,
+        "decision_observation_step": 0,
+        "base_actions": [
+          {
+            "base_id": "player-1-recrtCenter-0",
+            "position": 70,
+            "action": "RECCOLLECTOR"
+          },
+          {
+            "base_id": "player-1-recrtCenter-1",
+            "position": 154,
+            "action": "RECPLANTER"
+          }
+        ]
+      },
+      "first_three_steps": [
+        {
+          "replay_state": 1,
+          "decision_observation_step": 0,
+          "sides": [
+            {
+              "seat": 0,
+              "strategy": {
+                "id": "1f5b63b85d43a90ab4d4e75c294d1d62",
+                "name": "Artemis"
+              },
+              "actions": {},
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            },
+            {
+              "seat": 1,
+              "strategy": {
+                "id": "0b7eaf8e37a0e0c5e658b0e315f9fbb3",
+                "name": "RyanX-AIPowercore-it980-1660k"
+              },
+              "actions": {
+                "player-1-recrtCenter-0": "RECCOLLECTOR",
+                "player-1-recrtCenter-1": "RECPLANTER"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            }
+          ]
+        },
+        {
+          "replay_state": 2,
+          "decision_observation_step": 1,
+          "sides": [
+            {
+              "seat": 0,
+              "strategy": {
+                "id": "1f5b63b85d43a90ab4d4e75c294d1d62",
+                "name": "Artemis"
+              },
+              "actions": {},
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            },
+            {
+              "seat": 1,
+              "strategy": {
+                "id": "0b7eaf8e37a0e0c5e658b0e315f9fbb3",
+                "name": "RyanX-AIPowercore-it980-1660k"
+              },
+              "actions": {
+                "player-1-worker-1": "RIGHT",
+                "player-1-worker-0": "UP"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            }
+          ]
+        },
+        {
+          "replay_state": 3,
+          "decision_observation_step": 2,
+          "sides": [
+            {
+              "seat": 0,
+              "strategy": {
+                "id": "1f5b63b85d43a90ab4d4e75c294d1d62",
+                "name": "Artemis"
+              },
+              "actions": {
+                "player-0-recrtCenter-0": "RECPLANTER",
+                "player-0-recrtCenter-1": "RECCOLLECTOR"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            },
+            {
+              "seat": 1,
+              "strategy": {
+                "id": "0b7eaf8e37a0e0c5e658b0e315f9fbb3",
+                "name": "RyanX-AIPowercore-it980-1660k"
+              },
+              "actions": {
+                "player-1-worker-1": "RIGHT"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            }
+          ]
+        }
+      ],
+      "sha256": "7251362db889de6f5fcf612418b3b024b10b434df1f5fe35a3bd083c0cab8961"
+    },
+    {
+      "match": "508125dba3b4bfaa04c34e63e82f5f23",
+      "game": 1,
+      "file": "replays/508125dba3b4bfaa04c34e63e82f5f23-1.json.gz",
+      "artemis_seat": 0,
+      "opponent": {
+        "id": "9245bbeea861f25b15439aa4d7e5a939",
+        "name": "SpongeBaby-CarbonNet-v5.0"
+      },
+      "first_recruit_artemis": {
+        "replay_state": 2,
+        "decision_observation_step": 1,
+        "base_actions": [
+          {
+            "base_id": "player-0-recrtCenter-0",
+            "position": 64,
+            "action": "RECCOLLECTOR"
+          },
+          {
+            "base_id": "player-0-recrtCenter-1",
+            "position": 160,
+            "action": "RECPLANTER"
+          }
+        ]
+      },
+      "first_recruit_opponent": {
+        "replay_state": 1,
+        "decision_observation_step": 0,
+        "base_actions": [
+          {
+            "base_id": "player-1-recrtCenter-0",
+            "position": 70,
+            "action": "RECCOLLECTOR"
+          },
+          {
+            "base_id": "player-1-recrtCenter-1",
+            "position": 154,
+            "action": "RECCOLLECTOR"
+          }
+        ]
+      },
+      "first_three_steps": [
+        {
+          "replay_state": 1,
+          "decision_observation_step": 0,
+          "sides": [
+            {
+              "seat": 0,
+              "strategy": {
+                "id": "1f5b63b85d43a90ab4d4e75c294d1d62",
+                "name": "Artemis"
+              },
+              "actions": {},
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            },
+            {
+              "seat": 1,
+              "strategy": {
+                "id": "9245bbeea861f25b15439aa4d7e5a939",
+                "name": "SpongeBaby-CarbonNet-v5.0"
+              },
+              "actions": {
+                "player-1-recrtCenter-0": "RECCOLLECTOR",
+                "player-1-recrtCenter-1": "RECCOLLECTOR"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            }
+          ]
+        },
+        {
+          "replay_state": 2,
+          "decision_observation_step": 1,
+          "sides": [
+            {
+              "seat": 0,
+              "strategy": {
+                "id": "1f5b63b85d43a90ab4d4e75c294d1d62",
+                "name": "Artemis"
+              },
+              "actions": {
+                "player-0-recrtCenter-0": "RECCOLLECTOR",
+                "player-0-recrtCenter-1": "RECPLANTER"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            },
+            {
+              "seat": 1,
+              "strategy": {
+                "id": "9245bbeea861f25b15439aa4d7e5a939",
+                "name": "SpongeBaby-CarbonNet-v5.0"
+              },
+              "actions": {
+                "player-1-worker-0": "UP",
+                "player-1-worker-1": "DOWN"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            }
+          ]
+        },
+        {
+          "replay_state": 3,
+          "decision_observation_step": 2,
+          "sides": [
+            {
+              "seat": 0,
+              "strategy": {
+                "id": "1f5b63b85d43a90ab4d4e75c294d1d62",
+                "name": "Artemis"
+              },
+              "actions": {
+                "player-0-worker-1": "UP",
+                "player-0-worker-0": "RIGHT"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            },
+            {
+              "seat": 1,
+              "strategy": {
+                "id": "9245bbeea861f25b15439aa4d7e5a939",
+                "name": "SpongeBaby-CarbonNet-v5.0"
+              },
+              "actions": {
+                "player-1-worker-0": "UP",
+                "player-1-worker-1": "RIGHT"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            }
+          ]
+        }
+      ],
+      "sha256": "cacfc9561563cea0266e334f92504329e6f615c39baaf5f65b1efab943513aae"
+    },
+    {
+      "match": "f939187dfd142ce464b2c0297dc69ee7",
+      "game": 1,
+      "file": "replays/f939187dfd142ce464b2c0297dc69ee7-1.json.gz",
+      "artemis_seat": 0,
+      "opponent": {
+        "id": "b5bbb29e762d68d67b3334ca3a6e40e1",
+        "name": "RyanX-AIPowercore-it980-hyb"
+      },
+      "first_recruit_artemis": {
+        "replay_state": 2,
+        "decision_observation_step": 1,
+        "base_actions": [
+          {
+            "base_id": "player-0-recrtCenter-0",
+            "position": 64,
+            "action": "RECCOLLECTOR"
+          },
+          {
+            "base_id": "player-0-recrtCenter-1",
+            "position": 160,
+            "action": "RECPLANTER"
+          }
+        ]
+      },
+      "first_recruit_opponent": {
+        "replay_state": 1,
+        "decision_observation_step": 0,
+        "base_actions": [
+          {
+            "base_id": "player-1-recrtCenter-0",
+            "position": 70,
+            "action": "RECCOLLECTOR"
+          },
+          {
+            "base_id": "player-1-recrtCenter-1",
+            "position": 154,
+            "action": "RECCOLLECTOR"
+          }
+        ]
+      },
+      "first_three_steps": [
+        {
+          "replay_state": 1,
+          "decision_observation_step": 0,
+          "sides": [
+            {
+              "seat": 0,
+              "strategy": {
+                "id": "1f5b63b85d43a90ab4d4e75c294d1d62",
+                "name": "Artemis"
+              },
+              "actions": {},
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            },
+            {
+              "seat": 1,
+              "strategy": {
+                "id": "b5bbb29e762d68d67b3334ca3a6e40e1",
+                "name": "RyanX-AIPowercore-it980-hyb"
+              },
+              "actions": {
+                "player-1-recrtCenter-0": "RECCOLLECTOR",
+                "player-1-recrtCenter-1": "RECCOLLECTOR"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            }
+          ]
+        },
+        {
+          "replay_state": 2,
+          "decision_observation_step": 1,
+          "sides": [
+            {
+              "seat": 0,
+              "strategy": {
+                "id": "1f5b63b85d43a90ab4d4e75c294d1d62",
+                "name": "Artemis"
+              },
+              "actions": {
+                "player-0-recrtCenter-0": "RECCOLLECTOR",
+                "player-0-recrtCenter-1": "RECPLANTER"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            },
+            {
+              "seat": 1,
+              "strategy": {
+                "id": "b5bbb29e762d68d67b3334ca3a6e40e1",
+                "name": "RyanX-AIPowercore-it980-hyb"
+              },
+              "actions": {
+                "player-1-worker-1": "RIGHT",
+                "player-1-worker-0": "DOWN"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            }
+          ]
+        },
+        {
+          "replay_state": 3,
+          "decision_observation_step": 2,
+          "sides": [
+            {
+              "seat": 0,
+              "strategy": {
+                "id": "1f5b63b85d43a90ab4d4e75c294d1d62",
+                "name": "Artemis"
+              },
+              "actions": {
+                "player-0-worker-1": "UP",
+                "player-0-worker-0": "UP"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            },
+            {
+              "seat": 1,
+              "strategy": {
+                "id": "b5bbb29e762d68d67b3334ca3a6e40e1",
+                "name": "RyanX-AIPowercore-it980-hyb"
+              },
+              "actions": {
+                "player-1-worker-1": "RIGHT"
+              },
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            }
+          ]
+        }
+      ],
+      "sha256": "530830b63cd39af97720929901d5bade4d53f015a7819731b8f21bd55fe62e43"
+    },
+    {
+      "match": "a874c911b9f703ec98b00f713f7b4f54",
+      "game": 1,
+      "file": "replays/a874c911b9f703ec98b00f713f7b4f54-1.json.gz",
+      "artemis_seat": 1,
+      "opponent": {
+        "id": "226891089ba7f54b198c8f8dc771dfc2",
+        "name": "CarbonEdge_Artemis"
+      },
+      "first_recruit_artemis": {
+        "replay_state": 46,
+        "decision_observation_step": 45,
+        "base_actions": [
+          {
+            "base_id": "player-1-recrtCenter-0",
+            "position": 70,
+            "action": "RECPLANTER"
+          },
+          {
+            "base_id": "player-1-recrtCenter-1",
+            "position": 154,
+            "action": "RECCOLLECTOR"
+          }
+        ]
+      },
+      "first_recruit_opponent": {
+        "replay_state": 47,
+        "decision_observation_step": 46,
+        "base_actions": [
+          {
+            "base_id": "player-0-recrtCenter-0",
+            "position": 64,
+            "action": "RECCOLLECTOR"
+          },
+          {
+            "base_id": "player-0-recrtCenter-1",
+            "position": 160,
+            "action": "RECPLANTER"
+          }
+        ]
+      },
+      "first_three_steps": [
+        {
+          "replay_state": 1,
+          "decision_observation_step": 0,
+          "sides": [
+            {
+              "seat": 1,
+              "strategy": {
+                "id": "1f5b63b85d43a90ab4d4e75c294d1d62",
+                "name": "Artemis"
+              },
+              "actions": {},
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            },
+            {
+              "seat": 0,
+              "strategy": {
+                "id": "226891089ba7f54b198c8f8dc771dfc2",
+                "name": "CarbonEdge_Artemis"
+              },
+              "actions": {},
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            }
+          ]
+        },
+        {
+          "replay_state": 2,
+          "decision_observation_step": 1,
+          "sides": [
+            {
+              "seat": 1,
+              "strategy": {
+                "id": "1f5b63b85d43a90ab4d4e75c294d1d62",
+                "name": "Artemis"
+              },
+              "actions": {},
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            },
+            {
+              "seat": 0,
+              "strategy": {
+                "id": "226891089ba7f54b198c8f8dc771dfc2",
+                "name": "CarbonEdge_Artemis"
+              },
+              "actions": {},
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            }
+          ]
+        },
+        {
+          "replay_state": 3,
+          "decision_observation_step": 2,
+          "sides": [
+            {
+              "seat": 1,
+              "strategy": {
+                "id": "1f5b63b85d43a90ab4d4e75c294d1d62",
+                "name": "Artemis"
+              },
+              "actions": {},
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            },
+            {
+              "seat": 0,
+              "strategy": {
+                "id": "226891089ba7f54b198c8f8dc771dfc2",
+                "name": "CarbonEdge_Artemis"
+              },
+              "actions": {},
+              "status": "ACTIVE",
+              "info": {},
+              "remainingOverageTime": 5
+            }
+          ]
+        }
+      ],
+      "sha256": "89c82c2e9d0d2a604a3749432307960be7ecd0e4becc24ccd8e66f85df3e6aa7"
+    }
+  ]
+}

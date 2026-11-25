@@ -1,10 +1,14 @@
 # Carbon League 策略
 
-## 当前研究交接：v8 own-prior 已通过本轮本地验收
+## 当前研究交接：v9 已上线，冠军回放与一步响应式开局验证
+
+**最新 Codex 交接：[v9 上线后的冠军回放研究与下一步协议](analysis/v9-leader-study-20261125.md)。** 维护者确认 v8 own-prior 已作为 yan-QQ-v9 上线。11 月 25 日 10:59 官方导出快照记录其 30 局 16 胜、对当前前六 1 胜 7 负，尚无强敌突破。已分析同一 Artemis ID 的 28 场完整回放，并封存原始输入和复算程序。冠军 28/28 场首步等待；v9 的现有响应式开局被随后立即招募规则覆盖。这是值得验证的旧策略取舍，不是已证实的冠军胜因。下一步只从冻结 v9 恢复现有一步响应式开局，以新地图换边做最多 24+24 局，未达门槛即停止；联合队伍候选训练保留为条件性方向，不同步启动。
+
+当前线上 v9 ID 为 `0f9896ed3dc3cd7bfad29fe2dd38d6fb`；本地对应文件见 [`e97a386` 的 yan-v8-own-prior.py](https://github.com/Zhaoyi-Yan/carbon/blob/e97a386b290a1727f26331470094ab57cd452948/yan-v8-own-prior.py)，SHA-256 `83bc00ca…`。`selfplay.py` 目前没有 `yan-v9` 别名，比较 v9 必须显式传冻结文件路径。线上回放不含源码 SHA，文件对应依赖维护者的部署说明。
 
 [研究方案 v2](analysis/carbon-zero-research-plan-20261124.md) 定义了复用 ft3 Apollo、合法观测、固定温度、混合终局效用的 Zero-W 路线。[首轮 200k PPO 实验](https://github.com/Zhaoyi-Yan/carbon/blob/c73c2837e7a0ead8c29f0ffe0c17f9416db66e72/analysis/carbon-zero/README.md) 已完成但棋力退化，冻结 v8 不变。
 
-**当前 Codex 交接：[v8 own-prior 复审：本地验收通过，冻结候选并交付](analysis/v8-own-prior-review-20261125.md)。** 已核对 `experiment/v8-own-prior` 的 `e97a386`：只更新完整 v8 的两个已有 prior 参数槽，同一候选初筛 14–10、独立确认 15–9；确认平均 U +0.1562，地图区间下界约 +0.006，通过原定门槛。合并 48 局 29–19，但区间跨零、席位贡献不均，不能称稳定普遍优势或已能击败前六。冻结候选 SHA `83bc00ca…`，结束本轮开发，不追加第三批 v8 对战或重训；列为待维护者决定线上评测的候选，发布 v8 不变。
+上一轮已完成：[v8 own-prior 复审：本地验收通过，冻结候选并交付](analysis/v8-own-prior-review-20261125.md)。`experiment/v8-own-prior` 的 `e97a386` 只更新完整 v8 的两个已有 prior 参数槽，同一候选初筛 14–10、独立确认 15–9；确认平均 U +0.1562，地图区间下界约 +0.006，通过原定门槛。合并 48 局 29–19，但区间跨零、席位贡献不均，不能称稳定普遍优势或已能击败前六。这轮开发已结束，不追加第三批对 v8 的验收；后续部署与线上结果以上方最新交接为准。
 
 [前轮路线调整与原协议](analysis/carbon-route-reset-20261125.md)已完成本次有限尝试；Zero 的 M/G/M-wide 继续暂停。[M/G 首种子复审](analysis/carbon-zero-mg-review-20261125.md)、[B1-fixed/M-G 协议](analysis/carbon-zero-b1fixed-review-20261124.md)、[B1 复审](analysis/carbon-zero-b1-review-20261124.md)和[更早 PPO/RLOO 方案](analysis/carbon-zero-rl-followup-20261124.md)保留为历史记录。
 
@@ -12,7 +16,7 @@
 
 ## yan-v8 实验交接
 
-当前已发布基线为 [yan-v8.py](yan-v8.py)，冻结标签为 `v11-yan-v8-elite-refit`。[2026-11-24 实验结论与执行计划](analysis/yan-v8-next-experiments-20261124.md)保留了持续树任务、回本筛选和联合动作实验的结果、回放要求及评分审查案例。最新执行优先级以上方路线调整文档为准。
+前代已发布基线为 [yan-v8.py](yan-v8.py)，冻结标签为 `v11-yan-v8-elite-refit`。[2026-11-24 实验结论与执行计划](analysis/yan-v8-next-experiments-20261124.md)保留了持续树任务、回本筛选和联合动作实验的结果、回放要求及评分审查案例。当前 v9 及最新执行优先级以上方冠军回放研究为准。
 
 ## 历史主力 yan-v7
 

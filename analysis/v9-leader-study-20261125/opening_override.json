@@ -1,0 +1,505 @@
+{
+  "source_commit": "e97a386b290a1727f26331470094ab57cd452948",
+  "source_sha256": "83bc00ca52ba42ece876830649c9bc488105e763179b62018558f555bb94fa9c",
+  "index_sha256": "a328b208a39a325907fd249aceb97895fefc89322eae090309bc991ee1471096",
+  "opening_call_order": [
+    {
+      "line": 2591,
+      "helper": "_r6_opening"
+    },
+    {
+      "line": 2592,
+      "helper": "_v7_early_income"
+    }
+  ],
+  "games": 30,
+  "wait_overridden_in_all": true,
+  "records": [
+    {
+      "match": "86efa8aad4accc0e059f1bbee4ee7652",
+      "game": 1,
+      "seat": 0,
+      "replay_sha256": "6de1f290cf0cf06dfc3862c62c17f5626e26f0d37326ac1a117666333c06607d",
+      "reactive_action": {},
+      "overridden_role_counts": {
+        "RECPLANTER": 1,
+        "RECCOLLECTOR": 1
+      },
+      "observed_action": {
+        "player-0-recrtCenter-0": "RECCOLLECTOR",
+        "player-0-recrtCenter-1": "RECPLANTER"
+      },
+      "synthetic_step1_hires": true
+    },
+    {
+      "match": "15af4ed6a7cacb77604529e97efdee44",
+      "game": 1,
+      "seat": 1,
+      "replay_sha256": "43536433a57fb18fd9263b08377e730332df93af6e38b6bfc0eb5aa9fc442e17",
+      "reactive_action": {},
+      "overridden_role_counts": {
+        "RECPLANTER": 1,
+        "RECCOLLECTOR": 1
+      },
+      "observed_action": {
+        "player-1-recrtCenter-0": "RECCOLLECTOR",
+        "player-1-recrtCenter-1": "RECPLANTER"
+      },
+      "synthetic_step1_hires": true
+    },
+    {
+      "match": "6ea8729262153de4533d87f5622a0351",
+      "game": 1,
+      "seat": 0,
+      "replay_sha256": "719b1a67b7c24317b2821bd1fd80db07ca06d5fa2452862167295e61963d1e9f",
+      "reactive_action": {},
+      "overridden_role_counts": {
+        "RECPLANTER": 1,
+        "RECCOLLECTOR": 1
+      },
+      "observed_action": {
+        "player-0-recrtCenter-0": "RECCOLLECTOR",
+        "player-0-recrtCenter-1": "RECPLANTER"
+      },
+      "synthetic_step1_hires": true
+    },
+    {
+      "match": "8d6d15bbd702aae47f7e6ce4dcfeaaba",
+      "game": 1,
+      "seat": 0,
+      "replay_sha256": "a15305057ddecd83f6c5acc5983b9ed4ca2026af53e7d9cc430a58b4647aceb9",
+      "reactive_action": {},
+      "overridden_role_counts": {
+        "RECPLANTER": 1,
+        "RECCOLLECTOR": 1
+      },
+      "observed_action": {
+        "player-0-recrtCenter-0": "RECCOLLECTOR",
+        "player-0-recrtCenter-1": "RECPLANTER"
+      },
+      "synthetic_step1_hires": true
+    },
+    {
+      "match": "ab0d9365b57e6ae7f40ccabac0db5a8b",
+      "game": 1,
+      "seat": 1,
+      "replay_sha256": "fc507ef6c61df30cd1ad1c7432f203364fed1f4411a59aee5473231611127c1e",
+      "reactive_action": {},
+      "overridden_role_counts": {
+        "RECPLANTER": 1,
+        "RECCOLLECTOR": 1
+      },
+      "observed_action": {
+        "player-1-recrtCenter-0": "RECCOLLECTOR",
+        "player-1-recrtCenter-1": "RECPLANTER"
+      },
+      "synthetic_step1_hires": true
+    },
+    {
+      "match": "e9905efb729f9459f62360096c2d418b",
+      "game": 1,
+      "seat": 0,
+      "replay_sha256": "e85ac368108ef7c90b4bb90cc59eeb2e016dacf448c63fc428be8a5cb12db0cd",
+      "reactive_action": {},
+      "overridden_role_counts": {
+        "RECPLANTER": 1,
+        "RECCOLLECTOR": 1
+      },
+      "observed_action": {
+        "player-0-recrtCenter-0": "RECCOLLECTOR",
+        "player-0-recrtCenter-1": "RECPLANTER"
+      },
+      "synthetic_step1_hires": true
+    },
+    {
+      "match": "8b59756e734cd057a75804d44baa944d",
+      "game": 1,
+      "seat": 0,
+      "replay_sha256": "0040954102b3161e8ee68e3a93d87b716a8326dc9716f9d0b477d539ec7c9f61",
+      "reactive_action": {},
+      "overridden_role_counts": {
+        "RECPLANTER": 1,
+        "RECCOLLECTOR": 1
+      },
+      "observed_action": {
+        "player-0-recrtCenter-0": "RECCOLLECTOR",
+        "player-0-recrtCenter-1": "RECPLANTER"
+      },
+      "synthetic_step1_hires": true
+    },
+    {
+      "match": "c5d39f2cc127d8a19f754c4dea5a12a3",
+      "game": 1,
+      "seat": 0,
+      "replay_sha256": "415e39ac90138959cf9f642673d5b3917a33887cd0e65953e3211bd6b7dae869",
+      "reactive_action": {},
+      "overridden_role_counts": {
+        "RECPLANTER": 1,
+        "RECCOLLECTOR": 1
+      },
+      "observed_action": {
+        "player-0-recrtCenter-0": "RECCOLLECTOR",
+        "player-0-recrtCenter-1": "RECPLANTER"
+      },
+      "synthetic_step1_hires": true
+    },
+    {
+      "match": "6e15b5a584435115d9c059b404f3abea",
+      "game": 1,
+      "seat": 1,
+      "replay_sha256": "34c80eb44394d58d1efd21439aba31f5a794788ab850be0360ee88987ae7fbd5",
+      "reactive_action": {},
+      "overridden_role_counts": {
+        "RECPLANTER": 1,
+        "RECCOLLECTOR": 1
+      },
+      "observed_action": {
+        "player-1-recrtCenter-0": "RECCOLLECTOR",
+        "player-1-recrtCenter-1": "RECPLANTER"
+      },
+      "synthetic_step1_hires": true
+    },
+    {
+      "match": "87533856d5f256daa45bc3072b649351",
+      "game": 1,
+      "seat": 0,
+      "replay_sha256": "2e0b9f211bda890313654f75ea7c2a5d3081152505881882c78f58b9b00cecaa",
+      "reactive_action": {},
+      "overridden_role_counts": {
+        "RECPLANTER": 1,
+        "RECCOLLECTOR": 1
+      },
+      "observed_action": {
+        "player-0-recrtCenter-0": "RECCOLLECTOR",
+        "player-0-recrtCenter-1": "RECPLANTER"
+      },
+      "synthetic_step1_hires": true
+    },
+    {
+      "match": "600b358e3b9680f2bc1fe9cd106e558a",
+      "game": 1,
+      "seat": 1,
+      "replay_sha256": "32dcdc9ef6839c40429571269b46be01a004a9ce4c9929dfc3253d2081ed2188",
+      "reactive_action": {},
+      "overridden_role_counts": {
+        "RECPLANTER": 1,
+        "RECCOLLECTOR": 1
+      },
+      "observed_action": {
+        "player-1-recrtCenter-0": "RECCOLLECTOR",
+        "player-1-recrtCenter-1": "RECPLANTER"
+      },
+      "synthetic_step1_hires": true
+    },
+    {
+      "match": "73ce959555fd0320ab02011d2a3885de",
+      "game": 1,
+      "seat": 1,
+      "replay_sha256": "10ec562b4d0f2a235ad5a910c13e4c57a3111e675f1c6a1d38767b4558da9f18",
+      "reactive_action": {},
+      "overridden_role_counts": {
+        "RECPLANTER": 1,
+        "RECCOLLECTOR": 1
+      },
+      "observed_action": {
+        "player-1-recrtCenter-0": "RECCOLLECTOR",
+        "player-1-recrtCenter-1": "RECPLANTER"
+      },
+      "synthetic_step1_hires": true
+    },
+    {
+      "match": "ca713c43dba21b5eb554879a0dd3ad5b",
+      "game": 1,
+      "seat": 1,
+      "replay_sha256": "520e2a36bc182913ea057000aeb87bdf6dfea1ef2be82d04eef3c24bfb7c1488",
+      "reactive_action": {},
+      "overridden_role_counts": {
+        "RECPLANTER": 1,
+        "RECCOLLECTOR": 1
+      },
+      "observed_action": {
+        "player-1-recrtCenter-0": "RECCOLLECTOR",
+        "player-1-recrtCenter-1": "RECPLANTER"
+      },
+      "synthetic_step1_hires": true
+    },
+    {
+      "match": "4609bfde95230653475573a39610637c",
+      "game": 1,
+      "seat": 0,
+      "replay_sha256": "cb03042ef6c1bc1406032375e2c3145d8e7f053ad0b343e9da6ee9ddf5adc5c9",
+      "reactive_action": {},
+      "overridden_role_counts": {
+        "RECPLANTER": 1,
+        "RECCOLLECTOR": 1
+      },
+      "observed_action": {
+        "player-0-recrtCenter-0": "RECCOLLECTOR",
+        "player-0-recrtCenter-1": "RECPLANTER"
+      },
+      "synthetic_step1_hires": true
+    },
+    {
+      "match": "776f6b5fdd2f1110361d7215c77f8cae",
+      "game": 1,
+      "seat": 1,
+      "replay_sha256": "3ca617e9c551ddae3834e8b36328d5a98fac2e58b58bdd853a1038837e63a28d",
+      "reactive_action": {},
+      "overridden_role_counts": {
+        "RECPLANTER": 1,
+        "RECCOLLECTOR": 1
+      },
+      "observed_action": {
+        "player-1-recrtCenter-0": "RECCOLLECTOR",
+        "player-1-recrtCenter-1": "RECPLANTER"
+      },
+      "synthetic_step1_hires": true
+    },
+    {
+      "match": "da51afe8b21d11595ef65ace5dad91ba",
+      "game": 1,
+      "seat": 1,
+      "replay_sha256": "d06a391156f7dfbf1989c87e642097948316b5513109bea7d9f67c15244c6301",
+      "reactive_action": {},
+      "overridden_role_counts": {
+        "RECPLANTER": 1,
+        "RECCOLLECTOR": 1
+      },
+      "observed_action": {
+        "player-1-recrtCenter-0": "RECCOLLECTOR",
+        "player-1-recrtCenter-1": "RECPLANTER"
+      },
+      "synthetic_step1_hires": true
+    },
+    {
+      "match": "b1ff97311c052eec32b6534fa88c6142",
+      "game": 1,
+      "seat": 0,
+      "replay_sha256": "0108532802d33dc812f9a0e173b09a042f0f41967fd7a232c1c6ceba24517804",
+      "reactive_action": {},
+      "overridden_role_counts": {
+        "RECPLANTER": 1,
+        "RECCOLLECTOR": 1
+      },
+      "observed_action": {
+        "player-0-recrtCenter-0": "RECCOLLECTOR",
+        "player-0-recrtCenter-1": "RECPLANTER"
+      },
+      "synthetic_step1_hires": true
+    },
+    {
+      "match": "94bf2d6d77d42fe5ae1830056aef2381",
+      "game": 1,
+      "seat": 0,
+      "replay_sha256": "043a61944e3cdfbb6e705449bf4f0604b92677b47f281a2c063d70f19ada634d",
+      "reactive_action": {},
+      "overridden_role_counts": {
+        "RECPLANTER": 1,
+        "RECCOLLECTOR": 1
+      },
+      "observed_action": {
+        "player-0-recrtCenter-0": "RECCOLLECTOR",
+        "player-0-recrtCenter-1": "RECPLANTER"
+      },
+      "synthetic_step1_hires": true
+    },
+    {
+      "match": "9e564fafe221eac34614b1c00b8efa15",
+      "game": 1,
+      "seat": 0,
+      "replay_sha256": "68562d58d710976d3dcd848607bedd50f832d31dbbe5815a745e4eb4f5f6eb86",
+      "reactive_action": {},
+      "overridden_role_counts": {
+        "RECPLANTER": 1,
+        "RECCOLLECTOR": 1
+      },
+      "observed_action": {
+        "player-0-recrtCenter-0": "RECCOLLECTOR",
+        "player-0-recrtCenter-1": "RECPLANTER"
+      },
+      "synthetic_step1_hires": true
+    },
+    {
+      "match": "dd01303ffb155f0959a01d233abbd030",
+      "game": 1,
+      "seat": 1,
+      "replay_sha256": "92d1d3a92d08169249417d383bde6fa8fc4179e865f68675479c5b1b7eafcaa1",
+      "reactive_action": {},
+      "overridden_role_counts": {
+        "RECPLANTER": 1,
+        "RECCOLLECTOR": 1
+      },
+      "observed_action": {
+        "player-1-recrtCenter-0": "RECCOLLECTOR",
+        "player-1-recrtCenter-1": "RECPLANTER"
+      },
+      "synthetic_step1_hires": true
+    },
+    {
+      "match": "deed400ffc38ca410404befbbd2baacf",
+      "game": 1,
+      "seat": 0,
+      "replay_sha256": "afca71b0fc5d1e4572cf2b93cbe54ce805dd75869e66a445b6119177ff084ea3",
+      "reactive_action": {},
+      "overridden_role_counts": {
+        "RECPLANTER": 1,
+        "RECCOLLECTOR": 1
+      },
+      "observed_action": {
+        "player-0-recrtCenter-0": "RECCOLLECTOR",
+        "player-0-recrtCenter-1": "RECPLANTER"
+      },
+      "synthetic_step1_hires": true
+    },
+    {
+      "match": "696b23acc365be133f8611b45ff97806",
+      "game": 1,
+      "seat": 0,
+      "replay_sha256": "0213f1bbea7e90e3d0f14e72f964e362443c81698341f17baf06b67cbcaf62dc",
+      "reactive_action": {},
+      "overridden_role_counts": {
+        "RECPLANTER": 1,
+        "RECCOLLECTOR": 1
+      },
+      "observed_action": {
+        "player-0-recrtCenter-0": "RECCOLLECTOR",
+        "player-0-recrtCenter-1": "RECPLANTER"
+      },
+      "synthetic_step1_hires": true
+    },
+    {
+      "match": "d9bbe30417b7ed41fe67b00d0a125a8d",
+      "game": 1,
+      "seat": 0,
+      "replay_sha256": "5dc1e5402421602419ae6bb170165e02b28f6e4e397f128b6d937edc8e883ce2",
+      "reactive_action": {},
+      "overridden_role_counts": {
+        "RECPLANTER": 1,
+        "RECCOLLECTOR": 1
+      },
+      "observed_action": {
+        "player-0-recrtCenter-0": "RECCOLLECTOR",
+        "player-0-recrtCenter-1": "RECPLANTER"
+      },
+      "synthetic_step1_hires": true
+    },
+    {
+      "match": "0911c5eab0b7bfd8bdaa5ac3d1066933",
+      "game": 1,
+      "seat": 0,
+      "replay_sha256": "4f7c56e954bdca47a8465001c563963c7c2011ad1768cfcc9d145712b877ac21",
+      "reactive_action": {},
+      "overridden_role_counts": {
+        "RECPLANTER": 1,
+        "RECCOLLECTOR": 1
+      },
+      "observed_action": {
+        "player-0-recrtCenter-0": "RECCOLLECTOR",
+        "player-0-recrtCenter-1": "RECPLANTER"
+      },
+      "synthetic_step1_hires": true
+    },
+    {
+      "match": "10d10856d552614caca777fd43c6e6d1",
+      "game": 1,
+      "seat": 1,
+      "replay_sha256": "ba4cb146eabbcb6a1fac1788b1b070a1a5239269b8e5cae3ec38f7c81e313ea1",
+      "reactive_action": {},
+      "overridden_role_counts": {
+        "RECPLANTER": 1,
+        "RECCOLLECTOR": 1
+      },
+      "observed_action": {
+        "player-1-recrtCenter-0": "RECCOLLECTOR",
+        "player-1-recrtCenter-1": "RECPLANTER"
+      },
+      "synthetic_step1_hires": true
+    },
+    {
+      "match": "99c5bbce4affbe3a3a71342d8c94d3e3",
+      "game": 1,
+      "seat": 0,
+      "replay_sha256": "7b7c8c608fdf45c8c4bd309536d6f46066ed28c672b52473f40a2744832899d3",
+      "reactive_action": {},
+      "overridden_role_counts": {
+        "RECPLANTER": 1,
+        "RECCOLLECTOR": 1
+      },
+      "observed_action": {
+        "player-0-recrtCenter-0": "RECCOLLECTOR",
+        "player-0-recrtCenter-1": "RECPLANTER"
+      },
+      "synthetic_step1_hires": true
+    },
+    {
+      "match": "9e71ae3c7c66aff92ff3dbc6f787efa6",
+      "game": 1,
+      "seat": 1,
+      "replay_sha256": "98afc04ae97a942f6cf4ab0511acf646abcdc515b67f33fb826b68c79b661857",
+      "reactive_action": {},
+      "overridden_role_counts": {
+        "RECPLANTER": 1,
+        "RECCOLLECTOR": 1
+      },
+      "observed_action": {
+        "player-1-recrtCenter-0": "RECCOLLECTOR",
+        "player-1-recrtCenter-1": "RECPLANTER"
+      },
+      "synthetic_step1_hires": true
+    },
+    {
+      "match": "3cf36c47cc88872532f884584ebf5fdc",
+      "game": 1,
+      "seat": 1,
+      "replay_sha256": "462bc86dbcf94ea3427d98e0053b2c95a23571c4fa929d6fbbd7c80c2a2ab7ac",
+      "reactive_action": {},
+      "overridden_role_counts": {
+        "RECPLANTER": 1,
+        "RECCOLLECTOR": 1
+      },
+      "observed_action": {
+        "player-1-recrtCenter-0": "RECCOLLECTOR",
+        "player-1-recrtCenter-1": "RECPLANTER"
+      },
+      "synthetic_step1_hires": true
+    },
+    {
+      "match": "61cecd2fb627566a8bf33ad5a0456022",
+      "game": 1,
+      "seat": 1,
+      "replay_sha256": "aab59092008e4f6f8be5c17ef82b959a91c2d2d65336ca7e396d8e07969936b2",
+      "reactive_action": {},
+      "overridden_role_counts": {
+        "RECPLANTER": 1,
+        "RECCOLLECTOR": 1
+      },
+      "observed_action": {
+        "player-1-recrtCenter-0": "RECCOLLECTOR",
+        "player-1-recrtCenter-1": "RECPLANTER"
+      },
+      "synthetic_step1_hires": true
+    },
+    {
+      "match": "1c7c65dafb1e5cca31d21576f96482f6",
+      "game": 1,
+      "seat": 0,
+      "replay_sha256": "bff217e556f27bc3ccd6aeddc0c50c3358ab5d6a8dba631afc5d856d4c7670ef",
+      "reactive_action": {},
+      "overridden_role_counts": {
+        "RECPLANTER": 1,
+        "RECCOLLECTOR": 1
+      },
+      "observed_action": {
+        "player-0-recrtCenter-0": "RECCOLLECTOR",
+        "player-0-recrtCenter-1": "RECPLANTER"
+      },
+      "synthetic_step1_hires": true
+    }
+  ],
+  "limits": [
+    "Zero logits test only the wait/hire invariant, not actual network-selected base placement.",
+    "No new games or performance comparison were run.",
+    "Online v9-to-local artifact identity is reported by the user; public replay metadata does not include source SHA.",
+    "The old immediate-hire rule was intentional and had prior development evidence; this does not prove it is harmful."
+  ]
+}
