@@ -1,0 +1,25 @@
+{
+  "panel": "screen",
+  "games": 24,
+  "wins": 11,
+  "draws": 0,
+  "losses": 13,
+  "mean_utility": -0.06170374370334833,
+  "sd_utility": 0.6416194777981808,
+  "mean_margin": -82.09291666666672,
+  "seats": {
+    "0": {
+      "wins": 5,
+      "losses": 7,
+      "mean_utility": -0.1118958220282418
+    },
+    "1": {
+      "wins": 6,
+      "losses": 6,
+      "mean_utility": -0.011511665378454855
+    }
+  },
+  "failures": 0,
+  "max_act_seconds": 0.8190091249998659,
+  "decision": "screen failed: mean U <= 0; no confirm batch"
+}

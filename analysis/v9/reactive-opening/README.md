@@ -28,3 +28,17 @@
 - Screen: 24 games, mean U > 0, all games finish normally, no candidate failure.
 - Confirm: 24 independent games, same SHA, mean U > 0 and 95% map-bootstrap lower bound > 0 (fixed RNG 20261125, 1,000,000 resamples).
 - Failure at either stage ends the candidate; no third batch, no wait-time scan, no CP/PC tuning.
+
+## Result (screen, 24 games)
+
+| Metric | Value |
+| --- | --- |
+| W–D–L | 11–0–13 |
+| Mean U | **−0.0617** (sd 0.642) |
+| Mean margin | −82.1 |
+| Seat 0 / seat 1 | 5–7, U −0.112 / 6–6, U −0.012 |
+| Finishes | 24/24 at 299 steps, 0 failures, slowest move 0.819 s |
+
+**The screen gate requires mean U > 0; it failed (−0.0617), so the candidate stops here.** Per the pre-registered protocol: no confirm batch, no third batch, no wait-time scan, no CP/PC tuning on the same confirmation maps.
+
+This only rejects "remove the early-income override on top of frozen v9" at this 24-game budget; it does not prove every reactive opening is useless. The negative result and the per-game JSONL are retained.
