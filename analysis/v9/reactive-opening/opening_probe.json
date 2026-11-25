@@ -1,0 +1,213 @@
+{
+  "candidate": {
+    "path": "yan-v9-reactive-opening.py",
+    "sha256": "e69766bdb72994cfbc01dc685155f5c2e9a087c86e1582c5317bfe9d82d06dab",
+    "bytes": 9137472
+  },
+  "baseline": {
+    "path": "/tmp/carbon-v9-baseline.py",
+    "sha256": "83bc00ca52ba42ece876830649c9bc488105e763179b62018558f555bb94fa9c"
+  },
+  "seeds": [
+    101,
+    202,
+    303
+  ],
+  "checks": {
+    "candidate_waits_at_step0": true,
+    "baseline_recruits_at_step0": true,
+    "candidate_recruits_at_step1": true,
+    "search_engine_loaded": true
+  },
+  "rows": [
+    {
+      "seed": 101,
+      "step0": {
+        "0": {
+          "candidate": {
+            "total": 0,
+            "collectors": 0,
+            "planters": 0,
+            "actions": {}
+          },
+          "baseline": {
+            "total": 2,
+            "collectors": 1,
+            "planters": 1,
+            "actions": {
+              "player-0-recrtCenter-0": "RECCOLLECTOR",
+              "player-0-recrtCenter-1": "RECPLANTER"
+            }
+          }
+        },
+        "1": {
+          "candidate": {
+            "total": 0,
+            "collectors": 0,
+            "planters": 0,
+            "actions": {}
+          },
+          "baseline": {
+            "total": 2,
+            "collectors": 1,
+            "planters": 1,
+            "actions": {
+              "player-1-recrtCenter-0": "RECCOLLECTOR",
+              "player-1-recrtCenter-1": "RECPLANTER"
+            }
+          }
+        }
+      },
+      "step1": {
+        "0": {
+          "candidate": {
+            "total": 2,
+            "collectors": 1,
+            "planters": 1,
+            "actions": {
+              "player-0-recrtCenter-0": "RECCOLLECTOR",
+              "player-0-recrtCenter-1": "RECPLANTER"
+            }
+          }
+        },
+        "1": {
+          "candidate": {
+            "total": 2,
+            "collectors": 1,
+            "planters": 1,
+            "actions": {
+              "player-1-recrtCenter-0": "RECCOLLECTOR",
+              "player-1-recrtCenter-1": "RECPLANTER"
+            }
+          }
+        }
+      }
+    },
+    {
+      "seed": 202,
+      "step0": {
+        "0": {
+          "candidate": {
+            "total": 0,
+            "collectors": 0,
+            "planters": 0,
+            "actions": {}
+          },
+          "baseline": {
+            "total": 2,
+            "collectors": 1,
+            "planters": 1,
+            "actions": {
+              "player-0-recrtCenter-0": "RECCOLLECTOR",
+              "player-0-recrtCenter-1": "RECPLANTER"
+            }
+          }
+        },
+        "1": {
+          "candidate": {
+            "total": 0,
+            "collectors": 0,
+            "planters": 0,
+            "actions": {}
+          },
+          "baseline": {
+            "total": 2,
+            "collectors": 1,
+            "planters": 1,
+            "actions": {
+              "player-1-recrtCenter-0": "RECCOLLECTOR",
+              "player-1-recrtCenter-1": "RECPLANTER"
+            }
+          }
+        }
+      },
+      "step1": {
+        "0": {
+          "candidate": {
+            "total": 2,
+            "collectors": 1,
+            "planters": 1,
+            "actions": {
+              "player-0-recrtCenter-0": "RECCOLLECTOR",
+              "player-0-recrtCenter-1": "RECPLANTER"
+            }
+          }
+        },
+        "1": {
+          "candidate": {
+            "total": 2,
+            "collectors": 1,
+            "planters": 1,
+            "actions": {
+              "player-1-recrtCenter-0": "RECCOLLECTOR",
+              "player-1-recrtCenter-1": "RECPLANTER"
+            }
+          }
+        }
+      }
+    },
+    {
+      "seed": 303,
+      "step0": {
+        "0": {
+          "candidate": {
+            "total": 0,
+            "collectors": 0,
+            "planters": 0,
+            "actions": {}
+          },
+          "baseline": {
+            "total": 2,
+            "collectors": 1,
+            "planters": 1,
+            "actions": {
+              "player-0-recrtCenter-0": "RECCOLLECTOR",
+              "player-0-recrtCenter-1": "RECPLANTER"
+            }
+          }
+        },
+        "1": {
+          "candidate": {
+            "total": 0,
+            "collectors": 0,
+            "planters": 0,
+            "actions": {}
+          },
+          "baseline": {
+            "total": 2,
+            "collectors": 1,
+            "planters": 1,
+            "actions": {
+              "player-1-recrtCenter-0": "RECCOLLECTOR",
+              "player-1-recrtCenter-1": "RECPLANTER"
+            }
+          }
+        }
+      },
+      "step1": {
+        "0": {
+          "candidate": {
+            "total": 2,
+            "collectors": 1,
+            "planters": 1,
+            "actions": {
+              "player-0-recrtCenter-0": "RECCOLLECTOR",
+              "player-0-recrtCenter-1": "RECPLANTER"
+            }
+          }
+        },
+        "1": {
+          "candidate": {
+            "total": 2,
+            "collectors": 1,
+            "planters": 1,
+            "actions": {
+              "player-1-recrtCenter-0": "RECCOLLECTOR",
+              "player-1-recrtCenter-1": "RECPLANTER"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

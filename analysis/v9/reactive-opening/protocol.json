@@ -1,0 +1,128 @@
+{
+  "experiment": "v9-reactive-opening",
+  "candidate": {
+    "sha256": "e69766bdb72994cfbc01dc685155f5c2e9a087c86e1582c5317bfe9d82d06dab",
+    "bytes": 9137472,
+    "change": "remove the _v7_early_income call in _act"
+  },
+  "baseline": {
+    "sha256": "83bc00ca52ba42ece876830649c9bc488105e763179b62018558f555bb94fa9c",
+    "bytes": 9137552,
+    "source": "e97a386b290a1727f26331470094ab57cd452948:yan-v8-own-prior.py"
+  },
+  "panels": {
+    "screen": [
+      {
+        "seed": 3108530603,
+        "layout": "263f6b82cbb44f4133c92ea5c8d1aec3fe94435770ba4b0296bdfd6893ad36ca"
+      },
+      {
+        "seed": 3560790262,
+        "layout": "54a9f6dadc707bbfb138780feac1fe06084a8553710edba233c959a929f45fb4"
+      },
+      {
+        "seed": 621089652,
+        "layout": "fd5f993f3f63fe90abcfb8c31f5e79974b40f396f0a33b58df63483b28ebaf3b"
+      },
+      {
+        "seed": 405237007,
+        "layout": "4c587e55579970e09b41662904c38d219b1b5698c9e4b3d515ea611886a7515b"
+      },
+      {
+        "seed": 1227022801,
+        "layout": "1e7d1d4ccefabf67300da082b83f9d4a244f6d7b2c7ae0c47a417fd68dcd4ce1"
+      },
+      {
+        "seed": 394998546,
+        "layout": "2e8972e7ee2824e39e0058ff8deff66dda8bdb394ba535b0ffb6700a96f98bbb"
+      },
+      {
+        "seed": 2837174629,
+        "layout": "d1b0a2c13f490febc70d0f75fbb1658d2edd23a32ee492fce37ea7873577cd60"
+      },
+      {
+        "seed": 2048395415,
+        "layout": "cd56df11784dbbdd9bd672f13443a06ce4b388642e73b53050311b051a836bad"
+      },
+      {
+        "seed": 563169343,
+        "layout": "75f1bca7666c10006d44b97df584ac35cb9be112a3cc4e170b59b15018695a0a"
+      },
+      {
+        "seed": 2485038877,
+        "layout": "05ded7e45f2034d1862f1a6ea7d5dc64df9ad49173e245d9f28447c4edda8b87"
+      },
+      {
+        "seed": 2073798114,
+        "layout": "78bc0cfcb45ebf3f9bf71f0240b7ab9b407467f541a94219517d564f295b804c"
+      },
+      {
+        "seed": 3458769650,
+        "layout": "799b499e5190eb8b8d9af75654919e1481e1050d4819cb5561f7f4165b41c351"
+      }
+    ],
+    "confirm": [
+      {
+        "seed": 2367042887,
+        "layout": "aa851f419c8d1a7e5fce128140385ff0d0d0d403c80901e0cb54226a27867d91"
+      },
+      {
+        "seed": 2420426894,
+        "layout": "1f1fceddeea7f06160fb91076ada33b3501aa06de804167cffe206d342d4754c"
+      },
+      {
+        "seed": 1905545191,
+        "layout": "1ae22618e41fcf7b459384fc447737484020013dfea52d39f978c1014dae08a9"
+      },
+      {
+        "seed": 32731049,
+        "layout": "7f12c717a6589268e9a13d6c98d69bf7743ea51dd9725b1b312db706be1c81c8"
+      },
+      {
+        "seed": 1303850999,
+        "layout": "8ef035ed72981f1aca70d1cbfe8b5d207ffefe4e4ceb1a890352cf3c14bf7b18"
+      },
+      {
+        "seed": 905668172,
+        "layout": "a9dd27002416d16074be7681586856a15a1441bdb4d41cc5139ec43225d7826c"
+      },
+      {
+        "seed": 2196696283,
+        "layout": "921bbc428c6cbe94ce37be602c79ee7d57348751833835b40cbd2912dac347b1"
+      },
+      {
+        "seed": 1242258561,
+        "layout": "da048dfba04e986047efbd03e5fda1afbe79ec80961a76aa8be42f2dd82cfa62"
+      },
+      {
+        "seed": 3249916674,
+        "layout": "a6a1cd2b2835b034611a2730dd44b662979d3fa2b19ed2b08cdad318de618538"
+      },
+      {
+        "seed": 4087385007,
+        "layout": "6faab8caba3740cdfac3a32e1b09145a5cf3509e5b638d442d3dc714119a0454"
+      },
+      {
+        "seed": 2080516989,
+        "layout": "487f44ef10522909a2c4d28239d861d029d43457d7342781e6890ca613a527d2"
+      },
+      {
+        "seed": 2997145683,
+        "layout": "f8164d2acdcd01bacb936eddf2998cb91c90d77c9e0237a4dbdba9abd4342d72"
+      }
+    ]
+  },
+  "excluded_layouts": 331,
+  "excluded_sources": {
+    "v8_prior_replays": 33,
+    "v8_prior_panel_seeds": 24,
+    "v7_panel_seeds": 196,
+    "v9_study_games": 57
+  },
+  "rng": 20261125,
+  "bootstrap": 1000000,
+  "gates": {
+    "screen": "mean U > 0, normal finishes, no candidate failure",
+    "confirm": "mean U > 0 and 95% map-bootstrap lower bound > 0"
+  }
+}
